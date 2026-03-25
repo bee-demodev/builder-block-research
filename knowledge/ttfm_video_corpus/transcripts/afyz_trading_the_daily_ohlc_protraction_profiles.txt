@@ -1,0 +1,346 @@
+[5.49] [Music]
+[10.88] how's it going everyone today we are
+[12.44] joined by ayz who is going to talk about
+[15.28] daily protraction profiles so let's get
+[18.28] started with the video thanks again and
+[20.24] T Trad for having me on the channel so
+[21.88] I'll start with a bit about myself I'm
+[23.76] an ICT index Futures Trader who's been
+[26.12] trading for around 3 years I discovered
+[28.84] ICT during that 2022 YouTube mentorship
+[31.96] and before then I was actually in school
+[33.88] for a lot of years like seven studying
+[36.00] Engineering in business and I actually
+[37.68] had a job and strategy Consulting it was
+[39.96] through that YouTube mentorship that I
+[41.40] actually got to discover other guys like
+[43.28] TR trades am trades and the mxm trader
+[46.24] all of which who I uh heavily studied
+[48.76] who gave me a lot of understanding of
+[50.08] some of these Concepts so it's kind of
+[51.80] awesome to come full circle and be able
+[53.36] to be on this channel with te trades so
+[55.12] thank you again so what I'm going to do
+[57.04] today is teach you a little bit about
+[58.92] how I utilize Market maker models in
+[61.64] context of daily profiles that's kind of
+[64.20] my bread and butter strategy for trading
+[66.08] the index Futures and I specifically
+[68.24] focus on trading NASDAQ and yes during
+[70.76] the New York session often times I'll
+[73.28] favor trading NASDAQ over the yes simply
+[76.08] because it's more volatile and I believe
+[78.24] it offers more large range expansions
+[80.96] due to that volatility so let's touch on
+[83.88] the topic of today which is going to be
+[85.92] daily protraction profiles or
+[88.52] manipulation templates
+[90.52] our aim when studying these daily
+[92.44] protraction profiles is to understand
+[95.00] the session dynamics of Asia London and
+[98.44] New York to ultimately determine where
+[101.20] and when the high or the low of the day
+[104.24] is made for every bullish candle we can
+[107.32] say that there is an open low high and a
+[111.40] close and if we can position ourselves
+[114.16] within the wick of the low or we
+[116.72] understand where that low is made we
+[118.56] have a high probability chance to align
+[120.80] ourselves with the expansion of the
+[122.92] daily candle so to make it simple
+[126.08] protraction is studying the manipulation
+[128.28] of the day in hopes of inferring when
+[131.24] the expansion can occur and which
+[133.08] session that expansion can occur in
+[135.92] there's three topics I want to touch on
+[137.68] which are going to be these power of
+[139.56] three templates or po3 profiles The
+[142.52] Rules of Engagement for our protraction
+[144.84] profiles and then again bringing it back
+[147.16] to the market maker model context which
+[149.56] we will use during the New York session
+[151.24] to actually take trades so let's talk
+[154.32] about these three profiles the three
+[156.44] profiles of Interest are going to be
+[158.08] first classic protraction second delayed
+[162.00] protraction and the third which is a
+[164.52] void profile of manipulation which is
+[166.80] called a Judas swing a classic
+[169.20] protraction occurs when London forms the
+[171.84] low of the day and then expands higher a
+[174.92] delayed protraction occurs when we get
+[177.40] the low of the day forming right before
+[179.84] or the New York session and then a void
+[182.48] profile or a Judas swing looks like an
+[185.04] Asian and London accumulation followed
+[187.84] by a manipulation of the range in New
+[190.04] York and then an expansion so let's
+[192.28] touch on all three in a bit more detail
+[194.64] to better understand how we can actually
+[196.56] utilize these profiles so what is
+[199.36] classic protraction classic protraction
+[202.08] also known as a classic buy or sell day
+[205.16] is the best I believe form of profile to
+[208.72] start trading with and the reason why I
+[210.92] think it is such a great profile to
+[213.04] understand is that this offers a New
+[215.32] York continuation profile and in this
+[218.16] New York continuation what we can see is
+[220.64] that the low of the day is formed right
+[223.80] in between the London open and the New
+[227.24] York open meaning we have the low in a
+[230.64] key level being formed before an
+[233.52] expansion in London a retracement in New
+[236.60] York and then a secondary expansion
+[239.56] right throughout the session in terms of
+[242.60] a power of three development that looks
+[245.12] something like an Asian accumulation a
+[248.12] manipulation either in the London
+[250.36] session or right before the London
+[252.20] session 2 a.m. to 5:00 a.m. and then a
+[255.36] continuation of that expansion in the
+[257.92] New York session after that first
+[260.40] displacement is made in London how we
+[264.00] can actually structurally frame this is
+[266.56] that we are looking to see where this
+[269.76] low of the day might be made and we're
+[271.72] looking to find arguments that would
+[273.80] justify that low staying intact we're
+[276.56] going to use the context of PD arrays
+[279.48] like swing lows and fair value gaps or
+[282.40] swing highs and fair value gaps to
+[284.32] justify that that low of the day has
+[286.32] been made and then pair that with Market
+[288.92] structure and delivery states to make a
+[292.16] claim about which protraction profile
+[294.00] we're in so here's just a general
+[295.92] schematic of what that looks like the
+[298.88] second profile which is going to be a
+[301.00] delayed protraction is actually a New
+[303.56] York reversal profile so that power of
+[306.36] three development looks something like
+[308.00] an Asian accumulation followed by a
+[311.04] London manipulation lower or higher
+[314.84] right into that New York session so what
+[318.40] we'll often find is that in contrast to
+[321.80] a classic protraction a delayed
+[324.56] protraction sees New York reversing the
+[327.68] direction of that London move towards
+[330.72] the higher time frame draw on liquidity
+[333.24] so that's where our manipulation occurs
+[335.44] right before the New York open often
+[338.36] times you'll see this paired with news
+[340.20] drivers during the New York session such
+[342.36] as at 8:30 as you can see in this
+[344.76] schematic where between 3:00 a.m. and
+[347.28] 8:30 a.m. we descend or chop lower or
+[351.08] higher into our higher time frame key
+[354.08] level our area of reversal before then
+[357.44] reversing and expanding against
+[360.20] that London move towards that higher
+[362.60] time frame draw on liquidity and those
+[364.80] London highs the final profile of
+[367.88] interest is going to be our Judas swing
+[370.72] our Judas swing is when we see an Asian
+[373.60] and London accumulation meaning we fail
+[376.64] to manipulate that daily range in two
+[379.88] sessions thus not forming that low of
+[383.48] the day yet when we see this type of
+[386.28] profile what we can anticipate is for
+[389.12] New York York to run out the lows of
+[392.20] Asia Andor London before eventually
+[395.64] reversing to the higher time frame draw
+[398.16] liquidity in this Judith swing setup
+[400.96] that's where we get used to seeing those
+[402.56] v-shaped recoveries in the market which
+[404.92] I'll point out kind of when we get into
+[406.64] the charts with some examples so let's
+[409.28] actually hop onto the charts for a
+[410.68] second and take a look at all three of
+[413.36] our protraction profiles to see if we
+[415.64] can put some chart evidence Behind These
+[418.44] schematics
+[420.08] so let's start off with a classic
+[422.12] protraction which is a New York
+[423.88] continuation profile as you can see I've
+[426.36] done I've made the liberty of annotating
+[428.04] this chart already but we can see here
+[430.84] that the higher time frame order flow
+[433.40] upon reaching this key level is bullish
+[436.72] on the higher time frame okay we've
+[438.84] tagged a daily imbalance in here and in
+[442.08] the session we have come in and we've
+[444.56] swept out these Tokyo lows most
+[448.88] importantly you can see that Tokyo
+[451.80] accumulated London manipulated into this
+[455.24] 4our swing low inside of this higher
+[459.04] time frame daily fair value Gap right
+[463.20] before expanding higher we can also see
+[466.44] that we had an smt Divergence with our
+[468.76] Es at these London lows followed by a
+[472.44] change in the state of delivery which is
+[475.24] a closure through the consecutive series
+[477.40] of down closed candles in into our key
+[480.56] level with
+[482.16] smt so when we think of that power of
+[484.52] three profile we can say that Asia
+[487.64] accumulated London manipulated and then
+[491.16] expanded so New York does not have to
+[494.44] come back into this low this is the low
+[497.88] of the day so what we are anticipating
+[501.20] is if we had a daily candle that looked
+[503.20] something like this for the wick that is
+[506.12] formed in London to act as our low of
+[508.88] the day and the internal dynamics of
+[511.72] price to do something like this right we
+[514.96] want to see New York retrace and then
+[517.08] continue to expand forming the high and
+[521.44] the close of the daily candle so when we
+[525.60] look at that and we pair that together
+[527.60] all we have to do now is involve
+[529.84] ourselves in a retracement of order flow
+[532.64] in the New York session as you can see
+[535.56] in here we have a 30 minute and we have
+[538.92] a 1 hour fair value Gap internal range
+[543.00] of liquidity and from that internal
+[545.36] range of liquidity we can position
+[547.20] ourselves to trade the next expansion
+[549.52] leg higher eventually running out the
+[552.68] draw on liquidity or the original
+[555.12] consolidation of this Market maker buy
+[557.92] model right these buy stops that rest up
+[560.72] here so this is a good example of a
+[563.40] classic protraction where London forms a
+[565.72] low of the day and then we get a
+[567.64] two-phase expansion eventually
+[569.96] culminating right with the buy stops
+[572.72] being taken the next day I believe let's
+[575.04] play that out and see when that happens
+[576.68] there we go right and we have to trade
+[579.08] in the direction of this draw on
+[581.28] liquidity
+[583.04] utilizing right a PD array of Interest
+[587.40] understanding that this low of the day
+[589.00] is going to be a protected area of price
+[591.68] given that open low high close Dynamic
+[594.80] so now let's jump into a second example
+[597.12] which is going to be a delayed Pro
+[599.44] raction or a delayed manipulation of
+[602.76] this daily candle wick so as you can see
+[605.84] in this case we have the Asian
+[608.76] accumulation followed by London moving
+[612.16] slightly higher and then continuing to
+[614.24] accumulate before descending between
+[617.32] late London and the New York open into
+[620.88] our key level so our key level again is
+[624.44] a daily fair value Gap with an smt with
+[628.56] the S SMP so as you can see as price
+[631.32] delays its manipulation into this key
+[634.32] level we have a smart money reversal
+[636.92] followed by a change in state of
+[638.44] delivery ultimately targeting once again
+[642.16] the buy stops that rest at the London
+[644.84] highs and of course any higher time
+[647.84] frame draw in liquidity above market
+[650.56] price in this example you can see the
+[653.28] clear distinction between a classic
+[656.32] protraction and a delayed protraction is
+[659.48] that this Wick is formed into the New
+[663.08] York session followed by a reversal of
+[667.20] orderflow from that low as the low was
+[670.56] made we then reverse against the price
+[673.64] action of London to eventually Target
+[676.44] those highs and the higher time frame
+[679.28] draw on
+[681.20] liquidity in comparison to our classic
+[683.88] protraction where we can see that the
+[685.92] daily candle low had already been made
+[688.20] in the London session through a
+[690.04] manipulation into our key level and all
+[693.44] New York did was retrace into an area of
+[696.96] fair value before making another
+[699.16] expansion leg higher right just the
+[702.00] clear distinction we have between those
+[703.56] two protraction profiles the final
+[706.24] profile of interest is going to be our
+[709.16] Judas swing so a Judith swing is
+[711.84] characterized by two sessions of clear
+[715.52] accumulation that fail to manipulate the
+[718.56] daily range
+[719.88] when we are considering the opening low
+[722.84] high close or opening high low close
+[725.68] dynamics of a candle what we have to
+[728.56] remember is that when we are forming
+[731.52] this manipulation Wick there needs to be
+[735.60] a key level that is engaged that can
+[739.04] qualify this as the high or the low of
+[742.52] the day so in the case of bearish
+[745.08] distribution lower on this day what we
+[747.64] can notice is that there actually was no
+[750.32] meaningful manipulation of a higher time
+[753.00] frame key level to form the high of the
+[756.00] day and so what we see on the open is
+[759.32] that New York runs out these London and
+[762.68] Asian highs in the form of an smt with
+[765.80] the es before eventually Distributing
+[769.44] lower so that is when we have a power of
+[772.36] three or manipulation profile that looks
+[774.64] like an open followed by an accumulation
+[777.88] a Judith swing which is running the
+[780.76] highs of the New York or of the London
+[782.80] and Asian session followed by a
+[785.24] distribution of price
+[787.08] lower what's important to recognize is
+[789.72] that when we have a Judas swing we
+[792.36] expect New York to engage these stop
+[795.64] losses and then reverse against order
+[797.96] flow meaning that a fair value Gap or an
+[800.60] inefficiency in market price like this
+[803.00] is not anticipated to support price
+[806.64] higher we would not expect to see price
+[809.52] trade into this range and then expand
+[812.60] higher we're in fact fading this initial
+[815.28] move higher as the form of a Judas swing
+[818.52] and a v-shape recovery as you notice so
+[821.80] that's a very important distinction with
+[823.68] our third protraction profile so those
+[826.76] are the three daily templates I tend to
+[829.16] use and as you can see when we pair them
+[831.16] with Concepts like Market maker models
+[833.88] and also weekly profiles as am trades
+[836.76] has come on the channel and talk about
+[838.04] multiple times we get a really strong
+[840.96] understanding and Powerful understanding
+[842.80] of how these daily candles are forming
+[845.32] their lows and highs once we can combine
+[848.32] that with the appropriate structure and
+[850.20] state of delivery we have a good
+[852.56] understanding of what New York may do
+[855.20] based on the information offered in the
+[857.32] previous two sessions so each morning
+[859.96] when I come to the charts what I will
+[861.92] first do is I will look back and study
+[864.72] the prior two sessions to understand
+[867.68] which of the daily templates
+[869.64] I believe we are likely to be in a
+[872.08] classic delayed or potential Judas swing
+[875.84] protraction profile once I have that
+[878.20] information and I understand my clear
+[880.64] draw on liquidity I.E my higher time
+[883.36] frame bias I have a really good chance
+[885.76] of being on side and aligned with the
+[888.08] distribution of that daily candle okay
+[891.04] so that's all for me today thank you
+[892.72] again very much to teachrad for having
+[894.20] me on the channel it's been an absolute
+[895.88] pleasure and uh let me know if you have
+[897.60] any questions in the comments thanks
+[899.32] yeah thank you for joining us I hope
+[901.04] everyone found that helpful if you do
+[902.96] want to learn more from afy Z I will
+[905.44] have his Social Links in the description
+[907.48] below and if you have any questions feel
+[909.76] free to leave them in the comment
+[911.28] section below I hope you have a great
+[913.04] rest of your day and see you guys next
+[914.48] time

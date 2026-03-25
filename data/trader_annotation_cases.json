@@ -1,0 +1,501 @@
+{
+  "cases": [
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "expansion",
+      "case_ref": "ttrades_expansion_curriculum_baseline_v1",
+      "source_url": "https://ttrades.com/phases-of-price-part-2-mastering-expansion-for-strong-trend-trades/",
+      "trade_model_links": [
+        {
+          "trade_model": "phases_of_price_framework",
+          "relation_type": "phase_framework",
+          "confidence": 1.0,
+          "notes": "Baseline expansion phase example."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "phase": "expansion",
+        "source_kind": "article",
+        "timeframe_scope": ["fractal"]
+      },
+      "annotation": {
+        "confirmation": "directional_body_expansion_plus_shallow_pullback",
+        "invalidation": "protected_swing_violation",
+        "range_type": "expansion_leg",
+        "setup_anchor": "breakout_or_resumption_from_small_range",
+        "target": "external_liquidity"
+      },
+      "notes": "Baseline curriculum-derived annotation for expansion behavior."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "bias",
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "source_url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "trade_model_links": [
+        {
+          "trade_model": "daily_bias_framework",
+          "relation_type": "bias_framework",
+          "confidence": 1.0,
+          "notes": "Daily continuation bias example."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "continuation_day_equilibrium_respect",
+        "timeframe_scope": ["higher", "lower"]
+      },
+      "annotation": {
+        "mode": "continuation_day",
+        "reference_range": "previous_day_range",
+        "equilibrium_role": "continuation_area_of_interest",
+        "lower_timeframe_confirmation": "required",
+        "continuation_condition": "closes_hold_correct_side_of_equilibrium",
+        "objective": "previous_day_directional_objective_then_external_liquidity"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "daily_bias_continuation_setup"
+      },
+      "notes": "Baseline teacher-style continuation-day bias case from Easy Daily Bias."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "bias",
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "source_url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "trade_model_links": [
+        {
+          "trade_model": "daily_bias_framework",
+          "relation_type": "bias_framework",
+          "confidence": 1.0,
+          "notes": "Daily reversal bias example."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "reversal_day_prior_extreme_rejection",
+        "timeframe_scope": ["higher", "lower"]
+      },
+      "annotation": {
+        "mode": "reversal_day",
+        "reference_anchor": "previous_day_extreme",
+        "wick_requirement": "rejection_at_prior_extreme",
+        "lower_timeframe_confirmation": "required",
+        "first_objective": "equilibrium",
+        "extended_objective": "opposite_side_of_prior_range"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "daily_bias_reversal_setup"
+      },
+      "notes": "Baseline teacher-style reversal-day bias case from Next Day Model."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "continuation",
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "source_url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "trade_model_links": [
+        {
+          "trade_model": "continuation_entry_model",
+          "relation_type": "execution_model",
+          "confidence": 1.0,
+          "notes": "Equilibrium-respect continuation entry."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "equilibrium_hold_trend_resumption",
+        "timeframe_scope": ["fractal"]
+      },
+      "annotation": {
+        "anchor_type": "equilibrium_half_range_respect",
+        "confirmation": "fast_close_through_opposing_series",
+        "invalidation": "new_protected_swing_failure_or_wrong_side_equilibrium_close",
+        "objective": "next_external_liquidity",
+        "setup_variant": "equilibrium_hold_trend_resumption"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "equilibrium_continuation_entry"
+      },
+      "notes": "Baseline teacher-style continuation case from equilibrium respect."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "continuation",
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "source_url": "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+      "trade_model_links": [
+        {
+          "trade_model": "continuation_entry_model",
+          "relation_type": "execution_model",
+          "confidence": 1.0,
+          "notes": "Continuation failure filter."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "continuation_failure_range_rotation",
+        "timeframe_scope": ["fractal"]
+      },
+      "annotation": {
+        "failure_reason": "consolidation_disguised_as_continuation",
+        "model_action": "stand_aside_and_wait_next_clean_continuation",
+        "setup_variant": "continuation_failure_range_rotation",
+        "warning_signals": [
+          "slow_recovery",
+          "range_rotation",
+          "higher_timeframe_objective_complete"
+        ]
+      },
+      "outcome": {
+        "decision": "no_trade",
+        "reason": "continuation_failure_filter"
+      },
+      "notes": "Baseline failure-filter case for the teacher-style continuation model."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "daily_profiles",
+      "case_ref": "ttrades_new_york_reversal_profile_baseline_v1",
+      "source_url": "https://ttrades.com/understanding-the-new-york-reversal-in-daily-profiles/",
+      "trade_model_links": [
+        {
+          "trade_model": "daily_profile_models",
+          "relation_type": "session_profile",
+          "confidence": 1.0,
+          "notes": "Daily-profile layer framing the session expectation."
+        },
+        {
+          "trade_model": "reversal_sequence_model",
+          "relation_type": "execution_model",
+          "confidence": 0.95,
+          "notes": "Profile resolves into a reversal execution after New York reaches the missed higher-timeframe level."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "new_york_reversal_after_london_falls_short",
+        "session_scope": ["london", "new_york_am"],
+        "timeframe_scope": ["higher", "intraday"]
+      },
+      "annotation": {
+        "london_condition": "fails_to_reach_higher_timeframe_pd_array",
+        "new_york_trigger": "sweeps_liquidity_into_key_level_during_8_30_to_10_30_est",
+        "confirmation": "displacement_and_cisd_on_15m_or_5m",
+        "entry_rule": "enter_after_close_beyond_cisd_level",
+        "invalidation": "beyond_new_york_session_extreme",
+        "objective": "failure_swings_session_extremes_or_low_resistance_liquidity"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "new_york_reversal_profile_execution"
+      },
+      "notes": "Composite teacher-style case where the daily profile context and reversal execution align."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "daily_profiles",
+      "case_ref": "ttrades_seek_and_destroy_profile_filter_baseline_v1",
+      "source_url": "https://ttrades.com/understanding-the-seek-and-destroy-daily-profile-in-trading/",
+      "trade_model_links": [
+        {
+          "trade_model": "daily_profile_models",
+          "relation_type": "session_profile",
+          "confidence": 1.0,
+          "notes": "Low-probability daily profile filter."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "seek_and_destroy_whipsaw_day",
+        "session_scope": ["asia", "london", "new_york"],
+        "timeframe_scope": ["daily", "intraday"]
+      },
+      "annotation": {
+        "asia_reference": "range_boundaries_define_initial_liquidity",
+        "london_behavior": "sweeps_both_asia_high_and_low_without_sustained_breakout",
+        "new_york_behavior": "mirrors_rotation_or_returns_toward_equilibrium_and_daily_open",
+        "preferred_action": "avoid_directional_expansion_trades",
+        "fallback_tactic": "fade_false_breakouts_back_into_range",
+        "range_magnets": ["london_equilibrium", "daily_open", "asia_range"]
+      },
+      "outcome": {
+        "decision": "no_trade",
+        "reason": "seek_and_destroy_profile_filter"
+      },
+      "notes": "Profile example where the model is more useful as a non-opportunity filter than as an entry trigger."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "candle_3_closure",
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "source_url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "trade_model_links": [
+        {
+          "trade_model": "fractal_closure_model",
+          "relation_type": "confirmation_framework",
+          "confidence": 1.0,
+          "notes": "Delayed closure confirmation inside the fractal model."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "candle_3_continuation_after_candle_2_failure",
+        "timeframe_scope": ["fractal", "lower_timeframe_refinement"]
+      },
+      "annotation": {
+        "point_of_interest_requirement": "must_be_present_before_closure_counts",
+        "candle_2_result": "fails_to_form_required_reversal_closure",
+        "candle_3_requirement": "closes_through_candle_2_body_without_sweeping_candle_2_extreme",
+        "equilibrium_use": "mark_full_candle_3_range_and_use_half_as_refinement_zone",
+        "anticipated_follow_through": "candle_4_expansion_after_equilibrium_respect",
+        "invalid_swing_rule": "ignore_swing_if_point_of_interest_or_valid_closure_is_missing"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "candle_3_continuation_confirmation"
+      },
+      "notes": "Fractal-closure example where candle 3 rescues the setup after candle 2 fails."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "candle_2_closure",
+      "case_ref": "ttrades_candle_2_closure_reversal_baseline_v1",
+      "source_url": "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+      "trade_model_links": [
+        {
+          "trade_model": "fractal_closure_model",
+          "relation_type": "confirmation_framework",
+          "confidence": 1.0,
+          "notes": "Early reversal confirmation inside the fractal model."
+        },
+        {
+          "trade_model": "reversal_sequence_model",
+          "relation_type": "execution_model",
+          "confidence": 0.9,
+          "notes": "The early closure is used to trigger the reversal sequence sooner."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "candle_2_reversal_closure_at_point_of_interest",
+        "timeframe_scope": ["fractal", "lower_timeframe_refinement"]
+      },
+      "annotation": {
+        "point_of_interest_requirement": "price_reaches_key_level_before_closure_is_valid",
+        "candle_2_requirement": "sweeps_previous_candle_then_closes_back_inside_previous_range",
+        "confirmation_role": "early_reversal_signal_without_waiting_for_candle_3",
+        "entry_workflow": "use_closure_to_define_valid_swing_then_refine_lower_timeframe_entry",
+        "invalidation": "closure_thesis_fails_if_price_breaks_the_confirmed_swing",
+        "objective": "opposing_liquidity_after_reversal_sequence_confirms"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "candle_2_reversal_confirmation"
+      },
+      "notes": "Composite reversal case where an early candle 2 closure supplies the fractal confirmation for the broader reversal model."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "continuation",
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "source_url": "https://ttrades.com/using-order-blocks-for-continuations/",
+      "trade_model_links": [
+        {
+          "trade_model": "continuation_entry_model",
+          "relation_type": "execution_model",
+          "confidence": 1.0,
+          "notes": "Order-block continuation entry after point-of-interest confirmation."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "order_block_retest_after_fvg_or_liquidity_sweep",
+        "timeframe_scope": ["higher", "intraday", "lower_timeframe_refinement"]
+      },
+      "annotation": {
+        "reversal_prerequisite": "reversal_sequence_already_confirmed",
+        "point_of_interest_candidates": ["fair_value_gap", "liquidity_sweep", "smt_divergence_proxy"],
+        "confirmation": "closure_through_opposing_candle_series",
+        "entry_rule": "enter_on_validated_order_block_retest",
+        "invalidation": "beyond_validated_order_block_and_protected_swing",
+        "objective": "hourly_or_previous_day_liquidity"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "continuation_order_block_retest"
+      },
+      "notes": "Continuation order-block example where a fair value gap or sweep leads to a validated continuation order block."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "continuation",
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "source_url": "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+      "trade_model_links": [
+        {
+          "trade_model": "continuation_entry_model",
+          "relation_type": "execution_model",
+          "confidence": 1.0,
+          "notes": "Breaker-block continuation entry with sweep or SMT confirmation."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "breaker_block_retest_after_sweep_or_smt",
+        "timeframe_scope": ["higher", "intraday"]
+      },
+      "annotation": {
+        "bias_requirement": "higher_timeframe_bias_and_protected_swing_alignment",
+        "trigger": "liquidity_sweep_then_breaker_structure_completion",
+        "smt_override": "allow_smt_divergence_to_proxy_missing_direct_sweep",
+        "entry_rule": "enter_on_breaker_block_retest",
+        "invalidation": "beyond_opposite_side_of_breaker_block",
+        "objective": "previous_high_or_low_liquidity"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "continuation_breaker_block_retest"
+      },
+      "notes": "Continuation breaker-block example where structure completes after a sweep or SMT divergence and is traded on the retest."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "top_down_alignment",
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "source_url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "trade_model_links": [
+        {
+          "trade_model": "continuation_entry_model",
+          "relation_type": "execution_model",
+          "confidence": 0.95,
+          "notes": "Top-down aligned continuation entry."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "higher_intermediate_lower_timeframe_alignment",
+        "timeframe_scope": ["higher", "intraday", "lower_timeframe_refinement"]
+      },
+      "annotation": {
+        "higher_timeframe_bias": "daily_closure_sets_direction",
+        "intermediate_structure": "hourly_cisd_or_protected_swing_at_point_of_interest",
+        "lower_timeframe_confirmation": "5m_cisd_or_new_protected_swing",
+        "entry_rule": "enter_on_new_protected_swing_or_continuation_order_block",
+        "invalidation": "beyond_structure_timeframe_protected_high_or_low",
+        "objective": "higher_timeframe_liquidity_target"
+      },
+      "outcome": {
+        "decision": "trade",
+        "reason": "top_down_aligned_continuation_entry"
+      },
+      "notes": "Top-down alignment example where higher, intermediate, and lower timeframes all point in the same continuation direction."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "wick_logic",
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "source_url": "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+      "trade_model_links": [
+        {
+          "trade_model": "continuation_entry_model",
+          "relation_type": "execution_model",
+          "confidence": 0.9,
+          "notes": "Large-wick continuation filter."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "large_opposing_wick_blocks_clean_continuation",
+        "timeframe_scope": ["higher", "lower"]
+      },
+      "annotation": {
+        "higher_timeframe_context": "bias_supports_direction",
+        "disqualifier": "lower_timeframe_large_opposing_wick",
+        "model_action": "wait_for_next_small_wick_alignment",
+        "risk": "large_wick_limits_expansion_efficiency",
+        "target_adjustment": "daily_open_or_nearby_intraday_liquidity"
+      },
+      "outcome": {
+        "decision": "no_trade",
+        "reason": "large_wick_continuation_filter"
+      },
+      "notes": "No-trade continuation filter where the lower timeframe wick is too large to support efficient expansion."
+    },
+    {
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "topic": "retracement",
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "source_url": "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+      "trade_model_links": [
+        {
+          "trade_model": "continuation_entry_model",
+          "relation_type": "execution_model",
+          "confidence": 0.9,
+          "notes": "Retracement continuation filter when confirmation never forms."
+        }
+      ],
+      "chart_context": {
+        "example_type": "curriculum_baseline",
+        "source_kind": "article",
+        "setup_variant": "retracement_without_sweep_or_fvg_confirmation",
+        "timeframe_scope": ["fractal", "lower_timeframe_refinement"]
+      },
+      "annotation": {
+        "context": "expansion_followed_by_slow_shallow_pullback",
+        "missing_requirements": ["no_sweep", "no_fair_value_gap_entry", "no_new_protected_swing"],
+        "model_action": "wait_for_protected_swing_or_candle_2_closure",
+        "invalid_assumption": "trend_resumption_without_confirmation"
+      },
+      "outcome": {
+        "decision": "no_trade",
+        "reason": "retracement_missing_confirmation_filter"
+      },
+      "notes": "No-trade retracement case where the pullback never forms the confirmation needed for a continuation entry."
+    }
+  ]
+}

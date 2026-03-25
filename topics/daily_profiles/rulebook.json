@@ -1,0 +1,194 @@
+{
+  "topic": "daily_profiles",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_london_reversal_ny_continuation_profile",
+      "url": "https://ttrades.com/london-reversal-and-new-york-continuation-daily-profile/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_new_york_manipulation_profile",
+      "url": "https://ttrades.com/daily-profile-understanding-the-new-york-manipulation/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_new_york_reversal_profile",
+      "url": "https://ttrades.com/understanding-the-new-york-reversal-in-daily-profiles/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_seek_and_destroy_profile",
+      "url": "https://ttrades.com/understanding-the-seek-and-destroy-daily-profile-in-trading/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_easy_daily_bias",
+      "url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "london_reversal_new_york_continuation_profile",
+      "name": "London reversal and New York continuation profiles use London to form the daily wick and New York to deliver the body",
+      "timeframeScope": ["daily", "session", "lower"],
+      "marketPhasePrecondition": ["daily_open_available", "london_session_active", "new_york_session_pending"],
+      "direction": "bidirectional",
+      "setupAnchor": "Track daily open plus London session range and mark whether London sweeps away from the daily open before New York opens",
+      "confirmationTrigger": "London creates the high or low of the day, confirms a CISD, and New York then continues from fair value gaps, order blocks, or sweep retests in the same direction",
+      "protectedSwingDefinition": "The London shift that confirms the reversal creates the first intraday structural reference that New York continuation should respect",
+      "invalidationCondition": "London both reverses and fully expands before New York opens, or New York cannot hold the direction created by London's CISD",
+      "targetLogic": "Use London as the wick-formation session and New York as the expansion session, targeting continuation in the direction of the developing daily close",
+      "exceptions": [
+        "If London already completes most of the day's range, New York continuation quality drops materially"
+      ],
+      "evidenceRefs": [
+        "ttrades_london_reversal_ny_continuation_profile#what_is_a_london_reversal",
+        "ttrades_london_reversal_ny_continuation_profile#the_new_york_continuation",
+        "ttrades_london_reversal_ny_continuation_profile#why_this_matters_for_daily_candles"
+      ],
+      "visualVerificationRefs": [
+        "article:daily_profiles_london_reversal_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "daily open",
+        "London session high and low",
+        "New York session start time",
+        "London CISD proxy",
+        "session expansion completion flag"
+      ],
+      "machineChecks": [
+        "Detect whether London forms the session extreme opposite the intended daily close",
+        "Require a London structure shift before enabling New York continuation logic",
+        "Block New York continuation setups when London has already completed the expected daily expansion"
+      ],
+      "ambiguityNotes": [
+        "The exact threshold for 'most of the day's range' still needs a first-pass numeric rule"
+      ]
+    },
+    {
+      "id": "new_york_manipulation_profile",
+      "name": "New York manipulation profiles sweep the current day's range during New York and then deliver in the opposite direction",
+      "timeframeScope": ["daily", "session", "lower"],
+      "marketPhasePrecondition": ["daily_open_available", "london_range_defined", "new_york_open_pending"],
+      "direction": "bidirectional",
+      "setupAnchor": "London consolidates without completing the directional objective and New York approaches the London range high or low around 8:30 or 9:30 EST",
+      "confirmationTrigger": "New York sweeps the current day's range high or low, then closes through the opposing candle series to confirm the change in state of delivery",
+      "protectedSwingDefinition": "The structural shift that forms after the New York sweep becomes the intraday reference that the manipulation profile must protect",
+      "invalidationCondition": "The sweep fails to produce a close through the opposing candles or price immediately retakes the swept side without directional follow-through",
+      "targetLogic": "Refine entries from the post-sweep order block or fair value gap and target previous-day highs, lows, or aligned liquidity pools in the delivered direction",
+      "exceptions": [
+        "The profile is strongest when London consolidated instead of already forming a directional high-quality expansion"
+      ],
+      "evidenceRefs": [
+        "ttrades_new_york_manipulation_profile#what_is_the_new_york_manipulation_profile",
+        "ttrades_new_york_manipulation_profile#how_to_recognize_it_on_charts",
+        "ttrades_new_york_manipulation_profile#key_takeaways"
+      ],
+      "visualVerificationRefs": [
+        "article:daily_profiles_new_york_manipulation_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "London session high and low",
+        "New York 8:30 and 9:30 timestamps",
+        "range sweep flag",
+        "CISD proxy",
+        "previous-day high and low"
+      ],
+      "machineChecks": [
+        "Detect whether New York sweeps beyond the active London range",
+        "Require a post-sweep close through the opposing candle series before entry eligibility",
+        "Track previous-day highs or lows as the first expansion targets after confirmation"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "new_york_reversal_profile",
+      "name": "New York reversal profiles occur when London falls short of a higher-timeframe level and New York completes the run before reversing",
+      "timeframeScope": ["higher", "session", "lower"],
+      "marketPhasePrecondition": ["higher_timeframe_pd_array_available", "london_session_complete", "new_york_session_active"],
+      "direction": "bidirectional",
+      "setupAnchor": "Track a higher-timeframe level plus whether London failed to reach it while still leaning in that direction",
+      "confirmationTrigger": "New York extends into the missed higher-timeframe level, sweeps liquidity there, and confirms the shift with displacement plus CISD on a 15-minute or 5-minute chart",
+      "protectedSwingDefinition": "The post-CISD swing created in New York becomes the structural invalidation for the reversal thesis",
+      "invalidationCondition": "New York reaches the level but cannot produce displacement and CISD, or the new swing fails immediately after confirmation",
+      "targetLogic": "Enter after confirmation beyond the CISD level and target failure swings, session highs or lows, or the nearest clean opposite-side liquidity pool",
+      "exceptions": [
+        "If London already reached the higher-timeframe level, the setup should be treated as a different profile rather than a New York reversal"
+      ],
+      "evidenceRefs": [
+        "ttrades_new_york_reversal_profile#what_is_the_new_york_reversal",
+        "ttrades_new_york_reversal_profile#how_to_identify_the_setup",
+        "ttrades_new_york_reversal_profile#example_flow_of_a_new_york_reversal_trade"
+      ],
+      "visualVerificationRefs": [
+        "article:daily_profiles_new_york_reversal_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe key level",
+        "London reached-level flag",
+        "New York sweep flag",
+        "15-minute or 5-minute CISD proxy",
+        "session liquidity targets"
+      ],
+      "machineChecks": [
+        "Require London to fail to reach the higher-timeframe anchor before New York reversal logic is enabled",
+        "Require New York to sweep into the anchor and then confirm with displacement plus CISD",
+        "Store the post-CISD swing as the active invalidation reference"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "seek_and_destroy_profile_filter",
+      "name": "Seek and destroy profiles are rotational non-opportunity days unless false breakouts can be faded back toward equilibrium",
+      "timeframeScope": ["daily", "session", "lower"],
+      "marketPhasePrecondition": ["asia_range_defined", "london_session_active"],
+      "direction": "bidirectional",
+      "setupAnchor": "Track Asia range plus whether London sweeps both sides without producing a sustained breakout",
+      "confirmationTrigger": "If London takes both Asia high and Asia low and New York mirrors the same range rotation, classify the day as seek and destroy rather than directional expansion",
+      "protectedSwingDefinition": "No directional protected swing should be treated as actionable while price keeps rotating across the range and returning toward equilibrium or the daily open",
+      "invalidationCondition": "Price stops rotating and instead confirms a clean directional escape with structure that holds outside the range",
+      "targetLogic": "Prefer standing aside; if traded at all, fade false breakouts back toward London equilibrium, daily open, or the middle of the active range",
+      "exceptions": [
+        "Seek and destroy is more useful as a risk filter than as a mandatory mean-reversion setup"
+      ],
+      "evidenceRefs": [
+        "ttrades_seek_and_destroy_profile#what_is_a_seek_and_destroy_profile",
+        "ttrades_seek_and_destroy_profile#recognizing_seek_and_destroy_days",
+        "ttrades_seek_and_destroy_profile#the_real_lesson_knowing_when_to_stay_out"
+      ],
+      "visualVerificationRefs": [
+        "article:daily_profiles_seek_and_destroy_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "Asia session high and low",
+        "London session sweep-both-sides flag",
+        "daily open",
+        "London equilibrium",
+        "directional protected swing flag"
+      ],
+      "machineChecks": [
+        "Detect whether London sweeps both sides of the Asia range without directional hold",
+        "Demote directional expectations when price keeps rotating back through London equilibrium or the daily open",
+        "Block expansion-style entries while no directional protected swing forms outside the range"
+      ],
+      "ambiguityNotes": []
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What is the cleanest first-pass rule for deciding whether London already completed too much of the day's expansion for New York continuation to remain valid?",
+    "How should overlapping session features be ranked when a day partially resembles both New York manipulation and New York reversal?"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-03-24T20:18:13.436666+00:00",
+  "summary": {
+    "row_count": 105,
+    "teacher_row_count": 50,
+    "weak_row_count": 55,
+    "excluded_weak_row_count": 20,
+    "deduped_overlap_count": 0,
+    "source_tier_counts": {
+      "teacher": 50,
+      "weak": 55
+    },
+    "review_status_counts": {
+      "ready_for_weak_training": 55,
+      "teacher_visual_baseline": 50
+    },
+    "contradiction_status_counts": {
+      "not_applicable": 50,
+      "unreviewed": 55
+    },
+    "ready_for_weak_training_count": 55
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-03-23T20:20:43.437540+00:00",
+  "artifact_type": "pine_candidate_event_contract",
+  "spec_key": "fractal_closure_model",
+  "trade_model": {
+    "slug": "fractal_closure_model",
+    "name": "Fractal Closure Model"
+  },
+  "script_title": "TTrades Fractal Closure Model [Draft]",
+  "script_output_path": "results\\pine_scripts\\fractal_closure_model.pine",
+  "alert_titles": [
+    "Draft bullish crossover",
+    "Draft bearish crossover"
+  ],
+  "rule_state_fields": [
+    "pointOfInterestState",
+    "higherTimeframeBiasState",
+    "candleTwoClosureState",
+    "candleTwoMidpointState",
+    "candleThreeClosureState",
+    "candleThreeEquilibriumState",
+    "validatedSwingState",
+    "lowerTimeframeDisplacementState",
+    "candleFourExpectationState"
+  ],
+  "required_event_fields": [
+    "trade_model",
+    "chart_context",
+    "annotation",
+    "candidate_signal"
+  ],
+  "candidate_signal_required_fields": [
+    "timestamp",
+    "side",
+    "stop_price",
+    "target_price"
+  ],
+  "default_event": {
+    "profile_slug": "ttrades_curriculum",
+    "topic": "bias",
+    "trade_model": "fractal_closure_model",
+    "relation_type": "confirmation_framework",
+    "chart_context": {
+      "setup_variant": "fractal_closure_model",
+      "source_kind": "tradingview_pine_alert",
+      "timeframe_scope": [],
+      "session_scope": []
+    },
+    "annotation": {
+      "fired_alert": "",
+      "rule_states": {
+        "pointOfInterestState": "",
+        "higherTimeframeBiasState": "",
+        "candleTwoClosureState": "",
+        "candleTwoMidpointState": "",
+        "candleThreeClosureState": "",
+        "candleThreeEquilibriumState": "",
+        "validatedSwingState": "",
+        "lowerTimeframeDisplacementState": "",
+        "candleFourExpectationState": ""
+      }
+    },
+    "candidate_signal": {
+      "timestamp": "",
+      "side": "",
+      "stop_price": "",
+      "target_price": "",
+      "quantity": 1.0,
+      "session": "",
+      "thesis": ""
+    }
+  }
+}

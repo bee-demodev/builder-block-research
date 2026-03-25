@@ -1,0 +1,477 @@
+[10.72] How's it going everyone? In this video,
+[12.40] we are going to talk about a simple
+[14.16] daily framework. This is going to use
+[16.16] candle closures as well as wick size.
+[18.80] But if you haven't already seen my
+[19.92] equilibrium video, my candle 2 and
+[21.76] candle 3 closure video, I would watch
+[23.60] those first. This is based off the fact
+[25.92] that I'm either going to be looking for
+[27.52] a reversal or for a continuation. If I'm
+[30.96] looking for a reversal, I'm always going
+[32.64] to frame that reversal off of previous
+[34.80] day's high or previous day's low. So,
+[37.36] here you can see we have had a bullish
+[39.28] day. We close near the high. I'd be
+[41.60] looking for the next day to open, trade
+[43.60] into previous day high, have a reversal
+[46.08] formed, and then I can look to trade it
+[47.52] back into the range, looking for that EQ
+[50.24] or to the previous day's low. Now, if
+[52.80] I'm going to be looking for a
+[54.00] continuation, I'll look for price to
+[56.00] open, trade lower first, respect the EQ
+[58.96] of that previous day's range, and then
+[60.72] trade up and through that previous day's
+[62.64] high. Let's take a look at what an
+[64.32] example of a reversal would look like.
+[66.32] Here you can see we want to see price
+[68.00] open, trade higher first into the
+[70.56] previous day's high, which is our
+[72.00] important level, and then have a shallow
+[74.16] wick to form a reversal and trade lower.
+[76.56] Now, if you don't know why we want a
+[78.08] shallow wick, a shallow wick supports
+[80.08] expansion lower. So, we can trade this
+[81.84] lower in the reversal day. If we have a
+[84.32] large wick, then we're going to want to
+[85.84] wait for candle three or the following
+[87.76] candle to trade the continuation. If you
+[90.00] haven't already seen my video on wick
+[91.52] size, please check that out. But
+[93.52] essentially, over this previous day
+[94.96] high, we're going to want to see a lower
+[96.72] time frame change in the state of
+[98.24] delivery to confirm the wick of this
+[100.24] daily candle and then trade it back
+[101.84] lower. I'm generally going to be looking
+[103.68] for this on the hourly or 30-inut
+[105.84] charts. If it's in Asia or London or in
+[108.64] New York, I will use the five minute or
+[110.72] 15 minute time frame. Now, when looking
+[112.40] for a continuation, I want to see price
+[114.24] open up, respect the EQ of the previous
+[116.88] day's range, and then trade higher. So,
+[119.28] we have an open low and then forming the
+[122.00] body before we have a high and close.
+[124.56] And similar to a reversal, I will be
+[126.64] using a change in the state of delivery
+[128.64] intraday to confirm the wick of that
+[130.64] higher time frame candle. So, as we zoom
+[132.72] in here, you can see we have a change in
+[134.56] the state of delivery, which confirms
+[136.24] this higher time frame wick. And then we
+[138.16] can trade the body of the higher time
+[140.00] frame candle. So, let's get into trading
+[141.84] view and go over a few examples of this.
+[143.92] So, here we are in our first example. We
+[146.00] are on YM on the daily chart. Now, let's
+[148.80] first give a little context here. You
+[150.48] can see we are trending higher and we
+[152.56] are creating new protected swings. So,
+[154.72] you can see we reach into a fair value
+[156.40] gap. We close over the down close candle
+[158.80] into that fair value gap. Now, this low
+[160.88] is protected. If we are going to trade
+[162.56] higher, we then reach into this fair
+[164.80] value gap here. And what does this
+[166.96] previous candle do? It closes over the
+[169.44] down closed candles into that fair value
+[171.52] gap. Now this low is protected. So this
+[174.24] is an ideal candle to closure. Now
+[176.88] looking at this, if we are expecting a
+[178.88] continuation, what do we need to mark
+[180.72] out? Well, with all of these days, we're
+[183.20] just going to mark out the EQ as well as
+[185.36] our previous day high and previous day
+[187.12] low. In this case, since we are bullish,
+[189.36] previous day high. Now, if we are
+[191.44] bullish, we're looking for a
+[192.96] continuation. We want to see price open,
+[195.44] trade lower first, respect the EQ, and
+[198.48] then trade higher through previous day
+[200.24] high. Now, my favorite time frame to
+[201.92] watch this on is the hourly. So, let's
+[203.60] drop down to the hourly chart. So, here
+[205.44] you can see we have marked out our
+[207.12] previous day's EQ as well as our
+[209.36] previous day's high. So, what do we want
+[211.60] to see out of this day? Well, we'd want
+[213.28] to see price open, trade lower into this
+[215.68] fair value gap, respecting the EQ. And
+[218.48] when I say respecting the EQ, it's not
+[220.64] ideal to have closures on the hourly
+[222.80] chart below that. So if I'm using the
+[224.80] daily, the time frame pairing with that,
+[226.72] I don't want to see a closure below that
+[228.40] EQ level. Not that it can't reverse and
+[230.72] expand, it's just less probable. So as
+[233.52] we let this play out, let's see how it
+[235.28] works out. So you can see we respect
+[237.20] that EQ and then we start to trade
+[239.52] higher. So where would we want to see
+[241.36] this trade to? Well, because it has a
+[243.44] larger wick back to the daily open, but
+[246.16] our previous day's high or beyond that.
+[248.64] And there you can see we have our open
+[250.88] low and then we have our high, right?
+[253.20] And we trade into these previous highs
+[255.28] on the left here. So, this is a good
+[257.60] example of a continuation. And what you
+[259.92] want to see, you want to see price open,
+[262.32] make a low or this lower wick, and then
+[265.04] trade higher through its previous day's
+[267.04] high. Now, how far beyond this previous
+[269.36] day's high we go is really dependent on
+[271.52] the wick size of this reversal. With a
+[274.00] large wick, I'm not expecting much of a
+[275.68] range beyond this level. But with a
+[277.20] small wick, we can get an expansion.
+[279.04] Let's take a look at another
+[280.32] continuation. So, here we are on USD
+[283.12] CAD. And what do we have? We have a
+[285.04] candle to closure, a nice bearish close.
+[288.08] So, if we're looking for a continuation,
+[290.00] what do we want to mark out? We want to
+[291.84] mark out the EQ as well as the previous
+[295.20] day's low. Now when I say respect EQ,
+[298.72] price can form its high below that
+[300.96] level. It doesn't need to go up and
+[302.72] touch it. So what I will look for is
+[304.80] points of interest below that EQ. So
+[307.60] marking that out, we have a fair value
+[309.28] gap here and a fair value gap here.
+[311.92] Instead of trying to guess which one
+[313.44] will have a reaction, I'm going to wait
+[315.36] for a swing to form in that area or a
+[317.60] new protected swing. So let's see what
+[320.00] happens. You can see we don't respect
+[322.40] this fair value gap. So I can simply
+[324.40] remove it. Now right here, let's see. Do
+[327.20] we have a candle 2 closure? No.
+[330.48] Do we have a candle 2 closure? No. But
+[332.56] we have a candle three closure, which is
+[334.80] ideal as we form a new protected swing
+[337.52] here. So now I can anticipate that this
+[339.92] higher time frame wick has formed,
+[342.00] right? Because this is what I look for
+[343.36] at the reversal. Either on the lower
+[345.12] time frame, the hourly or the lower time
+[347.20] frame using a candle closure. I can look
+[349.28] for price to trade into this previous
+[350.96] day low or even lower. And you can see
+[354.00] there we get a move through that
+[355.44] previous day low as a first target and
+[357.68] that expansion lower. If we want to take
+[359.92] a look at this with my indicator marking
+[361.68] it out, you can see we also have that
+[363.52] SMT with dollar at the reversal that
+[365.92] change in the state of delivery and then
+[367.76] we have the T-spot marked up which in
+[369.84] this case is just the equilibrium in
+[372.00] which case we will search for that point
+[373.52] of interest and look for it to trade
+[375.60] lower. Now let's take a look at a
+[377.20] reversal. Here you can see we have the
+[379.20] EQ marked up and our previous day low is
+[382.24] right here. So if we're going to be
+[384.24] looking for a continuation, what would
+[386.32] we want to see? Price open, trade higher
+[389.04] first, respecting this fair value gap
+[391.12] and the EQ to then trade lower into
+[393.44] previous day low and beyond. But what
+[396.24] occurs?
+[398.16] We open and we trade lower first. That
+[401.20] is open low, which is bullish. When
+[404.16] price opens and makes a low first, that
+[406.48] is bullish. When price opens it and
+[408.64] makes a high first that is bearish. So
+[411.28] what are we looking for with a reversal?
+[413.36] Well, we want to see price open reach
+[415.36] into that previous day's low which is
+[417.52] that important level. Then we need what?
+[420.08] Either a change in the state of delivery
+[421.92] on the hourly time frame if earlier in
+[424.40] the day or if into New York a change in
+[426.88] the state of delivery on the 15minut or
+[428.80] 5 minute time frame. But let's see what
+[430.96] happens
+[432.72] here. So you can see we have an SMT at
+[435.28] the previous day low with a change in
+[437.36] the state of delivery. But now we have
+[439.36] everything set up with a small wick to
+[441.76] see a reversal trade back into the
+[443.68] range. Where could we look for this to
+[445.44] trade to? Back towards the EQ or this
+[447.92] fair value gap here. So let's see how
+[450.00] this plays out.
+[453.04] And there you can see we go well beyond
+[455.20] the EQ. And we have a nice move off of
+[457.84] that previous day's low which forms a
+[460.16] reversal. Now let's look at this once
+[462.56] again. If I'm looking for a
+[464.32] continuation, what am I looking for?
+[466.96] Price to open, respect the EQ of the
+[469.44] previous day, and then look for above
+[471.76] previous day high. Let's see. Do we open
+[474.88] and trade lower first? Yes, we have went
+[477.12] into this fair value gap here and closed
+[479.12] over. So, let's see if we get a move
+[481.12] into previous day high. We do get a move
+[484.24] into previous day high and then we have
+[486.72] it forming somewhat of a reversal or a
+[488.80] retracement here. Let's see what
+[490.08] happens.
+[492.32] And you can see a little bit of a messy
+[494.72] price action here, but we do trade
+[496.48] higher. The one thing I do want to talk
+[498.56] about, yes, this is a protected swing,
+[501.36] right? But this swing is only protected
+[503.52] until it hits liquidity. Once it hits
+[506.16] liquidity, this is a pattern I see often
+[508.48] of taking out liquidity, then it will
+[510.80] sweep out a protected swing, and then it
+[512.72] will have its true move. So, this is
+[515.36] just an example of a reversal, right? So
+[518.00] just to review, sweeping out our
+[519.84] previous day's low as a lower time frame
+[522.24] change in this state of delivery and
+[523.60] then can look back towards that EQ on a
+[526.32] bullish day or on this bullish
+[527.84] continuation. I want to see price open,
+[530.08] make a low and then trade higher into
+[532.48] previous day low or beyond. Now in this
+[535.20] next example, we are on GBPUSD.
+[538.16] And I want to clarify the importance of
+[540.56] having a higher time frame bias. I'm not
+[543.04] just going to pattern trade this. I want
+[545.20] to actually align it with a bias. So
+[547.44] here you can see we have an ideal candle
+[549.68] three closure and a new protected swing
+[552.48] which is bullish. So ideally I want to
+[554.88] frame to the upside here. Let's drop
+[557.04] down to the hourly time frame. So here
+[558.96] we are on the hourly time frame and we
+[561.12] have our previous day high right here.
+[563.60] And what do we want to see? Well,
+[565.28] ideally we want to see price open, trade
+[567.44] lower, respect the EQ and then trade
+[570.08] higher. So let's see what happens.
+[573.36] You can see price trades into this
+[575.04] previous day high first and has a change
+[577.12] in the state of delivery. Now, is this
+[579.20] bearish? Yes, this is bearish, but this
+[581.92] can be still part of a retracement, not
+[584.48] a full-on reversal. Since I am still
+[586.80] bullish, I still want to anticipate this
+[589.36] to be a retracement to then trade it
+[591.28] higher. But I'm going to need to wait
+[592.88] for what? That lower wick to form and
+[595.60] use a change in the state of delivery.
+[597.76] So, let's see what happens. We do get
+[599.84] this move lower which is possible to
+[602.16] trade. Right? This would be trading the
+[604.32] reversal back in towards the EQ of the
+[607.04] range or back into the points of
+[609.12] interest around the EQ.
+[611.92] And then what do we want to see
+[614.56] right here? You can see we have a little
+[616.00] consolidation. We sweep out. Respect
+[618.08] this fair value up. Sweep out one more
+[620.00] time. And then what do we have? We have
+[622.40] a change in the state of delivery with
+[624.40] an ideal candle 2 closure. This is where
+[627.12] I could take an entry on the open of
+[628.64] candle 3 to trade it higher or I could
+[631.44] do what? This is an hourly candle 2
+[633.84] closure. I could look to the 5m minute
+[635.84] to trade a 5-minut continuation in
+[638.24] candle 3. But you can see how if you do
+[641.20] have a bias, you do want to come in and
+[643.28] keep that bias and let the time frames
+[646.16] align with that bias. You can see yes we
+[649.20] do get a retracement here off the
+[651.04] reversal on previous day high but that
+[653.12] is just a retracement to continue higher
+[656.40] within this daily range. Now this is a
+[659.04] fractal concept. So we just went over
+[661.04] this on the daily and hourly time frames
+[663.92] but you can see here we've had this
+[665.52] expansion throughout the day and then
+[667.36] right at 11 what are we having? We're
+[669.44] having a reversal form. So if I wanted
+[671.76] to trade a reversal on a lower time
+[673.76] frame how would I do that? Well, it's
+[675.68] the same, but instead of previous day
+[677.52] high, it's going to be a previous
+[679.36] candle's high. So, here you could see if
+[681.20] I'm on the hourly chart, I'll be using
+[682.96] the 10 a.m. high to frame a reversal.
+[685.36] Now, I want to have a small wick and
+[687.28] then I can trade it lower. So, let's
+[688.88] drop down to the lower time frames and
+[690.40] check this out. So, here we are on the
+[692.16] 5minut time frame, and we have marked
+[694.00] out our previous candle's high. Now,
+[695.68] ideally, we want this candle's high to
+[697.68] form early into the candle and have a
+[699.76] small wick. But what confirms that? Are
+[702.00] we just going to use a closure like
+[703.36] this? No, we want to wait for what? The
+[705.76] change in the state of delivery. So
+[708.00] let's see what happens here.
+[710.80] You can see we get this closure below
+[712.48] which forms a change in the state of
+[714.00] delivery which then protects this high
+[715.92] and we can see a move lower. So let's
+[718.16] see what happens.
+[720.40] You can see it is quite messy as we are
+[722.88] counter trend but we do have the SMT at
+[725.84] this high as euro and dollar took out
+[728.16] this high while GBP did not. And then we
+[730.56] go run out these targets lows. The main
+[732.88] thing I wanted to point out is this is a
+[734.56] fractal concept. So generally, although
+[736.96] I normally use this on the daily time
+[738.88] frame with the hourly and trading that
+[740.96] intraday, you can use it on the lower
+[742.96] time frames such as the hourly and the
+[744.88] 5minut. However, I don't prefer to go
+[746.96] below the 4hour time frame as it just
+[748.96] becomes a bit more difficult. If I'm
+[751.04] going to be trading these reversals or
+[752.96] these candle twos, you can check out my
+[755.20] previous video on trading candle 2. then
+[757.52] I'm going to generally focus on trading
+[759.20] a reversal candle on the daily or 4hour
+[761.76] time frame. Once you get a bit lower
+[763.60] than the 4hour time frame, it just gets
+[765.52] a bit messy and more difficult. Let's do
+[768.32] one final example here and we will show
+[770.32] the fractal nature as we are going to do
+[772.32] this on the 4hour time frame. And then
+[774.64] with the 4hour, what do we pair it with?
+[776.88] The 15-minut time frame. So here you can
+[779.28] see we've had three bearish candles. We
+[781.68] do have a sweep here and then a closure
+[784.24] forming a change in the state of
+[785.52] delivery. Following these two expansion
+[787.44] candles, we have yet to hit this range
+[789.52] low. So, we still have an open target.
+[792.56] Here we have a consolidation. So, if we
+[795.28] want to trade away from a consolidation,
+[797.60] what do we want to see? We want to see
+[799.60] the previous high ran out to then trade
+[801.84] it lower. So, we could anticipate price
+[804.24] to sweep out this high and then trade it
+[806.16] lower. If it has a small wick, then we
+[808.56] can look to trade the reversal candle.
+[810.48] If it has a large wick, then we're not
+[812.40] going to want to trade the reversal
+[813.76] candle. We'll wait for the following
+[815.28] candle. Let's go down to the 15-minute
+[817.28] time frame to check this out. So, here
+[819.52] you can see the consolidation a little
+[821.36] bit better. And how can you see this?
+[823.28] Well, we cannot form a continuation
+[825.68] here. We can't get the closure to form a
+[827.84] protected swing. So, then we make a new
+[830.00] high. And here you can see we also can't
+[832.64] go form a new continuation. So, this is
+[835.36] just continuing consolidation. So, I
+[837.44] want to see another high ran out. So
+[839.92] putting on the indicator, let's see what
+[841.44] happens.
+[843.20] So here you can see we run into this
+[845.20] high. Now am I going to trust this yet?
+[847.92] No, I need to wait for a closure through
+[850.32] or a change in the state of delivery,
+[852.32] which then confirms that this wick has
+[854.32] been created.
+[856.72] And you can see we struggle to close,
+[858.32] but then right away we close after. So,
+[860.88] if I'm going to be trading a reversal,
+[863.04] then I could look to trade this position
+[865.12] here. Put my stop on this high and then
+[867.60] look for that range low that we were
+[869.12] talking about. Let's see how this works
+[871.12] out. And there you can see this does
+[873.76] work out as we have a nice reversal off
+[876.40] the previous candle's high paired with a
+[878.48] change in the state of delivery and SMT.
+[881.28] If I'm going to be trading a candle too,
+[883.04] I do prefer to have SMT paired with it.
+[886.00] Now, let's talk about one more thing
+[887.20] here. If we are looking for a
+[889.12] continuation lower here, what do we want
+[891.12] to see? We want to see price open, trade
+[893.84] higher first, and then into this low. If
+[896.72] we are going to form a reversal off of
+[898.48] this previous 4hour low, how is that
+[900.48] going to work out? Well, we're going to
+[902.00] open, trade lower first into this low,
+[904.48] and then we'll form a change in the
+[905.84] state of delivery, and continue back
+[907.68] into the range. So, let's see what
+[909.28] happens here.
+[913.04] So, you can see we are getting a
+[914.48] continuation, and this has a large wick.
+[917.20] So, this is not a candle that I would be
+[919.28] interested in trading back into the
+[920.72] range because if it was going to form a
+[923.04] reversal, I would rather trade the
+[925.04] following candle. So, here we are in our
+[927.36] last example and let's take a look at
+[929.20] our previous day. So, we're on the
+[931.12] hourly chart. This is the daily chart.
+[933.36] You can see in the previous day, we have
+[935.36] wretch up into our previous day's high.
+[937.92] We have a nice V-shaped reversal with a
+[940.08] change in the state of delivery
+[941.60] alongside an SMT. And then we displace
+[944.40] lower throughout the day with a nice
+[946.48] bearish closure. So with a bearish
+[948.64] candle 2 closure, we'd be looking for a
+[950.96] continuation in candle 3 out of where a
+[954.00] T-spot or the EQ. I want to see price
+[956.96] open, trade higher first to then trade
+[959.68] lower. Now, if I'm looking for a point
+[961.68] of interest in this T-spot, what am I
+[963.84] looking for? A fair value gap or a high
+[967.04] to be taken out. Here we have a fair
+[969.20] value gap. So let's see. Do we get a
+[971.76] reaction out of this area?
+[974.64] Nope. We kind of consolidate, but we do
+[976.72] take out this high here and then we have
+[979.12] a change in the state of delivery. Now,
+[981.52] since this is during Asia session or
+[984.08] early onto the day, this is when I
+[985.84] prefer not to go down to the lower time
+[987.60] frames and I like to execute on the
+[989.28] higher time frames. So, here's where I
+[991.20] could take an entry short and I could
+[993.04] put my stop at the high here and then
+[995.60] look for 2 R or in this case it's 1.83.
+[998.40] If I want to adjust it to 2 R, could use
+[1000.56] the body there as I don't want to see it
+[1002.24] traded back up into that. And let's see
+[1004.16] what happens. And there you can see we
+[1006.08] hit our 2R. So this is just a good
+[1008.72] example of when seeking a continuation.
+[1011.20] I want to see price open, reach into a
+[1013.44] point of interest, have a formation that
+[1015.44] confirms the wick of this higher time
+[1016.96] frame candle, and I can look to trade
+[1018.72] that continuation. In a reversal, I want
+[1021.12] to see price open, trade higher into
+[1023.12] that previous day's high or that
+[1024.80] previous candle's high, have a change in
+[1026.88] the state of delivery, which confirms
+[1028.40] that wick high, and I can look to trade
+[1030.24] the reversal if it has a small enough
+[1032.40] wick. Now, I hope you enjoyed this
+[1034.24] video. If you have any questions, leave
+[1036.16] them in the comment section below. And
+[1037.92] with that, I hope you have a great rest
+[1039.20] of your day and I'll see you guys next
+[1040.56] time.

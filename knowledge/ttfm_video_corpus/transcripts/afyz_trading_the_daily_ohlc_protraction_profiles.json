@@ -1,0 +1,1732 @@
+[
+  {
+    "text": "[Music]",
+    "start": 5.49,
+    "duration": 6.95
+  },
+  {
+    "text": "how's it going everyone today we are",
+    "start": 10.88,
+    "duration": 4.4
+  },
+  {
+    "text": "joined by ayz who is going to talk about",
+    "start": 12.44,
+    "duration": 5.839
+  },
+  {
+    "text": "daily protraction profiles so let's get",
+    "start": 15.28,
+    "duration": 4.96
+  },
+  {
+    "text": "started with the video thanks again and",
+    "start": 18.279,
+    "duration": 3.601
+  },
+  {
+    "text": "T Trad for having me on the channel so",
+    "start": 20.24,
+    "duration": 3.52
+  },
+  {
+    "text": "I'll start with a bit about myself I'm",
+    "start": 21.88,
+    "duration": 4.239
+  },
+  {
+    "text": "an ICT index Futures Trader who's been",
+    "start": 23.76,
+    "duration": 5.08
+  },
+  {
+    "text": "trading for around 3 years I discovered",
+    "start": 26.119,
+    "duration": 5.841
+  },
+  {
+    "text": "ICT during that 2022 YouTube mentorship",
+    "start": 28.84,
+    "duration": 5.039
+  },
+  {
+    "text": "and before then I was actually in school",
+    "start": 31.96,
+    "duration": 4.04
+  },
+  {
+    "text": "for a lot of years like seven studying",
+    "start": 33.879,
+    "duration": 3.801
+  },
+  {
+    "text": "Engineering in business and I actually",
+    "start": 36.0,
+    "duration": 3.96
+  },
+  {
+    "text": "had a job and strategy Consulting it was",
+    "start": 37.68,
+    "duration": 3.719
+  },
+  {
+    "text": "through that YouTube mentorship that I",
+    "start": 39.96,
+    "duration": 3.32
+  },
+  {
+    "text": "actually got to discover other guys like",
+    "start": 41.399,
+    "duration": 4.84
+  },
+  {
+    "text": "TR trades am trades and the mxm trader",
+    "start": 43.28,
+    "duration": 5.48
+  },
+  {
+    "text": "all of which who I uh heavily studied",
+    "start": 46.239,
+    "duration": 3.84
+  },
+  {
+    "text": "who gave me a lot of understanding of",
+    "start": 48.76,
+    "duration": 3.04
+  },
+  {
+    "text": "some of these Concepts so it's kind of",
+    "start": 50.079,
+    "duration": 3.28
+  },
+  {
+    "text": "awesome to come full circle and be able",
+    "start": 51.8,
+    "duration": 3.32
+  },
+  {
+    "text": "to be on this channel with te trades so",
+    "start": 53.359,
+    "duration": 3.68
+  },
+  {
+    "text": "thank you again so what I'm going to do",
+    "start": 55.12,
+    "duration": 3.8
+  },
+  {
+    "text": "today is teach you a little bit about",
+    "start": 57.039,
+    "duration": 4.601
+  },
+  {
+    "text": "how I utilize Market maker models in",
+    "start": 58.92,
+    "duration": 5.279
+  },
+  {
+    "text": "context of daily profiles that's kind of",
+    "start": 61.64,
+    "duration": 4.44
+  },
+  {
+    "text": "my bread and butter strategy for trading",
+    "start": 64.199,
+    "duration": 4.041
+  },
+  {
+    "text": "the index Futures and I specifically",
+    "start": 66.08,
+    "duration": 4.679
+  },
+  {
+    "text": "focus on trading NASDAQ and yes during",
+    "start": 68.24,
+    "duration": 5.04
+  },
+  {
+    "text": "the New York session often times I'll",
+    "start": 70.759,
+    "duration": 5.321
+  },
+  {
+    "text": "favor trading NASDAQ over the yes simply",
+    "start": 73.28,
+    "duration": 4.96
+  },
+  {
+    "text": "because it's more volatile and I believe",
+    "start": 76.08,
+    "duration": 4.88
+  },
+  {
+    "text": "it offers more large range expansions",
+    "start": 78.24,
+    "duration": 5.64
+  },
+  {
+    "text": "due to that volatility so let's touch on",
+    "start": 80.96,
+    "duration": 4.96
+  },
+  {
+    "text": "the topic of today which is going to be",
+    "start": 83.88,
+    "duration": 4.64
+  },
+  {
+    "text": "daily protraction profiles or",
+    "start": 85.92,
+    "duration": 4.6
+  },
+  {
+    "text": "manipulation templates",
+    "start": 88.52,
+    "duration": 3.919
+  },
+  {
+    "text": "our aim when studying these daily",
+    "start": 90.52,
+    "duration": 4.48
+  },
+  {
+    "text": "protraction profiles is to understand",
+    "start": 92.439,
+    "duration": 6.0
+  },
+  {
+    "text": "the session dynamics of Asia London and",
+    "start": 95.0,
+    "duration": 6.2
+  },
+  {
+    "text": "New York to ultimately determine where",
+    "start": 98.439,
+    "duration": 5.801
+  },
+  {
+    "text": "and when the high or the low of the day",
+    "start": 101.2,
+    "duration": 6.12
+  },
+  {
+    "text": "is made for every bullish candle we can",
+    "start": 104.24,
+    "duration": 7.159
+  },
+  {
+    "text": "say that there is an open low high and a",
+    "start": 107.32,
+    "duration": 6.839
+  },
+  {
+    "text": "close and if we can position ourselves",
+    "start": 111.399,
+    "duration": 5.32
+  },
+  {
+    "text": "within the wick of the low or we",
+    "start": 114.159,
+    "duration": 4.401
+  },
+  {
+    "text": "understand where that low is made we",
+    "start": 116.719,
+    "duration": 4.08
+  },
+  {
+    "text": "have a high probability chance to align",
+    "start": 118.56,
+    "duration": 4.36
+  },
+  {
+    "text": "ourselves with the expansion of the",
+    "start": 120.799,
+    "duration": 5.28
+  },
+  {
+    "text": "daily candle so to make it simple",
+    "start": 122.92,
+    "duration": 5.36
+  },
+  {
+    "text": "protraction is studying the manipulation",
+    "start": 126.079,
+    "duration": 5.16
+  },
+  {
+    "text": "of the day in hopes of inferring when",
+    "start": 128.28,
+    "duration": 4.8
+  },
+  {
+    "text": "the expansion can occur and which",
+    "start": 131.239,
+    "duration": 4.681
+  },
+  {
+    "text": "session that expansion can occur in",
+    "start": 133.08,
+    "duration": 4.6
+  },
+  {
+    "text": "there's three topics I want to touch on",
+    "start": 135.92,
+    "duration": 3.64
+  },
+  {
+    "text": "which are going to be these power of",
+    "start": 137.68,
+    "duration": 4.839
+  },
+  {
+    "text": "three templates or po3 profiles The",
+    "start": 139.56,
+    "duration": 5.28
+  },
+  {
+    "text": "Rules of Engagement for our protraction",
+    "start": 142.519,
+    "duration": 4.641
+  },
+  {
+    "text": "profiles and then again bringing it back",
+    "start": 144.84,
+    "duration": 4.72
+  },
+  {
+    "text": "to the market maker model context which",
+    "start": 147.16,
+    "duration": 4.079
+  },
+  {
+    "text": "we will use during the New York session",
+    "start": 149.56,
+    "duration": 4.759
+  },
+  {
+    "text": "to actually take trades so let's talk",
+    "start": 151.239,
+    "duration": 5.201
+  },
+  {
+    "text": "about these three profiles the three",
+    "start": 154.319,
+    "duration": 3.761
+  },
+  {
+    "text": "profiles of Interest are going to be",
+    "start": 156.44,
+    "duration": 5.56
+  },
+  {
+    "text": "first classic protraction second delayed",
+    "start": 158.08,
+    "duration": 6.439
+  },
+  {
+    "text": "protraction and the third which is a",
+    "start": 162.0,
+    "duration": 4.8
+  },
+  {
+    "text": "void profile of manipulation which is",
+    "start": 164.519,
+    "duration": 4.681
+  },
+  {
+    "text": "called a Judas swing a classic",
+    "start": 166.8,
+    "duration": 5.04
+  },
+  {
+    "text": "protraction occurs when London forms the",
+    "start": 169.2,
+    "duration": 5.72
+  },
+  {
+    "text": "low of the day and then expands higher a",
+    "start": 171.84,
+    "duration": 5.56
+  },
+  {
+    "text": "delayed protraction occurs when we get",
+    "start": 174.92,
+    "duration": 4.92
+  },
+  {
+    "text": "the low of the day forming right before",
+    "start": 177.4,
+    "duration": 5.08
+  },
+  {
+    "text": "or the New York session and then a void",
+    "start": 179.84,
+    "duration": 5.2
+  },
+  {
+    "text": "profile or a Judas swing looks like an",
+    "start": 182.48,
+    "duration": 5.36
+  },
+  {
+    "text": "Asian and London accumulation followed",
+    "start": 185.04,
+    "duration": 5.0
+  },
+  {
+    "text": "by a manipulation of the range in New",
+    "start": 187.84,
+    "duration": 4.44
+  },
+  {
+    "text": "York and then an expansion so let's",
+    "start": 190.04,
+    "duration": 4.6
+  },
+  {
+    "text": "touch on all three in a bit more detail",
+    "start": 192.28,
+    "duration": 4.28
+  },
+  {
+    "text": "to better understand how we can actually",
+    "start": 194.64,
+    "duration": 4.72
+  },
+  {
+    "text": "utilize these profiles so what is",
+    "start": 196.56,
+    "duration": 5.52
+  },
+  {
+    "text": "classic protraction classic protraction",
+    "start": 199.36,
+    "duration": 5.799
+  },
+  {
+    "text": "also known as a classic buy or sell day",
+    "start": 202.08,
+    "duration": 6.64
+  },
+  {
+    "text": "is the best I believe form of profile to",
+    "start": 205.159,
+    "duration": 5.761
+  },
+  {
+    "text": "start trading with and the reason why I",
+    "start": 208.72,
+    "duration": 4.32
+  },
+  {
+    "text": "think it is such a great profile to",
+    "start": 210.92,
+    "duration": 4.399
+  },
+  {
+    "text": "understand is that this offers a New",
+    "start": 213.04,
+    "duration": 5.119
+  },
+  {
+    "text": "York continuation profile and in this",
+    "start": 215.319,
+    "duration": 5.321
+  },
+  {
+    "text": "New York continuation what we can see is",
+    "start": 218.159,
+    "duration": 5.64
+  },
+  {
+    "text": "that the low of the day is formed right",
+    "start": 220.64,
+    "duration": 6.599
+  },
+  {
+    "text": "in between the London open and the New",
+    "start": 223.799,
+    "duration": 6.841
+  },
+  {
+    "text": "York open meaning we have the low in a",
+    "start": 227.239,
+    "duration": 6.28
+  },
+  {
+    "text": "key level being formed before an",
+    "start": 230.64,
+    "duration": 5.959
+  },
+  {
+    "text": "expansion in London a retracement in New",
+    "start": 233.519,
+    "duration": 6.041
+  },
+  {
+    "text": "York and then a secondary expansion",
+    "start": 236.599,
+    "duration": 6.0
+  },
+  {
+    "text": "right throughout the session in terms of",
+    "start": 239.56,
+    "duration": 5.56
+  },
+  {
+    "text": "a power of three development that looks",
+    "start": 242.599,
+    "duration": 5.521
+  },
+  {
+    "text": "something like an Asian accumulation a",
+    "start": 245.12,
+    "duration": 5.24
+  },
+  {
+    "text": "manipulation either in the London",
+    "start": 248.12,
+    "duration": 4.08
+  },
+  {
+    "text": "session or right before the London",
+    "start": 250.36,
+    "duration": 5.0
+  },
+  {
+    "text": "session 2 a.m. to 5:00 a.m. and then a",
+    "start": 252.2,
+    "duration": 5.719
+  },
+  {
+    "text": "continuation of that expansion in the",
+    "start": 255.36,
+    "duration": 5.04
+  },
+  {
+    "text": "New York session after that first",
+    "start": 257.919,
+    "duration": 6.081
+  },
+  {
+    "text": "displacement is made in London how we",
+    "start": 260.4,
+    "duration": 6.16
+  },
+  {
+    "text": "can actually structurally frame this is",
+    "start": 264.0,
+    "duration": 5.759
+  },
+  {
+    "text": "that we are looking to see where this",
+    "start": 266.56,
+    "duration": 5.16
+  },
+  {
+    "text": "low of the day might be made and we're",
+    "start": 269.759,
+    "duration": 4.041
+  },
+  {
+    "text": "looking to find arguments that would",
+    "start": 271.72,
+    "duration": 4.84
+  },
+  {
+    "text": "justify that low staying intact we're",
+    "start": 273.8,
+    "duration": 5.679
+  },
+  {
+    "text": "going to use the context of PD arrays",
+    "start": 276.56,
+    "duration": 5.84
+  },
+  {
+    "text": "like swing lows and fair value gaps or",
+    "start": 279.479,
+    "duration": 4.841
+  },
+  {
+    "text": "swing highs and fair value gaps to",
+    "start": 282.4,
+    "duration": 3.92
+  },
+  {
+    "text": "justify that that low of the day has",
+    "start": 284.32,
+    "duration": 4.599
+  },
+  {
+    "text": "been made and then pair that with Market",
+    "start": 286.32,
+    "duration": 5.84
+  },
+  {
+    "text": "structure and delivery states to make a",
+    "start": 288.919,
+    "duration": 5.081
+  },
+  {
+    "text": "claim about which protraction profile",
+    "start": 292.16,
+    "duration": 3.759
+  },
+  {
+    "text": "we're in so here's just a general",
+    "start": 294.0,
+    "duration": 4.88
+  },
+  {
+    "text": "schematic of what that looks like the",
+    "start": 295.919,
+    "duration": 5.081
+  },
+  {
+    "text": "second profile which is going to be a",
+    "start": 298.88,
+    "duration": 4.68
+  },
+  {
+    "text": "delayed protraction is actually a New",
+    "start": 301.0,
+    "duration": 5.36
+  },
+  {
+    "text": "York reversal profile so that power of",
+    "start": 303.56,
+    "duration": 4.44
+  },
+  {
+    "text": "three development looks something like",
+    "start": 306.36,
+    "duration": 4.679
+  },
+  {
+    "text": "an Asian accumulation followed by a",
+    "start": 308.0,
+    "duration": 6.84
+  },
+  {
+    "text": "London manipulation lower or higher",
+    "start": 311.039,
+    "duration": 7.361
+  },
+  {
+    "text": "right into that New York session so what",
+    "start": 314.84,
+    "duration": 6.96
+  },
+  {
+    "text": "we'll often find is that in contrast to",
+    "start": 318.4,
+    "duration": 6.16
+  },
+  {
+    "text": "a classic protraction a delayed",
+    "start": 321.8,
+    "duration": 5.88
+  },
+  {
+    "text": "protraction sees New York reversing the",
+    "start": 324.56,
+    "duration": 6.16
+  },
+  {
+    "text": "direction of that London move towards",
+    "start": 327.68,
+    "duration": 5.56
+  },
+  {
+    "text": "the higher time frame draw on liquidity",
+    "start": 330.72,
+    "duration": 4.72
+  },
+  {
+    "text": "so that's where our manipulation occurs",
+    "start": 333.24,
+    "duration": 5.12
+  },
+  {
+    "text": "right before the New York open often",
+    "start": 335.44,
+    "duration": 4.759
+  },
+  {
+    "text": "times you'll see this paired with news",
+    "start": 338.36,
+    "duration": 4.0
+  },
+  {
+    "text": "drivers during the New York session such",
+    "start": 340.199,
+    "duration": 4.56
+  },
+  {
+    "text": "as at 8:30 as you can see in this",
+    "start": 342.36,
+    "duration": 4.92
+  },
+  {
+    "text": "schematic where between 3:00 a.m. and",
+    "start": 344.759,
+    "duration": 6.321
+  },
+  {
+    "text": "8:30 a.m. we descend or chop lower or",
+    "start": 347.28,
+    "duration": 6.8
+  },
+  {
+    "text": "higher into our higher time frame key",
+    "start": 351.08,
+    "duration": 6.36
+  },
+  {
+    "text": "level our area of reversal before then",
+    "start": 354.08,
+    "duration": 6.119
+  },
+  {
+    "text": "reversing and expanding against",
+    "start": 357.44,
+    "duration": 5.16
+  },
+  {
+    "text": "that London move towards that higher",
+    "start": 360.199,
+    "duration": 4.601
+  },
+  {
+    "text": "time frame draw on liquidity and those",
+    "start": 362.6,
+    "duration": 5.28
+  },
+  {
+    "text": "London highs the final profile of",
+    "start": 364.8,
+    "duration": 5.92
+  },
+  {
+    "text": "interest is going to be our Judas swing",
+    "start": 367.88,
+    "duration": 5.719
+  },
+  {
+    "text": "our Judas swing is when we see an Asian",
+    "start": 370.72,
+    "duration": 5.919
+  },
+  {
+    "text": "and London accumulation meaning we fail",
+    "start": 373.599,
+    "duration": 6.281
+  },
+  {
+    "text": "to manipulate that daily range in two",
+    "start": 376.639,
+    "duration": 6.84
+  },
+  {
+    "text": "sessions thus not forming that low of",
+    "start": 379.88,
+    "duration": 6.4
+  },
+  {
+    "text": "the day yet when we see this type of",
+    "start": 383.479,
+    "duration": 5.641
+  },
+  {
+    "text": "profile what we can anticipate is for",
+    "start": 386.28,
+    "duration": 5.919
+  },
+  {
+    "text": "New York York to run out the lows of",
+    "start": 389.12,
+    "duration": 6.519
+  },
+  {
+    "text": "Asia Andor London before eventually",
+    "start": 392.199,
+    "duration": 5.961
+  },
+  {
+    "text": "reversing to the higher time frame draw",
+    "start": 395.639,
+    "duration": 5.321
+  },
+  {
+    "text": "liquidity in this Judith swing setup",
+    "start": 398.16,
+    "duration": 4.4
+  },
+  {
+    "text": "that's where we get used to seeing those",
+    "start": 400.96,
+    "duration": 3.959
+  },
+  {
+    "text": "v-shaped recoveries in the market which",
+    "start": 402.56,
+    "duration": 4.079
+  },
+  {
+    "text": "I'll point out kind of when we get into",
+    "start": 404.919,
+    "duration": 4.361
+  },
+  {
+    "text": "the charts with some examples so let's",
+    "start": 406.639,
+    "duration": 4.041
+  },
+  {
+    "text": "actually hop onto the charts for a",
+    "start": 409.28,
+    "duration": 4.08
+  },
+  {
+    "text": "second and take a look at all three of",
+    "start": 410.68,
+    "duration": 4.959
+  },
+  {
+    "text": "our protraction profiles to see if we",
+    "start": 413.36,
+    "duration": 5.08
+  },
+  {
+    "text": "can put some chart evidence Behind These",
+    "start": 415.639,
+    "duration": 4.441
+  },
+  {
+    "text": "schematics",
+    "start": 418.44,
+    "duration": 3.68
+  },
+  {
+    "text": "so let's start off with a classic",
+    "start": 420.08,
+    "duration": 3.799
+  },
+  {
+    "text": "protraction which is a New York",
+    "start": 422.12,
+    "duration": 4.24
+  },
+  {
+    "text": "continuation profile as you can see I've",
+    "start": 423.879,
+    "duration": 4.16
+  },
+  {
+    "text": "done I've made the liberty of annotating",
+    "start": 426.36,
+    "duration": 4.48
+  },
+  {
+    "text": "this chart already but we can see here",
+    "start": 428.039,
+    "duration": 5.361
+  },
+  {
+    "text": "that the higher time frame order flow",
+    "start": 430.84,
+    "duration": 5.88
+  },
+  {
+    "text": "upon reaching this key level is bullish",
+    "start": 433.4,
+    "duration": 5.44
+  },
+  {
+    "text": "on the higher time frame okay we've",
+    "start": 436.72,
+    "duration": 5.36
+  },
+  {
+    "text": "tagged a daily imbalance in here and in",
+    "start": 438.84,
+    "duration": 5.72
+  },
+  {
+    "text": "the session we have come in and we've",
+    "start": 442.08,
+    "duration": 6.799
+  },
+  {
+    "text": "swept out these Tokyo lows most",
+    "start": 444.56,
+    "duration": 7.24
+  },
+  {
+    "text": "importantly you can see that Tokyo",
+    "start": 448.879,
+    "duration": 6.361
+  },
+  {
+    "text": "accumulated London manipulated into this",
+    "start": 451.8,
+    "duration": 7.239
+  },
+  {
+    "text": "4our swing low inside of this higher",
+    "start": 455.24,
+    "duration": 7.959
+  },
+  {
+    "text": "time frame daily fair value Gap right",
+    "start": 459.039,
+    "duration": 7.401
+  },
+  {
+    "text": "before expanding higher we can also see",
+    "start": 463.199,
+    "duration": 5.56
+  },
+  {
+    "text": "that we had an smt Divergence with our",
+    "start": 466.44,
+    "duration": 6.0
+  },
+  {
+    "text": "Es at these London lows followed by a",
+    "start": 468.759,
+    "duration": 6.481
+  },
+  {
+    "text": "change in the state of delivery which is",
+    "start": 472.44,
+    "duration": 4.96
+  },
+  {
+    "text": "a closure through the consecutive series",
+    "start": 475.24,
+    "duration": 5.32
+  },
+  {
+    "text": "of down closed candles in into our key",
+    "start": 477.4,
+    "duration": 4.759
+  },
+  {
+    "text": "level with",
+    "start": 480.56,
+    "duration": 3.96
+  },
+  {
+    "text": "smt so when we think of that power of",
+    "start": 482.159,
+    "duration": 5.48
+  },
+  {
+    "text": "three profile we can say that Asia",
+    "start": 484.52,
+    "duration": 6.639
+  },
+  {
+    "text": "accumulated London manipulated and then",
+    "start": 487.639,
+    "duration": 6.801
+  },
+  {
+    "text": "expanded so New York does not have to",
+    "start": 491.159,
+    "duration": 6.72
+  },
+  {
+    "text": "come back into this low this is the low",
+    "start": 494.44,
+    "duration": 6.759
+  },
+  {
+    "text": "of the day so what we are anticipating",
+    "start": 497.879,
+    "duration": 5.32
+  },
+  {
+    "text": "is if we had a daily candle that looked",
+    "start": 501.199,
+    "duration": 4.921
+  },
+  {
+    "text": "something like this for the wick that is",
+    "start": 503.199,
+    "duration": 5.68
+  },
+  {
+    "text": "formed in London to act as our low of",
+    "start": 506.12,
+    "duration": 5.6
+  },
+  {
+    "text": "the day and the internal dynamics of",
+    "start": 508.879,
+    "duration": 6.08
+  },
+  {
+    "text": "price to do something like this right we",
+    "start": 511.72,
+    "duration": 5.36
+  },
+  {
+    "text": "want to see New York retrace and then",
+    "start": 514.959,
+    "duration": 6.481
+  },
+  {
+    "text": "continue to expand forming the high and",
+    "start": 517.08,
+    "duration": 8.52
+  },
+  {
+    "text": "the close of the daily candle so when we",
+    "start": 521.44,
+    "duration": 6.16
+  },
+  {
+    "text": "look at that and we pair that together",
+    "start": 525.6,
+    "duration": 4.239
+  },
+  {
+    "text": "all we have to do now is involve",
+    "start": 527.6,
+    "duration": 5.04
+  },
+  {
+    "text": "ourselves in a retracement of order flow",
+    "start": 529.839,
+    "duration": 5.721
+  },
+  {
+    "text": "in the New York session as you can see",
+    "start": 532.64,
+    "duration": 6.28
+  },
+  {
+    "text": "in here we have a 30 minute and we have",
+    "start": 535.56,
+    "duration": 7.44
+  },
+  {
+    "text": "a 1 hour fair value Gap internal range",
+    "start": 538.92,
+    "duration": 6.44
+  },
+  {
+    "text": "of liquidity and from that internal",
+    "start": 543.0,
+    "duration": 4.2
+  },
+  {
+    "text": "range of liquidity we can position",
+    "start": 545.36,
+    "duration": 4.159
+  },
+  {
+    "text": "ourselves to trade the next expansion",
+    "start": 547.2,
+    "duration": 5.48
+  },
+  {
+    "text": "leg higher eventually running out the",
+    "start": 549.519,
+    "duration": 5.601
+  },
+  {
+    "text": "draw on liquidity or the original",
+    "start": 552.68,
+    "duration": 5.24
+  },
+  {
+    "text": "consolidation of this Market maker buy",
+    "start": 555.12,
+    "duration": 5.6
+  },
+  {
+    "text": "model right these buy stops that rest up",
+    "start": 557.92,
+    "duration": 5.479
+  },
+  {
+    "text": "here so this is a good example of a",
+    "start": 560.72,
+    "duration": 5.0
+  },
+  {
+    "text": "classic protraction where London forms a",
+    "start": 563.399,
+    "duration": 4.241
+  },
+  {
+    "text": "low of the day and then we get a",
+    "start": 565.72,
+    "duration": 4.239
+  },
+  {
+    "text": "two-phase expansion eventually",
+    "start": 567.64,
+    "duration": 5.08
+  },
+  {
+    "text": "culminating right with the buy stops",
+    "start": 569.959,
+    "duration": 5.081
+  },
+  {
+    "text": "being taken the next day I believe let's",
+    "start": 572.72,
+    "duration": 3.96
+  },
+  {
+    "text": "play that out and see when that happens",
+    "start": 575.04,
+    "duration": 4.039
+  },
+  {
+    "text": "there we go right and we have to trade",
+    "start": 576.68,
+    "duration": 4.599
+  },
+  {
+    "text": "in the direction of this draw on",
+    "start": 579.079,
+    "duration": 3.961
+  },
+  {
+    "text": "liquidity",
+    "start": 581.279,
+    "duration": 6.12
+  },
+  {
+    "text": "utilizing right a PD array of Interest",
+    "start": 583.04,
+    "duration": 5.96
+  },
+  {
+    "text": "understanding that this low of the day",
+    "start": 587.399,
+    "duration": 4.281
+  },
+  {
+    "text": "is going to be a protected area of price",
+    "start": 589.0,
+    "duration": 5.8
+  },
+  {
+    "text": "given that open low high close Dynamic",
+    "start": 591.68,
+    "duration": 5.44
+  },
+  {
+    "text": "so now let's jump into a second example",
+    "start": 594.8,
+    "duration": 4.64
+  },
+  {
+    "text": "which is going to be a delayed Pro",
+    "start": 597.12,
+    "duration": 5.64
+  },
+  {
+    "text": "raction or a delayed manipulation of",
+    "start": 599.44,
+    "duration": 6.399
+  },
+  {
+    "text": "this daily candle wick so as you can see",
+    "start": 602.76,
+    "duration": 6.0
+  },
+  {
+    "text": "in this case we have the Asian",
+    "start": 605.839,
+    "duration": 6.321
+  },
+  {
+    "text": "accumulation followed by London moving",
+    "start": 608.76,
+    "duration": 5.48
+  },
+  {
+    "text": "slightly higher and then continuing to",
+    "start": 612.16,
+    "duration": 5.16
+  },
+  {
+    "text": "accumulate before descending between",
+    "start": 614.24,
+    "duration": 6.64
+  },
+  {
+    "text": "late London and the New York open into",
+    "start": 617.32,
+    "duration": 7.12
+  },
+  {
+    "text": "our key level so our key level again is",
+    "start": 620.88,
+    "duration": 7.68
+  },
+  {
+    "text": "a daily fair value Gap with an smt with",
+    "start": 624.44,
+    "duration": 6.88
+  },
+  {
+    "text": "the S SMP so as you can see as price",
+    "start": 628.56,
+    "duration": 5.76
+  },
+  {
+    "text": "delays its manipulation into this key",
+    "start": 631.32,
+    "duration": 5.6
+  },
+  {
+    "text": "level we have a smart money reversal",
+    "start": 634.32,
+    "duration": 4.12
+  },
+  {
+    "text": "followed by a change in state of",
+    "start": 636.92,
+    "duration": 5.24
+  },
+  {
+    "text": "delivery ultimately targeting once again",
+    "start": 638.44,
+    "duration": 6.399
+  },
+  {
+    "text": "the buy stops that rest at the London",
+    "start": 642.16,
+    "duration": 5.679
+  },
+  {
+    "text": "highs and of course any higher time",
+    "start": 644.839,
+    "duration": 5.721
+  },
+  {
+    "text": "frame draw in liquidity above market",
+    "start": 647.839,
+    "duration": 5.44
+  },
+  {
+    "text": "price in this example you can see the",
+    "start": 650.56,
+    "duration": 5.76
+  },
+  {
+    "text": "clear distinction between a classic",
+    "start": 653.279,
+    "duration": 6.201
+  },
+  {
+    "text": "protraction and a delayed protraction is",
+    "start": 656.32,
+    "duration": 6.759
+  },
+  {
+    "text": "that this Wick is formed into the New",
+    "start": 659.48,
+    "duration": 7.72
+  },
+  {
+    "text": "York session followed by a reversal of",
+    "start": 663.079,
+    "duration": 7.481
+  },
+  {
+    "text": "orderflow from that low as the low was",
+    "start": 667.2,
+    "duration": 6.439
+  },
+  {
+    "text": "made we then reverse against the price",
+    "start": 670.56,
+    "duration": 5.88
+  },
+  {
+    "text": "action of London to eventually Target",
+    "start": 673.639,
+    "duration": 5.64
+  },
+  {
+    "text": "those highs and the higher time frame",
+    "start": 676.44,
+    "duration": 4.76
+  },
+  {
+    "text": "draw on",
+    "start": 679.279,
+    "duration": 4.601
+  },
+  {
+    "text": "liquidity in comparison to our classic",
+    "start": 681.2,
+    "duration": 4.72
+  },
+  {
+    "text": "protraction where we can see that the",
+    "start": 683.88,
+    "duration": 4.32
+  },
+  {
+    "text": "daily candle low had already been made",
+    "start": 685.92,
+    "duration": 4.12
+  },
+  {
+    "text": "in the London session through a",
+    "start": 688.2,
+    "duration": 5.24
+  },
+  {
+    "text": "manipulation into our key level and all",
+    "start": 690.04,
+    "duration": 6.919
+  },
+  {
+    "text": "New York did was retrace into an area of",
+    "start": 693.44,
+    "duration": 5.72
+  },
+  {
+    "text": "fair value before making another",
+    "start": 696.959,
+    "duration": 5.041
+  },
+  {
+    "text": "expansion leg higher right just the",
+    "start": 699.16,
+    "duration": 4.4
+  },
+  {
+    "text": "clear distinction we have between those",
+    "start": 702.0,
+    "duration": 4.24
+  },
+  {
+    "text": "two protraction profiles the final",
+    "start": 703.56,
+    "duration": 5.6
+  },
+  {
+    "text": "profile of interest is going to be our",
+    "start": 706.24,
+    "duration": 5.599
+  },
+  {
+    "text": "Judas swing so a Judith swing is",
+    "start": 709.16,
+    "duration": 6.359
+  },
+  {
+    "text": "characterized by two sessions of clear",
+    "start": 711.839,
+    "duration": 6.721
+  },
+  {
+    "text": "accumulation that fail to manipulate the",
+    "start": 715.519,
+    "duration": 4.361
+  },
+  {
+    "text": "daily range",
+    "start": 718.56,
+    "duration": 4.279
+  },
+  {
+    "text": "when we are considering the opening low",
+    "start": 719.88,
+    "duration": 5.8
+  },
+  {
+    "text": "high close or opening high low close",
+    "start": 722.839,
+    "duration": 5.721
+  },
+  {
+    "text": "dynamics of a candle what we have to",
+    "start": 725.68,
+    "duration": 5.839
+  },
+  {
+    "text": "remember is that when we are forming",
+    "start": 728.56,
+    "duration": 7.04
+  },
+  {
+    "text": "this manipulation Wick there needs to be",
+    "start": 731.519,
+    "duration": 7.521
+  },
+  {
+    "text": "a key level that is engaged that can",
+    "start": 735.6,
+    "duration": 6.919
+  },
+  {
+    "text": "qualify this as the high or the low of",
+    "start": 739.04,
+    "duration": 6.039
+  },
+  {
+    "text": "the day so in the case of bearish",
+    "start": 742.519,
+    "duration": 5.12
+  },
+  {
+    "text": "distribution lower on this day what we",
+    "start": 745.079,
+    "duration": 5.241
+  },
+  {
+    "text": "can notice is that there actually was no",
+    "start": 747.639,
+    "duration": 5.361
+  },
+  {
+    "text": "meaningful manipulation of a higher time",
+    "start": 750.32,
+    "duration": 5.68
+  },
+  {
+    "text": "frame key level to form the high of the",
+    "start": 753.0,
+    "duration": 6.32
+  },
+  {
+    "text": "day and so what we see on the open is",
+    "start": 756.0,
+    "duration": 6.68
+  },
+  {
+    "text": "that New York runs out these London and",
+    "start": 759.32,
+    "duration": 6.48
+  },
+  {
+    "text": "Asian highs in the form of an smt with",
+    "start": 762.68,
+    "duration": 6.76
+  },
+  {
+    "text": "the es before eventually Distributing",
+    "start": 765.8,
+    "duration": 6.56
+  },
+  {
+    "text": "lower so that is when we have a power of",
+    "start": 769.44,
+    "duration": 5.199
+  },
+  {
+    "text": "three or manipulation profile that looks",
+    "start": 772.36,
+    "duration": 5.52
+  },
+  {
+    "text": "like an open followed by an accumulation",
+    "start": 774.639,
+    "duration": 6.121
+  },
+  {
+    "text": "a Judith swing which is running the",
+    "start": 777.88,
+    "duration": 4.92
+  },
+  {
+    "text": "highs of the New York or of the London",
+    "start": 780.76,
+    "duration": 4.48
+  },
+  {
+    "text": "and Asian session followed by a",
+    "start": 782.8,
+    "duration": 4.279
+  },
+  {
+    "text": "distribution of price",
+    "start": 785.24,
+    "duration": 4.48
+  },
+  {
+    "text": "lower what's important to recognize is",
+    "start": 787.079,
+    "duration": 5.281
+  },
+  {
+    "text": "that when we have a Judas swing we",
+    "start": 789.72,
+    "duration": 5.919
+  },
+  {
+    "text": "expect New York to engage these stop",
+    "start": 792.36,
+    "duration": 5.599
+  },
+  {
+    "text": "losses and then reverse against order",
+    "start": 795.639,
+    "duration": 4.961
+  },
+  {
+    "text": "flow meaning that a fair value Gap or an",
+    "start": 797.959,
+    "duration": 5.041
+  },
+  {
+    "text": "inefficiency in market price like this",
+    "start": 800.6,
+    "duration": 6.039
+  },
+  {
+    "text": "is not anticipated to support price",
+    "start": 803.0,
+    "duration": 6.519
+  },
+  {
+    "text": "higher we would not expect to see price",
+    "start": 806.639,
+    "duration": 5.961
+  },
+  {
+    "text": "trade into this range and then expand",
+    "start": 809.519,
+    "duration": 5.76
+  },
+  {
+    "text": "higher we're in fact fading this initial",
+    "start": 812.6,
+    "duration": 5.919
+  },
+  {
+    "text": "move higher as the form of a Judas swing",
+    "start": 815.279,
+    "duration": 6.521
+  },
+  {
+    "text": "and a v-shape recovery as you notice so",
+    "start": 818.519,
+    "duration": 5.161
+  },
+  {
+    "text": "that's a very important distinction with",
+    "start": 821.8,
+    "duration": 4.96
+  },
+  {
+    "text": "our third protraction profile so those",
+    "start": 823.68,
+    "duration": 5.48
+  },
+  {
+    "text": "are the three daily templates I tend to",
+    "start": 826.76,
+    "duration": 4.4
+  },
+  {
+    "text": "use and as you can see when we pair them",
+    "start": 829.16,
+    "duration": 4.72
+  },
+  {
+    "text": "with Concepts like Market maker models",
+    "start": 831.16,
+    "duration": 5.599
+  },
+  {
+    "text": "and also weekly profiles as am trades",
+    "start": 833.88,
+    "duration": 4.16
+  },
+  {
+    "text": "has come on the channel and talk about",
+    "start": 836.759,
+    "duration": 4.2
+  },
+  {
+    "text": "multiple times we get a really strong",
+    "start": 838.04,
+    "duration": 4.76
+  },
+  {
+    "text": "understanding and Powerful understanding",
+    "start": 840.959,
+    "duration": 4.361
+  },
+  {
+    "text": "of how these daily candles are forming",
+    "start": 842.8,
+    "duration": 5.52
+  },
+  {
+    "text": "their lows and highs once we can combine",
+    "start": 845.32,
+    "duration": 4.879
+  },
+  {
+    "text": "that with the appropriate structure and",
+    "start": 848.32,
+    "duration": 4.24
+  },
+  {
+    "text": "state of delivery we have a good",
+    "start": 850.199,
+    "duration": 5.0
+  },
+  {
+    "text": "understanding of what New York may do",
+    "start": 852.56,
+    "duration": 4.76
+  },
+  {
+    "text": "based on the information offered in the",
+    "start": 855.199,
+    "duration": 4.76
+  },
+  {
+    "text": "previous two sessions so each morning",
+    "start": 857.32,
+    "duration": 4.6
+  },
+  {
+    "text": "when I come to the charts what I will",
+    "start": 859.959,
+    "duration": 4.761
+  },
+  {
+    "text": "first do is I will look back and study",
+    "start": 861.92,
+    "duration": 5.76
+  },
+  {
+    "text": "the prior two sessions to understand",
+    "start": 864.72,
+    "duration": 4.919
+  },
+  {
+    "text": "which of the daily templates",
+    "start": 867.68,
+    "duration": 4.399
+  },
+  {
+    "text": "I believe we are likely to be in a",
+    "start": 869.639,
+    "duration": 6.2
+  },
+  {
+    "text": "classic delayed or potential Judas swing",
+    "start": 872.079,
+    "duration": 6.12
+  },
+  {
+    "text": "protraction profile once I have that",
+    "start": 875.839,
+    "duration": 4.8
+  },
+  {
+    "text": "information and I understand my clear",
+    "start": 878.199,
+    "duration": 5.161
+  },
+  {
+    "text": "draw on liquidity I.E my higher time",
+    "start": 880.639,
+    "duration": 5.12
+  },
+  {
+    "text": "frame bias I have a really good chance",
+    "start": 883.36,
+    "duration": 4.719
+  },
+  {
+    "text": "of being on side and aligned with the",
+    "start": 885.759,
+    "duration": 5.281
+  },
+  {
+    "text": "distribution of that daily candle okay",
+    "start": 888.079,
+    "duration": 4.641
+  },
+  {
+    "text": "so that's all for me today thank you",
+    "start": 891.04,
+    "duration": 3.159
+  },
+  {
+    "text": "again very much to teachrad for having",
+    "start": 892.72,
+    "duration": 3.16
+  },
+  {
+    "text": "me on the channel it's been an absolute",
+    "start": 894.199,
+    "duration": 3.401
+  },
+  {
+    "text": "pleasure and uh let me know if you have",
+    "start": 895.88,
+    "duration": 3.44
+  },
+  {
+    "text": "any questions in the comments thanks",
+    "start": 897.6,
+    "duration": 3.44
+  },
+  {
+    "text": "yeah thank you for joining us I hope",
+    "start": 899.32,
+    "duration": 3.639
+  },
+  {
+    "text": "everyone found that helpful if you do",
+    "start": 901.04,
+    "duration": 4.4
+  },
+  {
+    "text": "want to learn more from afy Z I will",
+    "start": 902.959,
+    "duration": 4.521
+  },
+  {
+    "text": "have his Social Links in the description",
+    "start": 905.44,
+    "duration": 4.319
+  },
+  {
+    "text": "below and if you have any questions feel",
+    "start": 907.48,
+    "duration": 3.799
+  },
+  {
+    "text": "free to leave them in the comment",
+    "start": 909.759,
+    "duration": 3.281
+  },
+  {
+    "text": "section below I hope you have a great",
+    "start": 911.279,
+    "duration": 3.201
+  },
+  {
+    "text": "rest of your day and see you guys next",
+    "start": 913.04,
+    "duration": 4.44
+  },
+  {
+    "text": "time",
+    "start": 914.48,
+    "duration": 3.0
+  }
+]

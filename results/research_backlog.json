@@ -1,0 +1,1236 @@
+{
+  "article_sources_missing_text_artifacts": [
+    {
+      "slug": "how_to_trade_candle_2_ttrades_fractal_model",
+      "title": "How to Trade Candle 2 \u2013 TTrades Fractal Model",
+      "canonical_url": "https://ttrades.com/how-to-trade-candle-2-ttrades-fractal-model/",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "how_to_trade_candle_3_in_the_fractal_model",
+      "title": "How to Trade Candle 3 in the Fractal Model",
+      "canonical_url": "https://ttrades.com/how-to-trade-candle-3-in-the-fractal-model/",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "ttrades_fractal_model_candle_4",
+      "title": "TTrades Fractal Model \u2013 Candle 4",
+      "canonical_url": "https://ttrades.com/ttrades-fractal-model-candle-4/",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "understanding_candle_2_closures_within_the_fractal_model",
+      "title": "Understanding Candle 2 Closures Within the Fractal Model",
+      "canonical_url": "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "understanding_candles_open_high_low_close",
+      "title": "Understanding Candles: Open, High, Low, Close",
+      "canonical_url": "https://ttrades.com/understanding-candles-open-high-low-close/",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "advanced_market_structure_simplified_from_short_term_to_long_term_trends",
+      "title": "Advanced Market Structure Simplified: From Short-Term to Long-Term Trends",
+      "canonical_url": "https://ttrades.com/advanced-market-structure-simplified-from-short-term-to-long-term-trends/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "breaker_blocks_simplified",
+      "title": "Breaker Blocks Simplified",
+      "canonical_url": "https://ttrades.com/breaker-blocks-simplified/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "broadening_formations_in_trading_a_practical_guide",
+      "title": "Broadening Formations in Trading: A Practical Guide",
+      "canonical_url": "https://ttrades.com/broadening-formations-in-trading-a-practical-guide/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "eurgbp_for_relative_strength_eu_vs_gu",
+      "title": "EURGBP for Relative Strength (EU vs GU)",
+      "canonical_url": "https://ttrades.com/eurgbp-for-relative-strength-eu-vs-gu/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "fractal_model_playbook_aligning_daily_hourly_and_5_minute_charts",
+      "title": "Fractal Model Playbook \u2013 Aligning Daily, Hourly, and 5-Minute Charts",
+      "canonical_url": "https://ttrades.com/fractal-model-playbook-aligning-daily-hourly-and-5-minute-charts/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "high_resistance_vs_low_resistance_liquidity",
+      "title": "High Resistance vs Low Resistance Liquidity",
+      "canonical_url": "https://ttrades.com/high-resistance-vs-low-resistance-liquidity/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "how_change_in_the_state_of_delivery_confirms_swing_points",
+      "title": "How Change in the State of Delivery Confirms Swing Points",
+      "canonical_url": "https://ttrades.com/how-change-in-the-state-of-delivery-confirms-swing-points/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "how_to_backtest_a_clear_step_by_step_approach",
+      "title": "How to Backtest \u2013 A Clear Step-by-Step Approach",
+      "canonical_url": "https://ttrades.com/how-to-backtest-a-clear-step-by-step-approach/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "how_to_identify_important_liquidity_levels",
+      "title": "How to Identify Important Liquidity Levels",
+      "canonical_url": "https://ttrades.com/how-to-identify-important-liquidity-levels/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "how_to_journal_the_market_in_notion_a_complete_guide",
+      "title": "How to Journal the Market in Notion: A Complete Guide",
+      "canonical_url": "https://ttrades.com/how-to-journal-the-market-in-notion-a-complete-guide/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "how_to_trade_inversion_fair_value_gaps",
+      "title": "How to Trade Inversion Fair Value Gaps",
+      "canonical_url": "https://ttrades.com/how-to-trade-inversion-fair-value-gaps/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "ict_power_of_three_amd_accumulation_manipulation_distribution_explained",
+      "title": "ICT Power of Three (AMD): Accumulation, Manipulation, Distribution Explained",
+      "canonical_url": "https://ttrades.com/ict-power-of-three-amd-accumulation-manipulation-distribution-explained/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "ict_son_model_explained_liquidity_stop_raids_and_precision_entries",
+      "title": "ICT Son Model Explained: Liquidity, Stop Raids, and Precision Entries",
+      "canonical_url": "https://ttrades.com/ict-son-model-explained-liquidity-stop-raids-and-precision-entries/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "indicator",
+      "title": "Indicator",
+      "canonical_url": "https://ttrades.com/fractal-model-indicator/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "introduction_to_futures_trading_and_prop_firms",
+      "title": "Introduction to Futures Trading and Prop Firms",
+      "canonical_url": "https://ttrades.com/introduction-to-futures-trading-and-prop-firms/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "inversion_fair_value_gaps_explained_ifvg",
+      "title": "Inversion Fair Value Gaps Explained(IFVG)",
+      "canonical_url": "https://ttrades.com/inversion-fair-value-gaps-explainedifvg/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "kill_zones_explained_best_trading_sessions_for_entries",
+      "title": "Kill Zones Explained: Best Trading Sessions for Entries",
+      "canonical_url": "https://ttrades.com/kill-zones-explained-best-trading-sessions-for-entries/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "market_structure_shifts_vs_change_in_the_state_of_delivery_a_clear_comparison",
+      "title": "Market Structure Shifts vs Change in the State of Delivery: A Clear Comparison",
+      "canonical_url": "https://ttrades.com/market-structure-shifts-vs-change-in-the-state-of-delivery-a-clear-comparison/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "mastering_important_time_levels_in_trading_with_ohlc_and_opposing_swings",
+      "title": "Mastering Important Time Levels in Trading with OHLC and Opposing Swings",
+      "canonical_url": "https://ttrades.com/mastering-important-time-levels-in-trading-with-ohlc-and-opposing-swings/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "mastering_position_sizing_the_key_to_profitable_trading",
+      "title": "Mastering Position Sizing: The Key to Profitable Trading",
+      "canonical_url": "https://ttrades.com/mastering-position-sizing-the-key-to-profitable-trading/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "mastering_smt_spot_divergences_in_trading",
+      "title": "Mastering SMT: Spot Divergences in Trading",
+      "canonical_url": "https://ttrades.com/mastering-smt-spot-divergences-in-trading/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "mitigation_blocks_simplified",
+      "title": "Mitigation Blocks Simplified",
+      "canonical_url": "https://ttrades.com/mitigation-blocks-simplified/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "optimal_trade_entry_explained_how_to_use_ote_like_a_pro",
+      "title": "Optimal Trade Entry Explained: How to Use OTE Like a Pro",
+      "canonical_url": "https://ttrades.com/optimal-trade-entry-explained-how-to-use-ote-like-a-pro/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "order_blocks_simplified",
+      "title": "Order Blocks Simplified",
+      "canonical_url": "https://ttrades.com/order-blocks-simplified/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "prop_firms",
+      "title": "Prop Firms",
+      "canonical_url": "https://ttrades.com/prop-firms/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "refining_entries_with_the_fractal_model_precision_with_1_minute_inversions",
+      "title": "Refining Entries with the Fractal Model: Precision with 1-Minute Inversions",
+      "canonical_url": "https://ttrades.com/refining-entries-with-the-fractal-model-precision-with-1-minute-inversions/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "relative_strength_weakness_smt_divergence_full_guide",
+      "title": "Relative Strength & Weakness + SMT Divergence (Full Guide)",
+      "canonical_url": "https://ttrades.com/relative-strength-weakness-smt-divergence-full-guide/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "standard_deviation_projections",
+      "title": "Standard Deviation Projections",
+      "canonical_url": "https://ttrades.com/standard-deviation-projections/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "standard_deviation_projections_combined_with_amd_accumulation_manipulation_distribution",
+      "title": "Standard Deviation Projections Combined With AMD (Accumulation, Manipulation, Distribution)",
+      "canonical_url": "https://ttrades.com/standard-deviation-projections-combined-with-amd-accumulation-manipulation-distribution/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "ttrades_scalping_model_simple_day_trading_strategy",
+      "title": "TTrades Scalping Model \u2013 Simple Day Trading Strategy",
+      "canonical_url": "https://ttrades.com/ttrades-scalping-model-simple-day-trading-strategy/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "ttrades_swing_trading_model_simple_strategy",
+      "title": "TTrades Swing Trading Model \u2013 Simple Strategy",
+      "canonical_url": "https://ttrades.com/ttrades-swing-trading-model-simple-strategy/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "the_am_silver_bullet_strategy_on_nq",
+      "title": "The AM Silver Bullet Strategy on NQ",
+      "canonical_url": "https://ttrades.com/the-am-silver-bullet-strategy-on-nq/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "the_best_timeframes_for_ttrades_fractal_model_simple",
+      "title": "The Best Timeframes for TTrades Fractal Model (Simple)",
+      "canonical_url": "https://ttrades.com/the-best-timeframes-for-ttrades-fractal-model-simple/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "the_easiest_draw_on_liquidity",
+      "title": "The Easiest Draw on Liquidity",
+      "canonical_url": "https://ttrades.com/the-easiest-draw-on-liquidity/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "the_mmxm_trader_s_twitter_model_explained",
+      "title": "The MMXM Trader\u2019s Twitter Model Explained",
+      "canonical_url": "https://ttrades.com/the-mmxm-traders-twitter-model-explained/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "the_only_trading_strategy_you_need_for_2026",
+      "title": "The Only Trading Strategy You Need For 2026",
+      "canonical_url": "https://ttrades.com/the-only-trading-strategy-you-need-for-2026/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "the_ultimate_tradingview_guide_tips_tricks_and_shortcuts",
+      "title": "The Ultimate TradingView Guide: Tips, Tricks, and Shortcuts",
+      "canonical_url": "https://ttrades.com/the-ultimate-tradingview-guide-tips-tricks-and-shortcuts/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "the_unicorn_entry_model_explained_breaker_blocks_and_fair_value_gaps",
+      "title": "The Unicorn Entry Model Explained (Breaker Blocks and Fair Value Gaps)",
+      "canonical_url": "https://ttrades.com/the-unicorn-entry-model-explained-breaker-blocks-and-fair-value-gaps/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "timeframe_alignment_how_to_align_higher_and_lower_time_frames_for_precision_entries",
+      "title": "Timeframe Alignment: How to Align Higher and Lower Time Frames for Precision Entries",
+      "canonical_url": "https://ttrades.com/timeframe-alignment-how-to-align-higher-and-lower-time-frames-for-precision-entries/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "trading_irl_erl_with_order_blocks_a_practical_guide_to_ict_concepts",
+      "title": "Trading IRL & ERL With Order Blocks: A Practical Guide to ICT Concepts",
+      "canonical_url": "https://ttrades.com/trading-irl-erl-with-order-blocks-a-practical-guide-to-ict-concepts/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "trading_the_4_hour_power_of_3_open_high_low_close_strategy",
+      "title": "Trading the 4-Hour Power of 3: Open, High, Low, Close Strategy",
+      "canonical_url": "https://ttrades.com/trading-the-4-hour-power-of-3-open-high-low-close-strategy/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "understanding_basic_market_structure_in_trading",
+      "title": "Understanding Basic Market Structure in Trading",
+      "canonical_url": "https://ttrades.com/understanding-basic-market-structure-in-trading/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "understanding_fair_value_gaps",
+      "title": "Understanding Fair Value Gaps",
+      "canonical_url": "https://ttrades.com/understanding-fair-value-gaps/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "understanding_liquidity_buy_side_sell_side_and_swing_points",
+      "title": "Understanding Liquidity: Buy Side, Sell Side, and Swing Points",
+      "canonical_url": "https://ttrades.com/understanding-liquidity-buy-side-sell-side-and-swing-points/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "understanding_premium_and_discount_in_trading",
+      "title": "Understanding Premium and Discount in Trading",
+      "canonical_url": "https://ttrades.com/understanding-premium-and-discount-in-trading/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "understanding_projections_in_the_fractal_model_a_complete_guide",
+      "title": "Understanding Projections in the Fractal Model: A Complete Guide",
+      "canonical_url": "https://ttrades.com/understanding-projections-in-the-fractal-model-a-complete-guide/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "understanding_propulsion_blocks_in_trading",
+      "title": "Understanding Propulsion Blocks in Trading",
+      "canonical_url": "https://ttrades.com/understanding-propulsion-blocks-in-trading/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "understanding_t_spot_pdf",
+      "title": "Understanding T-Spot PDF",
+      "canonical_url": "https://ttrades.com/understanding-t-spot-pdf/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "understanding_the_change_in_state_of_delivery_cisd",
+      "title": "Understanding The Change in State of Delivery (CISD)",
+      "canonical_url": "https://ttrades.com/understanding-the-change-in-state-of-delivery-cisd/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "using_currency_futures_to_choose_the_right_forex_pair",
+      "title": "Using Currency Futures to Choose the Right Forex Pair",
+      "canonical_url": "https://ttrades.com/using-currency-futures-to-choose-the-right-forex-pair/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "which_swing_highs_and_lows_matter_in_trading",
+      "title": "Which Swing Highs and Lows Matter in Trading?",
+      "canonical_url": "https://ttrades.com/which-swing-highs-and-lows-matter-in-trading/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "why_most_traders_fail_with_ict_the_power_of_focusing_on_one_pd_array",
+      "title": "Why Most Traders Fail with ICT \u2013 The Power of Focusing on One PD Array",
+      "canonical_url": "https://ttrades.com/why-most-traders-fail-with-ict-the-power-of-focusing-on-one-pd-array/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "pine_limitations",
+      "title": "Pine Script Limitations",
+      "canonical_url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "pine"
+    },
+    {
+      "slug": "pine_style_guide",
+      "title": "Pine Script Style Guide",
+      "canonical_url": "https://www.tradingview.com/pine-script-docs/writing/style-guide/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "pine"
+    },
+    {
+      "slug": "pine_type_system",
+      "title": "Pine Script Type System",
+      "canonical_url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "pine"
+    }
+  ],
+  "video_sources_missing_transcripts": [
+    {
+      "slug": "https_youtu_be_iextmekqjnq",
+      "title": "Embedded media from Daily Profile: Understanding the New York Manipulation",
+      "canonical_url": "https://youtu.be/IeXtmeKqjnQ",
+      "primary_topic": "bias",
+      "primary_trade_model": null,
+      "topic_hint": "bias"
+    },
+    {
+      "slug": "https_youtu_be_kkuzb5z5au",
+      "title": "Embedded media from Easy Daily Bias: A Mechanical Trading Framework",
+      "canonical_url": "https://youtu.be/-KKuZb5Z5aU",
+      "primary_topic": "bias",
+      "primary_trade_model": null,
+      "topic_hint": "bias"
+    },
+    {
+      "slug": "https_youtu_be_g3odyq4p9ze",
+      "title": "Embedded media from ICT Daily Bias: Most Simple Mechanical Framework",
+      "canonical_url": "https://youtu.be/g3oDYq4P9ZE",
+      "primary_topic": "bias",
+      "primary_trade_model": null,
+      "topic_hint": "bias"
+    },
+    {
+      "slug": "https_youtu_be_y6snedasvly",
+      "title": "Embedded media from London Reversal and New York Continuation: Daily Profile",
+      "canonical_url": "https://youtu.be/y6SnEdASVLY",
+      "primary_topic": "bias",
+      "primary_trade_model": null,
+      "topic_hint": "bias"
+    },
+    {
+      "slug": "https_youtu_be_tfhlngaz_ii",
+      "title": "Embedded media from Next Day Model: A Fractal Way to Build Trading Bias",
+      "canonical_url": "https://youtu.be/TfHlNgAZ_II",
+      "primary_topic": "bias",
+      "primary_trade_model": null,
+      "topic_hint": "bias"
+    },
+    {
+      "slug": "https_youtu_be_xdzyejskske",
+      "title": "Embedded media from Understanding the New York Reversal Daily Profile",
+      "canonical_url": "https://youtu.be/xdzyejskSKE",
+      "primary_topic": "bias",
+      "primary_trade_model": null,
+      "topic_hint": "bias"
+    },
+    {
+      "slug": "https_youtu_be_4wciiycibrq",
+      "title": "Embedded media from Understanding the Seek and Destroy Daily Profile in Trading",
+      "canonical_url": "https://youtu.be/4WCiIyCiBrQ",
+      "primary_topic": "bias",
+      "primary_trade_model": null,
+      "topic_hint": "bias"
+    },
+    {
+      "slug": "https_youtu_be_wfqlwop2pxw",
+      "title": "Embedded media from Phases of Price \u2013 Part 1: How to Trade Consolidations for High-Probability Setups",
+      "canonical_url": "https://youtu.be/WFqLwOp2pXw",
+      "primary_topic": "consolidation",
+      "primary_trade_model": null,
+      "topic_hint": "consolidation"
+    },
+    {
+      "slug": "https_youtu_be_xp_o11jrcyg",
+      "title": "Embedded media from Trading Breaker Blocks for Continuations",
+      "canonical_url": "https://youtu.be/xP-o11jRCyg",
+      "primary_topic": "continuation",
+      "primary_trade_model": null,
+      "topic_hint": "continuation"
+    },
+    {
+      "slug": "https_youtu_be_ipzjni1b5a0",
+      "title": "Embedded media from Using Equilibrium in Continuations",
+      "canonical_url": "https://youtu.be/IPZjNI1B5a0",
+      "primary_topic": "continuation",
+      "primary_trade_model": null,
+      "topic_hint": "continuation"
+    },
+    {
+      "slug": "https_youtu_be_ijcfc6wapzu",
+      "title": "Embedded media from Using Order Blocks for Continuations",
+      "canonical_url": "https://youtu.be/IJcfC6wAPZU",
+      "primary_topic": "continuation",
+      "primary_trade_model": null,
+      "topic_hint": "continuation"
+    },
+    {
+      "slug": "https_www_youtube_com_ttrades_edu",
+      "title": "Embedded media from Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "canonical_url": "https://www.youtube.com/@ttrades_edu",
+      "primary_topic": "continuation",
+      "primary_trade_model": null,
+      "topic_hint": "continuation"
+    },
+    {
+      "slug": "https_youtu_be_pqirv0jmhiq",
+      "title": "Embedded media from Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "canonical_url": "https://youtu.be/PQiRV0JMhIQ",
+      "primary_topic": "continuation",
+      "primary_trade_model": null,
+      "topic_hint": "continuation"
+    },
+    {
+      "slug": "https_youtu_be_kf4c41_qo1s",
+      "title": "Embedded media from Aligning Candles for Expansion: How True Trends Actually Form",
+      "canonical_url": "https://youtu.be/Kf4c41_qO1s",
+      "primary_topic": "expansion",
+      "primary_trade_model": null,
+      "topic_hint": "expansion"
+    },
+    {
+      "slug": "https_youtu_be_ieambufzb24",
+      "title": "Embedded media from Mastering Top-Down Analysis: Aligning Multiple Timeframes for Expansion Trading",
+      "canonical_url": "https://youtu.be/iEaMbuFZb24",
+      "primary_topic": "expansion",
+      "primary_trade_model": null,
+      "topic_hint": "expansion"
+    },
+    {
+      "slug": "https_youtu_be_4gm8p6o7ebs",
+      "title": "Embedded media from Phases of Price \u2013 Part 2: Mastering Expansion for Strong Trend Trades",
+      "canonical_url": "https://youtu.be/4Gm8p6O7Ebs",
+      "primary_topic": "expansion",
+      "primary_trade_model": null,
+      "topic_hint": "expansion"
+    },
+    {
+      "slug": "https_youtu_be_8bwkrghuj1k",
+      "title": "Embedded media from Phases of Price \u2013 Part 5: How to Blend Expansion, Retracement, Consolidation & Reversal",
+      "canonical_url": "https://youtu.be/8BWkRGhuj1k",
+      "primary_topic": "expansion",
+      "primary_trade_model": null,
+      "topic_hint": "expansion"
+    },
+    {
+      "slug": "https_youtu_be_slwxhzhlo3a",
+      "title": "Embedded media from Understanding Wick Sizes, Reversals, and Expansion Candles in Price Action",
+      "canonical_url": "https://youtu.be/SlWxhzhLo3A",
+      "primary_topic": "expansion",
+      "primary_trade_model": null,
+      "topic_hint": "expansion"
+    },
+    {
+      "slug": "https_youtu_be_m4k_1pf5zfi_si_l9kdsxlr6rfhtkhc",
+      "title": "Embedded media from How to Trade Candle 2 \u2013 TTrades Fractal Model",
+      "canonical_url": "https://youtu.be/m4k_1pF5zFI?si=L9kDsXlR6rfHTKhc",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "https_youtu_be_qdqyhepcvge",
+      "title": "Embedded media from How to Trade Candle 3 in the Fractal Model",
+      "canonical_url": "https://youtu.be/qdQYhePcvGE",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "https_youtu_be_5fnfoh5yum0",
+      "title": "Embedded media from TTrades Fractal Model \u2013 Candle 4",
+      "canonical_url": "https://youtu.be/5fnFOh5YuM0",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "https_youtu_be_tyoxl1l_6ii",
+      "title": "Embedded media from Understanding Candle 2 Closures Within the Fractal Model",
+      "canonical_url": "https://youtu.be/tyoxl1l-6iI",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "https_youtu_be_sicslfsnoxm",
+      "title": "Embedded media from Understanding Candles: Open, High, Low, Close",
+      "canonical_url": "https://youtu.be/sIcsLFSNoXM",
+      "primary_topic": null,
+      "primary_trade_model": "fractal_closure_model",
+      "topic_hint": "fractal_model"
+    },
+    {
+      "slug": "https_youtu_be_umycqr_0nsi",
+      "title": "Embedded media from Advanced Market Structure Simplified: From Short-Term to Long-Term Trends",
+      "canonical_url": "https://youtu.be/umyCqr_0NsI",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_75s4vwd4p1u",
+      "title": "Embedded media from Breaker Blocks Simplified",
+      "canonical_url": "https://youtu.be/75S4vwD4P1U",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_tjk9bxerzy0",
+      "title": "Embedded media from Broadening Formations in Trading: A Practical Guide",
+      "canonical_url": "https://youtu.be/Tjk9bXERZy0",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_nwhint4yano",
+      "title": "Embedded media from EURGBP for Relative Strength (EU vs GU)",
+      "canonical_url": "https://youtu.be/nWHint4Yano",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_tnybdctwbnc",
+      "title": "Embedded media from Fractal Model Playbook \u2013 Aligning Daily, Hourly, and 5-Minute Charts",
+      "canonical_url": "https://youtu.be/TNybDCtwBnc",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_fgkb_50bft8",
+      "title": "Embedded media from High Resistance vs Low Resistance Liquidity",
+      "canonical_url": "https://youtu.be/FGkb_50BfT8",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_vn1ryjhjunq",
+      "title": "Embedded media from How Change in the State of Delivery Confirms Swing Points",
+      "canonical_url": "https://youtu.be/vn1RYjhJUnQ",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_mvd7fqq0sze",
+      "title": "Embedded media from How to Backtest \u2013 A Clear Step-by-Step Approach",
+      "canonical_url": "https://youtu.be/MvD7fQQ0szE",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_yesqioa7wyg",
+      "title": "Embedded media from How to Identify Important Liquidity Levels",
+      "canonical_url": "https://youtu.be/YESqIoA7Wyg",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_wriz7caufcc",
+      "title": "Embedded media from How to Journal the Market in Notion: A Complete Guide",
+      "canonical_url": "https://youtu.be/wrIZ7CAuFCc",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_fktbktzsmua",
+      "title": "Embedded media from How to Trade Inversion Fair Value Gaps",
+      "canonical_url": "https://youtu.be/FKTBkTzsmUA",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_tcfvszeyvv8",
+      "title": "Embedded media from ICT Power of Three (AMD): Accumulation, Manipulation, Distribution Explained",
+      "canonical_url": "https://youtu.be/TCFvsZeYvV8",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_q40prwjupyq",
+      "title": "Embedded media from ICT Son Model Explained: Liquidity, Stop Raids, and Precision Entries",
+      "canonical_url": "https://youtu.be/q40pRwjuPYQ",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_dtsrr8dx2ro",
+      "title": "Embedded media from Introduction to Futures Trading and Prop Firms",
+      "canonical_url": "https://youtu.be/dtsrR8dX2Ro",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_udji2abyycs",
+      "title": "Embedded media from Inversion Fair Value Gaps Explained(IFVG)",
+      "canonical_url": "https://youtu.be/uDJI2AbyyCs",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_e89d1harbgm",
+      "title": "Embedded media from Market Structure Shifts vs Change in the State of Delivery: A Clear Comparison",
+      "canonical_url": "https://youtu.be/E89d1HArbgM",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_eyzp7c24awm",
+      "title": "Embedded media from Mastering Important Time Levels in Trading with OHLC and Opposing Swings",
+      "canonical_url": "https://youtu.be/EYzP7c24AwM",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_0ojlq91tziu",
+      "title": "Embedded media from Mastering Position Sizing: The Key to Profitable Trading",
+      "canonical_url": "https://youtu.be/0OjlQ91TZiU",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_27s9gjgcsli",
+      "title": "Embedded media from Mastering SMT: Spot Divergences in Trading",
+      "canonical_url": "https://youtu.be/27S9gjgcSlI",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_bbwpoajy2my",
+      "title": "Embedded media from Mitigation Blocks Simplified",
+      "canonical_url": "https://youtu.be/bbWPoajy2MY",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_1yrs4z1lmws",
+      "title": "Embedded media from Optimal Trade Entry Explained: How to Use OTE Like a Pro",
+      "canonical_url": "https://youtu.be/1YRs4Z1lMws",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_dmuidbntyc8",
+      "title": "Embedded media from Order Blocks Simplified",
+      "canonical_url": "https://youtu.be/DMUiDBnTYc8",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_9by_mqrny_y_si_3pnoadaf_ebh_v7y",
+      "title": "Embedded media from Prop Firms",
+      "canonical_url": "https://youtu.be/9BY-MQRNy-Y?si=3pnoadAF_Ebh_V7y",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_4ju547ocod4",
+      "title": "Embedded media from Refining Entries with the Fractal Model: Precision with 1-Minute Inversions",
+      "canonical_url": "https://youtu.be/4jU547ocod4",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_yh4eywugdty",
+      "title": "Embedded media from Relative Strength & Weakness + SMT Divergence (Full Guide)",
+      "canonical_url": "https://youtu.be/yH4eYwUgdTY",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_ktwxpao1ue8",
+      "title": "Embedded media from Standard Deviation Projections",
+      "canonical_url": "https://youtu.be/kTWXpAo1uE8",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_pcbyc9tdnsu",
+      "title": "Embedded media from Standard Deviation Projections Combined With AMD (Accumulation, Manipulation, Distribution)",
+      "canonical_url": "https://youtu.be/Pcbyc9TdNsU",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_eywpzt3z6gq",
+      "title": "Embedded media from TTrades Scalping Model \u2013 Simple Day Trading Strategy",
+      "canonical_url": "https://youtu.be/eywpZT3z6GQ",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_9by_mqrny_y",
+      "title": "Embedded media from TTrades Swing Trading Model \u2013 Simple Strategy",
+      "canonical_url": "https://youtu.be/9BY-MQRNy-Y",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_o0v4kqxzbpu",
+      "title": "Embedded media from The AM Silver Bullet Strategy on NQ",
+      "canonical_url": "https://youtu.be/o0v4KQxZbpU",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_fgp2lc9nnem",
+      "title": "Embedded media from The Best Timeframes for TTrades Fractal Model (Simple)",
+      "canonical_url": "https://youtu.be/FgP2lc9nneM",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_fxjbfbzqbck",
+      "title": "Embedded media from The Easiest Draw on Liquidity",
+      "canonical_url": "https://youtu.be/FXJBFbZQbck",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_wwms47gb3m0",
+      "title": "Embedded media from The MMXM Trader\u2019s Twitter Model Explained",
+      "canonical_url": "https://youtu.be/WwmS47Gb3M0",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_9al41xon3ha",
+      "title": "Embedded media from The Only Trading Strategy You Need For 2026",
+      "canonical_url": "https://youtu.be/9AL41xON3hA",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_jpvhmpzilky",
+      "title": "Embedded media from The Ultimate TradingView Guide: Tips, Tricks, and Shortcuts",
+      "canonical_url": "https://youtu.be/JPVhmPZiLKY",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_rxmvpuzpw4a",
+      "title": "Embedded media from The Unicorn Entry Model Explained (Breaker Blocks and Fair Value Gaps)",
+      "canonical_url": "https://youtu.be/rXMVPUZPw4A",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_ubce509_jly",
+      "title": "Embedded media from Timeframe Alignment: How to Align Higher and Lower Time Frames for Precision Entries",
+      "canonical_url": "https://youtu.be/ubCe509_JLY",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_fakwj_1nlle",
+      "title": "Embedded media from Trading the 4-Hour Power of 3: Open, High, Low, Close Strategy",
+      "canonical_url": "https://youtu.be/FAKWJ-1NlLE",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_sganvr6rsdg",
+      "title": "Embedded media from Understanding Basic Market Structure in Trading",
+      "canonical_url": "https://youtu.be/sgAnVR6RSDg",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_zvudpcyvxfq",
+      "title": "Embedded media from Understanding Fair Value Gaps",
+      "canonical_url": "https://youtu.be/ZVUDpCyvxfQ",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_u8xh2degh5a",
+      "title": "Embedded media from Understanding Liquidity: Buy Side, Sell Side, and Swing Points",
+      "canonical_url": "https://youtu.be/U8xH2dEgH5A",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_mlmsg7li9zy",
+      "title": "Embedded media from Understanding Premium and Discount in Trading",
+      "canonical_url": "https://youtu.be/MlMsG7li9zY",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_uphs7sdl9kg",
+      "title": "Embedded media from Understanding Projections in the Fractal Model: A Complete Guide",
+      "canonical_url": "https://youtu.be/upHS7SDL9kg",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_9pkj0u1gl4g",
+      "title": "Embedded media from Understanding Propulsion Blocks in Trading",
+      "canonical_url": "https://youtu.be/9PKJ0U1gl4g",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_chik5obrkiw",
+      "title": "Embedded media from Understanding The Change in State of Delivery (CISD)",
+      "canonical_url": "https://youtu.be/CHIK5oBRKiw",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_hrjyoxaub3s",
+      "title": "Embedded media from Using Currency Futures to Choose the Right Forex Pair",
+      "canonical_url": "https://youtu.be/HrjYoxAUb3s",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_hboed_jvens",
+      "title": "Embedded media from Which Swing Highs and Lows Matter in Trading?",
+      "canonical_url": "https://youtu.be/HbOeD_JVens",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_r_uf8u_hsl8",
+      "title": "Embedded media from Why Most Traders Fail with ICT \u2013 The Power of Focusing on One PD Array",
+      "canonical_url": "https://youtu.be/r_UF8U-hsL8",
+      "primary_topic": null,
+      "primary_trade_model": null,
+      "topic_hint": "general"
+    },
+    {
+      "slug": "https_youtu_be_wr4xate37g",
+      "title": "Embedded media from Protected Swings in Trading: How to Identify and Use Them for Entries & Continuations",
+      "canonical_url": "https://youtu.be/-wr4xATE37g",
+      "primary_topic": "protected_swings",
+      "primary_trade_model": null,
+      "topic_hint": "protected_swings"
+    },
+    {
+      "slug": "https_youtu_be_jhvaskte1ys",
+      "title": "Embedded media from Stop Loss Mastery \u2013 Using Protected Swings for Precise Invalidations",
+      "canonical_url": "https://youtu.be/JHVaSKtE1Ys",
+      "primary_topic": "protected_swings",
+      "primary_trade_model": null,
+      "topic_hint": "protected_swings"
+    },
+    {
+      "slug": "https_youtu_be_f0g31ilvpvg",
+      "title": "Embedded media from Phases of Price \u2013 Part 3: Mastering Retracements for High-Probability Setups",
+      "canonical_url": "https://youtu.be/F0G31iLVpVg",
+      "primary_topic": "retracement",
+      "primary_trade_model": null,
+      "topic_hint": "retracement"
+    },
+    {
+      "slug": "https_youtu_be_msueqql7l6s",
+      "title": "Embedded media from Candle 3 Closure: A Complete Guide to Identifying Continuations and Reversals",
+      "canonical_url": "https://youtu.be/MsuEQQl7L6s",
+      "primary_topic": "reversal",
+      "primary_trade_model": null,
+      "topic_hint": "reversal"
+    },
+    {
+      "slug": "https_youtu_be_lknqdadid4s",
+      "title": "Embedded media from Mastering Candlestick Wicks: The Key to Catching Reversals",
+      "canonical_url": "https://youtu.be/LKNQDAdId4s",
+      "primary_topic": "reversal",
+      "primary_trade_model": null,
+      "topic_hint": "reversal"
+    },
+    {
+      "slug": "https_youtu_be_7p9mbfk8eem",
+      "title": "Embedded media from My Favorite Reversal Pattern : Orderblocks",
+      "canonical_url": "https://youtu.be/7p9MBFk8EEM",
+      "primary_topic": "reversal",
+      "primary_trade_model": null,
+      "topic_hint": "reversal"
+    },
+    {
+      "slug": "https_youtu_be_vd4xb9vfmha",
+      "title": "Embedded media from Phases of Price \u2013 Part 4: Mastering Reversals for High-Probability Setups",
+      "canonical_url": "https://youtu.be/VD4xb9VfMHA",
+      "primary_topic": "reversal",
+      "primary_trade_model": null,
+      "topic_hint": "reversal"
+    },
+    {
+      "slug": "https_youtu_be_wik00c9_2nk",
+      "title": "Embedded media from Reversal Sequence \u2013 Building an Entry Model for Trading",
+      "canonical_url": "https://youtu.be/wik00c9_2nk",
+      "primary_topic": "reversal",
+      "primary_trade_model": null,
+      "topic_hint": "reversal"
+    }
+  ],
+  "topic_summary": [
+    {
+      "topic_slug": "bias",
+      "topic_name": "Bias",
+      "source_count": 56,
+      "video_count": 18
+    },
+    {
+      "topic_slug": "continuation",
+      "topic_name": "Continuation",
+      "source_count": 50,
+      "video_count": 11
+    },
+    {
+      "topic_slug": "reversal",
+      "topic_name": "Reversal",
+      "source_count": 50,
+      "video_count": 12
+    },
+    {
+      "topic_slug": "expansion",
+      "topic_name": "Expansion",
+      "source_count": 47,
+      "video_count": 11
+    },
+    {
+      "topic_slug": "daily_profiles",
+      "topic_name": "Daily Profiles",
+      "source_count": 21,
+      "video_count": 3
+    },
+    {
+      "topic_slug": "protected_swings",
+      "topic_name": "Protected Swings",
+      "source_count": 18,
+      "video_count": 5
+    },
+    {
+      "topic_slug": "consolidation",
+      "topic_name": "Consolidation",
+      "source_count": 13,
+      "video_count": 3
+    },
+    {
+      "topic_slug": "candle_3_closure",
+      "topic_name": "Candle 3 Closure",
+      "source_count": 9,
+      "video_count": 1
+    },
+    {
+      "topic_slug": "retracement",
+      "topic_name": "Retracement",
+      "source_count": 9,
+      "video_count": 3
+    },
+    {
+      "topic_slug": "top_down_alignment",
+      "topic_name": "Top-Down Alignment",
+      "source_count": 9,
+      "video_count": 1
+    },
+    {
+      "topic_slug": "equilibrium",
+      "topic_name": "Equilibrium",
+      "source_count": 8,
+      "video_count": 0
+    },
+    {
+      "topic_slug": "candle_2_closure",
+      "topic_name": "Candle 2 Closure",
+      "source_count": 5,
+      "video_count": 0
+    }
+  ],
+  "trade_model_summary": [
+    {
+      "trade_model_slug": "fractal_closure_model",
+      "trade_model_name": "Fractal Closure Model",
+      "source_count": 96,
+      "video_count": 13
+    },
+    {
+      "trade_model_slug": "ttrades_fractal_model",
+      "trade_model_name": "TTrades Fractal Model",
+      "source_count": 51,
+      "video_count": 6
+    },
+    {
+      "trade_model_slug": "phases_of_price_framework",
+      "trade_model_name": "Phases of Price Framework",
+      "source_count": 45,
+      "video_count": 5
+    },
+    {
+      "trade_model_slug": "daily_bias_framework",
+      "trade_model_name": "Daily Bias Framework",
+      "source_count": 25,
+      "video_count": 3
+    },
+    {
+      "trade_model_slug": "reversal_sequence_model",
+      "trade_model_name": "Reversal Sequence Model",
+      "source_count": 16,
+      "video_count": 1
+    },
+    {
+      "trade_model_slug": "daily_profile_models",
+      "trade_model_name": "Daily Profile Models",
+      "source_count": 1,
+      "video_count": 0
+    }
+  ],
+  "counts": {
+    "article_sources_missing_text_artifacts": 60,
+    "video_sources_missing_transcripts": 79,
+    "topic_groups": 12,
+    "trade_model_groups": 6
+  }
+}

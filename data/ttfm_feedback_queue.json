@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-03-23T20:20:44.482818+00:00",
+  "summary": {
+    "item_count": 4,
+    "pine_feedback_candidate_count": 0,
+    "tradingview_failure_count": 5,
+    "workflow_feedback_count": 5,
+    "spec_feedback_count": 0
+  },
+  "items": [
+    {
+      "id": "tradingview::daily_bias_framework::blocked_monaco_sync::finding",
+      "target_type": "finding",
+      "target_path": "findings.md",
+      "title": "TradingView validation blocked for daily_bias_framework",
+      "body": "TradingView validation for `daily_bias_framework` failed with status `blocked_monaco_sync`. Method: `playwriter`. Chart symbol: `NQM2026`. Script path: `results/pine_scripts/daily_bias_framework.pine`. Playwriter store-level script swap changed the TradingView editor title but did not update the Monaco source buffer; Add to chart compiled the stale on-screen script instead of the generated draft, so this attempt does not count as Pine validation."
+    },
+    {
+      "id": "tradingview::daily_bias_framework::added_to_chart::finding",
+      "target_type": "finding",
+      "target_path": "findings.md",
+      "title": "TradingView validation blocked for daily_bias_framework",
+      "body": "TradingView validation for `daily_bias_framework` failed with status `added_to_chart`. Method: `playwriter`. Chart symbol: `NQM2026`. Script path: `results/pine_scripts/daily_bias_framework.pine`. Playwriter inserted the generated Pine v6 draft into the live Monaco editor via keyboard selection replacement, then TradingView accepted Update on chart and rendered TTrades Daily Bias Framework [Draft] in the chart legend."
+    },
+    {
+      "id": "tradingview::daily_bias_c123_map::qa_gate_failed::finding",
+      "target_type": "finding",
+      "target_path": "findings.md",
+      "title": "TradingView validation blocked for daily_bias_c123_map",
+      "body": "TradingView validation for `daily_bias_c123_map` failed with status `added_to_chart`. Method: `playwriter`. Chart symbol: `NQM2026`. Script path: `C:/Users/satvi/Repos/builder-block-research/results/pine_scripts/daily_bias_c123_map.pine`. QA status: `fail`. Scores semantic/visual/scope: `0.35` / `0.2` / `0.4`. Script compiled and was added to the 1H TradingView chart, but the visual output did not match the phase 1 contract."
+    },
+    {
+      "id": "tradingview::daily_bias_c123_map::compiled_on_chart::finding",
+      "target_type": "finding",
+      "target_path": "findings.md",
+      "title": "TradingView validation blocked for daily_bias_c123_map",
+      "body": "TradingView validation for `daily_bias_c123_map` failed with status `compiled_on_chart`. Method: `manual_tradingview_browser_qa`. Chart symbol: `CME_MINI:NQM2026`. Script path: `results/pine_scripts/daily_bias_c123_map.pine`. QA status: `fail`. Scores semantic/visual/scope: `0.72` / `0.86` / `0.9`. Phase-1 chart is cleaner and now shows POI, daily bias, C2, C3, and Entry; C1 is still not clearly visible on the current live 1H view."
+    }
+  ]
+}

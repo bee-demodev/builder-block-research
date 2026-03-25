@@ -1,0 +1,386 @@
+{
+  "generated_at": "2026-03-23T20:20:54.488559+00:00",
+  "bootstrap_screenshots": false,
+  "apply_safe_feedback": false,
+  "step_count": 16,
+  "steps": [
+    {
+      "id": "import_trader_annotation_cases",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/import_trader_annotation_cases.py"
+      ],
+      "result": {
+        "imported_cases": 14,
+        "case_refs": [
+          "ttrades_expansion_curriculum_baseline_v1",
+          "ttrades_daily_bias_continuation_baseline_v1",
+          "ttrades_daily_bias_reversal_baseline_v1",
+          "ttrades_continuation_equilibrium_hold_baseline_v1",
+          "ttrades_continuation_failure_baseline_v1",
+          "ttrades_new_york_reversal_profile_baseline_v1",
+          "ttrades_seek_and_destroy_profile_filter_baseline_v1",
+          "ttrades_candle_3_closure_continuation_baseline_v1",
+          "ttrades_candle_2_closure_reversal_baseline_v1",
+          "ttrades_continuation_order_block_retest_baseline_v1",
+          "ttrades_continuation_breaker_block_retest_baseline_v1",
+          "ttrades_continuation_top_down_alignment_baseline_v1",
+          "ttrades_continuation_large_wick_filter_baseline_v1",
+          "ttrades_retracement_missing_confirmation_filter_baseline_v1"
+        ]
+      }
+    },
+    {
+      "id": "export_ttfm_case_packets",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_ttfm_case_packets.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_case_packets.json",
+        "case_count": 14,
+        "checkpoint_count": 70
+      }
+    },
+    {
+      "id": "export_ttfm_pine_verification_queue",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_ttfm_pine_verification_queue.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_pine_verification_queue.json",
+        "queue_ready_component_count": 0,
+        "queue_item_count": 0
+      }
+    },
+    {
+      "id": "export_ttfm_pine_verification_report",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_ttfm_pine_verification_report.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_pine_verification_report.json",
+        "attempted_item_count": 0,
+        "translatability_score": 0.0
+      }
+    },
+    {
+      "id": "generate_pine_from_spec",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/generate_pine_from_spec.py"
+      ],
+      "result": {
+        "output_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\pine_scripts",
+        "generated_script_count": 6
+      }
+    },
+    {
+      "id": "export_tradingview_pine_readiness_report",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_tradingview_pine_readiness_report.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\tradingview_pine_readiness_report.json",
+        "workflow_score": 0.7333,
+        "generated_script_count": 6,
+        "validated_script_count": 1
+      }
+    },
+    {
+      "id": "export_ttfm_feedback_queue",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_ttfm_feedback_queue.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\ttfm_feedback_queue.json",
+        "item_count": 4,
+        "tradingview_failure_count": 5
+      }
+    },
+    {
+      "id": "export_ttfm_training_loop_report",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_ttfm_training_loop_report.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_training_loop_report.json",
+        "loop_score": 0.474,
+        "grade": "D",
+        "verdict": "keep_with_warnings"
+      }
+    },
+    {
+      "id": "export_trading_iteration_grading_report",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_trading_iteration_grading_report.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\trading_iteration_grading_report.json",
+        "episode_count": 3,
+        "graded_episode_count": 3,
+        "average_understanding_score": 0.6433
+      }
+    },
+    {
+      "id": "export_reinforced_training_surface",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_reinforced_training_surface.py"
+      ],
+      "result": {
+        "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\reinforced_model_training_surface.jsonl",
+        "report_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\reinforced_model_training_report.json",
+        "merged_example_count": 20,
+        "reinforcement_example_count": 4
+      }
+    },
+    {
+      "id": "run_iteration_retraining",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/run_iteration_retraining.py"
+      ],
+      "result": {
+        "dataset_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\reinforced_model_training_surface.jsonl",
+        "output_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained",
+        "trained_task_count": 3,
+        "trained_task_names": [
+          "continuation_entry_model",
+          "daily_bias_framework",
+          "trade_vs_no_trade"
+        ]
+      }
+    },
+    {
+      "id": "export_iteration_challenger_report",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_iteration_challenger_report.py"
+      ],
+      "result": {
+        "output_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\iteration_challenger_report.json",
+        "compared_task_count": 2,
+        "challenger_win_count": 0,
+        "promotion_candidate_tasks": []
+      }
+    },
+    {
+      "id": "promote_iteration_challengers",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/promote_iteration_challengers.py"
+      ],
+      "result": {
+        "output_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\iteration_promotion_report.json",
+        "promoted_task_count": 0,
+        "skipped_task_count": 3,
+        "promoted_tasks": []
+      }
+    },
+    {
+      "id": "export_neural_net_readiness_report",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_neural_net_readiness_report.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_net_readiness_report.json",
+        "autoresearch_grade": "A",
+        "offline_ml_grade": "B",
+        "real_time_assist_grade": "C",
+        "real_time_execution_grade": "D"
+      }
+    },
+    {
+      "id": "export_backtesting_readiness_report",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_backtesting_readiness_report.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\backtesting_readiness_report.json",
+        "foundation_grade": "A",
+        "manual_replay_grade": "A-",
+        "rules_backtest_grade": "A",
+        "model_backtest_grade": "A-"
+      }
+    },
+    {
+      "id": "export_trading_learning_improvement_plan",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/export_trading_learning_improvement_plan.py"
+      ],
+      "result": {
+        "output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\trading_learning_improvement_plan.json",
+        "phase": "evidence_bootstrap",
+        "priority_action_count": 4,
+        "history_entry_count": 15
+      }
+    }
+  ],
+  "case_packets": {
+    "case_count": 14,
+    "checkpoint_count": 70,
+    "screenshot_coverage": 0.7143,
+    "anchor_coverage": 0.0,
+    "missing_screenshot_count": 20,
+    "missing_anchor_label_count": 70
+  },
+  "pine_verification": {
+    "queue_item_count": 0,
+    "attempted_item_count": 0,
+    "translatability_score": 0.0,
+    "feedback_candidate_count": 0
+  },
+  "tradingview_pine": {
+    "generated_script_count": 6,
+    "validated_script_count": 1,
+    "playwriter_validated_count": 1,
+    "workflow_score": 0.7333,
+    "validation_coverage": 0.1667,
+    "pending_spec_keys": [
+      "continuation_entry_model",
+      "daily_bias_framework",
+      "daily_profile_models",
+      "fractal_closure_model",
+      "reversal_sequence_model"
+    ]
+  },
+  "feedback_queue": {
+    "item_count": 4,
+    "tradingview_failure_count": 5,
+    "workflow_feedback_count": 5,
+    "spec_feedback_count": 0
+  },
+  "training_loop": {
+    "loop_score": 0.474,
+    "grade": "D",
+    "verdict": "keep_with_warnings",
+    "warnings": []
+  },
+  "iteration_learning": {
+    "episode_count": 3,
+    "graded_episode_count": 3,
+    "average_understanding_score": 0.6433,
+    "trade_model_accuracy": 0.6667,
+    "relation_type_accuracy": 0.3333,
+    "checkpoint_component_score": 0.7111,
+    "latest_understanding_score": 0.32,
+    "grade": "B-"
+  },
+  "iteration_retraining": {
+    "base_example_count": 16,
+    "reinforcement_example_count": 4,
+    "merged_example_count": 20,
+    "graded_episode_count": 3,
+    "trained_task_count": 3,
+    "trained_task_names": [
+      "continuation_entry_model",
+      "daily_bias_framework",
+      "trade_vs_no_trade"
+    ]
+  },
+  "iteration_challengers": {
+    "compared_task_count": 2,
+    "challenger_win_count": 0,
+    "champion_win_count": 0,
+    "tie_task_count": 2,
+    "promotion_candidate_count": 0,
+    "promotion_candidate_tasks": []
+  },
+  "iteration_promotions": {
+    "candidate_task_count": 0,
+    "promoted_task_count": 0,
+    "skipped_task_count": 3,
+    "promoted_tasks": [],
+    "skipped_tasks": [
+      "continuation_entry_model",
+      "daily_bias_framework",
+      "trade_vs_no_trade"
+    ]
+  },
+  "neural_net": {
+    "autoresearch_grade": "A",
+    "offline_ml_grade": "B",
+    "real_time_assist_grade": "C",
+    "real_time_execution_grade": "D",
+    "global_blockers": [
+      "Trade-model multiclass classification is still under-labeled.",
+      "Relation-type classification is still under-labeled."
+    ],
+    "next_actions": [
+      "Backfill scenario expectation contracts for the ungraded case-model links so new labels strengthen the strict understanding harness instead of bypassing it.",
+      "Collect more positive labeled cases for the next indicator-ready scorers: daily_bias_framework (+1), daily_profile_models (+3), fractal_closure_model (+3), reversal_sequence_model (+3).",
+      "Benchmark the latest iteration-retrained challengers (continuation_entry_model, daily_bias_framework, trade_vs_no_trade) against the current offline baselines before promoting any new model artifact.",
+      "Validate more spec-generated Pine drafts in TradingView and log the outcome so readiness is grounded in editor-checked scripts, not prose alone.",
+      "Phase 1 training focus is `daily_bias_framework`: the current surface is bootstrap-ready for daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment."
+    ]
+  },
+  "phase_one_focus": {
+    "goal": "Train the neural network to understand daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment.",
+    "primary_trade_model": "daily_bias_framework",
+    "execution_spec": "daily_bias_c123_map",
+    "timeframe_stack": {
+      "bias": "D",
+      "structure": "60",
+      "execution": "5"
+    },
+    "indicator_ready": true,
+    "status": "bootstrap_ready",
+    "ready_now": false,
+    "bootstrap_ready": true,
+    "positive_examples": 4,
+    "negative_examples": 16,
+    "additional_positive_examples_needed": 1,
+    "bootstrap_positive_examples_required": 4,
+    "current_training_target": "daily_bias_framework"
+  },
+  "backtesting": {
+    "current_priority": "historical_backtesting_understanding_before_real_time_trading",
+    "stages": {
+      "historical_backtesting_research_foundation": {
+        "grade": "A",
+        "ready": true,
+        "verdict": "go"
+      },
+      "manual_chart_replay_understanding": {
+        "grade": "A-",
+        "ready": true,
+        "verdict": "go"
+      },
+      "rules_based_historical_backtesting": {
+        "grade": "A",
+        "ready": false,
+        "verdict": "not_yet"
+      },
+      "model_assisted_historical_backtesting": {
+        "grade": "A-",
+        "ready": true,
+        "verdict": "go"
+      }
+    }
+  },
+  "improvement_plan": {
+    "phase": "evidence_bootstrap",
+    "status": "bootstrapping",
+    "priority_action_count": 4,
+    "top_priority_action": "Bootstrap screenshot and anchor coverage for the historical case packets.",
+    "history_entry_count": 15
+  },
+  "next_actions": [
+    "Backfill scenario expectation contracts for the ungraded case-model links so new labels strengthen the strict understanding harness instead of bypassing it.",
+    "Collect more positive labeled cases for the next indicator-ready scorers: daily_bias_framework (+1), daily_profile_models (+3), fractal_closure_model (+3), reversal_sequence_model (+3).",
+    "Benchmark the latest iteration-retrained challengers (continuation_entry_model, daily_bias_framework, trade_vs_no_trade) against the current offline baselines before promoting any new model artifact.",
+    "Validate more spec-generated Pine drafts in TradingView and log the outcome so readiness is grounded in editor-checked scripts, not prose alone.",
+    "Phase 1 training focus is `daily_bias_framework`: the current surface is bootstrap-ready for daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment."
+  ],
+  "dashboard_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\trading_learning_dashboard.html"
+}

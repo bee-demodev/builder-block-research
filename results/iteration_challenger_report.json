@@ -1,0 +1,580 @@
+{
+  "generated_at": "2026-03-23T20:20:51.926260+00:00",
+  "protocol": {
+    "dataset_scope": "current_reinforced_training_surface",
+    "note": "This benchmark scores both champion and challenger models on the same reinforced surface. It is useful for loop comparison, but it is not a held-out generalization estimate.",
+    "threshold": 0.5
+  },
+  "summary": {
+    "trained_task_count": 3,
+    "compared_task_count": 2,
+    "challenger_win_count": 0,
+    "champion_win_count": 0,
+    "tie_task_count": 2,
+    "missing_champion_count": 1,
+    "missing_challenger_count": 0,
+    "untrainable_task_count": 0,
+    "promotion_candidate_count": 0,
+    "promotion_candidate_tasks": []
+  },
+  "task_reports": [
+    {
+      "task_name": "continuation_entry_model",
+      "status": "compared",
+      "winner": "tie",
+      "recommendation": "collect_more_examples",
+      "shared_example_count": 20,
+      "reinforcement_example_count": 3,
+      "positive_label": "continuation_entry_model",
+      "negative_label": "other_trade_models",
+      "skipped_example_count": 0,
+      "champion_model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\continuation_entry_model.pt",
+      "challenger_model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model.pt",
+      "champion_training_report": {
+        "generated_at": "2026-03-23T17:16:35.220987+00:00",
+        "task_name": "continuation_entry_model",
+        "positive_label": "continuation_entry_model",
+        "negative_label": "other_trade_models",
+        "device": "cuda",
+        "torch_version": "2.9.1+cu128",
+        "cuda_visible_to_torch": true,
+        "cuda_version": "12.8",
+        "example_count": 16,
+        "positive_count": 7,
+        "negative_count": 9,
+        "skipped_example_count": 0,
+        "train_count": 12,
+        "validation_count": 4,
+        "vocabulary_size": 214,
+        "hyperparameters": {
+          "epochs": 20,
+          "learning_rate": 0.03,
+          "hidden_dim": 24,
+          "validation_ratio": 0.25,
+          "seed": 42
+        },
+        "best_epoch": 20,
+        "metrics": {
+          "train": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 5,
+            "positive_labels": 5,
+            "confusion": {
+              "true_positive": 5,
+              "true_negative": 7,
+              "false_positive": 0,
+              "false_negative": 0
+            },
+            "loss": 0.04621429741382599
+          },
+          "validation": {
+            "accuracy": 0.75,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "positive_predictions": 1,
+            "positive_labels": 2,
+            "confusion": {
+              "true_positive": 1,
+              "true_negative": 2,
+              "false_positive": 0,
+              "false_negative": 1
+            },
+            "loss": 0.3142050802707672
+          }
+        },
+        "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\continuation_entry_model.pt",
+        "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\continuation_entry_model_report.json",
+        "promotion": {
+          "promoted_at": "2026-03-23T19:29:06.593949+00:00",
+          "source_model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model.pt",
+          "source_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model_report.json",
+          "source_iteration_challenger_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\iteration_challenger_report.json"
+        }
+      },
+      "challenger_training_report": {
+        "generated_at": "2026-03-23T20:20:48.996169+00:00",
+        "task_name": "continuation_entry_model",
+        "positive_label": "continuation_entry_model",
+        "negative_label": "other_trade_models",
+        "device": "cuda",
+        "torch_version": "2.9.1+cu128",
+        "cuda_visible_to_torch": true,
+        "cuda_version": "12.8",
+        "example_count": 20,
+        "positive_count": 8,
+        "negative_count": 12,
+        "skipped_example_count": 0,
+        "train_count": 15,
+        "validation_count": 5,
+        "vocabulary_size": 282,
+        "hyperparameters": {
+          "epochs": 40,
+          "learning_rate": 0.02,
+          "hidden_dim": 32,
+          "validation_ratio": 0.25,
+          "seed": 42
+        },
+        "best_epoch": 40,
+        "metrics": {
+          "train": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 6,
+            "positive_labels": 6,
+            "confusion": {
+              "true_positive": 6,
+              "true_negative": 9,
+              "false_positive": 0,
+              "false_negative": 0
+            },
+            "loss": 0.02298916131258011
+          },
+          "validation": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 2,
+            "positive_labels": 2,
+            "confusion": {
+              "true_positive": 2,
+              "true_negative": 3,
+              "false_positive": 0,
+              "false_negative": 0
+            },
+            "loss": 0.10856159776449203
+          }
+        },
+        "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model.pt",
+        "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model_report.json"
+      },
+      "full_surface": {
+        "winner": "tie",
+        "champion": {
+          "task_name": "continuation_entry_model",
+          "device": "cuda",
+          "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\continuation_entry_model.pt",
+          "example_count": 20,
+          "threshold": 0.5,
+          "average_probability": 0.4115147367119789,
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 8,
+            "positive_labels": 8,
+            "confusion": {
+              "true_positive": 8,
+              "true_negative": 12,
+              "false_positive": 0,
+              "false_negative": 0
+            }
+          }
+        },
+        "challenger": {
+          "task_name": "continuation_entry_model",
+          "device": "cuda",
+          "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model.pt",
+          "example_count": 20,
+          "threshold": 0.5,
+          "average_probability": 0.3930038270598743,
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 8,
+            "positive_labels": 8,
+            "confusion": {
+              "true_positive": 8,
+              "true_negative": 12,
+              "false_positive": 0,
+              "false_negative": 0
+            }
+          }
+        },
+        "metric_delta": {
+          "accuracy": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "reinforcement_only": {
+        "winner": "tie",
+        "champion": {
+          "task_name": "continuation_entry_model",
+          "device": "cuda",
+          "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\continuation_entry_model.pt",
+          "example_count": 3,
+          "threshold": 0.5,
+          "average_probability": 0.3389564591149489,
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 1,
+            "positive_labels": 1,
+            "confusion": {
+              "true_positive": 1,
+              "true_negative": 2,
+              "false_positive": 0,
+              "false_negative": 0
+            }
+          }
+        },
+        "challenger": {
+          "task_name": "continuation_entry_model",
+          "device": "cuda",
+          "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model.pt",
+          "example_count": 3,
+          "threshold": 0.5,
+          "average_probability": 0.33313297387212515,
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 1,
+            "positive_labels": 1,
+            "confusion": {
+              "true_positive": 1,
+              "true_negative": 2,
+              "false_positive": 0,
+              "false_negative": 0
+            }
+          }
+        },
+        "metric_delta": {
+          "accuracy": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    {
+      "task_name": "daily_bias_framework",
+      "status": "missing_champion_model",
+      "winner": null,
+      "recommendation": "initialize_champion_review",
+      "shared_example_count": 20,
+      "reinforcement_example_count": 3,
+      "positive_label": "daily_bias_framework",
+      "negative_label": "other_trade_models",
+      "skipped_example_count": 0,
+      "champion_model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\daily_bias_framework.pt",
+      "challenger_model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\daily_bias_framework.pt",
+      "champion_training_report": {},
+      "challenger_training_report": {
+        "generated_at": "2026-03-23T20:20:49.045253+00:00",
+        "task_name": "daily_bias_framework",
+        "positive_label": "daily_bias_framework",
+        "negative_label": "other_trade_models",
+        "device": "cuda",
+        "torch_version": "2.9.1+cu128",
+        "cuda_visible_to_torch": true,
+        "cuda_version": "12.8",
+        "example_count": 20,
+        "positive_count": 4,
+        "negative_count": 16,
+        "skipped_example_count": 0,
+        "train_count": 15,
+        "validation_count": 5,
+        "vocabulary_size": 278,
+        "hyperparameters": {
+          "epochs": 40,
+          "learning_rate": 0.02,
+          "hidden_dim": 32,
+          "validation_ratio": 0.25,
+          "seed": 42
+        },
+        "best_epoch": 32,
+        "metrics": {
+          "train": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 3,
+            "positive_labels": 3,
+            "confusion": {
+              "true_positive": 3,
+              "true_negative": 12,
+              "false_positive": 0,
+              "false_negative": 0
+            },
+            "loss": 0.15547321736812592
+          },
+          "validation": {
+            "accuracy": 0.8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "positive_predictions": 0,
+            "positive_labels": 1,
+            "confusion": {
+              "true_positive": 0,
+              "true_negative": 4,
+              "false_positive": 0,
+              "false_negative": 1
+            },
+            "loss": 0.24040928483009338
+          }
+        },
+        "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\daily_bias_framework.pt",
+        "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\daily_bias_framework_report.json"
+      }
+    },
+    {
+      "task_name": "trade_vs_no_trade",
+      "status": "compared",
+      "winner": "tie",
+      "recommendation": "collect_more_examples",
+      "shared_example_count": 18,
+      "reinforcement_example_count": 3,
+      "positive_label": "trade",
+      "negative_label": "no_trade",
+      "skipped_example_count": 2,
+      "champion_model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\trade_vs_no_trade.pt",
+      "challenger_model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\trade_vs_no_trade.pt",
+      "champion_training_report": {
+        "generated_at": "2026-03-23T17:16:49.504432+00:00",
+        "task_name": "trade_vs_no_trade",
+        "positive_label": "trade",
+        "negative_label": "no_trade",
+        "device": "cuda",
+        "torch_version": "2.9.1+cu128",
+        "cuda_visible_to_torch": true,
+        "cuda_version": "12.8",
+        "example_count": 15,
+        "positive_count": 11,
+        "negative_count": 4,
+        "skipped_example_count": 1,
+        "train_count": 11,
+        "validation_count": 4,
+        "vocabulary_size": 185,
+        "hyperparameters": {
+          "epochs": 20,
+          "learning_rate": 0.03,
+          "hidden_dim": 24,
+          "validation_ratio": 0.25,
+          "seed": 42
+        },
+        "best_epoch": 20,
+        "metrics": {
+          "train": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 8,
+            "positive_labels": 8,
+            "confusion": {
+              "true_positive": 8,
+              "true_negative": 3,
+              "false_positive": 0,
+              "false_negative": 0
+            },
+            "loss": 0.21211227774620056
+          },
+          "validation": {
+            "accuracy": 0.75,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571,
+            "positive_predictions": 4,
+            "positive_labels": 3,
+            "confusion": {
+              "true_positive": 3,
+              "true_negative": 0,
+              "false_positive": 1,
+              "false_negative": 0
+            },
+            "loss": 0.566271960735321
+          }
+        },
+        "model_path": "results\\neural_models\\trade_vs_no_trade.pt",
+        "report_path": "results\\neural_models\\trade_vs_no_trade_report.json"
+      },
+      "challenger_training_report": {
+        "generated_at": "2026-03-23T20:20:49.093335+00:00",
+        "task_name": "trade_vs_no_trade",
+        "positive_label": "trade",
+        "negative_label": "no_trade",
+        "device": "cuda",
+        "torch_version": "2.9.1+cu128",
+        "cuda_visible_to_torch": true,
+        "cuda_version": "12.8",
+        "example_count": 18,
+        "positive_count": 14,
+        "negative_count": 4,
+        "skipped_example_count": 2,
+        "train_count": 13,
+        "validation_count": 5,
+        "vocabulary_size": 209,
+        "hyperparameters": {
+          "epochs": 40,
+          "learning_rate": 0.02,
+          "hidden_dim": 32,
+          "validation_ratio": 0.25,
+          "seed": 42
+        },
+        "best_epoch": 26,
+        "metrics": {
+          "train": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 10,
+            "positive_labels": 10,
+            "confusion": {
+              "true_positive": 10,
+              "true_negative": 3,
+              "false_positive": 0,
+              "false_negative": 0
+            },
+            "loss": 0.19707447290420532
+          },
+          "validation": {
+            "accuracy": 0.8,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.888888888888889,
+            "positive_predictions": 5,
+            "positive_labels": 4,
+            "confusion": {
+              "true_positive": 4,
+              "true_negative": 0,
+              "false_positive": 1,
+              "false_negative": 0
+            },
+            "loss": 0.428081750869751
+          }
+        },
+        "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\trade_vs_no_trade.pt",
+        "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\trade_vs_no_trade_report.json"
+      },
+      "full_surface": {
+        "winner": "tie",
+        "champion": {
+          "task_name": "trade_vs_no_trade",
+          "device": "cuda",
+          "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\trade_vs_no_trade.pt",
+          "example_count": 18,
+          "threshold": 0.5,
+          "average_probability": 0.7788664019770093,
+          "metrics": {
+            "accuracy": 0.9444444444444444,
+            "precision": 0.9333333333333333,
+            "recall": 1.0,
+            "f1": 0.9655172413793104,
+            "positive_predictions": 15,
+            "positive_labels": 14,
+            "confusion": {
+              "true_positive": 14,
+              "true_negative": 3,
+              "false_positive": 1,
+              "false_negative": 0
+            }
+          }
+        },
+        "challenger": {
+          "task_name": "trade_vs_no_trade",
+          "device": "cuda",
+          "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\trade_vs_no_trade.pt",
+          "example_count": 18,
+          "threshold": 0.5,
+          "average_probability": 0.8424999349647098,
+          "metrics": {
+            "accuracy": 0.9444444444444444,
+            "precision": 0.9333333333333333,
+            "recall": 1.0,
+            "f1": 0.9655172413793104,
+            "positive_predictions": 15,
+            "positive_labels": 14,
+            "confusion": {
+              "true_positive": 14,
+              "true_negative": 3,
+              "false_positive": 1,
+              "false_negative": 0
+            }
+          }
+        },
+        "metric_delta": {
+          "accuracy": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "reinforcement_only": {
+        "winner": "tie",
+        "champion": {
+          "task_name": "trade_vs_no_trade",
+          "device": "cuda",
+          "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\trade_vs_no_trade.pt",
+          "example_count": 3,
+          "threshold": 0.5,
+          "average_probability": 0.8024864196777344,
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 3,
+            "positive_labels": 3,
+            "confusion": {
+              "true_positive": 3,
+              "true_negative": 0,
+              "false_positive": 0,
+              "false_negative": 0
+            }
+          }
+        },
+        "challenger": {
+          "task_name": "trade_vs_no_trade",
+          "device": "cuda",
+          "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\trade_vs_no_trade.pt",
+          "example_count": 3,
+          "threshold": 0.5,
+          "average_probability": 0.9247700770696005,
+          "metrics": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "positive_predictions": 3,
+            "positive_labels": 3,
+            "confusion": {
+              "true_positive": 3,
+              "true_negative": 0,
+              "false_positive": 0,
+              "false_negative": 0
+            }
+          }
+        },
+        "metric_delta": {
+          "accuracy": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    }
+  ],
+  "dataset_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\reinforced_model_training_surface.jsonl",
+  "iteration_retraining_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\iteration_retraining_report.json",
+  "champion_model_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models",
+  "challenger_model_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained",
+  "output_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\iteration_challenger_report.json"
+}

@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-03-24T21:24:17.321134+00:00",
+  "manifest_source": "trade_review_channel_inventory",
+  "source_channel_url": "https://www.youtube.com/@TTrades_edu/videos",
+  "video_count": 9,
+  "videos": [
+    {
+      "slug": "ttrades_top_down_chart_lessons_4",
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "video_id": "w-JekHg6Ldk",
+      "url": "https://youtu.be/w-JekHg6Ldk",
+      "source_page": null,
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "chart_lesson"
+      ],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "ttrades_top_down_chart_lessons_3",
+      "title": "TTrades Top-Down Chart Lessons #3",
+      "video_id": "IzOQmcgLyA0",
+      "url": "https://youtu.be/IzOQmcgLyA0",
+      "source_page": null,
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "chart_lesson"
+      ],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "ttrades_top_down_chart_lessons_2",
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "video_id": "UBTl7za9obc",
+      "url": "https://youtu.be/UBTl7za9obc",
+      "source_page": null,
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "chart_lesson"
+      ],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "ttrades_top_down_chart_lessons_1",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "video_id": "Nlw-PZhoViQ",
+      "url": "https://youtu.be/Nlw-PZhoViQ",
+      "source_page": null,
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "chart_lesson"
+      ],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "title": "MARA Trade Review | H1 Market Maker Buy Model [MMXM]",
+      "video_id": "OZfaUs437O0",
+      "url": "https://youtu.be/OZfaUs437O0",
+      "source_page": null,
+      "topics": [
+        "educational_channel",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "trade_review"
+      ],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "title": "CPI Gold Trade Review | ICT Market Maker Sell Model [MMXM]",
+      "video_id": "0R61Y6Pn74Q",
+      "url": "https://youtu.be/0R61Y6Pn74Q",
+      "source_page": null,
+      "topics": [
+        "educational_channel",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "trade_review"
+      ],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "ict_trade_example_15_second_entry",
+      "title": "ICT Trade Example - 15 Second Entry",
+      "video_id": "k_Qoou9vi5c",
+      "url": "https://youtu.be/k_Qoou9vi5c",
+      "source_page": null,
+      "topics": [
+        "example",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "trade_example"
+      ],
+      "educational_categories": [],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "index_futures_weekly_recap_ict_concepts",
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "video_id": "s9Poh_RaN2o",
+      "url": "https://youtu.be/s9Poh_RaN2o",
+      "source_page": null,
+      "topics": [
+        "recap",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "weekly_recap"
+      ],
+      "educational_categories": [],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "title": "ICT Index Futures Weekly Recap - Week of 5/16/22",
+      "video_id": "LR85yoIuWuA",
+      "url": "https://youtu.be/LR85yoIuWuA",
+      "source_page": null,
+      "topics": [
+        "recap",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition": "trade_review",
+      "review_categories": [
+        "weekly_recap"
+      ],
+      "educational_categories": [],
+      "discovery_source": "youtube_channel_inventory",
+      "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    }
+  ]
+}

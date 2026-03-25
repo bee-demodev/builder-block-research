@@ -1,0 +1,181 @@
+{
+  "topic": "equilibrium",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_equilibrium_continuations",
+      "url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_easy_daily_bias",
+      "url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_next_day_model",
+      "url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "equilibrium_is_wick_to_wick_midpoint",
+      "name": "Equilibrium is measured from wick high to wick low, not from candle bodies",
+      "timeframeScope": ["fractal", "higher"],
+      "marketPhasePrecondition": ["range_or_reference_candle_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Choose the previous day range or a significant higher-timeframe reference candle, then measure from wick high to wick low",
+      "confirmationTrigger": "Mark the 0.5 midpoint of the full wick range and treat that midpoint as the equilibrium divider for the active setup",
+      "protectedSwingDefinition": "Protected structure is evaluated relative to the wick-based midpoint, not a body-based midpoint that hides the real price extremes",
+      "invalidationCondition": "The midpoint is derived from candle bodies instead of the true wick extremes, or the reference range changes before the setup completes",
+      "targetLogic": "Use the wick-based midpoint as the divider that determines whether continuation should hold in the correct half or fail toward the opposite side",
+      "exceptions": [
+        "When focusing on equilibrium only, ignore candle bodies even if other tools like CISD or order blocks use body measurements"
+      ],
+      "evidenceRefs": [
+        "ttrades_equilibrium_continuations#fibonacci_setup",
+        "ttrades_equilibrium_continuations#step_by_step_using_equilibrium_in_continuations"
+      ],
+      "visualVerificationRefs": [
+        "article:equilibrium_midpoint_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "reference range wick high",
+        "reference range wick low",
+        "equilibrium midpoint"
+      ],
+      "machineChecks": [
+        "Compute equilibrium as the midpoint between wick high and wick low",
+        "Reject body-only midpoint calculations for this topic",
+        "Persist the selected midpoint until the reference range is intentionally replaced"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "equilibrium_respect_sets_directional_half",
+      "name": "In expansion conditions, respect of the correct half of the range defines the directional bias",
+      "timeframeScope": ["fractal", "lower"],
+      "marketPhasePrecondition": ["expansion_phase_or_continuation_bias_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "After equilibrium is marked, split the range into upper and lower halves and align those halves with the active directional thesis",
+      "confirmationTrigger": "Bullish continuation requires price to respect the upper half of the range, while bearish continuation requires price to respect the lower half",
+      "protectedSwingDefinition": "Continuation structure remains healthy only while the correct half keeps acting as support or resistance for the active move",
+      "invalidationCondition": "Price closes through the wrong side of equilibrium and the expected continuation half no longer holds",
+      "targetLogic": "Keep the bias in the current direction while the correct half is respected; reassess once the midpoint fails",
+      "exceptions": [
+        "If the market is no longer in expansion conditions, equilibrium can become a neutral divider instead of a continuation filter"
+      ],
+      "evidenceRefs": [
+        "ttrades_equilibrium_continuations#why_i_use_equilibrium_differently",
+        "ttrades_equilibrium_continuations#applying_equilibrium_in_expansions"
+      ],
+      "visualVerificationRefs": [
+        "article:equilibrium_half_respect_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "equilibrium midpoint",
+        "current close",
+        "current high",
+        "current low",
+        "active directional bias"
+      ],
+      "machineChecks": [
+        "Track whether price is holding in the correct half of the reference range",
+        "Flag loss of continuation bias when closes move through the wrong side of equilibrium",
+        "Keep the continuation bias active only while the expected half remains respected"
+      ],
+      "ambiguityNotes": [
+        "The first strict tolerance for saying price respected versus barely pierced equilibrium is not yet numeric"
+      ]
+    },
+    {
+      "id": "previous_day_equilibrium_filters_continuation_day",
+      "name": "A continuation day is framed from the previous day's equilibrium and confirmed by lower-timeframe closes that stay on the correct side",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["previous_day_range_available", "continuation_bias_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "Mark the previous day's wick-high-to-wick-low midpoint before the new session begins",
+      "confirmationTrigger": "Treat the continuation setup as valid only when lower-timeframe closures do not occur beyond the previous day's equilibrium in the wrong direction",
+      "protectedSwingDefinition": "The new session can keep building protected structure only while the prior-day equilibrium continues to hold as the continuation divider",
+      "invalidationCondition": "Lower-timeframe closes print beyond the previous day's equilibrium in the wrong direction or the session reclaims the opposite side of the range",
+      "targetLogic": "Once equilibrium holds, trade in the direction of the continuation bias through the previous day's high or low and toward external liquidity",
+      "exceptions": [
+        "Respecting equilibrium does not require an exact touch; the failure condition is the wrong-side close, not minor noise around the midpoint"
+      ],
+      "evidenceRefs": [
+        "ttrades_easy_daily_bias#framing_a_continuation_day",
+        "ttrades_easy_daily_bias#continuations_in_both_directions",
+        "ttrades_next_day_model#understanding_continuation_vs_reversal"
+      ],
+      "visualVerificationRefs": [
+        "article:equilibrium_previous_day_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "previous day wick high",
+        "previous day wick low",
+        "previous day equilibrium midpoint",
+        "lower-timeframe close series"
+      ],
+      "machineChecks": [
+        "Project the previous day's equilibrium into the new session",
+        "Reject continuation when lower-timeframe closes occur beyond equilibrium in the wrong direction",
+        "Allow minor probing around the midpoint only until the close-based failure condition appears"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "equilibrium_requires_poi_and_confirmation",
+      "name": "Equilibrium becomes tradable when the respected half also contains a point of interest and lower-timeframe confirmation",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["equilibrium_marked", "point_of_interest_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "After identifying the correct half of the range, look for a fair value gap, order block, or protected swing inside that half",
+      "confirmationTrigger": "Require a reaction at the point of interest plus a candle closure and CISD on the lower timeframe before treating the equilibrium area as actionable",
+      "protectedSwingDefinition": "Protected highs and lows formed inside the respected half validate that equilibrium is supporting real continuation structure rather than passive balance",
+      "invalidationCondition": "The equilibrium half contains no usable point of interest, or the lower timeframe never confirms with a closure and CISD",
+      "targetLogic": "Use the equilibrium half as the directional filter, the point of interest as the entry zone, and the higher-timeframe range objective as the target frame",
+      "exceptions": [
+        "If the first point of interest fails, newly created liquidity inside the same respected half can become the fallback anchor"
+      ],
+      "evidenceRefs": [
+        "ttrades_equilibrium_continuations#step_by_step_using_equilibrium_in_continuations",
+        "ttrades_equilibrium_continuations#intraday_context",
+        "ttrades_equilibrium_continuations#fractal_nature_of_the_concept"
+      ],
+      "visualVerificationRefs": [
+        "article:equilibrium_poi_confirmation_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "equilibrium midpoint",
+        "point of interest flag",
+        "lower-timeframe candle closure flag",
+        "lower-timeframe CISD proxy",
+        "protected swing proxy"
+      ],
+      "machineChecks": [
+        "Require both a point of interest and lower-timeframe confirmation before promoting an equilibrium reaction into an entry setup",
+        "Allow fallback to newly created liquidity only if it remains inside the respected half of the range",
+        "Mark the setup as context-only when equilibrium is respected but no confirmation appears"
+      ],
+      "ambiguityNotes": [
+        "The first-pass ranking rule between multiple points of interest inside the respected half still needs a stricter algorithm"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What numeric tolerance around the 0.5 line should count as valid equilibrium respect versus a true close-through failure?",
+    "How should multiple points of interest inside the respected half be ranked before lower-timeframe confirmation appears?"
+  ]
+}

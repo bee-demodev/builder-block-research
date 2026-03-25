@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-03-24T20:24:16.810709+00:00",
+  "weak_multimodal_dataset": {
+    "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_video_multimodal_dataset.jsonl",
+    "row_count": 75,
+    "input_weak_row_count": 75,
+    "input_window_row_count": 75,
+    "audio_clip_job_count": 75,
+    "skipped_missing_window_count": 0,
+    "ready_for_weak_training_count": 55,
+    "eligible_for_training_count": 55,
+    "review_status_counts": {
+      "missing_frame": 5,
+      "needs_label_review": 11,
+      "needs_teacher_review": 4,
+      "ready_for_weak_training": 55
+    },
+    "audio_clips_extracted_count": 0,
+    "audio_clips_skipped_existing_count": 75,
+    "audio_clips_missing_video_count": 0
+  },
+  "blended_multimodal_dataset": {
+    "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_blended_multimodal_dataset.jsonl",
+    "row_count": 105,
+    "teacher_row_count": 50,
+    "weak_row_count": 55,
+    "excluded_weak_row_count": 20,
+    "source_tier_counts": {
+      "teacher": 50,
+      "weak": 55
+    },
+    "review_status_counts": {
+      "ready_for_weak_training": 55,
+      "teacher_visual_baseline": 50
+    },
+    "contradiction_status_counts": {
+      "not_applicable": 50,
+      "unreviewed": 55
+    },
+    "audio_enabled_row_count": 55,
+    "text_enabled_row_count": 55,
+    "deduped_overlap_count": 0
+  },
+  "multimodal_review_queue": {
+    "queue_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_multimodal_review_queue.json",
+    "row_count": 75,
+    "ready_to_promote_count": 0,
+    "review_candidate_count": 75,
+    "blocked_contradiction_count": 0,
+    "model_disagreement_count": 70,
+    "mean_disagreement_count": 5.626667,
+    "reviewed_row_count": 0,
+    "reviewed_alignment_precision": 0.0,
+    "recommended_action_counts": {
+      "collect_more_multimodal_evidence": 16,
+      "review_model_disagreement": 59
+    },
+    "priority_band_counts": {
+      "high": 59,
+      "low": 5,
+      "medium": 11
+    }
+  },
+  "multimodal_model": {
+    "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_blended_multimodal\\ttfm_blended_multimodal_pattern_net.pt",
+    "model_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_blended_multimodal\\ttfm_blended_multimodal_pattern_net_report.json",
+    "device": "cuda",
+    "brain_type": "setup_scorer",
+    "embedding_backend": "google_gemini",
+    "visual_embedding_model": "models/gemini-embedding-2-preview",
+    "text_embedding_model": "models/gemini-embedding-001",
+    "audio_semantic_mode": "models/gemini-2.0-flash",
+    "label_space_size": 13,
+    "audio_enabled_example_count": 55,
+    "audio_semantic_example_count": 55,
+    "text_enabled_example_count": 105,
+    "best_epoch": 16,
+    "best_validation_f1": 0.55,
+    "best_prediction_threshold": 0.41923076923076924,
+    "best_prediction_threshold_mode": "per_label",
+    "best_prediction_thresholds": {
+      "breaker": 0.5,
+      "candle_2_closure": 0.5,
+      "candle_3_closure": 0.5,
+      "equilibrium": 0.3,
+      "fair_value_gap": 0.3,
+      "invalidation": 0.55,
+      "liquidity_sweep": 0.35,
+      "order_block": 0.3,
+      "point_of_interest": 0.5,
+      "protected_swing": 0.5,
+      "top_down_alignment": 0.25,
+      "wick_logic": 0.4,
+      "zone_boundary": 0.5
+    },
+    "validation_micro_f1": 0.55,
+    "validation_micro_precision": 0.3900709219858156,
+    "validation_micro_recall": 0.9322033898305084,
+    "validation_positive_predictions": 141,
+    "validation_positive_labels": 59,
+    "validation_average_setup_confidence": 0.12826566398143768,
+    "train_micro_f1": 0.47709320695102686
+  }
+}

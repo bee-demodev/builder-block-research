@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-03-23T20:20:43.438540+00:00",
+  "artifact_type": "pine_candidate_event_contract",
+  "spec_key": "reversal_sequence_model",
+  "trade_model": {
+    "slug": "reversal_sequence_model",
+    "name": "Reversal Sequence Model"
+  },
+  "script_title": "TTrades Reversal Sequence Model [Draft]",
+  "script_output_path": "results\\pine_scripts\\reversal_sequence_model.pine",
+  "alert_titles": [
+    "Draft bullish crossover",
+    "Draft bearish crossover"
+  ],
+  "rule_state_fields": [
+    "higherTimeframeBias",
+    "trackedLiquidityAnchors",
+    "anchorSweepDirection",
+    "wickMidpointState",
+    "reclaimState",
+    "cisdState",
+    "protectedSwingState",
+    "entryFamilyReady",
+    "targetContext"
+  ],
+  "required_event_fields": [
+    "trade_model",
+    "chart_context",
+    "annotation",
+    "candidate_signal"
+  ],
+  "candidate_signal_required_fields": [
+    "timestamp",
+    "side",
+    "stop_price",
+    "target_price"
+  ],
+  "default_event": {
+    "profile_slug": "ttrades_curriculum",
+    "topic": "invalidation",
+    "trade_model": "reversal_sequence_model",
+    "relation_type": "execution_model",
+    "chart_context": {
+      "setup_variant": "reversal_sequence_model",
+      "source_kind": "tradingview_pine_alert",
+      "timeframe_scope": [],
+      "session_scope": []
+    },
+    "annotation": {
+      "fired_alert": "",
+      "rule_states": {
+        "higherTimeframeBias": "",
+        "trackedLiquidityAnchors": "",
+        "anchorSweepDirection": "",
+        "wickMidpointState": "",
+        "reclaimState": "",
+        "cisdState": "",
+        "protectedSwingState": "",
+        "entryFamilyReady": "",
+        "targetContext": ""
+      }
+    },
+    "candidate_signal": {
+      "timestamp": "",
+      "side": "",
+      "stop_price": "",
+      "target_price": "",
+      "quantity": 1.0,
+      "session": "",
+      "thesis": ""
+    }
+  }
+}

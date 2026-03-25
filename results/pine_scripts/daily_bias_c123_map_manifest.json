@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-03-23T17:59:45.905211+00:00",
+  "summary": {
+    "generated_script_count": 1,
+    "generated_candidate_contract_count": 1
+  },
+  "generated_scripts": [
+    {
+      "spec_path": "results\\indicator_specs\\daily_bias_c123_map.json",
+      "spec_key": "daily_bias_c123_map",
+      "script_title": "TTrades Daily Bias C1/C2/C3 Map [Draft]",
+      "output_path": "results\\pine_scripts\\daily_bias_c123_map.pine"
+    }
+  ],
+  "candidate_event_contracts": [
+    {
+      "spec_key": "daily_bias_c123_map",
+      "script_title": "TTrades Daily Bias C1/C2/C3 Map [Draft]",
+      "output_path": "results\\pine_candidate_event_contracts\\daily_bias_c123_map.candidate_event_contract.json",
+      "alert_count": 1
+    }
+  ]
+}

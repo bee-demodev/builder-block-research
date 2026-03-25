@@ -1,0 +1,119 @@
+// This Pine Script(TM) code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// Copyright builder-block-C
+//@version=6
+indicator("TTrades Daily Profile Models [Draft]", overlay=true, max_lines_count=100, max_labels_count=100, max_boxes_count=20)
+// TV_SYNC_SIGNATURE: TTrades Daily Profile Models [Draft]
+
+// Draft scaffold generated from indicator spec: daily_profile_models
+// First-pass Pine overlay draft for the TTrades daily profile models using session-range sequencing, London and New York profile classification, rotational seek-and-destroy filtering, and provisional session-shift confirmation.
+// Provisional proxy set:
+// - session_cisd_proxy_v1: Use a directional close through the opposing candle series as the first session-shift proxy, optionally strengthened with displacement.
+// - london_range_completion_proxy_v1: Treat London as having completed too much of the day once it consumes more than the configured portion of the expected daily expansion window.
+// - profile_overlap_ranking_v1: Break profile conflicts by preferring the higher-timeframe-anchor path first, then the direct current-day sweep path, then the rotational seek-and-destroy filter.
+// - seek_and_destroy_rotation_proxy_v1: Classify the day as seek-and-destroy once the range sweeps both sides and returns toward equilibrium or the daily open at least the configured number of times.
+// State models:
+// - dailyProfileStateMachine: unresolved, london_reversal_watch, london_reversal_new_york_continuation_confirmed, new_york_manipulation_watch, new_york_manipulation_confirmed, new_york_reversal_watch, new_york_reversal_confirmed, seek_and_destroy_filter, resolved_breakout_override
+// Signal pipeline:
+// 1. Session Range Build: Track daily open, Asia range, London range, and the earliest New York interaction points so the day can be classified by session sequence instead of isolated candles.
+// 2. London Reversal and Completion Filter: Detect when London forms the daily wick and shifts direction, then reject the continuation path if London already appears to have completed most of the expected daily expansion.
+// 3. New York Manipulation and Reversal Branch: Split the New York path into manipulation versus reversal depending on whether the session is sweeping the current day's range or finishing a missed higher-timeframe run first.
+// 4. Session Shift Confirmation: Require a first-pass CISD or directional close-through-opposing-series event, then require a protected swing when that filter is enabled before treating the profile as confirmed.
+// 5. Seek-and-Destroy and Rotation Filter: When the day keeps sweeping both sides of the range and returning toward equilibrium or the daily open, demote directional expectations into a seek-and-destroy filter until a true outside hold appears.
+// 6. Profile Targets and Failure Management: Use the confirmed profile to choose continuation delivery, previous-day liquidity, failure swing targets, or rotational mean-reversion expectations, and invalidate the profile when the corresponding session structure breaks.
+
+// inputs
+// Sessions
+asiaSessionInput = input.string("1900-0000", "asiaSession", group="Sessions", tooltip="Session window used to define the Asia range for seek-and-destroy and session-profile context.")
+londonSessionInput = input.string("0200-0500", "londonSession", group="Sessions", tooltip="Session window used to measure London reversal and pre-New-York structure conditions.")
+newYorkSessionInput = input.string("0830-1200", "newYorkSession", group="Sessions", tooltip="Session window used to detect New York continuation, manipulation, or reversal delivery.")
+newYorkOpenMarkersInput = input.string(['08:30', '09:30'], "newYorkOpenMarkers", group="Sessions", tooltip="Key New York timestamps that matter most for manipulation and reversal profiles.")
+
+// Profile Detection
+enabledProfilesInput = input.string(['london_reversal_new_york_continuation', 'new_york_manipulation', 'new_york_reversal', 'seek_and_destroy'], "enabledProfiles", group="Profile Detection", tooltip="Profiles that remain active in the overlay classification engine.")
+requireHigherTimeframeAnchorForNyReversalInput = input.bool(true, "requireHigherTimeframeAnchorForNyReversal", group="Profile Detection", tooltip="Require an explicit higher-timeframe PD array or key level before allowing the New York reversal profile.")
+allowLondonContinuationProfileInput = input.bool(true, "allowLondonContinuationProfile", group="Profile Detection", tooltip="Allow the London reversal -> New York continuation profile when London forms the wick and New York is still needed for body delivery.")
+
+// Confirmation Proxies
+cisdModeInput = input.string("directional_close_through_opposing_series", "cisdMode", group="Confirmation Proxies", tooltip="First-pass CISD proxy used across the session profiles.", options=["directional_close_through_opposing_series", "directional_close_plus_displacement"])
+sweepModeInput = input.string("direct_range_sweep_only", "sweepMode", group="Confirmation Proxies", tooltip="Choose whether a direct range sweep is mandatory or an SMT-style substitute may qualify for manipulation logic.", options=["direct_range_sweep_only", "direct_or_smt_substitute"])
+requireProtectedSwingAfterShiftInput = input.bool(true, "requireProtectedSwingAfterShift", group="Confirmation Proxies", tooltip="Require a protected swing after the session shift before promoting the profile to confirmed status.")
+executionTimeframeInput = input.string("15", "executionTimeframe", group="Confirmation Proxies", tooltip="Primary intraday timeframe used for session-structure confirmation.")
+
+// Range and Rotation Filters
+londonRangeCompletionThresholdInput = input.float(0.7, "londonRangeCompletionThreshold", group="Range and Rotation Filters", tooltip="Provisional threshold for deciding whether London already completed too much of the day's expected expansion for New York continuation to remain valid.")
+seekAndDestroyRotationCountInput = input.int(2, "seekAndDestroyRotationCount", group="Range and Rotation Filters", tooltip="Number of two-sided range rotations required before the day is treated as seek-and-destroy instead of directional delivery.")
+equilibriumTolerancePercentOfRangeInput = input.float(0.05, "equilibriumTolerancePercentOfRange", group="Range and Rotation Filters", tooltip="Tolerance used when treating equilibrium or daily open as a reversion magnet during rotational conditions.")
+requireOutsideRangeHoldInput = input.bool(true, "requireOutsideRangeHold", group="Range and Rotation Filters", tooltip="Require a true outside-range hold before abandoning the seek-and-destroy or consolidative classification.")
+
+// Backtest Contract
+backtestTickSizeInput = input.float(0.25, "backtestTickSize", group="Backtest Contract", tooltip="First-pass tick size used by the historical harness when translating bar movement into execution and stop-distance units.")
+backtestSpreadTicksInput = input.float(1.0, "backtestSpreadTicks", group="Backtest Contract", tooltip="Explicit spread assumption in ticks for historical backtests.")
+backtestSlippageTicksInput = input.float(0.5, "backtestSlippageTicks", group="Backtest Contract", tooltip="Explicit slippage assumption in ticks for historical backtests, with larger values required in illiquid sessions.")
+backtestCommissionPerContractInput = input.float(2.5, "backtestCommissionPerContract", group="Backtest Contract", tooltip="Commission and fee assumption per contract for historical backtests.")
+
+// helper functions
+clamp01(float value) => math.max(0.0, math.min(1.0, value))
+midpoint(float highPrice, float lowPrice) => (highPrice + lowPrice) / 2.0
+
+// calculations
+float draftMidpoint = midpoint(high, low)
+float draftBody = math.abs(close - open)
+float draftRange = math.max(high - low, syminfo.mintick)
+float draftPressure = clamp01(draftBody / draftRange)
+bool draftMomentum = close > draftMidpoint
+string draftState = draftMomentum ? "bullish_bias" : "bearish_bias"
+
+// derived series placeholders
+// - dailyOpen: Daily open used as a core reference for profile framing and rotational reversion expectations.
+// - asiaRangeState: Asia high, Asia low, and Asia equilibrium used for seek-and-destroy and London context.
+// - londonRangeState: London session high, low, equilibrium, and sweep behavior used to classify early-session intent.
+// - newYorkRangeInteractionState: New York sweep, manipulation, reversal, or continuation interaction state around session ranges and higher-timeframe anchors.
+// - higherTimeframeAnchorState: Higher-timeframe PD array or missed level state required for the New York reversal profile.
+// - sessionCisdState: First-pass session CISD proxy after London or New York sweeps.
+// - sessionProtectedSwingState: Post-shift protected swing state used to validate continuation or reversal session profiles.
+// - rotationState: Range rotation count and equilibrium reversion behavior used to classify seek-and-destroy conditions.
+// - dailyProfileState: Profile classification state: London reversal/New York continuation, New York manipulation, New York reversal, seek-and-destroy, or unresolved.
+// - profileTargetModel: Target expectation state pointing toward continuation delivery, previous-day liquidity, failed swing targets, or rotational equilibrium.
+
+// rule trace references
+// - bias: bias.previous_candle_close_bias -> Next-candle bias starts from how price closes relative to the previous candle range
+// - bias: bias.daily_reversal_framework -> Reversal-day bias is framed from previous day highs or lows plus lower-timeframe confirmation
+// - bias: bias.daily_continuation_framework -> Continuation-day bias uses prior candle closure plus equilibrium respect
+// - bias: bias.wick_size_bias_filter -> Wick size filters whether the current candle supports expansion or reversion
+// - bias: bias.bias_precedes_execution -> Higher-timeframe bias filters all lower-timeframe entries
+// - consolidation: consolidation.consolidation_phase_definition -> A consolidation is an internal range between a defined high and low where directional intent is unresolved
+// - consolidation: consolidation.manipulation_then_resolution -> The preferred consolidation setup is a sweep of one side of the range followed by confirmation away from the swept side
+// - consolidation: consolidation.breakout_continuation_from_consolidation -> A breakout continuation is valid when price leaves the range, holds outside it, and confirms on the retest
+// - consolidation: consolidation.equilibrium_and_whipsaw_filters -> While consolidation remains unresolved, equilibrium and range-rotation behavior should dominate expectations
+// - daily_profiles: daily_profiles.london_reversal_new_york_continuation_profile -> London reversal and New York continuation profiles use London to form the daily wick and New York to deliver the body
+// - daily_profiles: daily_profiles.new_york_manipulation_profile -> New York manipulation profiles sweep the current day's range during New York and then deliver in the opposite direction
+// - daily_profiles: daily_profiles.new_york_reversal_profile -> New York reversal profiles occur when London falls short of a higher-timeframe level and New York completes the run before reversing
+// - daily_profiles: daily_profiles.seek_and_destroy_profile_filter -> Seek and destroy profiles are rotational non-opportunity days unless false breakouts can be faded back toward equilibrium
+// - wick_logic: wick_logic.small_opposing_run_supports_expansion -> A small opposing wick with a large body supports expansion in the candle direction
+// - wick_logic: wick_logic.large_opposing_wick_favors_reversion -> A large opposing wick with a smaller body favors reversion toward the open or nearby liquidity
+// - wick_logic: wick_logic.wick_midpoint_respect_vs_disrespect -> Respect or disrespect of the wick midpoint determines whether rejection is holding or failing
+// - wick_logic: wick_logic.higher_timeframe_wick_guides_lower_timeframe_expectation -> Higher-timeframe wick behavior should govern whether lower-timeframe structure is read as expansion, reversal, or range
+// - equilibrium: equilibrium.equilibrium_is_wick_to_wick_midpoint -> Equilibrium is measured from wick high to wick low, not from candle bodies
+// - equilibrium: equilibrium.equilibrium_respect_sets_directional_half -> In expansion conditions, respect of the correct half of the range defines the directional bias
+// - equilibrium: equilibrium.previous_day_equilibrium_filters_continuation_day -> A continuation day is framed from the previous day's equilibrium and confirmed by lower-timeframe closes that stay on the correct side
+// - equilibrium: equilibrium.equilibrium_requires_poi_and_confirmation -> Equilibrium becomes tradable when the respected half also contains a point of interest and lower-timeframe confirmation
+// - protected_swings: protected_swings.protected_swing_definition -> Protected swing is the structure expected to hold if trend continues
+// - protected_swings: protected_swings.protected_swing_stop_logic -> Protected swings provide structural stop placement
+// - protected_swings: protected_swings.protected_swing_trend_filter -> Trade direction should follow the most recent valid protected swing logic
+// - protected_swings: protected_swings.protected_swing_confirmation_gate -> Anticipation is allowed, but confirmation requires the correct closing event
+// - top_down_alignment: top_down_alignment.higher_timeframe_sets_direction -> The higher timeframe sets the directional bias and lower timeframes should not override it on their own
+// - top_down_alignment: top_down_alignment.intermediate_timeframe_confirms_structure -> The intermediate timeframe must confirm the higher-timeframe bias with structure, a point of interest, and a directional closure
+// - top_down_alignment: top_down_alignment.lower_timeframe_refines_entry_only_after_alignment -> The lower timeframe is for entry precision only after the higher and intermediate timeframes are already aligned
+// - top_down_alignment: top_down_alignment.aligned_expansion_candles_define_clean_trend -> A clean trend requires aligned expansion-supporting candles across at least two timeframes
+
+// visuals
+plot(draftMidpoint, "Draft midpoint", color=color.new(color.orange, 0), linewidth=2)
+bgcolor(draftMomentum ? color.new(color.green, 88) : color.new(color.red, 88), title="Draft state background")
+var label draftSummaryLabel = na
+if barstate.islast
+    label.delete(draftSummaryLabel)
+    draftSummaryLabel := label.new(bar_index, high, str.format("{0} | pressure {1}", draftState, str.tostring(draftPressure, "#.##")), style=label.style_label_down, textcolor=color.white, color=color.new(draftMomentum ? color.green : color.red, 0))
+
+// alerts
+alertcondition(ta.crossover(close, draftMidpoint), "Draft bullish crossover", "Draft scaffold crossed above midpoint.")
+alertcondition(ta.crossunder(close, draftMidpoint), "Draft bearish crossover", "Draft scaffold crossed below midpoint.")

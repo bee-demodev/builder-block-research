@@ -1,0 +1,463 @@
+[5.49] [Music]
+[11.00] how's it going everyone this video is
+[12.92] going to be over refining entries within
+[15.28] my fractal model specifically we are
+[17.68] going to talk about using a 1 minute
+[19.68] inversion within the hourly and 5 minute
+[22.36] model to do this we are going to use my
+[24.88] indicator if you want to check that out
+[26.72] there will be a link in the description
+[28.16] below to get access to that now if if
+[30.04] you've seen my intro to my fractal model
+[31.96] on this channel you know that my whole
+[33.92] goal is to anticipate one candle's open
+[36.20] high low close or open low high close
+[38.96] this is going to give me bias and then I
+[41.08] can use the lower time frame to get
+[42.88] entry into that so here you can see with
+[45.36] the sweep of this first candle and the
+[47.32] closure back in then I can anticipate
+[49.72] this candle to continue lower or to
+[51.88] expand lower the next step is aligning
+[54.44] my time frames together and I'll use my
+[56.56] time frame alignment video for that so
+[58.72] pairing the hourly with the 5minute time
+[61.04] frame I will wait until those time
+[62.96] frames are aligned in the same direction
+[65.44] so with this closure through the series
+[67.04] of up closed Candles now not only is my
+[69.72] hourly bearish but my 5 minute is
+[71.68] bearish as well so with this I will go
+[74.16] ahead and Mark out the t-spot the t-spot
+[76.68] is the area in which I expect this
+[78.44] higher time frame Wick to form and so I
+[81.12] will look for lower time frame entries
+[82.80] in there so looking for a PD array or a
+[85.40] point of interest within this t-spot
+[87.80] here we have a fair value Gap I'll go
+[89.76] aad ahead and once we reach into that
+[92.16] area I'll drop down to the 1 minute time
+[94.40] frame so now I'm anticipating expansion
+[96.92] on the hourly I have the 5 minute
+[99.20] aligned we are open trading higher and
+[102.80] I'm expecting an open high low close
+[106.12] from here I will look in that t-spot for
+[107.84] a 1 minute inversion which allows me to
+[109.92] get on side with my risk on this High to
+[112.60] then trade this expansion lower and so
+[115.12] you can see when we finish off the Open
+[117.48] high low close or this bearish EXP
+[119.88] expansion candle or open high look for
+[123.40] my inversion or let the wick of this
+[125.92] higher time frame candle for and then
+[127.88] trade this expansion lower let's hop
+[130.00] into trading view for some examples so
+[132.72] here we are with our first example and
+[134.72] you can see we have a sweep and a
+[137.00] closure back in we have expansion away
+[140.20] and we are trading into this high right
+[142.56] so we have a bullish bias from this
+[144.40] structure but we have taken out this
+[146.00] high as well as previous day high and
+[148.28] forming a reversal so with a conflicted
+[150.92] bias we can go ahead and use the daily
+[152.96] profile to see what is going on so down
+[155.00] here on the hourly time frame you can
+[156.36] see we are forming a reversal off of
+[158.28] this previous day high and this swing
+[160.00] point and respecting up Clos candles in
+[162.72] a downtrend here now what do you notice
+[164.96] about these we are just creating failure
+[166.96] swings right which generally are a great
+[169.00] Target to trade back to now if you
+[171.48] understand what I've been talking about
+[172.64] with Wick size when we have a large
+[174.96] range already we're not really expecting
+[177.24] price to form a large Wick like this and
+[179.28] continue expanding higher so more so
+[181.64] looking for liquidity around the daily
+[183.68] open for a Target so with that do we
+[186.52] have an hourly closure we do as we sweep
+[189.20] the previous candle close back in so
+[191.48] then I can drop down to the 5 minute and
+[193.44] look for a fractal model so down here on
+[196.04] the 5 minute you can see we have that
+[197.56] closure now do we have the alignment of
+[200.12] our 5 minute time frame we do not yet as
+[202.64] we have not closed through this series
+[204.36] of down Clos candles that swept out the
+[206.56] low so we have to wait through a close
+[208.64] through that level
+[210.56] so letting another candle form there we
+[212.96] get the closure through that level now
+[214.84] what do you notice about the higher time
+[216.60] frame here if our t-spot is where we are
+[219.16] anticipating a higher time frame Wick to
+[220.96] form and we lack a higher time frame
+[223.00] Wick we can then anticipate price to
+[225.08] retrace down to put in a higher time
+[227.48] frame Wick and then trade away if our
+[229.48] bias is correct so let's go ahead and
+[232.20] drop down to the 1 minute time frame and
+[234.28] see what happens in this t-spot area now
+[237.76] a quick update on our settings here is
+[239.92] have them locked to the hourly and 5
+[241.52] minutes so I can drop down to the lower
+[243.28] time frames and they remain the
+[245.84] same so here we go ahead and drop down
+[248.52] into that t-spot we create a lower wick
+[251.32] on this hourly candle now do we have an
+[253.52] inversion out of this t-spot well we
+[255.80] would need a close over this
+[259.84] level so no close yet got to wait for
+[262.80] this close give it another candle and
+[266.40] here we have a close through that level
+[268.60] so I can go ahead and look to get on
+[270.28] side with that close I prefer to put my
+[272.80] stop at the swing low right instead of
+[275.16] waiting for another close above and then
+[277.60] I can look for to r or I can go ahead
+[280.48] and hold this to higher time frame
+[281.92] targets but let's see how this works
+[286.36] out and there we go we hit 2 R and go
+[289.68] ahead and trade through these failure
+[291.44] swings to the left so just to review
+[293.40] here on the hourly time frame we sweep
+[295.64] and we close back inside that is paired
+[298.36] with our 5 minute change in the state of
+[300.32] delivery and then that marks out our
+[302.12] t-spot which is where we're anticipating
+[303.84] this higher time frame Wick to form
+[306.12] within that t-spot I can use the one
+[308.08] minute time frame to look for an
+[309.52] inversion level and then once closed
+[311.64] over I'm anticipating this Wick to hold
+[314.16] which gives me an invalidation
+[315.56] throughout the duration of this higher
+[317.00] time frame candle so if this is going to
+[319.20] be an expansion candle what do we know
+[320.88] about expansion candles they usually
+[322.72] close in the high or the low so
+[325.00] technically if I want a Time based exit
+[327.04] on this I could also hold this trade
+[328.96] until 11:00 so let's see what that looks
+[332.52] like if we take a Time Base exit on
+[335.04] Runners let's
+[336.48] say as we get up here and here would be
+[340.00] our time Base exit of closing at 11:
+[343.24] let's get into another example here so
+[346.28] here we are with our next example and
+[348.12] you can see we're in a consolidation
+[350.08] range here where we have this high as
+[352.92] well as this low and you can see we have
+[355.36] taken out the low in the consolidation
+[357.28] range and what is this paired with on
+[359.08] the hourly time frame we have that sweep
+[361.76] and closure back inside so this allows
+[364.48] me to anticipate a move higher here at
+[366.64] 10:00 a.m. which is also a new 4-Hour
+[369.28] candle so now dropping down to the 5
+[371.76] minute time frame here on NQ we have to
+[374.20] wait for that closure and the lower time
+[376.76] frame
+[378.52] structure so here we get this closure
+[380.84] and what do we notice on our lower time
+[382.80] frame the 5 minute is already aligned so
+[386.16] our indicator puts out this t-spot or
+[388.32] where I anticipate this higher time
+[390.28] frame Wick 2 form so I can then drop
+[392.80] down to the 1 minute time frame and I'll
+[394.88] go ahead and look for an inversion in
+[396.60] this area now if you notice do we have
+[399.32] any inversion in this area no and we
+[401.92] also have not swept out any lows or hit
+[403.88] a relevant point of Interest so going to
+[407.04] let this continue to play
+[409.76] out here what do we notice we sweep out
+[412.88] this low to the left and we also have
+[416.00] this inversion right
+[418.20] here so let's see what happens do we get
+[421.04] a close
+[424.16] over not yet and there we get the close
+[428.08] over now I can also look to take an
+[430.76] entry on the retest my stop on the low
+[434.16] and then I'd want to look for to R
+[436.52] depending on the risk to reward I can
+[438.44] choose to look for an entry on the close
+[440.92] or on the retest now in this case I
+[443.28] prefer the retest just because I want to
+[445.80] generally take profits after these
+[447.40] short-term highs so this is pretty close
+[449.52] too that high so let's see what happens
+[452.28] here we get tagged
+[454.56] in we just miss our
+[459.08] TP and there we finally go and hit our
+[461.72] take profit so you can see it took a
+[463.56] minute to get there but just to review
+[465.84] we have that hourly closure back in it
+[468.52] has the t-spot on that 5 minute time
+[470.64] frame after the confirmation has
+[472.52] occurred and from there I'm looking for
+[474.52] a 1 minute inversion in that area to get
+[476.64] on side now why is this important well
+[479.64] this low here is what I'm anticipating
+[482.04] to be the wick low so that allows me to
+[484.16] trade the expansion candle within what
+[486.32] time well from 10: to 11: once again if
+[489.48] we want to visit that time based exit of
+[492.20] trading towards the 11 close that would
+[495.28] be the closure and the entry so let's
+[497.68] get into our next setup so here we are
+[500.44] with our next setup and you can see we
+[502.60] have a consolidation into the new day
+[504.92] right we have this previous day low
+[507.00] which we swept out once and another time
+[509.88] or A3 drives and all you can notice from
+[512.76] this is you see how we continue to fail
+[515.64] to displace out of this range right if
+[517.52] we're going to get a continuation lower
+[518.88] from here we're going to go in close
+[520.20] below these lows so viewing this as a
+[523.24] consolidation range what can we look for
+[525.84] we can look for the high and the low of
+[527.84] the range and what do we notice here we
+[530.24] sweep the low we have equal highs so if
+[533.20] we are going to trade back into this
+[535.12] previous day's range or back up into
+[537.44] this area here where would that come
+[539.28] from from well that would occur at this
+[541.04] 10:00 a.m. or the new hourly candle so
+[543.68] from here I can drop down to the
+[545.20] 5-minute chart now with this I want to
+[547.68] wait for that closure through what the
+[550.00] series of down Clos candles into our
+[552.56] relevant point of Interest or that sweep
+[554.68] of the lows have we closed through it
+[556.84] yet no we haven't so I have to wait for
+[559.40] that closure
+[561.20] through now with this closure through I
+[563.92] can go ahead and drop down to the 1
+[565.84] minute time frame now with this one
+[567.64] minute time frame what do we notice we
+[569.60] notice that our t-spot has formed the
+[572.04] wick of the higher time frame candle
+[574.16] that is what we want to see so now if
+[576.12] we're expecting this to continue we can
+[578.24] expect that to continue until when
+[580.68] around 11 because I'm trading this open
+[583.20] low high close on the hourly time frame
+[586.08] so what do I notice about here do we
+[587.68] have an inversion we do right here right
+[591.08] we would have missed this one waiting
+[592.64] for that 5 minute confirmation now do we
+[595.04] have another inversion we do right here
+[597.56] so with this I can go ahead and look for
+[599.52] an entry on the retest can put my stop
+[602.28] below this low and then look for 2 r or
+[605.44] I can also look to trade back towards
+[607.24] that 11:00 a.m. time so let's see what
+[610.24] happens here we take that short-term
+[613.44] High we don't get filled and you can see
+[617.32] price trades away but once again closes
+[619.40] in the high so this is an example of a
+[621.48] trade I would miss because price never
+[623.80] came back and filled me but I hope you
+[625.92] can see it is an expansion candle and it
+[628.56] also closes in the high let's go into
+[631.24] another example so now that you are
+[633.72] understanding the model here we have our
+[635.76] hourly time frame our 4H hour time frame
+[637.88] and our daily with our hourly we have
+[640.16] that sweep and closure back in we have
+[642.52] our change in the state of delivery and
+[644.36] here we have that t- spot right where
+[646.12] I'm anticipating this higher time frame
+[647.60] Wick to form if we are going to expand
+[649.72] lower so I can drop into the 1 minute
+[652.20] time frame here and see if I have an
+[653.92] inversion in that area but down here on
+[656.56] the one minute we don't have an
+[658.32] inversion right suppose you could
+[660.40] consider this one in here and take an
+[662.00] entry however I want to see that
+[663.84] inversion that forms the wick we don't
+[665.64] have an inversion in here so letting
+[668.00] this trade what do we notice we notice
+[670.60] price is
+[671.80] consolidating so if we think about the
+[673.60] phases of price if we have a
+[675.64] consolidation we want to see a run of a
+[678.16] high before trading that lower giving us
+[680.16] a protected high so let's see if we can
+[682.44] run out a high to trade
+[684.32] lower nope we continue to consolidate
+[686.88] and trade lower now this is is where you
+[689.68] can use smt because at the same time or
+[692.52] this open ES was taking these highs
+[695.76] while NQ wasn't which shows its weakness
+[698.92] as well as another opportunity to get on
+[701.36] side so paired with the smt do we have a
+[704.52] bullish fair value Gap we
+[706.56] do does it get a close through it does
+[709.88] so then once again I could look to take
+[711.40] an entry on the retest or on the close
+[714.28] look for to
+[715.68] r with my stop on this high and then as
+[718.76] we let this continue to play out what do
+[720.80] we notice we do go ahead and hit that to
+[723.44] R does it get a continuation lower it
+[726.76] does right because what is expanding
+[729.48] this hourly expansion candle when does
+[732.04] this continue to well I could take a
+[734.44] little guess and say probably around
+[736.16] 10:00 a.m. so let's
+[738.64] see right there closing near the lows of
+[741.56] this hourly expansion candle if I wanted
+[743.92] a Time based exit what would it look
+[746.08] like look like something like that so
+[749.20] let's get into another
+[751.16] example so into our next example here
+[753.84] we've had a continuous downtrend here
+[756.36] and we form a reversal off previous day
+[758.84] low right we sweep our previous day low
+[761.52] and what do we have we have a closure
+[763.28] through the down Clos candles that did
+[765.36] that so if we are going to continue to
+[767.36] trade this higher or back into this
+[769.20] current range where would that occur
+[771.08] from Well we'd want to wait for a
+[772.80] bullish candle closure what do we notice
+[775.08] here we have all these failure swings
+[777.32] here that's what these are all these
+[779.68] failure swings so we sweep out all the
+[782.24] failure swings we close back inside the
+[784.24] previous so I can drop down to the
+[786.64] 5minute time frame and look for a
+[788.96] confirmation now down here on the
+[790.88] 5minute time frame let's go ahead and
+[792.60] talk about a few things do we have that
+[794.96] confirmation we do as we've closed
+[797.12] through the series of down closed
+[798.56] candles into that important level and
+[801.28] then what do we also notice you notice
+[803.36] how we were looking for this closure on
+[804.88] the higher time frame here that looks
+[806.68] like this do we notice another one of
+[808.80] those you notice one right here does
+[810.92] that come out of an important level it
+[812.92] does as it's retesting the change in the
+[814.64] state of delivery and into that fair
+[816.28] value Gap so if you watched my Wick
+[818.60] video you know if we want to see 0.5 of
+[821.60] this be respected to trade higher right
+[824.12] this should remain and when I have an
+[826.24] invalidation very close to the opening
+[828.44] price that's when I can go ahead and
+[830.08] look for an entry off the open let's
+[832.32] drop down to a 1 minute time frame to
+[833.80] show you what I mean here if I'm already
+[835.60] expecting this low to hold prior to the
+[837.96] open of the new high time frame candle
+[840.40] that's when I can look to get on side
+[842.00] with the open so using an inversion I
+[845.00] can go ahead and just enter on the open
+[846.96] with my stop on this low expecting this
+[849.48] to make a very shallow Wick to then
+[851.44] trade higher so let's see what
+[855.36] happens there we go we get that move
+[857.76] higher now just to review what I was
+[860.16] talking about there if we go back to our
+[862.36] 5 minute what I mean is our invalidation
+[865.48] or where I expect price to hold has
+[867.48] already formed and we form a reverse
+[869.08] veral here shown by this Wick prior to
+[871.92] the open of the new higher time frame
+[873.36] candle so if this is going to expand I
+[875.80] don't want to see it Go much lower right
+[877.96] if it goes open low below this low then
+[880.76] it's already just consolidating right I
+[882.72] want to see it just expand away so then
+[885.28] going to the 1 minute we already have
+[887.68] that inversion going into the open and
+[889.80] you can see our t-spot forms right here
+[893.32] so we wouldn't want to see price return
+[895.04] below this low and that is also shown
+[897.56] with the inversion now let's say I
+[899.24] didn't want to take it right off the
+[900.32] open what could I do I could go ahead
+[902.24] and enter once we get another
+[904.20] confirmation here or this changed in the
+[905.92] state of delivery or this order block
+[907.96] formation now with this I need my stop
+[910.52] at least on the body down here and then
+[912.60] I would need to capture more range for
+[914.84] my 2 R but let's see what
+[918.36] happens get a little retracement and
+[920.84] then we get our 2 R this is one of those
+[923.40] more advanced cases in understanding the
+[925.44] Open high low close of higher time frame
+[927.48] candles so I hope it may
+[930.60] sense so here we are on our last example
+[933.76] and a cool thing about this and my
+[935.32] fractal model is it is fractal since the
+[937.56] video has been on the hourly and 5
+[939.80] minute models using a 1 minute inversion
+[942.24] you can also use it on different time
+[944.00] frames so let's talk about a daily and
+[946.12] hourly model and then using a 15-minute
+[948.48] inversion to get on side with that so
+[950.80] what do we notice in here we have these
+[952.76] equal highs right here which can be a
+[955.24] Target and then we have a sweep and a
+[957.96] close right here so looking for
+[960.12] expansion on this next candle let's drop
+[962.16] down to the hourly time frame so down
+[965.08] here on the hourly time frame what do we
+[966.96] notice we have just printed our t-spot
+[969.32] and you can see it is a bit large right
+[971.28] so this is not something where I want to
+[972.68] take a positional entry if I take a
+[974.88] positional entry where do I need my stop
+[976.64] below these lows and it just doesn't
+[978.48] make sense in terms of the risk to
+[979.96] reward so I'm going to just go ahead and
+[982.56] wait until we reach back into this
+[984.28] t-spot if it gives us the
+[986.48] opportunity as we continue ahead what do
+[988.80] we we notice we get a reach back lower
+[991.64] here and important thing is we are
+[993.36] leaving these highs I wouldn't want to
+[994.96] trade this if it trades all the way to
+[996.36] the highs and then back in but it's
+[998.28] leaving our Target so dropping to our
+[1000.76] 15-minute time frame here we have that
+[1002.56] t-spot do we have an inversion well you
+[1005.16] can see we have a bearish fair value Gap
+[1007.44] right here do we invert that fair value
+[1010.04] Gap we do right now once again I want to
+[1014.52] reiterate is this isn't just pattern
+[1016.56] trading right I don't want to just take
+[1018.28] this cuz we have inversion forming in
+[1019.88] here it's the context of trading towards
+[1022.20] these highs and now we have taken out
+[1024.40] these lows right so that is the context
+[1027.96] so let's see if this works
+[1030.72] out we reach back lower let's say I miss
+[1034.00] this entry here do we have another
+[1036.12] inversion well let's see if we are
+[1038.24] correct it has to invert
+[1040.76] that okay now let's say I miss this
+[1043.92] entry we have a closure through I'd want
+[1046.52] to take an entry retest
+[1049.76] now why a retest well I'm not going to
+[1051.52] get two R out of this trade unless I
+[1053.16] take a retest so let's see we get a tag
+[1057.28] so we hit two r on both of these trades
+[1060.64] and that is because we have our bias
+[1062.44] correct so I hope you found this video
+[1065.04] helpful once again this is using my
+[1066.84] indicator if you want to check it out
+[1068.36] there will be a link in the description
+[1070.20] below but with that I hope you enjoyed
+[1072.88] have a great rest of your day see you
+[1074.80] later

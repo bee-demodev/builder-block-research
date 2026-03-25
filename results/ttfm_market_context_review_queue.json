@@ -1,0 +1,1027 @@
+{
+  "generated_at": "2026-03-24T19:32:43.571413+00:00",
+  "summary": {
+    "case_count": 10,
+    "alignment_status_counts": {
+      "market_context_only": 2,
+      "unmapped": 8
+    },
+    "recommended_action_counts": {
+      "find_alternate_chart_evidence": 2,
+      "identify_symbol_and_anchor_timestamp": 8
+    },
+    "source_image_kind_counts": {
+      "source_article_image": 10
+    }
+  },
+  "items": [
+    {
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "topic": "candle_3_closure",
+      "trade_models": [
+        "fractal_closure_model"
+      ],
+      "relation_types": [
+        "confirmation_framework"
+      ],
+      "source_url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "alignment_status": "unmapped",
+      "mapping_provenance": "unmapped",
+      "recommended_action": "identify_symbol_and_anchor_timestamp",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": null,
+      "source_chart_symbol": null,
+      "bars_path_suggestion": null,
+      "anchor_timestamp": null,
+      "market_context_notes": "No case-level market override or trade-model proxy mapping is currently available. Add a case override with symbol and anchor timestamp to fully align this teacher example.",
+      "confidence": null,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "zone_boundary"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/outcome_c2-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "liquidity_sweep"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/sweep_c2-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "equilibrium",
+            "point_of_interest",
+            "top_down_alignment",
+            "zone_boundary"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/context_c2.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "candle_2_closure",
+            "candle_3_closure"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/closure_c2-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "candle_2_closure",
+            "candle_3_closure",
+            "equilibrium",
+            "liquidity_sweep"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/confirmation_c2-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+        "topic:candle_3_closure",
+        "topic:daily_profiles",
+        "topic:invalidation",
+        "draft_spec:ttrades_curriculum__fractal_closure_model",
+        "topic:reversal",
+        "topic:protected_swings",
+        "topic:continuation",
+        "topic:equilibrium",
+        "topic:candle_2_closure",
+        "topic:top_down_alignment"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+        "symbol": null,
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "topic": "continuation",
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "source_url": "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+      "alignment_status": "unmapped",
+      "mapping_provenance": "unmapped",
+      "recommended_action": "identify_symbol_and_anchor_timestamp",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": null,
+      "source_chart_symbol": null,
+      "bars_path_suggestion": null,
+      "anchor_timestamp": null,
+      "market_context_notes": "No case-level market override or trade-model proxy mapping is currently available. Add a case override with symbol and anchor timestamp to fully align this teacher example.",
+      "confidence": null,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/outcome_Entry20Model-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "breaker",
+            "liquidity_sweep"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/sweep_Entry20Model-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "breaker",
+            "top_down_alignment"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/context_Entry20Model.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "intraday",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/closure_Entry20Model-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "intraday",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "breaker",
+            "liquidity_sweep",
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/confirmation_Entry20Model-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+        "topic:continuation",
+        "topic:protected_swings",
+        "topic:invalidation",
+        "draft_spec:ttrades_curriculum__continuation_entry_model",
+        "topic:reversal",
+        "topic:top_down_alignment"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+        "symbol": null,
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "topic": "continuation",
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "source_url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "alignment_status": "unmapped",
+      "mapping_provenance": "unmapped",
+      "recommended_action": "identify_symbol_and_anchor_timestamp",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": null,
+      "source_chart_symbol": null,
+      "bars_path_suggestion": null,
+      "anchor_timestamp": null,
+      "market_context_notes": "No case-level market override or trade-model proxy mapping is currently available. Add a case override with symbol and anchor timestamp to fully align this teacher example.",
+      "confidence": null,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/outcome_EQ-1-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/sweep_EQ-1-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "equilibrium"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/context_EQ-1.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/closure_EQ-1-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "equilibrium",
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/confirmation_EQ-1-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-equilibrium-in-continuations/",
+        "topic:continuation",
+        "topic:protected_swings",
+        "topic:invalidation",
+        "draft_spec:ttrades_curriculum__continuation_entry_model",
+        "topic:equilibrium"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+        "symbol": null,
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "topic": "continuation",
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "source_url": "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+      "alignment_status": "unmapped",
+      "mapping_provenance": "unmapped",
+      "recommended_action": "identify_symbol_and_anchor_timestamp",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": null,
+      "source_chart_symbol": null,
+      "bars_path_suggestion": null,
+      "anchor_timestamp": null,
+      "market_context_notes": "No case-level market override or trade-model proxy mapping is currently available. Add a case override with symbol and anchor timestamp to fully align this teacher example.",
+      "confidence": null,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/outcome_Ideal-Continuation-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/sweep_Ideal-Continuation-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "top_down_alignment"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/context_Ideal-Continuation.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/closure_Ideal-Continuation-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/confirmation_Ideal-Continuation-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+        "topic:continuation",
+        "draft_spec:ttrades_curriculum__continuation_entry_model",
+        "topic:top_down_alignment"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_continuation_failure_baseline_v1",
+        "symbol": null,
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "topic": "wick_logic",
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "source_url": "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+      "alignment_status": "unmapped",
+      "mapping_provenance": "unmapped",
+      "recommended_action": "identify_symbol_and_anchor_timestamp",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": null,
+      "source_chart_symbol": null,
+      "bars_path_suggestion": null,
+      "anchor_timestamp": null,
+      "market_context_notes": "No case-level market override or trade-model proxy mapping is currently available. Add a case override with symbol and anchor timestamp to fully align this teacher example.",
+      "confidence": null,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/outcome_EA-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/sweep_EA-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "top_down_alignment",
+            "wick_logic"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/context_EA.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "wick_logic"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/closure_EA-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/confirmation_EA-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+        "topic:wick_logic",
+        "draft_spec:ttrades_curriculum__continuation_entry_model",
+        "topic:top_down_alignment"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+        "symbol": null,
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "topic": "continuation",
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "source_url": "https://ttrades.com/using-order-blocks-for-continuations/",
+      "alignment_status": "unmapped",
+      "mapping_provenance": "unmapped",
+      "recommended_action": "identify_symbol_and_anchor_timestamp",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": null,
+      "source_chart_symbol": null,
+      "bars_path_suggestion": null,
+      "anchor_timestamp": null,
+      "market_context_notes": "No case-level market override or trade-model proxy mapping is currently available. Add a case override with symbol and anchor timestamp to fully align this teacher example.",
+      "confidence": null,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/outcome_Entry20Model-1-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "fair_value_gap",
+            "liquidity_sweep",
+            "order_block"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/sweep_Entry20Model-1-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "equilibrium",
+            "fair_value_gap",
+            "order_block",
+            "top_down_alignment"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/context_Entry20Model-1.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/closure_Entry20Model-1-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "equilibrium",
+            "fair_value_gap",
+            "liquidity_sweep",
+            "order_block",
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/confirmation_Entry20Model-1-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-order-blocks-for-continuations/",
+        "topic:continuation",
+        "topic:protected_swings",
+        "topic:invalidation",
+        "draft_spec:ttrades_curriculum__continuation_entry_model",
+        "topic:candle_2_closure",
+        "topic:candle_3_closure",
+        "topic:reversal",
+        "topic:equilibrium",
+        "topic:top_down_alignment"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+        "symbol": null,
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "topic": "top_down_alignment",
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "source_url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "alignment_status": "unmapped",
+      "mapping_provenance": "unmapped",
+      "recommended_action": "identify_symbol_and_anchor_timestamp",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": null,
+      "source_chart_symbol": null,
+      "bars_path_suggestion": null,
+      "anchor_timestamp": null,
+      "market_context_notes": "No case-level market override or trade-model proxy mapping is currently available. Add a case override with symbol and anchor timestamp to fully align this teacher example.",
+      "confidence": null,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/outcome_top-down_-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "order_block"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/sweep_top-down_-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "order_block",
+            "point_of_interest",
+            "top_down_alignment"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/context_top-down_.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/closure_top-down_-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "order_block",
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/confirmation_top-down_-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+        "topic:top_down_alignment",
+        "topic:protected_swings",
+        "topic:invalidation",
+        "draft_spec:ttrades_curriculum__continuation_entry_model",
+        "topic:continuation",
+        "topic:candle_2_closure",
+        "topic:candle_3_closure",
+        "topic:reversal"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+        "symbol": null,
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "topic": "bias",
+      "trade_models": [
+        "daily_bias_framework"
+      ],
+      "relation_types": [
+        "bias_framework"
+      ],
+      "source_url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "alignment_status": "market_context_only",
+      "mapping_provenance": "tradingview_validation_proxy",
+      "recommended_action": "find_alternate_chart_evidence",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": "NQ",
+      "source_chart_symbol": "NQM2026",
+      "bars_path_suggestion": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\databento\\bars\\nq_minute.csv",
+      "anchor_timestamp": null,
+      "market_context_notes": "Mapped from live TradingView validation for the matching trade model; requires teacher-case timestamp confirmation before full alignment.",
+      "confidence": 0.35,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/outcome_Framework-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/sweep_Framework-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "equilibrium"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/context_Framework.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/closure_Framework-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "equilibrium"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/confirmation_Framework-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+        "topic:bias",
+        "draft_spec:ttrades_curriculum__daily_bias_framework",
+        "topic:equilibrium"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+        "symbol": "NQ",
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "topic": "bias",
+      "trade_models": [
+        "daily_bias_framework"
+      ],
+      "relation_types": [
+        "bias_framework"
+      ],
+      "source_url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "alignment_status": "market_context_only",
+      "mapping_provenance": "tradingview_validation_proxy",
+      "recommended_action": "find_alternate_chart_evidence",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": "NQ",
+      "source_chart_symbol": "NQM2026",
+      "bars_path_suggestion": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\databento\\bars\\nq_minute.csv",
+      "anchor_timestamp": null,
+      "market_context_notes": "Mapped from live TradingView validation for the matching trade model; requires teacher-case timestamp confirmation before full alignment.",
+      "confidence": 0.35,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "zone_boundary"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/outcome_Next-Day-model-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/sweep_Next-Day-model-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "equilibrium",
+            "zone_boundary"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/context_Next-Day-model.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "active_labels": [],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/closure_Next-Day-model-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "equilibrium"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/confirmation_Next-Day-model-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+        "topic:bias",
+        "topic:daily_profiles",
+        "topic:invalidation",
+        "draft_spec:ttrades_curriculum__daily_bias_framework",
+        "topic:equilibrium"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+        "symbol": "NQ",
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "topic": "retracement",
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "source_url": "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+      "alignment_status": "unmapped",
+      "mapping_provenance": "unmapped",
+      "recommended_action": "identify_symbol_and_anchor_timestamp",
+      "source_image_kind": "source_article_image",
+      "symbol_suggestion": null,
+      "source_chart_symbol": null,
+      "bars_path_suggestion": null,
+      "anchor_timestamp": null,
+      "market_context_notes": "No case-level market override or trade-model proxy mapping is currently available. Add a case override with symbol and anchor timestamp to fully align this teacher example.",
+      "confidence": null,
+      "checkpoint_samples": [
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/outcome_RETRACEMENT-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT-1536x864.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "active_labels": [
+            "fair_value_gap",
+            "liquidity_sweep"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/sweep_RETRACEMENT-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT-300x169.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "active_labels": [
+            "fair_value_gap",
+            "top_down_alignment"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/context_RETRACEMENT.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "candle_2_closure"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/closure_RETRACEMENT-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT-1024x576.png; requires visual review before anchor promotion."
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "active_labels": [
+            "candle_2_closure",
+            "fair_value_gap",
+            "liquidity_sweep",
+            "protected_swing"
+          ],
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/confirmation_RETRACEMENT-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT-768x432.png; requires visual review before anchor promotion."
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+        "topic:retracement",
+        "topic:protected_swings",
+        "topic:invalidation",
+        "draft_spec:ttrades_curriculum__continuation_entry_model",
+        "topic:continuation",
+        "topic:candle_2_closure",
+        "topic:candle_3_closure",
+        "topic:reversal",
+        "topic:top_down_alignment"
+      ],
+      "override_template": {
+        "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+        "symbol": null,
+        "anchor_timestamp": null,
+        "window_minutes_before": 180,
+        "window_minutes_after": 240,
+        "mapping_provenance": "case_manual",
+        "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+      }
+    }
+  ]
+}

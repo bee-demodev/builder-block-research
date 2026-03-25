@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-03-24T21:32:47.121372+00:00",
+  "queue_candidate_count": 75,
+  "sampled_case_count": 75,
+  "sample_count": 375,
+  "skipped_missing_video_count": 0,
+  "offsets_seconds": [
+    -12.0,
+    -6.0,
+    0.0,
+    6.0,
+    12.0
+  ],
+  "frame_extracted_count": 349,
+  "frame_skipped_existing_count": 0,
+  "audio_extracted_count": 375,
+  "audio_skipped_existing_count": 0,
+  "missing_video_count": 0
+}

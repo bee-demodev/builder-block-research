@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-03-23T20:20:45.479246+00:00",
+  "framework_slug": "ttfm",
+  "summary": {
+    "episode_count": 3,
+    "graded_episode_count": 3,
+    "unknown_case_count": 0,
+    "case_coverage": 0.2143,
+    "average_understanding_score": 0.6433,
+    "trade_model_accuracy": 0.6667,
+    "relation_type_accuracy": 0.3333,
+    "checkpoint_component_score": 0.7111,
+    "latest_understanding_score": 0.32,
+    "grade": "B-"
+  },
+  "episodes": [
+    {
+      "episode_id": "iteration_001_bias_continuation_clean",
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "status": "graded",
+      "expected_trade_models": [
+        "daily_bias_framework"
+      ],
+      "predicted_trade_model": "daily_bias_framework",
+      "trade_model_correct": true,
+      "expected_relation_types": [
+        "bias_framework"
+      ],
+      "predicted_relation_type": "bias_framework",
+      "relation_type_correct": true,
+      "checkpoint_component_score": 1.0,
+      "checkpoint_results": [
+        {
+          "checkpoint": "context",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "predicted_component_labels": [
+            "equilibrium"
+          ],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "sweep",
+          "expected_component_labels": [],
+          "predicted_component_labels": [],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "closure",
+          "expected_component_labels": [],
+          "predicted_component_labels": [],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "confirmation",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "predicted_component_labels": [
+            "equilibrium"
+          ],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "outcome",
+          "expected_component_labels": [],
+          "predicted_component_labels": [],
+          "score": 1.0
+        }
+      ],
+      "understanding_score": 1.0,
+      "grade": "A"
+    },
+    {
+      "episode_id": "iteration_002_continuation_partial",
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "status": "graded",
+      "expected_trade_models": [
+        "continuation_entry_model"
+      ],
+      "predicted_trade_model": "continuation_entry_model",
+      "trade_model_correct": true,
+      "expected_relation_types": [
+        "execution_model"
+      ],
+      "predicted_relation_type": "bias_framework",
+      "relation_type_correct": false,
+      "checkpoint_component_score": 0.6,
+      "checkpoint_results": [
+        {
+          "checkpoint": "context",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "predicted_component_labels": [
+            "equilibrium"
+          ],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "sweep",
+          "expected_component_labels": [],
+          "predicted_component_labels": [],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "closure",
+          "expected_component_labels": [],
+          "predicted_component_labels": [],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "confirmation",
+          "expected_component_labels": [
+            "equilibrium",
+            "protected_swing"
+          ],
+          "predicted_component_labels": [
+            "liquidity_sweep"
+          ],
+          "score": 0.0
+        },
+        {
+          "checkpoint": "outcome",
+          "expected_component_labels": [
+            "protected_swing"
+          ],
+          "predicted_component_labels": [],
+          "score": 0.0
+        }
+      ],
+      "understanding_score": 0.61,
+      "grade": "B-"
+    },
+    {
+      "episode_id": "iteration_003_bias_reversal_weak",
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "status": "graded",
+      "expected_trade_models": [
+        "daily_bias_framework"
+      ],
+      "predicted_trade_model": "continuation_entry_model",
+      "trade_model_correct": false,
+      "expected_relation_types": [
+        "bias_framework"
+      ],
+      "predicted_relation_type": "execution_model",
+      "relation_type_correct": false,
+      "checkpoint_component_score": 0.5333,
+      "checkpoint_results": [
+        {
+          "checkpoint": "context",
+          "expected_component_labels": [
+            "equilibrium",
+            "zone_boundary"
+          ],
+          "predicted_component_labels": [
+            "equilibrium"
+          ],
+          "score": 0.6667
+        },
+        {
+          "checkpoint": "sweep",
+          "expected_component_labels": [],
+          "predicted_component_labels": [],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "closure",
+          "expected_component_labels": [],
+          "predicted_component_labels": [],
+          "score": 1.0
+        },
+        {
+          "checkpoint": "confirmation",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "predicted_component_labels": [],
+          "score": 0.0
+        },
+        {
+          "checkpoint": "outcome",
+          "expected_component_labels": [
+            "zone_boundary"
+          ],
+          "predicted_component_labels": [],
+          "score": 0.0
+        }
+      ],
+      "understanding_score": 0.32,
+      "grade": "F"
+    }
+  ]
+}

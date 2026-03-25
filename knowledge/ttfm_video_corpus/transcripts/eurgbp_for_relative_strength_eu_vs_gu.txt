@@ -1,0 +1,315 @@
+[10.72] How's it going everyone and welcome back
+[12.56] to another video. In this video, we are
+[14.96] going to talk about a forex concept.
+[17.60] We're using EuroGBP for relative
+[20.08] strength. So, if you are trading EuroUSD
+[22.48] or GBPUSD, you are generally watching
+[25.04] the dollar. from the dollar. You are
+[27.28] then deciding if you want to trade euro
+[29.52] or pound and looking at the relative
+[31.52] strength between those two assets. And
+[33.68] this is actually a video I touched on a
+[35.12] while ago on my channel for using NQNES.
+[38.32] But let's talk about how to do it for
+[39.76] euro and GBP. So if the dollar is not
+[42.80] consolidating, that is when we're going
+[44.64] to look to trade euro or GBP. Now let's
+[48.32] say I'm not sure which is stronger or
+[50.40] weaker. Let's say for instance the
+[52.40] dollar is strong. I'm looking to short
+[54.56] one of these assets. Which one do I
+[56.64] determine I want to short? Well, I can
+[58.88] look at Euro versus GBP to determine
+[61.60] that. So, how am I going to do that? By
+[64.08] looking at Euro versus GBP, if that is
+[66.56] in a bullish trend, what does that tell
+[68.48] me? Well, if you remember back to our
+[70.40] fractions video, it means that the euro
+[72.88] is stronger and the GBP is weaker. So,
+[76.00] if I'm going to want to long something,
+[77.68] then I want to long EuroUSD since it is
+[80.80] stronger. And I'd want to short GBPUSD
+[83.68] since it is weaker. And that is all
+[85.68] going to depend on if the dollar is
+[87.84] bullish or bearish. Now, let's say
+[90.16] EuroGBP is in a bearish trend. Well,
+[93.28] that means euro is weaker and GBP is
+[95.92] stronger. So, if the dollar is bearish,
+[98.16] I want to then long the stronger asset.
+[100.80] If the dollar is bullish, I want to then
+[103.04] short the weaker asset, which would be
+[104.72] EuroUSD. So, what does this look like in
+[107.28] an example? In this case, we have the
+[109.12] hourly chart on dollar paired with the
+[111.20] daily chart on the dollar and the daily
+[113.28] chart on EuroGBP.
+[115.60] So, we can see that EuroGBP is in a
+[118.24] bullish trend. So, what does that mean?
+[120.88] Means that the euro is stronger and the
+[123.44] pound is weaker. If the dollar is
+[126.00] bearish, well, then we want to be
+[128.24] longing something. So if the dollar is
+[131.20] bearish, we want to choose the stronger
+[133.36] of the assets between euro and GBP,
+[136.00] which we determined using this chart was
+[138.64] euro. So we would actually want to look
+[140.80] to trade euro USD and go ahead and take
+[144.40] a long position on that as pairing a
+[146.88] strong currency with a weak currency
+[149.52] gives you a nice bullish trend. Let's
+[152.40] get into a few examples of this on the
+[154.32] chart in Trading View. So, here we are
+[156.40] in our first example and you can see we
+[158.40] are on the dollar. You can see we've
+[160.72] taken out this pretty significant low
+[162.96] from July and we have a nice reversal
+[165.28] forming off of it. We have Monday,
+[167.68] Tuesday, Wednesday forming this low. So,
+[170.08] I can anticipate candle 3 and four to
+[172.40] finish off the Wednesday low of week and
+[174.24] we can get a Thursday move up and a
+[175.92] Friday move up as well. Now with the
+[178.24] dollar being bullish, we want to find
+[180.40] out which asset is more bearish and then
+[182.88] we can go to EuroGBP to find that out.
+[185.52] Now if we have a bearish move on
+[188.40] EuroGBP, it means Euro is more bearish.
+[191.84] If we have a bullish move on EuroGBP,
+[194.96] then GBP is more bearish. So we want to
+[197.92] see what will happen here. Now with this
+[200.08] closure, I could frame it both ways,
+[202.32] right? We don't have a candle to closure
+[204.72] off the high. So, we're either going to
+[206.48] form a reversal off this previous day
+[208.24] low into a fair value gap and trade
+[210.00] higher. In which case, euro would be
+[212.32] stronger, pound would be weaker, and
+[214.32] we'd want to focus on the pound or we're
+[216.56] going to fall through this level and
+[218.08] then we can look for EuroUSD cuz Euro
+[220.24] would be weaker. So, what we're going to
+[222.08] do is go into the hourly chart. We're
+[224.48] starting off with a little bit more of a
+[226.24] advanced example. Generally, we can just
+[228.08] look at the daily closures, but it's not
+[229.76] always so perfect. So, here we have the
+[231.68] daily fair value gap. We have a
+[233.20] protected swing right here. So we want
+[235.84] to see if this level will hold here. So
+[238.32] let's see.
+[241.04] And there you can see what do we get? We
+[243.04] get a reversal off the previous day low
+[245.36] with an hourly change in the state of
+[247.04] delivery. So using my candle 2 video,
+[249.20] this is bullish. So if EuroGBP is
+[252.40] bullish, what does that mean for a
+[254.64] bullish dollar? We want to be focused on
+[257.20] GBP as it is weaker. So here we are in
+[260.00] GBP and you can see is there anything to
+[262.56] trade away from here? know we have
+[264.48] failure swings and so by taking a look
+[266.72] at that we would want to wait for those
+[268.56] failure swings to be taken out before we
+[270.40] could look to get on side with a trade
+[272.88] with taking a look. So now that we've
+[275.04] taken out those highs we can wait for
+[276.40] some bearish structure to frame it back
+[278.40] into these lows below.
+[282.24] You can see there we get a nice
+[283.60] aggressive closure and then expansion
+[286.08] lower. Now once we get this daily
+[288.40] closure we'll go back out to the daily
+[290.32] chart. So here we are. We have a
+[292.48] closure. We have a nice expansion on
+[294.64] pound here. And let's see euro. You see
+[296.88] how euro is not as weak and that's how
+[299.36] we could use euro GBP and we get this
+[301.44] expansion out of this fair value gap. So
+[303.52] going back to the daily chart on dollar,
+[305.84] right? We have closed outside candle 2.
+[307.84] If we're looking for a continuation
+[309.20] higher on the dollar, we're still
+[310.56] looking for the same thing. Which asset
+[312.64] is weaker between Euro and GBP? So
+[316.00] taking a look at EuroGBP on the daily
+[318.00] chart. Let's clean this up a little.
+[320.16] What do we have? We have a candle 2
+[322.32] closure out of a fair value gap and it's
+[324.64] also an ideal candle 2 closure because
+[326.64] it's creating a protected swing at the
+[328.88] same time. So this is quite bullish. So
+[331.92] if euro GBP is bullish that means euro
+[334.64] is stronger than the pound. So with a
+[337.20] bullish dollar we want to be focused on
+[339.60] GBP or GBPUSD.
+[342.48] So taking a look here we have a nice
+[344.40] bearish closure and we have closed
+[346.64] through the series of up close candles
+[348.24] there. Now, another tip you can use is
+[350.48] just looking at the individual candle
+[352.16] closures or the relative strength we
+[353.84] talked about in our relative strength
+[355.44] video. Comparing Euro and GBP, you can
+[358.64] just look at the candle closures as well
+[360.24] as the structure. Here we get a closure
+[362.16] through these series of close candles.
+[363.60] Here we look at Euro. It does not get
+[366.32] that closure through and it is closing
+[368.08] much stronger. So, you can see just
+[370.40] using that as an extra confluence, we
+[372.80] can be focused on GBP here and looking
+[375.68] for an entry lower. Now zooming in on
+[378.24] the hourly time frame, you can see we
+[379.92] have a consolidation here which I don't
+[381.76] want to trade away from. But by looking
+[383.60] at the correlated assets, you can look
+[385.44] at dollar here. We have ran out that low
+[387.84] on the consolidation which creates an
+[390.08] SMT. So we can then use that SMT on the
+[394.24] weaker asset and we can look to trade
+[396.48] away from this as long as we get a
+[398.48] continuation through this area. Let's
+[401.20] see. We do get a continuation. Maybe we
+[403.68] miss this move as it's traded too weak.
+[406.00] unless we can get some sort of
+[407.12] retracement and then get on side with a
+[409.36] move lower. The main thing I want to
+[411.52] talk about here is not lower time frame
+[413.52] price action and getting on side with
+[415.44] moves. It's about relative strength. So,
+[417.84] just to review this, we have a dollar
+[420.24] that is forming a reversal off of this
+[422.16] low. Once we are in those continuation
+[424.32] days where we're looking for dollar to
+[426.32] trade higher, what do we want to focus
+[428.48] on? Well, we want to focus on trading
+[430.32] foreign currencies lower. Well, now
+[432.48] between the euro and the pound, which
+[434.48] one do we want to choose? Well, that's
+[436.16] where we can use EuroGBP to determine
+[438.48] that. When EuroGBP is bullish, that
+[441.12] means the euro is stronger. So, if
+[443.04] you're pairing that with a bullish
+[444.40] dollar, you want to be shorting GBP or
+[447.44] GBPUSD. Now, if the euro is weaker, that
+[450.96] is when you would want to short that
+[452.80] against the dollar. But in this case,
+[454.56] EuroGBP is trending upwards. So, we want
+[457.20] to focus on GBPUSD.
+[459.68] Now this is where you can blend in the
+[461.84] phases of price the fractal model to get
+[464.08] on side with this move. But mostly we
+[466.72] want to see the fact that pound is
+[468.96] weaker and you can use euro GBP to
+[471.60] determine that. So if we take a look at
+[473.36] euro you can see euro does not get
+[475.52] nearly the move that GBP does and that's
+[478.32] why it's important to understand
+[479.68] relative strength and euro GBP allows
+[482.40] you to do that. So here we are in
+[484.32] another example and what do we notice?
+[486.24] We have multiple days of expansion.
+[488.00] Monday, Tuesday, Wednesday, Thursday
+[490.40] forms a counter. So, we can anticipate
+[493.04] Friday back into the range. So, a candle
+[495.04] 2 closure. Candle 3 going back into the
+[497.76] range. Now, with a bullish dollar once
+[500.40] again, what are we looking to focus on?
+[502.64] Which of the foreign currencies between
+[504.48] Euro and pound is weaker? So, let's go
+[507.12] take a look at EuroGo GBP. What do we
+[509.12] notice? We have a nice engulfing candle
+[511.12] here. And yes, it did take out this
+[513.04] high, but it is engulfing. We can look
+[514.80] at the lower time frames to see if we
+[516.16] have a reversal off of it. We can go to
+[518.00] the hourly. That's not looking like a
+[520.00] reversal to me. So, I would trust that
+[521.60] this is going to move higher. If EuroGBP
+[524.16] is bullish, that means GBP is weaker and
+[526.80] the one we want to focus on. Now, what's
+[529.04] another way we can check this? Take a
+[531.04] look at the individual closures on Euro
+[533.36] versus GBP. Here we have that closure
+[535.84] which is bearish on Euro. What do we see
+[538.08] on GBP? A very bearish closure, right?
+[541.20] So that just confirms what we are seeing
+[543.36] that we'd want to see this move lower on
+[545.36] GBPUSD.
+[547.12] Not to take too much time, what do we
+[549.12] get? A very nice expansion lower. Now,
+[551.84] do we get that on Euro? No. Right? And
+[554.32] this is why it's so important to
+[555.84] understand relative strength. You could
+[557.84] be completely right on a trade idea, but
+[560.08] if you trade the wrong asset, you're
+[562.08] going to be caught off sides or not
+[564.24] catching an expansion. So see this is
+[566.56] the price action you get with euro on a
+[569.04] bullish expansion day on dollar but with
+[571.68] GBP on the same day what do we get a
+[574.32] very nice trend. So that is why EuroGBP
+[577.12] is so useful in just understanding
+[579.36] relative strength. So here we are with
+[581.36] our last example and once again we're
+[584.00] starting on the dollar. We have a sweep
+[586.72] with a candle to closure. So what are we
+[589.12] going to look for? If we are bullish on
+[591.28] the dollar, we want to see which asset
+[593.68] is the most bearish. We want to be
+[596.00] bearish on foreign currencies. So,
+[598.24] taking a look at Euro GBP, what does
+[600.80] this tell us? Well, this is a pretty
+[603.60] bearish candle, right? So, we can
+[604.88] anticipate this to continue lower as
+[607.28] long as it remains in respect to 0.5 of
+[609.68] this range. If we are bullish dollar and
+[612.24] euro GBP is bearish, what does that
+[614.72] mean? It means that euro is weaker than
+[617.36] pound. So if we are looking for the most
+[619.92] bearish foreign currency between Euro
+[621.84] and pound, what is it? It would be euro.
+[624.64] And so we can go ahead and take a look
+[626.08] at EuroUSD. And that would be the asset
+[628.64] we'd want to be looking to trade. We can
+[630.96] also just verify this by looking at
+[632.56] those individual daily candle closures.
+[634.96] You can see on EuroUSD, we get a nice
+[637.28] bearish closure, while GBPUSD, we don't
+[640.00] get that bearish closure. It's actually
+[641.76] bullish. We can go take a look at the
+[643.52] lower time frames here. We want to be
+[645.20] looking for a fractal model. We have a
+[647.60] change in the state of delivery. We'll
+[649.12] go ahead and turn my indicator on. And
+[651.20] then what do we have? We have price
+[652.88] opening up.
+[655.92] Sweeps out this consolidation high. So
+[658.40] this is where we'd want to see that wick
+[660.40] of the daily candle form if it's going
+[662.24] to form. And then do we get a
+[664.16] continuation lower? We do. Right. All
+[666.48] the way through these lows here. Now
+[668.88] let's go ahead and take a look at Euro
+[671.20] and GBP side by side. So here we are
+[673.92] with Euro and GBP side by side. Euro on
+[676.64] the left, GBP on the right. And what do
+[679.20] we notice? That relative strength does
+[681.36] come into play. Here we have the sweep
+[683.04] of the consolidation and a big drop
+[685.12] lower. And you can see at 8:00 a.m. we
+[687.28] run out this low. Well, we're not
+[688.72] running out this low till 9:00 a.m. And
+[691.12] GBP almost runs out its previous high,
+[693.52] while Euro has so much more separation
+[695.60] from that high. Now, I hope you found
+[697.44] this video helpful. If you get anything
+[699.36] from it, just learn how to understand
+[701.76] relative strength and weakness. And if
+[703.84] you haven't already seen my video on
+[705.20] relative strength and weakness, I'll
+[706.72] link that in the description below for
+[708.24] you to watch. But with that said, I hope
+[710.32] you have a great rest of your day and
+[711.44] I'll see you guys next time. Have a good
+[712.80] one.

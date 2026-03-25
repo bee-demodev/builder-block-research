@@ -1,0 +1,226 @@
+{
+  "topic": "expansion",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_phases_of_price_part_2",
+      "url": "https://ttrades.com/phases-of-price-part-2-mastering-expansion-for-strong-trend-trades/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_aligning_expansion_candles",
+      "url": "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_top_down_expansion",
+      "url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "role": "supporting"
+    },
+    {
+      "id": "tradingview_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "tradingview_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "expansion_definition",
+      "name": "Expansion is a one-sided move with shallow pullbacks",
+      "timeframeScope": ["fractal"],
+      "marketPhasePrecondition": ["post_consolidation", "post_retracement"],
+      "direction": "bidirectional",
+      "setupAnchor": "Breakout or resumption from a smaller-range condition",
+      "confirmationTrigger": "Directional candle expansion plus shallow countertrend pullback behavior",
+      "protectedSwingDefinition": "Continuation structure should print protected swings that remain intact while the move persists",
+      "invalidationCondition": "Countertrend closure becomes deep enough to violate protected swing structure or higher-timeframe alignment fails",
+      "targetLogic": "Seek external liquidity in the direction of the move",
+      "exceptions": [
+        "After multiple same-direction expansion days expect a possible phase change",
+        "Large opposing wick reduces clean expansion potential"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_2#what_is_expansion",
+        "ttrades_aligning_expansion_candles#what_it_means_for_a_candle_to_support_expansion"
+      ],
+      "visualVerificationRefs": [
+        "article:expansion_page_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "candle body size",
+        "opposing wick size",
+        "range classification",
+        "protected swing state"
+      ],
+      "machineChecks": [
+        "Measure directional body percentile versus recent bars",
+        "Measure opposing wick ratio relative to total range",
+        "Track retracement depth versus anchor leg"
+      ],
+      "ambiguityNotes": [
+        "Shallow pullback threshold is not yet numeric",
+        "Large-range classification threshold is not yet numeric"
+      ]
+    },
+    {
+      "id": "candle_supports_expansion",
+      "name": "A candle supports expansion when body is large and opposing wick is small",
+      "timeframeScope": ["higher", "intermediate", "lower"],
+      "marketPhasePrecondition": ["directional_move_in_progress"],
+      "direction": "bidirectional",
+      "setupAnchor": "Candidate directional candle",
+      "confirmationTrigger": "Bullish candle forms a small lower wick early and pushes away from the open, or bearish candle forms a small upper wick early and pushes lower",
+      "protectedSwingDefinition": "Protected swing logic is stronger when the supporting candle also preserves directional intent",
+      "invalidationCondition": "A large opposing wick or strong opposing move reduces the candle's ability to support efficient trend continuation",
+      "targetLogic": "Use strong expansion-supporting candles to justify continuation expectations and weaker candles to reduce expectations",
+      "exceptions": [
+        "Large higher timeframe opposing wick can still allow lower timeframe expansion, but targets should be more conservative"
+      ],
+      "evidenceRefs": [
+        "ttrades_aligning_expansion_candles#what_it_means_for_a_candle_to_support_expansion",
+        "ttrades_easy_daily_bias#why_wick_size_matters"
+      ],
+      "visualVerificationRefs": [
+        "article:aligning_expansion_candles_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "candle open",
+        "candle high",
+        "candle low",
+        "candle close",
+        "body size",
+        "opposing wick size"
+      ],
+      "machineChecks": [
+        "Compute body size as abs(close - open)",
+        "Compute opposing wick size as bullish lower wick or bearish upper wick",
+        "Compare opposing wick ratio to total range and body size"
+      ],
+      "ambiguityNotes": [
+        "Small-wick threshold is not yet numeric"
+      ]
+    },
+    {
+      "id": "multi_timeframe_alignment",
+      "name": "Expansion trades are strongest when higher and lower timeframes align",
+      "timeframeScope": ["higher", "intermediate", "lower"],
+      "marketPhasePrecondition": ["directional_bias_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Higher timeframe establishes expected directional expansion",
+      "confirmationTrigger": "Intermediate timeframe confirms structure and lower timeframe confirms execution direction",
+      "protectedSwingDefinition": "Execution timeframe protected swing should agree with higher timeframe directional intent",
+      "invalidationCondition": "Lower timeframe setup points against higher timeframe expansion context",
+      "targetLogic": "Use higher timeframe objective with lower timeframe precision entry",
+      "exceptions": [
+        "Two aligned timeframes may be enough, but three aligned timeframes are ideal",
+        "Below the four-hour chart, noise increases and reversal framing becomes less reliable"
+      ],
+      "evidenceRefs": [
+        "ttrades_top_down_expansion#core_principle",
+        "ttrades_aligning_expansion_candles#aligning_expansion_candles_across_timeframes",
+        "ttrades_easy_daily_bias#fractal_nature_of_the_framework"
+      ],
+      "visualVerificationRefs": [
+        "article:education_center_curriculum_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "selected higher timeframe OHLC",
+        "selected intermediate timeframe OHLC",
+        "selected execution timeframe OHLC",
+        "protected swing state on execution timeframe"
+      ],
+      "machineChecks": [
+        "Require higher timeframe directional condition",
+        "Require intermediate structure confirmation",
+        "Require execution timeframe continuation confirmation"
+      ],
+      "ambiguityNotes": [
+        "Timeframe combinations need narrowing to avoid excessive request complexity"
+      ]
+    },
+    {
+      "id": "expansion_entry_workflow",
+      "name": "Expansion entries come after POI reaction and confirmation",
+      "timeframeScope": ["intermediate", "lower"],
+      "marketPhasePrecondition": ["higher_timeframe_bias_set", "poi_reached"],
+      "direction": "bidirectional",
+      "setupAnchor": "Price taps a point of interest in the direction of the higher timeframe thesis",
+      "confirmationTrigger": "Bullish closure over opposing candle series or bearish closure under opposing candle series",
+      "protectedSwingDefinition": "Entry should use the new or most recent protected swing as the structural invalidation",
+      "invalidationCondition": "Protected swing is broken before the objective is reached",
+      "targetLogic": "Target prior external highs or lows and other liquidity objectives",
+      "exceptions": [
+        "Do not force continuation if post-expansion consolidation has not taken external highs or lows",
+        "If risk/reward is weak, wait for a newer protected swing",
+        "If the higher timeframe candle has a large opposing wick, lower timeframe continuation targets should be more conservative"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_2#how_to_trade_expansion",
+        "ttrades_top_down_expansion#refine_entry_on_a_lower_timeframe",
+        "ttrades_stop_loss_mastery#example_workflow"
+      ],
+      "visualVerificationRefs": [
+        "article:expansion_page_scan_2026_03_21",
+        "article:top_down_expansion_snippet_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "point of interest proxy",
+        "candle close relative to reference candle series",
+        "protected swing anchor",
+        "liquidity target proxy"
+      ],
+      "machineChecks": [
+        "Require POI touch event before confirmation",
+        "Require bar-close confirmation beyond reference candle open or close",
+        "Store invalidation from protected swing"
+      ],
+      "ambiguityNotes": [
+        "Point of interest selection still contains discretion",
+        "Reference candle series needs a stricter algorithm"
+      ]
+    },
+    {
+      "id": "expansion_exhaustion_guard",
+      "name": "Do not assume infinite continuation after repeated expansion",
+      "timeframeScope": ["higher"],
+      "marketPhasePrecondition": ["active_expansion"],
+      "direction": "bidirectional",
+      "setupAnchor": "Sustained same-direction expansion across multiple higher-timeframe bars",
+      "confirmationTrigger": "Third same-direction expansion bar or visible post-expansion consolidation",
+      "protectedSwingDefinition": "Later protected swings still matter, but expectation should shift toward phase change risk",
+      "invalidationCondition": "New phase begins: consolidation, retracement, or reversal",
+      "targetLogic": "Reduce expectations and prefer phase transition handling over blind continuation",
+      "exceptions": [
+        "This is a practical rule and may not hold in every strong trend"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_2#example_2_silver_daily"
+      ],
+      "visualVerificationRefs": [
+        "article:expansion_page_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "count of recent higher timeframe directional bars",
+        "range expansion classification"
+      ],
+      "machineChecks": [
+        "Count consecutive higher timeframe expansion bars",
+        "Flag exhaustion risk when threshold is exceeded"
+      ],
+      "ambiguityNotes": [
+        "Three-day rule may be heuristic rather than universal"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "How should shallow pullbacks be measured numerically?",
+    "What is the best numeric proxy for a candle supporting expansion?",
+    "How should POIs be ranked when multiple valid structures exist?"
+  ]
+}

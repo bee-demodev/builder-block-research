@@ -1,0 +1,55 @@
+{
+  "events": [
+    {
+      "profile_slug": "",
+      "topic": "continuation",
+      "trade_model": "daily_bias_c123_map",
+      "relation_type": "execution_model",
+      "chart_context": {
+        "setup_variant": "daily_bias_c123_map",
+        "source_kind": "tradingview_pine_alert",
+        "timeframe_scope": [
+          "chart_60",
+          "bias_D",
+          "execution_60"
+        ],
+        "session_scope": [
+          "new_york"
+        ]
+      },
+      "annotation": {
+        "fired_alert": "Hourly sequence activated",
+        "rule_states": {
+          "dailyBiasDirection": "bullish",
+          "dailyPoiTop": "21420.0",
+          "dailyPoiBottom": "21320.0",
+          "priceInsideDailyPoi": "true",
+          "activeHourlyDir": "bullish",
+          "activeHourlyC1Time": "2026-03-23T08:00:00-04:00",
+          "activeHourlyC2Time": "2026-03-23T09:00:00-04:00",
+          "activeHourlyC3Time": "2026-03-23T10:00:00-04:00",
+          "activeEntryTime": "2026-03-23T10:00:00-04:00",
+          "activeEntryPrice": "21355.5",
+          "activeHourlyInvalidation": "21320.0"
+        }
+      },
+      "candidate_signal": {
+        "timestamp": "2026-03-23T10:00:00-04:00",
+        "side": "long",
+        "stop_price": 21320.0,
+        "target_price": 21480.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "hourly sequence activated inside daily poi"
+      },
+      "case_ref": "sample_tv_hourly_sequence_case"
+    }
+  ],
+  "summary": {
+    "contract_path": "results\\pine_candidate_event_contracts\\daily_bias_c123_map.candidate_event_contract.json",
+    "alerts_path": "results\\neural_models\\sample_tradingview_alert_payloads.json",
+    "spec_key": "daily_bias_c123_map",
+    "alert_count": 1,
+    "candidate_event_count": 1
+  }
+}

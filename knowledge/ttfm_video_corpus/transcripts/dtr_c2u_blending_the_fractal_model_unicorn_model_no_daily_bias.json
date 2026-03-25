@@ -1,0 +1,2722 @@
+[
+  {
+    "text": "[Music]",
+    "start": 4.16,
+    "duration": 8.68
+  },
+  {
+    "text": "how's it going everyone and welcome back",
+    "start": 11.08,
+    "duration": 4.439
+  },
+  {
+    "text": "to another tea talk today we are joined",
+    "start": 12.84,
+    "duration": 4.68
+  },
+  {
+    "text": "by day trading realtor who is going to",
+    "start": 15.519,
+    "duration": 4.281
+  },
+  {
+    "text": "talk about his entry model that does not",
+    "start": 17.52,
+    "duration": 4.72
+  },
+  {
+    "text": "require daily bias he is going to talk",
+    "start": 19.8,
+    "duration": 5.399
+  },
+  {
+    "text": "about how he Blends am's daily profiles",
+    "start": 22.24,
+    "duration": 5.199
+  },
+  {
+    "text": "with my fractal model and the unicorn",
+    "start": 25.199,
+    "duration": 4.281
+  },
+  {
+    "text": "model to gain entry into the market I",
+    "start": 27.439,
+    "duration": 3.721
+  },
+  {
+    "text": "hope you guys find it insightful and",
+    "start": 29.48,
+    "duration": 4.48
+  },
+  {
+    "text": "enjoy it thank you T and I am honored to",
+    "start": 31.16,
+    "duration": 5.04
+  },
+  {
+    "text": "be on this episode of T talks I am the",
+    "start": 33.96,
+    "duration": 4.84
+  },
+  {
+    "text": "day trading realtor yes I am a real",
+    "start": 36.2,
+    "duration": 4.8
+  },
+  {
+    "text": "estate agent and yes I am also a day",
+    "start": 38.8,
+    "duration": 4.36
+  },
+  {
+    "text": "trader that is one of the beauties of",
+    "start": 41.0,
+    "duration": 4.079
+  },
+  {
+    "text": "being a realtor is that I have the",
+    "start": 43.16,
+    "duration": 4.8
+  },
+  {
+    "text": "flexibility in my schedule to also day",
+    "start": 45.079,
+    "duration": 5.561
+  },
+  {
+    "text": "trade I'm here to talk about my model",
+    "start": 47.96,
+    "duration": 6.2
+  },
+  {
+    "text": "which I call the c2u or the C2 unicorn",
+    "start": 50.64,
+    "duration": 6.239
+  },
+  {
+    "text": "and it's a blend of the trades fractal",
+    "start": 54.16,
+    "duration": 5.28
+  },
+  {
+    "text": "model and the unicorn model and it's a",
+    "start": 56.879,
+    "duration": 5.041
+  },
+  {
+    "text": "point of interest based model first and",
+    "start": 59.44,
+    "duration": 3.88
+  },
+  {
+    "text": "foremost before we get into the",
+    "start": 61.92,
+    "duration": 4.12
+  },
+  {
+    "text": "nitty-gritty of my model I have to pay",
+    "start": 63.32,
+    "duration": 5.56
+  },
+  {
+    "text": "tribute to some individuals that have",
+    "start": 66.04,
+    "duration": 5.84
+  },
+  {
+    "text": "played a large role in becoming a day",
+    "start": 68.88,
+    "duration": 5.599
+  },
+  {
+    "text": "trader myself first and foremost",
+    "start": 71.88,
+    "duration": 6.32
+  },
+  {
+    "text": "obviously ICT but even more than ICT te",
+    "start": 74.479,
+    "duration": 5.801
+  },
+  {
+    "text": "trades without him I would not be this",
+    "start": 78.2,
+    "duration": 4.599
+  },
+  {
+    "text": "far along in my journey as well as Ash",
+    "start": 80.28,
+    "duration": 4.76
+  },
+  {
+    "text": "trades over at the Unicorn University",
+    "start": 82.799,
+    "duration": 4.64
+  },
+  {
+    "text": "he's the one that I learned all the ins",
+    "start": 85.04,
+    "duration": 4.88
+  },
+  {
+    "text": "and outs of the unicorn model and am",
+    "start": 87.439,
+    "duration": 4.601
+  },
+  {
+    "text": "trades where I have learned about the",
+    "start": 89.92,
+    "duration": 4.6
+  },
+  {
+    "text": "expansion model and specifically how he",
+    "start": 92.04,
+    "duration": 4.759
+  },
+  {
+    "text": "uses the 7-h hour candle for the daily",
+    "start": 94.52,
+    "duration": 4.52
+  },
+  {
+    "text": "profiles without those individuals",
+    "start": 96.799,
+    "duration": 3.64
+  },
+  {
+    "text": "collectively I would not have been able",
+    "start": 99.04,
+    "duration": 3.56
+  },
+  {
+    "text": "to create the model that I have today",
+    "start": 100.439,
+    "duration": 7.28
+  },
+  {
+    "text": "now out of respect for T and am and Ash",
+    "start": 102.6,
+    "duration": 7.519
+  },
+  {
+    "text": "there are parts of my model that I'm not",
+    "start": 107.719,
+    "duration": 5.281
+  },
+  {
+    "text": "going to speak about today those are",
+    "start": 110.119,
+    "duration": 4.801
+  },
+  {
+    "text": "paid private mentorships and it would",
+    "start": 113.0,
+    "duration": 3.84
+  },
+  {
+    "text": "not be right for me to give some of the",
+    "start": 114.92,
+    "duration": 5.0
+  },
+  {
+    "text": "secrets away that they use if you truly",
+    "start": 116.84,
+    "duration": 4.36
+  },
+  {
+    "text": "want to learn the ins and outs of my",
+    "start": 119.92,
+    "duration": 3.239
+  },
+  {
+    "text": "model I highly recommend that you join",
+    "start": 121.2,
+    "duration": 4.32
+  },
+  {
+    "text": "either the market lens or the Unicorn",
+    "start": 123.159,
+    "duration": 5.08
+  },
+  {
+    "text": "University this way you can see all the",
+    "start": 125.52,
+    "duration": 5.64
+  },
+  {
+    "text": "ins and outs of what I have learned to",
+    "start": 128.239,
+    "duration": 5.08
+  },
+  {
+    "text": "fully build this model so let's go ahead",
+    "start": 131.16,
+    "duration": 4.4
+  },
+  {
+    "text": "and get into the model what do I mean by",
+    "start": 133.319,
+    "duration": 5.041
+  },
+  {
+    "text": "points of interest based model well what",
+    "start": 135.56,
+    "duration": 4.72
+  },
+  {
+    "text": "that basically means is that I don't",
+    "start": 138.36,
+    "duration": 4.519
+  },
+  {
+    "text": "specifically rely on a daily bias in",
+    "start": 140.28,
+    "duration": 5.28
+  },
+  {
+    "text": "order to enter a trade now you can pair",
+    "start": 142.879,
+    "duration": 5.241
+  },
+  {
+    "text": "it with a daily bias if you'd like I",
+    "start": 145.56,
+    "duration": 5.679
+  },
+  {
+    "text": "personally don't and the reason why is I",
+    "start": 148.12,
+    "duration": 5.16
+  },
+  {
+    "text": "always had an issue with daily bias",
+    "start": 151.239,
+    "duration": 3.601
+  },
+  {
+    "text": "because there are so many different ways",
+    "start": 153.28,
+    "duration": 4.4
+  },
+  {
+    "text": "to create a daily bias you have internal",
+    "start": 154.84,
+    "duration": 6.0
+  },
+  {
+    "text": "to external you have uh T's way of of",
+    "start": 157.68,
+    "duration": 5.12
+  },
+  {
+    "text": "coming up with daily bias and I never",
+    "start": 160.84,
+    "duration": 4.52
+  },
+  {
+    "text": "was able to buy into one specific way of",
+    "start": 162.8,
+    "duration": 5.719
+  },
+  {
+    "text": "doing a daily bias so I do have the",
+    "start": 165.36,
+    "duration": 5.239
+  },
+  {
+    "text": "great pleasure of knowing T personally",
+    "start": 168.519,
+    "duration": 4.241
+  },
+  {
+    "text": "and uh have worked with him for almost a",
+    "start": 170.599,
+    "duration": 4.961
+  },
+  {
+    "text": "year now on learning his model and how",
+    "start": 172.76,
+    "duration": 5.199
+  },
+  {
+    "text": "he trades and one day we were talking",
+    "start": 175.56,
+    "duration": 4.08
+  },
+  {
+    "text": "and he said to me well if you don't want",
+    "start": 177.959,
+    "duration": 3.601
+  },
+  {
+    "text": "to to trade with a daily bias then don't",
+    "start": 179.64,
+    "duration": 3.64
+  },
+  {
+    "text": "trade with a daily bias nothing says",
+    "start": 181.56,
+    "duration": 4.319
+  },
+  {
+    "text": "that you have to trade with a daily bias",
+    "start": 183.28,
+    "duration": 5.8
+  },
+  {
+    "text": "find a model that works for you that",
+    "start": 185.879,
+    "duration": 5.28
+  },
+  {
+    "text": "doesn't use a daily bias so that's what",
+    "start": 189.08,
+    "duration": 4.96
+  },
+  {
+    "text": "I did I'm sure all of you who have",
+    "start": 191.159,
+    "duration": 5.321
+  },
+  {
+    "text": "followed T's journey and follow him on",
+    "start": 194.04,
+    "duration": 4.44
+  },
+  {
+    "text": "YouTube and seen some of his videos or",
+    "start": 196.48,
+    "duration": 4.88
+  },
+  {
+    "text": "in his his mentorship you hear him say",
+    "start": 198.48,
+    "duration": 5.319
+  },
+  {
+    "text": "all the time that price cannot reverse",
+    "start": 201.36,
+    "duration": 4.159
+  },
+  {
+    "text": "without creating a swing",
+    "start": 203.799,
+    "duration": 4.241
+  },
+  {
+    "text": "point and also those who know the",
+    "start": 205.519,
+    "duration": 6.0
+  },
+  {
+    "text": "unicorn model know that I C claims that",
+    "start": 208.04,
+    "duration": 6.759
+  },
+  {
+    "text": "the unicorn model is the most powerful",
+    "start": 211.519,
+    "duration": 6.681
+  },
+  {
+    "text": "algorithmic reversal pattern so then I",
+    "start": 214.799,
+    "duration": 5.121
+  },
+  {
+    "text": "started to think to myself well is there",
+    "start": 218.2,
+    "duration": 5.239
+  },
+  {
+    "text": "a way to join a",
+    "start": 219.92,
+    "duration": 7.12
+  },
+  {
+    "text": "unicorn and a swing point so I jumped on",
+    "start": 223.439,
+    "duration": 4.88
+  },
+  {
+    "text": "the charts and that's what I started",
+    "start": 227.04,
+    "duration": 3.32
+  },
+  {
+    "text": "doing I simply started from the hourly",
+    "start": 228.319,
+    "duration": 5.441
+  },
+  {
+    "text": "time frame and would identify all hourly",
+    "start": 230.36,
+    "duration": 5.48
+  },
+  {
+    "text": "swing points and once I identified",
+    "start": 233.76,
+    "duration": 4.759
+  },
+  {
+    "text": "hourly swing points I looked where those",
+    "start": 235.84,
+    "duration": 4.92
+  },
+  {
+    "text": "hourly swing points would reach into a",
+    "start": 238.519,
+    "duration": 4.0
+  },
+  {
+    "text": "point of Interest whether it was another",
+    "start": 240.76,
+    "duration": 4.839
+  },
+  {
+    "text": "swing High a swing low opposing range",
+    "start": 242.519,
+    "duration": 6.56
+  },
+  {
+    "text": "candles fair value gaps previous day",
+    "start": 245.599,
+    "duration": 6.241
+  },
+  {
+    "text": "higher low previous session higher low",
+    "start": 249.079,
+    "duration": 5.08
+  },
+  {
+    "text": "or previous week higher low I then",
+    "start": 251.84,
+    "duration": 4.56
+  },
+  {
+    "text": "started to observe what the hourly",
+    "start": 254.159,
+    "duration": 4.36
+  },
+  {
+    "text": "swingp Point candle would do once it",
+    "start": 256.4,
+    "duration": 4.559
+  },
+  {
+    "text": "reached one of those points of interests",
+    "start": 258.519,
+    "duration": 5.081
+  },
+  {
+    "text": "especially hourly swingo candles that",
+    "start": 260.959,
+    "duration": 5.001
+  },
+  {
+    "text": "had larger Wicks when I dropped down to",
+    "start": 263.6,
+    "duration": 4.44
+  },
+  {
+    "text": "a five-minute chart I started to notice",
+    "start": 265.96,
+    "duration": 4.519
+  },
+  {
+    "text": "that inside of those wicks",
+    "start": 268.04,
+    "duration": 4.24
+  },
+  {
+    "text": "there would be 5 minute unicorns that",
+    "start": 270.479,
+    "duration": 4.641
+  },
+  {
+    "text": "would form so using this knowledge of",
+    "start": 272.28,
+    "duration": 5.4
+  },
+  {
+    "text": "watching hourly swing points form at one",
+    "start": 275.12,
+    "duration": 4.359
+  },
+  {
+    "text": "of those points of interest and then",
+    "start": 277.68,
+    "duration": 3.519
+  },
+  {
+    "text": "dropping down to the F minute and seeing",
+    "start": 279.479,
+    "duration": 4.0
+  },
+  {
+    "text": "unicorns inside of those swing points I",
+    "start": 281.199,
+    "duration": 4.28
+  },
+  {
+    "text": "started to back test that model and then",
+    "start": 283.479,
+    "duration": 4.961
+  },
+  {
+    "text": "I started to see how the unicorns that",
+    "start": 285.479,
+    "duration": 7.041
+  },
+  {
+    "text": "would form in 10 to 12 candles or less",
+    "start": 288.44,
+    "duration": 6.0
+  },
+  {
+    "text": "seemed to be better unicorns that would",
+    "start": 292.52,
+    "duration": 4.04
+  },
+  {
+    "text": "form when there was more candles",
+    "start": 294.44,
+    "duration": 4.36
+  },
+  {
+    "text": "involved and the reason behind this is",
+    "start": 296.56,
+    "duration": 5.28
+  },
+  {
+    "text": "because when it forms in 8 to 10 to",
+    "start": 298.8,
+    "duration": 6.04
+  },
+  {
+    "text": "maybe 12 candles that's happening pretty",
+    "start": 301.84,
+    "duration": 6.88
+  },
+  {
+    "text": "fast so it's showing clear and decisive",
+    "start": 304.84,
+    "duration": 6.639
+  },
+  {
+    "text": "movement I don't like the unicorns that",
+    "start": 308.72,
+    "duration": 6.28
+  },
+  {
+    "text": "are either further down the candle body",
+    "start": 311.479,
+    "duration": 7.201
+  },
+  {
+    "text": "or created over a few hour period even",
+    "start": 315.0,
+    "duration": 5.24
+  },
+  {
+    "text": "though some of those do wind up being",
+    "start": 318.68,
+    "duration": 4.84
+  },
+  {
+    "text": "winners um to me in my eyes it looks",
+    "start": 320.24,
+    "duration": 5.56
+  },
+  {
+    "text": "like they're just it's consolidation and",
+    "start": 323.52,
+    "duration": 3.799
+  },
+  {
+    "text": "if you have a breaker and then a bunch",
+    "start": 325.8,
+    "duration": 4.28
+  },
+  {
+    "text": "of consolidation in between the breaker",
+    "start": 327.319,
+    "duration": 5.241
+  },
+  {
+    "text": "and the the actual close through the",
+    "start": 330.08,
+    "duration": 5.04
+  },
+  {
+    "text": "breaker forming the unicorn in my mind",
+    "start": 332.56,
+    "duration": 5.359
+  },
+  {
+    "text": "that's just happened to be a swing high",
+    "start": 335.12,
+    "duration": 5.44
+  },
+  {
+    "text": "and swing low mixed with consolidation I",
+    "start": 337.919,
+    "duration": 6.321
+  },
+  {
+    "text": "want to see a unicorn form quickly and",
+    "start": 340.56,
+    "duration": 6.199
+  },
+  {
+    "text": "concisely within that 10 to 12 candle",
+    "start": 344.24,
+    "duration": 5.6
+  },
+  {
+    "text": "range or even less than that so let's",
+    "start": 346.759,
+    "duration": 5.321
+  },
+  {
+    "text": "get into some examples of how I trade my",
+    "start": 349.84,
+    "duration": 5.24
+  },
+  {
+    "text": "model okay let's start off with my A+",
+    "start": 352.08,
+    "duration": 6.559
+  },
+  {
+    "text": "setup so we're on the 7-hour chart and",
+    "start": 355.08,
+    "duration": 5.36
+  },
+  {
+    "text": "as you can see the these are 7-hour",
+    "start": 358.639,
+    "duration": 5.28
+  },
+  {
+    "text": "candles and you can learn how this works",
+    "start": 360.44,
+    "duration": 7.28
+  },
+  {
+    "text": "in am's expansion model course he uses",
+    "start": 363.919,
+    "duration": 7.361
+  },
+  {
+    "text": "the 7h hour candle as the daily profile",
+    "start": 367.72,
+    "duration": 6.4
+  },
+  {
+    "text": "it's a much simpler version of viewing",
+    "start": 371.28,
+    "duration": 5.359
+  },
+  {
+    "text": "the daily profiles this candle here is",
+    "start": 374.12,
+    "duration": 4.76
+  },
+  {
+    "text": "the 1:00 candle so it's 1:00 a.m. to",
+    "start": 376.639,
+    "duration": 4.801
+  },
+  {
+    "text": "8:00 a.m. that is the London candle and",
+    "start": 378.88,
+    "duration": 4.8
+  },
+  {
+    "text": "as you can see this is a London C2",
+    "start": 381.44,
+    "duration": 5.599
+  },
+  {
+    "text": "candle which to me is a London reversal",
+    "start": 383.68,
+    "duration": 5.959
+  },
+  {
+    "text": "all while being inside of a 7h hour",
+    "start": 387.039,
+    "duration": 6.72
+  },
+  {
+    "text": "bearish fair value Gap and also sweeping",
+    "start": 389.639,
+    "duration": 6.161
+  },
+  {
+    "text": "a few other highs this is the previous",
+    "start": 393.759,
+    "duration": 4.321
+  },
+  {
+    "text": "day high here that had swept which that",
+    "start": 395.8,
+    "duration": 4.2
+  },
+  {
+    "text": "previous day high swept this high as",
+    "start": 398.08,
+    "duration": 4.72
+  },
+  {
+    "text": "well so the other thing I look at is",
+    "start": 400.0,
+    "duration": 5.08
+  },
+  {
+    "text": "that we are also where we are on the",
+    "start": 402.8,
+    "duration": 4.44
+  },
+  {
+    "text": "average daily range so at the close of",
+    "start": 405.08,
+    "duration": 4.679
+  },
+  {
+    "text": "London the current average daily range",
+    "start": 407.24,
+    "duration": 4.359
+  },
+  {
+    "text": "for the last 6 months on inq has been",
+    "start": 409.759,
+    "duration": 5.641
+  },
+  {
+    "text": "335 points we have gone",
+    "start": 411.599,
+    "duration": 7.32
+  },
+  {
+    "text": "214 points for the day at that point in",
+    "start": 415.4,
+    "duration": 6.479
+  },
+  {
+    "text": "time so if my profit Target is the",
+    "start": 418.919,
+    "duration": 5.361
+  },
+  {
+    "text": "London low down here I would like to",
+    "start": 421.879,
+    "duration": 5.081
+  },
+  {
+    "text": "measure from where price currently is",
+    "start": 424.28,
+    "duration": 5.28
+  },
+  {
+    "text": "down to that London low and that gives",
+    "start": 426.96,
+    "duration": 5.519
+  },
+  {
+    "text": "us about 90 points so that would put us",
+    "start": 429.56,
+    "duration": 6.0
+  },
+  {
+    "text": "right around uh just under the average",
+    "start": 432.479,
+    "duration": 5.361
+  },
+  {
+    "text": "daily range so it makes sense to me that",
+    "start": 435.56,
+    "duration": 4.8
+  },
+  {
+    "text": "price can easily reach down there",
+    "start": 437.84,
+    "duration": 4.479
+  },
+  {
+    "text": "without having to go past the average",
+    "start": 440.36,
+    "duration": 4.32
+  },
+  {
+    "text": "daily range so dropping down to the f-",
+    "start": 442.319,
+    "duration": 4.681
+  },
+  {
+    "text": "minute chart which is my preferred time",
+    "start": 444.68,
+    "duration": 4.84
+  },
+  {
+    "text": "frame you can see that there is mult",
+    "start": 447.0,
+    "duration": 5.44
+  },
+  {
+    "text": "multiple confluences and a stacking of",
+    "start": 449.52,
+    "duration": 5.44
+  },
+  {
+    "text": "points of interest so to start off with",
+    "start": 452.44,
+    "duration": 4.56
+  },
+  {
+    "text": "since this was a London reversal we want",
+    "start": 454.96,
+    "duration": 5.2
+  },
+  {
+    "text": "to see that 50% of the previous candle",
+    "start": 457.0,
+    "duration": 6.08
+  },
+  {
+    "text": "which is the 7h hour candle 50% of that",
+    "start": 460.16,
+    "duration": 5.479
+  },
+  {
+    "text": "candle is respected in this case because",
+    "start": 463.08,
+    "duration": 4.559
+  },
+  {
+    "text": "it was such a large wick on that candle",
+    "start": 465.639,
+    "duration": 4.721
+  },
+  {
+    "text": "I would use 50% of the wick and that is",
+    "start": 467.639,
+    "duration": 5.56
+  },
+  {
+    "text": "right here you can see how New York open",
+    "start": 470.36,
+    "duration": 7.0
+  },
+  {
+    "text": "ran up to that 50% and then started to",
+    "start": 473.199,
+    "duration": 7.321
+  },
+  {
+    "text": "reverse off of that 50%",
+    "start": 477.36,
+    "duration": 5.839
+  },
+  {
+    "text": "along with that we had hourly opposing",
+    "start": 480.52,
+    "duration": 5.399
+  },
+  {
+    "text": "candles and an hourly inverted fair",
+    "start": 483.199,
+    "duration": 4.601
+  },
+  {
+    "text": "value Gap so there was multiple points",
+    "start": 485.919,
+    "duration": 4.601
+  },
+  {
+    "text": "of interest stacked on top of each other",
+    "start": 487.8,
+    "duration": 5.92
+  },
+  {
+    "text": "so here's the C2 candle so it opens up",
+    "start": 490.52,
+    "duration": 6.84
+  },
+  {
+    "text": "runs higher and then it forms a unicorn",
+    "start": 493.72,
+    "duration": 6.0
+  },
+  {
+    "text": "now this is where my model will differ",
+    "start": 497.36,
+    "duration": 5.04
+  },
+  {
+    "text": "from the fractal model I don't wait for",
+    "start": 499.72,
+    "duration": 6.159
+  },
+  {
+    "text": "a valid C2 closure and take the trade in",
+    "start": 502.4,
+    "duration": 7.799
+  },
+  {
+    "text": "in Candle 3 if the Unicorn forms in C 2",
+    "start": 505.879,
+    "duration": 8.28
+  },
+  {
+    "text": "I I use the formation of the Unicorn as",
+    "start": 510.199,
+    "duration": 6.72
+  },
+  {
+    "text": "my confirmation that this will be a",
+    "start": 514.159,
+    "duration": 5.0
+  },
+  {
+    "text": "valid C2 candle closure based on the",
+    "start": 516.919,
+    "duration": 4.92
+  },
+  {
+    "text": "fractal model the other Confluence you",
+    "start": 519.159,
+    "duration": 4.68
+  },
+  {
+    "text": "have is you can see earlier in the",
+    "start": 521.839,
+    "duration": 4.201
+  },
+  {
+    "text": "London session there was also a hourly",
+    "start": 523.839,
+    "duration": 4.881
+  },
+  {
+    "text": "C2 candle granted it wasn't at any type",
+    "start": 526.04,
+    "duration": 4.239
+  },
+  {
+    "text": "of point of interest at that point in",
+    "start": 528.72,
+    "duration": 5.52
+  },
+  {
+    "text": "time but it also created a unicorn and",
+    "start": 530.279,
+    "duration": 6.041
+  },
+  {
+    "text": "you can see price went right up to that",
+    "start": 534.24,
+    "duration": 4.68
+  },
+  {
+    "text": "unicorn and respected as well so you can",
+    "start": 536.32,
+    "duration": 4.8
+  },
+  {
+    "text": "see we have have four different points",
+    "start": 538.92,
+    "duration": 4.44
+  },
+  {
+    "text": "of interest stacked on top of each other",
+    "start": 541.12,
+    "duration": 5.36
+  },
+  {
+    "text": "for Confluence for this trade we use the",
+    "start": 543.36,
+    "duration": 5.64
+  },
+  {
+    "text": "London low as our takeprofit Target and",
+    "start": 546.48,
+    "duration": 4.88
+  },
+  {
+    "text": "you can see how price just ran straight",
+    "start": 549.0,
+    "duration": 4.72
+  },
+  {
+    "text": "to that London low pretty much no",
+    "start": 551.36,
+    "duration": 5.68
+  },
+  {
+    "text": "retracement at all during this trade so",
+    "start": 553.72,
+    "duration": 6.679
+  },
+  {
+    "text": "this is an example of my A+ setup and if",
+    "start": 557.04,
+    "duration": 5.68
+  },
+  {
+    "text": "I could just trade London reversals all",
+    "start": 560.399,
+    "duration": 4.321
+  },
+  {
+    "text": "the time that's what I would trade this",
+    "start": 562.72,
+    "duration": 4.799
+  },
+  {
+    "text": "is a fantastic setup and I wish these",
+    "start": 564.72,
+    "duration": 4.4
+  },
+  {
+    "text": "happened all the time but unfortunately",
+    "start": 567.519,
+    "duration": 3.481
+  },
+  {
+    "text": "they don't okay here's another example",
+    "start": 569.12,
+    "duration": 3.92
+  },
+  {
+    "text": "this is on gold and once again we're",
+    "start": 571.0,
+    "duration": 4.56
+  },
+  {
+    "text": "starting from the 7-h hour chart here we",
+    "start": 573.04,
+    "duration": 4.84
+  },
+  {
+    "text": "are in London uh you can see that Asia",
+    "start": 575.56,
+    "duration": 5.36
+  },
+  {
+    "text": "made the high of the day yet London",
+    "start": 577.88,
+    "duration": 5.8
+  },
+  {
+    "text": "didn't continue uh so if Asia makes the",
+    "start": 580.92,
+    "duration": 5.72
+  },
+  {
+    "text": "high and London doesn't continue lower",
+    "start": 583.68,
+    "duration": 4.399
+  },
+  {
+    "text": "more than likely we're going to have a",
+    "start": 586.64,
+    "duration": 3.8
+  },
+  {
+    "text": "New York reversal now granted we are in",
+    "start": 588.079,
+    "duration": 5.88
+  },
+  {
+    "text": "this this 7h hour bearish fair value Gap",
+    "start": 590.44,
+    "duration": 6.04
+  },
+  {
+    "text": "however where is Price more likely to",
+    "start": 593.959,
+    "duration": 5.601
+  },
+  {
+    "text": "reach all the way back down here or to",
+    "start": 596.48,
+    "duration": 5.2
+  },
+  {
+    "text": "get this high up here and that's what I",
+    "start": 599.56,
+    "duration": 3.68
+  },
+  {
+    "text": "was figuring was that we're going to go",
+    "start": 601.68,
+    "duration": 3.56
+  },
+  {
+    "text": "ahead and reach this daily high so what",
+    "start": 603.24,
+    "duration": 4.36
+  },
+  {
+    "text": "I was looking for was a New York",
+    "start": 605.24,
+    "duration": 4.48
+  },
+  {
+    "text": "reversal which would sweep out the low",
+    "start": 607.6,
+    "duration": 4.56
+  },
+  {
+    "text": "of London and Asia and then continue",
+    "start": 609.72,
+    "duration": 5.359
+  },
+  {
+    "text": "higher Also let's look at the average",
+    "start": 612.16,
+    "duration": 5.08
+  },
+  {
+    "text": "daily range and see if that would make",
+    "start": 615.079,
+    "duration": 5.041
+  },
+  {
+    "text": "sense so we got $17 left in the average",
+    "start": 617.24,
+    "duration": 5.599
+  },
+  {
+    "text": "daily range and so at the close of",
+    "start": 620.12,
+    "duration": 4.88
+  },
+  {
+    "text": "London up to that",
+    "start": 622.839,
+    "duration": 5.281
+  },
+  {
+    "text": "high it's about $22 so it's a little",
+    "start": 625.0,
+    "duration": 6.279
+  },
+  {
+    "text": "further than 17 but obviously price can",
+    "start": 628.12,
+    "duration": 5.88
+  },
+  {
+    "text": "expand a little bit further past the",
+    "start": 631.279,
+    "duration": 4.641
+  },
+  {
+    "text": "average daily range but does it make",
+    "start": 634.0,
+    "duration": 4.04
+  },
+  {
+    "text": "sense for it to go up and reach that",
+    "start": 635.92,
+    "duration": 4.919
+  },
+  {
+    "text": "high in in my opinion yes it does so",
+    "start": 638.04,
+    "duration": 5.0
+  },
+  {
+    "text": "let's go down to the f- minute",
+    "start": 640.839,
+    "duration": 4.8
+  },
+  {
+    "text": "chart and here we are on the five-minute",
+    "start": 643.04,
+    "duration": 5.599
+  },
+  {
+    "text": "chart as you can see our points of",
+    "start": 645.639,
+    "duration": 7.44
+  },
+  {
+    "text": "interest are a Asian London hourly swing",
+    "start": 648.639,
+    "duration": 6.76
+  },
+  {
+    "text": "low which is also the low for both",
+    "start": 653.079,
+    "duration": 5.601
+  },
+  {
+    "text": "sessions so here's your Asia low here is",
+    "start": 655.399,
+    "duration": 6.801
+  },
+  {
+    "text": "a London swing low and we also had a",
+    "start": 658.68,
+    "duration": 5.399
+  },
+  {
+    "text": "fair value Gap there very small but it",
+    "start": 662.2,
+    "duration": 4.48
+  },
+  {
+    "text": "was an hourly fair value Gap and this",
+    "start": 664.079,
+    "duration": 5.241
+  },
+  {
+    "text": "pattern right here of a hourly swing",
+    "start": 666.68,
+    "duration": 5.48
+  },
+  {
+    "text": "Point sitting resting just above a",
+    "start": 669.32,
+    "duration": 5.199
+  },
+  {
+    "text": "hourly fair value Gap is one of my",
+    "start": 672.16,
+    "duration": 4.32
+  },
+  {
+    "text": "favorite things to see so if you're",
+    "start": 674.519,
+    "duration": 4.601
+  },
+  {
+    "text": "bullish you want to see an hourly swing",
+    "start": 676.48,
+    "duration": 5.52
+  },
+  {
+    "text": "Point sitting just above the fair value",
+    "start": 679.12,
+    "duration": 4.519
+  },
+  {
+    "text": "Gap and if you're bearish it's opposite",
+    "start": 682.0,
+    "duration": 3.279
+  },
+  {
+    "text": "you want to see an hourly swing Point",
+    "start": 683.639,
+    "duration": 3.88
+  },
+  {
+    "text": "sitting just below a bearish fair value",
+    "start": 685.279,
+    "duration": 3.721
+  },
+  {
+    "text": "Gap that's usually a good sign that",
+    "start": 687.519,
+    "duration": 4.0
+  },
+  {
+    "text": "price is going to sweep into them and",
+    "start": 689.0,
+    "duration": 4.44
+  },
+  {
+    "text": "react off of that so that's what we had",
+    "start": 691.519,
+    "duration": 5.921
+  },
+  {
+    "text": "at the 8:00 open moved up went down we",
+    "start": 693.44,
+    "duration": 6.079
+  },
+  {
+    "text": "swept all that out and then we created",
+    "start": 697.44,
+    "duration": 5.04
+  },
+  {
+    "text": "the fair value Gap along with the",
+    "start": 699.519,
+    "duration": 6.161
+  },
+  {
+    "text": "breaker here forming our unicorn and as",
+    "start": 702.48,
+    "duration": 5.08
+  },
+  {
+    "text": "you can see there is actually a t-spot",
+    "start": 705.68,
+    "duration": 4.36
+  },
+  {
+    "text": "in here however because the t-pot",
+    "start": 707.56,
+    "duration": 5.399
+  },
+  {
+    "text": "doesn't form until the C2 candle has",
+    "start": 710.04,
+    "duration": 5.479
+  },
+  {
+    "text": "closed um there was no actually entry",
+    "start": 712.959,
+    "duration": 5.88
+  },
+  {
+    "text": "off the t-spot but there was a confirmed",
+    "start": 715.519,
+    "duration": 6.201
+  },
+  {
+    "text": "unicorn orn inside of the C2 candle and",
+    "start": 718.839,
+    "duration": 4.881
+  },
+  {
+    "text": "once again how many candles did it take",
+    "start": 721.72,
+    "duration": 4.84
+  },
+  {
+    "text": "to create the unicorn and we have 1 2 3",
+    "start": 723.72,
+    "duration": 6.64
+  },
+  {
+    "text": "4 5 six seven eight candles to create",
+    "start": 726.56,
+    "duration": 6.04
+  },
+  {
+    "text": "the unicorn and that's what I like to",
+    "start": 730.36,
+    "duration": 4.24
+  },
+  {
+    "text": "see I like to see 10 to 12 or less",
+    "start": 732.6,
+    "duration": 4.599
+  },
+  {
+    "text": "candles create a unicorn confirming that",
+    "start": 734.6,
+    "duration": 6.08
+  },
+  {
+    "text": "clear and concise movement away from the",
+    "start": 737.199,
+    "duration": 6.08
+  },
+  {
+    "text": "points of interest now just for low",
+    "start": 740.68,
+    "duration": 5.08
+  },
+  {
+    "text": "hanging fruit we targeted Asia high that",
+    "start": 743.279,
+    "duration": 5.641
+  },
+  {
+    "text": "gave us a 2.41 R but my initial Target",
+    "start": 745.76,
+    "duration": 5.319
+  },
+  {
+    "text": "of that previous day high did wind up",
+    "start": 748.92,
+    "duration": 4.96
+  },
+  {
+    "text": "getting hit and if you were to trim here",
+    "start": 751.079,
+    "duration": 5.12
+  },
+  {
+    "text": "and use a trailing method you could have",
+    "start": 753.88,
+    "duration": 5.199
+  },
+  {
+    "text": "received more of a of a win there on",
+    "start": 756.199,
+    "duration": 5.241
+  },
+  {
+    "text": "this trade but I just try to Target low",
+    "start": 759.079,
+    "duration": 4.601
+  },
+  {
+    "text": "hanging fruit which is the Asia high and",
+    "start": 761.44,
+    "duration": 4.44
+  },
+  {
+    "text": "there we go okay here's our next example",
+    "start": 763.68,
+    "duration": 4.32
+  },
+  {
+    "text": "this is on ES once again we're back at",
+    "start": 765.88,
+    "duration": 4.959
+  },
+  {
+    "text": "the 7-h hour chart and unlike the",
+    "start": 768.0,
+    "duration": 5.36
+  },
+  {
+    "text": "previous two examples you can see how",
+    "start": 770.839,
+    "duration": 6.12
+  },
+  {
+    "text": "this day has already reached past the",
+    "start": 773.36,
+    "duration": 6.719
+  },
+  {
+    "text": "average daily range uh the Jay range is",
+    "start": 776.959,
+    "duration": 6.161
+  },
+  {
+    "text": "66 points and we have already price has",
+    "start": 780.079,
+    "duration": 7.521
+  },
+  {
+    "text": "already run 73.5 points so what do I see",
+    "start": 783.12,
+    "duration": 8.279
+  },
+  {
+    "text": "here I see a 7h hour swing low sitting",
+    "start": 787.6,
+    "duration": 7.0
+  },
+  {
+    "text": "just above a 7h hour bullish fair value",
+    "start": 791.399,
+    "duration": 6.401
+  },
+  {
+    "text": "Gap so I love to see this formation",
+    "start": 794.6,
+    "duration": 6.039
+  },
+  {
+    "text": "happen London sweeps that low we have a",
+    "start": 797.8,
+    "duration": 4.96
+  },
+  {
+    "text": "little bit of a reaction off of it now",
+    "start": 800.639,
+    "duration": 4.76
+  },
+  {
+    "text": "what I want to see is an open low into",
+    "start": 802.76,
+    "duration": 4.759
+  },
+  {
+    "text": "this fair value Gap and then a reaction",
+    "start": 805.399,
+    "duration": 3.8
+  },
+  {
+    "text": "off of it I don't think we're going to",
+    "start": 807.519,
+    "duration": 3.32
+  },
+  {
+    "text": "come all the way back up here for the",
+    "start": 809.199,
+    "duration": 4.681
+  },
+  {
+    "text": "day however uh we don't need to do that",
+    "start": 810.839,
+    "duration": 5.0
+  },
+  {
+    "text": "we just need to try to grab two R so",
+    "start": 813.88,
+    "duration": 3.399
+  },
+  {
+    "text": "let's go down to the F minute chart and",
+    "start": 815.839,
+    "duration": 3.321
+  },
+  {
+    "text": "see what we got okay here we are on the",
+    "start": 817.279,
+    "duration": 3.8
+  },
+  {
+    "text": "five-minute chart and as you can see",
+    "start": 819.16,
+    "duration": 3.72
+  },
+  {
+    "text": "once again we have multiple points of",
+    "start": 821.079,
+    "duration": 4.12
+  },
+  {
+    "text": "interest stacked on top of each other we",
+    "start": 822.88,
+    "duration": 5.16
+  },
+  {
+    "text": "are at a hourly fair value gap which",
+    "start": 825.199,
+    "duration": 5.76
+  },
+  {
+    "text": "happens to also overlay with that 7h",
+    "start": 828.04,
+    "duration": 5.919
+  },
+  {
+    "text": "hour fair value Gap we are below an",
+    "start": 830.959,
+    "duration": 5.361
+  },
+  {
+    "text": "hourly swing low and we just reached",
+    "start": 833.959,
+    "duration": 6.56
+  },
+  {
+    "text": "into hourly opposing candles so putting",
+    "start": 836.32,
+    "duration": 7.879
+  },
+  {
+    "text": "that all together from the 7h hour daily",
+    "start": 840.519,
+    "duration": 6.841
+  },
+  {
+    "text": "profile we have already expanded pretty",
+    "start": 844.199,
+    "duration": 6.0
+  },
+  {
+    "text": "far past the average daily range so we",
+    "start": 847.36,
+    "duration": 4.64
+  },
+  {
+    "text": "can be expecting a",
+    "start": 850.199,
+    "duration": 4.88
+  },
+  {
+    "text": "reversal and there is a lwh hanging",
+    "start": 852.0,
+    "duration": 4.519
+  },
+  {
+    "text": "fruit Target right here which is the",
+    "start": 855.079,
+    "duration": 4.041
+  },
+  {
+    "text": "open of the New York session so we",
+    "start": 856.519,
+    "duration": 5.12
+  },
+  {
+    "text": "reached into this level created a",
+    "start": 859.12,
+    "duration": 4.68
+  },
+  {
+    "text": "unicorn once again how many candles did",
+    "start": 861.639,
+    "duration": 6.44
+  },
+  {
+    "text": "it take one two three four five six 7",
+    "start": 863.8,
+    "duration": 7.52
+  },
+  {
+    "text": "eight nine candles to form so it's that",
+    "start": 868.079,
+    "duration": 6.481
+  },
+  {
+    "text": "clear and concise reaction off of this",
+    "start": 871.32,
+    "duration": 7.519
+  },
+  {
+    "text": "level creates the unicorn and off to the",
+    "start": 874.56,
+    "duration": 6.8
+  },
+  {
+    "text": "TP Target that we hit now once again we",
+    "start": 878.839,
+    "duration": 4.761
+  },
+  {
+    "text": "could have trimmed and received a little",
+    "start": 881.36,
+    "duration": 4.88
+  },
+  {
+    "text": "bit more but as a funded Trader all I'm",
+    "start": 883.6,
+    "duration": 4.76
+  },
+  {
+    "text": "trying to do is just grab my two to two",
+    "start": 886.24,
+    "duration": 4.56
+  },
+  {
+    "text": "and a half R and call it a day whatever",
+    "start": 888.36,
+    "duration": 4.399
+  },
+  {
+    "text": "that low hanging fruit Target is that's",
+    "start": 890.8,
+    "duration": 3.68
+  },
+  {
+    "text": "all I'm trying to reach so this is a",
+    "start": 892.759,
+    "duration": 5.361
+  },
+  {
+    "text": "beautiful example of how using the daily",
+    "start": 894.48,
+    "duration": 5.719
+  },
+  {
+    "text": "profile align line with the average",
+    "start": 898.12,
+    "duration": 4.36
+  },
+  {
+    "text": "daily range to see okay we've already",
+    "start": 900.199,
+    "duration": 5.041
+  },
+  {
+    "text": "expanded past it now we could probably",
+    "start": 902.48,
+    "duration": 5.76
+  },
+  {
+    "text": "look for a reversal which also happened",
+    "start": 905.24,
+    "duration": 6.32
+  },
+  {
+    "text": "to line up with a 7h hour fair value Gap",
+    "start": 908.24,
+    "duration": 5.32
+  },
+  {
+    "text": "and all these other points of interest",
+    "start": 911.56,
+    "duration": 4.92
+  },
+  {
+    "text": "as well in the next example on 6C you",
+    "start": 913.56,
+    "duration": 5.44
+  },
+  {
+    "text": "can see that looking at the 7-hour daily",
+    "start": 916.48,
+    "duration": 5.08
+  },
+  {
+    "text": "profile we' already swept both sides of",
+    "start": 919.0,
+    "duration": 5.56
+  },
+  {
+    "text": "the range of Asia with London we did",
+    "start": 921.56,
+    "duration": 6.079
+  },
+  {
+    "text": "have a bullish fair value Gap and a",
+    "start": 924.56,
+    "duration": 4.8
+  },
+  {
+    "text": "swing low here that was swept but we",
+    "start": 927.639,
+    "duration": 3.721
+  },
+  {
+    "text": "also have an opposing range candle that",
+    "start": 929.36,
+    "duration": 4.44
+  },
+  {
+    "text": "was closed through so price could go",
+    "start": 931.36,
+    "duration": 5.279
+  },
+  {
+    "text": "either direction here today so what did",
+    "start": 933.8,
+    "duration": 5.039
+  },
+  {
+    "text": "help on this day was that thanks to the",
+    "start": 936.639,
+    "duration": 5.2
+  },
+  {
+    "text": "ttfm fractal indicator I did receive an",
+    "start": 938.839,
+    "duration": 5.68
+  },
+  {
+    "text": "alert overnight saying that we did have",
+    "start": 941.839,
+    "duration": 7.201
+  },
+  {
+    "text": "a bearish C2 candle closure on 6C which",
+    "start": 944.519,
+    "duration": 8.481
+  },
+  {
+    "text": "means that we have a bearish C2 daily",
+    "start": 949.04,
+    "duration": 6.279
+  },
+  {
+    "text": "tpot dropping down to the five minute",
+    "start": 953.0,
+    "duration": 4.519
+  },
+  {
+    "text": "you can see that right here I love the",
+    "start": 955.319,
+    "duration": 3.721
+  },
+  {
+    "text": "daily te- spot because it's an",
+    "start": 957.519,
+    "duration": 3.521
+  },
+  {
+    "text": "open-ended point of Interest I don't",
+    "start": 959.04,
+    "duration": 3.68
+  },
+  {
+    "text": "need any other points of interest for",
+    "start": 961.04,
+    "duration": 4.88
+  },
+  {
+    "text": "the C2 candle to engage in order to form",
+    "start": 962.72,
+    "duration": 5.359
+  },
+  {
+    "text": "a trade as you can see there were no",
+    "start": 965.92,
+    "duration": 4.359
+  },
+  {
+    "text": "other points of interest at this time",
+    "start": 968.079,
+    "duration": 4.361
+  },
+  {
+    "text": "and it was just the daily t-spot earlier",
+    "start": 970.279,
+    "duration": 5.401
+  },
+  {
+    "text": "in the London session it created a C2",
+    "start": 972.44,
+    "duration": 5.48
+  },
+  {
+    "text": "and looks like a little unicorn there or",
+    "start": 975.68,
+    "duration": 3.24
+  },
+  {
+    "text": "here depending on which one you're",
+    "start": 977.92,
+    "duration": 3.359
+  },
+  {
+    "text": "looking at and obviously respected that",
+    "start": 978.92,
+    "duration": 5.88
+  },
+  {
+    "text": "so until we get an hourly closure past",
+    "start": 981.279,
+    "duration": 6.081
+  },
+  {
+    "text": "this daily t-spot this is an open point",
+    "start": 984.8,
+    "duration": 4.76
+  },
+  {
+    "text": "of interest for me to take action on on",
+    "start": 987.36,
+    "duration": 5.32
+  },
+  {
+    "text": "so as you can see going into 9:00 we",
+    "start": 989.56,
+    "duration": 6.519
+  },
+  {
+    "text": "opened up went higher formed a unicorn a",
+    "start": 992.68,
+    "duration": 7.76
+  },
+  {
+    "text": "very quick unicorn one two three four",
+    "start": 996.079,
+    "duration": 6.68
+  },
+  {
+    "text": "five six seven candles this unicorn",
+    "start": 1000.44,
+    "duration": 5.12
+  },
+  {
+    "text": "formed in we had a tag in and we ran",
+    "start": 1002.759,
+    "duration": 4.56
+  },
+  {
+    "text": "straight to profit the lwh hanging fruit",
+    "start": 1005.56,
+    "duration": 3.88
+  },
+  {
+    "text": "Target was right there that was",
+    "start": 1007.319,
+    "duration": 4.76
+  },
+  {
+    "text": "2.25 we had another one down here and",
+    "start": 1009.44,
+    "duration": 3.839
+  },
+  {
+    "text": "another one down here and I think this",
+    "start": 1012.079,
+    "duration": 4.32
+  },
+  {
+    "text": "one was close to 4 R so this was a very",
+    "start": 1013.279,
+    "duration": 6.881
+  },
+  {
+    "text": "nice quick trade all simply based on the",
+    "start": 1016.399,
+    "duration": 7.321
+  },
+  {
+    "text": "fact that we had a daily C2 t-spot and",
+    "start": 1020.16,
+    "duration": 6.36
+  },
+  {
+    "text": "we respected that created our C2 candle",
+    "start": 1023.72,
+    "duration": 5.16
+  },
+  {
+    "text": "we had our unicorn and it ran straight",
+    "start": 1026.52,
+    "duration": 4.76
+  },
+  {
+    "text": "to profit so this is a great example how",
+    "start": 1028.88,
+    "duration": 4.84
+  },
+  {
+    "text": "you only need one point of interest to",
+    "start": 1031.28,
+    "duration": 4.6
+  },
+  {
+    "text": "actually execute this trade when it's",
+    "start": 1033.72,
+    "duration": 5.119
+  },
+  {
+    "text": "the daily t-spot so in this next example",
+    "start": 1035.88,
+    "duration": 4.799
+  },
+  {
+    "text": "just like the fractal model can be used",
+    "start": 1038.839,
+    "duration": 4.321
+  },
+  {
+    "text": "across multiple time frames the C2",
+    "start": 1040.679,
+    "duration": 5.081
+  },
+  {
+    "text": "unicorn can also be used across multiple",
+    "start": 1043.16,
+    "duration": 5.36
+  },
+  {
+    "text": "time frames so this example on gold from",
+    "start": 1045.76,
+    "duration": 4.48
+  },
+  {
+    "text": "this month on February and this is going",
+    "start": 1048.52,
+    "duration": 4.92
+  },
+  {
+    "text": "to show how you can use a 15minute C2",
+    "start": 1050.24,
+    "duration": 5.559
+  },
+  {
+    "text": "aligned with a 1 minute unicorn inside",
+    "start": 1053.44,
+    "duration": 3.76
+  },
+  {
+    "text": "that 15minute",
+    "start": 1055.799,
+    "duration": 5.041
+  },
+  {
+    "text": "C2 now once again we start on the 7-hour",
+    "start": 1057.2,
+    "duration": 6.599
+  },
+  {
+    "text": "chart as you can see price had reached",
+    "start": 1060.84,
+    "duration": 6.0
+  },
+  {
+    "text": "into a 7our opposing candle respecting",
+    "start": 1063.799,
+    "duration": 6.201
+  },
+  {
+    "text": "50% of that body right",
+    "start": 1066.84,
+    "duration": 7.48
+  },
+  {
+    "text": "there creating a C2 7-hour candle in",
+    "start": 1070.0,
+    "duration": 6.28
+  },
+  {
+    "text": "London which means we can expect a",
+    "start": 1074.32,
+    "duration": 4.64
+  },
+  {
+    "text": "continuation into New York up to this",
+    "start": 1076.28,
+    "duration": 5.32
+  },
+  {
+    "text": "high so here we are on a one minute",
+    "start": 1078.96,
+    "duration": 6.4
+  },
+  {
+    "text": "chart using 15minute candles so this one",
+    "start": 1081.6,
+    "duration": 6.28
+  },
+  {
+    "text": "was very simple we're just expecting a",
+    "start": 1085.36,
+    "duration": 5.24
+  },
+  {
+    "text": "continuation due to the London reversal",
+    "start": 1087.88,
+    "duration": 5.039
+  },
+  {
+    "text": "up to take this high up here our point",
+    "start": 1090.6,
+    "duration": 5.199
+  },
+  {
+    "text": "of Interest was one 15minute fair value",
+    "start": 1092.919,
+    "duration": 6.76
+  },
+  {
+    "text": "Gap you can see this 15minute C2 candle",
+    "start": 1095.799,
+    "duration": 6.401
+  },
+  {
+    "text": "went into the 15minute fair value Gap",
+    "start": 1099.679,
+    "duration": 5.88
+  },
+  {
+    "text": "and in the wick of that C2 candle was a",
+    "start": 1102.2,
+    "duration": 5.719
+  },
+  {
+    "text": "one minute unicorn and there was no real",
+    "start": 1105.559,
+    "duration": 4.561
+  },
+  {
+    "text": "lwh hang fruit targets there was this",
+    "start": 1107.919,
+    "duration": 4.481
+  },
+  {
+    "text": "here wasn't quite two R this was close",
+    "start": 1110.12,
+    "duration": 4.679
+  },
+  {
+    "text": "enough to look at this as a Target and",
+    "start": 1112.4,
+    "duration": 5.12
+  },
+  {
+    "text": "this trade ran for three R so this is a",
+    "start": 1114.799,
+    "duration": 5.841
+  },
+  {
+    "text": "great example of how the Unicorn the C2",
+    "start": 1117.52,
+    "duration": 5.48
+  },
+  {
+    "text": "unicorn can be used fractally just like",
+    "start": 1120.64,
+    "duration": 5.56
+  },
+  {
+    "text": "the fractor model can so you would pair",
+    "start": 1123.0,
+    "duration": 6.6
+  },
+  {
+    "text": "a 15minute C2 with a 1 minute unicorn a",
+    "start": 1126.2,
+    "duration": 6.92
+  },
+  {
+    "text": "1H hour C2 with a 5 minute unicorn a",
+    "start": 1129.6,
+    "duration": 7.36
+  },
+  {
+    "text": "4our C2 with a 15-minute unicorn and so",
+    "start": 1133.12,
+    "duration": 6.88
+  },
+  {
+    "text": "on so this is a great example of that so",
+    "start": 1136.96,
+    "duration": 4.56
+  },
+  {
+    "text": "this is an example for all the London",
+    "start": 1140.0,
+    "duration": 3.88
+  },
+  {
+    "text": "Traders out there if you do want to",
+    "start": 1141.52,
+    "duration": 4.24
+  },
+  {
+    "text": "trade this model in London more than",
+    "start": 1143.88,
+    "duration": 4.48
+  },
+  {
+    "text": "likely you will be trading the reversal",
+    "start": 1145.76,
+    "duration": 4.48
+  },
+  {
+    "text": "also want to point out this indicator",
+    "start": 1148.36,
+    "duration": 4.48
+  },
+  {
+    "text": "this is another ADR indicator that I use",
+    "start": 1150.24,
+    "duration": 4.04
+  },
+  {
+    "text": "this one's actually",
+    "start": 1152.84,
+    "duration": 4.44
+  },
+  {
+    "text": "free and it's by Jimmy trades it's",
+    "start": 1154.28,
+    "duration": 5.44
+  },
+  {
+    "text": "called the average daily",
+    "start": 1157.28,
+    "duration": 4.72
+  },
+  {
+    "text": "range and what's nice about it is it",
+    "start": 1159.72,
+    "duration": 5.319
+  },
+  {
+    "text": "shows the percentage of the ADR so you",
+    "start": 1162.0,
+    "duration": 4.6
+  },
+  {
+    "text": "can look at at this point in the day",
+    "start": 1165.039,
+    "duration": 4.361
+  },
+  {
+    "text": "we've only reached 54% of the ADR and it",
+    "start": 1166.6,
+    "duration": 6.079
+  },
+  {
+    "text": "sets a condition of medium volatility",
+    "start": 1169.4,
+    "duration": 6.399
+  },
+  {
+    "text": "once we go further you can see this was",
+    "start": 1172.679,
+    "duration": 5.48
+  },
+  {
+    "text": "a very large expansion candle in the New",
+    "start": 1175.799,
+    "duration": 4.521
+  },
+  {
+    "text": "York session and it will show that we",
+    "start": 1178.159,
+    "duration": 4.961
+  },
+  {
+    "text": "win 158% of the ADR and that we have",
+    "start": 1180.32,
+    "duration": 4.68
+  },
+  {
+    "text": "higher volatility so this is a great",
+    "start": 1183.12,
+    "duration": 5.559
+  },
+  {
+    "text": "free tool if you want an ADR indicator",
+    "start": 1185.0,
+    "duration": 5.28
+  },
+  {
+    "text": "but let's drop down to the five minute",
+    "start": 1188.679,
+    "duration": 2.841
+  },
+  {
+    "text": "and see what this looks like on the",
+    "start": 1190.28,
+    "duration": 3.32
+  },
+  {
+    "text": "charts so dropping down to the five-",
+    "start": 1191.52,
+    "duration": 4.88
+  },
+  {
+    "text": "minute chart our points of interest are",
+    "start": 1193.6,
+    "duration": 5.319
+  },
+  {
+    "text": "a bunch of hourly relative equal lows",
+    "start": 1196.4,
+    "duration": 4.72
+  },
+  {
+    "text": "and then a 7h hour and 1 hour fair value",
+    "start": 1198.919,
+    "duration": 5.721
+  },
+  {
+    "text": "Gap so this is the London low and this",
+    "start": 1201.12,
+    "duration": 5.24
+  },
+  {
+    "text": "you'd be playing as the",
+    "start": 1204.64,
+    "duration": 4.919
+  },
+  {
+    "text": "reversal and this is a great example of",
+    "start": 1206.36,
+    "duration": 5.72
+  },
+  {
+    "text": "not all of the trades are going to go",
+    "start": 1209.559,
+    "duration": 4.281
+  },
+  {
+    "text": "straight to profit on you some of them",
+    "start": 1212.08,
+    "duration": 3.2
+  },
+  {
+    "text": "are going to wind up being losses and",
+    "start": 1213.84,
+    "duration": 2.68
+  },
+  {
+    "text": "some of them are going to wind up being",
+    "start": 1215.28,
+    "duration": 3.24
+  },
+  {
+    "text": "Marathon trades so this one you were in",
+    "start": 1216.52,
+    "duration": 4.399
+  },
+  {
+    "text": "this trade from 5:00 a.m. until 9:00",
+    "start": 1218.52,
+    "duration": 4.159
+  },
+  {
+    "text": "a.m. so that was a 4H hour trade you",
+    "start": 1220.919,
+    "duration": 2.921
+  },
+  {
+    "text": "were going to have to hold through and",
+    "start": 1222.679,
+    "duration": 3.601
+  },
+  {
+    "text": "then there was a second entry another",
+    "start": 1223.84,
+    "duration": 4.6
+  },
+  {
+    "text": "tag in so there was a little bit of draw",
+    "start": 1226.28,
+    "duration": 4.72
+  },
+  {
+    "text": "down but this is just a great example of",
+    "start": 1228.44,
+    "duration": 4.76
+  },
+  {
+    "text": "how if you want to play this model in",
+    "start": 1231.0,
+    "duration": 5.039
+  },
+  {
+    "text": "the London session more than likely you",
+    "start": 1233.2,
+    "duration": 5.359
+  },
+  {
+    "text": "will be playing the reversal so this is",
+    "start": 1236.039,
+    "duration": 5.441
+  },
+  {
+    "text": "a great example of that in this example",
+    "start": 1238.559,
+    "duration": 4.841
+  },
+  {
+    "text": "once again you can see the fractal of",
+    "start": 1241.48,
+    "duration": 3.88
+  },
+  {
+    "text": "the C2 unicorn along with the fractal",
+    "start": 1243.4,
+    "duration": 4.759
+  },
+  {
+    "text": "model so this is a little different of a",
+    "start": 1245.36,
+    "duration": 5.24
+  },
+  {
+    "text": "model this is a 4-Hour candle and",
+    "start": 1248.159,
+    "duration": 4.561
+  },
+  {
+    "text": "specifically what I look for with this",
+    "start": 1250.6,
+    "duration": 7.0
+  },
+  {
+    "text": "is I want the C2 candle to be the 6 a.m.",
+    "start": 1252.72,
+    "duration": 7.12
+  },
+  {
+    "text": "candle what I'm trying to take advantage",
+    "start": 1257.6,
+    "duration": 5.079
+  },
+  {
+    "text": "of is that 10:00 open so we want to see",
+    "start": 1259.84,
+    "duration": 7.12
+  },
+  {
+    "text": "a 600 a.m. 4H hour C2 candle at a point",
+    "start": 1262.679,
+    "duration": 6.12
+  },
+  {
+    "text": "of Interest so you have a swing High",
+    "start": 1266.96,
+    "duration": 4.599
+  },
+  {
+    "text": "here swept the swing high and then going",
+    "start": 1268.799,
+    "duration": 4.641
+  },
+  {
+    "text": "down to a 15minute we want to see a",
+    "start": 1271.559,
+    "duration": 4.881
+  },
+  {
+    "text": "15minute unicorn form inside of this 6",
+    "start": 1273.44,
+    "duration": 4.96
+  },
+  {
+    "text": "a.m. candle and then we want to see a",
+    "start": 1276.44,
+    "duration": 6.44
+  },
+  {
+    "text": "10:00 open high and then go lower so",
+    "start": 1278.4,
+    "duration": 7.2
+  },
+  {
+    "text": "taking advantage of the Open high part",
+    "start": 1282.88,
+    "duration": 5.0
+  },
+  {
+    "text": "of it or open low depending on if it's a",
+    "start": 1285.6,
+    "duration": 4.92
+  },
+  {
+    "text": "long at the 10 o'clock open so let's",
+    "start": 1287.88,
+    "duration": 4.24
+  },
+  {
+    "text": "drop down to the 15 minute and see what",
+    "start": 1290.52,
+    "duration": 4.08
+  },
+  {
+    "text": "we get so here we are on the 15 minute",
+    "start": 1292.12,
+    "duration": 4.679
+  },
+  {
+    "text": "and as you can see this is the 6 a.m.",
+    "start": 1294.6,
+    "duration": 4.8
+  },
+  {
+    "text": "candle here which created the C2 we have",
+    "start": 1296.799,
+    "duration": 4.601
+  },
+  {
+    "text": "a point of interest of a 4-Hour swing",
+    "start": 1299.4,
+    "duration": 4.639
+  },
+  {
+    "text": "high and you can see that there is a",
+    "start": 1301.4,
+    "duration": 6.0
+  },
+  {
+    "text": "15minute unicorn now this one's not",
+    "start": 1304.039,
+    "duration": 6.721
+  },
+  {
+    "text": "perfect since it was confirmed earlier",
+    "start": 1307.4,
+    "duration": 6.0
+  },
+  {
+    "text": "in the the 6 a.m. candle it did have a",
+    "start": 1310.76,
+    "duration": 5.039
+  },
+  {
+    "text": "few tagins but this is what I'm looking",
+    "start": 1313.4,
+    "duration": 4.48
+  },
+  {
+    "text": "for is I want to see the 10 o'cl open",
+    "start": 1315.799,
+    "duration": 5.0
+  },
+  {
+    "text": "higher which it did and it respected",
+    "start": 1317.88,
+    "duration": 5.6
+  },
+  {
+    "text": "that unicorn tagged in and then ran",
+    "start": 1320.799,
+    "duration": 4.36
+  },
+  {
+    "text": "straight to profit which was the lwh",
+    "start": 1323.48,
+    "duration": 3.96
+  },
+  {
+    "text": "hanging fruit of the London low so hope",
+    "start": 1325.159,
+    "duration": 4.481
+  },
+  {
+    "text": "everyone's enjoyed learning about my C2",
+    "start": 1327.44,
+    "duration": 4.44
+  },
+  {
+    "text": "unicorn today uh these are just some of",
+    "start": 1329.64,
+    "duration": 5.039
+  },
+  {
+    "text": "the examples and as with any model",
+    "start": 1331.88,
+    "duration": 4.6
+  },
+  {
+    "text": "nothing is 100% you're going to take",
+    "start": 1334.679,
+    "duration": 3.561
+  },
+  {
+    "text": "wins you're going to take losses but I",
+    "start": 1336.48,
+    "duration": 4.48
+  },
+  {
+    "text": "challenge everyone to get on the charts",
+    "start": 1338.24,
+    "duration": 5.2
+  },
+  {
+    "text": "back test and figure out a model for",
+    "start": 1340.96,
+    "duration": 5.48
+  },
+  {
+    "text": "yourself whether it's the C2 unicorn",
+    "start": 1343.44,
+    "duration": 5.08
+  },
+  {
+    "text": "whether it's the TR trades fractal model",
+    "start": 1346.44,
+    "duration": 4.04
+  },
+  {
+    "text": "model whether it's the am expansion",
+    "start": 1348.52,
+    "duration": 4.24
+  },
+  {
+    "text": "model whether it's the unicorn model",
+    "start": 1350.48,
+    "duration": 5.04
+  },
+  {
+    "text": "whatever it is build the model that",
+    "start": 1352.76,
+    "duration": 5.12
+  },
+  {
+    "text": "works best for you not every model is",
+    "start": 1355.52,
+    "duration": 4.279
+  },
+  {
+    "text": "going to work for everybody make it your",
+    "start": 1357.88,
+    "duration": 3.96
+  },
+  {
+    "text": "own once you make it your own and you",
+    "start": 1359.799,
+    "duration": 4.801
+  },
+  {
+    "text": "know why you're entering the market not",
+    "start": 1361.84,
+    "duration": 4.439
+  },
+  {
+    "text": "because somebody else says to Market at",
+    "start": 1364.6,
+    "duration": 3.76
+  },
+  {
+    "text": "this point in time but because you know",
+    "start": 1366.279,
+    "duration": 4.0
+  },
+  {
+    "text": "why you're entering the market that's",
+    "start": 1368.36,
+    "duration": 4.28
+  },
+  {
+    "text": "when you'll become a successful Trader I",
+    "start": 1370.279,
+    "duration": 4.88
+  },
+  {
+    "text": "also have another method that I use uh",
+    "start": 1372.64,
+    "duration": 5.32
+  },
+  {
+    "text": "called osok and we use that method just",
+    "start": 1375.159,
+    "duration": 5.241
+  },
+  {
+    "text": "for p passing evals in one shot we take",
+    "start": 1377.96,
+    "duration": 5.48
+  },
+  {
+    "text": "advantage of high volatile news events",
+    "start": 1380.4,
+    "duration": 6.519
+  },
+  {
+    "text": "like NFP CPI and fomc you can learn more",
+    "start": 1383.44,
+    "duration": 4.92
+  },
+  {
+    "text": "about that on my YouTube channel I",
+    "start": 1386.919,
+    "duration": 3.88
+  },
+  {
+    "text": "actually stream live on those specific",
+    "start": 1388.36,
+    "duration": 5.0
+  },
+  {
+    "text": "news events every month uh so that way",
+    "start": 1390.799,
+    "duration": 4.721
+  },
+  {
+    "text": "we can all try to pass as many evals",
+    "start": 1393.36,
+    "duration": 4.76
+  },
+  {
+    "text": "together as possible so once again thank",
+    "start": 1395.52,
+    "duration": 4.24
+  },
+  {
+    "text": "you T for having me this has been a",
+    "start": 1398.12,
+    "duration": 4.439
+  },
+  {
+    "text": "great honor and I hope you all enjoyed",
+    "start": 1399.76,
+    "duration": 7.2
+  },
+  {
+    "text": "have a wonderful day and stay safe risk",
+    "start": 1402.559,
+    "duration": 9.081
+  },
+  {
+    "text": "properly and happy Trading",
+    "start": 1406.96,
+    "duration": 4.68
+  }
+]

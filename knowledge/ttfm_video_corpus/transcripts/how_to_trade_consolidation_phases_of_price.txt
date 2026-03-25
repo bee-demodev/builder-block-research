@@ -1,0 +1,456 @@
+[5.49] [Music]
+[11.12] How's it going everyone? In this video,
+[12.88] we are going to talk about
+[14.24] consolidations.
+[15.76] And this will be part one into a
+[18.08] five-part series on the phases of price
+[21.04] and how they blend together. Let's hop
+[23.76] into the PDF and get started. So, what
+[26.96] is a consolidation? A consolidation is
+[29.92] when price remains internal to a high
+[32.64] and a low. So what does that mean? It
+[34.80] means by marking out a low and marking
+[37.04] out a high, price remains inside that
+[40.08] range or not taking out the high, not
+[42.80] taking out the low for a period of time.
+[46.16] So when does this generally occur? Well,
+[48.80] we can expect it after a large range or
+[52.16] when price hits a higher time frame
+[54.32] level. So price moves from large ranges
+[57.20] to small ranges. So following an
+[59.52] expansion, we can get a consolidation
+[62.32] which can either be a continuation
+[64.16] signature. If we have hit a higher time
+[66.64] frame level such as over here, we expand
+[69.60] into a higher time frame level and then
+[71.60] have a consolidation. You can see price
+[73.92] is remaining internal from a high and a
+[76.96] low. So that is defining the
+[78.96] consolidation.
+[81.28] So how do we interact with a
+[83.28] consolidation? Well, I don't want to
+[85.60] trade within this range because that is
+[87.68] where I'm going to try to guess if price
+[89.92] is going to break lower or break higher,
+[92.32] which generally I do not know. So, I
+[94.48] need to be patient and wait for price to
+[96.48] manipulate or take out one side of this
+[99.20] range. So, if I am bullish, ideally I
+[101.84] want to see price run out the low, but
+[104.24] then I can look to trade it higher. And
+[106.24] this is your classic power of three for
+[108.88] accumulation, manipulation, and then
+[111.76] distribution higher. Now in the bearish
+[114.40] example here you can see we remain
+[116.32] internal to this high and to this low.
+[119.12] Price then takes out the high and so if
+[121.60] my bias is bearish I can then look to
+[123.60] trade that lower. You have your
+[125.36] accumulation manipulation distribution.
+[129.12] Now the only time we don't need price to
+[131.12] run out the high or the low is if we
+[133.44] have SMT and that means the correlated
+[135.92] asset does run out the consolidation
+[137.92] lows. So we can treat it as if it did.
+[141.28] So you can see here, let's say for
+[142.88] example, this is NQ and ES did run out
+[146.08] the low here. We have that SMT. I can
+[148.96] treat this as a protected low once
+[150.80] closed over because ES ran out the low
+[154.00] even though MQ didn't. And similar with
+[156.48] the bearish scenario, price runs out the
+[158.88] highs on a correlated asset, but not on
+[161.36] this current one. I can use that SMT to
+[163.60] anticipate this high remains as we trade
+[165.76] lower. Now there are two types of
+[168.16] consolidations that I will look to
+[169.84] participate in and that will be a
+[171.84] continuation or a reversal. Let's first
+[174.72] take a look at the continuation. You can
+[177.36] see we have a large range or an
+[179.28] expansion which leads to a consolidation
+[182.24] a large range to a small range. Now with
+[185.44] an open drawn liquidity or an objective
+[187.76] sitting above this I can anticipate
+[189.76] price to continue as it has not hit a
+[192.16] higher time frame level. So, if we have
+[194.16] a consolidation right here and we have
+[197.12] all these lows resting, what would I
+[199.20] want to see? Well, I want to see that
+[200.96] manipulation or price running out a low.
+[203.76] You can see price runs into this low
+[206.08] giving us our manipulation. And then
+[207.84] what can we wait for? Well, if you've
+[209.44] seen my protected swings video, I can
+[211.52] either look to get on side here, but a
+[214.08] lot of times I prefer to wait for a
+[215.52] continuation because what if we don't
+[217.28] form a low here and we just trade lower?
+[219.84] So I can wait for a continuation where
+[222.40] we have a closure through this level
+[224.48] which gives us a change in the state of
+[226.16] delivery and look for a continuation
+[228.24] higher.
+[229.76] Now the next would be a reversal and
+[232.00] this is just the opposite. You can see
+[234.00] we have an expansion into a
+[235.84] consolidation. So just the same as the
+[237.92] last example but what is the difference?
+[240.32] We have hit a higher time frame
+[241.92] objective or higher time frame level in
+[244.08] which I'm anticipating a reversal to
+[246.00] form. So with that if I want to see a
+[248.16] reversal we have all these highs want to
+[250.80] see the highs ran out a change in the
+[253.04] state of delivery and then I can look to
+[254.96] trade this lower.
+[257.20] Now what type of PDR goes with
+[259.28] consolidation and that would be a
+[261.28] discount and premium or the equilibrium.
+[264.56] And how do I use this? Well, if price is
+[266.96] consolidating, similar to my seek and
+[268.96] destroy video, I can use the equilibrium
+[271.28] of this range where if price deviates
+[273.92] from this range, I can look to trade
+[275.84] back into the equilibrium. If price is
+[278.40] going to continue to consolidate, it's
+[280.32] just going to return back to that mean
+[282.96] or that middle of that range. Let's get
+[286.08] into trading view and go over a few
+[287.84] examples.
+[290.00] So, here we are in our first example.
+[292.40] And what do we notice here? We have had
+[294.48] expansion lower. We form a reversal. So
+[297.36] we can mark out our change in the state
+[298.96] of delivery here which is a sweep. So
+[301.44] reaching into an important level then
+[303.28] the closure through the series of down
+[305.20] close candles here. You can see we get
+[306.96] an expansion back higher here. We have
+[308.88] these three expansion candles. Now what
+[311.44] do we notice here? Do we have any
+[313.44] confirmed price action? No. Because if
+[315.84] we're going to have an expansion,
+[318.00] retracement, and then a continuation,
+[320.40] price would have retraced into this fair
+[322.24] value gap, which it did, but then it
+[324.40] would have closed over this level with a
+[326.56] failure to do so. We are then
+[328.88] consolidating. So, we can go ahead and
+[331.84] mark out this high and low. And what do
+[334.08] we notice about these? Is price
+[335.68] remaining internal to these? No. But it
+[338.16] is failing to trade out of it, right?
+[340.08] So, it is still consolidating. I can
+[342.08] then just readjust to that range high
+[344.56] and that range low. We can see we're
+[346.80] trading internal to that range. It's
+[348.72] fairly obvious there. And so as we let
+[351.04] this continue, if we are bullish, what
+[353.68] do we want to see? Well, we've had our
+[355.92] change in the state of delivery. We have
+[357.76] an objective open. So, we want to see
+[359.92] that range low taken out. And here, I
+[362.40] could look to get on side with a fractal
+[364.24] model. We have a candle 2 closure. So, I
+[366.88] could go down to a lower time frame or
+[368.48] the 1 minute. Or I can wait for that
+[371.68] protected swing to form on this time
+[373.52] frame which would be a closure through
+[375.52] the series of down close candles into
+[377.52] that important level which is that low
+[379.28] there. Let's see if we get the closure
+[381.20] over. We do. So now this low is
+[384.40] protected here. I'd want to see price
+[386.64] trade into this high through this high.
+[388.80] And let's see if there's any other
+[390.16] continuations.
+[391.84] You can see we do get a new retracement.
+[395.68] Now is this going to be a protected low?
+[398.56] Well, we want to see if we get a closure
+[400.08] through this. Now, a quick lesson. We do
+[403.12] not have a fair value gap or a low to be
+[405.28] swept out in here. So, no important
+[407.04] level. That is when I can use 0.5 of
+[410.08] this opposing candle here. You can see
+[412.64] how price is respecting that there. So,
+[415.36] let's see if we get the closure over. We
+[418.16] do. Now, you want to see price continue
+[420.40] higher here. So, let's see.
+[426.16] We do get that continuation. Now price
+[428.56] reaches back into an important level. Do
+[430.88] we have a series of down close candles?
+[433.04] We do. Do we close over that? Not yet.
+[437.92] We do now. And then I'd want to see this
+[440.40] low be protected as we continue to trend
+[443.52] higher. And we do so. So hopefully that
+[447.12] makes sense. In combining the protected
+[449.20] swings with a consolidation, we have
+[452.48] expansion or a large range leading into
+[455.60] a smaller range. Wait for that
+[457.28] manipulation, then look to participate,
+[460.00] right? Because that is when the trend is
+[461.68] going to occur after that manipulation.
+[465.36] So here we are in our next example and
+[467.68] let's take a look at a few things. You
+[469.84] can see on our daily chart we have taken
+[472.24] out the high. We close back in. That's
+[474.80] paired with a change in the state of
+[476.48] delivery here. Bearish. So I could be
+[478.88] looking for a continuation lower this
+[480.64] next day. Now if we're expecting price
+[482.96] to trade and go lower, we want to see
+[484.96] what be respected the EQ. Right? So this
+[488.24] is really where we would want to see the
+[489.84] wick form if we're going to go trade to
+[491.60] the previous day low. Now what do we
+[493.60] notice about the previous day low or
+[495.68] these phases of price here? We have this
+[497.92] expansion up this whole range. You can
+[501.76] see expansion,
+[503.68] retracement, right? And what else do we
+[506.08] notice
+[507.84] in the opposing viewpoint? We have a
+[510.64] bullish change in the state of delivery.
+[512.24] So, there's a few conflicting things
+[513.76] here. Let's let a few more candles play
+[515.76] out. And what do we notice here? We are
+[519.20] respecting the EQ of this change in the
+[521.52] state of delivery. And we're expanding
+[523.44] higher, not respecting this EQ. Now, if
+[526.48] this EQ is going to fail, that means
+[528.64] this swing point is going to fail, which
+[530.80] can make it our draw on liquidity.
+[533.68] So, with that, let's see what happens
+[535.44] here.
+[538.96] This isn't telling us a whole lot. It is
+[541.28] just consolidating. You can see how
+[543.44] price is remaining internal or not
+[545.36] taking out this high or low. So, now
+[547.84] what would we want to see? If we are
+[549.76] bullish, we want to see a run of the
+[551.52] lows to trade higher. And if we are
+[553.76] bearish, we want to see a run of the
+[555.44] highs to trade lower. So let's see what
+[558.16] happens
+[560.24] here. You can see we run out the lows.
+[562.40] Now what could we wait for? We could
+[563.92] look to get on side here, right? If we
+[565.76] have a strong bias, which I don't,
+[567.76] right? I don't have a great bias here.
+[569.92] So I can then wait for a closure through
+[572.48] the series of down close candles into
+[574.48] this level, which then confirms the low
+[576.72] and then I can look to trade to this
+[578.40] high. as we let this continue. We don't
+[581.20] get the closure over yet. And there we
+[583.44] do. And this would be a breakout
+[585.60] signature as we are now closing over
+[587.52] these highs. So, what do we want to see
+[589.20] at this high? Do we want to see price
+[591.20] aggressively move back into the range?
+[593.28] No. Because then we're likely to trade
+[594.88] lower. We want to see a retracement or
+[597.60] just a continuation higher. Let's see
+[600.24] what happens.
+[602.88] And that is what you want to see, right?
+[604.96] Either a consolidation or a retracement.
+[607.20] So we can have expansion and then a
+[609.44] continuation.
+[611.60] Let's see what happens here. Is this an
+[614.32] opposing candle? It's not. It never
+[616.24] wretch into an important level. And what
+[618.48] do we notice now? Now we are getting
+[620.56] another consolidation. We're remaining
+[623.04] internal to this high and to this low.
+[626.64] And that's more prominent on a lower
+[628.40] time frame, but we will just use this.
+[632.40] And you can see now we have taken out
+[634.56] this low right into a fair value gap
+[638.32] right so we have that inducement. So if
+[641.76] we are expecting a continuation to this
+[643.84] high what do we have consolidation we
+[646.96] sweep the low. If we're going to respect
+[649.20] the EQ of this daily candle we'd want to
+[651.04] see a low form in here to trade higher
+[653.84] or we can wait for what that
+[655.76] confirmation of the closure over the
+[658.24] downlo candles.
+[660.64] Here
+[662.80] you can see we make a new low. We could
+[665.28] use a different level for the change in
+[666.88] state delivery or use the whole series.
+[670.56] We react off that EQ and then close over
+[674.16] here and expand. Right? So taking a look
+[677.52] at this and reviewing what do we want to
+[679.52] get from this? Right? We want to see we
+[681.84] have a consolidation here. We wait for
+[684.88] the manipulation and then look to trade
+[687.20] the expansion. consolidation here. We
+[690.00] wait for the manipulation then look to
+[692.48] trade the expansion. Right? And that is
+[694.96] why with my fractal model, I'm not
+[696.96] looking to catch these lows in here,
+[699.44] right? I'm waiting for the continuation
+[701.68] entries. I'm letting a low form, trading
+[703.76] the continuation. Letting a low form,
+[706.40] trading the continuation. So, just to
+[708.72] review, consolidation, wait for the
+[710.80] manipulation, trade the expansion.
+[713.60] Consolidation, wait for the
+[715.28] manipulation, trade the expansion. Let's
+[717.92] get into our next example. So, here we
+[720.40] are in our next example and taking a
+[722.24] look at this daily chart, you can see
+[723.84] price is bullish. What do we have? We
+[726.08] have price sweeping out a low here,
+[728.64] closing through the series of down close
+[730.48] candles. But we have this important
+[732.96] level. Price is expanding higher, coming
+[735.84] back into the range. If I am still
+[737.76] bullish and I want to trade a reversal
+[740.08] day, I'm going to be looking for
+[741.76] relevant levels for price to reverse off
+[743.76] of, which would be previous days highs
+[745.84] and lows. Let's drop into our hourly
+[748.16] chart here. And if we are bullish, what
+[750.48] do we want to see? Well, we would want
+[752.40] to see a reversal. So, this example,
+[754.56] we're going to talk about a
+[755.76] consolidation into a reversal instead of
+[758.48] the continuations like the previous two
+[760.88] examples. So, taking a look, let's mark
+[763.60] out our previous day's low, which is
+[765.60] right here. And what do we notice? We
+[768.08] have a high and a low that price has
+[770.24] remained internal to, which is a
+[772.24] consolidation.
+[774.40] They're letting this play forward. What
+[776.40] do we want to see if we want to see a
+[778.48] bullish reversal off previous day low?
+[781.04] Well, we have a consolidation. We'd want
+[783.36] to see a manipulation of that low and
+[786.24] then to trade it higher, right? So,
+[788.56] let's see what happens
+[791.44] here. You can see we reach into that low
+[793.68] and then we expand out. This is a nice
+[795.84] reaction off previous day low. Now, what
+[798.24] do we want to see? Well, when this low
+[800.80] is confirmed by a closure through here,
+[803.20] I then can anticipate this wick to be
+[805.20] confirmed.
+[806.88] We get a closure through this level, we
+[809.84] do. So now I anticipate this low to hold
+[812.48] or this wick to hold. Now what do we
+[815.04] know about expansion days? They have a
+[817.44] small wick and a large body. We have a
+[820.24] small wick. We are in London. So if we
+[823.04] have a London reversal, we could
+[825.28] anticipate what? a New York continuation
+[828.48] higher. So let's see if there is any
+[831.28] important levels that get formed here.
+[833.76] We have a fair value gap.
+[836.80] Let's see if price reaches back into
+[838.40] this level. It does. Do we form a swing
+[841.28] out of this level? We do. So this would
+[843.60] be a valid fractal model where I could
+[845.52] look long or I could wait for what? A
+[848.16] continuation entry from this propulsion
+[851.12] block, right? Or the continuation.
+[855.68] And here we do get that as we continue
+[858.24] higher. Now, if you notice, we have a
+[861.12] very bullish day. We're disrespecting
+[863.12] the equilibrium, which means this swing
+[865.68] is likely to fail. So, that would be our
+[867.92] drawn liquidity. So, we'd want to see
+[870.56] that go and be hit. So, let's see what
+[873.44] happens here. We are consolidating,
+[876.56] right? Right towards the end of the day,
+[878.32] and we are moving lower. Now, we reach
+[881.44] into an important level. If we're going
+[883.36] to get a continuation from here, I'd
+[885.12] want to see a closure through this
+[886.80] level. Do we get that
+[889.76] start to move higher? And no, we do not
+[892.40] get that. So, what do we notice about
+[894.08] this? If we cannot get this, what does
+[896.40] it mean? Price is remaining internal
+[899.04] from these highs here and from these
+[902.00] lows. What would I want to see? Well,
+[905.04] this would be now a continuation
+[907.12] signature. Right? Here's a consolidation
+[909.52] that forms a reversal. Here's a
+[911.68] consolidation where I want to see a
+[913.12] manipulation of the low to continue
+[915.12] higher.
+[917.92] As we let this play out here, we take
+[919.52] the low out and let's see if we can
+[922.24] close over this level or get a
+[924.40] continuation.
+[928.08] And we're really struggling to get over
+[929.52] that level. Let's see if we do. We do.
+[932.72] So now I'd expect this low to remain
+[935.04] intact as we trade towards these equal
+[937.04] highs and ideally into this swing high.
+[942.00] And there we do expand higher. So this
+[944.80] was a great example of a reversal off
+[947.20] previous day low with a small wick which
+[949.20] allows for expansion but most
+[950.96] importantly a consolidation which forms
+[953.20] a reversal and then here's a
+[954.88] consolidation that forms a continuation.
+[958.80] So here we are in our last example for
+[961.12] this video and what do we notice? We
+[963.28] have our daily chart here on USD JPY. It
+[967.12] sweeps out the high, closes back in. Is
+[969.92] that paired with a change in the state
+[971.20] of delivery? It is. So, I'm expecting
+[974.00] price to trade lower this next day. So,
+[976.96] what do I notice as we go into this day?
+[981.12] Price is pretty lethargic, right? It's
+[983.28] just hanging around. So, if we're taking
+[985.36] a look, price hasn't traded below this
+[987.52] low and price hasn't traded above this
+[991.12] high. So, we are just sitting in a
+[993.68] range. Let's see how many hours is this?
+[998.96] 18 hours. We are in a range. And what do
+[1001.52] we notice? We are bearish and we run out
+[1003.68] a high. Do I need to catch this high to
+[1006.24] trade it lower? No. Could I anticipate a
+[1008.48] reversal? Yes. But I prefer to trade
+[1010.72] continuations so I can wait for that.
+[1013.76] Here you can see we have a nice reaction
+[1016.32] off of this high, not closing over.
+[1019.36] Continuing lower, we create a fair value
+[1021.68] gap
+[1023.44] and we still have these equal lows here.
+[1027.60] Here now price reaches into that fair
+[1029.52] value gap. And what do we notice here?
+[1032.80] Into a fair value gap, closure through
+[1035.36] the up close candles. In this case, one
+[1037.84] into that important level. And then I'd
+[1039.84] want to see price trade lower. But this
+[1041.68] is where I could look to take an entry
+[1043.04] on the open. Put my stop there. Do I
+[1045.76] have two to that low? I don't. can
+[1048.00] extend it a little for 2 R and let's see
+[1051.12] what happened.
+[1053.04] There we go. Hit 2R as we get a
+[1055.68] continuation lower or expansion day. You
+[1058.40] can see the multiple other continuations
+[1061.20] that do exist in these areas. Now, I
+[1064.72] hope you found this video helpful. This
+[1066.72] will be part one in the series on my
+[1069.12] phases of price. So, we will then cover
+[1071.44] expansions, retracements, and reversals
+[1074.40] and then blending them all together. But
+[1077.28] I hope you understand consolidations a
+[1079.52] little bit better now and how to go
+[1081.36] about participating in them, waiting for
+[1083.52] that manipulation to occur. So you're
+[1085.44] not trying to trade within the range,
+[1087.36] getting stopped out, or anticipating
+[1089.36] that breakout. So as always, be patient.
+[1092.72] Hope you have a great rest of your day,
+[1094.24] and I'll see you guys next time. Have a
+[1096.00] good one.

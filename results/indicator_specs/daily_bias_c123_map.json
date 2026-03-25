@@ -1,0 +1,370 @@
+{
+  "generated_at": "2026-03-23T20:10:10.372392+00:00",
+  "artifact_type": "indicator_spec",
+  "artifact_path": "results\\indicator_specs\\daily_bias_c123_map.json",
+  "trader_profile": {
+    "display_name": "TTrades Curriculum"
+  },
+  "trade_model": {
+    "slug": "daily_bias_c123_map",
+    "name": "Daily Bias C1/C2/C3 Map"
+  },
+  "implementation_scope": {
+    "target_language": "pine"
+  },
+  "implementation_summary": "Daily bias phase 1 map for D bias, active 1H C1/C2/C3 structure near the daily POI, and 5m continuation refinement inside hourly Candle 3.",
+  "timeframe_contract": {
+    "chart": "60",
+    "bias": "D",
+    "structure": "60",
+    "execution": "5"
+  },
+  "source_priority": {
+    "primary": "videos",
+    "secondary": "docs",
+    "policy": "Use TTrades videos first. Use docs only to clarify missing details or unresolved mismatches.",
+    "notes": [
+      "Video corpus is the primary authority for this MVP.",
+      "No docs were required for clarification in this refresh."
+    ]
+  },
+  "rulepack_ref": "results\\rulepacks\\daily_bias_c123_map.json",
+  "display_contract": {
+    "active_sequence_only": true,
+    "historical_backfill": false,
+    "unsupported_timeframe_message": "Unsupported chart timeframe. Load this indicator on a 1H chart."
+  },
+  "input_groups": [
+    {
+      "group": "Visibility",
+      "inputs": [
+        {
+          "key": "showDailyBiasBanner",
+          "type": "bool",
+          "default": true,
+          "description": "Show the current daily bias banner."
+        },
+        {
+          "key": "showDailyPoiZone",
+          "type": "bool",
+          "default": true,
+          "description": "Show the active daily POI zone on the hourly chart."
+        },
+        {
+          "key": "showHourlySequence",
+          "type": "bool",
+          "default": true,
+          "description": "Show the active 1H C1/C2/C3 labels and entry guide when they form inside the daily POI, otherwise show one small waiting cue while the 5m refinement stays alert-driven only."
+        }
+      ]
+    }
+  ],
+  "sequence_contract": {
+    "daily_bias_rules": {
+      "qualification": [
+        "Establish a one-sided daily bias from daily closures before dropping to the hourly chart.",
+        "A daily close through the previous day structure supports continuation; failure to close through supports reversal bias.",
+        "If there is no clear daily bias, do not continue to the hourly execution read."
+      ],
+      "citations": [
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0006",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 406.479,
+          "end": 481.12,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.751947,
+          "excerpt": "is bullish. When price opens it and makes a high first that is bearish. So what are we looking for with a reversal? Well, we want to see price open reach into that previous day's low which is that important level. Then we need what? Either a change in the state of delivery on the hourly time frame if earlier in the day"
+        },
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0000",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 10.719,
+          "end": 76.56,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.750908,
+          "excerpt": "How's it going everyone? In this video, we are going to talk about a simple daily framework. This is going to use candle closures as well as wick size. But if you haven't already seen my equilibrium video, my candle 2 and candle 3 closure video, I would watch those first. This is based off the fact that I'm either goin"
+        },
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0003",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 200.239,
+          "end": 269.36,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.750395,
+          "excerpt": "high. Now, my favorite time frame to watch this on is the hourly. So, let's drop down to the hourly chart. So, here you can see we have marked out our previous day's EQ as well as our previous day's high. So, what do we want to see out of this day? Well, we'd want to see price open, trade lower into this fair value gap"
+        },
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0004",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 267.04,
+          "end": 339.919,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.748344,
+          "excerpt": "high. Now, how far beyond this previous day's high we go is really dependent on the wick size of this reversal. With a large wick, I'm not expecting much of a range beyond this level. But with a small wick, we can get an expansion. Let's take a look at another continuation. So, here we are on USD CAD. And what do we ha"
+        }
+      ]
+    },
+    "daily_poi_rules": {
+      "qualification": [
+        "Project the previous day range and equilibrium onto the hourly chart and treat the aligned half of that range as the daily POI.",
+        "For bullish daily bias, use the lower half of the previous day range as the retracement zone.",
+        "For bearish daily bias, use the upper half of the previous day range as the retracement zone."
+      ],
+      "bullish_poi_definition": "Bullish daily POI is bounded by the previous day low and previous day equilibrium.",
+      "bearish_poi_definition": "Bearish daily POI is bounded by the previous day equilibrium and previous day high.",
+      "citations": [
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0003",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 200.239,
+          "end": 269.36,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.733691,
+          "excerpt": "high. Now, my favorite time frame to watch this on is the hourly. So, let's drop down to the hourly chart. So, here you can see we have marked out our previous day's EQ as well as our previous day's high. So, what do we want to see out of this day? Well, we'd want to see price open, trade lower into this fair value gap"
+        },
+        {
+          "chunk_id": "equilibrium_for_expansions:0005",
+          "video_id": "IPZjNI1B5a0",
+          "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+          "start": 380.479,
+          "end": 456.639,
+          "topics": [
+            "equilibrium",
+            "continuation",
+            "expansion",
+            "range_half",
+            "cisd"
+          ],
+          "score": 0.724323,
+          "excerpt": "day low and possibly to the low to the left here if it is not respected then I anticipate it to trade higher to these failure swings on the high but once I have determined that then I go down to the hourly chart and I take a look at the intraday price action you can see we get a consolidation as we reach early New York"
+        },
+        {
+          "chunk_id": "equilibrium_for_expansions:0002",
+          "video_id": "IPZjNI1B5a0",
+          "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+          "start": 159.48,
+          "end": 232.87900000000002,
+          "topics": [
+            "equilibrium",
+            "continuation",
+            "expansion",
+            "range_half",
+            "cisd"
+          ],
+          "score": 0.722565,
+          "excerpt": "here we are with our first example and just to give it a little bit of context we have these equal lows that were ran out to our left and we have this high above us so we are in a Range we have just purged the low of the range so we have an accumulation this could be a manipulation and then we could see a distribution "
+        },
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0008",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 552.48,
+          "end": 624.399,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.716302,
+          "excerpt": "which is bullish. So ideally I want to frame to the upside here. Let's drop down to the hourly time frame. So here we are on the hourly time frame and we have our previous day high right here. And what do we want to see? Well, ideally we want to see price open, trade lower, respect the EQ and then trade higher. So let'"
+        }
+      ]
+    },
+    "hourly_sequence_rules": {
+      "activation_start": "Activate hourly structure only after the daily bias is present and the hourly Candle 2 forms inside the daily POI.",
+      "activation_end": "End the active hourly sequence when the daily POI loses relevance or the hourly map is invalidated.",
+      "c1_definition": "Hourly Candle 1 is the bar immediately before the swing-point bar.",
+      "c2_definition": "Hourly Candle 2 is the swing bar that prints at or inside the daily POI and closes in the direction of the daily bias.",
+      "c3_definition": "Hourly Candle 3 is the next hourly bar after Candle 2 and represents the expected immediate follow-through.",
+      "entry_guidance": "When Candle 2 is confirmed inside the daily POI, the phase-1 entry guide is the open of hourly Candle 3 in the direction of the daily bias.",
+      "waiting_guidance": "If Candle 2 has not formed yet, show only one small cue that tells the trader which Candle 2 direction to wait for inside the daily POI.",
+      "citations": [
+        {
+          "chunk_id": "candle_2_closure_foundation:0010",
+          "video_id": "tyoxl1l-6iI",
+          "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+          "start": 624.079,
+          "end": 691.36,
+          "topics": [
+            "candle_2",
+            "reversal_closure",
+            "candle_3",
+            "poi",
+            "equilibrium"
+          ],
+          "score": 0.779901,
+          "excerpt": "daily time frame fractally. We have a point of interest. We have what? Another candle 2 closure. And what could we do here is we could refine this down to the hourly. And you can see how it's fractal. We can go from the monthly to the daily to the hourly. But going to the hourly here, what do we have? Let's replay to h"
+        },
+        {
+          "chunk_id": "candle_2_closure_foundation:0008",
+          "video_id": "tyoxl1l-6iI",
+          "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+          "start": 497.039,
+          "end": 562.16,
+          "topics": [
+            "candle_2",
+            "reversal_closure",
+            "candle_3",
+            "poi",
+            "equilibrium"
+          ],
+          "score": 0.779677,
+          "excerpt": "take out a point of interest. And what do we notice now? It's a fractal concept. So, if we zoom in, what do we have? We have a candle to closure at a point of interest on the hourly chart. Not only can this provide a bias for this next candle to trade lower on a lower time frame, but we can anticipate this to be where "
+        },
+        {
+          "chunk_id": "candle_2_closure_foundation:0006",
+          "video_id": "tyoxl1l-6iI",
+          "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+          "start": 376.319,
+          "end": 438.96,
+          "topics": [
+            "candle_2",
+            "reversal_closure",
+            "candle_3",
+            "poi",
+            "equilibrium"
+          ],
+          "score": 0.777979,
+          "excerpt": "protected swing. So, I am not looking for price to return to this level. If it's going to trade higher, that's when I can actually use the opposing candles as a point of interest. and why this one would remain valid. It's more advanced, but it is a valid one cuz I can use these opposing candles as the point of interest"
+        },
+        {
+          "chunk_id": "candle_2_closure_foundation:0007",
+          "video_id": "tyoxl1l-6iI",
+          "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+          "start": 436.639,
+          "end": 499.28000000000003,
+          "topics": [
+            "candle_2",
+            "reversal_closure",
+            "candle_3",
+            "poi",
+            "equilibrium"
+          ],
+          "score": 0.77465,
+          "excerpt": "sweep of a previous high, a candle to closure. Now, if you followed my model or my playbook, you know the next thing we're going to do is drop down to our aligned time frame. So, here we have a daily chart. We're going to drop down to the hourly chart. So, going into the replay here, you can see we have this candle to "
+        }
+      ]
+    },
+    "lower_timeframe_refinement_rules": {},
+    "gating_rules": {
+      "daily_to_hourly": "Do not look for hourly structure until the daily bias is defined.",
+      "hourly_poi_filter": "Only print hourly C1/C2/C3 if Candle 2 forms inside the active daily POI band.",
+      "invalidation": "Reset the active hourly sequence when price closes back through the opposite side of the daily POI or when the daily bias is no longer actionable.",
+      "citations": [
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0003",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 200.239,
+          "end": 269.36,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.773153,
+          "excerpt": "high. Now, my favorite time frame to watch this on is the hourly. So, let's drop down to the hourly chart. So, here you can see we have marked out our previous day's EQ as well as our previous day's high. So, what do we want to see out of this day? Well, we'd want to see price open, trade lower into this fair value gap"
+        },
+        {
+          "chunk_id": "fractal_model_fundamentals:0001",
+          "video_id": "TNybDCtwBnc",
+          "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+          "start": 85.28,
+          "end": 153.28,
+          "topics": [
+            "fractal_model",
+            "candle_2",
+            "candle_3",
+            "cisd",
+            "daily_bias",
+            "poi"
+          ],
+          "score": 0.768881,
+          "excerpt": "previous day low, I'm expecting a continuation lower. If price fails to close below its previous day low, I'm expecting a reversal and for price to be bullish. And the same goes for previous day high just opposite. Now, ideally, I want to go ahead and find swing points on the daily chart, but I want to find a closure w"
+        },
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0008",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 552.48,
+          "end": 624.399,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.765549,
+          "excerpt": "which is bullish. So ideally I want to frame to the upside here. Let's drop down to the hourly time frame. So here we are on the hourly time frame and we have our previous day high right here. And what do we want to see? Well, ideally we want to see price open, trade lower, respect the EQ and then trade higher. So let'"
+        },
+        {
+          "chunk_id": "easy_daily_bias_mechanical_framework:0009",
+          "video_id": "-KKuZb5Z5aU",
+          "title": "Easy Daily Bias - Mechanical Framework",
+          "start": 622.399,
+          "end": 692.16,
+          "topics": [
+            "daily_bias",
+            "continuation",
+            "reversal",
+            "equilibrium",
+            "wick_logic"
+          ],
+          "score": 0.763225,
+          "excerpt": "a change in the state of delivery with an ideal candle 2 closure. This is where I could take an entry on the open of candle 3 to trade it higher or I could do what? This is an hourly candle 2 closure. I could look to the 5m minute to trade a 5-minut continuation in candle 3. But you can see how if you do have a bias, y"
+        }
+      ]
+    }
+  },
+  "acceptance_checks": [
+    "The script only supports 1H charts and shows a clear message otherwise.",
+    "Daily bias is shown without targets, ladders, dashboards, or lower-timeframe overlays.",
+    "The daily POI zone is visible on the hourly chart.",
+    "Hourly C1/C2/C3 labels only appear when the hourly sequence forms inside the daily POI.",
+    "Entry guide appears at the open of hourly Candle 3 when the sequence activates.",
+    "Five-minute continuation confirmation is derived only after the hourly sequence activates and is emitted through rule states or alerts rather than a second on-chart candle map.",
+    "When no hourly sequence is active, a single waiting cue shows the next Candle 2 direction to watch for inside the daily POI.",
+    "Only the current active hourly sequence is visible."
+  ]
+}

@@ -1,0 +1,5 @@
+[105.21] Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Higher timeframe context daily bias equilibrium point of interest.
+[405.81] Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Liquidity sweep or run on the highs and lows.
+[706.41] Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Candle 2 or Candle 3 closure with CISD through the level.
+[1007.01] Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Entry confirmation around order block, breaker, fair value gap, or protected swing.
+[1307.61] Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Trade outcome, expansion, target delivery, or invalidation.

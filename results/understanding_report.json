@@ -1,0 +1,1220 @@
+{
+  "generated_at": "2026-03-22T14:31:48.138078+00:00",
+  "methodology": {
+    "topic_understanding_basis": "rulebook grounding, determinism, visual verification, and Pine translatability via evaluate_rulebook.py",
+    "indicator_spec_dimensions": [
+      "scope_fidelity",
+      "rule_reference_validity",
+      "implementation_richness",
+      "machine_checkability",
+      "ambiguity_awareness"
+    ],
+    "scenario_case_basis": "Each labeled trader annotation baseline is matched against the linked indicator spec and scored for topic match, timeframe support, and explicit concept coverage.",
+    "scenario_contract_policy": "Scenario links without an explicit expectation contract are marked `ungraded` instead of receiving free credit.",
+    "overall_weighting": {
+      "topics": 0.35,
+      "indicator_specs": 0.35,
+      "scenario_cases": 0.3
+    }
+  },
+  "overall": {
+    "topic_average": 0.9,
+    "indicator_spec_average": 0.9567,
+    "scenario_average": 0.9193,
+    "overall_understanding_score": 0.9256,
+    "grade": "A-",
+    "topic_count": 14,
+    "indicator_spec_count": 5,
+    "scenario_case_count": 15,
+    "scenario_contract_count": 15,
+    "scenario_total_count": 16,
+    "scenario_contract_coverage": 0.9375
+  },
+  "weakest_topics": [
+    {
+      "topic": "bias",
+      "name": "Bias",
+      "status": "active",
+      "source_count": 56,
+      "rule_count": 5,
+      "understanding_score": 0.8366,
+      "grade": "B+",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.742,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.776
+      },
+      "contradiction_penalty": 1
+    },
+    {
+      "topic": "expansion",
+      "name": "Expansion",
+      "status": "active",
+      "source_count": 47,
+      "rule_count": 5,
+      "understanding_score": 0.838,
+      "grade": "B+",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.76,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.76
+      },
+      "contradiction_penalty": 1
+    },
+    {
+      "topic": "protected_swings",
+      "name": "Protected Swings",
+      "status": "active",
+      "source_count": 18,
+      "rule_count": 4,
+      "understanding_score": 0.8627,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.7925,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.82
+      },
+      "contradiction_penalty": 1
+    }
+  ],
+  "weakest_indicator_specs": [
+    {
+      "spec_key": "ttrades_curriculum__reversal_sequence_model",
+      "name": "TTrades Curriculum - Reversal Sequence Model Indicator Candidate",
+      "topic": "reversal",
+      "target_language": "pine",
+      "status": "draft",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "reversal_sequence_model",
+      "translation_stage": "draft",
+      "artifact_path": "results\\indicator_specs\\reversal_sequence_model.json",
+      "understanding_score": 0.9378,
+      "grade": "A",
+      "dimensions": {
+        "scope_fidelity": 1.0,
+        "rule_reference_validity": 1.0,
+        "implementation_richness": 0.9722,
+        "machine_checkability": 0.7417,
+        "ambiguity_awareness": 0.95
+      },
+      "issues": [],
+      "scenario_case_count": 2,
+      "scenario_average": 0.785
+    },
+    {
+      "spec_key": "ttrades_curriculum__fractal_closure_model",
+      "name": "TTrades Curriculum - Fractal Closure Model Indicator Candidate",
+      "topic": "candle_2_closure",
+      "target_language": "pine",
+      "status": "draft",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "fractal_closure_model",
+      "translation_stage": "draft",
+      "artifact_path": "results\\indicator_specs\\fractal_closure_model.json",
+      "understanding_score": 0.9477,
+      "grade": "A",
+      "dimensions": {
+        "scope_fidelity": 1.0,
+        "rule_reference_validity": 1.0,
+        "implementation_richness": 1.0,
+        "machine_checkability": 0.7833,
+        "ambiguity_awareness": 0.91
+      },
+      "issues": [],
+      "scenario_case_count": 2,
+      "scenario_average": 1.0
+    },
+    {
+      "spec_key": "ttrades_curriculum__daily_bias_framework",
+      "name": "TTrades Curriculum - Daily Bias Framework Indicator Candidate",
+      "topic": "bias",
+      "target_language": "pine",
+      "status": "draft",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "daily_bias_framework",
+      "translation_stage": "draft",
+      "artifact_path": "results\\indicator_specs\\daily_bias_framework.json",
+      "understanding_score": 0.9478,
+      "grade": "A",
+      "dimensions": {
+        "scope_fidelity": 1.0,
+        "rule_reference_validity": 1.0,
+        "implementation_richness": 0.9722,
+        "machine_checkability": 0.7917,
+        "ambiguity_awareness": 0.95
+      },
+      "issues": [],
+      "scenario_case_count": 2,
+      "scenario_average": 0.935
+    }
+  ],
+  "weakest_scenarios": [
+    {
+      "case_ref": "ttrades_expansion_curriculum_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "phases_of_price_framework",
+      "relation_type": "phase_framework",
+      "topic": "expansion",
+      "spec_key": null,
+      "scenario_score": 0.0,
+      "grade": "D",
+      "dimensions": {
+        "model_match": 0.0,
+        "topic_match": 0.0,
+        "timeframe_match": 0.0,
+        "concept_match": 0.0
+      },
+      "expected_concepts": [],
+      "matched_concepts": [],
+      "missing_concepts": [],
+      "issues": [
+        "No indicator spec exists for this profile + trade-model link."
+      ]
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "topic": "retracement",
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "contract_defined": true,
+      "scenario_score": 0.61,
+      "grade": "C",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 0.4
+      },
+      "expected_concepts": [
+        "retracement",
+        "no_sweep",
+        "no_fair_value_gap",
+        "no_new_protected_swing",
+        "wait_for_confirmation"
+      ],
+      "matched_concepts": [
+        "retracement",
+        "wait_for_confirmation"
+      ],
+      "missing_concepts": [
+        "no_sweep",
+        "no_fair_value_gap",
+        "no_new_protected_swing"
+      ],
+      "issues": [
+        "Missing scenario concepts: no_sweep, no_fair_value_gap, no_new_protected_swing"
+      ]
+    },
+    {
+      "case_ref": "ttrades_candle_2_closure_reversal_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "reversal_sequence_model",
+      "relation_type": "execution_model",
+      "topic": "candle_2_closure",
+      "spec_key": "ttrades_curriculum__reversal_sequence_model",
+      "contract_defined": true,
+      "scenario_score": 0.72,
+      "grade": "B-",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 0.0,
+        "timeframe_match": 1.0,
+        "concept_match": 0.8
+      },
+      "expected_concepts": [
+        "candle_2",
+        "reversal",
+        "point_of_interest",
+        "invalidation",
+        "opposing_liquidity"
+      ],
+      "matched_concepts": [
+        "reversal",
+        "point_of_interest",
+        "invalidation",
+        "opposing_liquidity"
+      ],
+      "missing_concepts": [
+        "candle_2"
+      ],
+      "issues": [
+        "Missing scenario concepts: candle_2"
+      ]
+    },
+    {
+      "case_ref": "ttrades_new_york_reversal_profile_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "reversal_sequence_model",
+      "relation_type": "execution_model",
+      "topic": "daily_profiles",
+      "spec_key": "ttrades_curriculum__reversal_sequence_model",
+      "contract_defined": true,
+      "scenario_score": 0.85,
+      "grade": "B+",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 0.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "reversal",
+        "liquidity_sweep",
+        "cisd",
+        "invalidation",
+        "liquidity_target"
+      ],
+      "matched_concepts": [
+        "reversal",
+        "liquidity_sweep",
+        "cisd",
+        "invalidation",
+        "liquidity_target"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "daily_bias_framework",
+      "relation_type": "bias_framework",
+      "topic": "bias",
+      "spec_key": "ttrades_curriculum__daily_bias_framework",
+      "contract_defined": true,
+      "scenario_score": 0.87,
+      "grade": "A-",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 0.8
+      },
+      "expected_concepts": [
+        "previous_day",
+        "equilibrium",
+        "continuation",
+        "lower_timeframe_confirmation",
+        "external_liquidity"
+      ],
+      "matched_concepts": [
+        "previous_day",
+        "equilibrium",
+        "continuation",
+        "lower_timeframe_confirmation"
+      ],
+      "missing_concepts": [
+        "external_liquidity"
+      ],
+      "issues": [
+        "Missing scenario concepts: external_liquidity"
+      ]
+    }
+  ],
+  "uncontracted_scenarios": [
+    {
+      "case_ref": "ttrades_expansion_curriculum_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "phases_of_price_framework",
+      "relation_type": "phase_framework",
+      "topic": "expansion",
+      "spec_key": null,
+      "scenario_score": 0.0,
+      "grade": "D",
+      "dimensions": {
+        "model_match": 0.0,
+        "topic_match": 0.0,
+        "timeframe_match": 0.0,
+        "concept_match": 0.0
+      },
+      "expected_concepts": [],
+      "matched_concepts": [],
+      "missing_concepts": [],
+      "issues": [
+        "No indicator spec exists for this profile + trade-model link."
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "topic": "bias",
+      "name": "Bias",
+      "status": "active",
+      "source_count": 56,
+      "rule_count": 5,
+      "understanding_score": 0.8366,
+      "grade": "B+",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.742,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.776
+      },
+      "contradiction_penalty": 1
+    },
+    {
+      "topic": "candle_2_closure",
+      "name": "Candle 2 Closure",
+      "status": "active",
+      "source_count": 5,
+      "rule_count": 4,
+      "understanding_score": 0.8977,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8256,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.8
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "candle_3_closure",
+      "name": "Candle 3 Closure",
+      "status": "active",
+      "source_count": 9,
+      "rule_count": 4,
+      "understanding_score": 0.8775,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8166,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.73
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "consolidation",
+      "name": "Consolidation",
+      "status": "active",
+      "source_count": 13,
+      "rule_count": 4,
+      "understanding_score": 0.9299,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8662,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.88
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "continuation",
+      "name": "Continuation",
+      "status": "active",
+      "source_count": 50,
+      "rule_count": 4,
+      "understanding_score": 0.9175,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8416,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.86
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "daily_profiles",
+      "name": "Daily Profiles",
+      "status": "active",
+      "source_count": 28,
+      "rule_count": 4,
+      "understanding_score": 0.9347,
+      "grade": "A",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8822,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.88
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "equilibrium",
+      "name": "Equilibrium",
+      "status": "active",
+      "source_count": 8,
+      "rule_count": 4,
+      "understanding_score": 0.9114,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8631,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.81
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "expansion",
+      "name": "Expansion",
+      "status": "active",
+      "source_count": 47,
+      "rule_count": 5,
+      "understanding_score": 0.838,
+      "grade": "B+",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.76,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.76
+      },
+      "contradiction_penalty": 1
+    },
+    {
+      "topic": "invalidation",
+      "name": "Invalidation",
+      "status": "active",
+      "source_count": 8,
+      "rule_count": 4,
+      "understanding_score": 0.894,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.7966,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.82
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "protected_swings",
+      "name": "Protected Swings",
+      "status": "active",
+      "source_count": 18,
+      "rule_count": 4,
+      "understanding_score": 0.8627,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.7925,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.82
+      },
+      "contradiction_penalty": 1
+    },
+    {
+      "topic": "retracement",
+      "name": "Retracement",
+      "status": "active",
+      "source_count": 9,
+      "rule_count": 4,
+      "understanding_score": 0.9194,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8812,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.82
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "reversal",
+      "name": "Reversal",
+      "status": "active",
+      "source_count": 50,
+      "rule_count": 4,
+      "understanding_score": 0.9389,
+      "grade": "A",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8962,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.88
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "top_down_alignment",
+      "name": "Top-Down Alignment",
+      "status": "active",
+      "source_count": 16,
+      "rule_count": 4,
+      "understanding_score": 0.9184,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8531,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.85
+      },
+      "contradiction_penalty": 0
+    },
+    {
+      "topic": "wick_logic",
+      "name": "Wick Logic",
+      "status": "active",
+      "source_count": 2,
+      "rule_count": 4,
+      "understanding_score": 0.9235,
+      "grade": "A-",
+      "dimensions": {
+        "grounding": 1.0,
+        "determinism": 0.8616,
+        "visual_verification": 1.0,
+        "pine_translatability": 0.86
+      },
+      "contradiction_penalty": 0
+    }
+  ],
+  "indicator_specs": [
+    {
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "name": "TTrades Curriculum - Continuation Entry Model Indicator Candidate",
+      "topic": "continuation",
+      "target_language": "pine",
+      "status": "draft",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "translation_stage": "draft",
+      "artifact_path": "results\\indicator_specs\\continuation_entry_model.json",
+      "understanding_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "scope_fidelity": 1.0,
+        "rule_reference_validity": 1.0,
+        "implementation_richness": 1.0,
+        "machine_checkability": 1.0,
+        "ambiguity_awareness": 1.0
+      },
+      "issues": [],
+      "scenario_case_count": 7,
+      "scenario_average": 0.9071
+    },
+    {
+      "spec_key": "ttrades_curriculum__daily_bias_framework",
+      "name": "TTrades Curriculum - Daily Bias Framework Indicator Candidate",
+      "topic": "bias",
+      "target_language": "pine",
+      "status": "draft",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "daily_bias_framework",
+      "translation_stage": "draft",
+      "artifact_path": "results\\indicator_specs\\daily_bias_framework.json",
+      "understanding_score": 0.9478,
+      "grade": "A",
+      "dimensions": {
+        "scope_fidelity": 1.0,
+        "rule_reference_validity": 1.0,
+        "implementation_richness": 0.9722,
+        "machine_checkability": 0.7917,
+        "ambiguity_awareness": 0.95
+      },
+      "issues": [],
+      "scenario_case_count": 2,
+      "scenario_average": 0.935
+    },
+    {
+      "spec_key": "ttrades_curriculum__daily_profile_models",
+      "name": "TTrades Curriculum - Daily Profile Models Indicator Candidate",
+      "topic": "daily_profiles",
+      "target_language": "pine",
+      "status": "draft",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "daily_profile_models",
+      "translation_stage": "draft",
+      "artifact_path": "results\\indicator_specs\\daily_profile_models.json",
+      "understanding_score": 0.95,
+      "grade": "A",
+      "dimensions": {
+        "scope_fidelity": 1.0,
+        "rule_reference_validity": 1.0,
+        "implementation_richness": 1.0,
+        "machine_checkability": 0.75,
+        "ambiguity_awareness": 1.0
+      },
+      "issues": [],
+      "scenario_case_count": 2,
+      "scenario_average": 1.0
+    },
+    {
+      "spec_key": "ttrades_curriculum__fractal_closure_model",
+      "name": "TTrades Curriculum - Fractal Closure Model Indicator Candidate",
+      "topic": "candle_2_closure",
+      "target_language": "pine",
+      "status": "draft",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "fractal_closure_model",
+      "translation_stage": "draft",
+      "artifact_path": "results\\indicator_specs\\fractal_closure_model.json",
+      "understanding_score": 0.9477,
+      "grade": "A",
+      "dimensions": {
+        "scope_fidelity": 1.0,
+        "rule_reference_validity": 1.0,
+        "implementation_richness": 1.0,
+        "machine_checkability": 0.7833,
+        "ambiguity_awareness": 0.91
+      },
+      "issues": [],
+      "scenario_case_count": 2,
+      "scenario_average": 1.0
+    },
+    {
+      "spec_key": "ttrades_curriculum__reversal_sequence_model",
+      "name": "TTrades Curriculum - Reversal Sequence Model Indicator Candidate",
+      "topic": "reversal",
+      "target_language": "pine",
+      "status": "draft",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "reversal_sequence_model",
+      "translation_stage": "draft",
+      "artifact_path": "results\\indicator_specs\\reversal_sequence_model.json",
+      "understanding_score": 0.9378,
+      "grade": "A",
+      "dimensions": {
+        "scope_fidelity": 1.0,
+        "rule_reference_validity": 1.0,
+        "implementation_richness": 0.9722,
+        "machine_checkability": 0.7417,
+        "ambiguity_awareness": 0.95
+      },
+      "issues": [],
+      "scenario_case_count": 2,
+      "scenario_average": 0.785
+    }
+  ],
+  "scenario_cases": [
+    {
+      "case_ref": "ttrades_expansion_curriculum_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "phases_of_price_framework",
+      "relation_type": "phase_framework",
+      "topic": "expansion",
+      "spec_key": null,
+      "scenario_score": 0.0,
+      "grade": "D",
+      "dimensions": {
+        "model_match": 0.0,
+        "topic_match": 0.0,
+        "timeframe_match": 0.0,
+        "concept_match": 0.0
+      },
+      "expected_concepts": [],
+      "matched_concepts": [],
+      "missing_concepts": [],
+      "issues": [
+        "No indicator spec exists for this profile + trade-model link."
+      ]
+    },
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "daily_bias_framework",
+      "relation_type": "bias_framework",
+      "topic": "bias",
+      "spec_key": "ttrades_curriculum__daily_bias_framework",
+      "contract_defined": true,
+      "scenario_score": 0.87,
+      "grade": "A-",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 0.8
+      },
+      "expected_concepts": [
+        "previous_day",
+        "equilibrium",
+        "continuation",
+        "lower_timeframe_confirmation",
+        "external_liquidity"
+      ],
+      "matched_concepts": [
+        "previous_day",
+        "equilibrium",
+        "continuation",
+        "lower_timeframe_confirmation"
+      ],
+      "missing_concepts": [
+        "external_liquidity"
+      ],
+      "issues": [
+        "Missing scenario concepts: external_liquidity"
+      ]
+    },
+    {
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "daily_bias_framework",
+      "relation_type": "bias_framework",
+      "topic": "bias",
+      "spec_key": "ttrades_curriculum__daily_bias_framework",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "previous_day_extreme",
+        "reversal",
+        "wick_rejection",
+        "lower_timeframe_confirmation",
+        "equilibrium_target"
+      ],
+      "matched_concepts": [
+        "previous_day_extreme",
+        "reversal",
+        "wick_rejection",
+        "lower_timeframe_confirmation",
+        "equilibrium_target"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "topic": "continuation",
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "equilibrium",
+        "continuation",
+        "opposing_series_close",
+        "protected_swing",
+        "external_liquidity"
+      ],
+      "matched_concepts": [
+        "equilibrium",
+        "continuation",
+        "opposing_series_close",
+        "protected_swing",
+        "external_liquidity"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "topic": "continuation",
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "continuation_failure",
+        "consolidation",
+        "rotation",
+        "stand_aside",
+        "objective_complete"
+      ],
+      "matched_concepts": [
+        "continuation_failure",
+        "consolidation",
+        "rotation",
+        "stand_aside",
+        "objective_complete"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_new_york_reversal_profile_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "daily_profile_models",
+      "relation_type": "session_profile",
+      "topic": "daily_profiles",
+      "spec_key": "ttrades_curriculum__daily_profile_models",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "london_session",
+        "new_york_session",
+        "session_reversal",
+        "cisd",
+        "session_extreme"
+      ],
+      "matched_concepts": [
+        "london_session",
+        "new_york_session",
+        "session_reversal",
+        "cisd",
+        "session_extreme"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_new_york_reversal_profile_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "reversal_sequence_model",
+      "relation_type": "execution_model",
+      "topic": "daily_profiles",
+      "spec_key": "ttrades_curriculum__reversal_sequence_model",
+      "contract_defined": true,
+      "scenario_score": 0.85,
+      "grade": "B+",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 0.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "reversal",
+        "liquidity_sweep",
+        "cisd",
+        "invalidation",
+        "liquidity_target"
+      ],
+      "matched_concepts": [
+        "reversal",
+        "liquidity_sweep",
+        "cisd",
+        "invalidation",
+        "liquidity_target"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_seek_and_destroy_profile_filter_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "daily_profile_models",
+      "relation_type": "session_profile",
+      "topic": "daily_profiles",
+      "spec_key": "ttrades_curriculum__daily_profile_models",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "asia_session",
+        "london_session",
+        "new_york_session",
+        "seek_and_destroy",
+        "equilibrium"
+      ],
+      "matched_concepts": [
+        "asia_session",
+        "london_session",
+        "new_york_session",
+        "seek_and_destroy",
+        "equilibrium"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "fractal_closure_model",
+      "relation_type": "confirmation_framework",
+      "topic": "candle_3_closure",
+      "spec_key": "ttrades_curriculum__fractal_closure_model",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "candle_3",
+        "candle_2",
+        "point_of_interest",
+        "equilibrium",
+        "candle_4"
+      ],
+      "matched_concepts": [
+        "candle_3",
+        "candle_2",
+        "point_of_interest",
+        "equilibrium",
+        "candle_4"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_candle_2_closure_reversal_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "fractal_closure_model",
+      "relation_type": "confirmation_framework",
+      "topic": "candle_2_closure",
+      "spec_key": "ttrades_curriculum__fractal_closure_model",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "candle_2",
+        "point_of_interest",
+        "lower_timeframe_refinement",
+        "confirmed_swing",
+        "reversal"
+      ],
+      "matched_concepts": [
+        "candle_2",
+        "point_of_interest",
+        "lower_timeframe_refinement",
+        "confirmed_swing",
+        "reversal"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_candle_2_closure_reversal_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "reversal_sequence_model",
+      "relation_type": "execution_model",
+      "topic": "candle_2_closure",
+      "spec_key": "ttrades_curriculum__reversal_sequence_model",
+      "contract_defined": true,
+      "scenario_score": 0.72,
+      "grade": "B-",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 0.0,
+        "timeframe_match": 1.0,
+        "concept_match": 0.8
+      },
+      "expected_concepts": [
+        "candle_2",
+        "reversal",
+        "point_of_interest",
+        "invalidation",
+        "opposing_liquidity"
+      ],
+      "matched_concepts": [
+        "reversal",
+        "point_of_interest",
+        "invalidation",
+        "opposing_liquidity"
+      ],
+      "missing_concepts": [
+        "candle_2"
+      ],
+      "issues": [
+        "Missing scenario concepts: candle_2"
+      ]
+    },
+    {
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "topic": "continuation",
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "order_block",
+        "fair_value_gap_or_sweep",
+        "closure_confirmation",
+        "protected_swing_invalidation",
+        "external_liquidity"
+      ],
+      "matched_concepts": [
+        "order_block",
+        "fair_value_gap_or_sweep",
+        "closure_confirmation",
+        "protected_swing_invalidation",
+        "external_liquidity"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "topic": "continuation",
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "contract_defined": true,
+      "scenario_score": 1.0,
+      "grade": "A",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 1.0
+      },
+      "expected_concepts": [
+        "breaker_block",
+        "liquidity_sweep_or_smt",
+        "higher_timeframe_bias",
+        "retest_entry",
+        "previous_high_low_liquidity"
+      ],
+      "matched_concepts": [
+        "breaker_block",
+        "liquidity_sweep_or_smt",
+        "higher_timeframe_bias",
+        "retest_entry",
+        "previous_high_low_liquidity"
+      ],
+      "missing_concepts": [],
+      "issues": []
+    },
+    {
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "topic": "top_down_alignment",
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "contract_defined": true,
+      "scenario_score": 0.87,
+      "grade": "A-",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 0.8
+      },
+      "expected_concepts": [
+        "higher_timeframe_bias",
+        "intermediate_structure_confirmation",
+        "lower_timeframe_confirmation",
+        "protected_swing_or_order_block",
+        "higher_timeframe_liquidity"
+      ],
+      "matched_concepts": [
+        "higher_timeframe_bias",
+        "intermediate_structure_confirmation",
+        "lower_timeframe_confirmation",
+        "protected_swing_or_order_block"
+      ],
+      "missing_concepts": [
+        "higher_timeframe_liquidity"
+      ],
+      "issues": [
+        "Missing scenario concepts: higher_timeframe_liquidity"
+      ]
+    },
+    {
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "topic": "wick_logic",
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "contract_defined": true,
+      "scenario_score": 0.87,
+      "grade": "A-",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 0.8
+      },
+      "expected_concepts": [
+        "large_opposing_wick",
+        "bias_support",
+        "stand_aside",
+        "daily_open_or_nearby_liquidity",
+        "wait_for_small_wick_alignment"
+      ],
+      "matched_concepts": [
+        "large_opposing_wick",
+        "stand_aside",
+        "daily_open_or_nearby_liquidity",
+        "wait_for_small_wick_alignment"
+      ],
+      "missing_concepts": [
+        "bias_support"
+      ],
+      "issues": [
+        "Missing scenario concepts: bias_support"
+      ]
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "profile_slug": "ttrades_curriculum",
+      "trade_model_slug": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "topic": "retracement",
+      "spec_key": "ttrades_curriculum__continuation_entry_model",
+      "contract_defined": true,
+      "scenario_score": 0.61,
+      "grade": "C",
+      "dimensions": {
+        "model_match": 1.0,
+        "topic_match": 1.0,
+        "timeframe_match": 1.0,
+        "concept_match": 0.4
+      },
+      "expected_concepts": [
+        "retracement",
+        "no_sweep",
+        "no_fair_value_gap",
+        "no_new_protected_swing",
+        "wait_for_confirmation"
+      ],
+      "matched_concepts": [
+        "retracement",
+        "wait_for_confirmation"
+      ],
+      "missing_concepts": [
+        "no_sweep",
+        "no_fair_value_gap",
+        "no_new_protected_swing"
+      ],
+      "issues": [
+        "Missing scenario concepts: no_sweep, no_fair_value_gap, no_new_protected_swing"
+      ]
+    }
+  ]
+}

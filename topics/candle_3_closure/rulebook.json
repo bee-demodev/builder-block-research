@@ -1,0 +1,187 @@
+{
+  "topic": "candle_3_closure",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_candle_3_closure",
+      "url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_candle_2_closure",
+      "url": "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_equilibrium_continuations",
+      "url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "candle_three_closure_definition",
+      "name": "A Candle 3 closure confirms the move when Candle 2 fails to produce the earlier reversal closure",
+      "timeframeScope": ["fractal"],
+      "marketPhasePrecondition": ["point_of_interest_mapped", "candle_two_did_not_form_valid_reversal_closure"],
+      "direction": "bidirectional",
+      "setupAnchor": "After price reaches the mapped point of interest, compare Candle 3 against Candle 2 instead of forcing an early Candle 2 reversal read",
+      "confirmationTrigger": "Bullish Candle 3 closes above the body of Candle 2 and engulfs it, while bearish Candle 3 closes below the body of Candle 2 and engulfs it, after Candle 2 failed to deliver the needed reversal closure",
+      "protectedSwingDefinition": "The swing can only be promoted once Candle 3 supplies the delayed closure that Candle 2 failed to provide",
+      "invalidationCondition": "Candle 3 does not close through the Candle 2 body in the new direction, or Candle 2 had already qualified as a valid Candle 2 closure",
+      "targetLogic": "Once Candle 3 confirms, frame Candle 4 as the expected expansion candle in the new direction",
+      "exceptions": [
+        "If Candle 2 already delivered the reversal closure, classify the sequence as Candle 2 rather than Candle 3"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_3_closure#candle_2_vs_candle_3_closure",
+        "ttrades_candle_3_closure#when_candle_2_fails_candle_3_can_still_confirm"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_3_closure_definition_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "point of interest flag",
+        "Candle 2 open",
+        "Candle 2 close",
+        "Candle 2 high",
+        "Candle 2 low",
+        "Candle 3 close"
+      ],
+      "machineChecks": [
+        "Reject the sequence if Candle 2 already qualifies as a valid Candle 2 reversal closure",
+        "Measure the Candle 2 body and require Candle 3 to close through it in the new direction",
+        "Emit a bullish or bearish Candle 3 closure state only after the delayed engulfing close appears"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "candle_three_requires_context_and_poi",
+      "name": "A Candle 3 closure only matters when it appears at the mapped point of interest and inside the higher-timeframe idea",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["higher_timeframe_point_of_interest_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Map the fair value gap, imbalance, swing, or other point of interest first, then wait to see whether Candle 2 or Candle 3 gives the usable closure",
+      "confirmationTrigger": "Only accept Candle 3 as actionable when it forms at the point of interest and agrees with the higher-timeframe directional thesis",
+      "protectedSwingDefinition": "A swing point is ignored unless it has both ingredients: a real point of interest and a valid Candle 2 or Candle 3 closure",
+      "invalidationCondition": "Candle 3 closes through Candle 2's body away from the point of interest or against the higher-timeframe directional plan",
+      "targetLogic": "Use the valid point-of-interest-plus-closure pair as the structural anchor for the next continuation leg and lower-timeframe refinement",
+      "exceptions": [
+        "If the point of interest was never mapped, the Candle 3 pattern is descriptive only and should not become a trade signal"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_3_closure#when_candle_2_fails_candle_3_can_still_confirm",
+        "ttrades_candle_3_closure#chart_examples_and_how_they_apply"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_3_closure_poi_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe point of interest flag",
+        "active bias state",
+        "Candle 2 body range",
+        "Candle 3 close"
+      ],
+      "machineChecks": [
+        "Require a mapped point of interest before a Candle 3 closure can become actionable",
+        "Require higher-timeframe directional agreement before promoting the Candle 3 event into a valid swing",
+        "Ignore Candle 3 body-engulfing closes that occur in random mid-range locations"
+      ],
+      "ambiguityNotes": [
+        "The first-pass ranking rule for competing points of interest still needs a stricter algorithm"
+      ]
+    },
+    {
+      "id": "candle_three_equilibrium_refinement",
+      "name": "After a valid Candle 3 closure, Candle 4 should respect the correct half of Candle 3's range",
+      "timeframeScope": ["fractal", "lower"],
+      "marketPhasePrecondition": ["valid_candle_three_closure_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "Mark the full wick-high-to-wick-low range of Candle 3 and compute its equilibrium immediately after the closure forms",
+      "confirmationTrigger": "In bullish conditions Candle 4 should wick into and respect the upper half of Candle 3, while in bearish conditions Candle 4 should wick into and respect the lower half of Candle 3 before continuation expands",
+      "protectedSwingDefinition": "The Candle 3 range and midpoint become the first refinement box that continuation must respect if the new swing is real",
+      "invalidationCondition": "Candle 4 fails to respect the intended half of Candle 3 or immediately breaks through the wrong side of the midpoint before continuation develops",
+      "targetLogic": "Use Candle 3 equilibrium as the refinement line, then anticipate Candle 4 expansion and lower-timeframe entries inside the respected half",
+      "exceptions": [
+        "If Candle 4 never retests the intended half, the move can still continue but loses the cleaner equilibrium-based refinement described in the article"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_3_closure#using_equilibrium_with_candle_3_closures",
+        "ttrades_candle_3_closure#how_to_frame_trades_from_candle_3_closures",
+        "ttrades_equilibrium_continuations#applying_equilibrium_in_expansions"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_3_equilibrium_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "valid Candle 3 closure flag",
+        "Candle 3 wick high",
+        "Candle 3 wick low",
+        "Candle 3 equilibrium midpoint",
+        "Candle 4 high",
+        "Candle 4 low",
+        "Candle 4 close"
+      ],
+      "machineChecks": [
+        "Measure Candle 3 equilibrium from wick high to wick low",
+        "Require Candle 4 to trade back into the correct half of Candle 3 for the equilibrium-refinement path",
+        "Flag loss of refinement when Candle 4 breaks through the wrong side of Candle 3 equilibrium before expansion confirms"
+      ],
+      "ambiguityNotes": [
+        "The minimum retest depth that counts as a valid wick into the correct half is not yet numeric"
+      ]
+    },
+    {
+      "id": "valid_swing_requires_poi_and_closure",
+      "name": "No swing point is valid without both the point of interest and the closure event",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["point_of_interest_mapped"],
+      "direction": "bidirectional",
+      "setupAnchor": "Treat the point of interest as the location anchor and Candle 2 or Candle 3 as the event that upgrades the anchor into a real swing",
+      "confirmationTrigger": "Promote the swing only when price reaches the point of interest and then prints a valid Candle 2 or Candle 3 closure, followed by lower-timeframe displacement for entry refinement",
+      "protectedSwingDefinition": "Protected structure is only meaningful after the point of interest and the qualifying closure have both appeared",
+      "invalidationCondition": "Either the point of interest is missing, the closure never forms, or lower-timeframe displacement fails to develop after the closure",
+      "targetLogic": "Once both ingredients are present, use the validated swing range to refine entries from higher timeframe down to 4-hour and 15-minute execution windows",
+      "exceptions": [
+        "If Candle 2 produces the valid closure first, do not wait for Candle 3 just to preserve symmetry"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_3_closure#chart_examples_and_how_they_apply",
+        "ttrades_candle_3_closure#how_to_frame_trades_from_candle_3_closures",
+        "ttrades_candle_2_closure#putting_it_all_together"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_3_valid_swing_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "point of interest flag",
+        "valid Candle 2 closure flag",
+        "valid Candle 3 closure flag",
+        "lower-timeframe displacement proxy"
+      ],
+      "machineChecks": [
+        "Require both a point of interest and a qualifying closure before validating a swing",
+        "Allow either Candle 2 or Candle 3 to satisfy the closure requirement, but never neither",
+        "Hold the sequence in pending state until lower-timeframe displacement confirms the refined entry path"
+      ],
+      "ambiguityNotes": [
+        "The minimum displacement strength for the lower-timeframe refinement leg still needs a strict implementation rule"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What body-overlap threshold is the best first numeric proxy for saying Candle 3 truly engulfed Candle 2 when Candle 2 is very small or doji-like?",
+    "What is the first useful numeric tolerance for saying Candle 4 respected the correct half of Candle 3 and produced enough lower-timeframe displacement to justify entry refinement?"
+  ]
+}

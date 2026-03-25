@@ -1,0 +1,1917 @@
+[5.49] [Music]
+[11.04] How's it going everyone and welcome back
+[12.80] to another tea talk. Today we are joined
+[15.28] by AP and he is going to talk about his
+[17.76] framework and his view on the market. I
+[20.08] hope you guys enjoy it. All righty. What
+[22.88] is good? I hope y'all are doing well. My
+[25.44] name is AP. I also go by AP Trades and I
+[28.72] just first and foremost want to say
+[30.64] thank you to T for having me on and uh
+[34.40] allowing me to kind of voice my my
+[37.60] opinion and my view on the market as
+[40.32] well as kind of talk about some other
+[41.92] little things that I go about in my
+[43.44] day-to-day process, how I stay
+[45.12] levelheaded, etc., etc. Right? So, a
+[48.48] little bit of background about me. I've
+[50.08] been trading since 2020, I believe 2019,
+[53.36] late 2019, early 2020. um was when I
+[57.12] first got introduced into the market.
+[58.88] And actually, funny enough, the first
+[61.12] thing that introduced me to the market
+[63.92] um was Dogecoin, believe it or not. So,
+[67.68] I had a buddy introduce Dogecoin to me
+[71.28] of all things. I know it's crazy, right?
+[73.12] Because now I'm trading futures. Um but
+[75.44] I had a buddy introduce that to me and
+[77.12] it kind of sparked something in me,
+[79.04] right? I I looked at it. I ended up
+[81.36] making my first quote unquote purchase
+[84.32] of an external asset of that nature,
+[87.04] right? So, fast forward, I would say
+[90.72] time after time, I started through a lot
+[93.04] of different things. You know, the kind
+[94.40] of the the basic retail start. I started
+[97.20] off with a I believe it was a 9 and 18
+[99.60] EMA crossover, something, you know, I
+[101.52] was very very novice in my trading. I
+[103.68] didn't know much. I was just wanting to
+[105.28] seek some sort of truth, some sort of
+[107.52] consistency and how to operate under
+[109.84] kind of a good level and understand what
+[113.44] the market is actually kind of doing,
+[115.28] right? So that led me into learning and
+[119.28] kind of diving into ICT after a couple
+[121.12] years of dabbling with the EMA crossover
+[124.32] stuff. And actually, truthfully, um,
+[127.36] when I first started doing that was when
+[129.36] we were getting that kind of heavy
+[130.64] rebound in the co markets, right? So, we
+[133.28] were trending pretty heavy, right? We're
+[134.80] continually moving up. No big pullbacks
+[137.12] or anything once we had formed that
+[138.88] bottom. So, crossover strategies, right?
+[140.64] When you get that morning, Judas, uh,
+[143.04] worked pretty well. So, I I thought I
+[145.12] had got my footing in the market and
+[147.36] understood that this is all I needed to
+[149.68] do for the remainder of my trading
+[151.60] career. I didn't need to do anything
+[152.88] else until I was hit with some other
+[155.84] market conditions, right? And that's
+[157.52] that's a huge thing that a lot of
+[159.04] traders face nowadays is, you know, they
+[162.24] aren't able to adapt to different market
+[163.92] conditions and they overfit themselves
+[166.00] to X strategy, right? Rather than being
+[168.24] able to diversify and being able to
+[170.00] adapt and that was one of the biggest
+[171.92] things I struggled with because once I
+[173.44] got hit with a a consolidating market
+[176.16] was when I really took a hit on that
+[177.68] kind of entry technique and that led me
+[179.44] into branching into ICT and stuff like
+[182.80] that. And you know, I love ICT and
+[185.76] everything. I've learned a lot from him
+[187.44] and it's allowed me to grow my
+[189.04] understanding of the market. But
+[190.24] personally now I'm I wouldn't really
+[192.08] consider myself an ICT trader. I still
+[194.16] use several numerous things that could
+[196.48] be measured moves, right? Using order
+[199.76] blocks, etc., etc., right? So no hate or
+[203.04] animosity by any means at ICT. I I would
+[206.00] consider myself more of an independent
+[207.84] trader, kind of an independent thinker
+[210.00] in the way I go about things. uh I had
+[212.40] picked up some knowledge from DT DTFX
+[214.72] stuff which is more so kind of based
+[216.72] around being able to and understanding
+[218.64] that price is indeed fractal right uh
+[221.84] there's numerous numerous little things
+[224.00] your model in my opinion should work on
+[226.32] the 5-second as it works on the one
+[228.08] minute as it works on the fivem minute
+[229.92] right that's the beauty of price and
+[231.28] that's the beauty of understanding but
+[233.20] today I really want to dive deep into
+[236.16] what I would consider my main entry
+[238.40] technique which I coin and call the GB
+[241.12] puddle uh internally kind of like an
+[242.88] inside joke. I call it yeet uh because
+[245.52] it it's kind of a a more I would say
+[248.72] rounded well-rounded OT kind of entry
+[251.52] drill and entry technique. Right? So,
+[254.40] there's numerous little different
+[256.00] nuances that I want to discover or or
+[258.00] not discover but talk about more so
+[260.08] today um and explain in detail what all
+[263.28] these certain levels mean, right?
+[264.80] because there are I believe five levels
+[268.08] to be exact that allow you to operate
+[271.60] under a very very solid kind of baseline
+[275.12] and standard and it's not over you know
+[277.28] overfit for any kind of market with all
+[279.76] of these levels because you know a lot
+[281.84] of times we understand in a
+[283.60] consolidating market we're going to get
+[285.36] those deeper retracements um more so
+[288.08] than shallow retracements right and when
+[289.68] we're an expanding market we're going to
+[291.12] get those shallower retracements right
+[293.12] and price going to continue to expand in
+[295.44] that direction. So with that being said
+[297.92] and established, I do want to go ahead
+[299.52] and get into this GB model aka Yeet and
+[304.00] we will talk more about that and as well
+[306.48] as a few other things that I want to
+[307.92] talk about. I want to talk about, you
+[309.60] know, discipline and stuff of that
+[312.00] nature and how to be your best self as a
+[314.64] trader, be the best man you can be, be
+[316.64] the best trader you can be, etc., etc.
+[319.04] So, we'll go ahead and hop into this and
+[321.12] I will go ahead and get on the charts
+[322.64] and we'll run through some examples and
+[324.00] I'll discuss
+[326.12] more. Alrighty. So, now with a baseline
+[329.60] and kind of a preface established, I
+[331.44] kind of want to go ahead and dive, you
+[332.80] know, into the meat of what this video
+[334.96] kind of is meant to be about. So, just
+[337.92] kind of as a a preface, I do want to say
+[341.04] that in this video, I'm going to try and
+[343.04] put in as much detail into how my brain
+[346.64] operates and try and put it into words.
+[348.64] It's something that's not extremely, you
+[351.04] know, easy for me. You I do like to
+[352.80] consider myself, you know, a decent
+[354.96] educator in the way I explain things. I'
+[356.96] I've heard a lot of positive positive
+[358.80] feedback, but I really just want y'all
+[360.64] to know that I'm not in this video.
+[363.60] There's not a single thing about this
+[365.60] entry or entries because there's
+[367.84] numerous that I'm going to be hiding or
+[369.60] anything. This is literally a brain dump
+[371.84] of how I trade this market, how I'm able
+[374.32] to, you know, have the accuracy I have
+[377.12] and the the level of, you know, trading
+[379.04] that a lot of people will strive and
+[380.80] want to achieve, you know, as they
+[382.56] progress in their journey and stuff like
+[384.16] that. So, right now, I got up a mock
+[388.16] markup of some market structure, right?
+[390.00] So, we're going to go ahead, we're going
+[391.12] to dive in this way. That way you can
+[392.96] get a visual visualization of what I'm
+[395.76] going to talk about on actual
+[397.76] candlesticks before we actually hop over
+[399.52] into there. That way y'all kind of in
+[401.20] tune with this and not, you know,
+[403.28] feeling a little bit jumpy in regards to
+[405.20] what I talk about. So in regards to GB
+[408.88] levels, I want to go ahead and mark this
+[410.56] up. So simple fib retracement tool, I
+[412.56] just have certain levels right over
+[413.84] here. So this and I'll talk about where
+[416.80] each one came from. So right down here
+[419.12] we have the 295. Okay, the 0 295. We
+[422.08] have the 041 and I'll show my fib
+[423.84] settings here in a moment. Right up here
+[426.00] we have the 705 7475 and the 79. Okay.
+[431.12] So the way this 295 down here came about
+[435.60] was this is the polar opposite on an
+[438.00] opposite end scale of this 7475. Okay.
+[441.04] This 41 right here is a negative one
+[443.44] deviation away from this 705. So when
+[446.24] you think about it and you're measuring
+[447.52] a total range, this makes extreme
+[449.28] logical sense. And to be honest, I've
+[451.36] never seen someone talk about 0 295 or
+[454.28] 041 and kind of any kind of detail. It's
+[456.88] usually just normal, you know, OTE
+[458.72] levels kind of as an entry drill as a,
+[460.80] you know, a retracement before you get
+[462.88] that continuation back putting in a new
+[464.64] low right here. Right. So, kind of want
+[467.12] to dive into a couple things. So, first
+[469.36] and foremost, I do want to say that I
+[471.28] think a lot of people overlook market
+[473.12] structure in terms of their trading. A
+[475.52] lot of people, and I'll see this from
+[477.04] even big accounts on Twitter, which
+[478.80] blows my mind. Big accounts on Twitter,
+[480.48] YouTube, and they mark market structure
+[482.24] wrong. You know, you'll see, you know,
+[483.92] kind of a markup here. We have a higher
+[485.28] high, higher low, etc., etc. Right over
+[487.12] here, we get a flip. What do I mean by a
+[489.04] flip? Well, the last valid low, we close
+[491.60] below. That's our market structure
+[492.80] shift. A lot of times, what you'll see
+[494.48] is people will be marking up some low on
+[496.48] the right side of their chart without
+[497.84] any validation and viewing that as a
+[500.24] market structure shift. And you know,
+[502.40] more times than not, we're just coming
+[504.00] to retrace back to, you know, some sort
+[506.00] of percentage within this previous swing
+[508.40] before putting in a new high. So, it's
+[510.00] important to be able to understand
+[512.08] market structure, not even on a deep
+[513.76] level. This is just, you know, basic
+[515.20] understanding. And I'm sure most of the
+[516.88] audience watching this, you know, is in
+[519.12] tune with market structure and has a
+[521.68] quality understanding on it. But I
+[523.04] really just wanted to put that note out
+[524.32] there because you know I do think it's a
+[526.64] very very overlooked thing and it's such
+[528.40] a simple thing to just once you master
+[530.80] it you're really really set in your
+[532.40] trading. You can have you know numerous
+[534.48] entry techniques as long as you master
+[536.48] market structure you are good to go
+[538.64] right so first entry I want to talk
+[541.84] about um first and foremost right over
+[544.48] here is just a basic retracement entry.
+[546.72] So all I'm looking for is a you know
+[549.12] valid flip. How do we view that? Well,
+[551.84] we can view this and mark this out as a
+[553.84] total range over here as a what zone,
+[556.16] right? We can consider this a price
+[558.16] swing, price movement where in, you
+[560.32] know, in a bullish trend, price is going
+[561.84] to respect this. We can either come tap
+[563.36] the 30% of it, the 50% of it, the 70%
+[566.48] before putting in a new high, right? It
+[568.40] could be like a simple little thing like
+[569.68] this right over here. Boom, boom, boom.
+[571.68] Right? But in the instance, most of my
+[574.80] entry techniques right here, what I am
+[577.12] doing is I am waiting for price to do
+[579.68] what? get a valid flip. So, usually a
+[582.96] lot of times if I draw a box right over
+[585.12] here, let me drag this up a little bit
+[586.80] so I don't keep pulling up the taskbar
+[588.96] right over here. We could have some sort
+[590.72] of higher time frame POI, right? This
+[593.04] could be an imbalance. It could be a
+[594.88] order block on, you know, the 1 hour,
+[596.64] the 4 hour, whatever it could be, you
+[599.00] know? So, once we come up and meet that
+[602.08] high time frame POI, what am I looking
+[603.84] for specifically with this entry
+[605.36] technique? Right? Like I said a moment
+[606.72] ago, I'm looking for a close below this
+[608.48] low, right? This indicates to me that,
+[610.64] you know, market's changing. We're
+[612.40] likely to continue back to the downside,
+[614.48] maybe after some kind of healthy
+[616.00] pullback on a higher time frame. Simple
+[618.24] entry technique. All I'm waiting for is
+[620.16] an entry blind limit. You know, 90% of
+[623.20] my trades. And I I kind of pride myself
+[625.44] on this because, you know, it takes a
+[627.60] lot of, you know, a lot of balls to be
+[629.36] able to blind limit, especially NASDAQ
+[631.68] and Q. It's not an easy thing to do, but
+[634.24] with levels like this, you can. That's
+[635.76] how I'm able to achieve the accuracy I
+[637.92] do or you know my entries have is purely
+[641.12] based off of these levels. I would say
+[642.88] realistically 90 to 95% of my trades are
+[646.56] revolved around GB levels aka Ye right.
+[651.16] So first entry technique all I'm waiting
+[653.76] for is what a retrace up to that 7475
+[656.80] and then I'm looking to exit down at
+[659.60] this point 41 down here or this 0 295.
+[663.12] The reason I say that is, you know, and
+[665.92] the reason kind of I talked about
+[667.28] earlier that this isn't overfitit for
+[669.12] market conditions because here's the
+[670.80] beautiful thing in a quality moving
+[673.84] market. What are we expecting? New
+[675.60] highs, new lows to put in. We're not
+[677.20] really expecting inner range chop. But
+[680.08] when we look at this, what do these
+[681.76] levels save you from? Right? We have
+[683.52] this 041 295. If the market wants to put
+[687.20] a failure swing over here, what do we
+[689.28] already do? We already captured profits
+[690.80] and we're already out of the position.
+[692.16] And this comes down to, you know, kind
+[693.92] of recognizing what kind of conditions
+[695.60] you are in and, you know, utilizing
+[698.32] those to your advantage and what your
+[700.56] anticipation is. Right? If we're
+[702.08] consolidating on a higher time frame,
+[704.08] that's when I'm going to look to exit at
+[706.04] 041. 295 rather than a new low being
+[709.20] established. Rather, if we're an
+[711.04] expanding market and we get that healthy
+[712.88] retracement back to 04 or 7475, I'm
+[716.24] going to be looking to take an exit at a
+[717.84] new high or a new low. Okay. So the
+[720.96] second entry technique uh that I would
+[723.52] say is extremely useful and why I was
+[725.52] saying earlier that this is not overfit
+[727.52] for anything and the reason I say that
+[729.76] is because these levels down here 41
+[734.88] like I would say out of all the levels
+[737.44] down here 7475 and these right down here
+[741.44] these
+[742.36] 41 and 295 these are a cheat code
+[746.88] telling you you can time these correctly
+[749.20] once you have some proper structure
+[750.72] aligned and we'll we'll dive into this
+[753.12] in some really really good examples and
+[754.72] my goal is I want to show you the the
+[756.24] fractal nature of this the beautiful the
+[758.16] beautiful nature of this model and entry
+[760.48] technique right but these 41 295 here's
+[765.44] the beautiful thing when you start to
+[767.28] get that retrace back up into the range
+[769.28] what you're going to see is you're going
+[770.32] to see some low time frame structure
+[772.24] start building it could be on the
+[773.44] seconds charts it could be the one
+[774.64] minute this could be your five-minute
+[775.84] structure and we're building one minute
+[777.12] structure down here a lot of times What
+[779.44] you'll see is price is going to do what?
+[781.44] We're going to start creeping back up
+[782.80] into the range forming that retracement
+[784.56] leg. An easy way to confirm when we are
+[787.04] indeed going to establish this as the
+[789.44] low before we get that retrace up to
+[791.20] here is by monitoring these 295 and 401
+[795.12] levels. This right down here uh first
+[798.16] close above the 0 295 is a little bit
+[801.52] riskier. I would say I would let some
+[803.36] more structure form, you know, kind of
+[805.44] get that continuation back up here, back
+[807.52] to this 041. I would say probably about
+[809.68] 80% of the time we close above that 41.
+[812.88] That's going to send the retrace back up
+[814.96] here as we're building this low time
+[816.80] frame structure before we come down, you
+[818.48] know, and establish a new low, right?
+[820.72] That's the beautiful thing about this.
+[822.08] It's so cool because in a shallow
+[824.64] retracing market, what can you do? You
+[827.36] can execute off of these levels, right?
+[829.44] And I'll show you here in a little bit
+[831.12] what I mean by this and how I utilize
+[833.36] this. But in a shallow retracing market,
+[836.64] you can utilize these. Get a short
+[838.88] retracement up to some sort of imbalance
+[840.40] here. Play the continuation off of
+[842.56] expect bounces off of those, you know,
+[844.48] etc., etc. So, with that established,
+[847.76] right, those are kind of the main
+[848.80] things. And I I this is kind of just
+[850.64] like a a preface, right? I want to get
+[852.80] these levels in your head. And let me
+[854.32] plop these up so you can see it. Right?
+[855.68] Here we have the
+[859.88] 29541797475705 and obviously the one and
+[861.92] the zero, right? The the zero I have
+[864.64] pulled away. That's just the anchor low,
+[866.40] right? And then the the one up here just
+[867.92] to show, you know, where that valid or
+[870.00] protected high would be. So, right here
+[871.76] are my fib settings if you want to
+[873.68] screenshot these uh for back testing
+[875.68] purposes and implement them. Um, so now
+[878.08] we're going to hop over and go ahead and
+[879.76] dive into some actual chart examples and
+[882.48] I'm going to show you how I utilize it.
+[884.00] And actually, one of the trades I did
+[885.68] take today, uh, I'm going to show you
+[887.52] kind of in detail and talk about in
+[889.84] detail what I would see in real time how
+[891.92] I utilize these and went about my
+[896.12] trades. All righty. So, for this first
+[898.96] example, I really kind of want to start
+[900.72] on the daily chart and kind of work all
+[902.64] the way down to I think we'll go over
+[904.64] some 5-second examples uh, in this video
+[906.88] because I just want to I just want to
+[908.16] show you the the true power of it,
+[909.76] right? So looking at this and what I was
+[912.80] talking about a moment ago, what did I
+[914.56] say? Right, I said the 0.41 is going to
+[917.28] be your safest kind of entry
+[919.92] anticipation in returning back before
+[922.64] you get that deep retracement leg. So if
+[924.56] we look at this, right, if we're
+[925.68] measuring this low over here all the way
+[927.92] up to this high right here, first and
+[930.00] foremost, what do we see?
+[932.36] Right? Well, we have a retrace here.
+[935.52] What do we do? We close above this high,
+[937.76] right? Right. So, kind of what we were
+[938.88] talking about on a different
+[940.88] perspective. What is this? Right. Boom.
+[943.36] Close up here. Retrace this down here.
+[946.56] Strong low. We should realistically not
+[948.56] come down and meet this. We We should
+[950.56] stay in a range. We should get a retrace
+[952.80] down here. So, that this is how we know
+[954.96] this is going to be a valid area for us
+[956.48] to anchor off of um and and get and pull
+[959.52] these levels off of. So, we're anchoring
+[961.52] off of this low. We have our anchor up
+[963.68] to this high right up here. So looking
+[966.24] at this, what do we have up here? Our
+[968.08] 295 right at
+[970.68] 21,09350. And I'm on MQ by the way.
+[972.88] These could be a little bit different on
+[974.16] ENQ. Uh just because it's sometimes they
+[976.24] do disorrelate a little bit in terms of
+[977.92] actual price numbers, but look at this
+[981.28] specifically once we establish this
+[983.04] high. Where does all of this wicking
+[985.20] happen? Right at that 295. First wick,
+[988.24] second wick, we get a little close below
+[990.00] it. At that same time, we're just
+[991.60] mitigating structure down here. We come
+[993.60] back, we close up above it. We come
+[995.44] down, we wick it again. We displace
+[997.20] away. Come down, wick it again. Displace
+[999.28] away. This is an important fact right
+[1000.88] here. Right? What do we do up here? We
+[1002.96] fail to make a new high. So, what does
+[1004.88] this signify and indicate? What's weak?
+[1007.60] These lows down here. How do we know
+[1009.76] that? When price fails to make a new
+[1011.68] high, what are we expecting the draw in
+[1013.36] price to be? The lows that put in that
+[1015.36] failure swing high right up here. So,
+[1017.20] with that established, what can we start
+[1018.96] to anticipate? Well, okay. If we know
+[1021.84] with high conviction that the market's
+[1023.52] likely going to be gravitating down
+[1024.88] towards these lows, what do we have to
+[1026.80] anchor off of? Right? If we go down to
+[1028.24] the 4hour chart, let's look at this. So,
+[1030.40] we go down to the 4 hour, we're starting
+[1032.16] to gravitate to these lows. Let's go
+[1034.08] ahead and mark these out over here. So,
+[1036.00] if we're want to take a high conviction
+[1038.92] entry, playing that retrace leg back,
+[1043.36] getting that deeper retrace back to that
+[1044.96] ordinary, that 7475, the 705, the 79.
+[1048.64] What are we waiting for? Right, we're
+[1050.00] waiting for that to be attacked and
+[1051.60] we're waiting to see how price responds
+[1053.76] down here. So, you can see this line
+[1055.44] right here at
+[1057.80] 20,56825. That is going to be our 041.
+[1060.64] That's where you want to put your focus
+[1062.48] if you're playing that retrace back into
+[1064.40] the range. Once we have that
+[1066.08] established, that's going to give you
+[1067.28] high conviction, a high probability that
+[1069.60] we are not going to be returning back up
+[1071.20] to that high. So, what do we see here?
+[1073.92] Right, we get an initial close right
+[1076.56] here at this candle right here. So, I'm
+[1079.60] on the 4 hour chart right here, this
+[1081.04] 9:00 a.m. candle on Friday, February
+[1084.72] 28th, 2025. So, the way I classify body
+[1088.40] closes, and this is kind of specific to
+[1090.56] me, and some people have picked up on
+[1092.48] this because it's very, very powerful,
+[1094.40] is when we establish some wicks like
+[1096.32] this, I'm waiting for a true body close
+[1098.48] to happen once we close below this wick
+[1101.04] right here. If we don't do that and we
+[1103.28] leave a heavy wick off of a key level
+[1105.20] area, right, this should still hold.
+[1108.32] What does this do? Look how beautiful
+[1109.92] this is, right? Without that body close
+[1112.72] below that wick right there indicates
+[1115.52] what we are supporting this area,
+[1117.84] meaning higher prices, a deep retrace
+[1119.92] could be likely. What do we see at this
+[1122.00] exact point? What do we retrace up to?
+[1123.76] So, right down here is the 041. We
+[1125.84] retrace up beautifully back up to that
+[1128.40] what? 295. We come up, we wick off of it
+[1131.36] on the 4 hour. Look how beautiful this
+[1133.04] entry is,
+[1134.52] right? We could even label this wick. I
+[1137.84] use wicks a lot, by the way. But there's
+[1139.68] a there's some videos that T has on his
+[1142.24] uh on his YouTube channel that talks
+[1143.76] about wicks. And I truly I really really
+[1145.84] like the way he talks about them. Very
+[1147.68] very powerful. Um but anytime you kind
+[1149.84] of have those extreme wicks, you should
+[1151.44] really be putting a big focus on them,
+[1153.20] especially when they are aligned with
+[1155.36] key areas. For example, if I was trading
+[1157.20] like a 4 hour right here, right? I see
+[1159.36] this wick. It's the closest POI in
+[1161.72] alignment with what? Our key area.
+[1164.64] That's important. You got to have these
+[1165.92] like lower time frame POIs in alignment
+[1168.48] with these key areas for them to really
+[1170.32] really be of extreme importance. And
+[1172.96] that's what gives you that accuracy,
+[1174.48] right? So, if we're taking an entry off
+[1176.64] of this wick, look how minimal this draw
+[1178.72] down is with that key level right right
+[1181.60] over here. 13 points on a 4hour candle.
+[1184.00] You kidding me? Before I retrace down
+[1185.76] here. And here's an important thing
+[1187.28] right here. Kind of what we were talking
+[1189.68] about earlier in the video. What do we
+[1191.84] see? Low, high, low, high. Once we close
+[1195.44] below this low, what are we still in? A
+[1197.52] continuation. Okay. So, we see that
+[1200.24] continuation downtrend, right? We get a
+[1202.72] good what? Body close below that 41.
+[1206.32] What do I mean good body close? Well, we
+[1208.08] get an immediate body close here on this
+[1210.64] March 3rd, Monday candle, 1 p.m., and we
+[1213.28] get this continuation close here. So,
+[1215.12] you could either be taking an entry here
+[1216.96] or you could be waiting for that, you
+[1218.56] know, push away. I'll say this, out of
+[1222.44] everything, anytime I'm taking an entry
+[1225.12] off of the 041, playing it back into the
+[1227.48] 7475, I'm always looking for
+[1229.84] displacement away from that area. Once
+[1233.04] we get that confirmed close below, we
+[1234.96] get displacement away. That's when it
+[1236.88] becomes of significance to me. Okay?
+[1238.96] That's when it becomes really, really
+[1240.40] important. That's when I want to engage
+[1242.80] in that area. find whatever POI is in
+[1245.84] relation to that and then trade in
+[1248.32] accordance to that. So this is this move
+[1251.20] right here is what I would consider
+[1252.64] strong displacement. You can see this is
+[1254.08] a pretty lopsided candle. Yes, we get
+[1255.84] that body close there, but what do we
+[1257.60] leave a heavy wick? This is still a body
+[1259.52] close. So it's a good and a great sign
+[1261.68] to see. We didn't have any, you know,
+[1263.44] wick wicking like we did up here. Failed
+[1265.84] to close with that wick, right? But this
+[1268.00] is a key factor right here. This shows
+[1269.60] willingness and price. Once we get this
+[1271.68] move away, what can we do? Right? We can
+[1274.40] play. And this is just a higher time
+[1276.48] frame. You know, I'm just showing you on
+[1278.16] the higher time frame how this kind of
+[1279.60] goes about and plays about. And I'll
+[1281.36] show you on the lower time frame here in
+[1283.12] a moment. But this is just playing those
+[1285.92] levels specifically with like little
+[1287.44] lower time frame POIs. So, we have that
+[1289.68] body closed below the 41. What can we
+[1292.56] see? And this is one of my favorite
+[1294.16] things to utilize is fractalss. Right?
+[1296.48] If we look at this, what do I mean by a
+[1298.00] fractal? Right? It's these wicks right
+[1300.16] here. When we have this wick printed,
+[1302.64] this wick printed, and we get a body
+[1304.80] close below this, what is this going to
+[1307.04] be on a lower time frame? And actually,
+[1308.48] I want to mark this and go look at this
+[1309.76] on like the five minute here in a
+[1311.12] second. If I can go back, I should be
+[1313.28] able to. Um, this is going to be a what?
+[1316.72] Valid low, a valid high, a closed blow.
+[1320.32] So, this is going to be a zone, a swing
+[1322.96] zone on a lower time frame. When we have
+[1325.36] that swing zone established, this is
+[1326.88] going to be a sensitive area. You can
+[1328.48] see right over here we come up, we tap
+[1330.24] the midpoint. What do we do? What are we
+[1332.16] in alignment with that 041 close above
+[1334.64] or close below strong displacement away?
+[1337.44] Come up, tap that key area. Where can we
+[1339.52] be targeting? New lows to be
+[1341.48] established, right? Come down, attack
+[1343.92] this low. Now, if we zoom out with what
+[1346.64] I was talking about at the beginning of
+[1347.92] the video, once we got that close below
+[1350.00] the 41 and we come up and rebalance,
+[1352.48] what are we anticipating? That move down
+[1354.72] to where those three key areas, right?
+[1357.12] the 705,
+[1359.48] 7475, and the 79. So on M andq, this is
+[1363.60] a different number on ENQ, I believe,
+[1366.08] and that's what I'm using for my high
+[1367.52] time frame levels, NQ specifically. I
+[1369.76] believe it's like
+[1371.80] 1895275 or something like that, if I
+[1373.44] remember correctly. I haven't checked it
+[1374.40] in a couple days, but it should be
+[1375.60] somewhere around there. But this, if
+[1377.44] you're charting on MQ, this should be an
+[1379.12] extremely sensitive area. You can see
+[1380.88] what we're doing at the 705 down here.
+[1383.12] We've established this wick right here,
+[1385.36] printed off. So, this should be
+[1386.48] supporting. We do have this devil's mark
+[1388.56] right up here, or wickless candle, I
+[1390.40] should say. Some people like to say
+[1392.16] devil's mark pertains to certain things.
+[1393.76] I always just call wickless candles,
+[1395.20] devil's marks. Uh, but we'll say it's a
+[1397.60] wickless candle for this scenario.
+[1398.96] Right? So, we have that wickless candle,
+[1400.96] right? So, that could be an area we're
+[1402.48] looking for a retrace back into. You
+[1404.40] know, we're starting to, if we go down
+[1406.00] to the 15-minute, what are we starting
+[1407.76] to do? And this is my thesis on what's
+[1409.76] happening here, right? And and I'm kind
+[1412.32] of I wouldn't say I'm getting into a
+[1413.92] rant. This, like I said, this is how I
+[1416.32] like talk about things. It's just a big
+[1417.84] brain dump. It's a big brain dump. And I
+[1419.36] I do think there's a lot of value in
+[1421.44] this specifically. But what do we see
+[1423.28] here, right? In my opinion, what we're
+[1425.28] doing is we're just generating what?
+[1427.60] We're generating liquidity right here.
+[1429.20] We're trying to get people to go long in
+[1431.04] their long-term positions. And if I'm
+[1432.80] wrong about this, by all means, I'll
+[1434.48] I'll accept being wrong about this. But
+[1437.24] truthfully, I think what we're going to
+[1439.12] see here, right, we've generated this
+[1440.88] low, high, close up low, strong low,
+[1443.52] come up, establish a new high, boom,
+[1446.32] right over here. Come down, trade into
+[1449.12] that, put in a new high right over here,
+[1452.72] put in this low over here, boom, boom,
+[1455.28] boom. If you want to know why we didn't
+[1456.72] take London low, this is why. This body
+[1458.88] close over here. If we go down to five
+[1461.56] minute, right over here, this body close
+[1464.32] up here means what? This is a strong low
+[1467.84] down here. We should not be sweeping
+[1469.60] that. If we swept that and close below
+[1472.08] it, that means we are likely going to
+[1474.64] falsify this trend and we're coming down
+[1476.96] here. Okay, that's the reason that held
+[1479.20] because I I remember seeing on my
+[1480.56] Twitter today a lot of people were short
+[1483.16] into I believe that was London or Asia
+[1485.84] low. I don't remember off the top of my
+[1487.04] head, but I believe this may have been
+[1488.56] London low. This may have been Asia low
+[1490.00] down here. I think that's Yeah, that's
+[1491.60] correct. Or no, that's a previous PM
+[1493.60] over there. But besides the point, if
+[1495.52] you want to know why we didn't meet that
+[1496.80] today, that's why, right? So,
+[1499.68] realistically, what I would anticipate
+[1501.36] is we're going to probably come up,
+[1502.88] sweep this, tap into this structure over
+[1506.00] here. This has this immediately jumps
+[1507.68] out to me. This structure over here,
+[1509.44] this is what I would consider the SND
+[1511.28] structure, right? This structure right
+[1513.20] here, we could really say all this right
+[1516.00] over here is responsible for this body
+[1517.92] close below this low. This is going to
+[1519.76] be an extremely sensitive area
+[1521.28] coincidedly. What does it line up with?
+[1523.20] Right, we have that wickless candle up
+[1524.88] there. We could dig into that. That
+[1526.48] would put us at our force swing before
+[1528.72] getting that continuation down here
+[1530.16] because I don't think we put in a bottom
+[1531.92] by any means. Right? We could get a
+[1533.44] healthy retrace either up into this
+[1535.52] structure or come up and fully mitigate
+[1537.92] this previous structure over here. Right
+[1540.48] over here. come up, maybe tap to 50%,
+[1542.80] maybe sweep this internal high, but
+[1544.64] realistically the way this market's
+[1546.32] moving, we have not been getting those
+[1547.92] extremely deep retracements. So, I would
+[1550.24] be putting my primary focus on this
+[1553.40] 86550 somewhere around there. Like I
+[1555.44] said, this I'm in Q, so it's going to be
+[1556.80] a little bit different on
+[1559.00] INQ. So, with that established, I want
+[1562.72] to get into some lower time frame
+[1564.80] examples now because I really just
+[1566.32] wanted to show you kind of on a daily
+[1568.16] perspective how you could have
+[1570.00] anticipated this. And I've been calling
+[1571.68] this for a while. I think I have some
+[1573.20] screenshots. I should probably um post
+[1575.76] them on Twitter or something or just
+[1577.20] whatever outlets I can, but I was
+[1578.96] calling for this right over here. Once
+[1580.24] we once we were chopping around up here,
+[1582.08] we have accumulation above a valid swing
+[1584.64] area, right? We should be expecting some
+[1587.20] sort of return back into this range
+[1589.52] before coming back up and doing what?
+[1591.84] Because right now, until this low down
+[1594.56] here is broken, this remains a weak
+[1597.68] high, right? That's just simple basic
+[1599.36] market structure. And a lot of people
+[1600.64] overlook that. So with this example
+[1603.04] established, I want to go ahead and dive
+[1604.64] into some lower time frame examples. And
+[1606.32] like I said, we're going to kind of go
+[1607.92] down. I do want to show you some 5sec
+[1610.08] 5-second examples today because I think
+[1612.24] it would be really cool so you all can
+[1613.68] see the actual true fractal nature of
+[1616.40] and the beauty of all of these levels
+[1618.96] and how accurate and how just precise
+[1621.60] they are. Right? So with that said,
+[1624.08] we're going to get into some different
+[1625.44] examples and I will catch you all in a
+[1627.52] moment.
+[1629.36] All right. So, this is going to be a
+[1630.72] fivem minute example kind of covering
+[1632.56] what I was referring to as quote unquote
+[1634.80] the first entry technique in regards to
+[1637.04] just waiting for a simple retrace back
+[1638.56] to those levels and executing based upon
+[1640.56] that. Right? And and this kind of goes
+[1642.96] in um and like I said, this is just a
+[1645.20] lower time frame example, but this goes
+[1646.72] in hand with what I was talking about is
+[1648.96] the power and the I would say the
+[1652.64] ability that these 41 and 295 gives you
+[1655.68] instead of reaching for new highs and
+[1657.12] lows just and saying it's not overfit
+[1659.92] for market conditions because if we look
+[1661.36] at this right over here real quick,
+[1662.64] right, we have this low established.
+[1664.48] Okay, once we establish this low, if I
+[1666.16] get a little pad tool over here, we come
+[1668.08] up, we establish this high. Boom. We
+[1671.20] established this low. We established
+[1673.04] this high. So, what can we label the
+[1675.12] close above this high as? Right? We
+[1677.36] could label this as a market structure
+[1678.56] shift, a true market structure shift.
+[1680.32] Obviously, we could get nitpicky and,
+[1682.08] you know, go on a lower time frame and
+[1683.68] look for, you know, smaller swings and
+[1686.00] classify that as a market structure
+[1687.52] shift. But for this example, this is how
+[1689.44] I'm going to be using this. This is the
+[1690.80] powerful one right up here. Once we get
+[1693.20] a close below above that, right, what
+[1696.24] does that indicate? This low down here
+[1698.32] is our what? Our strong low. Once we
+[1700.88] have that, you know, close up above,
+[1703.20] this means that more than likely the
+[1705.20] market should not be returning down to
+[1707.04] this low and we should be safe to
+[1708.48] execute off of these levels. Okay? So,
+[1711.76] all we have to simply do is once we get
+[1713.28] a body close up above that, what are we
+[1714.72] doing? We're measuring what the total
+[1716.16] range from that low up to this high. If
+[1718.32] we drag this over right over here, what
+[1719.68] do we see? Right? Price does what? We
+[1722.16] get a really, really strong
+[1723.28] consolidation phase. We could
+[1724.56] realistically say all of this is what?
+[1726.48] All this is accumulation, right? And
+[1728.88] down here is our what our deviation away
+[1730.88] from the range was coincidedly what is
+[1733.92] it coming to mitigate right at that same
+[1736.24] moment. And here's the cool thing about
+[1737.84] this and what I was saying a moment ago
+[1739.28] about low time frame structure because I
+[1741.60] understand this right down here this low
+[1744.64] close below. I just know on the the one
+[1747.12] minute time frame it's going to be a lot
+[1748.32] cleaner. But for this for example sakes
+[1750.00] right over here we have a close below
+[1751.52] close above. So this could be an interal
+[1753.12] market structure shift. Right? If we
+[1755.12] label this out as a whole area, what is
+[1758.24] this? Our 50%, what do we come down?
+[1760.88] What do we tap? What do we bounce off
+[1762.16] of? What is this lined up with? And this
+[1764.48] is something I preach a lot is you need
+[1768.08] to have multiple things lined up for
+[1770.24] your entries. If you just go recklessly
+[1772.56] just throwing limits around, you know,
+[1774.48] just cuz you think the area looks good
+[1776.72] without actually, you know, looking at
+[1778.40] it in detail and being like, okay, I
+[1781.04] have these levels. What lines up here?
+[1782.88] Is this of logic? Do we have, you know,
+[1784.48] an hourly imbalance? Do we have a 4hour
+[1786.24] imbalance? Do we have a 30 minute order
+[1788.40] block or a CSS, whatever you want to
+[1790.40] call it, right? That's a very very
+[1792.80] important factor. And I would say that's
+[1795.12] what allows me to, you know, execute on
+[1797.52] the level I do is I'm very very adamant
+[1800.16] about, you know, stuff lining up with,
+[1802.56] you know, my certain levels. And this in
+[1805.04] itself, I would say the levels alone are
+[1808.40] extremely extremely powerful. But just
+[1811.12] having that little bit of extra
+[1812.72] confluence um gives you and allows you
+[1815.52] to kind of be in part with those more
+[1817.68] explosive moves. Right? So like I said a
+[1820.24] moment ago, what we see up here, a big
+[1822.16] consolidation, you know, kind of
+[1823.60] bouncing between this area kind of in no
+[1825.20] man's land, right? You don't really want
+[1826.56] to be executing at the 50% of a entire
+[1829.28] range. You know, you could be measuring
+[1830.72] premium discount, you know, stuff of
+[1832.80] that nature. So all we're waiting for,
+[1835.60] like I said, this is kind of entry
+[1837.36] technique number one is we're waiting
+[1838.80] for that 7475 to be met. Okay, we have
+[1841.68] our strong low established. We have our
+[1843.76] what? Our weak high established over
+[1845.76] here, right? Believe it or not, that
+[1848.00] should be the weak high. Once we come
+[1849.76] down and mitigate this, like I said, I
+[1851.52] always take blind limits. That's just
+[1853.28] how I am as a trader. Um, take blind
+[1855.92] limits there. Boom. Over there. And what
+[1859.04] am I doing? I'm targeting that 41, that
+[1861.76] 295. Now look at this. This is the cool
+[1864.16] thing about this and you'll see this if
+[1865.52] you go and back test this. What do we
+[1867.36] have right here? Once we get this body
+[1869.52] close, you know, up above this area
+[1872.48] after we've already exited there, what
+[1874.88] can we do is we can look realistically
+[1877.76] for some sort of continuation move that
+[1879.68] way. Here's the beautiful thing about
+[1881.20] this, right? We've already closed out a
+[1883.12] position. We've already locked in
+[1884.64] profit. We're good, right? But there is
+[1887.60] another possible opportunity depending
+[1890.24] how the market's moving. If we're
+[1891.52] expanding clean, you can look for
+[1892.96] continuations off of these levels. What
+[1895.04] do we get? A close. And you'll see this
+[1897.04] a lot instead of trading back into the
+[1898.96] range. I would say they're a lot more
+[1900.48] sensitive once you get some displacement
+[1902.32] away, trading back into the range versus
+[1904.96] trading out of the range. A lot of times
+[1906.88] what you'll see when we trade out of the
+[1908.40] range right here and we clear up above
+[1910.96] these levels is you'll see that extreme
+[1914.00] level closed up above. So that 295 and
+[1916.24] then what you're going to see is price
+[1917.76] will like to return back to that 041.
+[1920.64] You can see right over here once we get
+[1922.08] this body close up above on this 1150
+[1924.96] candle right over here. What do we come
+[1926.48] back and mitigate? Right? We come back,
+[1928.72] we tap that 41 right over here. Very,
+[1932.16] very nicely. What do we have at that
+[1934.16] same exact point? Like I said, one of my
+[1936.72] favorite things to utilize and keep an
+[1938.24] eye on is what? Wicks, right? And we
+[1940.48] have an extreme wick like that previous
+[1942.08] example we were looking at earlier. We
+[1944.08] have an extreme wick lining up here,
+[1945.84] right? Right at our area of interest.
+[1948.08] What do we know with high conviction
+[1949.36] that this is going to be a highly likely
+[1951.20] area that we could play continuation?
+[1953.68] We're already basically derisk cut,
+[1956.00] right? We have, you know, this whole
+[1958.08] move that we capitalized on, secured
+[1960.48] good profits from. Now, since we have
+[1962.72] recognized what the market's moving
+[1964.40] clean, we're expanding hard. We can look
+[1965.92] for some continuations back up to where
+[1968.96] that, you know, weak high that we
+[1970.48] think's weak. And this is why it's
+[1972.08] important to like, you know, trail and
+[1973.36] manage positions and stuff like that
+[1974.80] because if we zoom out like what I was
+[1976.48] talking about earlier when we fail to
+[1978.64] make a new high right over here and a
+[1980.72] lot of times what you'll see this is
+[1982.32] where the SMT actually matters and a
+[1984.56] range SMT. Yes, you can scalp it, but
+[1987.28] your you
+[1989.08] know your true focus on SMT and I know
+[1993.20] I'm kind of jumping around. This is just
+[1994.64] like I said how my brain operates. But
+[1997.12] your true focus in regards to SMT is did
+[2000.56] ES or ENQ fail to take a weak high. For
+[2004.32] example, if ES went up and put in a new
+[2006.64] high, but ENQ did not go clear the week
+[2010.24] high, that's where the SMT really
+[2012.08] matters. You know, not inner range
+[2015.04] stuff. I I ignore kind of any inner
+[2016.96] range SMT for the most part. It's at the
+[2018.96] extreme levels. You know, are we
+[2020.40] mitigating a swing? Did ES mitigate it?
+[2023.28] But ENQ didn't ENQ mitigate it but ES
+[2025.84] didn't you know those kind of little
+[2027.04] nuances in price right so like we were
+[2030.08] talking about the original original
+[2031.92] start failure swings right over here
+[2034.80] what's it what's the true function when
+[2036.72] we establish a failure swing how do we
+[2038.16] know it's a failure swing well what do
+[2040.08] we see here on a lower time frame we
+[2042.56] have what close above close
+[2046.44] below flip what do we what can we do we
+[2050.00] can measure this total range right over
+[2052.28] here
+[2053.96] 30%. This is how we know that likely
+[2058.64] this will be a failure swing once we get
+[2061.12] that internal flip. Right? If we go down
+[2062.88] to a lower time frame, this would be a
+[2064.16] lot cleaner. I know it looks a little
+[2065.20] bit messy up here, but you can you can
+[2066.96] get the point. And now what happens in
+[2069.68] price? Where's the function? And where's
+[2071.92] price's objective? Down to this week low
+[2074.24] down here at
+[2075.48] 20,76. Right? So just kind of a little
+[2077.84] simple thing. So there's a there's a
+[2079.76] good fiveminute example. um kind of in
+[2081.84] pair with something I didn't talk about,
+[2083.84] you know, right off rip was playing
+[2086.08] those continuations when the market's
+[2087.68] moving clean over here um versus playing
+[2091.20] those kind of inner range, right?
+[2092.72] Because usually when they're chopping,
+[2093.76] it's not the cleanest, but it's
+[2095.12] something to pay attention to. So, now
+[2096.56] we're going to get into some lower time
+[2097.76] frame examples and uh go over them
+[2101.56] now. All righty. So, now we are on the
+[2103.92] one minute. We're going to cover some
+[2105.28] examples, kind of go over each little,
+[2107.52] you know, detailed thing. Um but you
+[2110.08] know first and foremost kind of as like
+[2112.24] a precursor right over here. Right over
+[2114.00] here what do we have? Close below close
+[2116.40] above. Okay. So we have this pocket of
+[2119.12] price. This is could be an area of
+[2120.88] interest for us until we do what? When
+[2123.12] we you know return back in a range. What
+[2125.76] are we coming back to mitigate right
+[2127.20] here? This structure internally is
+[2129.52] responsible for what the break up here.
+[2131.92] Okay. That's going to be a sensitive
+[2133.20] area. This is kind of what I was talking
+[2134.64] about uh when we were going over those
+[2136.24] examples earlier. This is a good
+[2137.44] representation of SND structure right
+[2139.04] over here. So with that established,
+[2141.92] okay, when we come down and a path tool
+[2144.40] will help visualize this more, right? We
+[2145.92] have our close there, close there, boom,
+[2148.80] we close up above here, we get a shallow
+[2151.12] mitigation here. When we come up and we
+[2153.28] close above this high right over here,
+[2155.52] this
+[2156.36] 451, that's when I start to look at this
+[2159.04] range right over here. When we come up
+[2160.40] and establish that high, that's when my
+[2162.40] focus shifts to this and we're going to
+[2164.16] be playing off of that. So, with that
+[2165.92] established, that's why I'm anchored off
+[2167.44] of this because this never got a retrace
+[2169.04] down into that. But, if we look at this
+[2171.44] right over here, right once we get this
+[2173.12] second continuation break, and this is
+[2174.88] something I like to look at a lot.
+[2176.88] Usually, when I am framing reversals, I
+[2180.00] would say that second continuation
+[2182.08] confirmation, that second new high
+[2184.08] established is when I will really be
+[2187.20] putting my focus on price. Usually those
+[2189.44] first flips, those first market
+[2190.96] structures, you can run into, you know,
+[2192.48] some little issues because a lot of
+[2194.40] times what you'll see is price will
+[2196.00] generate these fake flips and fake
+[2197.76] moves. Um, if we're not at a high time
+[2200.08] frame key area, right? You know, that's
+[2202.56] just kind of little simple things and
+[2203.84] it's all codependent on what you
+[2205.76] classify as your high time frame area.
+[2207.28] That's why I don't want to get too
+[2208.72] detailed about that. Um, because
+[2211.60] everybody views and uses different POIs,
+[2213.60] right? I use imbalances, CSS's, order
+[2216.00] blocks, fractals, everything of that
+[2218.00] nature. And I know not everybody that's
+[2219.60] watching this uses those same things, so
+[2221.76] I'm not trying to put too much in your
+[2222.96] head. Just kind of giving you a a strong
+[2224.96] baseline of of how this operates, right?
+[2227.44] So, with this fresh range established
+[2229.76] right over here, what can we do? Well,
+[2231.52] we have our anchor low over here. We
+[2233.20] have our anchor high over here. What do
+[2235.20] we see price do? Right? A lot of times,
+[2237.68] the consolidation above that recent
+[2240.00] break is going to occur at that 295.
+[2242.40] Right? You can see our 295 right here at
+[2245.88] 19,4675 is exactly where this
+[2248.16] consolidation occurs. That's roughly
+[2250.32] probably about 30% of this total range
+[2252.40] of consolidation where that keeps
+[2254.00] happening. Right? So, like I was talking
+[2255.92] about, if we're wanting to trade back
+[2257.44] into the range, what are we looking for
+[2259.84] in an ideal perfect scenario? We're
+[2261.68] waiting for price to do what? close
+[2263.52] below that 041, get decent displacement
+[2265.76] away from it, retrace back right back to
+[2269.20] that area before we can play that
+[2270.80] continuation back down into the 7475.
+[2273.52] So, what do we see here? Well, what do
+[2275.92] we see? Price consolidates, breaks down
+[2278.00] right over here. We come down, we barely
+[2279.76] miss the 705, which is fine. What do we
+[2282.72] do? Well, we have that confirmation
+[2284.64] close there below this low. We have
+[2286.80] strong displacement, meaning this should
+[2288.88] remain intact. This high up here should
+[2290.56] remain intact and we shouldn't retrace
+[2293.20] back to that until we meet this area.
+[2296.40] So, with that established, what can we
+[2298.48] begin to do and look for? Well, there's
+[2300.40] a couple things. We have this low closed
+[2302.48] below internally. We can measure that.
+[2304.64] We could do 30 or 50% off of that,
+[2307.76] right? Boom. Let me mark this really
+[2310.16] quick just so it's on the chart. I'm
+[2311.36] going to delete it here in a second. We
+[2312.80] have our 30% there. But also, what do we
+[2315.44] have? Right? We have a O block right
+[2317.44] here. Boom.
+[2320.20] Boom. Boom. What is this aligned with?
+[2323.36] Well, we have that close below the 041.
+[2325.84] We have this wick here. We have this
+[2328.08] unmitigated O block. Why do I mean it's
+[2330.00] unmititigated? Oops. I did not mean to
+[2332.16] do that. Let me fix that really
+[2336.12] quick. We have that unmitigated order
+[2338.48] block. Boom. Okay. So, we have reason to
+[2341.28] think this is where price is going to
+[2342.48] gravitate to. Now, what does this line
+[2344.08] up with?
+[2346.96] magic 295. We come up, we tap that, we
+[2350.72] sweep out this lower time frame high
+[2352.56] right here. This is a lower time frame
+[2354.16] high on like a five or a 15 second. That
+[2356.48] comes up, taps that, boom, we can look
+[2358.64] to take an entry off of that. This is
+[2360.24] also the S&D structure as a close below
+[2362.72] this low over here. What does this
+[2364.56] facilitate? This facilitates the move
+[2366.56] back to where 7475 79. Okay. Boom. If we
+[2371.36] look at this right here, if we look at
+[2373.04] this entire leg up, where's our nearest,
+[2375.28] you know, kind of peak consolidation
+[2377.20] area? This is something I like to talk
+[2378.40] about too is, you know, when we were
+[2380.32] looking for those retracements back into
+[2382.32] swings, back into zones, just back into
+[2384.40] pivot areas. A lot of times price is
+[2386.72] going to be attracted to those, you
+[2388.16] know, very, very peak consolidation
+[2390.08] areas. A lot of times you're not going
+[2392.00] to see a retrace happen, you know, a
+[2395.04] healthy and a strong retrace come back
+[2398.00] to and pivot away from one-sided
+[2400.08] markets. When you see one-sided candles,
+[2402.40] there's a just a big volume imbalance in
+[2404.24] that. We know on a higher time frame
+[2406.16] that that's going to be some form of
+[2408.24] imbalance in price and that, you know,
+[2411.04] personally, I think imbalances do have a
+[2412.64] little bit more draw down than I would
+[2414.00] like to eat. That's why I like to look
+[2415.28] at these spec specific areas. Um, you
+[2418.80] know, a lot of times, you know, for
+[2420.00] example, on a 15-minute, if we if we ho
+[2422.72] hopped up to a 15-minute, this little
+[2424.80] pocket of structure right down here is
+[2427.20] going to be what? This is going to be a
+[2428.64] fractal. So, it's going to be that low,
+[2430.16] that high. The imbalance probably starts
+[2432.56] somewhere around here, closes up here.
+[2434.24] This is going to be a fractal high of
+[2435.68] that imbalance. A lot of times, what
+[2437.52] you'll see price do is price will
+[2439.52] retrace back to where? It's going to
+[2441.12] retrace back to that fractal low
+[2442.64] imbalance in a tighter moving market
+[2444.40] when we're consolidating pretty heavily,
+[2446.32] right? So with that established already
+[2449.12] we have that in line. We know this is a
+[2451.04] peak consolidation area. A lot of volume
+[2453.76] interacting right over here. You can see
+[2455.36] sideways a lot of volume. What do we
+[2457.12] have? We have our 7475. So this
+[2459.12] initially comes down taps it right here
+[2461.52] at the 628 p.m. candle. Right. This is
+[2463.76] kind of in Asia session right over here.
+[2465.76] This sends a retrace up to where? And
+[2467.52] this is another important fact that I
+[2469.28] want to talk about is imbalances. When
+[2472.96] you have direct imbalances like this,
+[2475.12] you should know the function of these
+[2476.56] imbalances is what to put in a new low.
+[2478.64] Once we come down here, we tap this.
+[2480.64] Usually, I like to, you know, be in an
+[2484.24] anticip anticipation kind of mindset
+[2487.60] when I have direct imbalances against
+[2489.68] me. Um, that you know, I could eat a
+[2492.32] little bit more draw down on this trade.
+[2493.76] But that's just something to note when
+[2495.12] you have these, you know, if you're
+[2496.56] looking for an extremely explosive move
+[2499.04] off of that. If you have a direct
+[2500.16] imbalance, it's usually not the greatest
+[2501.60] thing to see, but sometimes they will
+[2503.60] fill, right? That's where IGGS happen.
+[2506.08] You know, you know the deal with that,
+[2507.52] right? So, right here, you can see that
+[2509.68] sends us to put in a new low. We come
+[2511.76] down, we get that deeper mitigation on
+[2513.44] the 709. We also have a unmititigated
+[2516.40] Oblock down here and that peak
+[2518.48] consolidation. If we look at the 50% of
+[2520.56] this, we get a wick off of that. Very
+[2522.32] nice. And right over here, this is
+[2524.48] usually a strong, you know, kind of a
+[2526.32] reversal pattern that I like to see. Um,
+[2528.88] if I'm not taking a blind limit, this is
+[2530.72] something I'm going to keep my eye on
+[2532.44] specifically as these wicks. When you
+[2534.48] put them like this, when we come down,
+[2535.84] we get a deep mitigation into this wick.
+[2538.16] That means on a lower time frame, could
+[2540.64] be the 15-second or 30 second, there's
+[2542.88] going to be some form of balance price
+[2544.80] range down in this area, that price is
+[2546.96] going to come rebalance right before we
+[2549.44] get that continuation off. So, it's just
+[2551.20] kind of little nuances um little nuances
+[2554.08] to note, right? But you can see how
+[2555.92] beautifully this plays right over here.
+[2557.60] What do we see? Price does what? Trades
+[2559.68] up to that 041 consolidates. We get that
+[2562.56] strong expansion through it. We get a
+[2564.72] nice close up above. What do we now see
+[2566.64] price do? Once we get that close up
+[2568.24] above, what do we have? Boom. We have a
+[2570.80] big imbalance here. Discount imbalance
+[2573.04] lines up with
+[2575.16] what
+[2576.68] 295, right? So, we can, you know, play
+[2579.44] off of that. So there's a lot of really
+[2581.36] really cool factors in this. And if we
+[2583.04] go look at this this next example right
+[2584.72] over here, let me delete all this.
+[2586.72] Right? So this is our strong low. Once
+[2589.04] the strong low once we trade up, we
+[2592.08] clear this high right over here. Boom.
+[2594.56] Close up above right up here. This now
+[2596.96] becomes our strong low, right? Just
+[2598.48] simple little things. So what can we do
+[2600.48] now? We can measure this total range. I
+[2603.12] believe this one comes down. I don't
+[2604.56] know if it taps to 7475. Yeah, look at
+[2606.64] this. Beautiful. Okay. So, let me delete
+[2609.84] this. Let me just drag this over so it's
+[2611.44] still on the chart. So, this is our
+[2612.56] strong low down here. This is our weak
+[2614.16] high in price, right? What do we see
+[2616.40] happen? Price does what? Right? If we
+[2618.64] look at this peak consolidation up here,
+[2620.76] okay, but where are we looking primarily
+[2623.60] for that? You know, first entry drill
+[2625.84] where down to 7475. What do we have a
+[2628.80] lot of right down here? A lot of
+[2631.00] consolidation on an internal
+[2632.88] perspective. What is this? The close
+[2635.04] below this 619 candle right here. body
+[2637.92] close below on this 631 candle. Then we
+[2641.20] get this body close up above. What is
+[2643.04] this internally? This is an internal
+[2644.56] flip. So as a key area and a key pivot
+[2647.84] point, we could recognize this truly as
+[2649.68] the origin of this move. So now when
+[2652.40] we're lining up POIs and stuff, look how
+[2654.40] perfectly this aligns with that 7475 of
+[2657.28] this total range. This is not random by
+[2660.08] any means. A lot of times you'll see
+[2661.76] these line up almost to the tick. And
+[2664.88] this is why I said it's important if you
+[2666.88] want those explosive moves, it's
+[2669.04] important to kind of have a couple
+[2670.64] things lined up. It could be a origin,
+[2672.96] it could be a higher time frame order
+[2674.40] block because realistically this is just
+[2675.92] going to be an order block on a higher
+[2677.44] time frame, right? Could be a CSS,
+[2679.68] whatever you want to call it. Kind of
+[2680.80] the same thing. CSS just has a little
+[2682.80] bit more rules. Um, but on top of that,
+[2686.80] right, like I said, you want to have a
+[2688.48] couple things lined up in that area.
+[2690.40] That's what gives you those explosive
+[2691.92] moves and those extremely extremely
+[2693.68] accurate entries. So, if we're taking a
+[2695.44] blind limit at the 7475, right? Look at
+[2697.92] look at this. Look at this. Two and 2.25
+[2700.56] points of draw down. What do we come up
+[2702.24] and immediately tap? We trade up into
+[2704.64] what that 41. This is the I would say
+[2708.24] lowhanging fruit target. And what do we
+[2710.96] have up here? This 295. Okay. Now, what
+[2715.04] do we do at that 295? We retrace back.
+[2718.16] Come back and mitigate this area.
+[2719.92] failure swing right over here. What's
+[2722.88] the weak high? This is where you could
+[2724.72] be looking for some continuation moves
+[2726.88] up to this week high right up here. So,
+[2729.52] with that established right there, um
+[2731.76] that that's entry drill number one. Now,
+[2733.60] let's look at this specifically right
+[2735.68] over here. What do we see? Okay,
+[2737.64] consolidation, right? We're starting to
+[2739.84] establish a rounding top, rounding high.
+[2741.76] Boom. We could be expecting some sort of
+[2744.00] move back into the range. Now, let's
+[2746.56] look at this right here. this 041
+[2749.28] ideally that's where we're wanting to
+[2751.04] you know anchor off of and look to trade
+[2753.36] back into the range. Now, this is
+[2755.28] important because this is probably the
+[2758.24] only time I wouldn't say the only time,
+[2760.72] but usually when we have direct
+[2762.24] imbalances like this and we're closing
+[2764.08] below previous structure like this over
+[2765.84] here and we have direct imbalances lined
+[2768.32] up with that 041. This is where I'm
+[2770.96] comfortable taking that entry
+[2772.00] immediately back into that 7475. And
+[2774.16] look how beautiful this is. That 41, we
+[2777.04] close below it here. Leave a nice
+[2778.80] imbalance. Right? We have a premium
+[2780.16] fractal up here. We have previous
+[2781.92] structure over here. We're starting to
+[2783.12] violate, right? We closed below all of
+[2785.20] these imbalances right here. So
+[2786.88] realistically probably on a three or a
+[2788.88] 5m minute time frame there's some sort
+[2790.24] of IFG over here. That's our
+[2792.64] confirmation we have on our side. You
+[2794.72] know kind of something to throw in pair
+[2796.56] with this, you know, level. All right.
+[2798.96] So we see that close below. Look how
+[2800.72] beautiful and accurate this little tap
+[2802.40] is right here. This eats three ticks of
+[2804.96] draw down. Where does it immediately go?
+[2806.88] Down to that 7475. It's just a
+[2808.88] beautiful, beautiful thing. Now look at
+[2810.96] this over here. If you're wanting to
+[2812.24] play a a quick scalp out of the range,
+[2815.12] what do we have? We have a body close up
+[2817.44] above. Like I said, trading out of the
+[2818.80] range, you usually you want a body close
+[2820.32] above that extreme. And then price is
+[2822.48] going to do what? It's going to return
+[2824.08] back to that 41 right over here. So, we
+[2827.60] get that body close above that 295. Now,
+[2831.28] we want to anticipate price to do what?
+[2833.20] Come back to that point. What? 41. What
+[2836.16] do we have lined up there? Unmitigated
+[2838.16] what?
+[2839.08] Oblock 50%'s wide open sensitive area.
+[2842.56] We could either be taking our entry at
+[2843.76] the 50% of this or just blind limiting
+[2845.92] this right here. Right? So, it's just
+[2850.08] like these really really cool nuances in
+[2852.16] price. Like I said, I think the main
+[2855.36] driving factor for this for me is these
+[2857.84] levels up here. These, like I was saying
+[2860.72] earlier in the beginning of the video,
+[2862.40] are so powerful. I almost like these
+[2865.04] levels more than this down here. It's
+[2867.12] just like it's so like you can see right
+[2869.28] up here. Deliver off of this. Boom. Come
+[2872.40] back. Come up. Wick that perfectly. Come
+[2874.96] back and tap this. Like if we zoom in
+[2876.56] right here, what do we see? 295. 41.
+[2880.24] 295. Almost tapped the 41. Close up
+[2882.56] above that 295. Tap the 41. Displace
+[2885.84] away. This is, like I said, this is how
+[2888.40] I'm able to get the entries I do get.
+[2890.88] Um, you know, if you follow me on
+[2892.88] Twitter or anything, you you'll see like
+[2895.12] some of the scalping videos I post and
+[2896.96] stuff like that. Um, and you can see
+[2898.88] like just me utilizing these kind of
+[2900.88] entry functions and the true power
+[2903.12] behind it. Because I would say out of
+[2906.12] everything that I've like that I like to
+[2909.68] view, I would say this is kind of one of
+[2911.44] those the simplest approaches in terms
+[2913.76] of just having some set levels, if you
+[2915.92] master market structure, you you'll be
+[2918.08] cooking with this like genuinely. So,
+[2921.04] now with some one minute examples um
+[2923.68] set, I do want to go over some 5-second
+[2925.52] examples just for the heck of it. I
+[2927.60] think it would be pretty cool uh for
+[2929.20] y'all to visualize it and see, you know,
+[2930.80] kind of as we drop from the daily five
+[2932.64] minute. I didn't want to spend too much
+[2934.00] time on the hourly chart because I mean
+[2935.84] the daily kind of said enough. We did
+[2937.92] the five minute, we did the one minute.
+[2939.28] Now, we're going to do some 5-second
+[2940.48] examples and kind of go over it then.
+[2942.24] So, I'm going to pull up the five-second
+[2943.84] chart. We'll go over those examples and
+[2945.84] we'll talk about a couple other things
+[2947.52] as well. Alrighty. So now we are on the
+[2951.44] 5-second chart. I I had to swap over to
+[2953.28] a different platform because I I did I
+[2955.28] desubscribed from the uh Trading View
+[2957.36] 5-second chart, but we are here now.
+[2960.24] We're So we're on the 5-second chart
+[2961.60] right now. So right here, we do have
+[2964.48] this swing over here, right? Obviously,
+[2966.24] we come up, we mitigate this right here.
+[2968.00] We don't get that deep retracement or
+[2969.52] anything, right? However, this next
+[2971.76] swing right over here, what do we see?
+[2973.28] Right? So once we close below this low,
+[2975.68] what does this signify? What high is
+[2977.36] strong for us? Let me delete this so
+[2979.04] it's not clouding up your chart too much
+[2980.56] because I want you to be able to see
+[2981.68] this. So initially this close right here
+[2984.40] at this two and I'm not trying to move
+[2986.24] my mouse too fast. But this 201150 right
+[2989.28] now we're on the 5-second chart. You can
+[2990.64] see right over here. Okay. Once we get
+[2994.08] this close below here, this is our
+[2995.84] strong high up here. Right. Let me put a
+[2997.84] box around it just so you see it. Right
+[2999.84] over here. So now for us to establish a
+[3003.76] new strong high, what would we have to
+[3005.68] close below? But we would have to close
+[3007.04] below this low over here. So you can see
+[3010.56] what does price do? We get a nice body
+[3012.56] closure below it at 21615 right over
+[3014.80] here. So now this indicates what this
+[3016.72] high up here at
+[3019.08] 19,66475 is now strong. We should not be
+[3021.92] meeting this high. This should be the
+[3023.28] strong high. And I feel like a lot of
+[3025.12] people would view this from this
+[3026.64] perspective and think that we're going
+[3028.32] to go up and take this high. Why?
+[3029.76] Because all of this is smooth up here,
+[3031.20] right? Easy high liquidity point. But
+[3033.44] this is where just basic market
+[3034.72] structure comes in hand and
+[3036.24] understanding that kind of onsides you
+[3038.08] with the correct move. So with that
+[3040.56] close blow there right what do we see?
+[3043.12] Okay we can mark out this high. We can
+[3044.88] measure this all the way over here. What
+[3046.88] do we see? As we have talked about on
+[3048.80] others right what are we waiting for? If
+[3051.36] we want to play that retrace back up to
+[3053.44] that 7475 we're waiting for a nice body
+[3056.48] close up above that 41 right here which
+[3058.72] is at
+[3060.36] 19,63175. Okay. We get a nice body close
+[3063.20] up above that strong displacement,
+[3065.04] strong body candles. Okay, what are we
+[3066.88] seeing right here? What does price leave
+[3068.88] for us?
+[3070.12] Unmitigated within this area. Well, if
+[3072.96] we get this, we measure this. Boom. We
+[3075.12] have a nice imbalance right here. So,
+[3076.96] that could be used as a confluence to do
+[3078.96] what? Trade up into that 7475 where we
+[3082.08] can also do what? We could also get
+[3083.92] short. So we could either do, you know,
+[3086.16] a blind limit there or we could wait for
+[3088.40] some sort of extra confirmation to
+[3089.92] onside with us, which could be this,
+[3091.68] right? Because none of this over here is
+[3092.96] a order block. For me to consider an
+[3095.04] order block, we would have had to had a
+[3096.96] recent break of a structure candle,
+[3098.56] which the last one on the 5-second did
+[3100.56] not happen until that 21825. And what do
+[3103.20] I mean by break a structure candle? I
+[3105.12] mean closing above the previous high
+[3107.28] right over here. Right? So, it has to
+[3109.44] close above that previous high right
+[3111.28] there for it to be a a candle of
+[3113.52] consideration for me. So, you could
+[3116.48] either, like I said, you could either
+[3117.60] blind limit this, which you would have
+[3118.88] been perfectly fine, or if you're
+[3120.40] wanting to wait for some extra
+[3121.52] confirmation, what can we do, right? We
+[3123.52] can wait for that what I would consider
+[3125.68] an order block or a CSS cuz it's really,
+[3128.00] really similar in their aspects. Like I
+[3130.00] said, a CSS just has a little bit more
+[3131.60] rules and that's kind of what I'm
+[3133.04] talking about now, right? It has to have
+[3134.48] a breaker structure above the previous
+[3136.00] candle. Um and if we look at this the
+[3138.88] most recent one up in this range up here
+[3141.04] is where right we close above this
+[3143.28] previous candle right here we get a nice
+[3145.52] body close up up above it. So when we
+[3148.00] body close below this candle right here
+[3150.08] which occurs where 22040 that's when a
+[3154.40] reversal slash you know continuation in
+[3157.44] the you know trend is likely to occur at
+[3160.48] that same time. What do we have? Where
+[3162.40] is the area that's responsible for this
+[3164.88] breakage structure? Well, what can we
+[3167.28] highlight? We could highlight this low,
+[3169.60] this high. Boom. There's our 50%. Which
+[3172.48] lines up with what? That 7475. So, this
+[3176.40] is kind of a good example of, you know,
+[3179.84] different little things because I know
+[3182.32] and I and I've I've known this by people
+[3185.20] like I've I've shown this model to,
+[3188.08] they're not super comfortable with blind
+[3189.68] limits. And I understand that. You know,
+[3190.96] I'm I'm a more on the edge trader. I I
+[3193.60] like those riskier entries, but if
+[3196.48] you're really just wanting some extra
+[3198.00] extra confirmation for these kind of
+[3200.32] levels like this, your best bet is to
+[3203.12] wait for price to reach up into that
+[3204.88] area, right? And once we get a body
+[3207.12] close back below that 705, which in this
+[3210.40] instance would be here at
+[3213.00] 19,64775. Wait for a body close there,
+[3215.60] below that. That's a great indication.
+[3217.68] That means we've reclaimed this and
+[3219.12] we're likely to continue down lower. And
+[3221.20] wait for a re-entry. Either it could be
+[3222.88] an unmititigated area. You could take it
+[3225.28] just a limit at that 74 or that 705 or
+[3228.24] that 70 7475 right up here which you can
+[3231.20] see once we get that body close right
+[3232.80] here. Price is what price comes up tags
+[3235.28] that 7475 and just goes straight to Nuke
+[3238.08] Town, right? So it's a beautiful,
+[3239.52] beautiful thing to see. Beautiful,
+[3241.04] beautiful thing to see. So now um if
+[3243.68] we're literally just wanting to go to
+[3244.96] the next swing here on the 5-second
+[3246.48] chart, what do we see? We can measure
+[3248.64] this total range, right? What do we see
+[3251.12] price do? Let me get this anchored
+[3253.20] correctly. Right. Well, what do we have?
+[3256.00] This low established comes up, puts this
+[3258.08] high. Once we close below this low here,
+[3260.56] this is a strong high. Price should not
+[3262.24] be trading back to this area. Okay. So,
+[3265.92] coincidedly, what do we see happen?
+[3268.08] Price starts to, you know, slow grind up
+[3269.92] here. We're consolidating a lot at that
+[3271.52] 0 295. We finally break up above it. We
+[3274.48] get a beautiful, beautiful strong body
+[3276.08] close here. We come back into the range.
+[3278.96] You know, everything right here is kind
+[3280.32] of already mitigated. You can see all
+[3281.76] these shallow taps into this down close
+[3283.52] candle here. So, realistically, the
+[3285.52] nearest vicinity would be what? These
+[3287.20] stacked lows right here for price to
+[3288.64] come back and sweep, which lines up with
+[3290.96] or near that 0 295 down here. So, either
+[3294.00] or this is just showing the function of
+[3295.84] those areas. Um, and when you can
+[3297.84] anticipate that a low has been
+[3299.12] established before we get that deeper
+[3300.56] retracement right over here, right? Or
+[3302.24] you could just take this for like a 10
+[3303.52] or 20 point scalp, whatever fits your
+[3306.08] trading style, right? That's the beauty
+[3307.68] of this is it's so versatile. There's so
+[3310.24] many different ways to use this. And I
+[3312.56] think the main importance in this video
+[3314.16] is the levels, right? The levels, the
+[3316.00] levels, the levels. And just utilizing
+[3318.00] those and implementing them into the way
+[3321.12] you trade, right? Because everybody's
+[3322.96] unique in their own trading. Not
+[3324.64] everybody operates under the same
+[3326.32] perspective and same understanding. A
+[3328.72] lot of people, it really, you know, kind
+[3330.24] of variance on or varies on your
+[3333.92] personality, right? stuff like that,
+[3336.32] right? But look at this, right? Once we
+[3338.96] get that close up above that 041 here,
+[3341.60] we come back. We almost tap that 295.
+[3343.60] But what do we do? We establish this low
+[3345.44] down here. That sends us up to retrace
+[3347.92] to where that
+[3351.08] 7475. Look how accurate this is. It's
+[3353.52] just beautiful, isn't it? Come up. We
+[3356.00] tap that 7475. Wonderfully. What do we
+[3359.04] immediately go to? 041. This is why I
+[3362.64] like these levels because it allows you
+[3364.16] to capitalize on this move. If you close
+[3367.20] here, you could look for a re-entry up
+[3368.88] here, taking it down to that 295. Okay?
+[3372.00] And you can see how beautifully we come
+[3373.84] down, we tap this 295, we get a little
+[3375.68] suck up back up into this wick right
+[3377.76] over here. And if we draw this over and
+[3380.00] look at this in price, now that we've
+[3382.32] gotten some quality expansion away, what
+[3384.72] does price come up and do? We tap that
+[3386.84] 295. Okay. What do we have chilling
+[3389.92] there? unmititigated what SMD structure
+[3392.88] responsible for what this breakdown here
+[3395.20] below this low. It's beautiful thing to
+[3396.80] see. It's a beautiful, beautiful thing
+[3398.08] to see. All righty. So, this is going to
+[3400.88] be kind of a little recap um and kind of
+[3404.80] go more in tune with what we have talked
+[3406.56] about in the video already and all the
+[3409.80] intricacies around these levels. So,
+[3412.56] today is Tuesday, March or Thursday,
+[3415.52] March 13th. Um, and I was able to get a
+[3418.16] really, really nice long down here. Um,
+[3421.32] executions. I'll pop those up really
+[3424.04] quick so you can see them. You can see I
+[3426.56] got long down here. Exited up here for I
+[3428.80] think it was about I had my limit down
+[3430.56] here. I think it's about 120 points,
+[3432.72] right? So, let me plop that off really
+[3434.80] quick. So, 120 points captured over
+[3438.08] there. Um, and I kind of want to just
+[3440.32] talk about each little detail, what I
+[3442.00] was looking at specifically. So, if we
+[3443.36] go up to a 15-minute chart and look at
+[3444.96] this, there's kind of a couple things I
+[3446.64] want to note. Kind of what we were
+[3447.92] talking about yesterday, um, more
+[3450.16] specifically, we had these pockets of
+[3451.92] structure over here. So, if we look at
+[3454.00] this, right, we have this what we would
+[3456.24] deem as a swing area, right? This high
+[3458.00] down to this low. This has already been
+[3459.84] mitigated. So, a lot of times what
+[3461.84] you'll see price do is if it's a very,
+[3464.40] very prominent area, right? And we can
+[3466.48] determine this by the total range of it.
+[3468.00] Usually the bigger the swing, the higher
+[3469.52] the likely. So with that in mind,
+[3472.24] usually what the market likes to do is
+[3474.48] those key prominent areas, right? If
+[3476.48] they're aligned properly with certain
+[3477.92] levels, could be GB levels like in this.
+[3480.16] Um, a lot of times you're going to see
+[3481.44] the market refer back and get a double
+[3483.12] tap. By double tap, I mean liquidating
+[3485.44] this first tap low right over here. For
+[3487.28] example, this Tuesday, March 11, 3:30
+[3489.68] p.m. low. We come down, we sweep, sweep
+[3491.36] all that. This is a clear draw this
+[3493.12] morning in price right over here. Right?
+[3495.20] So, we were anticipating price to run
+[3496.96] down, take these lows, swipe them, and
+[3498.64] then get that strong rebound back up
+[3500.56] into, you know, where peak volume is in
+[3503.28] this um in this structure right up here,
+[3505.60] which if we look at this coincidely over
+[3507.52] here, what do we have? Right? We have
+[3508.80] all these consecutive green candles
+[3510.16] right over here. We have a big volume
+[3512.08] node resting right here. So, we know
+[3513.60] with high conviction and high likelihood
+[3515.52] that the market's going to want to draw
+[3517.04] to that. So, with that in mind, also
+[3519.92] within that volume area, what do we have
+[3521.76] right here? Right, we have that 41 right
+[3523.52] at 19548. So, let's go back down to the
+[3526.32] one minute chart and look at this and
+[3527.52] talk about a couple entry drills. So,
+[3529.44] you could be taking a blind limit like I
+[3531.28] do. Like I said, most of my trades are
+[3532.88] blind limits. Um, you could be taking a
+[3535.04] blind limit at the 7475. This is going
+[3537.04] to give you the best entry in regards to
+[3539.12] placing yourself within wicks. That's
+[3541.28] usually my ultimate goal with these kind
+[3543.52] of trades is I want to place myself
+[3544.96] within wicks. It could be a fivem minute
+[3547.12] wick, it could be a one minute wick,
+[3548.72] right? In these in this instance, you
+[3550.24] can see I put myself and place myself in
+[3552.80] this trade within all of these wicks
+[3554.40] right down here, which is a great sign
+[3555.60] to see. You want to see, you know, after
+[3557.44] a relatively continuous move down, you
+[3560.00] want to see some wicking starting to
+[3561.76] form at those key levels. So, a couple
+[3564.16] little things and something I don't
+[3566.08] believe I touched on in the video
+[3567.44] yesterday. Maybe I did. I think I did.
+[3570.00] Um, but a usual kind of reversal pattern
+[3572.40] you'll see is we'll see that extreme
+[3574.56] wick put in. So, we have an extreme wick
+[3576.40] put in right here at this 9:00 candle.
+[3578.72] Coincidely, it's a new hour, right? So,
+[3581.36] we come down, we sweep that previous
+[3583.04] hourly low right over here. We come
+[3585.12] down, we tap this, and you can see with
+[3587.28] this big extreme wick put in, what can
+[3589.04] we do? We can measure that wick, get the
+[3591.76] 50% of that right here, which would be
+[3593.36] at 19344. So, a lot of times what you'll
+[3596.32] see when you get this immediate
+[3597.92] rebalance of this wick right here at the
+[3600.04] 50%, you can safely buy stop up above
+[3603.28] that candle and play that continuation
+[3605.68] off of it. Now, your stop comes down to
+[3607.52] whatever you want to risk. For example,
+[3609.36] if I was trading this uh kind of entry
+[3612.00] technique instead of blind limits, I
+[3614.24] would be having my stop below that low
+[3615.84] and just playing this continuation up to
+[3617.52] whatever unmitigated area. It could be
+[3618.96] this wick up here or we could be
+[3620.88] targeting up to that 41. So, with that
+[3623.92] established, right, we can talk about a
+[3626.08] couple a couple things right here. And
+[3627.84] and this is something really really
+[3629.44] cool. Um, a lot of times, so if we go up
+[3631.60] to the two-minute, I've yet to check the
+[3633.04] two-minute. Okay, so we have a
+[3634.56] two-minute imbalance that we close bel
+[3636.48] or above right over there. So, a lot of
+[3638.72] times there are, let me say this for
+[3642.72] POIs, almost every single time there's
+[3645.20] going to be a responsible candle for the
+[3647.60] closure of that area. Right? So in this
+[3650.40] instance we can see we have this down
+[3652.00] close candle. This last down move before
+[3653.68] we close up above that range over there.
+[3656.24] This last down move is going to be an
+[3658.56] extremely sensitive area. So what can we
+[3660.72] do? We can measure right. We can get the
+[3662.96] 50% off of this. Right? So the 50% would
+[3665.20] be where
+[3667.00] 1939550. This could be maybe a
+[3669.04] continuation setup if we're wanting to
+[3670.56] wait for some extra confirmation and
+[3672.40] take it up to those predetermined areas
+[3674.32] we were talking about up here. That wick
+[3676.32] could be the 41 or this volume note.
+[3678.72] Right? So, if we go back up here, I want
+[3681.12] to talk about what I was looking at in
+[3682.48] the morning uh in regards to
+[3684.88] anticipating this move down because
+[3687.60] truthfully, when we were up here, I was
+[3689.28] already I already have my long limit
+[3690.72] resting down here because I knew with
+[3692.40] high conviction based on what I was
+[3694.56] seeing that we were going to come down
+[3695.76] here. I could have caught the scalp
+[3697.44] down. Uh but I I I really really like to
+[3699.76] favor longs. That's just like a personal
+[3701.28] thing with me. I really like uh catching
+[3703.28] and being in with the bulls. uh usually
+[3705.12] because the moves are relatively nice
+[3707.28] when they're when they set up properly.
+[3709.20] So if we look at this over here, let's
+[3711.20] look. So you can see we get a close
+[3714.48] initially below this 41 right over here
+[3716.64] after market open right here at 8:30. So
+[3719.04] we get this initial close below this 41.
+[3722.16] We've already closed below that 295. You
+[3724.16] can actually see this rejection up here
+[3726.40] off of this 295. Look how beautiful this
+[3728.32] is, right? If we go up to like the 5m
+[3729.84] minute or something, you can see the
+[3731.44] wicking that happens over here. Look at
+[3733.20] this. This is beautiful, isn't it?
+[3734.88] Right. So, we cl down. We come down. We
+[3737.04] close below this. We refer back up to
+[3739.28] the midpoint of this range right here
+[3740.88] between this 295 and this 41. So, with
+[3743.52] that predetermined, what are we now
+[3745.60] looking for? If we're wanting to play
+[3746.72] that continuation down to that 7475 or
+[3749.20] that 705, we want a nice body close uh
+[3752.32] back below that 41. So, when we see that
+[3755.68] right here, I would consider this a
+[3757.36] relatively strong body close. We close
+[3758.96] below that low. But more importantly,
+[3761.04] I'm wanting to see this low close below
+[3762.96] over here. Why? Well, this low put in
+[3765.12] this failure swing high right over here.
+[3766.96] And we know that a failure swing high
+[3768.88] once we establish this, we come up and
+[3770.40] mitigate this wick, fail to put in a
+[3772.40] high over here, right? This is weak
+[3774.72] right here. So, when we get a shift
+[3775.92] below this low, that's like, okay, this
+[3777.92] is relatively important and I should be
+[3779.68] keeping my eye on this. So,
+[3781.52] realistically, this is going to be the
+[3783.28] trigger candle for me to be like, yes,
+[3785.52] this has a high likelihood of trading
+[3787.60] down to this area. So you could easily
+[3789.68] be doing what? You could be taking a
+[3791.52] short limit off of this right over here.
+[3793.76] Your stop maybe at this extreme and
+[3795.52] instance we come up and get a little bit
+[3796.88] deeper mitigation and you could be
+[3798.56] targeting down to the 7475 which
+[3800.32] delivered nicely 200 points. So that
+[3803.12] just kind of goes hand inand um and I
+[3805.36] don't want to get overly detailed
+[3806.48] because I know this is a lot. Uh but it
+[3809.84] goes hand in hand and shows how powerful
+[3811.60] each of these levels are. Look at this
+[3812.88] rejection right up here. Once we came up
+[3814.64] we tap that 41. What do we have? Right?
+[3817.28] We wick right off of it and what do we
+[3819.68] go back down 200 points in reality? I do
+[3822.64] want to talk about this too. Let me zoom
+[3824.16] out a little bit on the 15minute. Okay,
+[3826.80] with FOMC next week, what is this lining
+[3829.20] up with right here, right? I checked the
+[3831.60] economic calendar earlier because I was
+[3833.20] trying to make sense of why we're having
+[3834.48] this crazy crazy big range. Obviously,
+[3835.92] we had a big drop. So, we can expect a
+[3837.52] range, but with FOMC next week, this
+[3840.32] checks out. So, when I saw that on my
+[3842.24] calendar, I was like, "Oh, this is
+[3843.60] perfect. I'm just going to play this
+[3844.96] range." So this down here was extremely
+[3848.00] extremely high likely. And if we go zoom
+[3850.24] in, something else I was looking at
+[3851.92] specifically over here was this little
+[3854.64] pocket of structure right down here.
+[3856.56] This being aligned with those GB levels.
+[3858.80] If we look at this, we can see we almost
+[3860.16] have a perfect alignment at that 79 with
+[3863.60] the 50% of this structure. So, if we
+[3865.68] drag this over and we look at this, you
+[3868.00] can see we actually did end up missing
+[3869.60] it by a tick, which is a little bit
+[3871.68] unfortunate, but I mean, that's going to
+[3873.44] happen when you uh place yourself within
+[3875.76] something that's relatively, you know,
+[3877.52] very very accurate. If we look at this
+[3879.52] right over here, the 50% of that was
+[3881.68] missed by what a tick right there. So,
+[3884.00] that was a confluence that I had in
+[3885.68] alignment with that as well as a high
+[3887.12] time frame range and just stuff of that
+[3889.36] sort. So, that is a trade recap that's
+[3892.56] kind of more detailed, more real time.
+[3894.08] That way y'all can actually go back and
+[3895.84] look at your charts with these levels
+[3898.16] and utilize this and kind of reference
+[3900.24] back to this specific point in the video
+[3902.96] uh to kind of help clear your eyes up.
+[3905.20] So, with that being said, that's going
+[3907.60] to be all for this little recap for this
+[3909.92] day. I'm going to go ahead and wrap the
+[3911.52] video up here. Um, like I said, this is
+[3914.88] just a big old brain dump. Um, this is
+[3918.72] what I see in my eyes. Um, and I really
+[3923.20] am, like I said, I'm very, very grateful
+[3924.88] that TE allowed me to, you know, be able
+[3927.60] to express my opinion and talk about the
+[3930.96] way I trade um, in this kind of manner
+[3934.16] and kind of allow it to reach out to
+[3935.92] more people because like I said, I I
+[3937.92] think there's a lot of in this space. I
+[3940.08] think I really look at T as one of the
+[3942.88] only I would say one of there's there's
+[3945.68] a few but T is really one of the only um
+[3948.48] true valuable I would say educators on
+[3951.44] this platform. So y'all are actually
+[3953.20] very very blessed to have this man uh
+[3955.60] and to be able to learn from his videos
+[3957.92] and the way he goes about things and
+[3960.64] just things of that nature, right? It's
+[3962.56] not a super common thing you see uh in
+[3965.60] today's world some genuine people.
+[3967.68] that's not not usually present. There's
+[3970.48] a lot of um you know bad bad people I
+[3973.84] would like to say. Um so that being
+[3977.20] said, like I said, I appreciate all of
+[3978.96] y'all's time and I thank you for
+[3981.04] watching this video. It seriously means
+[3983.28] a lot to me. Um especially if you made
+[3985.60] it to the end of this video. I feel like
+[3987.04] this is going to be a long one cuz I've
+[3988.40] been yapping for some time. But I hope
+[3991.12] that you found some value from this and
+[3993.84] this could positively help you maybe in
+[3996.48] some sort of manner in regards to your
+[3998.32] trading. Maybe it can just allow you to
+[4000.32] execute on a higher level, kind of
+[4002.96] understand certain little nuances in
+[4004.88] price that I talked about. And if y'all
+[4007.52] have any questions, by all means, uh,
+[4009.52] just let T know and then he can let me
+[4012.00] know and I'd be more than happy to
+[4013.84] answer them. By all means. It's one of
+[4016.16] the things that brings me true
+[4017.44] fulfillment is seeing others succeed.
+[4019.92] and their trading um and you know
+[4022.16] getting to that high level that they've
+[4023.52] always strived for and uh and just truly
+[4027.12] just honing in on their abilities
+[4028.64] because I mean it takes a special person
+[4030.40] to be a trader. You don't have to you
+[4031.92] almost kind of have to be a little bit
+[4033.20] crazy if I'm being
+[4035.00] honest. As funny as it sounds, you kind
+[4037.44] of do um because this takes an insane
+[4040.00] insane amount of discipline. Um, it's
+[4042.88] not an easy task and I want you all to
+[4044.48] know that even though a lot of people
+[4046.48] they'll make it out to look, you know,
+[4048.24] super easy, they'll still face, you
+[4050.00] know, struggles daily, you know,
+[4052.00] contradictions against themselves,
+[4053.92] thinking they're, you know, not the best
+[4056.32] at trading, maybe imposttor syndrome,
+[4059.44] you know, stuff of that nature. So, it's
+[4061.28] important to stay levelheaded, stay
+[4064.08] focused on yourself and your journey
+[4066.88] more than anything. Um, and ultimately
+[4069.84] that's going to allow you to go to new
+[4072.32] heights and grow to the level you can
+[4074.32] grow to because as long as you continue
+[4076.56] to put in time um, in this market,
+[4078.96] you're going to get it at some point.
+[4080.40] You know, there's never going to be, I
+[4082.56] think, a period where if you truly are
+[4085.20] being honest with yourself and
+[4086.72] dedicating enough time to this that you
+[4089.20] won't see some success from it. It just
+[4091.12] comes down to submitting to time and
+[4093.28] understanding that time is your friend
+[4095.36] in this and you don't want to rush this
+[4096.96] process. you want everything to kind of
+[4099.04] line up in accordance to the way it
+[4100.88] should um rather than rushing the
+[4103.04] process cuz like I said, it's just it's
+[4106.08] a tough thing to do and you need to
+[4107.84] understand that. So, with that being
+[4109.60] said, I'm going to go ahead and wrap it
+[4110.80] up here. Again, I appreciate everything.
+[4112.96] I appreciate all of y'all who spent the
+[4114.64] time watching this and hopefully I will
+[4116.96] talk to you'all sometime in the future.
+[4119.12] So, y'all have a uh a blessed day
+[4121.76] whenever you're watching this and I'll
+[4124.48] see y'all later. Peace.
+[4127.60] Thank you AP for coming on and I hope
+[4130.00] you guys enjoyed the video. If you did,
+[4132.32] please consider liking and subscribing.
+[4134.48] And if there's anyone you want to see on
+[4136.08] the next episode of TT Talk, let me know
+[4138.48] in the comment section below. I hope you
+[4140.32] guys have a good one. See you.

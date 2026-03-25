@@ -1,0 +1,169 @@
+// This Pine Script(TM) code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// Copyright builder-block-C
+//@version=6
+indicator("TTrades Daily Bias C1/C2/C3 Map [Draft]", overlay=true, max_lines_count=20, max_labels_count=20, max_boxes_count=4)
+// TV_SYNC_SIGNATURE: TTrades Daily Bias C1/C2/C3 Map [Draft]
+// Daily bias phase 1 map for D bias, active 1H C1/C2/C3 structure near the daily POI, and 5m continuation refinement inside hourly Candle 3.
+
+// inputs
+// Visibility
+showDailyBiasBannerInput = input.bool(true, "showDailyBiasBanner", group="Visibility", tooltip="Show the current daily bias banner.")
+showDailyPoiZoneInput = input.bool(true, "showDailyPoiZone", group="Visibility", tooltip="Show the active daily POI zone on the hourly chart.")
+showHourlySequenceInput = input.bool(true, "showHourlySequence", group="Visibility", tooltip="Show the active 1H C1/C2/C3 labels and entry guide when they form inside the daily POI, otherwise show one small waiting cue while the 5m refinement stays alert-driven only.")
+
+// chart guardrail
+bool supportedChart = timeframe.isminutes and timeframe.multiplier == 60
+var label unsupportedTimeframeLabel = na
+
+// daily bias and POI state
+float dailyPrevClose = request.security(syminfo.tickerid, "D", close[1], lookahead=barmerge.lookahead_off)
+float dailyPrevHigh = request.security(syminfo.tickerid, "D", high[1], lookahead=barmerge.lookahead_off)
+float dailyPrevLow = request.security(syminfo.tickerid, "D", low[1], lookahead=barmerge.lookahead_off)
+float dailyPrev2High = request.security(syminfo.tickerid, "D", high[2], lookahead=barmerge.lookahead_off)
+float dailyPrev2Low = request.security(syminfo.tickerid, "D", low[2], lookahead=barmerge.lookahead_off)
+float dailyMidpoint = (dailyPrevHigh + dailyPrevLow) / 2.0
+int dailyBiasDirection = na(dailyPrevClose) or na(dailyPrev2High) or na(dailyPrev2Low) ? 0 : dailyPrevClose > dailyPrev2High ? 1 : dailyPrevClose < dailyPrev2Low ? -1 : dailyPrevClose >= dailyMidpoint ? 1 : -1
+string dailyBiasText = dailyBiasDirection > 0 ? "Daily Bias: Bullish" : dailyBiasDirection < 0 ? "Daily Bias: Bearish" : "Daily Bias: Neutral"
+color dailyBiasColor = dailyBiasDirection > 0 ? color.new(color.green, 0) : dailyBiasDirection < 0 ? color.new(color.red, 0) : color.new(color.gray, 0)
+float dailyPoiTop = dailyBiasDirection > 0 ? dailyMidpoint : dailyBiasDirection < 0 ? dailyPrevHigh : na
+float dailyPoiBottom = dailyBiasDirection > 0 ? dailyPrevLow : dailyBiasDirection < 0 ? dailyMidpoint : na
+bool priceInsideDailyPoi = dailyBiasDirection != 0 and not na(dailyPoiTop) and not na(dailyPoiBottom) and high >= dailyPoiBottom and low <= dailyPoiTop
+int activeBiasWindowStart = int(time("D"))
+int activeBiasWindowEnd = activeBiasWindowStart + int(timeframe.in_seconds("D") * 1000)
+
+// hourly phase 1 sequence
+var int activeHourlyDir = 0
+var int activeHourlyC1Time = na
+var int activeHourlyC2Time = na
+var int activeHourlyC3Time = na
+var float activeHourlyC1Price = na
+var float activeHourlyC2Price = na
+var float activeHourlyC3Price = na
+var int activeEntryTime = na
+var float activeEntryPrice = na
+var float activeHourlyInvalidation = na
+var int activeLtfDir = 0
+var int activeLtfC2Time = na
+var int activeLtfC3Time = na
+var float activeLtfEntryPrice = na
+float candleTwoMidpoint = (high[1] + low[1]) / 2.0
+bool bullishHourlyC2 = supportedChart and priceInsideDailyPoi[1] and dailyBiasDirection > 0 and low[1] < low[2] and close[1] > open[1] and close[1] >= candleTwoMidpoint
+bool bearishHourlyC2 = supportedChart and priceInsideDailyPoi[1] and dailyBiasDirection < 0 and high[1] > high[2] and close[1] < open[1] and close[1] <= candleTwoMidpoint
+bool bullishHourlyC2Trigger = bullishHourlyC2 and (na(activeHourlyC2Time) or activeHourlyC2Time != int(time[1]))
+bool bearishHourlyC2Trigger = bearishHourlyC2 and (na(activeHourlyC2Time) or activeHourlyC2Time != int(time[1]))
+if supportedChart
+    if bullishHourlyC2Trigger
+        activeHourlyDir := 1
+        activeHourlyC1Time := int(time[2])
+        activeHourlyC2Time := int(time[1])
+        activeHourlyC3Time := int(time)
+        activeHourlyC1Price := math.min(open[2], close[2])
+        activeHourlyC2Price := math.min(open[1], close[1])
+        activeHourlyC3Price := math.min(open, close)
+        activeEntryTime := int(time)
+        activeEntryPrice := open
+        activeHourlyInvalidation := dailyPoiBottom
+    else if bearishHourlyC2Trigger
+        activeHourlyDir := -1
+        activeHourlyC1Time := int(time[2])
+        activeHourlyC2Time := int(time[1])
+        activeHourlyC3Time := int(time)
+        activeHourlyC1Price := math.max(open[2], close[2])
+        activeHourlyC2Price := math.max(open[1], close[1])
+        activeHourlyC3Price := math.max(open, close)
+        activeEntryTime := int(time)
+        activeEntryPrice := open
+        activeHourlyInvalidation := dailyPoiTop
+bool hourlyInvalidated = activeHourlyDir == 1 ? close < activeHourlyInvalidation : activeHourlyDir == -1 ? close > activeHourlyInvalidation : false
+if supportedChart and hourlyInvalidated
+    activeHourlyDir := 0
+    activeHourlyC1Time := na
+    activeHourlyC2Time := na
+    activeHourlyC3Time := na
+    activeHourlyC1Price := na
+    activeHourlyC2Price := na
+    activeHourlyC3Price := na
+    activeEntryTime := na
+    activeEntryPrice := na
+    activeHourlyInvalidation := na
+    activeLtfDir := 0
+    activeLtfC2Time := na
+    activeLtfC3Time := na
+    activeLtfEntryPrice := na
+
+// five-minute continuation refinement
+float ltfOpen = request.security(syminfo.tickerid, "5", open, lookahead=barmerge.lookahead_off)
+float ltfHigh = request.security(syminfo.tickerid, "5", high, lookahead=barmerge.lookahead_off)
+float ltfLow = request.security(syminfo.tickerid, "5", low, lookahead=barmerge.lookahead_off)
+float ltfClose = request.security(syminfo.tickerid, "5", close, lookahead=barmerge.lookahead_off)
+int ltfTime = int(request.security(syminfo.tickerid, "5", time, lookahead=barmerge.lookahead_off))
+float ltfCandleTwoMidpoint = (ltfHigh[1] + ltfLow[1]) / 2.0
+bool bullishLtfContinuation = supportedChart and activeHourlyDir > 0 and ltfLow[1] < ltfLow[2] and ltfClose[1] > ltfOpen[1] and ltfClose >= ltfCandleTwoMidpoint
+bool bearishLtfContinuation = supportedChart and activeHourlyDir < 0 and ltfHigh[1] > ltfHigh[2] and ltfClose[1] < ltfOpen[1] and ltfClose <= ltfCandleTwoMidpoint
+bool bullishLtfContinuationTrigger = bullishLtfContinuation and (na(activeLtfC2Time) or activeLtfC2Time != ltfTime[1])
+bool bearishLtfContinuationTrigger = bearishLtfContinuation and (na(activeLtfC2Time) or activeLtfC2Time != ltfTime[1])
+if supportedChart and activeHourlyDir != 0
+    if bullishLtfContinuationTrigger
+        activeLtfDir := 1
+        activeLtfC2Time := ltfTime[1]
+        activeLtfC3Time := ltfTime
+        activeLtfEntryPrice := ltfOpen
+    else if bearishLtfContinuationTrigger
+        activeLtfDir := -1
+        activeLtfC2Time := ltfTime[1]
+        activeLtfC3Time := ltfTime
+        activeLtfEntryPrice := ltfOpen
+if supportedChart and activeHourlyDir == 0
+    activeLtfDir := 0
+    activeLtfC2Time := na
+    activeLtfC3Time := na
+    activeLtfEntryPrice := na
+
+// active-sequence-only labels
+var label hourlyC1Label = na
+var label hourlyC2Label = na
+var label hourlyC3Label = na
+var label entryGuideLabel = na
+var label hourlyWaitingLabel = na
+var label dailyBiasLabel = na
+var label dailyPoiLabel = na
+var box dailyPoiBox = na
+if barstate.islast
+    if not na(unsupportedTimeframeLabel)
+        label.delete(unsupportedTimeframeLabel)
+    if not na(dailyPoiBox)
+        box.delete(dailyPoiBox)
+    if not supportedChart
+        unsupportedTimeframeLabel := label.new(bar_index, high, "Unsupported chart timeframe. Load this indicator on a 1H chart.", style=label.style_label_down, color=color.new(color.red, 0), textcolor=color.white)
+    else
+        if not na(hourlyC1Label)
+            label.delete(hourlyC1Label)
+        if not na(hourlyC2Label)
+            label.delete(hourlyC2Label)
+        if not na(hourlyC3Label)
+            label.delete(hourlyC3Label)
+        if not na(entryGuideLabel)
+            label.delete(entryGuideLabel)
+        if not na(hourlyWaitingLabel)
+            label.delete(hourlyWaitingLabel)
+        if not na(dailyBiasLabel)
+            label.delete(dailyBiasLabel)
+        if not na(dailyPoiLabel)
+            label.delete(dailyPoiLabel)
+        if showDailyBiasBannerInput and dailyBiasDirection != 0 and not na(dailyPoiTop)
+            dailyBiasLabel := label.new(activeBiasWindowEnd, dailyPoiTop, dailyBiasText, xloc=xloc.bar_time, style=label.style_label_left, color=color.new(dailyBiasColor, 15), textcolor=color.white)
+        if showDailyPoiZoneInput and dailyBiasDirection != 0 and not na(dailyPoiTop) and not na(dailyPoiBottom)
+            dailyPoiBox := box.new(activeBiasWindowStart, dailyPoiTop, activeBiasWindowEnd, dailyPoiBottom, xloc=xloc.bar_time, bgcolor=color.new(dailyBiasDirection > 0 ? color.green : color.red, 86), border_color=color.new(dailyBiasDirection > 0 ? color.green : color.red, 45))
+            dailyPoiLabel := label.new(activeBiasWindowEnd, dailyPoiBottom, "Daily POI", xloc=xloc.bar_time, style=label.style_label_left, color=color.new(color.navy, 55), textcolor=color.white)
+        if showHourlySequenceInput and activeHourlyDir != 0 and not na(activeHourlyC1Time) and not na(activeHourlyC2Time) and not na(activeHourlyC3Time)
+            hourlyC1Label := label.new(activeHourlyC1Time - int(timeframe.in_seconds("60") * 250), activeHourlyC1Price, "C1", xloc=xloc.bar_time, style=activeHourlyDir > 0 ? label.style_label_up : label.style_label_down, color=color.new(activeHourlyDir > 0 ? color.green : color.red, 15), textcolor=color.white)
+            hourlyC2Label := label.new(activeHourlyC2Time, activeHourlyC2Price, "C2", xloc=xloc.bar_time, style=activeHourlyDir > 0 ? label.style_label_up : label.style_label_down, color=color.new(activeHourlyDir > 0 ? color.green : color.red, 0), textcolor=color.white)
+            hourlyC3Label := label.new(activeHourlyC3Time + int(timeframe.in_seconds("60") * 250), activeHourlyC3Price, "C3", xloc=xloc.bar_time, style=activeHourlyDir > 0 ? label.style_label_up : label.style_label_down, color=color.new(activeHourlyDir > 0 ? color.green : color.red, 35), textcolor=color.white)
+        if showHourlySequenceInput and activeHourlyDir != 0 and not na(activeEntryTime) and not na(activeEntryPrice)
+            entryGuideLabel := label.new(activeEntryTime + int(timeframe.in_seconds("60") * 500), activeEntryPrice, "Entry", xloc=xloc.bar_time, style=label.style_label_left, color=color.new(color.yellow, 10), textcolor=color.black)
+        if showHourlySequenceInput and activeHourlyDir == 0 and dailyBiasDirection != 0 and not na(dailyPoiTop) and not na(dailyPoiBottom)
+            hourlyWaitingLabel := label.new(activeBiasWindowEnd, (dailyPoiTop + dailyPoiBottom) / 2.0, dailyBiasDirection > 0 ? "Wait for long C2" : "Wait for short C2", xloc=xloc.bar_time, style=label.style_label_left, color=color.new(dailyBiasColor, 70), textcolor=color.white)
+
+// alerts
+alertcondition(activeHourlyDir != 0 and activeHourlyDir[1] == 0, "Hourly sequence activated", "A new active hourly C1/C2/C3 sequence formed inside the daily POI.")
+alertcondition(activeLtfDir != 0 and activeLtfDir[1] == 0, "Five minute continuation activated", "A new 5m continuation confirmation formed inside the active hourly Candle 3 window.")

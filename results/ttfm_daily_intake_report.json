@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-03-24T21:24:14.343328+00:00",
+  "intake_videos_dir": "intake/videos",
+  "intake_images_dir": "intake/images",
+  "video_manifest_output": "knowledge/ttfm_video_corpus/daily_intake_video_manifest.json",
+  "image_cases_output": "results/ttfm_daily_intake_image_cases.jsonl",
+  "summary": {
+    "video_file_count": 0,
+    "image_file_count": 0,
+    "trainable_video_count": 0,
+    "queued_video_count": 0,
+    "trainable_image_count": 0,
+    "review_only_image_count": 0,
+    "video_status_counts": {},
+    "image_review_status_counts": {},
+    "image_training_blocker_counts": {}
+  }
+}

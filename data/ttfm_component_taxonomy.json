@@ -1,0 +1,97 @@
+{
+  "framework_slug": "ttfm",
+  "framework_name": "TTrades Fractal Model",
+  "components": [
+    {
+      "label": "candle_2_closure",
+      "kind": "closure",
+      "markers": ["candle_2_closure", "candle 2", "candle2", "c2_closure"],
+      "checkpoints": ["closure", "confirmation"],
+      "supporting_topics": ["candle_2_closure"]
+    },
+    {
+      "label": "candle_3_closure",
+      "kind": "closure",
+      "markers": ["candle_3_closure", "candle 3", "candle3", "c3_closure"],
+      "checkpoints": ["closure", "confirmation"],
+      "supporting_topics": ["candle_3_closure"]
+    },
+    {
+      "label": "protected_swing",
+      "kind": "structure",
+      "markers": ["protected_swing", "protected swing"],
+      "checkpoints": ["confirmation", "outcome"],
+      "supporting_topics": ["protected_swings", "invalidation"]
+    },
+    {
+      "label": "equilibrium",
+      "kind": "reference_level",
+      "markers": ["equilibrium", "eq"],
+      "checkpoints": ["context", "confirmation"],
+      "supporting_topics": ["equilibrium"]
+    },
+    {
+      "label": "invalidation",
+      "kind": "risk",
+      "markers": ["invalidation", "thesis failure", "stop"],
+      "checkpoints": ["confirmation", "outcome"],
+      "supporting_topics": ["invalidation"]
+    },
+    {
+      "label": "wick_logic",
+      "kind": "candle_filter",
+      "markers": ["wick", "wick_logic", "wick rejection"],
+      "checkpoints": ["context", "closure"],
+      "supporting_topics": ["wick_logic"]
+    },
+    {
+      "label": "top_down_alignment",
+      "kind": "timeframe_context",
+      "markers": ["top_down_alignment", "higher_timeframe", "lower_timeframe", "multi timeframe"],
+      "checkpoints": ["context"],
+      "supporting_topics": ["top_down_alignment"]
+    },
+    {
+      "label": "fair_value_gap",
+      "kind": "zone",
+      "markers": ["fair_value_gap", "fair value gap", "fvg"],
+      "checkpoints": ["context", "sweep", "confirmation"],
+      "supporting_topics": ["continuation", "candle_2_closure", "candle_3_closure"]
+    },
+    {
+      "label": "order_block",
+      "kind": "zone",
+      "markers": ["order_block", "order block"],
+      "checkpoints": ["context", "sweep", "confirmation"],
+      "supporting_topics": ["continuation"]
+    },
+    {
+      "label": "breaker",
+      "kind": "zone",
+      "markers": ["breaker", "breaker_block", "breaker block"],
+      "checkpoints": ["context", "sweep", "confirmation"],
+      "supporting_topics": ["continuation", "reversal"]
+    },
+    {
+      "label": "point_of_interest",
+      "kind": "zone",
+      "markers": ["point_of_interest", "point of interest", "poi", "key level", "zone"],
+      "checkpoints": ["context"],
+      "supporting_topics": ["candle_2_closure", "candle_3_closure", "reversal"]
+    },
+    {
+      "label": "liquidity_sweep",
+      "kind": "event",
+      "markers": ["liquidity_sweep", "liquidity sweep", "sweep"],
+      "checkpoints": ["sweep", "confirmation"],
+      "supporting_topics": ["reversal", "protected_swings", "continuation"]
+    },
+    {
+      "label": "zone_boundary",
+      "kind": "geometry",
+      "markers": ["zone_boundary", "session_extreme", "range boundary", "extreme"],
+      "checkpoints": ["context", "outcome"],
+      "supporting_topics": ["daily_profiles", "invalidation"]
+    }
+  ]
+}

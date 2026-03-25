@@ -1,0 +1,427 @@
+{
+  "generated_at": "2026-03-21T15:53:41.933129+00:00",
+  "seed_url": "https://ttrades.com/trading-education-center/",
+  "item_count": 28,
+  "items": [
+    {
+      "title": "Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "url": "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+      "source_type": "article",
+      "category_hint": "continuation",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/PQiRV0JMhIQ"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2026/02/Why-Your-Continuations-Fail-TTrades-1.pdf"
+      ]
+    },
+    {
+      "title": "Aligning Candles for Expansion: How True Trends Actually Form",
+      "url": "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+      "source_type": "article",
+      "category_hint": "expansion",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/Kf4c41_qO1s"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2026/01/TTrades-Aligning-Expansion-Candles.pdf"
+      ]
+    },
+    {
+      "title": "Easy Daily Bias: A Mechanical Trading Framework",
+      "url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "source_type": "article",
+      "category_hint": "bias",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/-KKuZb5Z5aU"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/12/Easy-Daily-Bias-TTrades.pdf"
+      ]
+    },
+    {
+      "title": "Candle 3 Closure: A Complete Guide to Identifying Continuations and Reversals",
+      "url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "source_type": "article",
+      "category_hint": "reversal",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/MsuEQQl7L6s"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/12/Candle-3-Closure-TTrades.pdf"
+      ]
+    },
+    {
+      "title": "Trading Reversals PDF",
+      "url": "https://ttrades.com/trading-reversals-pdf/",
+      "source_type": "pdf_landing",
+      "category_hint": "reversal",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/trading-reversals-pdf/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/trading-reversals-pdf/",
+        "https://ttrades.com/wp-content/uploads/2025/10/Trading-Reversals-TTrades-PDF.pdf"
+      ]
+    },
+    {
+      "title": "Understanding Wick Sizes, Reversals, and Expansion Candles in Price Action",
+      "url": "https://ttrades.com/understanding-wick-sizes-reversals-and-expansion-candles-in-price-action/",
+      "source_type": "article",
+      "category_hint": "expansion",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/understanding-wick-sizes-reversals-and-expansion-candles-in-price-action/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/SlWxhzhLo3A"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/10/Understanding-Wicks.pdf"
+      ]
+    },
+    {
+      "title": "Alignment with Bias PDF",
+      "url": "https://ttrades.com/alignment-with-bias-pdf/",
+      "source_type": "pdf_landing",
+      "category_hint": "bias",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/alignment-with-bias-pdf/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/alignment-with-bias-pdf/",
+        "https://ttrades.com/wp-content/uploads/2025/09/Alignment-with-Bias-TTrades.pdf"
+      ]
+    },
+    {
+      "title": "Phases of Price \u2013 Part 5: How to Blend Expansion, Retracement, Consolidation & Reversal",
+      "url": "https://ttrades.com/phases-of-price-part-5-how-to-blend-expansion-retracement-consolidation-reversal/",
+      "source_type": "article",
+      "category_hint": "expansion",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/phases-of-price-part-5-how-to-blend-expansion-retracement-consolidation-reversal/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/8BWkRGhuj1k"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Phases20Of20Price20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Phases of Price \u2013 Part 4: Mastering Reversals for High-Probability Setups",
+      "url": "https://ttrades.com/phases-of-price-part-4-mastering-reversals-for-high-probability-setups/",
+      "source_type": "article",
+      "category_hint": "reversal",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/phases-of-price-part-4-mastering-reversals-for-high-probability-setups/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/VD4xb9VfMHA"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Reversal20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Phases of Price \u2013 Part 3: Mastering Retracements for High-Probability Setups",
+      "url": "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+      "source_type": "article",
+      "category_hint": "retracement",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/F0G31iLVpVg"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Retracement20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Phases of Price \u2013 Part 2: Mastering Expansion for Strong Trend Trades",
+      "url": "https://ttrades.com/phases-of-price-part-2-mastering-expansion-for-strong-trend-trades/",
+      "source_type": "article",
+      "category_hint": "expansion",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/phases-of-price-part-2-mastering-expansion-for-strong-trend-trades/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/4Gm8p6O7Ebs"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Expansion20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Trading Continuations PDF",
+      "url": "https://ttrades.com/trading-continuations-pdf/",
+      "source_type": "pdf_landing",
+      "category_hint": "continuation",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/trading-continuations-pdf/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/trading-continuations-pdf/",
+        "https://ttrades.com/wp-content/uploads/2025/08/Continuation.pdf"
+      ]
+    },
+    {
+      "title": "Phases of Price \u2013 Part 1: How to Trade Consolidations for High-Probability Setups",
+      "url": "https://ttrades.com/phases-of-price-part-1-how-to-trade-consolidations-for-high-probability-setups/",
+      "source_type": "article",
+      "category_hint": "consolidation",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/phases-of-price-part-1-how-to-trade-consolidations-for-high-probability-setups/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/WFqLwOp2pXw"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Consolidation20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Stop Loss Mastery \u2013 Using Protected Swings for Precise Invalidations",
+      "url": "https://ttrades.com/stop-loss-mastery-using-protected-swings-for-precise-invalidations/",
+      "source_type": "article",
+      "category_hint": "protected_swings",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/stop-loss-mastery-using-protected-swings-for-precise-invalidations/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/JHVaSKtE1Ys"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Stop20Losses20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Protected Swings in Trading: How to Identify and Use Them for Entries & Continuations",
+      "url": "https://ttrades.com/protected-swings-understanding-trends-and-invalidations/",
+      "source_type": "article",
+      "category_hint": "protected_swings",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/protected-swings-understanding-trends-and-invalidations/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/-wr4xATE37g"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Protected20Swings20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Trading Breaker Blocks for Continuations",
+      "url": "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+      "source_type": "article",
+      "category_hint": "continuation",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/xP-o11jRCyg"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Breaker20Continuations20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Using Equilibrium in Continuations",
+      "url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "source_type": "article",
+      "category_hint": "continuation",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/IPZjNI1B5a0"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/EQ20Continuations20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Using Order Blocks for Continuations",
+      "url": "https://ttrades.com/using-order-blocks-for-continuations/",
+      "source_type": "article",
+      "category_hint": "continuation",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/using-order-blocks-for-continuations/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/IJcfC6wAPZU"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/OB20Continuations20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Mastering Top-Down Analysis: Aligning Multiple Timeframes for Expansion Trading",
+      "url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "source_type": "article",
+      "category_hint": "expansion",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/iEaMbuFZb24"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Top20Down20Analysis20TTrades20PDF.pdf"
+      ]
+    },
+    {
+      "title": "Reversal Sequence \u2013 Building an Entry Model for Trading",
+      "url": "https://ttrades.com/reversal-sequence-building-an-entry-model-for-trading/",
+      "source_type": "article",
+      "category_hint": "reversal",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/reversal-sequence-building-an-entry-model-for-trading/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/wik00c9_2nk"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Reversal-Sequence-TTrades-PDF.pdf"
+      ]
+    },
+    {
+      "title": "Mastering Candlestick Wicks: The Key to Catching Reversals",
+      "url": "https://ttrades.com/mastering-candlestick-wicks-the-key-to-catching-reversals/",
+      "source_type": "article",
+      "category_hint": "reversal",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/mastering-candlestick-wicks-the-key-to-catching-reversals/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/LKNQDAdId4s"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/07/Wicks-TTrades-PDF.pdf"
+      ]
+    },
+    {
+      "title": "Next Day Model: A Fractal Way to Build Trading Bias",
+      "url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "source_type": "article",
+      "category_hint": "bias",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/TfHlNgAZ_II"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Next-Day-Model-TTrades-PDF.pdf"
+      ]
+    },
+    {
+      "title": "Understanding the Seek and Destroy Daily Profile in Trading",
+      "url": "https://ttrades.com/understanding-the-seek-and-destroy-daily-profile-in-trading/",
+      "source_type": "article",
+      "category_hint": "bias",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/understanding-the-seek-and-destroy-daily-profile-in-trading/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/4WCiIyCiBrQ"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/Seek-and-Destroy-TTrades-PDF.pdf"
+      ]
+    },
+    {
+      "title": "Daily Profile: Understanding the New York Manipulation",
+      "url": "https://ttrades.com/daily-profile-understanding-the-new-york-manipulation/",
+      "source_type": "article",
+      "category_hint": "bias",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/daily-profile-understanding-the-new-york-manipulation/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/IeXtmeKqjnQ"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/NY-Manipulation-TTrades-PDF.pdf"
+      ]
+    },
+    {
+      "title": "Understanding the New York Reversal Daily Profile",
+      "url": "https://ttrades.com/understanding-the-new-york-reversal-in-daily-profiles/",
+      "source_type": "article",
+      "category_hint": "bias",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/understanding-the-new-york-reversal-in-daily-profiles/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/xdzyejskSKE"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/NY-Reversal-TTrades-PDF.pdf"
+      ]
+    },
+    {
+      "title": "London Reversal and New York Continuation: Daily Profile",
+      "url": "https://ttrades.com/london-reversal-and-new-york-continuation-daily-profile/",
+      "source_type": "article",
+      "category_hint": "bias",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/london-reversal-and-new-york-continuation-daily-profile/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/y6SnEdASVLY"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/08/London-Reversal-TTrades-PDF.pdf"
+      ]
+    },
+    {
+      "title": "ICT Daily Bias: Most Simple Mechanical Framework",
+      "url": "https://ttrades.com/ict-daily-bias-most-simple-mechanical-framework/",
+      "source_type": "article",
+      "category_hint": "bias",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/ict-daily-bias-most-simple-mechanical-framework/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/g3oDYq4P9ZE"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2025/07/Daily-Bias-TTrades.pdf"
+      ]
+    },
+    {
+      "title": "My Favorite Reversal Pattern : Orderblocks",
+      "url": "https://ttrades.com/my-favorite-reversal-pattern-orderblocks/",
+      "source_type": "article",
+      "category_hint": "reversal",
+      "discovered_from": "https://ttrades.com/trading-education-center/",
+      "canonical_url": "https://ttrades.com/my-favorite-reversal-pattern-orderblocks/",
+      "embedded_youtube_urls": [
+        "https://www.youtube.com/@ttrades_edu",
+        "https://youtu.be/7p9MBFk8EEM"
+      ],
+      "embedded_asset_urls": [
+        "https://ttrades.com/wp-content/uploads/2026/01/Fav_Reversal_Pattern_TTrades_PDF.pdf"
+      ]
+    }
+  ]
+}

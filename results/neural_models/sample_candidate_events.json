@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "case_ref": "sample_candidate_event_accepted",
+      "profile_slug": "ttrades_curriculum",
+      "topic": "continuation",
+      "trade_model": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "setup_variant": "equilibrium_hold_trend_resumption",
+      "timeframe_scope": ["fractal", "lower"],
+      "session_scope": ["new_york"],
+      "rule_states": {
+        "entryReadyState": "ready",
+        "higherTimeframeBiasState": "bullish",
+        "protectedSwingState": "confirmed"
+      },
+      "annotation": {
+        "anchor_type": "equilibrium_half_range_respect",
+        "confirmation": ["protected_swing", "candle_3_closure"]
+      },
+      "candidate_signal": {
+        "timestamp": "2026-03-22T09:30:00-04:00",
+        "side": "long",
+        "stop_price": 98.0,
+        "target_price": 104.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "candidate continuation setup"
+      }
+    },
+    {
+      "case_ref": "sample_candidate_event_rejected",
+      "profile_slug": "ttrades_curriculum",
+      "topic": "bias",
+      "trade_model": "daily_bias_framework",
+      "relation_type": "bias_framework",
+      "setup_variant": "daily_bias_only",
+      "timeframe_scope": ["higher"],
+      "session_scope": ["new_york"],
+      "rule_states": {
+        "entryReadyState": "blocked"
+      },
+      "annotation": {
+        "anchor_type": "daily_range_midpoint",
+        "confirmation": ["bias_only"]
+      },
+      "candidate_signal": {
+        "timestamp": "2026-03-22T09:30:00-04:00",
+        "side": "long",
+        "stop_price": 98.0,
+        "target_price": 104.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "candidate bias-only setup"
+      }
+    }
+  ]
+}

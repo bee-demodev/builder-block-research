@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-03-23T17:16:35.220987+00:00",
+  "task_name": "continuation_entry_model",
+  "positive_label": "continuation_entry_model",
+  "negative_label": "other_trade_models",
+  "device": "cuda",
+  "torch_version": "2.9.1+cu128",
+  "cuda_visible_to_torch": true,
+  "cuda_version": "12.8",
+  "example_count": 16,
+  "positive_count": 7,
+  "negative_count": 9,
+  "skipped_example_count": 0,
+  "train_count": 12,
+  "validation_count": 4,
+  "vocabulary_size": 214,
+  "hyperparameters": {
+    "epochs": 20,
+    "learning_rate": 0.03,
+    "hidden_dim": 24,
+    "validation_ratio": 0.25,
+    "seed": 42
+  },
+  "best_epoch": 20,
+  "metrics": {
+    "train": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "positive_predictions": 5,
+      "positive_labels": 5,
+      "confusion": {
+        "true_positive": 5,
+        "true_negative": 7,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "loss": 0.04621429741382599
+    },
+    "validation": {
+      "accuracy": 0.75,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "positive_predictions": 1,
+      "positive_labels": 2,
+      "confusion": {
+        "true_positive": 1,
+        "true_negative": 2,
+        "false_positive": 0,
+        "false_negative": 1
+      },
+      "loss": 0.3142050802707672
+    }
+  },
+  "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\continuation_entry_model.pt",
+  "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\continuation_entry_model_report.json",
+  "promotion": {
+    "promoted_at": "2026-03-23T19:29:06.593949+00:00",
+    "source_model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model.pt",
+    "source_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\continuation_entry_model_report.json",
+    "source_iteration_challenger_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\iteration_challenger_report.json"
+  }
+}

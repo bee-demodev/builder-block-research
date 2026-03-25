@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-03-24T19:32:45.917638+00:00",
+  "sync_applied": false,
+  "teacher_dataset": {
+    "row_count": 50,
+    "mapped_case_count": 2,
+    "fully_aligned_case_count": 0,
+    "alignment_status_counts": {
+      "market_context_only": 10,
+      "unmapped": 40
+    },
+    "mapping_provenance_counts": {
+      "tradingview_validation_proxy": 10,
+      "unmapped": 40
+    }
+  },
+  "review_queue": {
+    "case_count": 10,
+    "alignment_status_counts": {
+      "market_context_only": 2,
+      "unmapped": 8
+    },
+    "recommended_action_counts": {
+      "find_alternate_chart_evidence": 2,
+      "identify_symbol_and_anchor_timestamp": 8
+    },
+    "source_image_kind_counts": {
+      "source_article_image": 10
+    }
+  },
+  "weak_promotions": {
+    "input_row_count": 75,
+    "promoted_row_count": 0,
+    "pending_review_count": 70,
+    "blocked_review_status_count": 75,
+    "blocked_contradiction_count": 0,
+    "missing_screenshot_count": 0,
+    "missing_label_count": 0,
+    "review_status_counts": {
+      "missing_frame": 5,
+      "ready_for_weak_training": 70
+    },
+    "contradiction_status_counts": {
+      "unreviewed": 75
+    }
+  },
+  "weak_promotion_queue": {
+    "row_count": 75,
+    "ready_to_promote_count": 0,
+    "review_candidate_count": 59,
+    "blocked_contradiction_count": 0,
+    "missing_frame_count": 0,
+    "recommended_action_counts": {
+      "collect_more_label_evidence": 16,
+      "review_for_teacher_promotion": 59
+    },
+    "priority_band_counts": {
+      "high": 32,
+      "low": 16,
+      "medium": 27
+    }
+  },
+  "phase_one_replay_dataset": {
+    "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_phase_one_replay_dataset.jsonl",
+    "report_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_phase_one_replay_dataset_report.json",
+    "phase_one_case_count": 2,
+    "exported_case_count": 0,
+    "skipped_case_counts": {
+      "not_fully_aligned": 2,
+      "missing_bars_path": 0,
+      "missing_bars_file": 0,
+      "missing_anchor_timestamp": 0,
+      "empty_bars": 0,
+      "missing_anchor_bucket": 0
+    }
+  },
+  "visual_model": {
+    "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_visual\\ttfm_visual_pattern_net.pt",
+    "model_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_visual\\ttfm_visual_pattern_net_report.json",
+    "device": "cuda",
+    "label_space_size": 12,
+    "best_epoch": 18,
+    "best_validation_f1": 0.2105263157894737,
+    "best_prediction_threshold": 0.45,
+    "validation_micro_f1": 0.2105263157894737,
+    "validation_micro_precision": 0.12121212121212122,
+    "validation_micro_recall": 0.8,
+    "validation_positive_predictions": 66,
+    "validation_positive_labels": 10,
+    "train_micro_f1": 0.27027027027027023
+  },
+  "review_artifacts": {
+    "dashboard_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_market_context_review_dashboard.html",
+    "override_template_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_market_context_override_templates.json"
+  }
+}

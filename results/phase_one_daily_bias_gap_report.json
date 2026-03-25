@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-03-23T23:33:32.849219+00:00",
+  "target_trade_model": "daily_bias_framework",
+  "recommended_positive_examples": 5,
+  "recommended_negative_examples": 5,
+  "additional_positive_examples_needed": 1,
+  "current_counts": {
+    "positive": 4,
+    "negative": 16,
+    "total": 20
+  },
+  "readiness": {
+    "trainable": true,
+    "ready_for_recommendation": false
+  },
+  "candidate_summary": {
+    "teacher_visual_candidate_count": 10,
+    "promotable_candidate_count": 0,
+    "blocked_candidate_count": 10,
+    "alignment_status_counts": {
+      "market_context_only": 10
+    },
+    "source_image_kind_counts": {
+      "source_article_image": 10
+    }
+  },
+  "fastest_positive_candidates": [],
+  "blocked_teacher_visual_candidates": [
+    {
+      "example_id": "ttrades_daily_bias_reversal_baseline_v1::context",
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "checkpoint": "context",
+      "source_file": "results/ttfm_teacher_visual_dataset.jsonl",
+      "source_url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/context_Next-Day-model.png",
+      "active_labels": [
+        "equilibrium",
+        "zone_boundary"
+      ],
+      "active_label_provenance": "rule_derived",
+      "trade_model": "daily_bias_framework",
+      "decision": "trade",
+      "source_spec_key": "daily_bias_framework",
+      "alignment_status": "market_context_only",
+      "mapping_provenance": "tradingview_validation_proxy",
+      "annotation_notes": [
+        "Bootstrapped from source article image Next-Day-model.png; requires visual review before anchor promotion."
+      ],
+      "source_image_kind": "source_article_image",
+      "promotion_ready": false,
+      "promotion_blockers": [
+        "missing_fully_aligned_market_context",
+        "source_article_image_only"
+      ]
+    },
+    {
+      "example_id": "ttrades_daily_bias_continuation_baseline_v1::context",
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "checkpoint": "context",
+      "source_file": "results/ttfm_teacher_visual_dataset.jsonl",
+      "source_url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/context_Framework.png",
+      "active_labels": [
+        "equilibrium"
+      ],
+      "active_label_provenance": "rule_derived",
+      "trade_model": "daily_bias_framework",
+      "decision": "trade",
+      "source_spec_key": "daily_bias_framework",
+      "alignment_status": "market_context_only",
+      "mapping_provenance": "tradingview_validation_proxy",
+      "annotation_notes": [
+        "Bootstrapped from source article image Framework.png; requires visual review before anchor promotion."
+      ],
+      "source_image_kind": "source_article_image",
+      "promotion_ready": false,
+      "promotion_blockers": [
+        "missing_fully_aligned_market_context",
+        "source_article_image_only"
+      ]
+    },
+    {
+      "example_id": "ttrades_daily_bias_continuation_baseline_v1::confirmation",
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "checkpoint": "confirmation",
+      "source_file": "results/ttfm_teacher_visual_dataset.jsonl",
+      "source_url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/confirmation_Framework-768x432.png",
+      "active_labels": [
+        "equilibrium"
+      ],
+      "active_label_provenance": "rule_derived",
+      "trade_model": "daily_bias_framework",
+      "decision": "trade",
+      "source_spec_key": "daily_bias_framework",
+      "alignment_status": "market_context_only",
+      "mapping_provenance": "tradingview_validation_proxy",
+      "annotation_notes": [
+        "Bootstrapped from source article image Framework-768x432.png; requires visual review before anchor promotion."
+      ],
+      "source_image_kind": "source_article_image",
+      "promotion_ready": false,
+      "promotion_blockers": [
+        "missing_fully_aligned_market_context",
+        "source_article_image_only"
+      ]
+    }
+  ],
+  "blocker": {
+    "type": "missing_chart_state_alignment",
+    "missing_replay_evidence": true,
+    "missing_tradingview_validation": false,
+    "details": "The current daily-bias teacher visuals are still bootstrapped from source article images and remain market_context_only. They are not promotable via live TradingView QA alone because the underlying teacher cases still lack fully aligned chart-state evidence."
+  },
+  "source_files": {
+    "reinforced_surface": "C:/Users/satvi/Repos/builder-block-research/results/reinforced_model_training_surface.jsonl",
+    "teacher_visual_dataset": "C:/Users/satvi/Repos/builder-block-research/results/ttfm_teacher_visual_dataset.jsonl"
+  },
+  "next_step": "Backfill anchor timestamps and replay-aligned chart evidence for the blocked daily-bias teacher cases starting with ttrades_daily_bias_reversal_baseline_v1::context, then rerun the phase-one replay export and rebuild the reinforced surface.",
+  "report_output": "C:/Users/satvi/Repos/builder-block-research/results/phase_one_daily_bias_gap_report.json"
+}

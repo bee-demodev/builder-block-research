@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-03-23T20:20:43.433541+00:00",
+  "artifact_type": "pine_candidate_event_contract",
+  "spec_key": "daily_bias_c123_map",
+  "trade_model": {
+    "slug": "daily_bias_c123_map",
+    "name": "Daily Bias C1/C2/C3 Map"
+  },
+  "script_title": "TTrades Daily Bias C1/C2/C3 Map [Draft]",
+  "script_output_path": "results\\pine_scripts\\daily_bias_c123_map.pine",
+  "alert_titles": [
+    "Hourly sequence activated",
+    "Five minute continuation activated"
+  ],
+  "rule_state_fields": [
+    "dailyBiasDirection",
+    "dailyPoiTop",
+    "dailyPoiBottom",
+    "priceInsideDailyPoi",
+    "activeHourlyDir",
+    "activeHourlyC1Time",
+    "activeHourlyC2Time",
+    "activeHourlyC3Time",
+    "activeEntryTime",
+    "activeEntryPrice",
+    "activeHourlyInvalidation",
+    "activeLtfDir",
+    "activeLtfC2Time",
+    "activeLtfC3Time",
+    "activeLtfEntryPrice"
+  ],
+  "required_event_fields": [
+    "trade_model",
+    "chart_context",
+    "annotation",
+    "candidate_signal"
+  ],
+  "candidate_signal_required_fields": [
+    "timestamp",
+    "side",
+    "stop_price",
+    "target_price"
+  ],
+  "default_event": {
+    "profile_slug": "",
+    "topic": "",
+    "trade_model": "daily_bias_c123_map",
+    "relation_type": "execution_model",
+    "chart_context": {
+      "setup_variant": "daily_bias_c123_map",
+      "source_kind": "tradingview_pine_alert",
+      "timeframe_scope": [
+        "chart_60",
+        "bias_D",
+        "structure_60",
+        "execution_5"
+      ],
+      "session_scope": []
+    },
+    "annotation": {
+      "fired_alert": "",
+      "rule_states": {
+        "dailyBiasDirection": "",
+        "dailyPoiTop": "",
+        "dailyPoiBottom": "",
+        "priceInsideDailyPoi": "",
+        "activeHourlyDir": "",
+        "activeHourlyC1Time": "",
+        "activeHourlyC2Time": "",
+        "activeHourlyC3Time": "",
+        "activeEntryTime": "",
+        "activeEntryPrice": "",
+        "activeHourlyInvalidation": "",
+        "activeLtfDir": "",
+        "activeLtfC2Time": "",
+        "activeLtfC3Time": "",
+        "activeLtfEntryPrice": ""
+      }
+    },
+    "candidate_signal": {
+      "timestamp": "",
+      "side": "",
+      "stop_price": "",
+      "target_price": "",
+      "quantity": 1.0,
+      "session": "",
+      "thesis": ""
+    }
+  }
+}

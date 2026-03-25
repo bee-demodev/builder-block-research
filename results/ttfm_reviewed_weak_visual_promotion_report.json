@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-03-24T19:32:43.598233+00:00",
+  "summary": {
+    "input_row_count": 75,
+    "promoted_row_count": 0,
+    "pending_review_count": 70,
+    "blocked_review_status_count": 75,
+    "blocked_contradiction_count": 0,
+    "missing_screenshot_count": 0,
+    "missing_label_count": 0,
+    "review_status_counts": {
+      "missing_frame": 5,
+      "ready_for_weak_training": 70
+    },
+    "contradiction_status_counts": {
+      "unreviewed": 75
+    }
+  }
+}

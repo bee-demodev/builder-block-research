@@ -1,0 +1,214 @@
+{
+  "topic": "consolidation",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_phases_of_price_part_1",
+      "url": "https://ttrades.com/phases-of-price-part-1-how-to-trade-consolidations-for-high-probability-setups/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_phases_of_price_part_5",
+      "url": "https://ttrades.com/phases-of-price-part-5-how-to-blend-expansion-retracement-consolidation-reversal/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_seek_and_destroy_profile",
+      "url": "https://ttrades.com/understanding-the-seek-and-destroy-daily-profile-in-trading/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_new_york_manipulation_profile",
+      "url": "https://ttrades.com/daily-profile-understanding-the-new-york-manipulation/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_top_down_analysis",
+      "url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_expansion_part_2",
+      "url": "https://ttrades.com/phases-of-price-part-2-mastering-expansion-for-strong-trend-trades/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_continuation_failures",
+      "url": "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_protected_swings",
+      "url": "https://ttrades.com/protected-swings-understanding-trends-and-invalidations/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "consolidation_phase_definition",
+      "name": "A consolidation is an internal range between a defined high and low where directional intent is unresolved",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["range_high_defined", "range_low_defined"],
+      "direction": "bidirectional",
+      "setupAnchor": "After expansion or at an important higher-timeframe level, price compresses and remains internal between a defined high and low for multiple rotations",
+      "confirmationTrigger": "Treat price as consolidating while it stays inside the range, returns toward equilibrium, and fails to produce a decisive continuation or reversal sequence",
+      "protectedSwingDefinition": "No directional protected swing should be trusted until the range either manipulates one side and confirms away from it or breaks out cleanly and holds the retest",
+      "invalidationCondition": "Price resolves with a confirmed manipulation plus closure through the opposing candle series, or breaks out and refuses to close back inside the range",
+      "targetLogic": "Inside the range, avoid directional trades; once consolidation resolves, target the next external liquidity pool away from the resolved side",
+      "exceptions": [
+        "A brief pause after expansion is not enough on its own to classify a full consolidation",
+        "If price never returns toward equilibrium and instead displaces immediately, the phase is likely already resolving"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_1#what_is_a_consolidation",
+        "ttrades_phases_of_price_part_1#why_consolidation_matters",
+        "ttrades_phases_of_price_part_5#core_concept_always_start_with_expansion"
+      ],
+      "visualVerificationRefs": [
+        "article:consolidation_phase_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "range high",
+        "range low",
+        "equilibrium level",
+        "inside-range bar count",
+        "range reentry flag"
+      ],
+      "machineChecks": [
+        "Track whether price remains internal between a stable range high and range low",
+        "Measure whether price keeps reverting toward range equilibrium instead of displacing decisively",
+        "Block directional entries while consolidation remains unresolved"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "manipulation_then_resolution",
+      "name": "The preferred consolidation setup is a sweep of one side of the range followed by confirmation away from the swept side",
+      "timeframeScope": ["lower"],
+      "marketPhasePrecondition": ["consolidation_active", "bias_defined"],
+      "direction": "bidirectional",
+      "setupAnchor": "Mark the active range and wait for liquidity sweep or correlated-market SMT sweep on one side of that range",
+      "confirmationTrigger": "After the sweep, require a close through the opposing candle series or protected swing formation before trading away from the taken side",
+      "protectedSwingDefinition": "The protected swing that forms after the sweep confirms whether the event is a manipulation leading to continuation or reversal",
+      "invalidationCondition": "Price sweeps a side but closes back into the range without directional confirmation, or rotates to the opposite side before holding the new swing",
+      "targetLogic": "Enter after confirmation and target the opposite external liquidity or the next higher-timeframe objective away from the manipulated side",
+      "exceptions": [
+        "SMT can substitute for a direct sweep in the instrument being traded",
+        "A wick alone is not enough; the close through the opposing series is still required"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_1#how_to_trade_consolidations",
+        "ttrades_phases_of_price_part_1#smt_smart_money_technique_in_consolidation",
+        "ttrades_new_york_manipulation_profile#how_to_recognize_it_on_charts",
+        "ttrades_protected_swings#what_is_a_protected_swing"
+      ],
+      "visualVerificationRefs": [
+        "article:consolidation_manipulation_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "range sweep flag",
+        "SMT sweep optional flag",
+        "opposing candle series break",
+        "new protected swing state",
+        "range reentry state"
+      ],
+      "machineChecks": [
+        "Require a sweep or validated SMT substitute before manipulation logic is enabled",
+        "Require closure through the opposing candle series before entry eligibility",
+        "Reject setups that sweep a side but keep rotating across the full range"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "breakout_continuation_from_consolidation",
+      "name": "A breakout continuation is valid when price leaves the range, holds outside it, and confirms on the retest",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["consolidation_active", "trend_context_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Price approaches a range boundary while the broader bias and prior expansion still favor one side",
+      "confirmationTrigger": "Price breaks the range, does not close back inside it, and forms continuation structure on the retest of the broken boundary",
+      "protectedSwingDefinition": "The first protected swing that forms outside the range becomes the breakout invalidation level",
+      "invalidationCondition": "Price breaks out but closes back inside the range or fails to hold the new protected swing on retest",
+      "targetLogic": "Trade the retest in the breakout direction and target external liquidity in line with the prevailing trend",
+      "exceptions": [
+        "Failure to manipulate can still be a valid breakout if price refuses to return inside the range",
+        "A breakout without retest confirmation is lower quality than a held retest"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_1#why_consolidation_matters",
+        "ttrades_phases_of_price_part_1#types_of_consolidations",
+        "ttrades_expansion_part_2#how_to_trade_expansion",
+        "ttrades_continuation_failures#reason_one_consolidation_disguised_as_continuation"
+      ],
+      "visualVerificationRefs": [
+        "article:consolidation_breakout_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "range boundary break flag",
+        "outside-close flag",
+        "retest hold flag",
+        "new protected swing state",
+        "trend context flag"
+      ],
+      "machineChecks": [
+        "Require an outside close before treating the move as a valid breakout",
+        "Reject breakout continuation if price closes back inside the range",
+        "Promote retest entries only after the broken boundary holds as support or resistance"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "equilibrium_and_whipsaw_filters",
+      "name": "While consolidation remains unresolved, equilibrium and range-rotation behavior should dominate expectations",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["consolidation_active"],
+      "direction": "bidirectional",
+      "setupAnchor": "An internal range forms and both sides are still available as liquidity targets",
+      "confirmationTrigger": "Until breakout or manipulation confirms, expect deviations from the range to revert toward equilibrium or daily-open style rebalancing points",
+      "protectedSwingDefinition": "If no new directional protected swing forms, the environment remains rotational rather than directional",
+      "invalidationCondition": "Price stops rotating around equilibrium and instead confirms a directional move with range escape plus structural confirmation",
+      "targetLogic": "Either stand aside or fade false breakouts back toward equilibrium; do not chase directional continuation while the range is still behaving like seek-and-destroy or whipsaw conditions",
+      "exceptions": [
+        "Seek-and-destroy conditions are better treated as non-opportunity than as mandatory fade trades",
+        "If London or another early session already creates most of the day's range, later-session expansion expectations should be reduced"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_1#using_equilibrium_in_consolidations",
+        "ttrades_seek_and_destroy_profile#recognizing_seek_and_destroy_days",
+        "ttrades_seek_and_destroy_profile#how_to_approach_trading_them",
+        "ttrades_continuation_failures#reason_one_consolidation_disguised_as_continuation"
+      ],
+      "visualVerificationRefs": [
+        "article:consolidation_eq_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "equilibrium level",
+        "daily open or session-open level",
+        "false breakout flag",
+        "range rotation count",
+        "directional protected swing flag"
+      ],
+      "machineChecks": [
+        "Track equilibrium reversion while price remains internal to the range",
+        "Lower expansion expectations after repeated false breakouts or two-sided sweeps",
+        "Block continuation-style entries while no directional protected swing exists"
+      ],
+      "ambiguityNotes": []
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What is the cleanest first-pass rule for deciding when a brief pause becomes a true consolidation instead of just a small pullback inside expansion?",
+    "How should the project rank direct sweep evidence versus SMT substitute evidence when both can stand in for range manipulation?"
+  ]
+}

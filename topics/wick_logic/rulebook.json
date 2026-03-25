@@ -1,0 +1,189 @@
+{
+  "topic": "wick_logic",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_wick_sizes",
+      "url": "https://ttrades.com/understanding-wick-sizes-reversals-and-expansion-candles-in-price-action/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_candlestick_wicks",
+      "url": "https://ttrades.com/mastering-candlestick-wicks-the-key-to-catching-reversals/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_easy_daily_bias",
+      "url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "small_opposing_run_supports_expansion",
+      "name": "A small opposing wick with a large body supports expansion in the candle direction",
+      "timeframeScope": ["fractal", "higher"],
+      "marketPhasePrecondition": ["directional_candle_closed"],
+      "direction": "bidirectional",
+      "setupAnchor": "Measure the candle body and the wick opposite the candle direction after the candle closes",
+      "confirmationTrigger": "Bullish expansion support appears when the lower wick is small and the candle closes near its high; bearish expansion support appears when the upper wick is small and the candle closes near its low",
+      "protectedSwingDefinition": "A candle that supports expansion provides the directional context for later protected swings and continuation entries in the same direction",
+      "invalidationCondition": "The opposing wick consumes too much of the candle's range or the close finishes too close to the open instead of the directional extreme",
+      "targetLogic": "When the candle supports expansion, prioritize continuation targets such as external liquidity or average range objectives rather than the opening price",
+      "exceptions": [
+        "A small same-side wick does not invalidate the candle; the key measurement is the wick opposing the intended expansion"
+      ],
+      "evidenceRefs": [
+        "ttrades_wick_sizes#expansion_vs_reversal_candles",
+        "ttrades_wick_sizes#how_wick_size_affects_expansion",
+        "ttrades_wick_sizes#key_takeaways"
+      ],
+      "visualVerificationRefs": [
+        "article:wick_logic_expansion_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "candle open",
+        "candle high",
+        "candle low",
+        "candle close",
+        "body size",
+        "opposing wick size"
+      ],
+      "machineChecks": [
+        "Compute the wick opposite the candle direction and compare it against the body",
+        "Require the close to finish near the directional extreme rather than near the open",
+        "Classify the candle as expansion-supporting only when the opposing wick remains small relative to the full range"
+      ],
+      "ambiguityNotes": [
+        "The first numeric threshold for what counts as a small opposing run is not yet fixed"
+      ]
+    },
+    {
+      "id": "large_opposing_wick_favors_reversion",
+      "name": "A large opposing wick with a smaller body favors reversion toward the open or nearby liquidity",
+      "timeframeScope": ["fractal", "higher"],
+      "marketPhasePrecondition": ["directional_candle_closed"],
+      "direction": "bidirectional",
+      "setupAnchor": "Identify candles where most of the range was consumed by the wick opposite the intended expansion direction",
+      "confirmationTrigger": "Treat the candle as reversal-leaning when the opposing wick dominates the candle anatomy and the close finishes closer to the open than the directional extreme",
+      "protectedSwingDefinition": "Large rejection wicks warn that continuation structure is weak and protected swings in the candle direction are less likely to hold cleanly",
+      "invalidationCondition": "The next candle immediately reasserts directional expansion with a small opposing wick and closes beyond the rejection range",
+      "targetLogic": "Favor targets back toward the opening price or nearby liquidity instead of expecting a large directional expansion from the same candle",
+      "exceptions": [
+        "Large-wick reversal candles can still lead to continuation later, but usually after the next candle or a later confirmation step rather than immediately"
+      ],
+      "evidenceRefs": [
+        "ttrades_wick_sizes#expansion_vs_reversal_candles",
+        "ttrades_wick_sizes#adjusting_targets_based_on_candle_behavior",
+        "ttrades_easy_daily_bias#why_wick_size_matters"
+      ],
+      "visualVerificationRefs": [
+        "article:wick_logic_reversion_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "candle open",
+        "candle high",
+        "candle low",
+        "candle close",
+        "body size",
+        "opposing wick size"
+      ],
+      "machineChecks": [
+        "Classify candles with dominant opposing wicks as poor expansion candidates",
+        "Downgrade continuation expectations when the close finishes too close to the open",
+        "Switch the target model toward the open or nearby liquidity after a large opposing run"
+      ],
+      "ambiguityNotes": [
+        "The exact cutoff for when the wick dominates enough to invalidate expansion still needs a stricter algorithm"
+      ]
+    },
+    {
+      "id": "wick_midpoint_respect_vs_disrespect",
+      "name": "Respect or disrespect of the wick midpoint determines whether rejection is holding or failing",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["significant_wick_present_at_point_of_interest"],
+      "direction": "bidirectional",
+      "setupAnchor": "Measure the wick from the body edge to the wick extreme and mark its 50 percent midpoint",
+      "confirmationTrigger": "If price respects the midpoint, expect continuation opposite the wick; if price closes through the midpoint, treat the wick as disrespected and expect continuation in the original direction of the wick",
+      "protectedSwingDefinition": "A respected wick midpoint helps validate the reversal structure that later protected swings should build from",
+      "invalidationCondition": "Price closes through the midpoint and proves the wick rejection did not hold",
+      "targetLogic": "Use midpoint respect as the hold/fail filter before deciding whether to follow the wick-based reversal or abandon it",
+      "exceptions": [
+        "Do not prioritize midpoint logic for internal-range wicks that did not sweep a meaningful level or reach a clear point of interest"
+      ],
+      "evidenceRefs": [
+        "ttrades_candlestick_wicks#respecting_vs_disrespecting_wicks",
+        "ttrades_candlestick_wicks#practical_chart_examples",
+        "ttrades_candlestick_wicks#the_importance_of_context"
+      ],
+      "visualVerificationRefs": [
+        "article:wick_midpoint_respect_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "wick extreme",
+        "body edge nearest the wick",
+        "wick midpoint",
+        "subsequent close series"
+      ],
+      "machineChecks": [
+        "Compute the wick midpoint from the body edge to the wick extreme",
+        "Track whether subsequent closes remain on the respected side of the midpoint",
+        "Flip the wick state from respected to disrespected once a close breaches the midpoint"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "higher_timeframe_wick_guides_lower_timeframe_expectation",
+      "name": "Higher-timeframe wick behavior should govern whether lower-timeframe structure is read as expansion, reversal, or range",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["parent_timeframe_candle_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Start from the higher-timeframe candle, then evaluate the lower-timeframe setup in the context of that parent wick behavior",
+      "confirmationTrigger": "A shallow opposing run on the higher timeframe supports lower-timeframe expansion, while a large opposing run suggests lower-timeframe reversal setups or range-bound expectations",
+      "protectedSwingDefinition": "Lower-timeframe protected swings are higher quality when they agree with the higher-timeframe wick read instead of fighting it",
+      "invalidationCondition": "The lower-timeframe setup assumes expansion even though the higher-timeframe candle is printing a large opposing wick or other clear rejection behavior",
+      "targetLogic": "Use the higher-timeframe wick read to choose between continuation targets, reversal targets, or more conservative range expectations on the lower timeframe",
+      "exceptions": [
+        "Lower timeframes can still move against the higher-timeframe wick read, but those moves should be treated as lower-quality or counter-context"
+      ],
+      "evidenceRefs": [
+        "ttrades_wick_sizes#using_timeframe_alignment",
+        "ttrades_wick_sizes#the_three_trading_scenarios",
+        "ttrades_candlestick_wicks#how_to_use_wicks_in_your_trading_plan"
+      ],
+      "visualVerificationRefs": [
+        "article:wick_logic_timeframe_alignment_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe open",
+        "higher-timeframe high",
+        "higher-timeframe low",
+        "higher-timeframe close",
+        "lower-timeframe structure state"
+      ],
+      "machineChecks": [
+        "Classify the higher-timeframe candle first as expansion-supporting or reversal-leaning based on wick behavior",
+        "Gate lower-timeframe expansion reads on the higher-timeframe wick classification",
+        "Downgrade lower-timeframe continuation setups when the parent candle shows large opposing rejection"
+      ],
+      "ambiguityNotes": [
+        "The strict minimum mismatch needed before a lower-timeframe setup should be rejected instead of merely downgraded still needs a formal rule"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What numeric ratio should separate a small opposing run from a large opposing wick across the main timeframe pairs?",
+    "How close to the open should a candle finish before it is treated as a reversal-style candle instead of an expansion candle?"
+  ]
+}

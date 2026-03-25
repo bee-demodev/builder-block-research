@@ -1,0 +1,1577 @@
+[
+  {
+    "text": "How's it going everyone and welcome back",
+    "start": 10.719,
+    "duration": 4.241
+  },
+  {
+    "text": "to another video. In this video, we are",
+    "start": 12.559,
+    "duration": 5.041
+  },
+  {
+    "text": "going to talk about a forex concept.",
+    "start": 14.96,
+    "duration": 5.12
+  },
+  {
+    "text": "We're using EuroGBP for relative",
+    "start": 17.6,
+    "duration": 4.88
+  },
+  {
+    "text": "strength. So, if you are trading EuroUSD",
+    "start": 20.08,
+    "duration": 4.959
+  },
+  {
+    "text": "or GBPUSD, you are generally watching",
+    "start": 22.48,
+    "duration": 4.799
+  },
+  {
+    "text": "the dollar. from the dollar. You are",
+    "start": 25.039,
+    "duration": 4.48
+  },
+  {
+    "text": "then deciding if you want to trade euro",
+    "start": 27.279,
+    "duration": 4.24
+  },
+  {
+    "text": "or pound and looking at the relative",
+    "start": 29.519,
+    "duration": 4.161
+  },
+  {
+    "text": "strength between those two assets. And",
+    "start": 31.519,
+    "duration": 3.601
+  },
+  {
+    "text": "this is actually a video I touched on a",
+    "start": 33.68,
+    "duration": 4.64
+  },
+  {
+    "text": "while ago on my channel for using NQNES.",
+    "start": 35.12,
+    "duration": 4.64
+  },
+  {
+    "text": "But let's talk about how to do it for",
+    "start": 38.32,
+    "duration": 4.48
+  },
+  {
+    "text": "euro and GBP. So if the dollar is not",
+    "start": 39.76,
+    "duration": 4.88
+  },
+  {
+    "text": "consolidating, that is when we're going",
+    "start": 42.8,
+    "duration": 5.52
+  },
+  {
+    "text": "to look to trade euro or GBP. Now let's",
+    "start": 44.64,
+    "duration": 5.759
+  },
+  {
+    "text": "say I'm not sure which is stronger or",
+    "start": 48.32,
+    "duration": 4.079
+  },
+  {
+    "text": "weaker. Let's say for instance the",
+    "start": 50.399,
+    "duration": 4.16
+  },
+  {
+    "text": "dollar is strong. I'm looking to short",
+    "start": 52.399,
+    "duration": 4.241
+  },
+  {
+    "text": "one of these assets. Which one do I",
+    "start": 54.559,
+    "duration": 4.32
+  },
+  {
+    "text": "determine I want to short? Well, I can",
+    "start": 56.64,
+    "duration": 4.96
+  },
+  {
+    "text": "look at Euro versus GBP to determine",
+    "start": 58.879,
+    "duration": 5.201
+  },
+  {
+    "text": "that. So, how am I going to do that? By",
+    "start": 61.6,
+    "duration": 4.96
+  },
+  {
+    "text": "looking at Euro versus GBP, if that is",
+    "start": 64.08,
+    "duration": 4.399
+  },
+  {
+    "text": "in a bullish trend, what does that tell",
+    "start": 66.56,
+    "duration": 3.84
+  },
+  {
+    "text": "me? Well, if you remember back to our",
+    "start": 68.479,
+    "duration": 4.401
+  },
+  {
+    "text": "fractions video, it means that the euro",
+    "start": 70.4,
+    "duration": 5.6
+  },
+  {
+    "text": "is stronger and the GBP is weaker. So,",
+    "start": 72.88,
+    "duration": 4.8
+  },
+  {
+    "text": "if I'm going to want to long something,",
+    "start": 76.0,
+    "duration": 4.799
+  },
+  {
+    "text": "then I want to long EuroUSD since it is",
+    "start": 77.68,
+    "duration": 6.0
+  },
+  {
+    "text": "stronger. And I'd want to short GBPUSD",
+    "start": 80.799,
+    "duration": 4.881
+  },
+  {
+    "text": "since it is weaker. And that is all",
+    "start": 83.68,
+    "duration": 4.16
+  },
+  {
+    "text": "going to depend on if the dollar is",
+    "start": 85.68,
+    "duration": 4.479
+  },
+  {
+    "text": "bullish or bearish. Now, let's say",
+    "start": 87.84,
+    "duration": 5.44
+  },
+  {
+    "text": "EuroGBP is in a bearish trend. Well,",
+    "start": 90.159,
+    "duration": 5.761
+  },
+  {
+    "text": "that means euro is weaker and GBP is",
+    "start": 93.28,
+    "duration": 4.879
+  },
+  {
+    "text": "stronger. So, if the dollar is bearish,",
+    "start": 95.92,
+    "duration": 4.879
+  },
+  {
+    "text": "I want to then long the stronger asset.",
+    "start": 98.159,
+    "duration": 4.881
+  },
+  {
+    "text": "If the dollar is bullish, I want to then",
+    "start": 100.799,
+    "duration": 3.921
+  },
+  {
+    "text": "short the weaker asset, which would be",
+    "start": 103.04,
+    "duration": 4.24
+  },
+  {
+    "text": "EuroUSD. So, what does this look like in",
+    "start": 104.72,
+    "duration": 4.399
+  },
+  {
+    "text": "an example? In this case, we have the",
+    "start": 107.28,
+    "duration": 3.92
+  },
+  {
+    "text": "hourly chart on dollar paired with the",
+    "start": 109.119,
+    "duration": 4.161
+  },
+  {
+    "text": "daily chart on the dollar and the daily",
+    "start": 111.2,
+    "duration": 4.4
+  },
+  {
+    "text": "chart on EuroGBP.",
+    "start": 113.28,
+    "duration": 4.96
+  },
+  {
+    "text": "So, we can see that EuroGBP is in a",
+    "start": 115.6,
+    "duration": 5.28
+  },
+  {
+    "text": "bullish trend. So, what does that mean?",
+    "start": 118.24,
+    "duration": 5.199
+  },
+  {
+    "text": "Means that the euro is stronger and the",
+    "start": 120.88,
+    "duration": 5.12
+  },
+  {
+    "text": "pound is weaker. If the dollar is",
+    "start": 123.439,
+    "duration": 4.8
+  },
+  {
+    "text": "bearish, well, then we want to be",
+    "start": 126.0,
+    "duration": 5.2
+  },
+  {
+    "text": "longing something. So if the dollar is",
+    "start": 128.239,
+    "duration": 5.121
+  },
+  {
+    "text": "bearish, we want to choose the stronger",
+    "start": 131.2,
+    "duration": 4.8
+  },
+  {
+    "text": "of the assets between euro and GBP,",
+    "start": 133.36,
+    "duration": 5.28
+  },
+  {
+    "text": "which we determined using this chart was",
+    "start": 136.0,
+    "duration": 4.8
+  },
+  {
+    "text": "euro. So we would actually want to look",
+    "start": 138.64,
+    "duration": 5.76
+  },
+  {
+    "text": "to trade euro USD and go ahead and take",
+    "start": 140.8,
+    "duration": 6.079
+  },
+  {
+    "text": "a long position on that as pairing a",
+    "start": 144.4,
+    "duration": 5.12
+  },
+  {
+    "text": "strong currency with a weak currency",
+    "start": 146.879,
+    "duration": 5.521
+  },
+  {
+    "text": "gives you a nice bullish trend. Let's",
+    "start": 149.52,
+    "duration": 4.799
+  },
+  {
+    "text": "get into a few examples of this on the",
+    "start": 152.4,
+    "duration": 4.0
+  },
+  {
+    "text": "chart in Trading View. So, here we are",
+    "start": 154.319,
+    "duration": 4.081
+  },
+  {
+    "text": "in our first example and you can see we",
+    "start": 156.4,
+    "duration": 4.32
+  },
+  {
+    "text": "are on the dollar. You can see we've",
+    "start": 158.4,
+    "duration": 4.559
+  },
+  {
+    "text": "taken out this pretty significant low",
+    "start": 160.72,
+    "duration": 4.56
+  },
+  {
+    "text": "from July and we have a nice reversal",
+    "start": 162.959,
+    "duration": 4.721
+  },
+  {
+    "text": "forming off of it. We have Monday,",
+    "start": 165.28,
+    "duration": 4.8
+  },
+  {
+    "text": "Tuesday, Wednesday forming this low. So,",
+    "start": 167.68,
+    "duration": 4.72
+  },
+  {
+    "text": "I can anticipate candle 3 and four to",
+    "start": 170.08,
+    "duration": 4.159
+  },
+  {
+    "text": "finish off the Wednesday low of week and",
+    "start": 172.4,
+    "duration": 3.52
+  },
+  {
+    "text": "we can get a Thursday move up and a",
+    "start": 174.239,
+    "duration": 4.0
+  },
+  {
+    "text": "Friday move up as well. Now with the",
+    "start": 175.92,
+    "duration": 4.48
+  },
+  {
+    "text": "dollar being bullish, we want to find",
+    "start": 178.239,
+    "duration": 4.64
+  },
+  {
+    "text": "out which asset is more bearish and then",
+    "start": 180.4,
+    "duration": 5.119
+  },
+  {
+    "text": "we can go to EuroGBP to find that out.",
+    "start": 182.879,
+    "duration": 5.521
+  },
+  {
+    "text": "Now if we have a bearish move on",
+    "start": 185.519,
+    "duration": 6.321
+  },
+  {
+    "text": "EuroGBP, it means Euro is more bearish.",
+    "start": 188.4,
+    "duration": 6.559
+  },
+  {
+    "text": "If we have a bullish move on EuroGBP,",
+    "start": 191.84,
+    "duration": 6.08
+  },
+  {
+    "text": "then GBP is more bearish. So we want to",
+    "start": 194.959,
+    "duration": 5.121
+  },
+  {
+    "text": "see what will happen here. Now with this",
+    "start": 197.92,
+    "duration": 4.399
+  },
+  {
+    "text": "closure, I could frame it both ways,",
+    "start": 200.08,
+    "duration": 4.64
+  },
+  {
+    "text": "right? We don't have a candle to closure",
+    "start": 202.319,
+    "duration": 4.161
+  },
+  {
+    "text": "off the high. So, we're either going to",
+    "start": 204.72,
+    "duration": 3.519
+  },
+  {
+    "text": "form a reversal off this previous day",
+    "start": 206.48,
+    "duration": 3.52
+  },
+  {
+    "text": "low into a fair value gap and trade",
+    "start": 208.239,
+    "duration": 4.08
+  },
+  {
+    "text": "higher. In which case, euro would be",
+    "start": 210.0,
+    "duration": 4.319
+  },
+  {
+    "text": "stronger, pound would be weaker, and",
+    "start": 212.319,
+    "duration": 4.241
+  },
+  {
+    "text": "we'd want to focus on the pound or we're",
+    "start": 214.319,
+    "duration": 3.761
+  },
+  {
+    "text": "going to fall through this level and",
+    "start": 216.56,
+    "duration": 3.679
+  },
+  {
+    "text": "then we can look for EuroUSD cuz Euro",
+    "start": 218.08,
+    "duration": 4.0
+  },
+  {
+    "text": "would be weaker. So, what we're going to",
+    "start": 220.239,
+    "duration": 4.241
+  },
+  {
+    "text": "do is go into the hourly chart. We're",
+    "start": 222.08,
+    "duration": 4.159
+  },
+  {
+    "text": "starting off with a little bit more of a",
+    "start": 224.48,
+    "duration": 3.6
+  },
+  {
+    "text": "advanced example. Generally, we can just",
+    "start": 226.239,
+    "duration": 3.521
+  },
+  {
+    "text": "look at the daily closures, but it's not",
+    "start": 228.08,
+    "duration": 3.6
+  },
+  {
+    "text": "always so perfect. So, here we have the",
+    "start": 229.76,
+    "duration": 3.44
+  },
+  {
+    "text": "daily fair value gap. We have a",
+    "start": 231.68,
+    "duration": 4.16
+  },
+  {
+    "text": "protected swing right here. So we want",
+    "start": 233.2,
+    "duration": 5.119
+  },
+  {
+    "text": "to see if this level will hold here. So",
+    "start": 235.84,
+    "duration": 5.2
+  },
+  {
+    "text": "let's see.",
+    "start": 238.319,
+    "duration": 4.721
+  },
+  {
+    "text": "And there you can see what do we get? We",
+    "start": 241.04,
+    "duration": 4.32
+  },
+  {
+    "text": "get a reversal off the previous day low",
+    "start": 243.04,
+    "duration": 4.0
+  },
+  {
+    "text": "with an hourly change in the state of",
+    "start": 245.36,
+    "duration": 3.84
+  },
+  {
+    "text": "delivery. So using my candle 2 video,",
+    "start": 247.04,
+    "duration": 5.36
+  },
+  {
+    "text": "this is bullish. So if EuroGBP is",
+    "start": 249.2,
+    "duration": 5.44
+  },
+  {
+    "text": "bullish, what does that mean for a",
+    "start": 252.4,
+    "duration": 4.799
+  },
+  {
+    "text": "bullish dollar? We want to be focused on",
+    "start": 254.64,
+    "duration": 5.36
+  },
+  {
+    "text": "GBP as it is weaker. So here we are in",
+    "start": 257.199,
+    "duration": 5.361
+  },
+  {
+    "text": "GBP and you can see is there anything to",
+    "start": 260.0,
+    "duration": 4.479
+  },
+  {
+    "text": "trade away from here? know we have",
+    "start": 262.56,
+    "duration": 4.16
+  },
+  {
+    "text": "failure swings and so by taking a look",
+    "start": 264.479,
+    "duration": 4.081
+  },
+  {
+    "text": "at that we would want to wait for those",
+    "start": 266.72,
+    "duration": 3.68
+  },
+  {
+    "text": "failure swings to be taken out before we",
+    "start": 268.56,
+    "duration": 4.32
+  },
+  {
+    "text": "could look to get on side with a trade",
+    "start": 270.4,
+    "duration": 4.64
+  },
+  {
+    "text": "with taking a look. So now that we've",
+    "start": 272.88,
+    "duration": 3.52
+  },
+  {
+    "text": "taken out those highs we can wait for",
+    "start": 275.04,
+    "duration": 3.36
+  },
+  {
+    "text": "some bearish structure to frame it back",
+    "start": 276.4,
+    "duration": 5.84
+  },
+  {
+    "text": "into these lows below.",
+    "start": 278.4,
+    "duration": 5.2
+  },
+  {
+    "text": "You can see there we get a nice",
+    "start": 282.24,
+    "duration": 3.84
+  },
+  {
+    "text": "aggressive closure and then expansion",
+    "start": 283.6,
+    "duration": 4.8
+  },
+  {
+    "text": "lower. Now once we get this daily",
+    "start": 286.08,
+    "duration": 4.24
+  },
+  {
+    "text": "closure we'll go back out to the daily",
+    "start": 288.4,
+    "duration": 4.079
+  },
+  {
+    "text": "chart. So here we are. We have a",
+    "start": 290.32,
+    "duration": 4.319
+  },
+  {
+    "text": "closure. We have a nice expansion on",
+    "start": 292.479,
+    "duration": 4.401
+  },
+  {
+    "text": "pound here. And let's see euro. You see",
+    "start": 294.639,
+    "duration": 4.721
+  },
+  {
+    "text": "how euro is not as weak and that's how",
+    "start": 296.88,
+    "duration": 4.56
+  },
+  {
+    "text": "we could use euro GBP and we get this",
+    "start": 299.36,
+    "duration": 4.16
+  },
+  {
+    "text": "expansion out of this fair value gap. So",
+    "start": 301.44,
+    "duration": 4.4
+  },
+  {
+    "text": "going back to the daily chart on dollar,",
+    "start": 303.52,
+    "duration": 4.32
+  },
+  {
+    "text": "right? We have closed outside candle 2.",
+    "start": 305.84,
+    "duration": 3.359
+  },
+  {
+    "text": "If we're looking for a continuation",
+    "start": 307.84,
+    "duration": 2.72
+  },
+  {
+    "text": "higher on the dollar, we're still",
+    "start": 309.199,
+    "duration": 3.44
+  },
+  {
+    "text": "looking for the same thing. Which asset",
+    "start": 310.56,
+    "duration": 5.44
+  },
+  {
+    "text": "is weaker between Euro and GBP? So",
+    "start": 312.639,
+    "duration": 5.361
+  },
+  {
+    "text": "taking a look at EuroGBP on the daily",
+    "start": 316.0,
+    "duration": 4.16
+  },
+  {
+    "text": "chart. Let's clean this up a little.",
+    "start": 318.0,
+    "duration": 4.32
+  },
+  {
+    "text": "What do we have? We have a candle 2",
+    "start": 320.16,
+    "duration": 4.479
+  },
+  {
+    "text": "closure out of a fair value gap and it's",
+    "start": 322.32,
+    "duration": 4.319
+  },
+  {
+    "text": "also an ideal candle 2 closure because",
+    "start": 324.639,
+    "duration": 4.241
+  },
+  {
+    "text": "it's creating a protected swing at the",
+    "start": 326.639,
+    "duration": 5.28
+  },
+  {
+    "text": "same time. So this is quite bullish. So",
+    "start": 328.88,
+    "duration": 5.759
+  },
+  {
+    "text": "if euro GBP is bullish that means euro",
+    "start": 331.919,
+    "duration": 5.28
+  },
+  {
+    "text": "is stronger than the pound. So with a",
+    "start": 334.639,
+    "duration": 4.961
+  },
+  {
+    "text": "bullish dollar we want to be focused on",
+    "start": 337.199,
+    "duration": 5.28
+  },
+  {
+    "text": "GBP or GBPUSD.",
+    "start": 339.6,
+    "duration": 4.8
+  },
+  {
+    "text": "So taking a look here we have a nice",
+    "start": 342.479,
+    "duration": 4.16
+  },
+  {
+    "text": "bearish closure and we have closed",
+    "start": 344.4,
+    "duration": 3.84
+  },
+  {
+    "text": "through the series of up close candles",
+    "start": 346.639,
+    "duration": 3.84
+  },
+  {
+    "text": "there. Now, another tip you can use is",
+    "start": 348.24,
+    "duration": 3.92
+  },
+  {
+    "text": "just looking at the individual candle",
+    "start": 350.479,
+    "duration": 3.361
+  },
+  {
+    "text": "closures or the relative strength we",
+    "start": 352.16,
+    "duration": 3.28
+  },
+  {
+    "text": "talked about in our relative strength",
+    "start": 353.84,
+    "duration": 4.799
+  },
+  {
+    "text": "video. Comparing Euro and GBP, you can",
+    "start": 355.44,
+    "duration": 4.8
+  },
+  {
+    "text": "just look at the candle closures as well",
+    "start": 358.639,
+    "duration": 3.521
+  },
+  {
+    "text": "as the structure. Here we get a closure",
+    "start": 360.24,
+    "duration": 3.36
+  },
+  {
+    "text": "through these series of close candles.",
+    "start": 362.16,
+    "duration": 4.159
+  },
+  {
+    "text": "Here we look at Euro. It does not get",
+    "start": 363.6,
+    "duration": 4.48
+  },
+  {
+    "text": "that closure through and it is closing",
+    "start": 366.319,
+    "duration": 4.081
+  },
+  {
+    "text": "much stronger. So, you can see just",
+    "start": 368.08,
+    "duration": 4.72
+  },
+  {
+    "text": "using that as an extra confluence, we",
+    "start": 370.4,
+    "duration": 5.28
+  },
+  {
+    "text": "can be focused on GBP here and looking",
+    "start": 372.8,
+    "duration": 5.44
+  },
+  {
+    "text": "for an entry lower. Now zooming in on",
+    "start": 375.68,
+    "duration": 4.239
+  },
+  {
+    "text": "the hourly time frame, you can see we",
+    "start": 378.24,
+    "duration": 3.519
+  },
+  {
+    "text": "have a consolidation here which I don't",
+    "start": 379.919,
+    "duration": 3.681
+  },
+  {
+    "text": "want to trade away from. But by looking",
+    "start": 381.759,
+    "duration": 3.681
+  },
+  {
+    "text": "at the correlated assets, you can look",
+    "start": 383.6,
+    "duration": 4.24
+  },
+  {
+    "text": "at dollar here. We have ran out that low",
+    "start": 385.44,
+    "duration": 4.64
+  },
+  {
+    "text": "on the consolidation which creates an",
+    "start": 387.84,
+    "duration": 6.4
+  },
+  {
+    "text": "SMT. So we can then use that SMT on the",
+    "start": 390.08,
+    "duration": 6.399
+  },
+  {
+    "text": "weaker asset and we can look to trade",
+    "start": 394.24,
+    "duration": 4.239
+  },
+  {
+    "text": "away from this as long as we get a",
+    "start": 396.479,
+    "duration": 4.72
+  },
+  {
+    "text": "continuation through this area. Let's",
+    "start": 398.479,
+    "duration": 5.201
+  },
+  {
+    "text": "see. We do get a continuation. Maybe we",
+    "start": 401.199,
+    "duration": 4.801
+  },
+  {
+    "text": "miss this move as it's traded too weak.",
+    "start": 403.68,
+    "duration": 3.44
+  },
+  {
+    "text": "unless we can get some sort of",
+    "start": 406.0,
+    "duration": 3.36
+  },
+  {
+    "text": "retracement and then get on side with a",
+    "start": 407.12,
+    "duration": 4.4
+  },
+  {
+    "text": "move lower. The main thing I want to",
+    "start": 409.36,
+    "duration": 4.16
+  },
+  {
+    "text": "talk about here is not lower time frame",
+    "start": 411.52,
+    "duration": 3.92
+  },
+  {
+    "text": "price action and getting on side with",
+    "start": 413.52,
+    "duration": 4.32
+  },
+  {
+    "text": "moves. It's about relative strength. So,",
+    "start": 415.44,
+    "duration": 4.8
+  },
+  {
+    "text": "just to review this, we have a dollar",
+    "start": 417.84,
+    "duration": 4.32
+  },
+  {
+    "text": "that is forming a reversal off of this",
+    "start": 420.24,
+    "duration": 4.079
+  },
+  {
+    "text": "low. Once we are in those continuation",
+    "start": 422.16,
+    "duration": 4.159
+  },
+  {
+    "text": "days where we're looking for dollar to",
+    "start": 424.319,
+    "duration": 4.16
+  },
+  {
+    "text": "trade higher, what do we want to focus",
+    "start": 426.319,
+    "duration": 4.0
+  },
+  {
+    "text": "on? Well, we want to focus on trading",
+    "start": 428.479,
+    "duration": 4.0
+  },
+  {
+    "text": "foreign currencies lower. Well, now",
+    "start": 430.319,
+    "duration": 4.16
+  },
+  {
+    "text": "between the euro and the pound, which",
+    "start": 432.479,
+    "duration": 3.681
+  },
+  {
+    "text": "one do we want to choose? Well, that's",
+    "start": 434.479,
+    "duration": 4.0
+  },
+  {
+    "text": "where we can use EuroGBP to determine",
+    "start": 436.16,
+    "duration": 4.96
+  },
+  {
+    "text": "that. When EuroGBP is bullish, that",
+    "start": 438.479,
+    "duration": 4.56
+  },
+  {
+    "text": "means the euro is stronger. So, if",
+    "start": 441.12,
+    "duration": 3.28
+  },
+  {
+    "text": "you're pairing that with a bullish",
+    "start": 443.039,
+    "duration": 4.401
+  },
+  {
+    "text": "dollar, you want to be shorting GBP or",
+    "start": 444.4,
+    "duration": 6.56
+  },
+  {
+    "text": "GBPUSD. Now, if the euro is weaker, that",
+    "start": 447.44,
+    "duration": 5.36
+  },
+  {
+    "text": "is when you would want to short that",
+    "start": 450.96,
+    "duration": 3.6
+  },
+  {
+    "text": "against the dollar. But in this case,",
+    "start": 452.8,
+    "duration": 4.399
+  },
+  {
+    "text": "EuroGBP is trending upwards. So, we want",
+    "start": 454.56,
+    "duration": 5.12
+  },
+  {
+    "text": "to focus on GBPUSD.",
+    "start": 457.199,
+    "duration": 4.641
+  },
+  {
+    "text": "Now this is where you can blend in the",
+    "start": 459.68,
+    "duration": 4.4
+  },
+  {
+    "text": "phases of price the fractal model to get",
+    "start": 461.84,
+    "duration": 4.88
+  },
+  {
+    "text": "on side with this move. But mostly we",
+    "start": 464.08,
+    "duration": 4.88
+  },
+  {
+    "text": "want to see the fact that pound is",
+    "start": 466.72,
+    "duration": 4.879
+  },
+  {
+    "text": "weaker and you can use euro GBP to",
+    "start": 468.96,
+    "duration": 4.4
+  },
+  {
+    "text": "determine that. So if we take a look at",
+    "start": 471.599,
+    "duration": 3.921
+  },
+  {
+    "text": "euro you can see euro does not get",
+    "start": 473.36,
+    "duration": 4.959
+  },
+  {
+    "text": "nearly the move that GBP does and that's",
+    "start": 475.52,
+    "duration": 4.16
+  },
+  {
+    "text": "why it's important to understand",
+    "start": 478.319,
+    "duration": 4.081
+  },
+  {
+    "text": "relative strength and euro GBP allows",
+    "start": 479.68,
+    "duration": 4.639
+  },
+  {
+    "text": "you to do that. So here we are in",
+    "start": 482.4,
+    "duration": 3.84
+  },
+  {
+    "text": "another example and what do we notice?",
+    "start": 484.319,
+    "duration": 3.681
+  },
+  {
+    "text": "We have multiple days of expansion.",
+    "start": 486.24,
+    "duration": 4.16
+  },
+  {
+    "text": "Monday, Tuesday, Wednesday, Thursday",
+    "start": 488.0,
+    "duration": 5.039
+  },
+  {
+    "text": "forms a counter. So, we can anticipate",
+    "start": 490.4,
+    "duration": 4.639
+  },
+  {
+    "text": "Friday back into the range. So, a candle",
+    "start": 493.039,
+    "duration": 4.72
+  },
+  {
+    "text": "2 closure. Candle 3 going back into the",
+    "start": 495.039,
+    "duration": 5.361
+  },
+  {
+    "text": "range. Now, with a bullish dollar once",
+    "start": 497.759,
+    "duration": 4.88
+  },
+  {
+    "text": "again, what are we looking to focus on?",
+    "start": 500.4,
+    "duration": 4.079
+  },
+  {
+    "text": "Which of the foreign currencies between",
+    "start": 502.639,
+    "duration": 4.481
+  },
+  {
+    "text": "Euro and pound is weaker? So, let's go",
+    "start": 504.479,
+    "duration": 4.641
+  },
+  {
+    "text": "take a look at EuroGo GBP. What do we",
+    "start": 507.12,
+    "duration": 4.0
+  },
+  {
+    "text": "notice? We have a nice engulfing candle",
+    "start": 509.12,
+    "duration": 3.919
+  },
+  {
+    "text": "here. And yes, it did take out this",
+    "start": 511.12,
+    "duration": 3.68
+  },
+  {
+    "text": "high, but it is engulfing. We can look",
+    "start": 513.039,
+    "duration": 3.12
+  },
+  {
+    "text": "at the lower time frames to see if we",
+    "start": 514.8,
+    "duration": 3.2
+  },
+  {
+    "text": "have a reversal off of it. We can go to",
+    "start": 516.159,
+    "duration": 3.841
+  },
+  {
+    "text": "the hourly. That's not looking like a",
+    "start": 518.0,
+    "duration": 3.599
+  },
+  {
+    "text": "reversal to me. So, I would trust that",
+    "start": 520.0,
+    "duration": 4.159
+  },
+  {
+    "text": "this is going to move higher. If EuroGBP",
+    "start": 521.599,
+    "duration": 5.201
+  },
+  {
+    "text": "is bullish, that means GBP is weaker and",
+    "start": 524.159,
+    "duration": 4.881
+  },
+  {
+    "text": "the one we want to focus on. Now, what's",
+    "start": 526.8,
+    "duration": 4.24
+  },
+  {
+    "text": "another way we can check this? Take a",
+    "start": 529.04,
+    "duration": 4.32
+  },
+  {
+    "text": "look at the individual closures on Euro",
+    "start": 531.04,
+    "duration": 4.799
+  },
+  {
+    "text": "versus GBP. Here we have that closure",
+    "start": 533.36,
+    "duration": 4.72
+  },
+  {
+    "text": "which is bearish on Euro. What do we see",
+    "start": 535.839,
+    "duration": 5.361
+  },
+  {
+    "text": "on GBP? A very bearish closure, right?",
+    "start": 538.08,
+    "duration": 5.28
+  },
+  {
+    "text": "So that just confirms what we are seeing",
+    "start": 541.2,
+    "duration": 4.16
+  },
+  {
+    "text": "that we'd want to see this move lower on",
+    "start": 543.36,
+    "duration": 3.76
+  },
+  {
+    "text": "GBPUSD.",
+    "start": 545.36,
+    "duration": 3.76
+  },
+  {
+    "text": "Not to take too much time, what do we",
+    "start": 547.12,
+    "duration": 4.719
+  },
+  {
+    "text": "get? A very nice expansion lower. Now,",
+    "start": 549.12,
+    "duration": 5.2
+  },
+  {
+    "text": "do we get that on Euro? No. Right? And",
+    "start": 551.839,
+    "duration": 4.0
+  },
+  {
+    "text": "this is why it's so important to",
+    "start": 554.32,
+    "duration": 3.519
+  },
+  {
+    "text": "understand relative strength. You could",
+    "start": 555.839,
+    "duration": 4.241
+  },
+  {
+    "text": "be completely right on a trade idea, but",
+    "start": 557.839,
+    "duration": 4.241
+  },
+  {
+    "text": "if you trade the wrong asset, you're",
+    "start": 560.08,
+    "duration": 4.16
+  },
+  {
+    "text": "going to be caught off sides or not",
+    "start": 562.08,
+    "duration": 4.48
+  },
+  {
+    "text": "catching an expansion. So see this is",
+    "start": 564.24,
+    "duration": 4.8
+  },
+  {
+    "text": "the price action you get with euro on a",
+    "start": 566.56,
+    "duration": 5.12
+  },
+  {
+    "text": "bullish expansion day on dollar but with",
+    "start": 569.04,
+    "duration": 5.28
+  },
+  {
+    "text": "GBP on the same day what do we get a",
+    "start": 571.68,
+    "duration": 5.44
+  },
+  {
+    "text": "very nice trend. So that is why EuroGBP",
+    "start": 574.32,
+    "duration": 5.04
+  },
+  {
+    "text": "is so useful in just understanding",
+    "start": 577.12,
+    "duration": 4.24
+  },
+  {
+    "text": "relative strength. So here we are with",
+    "start": 579.36,
+    "duration": 4.64
+  },
+  {
+    "text": "our last example and once again we're",
+    "start": 581.36,
+    "duration": 5.36
+  },
+  {
+    "text": "starting on the dollar. We have a sweep",
+    "start": 584.0,
+    "duration": 5.12
+  },
+  {
+    "text": "with a candle to closure. So what are we",
+    "start": 586.72,
+    "duration": 4.559
+  },
+  {
+    "text": "going to look for? If we are bullish on",
+    "start": 589.12,
+    "duration": 4.56
+  },
+  {
+    "text": "the dollar, we want to see which asset",
+    "start": 591.279,
+    "duration": 4.721
+  },
+  {
+    "text": "is the most bearish. We want to be",
+    "start": 593.68,
+    "duration": 4.56
+  },
+  {
+    "text": "bearish on foreign currencies. So,",
+    "start": 596.0,
+    "duration": 4.8
+  },
+  {
+    "text": "taking a look at Euro GBP, what does",
+    "start": 598.24,
+    "duration": 5.36
+  },
+  {
+    "text": "this tell us? Well, this is a pretty",
+    "start": 600.8,
+    "duration": 4.08
+  },
+  {
+    "text": "bearish candle, right? So, we can",
+    "start": 603.6,
+    "duration": 3.679
+  },
+  {
+    "text": "anticipate this to continue lower as",
+    "start": 604.88,
+    "duration": 4.8
+  },
+  {
+    "text": "long as it remains in respect to 0.5 of",
+    "start": 607.279,
+    "duration": 4.961
+  },
+  {
+    "text": "this range. If we are bullish dollar and",
+    "start": 609.68,
+    "duration": 5.04
+  },
+  {
+    "text": "euro GBP is bearish, what does that",
+    "start": 612.24,
+    "duration": 5.12
+  },
+  {
+    "text": "mean? It means that euro is weaker than",
+    "start": 614.72,
+    "duration": 5.2
+  },
+  {
+    "text": "pound. So if we are looking for the most",
+    "start": 617.36,
+    "duration": 4.479
+  },
+  {
+    "text": "bearish foreign currency between Euro",
+    "start": 619.92,
+    "duration": 4.72
+  },
+  {
+    "text": "and pound, what is it? It would be euro.",
+    "start": 621.839,
+    "duration": 4.24
+  },
+  {
+    "text": "And so we can go ahead and take a look",
+    "start": 624.64,
+    "duration": 4.0
+  },
+  {
+    "text": "at EuroUSD. And that would be the asset",
+    "start": 626.079,
+    "duration": 4.88
+  },
+  {
+    "text": "we'd want to be looking to trade. We can",
+    "start": 628.64,
+    "duration": 3.92
+  },
+  {
+    "text": "also just verify this by looking at",
+    "start": 630.959,
+    "duration": 4.0
+  },
+  {
+    "text": "those individual daily candle closures.",
+    "start": 632.56,
+    "duration": 4.719
+  },
+  {
+    "text": "You can see on EuroUSD, we get a nice",
+    "start": 634.959,
+    "duration": 5.041
+  },
+  {
+    "text": "bearish closure, while GBPUSD, we don't",
+    "start": 637.279,
+    "duration": 4.481
+  },
+  {
+    "text": "get that bearish closure. It's actually",
+    "start": 640.0,
+    "duration": 3.519
+  },
+  {
+    "text": "bullish. We can go take a look at the",
+    "start": 641.76,
+    "duration": 3.44
+  },
+  {
+    "text": "lower time frames here. We want to be",
+    "start": 643.519,
+    "duration": 4.081
+  },
+  {
+    "text": "looking for a fractal model. We have a",
+    "start": 645.2,
+    "duration": 3.92
+  },
+  {
+    "text": "change in the state of delivery. We'll",
+    "start": 647.6,
+    "duration": 3.6
+  },
+  {
+    "text": "go ahead and turn my indicator on. And",
+    "start": 649.12,
+    "duration": 3.76
+  },
+  {
+    "text": "then what do we have? We have price",
+    "start": 651.2,
+    "duration": 4.72
+  },
+  {
+    "text": "opening up.",
+    "start": 652.88,
+    "duration": 5.519
+  },
+  {
+    "text": "Sweeps out this consolidation high. So",
+    "start": 655.92,
+    "duration": 4.479
+  },
+  {
+    "text": "this is where we'd want to see that wick",
+    "start": 658.399,
+    "duration": 3.841
+  },
+  {
+    "text": "of the daily candle form if it's going",
+    "start": 660.399,
+    "duration": 3.761
+  },
+  {
+    "text": "to form. And then do we get a",
+    "start": 662.24,
+    "duration": 4.24
+  },
+  {
+    "text": "continuation lower? We do. Right. All",
+    "start": 664.16,
+    "duration": 4.72
+  },
+  {
+    "text": "the way through these lows here. Now",
+    "start": 666.48,
+    "duration": 4.72
+  },
+  {
+    "text": "let's go ahead and take a look at Euro",
+    "start": 668.88,
+    "duration": 5.04
+  },
+  {
+    "text": "and GBP side by side. So here we are",
+    "start": 671.2,
+    "duration": 5.44
+  },
+  {
+    "text": "with Euro and GBP side by side. Euro on",
+    "start": 673.92,
+    "duration": 5.28
+  },
+  {
+    "text": "the left, GBP on the right. And what do",
+    "start": 676.64,
+    "duration": 4.72
+  },
+  {
+    "text": "we notice? That relative strength does",
+    "start": 679.2,
+    "duration": 3.84
+  },
+  {
+    "text": "come into play. Here we have the sweep",
+    "start": 681.36,
+    "duration": 3.76
+  },
+  {
+    "text": "of the consolidation and a big drop",
+    "start": 683.04,
+    "duration": 4.239
+  },
+  {
+    "text": "lower. And you can see at 8:00 a.m. we",
+    "start": 685.12,
+    "duration": 3.6
+  },
+  {
+    "text": "run out this low. Well, we're not",
+    "start": 687.279,
+    "duration": 3.841
+  },
+  {
+    "text": "running out this low till 9:00 a.m. And",
+    "start": 688.72,
+    "duration": 4.799
+  },
+  {
+    "text": "GBP almost runs out its previous high,",
+    "start": 691.12,
+    "duration": 4.48
+  },
+  {
+    "text": "while Euro has so much more separation",
+    "start": 693.519,
+    "duration": 3.921
+  },
+  {
+    "text": "from that high. Now, I hope you found",
+    "start": 695.6,
+    "duration": 3.76
+  },
+  {
+    "text": "this video helpful. If you get anything",
+    "start": 697.44,
+    "duration": 4.32
+  },
+  {
+    "text": "from it, just learn how to understand",
+    "start": 699.36,
+    "duration": 4.479
+  },
+  {
+    "text": "relative strength and weakness. And if",
+    "start": 701.76,
+    "duration": 3.44
+  },
+  {
+    "text": "you haven't already seen my video on",
+    "start": 703.839,
+    "duration": 2.881
+  },
+  {
+    "text": "relative strength and weakness, I'll",
+    "start": 705.2,
+    "duration": 3.04
+  },
+  {
+    "text": "link that in the description below for",
+    "start": 706.72,
+    "duration": 3.6
+  },
+  {
+    "text": "you to watch. But with that said, I hope",
+    "start": 708.24,
+    "duration": 3.2
+  },
+  {
+    "text": "you have a great rest of your day and",
+    "start": 710.32,
+    "duration": 2.48
+  },
+  {
+    "text": "I'll see you guys next time. Have a good",
+    "start": 711.44,
+    "duration": 4.36
+  },
+  {
+    "text": "one.",
+    "start": 712.8,
+    "duration": 3.0
+  }
+]

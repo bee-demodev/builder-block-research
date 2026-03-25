@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-03-23T20:20:44.992914+00:00",
+  "bucket_scores": {
+    "data_quality": 0.6107,
+    "label_quality": 0.7064,
+    "model_quality": 0.0,
+    "research_yield": 0.1683,
+    "regression_safety": 1.0
+  },
+  "loop_score": 0.474,
+  "grade": "D",
+  "verdict": "keep_with_warnings",
+  "warnings": [],
+  "metrics": {
+    "data_quality": 0.6107,
+    "label_quality": 0.7064,
+    "model_quality": 0.0,
+    "research_yield": 0.1683,
+    "regression_safety": 1.0,
+    "anchor_case_regressions": 0,
+    "rule_mismatch_rate": 0.0,
+    "rule_mismatch_delta": 0.0,
+    "relabel_churn": 0.0,
+    "tradingview_workflow_score": 0.7333,
+    "tradingview_generated_script_coverage": 1.0,
+    "tradingview_validation_coverage": 0.1667,
+    "bootstrap_only": true
+  }
+}

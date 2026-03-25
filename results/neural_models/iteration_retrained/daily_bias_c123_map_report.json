@@ -1,0 +1,788 @@
+{
+  "generated_at": "2026-03-24T13:45:01.965849+00:00",
+  "task_name": "daily_bias_c123_map",
+  "positive_label": "daily_bias_c123_map",
+  "negative_label": "other_trade_models",
+  "device": "cuda",
+  "torch_version": "2.9.1+cu128",
+  "cuda_visible_to_torch": true,
+  "cuda_version": "12.8",
+  "example_count": 59,
+  "positive_count": 16,
+  "negative_count": 43,
+  "skipped_example_count": 7,
+  "train_count": 37,
+  "validation_count": 22,
+  "vocabulary_size": 3844,
+  "train_positive_class_weight": 2.3636362552642822,
+  "best_prediction_threshold": 0.45,
+  "validation_grouping_requested": "source_group",
+  "validation_grouping_used": "source_group",
+  "validation_group_counts": {
+    "negative_label_groups": 21,
+    "positive_label_groups": 3
+  },
+  "validation_grouping_fallback_reason": null,
+  "hyperparameters": {
+    "epochs": 40,
+    "learning_rate": 0.02,
+    "hidden_dim": 32,
+    "validation_ratio": 0.25,
+    "validation_grouping": "source_group",
+    "seed": 42
+  },
+  "best_epoch": 40,
+  "metrics": {
+    "train": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "positive_predictions": 11,
+      "positive_labels": 11,
+      "confusion": {
+        "true_positive": 11,
+        "true_negative": 26,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "threshold": 0.45,
+      "loss": 0.02215430699288845
+    },
+    "validation": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.4444444444444444,
+      "recall": 0.8,
+      "f1": 0.5714285714285714,
+      "positive_predictions": 9,
+      "positive_labels": 5,
+      "confusion": {
+        "true_positive": 4,
+        "true_negative": 12,
+        "false_positive": 5,
+        "false_negative": 1
+      },
+      "threshold": 0.45,
+      "loss": 0.6751286387443542
+    }
+  },
+  "source_holdout_evaluation": {
+    "group_field": "source_group",
+    "group_count": 24,
+    "groups": [
+      "graded_iteration::ttrades_continuation_equilibrium_hold_baseline_v1",
+      "graded_iteration::ttrades_daily_bias_continuation_baseline_v1",
+      "graded_iteration::ttrades_daily_bias_reversal_baseline_v1",
+      "tradingview_validation::daily_bias_c123_map",
+      "url::ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form",
+      "url::ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals",
+      "url::ttrades.com/easy-daily-bias-a-mechanical-trading-framework",
+      "url::ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading",
+      "url::ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias",
+      "url::ttrades.com/phases-of-price-part-2-mastering-expansion-for-strong-trend-trades",
+      "url::ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups",
+      "url::ttrades.com/trading-breaker-blocks-for-continuations",
+      "url::ttrades.com/understanding-candle-2-closures-within-the-fractal-model",
+      "url::ttrades.com/understanding-the-new-york-reversal-in-daily-profiles",
+      "url::ttrades.com/understanding-the-seek-and-destroy-daily-profile-in-trading",
+      "url::ttrades.com/using-equilibrium-in-continuations",
+      "url::ttrades.com/using-order-blocks-for-continuations",
+      "url::ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained",
+      "youtube_video::candle_2_closure_foundation",
+      "youtube_video::cisd_validates_swing_points",
+      "youtube_video::easy_daily_bias_mechanical_framework",
+      "youtube_video::equilibrium_for_expansions",
+      "youtube_video::fractal_model_fundamentals",
+      "youtube_video::trading_candle_3"
+    ],
+    "evaluated_group_count": 24,
+    "skipped_group_count": 0,
+    "evaluated_positive_group_count": 3,
+    "evaluated_negative_only_group_count": 21,
+    "macro_metrics": {
+      "accuracy": 0.9916666666666667,
+      "precision": 0.125,
+      "recall": 0.125,
+      "f1": 0.125
+    },
+    "micro_metrics": {
+      "accuracy": 0.9830508474576272,
+      "precision": 0.9411764705882353,
+      "recall": 1.0,
+      "f1": 0.9696969696969697,
+      "positive_predictions": 17,
+      "positive_labels": 16,
+      "confusion": {
+        "true_positive": 16,
+        "true_negative": 42,
+        "false_positive": 1,
+        "false_negative": 0
+      }
+    },
+    "positive_group_macro_metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "negative_only_group_macro_metrics": {
+      "accuracy": 0.9904761904761905,
+      "specificity": 0.9904761904761905,
+      "false_positive_rate": 0.009523809523809525,
+      "positive_prediction_rate": 0.009523809523809525
+    },
+    "evaluated_groups": [
+      {
+        "held_out_group": "graded_iteration::ttrades_continuation_equilibrium_hold_baseline_v1",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.004581451416015625
+        }
+      },
+      {
+        "held_out_group": "graded_iteration::ttrades_daily_bias_continuation_baseline_v1",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.043679237365722656
+        }
+      },
+      {
+        "held_out_group": "graded_iteration::ttrades_daily_bias_reversal_baseline_v1",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.009992599487304688
+        }
+      },
+      {
+        "held_out_group": "tradingview_validation::daily_bias_c123_map",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 15,
+        "train_negative_count": 43,
+        "validation_positive_count": 1,
+        "validation_negative_count": 0,
+        "contains_positive_label": true,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "positive_predictions": 1,
+          "positive_labels": 1,
+          "confusion": {
+            "true_positive": 1,
+            "true_negative": 0,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 1.8762496709823608
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.008003711700439453
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.02042698860168457
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/easy-daily-bias-a-mechanical-trading-framework",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.013280391693115234
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.03415203094482422
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.03258967399597168
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/phases-of-price-part-2-mastering-expansion-for-strong-trend-trades",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.013337135314941406
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.010241985321044922
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/trading-breaker-blocks-for-continuations",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.014220714569091797
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/understanding-candle-2-closures-within-the-fractal-model",
+        "train_count": 57,
+        "validation_count": 2,
+        "train_positive_count": 16,
+        "train_negative_count": 41,
+        "validation_positive_count": 0,
+        "validation_negative_count": 2,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 2,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.01708805561065674
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/understanding-the-new-york-reversal-in-daily-profiles",
+        "train_count": 57,
+        "validation_count": 2,
+        "train_positive_count": 16,
+        "train_negative_count": 41,
+        "validation_positive_count": 0,
+        "validation_negative_count": 2,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 2,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.033861756324768066
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/understanding-the-seek-and-destroy-daily-profile-in-trading",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.03177070617675781
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/using-equilibrium-in-continuations",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.0558319091796875
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/using-order-blocks-for-continuations",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.021549224853515625
+        }
+      },
+      {
+        "held_out_group": "url::ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained",
+        "train_count": 58,
+        "validation_count": 1,
+        "train_positive_count": 16,
+        "train_negative_count": 42,
+        "validation_positive_count": 0,
+        "validation_negative_count": 1,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 1,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.019345521926879883
+        }
+      },
+      {
+        "held_out_group": "youtube_video::candle_2_closure_foundation",
+        "train_count": 46,
+        "validation_count": 13,
+        "train_positive_count": 16,
+        "train_negative_count": 30,
+        "validation_positive_count": 0,
+        "validation_negative_count": 13,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 13,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.6458889245986938
+        }
+      },
+      {
+        "held_out_group": "youtube_video::cisd_validates_swing_points",
+        "train_count": 49,
+        "validation_count": 10,
+        "train_positive_count": 6,
+        "train_negative_count": 43,
+        "validation_positive_count": 10,
+        "validation_negative_count": 0,
+        "contains_positive_label": true,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "positive_predictions": 10,
+          "positive_labels": 10,
+          "confusion": {
+            "true_positive": 10,
+            "true_negative": 0,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 4.623185157775879
+        }
+      },
+      {
+        "held_out_group": "youtube_video::easy_daily_bias_mechanical_framework",
+        "train_count": 56,
+        "validation_count": 3,
+        "train_positive_count": 16,
+        "train_negative_count": 40,
+        "validation_positive_count": 0,
+        "validation_negative_count": 3,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 3,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.3816051483154297
+        }
+      },
+      {
+        "held_out_group": "youtube_video::equilibrium_for_expansions",
+        "train_count": 56,
+        "validation_count": 3,
+        "train_positive_count": 16,
+        "train_negative_count": 40,
+        "validation_positive_count": 0,
+        "validation_negative_count": 3,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 0,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 3,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.4202249050140381
+        }
+      },
+      {
+        "held_out_group": "youtube_video::fractal_model_fundamentals",
+        "train_count": 54,
+        "validation_count": 5,
+        "train_positive_count": 11,
+        "train_negative_count": 43,
+        "validation_positive_count": 5,
+        "validation_negative_count": 0,
+        "contains_positive_label": true,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "positive_predictions": 5,
+          "positive_labels": 5,
+          "confusion": {
+            "true_positive": 5,
+            "true_negative": 0,
+            "false_positive": 0,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 2.5604536533355713
+        }
+      },
+      {
+        "held_out_group": "youtube_video::trading_candle_3",
+        "train_count": 54,
+        "validation_count": 5,
+        "train_positive_count": 16,
+        "train_negative_count": 38,
+        "validation_positive_count": 0,
+        "validation_negative_count": 5,
+        "contains_positive_label": false,
+        "best_prediction_threshold": 0.5,
+        "metrics": {
+          "accuracy": 0.8,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "positive_predictions": 1,
+          "positive_labels": 0,
+          "confusion": {
+            "true_positive": 0,
+            "true_negative": 4,
+            "false_positive": 1,
+            "false_negative": 0
+          },
+          "threshold": 0.5,
+          "loss": 0.6199852228164673
+        }
+      }
+    ],
+    "skipped_groups": []
+  },
+  "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\daily_bias_c123_map.pt",
+  "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained\\daily_bias_c123_map_report.json"
+}

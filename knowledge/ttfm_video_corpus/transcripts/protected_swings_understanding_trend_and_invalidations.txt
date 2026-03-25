@@ -1,0 +1,432 @@
+[5.49] [Music]
+[10.96] How's it going everyone? In this video,
+[12.72] we are going to talk about protected
+[14.56] swings or protected highs and lows in
+[17.12] the market. So, let's get into the
+[19.00] video. So, what is a protected swing? A
+[22.32] protected swing is a high or low in
+[24.64] which I'm expecting to hold as the trend
+[27.12] continues. So what do I mean by that? In
+[29.44] this case, in a bullish scenario, I'm
+[31.60] expecting this low to remain intact if
+[34.32] this trend is going to continue higher.
+[36.88] Now, how do I define a protected high or
+[39.04] low or a protected swing? Well, there
+[41.44] are two types and this would be the
+[43.12] first one. If we are bullish, I want to
+[45.68] see a low or a short-term low be ran out
+[48.72] or swept and then close through the
+[51.36] series of downclo candles that made the
+[53.60] low. So, you can see here, here is the
+[55.76] low. we find the series of downclo
+[57.92] candles. I mark that out once price
+[60.32] closes over that level. This is now a
+[63.20] protected low and I expect it to hold if
+[65.52] we're going to continue higher. Now,
+[68.32] when do we not need to run out the low?
+[70.48] Well, that is only if we use SMT. So, in
+[73.84] this case, using SMT, the correlated
+[76.24] asset has ran out the low forming a
+[78.56] protected low. So, then we can
+[80.24] anticipate this low to hold as well. So
+[83.12] in this case, I'll use the series of
+[84.72] downclosed candles that made the failure
+[86.48] swing. Once that is closed over, then
+[88.96] expecting these to hold here. Now the
+[92.16] other type of protected swing is one
+[94.32] formed out of a fair value gap. So in
+[96.64] the first two examples, it is based off
+[98.24] of a high or low being swept out. In
+[101.04] this case, it is price reaching into a
+[102.80] fair value gap. I then find the low. I
+[105.60] found this series of downcloed candles
+[107.28] that form that low. Once price closes
+[109.52] over that level, I then anticipate this
+[111.36] low to hold if price is going to
+[113.44] continue
+[114.68] higher. So let's get into an example
+[117.20] here. You can see price is trending down
+[119.12] into an important level where we may
+[121.44] anticipate a new phase of price. You can
+[123.84] see we have series of downlosed candles
+[125.92] into that important level. Do we close
+[127.92] over those two downlosed candles? No. So
+[130.64] it is still bearish. So, taking a look
+[133.60] here now, we have swept out that
+[135.36] short-term low or sweeping out a
+[137.20] liquidity point. Here we have the
+[139.28] correlated asset to show you what it
+[140.80] looks like with an SMT, but we're going
+[142.88] to focus on this one. But now, with the
+[145.28] sweep of a low, we can find this low,
+[147.68] find the series of down close candles
+[149.36] that made that low. Go ahead and mark
+[151.12] out this level. And when price closes
+[153.04] over that level, this low is now
+[155.12] protected. Or anticipate this low to
+[157.44] hold. if price is going to reverse and
+[159.92] change trend and continue higher. So
+[162.56] from here I can look to take an entry or
+[165.12] seek a continuation as I'm expecting
+[167.52] this trend to continue higher. So let's
+[170.08] get into some examples in trading
+[172.12] view. So here we are with our first
+[174.48] example and you can see we have had
+[176.40] expansion lower and then we're having a
+[179.16] consolidation. So if you understand the
+[181.36] phases of price, if we are in a
+[183.60] consolidation, where do we want to
+[185.20] focus? The external parts of the range.
+[188.00] Since we are bearish, what would we want
+[190.00] to see? We would want to see highs ran
+[192.40] out to then trade back lower. So taking
+[196.24] a look at this, what happens when we
+[198.16] reach up into this high? Well, we sweep
+[200.72] it out. And if you notice, we have a
+[202.56] candle to closure, or if you see my
+[204.96] daily bias video, we're closing back
+[206.80] inside the previous day's range. So, we
+[209.20] can expect this to trade lower. Let's go
+[211.68] down to the hourly chart to see what
+[213.20] this looks like. So, here we are down on
+[215.28] the hourly chart and I have my indicator
+[217.12] up with the daily candles so you can
+[219.20] visualize it. Here we have swept out our
+[221.60] previous day's high. And do we form a
+[224.24] reversal? Well, what forms a protected
+[226.80] high? Well, let's say I was trying to
+[228.72] frame a reversal off of this previous
+[230.56] day high. We have that turtle soup. But
+[233.12] what happens and why do I wait for a
+[234.96] protected high? Well, we never get that
+[237.20] confirmation of the close through the
+[239.28] series of downclosed candles that made
+[241.20] that high. So, you can see how it just
+[243.12] fails. Now, we have another sweep over
+[246.16] this high. What happens here? Well, do
+[249.20] we get a closure through the series of
+[250.80] candles that made the high? In this
+[252.32] case, it is just one. Yes, we do. So,
+[255.44] with this now, we can anticipate this
+[257.44] trend to have flipped and we are
+[259.52] bearish, right? And what does this do?
+[262.32] This is now a protected swing, right?
+[265.04] I'm expecting this high to remain intact
+[267.44] because it has been closed through if
+[269.68] price is going to continue bearish. So,
+[272.40] I'm expecting this wick to remain intact
+[274.72] as we trade lower. So, getting into the
+[277.12] next day, let's see what happens. You
+[279.36] can see my indicator does plot a bearish
+[282.04] signal. We reach up into here and
+[284.96] there's really not much going on here as
+[287.12] this is a whole series up. I would be
+[289.44] ignoring this small little candle there.
+[292.32] What happens if we need a protected
+[294.40] swing? We would need what? A high to be
+[297.36] swept out. Why are we looking for a high
+[299.44] to be swept out and not a low? Well, we
+[301.68] are bearish because this trend is now
+[303.60] bearish as long as this wick remains
+[306.52] intact. So, now that we have swept out
+[309.12] the high, what would we need to form a
+[310.96] protected swing right here to trade off
+[312.80] of? We would need this series of upclose
+[315.44] candles that swept out that high to be
+[317.60] closed below. So, as we let this
+[319.84] continue, do we get a closure below
+[322.00] that? We do right here. So, now I'm
+[325.04] expecting this high to remain, but we
+[326.96] have a new protected high. I'm expecting
+[329.04] this high to remain. And due to the day,
+[332.16] I'm expecting that to remain intact as
+[334.56] we continue into the next day, pretty
+[337.04] late into the session. So, here we are
+[339.44] in the next day. We have a
+[341.96] consolidation. Here we sweep out this
+[344.16] high. What would we need for price to
+[347.44] form a protected high right here? We'd
+[349.44] need a closure through a series of up
+[351.52] close candles. Not really many series of
+[353.76] up close candles there. So, it would
+[354.88] just be that body right there. So,
+[357.20] marking that out, I would need a closure
+[359.60] through that. We have yet to get that.
+[362.08] Right. So, now we have swept out a new
+[364.08] high. So, I'm just going to repeat the
+[366.68] process. And here you can see where
+[368.96] would be this series of closed candles
+[371.04] right there. So, let's see when we get a
+[373.52] closure through that.
+[375.68] Right there we get the closure through.
+[377.28] So now I'd expect this high to remain
+[379.20] intact. And you can see how this is used
+[381.60] for a continuation of a trend. Here is a
+[384.16] reversal. And each one of these is a
+[386.48] continuation of this bearish trend or a
+[389.20] lower time frame reversal. And where
+[391.28] would I be looking to target? Well, I
+[393.12] have my liquidity points here as marked
+[395.20] out via my indicator. So as we let this
+[398.00] continue, we go and take out that
+[400.20] low. Taking a look. Do we get a
+[402.56] retracement or a reversal? It's looking
+[404.80] like a retracement. What do we have
+[407.12] here? We sweep out a high or into a fair
+[409.92] value gap. And what do we also have? A
+[413.04] closure through the series of upclose
+[414.80] candles into that important level. I
+[416.96] could then anticipate this high to
+[418.96] remain if we're going to continue
+[421.08] lower. And once again, we get a
+[423.44] continuation
+[424.76] lower. We have a very deep retracement
+[428.24] almost taking out this high, but it
+[429.84] remains intact. With that deep
+[431.60] retracement, what do we reach into? a
+[433.92] fair value gap here. And so then now
+[436.32] with the closure through this up close
+[438.40] candle into that fair value gap, we now
+[440.96] have a new protected high, right? And so
+[443.36] all I'm looking for is this low cuz that
+[445.04] is our daily target. Let's see if that
+[446.88] gets taken or if our protected high gets
+[449.04] taken out
+[450.76] first. And you can see we get those lows
+[453.68] taken out. So hopefully that makes sense
+[456.08] how we have a reversal. This forms a
+[458.48] protected high, right? A protected
+[460.48] swing. And then we are expecting this
+[463.04] trend to continue until it is violated
+[465.28] right with daily closures as we are
+[467.20] closing outside the previous day's lows.
+[470.64] So as long as that is occurring I'm
+[472.08] expecting this trend to continue and I
+[474.24] can continue to just track the protected
+[476.24] swings in the market giving me areas
+[478.48] that I want to
+[480.04] sell. So here we are with our same EU
+[482.72] example. We were just up here and we had
+[485.36] those lows taken out down here. Now, if
+[488.16] we're expecting this to continue lower,
+[490.80] what are we looking at? Well, we had
+[492.64] this range high. It's taken out and we
+[495.04] have this range low. Now, we have equal
+[497.04] lows. We have expansion. And we are
+[500.00] consolidating. So, if we're expecting a
+[501.76] continuation lower, what do we want to
+[503.68] see? A run of a high and then to form a
+[507.60] protected swing. Now, let's talk about
+[510.40] something. The anticipation of a
+[512.32] protected swing versus a protected swing
+[514.96] forming. So you can see here I have the
+[517.84] narrative that I'm expecting this high
+[519.52] to form in here to trade lower. So I can
+[522.16] anticipate that protected swing to form
+[524.32] and drop down to the hourly chart. And
+[526.56] that is where I could look for lower
+[528.00] time frame setups and confirmations. So
+[530.32] you can see here we have price running
+[532.56] out this high here. We close through the
+[535.04] series of upclose candles into that
+[536.96] high, right? And so I'm expecting a
+[539.12] continuation lower here. So if we have
+[542.08] expansion, what do we expect? either a
+[544.96] retracement or a consolidation to get a
+[547.84] continuation signature. Right here we
+[550.64] are pretty much consolidating and what
+[552.96] do we notice? We are taking out highs,
+[555.12] right? So, we reach into this fair value
+[556.64] gap over here and we don't get that
+[559.28] protected swing, right? We get a very
+[560.96] lethargic move back into the range here,
+[563.36] not confirming this as a protected high.
+[566.64] So, we have another sweep of a high
+[569.04] here. Where would be our protected high?
+[571.28] A closure through here. So, I can go
+[574.16] ahead and wait for that. And when we
+[576.80] close through here, what am I
+[578.40] anticipating? I'm now anticipating this
+[580.88] high to remain intact, which means this
+[582.72] wick high has formed. And I can expect
+[584.88] to trade that lower. So, we let that
+[588.08] continue. We go and take out that
+[590.16] previous day's low. And let's see if we
+[592.40] run out the low. We are currently
+[595.12] leaving this range low.
+[597.52] And then as we approach this candle for
+[599.76] continuation, I'm expecting the lower
+[601.84] half of this candle to push price lower.
+[604.40] We have price running out a high right
+[606.80] here into a fair value gap. Where are
+[609.44] the series of candles? Well, you could
+[611.60] use these bull move here. But if we look
+[614.88] at this, price went up, down, back up.
+[617.92] So I can really just use this level in
+[620.20] here. So let's see what
+[623.64] happens. We run out a new high. That
+[626.72] gives me a new level to look at right
+[629.76] here. Sweep. Not very clean in here, but
+[632.48] I can use that leg up or I could just
+[634.24] use the same level closure through that.
+[637.28] And then we go ahead and drop through
+[639.28] those lows. So, you can see if we go
+[642.00] back out to our daily time frame here.
+[644.56] What we can do is use that narrative on
+[646.48] the daily chart with a daily closure to
+[649.04] anticipate and refine it on the hourly.
+[651.44] Or if we were just going to wait for the
+[652.96] daily setup, we'd have the anticipation
+[654.96] of that swing. And then when we close
+[657.44] through here, that is the confirmation
+[659.52] that this high should remain intact as
+[661.84] we go run out that low and we get an
+[664.00] expansion lower. So here we are on our
+[666.96] next example. ES on the 4hour chart and
+[669.68] we have the daily candles up here. You
+[671.44] can see we have a nice bearish closure
+[673.52] on the daily chart. So if expecting a
+[676.08] continuation lower, I want to see from
+[677.92] the lower half of this. Well, what area
+[680.32] is in the lower half? We have a fair
+[682.24] value gap right here. So, if I'm
+[684.40] expecting price to retrace up and
+[686.40] continue lower, I want to see price form
+[688.64] a high in here to continue lower. So,
+[691.60] letting another candle play out. What
+[694.08] are we left with? Is that a bearish
+[696.48] closure? It is not. So, I can give it
+[698.48] another candle. Is this a bearish
+[700.88] closure? Yes, it is. We sweep out our
+[703.20] previous and we close back inside the
+[705.28] range. So, with this, I can drop down to
+[707.44] the 15-minute chart. So, here we are
+[710.64] down on the 15-minute chart. And do we
+[713.12] have a protected swing? Well, we find
+[715.44] this high right here. We find the series
+[717.52] of upclose candles that made it. Have we
+[719.68] closed through it? Yes, we have. So,
+[722.08] with that, I'm expecting this high to
+[724.00] remain intact. Now, as we move ahead,
+[727.28] what happens? Do we have any points of
+[730.28] interest? Well, waiting for the closure
+[732.64] and the open of the new candle. We do
+[735.36] right here as we have swept out this
+[737.60] high. So now what am I seeing? If we're
+[740.24] going to form a new protected high, we
+[742.00] need to close through where? Right here.
+[744.88] Why that point? Because that is the
+[746.96] series of up close candles. In this
+[748.48] case, just one that swept out this
+[750.32] previous high or point of interest. So
+[752.96] as we let this continue, we close
+[754.56] through there. And now I can anticipate
+[756.16] a move lower to that sellside liquidity
+[758.96] point.
+[760.56] So starting out this next example, we
+[762.64] are on silver 1 hour chart. So you can
+[765.12] see our daily chart here, we have a nice
+[767.52] sweep of the highs and closure back in,
+[770.08] which is very bearish. So going ahead
+[772.56] and marking out this up close candle
+[774.80] here. I'd want to see that be respected
+[776.64] as we trade lower. Now with this, where
+[779.84] is our protected swing? Well, my
+[781.60] indicator will mark that out. But I'll
+[783.84] find the high here. I'll find the series
+[785.52] of candles that made that high. In this
+[787.28] case, it is just one as it sweeps out
+[789.20] this high previous as well. And so that
+[792.40] is our protected high. Now, if I'm
+[794.24] looking to take a position in here, do I
+[796.40] want to enter with my stop all the way
+[798.96] on this high? That doesn't really give
+[801.12] good risk-to-reward to my first target
+[803.36] or even to my projections. So, with
+[806.08] that, I'm going to let a new protected
+[808.08] swing form to look for an entry. So, as
+[811.04] I let this play forward, let's see what
+[812.68] happens. Does price reach into a point
+[815.28] of interest? It does as it reaches into
+[817.84] a fair value gap here. And what else do
+[820.80] we have? We have the series of upclose
+[823.28] candles or in this case a singular one
+[825.44] into that point of interest. And we are
+[827.60] now closed through. So now I have a new
+[830.40] protected swing in the market and I'm
+[832.40] expecting this to remain intact as we
+[834.40] trade lower if this trend is going to
+[836.48] continue. So then this is where I can
+[839.08] sell, put my stop on the protected swing
+[842.00] high and then look for 2
+[844.92] R. So let's see how this works
+[848.84] out. And you can see we hit our 2R and
+[852.48] then we go to that first standard
+[854.40] deviation projection. But that is an
+[857.04] example of how I would actually look to
+[858.88] trade with protected swings. I'm using
+[861.52] it as my invalidation. So I want an
+[864.08] entry fairly close to my invalidation to
+[866.56] give me good
+[868.04] risk-to-reward. So here we are in our
+[870.16] next example and you can take a look at
+[871.76] this sell side of the curve here running
+[873.84] out these lows. Here is where we formed
+[876.24] that protected swing as we've closed
+[878.24] through here. 50% is retested and then
+[881.04] we get a continuation lower. Now you can
+[883.92] see all these failure swings on the
+[885.68] highs. Once again we want to be trading
+[887.52] towards failure swings and we want
+[889.12] protected swings on our side of the
+[890.80] market. So we have failure swings on the
+[893.20] buy side of the market. And what do we
+[895.04] notice down here? We have swept out a
+[897.60] low. Have we confirmed that low or
+[900.24] protected that low? Yes. As we have
+[902.40] closed through the series of down close
+[904.08] candles that formed that low. So now I
+[906.32] can anticipate this low to hold. If this
+[908.64] is going to be the low or the reversal
+[910.40] off previous day low to then trade
+[912.56] higher back through these highs. So as
+[915.04] we zoom in, let's see how this forms in
+[917.76] here. So you can see what do we have. We
+[920.72] have a point of interest, a fair value
+[923.04] gap here. We have a down closed candle
+[925.44] into that point of interest. It's then
+[927.60] closed over. So what does that give us?
+[929.76] That gives us a new protected swing,
+[932.24] right? So this would be the continuation
+[933.92] or the order block formed at the
+[935.44] low-risk buy. So once again here, that
+[938.32] is where I could look to buy, put my
+[940.32] stop on the invalidation, and then from
+[943.04] there I could be looking for 2 R, right?
+[946.80] or I could be looking for those highs up
+[949.20] here, right? Because that is where I'm
+[950.96] anticipating price to trade to. So,
+[953.76] let's see what happens as we let this
+[955.52] play out. We get a continuation higher
+[958.40] and we hit our TP up there. So, once
+[961.52] again, it's just important to track
+[963.36] those protected swings because that is
+[965.20] where the opportunities lie. You don't
+[967.28] have to catch them at the reversal. You
+[969.52] can get the continuation or even the
+[971.68] candles following that reversal or when
+[974.24] the continuation is confirmed. Now, I
+[976.64] hope you enjoyed this video. It is a
+[978.40] very important concept within my
+[980.08] trading. So, I hope you find it helpful.
+[982.48] Now, when I am looking for entries, I am
+[984.40] mainly focused on a new invalidation
+[986.40] forming. When I can anticipate a new
+[988.56] invalidation forming or a new protected
+[990.96] swing, that gives me a new area to
+[993.12] anticipate expansion from or to trade
+[995.36] off of. Now, if you have any questions,
+[997.36] feel free to leave them in the comments
+[998.80] below or any suggestions for future
+[1001.20] videos. I hope you enjoyed and I'll see
+[1002.96] you guys next time. Have a good one.

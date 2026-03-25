@@ -1,0 +1,115 @@
+// This Pine Script(TM) code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// Copyright builder-block-C
+//@version=6
+indicator("TTrades Reversal Sequence Model [Draft]", overlay=true, max_lines_count=100, max_labels_count=100, max_boxes_count=20)
+// TV_SYNC_SIGNATURE: TTrades Reversal Sequence Model [Draft]
+
+// Draft scaffold generated from indicator spec: reversal_sequence_model
+// First-pass Pine overlay draft for the TTrades reversal sequence using external-anchor sweeps, reclaim, CISD, protected-swing confirmation, and configurable post-shift entry families.
+// Provisional proxy set:
+// - reclaim_proxy_v1: After a bullish low sweep, require a close back above the swept anchor; after a bearish high sweep, require a close back below the swept anchor. Alternate mode allows a close back inside the source range instead.
+// - cisd_proxy_v1: Define the impulse into the sweep as the contiguous run of same-direction candles ending at the sweep bar. Bullish CISD fires on the first close above the highest body edge of the last bearish impulse bar in that cluster; bearish CISD is the mirror rule below the lowest body edge of the last bullish impulse bar.
+// - body_invalidation_proxy_v1: Allow body-based invalidation only when the confirming swing candle is not wick-dominant and reward-to-risk at the structural stop is below the minimum threshold.
+// State models:
+// - reversalSequenceState: idle, anchor_swept, reclaimed, cisd_confirmed, entry_ready, invalidated
+// Signal pipeline:
+// 1. Higher-Timeframe Bias Gate: Compute higher-timeframe continuation or reversal bias first and reject lower-timeframe reversal setups that directly fight a clean higher-timeframe continuation state.
+// 2. Anchor Selection and Sweep Detection: Track previous-day, previous-week, session, and swing anchors, prioritize the higher-timeframe anchor on overlap, and mark a reversal candidate only after an external sweep.
+// 3. Wick and Reclaim Filter: Require the rejection wick to remain valid by midpoint logic, then require a reclaim back through the swept reference or back inside the source range.
+// 4. CISD and Protected-Swing Confirmation: After reclaim, require a first-pass CISD proxy and then a newly confirmed opposite-direction protected swing before advancing the sequence to structural validity.
+// 5. Entry Family and Risk Filter: Enable fair-value-gap, candle-three-equilibrium, or breaker-style entries only after structural confirmation, then screen them by the selected invalidation mode and minimum reward-to-risk.
+// 6. Target and Failure Management: Plot previous-day equilibrium or nearby opposing liquidity as the first target, extend to external liquidity when momentum stays intact, and invalidate the setup when structure degrades into range or opposite follow-through.
+
+// inputs
+// Sessions and Timeframes
+killZoneModeInput = input.string("both", "killZoneMode", group="Sessions and Timeframes", tooltip="Restrict reversal detection to London, New York, or both session windows.", options=["off", "london", "new_york", "both"])
+anchorTimeframeInput = input.string("D", "anchorTimeframe", group="Sessions and Timeframes", tooltip="Primary higher timeframe used to pull previous-day range anchors and bias context.")
+structureTimeframeInput = input.string("60", "structureTimeframe", group="Sessions and Timeframes", tooltip="Intermediate timeframe used for reclaim and protected-swing confirmation.")
+
+// Liquidity Anchors
+usePreviousDayLevelsInput = input.bool(true, "usePreviousDayLevels", group="Liquidity Anchors", tooltip="Track previous-day high and low as external reversal anchors.")
+usePreviousWeekLevelsInput = input.bool(true, "usePreviousWeekLevels", group="Liquidity Anchors", tooltip="Track previous-week high and low as slower external reversal anchors.")
+useSessionLevelsInput = input.bool(true, "useSessionLevels", group="Liquidity Anchors", tooltip="Track current-session highs and lows for intraday reversal anchors.")
+swingLookbackBarsInput = input.int(8, "swingLookbackBars", group="Liquidity Anchors", tooltip="Lookback used to mark local swing extremes when no higher anchor is present.")
+anchorPriorityModeInput = input.string("higher_timeframe_first", "anchorPriorityMode", group="Liquidity Anchors", tooltip="Priority rule when previous-day, previous-week, session, and swing anchors overlap.", options=["higher_timeframe_first", "nearest_price_first"])
+
+// Confirmation Proxies
+reclaimModeInput = input.string("close_back_through_swept_reference", "reclaimMode", group="Confirmation Proxies", tooltip="First-pass reclaim proxy after a sweep.", options=["close_back_through_swept_reference", "close_back_inside_source_range"])
+cisdModeInput = input.string("body_break_impulse_cluster", "cisdMode", group="Confirmation Proxies", tooltip="First-pass CISD proxy used after reclaim.", options=["body_break_reference_candle", "body_break_impulse_cluster"])
+requireWickMidpointRespectInput = input.bool(true, "requireWickMidpointRespect", group="Confirmation Proxies", tooltip="Require wick-midpoint respect before the reversal state can advance to entry-ready.")
+requireProtectedSwingConfirmationInput = input.bool(true, "requireProtectedSwingConfirmation", group="Confirmation Proxies", tooltip="Require a new protected swing before marking the sequence as structurally valid.")
+
+// Entry Families and Risk
+enableFvgRetestInput = input.bool(true, "enableFvgRetest", group="Entry Families and Risk", tooltip="Allow fair-value-gap retests as the main post-CISD entry family.")
+enableCandleThreeEquilibriumInput = input.bool(true, "enableCandleThreeEquilibrium", group="Entry Families and Risk", tooltip="Allow candle-three equilibrium as a delayed reversal-entry fallback.")
+enableBreakerRetestInput = input.bool(false, "enableBreakerRetest", group="Entry Families and Risk", tooltip="Allow breaker-style retests as an optional later-stage entry family.")
+invalidationModeInput = input.string("protected_swing", "invalidationMode", group="Entry Families and Risk", tooltip="Structural invalidation mode for the plotted stop reference.", options=["protected_swing", "body_aggressive"])
+minimumRewardRiskInput = input.float(1.5, "minimumRewardRisk", group="Entry Families and Risk", tooltip="Minimum reward-to-risk threshold required before an entry-ready setup is shown.")
+
+// Backtest Contract
+backtestTickSizeInput = input.float(0.25, "backtestTickSize", group="Backtest Contract", tooltip="First-pass tick size used by the historical harness when translating bar movement into execution and stop-distance units.")
+backtestSpreadTicksInput = input.float(1.0, "backtestSpreadTicks", group="Backtest Contract", tooltip="Explicit spread assumption in ticks for historical backtests.")
+backtestSlippageTicksInput = input.float(0.5, "backtestSlippageTicks", group="Backtest Contract", tooltip="Explicit slippage assumption in ticks for historical backtests, with larger values required in illiquid sessions.")
+backtestCommissionPerContractInput = input.float(2.5, "backtestCommissionPerContract", group="Backtest Contract", tooltip="Commission and fee assumption per contract for historical backtests.")
+
+// helper functions
+clamp01(float value) => math.max(0.0, math.min(1.0, value))
+midpoint(float highPrice, float lowPrice) => (highPrice + lowPrice) / 2.0
+
+// calculations
+float draftMidpoint = midpoint(high, low)
+float draftBody = math.abs(close - open)
+float draftRange = math.max(high - low, syminfo.mintick)
+float draftPressure = clamp01(draftBody / draftRange)
+bool draftMomentum = close > draftMidpoint
+string draftState = draftMomentum ? "bullish_bias" : "bearish_bias"
+
+// derived series placeholders
+// - higherTimeframeBias: Continuation versus reversal bias pulled from the higher timeframe and used as the first execution gate.
+// - trackedLiquidityAnchors: Previous-day, previous-week, session, and local swing anchors stored as candidate reversal references.
+// - anchorSweepDirection: Bullish or bearish sweep event when price trades beyond a tracked external reference.
+// - wickMidpointState: Respected versus disrespected midpoint state for the higher-timeframe rejection wick.
+// - reclaimState: First-pass reclaim or inversion flag after price closes back through the swept reference or inside the source range.
+// - cisdState: First-pass CISD proxy after reclaim, used to confirm the reversal structure shift.
+// - protectedSwingState: Anticipated versus confirmed opposite-direction protected swing used for structural confirmation and invalidation.
+// - entryFamilyReady: Fair-value-gap, candle-three-equilibrium, or breaker-style entry family readiness after CISD.
+// - targetContext: Previous-day equilibrium, nearest opposing liquidity, and external-liquidity extension targets.
+
+// rule trace references
+// - invalidation: invalidation.protected_swing_is_default_invalidation -> The default invalidation level is the protected swing that should hold if the thesis is correct
+// - invalidation: invalidation.body_invalidation_is_conditional_risk_tightening -> Body-based invalidation is an optional risk-tightening variant, not the default structural rule
+// - invalidation: invalidation.wait_for_new_protected_swing_if_rr_is_poor -> If the initial reversal invalidation is too wide, wait for the next protected swing instead of forcing the trade
+// - invalidation: invalidation.continuation_or_reversal_is_invalid_when_structure_turns_into_range_or_target_is_already_met -> A setup is invalid when structure loses intent through consolidation, target completion, or failed directional follow-through
+// - protected_swings: protected_swings.protected_swing_definition -> Protected swing is the structure expected to hold if trend continues
+// - protected_swings: protected_swings.protected_swing_stop_logic -> Protected swings provide structural stop placement
+// - protected_swings: protected_swings.protected_swing_trend_filter -> Trade direction should follow the most recent valid protected swing logic
+// - protected_swings: protected_swings.protected_swing_confirmation_gate -> Anticipation is allowed, but confirmation requires the correct closing event
+// - reversal: reversal.reversal_definition -> A reversal is expansion met with opposite expansion at meaningful liquidity
+// - reversal: reversal.reversal_confirmation_stack -> Reversal confirmation is stacked from wick, liquidity sweep, CISD, and close behavior
+// - reversal: reversal.candle_three_reversal_fallback -> If candle two fails, candle three closure can still confirm the reversal
+// - reversal: reversal.reversal_sequence_entry_model -> The first-pass reversal sequence is sweep, reclaim, CISD, and gap-backed entry
+// - wick_logic: wick_logic.small_opposing_run_supports_expansion -> A small opposing wick with a large body supports expansion in the candle direction
+// - wick_logic: wick_logic.large_opposing_wick_favors_reversion -> A large opposing wick with a smaller body favors reversion toward the open or nearby liquidity
+// - wick_logic: wick_logic.wick_midpoint_respect_vs_disrespect -> Respect or disrespect of the wick midpoint determines whether rejection is holding or failing
+// - wick_logic: wick_logic.higher_timeframe_wick_guides_lower_timeframe_expectation -> Higher-timeframe wick behavior should govern whether lower-timeframe structure is read as expansion, reversal, or range
+// - bias: bias.previous_candle_close_bias -> Next-candle bias starts from how price closes relative to the previous candle range
+// - bias: bias.daily_reversal_framework -> Reversal-day bias is framed from previous day highs or lows plus lower-timeframe confirmation
+// - bias: bias.daily_continuation_framework -> Continuation-day bias uses prior candle closure plus equilibrium respect
+// - bias: bias.wick_size_bias_filter -> Wick size filters whether the current candle supports expansion or reversion
+// - bias: bias.bias_precedes_execution -> Higher-timeframe bias filters all lower-timeframe entries
+// - top_down_alignment: top_down_alignment.higher_timeframe_sets_direction -> The higher timeframe sets the directional bias and lower timeframes should not override it on their own
+// - top_down_alignment: top_down_alignment.intermediate_timeframe_confirms_structure -> The intermediate timeframe must confirm the higher-timeframe bias with structure, a point of interest, and a directional closure
+// - top_down_alignment: top_down_alignment.lower_timeframe_refines_entry_only_after_alignment -> The lower timeframe is for entry precision only after the higher and intermediate timeframes are already aligned
+// - top_down_alignment: top_down_alignment.aligned_expansion_candles_define_clean_trend -> A clean trend requires aligned expansion-supporting candles across at least two timeframes
+
+// visuals
+plot(draftMidpoint, "Draft midpoint", color=color.new(color.orange, 0), linewidth=2)
+bgcolor(draftMomentum ? color.new(color.green, 88) : color.new(color.red, 88), title="Draft state background")
+var label draftSummaryLabel = na
+if barstate.islast
+    label.delete(draftSummaryLabel)
+    draftSummaryLabel := label.new(bar_index, high, str.format("{0} | pressure {1}", draftState, str.tostring(draftPressure, "#.##")), style=label.style_label_down, textcolor=color.white, color=color.new(draftMomentum ? color.green : color.red, 0))
+
+// alerts
+alertcondition(ta.crossover(close, draftMidpoint), "Draft bullish crossover", "Draft scaffold crossed above midpoint.")
+alertcondition(ta.crossunder(close, draftMidpoint), "Draft bearish crossover", "Draft scaffold crossed below midpoint.")

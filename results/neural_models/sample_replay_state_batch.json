@@ -1,0 +1,130 @@
+{
+  "states": [
+    {
+      "case_ref": "sample_candidate_event_accepted",
+      "profile_slug": "ttrades_curriculum",
+      "topic": "continuation",
+      "trade_model": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "chart_context": {
+        "setup_variant": "equilibrium_hold_trend_resumption",
+        "source_kind": "runtime_replay",
+        "timeframe_scope": [
+          "fractal",
+          "lower"
+        ],
+        "session_scope": [
+          "new_york"
+        ],
+        "replay_window": {
+          "visible_start_timestamp": "2026-03-22T09:30:00-04:00",
+          "visible_end_timestamp": "2026-03-22T09:30:00-04:00",
+          "visible_bar_count": 1,
+          "visible_high": 100.0,
+          "visible_low": 98.0,
+          "visible_net_change": 0.5
+        }
+      },
+      "annotation": {
+        "anchor_type": "equilibrium_half_range_respect",
+        "confirmation": [
+          "protected_swing",
+          "candle_3_closure"
+        ],
+        "rule_states": {
+          "entryReadyState": "ready",
+          "higherTimeframeBiasState": "bullish",
+          "protectedSwingState": "confirmed"
+        },
+        "replay_observation": {
+          "session_bucket": "new_york",
+          "visible_start_timestamp": "2026-03-22T09:30:00-04:00",
+          "visible_end_timestamp": "2026-03-22T09:30:00-04:00",
+          "visible_bar_count": 1,
+          "visible_high": 100.0,
+          "visible_low": 98.0,
+          "visible_net_change": 0.5,
+          "latest_bar_direction": "bullish",
+          "latest_close_location": "upper",
+          "latest_bar_range": 2.0,
+          "latest_bar_body": 0.5
+        }
+      },
+      "candidate_signal": {
+        "timestamp": "2026-03-22T09:30:00-04:00",
+        "side": "long",
+        "stop_price": 98.0,
+        "target_price": 104.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "candidate continuation setup"
+      }
+    },
+    {
+      "case_ref": "sample_candidate_event_rejected",
+      "profile_slug": "ttrades_curriculum",
+      "topic": "bias",
+      "trade_model": "daily_bias_framework",
+      "relation_type": "bias_framework",
+      "chart_context": {
+        "setup_variant": "daily_bias_only",
+        "source_kind": "runtime_replay",
+        "timeframe_scope": [
+          "higher"
+        ],
+        "session_scope": [
+          "new_york"
+        ],
+        "replay_window": {
+          "visible_start_timestamp": "2026-03-22T09:30:00-04:00",
+          "visible_end_timestamp": "2026-03-22T09:30:00-04:00",
+          "visible_bar_count": 1,
+          "visible_high": 100.0,
+          "visible_low": 98.0,
+          "visible_net_change": 0.5
+        }
+      },
+      "annotation": {
+        "anchor_type": "daily_range_midpoint",
+        "confirmation": [
+          "bias_only"
+        ],
+        "rule_states": {
+          "entryReadyState": "blocked"
+        },
+        "replay_observation": {
+          "session_bucket": "new_york",
+          "visible_start_timestamp": "2026-03-22T09:30:00-04:00",
+          "visible_end_timestamp": "2026-03-22T09:30:00-04:00",
+          "visible_bar_count": 1,
+          "visible_high": 100.0,
+          "visible_low": 98.0,
+          "visible_net_change": 0.5,
+          "latest_bar_direction": "bullish",
+          "latest_close_location": "upper",
+          "latest_bar_range": 2.0,
+          "latest_bar_body": 0.5
+        }
+      },
+      "candidate_signal": {
+        "timestamp": "2026-03-22T09:30:00-04:00",
+        "side": "long",
+        "stop_price": 98.0,
+        "target_price": 104.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "candidate bias-only setup"
+      }
+    }
+  ],
+  "summary": {
+    "bars_path": "results\\neural_models\\sample_model_assisted_bars.csv",
+    "candidate_events_path": "results\\neural_models\\sample_candidate_events.json",
+    "warmup_bars": 1,
+    "session_mode": "new_york",
+    "event_count": 2,
+    "emitted_state_count": 2,
+    "missing_frame_count": 0,
+    "missing_case_refs": []
+  }
+}

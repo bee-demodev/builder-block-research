@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-03-23T20:20:43.436540+00:00",
+  "artifact_type": "pine_candidate_event_contract",
+  "spec_key": "daily_profile_models",
+  "trade_model": {
+    "slug": "daily_profile_models",
+    "name": "Daily Profile Models"
+  },
+  "script_title": "TTrades Daily Profile Models [Draft]",
+  "script_output_path": "results\\pine_scripts\\daily_profile_models.pine",
+  "alert_titles": [
+    "Draft bullish crossover",
+    "Draft bearish crossover"
+  ],
+  "rule_state_fields": [
+    "dailyOpen",
+    "asiaRangeState",
+    "londonRangeState",
+    "newYorkRangeInteractionState",
+    "higherTimeframeAnchorState",
+    "sessionCisdState",
+    "sessionProtectedSwingState",
+    "rotationState",
+    "dailyProfileState",
+    "profileTargetModel"
+  ],
+  "required_event_fields": [
+    "trade_model",
+    "chart_context",
+    "annotation",
+    "candidate_signal"
+  ],
+  "candidate_signal_required_fields": [
+    "timestamp",
+    "side",
+    "stop_price",
+    "target_price"
+  ],
+  "default_event": {
+    "profile_slug": "ttrades_curriculum",
+    "topic": "bias",
+    "trade_model": "daily_profile_models",
+    "relation_type": "session_profile",
+    "chart_context": {
+      "setup_variant": "daily_profile_models",
+      "source_kind": "tradingview_pine_alert",
+      "timeframe_scope": [],
+      "session_scope": []
+    },
+    "annotation": {
+      "fired_alert": "",
+      "rule_states": {
+        "dailyOpen": "",
+        "asiaRangeState": "",
+        "londonRangeState": "",
+        "newYorkRangeInteractionState": "",
+        "higherTimeframeAnchorState": "",
+        "sessionCisdState": "",
+        "sessionProtectedSwingState": "",
+        "rotationState": "",
+        "dailyProfileState": "",
+        "profileTargetModel": ""
+      }
+    },
+    "candidate_signal": {
+      "timestamp": "",
+      "side": "",
+      "stop_price": "",
+      "target_price": "",
+      "quantity": 1.0,
+      "session": "",
+      "thesis": ""
+    }
+  }
+}

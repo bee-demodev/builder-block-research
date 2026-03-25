@@ -1,0 +1,64 @@
+{
+  "states": [
+    {
+      "case_ref": "accepted_case",
+      "profile_slug": "ttrades_curriculum",
+      "topic": "continuation",
+      "trade_model": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "chart_context": {
+        "setup_variant": "order_block_retest",
+        "source_kind": "live_bridge",
+        "timeframe_scope": [
+          "fractal",
+          "lower"
+        ]
+      },
+      "annotation": {
+        "anchor_type": "order_block_retest",
+        "confirmation": [
+          "protected_swing",
+          "cisd"
+        ]
+      },
+      "candidate_signal": {
+        "timestamp": "2026-03-22T09:30:00-04:00",
+        "side": "long",
+        "stop_price": 98.0,
+        "target_price": 104.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "continuation setup"
+      }
+    },
+    {
+      "case_ref": "rejected_case",
+      "profile_slug": "ttrades_curriculum",
+      "topic": "bias",
+      "trade_model": "daily_bias_framework",
+      "relation_type": "bias_framework",
+      "chart_context": {
+        "setup_variant": "daily_bias_only",
+        "source_kind": "live_bridge",
+        "timeframe_scope": [
+          "higher"
+        ]
+      },
+      "annotation": {
+        "anchor_type": "daily_range_midpoint",
+        "confirmation": [
+          "bias_only"
+        ]
+      },
+      "candidate_signal": {
+        "timestamp": "2026-03-22T09:30:00-04:00",
+        "side": "long",
+        "stop_price": 98.0,
+        "target_price": 104.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "bias only setup"
+      }
+    }
+  ]
+}

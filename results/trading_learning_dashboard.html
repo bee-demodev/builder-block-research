@@ -1,0 +1,366 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trading Learning Dashboard</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: rgba(18, 25, 35, 0.9);
+      --panel-strong: rgba(25, 33, 45, 0.96);
+      --line: rgba(255, 255, 255, 0.09);
+      --text: #eef3fa;
+      --muted: #9ca9ba;
+      --accent: #ffc266;
+      --accent-2: #77d9c3;
+      --danger: #ff8a7a;
+      --warn: #ffd36b;
+      --good: #88e0a9;
+      --shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255, 194, 102, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(119, 217, 195, 0.14), transparent 24%),
+        linear-gradient(180deg, #11161d 0%, #0b0f14 100%);
+      font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    }
+    .shell {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.45fr 0.95fr;
+      gap: 20px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+    .hero-panel, .panel {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel), rgba(12, 17, 24, 0.92));
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+      border-radius: 24px;
+      overflow: hidden;
+    }
+    .hero-main {
+      padding: 28px;
+      min-height: 258px;
+      position: relative;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 12px;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 5vw, 4.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      max-width: 9ch;
+    }
+    .hero-copy {
+      margin-top: 14px;
+      max-width: 58ch;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+    .hero-side {
+      padding: 24px;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 194, 102, 0.12);
+      border: 1px solid rgba(255, 194, 102, 0.28);
+      color: var(--accent);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      font-size: 13px;
+    }
+    .status-pill strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+    .support {
+      color: var(--muted);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .section h2 {
+      margin: 0 0 14px;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .metric-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel-strong);
+      min-height: 112px;
+    }
+    .metric-card--good { box-shadow: inset 0 0 0 1px rgba(136, 224, 169, 0.14); }
+    .metric-card--warn { box-shadow: inset 0 0 0 1px rgba(255, 211, 107, 0.14); }
+    .metric-card--bad { box-shadow: inset 0 0 0 1px rgba(255, 138, 122, 0.14); }
+    .card-label {
+      color: var(--muted);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .card-value {
+      font-size: 2rem;
+      line-height: 1.1;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+    .card-subtitle {
+      margin-top: 8px;
+      color: var(--muted);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      line-height: 1.5;
+      font-size: 0.92rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .panel-inner {
+      padding: 22px;
+    }
+    .stage-grid {
+      display: grid;
+      gap: 10px;
+    }
+    .stage-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) 72px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+    .stage-row--good { border-color: rgba(136, 224, 169, 0.26); }
+    .stage-row--warn { border-color: rgba(255, 211, 107, 0.26); }
+    .stage-row--bad { border-color: rgba(255, 138, 122, 0.26); }
+    .stage-name { font-weight: 650; }
+    .stage-grade {
+      justify-self: end;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .stage-meta { color: var(--muted); text-align: right; }
+    .cols {
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 18px;
+    }
+    .list {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--text);
+      line-height: 1.75;
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+    .list li { margin-bottom: 8px; }
+    .muted {
+      color: var(--muted);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    .sparkline-wrap {
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 8px;
+    }
+    .sparkline-caption {
+      font-size: 11px;
+      fill: var(--muted);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .sparkline-empty {
+      padding: 20px;
+      color: var(--muted);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+    .history-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .history-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+    .history-item strong { color: var(--accent); }
+    .footer-note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-family: "Aptos", "Segoe UI", sans-serif;
+    }
+    @media (max-width: 980px) {
+      .hero, .metric-grid, .two-col, .cols {
+        grid-template-columns: 1fr;
+      }
+      .stage-row {
+        grid-template-columns: 1fr;
+      }
+      .stage-grade, .stage-meta {
+        justify-self: start;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <article class="hero-panel hero-main">
+        <div class="eyebrow">Training Loop</div>
+        <h1>Where the loop stands right now.</h1>
+        <p class="hero-copy">
+          This dashboard compresses the current research loop, retraining pass, challenger
+          comparison, and readiness gates into one view. The center of gravity is still
+          TradingView validation and narrow-model promotion review.
+        </p>
+      </article>
+      <aside class="hero-panel hero-side">
+        <div class="status-pill"><strong>D</strong> training loop grade</div>
+        <div class="support">Status: <strong>keep_with_warnings</strong></div>
+        <div class="support">Phase: <strong>evidence_bootstrap</strong></div>
+        <div class="support">Phase 1 target: <strong>daily_bias_framework</strong></div>
+        <div class="support">Last generated: <strong>2026-03-23T20:20:54.488559+00:00</strong></div>
+        <div class="support">Top priority: <strong>Bootstrap screenshot and anchor coverage for the historical case packets.</strong></div>
+      </aside>
+    </section>
+
+    <section class="section">
+        <h2>Summary</h2>
+      <div class="metric-grid">
+        <article class="metric-card metric-card--bad"><div class="card-label">Loop score</div><div class="card-value">0.474</div><div class="card-subtitle">Overall learning-loop score</div></article>
+        <article class="metric-card metric-card--bad"><div class="card-label">Training grade</div><div class="card-value">D</div><div class="card-subtitle">keep_with_warnings</div></article>
+        <article class="metric-card metric-card--good"><div class="card-label">Understanding</div><div class="card-value">B-</div><div class="card-subtitle">0.6433 average score</div></article>
+        <article class="metric-card metric-card--neutral"><div class="card-label">Re-trained tasks</div><div class="card-value">3</div><div class="card-subtitle">continuation_entry_model, daily_bias_framework, trade_vs_no_trade</div></article>
+        <article class="metric-card metric-card--neutral"><div class="card-label">Promotion candidates</div><div class="card-value">0</div><div class="card-subtitle">None yet</div></article>
+        <article class="metric-card metric-card--neutral"><div class="card-label">Promoted champions</div><div class="card-value">0</div><div class="card-subtitle">None yet</div></article>
+        <article class="metric-card metric-card--neutral"><div class="card-label">Challenger wins</div><div class="card-value">0</div><div class="card-subtitle">vs 0 champion wins</div></article>
+        <article class="metric-card metric-card--neutral"><div class="card-label">Backtesting priority</div><div class="card-value">historical_backtesting_understanding_before_real_time_trading</div><div class="card-subtitle">Current validation focus</div></article>
+        <article class="metric-card metric-card--warn"><div class="card-label">Phase 1 target</div><div class="card-value">daily_bias_framework</div><div class="card-subtitle">bootstrap_ready</div></article>
+        <article class="metric-card metric-card--warn"><div class="card-label">Phase 1 gap</div><div class="card-value">1</div><div class="card-subtitle">daily_bias_c123_map</div></article>
+        <article class="metric-card metric-card--warn"><div class="card-label">Priority actions</div><div class="card-value">4</div><div class="card-subtitle">Bootstrap screenshot and anchor coverage for the historical case packets.</div></article>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <article class="panel">
+        <div class="panel-inner">
+          <h2>Stage Ladder</h2>
+          <div class="stage-grid"><article class="stage-row stage-row--good"><div class="stage-name">Autoresearch</div><div class="stage-grade">A</div><div class="stage-meta">go · ready</div></article><article class="stage-row stage-row--good"><div class="stage-name">Offline Narrow ML</div><div class="stage-grade">B</div><div class="stage-meta">cautious_go · ready</div></article><article class="stage-row stage-row--warn"><div class="stage-name">Real-Time Assist</div><div class="stage-grade">C</div><div class="stage-meta">not_yet · not ready</div></article><article class="stage-row stage-row--bad"><div class="stage-name">Real-Time Execution</div><div class="stage-grade">D</div><div class="stage-meta">hard_no · not ready</div></article></div>
+        </div>
+      </article>
+      <article class="panel">
+        <div class="panel-inner">
+          <h2>Trend</h2>
+          <p class="muted">History entries: <strong>15</strong></p>
+          <div class="sparkline-wrap"><svg viewBox="0 0 300 72" role="img" aria-label="Loop score trend"><defs><linearGradient id="spark-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="rgba(255, 196, 102, 0.45)" /><stop offset="100%" stop-color="rgba(255, 196, 102, 0.02)" /></linearGradient></defs><polyline fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="8.0,14.2 39.6,64.0 71.1,64.0 102.7,64.0 134.2,64.0 165.8,64.0 197.3,64.0 228.9,8.0 260.4,8.0 292.0,8.0" /><text x="12" y="18" class="sparkline-caption">Range 0.4731 to 0.4740</text></svg></div>
+          <div class="history-list">
+            <div class="history-item"><div><strong>2026-03-23T19:29:08.105548+00:00</strong><br /><span class="muted">blocked_translation · blocked</span></div><div><strong>0.4731</strong></div></div><div class="history-item"><div><strong>2026-03-23T19:51:25.498103+00:00</strong><br /><span class="muted">blocked_translation · blocked</span></div><div><strong>0.4731</strong></div></div><div class="history-item"><div><strong>2026-03-23T20:11:40.207049+00:00</strong><br /><span class="muted">evidence_bootstrap · bootstrapping</span></div><div><strong>0.474</strong></div></div><div class="history-item"><div><strong>2026-03-23T20:20:11.280005+00:00</strong><br /><span class="muted">evidence_bootstrap · bootstrapping</span></div><div><strong>0.474</strong></div></div><div class="history-item"><div><strong>2026-03-23T20:20:54.446409+00:00</strong><br /><span class="muted">evidence_bootstrap · bootstrapping</span></div><div><strong>0.474</strong></div></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section cols">
+      <article class="panel">
+        <div class="panel-inner">
+          <h2>Blockers</h2>
+          <ul><li>Trade-model multiclass classification is still under-labeled.</li><li>Relation-type classification is still under-labeled.</li></ul>
+        </div>
+      </article>
+      <article class="panel">
+        <div class="panel-inner">
+          <h2>Next Actions</h2>
+          <ul><li>Backfill scenario expectation contracts for the ungraded case-model links so new labels strengthen the strict understanding harness instead of bypassing it.</li><li>Collect more positive labeled cases for the next indicator-ready scorers: daily_bias_framework (+1), daily_profile_models (+3), fractal_closure_model (+3), reversal_sequence_model (+3).</li><li>Benchmark the latest iteration-retrained challengers (continuation_entry_model, daily_bias_framework, trade_vs_no_trade) against the current offline baselines before promoting any new model artifact.</li><li>Validate more spec-generated Pine drafts in TradingView and log the outcome so readiness is grounded in editor-checked scripts, not prose alone.</li><li>Phase 1 training focus is `daily_bias_framework`: the current surface is bootstrap-ready for daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment.</li><li>Bootstrap screenshot and anchor coverage for the historical case packets.</li><li>Improve checkpoint-level TTrades understanding on graded episodes.</li><li>Benchmark the latest iteration-retrained challengers before promoting them.</li><li>Collect the next positive labeled cases for the indicator-ready models that are still short.</li></ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="section two-col">
+      <article class="panel">
+        <div class="panel-inner">
+          <h2>Iteration Challengers</h2>
+          <div class="metric-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <article class="metric-card metric-card--neutral"><div class="card-label">Compared tasks</div><div class="card-value">2</div><div class="card-subtitle">Champions vs challengers</div></article>
+            <article class="metric-card metric-card--neutral"><div class="card-label">Promotion candidates</div><div class="card-value">0</div><div class="card-subtitle">None</div></article>
+            <article class="metric-card metric-card--neutral"><div class="card-label">Challenger wins</div><div class="card-value">0</div><div class="card-subtitle">Challengers ahead on full surface</div></article>
+            <article class="metric-card metric-card--neutral"><div class="card-label">Ties</div><div class="card-value">2</div><div class="card-subtitle">No clear winner</div></article>
+          </div>
+          <h2 style="margin-top: 20px;">Promoted Champions</h2>
+          <p class="muted">No challenger has been promoted yet.</p>
+        </div>
+      </article>
+      <article class="panel">
+        <div class="panel-inner">
+          <h2>Backtesting</h2>
+          <p class="muted">Current priority: <strong>historical_backtesting_understanding_before_real_time_trading</strong></p>
+          <div class="metric-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <article class="metric-card metric-card--good"><div class="card-label">Historical Backtesting Research Foundation</div><div class="card-value">A</div><div class="card-subtitle">go</div></article><article class="metric-card metric-card--good"><div class="card-label">Manual Chart Replay Understanding</div><div class="card-value">A-</div><div class="card-subtitle">go</div></article><article class="metric-card metric-card--good"><div class="card-label">Rules Based Historical Backtesting</div><div class="card-value">A</div><div class="card-subtitle">not_yet</div></article><article class="metric-card metric-card--good"><div class="card-label">Model Assisted Historical Backtesting</div><div class="card-value">A-</div><div class="card-subtitle">go</div></article>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer-note">
+      Generated from `trading_learning_loop_summary.json`, `neural_net_readiness_report.json`,
+      `trading_learning_improvement_plan.json`, `iteration_challenger_report.json`,
+      `iteration_promotion_report.json`, and `trading_learning_history.jsonl`.
+    </div>
+  </div>
+</body>
+</html>

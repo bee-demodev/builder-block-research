@@ -1,0 +1,2322 @@
+[
+  {
+    "text": "How's it going everyone? In this video,",
+    "start": 11.12,
+    "duration": 3.28
+  },
+  {
+    "text": "we are going to be talking about my",
+    "start": 12.719,
+    "duration": 3.921
+  },
+  {
+    "text": "favorite fractal model. Specifically, we",
+    "start": 14.4,
+    "duration": 3.84
+  },
+  {
+    "text": "are going to talk about the daily for",
+    "start": 16.64,
+    "duration": 3.68
+  },
+  {
+    "text": "bias and then using the 4 hour for a",
+    "start": 18.24,
+    "duration": 4.32
+  },
+  {
+    "text": "swing point and the 15-minute time frame",
+    "start": 20.32,
+    "duration": 4.4
+  },
+  {
+    "text": "for entry. So, let's get into the PDF",
+    "start": 22.56,
+    "duration": 4.08
+  },
+  {
+    "text": "and then go into a few Trading View",
+    "start": 24.72,
+    "duration": 4.24
+  },
+  {
+    "text": "examples. So the first step is to have a",
+    "start": 26.64,
+    "duration": 4.559
+  },
+  {
+    "text": "clear daily bias. Now this doesn't have",
+    "start": 28.96,
+    "duration": 4.48
+  },
+  {
+    "text": "to be a candle to closure, but this is",
+    "start": 31.199,
+    "duration": 4.401
+  },
+  {
+    "text": "specifically the easiest way to get that",
+    "start": 33.44,
+    "duration": 4.24
+  },
+  {
+    "text": "daily bias. So ideally, I'm going to be",
+    "start": 35.6,
+    "duration": 4.16
+  },
+  {
+    "text": "looking for a point of interest, either",
+    "start": 37.68,
+    "duration": 4.879
+  },
+  {
+    "text": "a low, a high, or a fair value gap. So",
+    "start": 39.76,
+    "duration": 4.319
+  },
+  {
+    "text": "you can see in this case, we have a fair",
+    "start": 42.559,
+    "duration": 3.121
+  },
+  {
+    "text": "value gap. Then I'll be looking for a",
+    "start": 44.079,
+    "duration": 4.081
+  },
+  {
+    "text": "candle to closure inside that fair value",
+    "start": 45.68,
+    "duration": 5.039
+  },
+  {
+    "text": "gap. Or for a reversal candle to close",
+    "start": 48.16,
+    "duration": 4.8
+  },
+  {
+    "text": "back inside its previous candle's range.",
+    "start": 50.719,
+    "duration": 4.241
+  },
+  {
+    "text": "Then I can anticipate price to expand in",
+    "start": 52.96,
+    "duration": 3.84
+  },
+  {
+    "text": "the following day. This is the day that",
+    "start": 54.96,
+    "duration": 3.599
+  },
+  {
+    "text": "we will be looking to trade in this",
+    "start": 56.8,
+    "duration": 4.239
+  },
+  {
+    "text": "candle three looking for this expansion.",
+    "start": 58.559,
+    "duration": 4.48
+  },
+  {
+    "text": "So once we have this bias then we're",
+    "start": 61.039,
+    "duration": 3.601
+  },
+  {
+    "text": "going to go down to the lower time frame",
+    "start": 63.039,
+    "duration": 3.921
+  },
+  {
+    "text": "and use a fractal model to anticipate",
+    "start": 64.64,
+    "duration": 4.479
+  },
+  {
+    "text": "this expansion and get on side. So when",
+    "start": 66.96,
+    "duration": 4.24
+  },
+  {
+    "text": "we go down to the 4hour time frame this",
+    "start": 69.119,
+    "duration": 4.0
+  },
+  {
+    "text": "is what we are going to use for a swing",
+    "start": 71.2,
+    "duration": 4.48
+  },
+  {
+    "text": "point as well as the daily profile. Now",
+    "start": 73.119,
+    "duration": 5.201
+  },
+  {
+    "text": "our goal is to let the wick of the daily",
+    "start": 75.68,
+    "duration": 4.72
+  },
+  {
+    "text": "candle form. So if we are bullish, we",
+    "start": 78.32,
+    "duration": 4.08
+  },
+  {
+    "text": "want to see price open, trade lower",
+    "start": 80.4,
+    "duration": 4.0
+  },
+  {
+    "text": "first, forming this lower wick. And then",
+    "start": 82.4,
+    "duration": 3.6
+  },
+  {
+    "text": "once we anticipate that lower wick to",
+    "start": 84.4,
+    "duration": 3.44
+  },
+  {
+    "text": "have formed, then we can look to trade",
+    "start": 86.0,
+    "duration": 3.92
+  },
+  {
+    "text": "the body of the candle or this move",
+    "start": 87.84,
+    "duration": 4.4
+  },
+  {
+    "text": "higher towards the drawn liquidity. So",
+    "start": 89.92,
+    "duration": 4.0
+  },
+  {
+    "text": "how are we going to do this? We're going",
+    "start": 92.24,
+    "duration": 3.76
+  },
+  {
+    "text": "to use candle closures. So we are either",
+    "start": 93.92,
+    "duration": 4.0
+  },
+  {
+    "text": "going to look for a candle 2 or a candle",
+    "start": 96.0,
+    "duration": 4.24
+  },
+  {
+    "text": "3 closure where we anticipate that wick",
+    "start": 97.92,
+    "duration": 4.4
+  },
+  {
+    "text": "2 form. So here you can see we have a",
+    "start": 100.24,
+    "duration": 4.32
+  },
+  {
+    "text": "candle 2 closure during London. So",
+    "start": 102.32,
+    "duration": 4.24
+  },
+  {
+    "text": "paired with our bias, we can anticipate",
+    "start": 104.56,
+    "duration": 4.559
+  },
+  {
+    "text": "6 a.m. and 10:00 a.m. to expand higher.",
+    "start": 106.56,
+    "duration": 4.96
+  },
+  {
+    "text": "10 a.m. is dependent on 6 a.m. with a",
+    "start": 109.119,
+    "duration": 4.481
+  },
+  {
+    "text": "strong closure. We can anticipate it to",
+    "start": 111.52,
+    "duration": 3.919
+  },
+  {
+    "text": "move higher. And then we'd only look to",
+    "start": 113.6,
+    "duration": 3.76
+  },
+  {
+    "text": "trade this third expansion candle if the",
+    "start": 115.439,
+    "duration": 4.401
+  },
+  {
+    "text": "drawn liquidity has yet to be met. So",
+    "start": 117.36,
+    "duration": 4.0
+  },
+  {
+    "text": "from here, we're going to look at the",
+    "start": 119.84,
+    "duration": 3.12
+  },
+  {
+    "text": "London reversal. So when we have a",
+    "start": 121.36,
+    "duration": 3.2
+  },
+  {
+    "text": "candle 2 closure, what do we need to",
+    "start": 122.96,
+    "duration": 3.68
+  },
+  {
+    "text": "check for on the lower time frames? A",
+    "start": 124.56,
+    "duration": 3.759
+  },
+  {
+    "text": "change in the state of delivery. Now, if",
+    "start": 126.64,
+    "duration": 3.119
+  },
+  {
+    "text": "you haven't seen my candle 2 closure",
+    "start": 128.319,
+    "duration": 3.441
+  },
+  {
+    "text": "video, this is what we talk about or my",
+    "start": 129.759,
+    "duration": 4.401
+  },
+  {
+    "text": "trading candle 3 video. So, here we have",
+    "start": 131.76,
+    "duration": 4.08
+  },
+  {
+    "text": "the candle closure, the change in the",
+    "start": 134.16,
+    "duration": 3.36
+  },
+  {
+    "text": "state of delivery, and we can anticipate",
+    "start": 135.84,
+    "duration": 4.32
+  },
+  {
+    "text": "price to do what? Continue higher in",
+    "start": 137.52,
+    "duration": 4.799
+  },
+  {
+    "text": "this next candle at 6:00 a.m. Now, what",
+    "start": 140.16,
+    "duration": 4.32
+  },
+  {
+    "text": "do we want to see in this next candle?",
+    "start": 142.319,
+    "duration": 4.161
+  },
+  {
+    "text": "We're going to do the exact same thing.",
+    "start": 144.48,
+    "duration": 4.08
+  },
+  {
+    "text": "We want to let the wick of this higher",
+    "start": 146.48,
+    "duration": 4.399
+  },
+  {
+    "text": "time frame candle form. So, we want to",
+    "start": 148.56,
+    "duration": 4.72
+  },
+  {
+    "text": "wait for price to open. Ideally, go make",
+    "start": 150.879,
+    "duration": 4.801
+  },
+  {
+    "text": "a low or a low we can trust. Where would",
+    "start": 153.28,
+    "duration": 4.64
+  },
+  {
+    "text": "that be? Out of a point of interest. So",
+    "start": 155.68,
+    "duration": 4.08
+  },
+  {
+    "text": "you can see how price sweeps out all the",
+    "start": 157.92,
+    "duration": 4.8
+  },
+  {
+    "text": "lows to its left into a fair value gap",
+    "start": 159.76,
+    "duration": 5.119
+  },
+  {
+    "text": "has a nice V-shaped reversal and a",
+    "start": 162.72,
+    "duration": 4.08
+  },
+  {
+    "text": "change in the state of delivery inside",
+    "start": 164.879,
+    "duration": 3.681
+  },
+  {
+    "text": "this candle. This means I can anticipate",
+    "start": 166.8,
+    "duration": 3.28
+  },
+  {
+    "text": "this wick to have formed and I could",
+    "start": 168.56,
+    "duration": 3.44
+  },
+  {
+    "text": "look to get on side here with this",
+    "start": 170.08,
+    "duration": 4.0
+  },
+  {
+    "text": "expansion higher. Now what we are doing",
+    "start": 172.0,
+    "duration": 4.08
+  },
+  {
+    "text": "here is we are lining up the daily",
+    "start": 174.08,
+    "duration": 4.4
+  },
+  {
+    "text": "candle with the lower time frame. Right?",
+    "start": 176.08,
+    "duration": 4.64
+  },
+  {
+    "text": "So we let the wick of the daily candle",
+    "start": 178.48,
+    "duration": 4.64
+  },
+  {
+    "text": "form looking to trade its body. Then we",
+    "start": 180.72,
+    "duration": 4.0
+  },
+  {
+    "text": "do the same thing on the lower time",
+    "start": 183.12,
+    "duration": 3.759
+  },
+  {
+    "text": "frame. So, we are trading candle 3es",
+    "start": 184.72,
+    "duration": 4.32
+  },
+  {
+    "text": "across multiple different time frames.",
+    "start": 186.879,
+    "duration": 3.761
+  },
+  {
+    "text": "And this is what I talk about in my time",
+    "start": 189.04,
+    "duration": 3.919
+  },
+  {
+    "text": "frame alignment video. So, you can see",
+    "start": 190.64,
+    "duration": 4.16
+  },
+  {
+    "text": "we get the reversal. Here's the",
+    "start": 192.959,
+    "duration": 3.521
+  },
+  {
+    "text": "continuation. And this is what I'm",
+    "start": 194.8,
+    "duration": 3.359
+  },
+  {
+    "text": "looking to trade. And you can see how",
+    "start": 196.48,
+    "duration": 4.0
+  },
+  {
+    "text": "price expands higher. Now, let's get",
+    "start": 198.159,
+    "duration": 4.0
+  },
+  {
+    "text": "into trading view and go over a few",
+    "start": 200.48,
+    "duration": 3.839
+  },
+  {
+    "text": "examples of this of aligning the daily",
+    "start": 202.159,
+    "duration": 4.16
+  },
+  {
+    "text": "with the 4hour and then looking to get",
+    "start": 204.319,
+    "duration": 4.401
+  },
+  {
+    "text": "on side using a continuation or a",
+    "start": 206.319,
+    "duration": 4.321
+  },
+  {
+    "text": "protected swing on the 15-minute time",
+    "start": 208.72,
+    "duration": 4.4
+  },
+  {
+    "text": "frame. Here we are in our first example.",
+    "start": 210.64,
+    "duration": 4.319
+  },
+  {
+    "text": "You can see price has entered a fair",
+    "start": 213.12,
+    "duration": 3.92
+  },
+  {
+    "text": "value gap and the bodies are still",
+    "start": 214.959,
+    "duration": 4.64
+  },
+  {
+    "text": "respecting. Most importantly, we have a",
+    "start": 217.04,
+    "duration": 4.88
+  },
+  {
+    "text": "candle to closure on the daily chart",
+    "start": 219.599,
+    "duration": 4.241
+  },
+  {
+    "text": "showing that price has reversed in this",
+    "start": 221.92,
+    "duration": 4.08
+  },
+  {
+    "text": "candle and we can anticipate price to",
+    "start": 223.84,
+    "duration": 4.56
+  },
+  {
+    "text": "expand higher in the next candle ideally",
+    "start": 226.0,
+    "duration": 4.56
+  },
+  {
+    "text": "into this fair value gap above and",
+    "start": 228.4,
+    "duration": 4.72
+  },
+  {
+    "text": "higher. So now that we have a daily bias",
+    "start": 230.56,
+    "duration": 4.56
+  },
+  {
+    "text": "and looking in candle 3 for a move",
+    "start": 233.12,
+    "duration": 4.64
+  },
+  {
+    "text": "higher, we can go to the 4hour chart. So",
+    "start": 235.12,
+    "duration": 4.8
+  },
+  {
+    "text": "down here on the 4hour chart, the next",
+    "start": 237.76,
+    "duration": 3.6
+  },
+  {
+    "text": "thing we are going to want to look for",
+    "start": 239.92,
+    "duration": 4.0
+  },
+  {
+    "text": "is a candle 2 closure or where to",
+    "start": 241.36,
+    "duration": 5.599
+  },
+  {
+    "text": "anticipate the daily wick to form. So",
+    "start": 243.92,
+    "duration": 5.28
+  },
+  {
+    "text": "here you can see right off the open we",
+    "start": 246.959,
+    "duration": 4.241
+  },
+  {
+    "text": "have a nice candle to closure which",
+    "start": 249.2,
+    "duration": 4.239
+  },
+  {
+    "text": "engulfs the previous down close candle",
+    "start": 251.2,
+    "duration": 4.8
+  },
+  {
+    "text": "here. So looking at that as our candle 2",
+    "start": 253.439,
+    "duration": 4.241
+  },
+  {
+    "text": "closure, we could be looking for price",
+    "start": 256.0,
+    "duration": 4.239
+  },
+  {
+    "text": "to trade higher in candle 3 here to",
+    "start": 257.68,
+    "duration": 4.88
+  },
+  {
+    "text": "these failure swings on the left side.",
+    "start": 260.239,
+    "duration": 5.201
+  },
+  {
+    "text": "So looking at the daily wick and the",
+    "start": 262.56,
+    "duration": 4.8
+  },
+  {
+    "text": "4hour wick, we are aligning all of our",
+    "start": 265.44,
+    "duration": 4.319
+  },
+  {
+    "text": "time frames in one singular direction.",
+    "start": 267.36,
+    "duration": 4.32
+  },
+  {
+    "text": "So now going down to the 15-minut time",
+    "start": 269.759,
+    "duration": 3.841
+  },
+  {
+    "text": "frame. So here we are down on the",
+    "start": 271.68,
+    "duration": 3.68
+  },
+  {
+    "text": "15-minut time frame and you can see we",
+    "start": 273.6,
+    "duration": 4.48
+  },
+  {
+    "text": "have had that 4hour candle 2 closure. We",
+    "start": 275.36,
+    "duration": 4.399
+  },
+  {
+    "text": "have a change in the state of delivery.",
+    "start": 278.08,
+    "duration": 3.44
+  },
+  {
+    "text": "So we can be looking bullish in this",
+    "start": 279.759,
+    "duration": 3.761
+  },
+  {
+    "text": "candle three on the 4 hour and this is",
+    "start": 281.52,
+    "duration": 4.48
+  },
+  {
+    "text": "also the low of the daily candle. Now",
+    "start": 283.52,
+    "duration": 4.399
+  },
+  {
+    "text": "some people like to trade this reversal",
+    "start": 286.0,
+    "duration": 3.919
+  },
+  {
+    "text": "right here. I personally like to wait",
+    "start": 287.919,
+    "duration": 4.161
+  },
+  {
+    "text": "for a continuation. Now, why is that?",
+    "start": 289.919,
+    "duration": 3.84
+  },
+  {
+    "text": "Well, let's say price is going to react",
+    "start": 292.08,
+    "duration": 3.839
+  },
+  {
+    "text": "in this area. Price is either going to",
+    "start": 293.759,
+    "duration": 4.16
+  },
+  {
+    "text": "do that, form a swing low, and then",
+    "start": 295.919,
+    "duration": 4.401
+  },
+  {
+    "text": "trade higher, or it is just going to",
+    "start": 297.919,
+    "duration": 4.321
+  },
+  {
+    "text": "fall through here. Now, I would rather",
+    "start": 300.32,
+    "duration": 4.4
+  },
+  {
+    "text": "just wait for it to react or not react",
+    "start": 302.24,
+    "duration": 4.64
+  },
+  {
+    "text": "and save myself a loss than to place a",
+    "start": 304.72,
+    "duration": 3.919
+  },
+  {
+    "text": "limit. So, what am I going to be looking",
+    "start": 306.88,
+    "duration": 4.56
+  },
+  {
+    "text": "for here? Is a continuation. So, here",
+    "start": 308.639,
+    "duration": 4.4
+  },
+  {
+    "text": "you can see we have the down closed",
+    "start": 311.44,
+    "duration": 3.52
+  },
+  {
+    "text": "candles into a fair value gap. Can we",
+    "start": 313.039,
+    "duration": 4.16
+  },
+  {
+    "text": "get a closure over this area? Well,",
+    "start": 314.96,
+    "duration": 4.64
+  },
+  {
+    "text": "let's see.",
+    "start": 317.199,
+    "duration": 4.56
+  },
+  {
+    "text": "And you can see we make a new low. So",
+    "start": 319.6,
+    "duration": 4.08
+  },
+  {
+    "text": "now we are in a fair value gap sweeping",
+    "start": 321.759,
+    "duration": 4.16
+  },
+  {
+    "text": "out a low. We have a new series of down",
+    "start": 323.68,
+    "duration": 4.56
+  },
+  {
+    "text": "close candles. So let's see if we get a",
+    "start": 325.919,
+    "duration": 4.72
+  },
+  {
+    "text": "nice V-shaped recovery.",
+    "start": 328.24,
+    "duration": 5.6
+  },
+  {
+    "text": "We do and we close over. So now using",
+    "start": 330.639,
+    "duration": 4.961
+  },
+  {
+    "text": "the 4hour candle 2 closure, I've",
+    "start": 333.84,
+    "duration": 3.28
+  },
+  {
+    "text": "anticipated the daily wick to have",
+    "start": 335.6,
+    "duration": 4.159
+  },
+  {
+    "text": "formed. And then using the change in the",
+    "start": 337.12,
+    "duration": 4.72
+  },
+  {
+    "text": "state of delivery inside this candle 3,",
+    "start": 339.759,
+    "duration": 3.601
+  },
+  {
+    "text": "I've anticipated this wick to have",
+    "start": 341.84,
+    "duration": 3.04
+  },
+  {
+    "text": "formed. So now that all my time frames",
+    "start": 343.36,
+    "duration": 2.88
+  },
+  {
+    "text": "are aligned, I can look for this",
+    "start": 344.88,
+    "duration": 3.36
+  },
+  {
+    "text": "continuation entry. My entry is at the",
+    "start": 346.24,
+    "duration": 4.08
+  },
+  {
+    "text": "market of the new open. My stop is at",
+    "start": 348.24,
+    "duration": 4.0
+  },
+  {
+    "text": "that protected low and then I can look",
+    "start": 350.32,
+    "duration": 5.2
+  },
+  {
+    "text": "for 2 R or what can I also do? I can",
+    "start": 352.24,
+    "duration": 4.64
+  },
+  {
+    "text": "look for those higher time frame",
+    "start": 355.52,
+    "duration": 3.519
+  },
+  {
+    "text": "objectives. So if we zoom out, this",
+    "start": 356.88,
+    "duration": 3.84
+  },
+  {
+    "text": "would be our 2R. Or we can look for",
+    "start": 359.039,
+    "duration": 4.321
+  },
+  {
+    "text": "these failure swings here which is just",
+    "start": 360.72,
+    "duration": 4.96
+  },
+  {
+    "text": "around 4R. So let's see how this works",
+    "start": 363.36,
+    "duration": 5.32
+  },
+  {
+    "text": "out.",
+    "start": 365.68,
+    "duration": 3.0
+  },
+  {
+    "text": "And there you go. You can see how we hit",
+    "start": 370.4,
+    "duration": 4.079
+  },
+  {
+    "text": "RTP. If we go ahead and remove these",
+    "start": 372.16,
+    "duration": 4.56
+  },
+  {
+    "text": "drawings here, you can see we also get",
+    "start": 374.479,
+    "duration": 4.961
+  },
+  {
+    "text": "another continuation in this candle 4.",
+    "start": 376.72,
+    "duration": 5.44
+  },
+  {
+    "text": "It's not as clean, but we do have a nice",
+    "start": 379.44,
+    "duration": 5.36
+  },
+  {
+    "text": "open low and then we trade higher before",
+    "start": 382.16,
+    "duration": 4.8
+  },
+  {
+    "text": "we close and we take out all of these",
+    "start": 384.8,
+    "duration": 4.56
+  },
+  {
+    "text": "targets over here. So, just to review,",
+    "start": 386.96,
+    "duration": 4.239
+  },
+  {
+    "text": "if we go back out to the daily candle",
+    "start": 389.36,
+    "duration": 4.48
+  },
+  {
+    "text": "here, we have a candle 2 closure, which",
+    "start": 391.199,
+    "duration": 4.881
+  },
+  {
+    "text": "allows us to anticipate or look for a",
+    "start": 393.84,
+    "duration": 4.639
+  },
+  {
+    "text": "move higher in candle 3. When we go to",
+    "start": 396.08,
+    "duration": 4.399
+  },
+  {
+    "text": "the 4hour time frame, we then are",
+    "start": 398.479,
+    "duration": 4.16
+  },
+  {
+    "text": "looking for a candle to closure in line",
+    "start": 400.479,
+    "duration": 4.16
+  },
+  {
+    "text": "with that on the new day. And here you",
+    "start": 402.639,
+    "duration": 3.761
+  },
+  {
+    "text": "can see right off the open, we form a",
+    "start": 404.639,
+    "duration": 3.761
+  },
+  {
+    "text": "candle to closure. So then in this",
+    "start": 406.4,
+    "duration": 3.44
+  },
+  {
+    "text": "candle three, that's when I'm going to",
+    "start": 408.4,
+    "duration": 3.28
+  },
+  {
+    "text": "be looking at the 15-minute time frame",
+    "start": 409.84,
+    "duration": 4.16
+  },
+  {
+    "text": "and looking for a reversal to form and",
+    "start": 411.68,
+    "duration": 4.4
+  },
+  {
+    "text": "then looking for a new protected swing",
+    "start": 414.0,
+    "duration": 4.479
+  },
+  {
+    "text": "to trade that continuation higher. And",
+    "start": 416.08,
+    "duration": 3.839
+  },
+  {
+    "text": "this is how you align all of those time",
+    "start": 418.479,
+    "duration": 3.361
+  },
+  {
+    "text": "frames together. The easiest expansions",
+    "start": 419.919,
+    "duration": 4.081
+  },
+  {
+    "text": "occur when you trade candle 3 on",
+    "start": 421.84,
+    "duration": 3.84
+  },
+  {
+    "text": "multiple different time frames. So in",
+    "start": 424.0,
+    "duration": 4.0
+  },
+  {
+    "text": "this case the daily and 4hour. So let's",
+    "start": 425.68,
+    "duration": 4.079
+  },
+  {
+    "text": "go to our next example and we will go",
+    "start": 428.0,
+    "duration": 4.319
+  },
+  {
+    "text": "back to gold a few days. You can see we",
+    "start": 429.759,
+    "duration": 4.401
+  },
+  {
+    "text": "have ran out all of these failure swings",
+    "start": 432.319,
+    "duration": 4.481
+  },
+  {
+    "text": "into a fair value gap and then we have",
+    "start": 434.16,
+    "duration": 4.96
+  },
+  {
+    "text": "what multiple days of expansion. Right?",
+    "start": 436.8,
+    "duration": 6.239
+  },
+  {
+    "text": "So we have not had a swing in 1 2 3 4 5",
+    "start": 439.12,
+    "duration": 6.479
+  },
+  {
+    "text": "6 7 days. So that is where we can get a",
+    "start": 443.039,
+    "duration": 4.72
+  },
+  {
+    "text": "retracement or a reversal. We have a",
+    "start": 445.599,
+    "duration": 4.32
+  },
+  {
+    "text": "candle 2 closure here. So what does this",
+    "start": 447.759,
+    "duration": 4.0
+  },
+  {
+    "text": "mean? It means I can be looking bearish",
+    "start": 449.919,
+    "duration": 4.321
+  },
+  {
+    "text": "in this day or trading candle three",
+    "start": 451.759,
+    "duration": 4.081
+  },
+  {
+    "text": "lower. where would I want to see it go",
+    "start": 454.24,
+    "duration": 4.32
+  },
+  {
+    "text": "to into this fair value gap below. So",
+    "start": 455.84,
+    "duration": 5.44
+  },
+  {
+    "text": "now that we have a pretty clear bias, we",
+    "start": 458.56,
+    "duration": 4.4
+  },
+  {
+    "text": "want to go down to the 4hour time frame",
+    "start": 461.28,
+    "duration": 3.68
+  },
+  {
+    "text": "and see if we can wait for a candle too",
+    "start": 462.96,
+    "duration": 4.32
+  },
+  {
+    "text": "or a reversal intraday. So here we are",
+    "start": 464.96,
+    "duration": 4.0
+  },
+  {
+    "text": "on the 4hour and you can see we have",
+    "start": 467.28,
+    "duration": 3.759
+  },
+  {
+    "text": "that nice reversal structure, right? We",
+    "start": 468.96,
+    "duration": 4.16
+  },
+  {
+    "text": "have a nice sweep of a short-term high",
+    "start": 471.039,
+    "duration": 4.72
+  },
+  {
+    "text": "with an aggressive Vshape and a closure",
+    "start": 473.12,
+    "duration": 4.4
+  },
+  {
+    "text": "through giving a change in the state of",
+    "start": 475.759,
+    "duration": 3.921
+  },
+  {
+    "text": "delivery on this time frame. Here we",
+    "start": 477.52,
+    "duration": 4.72
+  },
+  {
+    "text": "have expansion into a consolidation.",
+    "start": 479.68,
+    "duration": 4.48
+  },
+  {
+    "text": "We'd want to see this high ran out to",
+    "start": 482.24,
+    "duration": 4.0
+  },
+  {
+    "text": "then go ahead and look to trade it",
+    "start": 484.16,
+    "duration": 4.08
+  },
+  {
+    "text": "lower. So, let's wait to see if we get a",
+    "start": 486.24,
+    "duration": 4.16
+  },
+  {
+    "text": "candle to closure on the 4 hour. This is",
+    "start": 488.24,
+    "duration": 4.0
+  },
+  {
+    "text": "not a candle to closure. So, what would",
+    "start": 490.4,
+    "duration": 3.359
+  },
+  {
+    "text": "we need to wait for? We need to wait for",
+    "start": 492.24,
+    "duration": 3.679
+  },
+  {
+    "text": "a new high to be taken and a new",
+    "start": 493.759,
+    "duration": 4.481
+  },
+  {
+    "text": "closure. Here you can see we do get a",
+    "start": 495.919,
+    "duration": 4.481
+  },
+  {
+    "text": "candle to closure. We have swept out",
+    "start": 498.24,
+    "duration": 3.679
+  },
+  {
+    "text": "this high and then we get a nice",
+    "start": 500.4,
+    "duration": 3.68
+  },
+  {
+    "text": "aggressive bearish candle. So, going",
+    "start": 501.919,
+    "duration": 4.241
+  },
+  {
+    "text": "into the 15-minut time frame, what do we",
+    "start": 504.08,
+    "duration": 4.239
+  },
+  {
+    "text": "want to see be respected? The lower half",
+    "start": 506.16,
+    "duration": 4.479
+  },
+  {
+    "text": "of this 4hour candle. So let's go to the",
+    "start": 508.319,
+    "duration": 4.16
+  },
+  {
+    "text": "15-minute time frame and look for a",
+    "start": 510.639,
+    "duration": 4.161
+  },
+  {
+    "text": "4hour and 15-minute fractal model which",
+    "start": 512.479,
+    "duration": 4.56
+  },
+  {
+    "text": "is also in line with this daily candle 3",
+    "start": 514.8,
+    "duration": 4.239
+  },
+  {
+    "text": "or an expansion candle. So let's go down",
+    "start": 517.039,
+    "duration": 4.081
+  },
+  {
+    "text": "to the 15-inut. So here we are on the",
+    "start": 519.039,
+    "duration": 4.0
+  },
+  {
+    "text": "15-minut time frame. You can see our",
+    "start": 521.12,
+    "duration": 4.08
+  },
+  {
+    "text": "daily candle. We have anticipated that",
+    "start": 523.039,
+    "duration": 4.001
+  },
+  {
+    "text": "this has formed the wick of the daily",
+    "start": 525.2,
+    "duration": 3.84
+  },
+  {
+    "text": "candle. And where is a good target? We",
+    "start": 527.04,
+    "duration": 4.0
+  },
+  {
+    "text": "could be looking for this previous day's",
+    "start": 529.04,
+    "duration": 4.64
+  },
+  {
+    "text": "low, right? That is a pretty good target",
+    "start": 531.04,
+    "duration": 5.04
+  },
+  {
+    "text": "to be looking for. And so we want to get",
+    "start": 533.68,
+    "duration": 5.44
+  },
+  {
+    "text": "on side before that gets taken out. So,",
+    "start": 536.08,
+    "duration": 4.96
+  },
+  {
+    "text": "as we let this play, you can see my",
+    "start": 539.12,
+    "duration": 4.32
+  },
+  {
+    "text": "model will print. And what do we have?",
+    "start": 541.04,
+    "duration": 5.12
+  },
+  {
+    "text": "We have a point of interest inside that",
+    "start": 543.44,
+    "duration": 6.92
+  },
+  {
+    "text": "T-spot area right there.",
+    "start": 546.16,
+    "duration": 4.2
+  },
+  {
+    "text": "But here you can see we reach into that",
+    "start": 554.56,
+    "duration": 4.0
+  },
+  {
+    "text": "T-spot area into the fair value gap. But",
+    "start": 556.399,
+    "duration": 4.56
+  },
+  {
+    "text": "now we need to wait for a continuation.",
+    "start": 558.56,
+    "duration": 4.959
+  },
+  {
+    "text": "What would be the continuation? Well, we",
+    "start": 560.959,
+    "duration": 4.161
+  },
+  {
+    "text": "look at the series of candles that went",
+    "start": 563.519,
+    "duration": 3.44
+  },
+  {
+    "text": "into that point of interest and once we",
+    "start": 565.12,
+    "duration": 3.68
+  },
+  {
+    "text": "get the closure through those, that is",
+    "start": 566.959,
+    "duration": 4.721
+  },
+  {
+    "text": "when we form the continuation.",
+    "start": 568.8,
+    "duration": 4.32
+  },
+  {
+    "text": "And you can see here we get the",
+    "start": 571.68,
+    "duration": 3.36
+  },
+  {
+    "text": "continuation lower. We could look to get",
+    "start": 573.12,
+    "duration": 4.24
+  },
+  {
+    "text": "on side, put our stop either on the high",
+    "start": 575.04,
+    "duration": 4.799
+  },
+  {
+    "text": "or on the bodies that made the high and",
+    "start": 577.36,
+    "duration": 5.039
+  },
+  {
+    "text": "then look for 2 R, which is conveniently",
+    "start": 579.839,
+    "duration": 4.56
+  },
+  {
+    "text": "right around that low. So, let's see",
+    "start": 582.399,
+    "duration": 5.481
+  },
+  {
+    "text": "what happens here.",
+    "start": 584.399,
+    "duration": 3.481
+  },
+  {
+    "text": "And you can see we do get a nice trend",
+    "start": 588.24,
+    "duration": 4.4
+  },
+  {
+    "text": "lower there. And that is because we are",
+    "start": 590.8,
+    "duration": 3.68
+  },
+  {
+    "text": "aligning multiple time frames in one",
+    "start": 592.64,
+    "duration": 4.24
+  },
+  {
+    "text": "direction. Right? Our daily is bearish.",
+    "start": 594.48,
+    "duration": 4.88
+  },
+  {
+    "text": "We let it open make a high and then",
+    "start": 596.88,
+    "duration": 4.16
+  },
+  {
+    "text": "we're getting on side as it's already",
+    "start": 599.36,
+    "duration": 4.24
+  },
+  {
+    "text": "trending lower. We have the 4hour make a",
+    "start": 601.04,
+    "duration": 4.64
+  },
+  {
+    "text": "swing point we can trade away from and",
+    "start": 603.6,
+    "duration": 4.64
+  },
+  {
+    "text": "we're looking to trade in that candle 3",
+    "start": 605.68,
+    "duration": 5.36
+  },
+  {
+    "text": "or the candle 4 for the expansion. All",
+    "start": 608.24,
+    "duration": 4.56
+  },
+  {
+    "text": "these time frames are aligned in one",
+    "start": 611.04,
+    "duration": 3.6
+  },
+  {
+    "text": "direction and that is when expansion",
+    "start": 612.8,
+    "duration": 5.12
+  },
+  {
+    "text": "occurs. So this will be a more advanced",
+    "start": 614.64,
+    "duration": 5.28
+  },
+  {
+    "text": "example, but as I talked about",
+    "start": 617.92,
+    "duration": 4.08
+  },
+  {
+    "text": "previously, I want to align multiple",
+    "start": 619.92,
+    "duration": 4.56
+  },
+  {
+    "text": "expansion candles in one direction. Now,",
+    "start": 622.0,
+    "duration": 4.399
+  },
+  {
+    "text": "the easiest way to do that is to trade a",
+    "start": 624.48,
+    "duration": 5.039
+  },
+  {
+    "text": "daily candle 3 with a 4hour candle 3 and",
+    "start": 626.399,
+    "duration": 5.44
+  },
+  {
+    "text": "then a protected swing on the 15-minute",
+    "start": 629.519,
+    "duration": 4.56
+  },
+  {
+    "text": "chart. But you can also trade a reversal",
+    "start": 631.839,
+    "duration": 4.161
+  },
+  {
+    "text": "candle on the daily if you know how to",
+    "start": 634.079,
+    "duration": 4.0
+  },
+  {
+    "text": "do that. And that is where my wick size",
+    "start": 636.0,
+    "duration": 4.16
+  },
+  {
+    "text": "video comes into play. But you can see",
+    "start": 638.079,
+    "duration": 4.0
+  },
+  {
+    "text": "here on oil, I've been talking about",
+    "start": 640.16,
+    "duration": 4.0
+  },
+  {
+    "text": "this a bit on Twitter, but you can take",
+    "start": 642.079,
+    "duration": 4.88
+  },
+  {
+    "text": "a look. We have equal highs above here.",
+    "start": 644.16,
+    "duration": 4.64
+  },
+  {
+    "text": "And what do we notice? We have this",
+    "start": 646.959,
+    "duration": 3.761
+  },
+  {
+    "text": "reversal right here, which happened",
+    "start": 648.8,
+    "duration": 4.24
+  },
+  {
+    "text": "Monday of last week. And then Friday, we",
+    "start": 650.72,
+    "duration": 3.92
+  },
+  {
+    "text": "do close higher. So, if we're going to",
+    "start": 653.04,
+    "duration": 3.44
+  },
+  {
+    "text": "continue higher, we have a weekly candle",
+    "start": 654.64,
+    "duration": 4.08
+  },
+  {
+    "text": "that looks like this, right? A nice",
+    "start": 656.48,
+    "duration": 4.08
+  },
+  {
+    "text": "expansion candle. So, we'd want to see",
+    "start": 658.72,
+    "duration": 4.08
+  },
+  {
+    "text": "it trade or respect 50% of that if we're",
+    "start": 660.56,
+    "duration": 3.68
+  },
+  {
+    "text": "going to trade into these highs, which",
+    "start": 662.8,
+    "duration": 3.279
+  },
+  {
+    "text": "you can see Trading View Replay already",
+    "start": 664.24,
+    "duration": 4.32
+  },
+  {
+    "text": "shows. Going back to the daily chart,",
+    "start": 666.079,
+    "duration": 4.641
+  },
+  {
+    "text": "what do we have? Right, we have a down",
+    "start": 668.56,
+    "duration": 3.92
+  },
+  {
+    "text": "close candle right there, which forms a",
+    "start": 670.72,
+    "duration": 4.48
+  },
+  {
+    "text": "swing and then a nice close over. So, we",
+    "start": 672.48,
+    "duration": 4.32
+  },
+  {
+    "text": "wouldn't really want to see price trade",
+    "start": 675.2,
+    "duration": 4.96
+  },
+  {
+    "text": "much below 50% of this down candle. So,",
+    "start": 676.8,
+    "duration": 5.599
+  },
+  {
+    "text": "Monday opens up. It is a pretty ranging",
+    "start": 680.16,
+    "duration": 4.4
+  },
+  {
+    "text": "day or a bearish day. Now, if this is",
+    "start": 682.399,
+    "duration": 4.081
+  },
+  {
+    "text": "bearish, we want to see price trade into",
+    "start": 684.56,
+    "duration": 3.68
+  },
+  {
+    "text": "previous day low. But if we're bullish",
+    "start": 686.48,
+    "duration": 3.359
+  },
+  {
+    "text": "on the higher time frames, what do we",
+    "start": 688.24,
+    "duration": 2.96
+  },
+  {
+    "text": "then want to see? We want to see this",
+    "start": 689.839,
+    "duration": 3.361
+  },
+  {
+    "text": "previous day low taken out, but then we",
+    "start": 691.2,
+    "duration": 3.92
+  },
+  {
+    "text": "want to see price trade higher into the",
+    "start": 693.2,
+    "duration": 3.68
+  },
+  {
+    "text": "highs. So, if that's what we're looking",
+    "start": 695.12,
+    "duration": 4.88
+  },
+  {
+    "text": "for, we can start to analyze the 4hour",
+    "start": 696.88,
+    "duration": 5.199
+  },
+  {
+    "text": "time frame once price reaches into this",
+    "start": 700.0,
+    "duration": 4.16
+  },
+  {
+    "text": "level. That's if it has a small wick.",
+    "start": 702.079,
+    "duration": 3.44
+  },
+  {
+    "text": "But let's go down to the 4hour time",
+    "start": 704.16,
+    "duration": 3.359
+  },
+  {
+    "text": "frame. So, here we are on the 4hour time",
+    "start": 705.519,
+    "duration": 3.76
+  },
+  {
+    "text": "frame, and you can see price opens up",
+    "start": 707.519,
+    "duration": 4.401
+  },
+  {
+    "text": "and trades lower into this previous day",
+    "start": 709.279,
+    "duration": 5.361
+  },
+  {
+    "text": "low, which we wanted to see taken out.",
+    "start": 711.92,
+    "duration": 5.68
+  },
+  {
+    "text": "Now, is this a bullish candle? No. So, I",
+    "start": 714.64,
+    "duration": 4.72
+  },
+  {
+    "text": "would not consider this a reversal. So,",
+    "start": 717.6,
+    "duration": 3.679
+  },
+  {
+    "text": "let's wait for a reversal candle. Here,",
+    "start": 719.36,
+    "duration": 4.08
+  },
+  {
+    "text": "you can see we do get a reversal candle.",
+    "start": 721.279,
+    "duration": 3.521
+  },
+  {
+    "text": "So, let's go check this out on the",
+    "start": 723.44,
+    "duration": 3.519
+  },
+  {
+    "text": "15-minute time frame. So, here you can",
+    "start": 724.8,
+    "duration": 4.24
+  },
+  {
+    "text": "see we get our open of our new higher",
+    "start": 726.959,
+    "duration": 4.241
+  },
+  {
+    "text": "time frame candle. This would be a valid",
+    "start": 729.04,
+    "duration": 4.64
+  },
+  {
+    "text": "continuation if you wanted to try that.",
+    "start": 731.2,
+    "duration": 4.24
+  },
+  {
+    "text": "Now, you can see right off the open of",
+    "start": 733.68,
+    "duration": 3.92
+  },
+  {
+    "text": "the new higher time frame, this is",
+    "start": 735.44,
+    "duration": 4.079
+  },
+  {
+    "text": "starting to invalidate it, right? We",
+    "start": 737.6,
+    "duration": 3.76
+  },
+  {
+    "text": "don't want to see it trade below 50% of",
+    "start": 739.519,
+    "duration": 4.481
+  },
+  {
+    "text": "this. So, if you were long in this area,",
+    "start": 741.36,
+    "duration": 4.64
+  },
+  {
+    "text": "this may be a stopout, right? This would",
+    "start": 744.0,
+    "duration": 4.399
+  },
+  {
+    "text": "be a valid entry if you're trading that",
+    "start": 746.0,
+    "duration": 4.88
+  },
+  {
+    "text": "positionally, right? looking for 2 into",
+    "start": 748.399,
+    "duration": 5.041
+  },
+  {
+    "text": "those highs which would be a stopout.",
+    "start": 750.88,
+    "duration": 4.639
+  },
+  {
+    "text": "But if we're waiting for that in candle",
+    "start": 753.44,
+    "duration": 3.44
+  },
+  {
+    "text": "change in the state of delivery or the",
+    "start": 755.519,
+    "duration": 4.161
+  },
+  {
+    "text": "CID within candle 3 let's see if that",
+    "start": 756.88,
+    "duration": 4.959
+  },
+  {
+    "text": "forms",
+    "start": 759.68,
+    "duration": 4.32
+  },
+  {
+    "text": "right it doesn't form before taking out",
+    "start": 761.839,
+    "duration": 4.56
+  },
+  {
+    "text": "this low. So now we're not going to",
+    "start": 764.0,
+    "duration": 4.399
+  },
+  {
+    "text": "change our idea. We're still bullish as",
+    "start": 766.399,
+    "duration": 4.081
+  },
+  {
+    "text": "we're respecting the same area. We want",
+    "start": 768.399,
+    "duration": 4.961
+  },
+  {
+    "text": "to see if we can get a new candle to",
+    "start": 770.48,
+    "duration": 5.68
+  },
+  {
+    "text": "closure.",
+    "start": 773.36,
+    "duration": 5.039
+  },
+  {
+    "text": "And here you can see we do get a candle",
+    "start": 776.16,
+    "duration": 4.4
+  },
+  {
+    "text": "to closure. What do we notice? This is",
+    "start": 778.399,
+    "duration": 4.081
+  },
+  {
+    "text": "also one that you could potentially",
+    "start": 780.56,
+    "duration": 3.92
+  },
+  {
+    "text": "trade the reversal candle as we have a",
+    "start": 782.48,
+    "duration": 4.479
+  },
+  {
+    "text": "small wick. Here is a continuation right",
+    "start": 784.48,
+    "duration": 4.0
+  },
+  {
+    "text": "there. As price reaches into the fair",
+    "start": 786.959,
+    "duration": 3.841
+  },
+  {
+    "text": "value gap, closes over. You could trade",
+    "start": 788.48,
+    "duration": 3.84
+  },
+  {
+    "text": "that higher. But we're more interested",
+    "start": 790.8,
+    "duration": 3.36
+  },
+  {
+    "text": "in trading those continuations. Right?",
+    "start": 792.32,
+    "duration": 3.84
+  },
+  {
+    "text": "Our daily candle has a small wick. We're",
+    "start": 794.16,
+    "duration": 3.679
+  },
+  {
+    "text": "looking for price to trade into the",
+    "start": 796.16,
+    "duration": 3.52
+  },
+  {
+    "text": "highs. So, we can be looking for this",
+    "start": 797.839,
+    "duration": 3.841
+  },
+  {
+    "text": "candle three on the 4 hour and then",
+    "start": 799.68,
+    "duration": 4.88
+  },
+  {
+    "text": "what? A continuation inside that candle.",
+    "start": 801.68,
+    "duration": 5.68
+  },
+  {
+    "text": "So, let's see if that forms.",
+    "start": 804.56,
+    "duration": 4.959
+  },
+  {
+    "text": "we do get a bit of a deep retracement",
+    "start": 807.36,
+    "duration": 4.32
+  },
+  {
+    "text": "into the lows, which is fine. And I'll",
+    "start": 809.519,
+    "duration": 3.841
+  },
+  {
+    "text": "talk about this really quick. A lot of",
+    "start": 811.68,
+    "duration": 3.279
+  },
+  {
+    "text": "times when we take out targets, right?",
+    "start": 813.36,
+    "duration": 3.52
+  },
+  {
+    "text": "We take out highs. That is when we get",
+    "start": 814.959,
+    "duration": 4.801
+  },
+  {
+    "text": "price retracing into the range, either",
+    "start": 816.88,
+    "duration": 4.639
+  },
+  {
+    "text": "back into a gap or a lot of times taking",
+    "start": 819.76,
+    "duration": 3.92
+  },
+  {
+    "text": "out a previous low that made that high.",
+    "start": 821.519,
+    "duration": 3.681
+  },
+  {
+    "text": "So the structure a lot of times looks",
+    "start": 823.68,
+    "duration": 3.2
+  },
+  {
+    "text": "like this. I'll just quickly draw this",
+    "start": 825.2,
+    "duration": 4.16
+  },
+  {
+    "text": "out. A lot of times if we take out this",
+    "start": 826.88,
+    "duration": 4.399
+  },
+  {
+    "text": "target here, we're going to come back in",
+    "start": 829.36,
+    "duration": 4.159
+  },
+  {
+    "text": "and run out a low before trading back",
+    "start": 831.279,
+    "duration": 5.601
+  },
+  {
+    "text": "higher. But nonetheless, we do what? We",
+    "start": 833.519,
+    "duration": 5.201
+  },
+  {
+    "text": "form a continuation. We have a new",
+    "start": 836.88,
+    "duration": 4.959
+  },
+  {
+    "text": "protected swing in candle 3. So that is",
+    "start": 838.72,
+    "duration": 5.6
+  },
+  {
+    "text": "giving us a new invalidation. So we can",
+    "start": 841.839,
+    "duration": 4.641
+  },
+  {
+    "text": "look to trade on the open of candle 4,",
+    "start": 844.32,
+    "duration": 5.12
+  },
+  {
+    "text": "my stop on the low and then look for 2",
+    "start": 846.48,
+    "duration": 5.2
+  },
+  {
+    "text": "or where can we be looking for this our",
+    "start": 849.44,
+    "duration": 4.48
+  },
+  {
+    "text": "higher time frame targets, right? Which",
+    "start": 851.68,
+    "duration": 4.56
+  },
+  {
+    "text": "would be this high of day or if we zoom",
+    "start": 853.92,
+    "duration": 4.64
+  },
+  {
+    "text": "out, it's going to be those equal highs",
+    "start": 856.24,
+    "duration": 4.48
+  },
+  {
+    "text": "above, right? And this is how you get",
+    "start": 858.56,
+    "duration": 4.48
+  },
+  {
+    "text": "large risk-to-reward trades is when",
+    "start": 860.72,
+    "duration": 3.679
+  },
+  {
+    "text": "you're taking a lower time frame",
+    "start": 863.04,
+    "duration": 3.919
+  },
+  {
+    "text": "invalidation and targeting a higher time",
+    "start": 864.399,
+    "duration": 4.24
+  },
+  {
+    "text": "frame target. So you can see you can get",
+    "start": 866.959,
+    "duration": 3.761
+  },
+  {
+    "text": "over 8R on that. But if we're going to",
+    "start": 868.639,
+    "duration": 4.0
+  },
+  {
+    "text": "keep it back to 2 R as I talk about in",
+    "start": 870.72,
+    "duration": 3.76
+  },
+  {
+    "text": "my videos, let's see how this works out.",
+    "start": 872.639,
+    "duration": 3.841
+  },
+  {
+    "text": "You can see we get 2 R right away. And",
+    "start": 874.48,
+    "duration": 4.479
+  },
+  {
+    "text": "let's see how this plays.",
+    "start": 876.48,
+    "duration": 4.08
+  },
+  {
+    "text": "And there you can see we do get that",
+    "start": 878.959,
+    "duration": 4.0
+  },
+  {
+    "text": "trend higher. So just to review, as this",
+    "start": 880.56,
+    "duration": 4.48
+  },
+  {
+    "text": "example is a bit more advanced, as you",
+    "start": 882.959,
+    "duration": 4.721
+  },
+  {
+    "text": "can see, we have a nice clear target. We",
+    "start": 885.04,
+    "duration": 5.039
+  },
+  {
+    "text": "have equal highs resting above. We know",
+    "start": 887.68,
+    "duration": 3.92
+  },
+  {
+    "text": "where we don't want to see price trade",
+    "start": 890.079,
+    "duration": 3.041
+  },
+  {
+    "text": "below. And we have that point of",
+    "start": 891.6,
+    "duration": 3.919
+  },
+  {
+    "text": "interest. So if price is going to form a",
+    "start": 893.12,
+    "duration": 3.839
+  },
+  {
+    "text": "reversal candle, we want to see it",
+    "start": 895.519,
+    "duration": 3.76
+  },
+  {
+    "text": "where? Right off previous day low. We go",
+    "start": 896.959,
+    "duration": 4.481
+  },
+  {
+    "text": "into the 4hour time frame. Here we have",
+    "start": 899.279,
+    "duration": 4.56
+  },
+  {
+    "text": "a 4hour candle 2 closure. And what does",
+    "start": 901.44,
+    "duration": 4.959
+  },
+  {
+    "text": "this candle 2 closure allow us to do? It",
+    "start": 903.839,
+    "duration": 4.8
+  },
+  {
+    "text": "closes over this down close as well as",
+    "start": 906.399,
+    "duration": 4.161
+  },
+  {
+    "text": "sweeps out the previous. It allows us to",
+    "start": 908.639,
+    "duration": 4.32
+  },
+  {
+    "text": "anticipate that this candle 3 can expand",
+    "start": 910.56,
+    "duration": 4.399
+  },
+  {
+    "text": "higher. But then we can go down to the",
+    "start": 912.959,
+    "duration": 4.721
+  },
+  {
+    "text": "15-minute time frame and do what? Look",
+    "start": 914.959,
+    "duration": 5.361
+  },
+  {
+    "text": "for a continuation in that candle 3.",
+    "start": 917.68,
+    "duration": 4.0
+  },
+  {
+    "text": "Here you can see we get that",
+    "start": 920.32,
+    "duration": 3.68
+  },
+  {
+    "text": "continuation and that provides an entry",
+    "start": 921.68,
+    "duration": 4.48
+  },
+  {
+    "text": "into this trend higher. As you can see,",
+    "start": 924.0,
+    "duration": 4.16
+  },
+  {
+    "text": "it's currently still going. And why does",
+    "start": 926.16,
+    "duration": 4.0
+  },
+  {
+    "text": "this occur? Well, if we pull up the",
+    "start": 928.16,
+    "duration": 4.32
+  },
+  {
+    "text": "indicator and rewind a little, we are",
+    "start": 930.16,
+    "duration": 5.039
+  },
+  {
+    "text": "aligning the daily candle with the 4hour",
+    "start": 932.48,
+    "duration": 4.64
+  },
+  {
+    "text": "candle with the 15-minut time frame",
+    "start": 935.199,
+    "duration": 3.921
+  },
+  {
+    "text": "trend. So, when you align all of these",
+    "start": 937.12,
+    "duration": 4.0
+  },
+  {
+    "text": "time frames together, that is when you",
+    "start": 939.12,
+    "duration": 4.959
+  },
+  {
+    "text": "get a trend. Now, before we wrap up this",
+    "start": 941.12,
+    "duration": 4.719
+  },
+  {
+    "text": "video, I do want to share something with",
+    "start": 944.079,
+    "duration": 3.601
+  },
+  {
+    "text": "everyone who stayed until the end. For",
+    "start": 945.839,
+    "duration": 3.601
+  },
+  {
+    "text": "the past few months, I've been running a",
+    "start": 947.68,
+    "duration": 3.68
+  },
+  {
+    "text": "program called the lens path with AM",
+    "start": 949.44,
+    "duration": 3.759
+  },
+  {
+    "text": "Trades. It's something we've kept closed",
+    "start": 951.36,
+    "duration": 3.44
+  },
+  {
+    "text": "off for a while and only allowed a few",
+    "start": 953.199,
+    "duration": 3.601
+  },
+  {
+    "text": "of our private members to join. And we",
+    "start": 954.8,
+    "duration": 3.44
+  },
+  {
+    "text": "did this because we wanted to build",
+    "start": 956.8,
+    "duration": 3.12
+  },
+  {
+    "text": "something that actually worked before",
+    "start": 958.24,
+    "duration": 3.68
+  },
+  {
+    "text": "putting it out there for others. So, we",
+    "start": 959.92,
+    "duration": 3.839
+  },
+  {
+    "text": "had to see results first. And from this",
+    "start": 961.92,
+    "duration": 3.279
+  },
+  {
+    "text": "first small group, we're still in the",
+    "start": 963.759,
+    "duration": 2.801
+  },
+  {
+    "text": "middle of the program. We've seen a lot",
+    "start": 965.199,
+    "duration": 3.361
+  },
+  {
+    "text": "of past accounts and payouts. So, I have",
+    "start": 966.56,
+    "duration": 3.519
+  },
+  {
+    "text": "linked an interview with one of the",
+    "start": 968.56,
+    "duration": 3.04
+  },
+  {
+    "text": "traders in the video description below",
+    "start": 970.079,
+    "duration": 2.88
+  },
+  {
+    "text": "if you want to hear a bit more about",
+    "start": 971.6,
+    "duration": 2.96
+  },
+  {
+    "text": "that. We are going to be opening it up",
+    "start": 972.959,
+    "duration": 3.281
+  },
+  {
+    "text": "to the public for the first time, but",
+    "start": 974.56,
+    "duration": 3.04
+  },
+  {
+    "text": "keeping it limited. But if you've been",
+    "start": 976.24,
+    "duration": 2.8
+  },
+  {
+    "text": "watching my videos, applying the",
+    "start": 977.6,
+    "duration": 3.599
+  },
+  {
+    "text": "concepts, and want that extra push with",
+    "start": 979.04,
+    "duration": 4.0
+  },
+  {
+    "text": "real structure into your approach, then",
+    "start": 981.199,
+    "duration": 3.521
+  },
+  {
+    "text": "this is probably for you. You'll find",
+    "start": 983.04,
+    "duration": 3.28
+  },
+  {
+    "text": "more details on what the mentorship",
+    "start": 984.72,
+    "duration": 3.6
+  },
+  {
+    "text": "looks like and a wait list to join and",
+    "start": 986.32,
+    "duration": 4.0
+  },
+  {
+    "text": "get notified when enrollment opens",
+    "start": 988.32,
+    "duration": 3.759
+  },
+  {
+    "text": "through a link in the description below.",
+    "start": 990.32,
+    "duration": 3.36
+  },
+  {
+    "text": "But with that, if you did enjoy the",
+    "start": 992.079,
+    "duration": 2.961
+  },
+  {
+    "text": "video, please give it a like and",
+    "start": 993.68,
+    "duration": 2.719
+  },
+  {
+    "text": "subscribe and I'll see you guys next",
+    "start": 995.04,
+    "duration": 4.479
+  },
+  {
+    "text": "time. Have a good one.",
+    "start": 996.399,
+    "duration": 3.12
+  }
+]

@@ -1,0 +1,163 @@
+// This Pine Script(TM) code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// Copyright builder-block-C
+//@version=6
+indicator("TTrades Continuation Entry Model [Draft]", overlay=true, max_lines_count=100, max_labels_count=100, max_boxes_count=20)
+// TV_SYNC_SIGNATURE: TTrades Continuation Entry Model [Draft]
+
+// Draft scaffold generated from indicator spec: continuation_entry_model
+// First-pass Pine overlay draft for the TTrades continuation entry model using higher-timeframe bias, controlled retracement anchors, equilibrium respect, continuation CISD, protected-swing confirmation, and exhaustion filters.
+// Provisional proxy set:
+// - anchor_family_proxy_v2: Create candidate continuation anchors from equilibrium hold zones, fair value gaps, order blocks, breaker blocks, and post-consolidation resolution zones. Score each anchor using the explicit ranking table: +3 for correct-half equilibrium respect, +2 for shallow-or-moderate retracement depth, +2 for sweep or breakout-retest evidence, +2 for CISD within the reaction-bar limit, and +1 for protected-swing confirmation without wrong-side equilibrium failure. Require a score of at least 4 to arm an anchor and 6 or more to prefer it over nearby alternatives.
+// - retracement_depth_proxy_v2: Measure retracement depth as the pullback distance versus the prior expansion leg. Classify pullbacks as shallow at or below 0.50 of the prior leg, moderate up to 0.62, deep above 0.62 while the protected swing still survives, and invalid once the protected swing breaks or a close exceeds the wrong-side equilibrium tolerance band.
+// - continuation_cisd_proxy_v1: Bullish continuation confirmation fires on the first close above the highest body edge of the last bearish candle cluster inside the pullback; bearish continuation confirmation mirrors the rule below the lowest body edge of the last bullish cluster. Optional displacement mode also requires the confirming candle to exceed a recent body percentile threshold.
+// - objective_open_and_rotation_proxy_v2: Treat the higher-timeframe objective as still open until the selected first target is completed by wick touch or close through according to objectiveCompletionMode. Reject the continuation if local rotation count exceeds the configured limit before that objective is reached, or immediately block fresh entries once the active first target has already been completed.
+// - equilibrium_respect_proxy_v1: Treat equilibrium respect as intact while closes remain in the correct half of the active range or only probe the midpoint within a 5% tolerance band of the full wick range. Any close beyond that tolerance in the wrong direction cancels continuation quality until the correct half is reclaimed.
+// State models:
+// - continuationEntryState: idle, context_ready, anchor_tagged, reaction_confirmed, protected_swing_confirmed, entry_ready, exhausted_or_invalid
+// Signal pipeline:
+// 1. Bias and Alignment Gate: Enable continuation logic only when the higher timeframe is still in a continuation framework, the expansion context is intact, and the intermediate plus execution frames do not fight that direction.
+// 2. Expansion and Retracement Gate: Require prior expansion, then demand a controlled retracement or local consolidation-resolution context instead of chasing a move that is already extended or structurally late.
+// 3. Anchor Selection and Equilibrium Filter: Rank equilibrium, order-block, breaker, fair-value-gap, and breakout-resolution anchors, then allow continuation only if the correct side of equilibrium and the selected point of interest are still respected.
+// 4. Reaction and Structure Confirmation: After the anchor reacts, require a bar-close continuation shift through the opposing candle series, optionally add candle-three-style closure assistance, and then require a newly protected swing before continuation is treated as structurally valid.
+// 5. Risk, Failure, and Rotation Filter: Keep the protected swing as the default stop, allow tighter body invalidation only conditionally, and reject continuation candidates that degrade into local range rotation, deep pullback failure, or poor reward-to-risk.
+// 6. Target Open and Exhaustion Management: Only show continuation entries while the higher-timeframe objective remains open, reduce expectations after repeated expansion, and invalidate the setup once structure turns back into range or the objective is already complete.
+
+// inputs
+// Timeframes and Context
+anchorBiasTimeframeInput = input.string("D", "anchorBiasTimeframe", group="Timeframes and Context", tooltip="Higher timeframe used to determine whether continuation logic is allowed at all.")
+anchorStructureTimeframeInput = input.string("60", "anchorStructureTimeframe", group="Timeframes and Context", tooltip="Intermediate timeframe used to identify pullback anchors, equilibrium holds, and continuation structure.")
+executionTimeframeInput = input.string("15", "executionTimeframe", group="Timeframes and Context", tooltip="Lower timeframe used to confirm the continuation reaction and protected swing.")
+activeKillZoneInput = input.string("both", "activeKillZone", group="Timeframes and Context", tooltip="Optional session filter for continuation execution logic.", options=["off", "london", "new_york", "both"])
+requireAlignmentAcrossFramesInput = input.bool(true, "requireAlignmentAcrossFrames", group="Timeframes and Context", tooltip="Require higher, intermediate, and execution timeframes to agree before continuation logic can advance.")
+
+// Continuation Anchors
+enabledAnchorFamiliesInput = input.string(['equilibrium_half', 'order_block', 'fair_value_gap', 'breaker_block', 'range_resolution'], "enabledAnchorFamilies", group="Continuation Anchors", tooltip="Continuation anchor families that may qualify once bias and pullback context are valid.")
+requirePoiTouchInput = input.bool(true, "requirePoiTouch", group="Continuation Anchors", tooltip="Require price to tag an explicit point of interest before continuation confirmation is allowed.")
+anchorPriorityModeInput = input.string("equilibrium_then_confirmed_structure", "anchorPriorityMode", group="Continuation Anchors", tooltip="Priority rule when equilibrium, order blocks, imbalances, and breakout-resolution anchors overlap.", options=["equilibrium_then_confirmed_structure", "nearest_confirmed_structure", "bias_aligned_sweep_first"])
+minimumAnchorScoreInput = input.int(4, "minimumAnchorScore", group="Continuation Anchors", tooltip="Minimum first-pass score required before an anchor family can arm the continuation workflow.")
+preferredAnchorScoreInput = input.int(6, "preferredAnchorScore", group="Continuation Anchors", tooltip="Score at which one anchor clearly outranks nearby alternatives instead of remaining a tie candidate.")
+retracementDepthModeInput = input.string("shallow_or_moderate", "retracementDepthMode", group="Continuation Anchors", tooltip="Choose how strict the pullback depth filter should be before continuation logic is disabled.", options=["shallow_only", "shallow_or_moderate"])
+shallowRetracementMaxFractionInput = input.float(0.5, "shallowRetracementMaxFraction", group="Continuation Anchors", tooltip="First-pass upper bound for a clean shallow retracement as a fraction of the prior expansion leg.")
+moderateRetracementMaxFractionInput = input.float(0.62, "moderateRetracementMaxFraction", group="Continuation Anchors", tooltip="First-pass upper bound for a still-usable moderate retracement before the setup is treated as late or degraded.")
+allowConsolidationBreakoutContinuationInput = input.bool(true, "allowConsolidationBreakoutContinuation", group="Continuation Anchors", tooltip="Allow continuation entries that come from post-consolidation resolution instead of a clean single-leg pullback.")
+
+// Confirmation Proxies
+cisdModeInput = input.string("close_through_opposing_series", "cisdMode", group="Confirmation Proxies", tooltip="First-pass continuation confirmation proxy after the anchor reaction begins.", options=["close_through_opposing_series", "close_through_series_plus_displacement"])
+reactionBarLimitInput = input.int(3, "reactionBarLimit", group="Confirmation Proxies", tooltip="Maximum number of bars allowed for the continuation reaction before quality is downgraded.")
+requireProtectedSwingConfirmationInput = input.bool(true, "requireProtectedSwingConfirmation", group="Confirmation Proxies", tooltip="Require a new protected swing before the continuation state can become entry-ready.")
+requireCorrectHalfRespectInput = input.bool(true, "requireCorrectHalfRespect", group="Confirmation Proxies", tooltip="Require the continuation to hold the correct side of equilibrium before the reaction is accepted.")
+equilibriumTolerancePercentOfRangeInput = input.float(0.05, "equilibriumTolerancePercentOfRange", group="Confirmation Proxies", tooltip="First-pass tolerance around the equilibrium midpoint before a close is treated as a real wrong-side failure instead of minor probing.")
+requireCandleThreeClosureAssistInput = input.bool(false, "requireCandleThreeClosureAssist", group="Confirmation Proxies", tooltip="Optional extra filter that requires candle-three-style closure behavior before continuation is marked high quality.")
+
+// Failure and Exhaustion Filters
+oneMoreCandleFilterInput = input.bool(true, "oneMoreCandleFilter", group="Failure and Exhaustion Filters", tooltip="Require one extra follow-through candle after the initial reaction before entry-ready status appears.")
+localRotationThresholdInput = input.int(2, "localRotationThreshold", group="Failure and Exhaustion Filters", tooltip="Maximum tolerated local two-sided rotations before the setup is treated as consolidation instead of continuation.")
+requireHigherTimeframeObjectiveOpenInput = input.bool(true, "requireHigherTimeframeObjectiveOpen", group="Failure and Exhaustion Filters", tooltip="Block late continuations once the higher-timeframe target is already considered complete.")
+expansionExhaustionBarCountInput = input.int(3, "expansionExhaustionBarCount", group="Failure and Exhaustion Filters", tooltip="Provisional higher-timeframe expansion count beyond which continuation expectations should be reduced.")
+maxOpposingWickRatioInput = input.float(0.35, "maxOpposingWickRatio", group="Failure and Exhaustion Filters", tooltip="Provisional opposing-wick ratio used to downgrade continuation quality when rejection grows too large.")
+
+// Risk and Targets
+invalidationModeInput = input.string("protected_swing", "invalidationMode", group="Risk and Targets", tooltip="Structural invalidation mode for the displayed continuation stop reference.", options=["protected_swing", "body_conditional"])
+minimumRewardRiskInput = input.float(1.5, "minimumRewardRisk", group="Risk and Targets", tooltip="Minimum reward-to-risk threshold required before a continuation entry is shown.")
+firstTargetModeInput = input.string("nearest_external_liquidity", "firstTargetMode", group="Risk and Targets", tooltip="Choose whether the first target should prioritize the nearest external liquidity or previous-day objective logic first.", options=["nearest_external_liquidity", "previous_day_objective_first"])
+objectiveCompletionModeInput = input.string("wick_touch_or_close_through", "objectiveCompletionMode", group="Risk and Targets", tooltip="Choose how the first target is marked complete before blocking late continuation setups.", options=["wick_touch_or_close_through", "close_through_only"])
+showAggressiveStopPreviewInput = input.bool(true, "showAggressiveStopPreview", group="Risk and Targets", tooltip="Display the tighter body-based stop preview when conditional invalidation logic allows it.")
+
+// Backtest Contract
+backtestTickSizeInput = input.float(0.25, "backtestTickSize", group="Backtest Contract", tooltip="First-pass tick size used by the historical harness when translating bar movement into execution and stop-distance units.")
+backtestSpreadTicksInput = input.float(1.0, "backtestSpreadTicks", group="Backtest Contract", tooltip="Explicit spread assumption in ticks for historical backtests.")
+backtestSlippageTicksInput = input.float(0.5, "backtestSlippageTicks", group="Backtest Contract", tooltip="Explicit slippage assumption in ticks for historical backtests, with larger values required in illiquid sessions.")
+backtestCommissionPerContractInput = input.float(2.5, "backtestCommissionPerContract", group="Backtest Contract", tooltip="Commission and fee assumption per contract for historical backtests.")
+
+// helper functions
+clamp01(float value) => math.max(0.0, math.min(1.0, value))
+midpoint(float highPrice, float lowPrice) => (highPrice + lowPrice) / 2.0
+
+// calculations
+float draftMidpoint = midpoint(high, low)
+float draftBody = math.abs(close - open)
+float draftRange = math.max(high - low, syminfo.mintick)
+float draftPressure = clamp01(draftBody / draftRange)
+bool draftMomentum = close > draftMidpoint
+string draftState = draftMomentum ? "bullish_bias" : "bearish_bias"
+
+// derived series placeholders
+// - higherTimeframeBiasState: Higher-timeframe continuation bias state used to enable or block the entire continuation sequence.
+// - higherTimeframeObjectiveState: Open versus completed higher-timeframe objective state used to block late continuations.
+// - expansionContextState: Expansion versus non-expansion context across the higher and intermediate frames.
+// - retracementState: Controlled pullback depth, location, and completion state before the continuation reaction begins.
+// - continuationAnchorState: Selected continuation anchor family and its active zone boundaries.
+// - anchorPriorityScore: Explicit first-pass score used to rank competing continuation anchors inside the same pullback region.
+// - equilibriumHalfState: Whether price is holding the correct half of the selected range around equilibrium.
+// - retracementDepthBand: Shallow, moderate, deep, or invalid retracement classification relative to the prior expansion leg.
+// - wickQualityState: Continuation quality score based on opposing-wick growth during the reaction and follow-through bars.
+// - consolidationResolutionState: Whether the setup is a valid post-consolidation continuation or still rotating inside a local range.
+// - cisdState: First-pass continuation CISD proxy after the pullback anchor reacts.
+// - candleThreeAssistState: Optional candle-three closure assist used as a quality gate rather than as the main trigger.
+// - protectedSwingState: Most recent protected swing used for continuation confirmation and invalidation.
+// - continuationQualityState: Composite quality state that degrades on slow reactions, deep pullbacks, large opposing wicks, or late objectives.
+// - entryReadyState: Final state showing whether the continuation is context-ready, structurally confirmed, and risk-acceptable.
+
+// rule trace references
+// - continuation: continuation.continuation_definition -> A valid continuation resumes the active move quickly after a controlled pullback or liquidity reaction
+// - continuation: continuation.equilibrium_respect_continuation -> Continuation quality improves when price respects the correct half of the range around equilibrium
+// - continuation: continuation.continuation_structure_variants -> Order blocks, breaker blocks, and imbalances are valid continuation anchors only after structure confirms
+// - continuation: continuation.continuation_failure_filters -> Most failed continuations are consolidation, completed liquidity objectives, or late entries after the move is spent
+// - expansion: expansion.expansion_definition -> Expansion is a one-sided move with shallow pullbacks
+// - expansion: expansion.candle_supports_expansion -> A candle supports expansion when body is large and opposing wick is small
+// - expansion: expansion.multi_timeframe_alignment -> Expansion trades are strongest when higher and lower timeframes align
+// - expansion: expansion.expansion_entry_workflow -> Expansion entries come after POI reaction and confirmation
+// - expansion: expansion.expansion_exhaustion_guard -> Do not assume infinite continuation after repeated expansion
+// - invalidation: invalidation.protected_swing_is_default_invalidation -> The default invalidation level is the protected swing that should hold if the thesis is correct
+// - invalidation: invalidation.body_invalidation_is_conditional_risk_tightening -> Body-based invalidation is an optional risk-tightening variant, not the default structural rule
+// - invalidation: invalidation.wait_for_new_protected_swing_if_rr_is_poor -> If the initial reversal invalidation is too wide, wait for the next protected swing instead of forcing the trade
+// - invalidation: invalidation.continuation_or_reversal_is_invalid_when_structure_turns_into_range_or_target_is_already_met -> A setup is invalid when structure loses intent through consolidation, target completion, or failed directional follow-through
+// - protected_swings: protected_swings.protected_swing_definition -> Protected swing is the structure expected to hold if trend continues
+// - protected_swings: protected_swings.protected_swing_stop_logic -> Protected swings provide structural stop placement
+// - protected_swings: protected_swings.protected_swing_trend_filter -> Trade direction should follow the most recent valid protected swing logic
+// - protected_swings: protected_swings.protected_swing_confirmation_gate -> Anticipation is allowed, but confirmation requires the correct closing event
+// - consolidation: consolidation.consolidation_phase_definition -> A consolidation is an internal range between a defined high and low where directional intent is unresolved
+// - consolidation: consolidation.manipulation_then_resolution -> The preferred consolidation setup is a sweep of one side of the range followed by confirmation away from the swept side
+// - consolidation: consolidation.breakout_continuation_from_consolidation -> A breakout continuation is valid when price leaves the range, holds outside it, and confirms on the retest
+// - consolidation: consolidation.equilibrium_and_whipsaw_filters -> While consolidation remains unresolved, equilibrium and range-rotation behavior should dominate expectations
+// - equilibrium: equilibrium.equilibrium_is_wick_to_wick_midpoint -> Equilibrium is measured from wick high to wick low, not from candle bodies
+// - equilibrium: equilibrium.equilibrium_respect_sets_directional_half -> In expansion conditions, respect of the correct half of the range defines the directional bias
+// - equilibrium: equilibrium.previous_day_equilibrium_filters_continuation_day -> A continuation day is framed from the previous day's equilibrium and confirmed by lower-timeframe closes that stay on the correct side
+// - equilibrium: equilibrium.equilibrium_requires_poi_and_confirmation -> Equilibrium becomes tradable when the respected half also contains a point of interest and lower-timeframe confirmation
+// - retracement: retracement.retracement_phase_definition -> A retracement is a slower, shallower countertrend move that follows expansion without breaking the trend-defining swing
+// - retracement: retracement.retracement_location_and_depth -> High-quality retracements pull into aligned points of interest and remain structurally shallow
+// - retracement: retracement.retracement_completion_confirmation -> A retracement completes when with-trend structure confirms again from the retracement area
+// - retracement: retracement.retracement_absence_and_failure_filters -> Skipped retracements and failed pullbacks should not be forced into entries
+// - bias: bias.previous_candle_close_bias -> Next-candle bias starts from how price closes relative to the previous candle range
+// - bias: bias.daily_reversal_framework -> Reversal-day bias is framed from previous day highs or lows plus lower-timeframe confirmation
+// - bias: bias.daily_continuation_framework -> Continuation-day bias uses prior candle closure plus equilibrium respect
+// - bias: bias.wick_size_bias_filter -> Wick size filters whether the current candle supports expansion or reversion
+// - bias: bias.bias_precedes_execution -> Higher-timeframe bias filters all lower-timeframe entries
+// - candle_3_closure: candle_3_closure.candle_three_closure_definition -> A Candle 3 closure confirms the move when Candle 2 fails to produce the earlier reversal closure
+// - candle_3_closure: candle_3_closure.candle_three_requires_context_and_poi -> A Candle 3 closure only matters when it appears at the mapped point of interest and inside the higher-timeframe idea
+// - candle_3_closure: candle_3_closure.candle_three_equilibrium_refinement -> After a valid Candle 3 closure, Candle 4 should respect the correct half of Candle 3's range
+// - candle_3_closure: candle_3_closure.valid_swing_requires_poi_and_closure -> No swing point is valid without both the point of interest and the closure event
+// - reversal: reversal.reversal_definition -> A reversal is expansion met with opposite expansion at meaningful liquidity
+// - reversal: reversal.reversal_confirmation_stack -> Reversal confirmation is stacked from wick, liquidity sweep, CISD, and close behavior
+// - reversal: reversal.candle_three_reversal_fallback -> If candle two fails, candle three closure can still confirm the reversal
+// - reversal: reversal.reversal_sequence_entry_model -> The first-pass reversal sequence is sweep, reclaim, CISD, and gap-backed entry
+// - top_down_alignment: top_down_alignment.higher_timeframe_sets_direction -> The higher timeframe sets the directional bias and lower timeframes should not override it on their own
+// - top_down_alignment: top_down_alignment.intermediate_timeframe_confirms_structure -> The intermediate timeframe must confirm the higher-timeframe bias with structure, a point of interest, and a directional closure
+// - top_down_alignment: top_down_alignment.lower_timeframe_refines_entry_only_after_alignment -> The lower timeframe is for entry precision only after the higher and intermediate timeframes are already aligned
+// - top_down_alignment: top_down_alignment.aligned_expansion_candles_define_clean_trend -> A clean trend requires aligned expansion-supporting candles across at least two timeframes
+// - wick_logic: wick_logic.small_opposing_run_supports_expansion -> A small opposing wick with a large body supports expansion in the candle direction
+// - wick_logic: wick_logic.large_opposing_wick_favors_reversion -> A large opposing wick with a smaller body favors reversion toward the open or nearby liquidity
+// - wick_logic: wick_logic.wick_midpoint_respect_vs_disrespect -> Respect or disrespect of the wick midpoint determines whether rejection is holding or failing
+// - wick_logic: wick_logic.higher_timeframe_wick_guides_lower_timeframe_expectation -> Higher-timeframe wick behavior should govern whether lower-timeframe structure is read as expansion, reversal, or range
+
+// visuals
+plot(draftMidpoint, "Draft midpoint", color=color.new(color.orange, 0), linewidth=2)
+bgcolor(draftMomentum ? color.new(color.green, 88) : color.new(color.red, 88), title="Draft state background")
+var label draftSummaryLabel = na
+if barstate.islast
+    label.delete(draftSummaryLabel)
+    draftSummaryLabel := label.new(bar_index, high, str.format("{0} | pressure {1}", draftState, str.tostring(draftPressure, "#.##")), style=label.style_label_down, textcolor=color.white, color=color.new(draftMomentum ? color.green : color.red, 0))
+
+// alerts
+alertcondition(ta.crossover(close, draftMidpoint), "Draft bullish crossover", "Draft scaffold crossed above midpoint.")
+alertcondition(ta.crossunder(close, draftMidpoint), "Draft bearish crossover", "Draft scaffold crossed below midpoint.")

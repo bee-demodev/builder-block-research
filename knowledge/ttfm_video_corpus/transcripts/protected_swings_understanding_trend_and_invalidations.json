@@ -1,0 +1,2162 @@
+[
+  {
+    "text": "[Music]",
+    "start": 5.49,
+    "duration": 7.229
+  },
+  {
+    "text": "How's it going everyone? In this video,",
+    "start": 10.96,
+    "duration": 3.599
+  },
+  {
+    "text": "we are going to talk about protected",
+    "start": 12.719,
+    "duration": 4.4
+  },
+  {
+    "text": "swings or protected highs and lows in",
+    "start": 14.559,
+    "duration": 4.441
+  },
+  {
+    "text": "the market. So, let's get into the",
+    "start": 17.119,
+    "duration": 5.201
+  },
+  {
+    "text": "video. So, what is a protected swing? A",
+    "start": 19.0,
+    "duration": 5.64
+  },
+  {
+    "text": "protected swing is a high or low in",
+    "start": 22.32,
+    "duration": 4.799
+  },
+  {
+    "text": "which I'm expecting to hold as the trend",
+    "start": 24.64,
+    "duration": 4.799
+  },
+  {
+    "text": "continues. So what do I mean by that? In",
+    "start": 27.119,
+    "duration": 4.48
+  },
+  {
+    "text": "this case, in a bullish scenario, I'm",
+    "start": 29.439,
+    "duration": 4.881
+  },
+  {
+    "text": "expecting this low to remain intact if",
+    "start": 31.599,
+    "duration": 5.281
+  },
+  {
+    "text": "this trend is going to continue higher.",
+    "start": 34.32,
+    "duration": 4.72
+  },
+  {
+    "text": "Now, how do I define a protected high or",
+    "start": 36.88,
+    "duration": 4.56
+  },
+  {
+    "text": "low or a protected swing? Well, there",
+    "start": 39.04,
+    "duration": 4.08
+  },
+  {
+    "text": "are two types and this would be the",
+    "start": 41.44,
+    "duration": 4.24
+  },
+  {
+    "text": "first one. If we are bullish, I want to",
+    "start": 43.12,
+    "duration": 5.599
+  },
+  {
+    "text": "see a low or a short-term low be ran out",
+    "start": 45.68,
+    "duration": 5.68
+  },
+  {
+    "text": "or swept and then close through the",
+    "start": 48.719,
+    "duration": 4.881
+  },
+  {
+    "text": "series of downclo candles that made the",
+    "start": 51.36,
+    "duration": 4.4
+  },
+  {
+    "text": "low. So, you can see here, here is the",
+    "start": 53.6,
+    "duration": 4.32
+  },
+  {
+    "text": "low. we find the series of downclo",
+    "start": 55.76,
+    "duration": 4.56
+  },
+  {
+    "text": "candles. I mark that out once price",
+    "start": 57.92,
+    "duration": 5.279
+  },
+  {
+    "text": "closes over that level. This is now a",
+    "start": 60.32,
+    "duration": 5.199
+  },
+  {
+    "text": "protected low and I expect it to hold if",
+    "start": 63.199,
+    "duration": 5.121
+  },
+  {
+    "text": "we're going to continue higher. Now,",
+    "start": 65.519,
+    "duration": 4.96
+  },
+  {
+    "text": "when do we not need to run out the low?",
+    "start": 68.32,
+    "duration": 5.52
+  },
+  {
+    "text": "Well, that is only if we use SMT. So, in",
+    "start": 70.479,
+    "duration": 5.761
+  },
+  {
+    "text": "this case, using SMT, the correlated",
+    "start": 73.84,
+    "duration": 4.72
+  },
+  {
+    "text": "asset has ran out the low forming a",
+    "start": 76.24,
+    "duration": 4.0
+  },
+  {
+    "text": "protected low. So, then we can",
+    "start": 78.56,
+    "duration": 4.559
+  },
+  {
+    "text": "anticipate this low to hold as well. So",
+    "start": 80.24,
+    "duration": 4.48
+  },
+  {
+    "text": "in this case, I'll use the series of",
+    "start": 83.119,
+    "duration": 3.36
+  },
+  {
+    "text": "downclosed candles that made the failure",
+    "start": 84.72,
+    "duration": 4.24
+  },
+  {
+    "text": "swing. Once that is closed over, then",
+    "start": 86.479,
+    "duration": 5.68
+  },
+  {
+    "text": "expecting these to hold here. Now the",
+    "start": 88.96,
+    "duration": 5.36
+  },
+  {
+    "text": "other type of protected swing is one",
+    "start": 92.159,
+    "duration": 4.481
+  },
+  {
+    "text": "formed out of a fair value gap. So in",
+    "start": 94.32,
+    "duration": 3.92
+  },
+  {
+    "text": "the first two examples, it is based off",
+    "start": 96.64,
+    "duration": 4.4
+  },
+  {
+    "text": "of a high or low being swept out. In",
+    "start": 98.24,
+    "duration": 4.559
+  },
+  {
+    "text": "this case, it is price reaching into a",
+    "start": 101.04,
+    "duration": 4.56
+  },
+  {
+    "text": "fair value gap. I then find the low. I",
+    "start": 102.799,
+    "duration": 4.481
+  },
+  {
+    "text": "found this series of downcloed candles",
+    "start": 105.6,
+    "duration": 3.92
+  },
+  {
+    "text": "that form that low. Once price closes",
+    "start": 107.28,
+    "duration": 4.08
+  },
+  {
+    "text": "over that level, I then anticipate this",
+    "start": 109.52,
+    "duration": 3.919
+  },
+  {
+    "text": "low to hold if price is going to",
+    "start": 111.36,
+    "duration": 3.32
+  },
+  {
+    "text": "continue",
+    "start": 113.439,
+    "duration": 3.761
+  },
+  {
+    "text": "higher. So let's get into an example",
+    "start": 114.68,
+    "duration": 4.439
+  },
+  {
+    "text": "here. You can see price is trending down",
+    "start": 117.2,
+    "duration": 4.239
+  },
+  {
+    "text": "into an important level where we may",
+    "start": 119.119,
+    "duration": 4.721
+  },
+  {
+    "text": "anticipate a new phase of price. You can",
+    "start": 121.439,
+    "duration": 4.481
+  },
+  {
+    "text": "see we have series of downlosed candles",
+    "start": 123.84,
+    "duration": 4.08
+  },
+  {
+    "text": "into that important level. Do we close",
+    "start": 125.92,
+    "duration": 4.72
+  },
+  {
+    "text": "over those two downlosed candles? No. So",
+    "start": 127.92,
+    "duration": 5.679
+  },
+  {
+    "text": "it is still bearish. So, taking a look",
+    "start": 130.64,
+    "duration": 4.72
+  },
+  {
+    "text": "here now, we have swept out that",
+    "start": 133.599,
+    "duration": 3.601
+  },
+  {
+    "text": "short-term low or sweeping out a",
+    "start": 135.36,
+    "duration": 3.92
+  },
+  {
+    "text": "liquidity point. Here we have the",
+    "start": 137.2,
+    "duration": 3.6
+  },
+  {
+    "text": "correlated asset to show you what it",
+    "start": 139.28,
+    "duration": 3.599
+  },
+  {
+    "text": "looks like with an SMT, but we're going",
+    "start": 140.8,
+    "duration": 4.48
+  },
+  {
+    "text": "to focus on this one. But now, with the",
+    "start": 142.879,
+    "duration": 4.801
+  },
+  {
+    "text": "sweep of a low, we can find this low,",
+    "start": 145.28,
+    "duration": 4.08
+  },
+  {
+    "text": "find the series of down close candles",
+    "start": 147.68,
+    "duration": 3.44
+  },
+  {
+    "text": "that made that low. Go ahead and mark",
+    "start": 149.36,
+    "duration": 3.68
+  },
+  {
+    "text": "out this level. And when price closes",
+    "start": 151.12,
+    "duration": 4.0
+  },
+  {
+    "text": "over that level, this low is now",
+    "start": 153.04,
+    "duration": 4.4
+  },
+  {
+    "text": "protected. Or anticipate this low to",
+    "start": 155.12,
+    "duration": 4.8
+  },
+  {
+    "text": "hold. if price is going to reverse and",
+    "start": 157.44,
+    "duration": 5.12
+  },
+  {
+    "text": "change trend and continue higher. So",
+    "start": 159.92,
+    "duration": 5.2
+  },
+  {
+    "text": "from here I can look to take an entry or",
+    "start": 162.56,
+    "duration": 4.959
+  },
+  {
+    "text": "seek a continuation as I'm expecting",
+    "start": 165.12,
+    "duration": 4.96
+  },
+  {
+    "text": "this trend to continue higher. So let's",
+    "start": 167.519,
+    "duration": 4.601
+  },
+  {
+    "text": "get into some examples in trading",
+    "start": 170.08,
+    "duration": 4.4
+  },
+  {
+    "text": "view. So here we are with our first",
+    "start": 172.12,
+    "duration": 4.28
+  },
+  {
+    "text": "example and you can see we have had",
+    "start": 174.48,
+    "duration": 4.68
+  },
+  {
+    "text": "expansion lower and then we're having a",
+    "start": 176.4,
+    "duration": 4.96
+  },
+  {
+    "text": "consolidation. So if you understand the",
+    "start": 179.16,
+    "duration": 4.439
+  },
+  {
+    "text": "phases of price, if we are in a",
+    "start": 181.36,
+    "duration": 3.84
+  },
+  {
+    "text": "consolidation, where do we want to",
+    "start": 183.599,
+    "duration": 4.401
+  },
+  {
+    "text": "focus? The external parts of the range.",
+    "start": 185.2,
+    "duration": 4.8
+  },
+  {
+    "text": "Since we are bearish, what would we want",
+    "start": 188.0,
+    "duration": 4.4
+  },
+  {
+    "text": "to see? We would want to see highs ran",
+    "start": 190.0,
+    "duration": 6.239
+  },
+  {
+    "text": "out to then trade back lower. So taking",
+    "start": 192.4,
+    "duration": 5.759
+  },
+  {
+    "text": "a look at this, what happens when we",
+    "start": 196.239,
+    "duration": 4.481
+  },
+  {
+    "text": "reach up into this high? Well, we sweep",
+    "start": 198.159,
+    "duration": 4.401
+  },
+  {
+    "text": "it out. And if you notice, we have a",
+    "start": 200.72,
+    "duration": 4.239
+  },
+  {
+    "text": "candle to closure, or if you see my",
+    "start": 202.56,
+    "duration": 4.24
+  },
+  {
+    "text": "daily bias video, we're closing back",
+    "start": 204.959,
+    "duration": 4.241
+  },
+  {
+    "text": "inside the previous day's range. So, we",
+    "start": 206.8,
+    "duration": 4.88
+  },
+  {
+    "text": "can expect this to trade lower. Let's go",
+    "start": 209.2,
+    "duration": 4.0
+  },
+  {
+    "text": "down to the hourly chart to see what",
+    "start": 211.68,
+    "duration": 3.6
+  },
+  {
+    "text": "this looks like. So, here we are down on",
+    "start": 213.2,
+    "duration": 3.92
+  },
+  {
+    "text": "the hourly chart and I have my indicator",
+    "start": 215.28,
+    "duration": 3.92
+  },
+  {
+    "text": "up with the daily candles so you can",
+    "start": 217.12,
+    "duration": 4.479
+  },
+  {
+    "text": "visualize it. Here we have swept out our",
+    "start": 219.2,
+    "duration": 5.039
+  },
+  {
+    "text": "previous day's high. And do we form a",
+    "start": 221.599,
+    "duration": 5.2
+  },
+  {
+    "text": "reversal? Well, what forms a protected",
+    "start": 224.239,
+    "duration": 4.481
+  },
+  {
+    "text": "high? Well, let's say I was trying to",
+    "start": 226.799,
+    "duration": 3.761
+  },
+  {
+    "text": "frame a reversal off of this previous",
+    "start": 228.72,
+    "duration": 4.4
+  },
+  {
+    "text": "day high. We have that turtle soup. But",
+    "start": 230.56,
+    "duration": 4.399
+  },
+  {
+    "text": "what happens and why do I wait for a",
+    "start": 233.12,
+    "duration": 4.08
+  },
+  {
+    "text": "protected high? Well, we never get that",
+    "start": 234.959,
+    "duration": 4.321
+  },
+  {
+    "text": "confirmation of the close through the",
+    "start": 237.2,
+    "duration": 4.0
+  },
+  {
+    "text": "series of downclosed candles that made",
+    "start": 239.28,
+    "duration": 3.84
+  },
+  {
+    "text": "that high. So, you can see how it just",
+    "start": 241.2,
+    "duration": 4.959
+  },
+  {
+    "text": "fails. Now, we have another sweep over",
+    "start": 243.12,
+    "duration": 6.08
+  },
+  {
+    "text": "this high. What happens here? Well, do",
+    "start": 246.159,
+    "duration": 4.64
+  },
+  {
+    "text": "we get a closure through the series of",
+    "start": 249.2,
+    "duration": 3.119
+  },
+  {
+    "text": "candles that made the high? In this",
+    "start": 250.799,
+    "duration": 4.64
+  },
+  {
+    "text": "case, it is just one. Yes, we do. So,",
+    "start": 252.319,
+    "duration": 5.121
+  },
+  {
+    "text": "with this now, we can anticipate this",
+    "start": 255.439,
+    "duration": 4.08
+  },
+  {
+    "text": "trend to have flipped and we are",
+    "start": 257.44,
+    "duration": 4.88
+  },
+  {
+    "text": "bearish, right? And what does this do?",
+    "start": 259.519,
+    "duration": 5.521
+  },
+  {
+    "text": "This is now a protected swing, right?",
+    "start": 262.32,
+    "duration": 5.12
+  },
+  {
+    "text": "I'm expecting this high to remain intact",
+    "start": 265.04,
+    "duration": 4.64
+  },
+  {
+    "text": "because it has been closed through if",
+    "start": 267.44,
+    "duration": 4.96
+  },
+  {
+    "text": "price is going to continue bearish. So,",
+    "start": 269.68,
+    "duration": 5.04
+  },
+  {
+    "text": "I'm expecting this wick to remain intact",
+    "start": 272.4,
+    "duration": 4.72
+  },
+  {
+    "text": "as we trade lower. So, getting into the",
+    "start": 274.72,
+    "duration": 4.64
+  },
+  {
+    "text": "next day, let's see what happens. You",
+    "start": 277.12,
+    "duration": 4.92
+  },
+  {
+    "text": "can see my indicator does plot a bearish",
+    "start": 279.36,
+    "duration": 5.6
+  },
+  {
+    "text": "signal. We reach up into here and",
+    "start": 282.04,
+    "duration": 5.08
+  },
+  {
+    "text": "there's really not much going on here as",
+    "start": 284.96,
+    "duration": 4.48
+  },
+  {
+    "text": "this is a whole series up. I would be",
+    "start": 287.12,
+    "duration": 5.2
+  },
+  {
+    "text": "ignoring this small little candle there.",
+    "start": 289.44,
+    "duration": 4.96
+  },
+  {
+    "text": "What happens if we need a protected",
+    "start": 292.32,
+    "duration": 5.04
+  },
+  {
+    "text": "swing? We would need what? A high to be",
+    "start": 294.4,
+    "duration": 5.04
+  },
+  {
+    "text": "swept out. Why are we looking for a high",
+    "start": 297.36,
+    "duration": 4.32
+  },
+  {
+    "text": "to be swept out and not a low? Well, we",
+    "start": 299.44,
+    "duration": 4.16
+  },
+  {
+    "text": "are bearish because this trend is now",
+    "start": 301.68,
+    "duration": 4.84
+  },
+  {
+    "text": "bearish as long as this wick remains",
+    "start": 303.6,
+    "duration": 5.52
+  },
+  {
+    "text": "intact. So, now that we have swept out",
+    "start": 306.52,
+    "duration": 4.44
+  },
+  {
+    "text": "the high, what would we need to form a",
+    "start": 309.12,
+    "duration": 3.68
+  },
+  {
+    "text": "protected swing right here to trade off",
+    "start": 310.96,
+    "duration": 4.48
+  },
+  {
+    "text": "of? We would need this series of upclose",
+    "start": 312.8,
+    "duration": 4.8
+  },
+  {
+    "text": "candles that swept out that high to be",
+    "start": 315.44,
+    "duration": 4.4
+  },
+  {
+    "text": "closed below. So, as we let this",
+    "start": 317.6,
+    "duration": 4.4
+  },
+  {
+    "text": "continue, do we get a closure below",
+    "start": 319.84,
+    "duration": 5.199
+  },
+  {
+    "text": "that? We do right here. So, now I'm",
+    "start": 322.0,
+    "duration": 4.96
+  },
+  {
+    "text": "expecting this high to remain, but we",
+    "start": 325.039,
+    "duration": 4.0
+  },
+  {
+    "text": "have a new protected high. I'm expecting",
+    "start": 326.96,
+    "duration": 5.2
+  },
+  {
+    "text": "this high to remain. And due to the day,",
+    "start": 329.039,
+    "duration": 5.521
+  },
+  {
+    "text": "I'm expecting that to remain intact as",
+    "start": 332.16,
+    "duration": 4.879
+  },
+  {
+    "text": "we continue into the next day, pretty",
+    "start": 334.56,
+    "duration": 4.88
+  },
+  {
+    "text": "late into the session. So, here we are",
+    "start": 337.039,
+    "duration": 4.921
+  },
+  {
+    "text": "in the next day. We have a",
+    "start": 339.44,
+    "duration": 4.72
+  },
+  {
+    "text": "consolidation. Here we sweep out this",
+    "start": 341.96,
+    "duration": 5.48
+  },
+  {
+    "text": "high. What would we need for price to",
+    "start": 344.16,
+    "duration": 5.28
+  },
+  {
+    "text": "form a protected high right here? We'd",
+    "start": 347.44,
+    "duration": 4.08
+  },
+  {
+    "text": "need a closure through a series of up",
+    "start": 349.44,
+    "duration": 4.319
+  },
+  {
+    "text": "close candles. Not really many series of",
+    "start": 351.52,
+    "duration": 3.36
+  },
+  {
+    "text": "up close candles there. So, it would",
+    "start": 353.759,
+    "duration": 3.44
+  },
+  {
+    "text": "just be that body right there. So,",
+    "start": 354.88,
+    "duration": 4.72
+  },
+  {
+    "text": "marking that out, I would need a closure",
+    "start": 357.199,
+    "duration": 4.881
+  },
+  {
+    "text": "through that. We have yet to get that.",
+    "start": 359.6,
+    "duration": 4.48
+  },
+  {
+    "text": "Right. So, now we have swept out a new",
+    "start": 362.08,
+    "duration": 4.6
+  },
+  {
+    "text": "high. So, I'm just going to repeat the",
+    "start": 364.08,
+    "duration": 4.88
+  },
+  {
+    "text": "process. And here you can see where",
+    "start": 366.68,
+    "duration": 4.359
+  },
+  {
+    "text": "would be this series of closed candles",
+    "start": 368.96,
+    "duration": 4.56
+  },
+  {
+    "text": "right there. So, let's see when we get a",
+    "start": 371.039,
+    "duration": 4.641
+  },
+  {
+    "text": "closure through that.",
+    "start": 373.52,
+    "duration": 3.76
+  },
+  {
+    "text": "Right there we get the closure through.",
+    "start": 375.68,
+    "duration": 3.519
+  },
+  {
+    "text": "So now I'd expect this high to remain",
+    "start": 377.28,
+    "duration": 4.32
+  },
+  {
+    "text": "intact. And you can see how this is used",
+    "start": 379.199,
+    "duration": 4.961
+  },
+  {
+    "text": "for a continuation of a trend. Here is a",
+    "start": 381.6,
+    "duration": 4.879
+  },
+  {
+    "text": "reversal. And each one of these is a",
+    "start": 384.16,
+    "duration": 5.039
+  },
+  {
+    "text": "continuation of this bearish trend or a",
+    "start": 386.479,
+    "duration": 4.801
+  },
+  {
+    "text": "lower time frame reversal. And where",
+    "start": 389.199,
+    "duration": 3.921
+  },
+  {
+    "text": "would I be looking to target? Well, I",
+    "start": 391.28,
+    "duration": 3.919
+  },
+  {
+    "text": "have my liquidity points here as marked",
+    "start": 393.12,
+    "duration": 4.88
+  },
+  {
+    "text": "out via my indicator. So as we let this",
+    "start": 395.199,
+    "duration": 5.0
+  },
+  {
+    "text": "continue, we go and take out that",
+    "start": 398.0,
+    "duration": 4.56
+  },
+  {
+    "text": "low. Taking a look. Do we get a",
+    "start": 400.199,
+    "duration": 4.601
+  },
+  {
+    "text": "retracement or a reversal? It's looking",
+    "start": 402.56,
+    "duration": 4.56
+  },
+  {
+    "text": "like a retracement. What do we have",
+    "start": 404.8,
+    "duration": 5.119
+  },
+  {
+    "text": "here? We sweep out a high or into a fair",
+    "start": 407.12,
+    "duration": 5.919
+  },
+  {
+    "text": "value gap. And what do we also have? A",
+    "start": 409.919,
+    "duration": 4.881
+  },
+  {
+    "text": "closure through the series of upclose",
+    "start": 413.039,
+    "duration": 3.921
+  },
+  {
+    "text": "candles into that important level. I",
+    "start": 414.8,
+    "duration": 4.16
+  },
+  {
+    "text": "could then anticipate this high to",
+    "start": 416.96,
+    "duration": 4.12
+  },
+  {
+    "text": "remain if we're going to continue",
+    "start": 418.96,
+    "duration": 4.48
+  },
+  {
+    "text": "lower. And once again, we get a",
+    "start": 421.08,
+    "duration": 3.679
+  },
+  {
+    "text": "continuation",
+    "start": 423.44,
+    "duration": 4.8
+  },
+  {
+    "text": "lower. We have a very deep retracement",
+    "start": 424.759,
+    "duration": 5.081
+  },
+  {
+    "text": "almost taking out this high, but it",
+    "start": 428.24,
+    "duration": 3.359
+  },
+  {
+    "text": "remains intact. With that deep",
+    "start": 429.84,
+    "duration": 4.079
+  },
+  {
+    "text": "retracement, what do we reach into? a",
+    "start": 431.599,
+    "duration": 4.72
+  },
+  {
+    "text": "fair value gap here. And so then now",
+    "start": 433.919,
+    "duration": 4.481
+  },
+  {
+    "text": "with the closure through this up close",
+    "start": 436.319,
+    "duration": 4.641
+  },
+  {
+    "text": "candle into that fair value gap, we now",
+    "start": 438.4,
+    "duration": 4.96
+  },
+  {
+    "text": "have a new protected high, right? And so",
+    "start": 440.96,
+    "duration": 4.079
+  },
+  {
+    "text": "all I'm looking for is this low cuz that",
+    "start": 443.36,
+    "duration": 3.52
+  },
+  {
+    "text": "is our daily target. Let's see if that",
+    "start": 445.039,
+    "duration": 4.0
+  },
+  {
+    "text": "gets taken or if our protected high gets",
+    "start": 446.88,
+    "duration": 3.879
+  },
+  {
+    "text": "taken out",
+    "start": 449.039,
+    "duration": 4.641
+  },
+  {
+    "text": "first. And you can see we get those lows",
+    "start": 450.759,
+    "duration": 5.321
+  },
+  {
+    "text": "taken out. So hopefully that makes sense",
+    "start": 453.68,
+    "duration": 4.799
+  },
+  {
+    "text": "how we have a reversal. This forms a",
+    "start": 456.08,
+    "duration": 4.399
+  },
+  {
+    "text": "protected high, right? A protected",
+    "start": 458.479,
+    "duration": 4.56
+  },
+  {
+    "text": "swing. And then we are expecting this",
+    "start": 460.479,
+    "duration": 4.801
+  },
+  {
+    "text": "trend to continue until it is violated",
+    "start": 463.039,
+    "duration": 4.16
+  },
+  {
+    "text": "right with daily closures as we are",
+    "start": 465.28,
+    "duration": 5.359
+  },
+  {
+    "text": "closing outside the previous day's lows.",
+    "start": 467.199,
+    "duration": 4.881
+  },
+  {
+    "text": "So as long as that is occurring I'm",
+    "start": 470.639,
+    "duration": 3.601
+  },
+  {
+    "text": "expecting this trend to continue and I",
+    "start": 472.08,
+    "duration": 4.16
+  },
+  {
+    "text": "can continue to just track the protected",
+    "start": 474.24,
+    "duration": 4.239
+  },
+  {
+    "text": "swings in the market giving me areas",
+    "start": 476.24,
+    "duration": 3.799
+  },
+  {
+    "text": "that I want to",
+    "start": 478.479,
+    "duration": 4.241
+  },
+  {
+    "text": "sell. So here we are with our same EU",
+    "start": 480.039,
+    "duration": 5.321
+  },
+  {
+    "text": "example. We were just up here and we had",
+    "start": 482.72,
+    "duration": 5.44
+  },
+  {
+    "text": "those lows taken out down here. Now, if",
+    "start": 485.36,
+    "duration": 5.44
+  },
+  {
+    "text": "we're expecting this to continue lower,",
+    "start": 488.16,
+    "duration": 4.479
+  },
+  {
+    "text": "what are we looking at? Well, we had",
+    "start": 490.8,
+    "duration": 4.239
+  },
+  {
+    "text": "this range high. It's taken out and we",
+    "start": 492.639,
+    "duration": 4.4
+  },
+  {
+    "text": "have this range low. Now, we have equal",
+    "start": 495.039,
+    "duration": 4.961
+  },
+  {
+    "text": "lows. We have expansion. And we are",
+    "start": 497.039,
+    "duration": 4.72
+  },
+  {
+    "text": "consolidating. So, if we're expecting a",
+    "start": 500.0,
+    "duration": 3.68
+  },
+  {
+    "text": "continuation lower, what do we want to",
+    "start": 501.759,
+    "duration": 5.84
+  },
+  {
+    "text": "see? A run of a high and then to form a",
+    "start": 503.68,
+    "duration": 6.72
+  },
+  {
+    "text": "protected swing. Now, let's talk about",
+    "start": 507.599,
+    "duration": 4.721
+  },
+  {
+    "text": "something. The anticipation of a",
+    "start": 510.4,
+    "duration": 4.559
+  },
+  {
+    "text": "protected swing versus a protected swing",
+    "start": 512.32,
+    "duration": 5.519
+  },
+  {
+    "text": "forming. So you can see here I have the",
+    "start": 514.959,
+    "duration": 4.56
+  },
+  {
+    "text": "narrative that I'm expecting this high",
+    "start": 517.839,
+    "duration": 4.32
+  },
+  {
+    "text": "to form in here to trade lower. So I can",
+    "start": 519.519,
+    "duration": 4.801
+  },
+  {
+    "text": "anticipate that protected swing to form",
+    "start": 522.159,
+    "duration": 4.401
+  },
+  {
+    "text": "and drop down to the hourly chart. And",
+    "start": 524.32,
+    "duration": 3.68
+  },
+  {
+    "text": "that is where I could look for lower",
+    "start": 526.56,
+    "duration": 3.76
+  },
+  {
+    "text": "time frame setups and confirmations. So",
+    "start": 528.0,
+    "duration": 4.56
+  },
+  {
+    "text": "you can see here we have price running",
+    "start": 530.32,
+    "duration": 4.72
+  },
+  {
+    "text": "out this high here. We close through the",
+    "start": 532.56,
+    "duration": 4.399
+  },
+  {
+    "text": "series of upclose candles into that",
+    "start": 535.04,
+    "duration": 4.08
+  },
+  {
+    "text": "high, right? And so I'm expecting a",
+    "start": 536.959,
+    "duration": 5.121
+  },
+  {
+    "text": "continuation lower here. So if we have",
+    "start": 539.12,
+    "duration": 5.839
+  },
+  {
+    "text": "expansion, what do we expect? either a",
+    "start": 542.08,
+    "duration": 5.759
+  },
+  {
+    "text": "retracement or a consolidation to get a",
+    "start": 544.959,
+    "duration": 5.681
+  },
+  {
+    "text": "continuation signature. Right here we",
+    "start": 547.839,
+    "duration": 5.12
+  },
+  {
+    "text": "are pretty much consolidating and what",
+    "start": 550.64,
+    "duration": 4.48
+  },
+  {
+    "text": "do we notice? We are taking out highs,",
+    "start": 552.959,
+    "duration": 3.681
+  },
+  {
+    "text": "right? So, we reach into this fair value",
+    "start": 555.12,
+    "duration": 4.159
+  },
+  {
+    "text": "gap over here and we don't get that",
+    "start": 556.64,
+    "duration": 4.319
+  },
+  {
+    "text": "protected swing, right? We get a very",
+    "start": 559.279,
+    "duration": 4.081
+  },
+  {
+    "text": "lethargic move back into the range here,",
+    "start": 560.959,
+    "duration": 5.681
+  },
+  {
+    "text": "not confirming this as a protected high.",
+    "start": 563.36,
+    "duration": 5.68
+  },
+  {
+    "text": "So, we have another sweep of a high",
+    "start": 566.64,
+    "duration": 4.639
+  },
+  {
+    "text": "here. Where would be our protected high?",
+    "start": 569.04,
+    "duration": 5.12
+  },
+  {
+    "text": "A closure through here. So, I can go",
+    "start": 571.279,
+    "duration": 5.521
+  },
+  {
+    "text": "ahead and wait for that. And when we",
+    "start": 574.16,
+    "duration": 4.239
+  },
+  {
+    "text": "close through here, what am I",
+    "start": 576.8,
+    "duration": 4.08
+  },
+  {
+    "text": "anticipating? I'm now anticipating this",
+    "start": 578.399,
+    "duration": 4.321
+  },
+  {
+    "text": "high to remain intact, which means this",
+    "start": 580.88,
+    "duration": 4.0
+  },
+  {
+    "text": "wick high has formed. And I can expect",
+    "start": 582.72,
+    "duration": 5.36
+  },
+  {
+    "text": "to trade that lower. So, we let that",
+    "start": 584.88,
+    "duration": 5.28
+  },
+  {
+    "text": "continue. We go and take out that",
+    "start": 588.08,
+    "duration": 4.319
+  },
+  {
+    "text": "previous day's low. And let's see if we",
+    "start": 590.16,
+    "duration": 4.96
+  },
+  {
+    "text": "run out the low. We are currently",
+    "start": 592.399,
+    "duration": 5.12
+  },
+  {
+    "text": "leaving this range low.",
+    "start": 595.12,
+    "duration": 4.64
+  },
+  {
+    "text": "And then as we approach this candle for",
+    "start": 597.519,
+    "duration": 4.32
+  },
+  {
+    "text": "continuation, I'm expecting the lower",
+    "start": 599.76,
+    "duration": 4.639
+  },
+  {
+    "text": "half of this candle to push price lower.",
+    "start": 601.839,
+    "duration": 4.961
+  },
+  {
+    "text": "We have price running out a high right",
+    "start": 604.399,
+    "duration": 5.041
+  },
+  {
+    "text": "here into a fair value gap. Where are",
+    "start": 606.8,
+    "duration": 4.8
+  },
+  {
+    "text": "the series of candles? Well, you could",
+    "start": 609.44,
+    "duration": 5.44
+  },
+  {
+    "text": "use these bull move here. But if we look",
+    "start": 611.6,
+    "duration": 6.32
+  },
+  {
+    "text": "at this, price went up, down, back up.",
+    "start": 614.88,
+    "duration": 5.32
+  },
+  {
+    "text": "So I can really just use this level in",
+    "start": 617.92,
+    "duration": 5.72
+  },
+  {
+    "text": "here. So let's see what",
+    "start": 620.2,
+    "duration": 6.52
+  },
+  {
+    "text": "happens. We run out a new high. That",
+    "start": 623.64,
+    "duration": 6.12
+  },
+  {
+    "text": "gives me a new level to look at right",
+    "start": 626.72,
+    "duration": 5.76
+  },
+  {
+    "text": "here. Sweep. Not very clean in here, but",
+    "start": 629.76,
+    "duration": 4.48
+  },
+  {
+    "text": "I can use that leg up or I could just",
+    "start": 632.48,
+    "duration": 4.799
+  },
+  {
+    "text": "use the same level closure through that.",
+    "start": 634.24,
+    "duration": 5.039
+  },
+  {
+    "text": "And then we go ahead and drop through",
+    "start": 637.279,
+    "duration": 4.721
+  },
+  {
+    "text": "those lows. So, you can see if we go",
+    "start": 639.279,
+    "duration": 5.281
+  },
+  {
+    "text": "back out to our daily time frame here.",
+    "start": 642.0,
+    "duration": 4.48
+  },
+  {
+    "text": "What we can do is use that narrative on",
+    "start": 644.56,
+    "duration": 4.48
+  },
+  {
+    "text": "the daily chart with a daily closure to",
+    "start": 646.48,
+    "duration": 4.96
+  },
+  {
+    "text": "anticipate and refine it on the hourly.",
+    "start": 649.04,
+    "duration": 3.919
+  },
+  {
+    "text": "Or if we were just going to wait for the",
+    "start": 651.44,
+    "duration": 3.519
+  },
+  {
+    "text": "daily setup, we'd have the anticipation",
+    "start": 652.959,
+    "duration": 4.481
+  },
+  {
+    "text": "of that swing. And then when we close",
+    "start": 654.959,
+    "duration": 4.56
+  },
+  {
+    "text": "through here, that is the confirmation",
+    "start": 657.44,
+    "duration": 4.399
+  },
+  {
+    "text": "that this high should remain intact as",
+    "start": 659.519,
+    "duration": 4.481
+  },
+  {
+    "text": "we go run out that low and we get an",
+    "start": 661.839,
+    "duration": 5.12
+  },
+  {
+    "text": "expansion lower. So here we are on our",
+    "start": 664.0,
+    "duration": 5.68
+  },
+  {
+    "text": "next example. ES on the 4hour chart and",
+    "start": 666.959,
+    "duration": 4.481
+  },
+  {
+    "text": "we have the daily candles up here. You",
+    "start": 669.68,
+    "duration": 3.839
+  },
+  {
+    "text": "can see we have a nice bearish closure",
+    "start": 671.44,
+    "duration": 4.639
+  },
+  {
+    "text": "on the daily chart. So if expecting a",
+    "start": 673.519,
+    "duration": 4.401
+  },
+  {
+    "text": "continuation lower, I want to see from",
+    "start": 676.079,
+    "duration": 4.241
+  },
+  {
+    "text": "the lower half of this. Well, what area",
+    "start": 677.92,
+    "duration": 4.32
+  },
+  {
+    "text": "is in the lower half? We have a fair",
+    "start": 680.32,
+    "duration": 4.079
+  },
+  {
+    "text": "value gap right here. So, if I'm",
+    "start": 682.24,
+    "duration": 4.159
+  },
+  {
+    "text": "expecting price to retrace up and",
+    "start": 684.399,
+    "duration": 4.241
+  },
+  {
+    "text": "continue lower, I want to see price form",
+    "start": 686.399,
+    "duration": 5.201
+  },
+  {
+    "text": "a high in here to continue lower. So,",
+    "start": 688.64,
+    "duration": 5.439
+  },
+  {
+    "text": "letting another candle play out. What",
+    "start": 691.6,
+    "duration": 4.88
+  },
+  {
+    "text": "are we left with? Is that a bearish",
+    "start": 694.079,
+    "duration": 4.401
+  },
+  {
+    "text": "closure? It is not. So, I can give it",
+    "start": 696.48,
+    "duration": 4.4
+  },
+  {
+    "text": "another candle. Is this a bearish",
+    "start": 698.48,
+    "duration": 4.72
+  },
+  {
+    "text": "closure? Yes, it is. We sweep out our",
+    "start": 700.88,
+    "duration": 4.399
+  },
+  {
+    "text": "previous and we close back inside the",
+    "start": 703.2,
+    "duration": 4.24
+  },
+  {
+    "text": "range. So, with this, I can drop down to",
+    "start": 705.279,
+    "duration": 5.361
+  },
+  {
+    "text": "the 15-minute chart. So, here we are",
+    "start": 707.44,
+    "duration": 5.68
+  },
+  {
+    "text": "down on the 15-minute chart. And do we",
+    "start": 710.64,
+    "duration": 4.8
+  },
+  {
+    "text": "have a protected swing? Well, we find",
+    "start": 713.12,
+    "duration": 4.399
+  },
+  {
+    "text": "this high right here. We find the series",
+    "start": 715.44,
+    "duration": 4.24
+  },
+  {
+    "text": "of upclose candles that made it. Have we",
+    "start": 717.519,
+    "duration": 4.56
+  },
+  {
+    "text": "closed through it? Yes, we have. So,",
+    "start": 719.68,
+    "duration": 4.32
+  },
+  {
+    "text": "with that, I'm expecting this high to",
+    "start": 722.079,
+    "duration": 5.2
+  },
+  {
+    "text": "remain intact. Now, as we move ahead,",
+    "start": 724.0,
+    "duration": 6.279
+  },
+  {
+    "text": "what happens? Do we have any points of",
+    "start": 727.279,
+    "duration": 5.36
+  },
+  {
+    "text": "interest? Well, waiting for the closure",
+    "start": 730.279,
+    "duration": 5.081
+  },
+  {
+    "text": "and the open of the new candle. We do",
+    "start": 732.639,
+    "duration": 4.961
+  },
+  {
+    "text": "right here as we have swept out this",
+    "start": 735.36,
+    "duration": 4.88
+  },
+  {
+    "text": "high. So now what am I seeing? If we're",
+    "start": 737.6,
+    "duration": 4.4
+  },
+  {
+    "text": "going to form a new protected high, we",
+    "start": 740.24,
+    "duration": 4.64
+  },
+  {
+    "text": "need to close through where? Right here.",
+    "start": 742.0,
+    "duration": 4.959
+  },
+  {
+    "text": "Why that point? Because that is the",
+    "start": 744.88,
+    "duration": 3.6
+  },
+  {
+    "text": "series of up close candles. In this",
+    "start": 746.959,
+    "duration": 3.361
+  },
+  {
+    "text": "case, just one that swept out this",
+    "start": 748.48,
+    "duration": 4.479
+  },
+  {
+    "text": "previous high or point of interest. So",
+    "start": 750.32,
+    "duration": 4.24
+  },
+  {
+    "text": "as we let this continue, we close",
+    "start": 752.959,
+    "duration": 3.201
+  },
+  {
+    "text": "through there. And now I can anticipate",
+    "start": 754.56,
+    "duration": 4.399
+  },
+  {
+    "text": "a move lower to that sellside liquidity",
+    "start": 756.16,
+    "duration": 4.4
+  },
+  {
+    "text": "point.",
+    "start": 758.959,
+    "duration": 3.68
+  },
+  {
+    "text": "So starting out this next example, we",
+    "start": 760.56,
+    "duration": 4.56
+  },
+  {
+    "text": "are on silver 1 hour chart. So you can",
+    "start": 762.639,
+    "duration": 4.88
+  },
+  {
+    "text": "see our daily chart here, we have a nice",
+    "start": 765.12,
+    "duration": 4.959
+  },
+  {
+    "text": "sweep of the highs and closure back in,",
+    "start": 767.519,
+    "duration": 5.041
+  },
+  {
+    "text": "which is very bearish. So going ahead",
+    "start": 770.079,
+    "duration": 4.721
+  },
+  {
+    "text": "and marking out this up close candle",
+    "start": 772.56,
+    "duration": 4.079
+  },
+  {
+    "text": "here. I'd want to see that be respected",
+    "start": 774.8,
+    "duration": 5.039
+  },
+  {
+    "text": "as we trade lower. Now with this, where",
+    "start": 776.639,
+    "duration": 4.961
+  },
+  {
+    "text": "is our protected swing? Well, my",
+    "start": 779.839,
+    "duration": 4.0
+  },
+  {
+    "text": "indicator will mark that out. But I'll",
+    "start": 781.6,
+    "duration": 3.919
+  },
+  {
+    "text": "find the high here. I'll find the series",
+    "start": 783.839,
+    "duration": 3.44
+  },
+  {
+    "text": "of candles that made that high. In this",
+    "start": 785.519,
+    "duration": 3.681
+  },
+  {
+    "text": "case, it is just one as it sweeps out",
+    "start": 787.279,
+    "duration": 5.12
+  },
+  {
+    "text": "this high previous as well. And so that",
+    "start": 789.2,
+    "duration": 5.04
+  },
+  {
+    "text": "is our protected high. Now, if I'm",
+    "start": 792.399,
+    "duration": 4.0
+  },
+  {
+    "text": "looking to take a position in here, do I",
+    "start": 794.24,
+    "duration": 4.719
+  },
+  {
+    "text": "want to enter with my stop all the way",
+    "start": 796.399,
+    "duration": 4.721
+  },
+  {
+    "text": "on this high? That doesn't really give",
+    "start": 798.959,
+    "duration": 4.401
+  },
+  {
+    "text": "good risk-to-reward to my first target",
+    "start": 801.12,
+    "duration": 4.959
+  },
+  {
+    "text": "or even to my projections. So, with",
+    "start": 803.36,
+    "duration": 4.719
+  },
+  {
+    "text": "that, I'm going to let a new protected",
+    "start": 806.079,
+    "duration": 4.961
+  },
+  {
+    "text": "swing form to look for an entry. So, as",
+    "start": 808.079,
+    "duration": 4.601
+  },
+  {
+    "text": "I let this play forward, let's see what",
+    "start": 811.04,
+    "duration": 4.239
+  },
+  {
+    "text": "happens. Does price reach into a point",
+    "start": 812.68,
+    "duration": 5.159
+  },
+  {
+    "text": "of interest? It does as it reaches into",
+    "start": 815.279,
+    "duration": 5.521
+  },
+  {
+    "text": "a fair value gap here. And what else do",
+    "start": 817.839,
+    "duration": 5.44
+  },
+  {
+    "text": "we have? We have the series of upclose",
+    "start": 820.8,
+    "duration": 4.64
+  },
+  {
+    "text": "candles or in this case a singular one",
+    "start": 823.279,
+    "duration": 4.321
+  },
+  {
+    "text": "into that point of interest. And we are",
+    "start": 825.44,
+    "duration": 4.959
+  },
+  {
+    "text": "now closed through. So now I have a new",
+    "start": 827.6,
+    "duration": 4.799
+  },
+  {
+    "text": "protected swing in the market and I'm",
+    "start": 830.399,
+    "duration": 4.0
+  },
+  {
+    "text": "expecting this to remain intact as we",
+    "start": 832.399,
+    "duration": 4.081
+  },
+  {
+    "text": "trade lower if this trend is going to",
+    "start": 834.399,
+    "duration": 4.68
+  },
+  {
+    "text": "continue. So then this is where I can",
+    "start": 836.48,
+    "duration": 5.52
+  },
+  {
+    "text": "sell, put my stop on the protected swing",
+    "start": 839.079,
+    "duration": 5.841
+  },
+  {
+    "text": "high and then look for 2",
+    "start": 842.0,
+    "duration": 6.839
+  },
+  {
+    "text": "R. So let's see how this works",
+    "start": 844.92,
+    "duration": 7.56
+  },
+  {
+    "text": "out. And you can see we hit our 2R and",
+    "start": 848.839,
+    "duration": 5.56
+  },
+  {
+    "text": "then we go to that first standard",
+    "start": 852.48,
+    "duration": 4.56
+  },
+  {
+    "text": "deviation projection. But that is an",
+    "start": 854.399,
+    "duration": 4.481
+  },
+  {
+    "text": "example of how I would actually look to",
+    "start": 857.04,
+    "duration": 4.479
+  },
+  {
+    "text": "trade with protected swings. I'm using",
+    "start": 858.88,
+    "duration": 5.199
+  },
+  {
+    "text": "it as my invalidation. So I want an",
+    "start": 861.519,
+    "duration": 5.041
+  },
+  {
+    "text": "entry fairly close to my invalidation to",
+    "start": 864.079,
+    "duration": 3.961
+  },
+  {
+    "text": "give me good",
+    "start": 866.56,
+    "duration": 3.6
+  },
+  {
+    "text": "risk-to-reward. So here we are in our",
+    "start": 868.04,
+    "duration": 3.72
+  },
+  {
+    "text": "next example and you can take a look at",
+    "start": 870.16,
+    "duration": 3.679
+  },
+  {
+    "text": "this sell side of the curve here running",
+    "start": 871.76,
+    "duration": 4.48
+  },
+  {
+    "text": "out these lows. Here is where we formed",
+    "start": 873.839,
+    "duration": 4.401
+  },
+  {
+    "text": "that protected swing as we've closed",
+    "start": 876.24,
+    "duration": 4.8
+  },
+  {
+    "text": "through here. 50% is retested and then",
+    "start": 878.24,
+    "duration": 5.68
+  },
+  {
+    "text": "we get a continuation lower. Now you can",
+    "start": 881.04,
+    "duration": 4.64
+  },
+  {
+    "text": "see all these failure swings on the",
+    "start": 883.92,
+    "duration": 3.599
+  },
+  {
+    "text": "highs. Once again we want to be trading",
+    "start": 885.68,
+    "duration": 3.44
+  },
+  {
+    "text": "towards failure swings and we want",
+    "start": 887.519,
+    "duration": 3.281
+  },
+  {
+    "text": "protected swings on our side of the",
+    "start": 889.12,
+    "duration": 4.079
+  },
+  {
+    "text": "market. So we have failure swings on the",
+    "start": 890.8,
+    "duration": 4.24
+  },
+  {
+    "text": "buy side of the market. And what do we",
+    "start": 893.199,
+    "duration": 4.401
+  },
+  {
+    "text": "notice down here? We have swept out a",
+    "start": 895.04,
+    "duration": 5.2
+  },
+  {
+    "text": "low. Have we confirmed that low or",
+    "start": 897.6,
+    "duration": 4.799
+  },
+  {
+    "text": "protected that low? Yes. As we have",
+    "start": 900.24,
+    "duration": 3.839
+  },
+  {
+    "text": "closed through the series of down close",
+    "start": 902.399,
+    "duration": 3.921
+  },
+  {
+    "text": "candles that formed that low. So now I",
+    "start": 904.079,
+    "duration": 4.56
+  },
+  {
+    "text": "can anticipate this low to hold. If this",
+    "start": 906.32,
+    "duration": 4.079
+  },
+  {
+    "text": "is going to be the low or the reversal",
+    "start": 908.639,
+    "duration": 3.921
+  },
+  {
+    "text": "off previous day low to then trade",
+    "start": 910.399,
+    "duration": 4.641
+  },
+  {
+    "text": "higher back through these highs. So as",
+    "start": 912.56,
+    "duration": 5.2
+  },
+  {
+    "text": "we zoom in, let's see how this forms in",
+    "start": 915.04,
+    "duration": 5.68
+  },
+  {
+    "text": "here. So you can see what do we have. We",
+    "start": 917.76,
+    "duration": 5.28
+  },
+  {
+    "text": "have a point of interest, a fair value",
+    "start": 920.72,
+    "duration": 4.72
+  },
+  {
+    "text": "gap here. We have a down closed candle",
+    "start": 923.04,
+    "duration": 4.56
+  },
+  {
+    "text": "into that point of interest. It's then",
+    "start": 925.44,
+    "duration": 4.32
+  },
+  {
+    "text": "closed over. So what does that give us?",
+    "start": 927.6,
+    "duration": 4.64
+  },
+  {
+    "text": "That gives us a new protected swing,",
+    "start": 929.76,
+    "duration": 4.16
+  },
+  {
+    "text": "right? So this would be the continuation",
+    "start": 932.24,
+    "duration": 3.2
+  },
+  {
+    "text": "or the order block formed at the",
+    "start": 933.92,
+    "duration": 4.4
+  },
+  {
+    "text": "low-risk buy. So once again here, that",
+    "start": 935.44,
+    "duration": 4.88
+  },
+  {
+    "text": "is where I could look to buy, put my",
+    "start": 938.32,
+    "duration": 4.72
+  },
+  {
+    "text": "stop on the invalidation, and then from",
+    "start": 940.32,
+    "duration": 6.48
+  },
+  {
+    "text": "there I could be looking for 2 R, right?",
+    "start": 943.04,
+    "duration": 6.159
+  },
+  {
+    "text": "or I could be looking for those highs up",
+    "start": 946.8,
+    "duration": 4.159
+  },
+  {
+    "text": "here, right? Because that is where I'm",
+    "start": 949.199,
+    "duration": 4.56
+  },
+  {
+    "text": "anticipating price to trade to. So,",
+    "start": 950.959,
+    "duration": 4.56
+  },
+  {
+    "text": "let's see what happens as we let this",
+    "start": 953.759,
+    "duration": 4.64
+  },
+  {
+    "text": "play out. We get a continuation higher",
+    "start": 955.519,
+    "duration": 6.0
+  },
+  {
+    "text": "and we hit our TP up there. So, once",
+    "start": 958.399,
+    "duration": 4.961
+  },
+  {
+    "text": "again, it's just important to track",
+    "start": 961.519,
+    "duration": 3.68
+  },
+  {
+    "text": "those protected swings because that is",
+    "start": 963.36,
+    "duration": 3.919
+  },
+  {
+    "text": "where the opportunities lie. You don't",
+    "start": 965.199,
+    "duration": 4.32
+  },
+  {
+    "text": "have to catch them at the reversal. You",
+    "start": 967.279,
+    "duration": 4.401
+  },
+  {
+    "text": "can get the continuation or even the",
+    "start": 969.519,
+    "duration": 4.721
+  },
+  {
+    "text": "candles following that reversal or when",
+    "start": 971.68,
+    "duration": 4.959
+  },
+  {
+    "text": "the continuation is confirmed. Now, I",
+    "start": 974.24,
+    "duration": 4.159
+  },
+  {
+    "text": "hope you enjoyed this video. It is a",
+    "start": 976.639,
+    "duration": 3.44
+  },
+  {
+    "text": "very important concept within my",
+    "start": 978.399,
+    "duration": 4.081
+  },
+  {
+    "text": "trading. So, I hope you find it helpful.",
+    "start": 980.079,
+    "duration": 4.32
+  },
+  {
+    "text": "Now, when I am looking for entries, I am",
+    "start": 982.48,
+    "duration": 3.919
+  },
+  {
+    "text": "mainly focused on a new invalidation",
+    "start": 984.399,
+    "duration": 4.161
+  },
+  {
+    "text": "forming. When I can anticipate a new",
+    "start": 986.399,
+    "duration": 4.56
+  },
+  {
+    "text": "invalidation forming or a new protected",
+    "start": 988.56,
+    "duration": 4.56
+  },
+  {
+    "text": "swing, that gives me a new area to",
+    "start": 990.959,
+    "duration": 4.401
+  },
+  {
+    "text": "anticipate expansion from or to trade",
+    "start": 993.12,
+    "duration": 4.24
+  },
+  {
+    "text": "off of. Now, if you have any questions,",
+    "start": 995.36,
+    "duration": 3.44
+  },
+  {
+    "text": "feel free to leave them in the comments",
+    "start": 997.36,
+    "duration": 3.839
+  },
+  {
+    "text": "below or any suggestions for future",
+    "start": 998.8,
+    "duration": 4.159
+  },
+  {
+    "text": "videos. I hope you enjoyed and I'll see",
+    "start": 1001.199,
+    "duration": 6.041
+  },
+  {
+    "text": "you guys next time. Have a good one.",
+    "start": 1002.959,
+    "duration": 4.281
+  }
+]

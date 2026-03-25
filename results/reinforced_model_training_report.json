@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-03-24T13:44:53.273750+00:00",
+  "summary": {
+    "generated_at": "2026-03-24T13:44:53.273750+00:00",
+    "example_count": 66,
+    "unique_case_count": 61,
+    "unique_trade_model_count": 7,
+    "unique_relation_type_count": 5,
+    "labeled_outcome_count": 34,
+    "unknown_outcome_count": 32,
+    "trade_model_counts": {
+      "continuation_entry_model": 11,
+      "daily_bias_c123_map": 23,
+      "daily_bias_framework": 7,
+      "daily_profile_models": 2,
+      "fractal_closure_model": 20,
+      "phases_of_price_framework": 1,
+      "reversal_sequence_model": 2
+    },
+    "relation_type_counts": {
+      "bias_framework": 7,
+      "confirmation_framework": 20,
+      "execution_model": 36,
+      "phase_framework": 1,
+      "session_profile": 2
+    },
+    "outcome_decision_counts": {
+      "no_trade": 16,
+      "trade": 18
+    },
+    "task_readiness": {
+      "trade_model_classification": {
+        "ready": false,
+        "total_examples": 66,
+        "class_count": 7,
+        "minimum_examples_per_class": 1,
+        "recommended_total_examples": 25,
+        "recommended_examples_per_class": 5,
+        "class_counts": {
+          "continuation_entry_model": 11,
+          "daily_bias_c123_map": 23,
+          "daily_bias_framework": 7,
+          "daily_profile_models": 2,
+          "fractal_closure_model": 20,
+          "phases_of_price_framework": 1,
+          "reversal_sequence_model": 2
+        },
+        "blockers": [
+          "Smallest class has 1 rows; recommend at least 5."
+        ]
+      },
+      "relation_type_classification": {
+        "ready": false,
+        "total_examples": 66,
+        "class_count": 5,
+        "minimum_examples_per_class": 1,
+        "recommended_total_examples": 25,
+        "recommended_examples_per_class": 5,
+        "class_counts": {
+          "bias_framework": 7,
+          "confirmation_framework": 20,
+          "execution_model": 36,
+          "phase_framework": 1,
+          "session_profile": 2
+        },
+        "blockers": [
+          "Smallest class has 1 rows; recommend at least 5."
+        ]
+      },
+      "no_trade_filter": {
+        "ready": true,
+        "total_examples": 34,
+        "class_count": 2,
+        "minimum_examples_per_class": 16,
+        "recommended_total_examples": 12,
+        "recommended_examples_per_class": 4,
+        "class_counts": {
+          "no_trade": 16,
+          "trade": 18
+        },
+        "blockers": []
+      }
+    },
+    "trade_model_binary_tasks": [
+      {
+        "trade_model": "continuation_entry_model",
+        "positive_examples": 11,
+        "negative_examples": 55,
+        "recommended_positive_examples": 5,
+        "recommended_negative_examples": 5,
+        "additional_positive_examples_needed": 0,
+        "additional_negative_examples_needed": 0,
+        "ready": true
+      },
+      {
+        "trade_model": "daily_bias_c123_map",
+        "positive_examples": 23,
+        "negative_examples": 43,
+        "recommended_positive_examples": 5,
+        "recommended_negative_examples": 5,
+        "additional_positive_examples_needed": 0,
+        "additional_negative_examples_needed": 0,
+        "ready": true
+      },
+      {
+        "trade_model": "daily_bias_framework",
+        "positive_examples": 7,
+        "negative_examples": 59,
+        "recommended_positive_examples": 5,
+        "recommended_negative_examples": 5,
+        "additional_positive_examples_needed": 0,
+        "additional_negative_examples_needed": 0,
+        "ready": true
+      },
+      {
+        "trade_model": "fractal_closure_model",
+        "positive_examples": 20,
+        "negative_examples": 46,
+        "recommended_positive_examples": 5,
+        "recommended_negative_examples": 5,
+        "additional_positive_examples_needed": 0,
+        "additional_negative_examples_needed": 0,
+        "ready": true
+      },
+      {
+        "trade_model": "daily_profile_models",
+        "positive_examples": 2,
+        "negative_examples": 64,
+        "recommended_positive_examples": 5,
+        "recommended_negative_examples": 5,
+        "additional_positive_examples_needed": 3,
+        "additional_negative_examples_needed": 0,
+        "ready": false
+      },
+      {
+        "trade_model": "reversal_sequence_model",
+        "positive_examples": 2,
+        "negative_examples": 64,
+        "recommended_positive_examples": 5,
+        "recommended_negative_examples": 5,
+        "additional_positive_examples_needed": 3,
+        "additional_negative_examples_needed": 0,
+        "ready": false
+      },
+      {
+        "trade_model": "phases_of_price_framework",
+        "positive_examples": 1,
+        "negative_examples": 65,
+        "recommended_positive_examples": 5,
+        "recommended_negative_examples": 5,
+        "additional_positive_examples_needed": 4,
+        "additional_negative_examples_needed": 0,
+        "ready": false
+      }
+    ],
+    "recommendations": [
+      "Collect more labeled chart cases per trade model before training any multi-class classifier.",
+      "The fastest narrow-task path is one-vs-rest scoring for daily_profile_models once it gains 3 more positive examples."
+    ],
+    "base_example_count": 16,
+    "iteration_reinforcement_example_count": 3,
+    "tradingview_validation_example_count": 1,
+    "youtube_transcript_example_count": 46,
+    "reinforcement_example_count": 4,
+    "merged_example_count": 66,
+    "graded_episode_count": 3,
+    "skipped_episode_count": 0
+  },
+  "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\reinforced_model_training_surface.jsonl",
+  "report_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\reinforced_model_training_report.json"
+}

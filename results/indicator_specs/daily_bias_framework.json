@@ -1,0 +1,1027 @@
+{
+  "acceptance_checks": [
+    "No continuation bias can appear without a close outside the active reference range.",
+    "No reversal-confirmed state can appear without a prior sweep or prior-day-extreme interaction plus the selected lower-timeframe confirmation mode.",
+    "Equilibrium must always be computed wick to wick rather than body to body.",
+    "A large opposing wick must downgrade target expectations even when bias remains directionally intact.",
+    "Continuation bias must fail once wrong-side equilibrium closes exceed the configured tolerance.",
+    "The script must stay bar-close confirmed and avoid unbounded multi-timeframe requests.",
+    "The chart must expose continuation point-of-interest geometry, prior-day reversal anchor geometry, and first-versus-second target path guidance for the active state.",
+    "Reference levels must make PDH, EQ, PDL, HTF POI, T1, and T2 readable through an on-chart levels panel instead of depending on clipped right-edge labels or legend text alone.",
+    "The chart must explicitly surface Candle 2 and Candle 3 closure progression inside the active higher-timeframe POI before calling the setup entry-ready.",
+    "Backtest results must include spread, slippage, commission, and fee assumptions before performance is treated as credible.",
+    "Historical execution must assume next-bar-open entry after a confirmed bar-close signal instead of intrabar lookahead fills.",
+    "If stop and target touch in the same bar, assume the stop prints first unless lower-timeframe replay evidence proves the target filled first."
+  ],
+  "alerts": [
+    {
+      "condition": "A continuation bias is established from the active reference range.",
+      "name": "bias_continuation_set"
+    },
+    {
+      "condition": "A reversal-watch state is established after a sweep and rejection workflow.",
+      "name": "bias_reversal_watch"
+    },
+    {
+      "condition": "Lower-timeframe confirmation promotes reversal watch into reversal-confirmed.",
+      "name": "bias_reversal_confirmed"
+    },
+    {
+      "condition": "Continuation bias fails because lower-timeframe closes print beyond equilibrium in the wrong direction.",
+      "name": "bias_equilibrium_failed"
+    },
+    {
+      "condition": "Repeated same-direction continuation implies likely phase exhaustion or transition risk.",
+      "name": "bias_phase_shift_warning"
+    }
+  ],
+  "artifact_path": "results\\indicator_specs\\daily_bias_framework.json",
+  "backtest_contract": {
+    "execution_model": {
+      "entry_fill": "next_bar_open_after_confirmed_bar_close_signal",
+      "intrabar_policy": "no_intrabar_lookahead",
+      "stop_target_collision_policy": "stop_first_when_stop_and_target_touch_same_bar"
+    },
+    "transaction_cost_model": {
+      "tick_size": 0.25,
+      "spread_ticks": 1.0,
+      "slippage_ticks": 0.5,
+      "commission_per_contract": 2.5,
+      "contract_multiplier": 20.0,
+      "fee_notes": "Commission should include exchange and brokerage fees, and slippage should be increased or the setup skipped in illiquid sessions."
+    }
+  },
+  "candidate_type": "teacher_style_trade_model",
+  "derived_series": [
+    {
+      "description": "The active higher-timeframe or previous-candle range high used to frame bias.",
+      "series": "referenceRangeHigh"
+    },
+    {
+      "description": "The active higher-timeframe or previous-candle range low used to frame bias.",
+      "series": "referenceRangeLow"
+    },
+    {
+      "description": "The wick-to-wick midpoint of the active reference range.",
+      "series": "referenceRangeEquilibrium"
+    },
+    {
+      "description": "Continuation versus sweep-back-inside classification relative to the active reference range.",
+      "series": "previousRangeInteractionState"
+    },
+    {
+      "description": "Neutral, continuation bias, reversal watch, reversal confirmed, or exhausted/degraded state for the current session.",
+      "series": "dailyBiasState"
+    },
+    {
+      "description": "Expansion-supporting versus rejection-dominant wick classification for the bias candle.",
+      "series": "wickExpectationState"
+    },
+    {
+      "description": "Whether lower-timeframe closes remain in the correct half of the range for continuation bias.",
+      "series": "equilibriumRespectState"
+    },
+    {
+      "description": "Higher-timeframe and intermediate-timeframe agreement state used to gate lower-timeframe execution context.",
+      "series": "alignmentState"
+    },
+    {
+      "description": "First-pass lower-timeframe directional close or CISD proxy used for reversal confirmation.",
+      "series": "lowerTimeframeConfirmationState"
+    },
+    {
+      "description": "Guardrail flag that warns when repeated same-direction continuation candles imply likely phase transition risk.",
+      "series": "phaseShiftWarningState"
+    },
+    {
+      "description": "Target expectation state that points toward expansion continuation, previous-day equilibrium, opposite side of range, or reversion toward the open.",
+      "series": "biasTargetModel"
+    },
+    {
+      "description": "Top boundary of the correct-half continuation point-of-interest band.",
+      "series": "continuationPoiTop"
+    },
+    {
+      "description": "Bottom boundary of the correct-half continuation point-of-interest band.",
+      "series": "continuationPoiBottom"
+    },
+    {
+      "description": "Previous-day extreme used as the reversal anchor when price sweeps and rejects.",
+      "series": "reversalAnchorPrice"
+    },
+    {
+      "description": "First target guide, typically equilibrium on reversals or the prior-day objective on continuation.",
+      "series": "targetPrimaryPrice"
+    },
+    {
+      "description": "Second target guide, typically the opposite side of range on reversals or external-liquidity projection on continuation.",
+      "series": "targetSecondaryPrice"
+    }
+  ],
+  "direct_topics": [
+    {
+      "notes": "Primary state variable.",
+      "priority": 1,
+      "role": "core",
+      "topic": "bias",
+      "topic_name": "Bias"
+    },
+    {
+      "notes": "Defines continuation area of interest.",
+      "priority": 1,
+      "role": "reference_level",
+      "topic": "equilibrium",
+      "topic_name": "Equilibrium"
+    },
+    {
+      "notes": "Used to refine continuation versus reversal expectations.",
+      "priority": 1,
+      "role": "filter",
+      "topic": "wick_logic",
+      "topic_name": "Wick Logic"
+    },
+    {
+      "notes": "Keeps execution aligned with broader intent.",
+      "priority": 2,
+      "role": "context",
+      "topic": "top_down_alignment",
+      "topic_name": "Top-Down Alignment"
+    }
+  ],
+  "future_extensions": [
+    "Session-specific execution mappings once the preferred timeframe pair per session is formalized more tightly.",
+    "A stricter CISD implementation once the lower-timeframe confirmation proxy is stabilized across the bias and reversal topics.",
+    "A more explicit exhaustion model after the continuation phase-shift guard is grounded in more chart examples."
+  ],
+  "implementation_scope": {
+    "annotation_link_count": 2,
+    "anti_repaint_baseline": "bar_close_confirmation",
+    "build_target": "bias_overlay_indicator",
+    "candidate_preservation_rule": "materializer_refreshes_candidate_fields_without_downgrading_draft_status",
+    "historical_execution_contract": "next_bar_open_after_bar_close_signal",
+    "historical_fill_collision_policy": "stop_first_when_stop_and_target_touch_same_bar",
+    "liquidity_constraint": "Increase slippage or skip illiquid session windows instead of assuming frictionless fills.",
+    "max_request_calls_budget": 5,
+    "source_counts": {
+      "direct_model_sources": 25,
+      "topic_coverage_sources": 81
+    },
+    "status_basis": "profile_trade_model_indicator_ready",
+    "target_language": "pine",
+    "timeframe_stack": {
+      "higher": "daily_or_4h_bias_frame",
+      "intermediate": "1h_or_15m_structure_frame",
+      "lower": "5m_or_1m_confirmation_frame"
+    },
+    "transaction_costs_required": true,
+    "translation_stage": "reviewed"
+  },
+  "implementation_summary": "Teacher-style Pine overlay for the TTrades daily bias framework using prior-range classification, clipped reference geometry, an active HTF-POI band, a stable on-chart PDH/EQ/PDL plus HTF-POI and target levels ladder, recent-window Candle 2 and Candle 3 closure markers, wick-based expectation filters, and lower-timeframe reversal confirmation markers.",
+  "input_groups": [
+    {
+      "group": "Reference Range",
+      "inputs": [
+        {
+          "default": "auto_daily_then_previous_candle",
+          "description": "Select whether the bias framework prioritizes previous-day range logic, previous-candle range logic, or an automatic fallback sequence.",
+          "key": "biasAnchorMode",
+          "options": [
+            "auto_daily_then_previous_candle",
+            "previous_day_only",
+            "previous_candle_only"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": "wick_to_wick",
+          "description": "Keep equilibrium measured from wick high to wick low for the active reference range.",
+          "key": "equilibriumSource",
+          "options": [
+            "wick_to_wick"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": 3,
+          "description": "Warn that continuation may be exhausted after this many same-direction continuation candles in sequence.",
+          "key": "phaseShiftContinuationCount",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "group": "Bias Classification",
+      "inputs": [
+        {
+          "default": "close_outside_previous_range",
+          "description": "Continuation bias uses a close outside the selected reference range.",
+          "key": "continuationCloseMode",
+          "options": [
+            "close_outside_previous_range"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": "sweep_then_close_back_inside",
+          "description": "Select whether reversal bias is framed from a generic sweep-and-close-back-inside event or the prior-day-extreme workflow with lower-timeframe confirmation.",
+          "key": "reversalMode",
+          "options": [
+            "sweep_then_close_back_inside",
+            "prior_day_extreme_with_lower_timeframe_confirmation"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": true,
+          "description": "Require a lower-timeframe confirmation proxy before promoting reversal watch into confirmed reversal bias.",
+          "key": "requireLowerTimeframeConfirmation",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "group": "Wick and Equilibrium Filters",
+      "inputs": [
+        {
+          "default": 0.35,
+          "description": "Provisional threshold used to separate small opposing wicks from large rejection wicks.",
+          "key": "opposingWickThresholdRatio",
+          "type": "float"
+        },
+        {
+          "default": 0.05,
+          "description": "Provisional tolerance band around equilibrium before a close is treated as a true wrong-side failure.",
+          "key": "equilibriumTolerancePercentOfRange",
+          "type": "float"
+        },
+        {
+          "default": true,
+          "description": "Require continuation bias to keep lower-timeframe closes on the correct side of equilibrium.",
+          "key": "requireCorrectHalfRespect",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "group": "Alignment and Execution",
+      "inputs": [
+        {
+          "default": "higher_plus_intermediate",
+          "description": "Choose whether bias filtering uses the higher timeframe alone or requires intermediate-timeframe structure agreement.",
+          "key": "alignmentMode",
+          "options": [
+            "higher_only",
+            "higher_plus_intermediate"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": "all",
+          "description": "Restrict lower-timeframe confirmation to specific execution windows when desired.",
+          "key": "executionSessionMode",
+          "options": [
+            "all",
+            "london",
+            "new_york",
+            "both"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": "directional_close_or_cisd_proxy",
+          "description": "First-pass lower-timeframe confirmation mode used for reversal confirmation.",
+          "key": "lowerTimeframeConfirmationMode",
+          "options": [
+            "directional_close_only",
+            "directional_close_or_cisd_proxy"
+          ],
+          "type": "enum"
+        }
+      ]
+    },
+    {
+      "group": "Visual Presentation",
+      "inputs": [
+        {
+          "default": 120,
+          "description": "Limit reference geometry and target guides to the most recent bars so the active daily model stays readable.",
+          "key": "visualLookbackBars",
+          "type": "int"
+        },
+        {
+          "default": false,
+          "description": "Optionally tint historical bars by bias state, but keep the default focused on current-session teaching geometry.",
+          "key": "showHistoricalBiasTint",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "group": "Backtest Contract",
+      "inputs": [
+        {
+          "default": 0.25,
+          "description": "First-pass tick size used by the historical harness when translating bar movement into execution and stop-distance units.",
+          "key": "backtestTickSize",
+          "type": "float"
+        },
+        {
+          "default": 1.0,
+          "description": "Explicit spread assumption in ticks for historical backtests.",
+          "key": "backtestSpreadTicks",
+          "type": "float"
+        },
+        {
+          "default": 0.5,
+          "description": "Explicit slippage assumption in ticks for historical backtests, with larger values required in illiquid sessions.",
+          "key": "backtestSlippageTicks",
+          "type": "float"
+        },
+        {
+          "default": 2.5,
+          "description": "Commission and fee assumption per contract for historical backtests.",
+          "key": "backtestCommissionPerContract",
+          "type": "float"
+        }
+      ]
+    }
+  ],
+  "open_implementation_questions": [
+    {
+      "affected_component": "wick_ratio_threshold",
+      "question": "What numeric threshold best separates small and large opposing wicks for the daily bias framework across the main timeframe pairs?",
+      "topic_refs": [
+        "bias",
+        "wick_logic"
+      ]
+    },
+    {
+      "affected_component": "equilibrium_tolerance",
+      "question": "How much tolerance around equilibrium should count as valid respect versus a true close-through failure?",
+      "topic_refs": [
+        "bias",
+        "equilibrium"
+      ]
+    },
+    {
+      "affected_component": "lower_timeframe_confirmation",
+      "question": "What is the strictest first-pass lower-timeframe confirmation proxy that remains useful across the main execution timeframes?",
+      "topic_refs": [
+        "bias",
+        "top_down_alignment"
+      ]
+    }
+  ],
+  "pine_program_outline": {
+    "anti_repaint_baseline": "bar_close_confirmation",
+    "overlay": true,
+    "script_kind": "indicator",
+    "sections": [
+      "version",
+      "indicator_declaration",
+      "imports",
+      "constants",
+      "inputs",
+      "functions",
+      "calculations",
+      "visuals",
+      "alerts"
+    ]
+  },
+  "pine_translation_hints": [
+    "Prefer bar-close confirmation over intrabar discretion.",
+    "Keep lower-timeframe requests focused and finite.",
+    "Represent structure and invalidation as explicit state objects."
+  ],
+  "provisional_proxies": [
+    {
+      "default_mode": "opposing_wick_to_full_range_ratio",
+      "id": "wick_ratio_threshold_v1",
+      "logic": "Treat small opposing wicks as expansion-supporting when the opposing wick remains below the configured ratio and the close remains near the directional extreme.",
+      "status": "provisional"
+    },
+    {
+      "default_mode": "percent_of_reference_range",
+      "id": "equilibrium_tolerance_v1",
+      "logic": "Allow minor probing around equilibrium until a close exceeds the configured percentage band on the wrong side of the midpoint.",
+      "status": "provisional"
+    },
+    {
+      "default_mode": "directional_close_or_cisd_proxy",
+      "id": "lower_timeframe_confirmation_v1",
+      "logic": "Confirm reversal bias with either a directional lower-timeframe close at the extreme or a first-pass CISD proxy when available.",
+      "status": "provisional"
+    }
+  ],
+  "resolved_requirements": [
+    {
+      "direct": true,
+      "introduced_by_topics": [
+        "bias"
+      ],
+      "minimum_depth": 0,
+      "relation_roles": [
+        "core"
+      ],
+      "requirement_types": [
+        "direct"
+      ],
+      "topic": "bias",
+      "topic_name": "Bias"
+    },
+    {
+      "direct": true,
+      "introduced_by_topics": [
+        "equilibrium"
+      ],
+      "minimum_depth": 0,
+      "relation_roles": [
+        "reference_level"
+      ],
+      "requirement_types": [
+        "direct"
+      ],
+      "topic": "equilibrium",
+      "topic_name": "Equilibrium"
+    },
+    {
+      "direct": true,
+      "introduced_by_topics": [
+        "top_down_alignment"
+      ],
+      "minimum_depth": 0,
+      "relation_roles": [
+        "context"
+      ],
+      "requirement_types": [
+        "direct"
+      ],
+      "topic": "top_down_alignment",
+      "topic_name": "Top-Down Alignment"
+    },
+    {
+      "direct": true,
+      "introduced_by_topics": [
+        "wick_logic"
+      ],
+      "minimum_depth": 0,
+      "relation_roles": [
+        "filter"
+      ],
+      "requirement_types": [
+        "direct"
+      ],
+      "topic": "wick_logic",
+      "topic_name": "Wick Logic"
+    }
+  ],
+  "scope_topics": [
+    "bias",
+    "equilibrium",
+    "wick_logic",
+    "top_down_alignment"
+  ],
+  "signal_pipeline": [
+    {
+      "logic": "Select the previous-day wick range when available, otherwise fall back to the prior candle range, then compute the wick-to-wick equilibrium midpoint for that reference.",
+      "name": "Reference Range Selection",
+      "rule_refs": [
+        "bias.previous_candle_close_bias",
+        "bias.daily_continuation_framework",
+        "equilibrium.equilibrium_is_wick_to_wick_midpoint"
+      ],
+      "step": 1
+    },
+    {
+      "logic": "Classify continuation bias when price closes outside the reference range, and classify reversal watch when price sweeps the range and closes back inside or rejects from the previous-day extreme.",
+      "name": "Continuation versus Reversal Classification",
+      "rule_refs": [
+        "bias.previous_candle_close_bias",
+        "bias.daily_reversal_framework",
+        "bias.daily_continuation_framework"
+      ],
+      "step": 2
+    },
+    {
+      "logic": "Measure opposing wick dominance to decide whether the bias candle supports directional expansion or favors reduced targets and reversion expectations.",
+      "name": "Wick Expectation Filter",
+      "rule_refs": [
+        "bias.wick_size_bias_filter",
+        "wick_logic.small_opposing_run_supports_expansion",
+        "wick_logic.large_opposing_wick_favors_reversion"
+      ],
+      "step": 3
+    },
+    {
+      "logic": "Project the previous-day or active reference equilibrium into the session and keep continuation bias active only while closes remain on the correct side within the configured tolerance.",
+      "name": "Equilibrium Hold or Failure",
+      "rule_refs": [
+        "equilibrium.previous_day_equilibrium_filters_continuation_day",
+        "equilibrium.equilibrium_respect_sets_directional_half",
+        "bias.daily_continuation_framework"
+      ],
+      "step": 4
+    },
+    {
+      "logic": "Use higher-timeframe direction and optional intermediate-timeframe structure agreement to filter lower-timeframe execution and downgrade unresolved setups.",
+      "name": "Top-Down Alignment Gate",
+      "rule_refs": [
+        "bias.bias_precedes_execution",
+        "top_down_alignment.higher_timeframe_sets_direction",
+        "top_down_alignment.intermediate_timeframe_confirms_structure"
+      ],
+      "step": 5
+    },
+    {
+      "logic": "Promote reversal watch into reversal-confirmed only after a lower-timeframe directional close or CISD proxy appears at the prior-day extreme workflow.",
+      "name": "Lower-Timeframe Reversal Confirmation",
+      "rule_refs": [
+        "bias.daily_reversal_framework",
+        "top_down_alignment.lower_timeframe_refines_entry_only_after_alignment"
+      ],
+      "step": 6
+    },
+    {
+      "logic": "Choose expansion continuation targets, equilibrium return, opposite-side range targets, or open-price reversion according to the bias state, wick read, and continuation-exhaustion guard.",
+      "name": "Target Model and Phase Shift Guard",
+      "rule_refs": [
+        "bias.previous_candle_close_bias",
+        "bias.daily_continuation_framework",
+        "bias.wick_size_bias_filter"
+      ],
+      "step": 7
+    }
+  ],
+  "spec_version": 2,
+  "state_models": [
+    {
+      "name": "dailyBiasStateMachine",
+      "state_type": "finite_state_machine",
+      "states": [
+        "neutral",
+        "continuation_bias",
+        "reversal_watch",
+        "reversal_confirmed",
+        "exhausted_or_degraded"
+      ],
+      "transitions": [
+        {
+          "condition": "Price closes outside the active reference range in the directional mode and wick plus alignment filters do not block continuation.",
+          "from": "neutral",
+          "to": "continuation_bias"
+        },
+        {
+          "condition": "Price sweeps a prior range extreme and closes back inside or rejects from a prior-day extreme with reversal potential.",
+          "from": "neutral",
+          "to": "reversal_watch"
+        },
+        {
+          "condition": "The lower timeframe confirms the reversal workflow according to the selected confirmation mode.",
+          "from": "reversal_watch",
+          "to": "reversal_confirmed"
+        },
+        {
+          "condition": "Equilibrium fails in the wrong direction, wick behavior shifts to strong rejection, or repeated continuation warns of phase exhaustion.",
+          "from": [
+            "continuation_bias",
+            "reversal_watch",
+            "reversal_confirmed"
+          ],
+          "to": "exhausted_or_degraded"
+        }
+      ]
+    }
+  ],
+  "topic_input_catalog": [
+    {
+      "inputs": [
+        "previous candle high",
+        "previous candle low",
+        "current close",
+        "sweep state relative to previous candle range",
+        "previous day high",
+        "previous day low",
+        "higher-timeframe wick size",
+        "lower-timeframe CISD or structure-shift event",
+        "previous day equilibrium",
+        "lower-timeframe close location",
+        "continuation protected swing state",
+        "candle open",
+        "candle high",
+        "candle low",
+        "candle close",
+        "body size",
+        "opposing wick size",
+        "open price target",
+        "selected higher timeframe bias mode",
+        "selected lower timeframe execution signal",
+        "session bucket or preferred execution window"
+      ],
+      "topic": "bias"
+    },
+    {
+      "inputs": [
+        "reference range wick high",
+        "reference range wick low",
+        "equilibrium midpoint",
+        "current close",
+        "current high",
+        "current low",
+        "active directional bias",
+        "previous day wick high",
+        "previous day wick low",
+        "previous day equilibrium midpoint",
+        "lower-timeframe close series",
+        "point of interest flag",
+        "lower-timeframe candle closure flag",
+        "lower-timeframe CISD proxy",
+        "protected swing proxy"
+      ],
+      "topic": "equilibrium"
+    },
+    {
+      "inputs": [
+        "candle open",
+        "candle high",
+        "candle low",
+        "candle close",
+        "body size",
+        "opposing wick size",
+        "wick extreme",
+        "body edge nearest the wick",
+        "wick midpoint",
+        "subsequent close series",
+        "higher-timeframe open",
+        "higher-timeframe high",
+        "higher-timeframe low",
+        "higher-timeframe close",
+        "lower-timeframe structure state"
+      ],
+      "topic": "wick_logic"
+    },
+    {
+      "inputs": [
+        "higher-timeframe phase state",
+        "higher-timeframe directional bias",
+        "lower-timeframe directional setup flag",
+        "higher-timeframe bias state",
+        "intermediate-timeframe point of interest flag",
+        "intermediate-timeframe candle closure flag",
+        "intermediate-timeframe CISD proxy",
+        "protected swing proxy",
+        "alignment flag between higher and intermediate timeframes",
+        "lower-timeframe protected swing proxy",
+        "lower-timeframe continuation structure proxy",
+        "higher-timeframe expansion-support flag",
+        "intermediate-timeframe expansion-support flag",
+        "lower-timeframe expansion-support flag"
+      ],
+      "topic": "top_down_alignment"
+    }
+  ],
+  "topic_rule_trace": [
+    {
+      "open_questions": [
+        "What numeric threshold best separates small and large opposing wicks for the bias framework?",
+        "How much tolerance around equilibrium should count as respect versus violation?",
+        "What is the strictest first-pass CISD implementation that remains useful across timeframes?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Detect close above previous high or below previous low",
+            "Detect sweep beyond previous high or low followed by close back inside the prior range",
+            "Store current bias mode as continuation or reversal"
+          ],
+          "name": "Next-candle bias starts from how price closes relative to the previous candle range",
+          "pine_inputs_needed": [
+            "previous candle high",
+            "previous candle low",
+            "current close",
+            "sweep state relative to previous candle range"
+          ],
+          "rule_ref": "bias.previous_candle_close_bias"
+        },
+        {
+          "machine_checks": [
+            "Mark prior-day high and low as reversal anchors",
+            "Measure whether the higher-timeframe candle sweeps a prior-day extreme and closes back inside or rejects from it",
+            "Require lower-timeframe confirmation before execution mode is active"
+          ],
+          "name": "Reversal-day bias is framed from previous day highs or lows plus lower-timeframe confirmation",
+          "pine_inputs_needed": [
+            "previous day high",
+            "previous day low",
+            "higher-timeframe wick size",
+            "lower-timeframe CISD or structure-shift event"
+          ],
+          "rule_ref": "bias.daily_reversal_framework"
+        },
+        {
+          "machine_checks": [
+            "Compute equilibrium as midpoint of previous day range",
+            "Detect whether lower-timeframe closes remain on the correct side of equilibrium",
+            "Require continuation through the previous day directional objective"
+          ],
+          "name": "Continuation-day bias uses prior candle closure plus equilibrium respect",
+          "pine_inputs_needed": [
+            "previous day high",
+            "previous day low",
+            "previous day equilibrium",
+            "lower-timeframe close location",
+            "continuation protected swing state"
+          ],
+          "rule_ref": "bias.daily_continuation_framework"
+        },
+        {
+          "machine_checks": [
+            "Compute body size and opposing wick ratio",
+            "Classify whether the candle closes near its directional extreme or near its open",
+            "Switch expected target model based on small-wick versus large-wick classification"
+          ],
+          "name": "Wick size filters whether the current candle supports expansion or reversion",
+          "pine_inputs_needed": [
+            "candle open",
+            "candle high",
+            "candle low",
+            "candle close",
+            "body size",
+            "opposing wick size",
+            "open price target"
+          ],
+          "rule_ref": "bias.wick_size_bias_filter"
+        },
+        {
+          "machine_checks": [
+            "Store higher-timeframe bias as a state variable",
+            "Reject lower-timeframe execution signals that oppose the active bias",
+            "Allow configurable execution timeframe mapping by session or user selection"
+          ],
+          "name": "Higher-timeframe bias filters all lower-timeframe entries",
+          "pine_inputs_needed": [
+            "selected higher timeframe bias mode",
+            "selected lower timeframe execution signal",
+            "session bucket or preferred execution window"
+          ],
+          "rule_ref": "bias.bias_precedes_execution"
+        }
+      ],
+      "topic": "bias"
+    },
+    {
+      "open_questions": [
+        "What numeric tolerance around the 0.5 line should count as valid equilibrium respect versus a true close-through failure?",
+        "How should multiple points of interest inside the respected half be ranked before lower-timeframe confirmation appears?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Compute equilibrium as the midpoint between wick high and wick low",
+            "Reject body-only midpoint calculations for this topic",
+            "Persist the selected midpoint until the reference range is intentionally replaced"
+          ],
+          "name": "Equilibrium is measured from wick high to wick low, not from candle bodies",
+          "pine_inputs_needed": [
+            "reference range wick high",
+            "reference range wick low",
+            "equilibrium midpoint"
+          ],
+          "rule_ref": "equilibrium.equilibrium_is_wick_to_wick_midpoint"
+        },
+        {
+          "machine_checks": [
+            "Track whether price is holding in the correct half of the reference range",
+            "Flag loss of continuation bias when closes move through the wrong side of equilibrium",
+            "Keep the continuation bias active only while the expected half remains respected"
+          ],
+          "name": "In expansion conditions, respect of the correct half of the range defines the directional bias",
+          "pine_inputs_needed": [
+            "equilibrium midpoint",
+            "current close",
+            "current high",
+            "current low",
+            "active directional bias"
+          ],
+          "rule_ref": "equilibrium.equilibrium_respect_sets_directional_half"
+        },
+        {
+          "machine_checks": [
+            "Project the previous day's equilibrium into the new session",
+            "Reject continuation when lower-timeframe closes occur beyond equilibrium in the wrong direction",
+            "Allow minor probing around the midpoint only until the close-based failure condition appears"
+          ],
+          "name": "A continuation day is framed from the previous day's equilibrium and confirmed by lower-timeframe closes that stay on the correct side",
+          "pine_inputs_needed": [
+            "previous day wick high",
+            "previous day wick low",
+            "previous day equilibrium midpoint",
+            "lower-timeframe close series"
+          ],
+          "rule_ref": "equilibrium.previous_day_equilibrium_filters_continuation_day"
+        },
+        {
+          "machine_checks": [
+            "Require both a point of interest and lower-timeframe confirmation before promoting an equilibrium reaction into an entry setup",
+            "Allow fallback to newly created liquidity only if it remains inside the respected half of the range",
+            "Mark the setup as context-only when equilibrium is respected but no confirmation appears"
+          ],
+          "name": "Equilibrium becomes tradable when the respected half also contains a point of interest and lower-timeframe confirmation",
+          "pine_inputs_needed": [
+            "equilibrium midpoint",
+            "point of interest flag",
+            "lower-timeframe candle closure flag",
+            "lower-timeframe CISD proxy",
+            "protected swing proxy"
+          ],
+          "rule_ref": "equilibrium.equilibrium_requires_poi_and_confirmation"
+        }
+      ],
+      "topic": "equilibrium"
+    },
+    {
+      "open_questions": [
+        "What numeric ratio should separate a small opposing run from a large opposing wick across the main timeframe pairs?",
+        "How close to the open should a candle finish before it is treated as a reversal-style candle instead of an expansion candle?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Compute the wick opposite the candle direction and compare it against the body",
+            "Require the close to finish near the directional extreme rather than near the open",
+            "Classify the candle as expansion-supporting only when the opposing wick remains small relative to the full range"
+          ],
+          "name": "A small opposing wick with a large body supports expansion in the candle direction",
+          "pine_inputs_needed": [
+            "candle open",
+            "candle high",
+            "candle low",
+            "candle close",
+            "body size",
+            "opposing wick size"
+          ],
+          "rule_ref": "wick_logic.small_opposing_run_supports_expansion"
+        },
+        {
+          "machine_checks": [
+            "Classify candles with dominant opposing wicks as poor expansion candidates",
+            "Downgrade continuation expectations when the close finishes too close to the open",
+            "Switch the target model toward the open or nearby liquidity after a large opposing run"
+          ],
+          "name": "A large opposing wick with a smaller body favors reversion toward the open or nearby liquidity",
+          "pine_inputs_needed": [
+            "candle open",
+            "candle high",
+            "candle low",
+            "candle close",
+            "body size",
+            "opposing wick size"
+          ],
+          "rule_ref": "wick_logic.large_opposing_wick_favors_reversion"
+        },
+        {
+          "machine_checks": [
+            "Compute the wick midpoint from the body edge to the wick extreme",
+            "Track whether subsequent closes remain on the respected side of the midpoint",
+            "Flip the wick state from respected to disrespected once a close breaches the midpoint"
+          ],
+          "name": "Respect or disrespect of the wick midpoint determines whether rejection is holding or failing",
+          "pine_inputs_needed": [
+            "wick extreme",
+            "body edge nearest the wick",
+            "wick midpoint",
+            "subsequent close series"
+          ],
+          "rule_ref": "wick_logic.wick_midpoint_respect_vs_disrespect"
+        },
+        {
+          "machine_checks": [
+            "Classify the higher-timeframe candle first as expansion-supporting or reversal-leaning based on wick behavior",
+            "Gate lower-timeframe expansion reads on the higher-timeframe wick classification",
+            "Downgrade lower-timeframe continuation setups when the parent candle shows large opposing rejection"
+          ],
+          "name": "Higher-timeframe wick behavior should govern whether lower-timeframe structure is read as expansion, reversal, or range",
+          "pine_inputs_needed": [
+            "higher-timeframe open",
+            "higher-timeframe high",
+            "higher-timeframe low",
+            "higher-timeframe close",
+            "lower-timeframe structure state"
+          ],
+          "rule_ref": "wick_logic.higher_timeframe_wick_guides_lower_timeframe_expectation"
+        }
+      ],
+      "topic": "wick_logic"
+    },
+    {
+      "open_questions": [
+        "What is the best first explicit proxy for CISD so intermediate-timeframe confirmation can be scored without discretionary chart reading?",
+        "How many alignment failures across the stack should immediately cancel a setup instead of merely downgrading it?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Require a higher-timeframe directional classification before evaluating lower-timeframe entries",
+            "Reject lower-timeframe continuation signals that directly oppose the higher-timeframe bias",
+            "Downgrade all lower-timeframe setups when the higher timeframe is still unresolved consolidation"
+          ],
+          "name": "The higher timeframe sets the directional bias and lower timeframes should not override it on their own",
+          "pine_inputs_needed": [
+            "higher-timeframe phase state",
+            "higher-timeframe directional bias",
+            "lower-timeframe directional setup flag"
+          ],
+          "rule_ref": "top_down_alignment.higher_timeframe_sets_direction"
+        },
+        {
+          "machine_checks": [
+            "Require an intermediate-timeframe point of interest that agrees with higher-timeframe direction",
+            "Require a directional closure or CISD before promoting the setup to execution-ready state",
+            "Flag the setup as pending when higher-timeframe bias exists but intermediate-timeframe structure is still missing"
+          ],
+          "name": "The intermediate timeframe must confirm the higher-timeframe bias with structure, a point of interest, and a directional closure",
+          "pine_inputs_needed": [
+            "higher-timeframe bias state",
+            "intermediate-timeframe point of interest flag",
+            "intermediate-timeframe candle closure flag",
+            "intermediate-timeframe CISD proxy",
+            "protected swing proxy"
+          ],
+          "rule_ref": "top_down_alignment.intermediate_timeframe_confirms_structure"
+        },
+        {
+          "machine_checks": [
+            "Gate lower-timeframe entry logic behind an explicit higher-plus-intermediate alignment flag",
+            "Treat lower-timeframe structure as execution refinement instead of independent direction selection",
+            "Invalidate the refined entry when lower-timeframe structure immediately breaks against the aligned thesis"
+          ],
+          "name": "The lower timeframe is for entry precision only after the higher and intermediate timeframes are already aligned",
+          "pine_inputs_needed": [
+            "alignment flag between higher and intermediate timeframes",
+            "lower-timeframe protected swing proxy",
+            "lower-timeframe continuation structure proxy"
+          ],
+          "rule_ref": "top_down_alignment.lower_timeframe_refines_entry_only_after_alignment"
+        },
+        {
+          "machine_checks": [
+            "Require at least two expansion-supporting timeframe flags for the clean-trend classification",
+            "Elevate the setup quality when all three monitored timeframes align",
+            "Downgrade or defer the setup when any parent timeframe prints a non-expansion-supporting candle"
+          ],
+          "name": "A clean trend requires aligned expansion-supporting candles across at least two timeframes",
+          "pine_inputs_needed": [
+            "higher-timeframe expansion-support flag",
+            "intermediate-timeframe expansion-support flag",
+            "lower-timeframe expansion-support flag"
+          ],
+          "rule_ref": "top_down_alignment.aligned_expansion_candles_define_clean_trend"
+        }
+      ],
+      "topic": "top_down_alignment"
+    }
+  ],
+  "trade_model": {
+    "model_type": "bias_framework",
+    "name": "Daily Bias Framework",
+    "notes": "Bias framing is already fairly mechanical and can support indicator logic.",
+    "profile_priority": 1,
+    "profile_role": "bias_filter",
+    "slug": "daily_bias_framework"
+  },
+  "trader_profile": {
+    "display_name": "TTrades Curriculum",
+    "profile_type": "teacher_style",
+    "slug": "ttrades_curriculum",
+    "style": {
+      "confirmation_style": "protected_swing_and_closure",
+      "entry_selection": "continuation_and_reversal_sequences",
+      "execution_style": "structure_confirmation",
+      "indicator_intent": "style_bundle",
+      "risk_style": "protected_swing_invalidation",
+      "source_mode": "curriculum"
+    }
+  },
+  "translation_stage": "reviewed",
+  "validation_evidence": {
+    "latest_success": {
+      "recorded_at": "2026-03-22T20:26:25.692440+00:00",
+      "validation_status": "added_to_chart",
+      "validation_method": "playwriter",
+      "chart_url": "https://www.tradingview.com/chart/wwgrhNUG/",
+      "chart_symbol": "NQM2026",
+      "script_path": "results/pine_scripts/daily_bias_framework.pine",
+      "notes": "Playwriter inserted the generated Pine v6 draft into the live Monaco editor via keyboard selection replacement, then TradingView accepted Update on chart and rendered TTrades Daily Bias Framework [Draft] in the chart legend."
+    }
+  },
+  "visuals": [
+    "Previous-day or prior-candle high, low, and equilibrium reference lines clipped to a recent lookback window",
+    "Right-edge PDH, EQ, PDL, HTF POI, T1, and T2 labels so the daily model reads like a chart lesson instead of raw code output",
+    "Correct-half continuation point-of-interest band from equilibrium toward the directional objective",
+    "Prior-day-extreme reversal anchor band showing the sweep and rejection zone",
+    "Candle 2 and Candle 3 closure markers when lower-timeframe structure forms inside the active higher-timeframe POI",
+    "Sweep markers, continuation activation markers, and lower-timeframe reversal confirmation markers",
+    "Optional historical bias tinting, disabled by default to avoid overpowering the teaching geometry",
+    "Phase-shift warning marker after repeated same-direction continuation candles",
+    "On-chart dashboard summarizing bias, context, point of interest, confirmation, wick read, entry state, and targets"
+  ]
+}

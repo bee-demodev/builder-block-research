@@ -1,0 +1,34 @@
+{
+  "alerts": [
+    {
+      "case_ref": "sample_tv_hourly_sequence_case",
+      "alert_title": "Hourly sequence activated",
+      "topic": "continuation",
+      "chart_context": {
+        "session_scope": ["new_york"]
+      },
+      "rule_states": {
+        "dailyBiasDirection": "bullish",
+        "dailyPoiTop": "21420.0",
+        "dailyPoiBottom": "21320.0",
+        "priceInsideDailyPoi": "true",
+        "activeHourlyDir": "bullish",
+        "activeHourlyC1Time": "2026-03-23T08:00:00-04:00",
+        "activeHourlyC2Time": "2026-03-23T09:00:00-04:00",
+        "activeHourlyC3Time": "2026-03-23T10:00:00-04:00",
+        "activeEntryTime": "2026-03-23T10:00:00-04:00",
+        "activeEntryPrice": "21355.5",
+        "activeHourlyInvalidation": "21320.0"
+      },
+      "candidate_signal": {
+        "timestamp": "2026-03-23T10:00:00-04:00",
+        "side": "long",
+        "stop_price": 21320.0,
+        "target_price": 21480.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "hourly sequence activated inside daily poi"
+      }
+    }
+  ]
+}

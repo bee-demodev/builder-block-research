@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-03-24T19:32:43.573413+00:00",
+  "notes": [
+    "Fill symbol and anchor_timestamp for each reviewed case, then copy the approved entries into data/ttfm_market_context_map.json.",
+    "Keep anchor_timestamp empty when the source image does not expose a trustworthy chart time.",
+    "The existing trade-model proxy suggestions are included as starting points only and still require visual confirmation.",
+    "Cases marked `find_alternate_chart_evidence` still need a real chart capture before anchor_timestamp should be set."
+  ],
+  "case_overrides": [
+    {
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "symbol": null,
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "symbol": null,
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "symbol": null,
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "symbol": null,
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "symbol": null,
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "symbol": null,
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "symbol": null,
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "symbol": "NQ",
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "symbol": "NQ",
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "symbol": null,
+      "anchor_timestamp": null,
+      "window_minutes_before": 180,
+      "window_minutes_after": 240,
+      "mapping_provenance": "case_manual",
+      "notes": "Source is still an article image; attach alternate chart evidence before setting anchor_timestamp."
+    }
+  ]
+}

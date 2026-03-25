@@ -1,0 +1,112 @@
+{
+  "bars_path": "results\\neural_models\\sample_model_assisted_bars.csv",
+  "states_path": "",
+  "candidate_events_path": "results\\neural_models\\sample_candidate_events.json",
+  "model_path": "results\\neural_models\\continuation_entry_model.pt",
+  "threshold": 0.2,
+  "state_batch": {
+    "source": "candidate_events",
+    "path": "results\\neural_models\\sample_candidate_events.json",
+    "state_count": 2,
+    "summary": {
+      "bars_path": "results\\neural_models\\sample_model_assisted_bars.csv",
+      "candidate_events_path": "results\\neural_models\\sample_candidate_events.json",
+      "warmup_bars": 1,
+      "session_mode": "new_york",
+      "event_count": 2,
+      "emitted_state_count": 2,
+      "missing_frame_count": 0,
+      "missing_case_refs": []
+    }
+  },
+  "scoring": {
+    "task_name": "continuation_entry_model",
+    "state_count": 2,
+    "accepted_signal_count": 1,
+    "scores": [
+      {
+        "case_ref": "sample_candidate_event_accepted",
+        "task_name": "continuation_entry_model",
+        "probability": 0.2950175404548645,
+        "prediction": true,
+        "threshold": 0.2,
+        "device": "cuda",
+        "matched_vocabulary_token_count": 43,
+        "input_token_count": 75
+      },
+      {
+        "case_ref": "sample_candidate_event_rejected",
+        "task_name": "continuation_entry_model",
+        "probability": 0.15309041738510132,
+        "prediction": false,
+        "threshold": 0.2,
+        "device": "cuda",
+        "matched_vocabulary_token_count": 31,
+        "input_token_count": 67
+      }
+    ]
+  },
+  "signals": {
+    "signals": [
+      {
+        "timestamp": "2026-03-22T09:30:00-04:00",
+        "side": "long",
+        "stop_price": 98.0,
+        "target_price": 104.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "candidate continuation setup | continuation_entry_model=0.2950",
+        "model_task": "continuation_entry_model",
+        "model_score": 0.295018,
+        "threshold": 0.2
+      }
+    ]
+  },
+  "backtest": {
+    "summary": {
+      "trade_count": 1,
+      "win_rate": 1.0,
+      "gross_pnl": 4.0,
+      "net_pnl": 4.0,
+      "average_net_pnl": 4.0,
+      "profit_factor": 4.0,
+      "expectancy": 4.0,
+      "max_drawdown": 0.0,
+      "average_holding_bars": 2.0,
+      "skipped_signal_count": 0,
+      "exit_reason_counts": {
+        "target": 1
+      },
+      "cost_model": {
+        "tick_size": 0.25,
+        "spread_ticks": 0.0,
+        "slippage_ticks": 0.0,
+        "commission_per_contract": 0.0,
+        "contract_multiplier": 1.0
+      },
+      "session_mode": "new_york"
+    },
+    "trades": [
+      {
+        "side": "long",
+        "signal_timestamp": "2026-03-22T09:30:00-04:00",
+        "entry_timestamp": "2026-03-22T09:35:00-04:00",
+        "exit_timestamp": "2026-03-22T09:40:00-04:00",
+        "entry_reason": "candidate continuation setup | continuation_entry_model=0.2950",
+        "exit_reason": "target",
+        "quantity": 1.0,
+        "raw_entry_price": 100.0,
+        "raw_exit_price": 104.0,
+        "entry_price": 100.0,
+        "exit_price": 104.0,
+        "gross_pnl": 4.0,
+        "net_pnl": 4.0,
+        "spread_cost": 0.0,
+        "slippage_cost": 0.0,
+        "commission_cost": 0.0,
+        "holding_bars": 2,
+        "session_bucket": "new_york"
+      }
+    ]
+  }
+}

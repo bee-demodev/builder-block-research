@@ -1,0 +1,241 @@
+{
+  "topic": "bias",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_easy_daily_bias",
+      "url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_next_day_model",
+      "url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_wick_sizes",
+      "url": "https://ttrades.com/understanding-wick-sizes-reversals-and-expansion-candles-in-price-action/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_top_down_expansion",
+      "url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "previous_candle_close_bias",
+      "name": "Next-candle bias starts from how price closes relative to the previous candle range",
+      "timeframeScope": ["fractal"],
+      "marketPhasePrecondition": ["previous_candle_high_low_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Previous candle high and low define the reference range",
+      "confirmationTrigger": "A close outside the previous candle range implies continuation bias, while a sweep and close back inside implies reversal bias",
+      "protectedSwingDefinition": "Lower-timeframe protected swing logic should be interpreted inside the active higher-timeframe bias rather than replacing it",
+      "invalidationCondition": "A new candle closes in the opposite structural mode or a lower-timeframe execution setup directly contradicts the higher-timeframe bias",
+      "targetLogic": "Continuation bias seeks expansion beyond the swept side; reversal bias seeks movement back into or across the prior range",
+      "exceptions": [
+        "After several same-direction continuation candles, expect a new phase instead of forcing another continuation"
+      ],
+      "evidenceRefs": [
+        "ttrades_next_day_model#understanding_continuation_vs_reversal",
+        "ttrades_next_day_model#practical_examples_on_the_daily_chart"
+      ],
+      "visualVerificationRefs": [
+        "article:next_day_model_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "previous candle high",
+        "previous candle low",
+        "current close",
+        "sweep state relative to previous candle range"
+      ],
+      "machineChecks": [
+        "Detect close above previous high or below previous low",
+        "Detect sweep beyond previous high or low followed by close back inside the prior range",
+        "Store current bias mode as continuation or reversal"
+      ],
+      "ambiguityNotes": [
+        "Bias is cleaner on daily and four-hour charts than on lower noisy timeframes"
+      ]
+    },
+    {
+      "id": "daily_reversal_framework",
+      "name": "Reversal-day bias is framed from previous day highs or lows plus lower-timeframe confirmation",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["previous_day_range_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Price trades into the previous day high or low after a directional prior-day close",
+      "confirmationTrigger": "A wick forms at the prior-day extreme and the lower timeframe confirms a change in the state of delivery",
+      "protectedSwingDefinition": "The lower-timeframe shift that confirms the wick becomes the structural reference for executing the reversal thesis",
+      "invalidationCondition": "The wick fails to hold or lower-timeframe structure continues through the prior-day level without the confirming shift",
+      "targetLogic": "First target is equilibrium of the previous day range; extended target is the opposite side of the prior range",
+      "exceptions": [
+        "A large wick does not support immediate opposite expansion and often requires waiting for candle three or the next candle",
+        "If higher-timeframe bias points the other way, the move may only be a retracement instead of a full reversal"
+      ],
+      "evidenceRefs": [
+        "ttrades_easy_daily_bias#framing_a_reversal_day",
+        "ttrades_easy_daily_bias#using_lower_timeframes_for_confirmation",
+        "ttrades_wick_sizes#the_three_trading_scenarios"
+      ],
+      "visualVerificationRefs": [
+        "article:daily_bias_scan_2026_03_21",
+        "article:wick_sizes_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "previous day high",
+        "previous day low",
+        "higher-timeframe wick size",
+        "lower-timeframe CISD or structure-shift event"
+      ],
+      "machineChecks": [
+        "Mark prior-day high and low as reversal anchors",
+        "Measure whether the higher-timeframe candle sweeps a prior-day extreme and closes back inside or rejects from it",
+        "Require lower-timeframe confirmation before execution mode is active"
+      ],
+      "ambiguityNotes": [
+        "CISD still needs a stricter algorithmic definition",
+        "Wick-size threshold for immediate reversal versus delayed confirmation is not yet numeric"
+      ]
+    },
+    {
+      "id": "daily_continuation_framework",
+      "name": "Continuation-day bias uses prior candle closure plus equilibrium respect",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["previous_day_range_available", "prior_directional_close_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "Previous day directional close establishes continuation intent and equilibrium defines the area of interest",
+      "confirmationTrigger": "Price opens, retraces toward equilibrium or a point of interest, respects it without lower-timeframe closes beyond, then continues through the previous day high or low",
+      "protectedSwingDefinition": "Continuation structure becomes stronger once lower-timeframe continuation logic prints a protected swing in the direction of the higher-timeframe bias",
+      "invalidationCondition": "Price closes through equilibrium in the wrong direction or fails to continue through the previous day range objective",
+      "targetLogic": "Primary objective is continuation through the previous day high or low and then external liquidity in the same direction",
+      "exceptions": [
+        "Respecting equilibrium does not require an exact touch",
+        "Rather than guessing which point of interest reacts, allow structure to confirm naturally"
+      ],
+      "evidenceRefs": [
+        "ttrades_easy_daily_bias#framing_a_continuation_day",
+        "ttrades_easy_daily_bias#continuations_in_both_directions"
+      ],
+      "visualVerificationRefs": [
+        "article:daily_bias_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "previous day high",
+        "previous day low",
+        "previous day equilibrium",
+        "lower-timeframe close location",
+        "continuation protected swing state"
+      ],
+      "machineChecks": [
+        "Compute equilibrium as midpoint of previous day range",
+        "Detect whether lower-timeframe closes remain on the correct side of equilibrium",
+        "Require continuation through the previous day directional objective"
+      ],
+      "ambiguityNotes": [
+        "The exact tolerance around equilibrium is not yet numeric",
+        "Point-of-interest selection still contains discretion"
+      ]
+    },
+    {
+      "id": "wick_size_bias_filter",
+      "name": "Wick size filters whether the current candle supports expansion or reversion",
+      "timeframeScope": ["fractal"],
+      "marketPhasePrecondition": ["active_candle_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "Current candle open, high, low, and close define body and opposing wick",
+      "confirmationTrigger": "A small opposing run or wick supports expansion; a large opposing run suggests reversal, return to open, or limited range",
+      "protectedSwingDefinition": "Protected-swing confirmation has more value when the higher-timeframe candle also supports expansion through a small opposing run",
+      "invalidationCondition": "A candle that spends most of its time creating a large opposing wick should not be treated as a clean expansion candle",
+      "targetLogic": "Expansion-supporting candles justify continuation and farther targets; large-wick candles justify reduced targets such as the open or nearby liquidity",
+      "exceptions": [
+        "The most reliable setup is often the next candle after the reversal candle, once a new small-wick expansion candle appears"
+      ],
+      "evidenceRefs": [
+        "ttrades_easy_daily_bias#why_wick_size_matters",
+        "ttrades_wick_sizes#expansion_vs_reversal_candles",
+        "ttrades_wick_sizes#adjusting_targets_based_on_candle_behavior"
+      ],
+      "visualVerificationRefs": [
+        "article:daily_bias_scan_2026_03_21",
+        "article:wick_sizes_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "candle open",
+        "candle high",
+        "candle low",
+        "candle close",
+        "body size",
+        "opposing wick size",
+        "open price target"
+      ],
+      "machineChecks": [
+        "Compute body size and opposing wick ratio",
+        "Classify whether the candle closes near its directional extreme or near its open",
+        "Switch expected target model based on small-wick versus large-wick classification"
+      ],
+      "ambiguityNotes": [
+        "The boundary between small and large opposing runs is not yet numeric",
+        "Time usage within the candle is conceptually important but not yet codified from OHLC alone"
+      ]
+    },
+    {
+      "id": "bias_precedes_execution",
+      "name": "Higher-timeframe bias filters all lower-timeframe entries",
+      "timeframeScope": ["higher", "intermediate", "lower"],
+      "marketPhasePrecondition": ["higher_timeframe_bias_set"],
+      "direction": "bidirectional",
+      "setupAnchor": "Higher timeframe establishes continuation or reversal expectation",
+      "confirmationTrigger": "Intermediate or lower timeframe confirms structure in the same direction as the higher timeframe thesis",
+      "protectedSwingDefinition": "Lower-timeframe protected swings are only execution tools unless they align with the higher-timeframe bias",
+      "invalidationCondition": "Lower-timeframe entry logic conflicts with the higher-timeframe candle behavior and bias framework",
+      "targetLogic": "Use the higher timeframe for direction and the lower timeframe for precision, not independent trade direction",
+      "exceptions": [
+        "Below the four-hour chart, reversals become noisier and less reliable",
+        "Session choice changes the preferred lower timeframe for confirmation"
+      ],
+      "evidenceRefs": [
+        "ttrades_easy_daily_bias#bias_always_comes_first",
+        "ttrades_easy_daily_bias#the_fractal_nature_of_the_framework",
+        "ttrades_wick_sizes#using_timeframe_alignment",
+        "ttrades_top_down_expansion#core_principle"
+      ],
+      "visualVerificationRefs": [
+        "article:education_center_curriculum_scan_2026_03_21",
+        "article:daily_bias_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "selected higher timeframe bias mode",
+        "selected lower timeframe execution signal",
+        "session bucket or preferred execution window"
+      ],
+      "machineChecks": [
+        "Store higher-timeframe bias as a state variable",
+        "Reject lower-timeframe execution signals that oppose the active bias",
+        "Allow configurable execution timeframe mapping by session or user selection"
+      ],
+      "ambiguityNotes": [
+        "Session-to-timeframe mapping should be configurable rather than hard-coded",
+        "The project still needs a strict lower-timeframe CISD implementation"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What numeric threshold best separates small and large opposing wicks for the bias framework?",
+    "How much tolerance around equilibrium should count as respect versus violation?",
+    "What is the strictest first-pass CISD implementation that remains useful across timeframes?"
+  ]
+}

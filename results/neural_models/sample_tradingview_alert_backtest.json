@@ -1,0 +1,102 @@
+{
+  "bars_path": "results\\neural_models\\sample_tradingview_alert_bars.csv",
+  "states_path": "",
+  "candidate_events_path": "results\\neural_models\\sample_tradingview_candidate_events.json",
+  "model_path": "results\\neural_models\\continuation_entry_model.pt",
+  "threshold": 0.2,
+  "state_batch": {
+    "source": "candidate_events",
+    "path": "results\\neural_models\\sample_tradingview_candidate_events.json",
+    "state_count": 1,
+    "summary": {
+      "bars_path": "results\\neural_models\\sample_tradingview_alert_bars.csv",
+      "candidate_events_path": "results\\neural_models\\sample_tradingview_candidate_events.json",
+      "warmup_bars": 3,
+      "session_mode": "new_york",
+      "event_count": 1,
+      "emitted_state_count": 1,
+      "missing_frame_count": 0,
+      "missing_case_refs": []
+    }
+  },
+  "scoring": {
+    "task_name": "continuation_entry_model",
+    "state_count": 1,
+    "accepted_signal_count": 1,
+    "scores": [
+      {
+        "case_ref": "sample_tv_hourly_sequence_case",
+        "task_name": "continuation_entry_model",
+        "probability": 0.35655921697616577,
+        "prediction": true,
+        "threshold": 0.2,
+        "device": "cuda",
+        "matched_vocabulary_token_count": 27,
+        "input_token_count": 101
+      }
+    ]
+  },
+  "signals": {
+    "signals": [
+      {
+        "timestamp": "2026-03-23T10:00:00-04:00",
+        "side": "long",
+        "stop_price": 21320.0,
+        "target_price": 21480.0,
+        "quantity": 1.0,
+        "session": "new_york",
+        "thesis": "hourly sequence activated inside daily poi | continuation_entry_model=0.3566",
+        "model_task": "continuation_entry_model",
+        "model_score": 0.356559,
+        "threshold": 0.2
+      }
+    ]
+  },
+  "backtest": {
+    "summary": {
+      "trade_count": 1,
+      "win_rate": 1.0,
+      "gross_pnl": 124.0,
+      "net_pnl": 124.0,
+      "average_net_pnl": 124.0,
+      "profit_factor": 124.0,
+      "expectancy": 124.0,
+      "max_drawdown": 0.0,
+      "average_holding_bars": 2.0,
+      "skipped_signal_count": 0,
+      "exit_reason_counts": {
+        "target": 1
+      },
+      "cost_model": {
+        "tick_size": 0.25,
+        "spread_ticks": 0.0,
+        "slippage_ticks": 0.0,
+        "commission_per_contract": 0.0,
+        "contract_multiplier": 1.0
+      },
+      "session_mode": "new_york"
+    },
+    "trades": [
+      {
+        "side": "long",
+        "signal_timestamp": "2026-03-23T10:00:00-04:00",
+        "entry_timestamp": "2026-03-23T11:00:00-04:00",
+        "exit_timestamp": "2026-03-23T12:00:00-04:00",
+        "entry_reason": "hourly sequence activated inside daily poi | continuation_entry_model=0.3566",
+        "exit_reason": "target",
+        "quantity": 1.0,
+        "raw_entry_price": 21356.0,
+        "raw_exit_price": 21480.0,
+        "entry_price": 21356.0,
+        "exit_price": 21480.0,
+        "gross_pnl": 124.0,
+        "net_pnl": 124.0,
+        "spread_cost": 0.0,
+        "slippage_cost": 0.0,
+        "commission_cost": 0.0,
+        "holding_bars": 2,
+        "session_bucket": "new_york"
+      }
+    ]
+  }
+}

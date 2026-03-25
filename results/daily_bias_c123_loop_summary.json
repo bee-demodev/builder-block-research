@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-03-23T15:29:18.633454+00:00",
+  "step_count": 5,
+  "steps": [
+    {
+      "id": "validate_ttfm_video_corpus",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/validate_ttfm_video_corpus.py"
+      ],
+      "result": {
+        "ok": true,
+        "corpus_dir": "knowledge\\ttfm_video_corpus",
+        "video_count": 6,
+        "chunk_count": 104,
+        "manifest_path": "knowledge\\ttfm_video_corpus\\video_manifest.json",
+        "chunks_path": "knowledge\\ttfm_video_corpus\\chunks.jsonl"
+      }
+    },
+    {
+      "id": "build_ttfm_google_embeddings",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/build_ttfm_google_embeddings.py"
+      ],
+      "result": {
+        "generated_at": "2026-03-23T15:29:16.045276+00:00",
+        "model": "models/gemini-embedding-001",
+        "output_dimensionality": 768,
+        "normalization": "l2",
+        "item_count": 104,
+        "index_path": "knowledge\\ttfm_video_corpus\\google_embedding_index.json",
+        "ok": true,
+        "chunks_path": "knowledge\\ttfm_video_corpus\\chunks.jsonl"
+      }
+    },
+    {
+      "id": "refresh_daily_bias_c123_rulepack",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/refresh_daily_bias_c123_rulepack.py"
+      ],
+      "result": {
+        "ok": true,
+        "slug": "daily_bias_c123_map",
+        "rulepack_path": "results\\rulepacks\\daily_bias_c123_map.json",
+        "query_trace_path": "results\\rulepacks\\daily_bias_c123_map_query_hits.json",
+        "query_groups": [
+          "daily_bias",
+          "daily_poi",
+          "hourly_sequence",
+          "daily_to_hourly_gating"
+        ],
+        "citation_count": 13
+      }
+    },
+    {
+      "id": "build_daily_bias_c123_spec",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/build_daily_bias_c123_spec.py"
+      ],
+      "result": {
+        "ok": true,
+        "slug": "daily_bias_c123_map",
+        "spec_path": "results\\indicator_specs\\daily_bias_c123_map.json",
+        "rulepack_path": "results\\rulepacks\\daily_bias_c123_map.json"
+      }
+    },
+    {
+      "id": "generate_daily_bias_c123_pine",
+      "cmd": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "scripts/generate_pine_from_spec.py",
+        "--spec-path",
+        "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\indicator_specs\\daily_bias_c123_map.json",
+        "--manifest-output",
+        "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\pine_scripts\\daily_bias_c123_map_manifest.json"
+      ],
+      "result": {
+        "output_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\pine_scripts",
+        "generated_script_count": 1
+      }
+    }
+  ],
+  "corpus": {
+    "video_count": 6,
+    "output_dir": "knowledge\\ttfm_video_corpus"
+  },
+  "embeddings": {
+    "model": "models/gemini-embedding-001",
+    "item_count": 104,
+    "index_path": "knowledge\\ttfm_video_corpus\\google_embedding_index.json"
+  },
+  "rulepack": {
+    "slug": "daily_bias_c123_map",
+    "query_groups": [
+      "daily_bias",
+      "daily_poi",
+      "hourly_sequence",
+      "daily_to_hourly_gating"
+    ],
+    "citation_count": 13
+  },
+  "indicator_spec": {
+    "slug": "daily_bias_c123_map",
+    "chart_timeframe": "60",
+    "bias_timeframe": "D",
+    "execution_timeframe": "60"
+  },
+  "pine": {
+    "generated_script_count": 1,
+    "generated_scripts": [
+      {
+        "spec_path": "results\\indicator_specs\\daily_bias_c123_map.json",
+        "spec_key": "daily_bias_c123_map",
+        "script_title": "TTrades Daily Bias C1/C2/C3 Map [Draft]",
+        "output_path": "results\\pine_scripts\\daily_bias_c123_map.pine"
+      }
+    ]
+  }
+}

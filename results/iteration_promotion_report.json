@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-03-23T20:20:52.861887+00:00",
+  "source_iteration_challenger_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\iteration_challenger_report.json",
+  "summary": {
+    "candidate_task_count": 0,
+    "promoted_task_count": 0,
+    "skipped_task_count": 3,
+    "promoted_tasks": [],
+    "skipped_tasks": [
+      "continuation_entry_model",
+      "daily_bias_framework",
+      "trade_vs_no_trade"
+    ]
+  },
+  "promotions": [],
+  "skipped": [
+    {
+      "task_name": "continuation_entry_model",
+      "reason": "not_promotable",
+      "status": "compared",
+      "winner": "tie",
+      "recommendation": "collect_more_examples"
+    },
+    {
+      "task_name": "daily_bias_framework",
+      "reason": "not_promotable",
+      "status": "missing_champion_model",
+      "winner": null,
+      "recommendation": "initialize_champion_review"
+    },
+    {
+      "task_name": "trade_vs_no_trade",
+      "reason": "not_promotable",
+      "status": "compared",
+      "winner": "tie",
+      "recommendation": "collect_more_examples"
+    }
+  ]
+}

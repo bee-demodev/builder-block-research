@@ -1,0 +1,3062 @@
+{
+  "generated_at": "2026-03-24T21:24:17.321134+00:00",
+  "channel_title": "TTrades - Videos",
+  "channel_url": "https://www.youtube.com/@TTrades_edu/videos",
+  "entry_count": 181,
+  "educational_candidate_count": 121,
+  "trade_review_candidate_count": 9,
+  "category_counts": {
+    "chart_lesson": 4,
+    "trade_example": 1,
+    "trade_review": 2,
+    "weekly_recap": 2
+  },
+  "educational_category_counts": {
+    "bias_framework": 12,
+    "continuation_reversal": 17,
+    "execution_model": 37,
+    "fractal_model": 11,
+    "market_structure": 26,
+    "relative_strength": 7,
+    "timeframe_alignment": 14,
+    "trading_framework": 34
+  },
+  "selected_partition_counts": {
+    "educational_youtube": 112,
+    "trade_review": 9
+  },
+  "entries": [
+    {
+      "position": 1,
+      "video_id": "HbOeD_JVens",
+      "title": "Which Swing Highs and Lows Matter in Trading?",
+      "url": "https://youtu.be/HbOeD_JVens",
+      "slug": "which_swing_highs_and_lows_matter_in_trading",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 2,
+      "video_id": "nWHint4Yano",
+      "title": "EURGBP for Relative Strength (EU vs GU)",
+      "url": "https://youtu.be/nWHint4Yano",
+      "slug": "eurgbp_for_relative_strength_eu_vs_gu",
+      "review_categories": [],
+      "educational_categories": [
+        "relative_strength"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "relative_strength"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 3,
+      "video_id": "HrjYoxAUb3s",
+      "title": "Using Currency Futures to Choose the Right Forex Pair",
+      "url": "https://youtu.be/HrjYoxAUb3s",
+      "slug": "using_currency_futures_to_choose_the_right_forex_pair",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 4,
+      "video_id": "yH4eYwUgdTY",
+      "title": "Relative Strength & Weakness + SMT Divergence (Full Guide)",
+      "url": "https://youtu.be/yH4eYwUgdTY",
+      "slug": "relative_strength_weakness_smt_divergence_full_guide",
+      "review_categories": [],
+      "educational_categories": [
+        "relative_strength"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "relative_strength"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 5,
+      "video_id": "9BY-MQRNy-Y",
+      "title": "TTrades Swing Trading Model - Simple Strategy",
+      "url": "https://youtu.be/9BY-MQRNy-Y",
+      "slug": "ttrades_swing_trading_model_simple_strategy",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 6,
+      "video_id": "PQiRV0JMhIQ",
+      "title": "Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "url": "https://youtu.be/PQiRV0JMhIQ",
+      "slug": "why_your_continuations_fail_order_blocks_cisd_explained",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "cisd",
+        "continuation",
+        "educational_channel",
+        "order_block"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 7,
+      "video_id": "eywpZT3z6GQ",
+      "title": "TTrades Scalping Model - Simple Day Trading Strategy",
+      "url": "https://youtu.be/eywpZT3z6GQ",
+      "slug": "ttrades_scalping_model_simple_day_trading_strategy",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 8,
+      "video_id": "FgP2lc9nneM",
+      "title": "The Best Timeframe for TTrades Fractal Model (Simple)",
+      "url": "https://youtu.be/FgP2lc9nneM",
+      "slug": "the_best_timeframe_for_ttrades_fractal_model_simple",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "timeframe_alignment",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fractal_model",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 9,
+      "video_id": "FKTBkTzsmUA",
+      "title": "How To Actually Trade Inversion Fair Value Gaps (IFVG)",
+      "url": "https://youtu.be/FKTBkTzsmUA",
+      "slug": "how_to_actually_trade_inversion_fair_value_gaps_ifvg",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fair_value_gap"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 10,
+      "video_id": "Kf4c41_qO1s",
+      "title": "Higher Timeframe Analysis For Trading - Aligning Expansion Candles",
+      "url": "https://youtu.be/Kf4c41_qO1s",
+      "slug": "higher_timeframe_analysis_for_trading_aligning_expansion_candles",
+      "review_categories": [],
+      "educational_categories": [
+        "timeframe_alignment",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "expansion",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 11,
+      "video_id": "vn1RYjhJUnQ",
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "url": "https://youtu.be/vn1RYjhJUnQ",
+      "slug": "validating_swing_points_using_lower_timeframe_confirmation_cisd",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "timeframe_alignment",
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "cisd",
+        "educational_channel",
+        "point_of_interest",
+        "protected_swing",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 12,
+      "video_id": "9AL41xON3hA",
+      "title": "The Only Trading Strategy You Need For 2026",
+      "url": "https://youtu.be/9AL41xON3hA",
+      "slug": "the_only_trading_strategy_you_need_for_2026",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 13,
+      "video_id": "w-JekHg6Ldk",
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "url": "https://youtu.be/w-JekHg6Ldk",
+      "slug": "ttrades_top_down_chart_lessons_4",
+      "review_categories": [
+        "chart_lesson"
+      ],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 14,
+      "video_id": "-KKuZb5Z5aU",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "url": "https://youtu.be/-KKuZb5Z5aU",
+      "slug": "easy_daily_bias_mechanical_framework",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 15,
+      "video_id": "IzOQmcgLyA0",
+      "title": "TTrades Top-Down Chart Lessons #3",
+      "url": "https://youtu.be/IzOQmcgLyA0",
+      "slug": "ttrades_top_down_chart_lessons_3",
+      "review_categories": [
+        "chart_lesson"
+      ],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 16,
+      "video_id": "MsuEQQl7L6s",
+      "title": "Candle 3 Closure: TTrades Fractal Model",
+      "url": "https://youtu.be/MsuEQQl7L6s",
+      "slug": "candle_3_closure_ttrades_fractal_model",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "candle_3",
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 17,
+      "video_id": "tyoxl1l-6iI",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "url": "https://youtu.be/tyoxl1l-6iI",
+      "slug": "candle_2_closure_the_foundation_of_ttrades_fractal_model",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "candle_2",
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 18,
+      "video_id": "upHS7SDL9kg",
+      "title": "Targets Using Projections - The Fractal Model",
+      "url": "https://youtu.be/upHS7SDL9kg",
+      "slug": "targets_using_projections_the_fractal_model",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "market_structure",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fractal_model",
+        "targets"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 19,
+      "video_id": "SlWxhzhLo3A",
+      "title": "Wick Size Matters: The Key to Understanding Reversal and Expansion Candles",
+      "url": "https://youtu.be/SlWxhzhLo3A",
+      "slug": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles",
+      "review_categories": [],
+      "educational_categories": [
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "expansion",
+        "reversal",
+        "wick_logic"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 20,
+      "video_id": "3eVxTV_7L2U",
+      "title": "A Complete Trading Framework (Universal Models, SMT, Swing Points) | GXT",
+      "url": "https://youtu.be/3eVxTV_7L2U",
+      "slug": "a_complete_trading_framework_universal_models_smt_swing_points_gxt",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure",
+        "relative_strength",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "point_of_interest",
+        "protected_swing",
+        "relative_strength"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 21,
+      "video_id": "FAKWJ-1NlLE",
+      "title": "Trading The 4 Hour Power Of Three - OHLC / OLHC",
+      "url": "https://youtu.be/FAKWJ-1NlLE",
+      "slug": "trading_the_4_hour_power_of_three_ohlc_olhc",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "power_of_three"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 22,
+      "video_id": "qdQYhePcvGE",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "url": "https://youtu.be/qdQYhePcvGE",
+      "slug": "ttrades_fractal_model_trading_candle_3",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "candle_3",
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 23,
+      "video_id": "UBTl7za9obc",
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "url": "https://youtu.be/UBTl7za9obc",
+      "slug": "ttrades_top_down_chart_lessons_2",
+      "review_categories": [
+        "chart_lesson"
+      ],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 24,
+      "video_id": "MvD7fQQ0szE",
+      "title": "Backtesting Simplified - A Clear Step-by-Step Approach",
+      "url": "https://youtu.be/MvD7fQQ0szE",
+      "slug": "backtesting_simplified_a_clear_step_by_step_approach",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 25,
+      "video_id": "m4k_1pF5zFI",
+      "title": "TTrades Fractal Model - Trading Candle 2",
+      "url": "https://youtu.be/m4k_1pF5zFI",
+      "slug": "ttrades_fractal_model_trading_candle_2",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "candle_2",
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 26,
+      "video_id": "Nlw-PZhoViQ",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "url": "https://youtu.be/Nlw-PZhoViQ",
+      "slug": "ttrades_top_down_chart_lessons_1",
+      "review_categories": [
+        "chart_lesson"
+      ],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 27,
+      "video_id": "8BWkRGhuj1k",
+      "title": "The Phases of Price Action: A Blueprint for Market Movement",
+      "url": "https://youtu.be/8BWkRGhuj1k",
+      "slug": "the_phases_of_price_action_a_blueprint_for_market_movement",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 28,
+      "video_id": "VD4xb9VfMHA",
+      "title": "How To Trade Reversal - Phases Of Price",
+      "url": "https://youtu.be/VD4xb9VfMHA",
+      "slug": "how_to_trade_reversal_phases_of_price",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "reversal"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 29,
+      "video_id": "TNybDCtwBnc",
+      "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+      "url": "https://youtu.be/TNybDCtwBnc",
+      "slug": "ttrades_playbook_fractal_model_fundamentals_ttfm",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 30,
+      "video_id": "F0G31iLVpVg",
+      "title": "How To Trade Retracement - Phases Of Price",
+      "url": "https://youtu.be/F0G31iLVpVg",
+      "slug": "how_to_trade_retracement_phases_of_price",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "retracement"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 31,
+      "video_id": "1wKfc2gN4xg",
+      "title": "Trader Kane | The Mind Behind a Multi-Million Dollar Day Trader",
+      "url": "https://youtu.be/1wKfc2gN4xg",
+      "slug": "trader_kane_the_mind_behind_a_multi_million_dollar_day_trader",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 32,
+      "video_id": "4Gm8p6O7Ebs",
+      "title": "How To Trade Expansion - Phases Of Price",
+      "url": "https://youtu.be/4Gm8p6O7Ebs",
+      "slug": "how_to_trade_expansion_phases_of_price",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "expansion"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 33,
+      "video_id": "WFqLwOp2pXw",
+      "title": "How To Trade Consolidation - Phases Of Price",
+      "url": "https://youtu.be/WFqLwOp2pXw",
+      "slug": "how_to_trade_consolidation_phases_of_price",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "consolidation",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 34,
+      "video_id": "JHVaSKtE1Ys",
+      "title": "Stop Losses in Trading: Know When You're Wrong",
+      "url": "https://youtu.be/JHVaSKtE1Ys",
+      "slug": "stop_losses_in_trading_know_when_you_re_wrong",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 35,
+      "video_id": "-wr4xATE37g",
+      "title": "Protected Swings \u2013 Understanding Trend and Invalidations",
+      "url": "https://youtu.be/-wr4xATE37g",
+      "slug": "protected_swings_understanding_trend_and_invalidations",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "protected_swing"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 36,
+      "video_id": "r_UF8U-hsL8",
+      "title": "Why You're Failing with ICT Concepts",
+      "url": "https://youtu.be/r_UF8U-hsL8",
+      "slug": "why_you_re_failing_with_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 37,
+      "video_id": "J_EeS2_2CAM",
+      "title": "GxTradez | Phases of Price & Profiles For Expansion",
+      "url": "https://youtu.be/J_EeS2_2CAM",
+      "slug": "gxtradez_phases_of_price_profiles_for_expansion",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "expansion"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 38,
+      "video_id": "5fnFOh5YuM0",
+      "title": "TTrades Fractal Model - Trading Candle 4",
+      "url": "https://youtu.be/5fnFOh5YuM0",
+      "slug": "ttrades_fractal_model_trading_candle_4",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "candle_4",
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 39,
+      "video_id": "4jU547ocod4",
+      "title": "TTrades Fractal Model + Inversion (Intraday Strategy)",
+      "url": "https://youtu.be/4jU547ocod4",
+      "slug": "ttrades_fractal_model_inversion_intraday_strategy",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 40,
+      "video_id": "gjoRPszj-Qk",
+      "title": "AP | Use Market Structure & Fibonacci Levels for Sniper Entries",
+      "url": "https://youtu.be/gjoRPszj-Qk",
+      "slug": "ap_use_market_structure_fibonacci_levels_for_sniper_entries",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 41,
+      "video_id": "xP-o11jRCyg",
+      "title": "Trade Continuations Using Breaker Blocks",
+      "url": "https://youtu.be/xP-o11jRCyg",
+      "slug": "trade_continuations_using_breaker_blocks",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "breaker",
+        "continuation",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 42,
+      "video_id": "IPZjNI1B5a0",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "url": "https://youtu.be/IPZjNI1B5a0",
+      "slug": "you_are_using_discount_and_premium_wrong_eq_for_expansions",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "equilibrium",
+        "expansion"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 43,
+      "video_id": "07lOxv39LdY",
+      "title": "DTR | C2U - Blending The Fractal Model & Unicorn Model - No Daily Bias",
+      "url": "https://youtu.be/07lOxv39LdY",
+      "slug": "dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework",
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 44,
+      "video_id": "IJcfC6wAPZU",
+      "title": "Trade Continuations Using Order Blocks",
+      "url": "https://youtu.be/IJcfC6wAPZU",
+      "slug": "trade_continuations_using_order_blocks",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "continuation",
+        "educational_channel",
+        "order_block"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 45,
+      "video_id": "iEaMbuFZb24",
+      "title": "Trade Like TTrades - Top Down Analysis",
+      "url": "https://youtu.be/iEaMbuFZb24",
+      "slug": "trade_like_ttrades_top_down_analysis",
+      "review_categories": [],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 46,
+      "video_id": "nncJGt6j19Q",
+      "title": "Gene | Align Yourself For High Probability Trades",
+      "url": "https://youtu.be/nncJGt6j19Q",
+      "slug": "gene_align_yourself_for_high_probability_trades",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 47,
+      "video_id": "ubCe509_JLY",
+      "title": "Timeframe Alignment: How To Align Timeframes For Expansion",
+      "url": "https://youtu.be/ubCe509_JLY",
+      "slug": "timeframe_alignment_how_to_align_timeframes_for_expansion",
+      "review_categories": [],
+      "educational_categories": [
+        "timeframe_alignment",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "expansion",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 48,
+      "video_id": "wik00c9_2nk",
+      "title": "Reversal Sequence (TTRS) - How To Blend PD Arrays",
+      "url": "https://youtu.be/wik00c9_2nk",
+      "slug": "reversal_sequence_ttrs_how_to_blend_pd_arrays",
+      "review_categories": [],
+      "educational_categories": [
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "reversal"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 49,
+      "video_id": "Ibw4saRtYMk",
+      "title": "The MMXM Trader | Advanced ICT MMXM Lesson (Everything You Need To Know)",
+      "url": "https://youtu.be/Ibw4saRtYMk",
+      "slug": "the_mmxm_trader_advanced_ict_mmxm_lesson_everything_you_need_to_know",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 50,
+      "video_id": "CqMIh-Vvhbg",
+      "title": "Intro To TTrades Fractal Model [Indicator & Settings]",
+      "url": "https://youtu.be/CqMIh-Vvhbg",
+      "slug": "intro_to_ttrades_fractal_model_indicator_settings",
+      "review_categories": [],
+      "educational_categories": [
+        "fractal_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fractal_model"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 51,
+      "video_id": "LKNQDAdId4s",
+      "title": "Master Candlestick Wicks - The Key To Catching Reversals",
+      "url": "https://youtu.be/LKNQDAdId4s",
+      "slug": "master_candlestick_wicks_the_key_to_catching_reversals",
+      "review_categories": [],
+      "educational_categories": [
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "reversal",
+        "wick_logic"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 52,
+      "video_id": "TfHlNgAZ_II",
+      "title": "Trading IRL & ERL With Order Blocks! - ICT Concepts",
+      "url": "https://youtu.be/TfHlNgAZ_II",
+      "slug": "trading_irl_erl_with_order_blocks_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "order_block"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 53,
+      "video_id": "caaS6_Q7O78",
+      "title": "Next Day Model - Fractal Way To Get Bias For Trading",
+      "url": "https://youtu.be/caaS6_Q7O78",
+      "slug": "next_day_model_fractal_way_to_get_bias_for_trading",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 54,
+      "video_id": "OZfaUs437O0",
+      "title": "MARA Trade Review | H1 Market Maker Buy Model [MMXM]",
+      "url": "https://youtu.be/OZfaUs437O0",
+      "slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "review_categories": [
+        "trade_review"
+      ],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 55,
+      "video_id": "0vnkpYJQrWA",
+      "title": "AFYZ | Trading The Daily OHLC - Protraction Profiles",
+      "url": "https://youtu.be/0vnkpYJQrWA",
+      "slug": "afyz_trading_the_daily_ohlc_protraction_profiles",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "power_of_three"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 56,
+      "video_id": "4WCiIyCiBrQ",
+      "title": "ICT Daily Profile - Seek & Destroy",
+      "url": "https://youtu.be/4WCiIyCiBrQ",
+      "slug": "ict_daily_profile_seek_destroy",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 57,
+      "video_id": "IeXtmeKqjnQ",
+      "title": "ICT Daily Profile - New York Manipulation",
+      "url": "https://youtu.be/IeXtmeKqjnQ",
+      "slug": "ict_daily_profile_new_york_manipulation",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 58,
+      "video_id": "uIPDam538qc",
+      "title": "The OTE Trader | I Turned Profitable With This Stage Of ICT's MMXM Models",
+      "url": "https://youtu.be/uIPDam538qc",
+      "slug": "the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 59,
+      "video_id": "xdzyejskSKE",
+      "title": "ICT Daily Profile - New York Reversal",
+      "url": "https://youtu.be/xdzyejskSKE",
+      "slug": "ict_daily_profile_new_york_reversal",
+      "review_categories": [],
+      "educational_categories": [
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "reversal"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 60,
+      "video_id": "y6SnEdASVLY",
+      "title": "ICT Daily Profile - London Reversal / New York Continuation",
+      "url": "https://youtu.be/y6SnEdASVLY",
+      "slug": "ict_daily_profile_london_reversal_new_york_continuation",
+      "review_categories": [],
+      "educational_categories": [
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "continuation",
+        "educational_channel",
+        "reversal"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 61,
+      "video_id": "G44VpidBD_U",
+      "title": "NickDoesFutures | Unicorn Model & Experiences With ICT",
+      "url": "https://youtu.be/G44VpidBD_U",
+      "slug": "nickdoesfutures_unicorn_model_experiences_with_ict",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 62,
+      "video_id": "sIcsLFSNoXM",
+      "title": "Open High Low Close - Understanding Candlesticks",
+      "url": "https://youtu.be/sIcsLFSNoXM",
+      "slug": "open_high_low_close_understanding_candlesticks",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 63,
+      "video_id": "EYzP7c24AwM",
+      "title": "Important Time Levels For Trading",
+      "url": "https://youtu.be/EYzP7c24AwM",
+      "slug": "important_time_levels_for_trading",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 64,
+      "video_id": "wWIHS_dxbEY",
+      "title": "DexterLab | Putting All The ICT Pieces Together - Master PO3",
+      "url": "https://youtu.be/wWIHS_dxbEY",
+      "slug": "dexterlab_putting_all_the_ict_pieces_together_master_po3",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 65,
+      "video_id": "FGkb_50BfT8",
+      "title": "High Resistance vs Low Resistance Liquidity - ICT Concepts",
+      "url": "https://youtu.be/FGkb_50BfT8",
+      "slug": "high_resistance_vs_low_resistance_liquidity_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 66,
+      "video_id": "hKCMqh0ZsY0",
+      "title": "How To Use The Economic Calendar For Trading",
+      "url": "https://youtu.be/hKCMqh0ZsY0",
+      "slug": "how_to_use_the_economic_calendar_for_trading",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 67,
+      "video_id": "WwmS47Gb3M0",
+      "title": "The \"Twitter Model\" The MMXM Trader - ICT Concepts",
+      "url": "https://youtu.be/WwmS47Gb3M0",
+      "slug": "the_twitter_model_the_mmxm_trader_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 68,
+      "video_id": "Tjk9bXERZy0",
+      "title": "Broadening Formations - ICT Seek & Destroy",
+      "url": "https://youtu.be/Tjk9bXERZy0",
+      "slug": "broadening_formations_ict_seek_destroy",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 69,
+      "video_id": "wB-fQiT_UDo",
+      "title": "DayTradingRauf | ICT MMXM Models",
+      "url": "https://youtu.be/wB-fQiT_UDo",
+      "slug": "daytradingrauf_ict_mmxm_models",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 70,
+      "video_id": "dtsrR8dX2Ro",
+      "title": "Intro To Futures Trading & Prop Firms",
+      "url": "https://youtu.be/dtsrR8dX2Ro",
+      "slug": "intro_to_futures_trading_prop_firms",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 71,
+      "video_id": "mwmWNCTEYtY",
+      "title": "Internal & External Liquidity Model - ICT Concepts",
+      "url": "https://youtu.be/mwmWNCTEYtY",
+      "slug": "internal_external_liquidity_model_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 72,
+      "video_id": "5aRB_ZY3474",
+      "title": "$niper | Internal & External Liquidity - ICT Daily Bias",
+      "url": "https://youtu.be/5aRB_ZY3474",
+      "slug": "niper_internal_external_liquidity_ict_daily_bias",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework",
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 73,
+      "video_id": "JPVhmPZiLKY",
+      "title": "TradingView Tutorial For Beginners [Full Guide]",
+      "url": "https://youtu.be/JPVhmPZiLKY",
+      "slug": "tradingview_tutorial_for_beginners_full_guide",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 74,
+      "video_id": "wrIZ7CAuFCc",
+      "title": "How To Journal Everyday For Trading",
+      "url": "https://youtu.be/wrIZ7CAuFCc",
+      "slug": "how_to_journal_everyday_for_trading",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 75,
+      "video_id": "QmGJFxfSHxM",
+      "title": "AM Trades | Blending The Economic Calendar, Daily Chart, & Weekly Profiles",
+      "url": "https://youtu.be/QmGJFxfSHxM",
+      "slug": "am_trades_blending_the_economic_calendar_daily_chart_weekly_profiles",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 76,
+      "video_id": "umyCqr_0NsI",
+      "title": "ICT Advanced Market Structure Simplified",
+      "url": "https://youtu.be/umyCqr_0NsI",
+      "slug": "ict_advanced_market_structure_simplified",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 77,
+      "video_id": "sgAnVR6RSDg",
+      "title": "Understanding Market Structure For Trading",
+      "url": "https://youtu.be/sgAnVR6RSDg",
+      "slug": "understanding_market_structure_for_trading",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 78,
+      "video_id": "JABOO4LYNjQ",
+      "title": "Jokerszn | Daily Orderflow - ICT Daily Bias",
+      "url": "https://youtu.be/JABOO4LYNjQ",
+      "slug": "jokerszn_daily_orderflow_ict_daily_bias",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 79,
+      "video_id": "9PKJ0U1gl4g",
+      "title": "Propulsion Blocks Simplified - ICT Concepts",
+      "url": "https://youtu.be/9PKJ0U1gl4g",
+      "slug": "propulsion_blocks_simplified_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 80,
+      "video_id": "27S9gjgcSlI",
+      "title": "SMT Divergence - ICT Concepts",
+      "url": "https://youtu.be/27S9gjgcSlI",
+      "slug": "smt_divergence_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "relative_strength"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "relative_strength"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 81,
+      "video_id": "zXtJSSkiNmo",
+      "title": "Ash Trades | The Journey To Profitability & The Unicorn Model",
+      "url": "https://youtu.be/zXtJSSkiNmo",
+      "slug": "ash_trades_the_journey_to_profitability_the_unicorn_model",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 82,
+      "video_id": "0R61Y6Pn74Q",
+      "title": "CPI Gold Trade Review | ICT Market Maker Sell Model [MMXM]",
+      "url": "https://youtu.be/0R61Y6Pn74Q",
+      "slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "review_categories": [
+        "trade_review"
+      ],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 83,
+      "video_id": "bbWPoajy2MY",
+      "title": "Mitigation Blocks Simplified - ICT Concepts",
+      "url": "https://youtu.be/bbWPoajy2MY",
+      "slug": "mitigation_blocks_simplified_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 84,
+      "video_id": "75S4vwD4P1U",
+      "title": "Breaker Blocks Simplified - ICT Concepts",
+      "url": "https://youtu.be/75S4vwD4P1U",
+      "slug": "breaker_blocks_simplified_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "breaker",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 85,
+      "video_id": "DMUiDBnTYc8",
+      "title": "Order Blocks Simplified - ICT Concepts",
+      "url": "https://youtu.be/DMUiDBnTYc8",
+      "slug": "order_blocks_simplified_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "order_block"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 86,
+      "video_id": "0OjlQ91TZiU",
+      "title": "Position Sizing For Trading - Futures & Forex",
+      "url": "https://youtu.be/0OjlQ91TZiU",
+      "slug": "position_sizing_for_trading_futures_forex",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 87,
+      "video_id": "E89d1HArbgM",
+      "title": "Market Structure Shift vs Change In State Of Delivery - ICT",
+      "url": "https://youtu.be/E89d1HArbgM",
+      "slug": "market_structure_shift_vs_change_in_state_of_delivery_ict",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "cisd",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 88,
+      "video_id": "uDJI2AbyyCs",
+      "title": "Inversion Fair Value Gaps (IFVG) - ICT Concepts",
+      "url": "https://youtu.be/uDJI2AbyyCs",
+      "slug": "inversion_fair_value_gaps_ifvg_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fair_value_gap"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 89,
+      "video_id": "3OivsP1j_UE",
+      "title": "Internal & External Liquidity (Daily Bias) - ICT Concepts",
+      "url": "https://youtu.be/3OivsP1j_UE",
+      "slug": "internal_external_liquidity_daily_bias_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework",
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 90,
+      "video_id": "CHIK5oBRKiw",
+      "title": "Change In State Of Delivery [CISD] - Orderblock Formation - ICT Concepts",
+      "url": "https://youtu.be/CHIK5oBRKiw",
+      "slug": "change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "cisd",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 91,
+      "video_id": "Pcbyc9TdNsU",
+      "title": "AMD & Standard Deviations - ICT Concepts",
+      "url": "https://youtu.be/Pcbyc9TdNsU",
+      "slug": "amd_standard_deviations_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 92,
+      "video_id": "kTWXpAo1uE8",
+      "title": "Standard Deviation Projections - ICT Concepts",
+      "url": "https://youtu.be/kTWXpAo1uE8",
+      "slug": "standard_deviation_projections_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "targets"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 93,
+      "video_id": "TCFvsZeYvV8",
+      "title": "ICT Power Of 3 - AMD",
+      "url": "https://youtu.be/TCFvsZeYvV8",
+      "slug": "ict_power_of_3_amd",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 94,
+      "video_id": "FXJBFbZQbck",
+      "title": "The Easiest Draw On Liquidity (DOL) - Daily Bias - ICT",
+      "url": "https://youtu.be/FXJBFbZQbck",
+      "slug": "the_easiest_draw_on_liquidity_dol_daily_bias_ict",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework",
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 95,
+      "video_id": "YESqIoA7Wyg",
+      "title": "Important Liquidity Levels - Draw On Liquidity - ICT",
+      "url": "https://youtu.be/YESqIoA7Wyg",
+      "slug": "important_liquidity_levels_draw_on_liquidity_ict",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 96,
+      "video_id": "MPeeE55rNOw",
+      "title": "ICT Killzones & Indicator Settings",
+      "url": "https://youtu.be/MPeeE55rNOw",
+      "slug": "ict_killzones_indicator_settings",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 97,
+      "video_id": "AdmnWLjf8rY",
+      "title": "ICT Son's Model - Higher Time Frames",
+      "url": "https://youtu.be/AdmnWLjf8rY",
+      "slug": "ict_son_s_model_higher_time_frames",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 98,
+      "video_id": "q40pRwjuPYQ",
+      "title": "ICT Son's Model - 30 Second Setup",
+      "url": "https://youtu.be/q40pRwjuPYQ",
+      "slug": "ict_son_s_model_30_second_setup",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 99,
+      "video_id": "rXMVPUZPw4A",
+      "title": "Breaker Block & FVG Entry Model - ICT Concepts",
+      "url": "https://youtu.be/rXMVPUZPw4A",
+      "slug": "breaker_block_fvg_entry_model_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "breaker",
+        "educational_channel",
+        "fair_value_gap"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 100,
+      "video_id": "1YRs4Z1lMws",
+      "title": "Optimal Trade Entry (OTE) - ICT Concepts",
+      "url": "https://youtu.be/1YRs4Z1lMws",
+      "slug": "optimal_trade_entry_ote_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 101,
+      "video_id": "7p9MBFk8EEM",
+      "title": "My Favorite Reversal Pattern | Orderblocks - ICT Concepts",
+      "url": "https://youtu.be/7p9MBFk8EEM",
+      "slug": "my_favorite_reversal_pattern_orderblocks_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "reversal"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 102,
+      "video_id": "wy3OSPxu5U0",
+      "title": "Top Down Analysis | Daily Bias To Entries - ICT Concepts",
+      "url": "https://youtu.be/wy3OSPxu5U0",
+      "slug": "top_down_analysis_daily_bias_to_entries_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework",
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 103,
+      "video_id": "o0v4KQxZbpU",
+      "title": "ICT Silver Bullet Strategy - No Daily Bias | With Backtest!",
+      "url": "https://youtu.be/o0v4KQxZbpU",
+      "slug": "ict_silver_bullet_strategy_no_daily_bias_with_backtest",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework",
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 104,
+      "video_id": "c_mh19e3mhI",
+      "title": "The Best Relative Strength Indicator For ES & NQ - ICT",
+      "url": "https://youtu.be/c_mh19e3mhI",
+      "slug": "the_best_relative_strength_indicator_for_es_nq_ict",
+      "review_categories": [],
+      "educational_categories": [
+        "relative_strength"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "relative_strength"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 105,
+      "video_id": "6zTz7WMdMWg",
+      "title": "Intraday Bias Simplified - ICT Concepts",
+      "url": "https://youtu.be/6zTz7WMdMWg",
+      "slug": "intraday_bias_simplified_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 106,
+      "video_id": "g3oDYq4P9ZE",
+      "title": "ICT Daily Bias - The Only Video You Will Ever Need!",
+      "url": "https://youtu.be/g3oDYq4P9ZE",
+      "slug": "ict_daily_bias_the_only_video_you_will_ever_need",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 107,
+      "video_id": "ynFA6E3qHj0",
+      "title": "Market Structure Shift vs Liquidity Grab - ICT Concepts",
+      "url": "https://youtu.be/ynFA6E3qHj0",
+      "slug": "market_structure_shift_vs_liquidity_grab_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 108,
+      "video_id": "_94CPMjWi9E",
+      "title": "Market Structure Shift - ICT Concepts",
+      "url": "https://youtu.be/_94CPMjWi9E",
+      "slug": "market_structure_shift_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 109,
+      "video_id": "MlMsG7li9zY",
+      "title": "Discount & Premium - ICT Concepts",
+      "url": "https://youtu.be/MlMsG7li9zY",
+      "slug": "discount_premium_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "equilibrium"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 110,
+      "video_id": "U8xH2dEgH5A",
+      "title": "Liquidity: Buyside & Sellside - ICT Concepts",
+      "url": "https://youtu.be/U8xH2dEgH5A",
+      "slug": "liquidity_buyside_sellside_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 111,
+      "video_id": "HFfChGFHD44",
+      "title": "Box Setup - The Easiest Entry Model? - ICT Concepts",
+      "url": "https://youtu.be/HFfChGFHD44",
+      "slug": "box_setup_the_easiest_entry_model_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 112,
+      "video_id": "-GkOTMYoJT4",
+      "title": "Inducement - ICT Concepts",
+      "url": "https://youtu.be/-GkOTMYoJT4",
+      "slug": "inducement_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 113,
+      "video_id": "0xygpCMwxbQ",
+      "title": "A+ ICT Entry Checklist - ICT Concepts",
+      "url": "https://youtu.be/0xygpCMwxbQ",
+      "slug": "a_ict_entry_checklist_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 114,
+      "video_id": "ZVUDpCyvxfQ",
+      "title": "Understanding Fair Value Gaps (FVG) - ICT Concepts",
+      "url": "https://youtu.be/ZVUDpCyvxfQ",
+      "slug": "understanding_fair_value_gaps_fvg_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fair_value_gap"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 115,
+      "video_id": "klaiq36QnEM",
+      "title": "\"Next Day Model\" The MMXM Trader - ICT Concepts",
+      "url": "https://youtu.be/klaiq36QnEM",
+      "slug": "next_day_model_the_mmxm_trader_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 116,
+      "video_id": "PlZD45uLPjE",
+      "title": "Seek & Destroy Profile - ICT Concepts",
+      "url": "https://youtu.be/PlZD45uLPjE",
+      "slug": "seek_destroy_profile_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 117,
+      "video_id": "2lIaRUtJqpU",
+      "title": "Low Resistance Liquidity Run - ICT Concepts",
+      "url": "https://youtu.be/2lIaRUtJqpU",
+      "slug": "low_resistance_liquidity_run_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 118,
+      "video_id": "YXoNowXQirM",
+      "title": "Open High Low Close (OHLC / OLHC) - ICT Concepts",
+      "url": "https://youtu.be/YXoNowXQirM",
+      "slug": "open_high_low_close_ohlc_olhc_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "power_of_three"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 119,
+      "video_id": "1uw4Vgyk9lc",
+      "title": "Scalping Made Simple - Building A Scalping Model",
+      "url": "https://youtu.be/1uw4Vgyk9lc",
+      "slug": "scalping_made_simple_building_a_scalping_model",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 120,
+      "video_id": "q1NmxUTm4n4",
+      "title": "SMT Divergence - ICT Concepts",
+      "url": "https://youtu.be/q1NmxUTm4n4",
+      "slug": "smt_divergence_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "relative_strength"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "relative_strength"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 121,
+      "video_id": "wwMjc9RfpCg",
+      "title": "Targets With Standard Deviation Projections - ICT Concepts",
+      "url": "https://youtu.be/wwMjc9RfpCg",
+      "slug": "targets_with_standard_deviation_projections_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "targets"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 122,
+      "video_id": "dcIdzqD3kMU",
+      "title": "Breaker Blocks Simplified - ICT Concepts",
+      "url": "https://youtu.be/dcIdzqD3kMU",
+      "slug": "breaker_blocks_simplified_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "breaker",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 123,
+      "video_id": "Y8DkNYhq0X0",
+      "title": "Orderblocks Simplified - ICT Concepts",
+      "url": "https://youtu.be/Y8DkNYhq0X0",
+      "slug": "orderblocks_simplified_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 124,
+      "video_id": "Ovotm9l99QQ",
+      "title": "Draw on Liquidity Example (1/18/23) - ICT Concepts",
+      "url": "https://youtu.be/Ovotm9l99QQ",
+      "slug": "draw_on_liquidity_example_1_18_23_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 125,
+      "video_id": "MmvC4rsmmcM",
+      "title": "Draw on Liquidity (DOL) - ICT Concepts",
+      "url": "https://youtu.be/MmvC4rsmmcM",
+      "slug": "draw_on_liquidity_dol_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 126,
+      "video_id": "rWmF8WR8kdo",
+      "title": "First Trade of 2023 - ICT Concepts",
+      "url": "https://youtu.be/rWmF8WR8kdo",
+      "slug": "first_trade_of_2023_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 127,
+      "video_id": "yq4Z7q4E6nU",
+      "title": "Trading without a Structure Shift / Break - ICT Concepts",
+      "url": "https://youtu.be/yq4Z7q4E6nU",
+      "slug": "trading_without_a_structure_shift_break_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 128,
+      "video_id": "wDXTIDbIMwU",
+      "title": "Top Down Analysis - ICT Concepts",
+      "url": "https://youtu.be/wDXTIDbIMwU",
+      "slug": "top_down_analysis_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 129,
+      "video_id": "NgFIza9qsGQ",
+      "title": "Finding Entries Into Trend - ICT Concepts",
+      "url": "https://youtu.be/NgFIza9qsGQ",
+      "slug": "finding_entries_into_trend_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 130,
+      "video_id": "b6yvRKf8haE",
+      "title": "Why You Should Use 8:30 & Midnight Open (EST) -  ICT Concepts",
+      "url": "https://youtu.be/b6yvRKf8haE",
+      "slug": "why_you_should_use_8_30_midnight_open_est_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 131,
+      "video_id": "CAuN4tvLInQ",
+      "title": "Choosing Dealing Ranges & Displacement Ranges - ICT Concepts",
+      "url": "https://youtu.be/CAuN4tvLInQ",
+      "slug": "choosing_dealing_ranges_displacement_ranges_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 132,
+      "video_id": "Prd11Yij4tI",
+      "title": "Use TradingView Like a Pro + My Settings",
+      "url": "https://youtu.be/Prd11Yij4tI",
+      "slug": "use_tradingview_like_a_pro_my_settings",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 133,
+      "video_id": "E6bpY4dQvlE",
+      "title": "Box Setup - The Easiest Entry Model? - ICT Concepts",
+      "url": "https://youtu.be/E6bpY4dQvlE",
+      "slug": "box_setup_the_easiest_entry_model_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 134,
+      "video_id": "5rbFskdmEmU",
+      "title": "Structure Shift vs Liquidity Grab - ICT Concepts",
+      "url": "https://youtu.be/5rbFskdmEmU",
+      "slug": "structure_shift_vs_liquidity_grab_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 135,
+      "video_id": "YmdC_LKT-Pk",
+      "title": "Lower Time Frame Entries Using HTF POI - ICT Concepts",
+      "url": "https://youtu.be/YmdC_LKT-Pk",
+      "slug": "lower_time_frame_entries_using_htf_poi_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "point_of_interest",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 136,
+      "video_id": "hh_kKK4Fhrw",
+      "title": "Higher Time Frame Points of Interest - ICT Concepts",
+      "url": "https://youtu.be/hh_kKK4Fhrw",
+      "slug": "higher_time_frame_points_of_interest_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "point_of_interest",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 137,
+      "video_id": "A8UpRZlRzlg",
+      "title": "Build An Entry Model - ICT Concepts",
+      "url": "https://youtu.be/A8UpRZlRzlg",
+      "slug": "build_an_entry_model_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 138,
+      "video_id": "yOPESX2aWkI",
+      "title": "Balance Price Range (BPR) - ICT Concepts",
+      "url": "https://youtu.be/yOPESX2aWkI",
+      "slug": "balance_price_range_bpr_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 139,
+      "video_id": "xvqsLTpmpsI",
+      "title": "Find Lower Time Frame Entries Using Bias - ICT Concepts",
+      "url": "https://youtu.be/xvqsLTpmpsI",
+      "slug": "find_lower_time_frame_entries_using_bias_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "timeframe_alignment"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel",
+        "top_down_alignment"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 140,
+      "video_id": "xdm_OexQWJY",
+      "title": "Intraday Bias - ICT Concepts",
+      "url": "https://youtu.be/xdm_OexQWJY",
+      "slug": "intraday_bias_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 141,
+      "video_id": "k_Qoou9vi5c",
+      "title": "ICT Trade Example - 15 Second Entry",
+      "url": "https://youtu.be/k_Qoou9vi5c",
+      "slug": "ict_trade_example_15_second_entry",
+      "review_categories": [
+        "trade_example"
+      ],
+      "educational_categories": [],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "example",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 142,
+      "video_id": "sfpLRGn85cY",
+      "title": "Funded Account Evaluation - How I trade",
+      "url": "https://youtu.be/sfpLRGn85cY",
+      "slug": "funded_account_evaluation_how_i_trade",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 143,
+      "video_id": "Zm2oKad3Tb8",
+      "title": "How I Prepare For NY Session (Morning Routine) - ICT Concepts",
+      "url": "https://youtu.be/Zm2oKad3Tb8",
+      "slug": "how_i_prepare_for_ny_session_morning_routine_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 144,
+      "video_id": "9MUej4g9Jyg",
+      "title": "Strat Entries - Strat and ICT Part 2",
+      "url": "https://youtu.be/9MUej4g9Jyg",
+      "slug": "strat_entries_strat_and_ict_part_2",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 145,
+      "video_id": "dSccSI7uqvE",
+      "title": "Broadening Formations - Strat and ICT Part 1",
+      "url": "https://youtu.be/dSccSI7uqvE",
+      "slug": "broadening_formations_strat_and_ict_part_1",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 146,
+      "video_id": "aDYzoae3viQ",
+      "title": "15 Second Chart Example - ICT Concepts",
+      "url": "https://youtu.be/aDYzoae3viQ",
+      "slug": "15_second_chart_example_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 147,
+      "video_id": "ivirRu3fc4o",
+      "title": "Refine Entries and Scalp Using the 15 Second Chart - ICT Concepts",
+      "url": "https://youtu.be/ivirRu3fc4o",
+      "slug": "refine_entries_and_scalp_using_the_15_second_chart_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 148,
+      "video_id": "k3hTgbHBz1U",
+      "title": "Intro to the Inducement Model - ICT Concepts",
+      "url": "https://youtu.be/k3hTgbHBz1U",
+      "slug": "intro_to_the_inducement_model_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 149,
+      "video_id": "gZLLuB_rmis",
+      "title": "OTE Optimal Trade Entry- ICT Concepts",
+      "url": "https://youtu.be/gZLLuB_rmis",
+      "slug": "ote_optimal_trade_entry_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 150,
+      "video_id": "FXNLGYxfbDc",
+      "title": "Increase Risk to Reward Ratio Using Lower Time Frames - ICT concepts",
+      "url": "https://youtu.be/FXNLGYxfbDc",
+      "slug": "increase_risk_to_reward_ratio_using_lower_time_frames_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 151,
+      "video_id": "LZZAaILYNyI",
+      "title": "Stop Losses, Placement & Trailing - ICT Concepts",
+      "url": "https://youtu.be/LZZAaILYNyI",
+      "slug": "stop_losses_placement_trailing_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 152,
+      "video_id": "lpam8F-N3EM",
+      "title": "A+ ICT Entry Checklist - ICT Concepts",
+      "url": "https://youtu.be/lpam8F-N3EM",
+      "slug": "a_ict_entry_checklist_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 153,
+      "video_id": "Gu7FjYYcKhI",
+      "title": "Discount & Premium - ICT Concepts",
+      "url": "https://youtu.be/Gu7FjYYcKhI",
+      "slug": "discount_premium_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "equilibrium"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 154,
+      "video_id": "Njs-eRpeP9Q",
+      "title": "What is Liquidity? - ICT Concepts",
+      "url": "https://youtu.be/Njs-eRpeP9Q",
+      "slug": "what_is_liquidity_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "liquidity_sweep"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 155,
+      "video_id": "opYUBJ8IFgg",
+      "title": "What is Rebalance? - ICT Concepts",
+      "url": "https://youtu.be/opYUBJ8IFgg",
+      "slug": "what_is_rebalance_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 156,
+      "video_id": "1oco9lesido",
+      "title": "What is Displacement? - ICT Concepts",
+      "url": "https://youtu.be/1oco9lesido",
+      "slug": "what_is_displacement_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 157,
+      "video_id": "pWAjzKndWXo",
+      "title": "Price Targets - ICT Concepts",
+      "url": "https://youtu.be/pWAjzKndWXo",
+      "slug": "price_targets_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "targets"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 158,
+      "video_id": "eHQ4nE-TQ2w",
+      "title": "Smart Money Divergences (SMT) - ICT Concepts",
+      "url": "https://youtu.be/eHQ4nE-TQ2w",
+      "slug": "smart_money_divergences_smt_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "relative_strength"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "relative_strength"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 159,
+      "video_id": "FdRKBTz0Fps",
+      "title": "Reversal or Pullback? Using Market Structure To Determine Trend - ICT Concepts",
+      "url": "https://youtu.be/FdRKBTz0Fps",
+      "slug": "reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "market_structure",
+        "continuation_reversal"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "reversal"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 160,
+      "video_id": "PePk1V0Q4QQ",
+      "title": "Intro to Market Structure Shifts, Fair Value Gaps, and Displacement - ICT Concepts",
+      "url": "https://youtu.be/PePk1V0Q4QQ",
+      "slug": "intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model",
+        "market_structure"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fair_value_gap"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 161,
+      "video_id": "tZMgGsTqqVM",
+      "title": "ICT Daily Bias",
+      "url": "https://youtu.be/tZMgGsTqqVM",
+      "slug": "ict_daily_bias",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "daily_bias",
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 162,
+      "video_id": "fwUUkJ5q6tc",
+      "title": "Improve Your Trade Entries Within Fair Value Gaps (FVG)",
+      "url": "https://youtu.be/fwUUkJ5q6tc",
+      "slug": "improve_your_trade_entries_within_fair_value_gaps_fvg",
+      "review_categories": [],
+      "educational_categories": [
+        "execution_model"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel",
+        "fair_value_gap"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 163,
+      "video_id": "s9Poh_RaN2o",
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "url": "https://youtu.be/s9Poh_RaN2o",
+      "slug": "index_futures_weekly_recap_ict_concepts",
+      "review_categories": [
+        "weekly_recap"
+      ],
+      "educational_categories": [],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "recap",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 164,
+      "video_id": "6A3Thkqxllk",
+      "title": "Simple Options Day Trading Strategy - Auto Plotted Levels and ICT entries!",
+      "url": "https://youtu.be/6A3Thkqxllk",
+      "slug": "simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 165,
+      "video_id": "LR85yoIuWuA",
+      "title": "ICT Index Futures Weekly Recap - Week of 5/16/22",
+      "url": "https://youtu.be/LR85yoIuWuA",
+      "slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "review_categories": [
+        "weekly_recap"
+      ],
+      "educational_categories": [],
+      "is_trade_review_candidate": true,
+      "is_educational_candidate": true,
+      "topics": [
+        "recap",
+        "review",
+        "trade_review"
+      ],
+      "corpus_partition_candidate": "trade_review"
+    },
+    {
+      "position": 166,
+      "video_id": "yVAswlYyWzk",
+      "title": "Trading Log for Futures and Forex - Excel",
+      "url": "https://youtu.be/yVAswlYyWzk",
+      "slug": "trading_log_for_futures_and_forex_excel",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 167,
+      "video_id": "k7hbGT0vjrA",
+      "title": "Emini S&P 500 Futures ICT 5/13/22",
+      "url": "https://youtu.be/k7hbGT0vjrA",
+      "slug": "emini_s_p_500_futures_ict_5_13_22",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 168,
+      "video_id": "ZFrnp9cHiw0",
+      "title": "Emini S&P 500 Futures ICT 5/12/22",
+      "url": "https://youtu.be/ZFrnp9cHiw0",
+      "slug": "emini_s_p_500_futures_ict_5_12_22",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 169,
+      "video_id": "uU5t386tSe8",
+      "title": "Trading Log for Options - Excel",
+      "url": "https://youtu.be/uU5t386tSe8",
+      "slug": "trading_log_for_options_excel",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 170,
+      "video_id": "q2zXFr75JLw",
+      "title": "Simple Day Trading Strategy - Triple(S)",
+      "url": "https://youtu.be/q2zXFr75JLw",
+      "slug": "simple_day_trading_strategy_triple_s",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 171,
+      "video_id": "-ei-71kFaPU",
+      "title": "Simple Day Trading Strategy -Intro",
+      "url": "https://youtu.be/-ei-71kFaPU",
+      "slug": "simple_day_trading_strategy_intro",
+      "review_categories": [],
+      "educational_categories": [
+        "trading_framework"
+      ],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": true,
+      "topics": [
+        "educational_channel"
+      ],
+      "corpus_partition_candidate": "educational_youtube"
+    },
+    {
+      "position": 172,
+      "video_id": "YiFagE2-drU",
+      "title": "Trigger With Bracket in ThinkorSwim",
+      "url": "https://youtu.be/YiFagE2-drU",
+      "slug": "trigger_with_bracket_in_thinkorswim",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 173,
+      "video_id": "DAGomi0yULk",
+      "title": "Shared Chartbook in Sierra Chart - open and share",
+      "url": "https://youtu.be/DAGomi0yULk",
+      "slug": "shared_chartbook_in_sierra_chart_open_and_share",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 174,
+      "video_id": "UBuQWbvfK3Q",
+      "title": "ThinkorSwim Setup - Step by Step Guide",
+      "url": "https://youtu.be/UBuQWbvfK3Q",
+      "slug": "thinkorswim_setup_step_by_step_guide",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 175,
+      "video_id": "lu68bLySUEo",
+      "title": "Setting up DOM on ThinkorSwim",
+      "url": "https://youtu.be/lu68bLySUEo",
+      "slug": "setting_up_dom_on_thinkorswim",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 176,
+      "video_id": "frK3k_FW9m0",
+      "title": "Loading Symbol into Sierra Chart",
+      "url": "https://youtu.be/frK3k_FW9m0",
+      "slug": "loading_symbol_into_sierra_chart",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 177,
+      "video_id": "sezDhbO3XJo",
+      "title": "Pan Vertically with Hand Tool in Sierra Chart",
+      "url": "https://youtu.be/sezDhbO3XJo",
+      "slug": "pan_vertically_with_hand_tool_in_sierra_chart",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 178,
+      "video_id": "w6Zl_IndPrA",
+      "title": "DOM - ThinkorSwim - See all orders",
+      "url": "https://youtu.be/w6Zl_IndPrA",
+      "slug": "dom_thinkorswim_see_all_orders",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 179,
+      "video_id": "PVOTsDXBQPI",
+      "title": "Trade Options using Active Trader - ThinkorSwim",
+      "url": "https://youtu.be/PVOTsDXBQPI",
+      "slug": "trade_options_using_active_trader_thinkorswim",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 180,
+      "video_id": "U9bJU0kwT2Q",
+      "title": "Merging or Expanding Futures Sessions in Sierra Chart",
+      "url": "https://youtu.be/U9bJU0kwT2Q",
+      "slug": "merging_or_expanding_futures_sessions_in_sierra_chart",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    },
+    {
+      "position": 181,
+      "video_id": "OgMWE4nXz1w",
+      "title": "Market Profile Settings for Sierra Chart",
+      "url": "https://youtu.be/OgMWE4nXz1w",
+      "slug": "market_profile_settings_for_sierra_chart",
+      "review_categories": [],
+      "educational_categories": [],
+      "is_trade_review_candidate": false,
+      "is_educational_candidate": false,
+      "topics": [],
+      "corpus_partition_candidate": null
+    }
+  ]
+}

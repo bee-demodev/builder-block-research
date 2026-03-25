@@ -1,0 +1,482 @@
+{
+  "generated_at": "2026-03-24T19:33:51.913339+00:00",
+  "summary": {
+    "packet_count": 5,
+    "source_queue_row_count": 75,
+    "requested_limit": 5
+  },
+  "packets": [
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::closure",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_2_visual_v1",
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "checkpoint": "closure",
+      "framework_slug": "ttfm",
+      "profile_slug": "ttrades_curriculum",
+      "brain_type": "setup_scorer",
+      "embedding_backend": "google_gemini",
+      "priority_score": 140,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_model_disagreement",
+        "checkpoint:closure",
+        "jaccard:0.10",
+        "disagreement:9",
+        "weak_support:0.65",
+        "uncertain_labels:1"
+      ],
+      "recommended_action": "review_model_disagreement",
+      "reviewer_action": "Compare weak labels against model probabilities and correct the label set.",
+      "weak_labels": [
+        "candle_2_closure"
+      ],
+      "predicted_labels": [
+        "fair_value_gap",
+        "wick_logic",
+        "point_of_interest",
+        "order_block",
+        "breaker",
+        "liquidity_sweep",
+        "candle_2_closure",
+        "equilibrium",
+        "invalidation",
+        "candle_3_closure"
+      ],
+      "label_probabilities": {
+        "breaker": 0.74872,
+        "candle_2_closure": 0.646312,
+        "candle_3_closure": 0.43637,
+        "equilibrium": 0.618168,
+        "fair_value_gap": 0.856271,
+        "invalidation": 0.563933,
+        "liquidity_sweep": 0.702597,
+        "order_block": 0.781014,
+        "point_of_interest": 0.793358,
+        "protected_swing": 0.183434,
+        "top_down_alignment": 0.021517,
+        "wick_logic": 0.829937,
+        "zone_boundary": 0.002421
+      },
+      "prediction_threshold_mode": "per_label",
+      "prediction_thresholds": {
+        "breaker": 0.35,
+        "candle_2_closure": 0.35,
+        "candle_3_closure": 0.35,
+        "equilibrium": 0.5,
+        "fair_value_gap": 0.3,
+        "invalidation": 0.25,
+        "liquidity_sweep": 0.5,
+        "order_block": 0.3,
+        "point_of_interest": 0.5,
+        "protected_swing": 0.55,
+        "top_down_alignment": 0.5,
+        "wick_logic": 0.55,
+        "zone_boundary": 0.45
+      },
+      "prediction_threshold": 0.35,
+      "disagreement_count": 9,
+      "missing_weak_labels": [],
+      "extra_predicted_labels": [
+        "breaker",
+        "candle_3_closure",
+        "equilibrium",
+        "fair_value_gap",
+        "invalidation",
+        "liquidity_sweep",
+        "order_block",
+        "point_of_interest",
+        "wick_logic"
+      ],
+      "uncertainty_labels": [
+        "candle_3_closure"
+      ],
+      "weak_label_confidence": 0.35,
+      "sample_weight": 0.35,
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\closure_00108240.jpg",
+      "audio_path": "knowledge/ttfm_video_corpus/audio_clips/ttrades_top_down_chart_lessons_2/closure_00108240.wav",
+      "transcript_snippet": "to trade that? Well, I can look for that previous day low as I talked about in my candle 2 video. Now marking out my point of interest as a fair value gap. The easier trade does lie in the continuation. So looking for the continuation following Tuesday reversal. I'm looking for Wednesday to trade higher. And that is...",
+      "evidence_refs": [
+        "https://youtu.be/UBTl7za9obc",
+        "ttrades_top_down_chart_lessons_2:0001"
+      ]
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::sweep",
+      "case_ref": "youtube_candle_2_closure_foundation_visual_v1",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "checkpoint": "sweep",
+      "framework_slug": "ttfm",
+      "profile_slug": "ttrades_curriculum",
+      "brain_type": "setup_scorer",
+      "embedding_backend": "google_gemini",
+      "priority_score": 143,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_model_disagreement",
+        "checkpoint:sweep",
+        "jaccard:0.18",
+        "disagreement:9",
+        "weak_support:0.92",
+        "uncertain_labels:4"
+      ],
+      "recommended_action": "review_model_disagreement",
+      "reviewer_action": "Compare weak labels against model probabilities and correct the label set.",
+      "weak_labels": [
+        "fair_value_gap",
+        "liquidity_sweep"
+      ],
+      "predicted_labels": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "liquidity_sweep",
+        "fair_value_gap",
+        "breaker",
+        "equilibrium",
+        "order_block",
+        "protected_swing",
+        "wick_logic",
+        "point_of_interest",
+        "invalidation"
+      ],
+      "label_probabilities": {
+        "breaker": 0.832071,
+        "candle_2_closure": 0.970312,
+        "candle_3_closure": 0.936876,
+        "equilibrium": 0.731886,
+        "fair_value_gap": 0.914995,
+        "invalidation": 0.300285,
+        "liquidity_sweep": 0.93469,
+        "order_block": 0.628493,
+        "point_of_interest": 0.512109,
+        "protected_swing": 0.569607,
+        "top_down_alignment": 0.008476,
+        "wick_logic": 0.568006,
+        "zone_boundary": 0.004615
+      },
+      "prediction_threshold_mode": "per_label",
+      "prediction_thresholds": {
+        "breaker": 0.35,
+        "candle_2_closure": 0.35,
+        "candle_3_closure": 0.35,
+        "equilibrium": 0.5,
+        "fair_value_gap": 0.3,
+        "invalidation": 0.25,
+        "liquidity_sweep": 0.5,
+        "order_block": 0.3,
+        "point_of_interest": 0.5,
+        "protected_swing": 0.55,
+        "top_down_alignment": 0.5,
+        "wick_logic": 0.55,
+        "zone_boundary": 0.45
+      },
+      "prediction_threshold": 0.4,
+      "disagreement_count": 9,
+      "missing_weak_labels": [],
+      "extra_predicted_labels": [
+        "breaker",
+        "candle_2_closure",
+        "candle_3_closure",
+        "equilibrium",
+        "invalidation",
+        "order_block",
+        "point_of_interest",
+        "protected_swing",
+        "wick_logic"
+      ],
+      "uncertainty_labels": [
+        "point_of_interest",
+        "wick_logic",
+        "protected_swing",
+        "invalidation"
+      ],
+      "weak_label_confidence": 0.35,
+      "sample_weight": 0.35,
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\sweep_00101800.jpg",
+      "audio_path": "knowledge/ttfm_video_corpus/audio_clips/candle_2_closure_foundation/sweep_00101800.wav",
+      "transcript_snippet": "reversal closure or a candle 2 closure where in the bullish scenario here, price sweeps out the previous candle's low and then closes back above that candle's low, signifying that price has reversed in candle 2 or this low here. In a bearish scenario, we have price sweeping out the previous candle's high and then cl...",
+      "evidence_refs": [
+        "https://youtu.be/tyoxl1l-6iI",
+        "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+        "candle_2_closure_foundation:0001"
+      ]
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+      "case_ref": "youtube_equilibrium_for_expansions_visual_v1",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "checkpoint": "closure",
+      "framework_slug": "ttfm",
+      "profile_slug": "ttrades_curriculum",
+      "brain_type": "setup_scorer",
+      "embedding_backend": "google_gemini",
+      "priority_score": 145,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_model_disagreement",
+        "checkpoint:closure",
+        "jaccard:0.11",
+        "disagreement:8",
+        "weak_support:0.77",
+        "uncertain_labels:2"
+      ],
+      "recommended_action": "review_model_disagreement",
+      "reviewer_action": "Compare weak labels against model probabilities and correct the label set.",
+      "weak_labels": [
+        "wick_logic"
+      ],
+      "predicted_labels": [
+        "fair_value_gap",
+        "order_block",
+        "breaker",
+        "wick_logic",
+        "liquidity_sweep",
+        "invalidation",
+        "point_of_interest",
+        "candle_2_closure",
+        "equilibrium"
+      ],
+      "label_probabilities": {
+        "breaker": 0.772695,
+        "candle_2_closure": 0.617502,
+        "candle_3_closure": 0.342887,
+        "equilibrium": 0.588908,
+        "fair_value_gap": 0.875757,
+        "invalidation": 0.703746,
+        "liquidity_sweep": 0.760477,
+        "order_block": 0.794058,
+        "point_of_interest": 0.678367,
+        "protected_swing": 0.26963,
+        "top_down_alignment": 0.007041,
+        "wick_logic": 0.77051,
+        "zone_boundary": 0.000949
+      },
+      "prediction_threshold_mode": "per_label",
+      "prediction_thresholds": {
+        "breaker": 0.35,
+        "candle_2_closure": 0.35,
+        "candle_3_closure": 0.35,
+        "equilibrium": 0.5,
+        "fair_value_gap": 0.3,
+        "invalidation": 0.25,
+        "liquidity_sweep": 0.5,
+        "order_block": 0.3,
+        "point_of_interest": 0.5,
+        "protected_swing": 0.55,
+        "top_down_alignment": 0.5,
+        "wick_logic": 0.55,
+        "zone_boundary": 0.45
+      },
+      "prediction_threshold": 0.55,
+      "disagreement_count": 8,
+      "missing_weak_labels": [],
+      "extra_predicted_labels": [
+        "breaker",
+        "candle_2_closure",
+        "equilibrium",
+        "fair_value_gap",
+        "invalidation",
+        "liquidity_sweep",
+        "order_block",
+        "point_of_interest"
+      ],
+      "uncertainty_labels": [
+        "candle_3_closure",
+        "equilibrium"
+      ],
+      "weak_label_confidence": 0.35,
+      "sample_weight": 0.35,
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\closure_00638000.jpg",
+      "audio_path": "knowledge/ttfm_video_corpus/audio_clips/equilibrium_for_expansions/closure_00638000.wav",
+      "transcript_snippet": "concerning thing is we have already taken out this previous High here which can set up a deeper retracement let's see what happens intraday here we are currently respecting this opposing candle do we get the confirmation of the close through the series of down Clos candles that made this low Let's see we do not so w...",
+      "evidence_refs": [
+        "https://youtu.be/IPZjNI1B5a0",
+        "https://ttrades.com/using-equilibrium-in-continuations/",
+        "equilibrium_for_expansions:0008"
+      ]
+    },
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::closure",
+      "case_ref": "youtube_fractal_model_fundamentals_visual_v1",
+      "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+      "checkpoint": "closure",
+      "framework_slug": "ttfm",
+      "profile_slug": "ttrades_curriculum",
+      "brain_type": "setup_scorer",
+      "embedding_backend": "google_gemini",
+      "priority_score": 139,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_model_disagreement",
+        "checkpoint:closure",
+        "jaccard:0.20",
+        "disagreement:8",
+        "weak_support:0.82"
+      ],
+      "recommended_action": "review_model_disagreement",
+      "reviewer_action": "Compare weak labels against model probabilities and correct the label set.",
+      "weak_labels": [
+        "candle_2_closure",
+        "wick_logic"
+      ],
+      "predicted_labels": [
+        "fair_value_gap",
+        "candle_2_closure",
+        "point_of_interest",
+        "wick_logic",
+        "liquidity_sweep",
+        "breaker",
+        "candle_3_closure",
+        "equilibrium",
+        "order_block",
+        "invalidation"
+      ],
+      "label_probabilities": {
+        "breaker": 0.744075,
+        "candle_2_closure": 0.839221,
+        "candle_3_closure": 0.732425,
+        "equilibrium": 0.713449,
+        "fair_value_gap": 0.839329,
+        "invalidation": 0.381246,
+        "liquidity_sweep": 0.75246,
+        "order_block": 0.684286,
+        "point_of_interest": 0.801857,
+        "protected_swing": 0.24335,
+        "top_down_alignment": 0.027599,
+        "wick_logic": 0.794469,
+        "zone_boundary": 0.008341
+      },
+      "prediction_threshold_mode": "per_label",
+      "prediction_thresholds": {
+        "breaker": 0.35,
+        "candle_2_closure": 0.35,
+        "candle_3_closure": 0.35,
+        "equilibrium": 0.5,
+        "fair_value_gap": 0.3,
+        "invalidation": 0.25,
+        "liquidity_sweep": 0.5,
+        "order_block": 0.3,
+        "point_of_interest": 0.5,
+        "protected_swing": 0.55,
+        "top_down_alignment": 0.5,
+        "wick_logic": 0.55,
+        "zone_boundary": 0.45
+      },
+      "prediction_threshold": 0.45,
+      "disagreement_count": 8,
+      "missing_weak_labels": [],
+      "extra_predicted_labels": [
+        "breaker",
+        "candle_3_closure",
+        "equilibrium",
+        "fair_value_gap",
+        "invalidation",
+        "liquidity_sweep",
+        "order_block",
+        "point_of_interest"
+      ],
+      "uncertainty_labels": [],
+      "weak_label_confidence": 0.35,
+      "sample_weight": 0.35,
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\closure_00322600.jpg",
+      "audio_path": "knowledge/ttfm_video_corpus/audio_clips/fractal_model_fundamentals/closure_00322600.wav",
+      "transcript_snippet": "inside. So considering that a reversal, I now have a one-sided bias to look short in this following day. So using our checklist in the trades playbook, we can now drop down to the hourly time frame. And what are we looking for? We're looking for a change in the state of delivery in candle 2. Right? So in this revers...",
+      "evidence_refs": [
+        "https://youtu.be/TNybDCtwBnc",
+        "https://ttrades.com/fractal-model-playbook-aligning-daily-hourly-and-5-minute-charts/",
+        "fractal_model_fundamentals:0004"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::closure",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_1_visual_v1",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "checkpoint": "closure",
+      "framework_slug": "ttfm",
+      "profile_slug": "ttrades_curriculum",
+      "brain_type": "setup_scorer",
+      "embedding_backend": "google_gemini",
+      "priority_score": 143,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_model_disagreement",
+        "checkpoint:closure",
+        "jaccard:0.00",
+        "disagreement:8",
+        "weak_support:0.12",
+        "uncertain_labels:2"
+      ],
+      "recommended_action": "review_model_disagreement",
+      "reviewer_action": "Compare weak labels against model probabilities and correct the label set.",
+      "weak_labels": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "predicted_labels": [
+        "point_of_interest",
+        "wick_logic",
+        "order_block",
+        "equilibrium",
+        "fair_value_gap",
+        "breaker"
+      ],
+      "label_probabilities": {
+        "breaker": 0.35155,
+        "candle_2_closure": 0.189375,
+        "candle_3_closure": 0.058221,
+        "equilibrium": 0.556769,
+        "fair_value_gap": 0.551657,
+        "invalidation": 0.092336,
+        "liquidity_sweep": 0.270977,
+        "order_block": 0.701733,
+        "point_of_interest": 0.793234,
+        "protected_swing": 0.067711,
+        "top_down_alignment": 0.164761,
+        "wick_logic": 0.763499,
+        "zone_boundary": 0.008148
+      },
+      "prediction_threshold_mode": "per_label",
+      "prediction_thresholds": {
+        "breaker": 0.35,
+        "candle_2_closure": 0.35,
+        "candle_3_closure": 0.35,
+        "equilibrium": 0.5,
+        "fair_value_gap": 0.3,
+        "invalidation": 0.25,
+        "liquidity_sweep": 0.5,
+        "order_block": 0.3,
+        "point_of_interest": 0.5,
+        "protected_swing": 0.55,
+        "top_down_alignment": 0.5,
+        "wick_logic": 0.55,
+        "zone_boundary": 0.45
+      },
+      "prediction_threshold": 0.35,
+      "disagreement_count": 8,
+      "missing_weak_labels": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "extra_predicted_labels": [
+        "breaker",
+        "equilibrium",
+        "fair_value_gap",
+        "order_block",
+        "point_of_interest",
+        "wick_logic"
+      ],
+      "uncertainty_labels": [
+        "breaker",
+        "equilibrium"
+      ],
+      "weak_label_confidence": 0.35,
+      "sample_weight": 0.35,
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\closure_00482500.jpg",
+      "audio_path": "knowledge/ttfm_video_corpus/audio_clips/ttrades_top_down_chart_lessons_1/closure_00482500.wav",
+      "transcript_snippet": "TTrades Top-Down Chart Lessons #1. review, top_down_analysis, trade_review. Candle 2 or Candle 3 closure with CISD through the level.",
+      "evidence_refs": [
+        "https://youtu.be/Nlw-PZhoViQ",
+        "ttrades_top_down_chart_lessons_1:0002"
+      ]
+    }
+  ]
+}

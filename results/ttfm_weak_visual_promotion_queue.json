@@ -1,0 +1,2220 @@
+{
+  "generated_at": "2026-03-24T19:32:43.595233+00:00",
+  "summary": {
+    "row_count": 75,
+    "ready_to_promote_count": 0,
+    "review_candidate_count": 59,
+    "blocked_contradiction_count": 0,
+    "missing_frame_count": 0,
+    "recommended_action_counts": {
+      "collect_more_label_evidence": 16,
+      "review_for_teacher_promotion": 59
+    },
+    "priority_band_counts": {
+      "high": 32,
+      "low": 16,
+      "medium": 27
+    }
+  },
+  "items": [
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::confirmation",
+      "case_ref": "youtube_candle_2_closure_foundation_visual_v1",
+      "video_slug": "candle_2_closure_foundation",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "equilibrium",
+        "fair_value_gap"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\confirmation_00165120.jpg",
+      "evidence_refs": [
+        "https://youtu.be/tyoxl1l-6iI",
+        "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+        "candle_2_closure_foundation:0002"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 94,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::confirmation",
+      "case_ref": "youtube_cisd_validates_swing_points_visual_v1",
+      "video_slug": "cisd_validates_swing_points",
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "breaker",
+        "candle_2_closure",
+        "candle_3_closure",
+        "equilibrium",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\confirmation_00235759.jpg",
+      "evidence_refs": [
+        "https://youtu.be/vn1RYjhJUnQ",
+        "https://ttrades.com/how-change-in-the-state-of-delivery-confirms-swing-points/",
+        "cisd_validates_swing_points:0003"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 94,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:7",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::confirmation",
+      "case_ref": "youtube_easy_daily_bias_mechanical_framework_visual_v1",
+      "video_slug": "easy_daily_bias_mechanical_framework",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "breaker",
+        "candle_2_closure",
+        "equilibrium",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "order_block",
+        "protected_swing"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\confirmation_00303480.jpg",
+      "evidence_refs": [
+        "https://youtu.be/-KKuZb5Z5aU",
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+        "easy_daily_bias_mechanical_framework:0004"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 94,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:7",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::confirmation",
+      "case_ref": "youtube_equilibrium_for_expansions_visual_v1",
+      "video_slug": "equilibrium_for_expansions",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "breaker",
+        "equilibrium",
+        "fair_value_gap",
+        "invalidation",
+        "liquidity_sweep",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\confirmation_00940119.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IPZjNI1B5a0",
+        "https://ttrades.com/using-equilibrium-in-continuations/",
+        "equilibrium_for_expansions:0012"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 94,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:6",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::confirmation",
+      "case_ref": "youtube_trading_candle_3_visual_v1",
+      "video_slug": "trading_candle_3",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "breaker",
+        "fair_value_gap",
+        "invalidation",
+        "liquidity_sweep",
+        "order_block",
+        "protected_swing"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\confirmation_00857440.jpg",
+      "evidence_refs": [
+        "https://youtu.be/qdQYhePcvGE",
+        "https://ttrades.com/how-to-trade-candle-3-in-the-fractal-model/",
+        "trading_candle_3:0012"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 94,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:6",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::confirmation",
+      "case_ref": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1",
+      "video_slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "title": "CPI Gold Trade Review | ICT Market Maker Sell Model [MMXM]",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "equilibrium",
+        "fair_value_gap",
+        "invalidation",
+        "liquidity_sweep"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\confirmation_00462339.jpg",
+      "evidence_refs": [
+        "https://youtu.be/0R61Y6Pn74Q",
+        "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0005"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 92,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::confirmation",
+      "case_ref": "youtube_fractal_model_fundamentals_visual_v1",
+      "video_slug": "fractal_model_fundamentals",
+      "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "invalidation",
+        "liquidity_sweep",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\confirmation_00959840.jpg",
+      "evidence_refs": [
+        "https://youtu.be/TNybDCtwBnc",
+        "https://ttrades.com/fractal-model-playbook-aligning-daily-hourly-and-5-minute-charts/",
+        "fractal_model_fundamentals:0013"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 90,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::confirmation",
+      "case_ref": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1",
+      "video_slug": "index_futures_weekly_recap_ict_concepts",
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "fair_value_gap",
+        "invalidation",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\confirmation_00132120.jpg",
+      "evidence_refs": [
+        "https://youtu.be/s9Poh_RaN2o",
+        "index_futures_weekly_recap_ict_concepts:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 88,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::confirmation",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_3_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_3",
+      "title": "TTrades Top-Down Chart Lessons #3",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "fair_value_gap",
+        "invalidation",
+        "protected_swing"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\confirmation_00240520.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IzOQmcgLyA0",
+        "ttrades_top_down_chart_lessons_3:0003"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 88,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::closure",
+      "case_ref": "youtube_easy_daily_bias_mechanical_framework_visual_v1",
+      "video_slug": "easy_daily_bias_mechanical_framework",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\closure_00657280.jpg",
+      "evidence_refs": [
+        "https://youtu.be/-KKuZb5Z5aU",
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+        "easy_daily_bias_mechanical_framework:0009"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 87,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::closure",
+      "case_ref": "youtube_trading_candle_3_visual_v1",
+      "video_slug": "trading_candle_3",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\closure_00180040.jpg",
+      "evidence_refs": [
+        "https://youtu.be/qdQYhePcvGE",
+        "https://ttrades.com/how-to-trade-candle-3-in-the-fractal-model/",
+        "trading_candle_3:0002"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 87,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::sweep",
+      "case_ref": "youtube_cisd_validates_swing_points_visual_v1",
+      "video_slug": "cisd_validates_swing_points",
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "breaker",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\sweep_00104000.jpg",
+      "evidence_refs": [
+        "https://youtu.be/vn1RYjhJUnQ",
+        "https://ttrades.com/how-change-in-the-state-of-delivery-confirms-swing-points/",
+        "cisd_validates_swing_points:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 86,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::sweep",
+      "case_ref": "youtube_easy_daily_bias_mechanical_framework_visual_v1",
+      "video_slug": "easy_daily_bias_mechanical_framework",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "breaker",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\sweep_00517000.jpg",
+      "evidence_refs": [
+        "https://youtu.be/-KKuZb5Z5aU",
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+        "easy_daily_bias_mechanical_framework:0007"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 86,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::sweep",
+      "case_ref": "youtube_equilibrium_for_expansions_visual_v1",
+      "video_slug": "equilibrium_for_expansions",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "breaker",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\sweep_00790519.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IPZjNI1B5a0",
+        "https://ttrades.com/using-equilibrium-in-continuations/",
+        "equilibrium_for_expansions:0010"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 86,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::sweep",
+      "case_ref": "youtube_trading_candle_3_visual_v1",
+      "video_slug": "trading_candle_3",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "breaker",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\sweep_00599520.jpg",
+      "evidence_refs": [
+        "https://youtu.be/qdQYhePcvGE",
+        "https://ttrades.com/how-to-trade-candle-3-in-the-fractal-model/",
+        "trading_candle_3:0008"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 86,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::confirmation",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_2_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_2",
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "invalidation",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\confirmation_00372520.jpg",
+      "evidence_refs": [
+        "https://youtu.be/UBTl7za9obc",
+        "ttrades_top_down_chart_lessons_2:0005"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 84,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::closure",
+      "case_ref": "youtube_candle_2_closure_foundation_visual_v1",
+      "video_slug": "candle_2_closure_foundation",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\closure_00041600.jpg",
+      "evidence_refs": [
+        "https://youtu.be/tyoxl1l-6iI",
+        "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+        "candle_2_closure_foundation:0000"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 83,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::closure",
+      "case_ref": "youtube_cisd_validates_swing_points_visual_v1",
+      "video_slug": "cisd_validates_swing_points",
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\closure_00167719.jpg",
+      "evidence_refs": [
+        "https://youtu.be/vn1RYjhJUnQ",
+        "https://ttrades.com/how-change-in-the-state-of-delivery-confirms-swing-points/",
+        "cisd_validates_swing_points:0002"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 83,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::closure",
+      "case_ref": "youtube_fractal_model_fundamentals_visual_v1",
+      "video_slug": "fractal_model_fundamentals",
+      "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\closure_00322600.jpg",
+      "evidence_refs": [
+        "https://youtu.be/TNybDCtwBnc",
+        "https://ttrades.com/fractal-model-playbook-aligning-daily-hourly-and-5-minute-charts/",
+        "fractal_model_fundamentals:0004"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 83,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::context",
+      "case_ref": "youtube_candle_2_closure_foundation_visual_v1",
+      "video_slug": "candle_2_closure_foundation",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "checkpoint": "context",
+      "active_labels": [
+        "equilibrium",
+        "fair_value_gap",
+        "point_of_interest",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\context_00346720.jpg",
+      "evidence_refs": [
+        "https://youtu.be/tyoxl1l-6iI",
+        "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+        "candle_2_closure_foundation:0005"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 82,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::context",
+      "case_ref": "youtube_cisd_validates_swing_points_visual_v1",
+      "video_slug": "cisd_validates_swing_points",
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "checkpoint": "context",
+      "active_labels": [
+        "breaker",
+        "fair_value_gap",
+        "order_block",
+        "point_of_interest"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\context_00371359.jpg",
+      "evidence_refs": [
+        "https://youtu.be/vn1RYjhJUnQ",
+        "https://ttrades.com/how-change-in-the-state-of-delivery-confirms-swing-points/",
+        "cisd_validates_swing_points:0005"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 82,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::context",
+      "case_ref": "youtube_easy_daily_bias_mechanical_framework_visual_v1",
+      "video_slug": "easy_daily_bias_mechanical_framework",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "checkpoint": "context",
+      "active_labels": [
+        "breaker",
+        "equilibrium",
+        "fair_value_gap",
+        "order_block",
+        "point_of_interest",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\context_00994040.jpg",
+      "evidence_refs": [
+        "https://youtu.be/-KKuZb5Z5aU",
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+        "easy_daily_bias_mechanical_framework:0014"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 82,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:6",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::context",
+      "case_ref": "youtube_equilibrium_for_expansions_visual_v1",
+      "video_slug": "equilibrium_for_expansions",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "checkpoint": "context",
+      "active_labels": [
+        "breaker",
+        "equilibrium",
+        "fair_value_gap",
+        "order_block",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\context_00046585.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IPZjNI1B5a0",
+        "https://ttrades.com/using-equilibrium-in-continuations/",
+        "equilibrium_for_expansions:0000"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 82,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:5",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::context",
+      "case_ref": "youtube_trading_candle_3_visual_v1",
+      "video_slug": "trading_candle_3",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "checkpoint": "context",
+      "active_labels": [
+        "breaker",
+        "fair_value_gap",
+        "order_block",
+        "point_of_interest",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\context_01515680.jpg",
+      "evidence_refs": [
+        "https://youtu.be/qdQYhePcvGE",
+        "https://ttrades.com/how-to-trade-candle-3-in-the-fractal-model/",
+        "trading_candle_3:0022"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 82,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:5",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::closure",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_1_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_1",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\closure_00482500.jpg",
+      "evidence_refs": [
+        "https://youtu.be/Nlw-PZhoViQ",
+        "ttrades_top_down_chart_lessons_1:0002"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 81,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::closure",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_4_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_4",
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\closure_00194880.jpg",
+      "evidence_refs": [
+        "https://youtu.be/w-JekHg6Ldk",
+        "ttrades_top_down_chart_lessons_4:0002"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 81,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::confirmation",
+      "case_ref": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1",
+      "video_slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "title": "ICT Index Futures Weekly Recap - Week of 5/16/22",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\confirmation_00368460.jpg",
+      "evidence_refs": [
+        "https://youtu.be/LR85yoIuWuA",
+        "ict_index_futures_weekly_recap_week_of_5_16_22:0004"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 80,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::confirmation",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_1_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_1",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "invalidation"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\confirmation_00868500.jpg",
+      "evidence_refs": [
+        "https://youtu.be/Nlw-PZhoViQ",
+        "ttrades_top_down_chart_lessons_1:0004"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 80,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::confirmation",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_4_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_4",
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "checkpoint": "confirmation",
+      "active_labels": [
+        "invalidation"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\confirmation_00270800.jpg",
+      "evidence_refs": [
+        "https://youtu.be/w-JekHg6Ldk",
+        "ttrades_top_down_chart_lessons_4:0003"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 80,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:confirmation",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::context",
+      "case_ref": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1",
+      "video_slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "title": "ICT Index Futures Weekly Recap - Week of 5/16/22",
+      "checkpoint": "context",
+      "active_labels": [
+        "equilibrium",
+        "fair_value_gap",
+        "order_block",
+        "point_of_interest"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\context_00316000.jpg",
+      "evidence_refs": [
+        "https://youtu.be/LR85yoIuWuA",
+        "ict_index_futures_weekly_recap_week_of_5_16_22:0003"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 80,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::context",
+      "case_ref": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1",
+      "video_slug": "index_futures_weekly_recap_ict_concepts",
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "checkpoint": "context",
+      "active_labels": [
+        "equilibrium",
+        "fair_value_gap",
+        "order_block",
+        "point_of_interest"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\context_00829360.jpg",
+      "evidence_refs": [
+        "https://youtu.be/s9Poh_RaN2o",
+        "index_futures_weekly_recap_ict_concepts:0009"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 80,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:4",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::sweep",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_1_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_1",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "breaker",
+        "fair_value_gap",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\sweep_00675500.jpg",
+      "evidence_refs": [
+        "https://youtu.be/Nlw-PZhoViQ",
+        "ttrades_top_down_chart_lessons_1:0003"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 80,
+      "priority_band": "high",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+      "case_ref": "youtube_equilibrium_for_expansions_visual_v1",
+      "video_slug": "equilibrium_for_expansions",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "checkpoint": "closure",
+      "active_labels": [
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\closure_00638000.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IPZjNI1B5a0",
+        "https://ttrades.com/using-equilibrium-in-continuations/",
+        "equilibrium_for_expansions:0008"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 79,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::sweep",
+      "case_ref": "youtube_candle_2_closure_foundation_visual_v1",
+      "video_slug": "candle_2_closure_foundation",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "fair_value_gap",
+        "liquidity_sweep"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\sweep_00101800.jpg",
+      "evidence_refs": [
+        "https://youtu.be/tyoxl1l-6iI",
+        "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+        "candle_2_closure_foundation:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 78,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::sweep",
+      "case_ref": "youtube_fractal_model_fundamentals_visual_v1",
+      "video_slug": "fractal_model_fundamentals",
+      "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "fair_value_gap",
+        "liquidity_sweep"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\sweep_00751840.jpg",
+      "evidence_refs": [
+        "https://youtu.be/TNybDCtwBnc",
+        "https://ttrades.com/fractal-model-playbook-aligning-daily-hourly-and-5-minute-charts/",
+        "fractal_model_fundamentals:0010"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 78,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::closure",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_2_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_2",
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\closure_00108240.jpg",
+      "evidence_refs": [
+        "https://youtu.be/UBTl7za9obc",
+        "ttrades_top_down_chart_lessons_2:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 77,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::closure",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_3_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_3",
+      "title": "TTrades Top-Down Chart Lessons #3",
+      "checkpoint": "closure",
+      "active_labels": [
+        "candle_2_closure"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\closure_00107040.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IzOQmcgLyA0",
+        "ttrades_top_down_chart_lessons_3:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 77,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:closure",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::context",
+      "case_ref": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1",
+      "video_slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "title": "CPI Gold Trade Review | ICT Market Maker Sell Model [MMXM]",
+      "checkpoint": "context",
+      "active_labels": [
+        "fair_value_gap",
+        "order_block",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\context_00212539.jpg",
+      "evidence_refs": [
+        "https://youtu.be/0R61Y6Pn74Q",
+        "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0002"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::context",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_1_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_1",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "checkpoint": "context",
+      "active_labels": [
+        "equilibrium",
+        "point_of_interest",
+        "top_down_alignment"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\context_00096500.jpg",
+      "evidence_refs": [
+        "https://youtu.be/Nlw-PZhoViQ",
+        "ttrades_top_down_chart_lessons_1:0000"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::context",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_2_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_2",
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "checkpoint": "context",
+      "active_labels": [
+        "fair_value_gap",
+        "point_of_interest",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\context_00307320.jpg",
+      "evidence_refs": [
+        "https://youtu.be/UBTl7za9obc",
+        "ttrades_top_down_chart_lessons_2:0004"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::context",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_3_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_3",
+      "title": "TTrades Top-Down Chart Lessons #3",
+      "checkpoint": "context",
+      "active_labels": [
+        "equilibrium",
+        "fair_value_gap",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\context_00173000.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IzOQmcgLyA0",
+        "ttrades_top_down_chart_lessons_3:0002"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::context",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_4_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_4",
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "checkpoint": "context",
+      "active_labels": [
+        "order_block",
+        "point_of_interest",
+        "wick_logic"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\context_00427640.jpg",
+      "evidence_refs": [
+        "https://youtu.be/w-JekHg6Ldk",
+        "ttrades_top_down_chart_lessons_4:0005"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:3",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::outcome",
+      "case_ref": "youtube_easy_daily_bias_mechanical_framework_visual_v1",
+      "video_slug": "easy_daily_bias_mechanical_framework",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "invalidation",
+        "protected_swing"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\outcome_00855320.jpg",
+      "evidence_refs": [
+        "https://youtu.be/-KKuZb5Z5aU",
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+        "easy_daily_bias_mechanical_framework:0012"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::outcome",
+      "case_ref": "youtube_trading_candle_3_visual_v1",
+      "video_slug": "trading_candle_3",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "invalidation",
+        "protected_swing"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\outcome_02043200.jpg",
+      "evidence_refs": [
+        "https://youtu.be/qdQYhePcvGE",
+        "https://ttrades.com/how-to-trade-candle-3-in-the-fractal-model/",
+        "trading_candle_3:0030"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::sweep",
+      "case_ref": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1",
+      "video_slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "title": "ICT Index Futures Weekly Recap - Week of 5/16/22",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "fair_value_gap",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\sweep_00131840.jpg",
+      "evidence_refs": [
+        "https://youtu.be/LR85yoIuWuA",
+        "ict_index_futures_weekly_recap_week_of_5_16_22:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::sweep",
+      "case_ref": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1",
+      "video_slug": "index_futures_weekly_recap_ict_concepts",
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "fair_value_gap",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\sweep_00924520.jpg",
+      "evidence_refs": [
+        "https://youtu.be/s9Poh_RaN2o",
+        "index_futures_weekly_recap_ict_concepts:0010"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::sweep",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_3_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_3",
+      "title": "TTrades Top-Down Chart Lessons #3",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "fair_value_gap",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\sweep_00375760.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IzOQmcgLyA0",
+        "ttrades_top_down_chart_lessons_3:0005"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 76,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::context",
+      "case_ref": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1",
+      "video_slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "title": "MARA Trade Review | H1 Market Maker Buy Model [MMXM]",
+      "checkpoint": "context",
+      "active_labels": [
+        "fair_value_gap",
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\context_00129140.jpg",
+      "evidence_refs": [
+        "https://youtu.be/OZfaUs437O0",
+        "mara_trade_review_h1_market_maker_buy_model_mmxm:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 72,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:2",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::outcome",
+      "case_ref": "youtube_candle_2_closure_foundation_visual_v1",
+      "video_slug": "candle_2_closure_foundation",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "protected_swing"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\outcome_00407640.jpg",
+      "evidence_refs": [
+        "https://youtu.be/tyoxl1l-6iI",
+        "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+        "candle_2_closure_foundation:0006"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 72,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::outcome",
+      "case_ref": "youtube_cisd_validates_swing_points_visual_v1",
+      "video_slug": "cisd_validates_swing_points",
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "protected_swing"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\outcome_00578960.jpg",
+      "evidence_refs": [
+        "https://youtu.be/vn1RYjhJUnQ",
+        "https://ttrades.com/how-change-in-the-state-of-delivery-confirms-swing-points/",
+        "cisd_validates_swing_points:0008"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 72,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::outcome",
+      "case_ref": "youtube_equilibrium_for_expansions_visual_v1",
+      "video_slug": "equilibrium_for_expansions",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "invalidation"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\outcome_00867299.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IPZjNI1B5a0",
+        "https://ttrades.com/using-equilibrium-in-continuations/",
+        "equilibrium_for_expansions:0011"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 72,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+      "case_ref": "youtube_fractal_model_fundamentals_visual_v1",
+      "video_slug": "fractal_model_fundamentals",
+      "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "invalidation"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\outcome_00394480.jpg",
+      "evidence_refs": [
+        "https://youtu.be/TNybDCtwBnc",
+        "https://ttrades.com/fractal-model-playbook-aligning-daily-hourly-and-5-minute-charts/",
+        "fractal_model_fundamentals:0005"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 72,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::sweep",
+      "case_ref": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1",
+      "video_slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "title": "CPI Gold Trade Review | ICT Market Maker Sell Model [MMXM]",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "order_block"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\sweep_00131059.jpg",
+      "evidence_refs": [
+        "https://youtu.be/0R61Y6Pn74Q",
+        "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 72,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::sweep",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_2_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_2",
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "liquidity_sweep"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\sweep_00648520.jpg",
+      "evidence_refs": [
+        "https://youtu.be/UBTl7za9obc",
+        "ttrades_top_down_chart_lessons_2:0009"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 72,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::sweep",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_4_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_4",
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "checkpoint": "sweep",
+      "active_labels": [
+        "liquidity_sweep"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\sweep_00349320.jpg",
+      "evidence_refs": [
+        "https://youtu.be/w-JekHg6Ldk",
+        "ttrades_top_down_chart_lessons_4:0004"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 72,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:sweep",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::context",
+      "case_ref": "youtube_fractal_model_fundamentals_visual_v1",
+      "video_slug": "fractal_model_fundamentals",
+      "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+      "checkpoint": "context",
+      "active_labels": [
+        "point_of_interest"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\context_00119280.jpg",
+      "evidence_refs": [
+        "https://youtu.be/TNybDCtwBnc",
+        "https://ttrades.com/fractal-model-playbook-aligning-daily-hourly-and-5-minute-charts/",
+        "fractal_model_fundamentals:0001"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 70,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:context",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:3"
+      ]
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::outcome",
+      "case_ref": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1",
+      "video_slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "title": "CPI Gold Trade Review | ICT Market Maker Sell Model [MMXM]",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "invalidation"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\outcome_00375400.jpg",
+      "evidence_refs": [
+        "https://youtu.be/0R61Y6Pn74Q",
+        "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0004"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 70,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::outcome",
+      "case_ref": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1",
+      "video_slug": "index_futures_weekly_recap_ict_concepts",
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "invalidation"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\outcome_00743320.jpg",
+      "evidence_refs": [
+        "https://youtu.be/s9Poh_RaN2o",
+        "index_futures_weekly_recap_ict_concepts:0008"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 70,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::outcome",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_2_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_2",
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "checkpoint": "outcome",
+      "active_labels": [
+        "invalidation"
+      ],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\outcome_00512800.jpg",
+      "evidence_refs": [
+        "https://youtu.be/UBTl7za9obc",
+        "ttrades_top_down_chart_lessons_2:0007"
+      ],
+      "recommended_action": "review_for_teacher_promotion",
+      "priority_score": 70,
+      "priority_band": "medium",
+      "priority_reasons": [
+        "action:review_for_teacher_promotion",
+        "checkpoint:outcome",
+        "labels:1",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_trade_example_15_second_entry_visual_v1::confirmation",
+      "case_ref": "youtube_ict_trade_example_15_second_entry_visual_v1",
+      "video_slug": "ict_trade_example_15_second_entry",
+      "title": "ICT Trade Example - 15 Second Entry",
+      "checkpoint": "confirmation",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "missing_frame",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "None",
+      "evidence_refs": [
+        "https://youtu.be/k_Qoou9vi5c",
+        "ict_trade_example_15_second_entry:0000"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 31,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:confirmation",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::confirmation",
+      "case_ref": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1",
+      "video_slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "title": "MARA Trade Review | H1 Market Maker Buy Model [MMXM]",
+      "checkpoint": "confirmation",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\confirmation_00269020.jpg",
+      "evidence_refs": [
+        "https://youtu.be/OZfaUs437O0",
+        "mara_trade_review_h1_market_maker_buy_model_mmxm:0003"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 31,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:confirmation",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::closure",
+      "case_ref": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1",
+      "video_slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "title": "CPI Gold Trade Review | ICT Market Maker Sell Model [MMXM]",
+      "checkpoint": "closure",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\closure_00292820.jpg",
+      "evidence_refs": [
+        "https://youtu.be/0R61Y6Pn74Q",
+        "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0003"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 28,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:closure",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::closure",
+      "case_ref": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1",
+      "video_slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "title": "ICT Index Futures Weekly Recap - Week of 5/16/22",
+      "checkpoint": "closure",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\closure_00223840.jpg",
+      "evidence_refs": [
+        "https://youtu.be/LR85yoIuWuA",
+        "ict_index_futures_weekly_recap_week_of_5_16_22:0002"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 28,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:closure",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_trade_example_15_second_entry_visual_v1::closure",
+      "case_ref": "youtube_ict_trade_example_15_second_entry_visual_v1",
+      "video_slug": "ict_trade_example_15_second_entry",
+      "title": "ICT Trade Example - 15 Second Entry",
+      "checkpoint": "closure",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "missing_frame",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "None",
+      "evidence_refs": [
+        "https://youtu.be/k_Qoou9vi5c",
+        "ict_trade_example_15_second_entry:0000"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 28,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:closure",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::closure",
+      "case_ref": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1",
+      "video_slug": "index_futures_weekly_recap_ict_concepts",
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "checkpoint": "closure",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\closure_00567659.jpg",
+      "evidence_refs": [
+        "https://youtu.be/s9Poh_RaN2o",
+        "index_futures_weekly_recap_ict_concepts:0006"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 28,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:closure",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::closure",
+      "case_ref": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1",
+      "video_slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "title": "MARA Trade Review | H1 Market Maker Buy Model [MMXM]",
+      "checkpoint": "closure",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\closure_00206500.jpg",
+      "evidence_refs": [
+        "https://youtu.be/OZfaUs437O0",
+        "mara_trade_review_h1_market_maker_buy_model_mmxm:0002"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 28,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:closure",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_trade_example_15_second_entry_visual_v1::sweep",
+      "case_ref": "youtube_ict_trade_example_15_second_entry_visual_v1",
+      "video_slug": "ict_trade_example_15_second_entry",
+      "title": "ICT Trade Example - 15 Second Entry",
+      "checkpoint": "sweep",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "missing_frame",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "None",
+      "evidence_refs": [
+        "https://youtu.be/k_Qoou9vi5c",
+        "ict_trade_example_15_second_entry:0000"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 23,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:sweep",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::sweep",
+      "case_ref": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1",
+      "video_slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "title": "MARA Trade Review | H1 Market Maker Buy Model [MMXM]",
+      "checkpoint": "sweep",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\sweep_00048385.jpg",
+      "evidence_refs": [
+        "https://youtu.be/OZfaUs437O0",
+        "mara_trade_review_h1_market_maker_buy_model_mmxm:0000"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 23,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:sweep",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::outcome",
+      "case_ref": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1",
+      "video_slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "title": "ICT Index Futures Weekly Recap - Week of 5/16/22",
+      "checkpoint": "outcome",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\outcome_00045275.jpg",
+      "evidence_refs": [
+        "https://youtu.be/LR85yoIuWuA",
+        "ict_index_futures_weekly_recap_week_of_5_16_22:0000"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 21,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:outcome",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_trade_example_15_second_entry_visual_v1::outcome",
+      "case_ref": "youtube_ict_trade_example_15_second_entry_visual_v1",
+      "video_slug": "ict_trade_example_15_second_entry",
+      "title": "ICT Trade Example - 15 Second Entry",
+      "checkpoint": "outcome",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "missing_frame",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "None",
+      "evidence_refs": [
+        "https://youtu.be/k_Qoou9vi5c",
+        "ict_trade_example_15_second_entry:0000"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 21,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:outcome",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::outcome",
+      "case_ref": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1",
+      "video_slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "title": "MARA Trade Review | H1 Market Maker Buy Model [MMXM]",
+      "checkpoint": "outcome",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\outcome_00048385.jpg",
+      "evidence_refs": [
+        "https://youtu.be/OZfaUs437O0",
+        "mara_trade_review_h1_market_maker_buy_model_mmxm:0000"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 21,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:outcome",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::outcome",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_1_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_1",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "checkpoint": "outcome",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\outcome_00289500.jpg",
+      "evidence_refs": [
+        "https://youtu.be/Nlw-PZhoViQ",
+        "ttrades_top_down_chart_lessons_1:0001"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 21,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:outcome",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::outcome",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_3_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_3",
+      "title": "TTrades Top-Down Chart Lessons #3",
+      "checkpoint": "outcome",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\outcome_00306640.jpg",
+      "evidence_refs": [
+        "https://youtu.be/IzOQmcgLyA0",
+        "ttrades_top_down_chart_lessons_3:0004"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 21,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:outcome",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::outcome",
+      "case_ref": "youtube_ttrades_top_down_chart_lessons_4_visual_v1",
+      "video_slug": "ttrades_top_down_chart_lessons_4",
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "checkpoint": "outcome",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "ready_for_weak_training",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\outcome_00480900.jpg",
+      "evidence_refs": [
+        "https://youtu.be/w-JekHg6Ldk",
+        "ttrades_top_down_chart_lessons_4:0006"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 21,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:outcome",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_trade_example_15_second_entry_visual_v1::context",
+      "case_ref": "youtube_ict_trade_example_15_second_entry_visual_v1",
+      "video_slug": "ict_trade_example_15_second_entry",
+      "title": "ICT Trade Example - 15 Second Entry",
+      "checkpoint": "context",
+      "active_labels": [],
+      "weak_label_confidence": 0.35,
+      "review_status": "missing_frame",
+      "contradiction_status": "unreviewed",
+      "screenshot_path": "None",
+      "evidence_refs": [
+        "https://youtu.be/k_Qoou9vi5c",
+        "ict_trade_example_15_second_entry:0000"
+      ],
+      "recommended_action": "collect_more_label_evidence",
+      "priority_score": 19,
+      "priority_band": "low",
+      "priority_reasons": [
+        "action:collect_more_label_evidence",
+        "checkpoint:context",
+        "labels:0",
+        "confidence:0.35",
+        "evidence_refs:2"
+      ]
+    }
+  ]
+}

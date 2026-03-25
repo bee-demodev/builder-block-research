@@ -1,0 +1,215 @@
+{
+  "generated_at": "2026-03-23T20:20:54.446409+00:00",
+  "phase": "evidence_bootstrap",
+  "status": "bootstrapping",
+  "phase_summary": "The loop has durable cases, but screenshot and anchor coverage are still too thin to support strong self-correction.",
+  "current_run": {
+    "generated_at": "2026-03-23T20:20:44.992914+00:00",
+    "metrics": {
+      "loop_score": 0.474,
+      "workflow_score": 0.7333,
+      "validation_coverage": 0.1667,
+      "screenshot_coverage": 0.7143,
+      "anchor_coverage": 0.0,
+      "feedback_item_count": 4,
+      "tradingview_failure_count": 5,
+      "rules_backtest_score": 0.944,
+      "model_backtest_score": 0.91,
+      "ready_indicator_binary_count": 1,
+      "non_draft_spec_count": 1,
+      "generated_script_count": 6,
+      "validated_script_count": 1,
+      "playwriter_validated_count": 1,
+      "translatability_score": 1.0,
+      "iteration_understanding_score": 0.6433,
+      "iteration_trade_model_accuracy": 0.6667,
+      "iteration_relation_type_accuracy": 0.3333,
+      "graded_iteration_episode_count": 3,
+      "reinforcement_example_count": 4,
+      "retrained_task_count": 3
+    },
+    "training_loop_grade": "D",
+    "training_loop_verdict": "keep_with_warnings",
+    "feedback_summary": {
+      "item_count": 4,
+      "pine_feedback_candidate_count": 0,
+      "tradingview_failure_count": 5,
+      "workflow_feedback_count": 5,
+      "spec_feedback_count": 0
+    },
+    "pending_spec_keys": [
+      "continuation_entry_model",
+      "daily_bias_framework",
+      "daily_profile_models",
+      "fractal_closure_model",
+      "reversal_sequence_model"
+    ],
+    "phase_one_focus": {
+      "goal": "Train the neural network to understand daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment.",
+      "primary_trade_model": "daily_bias_framework",
+      "execution_spec": "daily_bias_c123_map",
+      "timeframe_stack": {
+        "bias": "D",
+        "structure": "60",
+        "execution": "5"
+      },
+      "indicator_ready": true,
+      "status": "bootstrap_ready",
+      "ready_now": false,
+      "bootstrap_ready": true,
+      "positive_examples": 4,
+      "negative_examples": 16,
+      "additional_positive_examples_needed": 1,
+      "bootstrap_positive_examples_required": 4,
+      "current_training_target": "daily_bias_framework"
+    }
+  },
+  "previous_run": {
+    "metrics": {
+      "anchor_coverage": 0.0,
+      "feedback_item_count": 4,
+      "generated_script_count": 6,
+      "graded_iteration_episode_count": 3,
+      "iteration_relation_type_accuracy": 0.3333,
+      "iteration_trade_model_accuracy": 0.6667,
+      "iteration_understanding_score": 0.6433,
+      "loop_score": 0.474,
+      "model_backtest_score": 0.91,
+      "non_draft_spec_count": 1,
+      "playwriter_validated_count": 1,
+      "ready_indicator_binary_count": 1,
+      "reinforcement_example_count": 4,
+      "retrained_task_count": 3,
+      "rules_backtest_score": 0.944,
+      "screenshot_coverage": 0.7143,
+      "tradingview_failure_count": 5,
+      "translatability_score": 1.0,
+      "validated_script_count": 1,
+      "validation_coverage": 0.1667,
+      "workflow_score": 0.7333
+    },
+    "phase": "evidence_bootstrap",
+    "recorded_at": "2026-03-23T20:20:11.280005+00:00",
+    "run_generated_at": "2026-03-23T20:16:20.953131+00:00",
+    "status": "bootstrapping",
+    "top_action_ids": [
+      "bootstrap_visual_evidence",
+      "improve_iteration_understanding",
+      "benchmark_retrained_challengers"
+    ]
+  },
+  "delta": {
+    "loop_score": 0.0,
+    "workflow_score": 0.0,
+    "validation_coverage": 0.0,
+    "screenshot_coverage": 0.0,
+    "anchor_coverage": 0.0,
+    "feedback_item_count": 0.0,
+    "rules_backtest_score": 0.0,
+    "model_backtest_score": 0.0,
+    "iteration_understanding_score": 0.0,
+    "graded_iteration_episode_count": 0.0,
+    "reinforcement_example_count": 0.0,
+    "retrained_task_count": 0.0
+  },
+  "progress_signals": [
+    "No major loop-level metric changed versus the previous recorded run."
+  ],
+  "regression_signals": [],
+  "bottlenecks": [
+    {
+      "id": "low_anchor_coverage",
+      "severity": "high",
+      "signal": 1.0,
+      "summary": "Anchor labels are too sparse for strong disagreement-driven learning.",
+      "evidence": [
+        "anchor_coverage=0.0000"
+      ]
+    },
+    {
+      "id": "narrow_label_surface",
+      "severity": "medium",
+      "signal": 0.8,
+      "summary": "Only one indicator-ready trade model is ready for narrow binary learning.",
+      "evidence": [
+        "ready_indicator_binary_count=1"
+      ]
+    }
+  ],
+  "priority_actions": [
+    {
+      "id": "bootstrap_visual_evidence",
+      "priority": 1,
+      "lane": "visual_grounding",
+      "title": "Bootstrap screenshot and anchor coverage for the historical case packets.",
+      "why_now": "screenshot_coverage=0.7143, anchor_coverage=0.0000",
+      "success_metric": "screenshot_coverage > 0.50 and anchor_coverage > 0.50",
+      "artifacts": [
+        "data/ttfm_screenshot_manifest.json",
+        "data/ttfm_anchor_labels.json",
+        "results/ttfm_case_packets.json"
+      ],
+      "command_hint": "python scripts/run_trading_learning_loop.py --bootstrap-screenshots"
+    },
+    {
+      "id": "improve_iteration_understanding",
+      "priority": 2,
+      "lane": "learning_progress",
+      "title": "Improve checkpoint-level TTrades understanding on graded episodes.",
+      "why_now": "Current graded understanding score is 0.6433, which is still below reliable pattern-recognition quality.",
+      "success_metric": "iteration_understanding_score >= 0.70",
+      "artifacts": [
+        "results/trading_iteration_grading_report.json",
+        "results/trading_learning_improvement_plan.json"
+      ]
+    },
+    {
+      "id": "benchmark_retrained_challengers",
+      "priority": 3,
+      "lane": "model_evaluation",
+      "title": "Benchmark the latest iteration-retrained challengers before promoting them.",
+      "why_now": "continuation_entry_model, daily_bias_framework, trade_vs_no_trade",
+      "success_metric": "compared_task_count >= retrained_task_count",
+      "artifacts": [
+        "results/iteration_retraining_report.json",
+        "results/iteration_challenger_report.json",
+        "results/neural_models/iteration_retrained/"
+      ]
+    },
+    {
+      "id": "expand_positive_examples",
+      "priority": 4,
+      "lane": "label_growth",
+      "title": "Collect the next positive labeled cases for the indicator-ready models that are still short.",
+      "why_now": "daily_bias_framework (+1), daily_profile_models (+3), fractal_closure_model (+3), reversal_sequence_model (+3)",
+      "success_metric": "ready_indicator_binary_count >= 2",
+      "artifacts": [
+        "data/trader_annotation_cases.json",
+        "results/neural_net_readiness_report.json"
+      ]
+    }
+  ],
+  "phase_one_focus": {
+    "goal": "Train the neural network to understand daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment.",
+    "primary_trade_model": "daily_bias_framework",
+    "execution_spec": "daily_bias_c123_map",
+    "timeframe_stack": {
+      "bias": "D",
+      "structure": "60",
+      "execution": "5"
+    },
+    "indicator_ready": true,
+    "status": "bootstrap_ready",
+    "ready_now": false,
+    "bootstrap_ready": true,
+    "positive_examples": 4,
+    "negative_examples": 16,
+    "additional_positive_examples_needed": 1,
+    "bootstrap_positive_examples_required": 4,
+    "current_training_target": "daily_bias_framework"
+  },
+  "history": {
+    "path": "results/trading_learning_history.jsonl",
+    "entry_count": 15
+  }
+}

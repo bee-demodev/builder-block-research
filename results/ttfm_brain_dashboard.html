@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TTFM Brain Workflow Dashboard</title>
+  <style>
+    body {
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      margin: 0;
+      padding: 24px;
+      background: #0b1220;
+      color: #e5edf7;
+      line-height: 1.5;
+    }
+    h1, h2, h3 { margin: 0 0 12px; }
+    section {
+      margin: 0 0 20px;
+      padding: 18px;
+      background: #111a2b;
+      border: 1px solid #243247;
+      border-radius: 14px;
+    }
+    .muted { color: #9fb0c9; }
+    .kv-table, .stage-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .kv-table th, .kv-table td, .stage-table td, .stage-table th {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid #243247;
+      vertical-align: top;
+    }
+    .case-card {
+      margin: 0 0 12px;
+      padding: 12px;
+      border: 1px solid #31415c;
+      border-radius: 12px;
+      background: #0f1727;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TTFM Brain Workflow Dashboard</h1>
+    <p class="muted">Generated at 2026-03-24T21:33:54.774509+00:00. History entries: 1</p>
+  </header>
+
+  <section>
+    <h2>Corpus Size and Deltas</h2>
+    <table class="kv-table"><tr><th>Current video count</th><td>121</td></tr><tr><th>Delta video count</th><td>121</td></tr><tr><th>Partition counts</th><td>{&#x27;educational_youtube&#x27;: 106, &#x27;trade_review&#x27;: 9, &#x27;unknown&#x27;: 6}</td></tr></table>
+  </section>
+
+  <section>
+    <h2>Embedding Counts and Cache Behavior</h2>
+    <table class="kv-table"><tr><th>Text embeddings</th><td>1209 (ran)</td></tr><tr><th>Visual embeddings</th><td>75 (ran)</td></tr></table>
+  </section>
+
+  <section>
+    <h2>Trainable vs Blocked Rows</h2>
+    <table class="kv-table"><tr><th>Trainable rows</th><td>55</td></tr><tr><th>Blocked rows</th><td>20</td></tr><tr><th>Blocked reasons</th><td>{}</td></tr></table>
+  </section>
+
+  <section>
+    <h2>Frozen Benchmark Results</h2>
+    <table class="kv-table"><tr><th>Benchmark rows</th><td>33</td></tr><tr><th>Winner</th><td>tie</td></tr><tr><th>Champion</th><td>{&#x27;status&#x27;: &#x27;ran&#x27;, &#x27;model_path&#x27;: &#x27;C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_blended_multimodal\\ttfm_blended_multimodal_pattern_net.pt&#x27;, &#x27;benchmark_row_count&#x27;: 33, &#x27;scored_example_count&#x27;: 33, &#x27;skipped_example_count&#x27;: 0, &#x27;micro_f1&#x27;: 0.6031746031746033, &#x27;precision&#x27;: 0.456, &#x27;recall&#x27;: 0.890625, &#x27;exact_match_ratio&#x27;: 0.09090909361839294, &#x27;disagreement_count&#x27;: 30, &#x27;prediction_threshold_mode&#x27;: &#x27;per_label&#x27;, &#x27;embedding_prep&#x27;: {&#x27;example_count&#x27;: 33, &#x27;skipped_example_count&#x27;: 0, &#x27;visual_index_hit_count&#x27;: 0, &#x27;visual_on_demand_count&#x27;: 33, &#x27;visual_text_fallback_count&#x27;: 0, &#x27;transcript_embedding_count&#x27;: 33, &#x27;audio_semantic_embedding_count&#x27;: 0, &#x27;audio_semantic_mode_counts&#x27;: {&#x27;missing_audio&#x27;: 33}, &#x27;output_dimensionality&#x27;: 768, &#x27;embedding_backend&#x27;: &#x27;google_gemini&#x27;, &#x27;visual_embedding_model&#x27;: &#x27;models/gemini-embedding-2-preview&#x27;, &#x27;text_embedding_model&#x27;: &#x27;models/gemini-embedding-001&#x27;, &#x27;audio_understanding_model&#x27;: &#x27;models/gemini-2.0-flash&#x27;, &#x27;audio_semantic_cache_path&#x27;: &#x27;knowledge/ttfm_video_corpus/audio_semantic_cache.json&#x27;, &#x27;text_embedding_cache_path&#x27;: &#x27;knowledge/ttfm_video_corpus/multimodal_text_embedding_cache.json&#x27;, &#x27;transcript_cache_hit_count&#x27;: 33, &#x27;transcript_cache_miss_count&#x27;: 0, &#x27;audio_semantic_cache_hit_count&#x27;: 0, &#x27;audio_semantic_cache_miss_count&#x27;: 0}}</td></tr><tr><th>Challenger</th><td>{&#x27;status&#x27;: &#x27;ran&#x27;, &#x27;model_path&#x27;: &#x27;C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_blended_multimodal\\ttfm_blended_multimodal_pattern_net.pt&#x27;, &#x27;benchmark_row_count&#x27;: 33, &#x27;scored_example_count&#x27;: 33, &#x27;skipped_example_count&#x27;: 0, &#x27;micro_f1&#x27;: 0.6031746031746033, &#x27;precision&#x27;: 0.456, &#x27;recall&#x27;: 0.890625, &#x27;exact_match_ratio&#x27;: 0.09090909361839294, &#x27;disagreement_count&#x27;: 30, &#x27;prediction_threshold_mode&#x27;: &#x27;per_label&#x27;, &#x27;embedding_prep&#x27;: {&#x27;example_count&#x27;: 33, &#x27;skipped_example_count&#x27;: 0, &#x27;visual_index_hit_count&#x27;: 0, &#x27;visual_on_demand_count&#x27;: 33, &#x27;visual_text_fallback_count&#x27;: 0, &#x27;transcript_embedding_count&#x27;: 33, &#x27;audio_semantic_embedding_count&#x27;: 0, &#x27;audio_semantic_mode_counts&#x27;: {&#x27;missing_audio&#x27;: 33}, &#x27;output_dimensionality&#x27;: 768, &#x27;embedding_backend&#x27;: &#x27;google_gemini&#x27;, &#x27;visual_embedding_model&#x27;: &#x27;models/gemini-embedding-2-preview&#x27;, &#x27;text_embedding_model&#x27;: &#x27;models/gemini-embedding-001&#x27;, &#x27;audio_understanding_model&#x27;: &#x27;models/gemini-2.0-flash&#x27;, &#x27;audio_semantic_cache_path&#x27;: &#x27;knowledge/ttfm_video_corpus/audio_semantic_cache.json&#x27;, &#x27;text_embedding_cache_path&#x27;: &#x27;knowledge/ttfm_video_corpus/multimodal_text_embedding_cache.json&#x27;, &#x27;transcript_cache_hit_count&#x27;: 33, &#x27;transcript_cache_miss_count&#x27;: 0, &#x27;audio_semantic_cache_hit_count&#x27;: 0, &#x27;audio_semantic_cache_miss_count&#x27;: 0}}</td></tr><tr><th>Delta</th><td>{&#x27;micro_f1&#x27;: 0.0, &#x27;precision&#x27;: 0.0, &#x27;recall&#x27;: 0.0, &#x27;exact_match_ratio&#x27;: 0.0, &#x27;disagreement_count&#x27;: 0}</td></tr></table>
+  </section>
+
+  <section>
+    <h2>Top Disagreement Cases</h2>
+    <article class="case-card"><h3>youtube_candle_2_closure_foundation_visual_v1::confirmation</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\candle_2_closure_foundation\confirmation_00165120.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/candle_2_closure_foundation/confirmation_00165120.wav</p><p><strong>Weak labels:</strong> candle_2_closure, candle_3_closure, equilibrium, fair_value_gap</p><p><strong>Predicted labels:</strong> liquidity_sweep, candle_3_closure, candle_2_closure, breaker, order_block, fair_value_gap, protected_swing, invalidation, point_of_interest, wick_logic, equilibrium</p><p><strong>Top probabilities:</strong> liquidity_sweep=0.85, candle_3_closure=0.81, candle_2_closure=0.80, breaker=0.74, order_block=0.68</p></article><article class="case-card"><h3>youtube_easy_daily_bias_mechanical_framework_visual_v1::confirmation</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\easy_daily_bias_mechanical_framework\confirmation_00303480.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/easy_daily_bias_mechanical_framework/confirmation_00303480.wav</p><p><strong>Weak labels:</strong> breaker, candle_2_closure, equilibrium, fair_value_gap, liquidity_sweep, order_block, protected_swing</p><p><strong>Predicted labels:</strong> liquidity_sweep, breaker, order_block, fair_value_gap, candle_2_closure, candle_3_closure, invalidation, protected_swing, point_of_interest, wick_logic, equilibrium</p><p><strong>Top probabilities:</strong> liquidity_sweep=0.81, breaker=0.74, order_block=0.70, fair_value_gap=0.70, candle_2_closure=0.70</p></article><article class="case-card"><h3>youtube_fractal_model_fundamentals_visual_v1::confirmation</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\fractal_model_fundamentals\confirmation_00959840.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/fractal_model_fundamentals/confirmation_00959840.wav</p><p><strong>Weak labels:</strong> invalidation, liquidity_sweep, order_block</p><p><strong>Predicted labels:</strong> invalidation, fair_value_gap, order_block, breaker, point_of_interest, liquidity_sweep, wick_logic, equilibrium</p><p><strong>Top probabilities:</strong> invalidation=0.78, fair_value_gap=0.77, order_block=0.76, breaker=0.68, point_of_interest=0.67</p></article><article class="case-card"><h3>youtube_trading_candle_3_visual_v1::confirmation</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\trading_candle_3\confirmation_00857440.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/trading_candle_3/confirmation_00857440.wav</p><p><strong>Weak labels:</strong> breaker, fair_value_gap, invalidation, liquidity_sweep, order_block, protected_swing</p><p><strong>Predicted labels:</strong> invalidation, liquidity_sweep, fair_value_gap, order_block, breaker, point_of_interest, candle_2_closure, candle_3_closure, wick_logic, protected_swing, equilibrium</p><p><strong>Top probabilities:</strong> invalidation=0.77, liquidity_sweep=0.76, fair_value_gap=0.74, order_block=0.73, breaker=0.70</p></article><article class="case-card"><h3>youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::confirmation</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\ict_index_futures_weekly_recap_week_of_5_16_22\confirmation_00368460.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/ict_index_futures_weekly_recap_week_of_5_16_22/confirmation_00368460.wav</p><p><strong>Weak labels:</strong> order_block</p><p><strong>Predicted labels:</strong> fair_value_gap, order_block, wick_logic, invalidation, point_of_interest, equilibrium, liquidity_sweep</p><p><strong>Top probabilities:</strong> fair_value_gap=0.71, order_block=0.71, wick_logic=0.63, invalidation=0.63, point_of_interest=0.62</p></article><article class="case-card"><h3>youtube_ttrades_top_down_chart_lessons_1_visual_v1::confirmation</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\ttrades_top_down_chart_lessons_1\confirmation_00868500.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/ttrades_top_down_chart_lessons_1/confirmation_00868500.wav</p><p><strong>Weak labels:</strong> invalidation</p><p><strong>Predicted labels:</strong> order_block, fair_value_gap, invalidation, breaker, point_of_interest, wick_logic, liquidity_sweep, equilibrium</p><p><strong>Top probabilities:</strong> order_block=0.69, fair_value_gap=0.68, invalidation=0.60, breaker=0.57, point_of_interest=0.56</p></article><article class="case-card"><h3>youtube_candle_2_closure_foundation_visual_v1::closure</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\candle_2_closure_foundation\closure_00041600.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/candle_2_closure_foundation/closure_00041600.wav</p><p><strong>Weak labels:</strong> candle_2_closure, candle_3_closure</p><p><strong>Predicted labels:</strong> liquidity_sweep, candle_3_closure, candle_2_closure, breaker, protected_swing, order_block, fair_value_gap, equilibrium</p><p><strong>Top probabilities:</strong> liquidity_sweep=0.88, candle_3_closure=0.85, candle_2_closure=0.84, breaker=0.75, protected_swing=0.68</p></article><article class="case-card"><h3>youtube_cisd_validates_swing_points_visual_v1::closure</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\cisd_validates_swing_points\closure_00167719.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/cisd_validates_swing_points/closure_00167719.wav</p><p><strong>Weak labels:</strong> candle_2_closure, candle_3_closure</p><p><strong>Predicted labels:</strong> liquidity_sweep, candle_3_closure, candle_2_closure, breaker, protected_swing, order_block, fair_value_gap, equilibrium</p><p><strong>Top probabilities:</strong> liquidity_sweep=0.90, candle_3_closure=0.89, candle_2_closure=0.87, breaker=0.77, protected_swing=0.71</p></article><article class="case-card"><h3>youtube_easy_daily_bias_mechanical_framework_visual_v1::closure</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\easy_daily_bias_mechanical_framework\closure_00657280.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/easy_daily_bias_mechanical_framework/closure_00657280.wav</p><p><strong>Weak labels:</strong> candle_2_closure, candle_3_closure, wick_logic</p><p><strong>Predicted labels:</strong> liquidity_sweep, fair_value_gap, breaker, order_block, candle_2_closure, candle_3_closure, invalidation, point_of_interest, protected_swing, wick_logic, equilibrium</p><p><strong>Top probabilities:</strong> liquidity_sweep=0.79, fair_value_gap=0.73, breaker=0.72, order_block=0.72, candle_2_closure=0.72</p></article><article class="case-card"><h3>youtube_fractal_model_fundamentals_visual_v1::closure</h3><p><strong>Screenshot:</strong> knowledge\ttfm_video_corpus\frames\fractal_model_fundamentals\closure_00322600.jpg</p><p><strong>Audio:</strong> knowledge/ttfm_video_corpus/audio_clips/fractal_model_fundamentals/closure_00322600.wav</p><p><strong>Weak labels:</strong> candle_2_closure, wick_logic</p><p><strong>Predicted labels:</strong> liquidity_sweep, fair_value_gap, order_block, breaker, invalidation, candle_2_closure, candle_3_closure, point_of_interest, protected_swing, wick_logic, equilibrium</p><p><strong>Top probabilities:</strong> liquidity_sweep=0.74, fair_value_gap=0.72, order_block=0.71, breaker=0.67, invalidation=0.65</p></article>
+  </section>
+
+  <section>
+    <h2>Daily Intake Summary</h2>
+    <table class="kv-table"><tr><th>Video files</th><td>0</td></tr><tr><th>Image files</th><td>0</td></tr><tr><th>Added to trainable videos</th><td>0</td></tr><tr><th>Queued videos</th><td>0</td></tr><tr><th>Added to weak training images</th><td>0</td></tr><tr><th>Held for review images</th><td>0</td></tr></table>
+  </section>
+
+  <section>
+    <h2>Stage Status</h2>
+    <table class="stage-table">
+      <tr><th>Stage</th><th>Status</th></tr>
+      <tr><td>daily_intake</td><td>cache_hit</td></tr><tr><td>corpus_refresh</td><td>cache_hit</td></tr><tr><td>text_embeddings</td><td>ran</td></tr><tr><td>visual_embeddings</td><td>ran</td></tr><tr><td>visual_teacher_loop</td><td>cache_hit</td></tr><tr><td>frozen_benchmark</td><td>ran</td></tr><tr><td>champion_benchmark_eval</td><td>ran</td></tr><tr><td>multimodal_teacher_loop</td><td>cache_hit</td></tr><tr><td>dense_review_samples</td><td>ran</td></tr><tr><td>challenger_benchmark_eval</td><td>ran</td></tr>
+    </table>
+  </section>
+</body>
+</html>

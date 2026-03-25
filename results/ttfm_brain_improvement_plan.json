@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-03-24T19:33:52.754447+00:00",
+  "framework_slug": "ttfm",
+  "profile_slug": "ttrades_curriculum",
+  "brain_type": "setup_scorer",
+  "status": "ok",
+  "next_action": "review_top_disagreements",
+  "pine_status": "deferred",
+  "priority_actions": [
+    {
+      "priority": 1,
+      "action": "review_top_disagreements",
+      "success_metric": "Top disagreement packets are reviewed and corrected.",
+      "details": [
+        "youtube_ttrades_top_down_chart_lessons_2_visual_v1::closure",
+        "youtube_candle_2_closure_foundation_visual_v1::sweep",
+        "youtube_equilibrium_for_expansions_visual_v1::closure"
+      ]
+    }
+  ]
+}

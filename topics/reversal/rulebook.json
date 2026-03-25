@@ -1,0 +1,203 @@
+{
+  "topic": "reversal",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_phases_of_price_part_4",
+      "url": "https://ttrades.com/phases-of-price-part-4-mastering-reversals-for-high-probability-setups/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_reversal_sequence",
+      "url": "https://ttrades.com/reversal-sequence-building-an-entry-model-for-trading/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_candlestick_wicks",
+      "url": "https://ttrades.com/mastering-candlestick-wicks-the-key-to-catching-reversals/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_candle_3_closure",
+      "url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_easy_daily_bias",
+      "url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "reversal_definition",
+      "name": "A reversal is expansion met with opposite expansion at meaningful liquidity",
+      "timeframeScope": ["higher", "intermediate", "lower"],
+      "marketPhasePrecondition": ["prior_expansion_present", "liquidity_anchor_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Price sweeps an external liquidity reference such as a previous-day high or low, previous-week high or low, session high or low, or the latest marked swing extreme",
+      "confirmationTrigger": "The sweep is followed by opposite-direction displacement that closes back through the swept reference or back inside the source range",
+      "protectedSwingDefinition": "The first protected swing that forms in the new direction becomes the structural invalidation for reversal execution and later continuation",
+      "invalidationCondition": "Price keeps expanding through the swept external reference without the opposite-direction close or later fails to hold the first new protected swing",
+      "targetLogic": "First objective is previous-day equilibrium or nearby opposing liquidity, then the opposite side of the range or next external pool",
+      "exceptions": [
+        "A sweep alone is not enough without opposite-side expansion or closure",
+        "If the move only pauses and then resumes in the original direction, treat it as a retracement failure instead of a reversal"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_4#what_is_a_reversal_in_trading",
+        "ttrades_phases_of_price_part_4#key_areas_where_price_reversals_form",
+        "ttrades_easy_daily_bias#framing_a_reversal_day"
+      ],
+      "visualVerificationRefs": [
+        "article:reversal_phase_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "previous day high and low",
+        "previous week high and low",
+        "session highs and lows",
+        "latest marked swing extreme",
+        "current bar sweep state",
+        "close location relative to swept reference",
+        "protected swing state"
+      ],
+      "machineChecks": [
+        "Detect a sweep beyond one of the tracked external liquidity references",
+        "Tag the reversal to the highest-timeframe breached reference when multiple tracked levels overlap on the same move",
+        "Require a close back through the swept reference or back inside the source range after the sweep"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "reversal_confirmation_stack",
+      "name": "Reversal confirmation is stacked from wick, liquidity sweep, CISD, and close behavior",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["price_at_reversal_anchor"],
+      "direction": "bidirectional",
+      "setupAnchor": "Price sweeps a tracked previous-day, previous-week, session, or swing reference and leaves a higher-timeframe rejection wick or V-shape",
+      "confirmationTrigger": "A lower-timeframe CISD closes through the candle series that made the extreme while price also closes back through the swept reference",
+      "protectedSwingDefinition": "The lower-timeframe shift that confirms the wick becomes the structural reference for executing or invalidating the reversal thesis",
+      "invalidationCondition": "The wick midpoint is disrespected under wick logic, CISD never forms, or price cannot close back through the swept reference",
+      "targetLogic": "Use the confirmed shift to frame entry timing and then target the next opposing liquidity pool",
+      "exceptions": [
+        "Wicks inside consolidation are less reliable than wicks that sweep external liquidity",
+        "Below the four-hour chart, reversal framing gets noisier and should be filtered by higher-timeframe bias"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_4#how_to_identify_a_reversal_step_by_step",
+        "ttrades_candlestick_wicks#respecting_vs_disrespecting_wicks",
+        "ttrades_candlestick_wicks#the_importance_of_context"
+      ],
+      "visualVerificationRefs": [
+        "article:candlestick_wicks_scan_2026_03_21",
+        "article:reversal_phase_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe wick midpoint",
+        "wick respect or disrespect state from wick logic",
+        "close through reference candle series",
+        "swept reference state",
+        "session bucket"
+      ],
+      "machineChecks": [
+        "Read midpoint respect or disrespect from the wick-logic topic instead of redefining wick tolerance locally",
+        "Detect a close through the candle series that created the extreme",
+        "Require the same move to close back through the swept reference"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "candle_three_reversal_fallback",
+      "name": "If candle two fails, candle three closure can still confirm the reversal",
+      "timeframeScope": ["lower"],
+      "marketPhasePrecondition": ["point_of_interest_hit", "candle_two_reversal_not_confirmed"],
+      "direction": "bidirectional",
+      "setupAnchor": "Price reaches an already-mapped fair value gap, imbalance, or order-block style zone and candle two does not produce the reversal closure",
+      "confirmationTrigger": "Candle three closes over the body of candle two in bullish context or below the body in bearish context without sweeping candle two's extreme",
+      "protectedSwingDefinition": "A swing is only valid when the mapped zone is paired with a valid closure, so candle three closure can still validate the reversal swing",
+      "invalidationCondition": "Candle three also fails to close through candle two's body or the move sweeps candle two's extreme without the required close",
+      "targetLogic": "Once valid, anticipate candle four expansion and refine entry around candle three equilibrium on the lower timeframe",
+      "exceptions": [
+        "Candle three closure can signal either reversal or continuation depending on context, so higher-timeframe framing remains mandatory",
+        "The zone must already be mapped by the higher or intermediate timeframe context rather than discovered only after candle three prints"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_3_closure#understanding_continuation_vs_reversal_closures",
+        "ttrades_candle_3_closure#when_candle_2_fails_candle_3_can_still_confirm",
+        "ttrades_candle_3_closure#chart_examples_and_how_they_apply"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_3_closure_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "candle two open high low close",
+        "candle three open high low close",
+        "pre-mapped aligned zone state",
+        "candle three midpoint"
+      ],
+      "machineChecks": [
+        "Detect whether candle two failed to produce the reversal close",
+        "Detect whether candle three closes through candle two's body in the required direction",
+        "Reject the fallback if candle three sweeps candle two's extreme before the required close",
+        "Gate the fallback behind an already-mapped aligned zone rather than discovering a new zone on candle three"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "reversal_sequence_entry_model",
+      "name": "The first-pass reversal sequence is sweep, reclaim, CISD, and gap-backed entry",
+      "timeframeScope": ["lower"],
+      "marketPhasePrecondition": ["kill_zone_active", "higher_timeframe_reversal_anchor_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Price enters London or New York and sweeps liquidity at a mapped higher-timeframe reversal anchor",
+      "confirmationTrigger": "The first-pass sequence requires a sweep or purge, a reclaim or inversion back through the move into the extreme, a CISD through the candle series that made the extreme, and an entry location such as a fair value gap, candle-three equilibrium, or breaker-style retest after the shift",
+      "protectedSwingDefinition": "Later-stage confirmations should sit behind a newly formed opposite-direction protected swing or equivalent structural shift",
+      "invalidationCondition": "The sweep never reclaims the level, CISD never forms after the reclaim, or the new protected swing fails before continuation develops",
+      "targetLogic": "Earlier entries improve R but carry less confirmation; later entries sacrifice price for cleaner structural validation",
+      "exceptions": [
+        "The first-pass codable subset ends at reclaim, CISD, and entry location; breaker blocks are optional later refinement rather than a required first release",
+        "Time-of-day filtering matters, especially for index reversals around New York AM"
+      ],
+      "evidenceRefs": [
+        "ttrades_reversal_sequence#understanding_kill_zones",
+        "ttrades_reversal_sequence#core_concepts_for_entry_models",
+        "ttrades_reversal_sequence#how_reversals_form"
+      ],
+      "visualVerificationRefs": [
+        "article:reversal_sequence_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "session or kill-zone filter",
+        "liquidity sweep state",
+        "reclaim or inversion detection",
+        "CISD proxy",
+        "fair value gap proxy",
+        "candle-three equilibrium proxy",
+        "breaker-style retest proxy",
+        "new protected swing state"
+      ],
+      "machineChecks": [
+        "Gate reversal entries by session window",
+        "Require a sweep to be followed by a reclaim back through the extreme area before looking for CISD",
+        "Require CISD after the reclaim and before enabling any entry location",
+        "Allow selectable entry families such as fair value gap, candle-three equilibrium, or breaker-style retest after the shift"
+      ],
+      "ambiguityNotes": []
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What is the cleanest first-pass CISD definition for reversal confirmation without smuggling in discretionary candle reading?",
+    "What is the cleanest first-pass reclaim or inversion rule for the reversal sequence when the return through the extreme is shallow or fast?"
+  ]
+}

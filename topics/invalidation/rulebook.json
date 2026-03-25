@@ -1,0 +1,190 @@
+{
+  "topic": "invalidation",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_stop_loss_mastery",
+      "url": "https://ttrades.com/stop-loss-mastery-using-protected-swings-for-precise-invalidations/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_protected_swings",
+      "url": "https://ttrades.com/protected-swings-understanding-trends-and-invalidations/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_reversal_sequence",
+      "url": "https://ttrades.com/reversal-sequence-building-an-entry-model-for-trading/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_continuation_failures",
+      "url": "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "protected_swing_is_default_invalidation",
+      "name": "The default invalidation level is the protected swing that should hold if the thesis is correct",
+      "timeframeScope": ["fractal", "higher"],
+      "marketPhasePrecondition": ["protected_swing_confirmed"],
+      "direction": "bidirectional",
+      "setupAnchor": "After a protected low or protected high is confirmed, use that swing as the structural line the market must defend",
+      "confirmationTrigger": "Bullish setups stay valid while the protected low holds; bearish setups stay valid while the protected high holds",
+      "protectedSwingDefinition": "A protected swing becomes the active invalidation anchor only after price reaches an important level and closes through the candle series that created the move into that level",
+      "invalidationCondition": "Price trades beyond the protected swing that was supposed to hold for the active thesis",
+      "targetLogic": "Place the stop beyond the protected swing and keep the trade thesis active only while that structural anchor remains intact",
+      "exceptions": [
+        "Do not assign invalidation to an anticipated swing before the required confirming close has actually printed"
+      ],
+      "evidenceRefs": [
+        "ttrades_stop_loss_mastery#what_is_a_protected_swing",
+        "ttrades_stop_loss_mastery#why_use_protected_swings_for_stop_loss_placement",
+        "ttrades_protected_swings#key_takeaways_for_trading_protected_swings"
+      ],
+      "visualVerificationRefs": [
+        "article:invalidation_protected_swing_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "protected swing high or low",
+        "directional thesis state",
+        "current high",
+        "current low",
+        "current close"
+      ],
+      "machineChecks": [
+        "Require a confirmed protected swing before declaring the invalidation level",
+        "Place bullish invalidation below the protected low and bearish invalidation above the protected high",
+        "Flip the thesis to invalid once price breaches the active protected swing"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "body_invalidation_is_conditional_risk_tightening",
+      "name": "Body-based invalidation is an optional risk-tightening variant, not the default structural rule",
+      "timeframeScope": ["fractal", "lower"],
+      "marketPhasePrecondition": ["protected_swing_confirmed", "risk_reward_tightening_needed"],
+      "direction": "bidirectional",
+      "setupAnchor": "Start from the default protected swing invalidation, then consider moving the stop to the body of the swing candle only when structure justifies tighter risk",
+      "confirmationTrigger": "Use body invalidation only when the swing candle is supported by large bulk opposing candles rather than large rejection wicks",
+      "protectedSwingDefinition": "The protected swing remains the true structural anchor even when the chosen stop is tightened to the body for risk-to-reward reasons",
+      "invalidationCondition": "Price closes or trades through the chosen body-based invalidation level before the trade reaches its objective",
+      "targetLogic": "Use body invalidation to improve risk-to-reward on nearby objectives, knowing that the trade can be stopped before the full structural thesis is actually broken",
+      "exceptions": [
+        "Do not use body invalidation on large-wicked opposing candles",
+        "When structure is wick-dominated, revert to the full protected swing invalidation"
+      ],
+      "evidenceRefs": [
+        "ttrades_stop_loss_mastery#adjusting_for_risk_to_reward",
+        "ttrades_stop_loss_mastery#example_workflow"
+      ],
+      "visualVerificationRefs": [
+        "article:invalidation_body_variant_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "protected swing level",
+        "swing candle open",
+        "swing candle close",
+        "wick-dominant versus body-dominant proxy"
+      ],
+      "machineChecks": [
+        "Treat protected swing invalidation as the default rule and body invalidation as an optional override",
+        "Reject body invalidation when the swing candle is dominated by large rejection wicks",
+        "Mark body invalidation setups as tighter-risk variants rather than structurally stronger setups"
+      ],
+      "ambiguityNotes": [
+        "The first machine-checkable definition of big bulk opposing candles versus large wicked opposing candles still needs a stricter algorithm"
+      ]
+    },
+    {
+      "id": "wait_for_new_protected_swing_if_rr_is_poor",
+      "name": "If the initial reversal invalidation is too wide, wait for the next protected swing instead of forcing the trade",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["initial_protected_swing_confirmed", "risk_reward_unfavorable"],
+      "direction": "bidirectional",
+      "setupAnchor": "After the first reversal-level protected swing appears, compare its structural invalidation distance against the available target",
+      "confirmationTrigger": "If the initial protected swing produces poor risk-to-reward, defer entry and wait for a new protected swing to form in the same direction after retracement or continuation structure develops",
+      "protectedSwingDefinition": "Later protected swings in the same thesis can tighten invalidation while preserving the original directional idea",
+      "invalidationCondition": "A later protected swing never forms, or price invalidates the original thesis before a tighter continuation-style entry develops",
+      "targetLogic": "Improve risk-to-reward by entering from later structure rather than compressing the original stop in a way that ignores invalidation logic",
+      "exceptions": [
+        "This is a patience filter, not a requirement to re-enter endlessly after every missed move"
+      ],
+      "evidenceRefs": [
+        "ttrades_stop_loss_mastery#adjusting_for_risk_to_reward",
+        "ttrades_stop_loss_mastery#protected_swings_in_trending_markets",
+        "ttrades_protected_swings#continuation_using_protected_high"
+      ],
+      "visualVerificationRefs": [
+        "article:invalidation_wait_for_next_swing_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "initial protected swing invalidation distance",
+        "target distance",
+        "later protected swing flag"
+      ],
+      "machineChecks": [
+        "Compare the initial invalidation distance with the available target distance",
+        "Allow the setup to defer rather than force a trade when the initial stop is too wide for the objective",
+        "Promote the deferred setup only when a later protected swing forms in the same direction"
+      ],
+      "ambiguityNotes": [
+        "The minimum acceptable reward-to-risk threshold for when a trade should be deferred instead of taken is not yet numeric"
+      ]
+    },
+    {
+      "id": "continuation_or_reversal_is_invalid_when_structure_turns_into_range_or_target_is_already_met",
+      "name": "A setup is invalid when structure loses intent through consolidation, target completion, or failed directional follow-through",
+      "timeframeScope": ["higher", "intermediate", "lower"],
+      "marketPhasePrecondition": ["entry_model_active"],
+      "direction": "bidirectional",
+      "setupAnchor": "After a continuation or reversal setup becomes active, monitor whether price shows decisive follow-through or instead drifts into range behavior or reaches the higher-timeframe objective",
+      "confirmationTrigger": "Keep the setup active only while price remains fast, decisive, and structurally aligned with the original thesis",
+      "protectedSwingDefinition": "Protected swings should lead to clean continuation or reversal expression; if price overlaps, grinds sideways, or finishes the main objective, the original setup quality is gone",
+      "invalidationCondition": "Price turns into consolidation instead of expanding, sweeps the relevant objective and stalls, or trades back through the range in a way that breaks the original directional read",
+      "targetLogic": "Cancel or avoid re-entry once the higher-timeframe objective has been met or the intended structure has degraded into a range or opposing move",
+      "exceptions": [
+        "A setup can stay contextually valid after a pause, but not as the same immediate entry once structure has clearly turned into consolidation"
+      ],
+      "evidenceRefs": [
+        "ttrades_continuation_failures#reason_one_consolidation_disguised_as_continuation",
+        "ttrades_continuation_failures#reason_two_continuation_forms_while_taking_short_term_targets",
+        "ttrades_continuation_failures#reason_three_higher_timeframe_targets_already_met"
+      ],
+      "visualVerificationRefs": [
+        "article:invalidation_structure_decay_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "range high and low",
+        "higher-timeframe target flag",
+        "protected swing state",
+        "bars since setup",
+        "directional follow-through proxy"
+      ],
+      "machineChecks": [
+        "Invalidate continuation or reversal setups when price resolves into a consolidation rather than immediate directional follow-through",
+        "Reject fresh entries after the higher-timeframe objective has already been met",
+        "Mark the original thesis as failed when price rotates back through the range and destroys the expected directional structure"
+      ],
+      "ambiguityNotes": [
+        "The first strict timing rule for when hesitation becomes consolidation-invalidation instead of acceptable pause still needs a stricter algorithm"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What numeric reward-to-risk threshold should decide when to defer the initial reversal entry and wait for the next protected swing?",
+    "What is the best first machine proxy for distinguishing bulk opposing candles from wick-dominant opposing candles in the body-invalidation rule?"
+  ]
+}

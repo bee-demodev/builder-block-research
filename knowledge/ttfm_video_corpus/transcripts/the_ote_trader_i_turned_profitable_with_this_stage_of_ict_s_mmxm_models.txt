@@ -1,0 +1,683 @@
+[5.49] [Music]
+[11.24] how's it going everyone today we are
+[12.76] joined by Tom also known as the OT
+[15.52] Trader and he is going to walk us
+[17.80] through his personal model as well as a
+[20.12] simulation in FX replay so let's get
+[22.72] into the video all right TR trades thank
+[25.44] you so much first of all for inviting me
+[27.28] to T talks a little bit about myself my
+[30.16] name is Tom I've been trading the Forex
+[32.32] market for over five years many of you
+[34.48] know me as the OT Trader um I actually
+[38.08] started out with breakout trading which
+[40.00] is a horrible way to trade in my opinion
+[42.44] there was no logic at all behind that uh
+[45.48] and a friend of mine which I was in a
+[47.32] mentorship of somebody the mentor didn't
+[49.48] really explain anything logically and he
+[51.60] said to me you need to study this ICT
+[54.04] guy this looks very good and logical so
+[56.64] let's do that and my mind was just blown
+[58.96] away right IC Concepts is literally the
+[62.68] most logical way to approach the market
+[64.64] in my opinion um so I passed like a 100K
+[67.36] challenge in six months way too fast uh
+[70.52] in hindsight because I wasn't following
+[72.28] the proper process because trading is
+[74.28] all about following the right process to
+[76.48] build up that confidence right so today
+[79.28] I want to talk about my time frame
+[81.40] alignment model to you I'm going to go
+[83.60] over PDF um outlining step by step on
+[87.64] how I approach the market on a daily
+[89.48] basis
+[90.52] and in the end after that one I'm going
+[92.40] to do a simulation so you can see me
+[94.48] trade live conditions with a random date
+[98.28] and yeah I hope you enjoy this session
+[101.36] all right guys now I'm going to walk you
+[103.20] through the model I actually use on a
+[105.16] day-by-day basis and I've approached
+[108.36] this with a simple step-by-step plan so
+[111.04] let's go through it over here it's
+[112.64] called time frame alignment and we're
+[114.56] going to go over a bullish and a bearish
+[116.80] example the framework for determining
+[119.48] how to be on the correct side of the
+[120.96] curve is outlined in this checklist over
+[124.16] here we've got the checklist right
+[125.60] building the higher time frame narrative
+[127.32] for the market maker models now a few
+[129.36] points higher time frame key level with
+[131.24] smt for the smart money reversal we have
+[134.44] to look for a higher time frame change
+[136.60] in the state of delivery and draw out a
+[138.64] new dealing range then we're going to
+[140.64] look for setups in the reaccumulation
+[142.68] phase not in the smart money reversal
+[145.48] why because this is higher probability
+[147.84] to determine if you're on the right side
+[149.52] of the curve so we're going to be using
+[151.32] the 4H Hour 1 hour and 15 minutes to
+[153.84] frame a setup and we're going to enter
+[155.96] on the 15 minute now when building the
+[159.00] higher time frame narrative we want to
+[160.44] be looking for a higher time frame key
+[162.20] level with smt in discount before we can
+[165.48] determine a high probability smart money
+[167.56] reversal um a little note on entry on
+[169.88] the 15 minute you can also enter on the
+[172.40] 1 hour time frame if you're using 4our
+[174.84] structure so that's a little deviation
+[177.32] on that so over here I got a little uh
+[181.08] flowchart of a step by-step approach
+[183.64] step number one we want to have a higher
+[185.20] time frame key level step number two we
+[187.16] want to see smt in that higher time
+[189.00] frame key level then we want to use a
+[191.60] higher time frame dealing range for
+[193.08] premium and discount and then a 4-Hour
+[195.80] rate into that discount key level then
+[198.16] we'll wait for a 1 hour change in the
+[199.72] state of delivery and then we'll look
+[201.68] for a 15minute discount entry now how
+[205.00] does that look like from start to finish
+[208.36] right first of all we got a daily chart
+[210.76] on USD or it's AUD USD over here we've
+[214.96] got this inverse fair value Gap over
+[217.40] here deep in discount of this bigger
+[219.24] range right so that is our key
+[221.76] level then we want to determine higher
+[224.88] time frame smt which is this low to this
+[228.44] low was smt with nzdusd so now we've got
+[231.96] a key level and smt confirming that this
+[234.88] can be a high probability smart money
+[236.80] reversal but before we can determine
+[238.60] that this is actually a smart money
+[240.00] reversal we need to use structure as
+[242.32] well on the lower time frame so what
+[245.56] we're going to look for to determine the
+[247.08] bias is order pairing now what is order
+[249.76] pairing order pairing means um the
+[252.20] market moves from sell stops so it
+[254.24] accumulates sell stops below an old low
+[256.40] and they want to pair it up with the buy
+[258.24] stops above a range high so we can
+[260.36] actually see that happen over here this
+[262.12] swing low here got rated by this Wick
+[264.68] into the key level with smt then we want
+[267.84] to have our draw liquidity in into the
+[270.08] Range High which is up there now once we
+[273.08] hit that sell side liquidity pool into
+[275.44] the key level we can see an impul swing
+[278.16] up higher this displacement over here
+[281.20] indicates that we are going into buy
+[283.60] side of the curve because there's
+[284.68] sponsorship behind this move right
+[286.84] there's leaving a bullish for Value Gap
+[288.80] behind and also in the meanwhile
+[290.92] disrespecting a up close Candle on the
+[293.80] way right so now we have our higher time
+[297.88] frame range because this low took out
+[300.48] the sell side and then it tops out over
+[302.56] here so we have a bullish range over
+[304.36] here we can use this bullish range to
+[307.08] frame a setup in the upcoming week over
+[309.76] here right so higher time frame key
+[313.04] level daily fair value Gap over here
+[315.36] this is our key level for continuation
+[317.28] higher and this all stems from the smart
+[319.36] money reversal that happened over here
+[321.28] and let it just develop until it forms a
+[324.16] new higher time frame
+[326.28] range now let's zoom in a little bit
+[328.72] more we've got a 4our chart over here if
+[331.76] you want to determine on what side of
+[333.48] the curve you are on you need to use
+[336.00] Market maker models right because a
+[337.68] market maker model always have a sell
+[339.84] side of the curve and a buy side of the
+[341.56] curve so with a market maker buy model
+[343.84] you want to spot an original
+[345.32] consolidation on the top of the range
+[347.80] and then wait for a smart money reversal
+[349.84] to happen and then trade the
+[351.68] distribution phase that comes out of it
+[353.32] so we don't trade this little piece of
+[354.92] price action over here we actually wait
+[357.08] for it to show us that it wants to go
+[359.20] higher right so over here we had that
+[361.40] daily key
+[363.24] level what is happening in this key
+[366.04] level right think about the order
+[368.08] pairing I just said uh on the daily time
+[370.32] frame where we run this low and then we
+[372.12] want to pair it up with the high over
+[373.76] here you can do the same thing on the
+[375.80] lower time frame as well so over here
+[378.76] we've got some relative equal lows right
+[380.76] from this uh shortterm leg up we want to
+[384.60] accumulate cell stops below this low
+[387.88] down here this is called offset
+[389.64] reaccumulation into that key level and
+[392.60] you can pair up these sell stops that
+[394.68] are that are accumulated with the buy
+[396.76] stops that are resting Above This high
+[399.04] right same thing as this low pairing it
+[401.12] up with the high up here I already said
+[403.48] it the order pairing but you can
+[404.84] actually see me outline it over here
+[406.52] right the range low down here gets
+[408.60] paired up with the Range High over here
+[410.64] this is crucial to know where the market
+[412.84] is going and this is actually also how
+[414.80] Turtle soups are formed so it's nothing
+[417.04] fancy turtle soup is just really um a
+[420.36] lower time frame range getting rated
+[422.08] into a key level from a higher time
+[424.08] frame range so now that we've
+[425.68] established a bullish dealing range
+[427.24] after that smart money reversal has
+[428.80] occurred then we zoom into the 4our for
+[431.24] a sell stop rate right we got one sell
+[433.68] stop rate over here we've got smt on the
+[436.52] lows so this is the same thing that
+[438.16] happens on the higher time frame it also
+[439.92] happens on the 4H hour over here making
+[441.60] it a high probability for a key level in
+[444.52] discount to be a reversal and then
+[446.56] continue up with its higher time frame
+[448.48] Trend so the let's zoom into the 1 hour
+[450.60] right so we went over the daily we went
+[452.56] over the 4 Hour and now we're going to
+[454.60] be looking at the 1H hour time frame how
+[457.04] are you actually going to frame a setup
+[459.40] right um you're going to Mark out a
+[461.48] bearish array which should not get
+[463.28] violated and when it does get violated
+[465.32] that is a good indication that it's
+[466.80] going into bu side of the curve so can
+[470.12] you see a bearish array somewhere around
+[472.32] here let me map it out right we've got
+[474.36] this bearish order block over here which
+[476.80] is a up Clos candle with another leg
+[478.72] down now price closes above it over here
+[482.00] and this indicates you are on the right
+[484.24] side of the curve over here because
+[486.12] higher time frame is bullish and we just
+[487.88] need to see a sell stop rate and then a
+[490.32] bearish array being violated now what
+[493.36] you can do with a um bearish array which
+[498.48] gets violated you can use it to frame a
+[501.08] new PD array in the same area so this
+[503.76] one got violated if we form a bullish
+[505.68] order Block in the same area this is
+[508.36] called all selling into you buying and
+[510.48] this is also a very good indication
+[511.76] you're going into buy side of the curve
+[513.84] now we have a PD array over here right
+[516.72] indicating that we're going to go
+[518.28] bullish and with this new price lag that
+[521.48] forms out of that new pdra you can use
+[523.48] that for your last piece of time frame
+[525.68] alignment which is that 15minute time
+[527.76] frame so let's look at the 15 minute
+[530.68] over here so literally you don't need
+[533.64] any PD Rays to enter from you're just
+[535.40] going to use discount and premium over
+[537.60] here to frame your setup because we
+[539.20] already already know um that new PD
+[541.40] array that got formed while violating
+[543.24] the other one on the other side of the
+[544.76] curve that this new dealing range that
+[546.80] forms over here you can just literally
+[549.08] Buy in discount so if you don't see any
+[550.76] fair value Gap or an order block
+[552.80] obviously you want to have a fair value
+[554.40] Gap is higher probability um but if you
+[556.92] stick within the correct time right New
+[559.08] York Kill Zone if you use a 15minute
+[561.04] time frame you want to use a Kill Zone
+[564.20] um so literally price pushes up over
+[566.48] here returns back into discount of the
+[568.60] new Range it Med so you buying discount
+[571.48] no PD array required and put your stop
+[574.12] loss below the low which got rated right
+[576.60] and then you just write price action up
+[579.04] don't go break even too early you only
+[581.48] go break even once there's a new Range
+[583.24] formed right so this pushes up away but
+[585.96] it did not take out this High yet so
+[587.44] don't go break even um and then over
+[590.12] here it pushes up with a new leg up so
+[591.88] now you can go break even because this
+[594.00] low here got rated by this one right so
+[596.28] it's forming a new Range up and now you
+[598.56] can go break even all right let's go to
+[600.56] a bearish example we've got a higher
+[603.24] time frame key level first of all right
+[605.48] then we wait for that smt again is a
+[608.08] simple six-step approach higher time
+[610.36] frame dealing range again we're going to
+[612.16] wait for a 4H hour rate into premium and
+[614.52] then a 1our change in the state of
+[616.20] delivery and follow it up with a
+[617.88] 15minute premium entry um like I said
+[620.96] earlier as well if you don't want to
+[623.04] enter on a 15 minute you can also um
+[626.56] wait for a 4-Hour premium range to get 4
+[629.32] formed and then a 1 hour rate on a high
+[631.64] and then take an entry over there um you
+[634.12] don't require a Kill Zone once you trade
+[636.96] 1our levels um I would only use a Kill
+[640.40] Zone when you're trading 15 minutes what
+[642.56] does that look like over here we got a
+[643.88] crude oil chart right this is a blank
+[646.80] chart um what do we need to determine
+[650.04] first a higher time frame key level are
+[652.08] we going from external to internal or
+[654.04] we're going from internal to external
+[656.04] right so over here we can see this Range
+[658.48] High to this range low right so we have
+[660.68] our premium area and our discount area
+[663.48] now what are we going to do here we
+[665.36] rating this high up here right so this
+[667.64] could be a external to internal play um
+[672.76] but on the higher time frame you also
+[674.76] have order pairing right to remember the
+[676.28] bullish example we're going to go
+[677.92] accumulate buy stops on this High which
+[680.12] happens over here and then we want to
+[681.76] pair it up with the lows down here but
+[683.64] first we're only going to look at
+[684.92] external range liquidity up here and
+[687.16] then Target an internal range liquidity
+[689.04] pool which is down here in discount
+[690.80] right so whatever liquidity pool
+[693.24] internally is in premium you can aim for
+[695.72] the ones that are in discount that is
+[697.40] what we want to do because we're going
+[698.80] to go from external back into internal
+[701.56] and internal should be in discount right
+[704.32] so now we have order pairing right Range
+[707.12] High to range low like I said earlier we
+[709.48] want to accumulate the buy stops here
+[711.60] and pair them up with the lows down
+[714.84] here second step smt right we want to
+[717.60] know if smart money is is actually into
+[720.08] the market and that's determined by
+[722.32] using smt so we can see smt on this high
+[725.36] and this High UK oil did not take out
+[727.60] these Highs but um uh us oil did so this
+[731.20] is a good indication so let's go to step
+[733.84] number three after that displacement
+[736.40] just like in the bullish example we want
+[738.16] to frame our new range right so now
+[740.08] we've got a bearish range because we're
+[742.44] violating an old low here right and then
+[745.36] we have our discount levels and our
+[747.24] premium levels now we want to have a
+[749.20] higher time frame key level where we can
+[750.64] frame a setup from got this last up
+[752.76] close candle which is a bearish order
+[754.64] block on the higher time frame and now
+[757.92] we're diving into the 4 Hour right so we
+[759.80] had the daily now we're going into the 4
+[761.48] Hour we want to wait for a structure
+[763.16] shift indicating that we have a smart
+[764.96] money reversal and then a disrespect of
+[768.16] a bearish array right so again you need
+[771.56] to use Market maker models so this is
+[773.20] the buy side of the curve and then smart
+[775.16] money reversal above an old high and
+[777.24] then sell side of the curve now what are
+[779.36] we going to be waiting for we're going
+[780.72] to wait for the low RIS cell to print
+[782.56] first you don't trade this entire lag
+[785.08] here you wait for the low RIS cell to
+[786.84] get formed into that key level right we
+[789.00] got a daily order block got hit over
+[790.76] here and now once the new lack comes out
+[793.44] of there that is the first stage
+[795.20] distribution so if you just don't trade
+[798.20] smart money reversal and don't trade the
+[800.08] low resell there are plenty of
+[801.64] opportunities to get in now we want to
+[803.72] use a uh bullish array which gets
+[807.04] violated right so we disrespect this
+[809.16] bullish array over here because this is
+[810.52] a lag up with a bullish order block
+[812.44] which hit a key level here if that gets
+[814.44] violated we are on sell side of the Gir
+[816.92] for the next leg down so zooming in on
+[819.24] the 1 hour time frame right now right if
+[821.68] you trade you always want to Mark out
+[823.80] your New York midnight opening price for
+[826.36] using those daily profiles right just
+[828.60] like a classic sell day you want to see
+[830.12] a manipulation above above the New York
+[833.08] midnight opening price and then
+[834.96] expansion lower you have a New York
+[836.84] retracement which should not violate la
+[839.32] high and then another expansion lower
+[841.00] should occur so you can draw out your
+[844.68] range from here right this is a premium
+[847.08] High to Discount low this is a new
+[849.08] bearish Range we hit premium of that 1
+[851.92] hour range and now we want to zoom in
+[854.20] onto the lower time frame so let's go to
+[856.64] the 15 minute this is actually going to
+[858.52] be the execution time frame um because
+[861.12] this is uh us oil it is a commodity um
+[865.08] it can extend past the regular Forex
+[868.48] Kill Zone right because the entry over
+[870.64] here for example should be around 12: to
+[873.36] 2 p.m. um with Forex I would not enter
+[877.96] past 12 p.m. U but with commodities it
+[881.08] is still allowed so we hit that 1 hour
+[883.40] premium up here right now it displaces
+[886.00] down lower and what do we want to look
+[888.16] for order pairing again right so we're
+[890.36] going to determine a Range High and a
+[893.08] range low within the bigger range this
+[895.52] is key for trading time frame alignment
+[898.84] and um so in the bullish example you
+[900.72] could have we traded the change in a
+[902.72] state of delivery right but in this
+[904.84] bearish example you can actually turtle
+[906.52] soup the high within the bigger range um
+[909.16] I do prefer doing this because this
+[911.08] gives me the best odds of being on right
+[913.32] side of the curve why because Turtle
+[915.36] souping a high within a bigger range
+[917.28] often gives a very strong reaction so we
+[920.36] can see price runs this High over here
+[923.04] back into premium of the new 15minute
+[925.80] range and then price drops lower and
+[928.20] pairs up the Buy stops Above This high
+[930.12] with the sell stops down here and
+[931.92] literally you can go break even once
+[933.48] there's a new Range formed which is this
+[935.24] one to this one so let's say you entered
+[937.12] in premium over here I would probably
+[938.84] use this fair value Gap right and then
+[941.36] price displaces down lower retraces back
+[943.96] into premium of this leg and then starts
+[946.60] to run
+[949.32] lower now if there's no short-term high
+[953.36] you can just literally short above the
+[955.64] 0.5 line because you don't require any
+[958.56] PD like I said in the Buddhist example
+[960.40] as well um stop loss above dealing Range
+[963.40] High now let's say you just enter
+[965.64] slightly above 0.5 it looks like it's
+[967.64] not a good risk to reward but remember
+[969.84] you're targeting higher time frame
+[971.60] levels right so just because the risk to
+[975.08] reward in this range is not more than 2
+[977.56] R you will hold for a longer period of
+[980.68] time because you're targeting higher
+[982.16] time frame levels so this is a breakdown
+[984.60] of my model I will also do a little
+[986.72] simulation so you can follow my entire
+[988.92] thought process on how to execute this
+[990.80] actually when you see the camel Sprint
+[992.72] let's hop into this simulator and see my
+[994.92] entire thought process from higher time
+[996.76] frame to lower time frame so first of
+[999.36] all random date
+[1001.48] right 7th of June 2021 7th of June 2021
+[1006.24] okay let's go 2021 June 7th is a Monday
+[1011.20] looks like it yeah I think it's post NFP
+[1013.68] we'll see we'll see we'll see okay let's
+[1016.44] open up this simulator
+[1019.04] see what we can uh catch with this model
+[1022.64] right I want to split up the screen
+[1024.76] because I want to
+[1026.24] see uh if there's
+[1028.92] smt all right so let's pull up Euro USD
+[1032.60] on the right dxy on the left start off
+[1036.32] on the monthly as always where is price
+[1039.12] and where are we most likely heading so
+[1041.52] we know it's start of the month so what
+[1044.04] is this monthly candle most likely to do
+[1046.72] uh at the start is probably going to
+[1048.52] manip at first and then distribute later
+[1051.60] in the month so we are in the first week
+[1054.48] uh or actually the second week um so
+[1057.28] yeah let's see where we are we are deep
+[1058.60] in discount right now do we have smt
+[1061.32] with any highs or any lows here we do
+[1064.16] not um so we got to go to the weekly to
+[1067.40] get some more information hopefully it
+[1069.92] won't be uh terrible price
+[1073.20] action but yeah we'll see what develops
+[1076.08] so we're very deep in discount we see
+[1078.20] this High rate R over here and we can
+[1080.56] see the same low rated over here there
+[1082.48] is no
+[1084.00] smt um but we do have a swing low form
+[1087.96] so we can draw back into premium of the
+[1090.84] range um if I outline the entire range
+[1093.84] here from the weekly time frame this is
+[1095.76] the weekly range um we already ran sell
+[1099.16] side so order pairing could occur on the
+[1101.44] High um but we have to see how the daily
+[1104.28] structure looks like because right now
+[1106.28] I'm not too sure so daily time
+[1110.04] frame let me see
+[1113.08] daily right so it looks it looks pretty
+[1116.08] decent to go lower on Euro USD um
+[1119.84] because we raid that high right formed a
+[1122.04] failure swing and now we're closing
+[1123.72] below um all these scandles down here so
+[1126.48] this would be a bearish order block
+[1128.56] right because it pierced the High um and
+[1132.56] then it went down lower breaking this
+[1134.60] but we're still respecting this uh
+[1137.20] bullish per value gap on The Daily
+[1139.56] so because it's Monday I prefer Monday
+[1142.68] to play out first and then determine
+[1145.00] what is going to happen next quickly
+[1146.48] peing at the economic calendar that is
+[1148.08] important of course we are in what is
+[1151.36] this 7th of June obviously see if
+[1154.36] there's any news 8th of June we've got
+[1156.64] some high impact news nothing too crazy
+[1160.64] and we got Euro interest rates I think
+[1164.48] yeah Euro interest rates on Thursday
+[1167.24] okay so we got to keep that in mind
+[1169.56] um damn on the Wednesday after the week
+[1172.92] after we have some fomc okay yeah we got
+[1176.28] to get the keep that in mind so Thursday
+[1178.72] raid raid decision so uh let's go to the
+[1182.20] 4 Hour see what structure is like over
+[1184.40] here are we actually forming a new
+[1186.28] dealing range a bearish range or a
+[1188.48] bullish
+[1189.56] range if I just look at dxy right now we
+[1193.20] can actually see this pushup happen over
+[1195.24] here so we have one uh new bullish range
+[1198.00] formed and then we respect discount on
+[1200.96] this order block on the 4 Hour
+[1204.12] right over here and then we push up
+[1207.44] again respect discount over here and now
+[1210.60] we have another L
+[1212.56] up we have a smaller range into a bigger
+[1215.20] range and then we
+[1217.28] have this range over here so it looks
+[1220.48] like we're going into buy side of the
+[1221.92] curve on dxy so my idea initially of uh
+[1225.12] seeing the lows paired up on dxy going
+[1227.72] to the highs seems very probable um so
+[1231.20] higher time frame narrative has been set
+[1232.88] right now let me remove these ranges
+[1234.92] real quick and put on a feibo NY so we
+[1238.24] want to use this one it's little a
+[1240.20] little bit more clean let's go to the 1
+[1242.72] hour all right we're still on Monday I
+[1245.72] think we can actually trade
+[1247.48] Monday um but I need a new 1 hour range
+[1251.44] to form first um because we are in
+[1254.32] discount on the 4our but I don't see any
+[1256.48] short-term lows where I can uh enter on
+[1258.88] a turtle soup basis so let's skip
+[1262.20] Monday right so skipping Monday we get
+[1264.56] some more information on the um the
+[1268.52] weekly profile that might be occurring
+[1271.12] okay let me outline this one over here
+[1273.60] and this
+[1275.12] one right let's see where we are at New
+[1277.88] York midnight opening okay so that's
+[1280.68] here me zoom in a little bit let me do
+[1283.96] the same well I clicked the wrong button
+[1286.64] need to go split screen
+[1289.24] yep okay that's
+[1290.80] better
+[1293.00] right so New York midnight opening
+[1297.00] price over
+[1301.16] here let's see where we are Asia was
+[1304.16] kind of trending higher this makes
+[1306.36] London session a little bit more
+[1308.24] unfavorable so we're definitely going to
+[1310.08] focus on New York
+[1312.20] session over here on 4H hour on Euro
+[1317.08] USD um
+[1321.96] yeah I can't really see anything clean
+[1323.64] right now so we do have to skip time
+[1325.72] frames
+[1327.52] here okay okay we ran this low which is
+[1331.52] nice if we now can get a new Range we
+[1333.20] can actually use that
+[1336.80] range right nothing much happened look
+[1338.88] the entire Tuesday was just terrible
+[1342.16] consolidation hopefully the next day
+[1344.04] will be a little bit better so we're
+[1345.92] going to do the same outline daily
+[1347.92] opening price
+[1350.08] right New York midnight is there a range
+[1352.76] we can work with it's kind of it's kind
+[1355.36] of rough not going to lie so I'm going
+[1356.44] to skip through until there's a new
+[1358.00] proper range
+[1359.88] formed okay this some yeah this is good
+[1363.36] okay this is good why is this good
+[1365.72] because we just rated sell side
+[1367.20] liquidity down here as well looks like
+[1369.56] we're having a change in the state of
+[1370.84] delivery order block over
+[1373.40] here and if we have a new range and
+[1375.68] there's a 15 minute short-term low
+[1377.40] within that range we can look for a buy
+[1379.76] setup um so let's go to the
+[1382.96] 15 yeah we're actually forming I need to
+[1386.20] 1 hour top out first I need to see a
+[1388.16] swing
+[1389.48] High okay we have a swing High which is
+[1392.16] great so now what we're going to do is
+[1394.20] Mark out our premium in discount right
+[1397.60] and this order block is actually in
+[1399.40] discount so that's good on the 15 minute
+[1402.36] we have a shortterm low which is nice as
+[1405.12] well I would have preferred if it was a
+[1406.40] little bit deeper but that does doesn't
+[1408.68] matter we want to pair up uh sell stops
+[1410.92] with buy stops so this is still good um
+[1414.00] so we have some sells side liquidity
+[1415.44] here so what I would do in this occasion
+[1417.68] this low if this was here was a little
+[1419.76] bit better but it doesn't matter we can
+[1422.08] literally enter on a 0.5 right just like
+[1424.96] I explained in the PDF so let's put a
+[1428.48] long position on the order block over
+[1430.68] here and then we're going to put our
+[1432.48] stop down here below the imbalances and
+[1435.56] then we're going to Target let's go to
+[1437.44] the 1 hour
+[1439.68] going to Target at high so that should
+[1441.00] be a good risk to reward that is a
+[1443.44] almost a five R right so that's a pretty
+[1445.84] good risk to reward um let me check the
+[1448.48] economic calendar real quick um we are
+[1451.56] in 9th of June so the day after we have
+[1455.84] uh interest rates on the Euro so we
+[1458.20] don't have to worry about that right now
+[1461.16] so manipulation
+[1462.72] below um daily opening if you use one
+[1466.44] hour levels you don't requ require a
+[1468.84] Kill Zone so basing the stop loss on a 1
+[1471.40] hour level so no kill zone is required
+[1473.72] over here so let's input an order here
+[1476.92] and just do 1% do a market no a limit
+[1480.56] order obviously and let's see if we can
+[1483.24] get
+[1484.24] taged um let's skip the time frames
+[1486.84] let's do a 15 minutes see if we can get
+[1491.00] taged maybe it will hit Thursday and the
+[1494.76] fact that it's going higher a little bit
+[1496.48] right now is not is not bad because we
+[1498.64] can extend the range and look how this
+[1501.52] shortterm low on the 15 minutes is
+[1503.52] getting closer to the equilibrium range
+[1505.52] right so that is totally fine I like
+[1508.44] that um let's see how this
+[1511.84] develops going a little bit higher still
+[1514.32] we can still extend this range because
+[1516.20] this is all sell side liquidity being
+[1517.76] built up can actually see that rated
+[1519.68] with the news release let's so let's see
+[1521.16] if we can drop a little bit
+[1522.92] lower okay we get taged over here let's
+[1525.12] see if we can run higher
+[1528.64] now you just need because we're trading
+[1530.16] on a 1 hour level right let me just
+[1531.76] quickly go back to the 1 hour because we
+[1533.56] use this 1 hour key level we need to use
+[1536.16] a stop loss here and we can only go
+[1537.84] break even once uh we form a new bullish
+[1541.24] range right so as long as we don't break
+[1543.68] out of this range we still can go break
+[1545.92] even so let's see what price does over
+[1548.28] here go still back into the order Block
+[1550.88] it's fine as long as we respect the
+[1553.64] bullish range right and it seems like
+[1555.48] we're going to form a new range right
+[1557.00] now I'm up like
+[1559.56] 2.4% so we run a high this is the
+[1562.52] perfect example of taking a partial
+[1565.04] right so we're going to take off like
+[1566.28] half of the position to bank
+[1569.08] 1.2% and now we can go break even
+[1571.48] because we're rating external range
+[1573.16] liquidity and we definitely don't want
+[1574.64] to see price come back all the way down
+[1576.36] there remember our take profit is all
+[1578.12] the way up here and based on the higher
+[1580.84] time frame I think we should reach in
+[1582.32] there so let's see if we can get
+[1584.32] there right yeah let's just this is
+[1587.28] perfect let's just close the position is
+[1588.80] just a few Pips away um Oops I Did half%
+[1592.60] close the entire position right so
+[1595.52] execution uh 3.3% on this trade very
+[1599.56] good risk to reward the initial risk to
+[1601.64] reward was I think uh four and a half or
+[1604.28] five R so getting away with 3.3% is
+[1607.08] perfect and this is literally how I
+[1609.04] trade I need to see a short-term low
+[1610.96] rated and I use 1 hour key levels and
+[1613.48] remember don't go break even too early
+[1615.68] and just trust your one hour ranges
+[1617.72] right so hope you like this simulation
+[1620.84] and the PDF explanation I did before and
+[1623.24] again te trades thank you for having me
+[1625.64] um I really appreciate it and I wish
+[1628.20] everybody good luck and good trading
+[1630.56] yeah thank you for coming on Tom if you
+[1632.48] guys do want to learn more from Tom be
+[1634.56] sure to check the description below and
+[1636.44] I will link his social medias down there
+[1638.88] with that said I hope you guys have a
+[1640.32] great rest of your day and I'll see you
+[1641.64] guys next time

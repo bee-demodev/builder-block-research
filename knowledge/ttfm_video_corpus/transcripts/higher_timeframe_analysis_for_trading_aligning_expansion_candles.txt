@@ -1,0 +1,329 @@
+[10.96] How's it going everyone? In this video,
+[12.56] we are going to talk about aligning
+[14.24] candles for expansion or aligning
+[16.40] expansion candles because when a true
+[18.80] trend occurs, all candles are aligned in
+[21.20] the same direction. Let's get into the
+[23.20] PDF. Now, the first thing you have to
+[25.04] understand is how wick size plays a role
+[26.72] in if candles support expansion or not.
+[29.28] Candles that support expansion will have
+[31.12] a small wick and a large body. Candles
+[34.00] that don't support expansion will have a
+[36.00] large wick or a large opposing run. Now,
+[38.56] I have a full video dedicated to this.
+[40.40] If you want to check it out, it'll be
+[41.84] linked in the description below. But if
+[43.84] you take a look here, in a bullish
+[45.52] scenario, we want to see price open,
+[47.36] have a small wick formed early into the
+[49.36] candle, and then price can trend higher
+[51.44] throughout the duration of the candle.
+[53.60] If price has a large opposing run or
+[56.24] opens and spends a long time making its
+[58.80] opposing run, then it can't really
+[60.56] trend, right? It's going to go return
+[62.16] back towards its opening price or its
+[64.56] current candles high. So when I say a
+[67.04] candle supports expansion, it means it
+[68.88] has a small wick which allows it to
+[70.64] expand in one direction. Now the goal is
+[73.04] to align expansion candles on multiple
+[75.20] time frames. So for example, here you
+[77.44] can see there are three time frames
+[79.36] expansion candles that are aligned
+[80.96] together. Now, I generally prefer to
+[83.04] have at a minimum two expansion candles
+[85.36] aligned. So, for example, if this was a
+[87.60] daily candle and a 4-hour candle, then
+[90.16] that would be enough for me to trade a
+[91.52] 15-minute time frame. But it is
+[93.36] preferred if on an intraday time frame
+[95.28] such as a 5m minute or a 3minut that I
+[97.52] align all those time frames together.
+[99.20] So, a daily, a 4hour, and an hourly or a
+[102.08] 30inut time frame. And you notice these
+[104.72] all have small wicks. So, they all
+[106.64] support expansion higher. Then when we
+[108.88] have structure that aligns with that
+[110.40] idea, that is when a trend can occur. So
+[113.28] what does that actually look like? Here
+[114.96] we'll take a look at an example. And for
+[116.80] visualization sake, pretend this is the
+[118.48] daily and the 4hour time frame. And this
+[120.48] is the 15-minut time frame. You can see
+[122.64] this daily candle has a small wick. It
+[124.96] has opened. It has formed a low and now
+[127.20] it is looking like it can trend higher.
+[129.44] And that is why it's important to have a
+[130.88] bias. I have a bias that this is going
+[132.72] to go higher. Then going down to the
+[134.72] 4hour time frame, why would I not want
+[136.56] to trade this candle? Well, this has a
+[138.72] large wick, so it doesn't support
+[140.32] expansion. Letting this candle 2 close,
+[143.20] then I can look to trade the expansion
+[145.20] in candle three once it forms a small
+[147.36] wick. Here you can see it opens, it
+[150.24] trades lower, forms a protected swing or
+[152.80] the wick of this higher time frame
+[154.24] candle. And then this is when trend can
+[156.48] occur because we have the structure
+[159.04] aligned with multiple time frames that
+[161.04] both support expansion. Now, this is
+[163.28] going to be the easiest of the
+[164.80] scenarios, aligning a higher time frame
+[166.72] with a candle three and then finding a
+[168.80] continuation entry. But you can also do
+[171.20] this for reversal trades. Here you can
+[173.44] see in a similar scenario, we have price
+[175.84] forming a small wick on the daily time
+[177.60] frame. Here we go down to our
+[179.44] intermediate time frame and we have also
+[182.00] a small wick forming a reversal and we
+[183.92] have a protected swing. At this point,
+[186.16] all time frames are aligned for an
+[187.76] expansion. It's just a reversal trade
+[189.36] and it's a bit harder to anticipate. But
+[191.44] taking a look at this last example, we
+[193.04] want to align all of these time frames
+[194.56] for expansion. So you can see the daily
+[196.64] supports expansion because it has a
+[198.64] small wick. Now taking a look here,
+[200.88] would we want to trade this 4hour
+[202.48] candle? No, because it opens and trades
+[204.80] higher first and does not support
+[206.24] expansion. I'd want to wait for the open
+[208.24] of the new candle before I look to get
+[210.08] on side with that. And then that's when
+[211.76] I could look to trade swing points. Now,
+[214.40] the easiest way to approach expansion
+[216.16] alignment is going to be looking to
+[218.32] trade candle 3es on multiple time
+[220.32] frames. So, for example, if I go back to
+[222.48] this slide here, I would want to trade a
+[224.80] daily candle 3 or that continuation and
+[227.52] then trade a higher time frame candle 3
+[229.60] and then look for a continuation order
+[231.36] block within all of that. The most
+[233.60] simple way will be to trade a candle 3
+[235.84] on multiple time frames. Let's go into
+[237.92] trading view and go over a few examples
+[239.68] of this. Now, before we get into this
+[241.84] example, I want to show how I have my
+[243.60] indicator layout set up for this
+[245.60] visualization of expansion alignment.
+[248.16] So, what I'm going to do is have a daily
+[250.32] power of three indicator set up here.
+[253.04] So, taking a look at that, I'm going to
+[254.40] have that offset at 15. And so, that
+[256.48] will just put this to the right side of
+[258.00] this. And there's many free ones you can
+[259.92] look for. If you type in higher time
+[261.68] frame power of three, you'll find one
+[263.52] from 2°.
+[270.88] The next thing I'll do is use my fractal
+[272.56] model indicator. So you can see here I
+[274.64] use my fractal model indicator and I
+[276.40] have it set to the 4 hour and 15inut
+[278.72] chart as I'm on the 4 hour and 15
+[280.64] minute. So what this will allow me to do
+[282.08] is see the daily the 4hour and the 15
+[284.64] all at the same time. So if we go ahead
+[286.56] and zoom into this example here, we can
+[288.96] see that we have had what a candle 2
+[291.20] closure on the 4hour time frame with a
+[293.36] nice V-shaped reversal off of our
+[295.28] previous high over here. We have not ran
+[297.52] out our consolidation lows yet. So, what
+[300.48] is this? This is a candle with a large
+[302.48] wick. It does not support expansion. So,
+[305.04] would I have wanted to trade it right
+[306.56] here in the reversal candle? No. I'd
+[308.88] want to wait for the next candle because
+[310.56] if it has a small wick, then it supports
+[312.96] expansion. Now, why would I be looking
+[314.96] for price to trend? Because the daily
+[317.28] has a small wick, right? Price opens, it
+[319.84] does not make a relevant low. It makes a
+[322.00] high, it has a change in the state of
+[323.60] delivery. So, I could be looking for
+[325.04] this to trend lower. The daily and the
+[327.84] 4hour candles both support expansion
+[330.16] here if we can form a continuation.
+[334.48] So, as we let this play ahead, what do
+[336.32] we have? We have price sweeping out a
+[338.40] high into a fair value up, which is a
+[341.20] point of interest and then forming a
+[343.04] continuation. So, now that we have a
+[344.96] protected swing in this higher time
+[346.88] frame candle, I've anticipated that this
+[348.88] wick has formed and then price can
+[350.72] continue to trend lower. That's where I
+[352.96] could look to take an entry, put my stop
+[355.12] there, and then look for 2 R. Let's see
+[358.00] how this works out. We do come back up.
+[361.04] We would have gotten filled on a retest
+[362.80] entry, and then we start to trade lower.
+[365.44] Now, let's take a look at this. If this
+[367.44] is an expansion candle, and this is an
+[369.20] expansion candle, we expect them to
+[371.44] close near their lows. So, we could look
+[373.44] to see price continue to trend. So, here
+[375.92] you can see we have expansion. This
+[377.92] isn't showing a reversal, right? That's
+[379.84] a retracement. So we can expect this to
+[381.52] continue lower and then we do get this
+[383.76] trend lower and you can see these small
+[386.80] wicks support expansion lower. Small
+[389.60] wick expansion small wick expansion and
+[393.52] even when we open this next candle we
+[395.20] have price open trade into this
+[397.28] protected swing makes a small wick and
+[399.76] then we form a new continuation there
+[401.60] and what happens? It has a small wick
+[403.76] and it can continue to expand lower. So
+[406.96] just to review, if we want to find
+[408.96] expansion or a trend, I want to find
+[411.44] where higher time frame candles all
+[413.60] support expansion in the same direction.
+[416.00] Then I'm going to align structure with
+[417.60] that in the form of protected swings or
+[419.76] continuation order blocks. And that's
+[421.44] where you can get price to continue or
+[423.60] trend. Now let's say I wanted to take a
+[425.92] look at the exact same example here, but
+[428.40] instead of viewing it on the daily,
+[430.40] 4hour, and 15 minute, I wanted to view
+[432.64] it on something like the 5-minut time
+[434.48] frame. This is where I could look for
+[436.24] three time frames to align for
+[437.92] expansion. So if you notice here, I have
+[440.16] the hourly time frame set up here, the
+[442.16] 4hour, and the daily. Now, let's first
+[444.96] talk about why this is important to
+[446.56] align them all together, then we'll talk
+[448.32] about how you could set up the indicator
+[450.08] to show this. So if we want all time
+[452.64] frames to align, does it make sense to
+[454.88] be entering in here? No. Because if we
+[458.08] take a look, our candle here on the
+[460.48] hourly is not set up for expansion,
+[463.12] right? It is a reversal candle. So, it
+[465.76] doesn't make sense to be looking to
+[467.04] trade it here. Instead, I'd want to wait
+[469.12] for the next candle as that can support
+[471.36] expansion, right? Cuz this would be the
+[473.44] candle three. And this is a good example
+[475.68] of trading candle three on multiple time
+[478.08] frames. Here we have a daily candle 3, a
+[480.88] 4hour candle 3, and an hourly candle 3.
+[484.00] You can see that's when the trend really
+[486.08] gets going here because it is a
+[488.00] continuation on all time frames. By
+[490.64] definition, that is just a trend. So,
+[493.12] how would you actually set up this
+[494.48] indicator? Well, it's the same thing
+[496.16] with the daily time frame. It's just
+[497.68] you're going to offset it quite a bit
+[498.96] more. I do mine at 32. And then I'm
+[501.52] going to set up a 4hour and 15minute
+[503.60] fractal model. I'll leave these checked,
+[506.16] but then offset at 17 and have the rest
+[509.20] of the settings besides these marked
+[511.04] here turned off. And what this will do
+[513.60] is show the higher time frame EQ and
+[516.00] those things I want to see like the
+[517.60] opening price right here, but none of
+[520.08] the other things. it won't clutter the
+[521.92] chart. And then what I will do is I'll
+[524.00] have this set on the five minute and
+[526.32] hourly. And then I'll have everything
+[527.92] else turned on. I will leave that one
+[530.00] completely set up. And that will show my
+[531.84] lower time frame structure. And this is
+[533.76] what allows me to see the daily, the
+[536.00] 4hour, and the hourly all on the same
+[538.24] time frame and still get that
+[539.60] visualization. I can see the EQ of the
+[542.24] 4hour time frame here. I can see the EQ
+[544.40] of the hourly. I can see the fractal
+[546.08] model on multiple different time frames.
+[548.40] And then that's where I can get a setup
+[550.32] where I can see all the expansion
+[552.16] candles being aligned together. So let's
+[554.40] go over another example of this. So here
+[556.40] we are in our next example and we're
+[558.16] going to go into this with a bullish
+[559.60] bias. Now let's talk through each time
+[562.00] frame and what you can pull from the
+[563.52] higher time frame chart here. So if
+[565.52] you're taking a look if we're bullish,
+[567.36] does this candle here on the daily
+[569.12] support expansion to the upside? No.
+[572.16] Because it has a large opposing run. So
+[574.80] what does that mean? Are we expecting
+[576.24] price to expand here on the daily time
+[578.08] frame? No. So, what are we looking to
+[580.40] target? Back towards the daily open,
+[582.80] which is marked with this faint line
+[584.32] here, or the intraday highs. So, knowing
+[587.52] that on the daily time frame, we know
+[589.28] we're not looking for a massive move.
+[591.12] We're looking back towards the daily
+[592.56] open. Now, I want to take a look. Does
+[594.88] the 4hour candle here support expansion?
+[597.52] No. Because it is a bearish candle,
+[599.36] right? Open, small wick, and then
+[601.36] trading lower. Does this hourly support
+[603.84] expansion higher? No. So, this is where
+[606.64] I'm going to want to wait for that 10
+[608.32] a.m. Do get a new higher time frame
+[610.48] candle here on the 4hour and on the
+[612.88] hourly time frame. You can see we do
+[616.00] trade higher. Sure, you could pick the
+[617.76] bottom if you want. That's just not in
+[619.44] my strategy. Now, if you notice, this
+[621.68] candle is a reversal candle. It's not
+[623.60] quite a candle to closure as it doesn't
+[625.44] close in here, but it does have a nice
+[627.44] large wick that we can use to frame off
+[629.28] of it to the upside. Here we do have a
+[631.68] candle 2 closure on the hourly time
+[633.84] frame. So if we pair that with a change
+[635.68] in the state of delivery, then we could
+[637.36] be looking long. Now once again, you're
+[639.76] starting to see this is a candle three
+[642.24] on multiple different time frames. Now
+[644.48] this one is opposing the daily candle as
+[646.64] it is not open low, high close, it's
+[648.96] open, high, low. So we do want to take
+[652.48] more conservative targets. Let's see
+[655.12] here. We get the change in the state of
+[657.44] delivery and then we start to trade
+[659.20] higher. And you can see how this is set
+[661.44] up for expansion here on a few different
+[664.16] candles as we are aligning with the
+[666.96] higher time frame or the 4hour time
+[669.12] frame. So this 4hour time frame supports
+[671.52] this lower time frame swing to the
+[673.20] upside. And where do we see this go?
+[675.76] Back towards the daily open and we get a
+[678.00] little bit of consolidation.
+[680.24] So you can see just to review the daily
+[682.88] doesn't support expansion but we do have
+[684.88] multiple time frames that still support
+[686.80] expansion for this lower time frame
+[688.80] setup.
+[689.92] So, if you learned nothing else from
+[691.44] this video, be sure to just check out
+[693.36] the higher time frames. Do they support
+[695.76] a trend in one direction or not? Because
+[698.64] at the end of the day, you can have a
+[700.40] great lower time frame structure, but if
+[702.16] it's not aligned with the higher time
+[703.68] frame trend, it's unlikely to work out.
+[705.84] But I hope you found some value in this
+[707.36] video. If you did, please consider
+[709.28] liking and subscribing, and I'll see you
+[710.96] guys next week. Have a good one.

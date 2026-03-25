@@ -1,0 +1,1213 @@
+{
+  "acceptance_checks": [
+    "No valid fractal swing can exist without both a mapped point of interest and a qualifying Candle 2 or Candle 3 closure.",
+    "If Candle 2 already qualifies as the valid closure, the model must stop the delayed Candle 3 path instead of double-counting both.",
+    "No Candle 3 closure can qualify unless Candle 2 first failed to produce the valid reversal closure.",
+    "Midpoint and equilibrium refinement gates must be explicit and configurable whenever the draft claims to use them.",
+    "Lower-timeframe refinement must stay bar-close confirmed and remain gated behind the higher-timeframe and point-of-interest path.",
+    "The script must keep multi-timeframe requests finite and below the configured request budget.",
+    "Backtest results must include spread, slippage, commission, and fee assumptions before performance is treated as credible.",
+    "Historical execution must assume next-bar-open entry after a confirmed bar-close signal instead of intrabar lookahead fills.",
+    "If stop and target touch in the same bar, assume the stop prints first unless lower-timeframe replay evidence proves the target filled first."
+  ],
+  "alerts": [
+    {
+      "condition": "A valid Candle 2 closure is detected at the mapped point of interest.",
+      "name": "fractal_candle2_confirmed"
+    },
+    {
+      "condition": "A valid Candle 3 closure confirms the delayed fractal path.",
+      "name": "fractal_candle3_confirmed"
+    },
+    {
+      "condition": "Midpoint or equilibrium refinement checks pass after the qualifying closure.",
+      "name": "fractal_refinement_ready"
+    },
+    {
+      "condition": "Lower-timeframe displacement confirms the refined fractal path.",
+      "name": "fractal_entry_ready"
+    },
+    {
+      "condition": "The fractal closure path fails before or after refinement.",
+      "name": "fractal_invalidated"
+    }
+  ],
+  "artifact_path": "results\\indicator_specs\\fractal_closure_model.json",
+  "candidate_type": "teacher_style_trade_model",
+  "derived_series": [
+    {
+      "description": "Mapped point-of-interest state ranked from swing, fair value gap, or fallback opposing candle.",
+      "series": "pointOfInterestState"
+    },
+    {
+      "description": "Higher-timeframe directional state used to filter the fractal sequence.",
+      "series": "higherTimeframeBiasState"
+    },
+    {
+      "description": "Bullish or bearish Candle 2 reversal-closure detection state.",
+      "series": "candleTwoClosureState"
+    },
+    {
+      "description": "Respect or failure state for the Candle 2 wick midpoint when large-wick filtering applies.",
+      "series": "candleTwoMidpointState"
+    },
+    {
+      "description": "Delayed Candle 3 closure state when Candle 2 did not qualify.",
+      "series": "candleThreeClosureState"
+    },
+    {
+      "description": "Correct-half respect versus failure state for Candle 3 equilibrium during Candle 4 refinement.",
+      "series": "candleThreeEquilibriumState"
+    },
+    {
+      "description": "Whether the active swing is still descriptive only, validated, refined, entry-ready, or invalidated.",
+      "series": "validatedSwingState"
+    },
+    {
+      "description": "Directional lower-timeframe displacement or protected-swing refinement state after the qualifying closure.",
+      "series": "lowerTimeframeDisplacementState"
+    },
+    {
+      "description": "Expected Candle 4 continuation and expansion state after Candle 2 or Candle 3 confirmation.",
+      "series": "candleFourExpectationState"
+    }
+  ],
+  "direct_topics": [
+    {
+      "notes": "Fractal execution still needs direction.",
+      "priority": 1,
+      "role": "context",
+      "topic": "bias",
+      "topic_name": "Bias"
+    },
+    {
+      "notes": "Key fractal closure concept.",
+      "priority": 1,
+      "role": "core",
+      "topic": "candle_2_closure",
+      "topic_name": "Candle 2 Closure"
+    },
+    {
+      "notes": "Key fractal continuation and reversal concept.",
+      "priority": 1,
+      "role": "core",
+      "topic": "candle_3_closure",
+      "topic_name": "Candle 3 Closure"
+    },
+    {
+      "notes": "Used for timeframe nesting.",
+      "priority": 2,
+      "role": "context",
+      "topic": "top_down_alignment",
+      "topic_name": "Top-Down Alignment"
+    }
+  ],
+  "future_extensions": [
+    "A stricter point-of-interest ranking rule once the fallback opposing-candle path is more explicitly formalized.",
+    "A more precise body-engulf calculation once small-body and doji edge cases are grounded with more examples.",
+    "A richer Candle 4 expansion and target model once the lower-timeframe displacement proxy is strong enough to support execution logic directly."
+  ],
+  "implementation_scope": {
+    "annotation_link_count": 2,
+    "anti_repaint_baseline": "bar_close_confirmation",
+    "build_target": "fractal_sequence_overlay_indicator",
+    "candidate_preservation_rule": "materializer_refreshes_candidate_fields_without_downgrading_draft_status",
+    "max_request_calls_budget": 5,
+    "source_counts": {
+      "direct_model_sources": 96,
+      "topic_coverage_sources": 94
+    },
+    "status_basis": "profile_trade_model_indicator_ready",
+    "target_language": "pine",
+    "timeframe_stack": {
+      "higher": "daily_or_4h_context_frame",
+      "intermediate": "1h_or_15m_structure_frame",
+      "lower": "15m_or_5m_refinement_frame"
+    },
+    "translation_stage": "draft",
+    "historical_execution_contract": "next_bar_open_after_bar_close_signal",
+    "historical_fill_collision_policy": "stop_first_when_stop_and_target_touch_same_bar",
+    "transaction_costs_required": true,
+    "liquidity_constraint": "Increase slippage or skip illiquid session windows instead of assuming frictionless fills."
+  },
+  "implementation_summary": "First-pass Pine overlay draft for the TTrades fractal closure model using point-of-interest gating, Candle 2 or Candle 3 closure detection, midpoint and equilibrium refinement, and provisional lower-timeframe displacement confirmation.",
+  "input_groups": [
+    {
+      "group": "Context and Point of Interest",
+      "inputs": [
+        {
+          "default": "swing_then_fvg_then_opposing_candle",
+          "description": "Provisional ranking order for valid fractal points of interest.",
+          "key": "pointOfInterestMode",
+          "options": [
+            "swing_then_fvg_then_opposing_candle",
+            "swing_only",
+            "fvg_then_opposing_candle"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": true,
+          "description": "Require the mapped point of interest and closure sequence to agree with the higher-timeframe directional idea.",
+          "key": "requireHigherTimeframeBias",
+          "type": "bool"
+        },
+        {
+          "default": "higher_plus_intermediate",
+          "description": "Choose whether the fractal sequence needs intermediate-timeframe structure agreement in addition to higher-timeframe bias.",
+          "key": "alignmentMode",
+          "options": [
+            "higher_only",
+            "higher_plus_intermediate"
+          ],
+          "type": "enum"
+        }
+      ]
+    },
+    {
+      "group": "Closure Detection",
+      "inputs": [
+        {
+          "default": "sweep_then_close_back_inside",
+          "description": "A Candle 2 closure requires a sweep of the prior candle and a close back inside its range.",
+          "key": "candleTwoMode",
+          "options": [
+            "sweep_then_close_back_inside"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": true,
+          "description": "If Candle 2 already qualifies as the valid reversal closure, stop the delayed Candle 3 path.",
+          "key": "preferCandleTwoWhenValid",
+          "type": "bool"
+        },
+        {
+          "default": 0.5,
+          "description": "Provisional body-engulf threshold used to decide when Candle 3 truly closes through Candle 2 in the new direction.",
+          "key": "candleThreeEngulfThresholdRatio",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "group": "Midpoint and Equilibrium Refinement",
+      "inputs": [
+        {
+          "default": true,
+          "description": "Require Candle 3 to respect the Candle 2 wick midpoint when Candle 2 prints a large rejection wick.",
+          "key": "requireCandleTwoMidpointRespect",
+          "type": "bool"
+        },
+        {
+          "default": 0.05,
+          "description": "Provisional tolerance band for saying Candle 3 respected or disrespected the Candle 2 wick midpoint.",
+          "key": "candleTwoMidpointTolerancePercent",
+          "type": "float"
+        },
+        {
+          "default": true,
+          "description": "Require Candle 4 to retest and respect the correct half of Candle 3 for the refined continuation path.",
+          "key": "requireCandleThreeHalfRetest",
+          "type": "bool"
+        },
+        {
+          "default": 0.05,
+          "description": "Provisional tolerance band used when deciding whether Candle 4 respected the intended half of Candle 3.",
+          "key": "candleThreeHalfTolerancePercent",
+          "type": "float"
+        }
+      ]
+    },
+    {
+      "group": "Lower-Timeframe Refinement",
+      "inputs": [
+        {
+          "default": true,
+          "description": "Require lower-timeframe displacement after the qualifying closure before promoting the sequence into entry-ready state.",
+          "key": "requireLowerTimeframeDisplacement",
+          "type": "bool"
+        },
+        {
+          "default": "directional_displacement_proxy",
+          "description": "First-pass lower-timeframe refinement mode for the fractal sequence.",
+          "key": "lowerTimeframeDisplacementMode",
+          "options": [
+            "directional_displacement_proxy",
+            "protected_swing_proxy"
+          ],
+          "type": "enum"
+        },
+        {
+          "default": "15",
+          "description": "Execution timeframe used for the lower-timeframe displacement proxy.",
+          "key": "executionTimeframe",
+          "type": "timeframe"
+        }
+      ]
+    },
+    {
+      "group": "Backtest Contract",
+      "inputs": [
+        {
+          "key": "backtestTickSize",
+          "type": "float",
+          "default": 0.25,
+          "description": "First-pass tick size used by the historical harness when translating bar movement into execution and stop-distance units."
+        },
+        {
+          "key": "backtestSpreadTicks",
+          "type": "float",
+          "default": 1.0,
+          "description": "Explicit spread assumption in ticks for historical backtests."
+        },
+        {
+          "key": "backtestSlippageTicks",
+          "type": "float",
+          "default": 0.5,
+          "description": "Explicit slippage assumption in ticks for historical backtests, with larger values required in illiquid sessions."
+        },
+        {
+          "key": "backtestCommissionPerContract",
+          "type": "float",
+          "default": 2.5,
+          "description": "Commission and fee assumption per contract for historical backtests."
+        }
+      ]
+    }
+  ],
+  "open_implementation_questions": [
+    {
+      "affected_component": "candle_three_body_engulf",
+      "question": "What body-overlap threshold is the best first numeric proxy for saying Candle 3 truly engulfed Candle 2 when Candle 2 is small or doji-like?",
+      "topic_refs": [
+        "candle_3_closure"
+      ]
+    },
+    {
+      "affected_component": "midpoint_and_half_tolerance",
+      "question": "What is the first useful numeric tolerance for saying Candle 3 respected the Candle 2 midpoint or Candle 4 respected the correct half of Candle 3?",
+      "topic_refs": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "equilibrium"
+      ]
+    },
+    {
+      "affected_component": "poi_ranking",
+      "question": "How should the fallback opposing-candle point of interest be ranked against clearer swing or fair-value-gap anchors?",
+      "topic_refs": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ]
+    },
+    {
+      "affected_component": "lower_timeframe_displacement",
+      "question": "What is the minimum lower-timeframe displacement strength needed before the refined fractal path is truly entry-ready?",
+      "topic_refs": [
+        "candle_3_closure",
+        "top_down_alignment"
+      ]
+    }
+  ],
+  "pine_program_outline": {
+    "anti_repaint_baseline": "bar_close_confirmation",
+    "overlay": true,
+    "script_kind": "indicator",
+    "sections": [
+      "version",
+      "indicator_declaration",
+      "imports",
+      "constants",
+      "inputs",
+      "functions",
+      "calculations",
+      "visuals",
+      "alerts"
+    ]
+  },
+  "pine_translation_hints": [
+    "Prefer bar-close confirmation over intrabar discretion.",
+    "Keep lower-timeframe requests focused and finite.",
+    "Represent structure and invalidation as explicit state objects."
+  ],
+  "provisional_proxies": [
+    {
+      "default_mode": "swing_then_fvg_then_opposing_candle",
+      "id": "poi_ranking_v1",
+      "logic": "Rank point-of-interest anchors by preferring swing highs or lows first, then fair value gap proxies, then fallback opposing candles only when no cleaner anchor exists.",
+      "status": "provisional"
+    },
+    {
+      "default_mode": "close_through_candle_two_body_ratio",
+      "id": "candle_three_body_engulf_v1",
+      "logic": "Treat Candle 3 as a valid delayed closure only when its close exceeds the Candle 2 body by the configured engulf threshold in the new direction.",
+      "status": "provisional"
+    },
+    {
+      "default_mode": "percent_of_reference_range",
+      "id": "midpoint_and_half_tolerance_v1",
+      "logic": "Use configurable tolerance bands for Candle 2 midpoint respect and Candle 3 correct-half respect until the narrative filters are grounded numerically.",
+      "status": "provisional"
+    },
+    {
+      "default_mode": "directional_displacement_proxy",
+      "id": "lower_timeframe_displacement_v1",
+      "logic": "Require a first-pass lower-timeframe impulse or protected-swing proxy after the qualifying closure before promoting the sequence into entry-ready state.",
+      "status": "provisional"
+    }
+  ],
+  "resolved_requirements": [
+    {
+      "direct": true,
+      "introduced_by_topics": [
+        "bias",
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "minimum_depth": 0,
+      "relation_roles": [
+        "context",
+        "core"
+      ],
+      "requirement_types": [
+        "dependency",
+        "direct"
+      ],
+      "topic": "bias",
+      "topic_name": "Bias"
+    },
+    {
+      "direct": true,
+      "introduced_by_topics": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "minimum_depth": 0,
+      "relation_roles": [
+        "core"
+      ],
+      "requirement_types": [
+        "dependency",
+        "direct"
+      ],
+      "topic": "candle_2_closure",
+      "topic_name": "Candle 2 Closure"
+    },
+    {
+      "direct": true,
+      "introduced_by_topics": [
+        "candle_3_closure"
+      ],
+      "minimum_depth": 0,
+      "relation_roles": [
+        "core"
+      ],
+      "requirement_types": [
+        "direct"
+      ],
+      "topic": "candle_3_closure",
+      "topic_name": "Candle 3 Closure"
+    },
+    {
+      "direct": true,
+      "introduced_by_topics": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "top_down_alignment"
+      ],
+      "minimum_depth": 0,
+      "relation_roles": [
+        "context",
+        "core"
+      ],
+      "requirement_types": [
+        "dependency",
+        "direct"
+      ],
+      "topic": "top_down_alignment",
+      "topic_name": "Top-Down Alignment"
+    },
+    {
+      "direct": false,
+      "introduced_by_topics": [
+        "candle_3_closure"
+      ],
+      "minimum_depth": 1,
+      "relation_roles": [
+        "core"
+      ],
+      "requirement_types": [
+        "dependency"
+      ],
+      "topic": "equilibrium",
+      "topic_name": "Equilibrium"
+    },
+    {
+      "direct": false,
+      "introduced_by_topics": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "minimum_depth": 1,
+      "relation_roles": [
+        "core"
+      ],
+      "requirement_types": [
+        "dependency"
+      ],
+      "topic": "wick_logic",
+      "topic_name": "Wick Logic"
+    }
+  ],
+  "scope_topics": [
+    "bias",
+    "candle_2_closure",
+    "candle_3_closure",
+    "top_down_alignment",
+    "equilibrium",
+    "wick_logic"
+  ],
+  "signal_pipeline": [
+    {
+      "logic": "Map the higher-timeframe point of interest first, then require higher-timeframe bias and optional intermediate-timeframe structure to support the fractal closure path.",
+      "name": "Context and Point-of-Interest Gate",
+      "rule_refs": [
+        "candle_2_closure.candle_two_requires_point_of_interest",
+        "candle_3_closure.candle_three_requires_context_and_poi",
+        "bias.bias_precedes_execution",
+        "top_down_alignment.higher_timeframe_sets_direction"
+      ],
+      "step": 1
+    },
+    {
+      "logic": "Detect the Candle 2 sweep and close-back-inside event first and prefer that path whenever it already produces the valid reversal closure.",
+      "name": "Candle 2 Reversal Closure Detection",
+      "rule_refs": [
+        "candle_2_closure.candle_two_reversal_closure_definition",
+        "candle_2_closure.candle_two_starts_candle_three_sequence"
+      ],
+      "step": 2
+    },
+    {
+      "logic": "If Candle 2 does not qualify, require Candle 3 to close through the Candle 2 body in the new direction before validating the delayed closure path.",
+      "name": "Candle 3 Delayed Closure Fallback",
+      "rule_refs": [
+        "candle_3_closure.candle_three_closure_definition",
+        "candle_3_closure.valid_swing_requires_poi_and_closure"
+      ],
+      "step": 3
+    },
+    {
+      "logic": "Apply Candle 2 wick-midpoint respect when large-wick rejection exists, then apply Candle 3 equilibrium-half respect for the Candle 4 refinement path.",
+      "name": "Midpoint and Equilibrium Refinement",
+      "rule_refs": [
+        "candle_2_closure.candle_two_eq_and_wick_filter",
+        "candle_3_closure.candle_three_equilibrium_refinement",
+        "equilibrium.equilibrium_is_wick_to_wick_midpoint",
+        "wick_logic.wick_midpoint_respect_vs_disrespect"
+      ],
+      "step": 4
+    },
+    {
+      "logic": "Require lower-timeframe displacement after the qualifying closure before treating the swing as refined and entry-ready.",
+      "name": "Lower-Timeframe Displacement Gate",
+      "rule_refs": [
+        "candle_3_closure.valid_swing_requires_poi_and_closure",
+        "top_down_alignment.lower_timeframe_refines_entry_only_after_alignment"
+      ],
+      "step": 5
+    },
+    {
+      "logic": "Once refinement holds, project Candle 4 continuation and expansion in the new direction and invalidate the model when the closure or refinement path breaks first.",
+      "name": "Candle 4 Expectation and Failure Management",
+      "rule_refs": [
+        "candle_2_closure.candle_two_starts_candle_three_sequence",
+        "candle_3_closure.candle_three_equilibrium_refinement"
+      ],
+      "step": 6
+    }
+  ],
+  "spec_version": 2,
+  "state_models": [
+    {
+      "name": "fractalClosureStateMachine",
+      "state_type": "finite_state_machine",
+      "states": [
+        "idle",
+        "poi_ready",
+        "candle2_confirmed",
+        "candle3_confirmed",
+        "refinement_ready",
+        "entry_ready",
+        "invalidated"
+      ],
+      "transitions": [
+        {
+          "condition": "A valid point of interest is mapped and higher-timeframe context does not reject the setup.",
+          "from": "idle",
+          "to": "poi_ready"
+        },
+        {
+          "condition": "A valid Candle 2 reversal closure appears at the point of interest.",
+          "from": "poi_ready",
+          "to": "candle2_confirmed"
+        },
+        {
+          "condition": "Candle 2 does not qualify and Candle 3 closes through the Candle 2 body in the new direction.",
+          "from": "poi_ready",
+          "to": "candle3_confirmed"
+        },
+        {
+          "condition": "The enabled midpoint or equilibrium refinement checks hold after the qualifying closure.",
+          "from": [
+            "candle2_confirmed",
+            "candle3_confirmed"
+          ],
+          "to": "refinement_ready"
+        },
+        {
+          "condition": "Lower-timeframe displacement confirms the refined path when that mode is enabled.",
+          "from": "refinement_ready",
+          "to": "entry_ready"
+        },
+        {
+          "condition": "The closure path fails, the midpoint or half-respect filter breaks, or the lower-timeframe refinement never develops in the intended direction.",
+          "from": [
+            "poi_ready",
+            "candle2_confirmed",
+            "candle3_confirmed",
+            "refinement_ready",
+            "entry_ready"
+          ],
+          "to": "invalidated"
+        }
+      ]
+    }
+  ],
+  "topic_input_catalog": [
+    {
+      "inputs": [
+        "previous candle high",
+        "previous candle low",
+        "current close",
+        "sweep state relative to previous candle range",
+        "previous day high",
+        "previous day low",
+        "higher-timeframe wick size",
+        "lower-timeframe CISD or structure-shift event",
+        "previous day equilibrium",
+        "lower-timeframe close location",
+        "continuation protected swing state",
+        "candle open",
+        "candle high",
+        "candle low",
+        "candle close",
+        "body size",
+        "opposing wick size",
+        "open price target",
+        "selected higher timeframe bias mode",
+        "selected lower timeframe execution signal",
+        "session bucket or preferred execution window"
+      ],
+      "topic": "bias"
+    },
+    {
+      "inputs": [
+        "previous candle high",
+        "previous candle low",
+        "current candle high",
+        "current candle low",
+        "current candle close",
+        "higher-timeframe swing highs and lows",
+        "fair value gap proxy",
+        "opposing candle proxy",
+        "active bias state",
+        "Candle 2 closure flag",
+        "valid Candle 2 closure flag",
+        "Candle 2 high and low",
+        "Candle 3 high and low",
+        "Candle 3 close",
+        "Candle 2 wick high",
+        "Candle 2 wick low",
+        "Candle 2 wick midpoint",
+        "Candle 3 close location"
+      ],
+      "topic": "candle_2_closure"
+    },
+    {
+      "inputs": [
+        "point of interest flag",
+        "Candle 2 open",
+        "Candle 2 close",
+        "Candle 2 high",
+        "Candle 2 low",
+        "Candle 3 close",
+        "higher-timeframe point of interest flag",
+        "active bias state",
+        "Candle 2 body range",
+        "valid Candle 3 closure flag",
+        "Candle 3 wick high",
+        "Candle 3 wick low",
+        "Candle 3 equilibrium midpoint",
+        "Candle 4 high",
+        "Candle 4 low",
+        "Candle 4 close",
+        "valid Candle 2 closure flag",
+        "lower-timeframe displacement proxy"
+      ],
+      "topic": "candle_3_closure"
+    },
+    {
+      "inputs": [
+        "higher-timeframe phase state",
+        "higher-timeframe directional bias",
+        "lower-timeframe directional setup flag",
+        "higher-timeframe bias state",
+        "intermediate-timeframe point of interest flag",
+        "intermediate-timeframe candle closure flag",
+        "intermediate-timeframe CISD proxy",
+        "protected swing proxy",
+        "alignment flag between higher and intermediate timeframes",
+        "lower-timeframe protected swing proxy",
+        "lower-timeframe continuation structure proxy",
+        "higher-timeframe expansion-support flag",
+        "intermediate-timeframe expansion-support flag",
+        "lower-timeframe expansion-support flag"
+      ],
+      "topic": "top_down_alignment"
+    },
+    {
+      "inputs": [
+        "reference range wick high",
+        "reference range wick low",
+        "equilibrium midpoint",
+        "current close",
+        "current high",
+        "current low",
+        "active directional bias",
+        "previous day wick high",
+        "previous day wick low",
+        "previous day equilibrium midpoint",
+        "lower-timeframe close series",
+        "point of interest flag",
+        "lower-timeframe candle closure flag",
+        "lower-timeframe CISD proxy",
+        "protected swing proxy"
+      ],
+      "topic": "equilibrium"
+    },
+    {
+      "inputs": [
+        "candle open",
+        "candle high",
+        "candle low",
+        "candle close",
+        "body size",
+        "opposing wick size",
+        "wick extreme",
+        "body edge nearest the wick",
+        "wick midpoint",
+        "subsequent close series",
+        "higher-timeframe open",
+        "higher-timeframe high",
+        "higher-timeframe low",
+        "higher-timeframe close",
+        "lower-timeframe structure state"
+      ],
+      "topic": "wick_logic"
+    }
+  ],
+  "topic_rule_trace": [
+    {
+      "open_questions": [
+        "What numeric threshold best separates small and large opposing wicks for the bias framework?",
+        "How much tolerance around equilibrium should count as respect versus violation?",
+        "What is the strictest first-pass CISD implementation that remains useful across timeframes?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Detect close above previous high or below previous low",
+            "Detect sweep beyond previous high or low followed by close back inside the prior range",
+            "Store current bias mode as continuation or reversal"
+          ],
+          "name": "Next-candle bias starts from how price closes relative to the previous candle range",
+          "pine_inputs_needed": [
+            "previous candle high",
+            "previous candle low",
+            "current close",
+            "sweep state relative to previous candle range"
+          ],
+          "rule_ref": "bias.previous_candle_close_bias"
+        },
+        {
+          "machine_checks": [
+            "Mark prior-day high and low as reversal anchors",
+            "Measure whether the higher-timeframe candle sweeps a prior-day extreme and closes back inside or rejects from it",
+            "Require lower-timeframe confirmation before execution mode is active"
+          ],
+          "name": "Reversal-day bias is framed from previous day highs or lows plus lower-timeframe confirmation",
+          "pine_inputs_needed": [
+            "previous day high",
+            "previous day low",
+            "higher-timeframe wick size",
+            "lower-timeframe CISD or structure-shift event"
+          ],
+          "rule_ref": "bias.daily_reversal_framework"
+        },
+        {
+          "machine_checks": [
+            "Compute equilibrium as midpoint of previous day range",
+            "Detect whether lower-timeframe closes remain on the correct side of equilibrium",
+            "Require continuation through the previous day directional objective"
+          ],
+          "name": "Continuation-day bias uses prior candle closure plus equilibrium respect",
+          "pine_inputs_needed": [
+            "previous day high",
+            "previous day low",
+            "previous day equilibrium",
+            "lower-timeframe close location",
+            "continuation protected swing state"
+          ],
+          "rule_ref": "bias.daily_continuation_framework"
+        },
+        {
+          "machine_checks": [
+            "Compute body size and opposing wick ratio",
+            "Classify whether the candle closes near its directional extreme or near its open",
+            "Switch expected target model based on small-wick versus large-wick classification"
+          ],
+          "name": "Wick size filters whether the current candle supports expansion or reversion",
+          "pine_inputs_needed": [
+            "candle open",
+            "candle high",
+            "candle low",
+            "candle close",
+            "body size",
+            "opposing wick size",
+            "open price target"
+          ],
+          "rule_ref": "bias.wick_size_bias_filter"
+        },
+        {
+          "machine_checks": [
+            "Store higher-timeframe bias as a state variable",
+            "Reject lower-timeframe execution signals that oppose the active bias",
+            "Allow configurable execution timeframe mapping by session or user selection"
+          ],
+          "name": "Higher-timeframe bias filters all lower-timeframe entries",
+          "pine_inputs_needed": [
+            "selected higher timeframe bias mode",
+            "selected lower timeframe execution signal",
+            "session bucket or preferred execution window"
+          ],
+          "rule_ref": "bias.bias_precedes_execution"
+        }
+      ],
+      "topic": "bias"
+    },
+    {
+      "open_questions": [
+        "What is the first useful numeric tolerance for saying Candle 3 respected versus disrespected the Candle 2 wick midpoint?",
+        "How should the fallback opposing-candle point of interest be ranked against clearer swing or fair-value-gap anchors?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Detect sweep beyond the previous candle high or low",
+            "Require the Candle 2 close to finish back inside the previous candle range",
+            "Classify the event as bullish or bearish based on which side was swept and reclaimed"
+          ],
+          "name": "A Candle 2 closure is always a reversal closure that sweeps the previous candle and closes back inside its range",
+          "pine_inputs_needed": [
+            "previous candle high",
+            "previous candle low",
+            "current candle high",
+            "current candle low",
+            "current candle close"
+          ],
+          "rule_ref": "candle_2_closure.candle_two_reversal_closure_definition"
+        },
+        {
+          "machine_checks": [
+            "Require a mapped point of interest before a Candle 2 closure can become actionable",
+            "Allow a fallback opposing-candle anchor only when no clearer higher-timeframe point of interest exists",
+            "Reject Candle 2 events that form without higher-timeframe alignment"
+          ],
+          "name": "A Candle 2 closure is only valid when it forms at a higher-timeframe point of interest",
+          "pine_inputs_needed": [
+            "higher-timeframe swing highs and lows",
+            "fair value gap proxy",
+            "opposing candle proxy",
+            "active bias state",
+            "Candle 2 closure flag"
+          ],
+          "rule_ref": "candle_2_closure.candle_two_requires_point_of_interest"
+        },
+        {
+          "machine_checks": [
+            "Store the Candle 2 range after a valid reversal closure appears",
+            "Detect whether Candle 3 closes beyond Candle 2 in the new direction",
+            "Invalidate the sequence when Candle 3 cannot confirm the directional handoff"
+          ],
+          "name": "A valid Candle 2 closure should hand off to Candle 3 continuation in the new direction",
+          "pine_inputs_needed": [
+            "valid Candle 2 closure flag",
+            "Candle 2 high and low",
+            "Candle 3 high and low",
+            "Candle 3 close"
+          ],
+          "rule_ref": "candle_2_closure.candle_two_starts_candle_three_sequence"
+        },
+        {
+          "machine_checks": [
+            "Compute the Candle 2 wick midpoint from the rejection candle",
+            "Track whether Candle 3 respects the midpoint in the direction of the reversal",
+            "Downgrade the setup when midpoint respect fails before continuation develops"
+          ],
+          "name": "Large-wick Candle 2 closures should keep Candle 3 above or below the wick midpoint to remain valid",
+          "pine_inputs_needed": [
+            "Candle 2 wick high",
+            "Candle 2 wick low",
+            "Candle 2 wick midpoint",
+            "Candle 3 close location"
+          ],
+          "rule_ref": "candle_2_closure.candle_two_eq_and_wick_filter"
+        }
+      ],
+      "topic": "candle_2_closure"
+    },
+    {
+      "open_questions": [
+        "What body-overlap threshold is the best first numeric proxy for saying Candle 3 truly engulfed Candle 2 when Candle 2 is very small or doji-like?",
+        "What is the first useful numeric tolerance for saying Candle 4 respected the correct half of Candle 3 and produced enough lower-timeframe displacement to justify entry refinement?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Reject the sequence if Candle 2 already qualifies as a valid Candle 2 reversal closure",
+            "Measure the Candle 2 body and require Candle 3 to close through it in the new direction",
+            "Emit a bullish or bearish Candle 3 closure state only after the delayed engulfing close appears"
+          ],
+          "name": "A Candle 3 closure confirms the move when Candle 2 fails to produce the earlier reversal closure",
+          "pine_inputs_needed": [
+            "point of interest flag",
+            "Candle 2 open",
+            "Candle 2 close",
+            "Candle 2 high",
+            "Candle 2 low",
+            "Candle 3 close"
+          ],
+          "rule_ref": "candle_3_closure.candle_three_closure_definition"
+        },
+        {
+          "machine_checks": [
+            "Require a mapped point of interest before a Candle 3 closure can become actionable",
+            "Require higher-timeframe directional agreement before promoting the Candle 3 event into a valid swing",
+            "Ignore Candle 3 body-engulfing closes that occur in random mid-range locations"
+          ],
+          "name": "A Candle 3 closure only matters when it appears at the mapped point of interest and inside the higher-timeframe idea",
+          "pine_inputs_needed": [
+            "higher-timeframe point of interest flag",
+            "active bias state",
+            "Candle 2 body range",
+            "Candle 3 close"
+          ],
+          "rule_ref": "candle_3_closure.candle_three_requires_context_and_poi"
+        },
+        {
+          "machine_checks": [
+            "Measure Candle 3 equilibrium from wick high to wick low",
+            "Require Candle 4 to trade back into the correct half of Candle 3 for the equilibrium-refinement path",
+            "Flag loss of refinement when Candle 4 breaks through the wrong side of Candle 3 equilibrium before expansion confirms"
+          ],
+          "name": "After a valid Candle 3 closure, Candle 4 should respect the correct half of Candle 3's range",
+          "pine_inputs_needed": [
+            "valid Candle 3 closure flag",
+            "Candle 3 wick high",
+            "Candle 3 wick low",
+            "Candle 3 equilibrium midpoint",
+            "Candle 4 high",
+            "Candle 4 low",
+            "Candle 4 close"
+          ],
+          "rule_ref": "candle_3_closure.candle_three_equilibrium_refinement"
+        },
+        {
+          "machine_checks": [
+            "Require both a point of interest and a qualifying closure before validating a swing",
+            "Allow either Candle 2 or Candle 3 to satisfy the closure requirement, but never neither",
+            "Hold the sequence in pending state until lower-timeframe displacement confirms the refined entry path"
+          ],
+          "name": "No swing point is valid without both the point of interest and the closure event",
+          "pine_inputs_needed": [
+            "point of interest flag",
+            "valid Candle 2 closure flag",
+            "valid Candle 3 closure flag",
+            "lower-timeframe displacement proxy"
+          ],
+          "rule_ref": "candle_3_closure.valid_swing_requires_poi_and_closure"
+        }
+      ],
+      "topic": "candle_3_closure"
+    },
+    {
+      "open_questions": [
+        "What is the best first explicit proxy for CISD so intermediate-timeframe confirmation can be scored without discretionary chart reading?",
+        "How many alignment failures across the stack should immediately cancel a setup instead of merely downgrading it?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Require a higher-timeframe directional classification before evaluating lower-timeframe entries",
+            "Reject lower-timeframe continuation signals that directly oppose the higher-timeframe bias",
+            "Downgrade all lower-timeframe setups when the higher timeframe is still unresolved consolidation"
+          ],
+          "name": "The higher timeframe sets the directional bias and lower timeframes should not override it on their own",
+          "pine_inputs_needed": [
+            "higher-timeframe phase state",
+            "higher-timeframe directional bias",
+            "lower-timeframe directional setup flag"
+          ],
+          "rule_ref": "top_down_alignment.higher_timeframe_sets_direction"
+        },
+        {
+          "machine_checks": [
+            "Require an intermediate-timeframe point of interest that agrees with higher-timeframe direction",
+            "Require a directional closure or CISD before promoting the setup to execution-ready state",
+            "Flag the setup as pending when higher-timeframe bias exists but intermediate-timeframe structure is still missing"
+          ],
+          "name": "The intermediate timeframe must confirm the higher-timeframe bias with structure, a point of interest, and a directional closure",
+          "pine_inputs_needed": [
+            "higher-timeframe bias state",
+            "intermediate-timeframe point of interest flag",
+            "intermediate-timeframe candle closure flag",
+            "intermediate-timeframe CISD proxy",
+            "protected swing proxy"
+          ],
+          "rule_ref": "top_down_alignment.intermediate_timeframe_confirms_structure"
+        },
+        {
+          "machine_checks": [
+            "Gate lower-timeframe entry logic behind an explicit higher-plus-intermediate alignment flag",
+            "Treat lower-timeframe structure as execution refinement instead of independent direction selection",
+            "Invalidate the refined entry when lower-timeframe structure immediately breaks against the aligned thesis"
+          ],
+          "name": "The lower timeframe is for entry precision only after the higher and intermediate timeframes are already aligned",
+          "pine_inputs_needed": [
+            "alignment flag between higher and intermediate timeframes",
+            "lower-timeframe protected swing proxy",
+            "lower-timeframe continuation structure proxy"
+          ],
+          "rule_ref": "top_down_alignment.lower_timeframe_refines_entry_only_after_alignment"
+        },
+        {
+          "machine_checks": [
+            "Require at least two expansion-supporting timeframe flags for the clean-trend classification",
+            "Elevate the setup quality when all three monitored timeframes align",
+            "Downgrade or defer the setup when any parent timeframe prints a non-expansion-supporting candle"
+          ],
+          "name": "A clean trend requires aligned expansion-supporting candles across at least two timeframes",
+          "pine_inputs_needed": [
+            "higher-timeframe expansion-support flag",
+            "intermediate-timeframe expansion-support flag",
+            "lower-timeframe expansion-support flag"
+          ],
+          "rule_ref": "top_down_alignment.aligned_expansion_candles_define_clean_trend"
+        }
+      ],
+      "topic": "top_down_alignment"
+    },
+    {
+      "open_questions": [
+        "What numeric tolerance around the 0.5 line should count as valid equilibrium respect versus a true close-through failure?",
+        "How should multiple points of interest inside the respected half be ranked before lower-timeframe confirmation appears?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Compute equilibrium as the midpoint between wick high and wick low",
+            "Reject body-only midpoint calculations for this topic",
+            "Persist the selected midpoint until the reference range is intentionally replaced"
+          ],
+          "name": "Equilibrium is measured from wick high to wick low, not from candle bodies",
+          "pine_inputs_needed": [
+            "reference range wick high",
+            "reference range wick low",
+            "equilibrium midpoint"
+          ],
+          "rule_ref": "equilibrium.equilibrium_is_wick_to_wick_midpoint"
+        },
+        {
+          "machine_checks": [
+            "Track whether price is holding in the correct half of the reference range",
+            "Flag loss of continuation bias when closes move through the wrong side of equilibrium",
+            "Keep the continuation bias active only while the expected half remains respected"
+          ],
+          "name": "In expansion conditions, respect of the correct half of the range defines the directional bias",
+          "pine_inputs_needed": [
+            "equilibrium midpoint",
+            "current close",
+            "current high",
+            "current low",
+            "active directional bias"
+          ],
+          "rule_ref": "equilibrium.equilibrium_respect_sets_directional_half"
+        },
+        {
+          "machine_checks": [
+            "Project the previous day's equilibrium into the new session",
+            "Reject continuation when lower-timeframe closes occur beyond equilibrium in the wrong direction",
+            "Allow minor probing around the midpoint only until the close-based failure condition appears"
+          ],
+          "name": "A continuation day is framed from the previous day's equilibrium and confirmed by lower-timeframe closes that stay on the correct side",
+          "pine_inputs_needed": [
+            "previous day wick high",
+            "previous day wick low",
+            "previous day equilibrium midpoint",
+            "lower-timeframe close series"
+          ],
+          "rule_ref": "equilibrium.previous_day_equilibrium_filters_continuation_day"
+        },
+        {
+          "machine_checks": [
+            "Require both a point of interest and lower-timeframe confirmation before promoting an equilibrium reaction into an entry setup",
+            "Allow fallback to newly created liquidity only if it remains inside the respected half of the range",
+            "Mark the setup as context-only when equilibrium is respected but no confirmation appears"
+          ],
+          "name": "Equilibrium becomes tradable when the respected half also contains a point of interest and lower-timeframe confirmation",
+          "pine_inputs_needed": [
+            "equilibrium midpoint",
+            "point of interest flag",
+            "lower-timeframe candle closure flag",
+            "lower-timeframe CISD proxy",
+            "protected swing proxy"
+          ],
+          "rule_ref": "equilibrium.equilibrium_requires_poi_and_confirmation"
+        }
+      ],
+      "topic": "equilibrium"
+    },
+    {
+      "open_questions": [
+        "What numeric ratio should separate a small opposing run from a large opposing wick across the main timeframe pairs?",
+        "How close to the open should a candle finish before it is treated as a reversal-style candle instead of an expansion candle?"
+      ],
+      "rules": [
+        {
+          "machine_checks": [
+            "Compute the wick opposite the candle direction and compare it against the body",
+            "Require the close to finish near the directional extreme rather than near the open",
+            "Classify the candle as expansion-supporting only when the opposing wick remains small relative to the full range"
+          ],
+          "name": "A small opposing wick with a large body supports expansion in the candle direction",
+          "pine_inputs_needed": [
+            "candle open",
+            "candle high",
+            "candle low",
+            "candle close",
+            "body size",
+            "opposing wick size"
+          ],
+          "rule_ref": "wick_logic.small_opposing_run_supports_expansion"
+        },
+        {
+          "machine_checks": [
+            "Classify candles with dominant opposing wicks as poor expansion candidates",
+            "Downgrade continuation expectations when the close finishes too close to the open",
+            "Switch the target model toward the open or nearby liquidity after a large opposing run"
+          ],
+          "name": "A large opposing wick with a smaller body favors reversion toward the open or nearby liquidity",
+          "pine_inputs_needed": [
+            "candle open",
+            "candle high",
+            "candle low",
+            "candle close",
+            "body size",
+            "opposing wick size"
+          ],
+          "rule_ref": "wick_logic.large_opposing_wick_favors_reversion"
+        },
+        {
+          "machine_checks": [
+            "Compute the wick midpoint from the body edge to the wick extreme",
+            "Track whether subsequent closes remain on the respected side of the midpoint",
+            "Flip the wick state from respected to disrespected once a close breaches the midpoint"
+          ],
+          "name": "Respect or disrespect of the wick midpoint determines whether rejection is holding or failing",
+          "pine_inputs_needed": [
+            "wick extreme",
+            "body edge nearest the wick",
+            "wick midpoint",
+            "subsequent close series"
+          ],
+          "rule_ref": "wick_logic.wick_midpoint_respect_vs_disrespect"
+        },
+        {
+          "machine_checks": [
+            "Classify the higher-timeframe candle first as expansion-supporting or reversal-leaning based on wick behavior",
+            "Gate lower-timeframe expansion reads on the higher-timeframe wick classification",
+            "Downgrade lower-timeframe continuation setups when the parent candle shows large opposing rejection"
+          ],
+          "name": "Higher-timeframe wick behavior should govern whether lower-timeframe structure is read as expansion, reversal, or range",
+          "pine_inputs_needed": [
+            "higher-timeframe open",
+            "higher-timeframe high",
+            "higher-timeframe low",
+            "higher-timeframe close",
+            "lower-timeframe structure state"
+          ],
+          "rule_ref": "wick_logic.higher_timeframe_wick_guides_lower_timeframe_expectation"
+        }
+      ],
+      "topic": "wick_logic"
+    }
+  ],
+  "trade_model": {
+    "model_type": "execution_framework",
+    "name": "Fractal Closure Model",
+    "notes": "Fractal closure logic now has explicit Candle 2 and Candle 3 rulebooks plus baseline annotated cases, so it is ready for first-pass indicator translation.",
+    "profile_priority": 2,
+    "profile_role": "confirmation_framework",
+    "slug": "fractal_closure_model"
+  },
+  "trader_profile": {
+    "display_name": "TTrades Curriculum",
+    "profile_type": "teacher_style",
+    "slug": "ttrades_curriculum",
+    "style": {
+      "confirmation_style": "protected_swing_and_closure",
+      "entry_selection": "continuation_and_reversal_sequences",
+      "execution_style": "structure_confirmation",
+      "indicator_intent": "style_bundle",
+      "risk_style": "protected_swing_invalidation",
+      "source_mode": "curriculum"
+    }
+  },
+  "translation_stage": "draft",
+  "visuals": [
+    "Point-of-interest zone or anchor marker for the active setup",
+    "Candle 2 range box with sweep and close-back-inside labels",
+    "Candle 2 wick-midpoint line when the large-wick filter is active",
+    "Candle 3 body-engulf marker and equilibrium-half refinement box",
+    "State labels showing whether the live path is Candle 2, Candle 3, refinement-ready, or invalidated",
+    "Lower-timeframe displacement marker after the qualifying closure",
+    "Candle 4 expectation arrow or target band in the confirmed direction"
+  ],
+  "backtest_contract": {
+    "execution_model": {
+      "entry_fill": "next_bar_open_after_confirmed_bar_close_signal",
+      "intrabar_policy": "no_intrabar_lookahead",
+      "stop_target_collision_policy": "stop_first_when_stop_and_target_touch_same_bar"
+    },
+    "transaction_cost_model": {
+      "tick_size": 0.25,
+      "spread_ticks": 1.0,
+      "slippage_ticks": 0.5,
+      "commission_per_contract": 2.5,
+      "contract_multiplier": 20.0,
+      "fee_notes": "Commission should include exchange and brokerage fees, and slippage should be increased or the setup skipped in illiquid sessions."
+    }
+  }
+}

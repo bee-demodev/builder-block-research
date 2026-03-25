@@ -1,0 +1,1134 @@
+{
+  "frameworks": [
+    {
+      "slug": "canonical_price_action",
+      "name": "Canonical Price Action Graph",
+      "framework_type": "canonical_graph",
+      "style_family": "phase_structure_bias",
+      "status": "active",
+      "description": "Reusable canonical topic and trade-model layer for structure-, bias-, and phase-driven price-action research across multiple educators.",
+      "notes": "Keep this layer generic so adjacent curricula can map in without renaming the graph."
+    },
+    {
+      "slug": "ttrades_curriculum",
+      "name": "TTrades Curriculum",
+      "framework_type": "source_curriculum",
+      "style_family": "phase_structure_bias",
+      "status": "active",
+      "description": "Current primary curriculum source family used to ground the baseline trading research corpus.",
+      "notes": "Teacher-specific vocabulary should live here, not inside canonical topic names."
+    },
+    {
+      "slug": "ttfm",
+      "name": "TTrades Fractal Model",
+      "framework_type": "execution_framework",
+      "style_family": "fractal_multitimeframe_sequence",
+      "status": "active",
+      "description": "Dedicated TTrades fractal-model framework for screenshot-first multimodal learning, multi-timeframe case packets, and component mapping.",
+      "notes": "Keep the TTFM visual grammar explicit without collapsing it into generic price-action labels."
+    },
+    {
+      "slug": "tradingview_reference",
+      "name": "TradingView Pine Reference",
+      "framework_type": "implementation_reference",
+      "style_family": "pine_constraints",
+      "status": "active",
+      "description": "Official Pine documentation framework for implementation constraints, language limits, and coding patterns."
+    }
+  ],
+  "topics": [
+    {
+      "slug": "bias",
+      "name": "Bias",
+      "aliases": ["daily_bias"],
+      "topic_type": "context",
+      "status": "active",
+      "description": "Higher-timeframe continuation versus reversal state that filters lower-timeframe execution.",
+      "rulebook_path": "topics/bias/rulebook.json",
+      "examples_path": "topics/bias/examples.md",
+      "open_questions_path": "topics/bias/open_questions.md"
+    },
+    {
+      "slug": "expansion",
+      "name": "Expansion",
+      "topic_type": "phase",
+      "status": "active",
+      "description": "One-sided directional move with shallow pullbacks and continuation structure.",
+      "rulebook_path": "topics/expansion/rulebook.json",
+      "examples_path": "topics/expansion/examples.md",
+      "open_questions_path": "topics/expansion/open_questions.md"
+    },
+    {
+      "slug": "protected_swings",
+      "name": "Protected Swings",
+      "topic_type": "structure",
+      "status": "active",
+      "description": "Structural highs or lows expected to hold if the current directional thesis remains valid.",
+      "rulebook_path": "topics/protected_swings/rulebook.json",
+      "examples_path": "topics/protected_swings/examples.md",
+      "open_questions_path": "topics/protected_swings/open_questions.md"
+    },
+    {
+      "slug": "consolidation",
+      "name": "Consolidation",
+      "topic_type": "phase",
+      "status": "active",
+      "description": "Smaller-range price behavior that often precedes expansion or reversal.",
+      "rulebook_path": "topics/consolidation/rulebook.json",
+      "examples_path": "topics/consolidation/examples.md",
+      "open_questions_path": "topics/consolidation/open_questions.md"
+    },
+    {
+      "slug": "retracement",
+      "name": "Retracement",
+      "topic_type": "phase",
+      "status": "active",
+      "description": "Countertrend pullback within a broader directional move.",
+      "rulebook_path": "topics/retracement/rulebook.json",
+      "examples_path": "topics/retracement/examples.md",
+      "open_questions_path": "topics/retracement/open_questions.md"
+    },
+    {
+      "slug": "reversal",
+      "name": "Reversal",
+      "topic_type": "phase",
+      "status": "active",
+      "description": "Phase transition where prior structure fails and opposite-direction structure confirms.",
+      "rulebook_path": "topics/reversal/rulebook.json",
+      "examples_path": "topics/reversal/examples.md",
+      "open_questions_path": "topics/reversal/open_questions.md"
+    },
+    {
+      "slug": "continuation",
+      "name": "Continuation",
+      "topic_type": "execution",
+      "status": "active",
+      "description": "Execution logic for rejoining the active directional move after valid confirmation.",
+      "rulebook_path": "topics/continuation/rulebook.json",
+      "examples_path": "topics/continuation/examples.md",
+      "open_questions_path": "topics/continuation/open_questions.md"
+    },
+    {
+      "slug": "equilibrium",
+      "name": "Equilibrium",
+      "aliases": ["eq"],
+      "topic_type": "reference_level",
+      "status": "active",
+      "description": "Midpoint reference used for continuation framing and balance/imbalance logic.",
+      "rulebook_path": "topics/equilibrium/rulebook.json",
+      "examples_path": "topics/equilibrium/examples.md",
+      "open_questions_path": "topics/equilibrium/open_questions.md"
+    },
+    {
+      "slug": "wick_logic",
+      "name": "Wick Logic",
+      "aliases": ["wicks", "wicks_logic"],
+      "topic_type": "candle_filter",
+      "status": "active",
+      "description": "Use of wick size and opposing run behavior to classify expansion versus reversion potential.",
+      "rulebook_path": "topics/wick_logic/rulebook.json",
+      "examples_path": "topics/wick_logic/examples.md",
+      "open_questions_path": "topics/wick_logic/open_questions.md"
+    },
+    {
+      "slug": "top_down_alignment",
+      "name": "Top-Down Alignment",
+      "aliases": ["alignment", "timeframe_alignment", "top_down"],
+      "topic_type": "context",
+      "status": "active",
+      "description": "Higher, intermediate, and lower timeframe agreement for directional precision.",
+      "rulebook_path": "topics/top_down_alignment/rulebook.json",
+      "examples_path": "topics/top_down_alignment/examples.md",
+      "open_questions_path": "topics/top_down_alignment/open_questions.md"
+    },
+    {
+      "slug": "invalidation",
+      "name": "Invalidation",
+      "aliases": ["risk", "stop_loss", "stops"],
+      "topic_type": "risk",
+      "status": "active",
+      "description": "Structural failure conditions, stop placement, and thesis negation rules.",
+      "rulebook_path": "topics/invalidation/rulebook.json",
+      "examples_path": "topics/invalidation/examples.md",
+      "open_questions_path": "topics/invalidation/open_questions.md"
+    },
+    {
+      "slug": "candle_2_closure",
+      "name": "Candle 2 Closure",
+      "aliases": ["candle_2", "candle2", "c2_closure"],
+      "topic_type": "fractal_model",
+      "status": "active",
+      "description": "Fractal-model closure concept used to interpret continuation and reversal development.",
+      "rulebook_path": "topics/candle_2_closure/rulebook.json",
+      "examples_path": "topics/candle_2_closure/examples.md",
+      "open_questions_path": "topics/candle_2_closure/open_questions.md"
+    },
+    {
+      "slug": "candle_3_closure",
+      "name": "Candle 3 Closure",
+      "aliases": ["candle_3", "candle3", "c3_closure"],
+      "topic_type": "fractal_model",
+      "status": "active",
+      "description": "Fractal-model continuation or reversal closure concept used for cleaner execution confirmation.",
+      "rulebook_path": "topics/candle_3_closure/rulebook.json",
+      "examples_path": "topics/candle_3_closure/examples.md",
+      "open_questions_path": "topics/candle_3_closure/open_questions.md"
+    },
+    {
+      "slug": "daily_profiles",
+      "name": "Daily Profiles",
+      "aliases": ["daily_profile"],
+      "topic_type": "profile",
+      "status": "active",
+      "description": "Session-shaped daily profile templates used to anticipate likely reversal, continuation, or range-expansion behavior.",
+      "rulebook_path": "topics/daily_profiles/rulebook.json",
+      "examples_path": "topics/daily_profiles/examples.md",
+      "open_questions_path": "topics/daily_profiles/open_questions.md"
+    }
+  ],
+  "dependencies": [
+    {
+      "topic": "expansion",
+      "depends_on": "bias",
+      "dependency_kind": "prerequisite",
+      "rationale": "Expansion execution quality depends on higher-timeframe continuation versus reversal context."
+    },
+    {
+      "topic": "expansion",
+      "depends_on": "protected_swings",
+      "dependency_kind": "prerequisite",
+      "rationale": "Protected swings define continuation structure and invalidation inside expansion."
+    },
+    {
+      "topic": "expansion",
+      "depends_on": "wick_logic",
+      "dependency_kind": "filter",
+      "rationale": "Wick behavior helps classify whether candles actually support expansion."
+    },
+    {
+      "topic": "expansion",
+      "depends_on": "top_down_alignment",
+      "dependency_kind": "prerequisite",
+      "rationale": "TTrades expansion logic is explicitly multi-timeframe."
+    },
+    {
+      "topic": "retracement",
+      "depends_on": "bias",
+      "dependency_kind": "prerequisite",
+      "rationale": "Retracement quality must be interpreted inside a broader directional thesis."
+    },
+    {
+      "topic": "retracement",
+      "depends_on": "expansion",
+      "dependency_kind": "phase_relation",
+      "rationale": "Retracement is defined in contrast to the prior expansion leg."
+    },
+    {
+      "topic": "retracement",
+      "depends_on": "top_down_alignment",
+      "dependency_kind": "prerequisite",
+      "rationale": "Higher timeframe versus lower timeframe pullback structure matters for valid retracements."
+    },
+    {
+      "topic": "retracement",
+      "depends_on": "protected_swings",
+      "dependency_kind": "confirmation",
+      "rationale": "Retracement integrity and completion are judged against existing and newly formed protected swings."
+    },
+    {
+      "topic": "reversal",
+      "depends_on": "bias",
+      "dependency_kind": "prerequisite",
+      "rationale": "Reversal setups need context to separate true reversals from simple pullbacks."
+    },
+    {
+      "topic": "reversal",
+      "depends_on": "wick_logic",
+      "dependency_kind": "filter",
+      "rationale": "Wick behavior is a major TTrades signal for reversal versus expansion conditions."
+    },
+    {
+      "topic": "reversal",
+      "depends_on": "protected_swings",
+      "dependency_kind": "confirmation",
+      "rationale": "A reversal becomes cleaner once a new protected swing confirms in the opposite direction."
+    },
+    {
+      "topic": "reversal",
+      "depends_on": "top_down_alignment",
+      "dependency_kind": "prerequisite",
+      "rationale": "Reversals framed from daily or four-hour context are more reliable than lower-timeframe noise."
+    },
+    {
+      "topic": "continuation",
+      "depends_on": "bias",
+      "dependency_kind": "prerequisite",
+      "rationale": "Continuation trades only make sense in the direction of the active bias."
+    },
+    {
+      "topic": "continuation",
+      "depends_on": "expansion",
+      "dependency_kind": "phase_relation",
+      "rationale": "Continuation is how traders participate in an ongoing expansion leg."
+    },
+    {
+      "topic": "continuation",
+      "depends_on": "protected_swings",
+      "dependency_kind": "confirmation",
+      "rationale": "Protected swings define structural continuation entries and trailing logic."
+    },
+    {
+      "topic": "continuation",
+      "depends_on": "equilibrium",
+      "dependency_kind": "reference_level",
+      "rationale": "Equilibrium often separates shallow continuation pullbacks from deeper failure conditions."
+    },
+    {
+      "topic": "continuation",
+      "depends_on": "candle_3_closure",
+      "dependency_kind": "confirmation",
+      "rationale": "Candle 3 is repeatedly referenced as a cleaner continuation confirmation concept."
+    },
+    {
+      "topic": "continuation",
+      "depends_on": "top_down_alignment",
+      "dependency_kind": "prerequisite",
+      "rationale": "Continuation quality rises when lower timeframe execution aligns with higher timeframe intent."
+    },
+    {
+      "topic": "candle_2_closure",
+      "depends_on": "bias",
+      "dependency_kind": "prerequisite",
+      "rationale": "The Candle 2 reversal is only useful when the surrounding directional idea is already framed."
+    },
+    {
+      "topic": "candle_2_closure",
+      "depends_on": "top_down_alignment",
+      "dependency_kind": "prerequisite",
+      "rationale": "Fractal reversals are intended to sit inside the higher-to-lower timeframe directional plan."
+    },
+    {
+      "topic": "candle_2_closure",
+      "depends_on": "wick_logic",
+      "dependency_kind": "filter",
+      "rationale": "Large rejection wicks and midpoint respect help separate clean Candle 2 turns from weak ones."
+    },
+    {
+      "topic": "candle_3_closure",
+      "depends_on": "candle_2_closure",
+      "dependency_kind": "sequence_context",
+      "rationale": "Candle 3 only matters after Candle 2 failed to deliver the earlier closure."
+    },
+    {
+      "topic": "candle_3_closure",
+      "depends_on": "equilibrium",
+      "dependency_kind": "reference_level",
+      "rationale": "Candle 3 refinement is explicitly framed through the midpoint of Candle 3's range."
+    },
+    {
+      "topic": "candle_3_closure",
+      "depends_on": "top_down_alignment",
+      "dependency_kind": "prerequisite",
+      "rationale": "Candle 3 closures are only promoted when they agree with the higher-timeframe point of interest and directional plan."
+    },
+    {
+      "topic": "consolidation",
+      "depends_on": "bias",
+      "dependency_kind": "context",
+      "rationale": "Consolidation behaves differently depending on whether it is a pause or a transition."
+    },
+    {
+      "topic": "consolidation",
+      "depends_on": "protected_swings",
+      "dependency_kind": "confirmation",
+      "rationale": "Manipulation and breakout confirmation rely on protected swing or candle-series failure structure."
+    },
+    {
+      "topic": "consolidation",
+      "depends_on": "equilibrium",
+      "dependency_kind": "reference_level",
+      "rationale": "Equilibrium helps classify whether price is still rotating inside the range or actually resolving away from it."
+    },
+    {
+      "topic": "invalidation",
+      "depends_on": "protected_swings",
+      "dependency_kind": "prerequisite",
+      "rationale": "Protected swings are the main structural stop and failure reference."
+    },
+    {
+      "topic": "invalidation",
+      "depends_on": "reversal",
+      "dependency_kind": "phase_relation",
+      "rationale": "Invalidation often marks the shift from continuation to reversal."
+    },
+    {
+      "topic": "daily_profiles",
+      "depends_on": "bias",
+      "dependency_kind": "prerequisite",
+      "rationale": "Daily profiles are specialized bias frameworks."
+    },
+    {
+      "topic": "daily_profiles",
+      "depends_on": "wick_logic",
+      "dependency_kind": "filter",
+      "rationale": "Profile interpretation uses wick and candle behavior extensively."
+    },
+    {
+      "topic": "daily_profiles",
+      "depends_on": "top_down_alignment",
+      "dependency_kind": "prerequisite",
+      "rationale": "Profiles still need higher-to-lower timeframe continuity."
+    }
+  ],
+  "trade_models": [
+    {
+      "slug": "phases_of_price_framework",
+      "name": "Phases of Price Framework",
+      "model_type": "curriculum_framework",
+      "status": "active",
+      "description": "Core TTrades view of market behavior as consolidation, expansion, retracement, and reversal.",
+      "source_notes": "Derived from Phases of Price parts 1 through 5."
+    },
+    {
+      "slug": "daily_bias_framework",
+      "name": "Daily Bias Framework",
+      "aliases": ["daily_bias_model"],
+      "model_type": "bias_framework",
+      "status": "active",
+      "description": "Continuation-versus-reversal framing using prior candle range, equilibrium, wick size, and lower-timeframe confirmation.",
+      "source_notes": "Derived from Easy Daily Bias, Next Day Model, and wick-size articles."
+    },
+    {
+      "slug": "fractal_closure_model",
+      "name": "Fractal Closure Model",
+      "aliases": ["fractal_model", "fractal", "ttrades_fractal_model"],
+      "model_type": "execution_framework",
+      "status": "active",
+      "description": "Execution framework using candle closures, fractal sequencing, and alignment across timeframes.",
+      "source_notes": "Canonicalized from TTrades Candle 2, Candle 3, Candle 4, and fractal playbook materials so similar closure-based frameworks can map into the same model."
+    },
+    {
+      "slug": "continuation_entry_model",
+      "name": "Continuation Entry Model",
+      "aliases": ["continuation_model"],
+      "model_type": "entry_model",
+      "status": "active",
+      "description": "Continuation entry logic using equilibrium, protected swings, and lower-timeframe confirmation.",
+      "source_notes": "Derived from continuation articles, equilibrium articles, and top-down analysis."
+    },
+    {
+      "slug": "reversal_sequence_model",
+      "name": "Reversal Sequence Model",
+      "aliases": ["reversal_model"],
+      "model_type": "entry_model",
+      "status": "active",
+      "description": "Reversal entry model using wick behavior, range interaction, and structural confirmation.",
+      "source_notes": "Derived from reversal sequence, wick, and reversal phase materials."
+    },
+    {
+      "slug": "daily_profile_models",
+      "name": "Daily Profile Models",
+      "aliases": ["profiles_model"],
+      "model_type": "profile_framework",
+      "status": "active",
+      "description": "Collection of session-profile models used to frame whether a day is more likely to reverse, continue, or remain rotational.",
+      "source_notes": "Initially grounded in TTrades daily-profile materials, with room for adjacent profile frameworks later."
+    }
+  ],
+  "framework_topic_terms": [
+    {
+      "framework": "canonical_price_action",
+      "topic": "bias",
+      "term": "bias",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "expansion",
+      "term": "expansion",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "retracement",
+      "term": "retracement",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "reversal",
+      "term": "reversal",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "continuation",
+      "term": "continuation",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "protected_swings",
+      "term": "protected swing",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "top_down_alignment",
+      "term": "timeframe alignment",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "invalidation",
+      "term": "invalidation",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "equilibrium",
+      "term": "equilibrium",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "topic": "wick_logic",
+      "term": "wick midpoint",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "bias",
+      "term": "daily bias",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "bias",
+      "term": "next day model",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "expansion",
+      "term": "phases of price expansion",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "protected_swings",
+      "term": "protected swing",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "reversal",
+      "term": "reversal sequence",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "continuation",
+      "term": "continuation",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "equilibrium",
+      "term": "eq",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "top_down_alignment",
+      "term": "top-down analysis",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "top_down_alignment",
+      "term": "aligning candles",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "wick_logic",
+      "term": "wick respect",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "wick_logic",
+      "term": "wick size",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "invalidation",
+      "term": "stop loss",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "invalidation",
+      "term": "protected swing invalidation",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "candle_2_closure",
+      "term": "candle 2 closure",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "candle_3_closure",
+      "term": "candle 3 closure",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "daily_profiles",
+      "term": "seek and destroy",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "daily_profiles",
+      "term": "new york reversal",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "daily_profiles",
+      "term": "new york manipulation",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "topic": "daily_profiles",
+      "term": "london reversal and new york continuation",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "topic": "candle_2_closure",
+      "term": "candle 2",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "topic": "candle_3_closure",
+      "term": "candle 3",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "topic": "protected_swings",
+      "term": "protected swing",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "topic": "top_down_alignment",
+      "term": "multiple time frame analysis",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "topic": "equilibrium",
+      "term": "equilibrium",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "topic": "reversal",
+      "term": "liquidity sweep",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "topic": "invalidation",
+      "term": "thesis failure",
+      "term_kind": "native"
+    }
+  ],
+  "framework_trade_model_terms": [
+    {
+      "framework": "canonical_price_action",
+      "trade_model": "phases_of_price_framework",
+      "term": "phase framework",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "trade_model": "daily_bias_framework",
+      "term": "bias framework",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "trade_model": "fractal_closure_model",
+      "term": "fractal closure model",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "trade_model": "continuation_entry_model",
+      "term": "continuation entry model",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "canonical_price_action",
+      "trade_model": "reversal_sequence_model",
+      "term": "reversal entry model",
+      "term_kind": "canonical"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "trade_model": "phases_of_price_framework",
+      "term": "phases of price",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "trade_model": "daily_bias_framework",
+      "term": "next day model",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "trade_model": "daily_bias_framework",
+      "term": "daily bias",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "trade_model": "fractal_closure_model",
+      "term": "ttrades fractal model",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "trade_model": "fractal_closure_model",
+      "term": "fractal model",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "trade_model": "continuation_entry_model",
+      "term": "continuation model",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "trade_model": "reversal_sequence_model",
+      "term": "reversal sequence",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttrades_curriculum",
+      "trade_model": "daily_profile_models",
+      "term": "daily profiles",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "trade_model": "fractal_closure_model",
+      "term": "ttfm",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "trade_model": "fractal_closure_model",
+      "term": "ttrades fractal model",
+      "term_kind": "native"
+    },
+    {
+      "framework": "ttfm",
+      "trade_model": "reversal_sequence_model",
+      "term": "ttfm reversal sequence",
+      "term_kind": "native"
+    },
+    {
+      "framework": "tradingview_reference",
+      "trade_model": "fractal_closure_model",
+      "term": "pine implementation constraints",
+      "term_kind": "reference"
+    }
+  ],
+  "trade_model_topics": [
+    {
+      "trade_model": "phases_of_price_framework",
+      "topic": "consolidation",
+      "role": "core",
+      "priority": 1,
+      "notes": "One of the four canonical market phases."
+    },
+    {
+      "trade_model": "phases_of_price_framework",
+      "topic": "expansion",
+      "role": "core",
+      "priority": 1,
+      "notes": "One of the four canonical market phases."
+    },
+    {
+      "trade_model": "phases_of_price_framework",
+      "topic": "retracement",
+      "role": "core",
+      "priority": 1,
+      "notes": "One of the four canonical market phases."
+    },
+    {
+      "trade_model": "phases_of_price_framework",
+      "topic": "reversal",
+      "role": "core",
+      "priority": 1,
+      "notes": "One of the four canonical market phases."
+    },
+    {
+      "trade_model": "daily_bias_framework",
+      "topic": "bias",
+      "role": "core",
+      "priority": 1,
+      "notes": "Primary state variable."
+    },
+    {
+      "trade_model": "daily_bias_framework",
+      "topic": "wick_logic",
+      "role": "filter",
+      "priority": 1,
+      "notes": "Used to refine continuation versus reversal expectations."
+    },
+    {
+      "trade_model": "daily_bias_framework",
+      "topic": "equilibrium",
+      "role": "reference_level",
+      "priority": 1,
+      "notes": "Defines continuation area of interest."
+    },
+    {
+      "trade_model": "daily_bias_framework",
+      "topic": "top_down_alignment",
+      "role": "context",
+      "priority": 2,
+      "notes": "Keeps execution aligned with broader intent."
+    },
+    {
+      "trade_model": "fractal_closure_model",
+      "topic": "bias",
+      "role": "context",
+      "priority": 1,
+      "notes": "Fractal execution still needs direction."
+    },
+    {
+      "trade_model": "fractal_closure_model",
+      "topic": "candle_2_closure",
+      "role": "core",
+      "priority": 1,
+      "notes": "Key fractal closure concept."
+    },
+    {
+      "trade_model": "fractal_closure_model",
+      "topic": "candle_3_closure",
+      "role": "core",
+      "priority": 1,
+      "notes": "Key fractal continuation and reversal concept."
+    },
+    {
+      "trade_model": "fractal_closure_model",
+      "topic": "top_down_alignment",
+      "role": "context",
+      "priority": 2,
+      "notes": "Used for timeframe nesting."
+    },
+    {
+      "trade_model": "continuation_entry_model",
+      "topic": "continuation",
+      "role": "core",
+      "priority": 1,
+      "notes": "Main execution model topic."
+    },
+    {
+      "trade_model": "continuation_entry_model",
+      "topic": "expansion",
+      "role": "context",
+      "priority": 1,
+      "notes": "Continuation lives inside expansion behavior."
+    },
+    {
+      "trade_model": "continuation_entry_model",
+      "topic": "retracement",
+      "role": "phase_relation",
+      "priority": 2,
+      "notes": "Most continuation executions occur after a controlled pullback or sweep back into the trend."
+    },
+    {
+      "trade_model": "continuation_entry_model",
+      "topic": "consolidation",
+      "role": "phase_relation",
+      "priority": 2,
+      "notes": "Continuation can also emerge from range breakout or post-manipulation resolution."
+    },
+    {
+      "trade_model": "continuation_entry_model",
+      "topic": "protected_swings",
+      "role": "confirmation",
+      "priority": 1,
+      "notes": "Needed for structural entries and invalidation."
+    },
+    {
+      "trade_model": "continuation_entry_model",
+      "topic": "equilibrium",
+      "role": "reference_level",
+      "priority": 2,
+      "notes": "Frequently used continuation area of interest."
+    },
+    {
+      "trade_model": "continuation_entry_model",
+      "topic": "invalidation",
+      "role": "risk",
+      "priority": 1,
+      "notes": "Needed for stop and thesis failure logic."
+    },
+    {
+      "trade_model": "reversal_sequence_model",
+      "topic": "reversal",
+      "role": "core",
+      "priority": 1,
+      "notes": "Main reversal setup logic."
+    },
+    {
+      "trade_model": "reversal_sequence_model",
+      "topic": "wick_logic",
+      "role": "filter",
+      "priority": 1,
+      "notes": "Wick behavior differentiates reversal from failed expansion."
+    },
+    {
+      "trade_model": "reversal_sequence_model",
+      "topic": "protected_swings",
+      "role": "confirmation",
+      "priority": 1,
+      "notes": "New protected swing improves reversal quality."
+    },
+    {
+      "trade_model": "reversal_sequence_model",
+      "topic": "invalidation",
+      "role": "risk",
+      "priority": 1,
+      "notes": "Defines stop placement and thesis negation."
+    },
+    {
+      "trade_model": "daily_profile_models",
+      "topic": "daily_profiles",
+      "role": "core",
+      "priority": 1,
+      "notes": "Specialized profile layer."
+    },
+    {
+      "trade_model": "daily_profile_models",
+      "topic": "consolidation",
+      "role": "context",
+      "priority": 1,
+      "notes": "Many session profiles describe range-bound or whipsaw conditions before directional resolution."
+    },
+    {
+      "trade_model": "daily_profile_models",
+      "topic": "bias",
+      "role": "context",
+      "priority": 1,
+      "notes": "Profiles are structured bias models."
+    },
+    {
+      "trade_model": "daily_profile_models",
+      "topic": "wick_logic",
+      "role": "filter",
+      "priority": 2,
+      "notes": "Wick behavior refines profile expectation."
+    }
+  ],
+  "trader_profiles": [
+    {
+      "slug": "ttrades_curriculum",
+      "display_name": "TTrades Curriculum",
+      "profile_type": "teacher_style",
+      "status": "active",
+      "notes": "Teacher-style bundle representing how TTrades tends to frame bias, confirmation, invalidation, and session behavior. This is a style layer on top of the canonical graph, not a replacement for it.",
+      "style_json": {
+        "source_mode": "curriculum",
+        "execution_style": "structure_confirmation",
+        "confirmation_style": "protected_swing_and_closure",
+        "risk_style": "protected_swing_invalidation",
+        "entry_selection": "continuation_and_reversal_sequences",
+        "indicator_intent": "style_bundle"
+      }
+    }
+  ],
+  "trader_profile_frameworks": [
+    {
+      "profile": "ttrades_curriculum",
+      "framework": "ttrades_curriculum",
+      "relation_type": "primary_framework",
+      "confidence": 1.0,
+      "notes": "This teacher-style profile is currently grounded in the TTrades curriculum corpus."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "framework": "canonical_price_action",
+      "relation_type": "maps_to_canonical_graph",
+      "confidence": 0.95,
+      "notes": "Teacher-specific execution is mapped onto the canonical price-action ontology so adjacent styles can coexist."
+    }
+  ],
+  "trader_profile_trade_models": [
+    {
+      "profile": "ttrades_curriculum",
+      "trade_model": "phases_of_price_framework",
+      "role": "curriculum_backbone",
+      "priority": 1,
+      "indicator_ready": false,
+      "notes": "Primary market-state framework behind the curriculum."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "trade_model": "daily_bias_framework",
+      "role": "bias_filter",
+      "priority": 1,
+      "indicator_ready": true,
+      "notes": "Bias framing is already fairly mechanical and can support indicator logic."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "trade_model": "fractal_closure_model",
+      "role": "confirmation_framework",
+      "priority": 2,
+      "indicator_ready": true,
+      "notes": "Fractal closure logic now has explicit Candle 2 and Candle 3 rulebooks plus baseline annotated cases, so it is ready for first-pass indicator translation."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "trade_model": "continuation_entry_model",
+      "role": "execution_model",
+      "priority": 1,
+      "indicator_ready": true,
+      "notes": "Continuation execution is one of the clearest teacher-style models currently in the repo."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "trade_model": "reversal_sequence_model",
+      "role": "execution_model",
+      "priority": 2,
+      "indicator_ready": true,
+      "notes": "Reversal execution now has explicit reversal, invalidation, wick, and alignment support layers plus labeled chart cases, making it ready for a first-pass indicator translation."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "trade_model": "daily_profile_models",
+      "role": "session_context_model",
+      "priority": 2,
+      "indicator_ready": true,
+      "notes": "Daily profile logic now has explicit profile, wick, and top-down rulebooks plus labeled examples, making it ready for first-pass session-context indicator translation."
+    }
+  ],
+  "trader_profile_topics": [
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "bias",
+      "emphasis": "core",
+      "priority": 1,
+      "notes": "Teacher style is heavily bias-led."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "expansion",
+      "emphasis": "core",
+      "priority": 1,
+      "notes": "Expansion is a central directional condition."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "protected_swings",
+      "emphasis": "core",
+      "priority": 1,
+      "notes": "Protected swings drive confirmation and invalidation."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "equilibrium",
+      "emphasis": "reference_level",
+      "priority": 2,
+      "notes": "Equilibrium is used as the midpoint divider for continuation framing and fractal refinement."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "wick_logic",
+      "emphasis": "filter",
+      "priority": 2,
+      "notes": "Wick size and midpoint respect filter expansion versus reversion expectations."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "top_down_alignment",
+      "emphasis": "context",
+      "priority": 2,
+      "notes": "Higher-to-lower timeframe agreement is a core style filter for entry quality."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "invalidation",
+      "emphasis": "risk",
+      "priority": 2,
+      "notes": "The style uses protected swings as the main thesis-failure and stop-placement anchor."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "continuation",
+      "emphasis": "execution",
+      "priority": 1,
+      "notes": "Continuation is one of the clearest executable teacher-style ideas."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "retracement",
+      "emphasis": "phase_relation",
+      "priority": 2,
+      "notes": "Retracement is treated as setup context before re-entry."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "consolidation",
+      "emphasis": "phase_relation",
+      "priority": 2,
+      "notes": "Consolidation is used as manipulation and breakout context."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "reversal",
+      "emphasis": "execution",
+      "priority": 2,
+      "notes": "Reversal remains part of the style even though it is less mature than continuation in the current corpus."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "candle_2_closure",
+      "emphasis": "confirmation",
+      "priority": 2,
+      "notes": "Candle 2 is the first explicit fractal-closure confirmation concept in the style."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "candle_3_closure",
+      "emphasis": "confirmation",
+      "priority": 2,
+      "notes": "Candle 3 carries the delayed fractal confirmation and equilibrium refinement logic."
+    },
+    {
+      "profile": "ttrades_curriculum",
+      "topic": "daily_profiles",
+      "emphasis": "context",
+      "priority": 3,
+      "notes": "Daily profile logic shapes session expectations."
+    }
+  ]
+}

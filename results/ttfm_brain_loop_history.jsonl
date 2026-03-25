@@ -1,0 +1,3 @@
+{"run_generated_at": "2026-03-24T19:08:07.787541+00:00", "status": "ok", "healthy": false, "pine_status": "deferred", "reviewed_alignment_precision": 0.0, "mean_disagreement_count": 7.033333, "validation_micro_precision": 0.3516483516483517}
+{"run_generated_at": "2026-03-24T19:30:34.268071+00:00", "status": "ok", "healthy": false, "pine_status": "deferred", "reviewed_alignment_precision": 0.0, "mean_disagreement_count": 3.146667, "validation_micro_precision": 0.40476190476190477}
+{"run_generated_at": "2026-03-24T19:33:52.796559+00:00", "status": "ok", "healthy": false, "pine_status": "deferred", "reviewed_alignment_precision": 0.0, "mean_disagreement_count": 3.613333, "validation_micro_precision": 0.3203125}

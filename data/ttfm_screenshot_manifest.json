@@ -1,0 +1,660 @@
+{
+  "generated_at": "2026-03-22T20:39:36.915381+00:00",
+  "summary": {
+    "source_page_count": 4,
+    "attachment_count": 50,
+    "downloaded_image_count": 0
+  },
+  "attachments": [
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/context_Framework.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/Framework.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Framework.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/sweep_Framework-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/Framework-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Framework-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/closure_Framework-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/Framework-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Framework-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/confirmation_Framework-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/Framework-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Framework-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/outcome_Framework-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/Framework-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Framework-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/context_Next-Day-model.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/Next-Day-model.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Next-Day-model.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/sweep_Next-Day-model-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/Next-Day-model-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Next-Day-model-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/closure_Next-Day-model-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/Next-Day-model-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Next-Day-model-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/confirmation_Next-Day-model-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/Next-Day-model-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Next-Day-model-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/outcome_Next-Day-model-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/Next-Day-model-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Next-Day-model-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/context_c2.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/c2.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image c2.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/sweep_c2-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/c2-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image c2-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/closure_c2-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/c2-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image c2-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/confirmation_c2-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/c2-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image c2-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/outcome_c2-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/12/c2-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image c2-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/context_Entry20Model.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/trading-breaker-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/sweep_Entry20Model-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/trading-breaker-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/closure_Entry20Model-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/trading-breaker-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/confirmation_Entry20Model-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/trading-breaker-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/outcome_Entry20Model-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/trading-breaker-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/context_EQ-1.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/EQ-1.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EQ-1.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-equilibrium-in-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/sweep_EQ-1-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/EQ-1-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EQ-1-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-equilibrium-in-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/closure_EQ-1-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/EQ-1-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EQ-1-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-equilibrium-in-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/confirmation_EQ-1-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/EQ-1-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EQ-1-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-equilibrium-in-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/outcome_EQ-1-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/EQ-1-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EQ-1-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-equilibrium-in-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/context_Ideal-Continuation.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/02/Ideal-Continuation.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Ideal-Continuation.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/sweep_Ideal-Continuation-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/02/Ideal-Continuation-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Ideal-Continuation-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/closure_Ideal-Continuation-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/02/Ideal-Continuation-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Ideal-Continuation-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/confirmation_Ideal-Continuation-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/02/Ideal-Continuation-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Ideal-Continuation-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/outcome_Ideal-Continuation-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/02/Ideal-Continuation-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Ideal-Continuation-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/context_Entry20Model-1.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-1.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-1.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-order-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/sweep_Entry20Model-1-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-1-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-1-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-order-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/closure_Entry20Model-1-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-1-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-1-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-order-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/confirmation_Entry20Model-1-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-1-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-1-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-order-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/outcome_Entry20Model-1-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/Entry20Model-1-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image Entry20Model-1-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/using-order-blocks-for-continuations/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/context_RETRACEMENT.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/RETRACEMENT.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image RETRACEMENT.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/sweep_RETRACEMENT-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/RETRACEMENT-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image RETRACEMENT-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/closure_RETRACEMENT-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/RETRACEMENT-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image RETRACEMENT-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/confirmation_RETRACEMENT-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/RETRACEMENT-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image RETRACEMENT-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/outcome_RETRACEMENT-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/08/RETRACEMENT-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image RETRACEMENT-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/context_top-down_.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/top-down_.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image top-down_.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/sweep_top-down_-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/top-down_-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image top-down_-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/closure_top-down_-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/top-down_-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image top-down_-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/confirmation_top-down_-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/top-down_-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image top-down_-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/outcome_top-down_-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2025/07/top-down_-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image top-down_-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "checkpoint": "context",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/context_EA.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/01/EA.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EA.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "checkpoint": "sweep",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/sweep_EA-300x169.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/01/EA-300x169.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EA-300x169.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "checkpoint": "closure",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/closure_EA-1024x576.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/01/EA-1024x576.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EA-1024x576.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "checkpoint": "confirmation",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/confirmation_EA-768x432.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/01/EA-768x432.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EA-768x432.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/"
+      ],
+      "zone_geometry": null
+    },
+    {
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "checkpoint": "outcome",
+      "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/outcome_EA-1536x864.png",
+      "source_image_url": "https://ttrades.com/wp-content/uploads/2026/01/EA-1536x864.png",
+      "annotation_notes": [
+        "Bootstrapped from source article image EA-1536x864.png; requires visual review before anchor promotion."
+      ],
+      "evidence_refs": [
+        "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/"
+      ],
+      "zone_geometry": null
+    }
+  ]
+}

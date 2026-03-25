@@ -1,0 +1,822 @@
+[11.20] How's it going everyone and welcome back
+[13.04] to another tea talk. In this tea talk we
+[15.52] are going to have Garrett on here for a
+[17.44] second time to talk about universal
+[19.76] models swing points and SMT. I hope you
+[22.72] guys enjoy. What is up everybody? I am
+[25.52] back for a second episode of TT Talks.
+[29.28] Thank you T trades for the opportunity
+[31.76] here. Today's lecture we are going to
+[35.20] cover reversal confirmations
+[38.00] a complete approach to the market. The
+[40.72] lecture topics are going to be universal
+[42.88] model swing formations SMT SMT pairing
+[47.36] and two-stage SMT sequence. I'm going to
+[50.40] show you guys how to pair these all
+[52.08] together for a complete framework and
+[55.12] approach the market. Credit goes to T
+[57.76] trades, AM trades, the MXM trader,
+[61.04] trader day, and ICT, which I would
+[63.44] consider all my mentors. I have taken
+[66.00] little bits and pieces of each one of my
+[69.28] mentors and blended them together for my
+[72.80] personal approach and that's what I will
+[75.20] be sharing a piece of with you all
+[77.20] today. Let's get into it. So, here we
+[79.92] are on universal models. We're going to
+[82.16] be covering internal to external,
+[84.64] external to internal, and manipulation
+[86.80] ranges. This is something I really
+[88.64] learned from the MXM traders back when I
+[91.12] was first learning how to really trade
+[93.44] ICT. He really simplified it. So, I'm
+[95.68] going to try to do my best here for you
+[97.28] guys. So, all internal to external a
+[100.64] universal model really is is a
+[103.12] framework, right? It tells us, hey, when
+[104.96] price hits this key level, in this case
+[107.04] being internal range, a fair value gap,
+[109.28] we can expect price to reverse and trade
+[111.76] to the high or the external range that
+[114.00] caused the retracement into the gap.
+[116.64] Right? So, here we are on external to
+[118.72] internal. Once price reaches an external
+[121.92] high or manipulates a range high, we can
+[124.80] expect price to retrace back into the
+[127.20] range to see continuation from that gap
+[130.56] or a failure to reverse from this gap
+[132.64] and target the opposing side of the
+[134.32] range. But regardless, this fair value
+[136.80] gap becomes your first target. And
+[138.96] lastly, order pairing ranges or
+[141.28] manipulation ranges, a high or low or
+[145.20] range low being the key level. the
+[148.80] opposing side of the range or swing high
+[151.60] being the targets. Now, we are going to
+[154.08] be going over swing formations. Why are
+[157.12] swing formations so important? Because
+[158.72] the market cannot reverse without a
+[160.96] swing formation. This is the whole logic
+[162.96] behind the TH fractal model and why it
+[165.68] is so logical. So, firstly, let's go
+[168.00] over a candle 2 closure. What is a
+[169.84] candle 2 closure? It is simply when
+[172.08] candle 2 closes back inside of candle
+[174.48] 1's range. Once we have that closure, we
+[177.28] mark out equilibrium of the previous
+[178.96] candle's range, wanting to see the upper
+[181.92] half of that range support price higher
+[184.32] and form the low of candle 3. So why do
+[187.28] we do this? Why do we mark our EQ of
+[189.28] ranges? It is a mechanical way to
+[191.52] measure wick size. What is wick size and
+[194.08] why do we care about it? Well, we know
+[195.84] that expansion candles, right, they have
+[197.92] these small wicks. Reversal candles have
+[200.80] these large wicks, which is what we
+[202.56] typically want to avoid. We want to
+[204.64] trade expansion with this large wick. We
+[207.20] know price cannot expand. So after
+[209.68] candle 3 expands, seeking continuation
+[212.48] in candle 4 is if we close candle 3
+[215.28] above candle 2's high. Once we have that
+[217.60] closure, mark a equilibrium of the
+[220.16] candle 3 expansion. This is where we
+[222.48] seek a candle for continuation forming a
+[225.20] low in the upper half of candle 3's
+[227.84] range. So here we are with a candle 2
+[230.56] reversal to expansion. It is the exact
+[232.96] same thing as a reversal candle. The
+[235.28] only difference is the wick size. Right?
+[237.52] So here we can see that we have a small
+[239.36] wick which allows price to reverse and
+[242.32] expand in the same candle. So when
+[244.24] candle one closes an expansion candle
+[246.72] after hitting a key level, we can
+[248.80] already anticipate a reversal. But if
+[251.20] candle one did not reverse, then we must
+[253.52] reverse off of its high or low here. As
+[256.00] you see, we reverse off the low. If we
+[258.56] form a small wick, then we can actually
+[260.56] participate in this candle because it
+[262.40] supports expansion away from the
+[264.56] reversal. So here we are with a candle
+[266.72] three closure. This is simply when
+[268.72] candle one hits a key level or candle 2
+[271.28] hits a key level, but we do not get a
+[273.28] candle 2 closure. As you see, this is
+[275.36] where candle 3 will just expand away
+[277.76] from candle 2's low without actually
+[279.76] taking that low out. So prior to candle
+[282.56] 3's open, we cannot anticipate this
+[284.64] reversal because we have no closure,
+[286.16] right? The only way we anticipate this
+[288.00] reversal is after the swing formation
+[289.92] actually forms. Right? Candle 1, candle
+[291.92] 2, candle 3. Once we have a strong
+[294.08] candle 3 closure, mechanically defined
+[296.56] as closing over the body of candle 2.
+[299.44] This is where we can mark out
+[301.12] equilibrium of candle 3's range seeking
+[304.32] expansion or continuation in candle 4
+[307.92] where the low is formed in the upper
+[309.68] half of candle 3's range. So now we're
+[312.08] going to put the two together. universal
+[314.56] models with swing points. We know that
+[317.36] when market hits these key levels, we
+[319.92] know we should expect a reversal and we
+[322.24] also know that the market cannot reverse
+[324.00] without a swing point. So this is when
+[325.76] we blend the two together to confirm our
+[328.40] framework. So as you can see market
+[330.88] trades lower into this gap creates a
+[333.36] candle too indicating a reversal from
+[336.24] the internal range of liquidity. Once we
+[338.32] hit internal range liquidity, we know we
+[340.08] should target the opposing side of the
+[341.52] range that caused a retracement. This is
+[343.84] where we seek a continuation within
+[346.00] candle 3 respecting the upper half of
+[349.04] the previous candle's range. So here we
+[351.68] have a reversal into expansion candle
+[354.32] where candle one hits the key level
+[356.24] being external range of liquidity, but
+[358.56] candle one does not reverse. We're
+[360.32] opening near the candle's high. So that
+[362.32] becomes the reversal point. If we create
+[364.72] that small wick, this is what allows the
+[366.72] candle to reverse and expand into the
+[369.92] fair value gap. So, we actually can
+[371.76] participate in this reversal candle. So,
+[374.24] here we are with order pairing ranges.
+[376.96] Here we have a candle 3 closure where
+[379.84] candle one trades into the range low but
+[382.48] does not reverse. So, we do not
+[384.08] participate in this candle because it
+[385.68] does not support expansion. And once
+[387.28] candle 3 opens, we also cannot
+[389.12] participate in this candle because
+[390.80] candle 2 showed no signs of reversal. So
+[393.84] we must wait for the close. If it closes
+[396.32] above the body of candle 2, this is what
+[398.72] validates us to trade candle 4.
+[400.88] Continuation marking out equilibrium of
+[403.76] candle 3 and looking for candle 4 to
+[406.24] respect the upper half of that range and
+[408.88] targeting the opposing side of that
+[410.88] range. Now we're going to get into SMT.
+[413.60] One thing we know about the market is
+[414.96] the market cannot reverse without a
+[416.56] swing point, but the market can also not
+[418.56] reverse without SMT. So this is where
+[420.48] we're going to combine the two. And this
+[422.80] is really the whole goal of this lecture
+[424.64] is to show you the power of combining
+[426.48] the two and how you can build a
+[428.08] mechanical framework and system around
+[430.08] this logic. With SMT, we must understand
+[432.80] the correlated markets to pair
+[434.88] divergences with. So for me personally,
+[437.20] I view correlated markets through a
+[438.88] triad that is simply three correlated
+[441.12] markets. So for forex we have DXY,
+[444.32] EURUSD,
+[445.92] GBPUSD. For indices we have ENQ, ESYM.
+[450.96] For gold we have gold or GC X AU Euro
+[455.76] and X AU GBP. For the oil triad we have
+[459.60] CL, RB and HO. Firstly, we're going to
+[463.20] be using SMT between highs and lows.
+[465.68] This is the most common form of SMT. It
+[468.40] is where one market manipulates a low or
+[470.96] range low where the other one simply
+[473.12] does not take that low. This is a Ken
+[475.28] correlation. It signals a potential
+[477.52] reversal. Secondly, and the other key
+[479.92] level we are going to be using S&T with
+[482.08] is a fair value gap or also known as SMT
+[485.76] fill. This is where one asset fills in a
+[488.32] gap or trades into a gap and the other
+[490.64] one leaves it open, right? A breakaway
+[492.56] gap. And this can signal a potential
+[494.32] reversal. So now we're going to combine
+[496.40] swing points and SMT with our universal
+[499.76] models for a mechanical approach to the
+[502.40] market. So as you see, price trades into
+[504.88] the gap creates SMT with the gap. That
+[507.28] is our first sign of reversal and that
+[509.92] is confirmed by the candle 2 closure.
+[512.56] Once we have that close, mark out
+[514.56] equilibrium or 0.5 of that range. And
+[517.36] this is where we look for candle 3
+[519.12] continuation to form a low in the upper
+[521.60] half of candle 2's range. Here we are
+[524.00] with external to internal where one
+[525.84] asset reaches into external, the other
+[528.08] one does not. This creates that
+[530.00] divergence, that potential reversal. And
+[532.80] since we have this small wick, we can
+[534.64] actually trade it back into the range,
+[536.32] right? We can actually anticipate this
+[537.84] reversal. Not only because of the small
+[540.24] wick, but it is also because of that
+[541.92] divergence. Here we have manipulation
+[544.24] ranges where one asset trades into the
+[546.40] range low or swing low. The other one
+[548.96] does not. It creates a failure swing.
+[551.04] This is what signifies a potential
+[553.36] reversal that is not confirmed until we
+[555.84] get that candle 3 closure closing above
+[558.16] candle 2's body. Once we have that
+[560.00] closure, we can anticipate a candle for
+[562.08] continuation into the opposing side of
+[564.32] the range as our target. And as you see
+[567.36] after we mark out equilibrium, it
+[569.36] respects EQ of that range supporting
+[571.92] expansion.
+[573.44] Now we are going to be going over swing
+[575.28] confirmations. Since we know the market
+[577.68] can't reverse out of swing point or SMT,
+[580.40] now we can apply SMT with swing points.
+[584.40] So here we have swing point SMT between
+[587.28] candle 1 and candle 2 on the correlated
+[590.08] market. This is where we create that
+[591.36] failure swing that indicates that
+[593.68] potential reversal and this is where we
+[595.60] look to trade a candle 3 continuation.
+[598.08] Here we have an SMT between candle 2 and
+[601.04] candle 3. We're on the candle 2 closure.
+[604.08] The SMT is confirming that reversal and
+[607.04] we look to trade candle 3 continuation
+[609.28] lower. So here we have a two-stage SMT.
+[612.56] A two-stage SMT is where we have one
+[615.76] stage of SMT and immediately following
+[618.08] that is confirmed by a second SMT. We
+[621.44] can use this via swing point where we
+[623.52] have an SMT between candle 1 and candle
+[625.44] 2 and then an SMT between candle 2 and
+[628.00] candle 3. This is a very strong
+[630.24] signature in price that we can use to
+[632.48] confirm reversals. Now we are going to
+[634.72] be covering the PSP. This is a concept
+[637.44] taught by trader day. So all the credit
+[639.92] in the world to him is very very simple.
+[642.80] It is where between a correlated markets
+[646.00] they close in opposite directions. So as
+[648.64] you see over here this candle closes
+[650.88] bullish. This one closes bearish. And
+[653.60] this indicates a potential reversal. It
+[656.32] is as simple as that. Now we're going to
+[659.44] go over a two-stage PSP. It's
+[662.16] essentially what we just talked about
+[663.68] with SMT between candle one and candle 2
+[666.16] or candle 2 and candle 3. Now we're just
+[668.48] adding in a precision swing point. So
+[671.12] with this SMT between candle one and
+[673.60] candle 2, this is our first stage SMT
+[676.48] which is confirmed by the PSP creating a
+[679.68] two-stage SMT. Then we look to trade the
+[682.56] following candle in the opposing
+[684.32] direction. Here is a two-stage PSP
+[687.44] between candle 2 and candle 3. This is
+[690.80] when a S&T between candle 2 and candle 3
+[694.40] confirms the PSP. So as you can see the
+[697.12] PSP forms first and the SMT between
+[700.40] candle 2 and candle 3 forms after that
+[702.88] is what confirms the PSP. This is when
+[706.00] we look to trade candle 3 lower or a
+[708.64] candle 2 reversal into expansion. And
+[711.12] here is the continuation PSP. This is
+[714.00] what we look for in expansion away from
+[716.24] a true reversal towards a target. It is
+[719.04] simply where one asset retraces back
+[721.12] into the range. On the close it creates
+[723.68] a PSP on one market. it runs out the
+[726.48] PSP's high which creates that two-stage
+[729.28] PSP on the other asset. It does not
+[731.92] create a swing point at all. So now what
+[734.08] we're going to do is recovering SMT
+[736.48] sequences that confirm our universal
+[738.96] model framework. So the first sequence
+[741.20] is simply where we have an SMT fill
+[744.16] where one asset trades into the gap the
+[746.48] other one does not. This can confirm our
+[749.28] internal to external range framework.
+[751.68] The next SMT sequence is simply where we
+[754.24] trade into an external range, but we do
+[756.48] not form SMT at that level. This is
+[759.36] where this is confirmed by a swing
+[761.84] point, right? So SMT between candle one
+[764.64] and candle 2. Once that's confirmed,
+[767.04] then we can trade back into the range
+[769.28] completing this external to internal
+[771.44] model. The next scenario is when we just
+[774.00] have a PSP close, right? There's no SMT
+[776.72] with our key level being a high or low
+[778.88] or fair value gap, but we get a
+[781.28] precision swing point. This can be
+[783.20] enough to hint a reversal to go from
+[785.92] external range low to external range
+[789.36] high. So now we are going to be pairing
+[791.52] two-stage SMT sequences with our
+[794.16] universal models. So here we have our
+[796.32] first stage SMT with the fair value gap
+[799.60] itself with our key level. And that
+[801.44] first SMT is confirmed by a second stage
+[804.08] SMT via swing point with candle 2 and
+[806.96] candle 3. The next two-stage SMT
+[809.44] sequence is when we hit a fair value
+[811.44] gap. We do not have SMT between our key
+[814.96] level, but we get our first stage SMT
+[817.12] with candle one and candle 2. And that
+[819.92] is confirmed by candle 2 and candle 3
+[822.96] SMT as our second stage SMT. In this
+[825.84] two-stage SMT sequence, we have an SMT
+[828.64] with our key level being a higher low or
+[831.36] a fair value gap, which is confirmed by
+[833.60] a precision swing point. This confirms
+[835.84] the reversal and we look to trade the
+[837.92] following candles as continuation
+[840.32] towards our target. This next two-stage
+[842.88] SMT sequence is where we hit a key
+[845.28] level, do not have SMT with that key
+[847.20] level. Our first stage SMT will be a
+[849.76] precision swing point confirmed by an
+[852.08] SMT between swing points. Here we have a
+[855.12] cracking correlation with candle 2 and
+[857.36] candle 3. Once that forms, we look to
+[859.68] trade the continuation away from the
+[861.84] external range towards the target which
+[864.00] is the opposing side of the range. And
+[865.92] lastly, this is the highest probability
+[868.56] reversal signature or confirmation that
+[871.36] I use. That is when we have our first
+[873.36] stage SMT with a key level. In this
+[875.76] case, the internal range liquidity or
+[878.00] fair value gap. Next, we form a PSP and
+[881.60] then we get a Kraken correlation with a
+[883.92] swing point. So, essentially, we have a
+[886.48] SMT with a key level and then a
+[888.96] two-stage PSP following that first stage
+[891.60] Kraken correlation. Now, let's get into
+[893.92] some examples. So, with this first
+[895.92] example, we pretty much have a model
+[897.68] inside of a model where we have price
+[900.00] manipulating the range low. Price
+[902.00] displaces away. That displacement away
+[904.56] creates a gap leaving the opposing side
+[906.80] of the range as a target creating
+[908.72] failure swings. So when price trades in
+[910.88] this gap, we want to use this gap as a
+[912.80] key level to reach into the opposing
+[914.96] side of the range as our targets. And as
+[917.36] you see, when price reaches into that
+[918.96] level, it is confirmed by SMT with the
+[921.92] correlated asset being HO. Once this
+[924.64] forms, we look to trade the following
+[926.24] candles away from the reversal into our
+[929.36] target. Here we are on the oil tread
+[931.44] again. We have HO on the left, RB on the
+[934.56] right. What we see is price has expanded
+[937.20] away leaving failure swings at the point
+[940.48] of retracement here. Traces into a gap.
+[943.12] We do not form SMT with a gap, but we
+[945.20] get our confirmation via swing point.
+[947.44] Once this forms, we look to trade the
+[949.60] distribution into the range lows. So
+[953.04] here we are on the gold triad. We have
+[955.28] GC on the left, gold GBP on the right.
+[958.96] Now, it is important when using the gold
+[961.60] triad that you use the right feed with
+[964.16] this Forex.com feed. It actually opens
+[966.56] up at 1,800 as well. We have GC on the
+[969.76] left and gold GP on the right. As you
+[972.56] see, price trades into a range high on
+[975.76] both assets and does not create that
+[978.40] SMT. And that reversal here is confirmed
+[980.80] by a PSP. Once that forms, it confirms
+[984.24] the reversal and we can trade into the
+[986.00] opposing side of the range as our
+[987.76] targets. Here, we're going to be going
+[989.52] over a two-stage SMT sequence where the
+[992.64] first SMT is between a gap on the 4hour
+[995.76] time frame. We drop lower to the 30
+[998.00] minute. This is where we see our second
+[1000.40] stage SMT confirming the higher time
+[1002.72] frame SMT. Once this SMT forms, it
+[1005.92] confirms the reversal and we look to
+[1008.00] target the opposing side of the range,
+[1010.08] which is that external range on the
+[1012.00] 4hour time frame. And as you can see,
+[1015.12] price trades into it perfectly. And this
+[1017.36] is where we look for continuation PSPs
+[1019.68] to form. So, as you can see with this
+[1021.68] 530 candle, how does it form? On the
+[1024.16] left of screen, it closes bearish. On
+[1027.20] the right of screen, it closes bullish.
+[1030.00] On the right of screen over here, we
+[1031.68] create equal highs here. So a lot of you
+[1034.32] are going to think this is a PSP to
+[1037.12] reverse price. This is where narrative
+[1039.20] comes in. If both assets are expanding
+[1041.60] away from the original reversal,
+[1043.44] typically that means both assets are
+[1045.20] going to reach a draw liquidity.
+[1046.96] Especially when it leaves these highs,
+[1049.12] right, we automatically know this is
+[1050.72] like a retracement. Once the asset to
+[1052.72] the left runs this candle's low, that
+[1054.88] creates that two-stage PSP, creating a
+[1057.28] candle two on this asset. And as you can
+[1059.60] see, we have that small wick. Once you
+[1061.60] confirm this wick, you can then trade
+[1063.28] the expansion into the draw on
+[1065.04] liquidity. With our next reversal
+[1066.88] sequence, we have an order pairing
+[1068.72] ranges framework where price trades into
+[1071.28] the range high but does not form SMT
+[1073.76] with that level. So therefore, we look
+[1076.32] for a swing confirmation to confirm this
+[1079.04] reversal. And here we have a two-stage
+[1081.28] SMT between swing points where our first
+[1083.84] stage SMT is between candle one and
+[1085.60] candle 2. over here. As you can see, we
+[1087.84] create a failure swing that is
+[1089.68] immediately followed by a second stage
+[1092.00] SMT between candle 2 and candle 3 where
+[1094.72] on the left screen we create a failure
+[1096.64] swing. Once that forms, that confirms
+[1099.36] the reversal and we look to trade the
+[1101.36] following candle lower into our targets.
+[1104.40] Here we are on the indices triad. Left
+[1107.12] of screen is NQ, right of screen is YM.
+[1110.00] As you can see on YM, we run the range
+[1112.40] low. This is where we look to trade the
+[1115.12] range high. And as you see, we have SMT
+[1118.08] with that range low, which is
+[1120.16] immediately followed and confirmed by a
+[1122.72] precision swing point. So, what makes
+[1124.56] this SMT so significant is the timing of
+[1127.44] when this SMT is actually printed. As
+[1130.16] you can see, this PSP is the 9:00 a.m.
+[1132.88] close. What resides within that 9:00
+[1135.04] a.m. time window is the equities open.
+[1137.60] Right? We can use this driver to pair
+[1140.56] with reversal or manipulation. And as
+[1143.20] you see, once we get that candle 2
+[1144.72] closure, this is where we seek a 10 a.m.
+[1147.12] continuation. I actually took this trade
+[1149.52] as well, but on YM, as you see, once we
+[1152.40] get this strong candle 3 closure, this
+[1154.80] is where we seek a candle for
+[1156.88] continuation into our range high. Here
+[1160.24] we have an order pairing ranges model
+[1162.48] between the gold triad. Here we have GC
+[1165.44] on the left, gold pound on the right.
+[1167.76] Pound engages with the high here but
+[1170.56] does not form SMTs. So what do we
+[1172.48] confirm this with? Is a swing point in a
+[1175.76] swing confirmation. This swing
+[1177.68] confirmation is a PSP as our first stage
+[1181.04] and a cracking correlation between
+[1182.64] candle 2 and candle 3. as you see
+[1186.00] confirming that PSP creating the
+[1187.76] two-stage SMT and as you see GBP trades
+[1191.20] into the range low while the stronger
+[1193.36] asset GC trades into this gap. So this
+[1196.24] can be viewed as external to internal.
+[1198.96] So here we are on the indices triad.
+[1201.04] We're going to do a top down on a trade
+[1203.12] that I took a little while ago and this
+[1205.20] is something I want to touch up on and
+[1206.96] it is actually when S&T breaks and this
+[1209.36] is a potential trigger for markets to
+[1211.92] reverse. So you can actually see that
+[1214.00] here with YM. Mark out this same high
+[1216.80] that just got traded into on NQ and ES.
+[1220.72] So as you see, we clearly failed to
+[1222.56] manipulate it. If you've seen my SMT
+[1224.88] video on YouTube, you know that this is
+[1227.12] when SMTs are typically going to fail.
+[1229.92] So as you see, once the weakest asset
+[1232.56] actually catches up to that SMT and
+[1234.48] breaks it, this is when markets can
+[1236.72] potentially reverse. So you're actually
+[1238.56] going to see this across multiple time
+[1240.88] frames here. So now we're going to drop
+[1242.56] down to the daily and you're going to
+[1243.92] see the same exact sequence. So dropping
+[1246.96] down to the daily here, what do we
+[1248.80] actually see? Let's mark out these highs
+[1251.44] on the triad here. So marking out this
+[1254.96] high here, what do we notice about it?
+[1257.44] ES just hits this high, which creates an
+[1260.16] SMT with YM. What about INQ? Let's mark
+[1262.64] out that same high on INQ, which is
+[1265.20] right here. We can clearly see that the
+[1268.32] market clearly failed to manipulate it.
+[1270.80] This means we can expect one or both
+[1272.96] assets to catch up. And this sequence is
+[1275.52] even higher probability than the one we
+[1277.84] saw on the weekly. This is essentially
+[1279.52] where the middle asset breaks the SMT
+[1281.84] and that is the trigger for reversal
+[1283.92] while the third market or the weakest
+[1285.92] market is creating a divergence with
+[1288.08] that high. If we go back to the weekly,
+[1290.32] this is simply where all markets break
+[1292.00] the SMT and the lagging asset is the
+[1294.32] trigger for reversal. So now dropping
+[1296.32] down to the four, let's do that profile.
+[1298.24] How do we want a bearish day to form? We
+[1300.96] want it to open high, right? So, it
+[1303.28] opens high and creates the high of day
+[1306.00] from a key level, right? This range
+[1308.40] high, which is actually breaking that
+[1310.72] higher time frame SMT. Now, what do we
+[1313.20] want to see? If you seen my last Tox, we
+[1315.76] want to see that 4hour swing formation.
+[1319.04] So, what would this be? A 4hour C2
+[1321.20] closure, which is a London reversal. But
+[1323.52] what is it also? What does this closure
+[1325.28] also create? It creates a precision
+[1328.16] swing point. Right? So boom. This would
+[1330.72] be your second stage cracking
+[1332.24] correlation because your first stage
+[1334.16] cracking correlation is with the range
+[1336.32] high. Right? Now, if you guys have also
+[1338.56] seen my PSP video on YouTube, you know
+[1341.12] what this is, right? If you see my SMT
+[1342.96] video, my PSP video, this is a strength
+[1345.60] switch PSP. We're not going to get too
+[1348.16] deep into it here, but I definitely
+[1350.32] recommend checking that out. But this is
+[1352.48] not what I took, right? I didn't I don't
+[1354.72] trade London. And I don't trade early on
+[1356.24] in this candle. We're going to actually
+[1358.16] trade the continuation around 9:30. So
+[1361.20] let's now go ahead and drop down to the
+[1363.12] 30inut chart. So here we are dropping
+[1365.52] down to the 30 minute time frame. What
+[1367.60] are we trading? We're trading a New York
+[1369.76] continuation with that 2 a.m. reversal
+[1372.72] or London reversal. And as you see on YM
+[1376.48] 930 trades back into the range, taking
+[1379.04] out this swing high, which we can use as
+[1382.00] our first stage SMT. When we trade into
+[1385.04] that high, what do we create? A PSP. Why
+[1388.16] is this significant? Because 930 creates
+[1390.56] it. We can pair a driver with
+[1393.12] manipulation. And here is that sequence
+[1395.52] where we get an SMT with a key level
+[1398.16] followed by a two-stage PSP. Like I
+[1400.96] mentioned, this is the highest probable
+[1403.20] reversal confirmation. So like I said, I
+[1405.52] did trade this. I took this on the 3
+[1407.92] minutes. As you can see, this reversal
+[1410.56] is confirmed by this order block here or
+[1413.20] this change in say delivery using time
+[1415.84] frame alignment here. I am actually
+[1417.44] trading a C2 reversal. Right? If it has
+[1421.04] that small wick, price can expand away
+[1423.44] from our key level, which is the range
+[1425.84] high. What can I target? The opposing
+[1428.08] side of the range, right? Right? So,
+[1429.28] this would be order pairing ranges. But
+[1431.04] this low here is not the actual higher
+[1434.56] time frame target, right? It's just a
+[1436.16] low on the way to our higher time frame
+[1438.96] target. This is our actual higher time
+[1441.92] frame draw right here. So, now let's
+[1443.44] drop into the 3minut. Check out what our
+[1445.76] entry looked like. So, like I said,
+[1448.40] entered on the creation of the CSD and I
+[1451.76] looked for this range low for a 7-hour
+[1454.72] trade. Let's see what happens. As you
+[1456.40] see, price kind of messes around a
+[1458.16] little bit, but ultimately we get to our
+[1460.40] draw liquidity. And that is a very good
+[1463.04] example of going from the top down into
+[1465.68] confirmation. Now, let's go into another
+[1468.48] top down example. Here we are on RB.
+[1471.84] Let's mark out that weekly profile. So,
+[1474.16] here we go. Monday, we open up right
+[1476.96] here the new weekly candle. And for this
+[1479.20] week, my draw liquidity was actually all
+[1481.20] these lows, right? Looks very obvious,
+[1483.36] but price actually creates a divergence
+[1485.76] with one of these failure swings, which
+[1487.92] I do not deem as relevant until price
+[1490.88] shows me that it wants to expand away.
+[1493.12] So, as you see throughout the week, we
+[1494.72] ended up expanding away once price
+[1497.04] expands away or prints that reversal
+[1498.64] signature. That's when you can actually
+[1500.16] trust trading away from failure swings.
+[1502.40] So, as you can see, the first three days
+[1504.48] of the week actually expand, right?
+[1506.64] Creating a daily fair value gap. And as
+[1509.04] you see, Thursday retraces back within
+[1511.28] the weekly range and prints a reversal,
+[1513.84] right? So if you look at the correlate
+[1515.60] market, we actually have an SMT with
+[1517.76] this gap. So what is that? That is a SMT
+[1520.88] with a key level. We can use this key
+[1523.12] level to get to our overall draw on
+[1525.68] liquidity, which is this range high. Now
+[1528.24] that we have our candle closure, what
+[1530.00] can we do now? We can actually mark out
+[1532.08] EQ of this previous day's range. We want
+[1535.28] to see the next day form its low within
+[1538.16] the upper half. So now all we need is a
+[1540.56] daily profile to confirm this narrative.
+[1543.20] So let's drop down to the 4 hour. So
+[1545.60] here we are on the 4hour chart. We have
+[1547.68] marked out our daily open. How do we
+[1550.48] want a bullish day to form? Ideally want
+[1552.80] to open low. Respect the upper half of
+[1555.68] the previous candle's range forming that
+[1557.52] small wick so we can expand. So as you
+[1559.92] can see we open low first respecting
+[1561.92] equilibrium of the previous days range.
+[1564.48] This is actually where we form an SMT
+[1566.80] between candle 1 and candle 2 on the
+[1569.20] 4hour time frame. If we drop lower we
+[1571.76] can actually see a two-stage SMT. Here
+[1574.88] is our first stage SMT. Here is our
+[1578.08] second stage SMT. So now we have a
+[1580.72] two-stage SMT confirming this low of the
+[1584.40] day. If you just look at overall phases
+[1586.64] of price, you have our SMT with that
+[1588.80] previous day's low, which is that daily
+[1590.96] fair value gap. What kind of phase of
+[1592.80] price is printed after that SMT? That
+[1595.28] V-shaped reversal, right? If you seen my
+[1597.28] first TT talks, we know that this is a
+[1599.68] reversal signature. This confirms the
+[1601.84] reversal. And as you can see, this can
+[1604.24] be a potential target. But really, our
+[1606.64] overall target is this higher time frame
+[1609.04] draw liquidity. As you can see, when
+[1610.72] price expands away, it leaves all these
+[1613.52] fair swings, right? What do we see here?
+[1615.84] Large expansion range followed by a
+[1618.40] choppy and slow retracement. We know
+[1620.96] that is a continuous signature. So, we
+[1623.28] actually trade into a relevant level,
+[1625.04] which is this fair value gap located
+[1627.04] within the upper half of the previous
+[1628.64] stage range. This is ideally where we
+[1630.72] want to see that reversal rate and that
+[1632.64] is confirmed by this two-stage SMT. So
+[1635.28] now let's drop to the 30 minute so we
+[1637.12] can get a little better visual
+[1639.12] representation. And look what we have
+[1640.72] here on the 30 minute, right? Price
+[1642.64] trades into our key level and expands
+[1645.92] away. What does that form that V-shaped
+[1648.64] signature once we have that V-shaped
+[1650.48] signature that confirms the low of the
+[1652.72] day. Now we're looking for continuation.
+[1654.88] You can see that we have a fair value up
+[1656.64] here. But when I go to the hourly chart,
+[1659.12] this is actually where we see that
+[1660.72] continuation PSP, right? Why is this a
+[1663.04] continuation PSP? because we still have
+[1664.80] our target open up here. The
+[1666.88] continuation PSP is forming after we
+[1669.12] form the low of the day. So, it's within
+[1671.68] continuation. So, any PSP opposing our
+[1674.80] draw liquidity will not be used as
+[1676.56] reversal. I know when I first learned
+[1678.56] this concept, it really confused me and
+[1680.72] I would always get stopped out trying to
+[1682.64] trade this reversal when in reality it's
+[1685.12] just used for continuation. So, let's
+[1686.96] drop into the lower time frame. This is
+[1689.52] personally what I took. Now, ideally,
+[1691.28] you enter down here by the actual
+[1693.52] reversal, but I was not on the charts at
+[1696.08] this point. This is around 8:00 here.
+[1698.00] This is the ideal area to get in right
+[1700.24] here. This is the actual two-stage SMT
+[1702.88] down here, but I opted to enter on the
+[1705.68] continuation over here. So, I got around
+[1708.24] here, right? I entered this gap, I
+[1710.24] believe. Yep. You can go check my X or
+[1712.32] whatever, right? And I targeted this
+[1714.08] high for around
+[1717.12] 2.8 R. Let's see how that plays out.
+[1719.84] very nice expansion all the way to our
+[1721.84] draw. And yeah, that is a nice top down
+[1724.88] example there. For our last example,
+[1726.72] we're going to be covering a trade that
+[1728.24] I took on RTY. So, let's get into it.
+[1731.04] Here we are on the daily. First, let's
+[1732.80] cover the higher time frame framework
+[1734.48] and intraweek development. So, as you
+[1736.48] can see, price kind of opens up within
+[1738.40] this gap and we expand away kind of
+[1740.72] creating these failure swings, right? So
+[1742.72] originally this is really not something
+[1744.16] that I really like to trade away from.
+[1746.08] But when price failed to manipulate this
+[1748.24] high here, this tells us that we will
+[1750.72] not do something like this, right? We
+[1752.32] will not manipulate this high to then go
+[1754.16] lower. We can then manipulate the
+[1756.08] internal high and target the external
+[1758.24] high as a potential draw liquidity
+[1760.40] trusting this low of the week. So here
+[1762.56] we are on the 4hour. As you can see,
+[1764.56] price expands away from the low of the
+[1766.32] week creating those failure swings. Like
+[1768.32] I said, when price fails to manipulate
+[1770.24] this internal high here and starts to
+[1772.64] continue through it, that's when we can
+[1774.32] assume, okay, we can definitely trust to
+[1776.40] trade away from these fair swings and
+[1777.92] target the opposing side of the range.
+[1779.92] Here we have 1,800 creating the low of
+[1782.00] day. Pretty much just expanding off of
+[1783.84] the open. This is when we create an SMT
+[1786.96] fill with YM. That is the correlated
+[1790.56] market for RTY. I don't really use in Q
+[1793.84] or ES for it. So now let's drop into the
+[1796.32] lower time frame.
+[1798.08] So here we are on the 30 minute time
+[1800.32] frame and as you can see here is our
+[1802.24] 4hour gap. What is that confirmed by? A
+[1805.12] lower time frame swing formation
+[1807.04] cracking correlation between candle 2
+[1809.12] and candle 3 and that creates a CSD
+[1812.24] here. If we have a reversal prior to a
+[1816.08] driver we mark that out. What should 930
+[1819.52] do? It should do what? It should expand
+[1821.76] away. So once that really expands away
+[1823.76] from that reversal, that's what really
+[1825.28] confirms to me that we can also trade
+[1827.60] into this higher time frame draw
+[1829.52] liquidity. So dropping down to the lower
+[1831.44] time frame being the 15-minute. So here
+[1833.60] we are on the 15-minut time frame. And
+[1835.84] what can we see? RTY is trading into a
+[1838.64] gap. If I pull up YM here, we do not
+[1841.20] trade into any gap. So So what would
+[1843.76] this be? This would be that continuation
+[1845.68] in PHP. Why? Because we have an open
+[1848.32] draw liquidity. We're trading it away
+[1850.16] from reversal. And this is an extremely
+[1853.20] extremely high probability reversal
+[1855.76] confirmation within continuation towards
+[1858.56] the John liquidity. So what can you
+[1860.24] really trade this like? You wait for the
+[1862.32] candle close to form. As you can see, we
+[1864.96] mark out 10 a.m. open. And this what
+[1866.72] this does is essentially forms the low
+[1868.80] of the 10 a.m. 4hour candle as it
+[1871.92] reaches into a key level which is the
+[1874.32] 15minute fair gap confirmed by SMT. So
+[1877.20] now you have a higher time frame candle
+[1878.80] reaching into a key level and it's
+[1880.72] confirmed by SMT. So now you can assume
+[1882.96] that the higher time frame candle's low
+[1884.88] is put in and trade the body. Right? So
+[1887.68] once you have this little swing
+[1889.04] formation here, right? Candle to
+[1891.04] closure. What do you want to do? Want to
+[1892.88] mark out EQ of this candle's range. We
+[1894.80] want to see price respect the upper
+[1896.56] half. And this is where you can use the
+[1898.40] fractal model for your entry. Right? We
+[1901.28] have the SMT, we have the swing point,
+[1903.52] the key level. Now it just comes down to
+[1906.00] the lower time frame to get on side with
+[1907.68] that. So here we are dropping down to
+[1909.76] the one minute. Let's kind of clear all
+[1911.28] this stuff. Here we have that V-shaped
+[1913.76] reversal signature that we love to see,
+[1915.44] right? Expansion into the low, creating
+[1917.52] the SMT, expansion away, confirmed by an
+[1920.40] SMT. Now it's about getting on side with
+[1923.52] those continuation order blocks. And
+[1925.76] this is personally what I entered. I
+[1927.68] entered this fair value gap as I was not
+[1930.16] really looking at RTY at this time. I
+[1932.32] literally opened up the charts and saw
+[1934.24] that we were retracing and I saw this
+[1936.80] gap and said, "Okay, I can get on side
+[1939.04] with that and I looked for wherever that
+[1941.52] high is on the higher time frame." And
+[1943.12] as you can see, I have it marked out
+[1944.80] now. It was about a three-hour trade
+[1947.52] wrapping up my week. So, thank you guys
+[1949.84] for all watching. Thank you again,
+[1951.68] Trades, for having me on for the second
+[1953.84] time. Hopefully you guys learned
+[1955.44] something. If you guys want to learn
+[1957.12] more, you can check me out on all
+[1959.12] platforms. If you want in-depth
+[1961.04] lectures, live streams, access to me,
+[1964.16] check us out at the marketlens.com. I
+[1967.04] hope you stay safe and good luck
+[1968.56] trading.

@@ -1,0 +1,208 @@
+{
+  "topic": "retracement",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_phases_of_price_part_3",
+      "url": "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_phases_of_price_part_5",
+      "url": "https://ttrades.com/phases-of-price-part-5-how-to-blend-expansion-retracement-consolidation-reversal/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_protected_swings",
+      "url": "https://ttrades.com/protected-swings-understanding-trends-and-invalidations/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_top_down_analysis",
+      "url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_stop_loss_mastery",
+      "url": "https://ttrades.com/stop-loss-mastery-using-protected-swings-for-precise-invalidations/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_easy_daily_bias",
+      "url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_using_equilibrium_continuations",
+      "url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "retracement_phase_definition",
+      "name": "A retracement is a slower, shallower countertrend move that follows expansion without breaking the trend-defining swing",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["prior_expansion_present", "higher_timeframe_bias_set"],
+      "direction": "bidirectional",
+      "setupAnchor": "After a clear expansion, price pulls back against bias into an aligned area such as a fair value gap, order block, opening-price zone, or other higher-timeframe point of interest",
+      "confirmationTrigger": "Treat the move as a retracement while opposing candles overlap, displacement is reduced relative to the prior expansion, and the protected swing that validated the trend remains intact",
+      "protectedSwingDefinition": "The protected swing created during the prior expansion is the structural line that the retracement should not violate",
+      "invalidationCondition": "Countertrend price accelerates like fresh expansion or closes through the protected swing that kept the original trend valid",
+      "targetLogic": "Primary expectation is resumption toward prior external liquidity or the next higher-timeframe objective once the pullback completes",
+      "exceptions": [
+        "Not every expansion produces a tradable retracement",
+        "A fast opposite-direction displacement is more likely reversal than retracement"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_3#what_is_a_retracement",
+        "ttrades_phases_of_price_part_3#key_traits_of_a_retracement",
+        "ttrades_phases_of_price_part_5#core_concept_always_start_with_expansion"
+      ],
+      "visualVerificationRefs": [
+        "article:retracement_phase_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe bias state",
+        "prior expansion leg boundaries",
+        "protected swing level",
+        "countertrend displacement ratio",
+        "bar overlap count"
+      ],
+      "machineChecks": [
+        "Require a prior expansion leg before retracement logic is enabled",
+        "Compare countertrend displacement and overlap against the prior expansion leg",
+        "Invalidate the retracement classification if the trend-defining protected swing is broken"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "retracement_location_and_depth",
+      "name": "High-quality retracements pull into aligned points of interest and remain structurally shallow",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["prior_expansion_present", "point_of_interest_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Map the pullback into a fair value gap, order block, equilibrium-defined half, or other aligned point of interest inside the broader directional leg",
+      "confirmationTrigger": "Quality improves when price reaches the aligned area, shows failure-swing or sweep behavior, and continues to hold the correct side of the broader structure",
+      "protectedSwingDefinition": "The prior protected swing defines the maximum acceptable depth while lower-timeframe structure can begin forming the next protected swing inside the retracement area",
+      "invalidationCondition": "The pullback trades too deep through the aligned area and protected swing, or reaches a higher-timeframe objective that implies the phase is changing",
+      "targetLogic": "Use the shallowest confirmed reaction area that still respects structure; deeper pullbacks reduce continuation quality",
+      "exceptions": [
+        "Price does not need to touch an exact midpoint or exact candle open",
+        "Missing a retracement is preferable to forcing a late entry after price has already left the area"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_3#key_traits_of_a_retracement",
+        "ttrades_top_down_analysis#bearish_example",
+        "ttrades_easy_daily_bias#bias_always_comes_first",
+        "ttrades_using_equilibrium_continuations#applying_equilibrium_in_expansions"
+      ],
+      "visualVerificationRefs": [
+        "article:retracement_location_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "point-of-interest bounds",
+        "equilibrium level",
+        "protected swing level",
+        "pullback depth ratio",
+        "higher-timeframe objective state"
+      ],
+      "machineChecks": [
+        "Track whether price has reached an aligned point of interest inside the active directional leg",
+        "Measure pullback depth relative to the prior expansion leg",
+        "Downgrade retracement quality when pullback depth reaches or breaks the protected swing"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "retracement_completion_confirmation",
+      "name": "A retracement completes when with-trend structure confirms again from the retracement area",
+      "timeframeScope": ["lower"],
+      "marketPhasePrecondition": ["retracement_active", "aligned_anchor_reached"],
+      "direction": "bidirectional",
+      "setupAnchor": "After price reaches the retracement area, wait for a with-trend closure or protected swing to form from that area",
+      "confirmationTrigger": "A candle closes through the opposing candle series, or a new protected swing forms inside or just beyond the retracement zone in the trend direction",
+      "protectedSwingDefinition": "The first new with-trend protected swing marks retracement completion and becomes the next invalidation level for the continuation entry",
+      "invalidationCondition": "Price revisits the zone without continuation confirmation, or breaks the newly formed protected swing immediately after entry",
+      "targetLogic": "Enter on confirmation or a validated retest and target external liquidity in the direction of the original trend",
+      "exceptions": [
+        "Confirmation can occur on the structure timeframe or on a lower execution timeframe",
+        "Earlier lower-timeframe anticipation is riskier than waiting for higher-timeframe confirmation"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_3#how_to_trade_retracements",
+        "ttrades_phases_of_price_part_3#real_chart_examples",
+        "ttrades_protected_swings#anticipation_vs_confirmation",
+        "ttrades_stop_loss_mastery#example_workflow"
+      ],
+      "visualVerificationRefs": [
+        "article:retracement_completion_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "opposing candle series break",
+        "new protected swing state",
+        "validated retest flag",
+        "execution timeframe alignment"
+      ],
+      "machineChecks": [
+        "Require a close through the opposing candle series or a new protected swing before continuation entry eligibility",
+        "Allow retest entries only after the with-trend confirmation exists",
+        "Store the new protected swing as the active invalidation level after retracement completion"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "retracement_absence_and_failure_filters",
+      "name": "Skipped retracements and failed pullbacks should not be forced into entries",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["expansion_active_or_recent"],
+      "direction": "bidirectional",
+      "setupAnchor": "An expansion leg appears extended or price starts a shallow countertrend move that may become a pullback",
+      "confirmationTrigger": "Treat the move as tradable only when an aligned area, a valid reaction, and with-trend confirmation all appear together",
+      "protectedSwingDefinition": "If no new with-trend protected swing forms, the pullback remains unfinished or invalid as a continuation setup",
+      "invalidationCondition": "No valid area reaction occurs, no sweep or failure swing appears, or price transitions directly into consolidation or opposite expansion",
+      "targetLogic": "Stand aside and wait for either a later valid retracement or a different phase classification",
+      "exceptions": [
+        "Strong expansions may skip retracements entirely",
+        "Once the higher-timeframe objective is met, expect a new phase instead of assuming another continuation"
+      ],
+      "evidenceRefs": [
+        "ttrades_phases_of_price_part_3#real_chart_examples",
+        "ttrades_phases_of_price_part_3#when_retracements_dont_happen",
+        "ttrades_phases_of_price_part_5#continuation_vs_reversal_signatures",
+        "ttrades_stop_loss_mastery#common_mistakes_to_avoid"
+      ],
+      "visualVerificationRefs": [
+        "article:retracement_failure_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "aligned-area hit flag",
+        "sweep or failure-swing flag",
+        "new protected swing flag",
+        "higher-timeframe objective reached flag",
+        "phase transition flag"
+      ],
+      "machineChecks": [
+        "Block continuation entries when no aligned retracement area or confirmation exists",
+        "Block retracement classifications after the higher-timeframe objective has already been reached",
+        "Reclassify the move when opposite-direction expansion or range rotation becomes dominant"
+      ],
+      "ambiguityNotes": []
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What is the best first-pass numeric depth rule for separating a healthy retracement from a pullback that is already invalidating the trend?",
+    "How should overlapping retracement areas be ranked when a fair value gap, order block, and equilibrium-defined half cluster in the same zone?"
+  ]
+}

@@ -1,0 +1,2167 @@
+[
+  {
+    "text": "[Music]",
+    "start": 5.49,
+    "duration": 7.47
+  },
+  {
+    "text": "how's it going everyone this video is",
+    "start": 11.04,
+    "duration": 4.36
+  },
+  {
+    "text": "going to be over building an entry model",
+    "start": 12.96,
+    "duration": 4.239
+  },
+  {
+    "text": "I will first talk about the concepts",
+    "start": 15.4,
+    "duration": 4.08
+  },
+  {
+    "text": "used within an entry model and then a",
+    "start": 17.199,
+    "duration": 4.601
+  },
+  {
+    "text": "few confluences as well as how a",
+    "start": 19.48,
+    "duration": 5.0
+  },
+  {
+    "text": "reversal forms and which entry model is",
+    "start": 21.8,
+    "duration": 5.08
+  },
+  {
+    "text": "correct for you so let's get into the",
+    "start": 24.48,
+    "duration": 4.4
+  },
+  {
+    "text": "video the first thing we need to cover",
+    "start": 26.88,
+    "duration": 4.6
+  },
+  {
+    "text": "before we get into the Concepts is the",
+    "start": 28.88,
+    "duration": 4.88
+  },
+  {
+    "text": "kill zones so if I'm looking to trade",
+    "start": 31.48,
+    "duration": 4.8
+  },
+  {
+    "text": "inaday which is what I include to be",
+    "start": 33.76,
+    "duration": 4.84
+  },
+  {
+    "text": "below the hourly chart I'm going to want",
+    "start": 36.28,
+    "duration": 4.48
+  },
+  {
+    "text": "to focus on the kill zones or taking",
+    "start": 38.6,
+    "duration": 4.84
+  },
+  {
+    "text": "trades Within These time Windows now I",
+    "start": 40.76,
+    "duration": 4.56
+  },
+  {
+    "text": "personally focus on the New York am",
+    "start": 43.44,
+    "duration": 3.88
+  },
+  {
+    "text": "session for indices so I'm going to",
+    "start": 45.32,
+    "duration": 4.96
+  },
+  {
+    "text": "focus on 8:30 to 11 for my trading",
+    "start": 47.32,
+    "duration": 4.879
+  },
+  {
+    "text": "however if I was a London Trader I would",
+    "start": 50.28,
+    "duration": 3.919
+  },
+  {
+    "text": "generally want to be looking between 2",
+    "start": 52.199,
+    "duration": 5.121
+  },
+  {
+    "text": "to 5 a.m. and all times are an Eastern",
+    "start": 54.199,
+    "duration": 5.36
+  },
+  {
+    "text": "Standard Time now when choosing a time",
+    "start": 57.32,
+    "duration": 4.12
+  },
+  {
+    "text": "frame It generally works out as",
+    "start": 59.559,
+    "duration": 4.0
+  },
+  {
+    "text": "impatient people want to be on a lower",
+    "start": 61.44,
+    "duration": 4.28
+  },
+  {
+    "text": "time frame while patient people are",
+    "start": 63.559,
+    "duration": 4.081
+  },
+  {
+    "text": "generally better suited for a higher",
+    "start": 65.72,
+    "duration": 3.84
+  },
+  {
+    "text": "time frame I personally find myself",
+    "start": 67.64,
+    "duration": 4.159
+  },
+  {
+    "text": "right in between those two and I focus",
+    "start": 69.56,
+    "duration": 5.28
+  },
+  {
+    "text": "on executing on a 5 minute time frame is",
+    "start": 71.799,
+    "duration": 5.0
+  },
+  {
+    "text": "not only does that align with the daily",
+    "start": 74.84,
+    "duration": 4.319
+  },
+  {
+    "text": "profile very well but I also just find",
+    "start": 76.799,
+    "duration": 4.601
+  },
+  {
+    "text": "it to be the correct time frame for me",
+    "start": 79.159,
+    "duration": 3.681
+  },
+  {
+    "text": "now this is something you have to figure",
+    "start": 81.4,
+    "duration": 3.24
+  },
+  {
+    "text": "out for yourself and we will talk about",
+    "start": 82.84,
+    "duration": 4.12
+  },
+  {
+    "text": "time frame alignment in a future video",
+    "start": 84.64,
+    "duration": 3.72
+  },
+  {
+    "text": "now we are going to get into the",
+    "start": 86.96,
+    "duration": 3.72
+  },
+  {
+    "text": "concepts now don't f focus on",
+    "start": 88.36,
+    "duration": 4.32
+  },
+  {
+    "text": "understanding and mastering every single",
+    "start": 90.68,
+    "duration": 4.0
+  },
+  {
+    "text": "concept that is a mistake that I see",
+    "start": 92.68,
+    "duration": 4.84
+  },
+  {
+    "text": "many people make instead focus on one of",
+    "start": 94.68,
+    "duration": 4.88
+  },
+  {
+    "text": "these Concepts and master that and if",
+    "start": 97.52,
+    "duration": 3.4
+  },
+  {
+    "text": "you have followed me long enough you",
+    "start": 99.56,
+    "duration": 3.64
+  },
+  {
+    "text": "know that my focus is on order blocks so",
+    "start": 100.92,
+    "duration": 4.32
+  },
+  {
+    "text": "getting into our first Concepts here we",
+    "start": 103.2,
+    "duration": 4.199
+  },
+  {
+    "text": "have a fair value Gap now most of these",
+    "start": 105.24,
+    "duration": 4.559
+  },
+  {
+    "text": "I have an individual video on so if you",
+    "start": 107.399,
+    "duration": 4.241
+  },
+  {
+    "text": "are confused I would check out those",
+    "start": 109.799,
+    "duration": 3.841
+  },
+  {
+    "text": "videos and I will link those in the top",
+    "start": 111.64,
+    "duration": 4.0
+  },
+  {
+    "text": "right corner as we go through this now",
+    "start": 113.64,
+    "duration": 3.839
+  },
+  {
+    "text": "with a fair value Gap it is a three",
+    "start": 115.64,
+    "duration": 4.6
+  },
+  {
+    "text": "Candlestick pattern in which the high of",
+    "start": 117.479,
+    "duration": 5.121
+  },
+  {
+    "text": "the third candle does not overlap the",
+    "start": 120.24,
+    "duration": 5.04
+  },
+  {
+    "text": "low of the first candle or where the low",
+    "start": 122.6,
+    "duration": 4.92
+  },
+  {
+    "text": "of the third candle does not overlap the",
+    "start": 125.28,
+    "duration": 4.72
+  },
+  {
+    "text": "high of the first candle now this is a",
+    "start": 127.52,
+    "duration": 4.079
+  },
+  {
+    "text": "point of Interest by drawing out the",
+    "start": 130.0,
+    "duration": 3.959
+  },
+  {
+    "text": "high and the low that do not overlap to",
+    "start": 131.599,
+    "duration": 4.761
+  },
+  {
+    "text": "look for price to react off of now the",
+    "start": 133.959,
+    "duration": 4.161
+  },
+  {
+    "text": "next concept we are going to cover is an",
+    "start": 136.36,
+    "duration": 4.0
+  },
+  {
+    "text": "inversion and that is when a fair value",
+    "start": 138.12,
+    "duration": 5.759
+  },
+  {
+    "text": "Gap gets closed over and then is used as",
+    "start": 140.36,
+    "duration": 6.4
+  },
+  {
+    "text": "support to trade higher or resistance to",
+    "start": 143.879,
+    "duration": 5.561
+  },
+  {
+    "text": "trade lower the next concept is an order",
+    "start": 146.76,
+    "duration": 5.52
+  },
+  {
+    "text": "block this is what I focus on personally",
+    "start": 149.44,
+    "duration": 5.36
+  },
+  {
+    "text": "this is when we have price reach into a",
+    "start": 152.28,
+    "duration": 4.88
+  },
+  {
+    "text": "point of Interest I take the series of",
+    "start": 154.8,
+    "duration": 4.04
+  },
+  {
+    "text": "up closed candles into that point of",
+    "start": 157.16,
+    "duration": 4.24
+  },
+  {
+    "text": "interest when it is then closed below",
+    "start": 158.84,
+    "duration": 4.84
+  },
+  {
+    "text": "I'm expecting this High to remain and",
+    "start": 161.4,
+    "duration": 4.64
+  },
+  {
+    "text": "this to be a point of interest to trade",
+    "start": 163.68,
+    "duration": 4.279
+  },
+  {
+    "text": "lower so you can see over here when we",
+    "start": 166.04,
+    "duration": 4.6
+  },
+  {
+    "text": "trade into an important level the series",
+    "start": 167.959,
+    "duration": 4.841
+  },
+  {
+    "text": "in this case a single candle is then",
+    "start": 170.64,
+    "duration": 4.319
+  },
+  {
+    "text": "closed over and that level is used as",
+    "start": 172.8,
+    "duration": 4.68
+  },
+  {
+    "text": "support to trade higher the next concept",
+    "start": 174.959,
+    "duration": 4.56
+  },
+  {
+    "text": "is a breaker block this is very similar",
+    "start": 177.48,
+    "duration": 3.8
+  },
+  {
+    "text": "to an order block but it is where we",
+    "start": 179.519,
+    "duration": 5.121
+  },
+  {
+    "text": "have a high a low a higher high and a",
+    "start": 181.28,
+    "duration": 6.319
+  },
+  {
+    "text": "lower low I'm then marking out the down",
+    "start": 184.64,
+    "duration": 5.92
+  },
+  {
+    "text": "close candles in between that high and",
+    "start": 187.599,
+    "duration": 5.36
+  },
+  {
+    "text": "that low to use as resistance to trade",
+    "start": 190.56,
+    "duration": 5.039
+  },
+  {
+    "text": "lower similarly for the bullish breaker",
+    "start": 192.959,
+    "duration": 6.36
+  },
+  {
+    "text": "block we have a low high lower low",
+    "start": 195.599,
+    "duration": 5.761
+  },
+  {
+    "text": "higher high I'm going to use the up",
+    "start": 199.319,
+    "duration": 4.84
+  },
+  {
+    "text": "close candles from that low to the high",
+    "start": 201.36,
+    "duration": 4.68
+  },
+  {
+    "text": "as the point of interest for price to",
+    "start": 204.159,
+    "duration": 5.401
+  },
+  {
+    "text": "trade higher now the next concept is OT",
+    "start": 206.04,
+    "duration": 5.479
+  },
+  {
+    "text": "and this is when I'm taking an Impulse",
+    "start": 209.56,
+    "duration": 4.16
+  },
+  {
+    "text": "leg or a displacement leg and marking",
+    "start": 211.519,
+    "duration": 4.8
+  },
+  {
+    "text": "out from the high to the low with a",
+    "start": 213.72,
+    "duration": 4.76
+  },
+  {
+    "text": "Fibonacci and using the Fibonacci",
+    "start": 216.319,
+    "duration": 5.84
+  },
+  {
+    "text": "retracements and specifically the 705",
+    "start": 218.48,
+    "duration": 6.119
+  },
+  {
+    "text": "area looking for a lower high tube form",
+    "start": 222.159,
+    "duration": 5.401
+  },
+  {
+    "text": "and then trade back lower to the low or",
+    "start": 224.599,
+    "duration": 4.881
+  },
+  {
+    "text": "following the trend now that we' have",
+    "start": 227.56,
+    "duration": 3.48
+  },
+  {
+    "text": "gotten through the main Concepts I want",
+    "start": 229.48,
+    "duration": 3.319
+  },
+  {
+    "text": "you to focus on which one stood out to",
+    "start": 231.04,
+    "duration": 3.8
+  },
+  {
+    "text": "you the most and either write that down",
+    "start": 232.799,
+    "duration": 4.121
+  },
+  {
+    "text": "or remember in your head and just be",
+    "start": 234.84,
+    "duration": 4.399
+  },
+  {
+    "text": "focusing on that now as we get into",
+    "start": 236.92,
+    "duration": 4.679
+  },
+  {
+    "text": "additional or confluences this will be",
+    "start": 239.239,
+    "duration": 4.0
+  },
+  {
+    "text": "things that can be paired with our",
+    "start": 241.599,
+    "duration": 4.36
+  },
+  {
+    "text": "previous Concepts so you can see here",
+    "start": 243.239,
+    "duration": 5.521
+  },
+  {
+    "text": "when we use premium in discount or A5",
+    "start": 245.959,
+    "duration": 5.321
+  },
+  {
+    "text": "FIB of a range I can then look for",
+    "start": 248.76,
+    "duration": 4.16
+  },
+  {
+    "text": "either a fair value Gap or an order",
+    "start": 251.28,
+    "duration": 5.28
+  },
+  {
+    "text": "block or whatever PD array that I chose",
+    "start": 252.92,
+    "duration": 5.839
+  },
+  {
+    "text": "in that area so you can see here we have",
+    "start": 256.56,
+    "duration": 4.519
+  },
+  {
+    "text": "a fair value Gap in a discount to look",
+    "start": 258.759,
+    "duration": 4.44
+  },
+  {
+    "text": "for a low to form and then here we have",
+    "start": 261.079,
+    "duration": 4.56
+  },
+  {
+    "text": "an order Block in a premium to look for",
+    "start": 263.199,
+    "duration": 4.801
+  },
+  {
+    "text": "a high to form now another additional",
+    "start": 265.639,
+    "duration": 4.081
+  },
+  {
+    "text": "Confluence and this would be my person",
+    "start": 268.0,
+    "duration": 4.88
+  },
+  {
+    "text": "personal favorite as a Confluence is smt",
+    "start": 269.72,
+    "duration": 5.84
+  },
+  {
+    "text": "or with correlated assets having a",
+    "start": 272.88,
+    "duration": 4.8
+  },
+  {
+    "text": "difference in structure so you can see",
+    "start": 275.56,
+    "duration": 4.24
+  },
+  {
+    "text": "marking out this low here and this low",
+    "start": 277.68,
+    "duration": 4.88
+  },
+  {
+    "text": "here one asset made a higher low while",
+    "start": 279.8,
+    "duration": 5.32
+  },
+  {
+    "text": "the other one made a lower low this can",
+    "start": 282.56,
+    "duration": 5.68
+  },
+  {
+    "text": "indicate or be used as a Confluence of a",
+    "start": 285.12,
+    "duration": 5.359
+  },
+  {
+    "text": "reversal now let's talk about an order",
+    "start": 288.24,
+    "duration": 4.48
+  },
+  {
+    "text": "of a reversal forming so now if you go",
+    "start": 290.479,
+    "duration": 4.361
+  },
+  {
+    "text": "ahead and remember which PD array you",
+    "start": 292.72,
+    "duration": 4.759
+  },
+  {
+    "text": "chose from the concepts or focused on",
+    "start": 294.84,
+    "duration": 4.6
+  },
+  {
+    "text": "watch that in here as we go throughout",
+    "start": 297.479,
+    "duration": 4.601
+  },
+  {
+    "text": "this list the confirmation of the",
+    "start": 299.44,
+    "duration": 4.84
+  },
+  {
+    "text": "reversal forming will become greater and",
+    "start": 302.08,
+    "duration": 4.72
+  },
+  {
+    "text": "greater however you are getting in later",
+    "start": 304.28,
+    "duration": 4.639
+  },
+  {
+    "text": "to the move now I personally prefer to",
+    "start": 306.8,
+    "duration": 4.32
+  },
+  {
+    "text": "trade continuations so later into the",
+    "start": 308.919,
+    "duration": 4.0
+  },
+  {
+    "text": "move however you will see when each",
+    "start": 311.12,
+    "duration": 3.96
+  },
+  {
+    "text": "concept forms so I want you to remember",
+    "start": 312.919,
+    "duration": 4.081
+  },
+  {
+    "text": "what you wrote down or what concept you",
+    "start": 315.08,
+    "duration": 3.8
+  },
+  {
+    "text": "are focused on and find it in here when",
+    "start": 317.0,
+    "duration": 4.72
+  },
+  {
+    "text": "we go now each reversal It won't always",
+    "start": 318.88,
+    "duration": 4.64
+  },
+  {
+    "text": "include this but this is generally how",
+    "start": 321.72,
+    "duration": 4.08
+  },
+  {
+    "text": "reversals form is we first have a purge",
+    "start": 323.52,
+    "duration": 5.36
+  },
+  {
+    "text": "of a low or a turtle soup now we will",
+    "start": 325.8,
+    "duration": 5.519
+  },
+  {
+    "text": "not have this if we have smt right now",
+    "start": 328.88,
+    "duration": 4.039
+  },
+  {
+    "text": "the next thing that forms will be an",
+    "start": 331.319,
+    "duration": 3.921
+  },
+  {
+    "text": "inversion right so the move down that",
+    "start": 332.919,
+    "duration": 5.0
+  },
+  {
+    "text": "Purge the low once we close over the",
+    "start": 335.24,
+    "duration": 4.48
+  },
+  {
+    "text": "fair value Gap if there is one in this",
+    "start": 337.919,
+    "duration": 3.761
+  },
+  {
+    "text": "leg down that created it that will be",
+    "start": 339.72,
+    "duration": 3.759
+  },
+  {
+    "text": "the second thing to form now the next",
+    "start": 341.68,
+    "duration": 3.84
+  },
+  {
+    "text": "thing to form will be the change in the",
+    "start": 343.479,
+    "duration": 3.84
+  },
+  {
+    "text": "state of delivery or an order block",
+    "start": 345.52,
+    "duration": 4.0
+  },
+  {
+    "text": "formation once we close through this",
+    "start": 347.319,
+    "duration": 4.481
+  },
+  {
+    "text": "series of down closed candles that Purge",
+    "start": 349.52,
+    "duration": 4.239
+  },
+  {
+    "text": "that low now after that this is where",
+    "start": 351.8,
+    "duration": 4.399
+  },
+  {
+    "text": "four and five kind of blend together but",
+    "start": 353.759,
+    "duration": 4.201
+  },
+  {
+    "text": "generally we will have either a fair",
+    "start": 356.199,
+    "duration": 4.44
+  },
+  {
+    "text": "value Gap here or a break breaker block",
+    "start": 357.96,
+    "duration": 4.56
+  },
+  {
+    "text": "now those will be the last things to",
+    "start": 360.639,
+    "duration": 4.641
+  },
+  {
+    "text": "form in the reversal so almost every",
+    "start": 362.52,
+    "duration": 4.92
+  },
+  {
+    "text": "reversal starts with either a purge of a",
+    "start": 365.28,
+    "duration": 6.16
+  },
+  {
+    "text": "low or an smt we then have an inversion",
+    "start": 367.44,
+    "duration": 6.24
+  },
+  {
+    "text": "a change in the state of delivery and",
+    "start": 371.44,
+    "duration": 4.599
+  },
+  {
+    "text": "then once we close through or over this",
+    "start": 373.68,
+    "duration": 4.4
+  },
+  {
+    "text": "High we'll have either a breaker block",
+    "start": 376.039,
+    "duration": 3.681
+  },
+  {
+    "text": "or a fair value Gap and what I said",
+    "start": 378.08,
+    "duration": 3.959
+  },
+  {
+    "text": "about confirmation is the further down",
+    "start": 379.72,
+    "duration": 4.599
+  },
+  {
+    "text": "this list the more confirmation there is",
+    "start": 382.039,
+    "duration": 4.28
+  },
+  {
+    "text": "that it has formed a reversal so if we",
+    "start": 384.319,
+    "duration": 3.6
+  },
+  {
+    "text": "go back to the very beginning you can",
+    "start": 386.319,
+    "duration": 3.6
+  },
+  {
+    "text": "see we still have this trend down we",
+    "start": 387.919,
+    "duration": 3.761
+  },
+  {
+    "text": "swept out this low there's not very much",
+    "start": 389.919,
+    "duration": 3.4
+  },
+  {
+    "text": "confirmation that this reversal has",
+    "start": 391.68,
+    "duration": 4.28
+  },
+  {
+    "text": "formed yet versus as we get to you know",
+    "start": 393.319,
+    "duration": 4.801
+  },
+  {
+    "text": "a breaker block there is quite a bit of",
+    "start": 395.96,
+    "duration": 4.359
+  },
+  {
+    "text": "confirmation as we get the move down the",
+    "start": 398.12,
+    "duration": 3.799
+  },
+  {
+    "text": "inversion the change in the state of",
+    "start": 400.319,
+    "duration": 3.6
+  },
+  {
+    "text": "delivery and this displacement up that",
+    "start": 401.919,
+    "duration": 4.521
+  },
+  {
+    "text": "this reversal has formed right so you",
+    "start": 403.919,
+    "duration": 5.321
+  },
+  {
+    "text": "sacrifice more confirmation for entering",
+    "start": 406.44,
+    "duration": 4.92
+  },
+  {
+    "text": "higher into the move so let's hop into",
+    "start": 409.24,
+    "duration": 3.92
+  },
+  {
+    "text": "trading view now to go over some",
+    "start": 411.36,
+    "duration": 3.92
+  },
+  {
+    "text": "examples so here we are with our first",
+    "start": 413.16,
+    "duration": 4.0
+  },
+  {
+    "text": "example and in this we are just going to",
+    "start": 415.28,
+    "duration": 4.52
+  },
+  {
+    "text": "focus on the order of the reversal or",
+    "start": 417.16,
+    "duration": 4.92
+  },
+  {
+    "text": "how a reversal forms with a little",
+    "start": 419.8,
+    "duration": 4.119
+  },
+  {
+    "text": "context you can see we have failed to",
+    "start": 422.08,
+    "duration": 3.44
+  },
+  {
+    "text": "displace out of either side of this",
+    "start": 423.919,
+    "duration": 3.12
+  },
+  {
+    "text": "range and we are",
+    "start": 425.52,
+    "duration": 3.64
+  },
+  {
+    "text": "consolidating so understanding how",
+    "start": 427.039,
+    "duration": 3.84
+  },
+  {
+    "text": "consolidations work and I'm looking for",
+    "start": 429.16,
+    "duration": 4.2
+  },
+  {
+    "text": "a manipulation I can Mark out the high",
+    "start": 430.879,
+    "duration": 5.32
+  },
+  {
+    "text": "and the low of this consolidation range",
+    "start": 433.36,
+    "duration": 5.519
+  },
+  {
+    "text": "as we let this",
+    "start": 436.199,
+    "duration": 5.241
+  },
+  {
+    "text": "continue you can see we have taken out",
+    "start": 438.879,
+    "duration": 5.0
+  },
+  {
+    "text": "this low so if we are anticipating price",
+    "start": 441.44,
+    "duration": 4.479
+  },
+  {
+    "text": "to manipulate this side of the range and",
+    "start": 443.879,
+    "duration": 4.521
+  },
+  {
+    "text": "then trade to this high I can anticipate",
+    "start": 445.919,
+    "duration": 5.0
+  },
+  {
+    "text": "this to be a turtle soup or that would",
+    "start": 448.4,
+    "duration": 4.96
+  },
+  {
+    "text": "be step one in the reversal you can see",
+    "start": 450.919,
+    "duration": 4.921
+  },
+  {
+    "text": "there's not much confirmation here yet",
+    "start": 453.36,
+    "duration": 4.72
+  },
+  {
+    "text": "now that step two would be what looking",
+    "start": 455.84,
+    "duration": 4.56
+  },
+  {
+    "text": "for an inversion so let's see when we",
+    "start": 458.08,
+    "duration": 5.239
+  },
+  {
+    "text": "get a close over the fair value Gap that",
+    "start": 460.4,
+    "duration": 5.759
+  },
+  {
+    "text": "made that leg down as we let this",
+    "start": 463.319,
+    "duration": 5.16
+  },
+  {
+    "text": "continue you can see here we get this",
+    "start": 466.159,
+    "duration": 4.201
+  },
+  {
+    "text": "close through right so this is the",
+    "start": 468.479,
+    "duration": 4.481
+  },
+  {
+    "text": "inversion and that would be that entry",
+    "start": 470.36,
+    "duration": 4.799
+  },
+  {
+    "text": "you can see this has more confirmation",
+    "start": 472.96,
+    "duration": 4.199
+  },
+  {
+    "text": "than the turtle soup or just entering",
+    "start": 475.159,
+    "duration": 4.361
+  },
+  {
+    "text": "below the lows now what is our next",
+    "start": 477.159,
+    "duration": 4.281
+  },
+  {
+    "text": "confirmation or the order of the",
+    "start": 479.52,
+    "duration": 4.56
+  },
+  {
+    "text": "reversal would be a change in the state",
+    "start": 481.44,
+    "duration": 5.039
+  },
+  {
+    "text": "of delivery or an order block formation",
+    "start": 484.08,
+    "duration": 4.48
+  },
+  {
+    "text": "when we close through the series of down",
+    "start": 486.479,
+    "duration": 3.921
+  },
+  {
+    "text": "closed candles in this case it is a",
+    "start": 488.56,
+    "duration": 4.8
+  },
+  {
+    "text": "singular candle that made the low so as",
+    "start": 490.4,
+    "duration": 4.88
+  },
+  {
+    "text": "we take a",
+    "start": 493.36,
+    "duration": 4.6
+  },
+  {
+    "text": "look there we get the close through that",
+    "start": 495.28,
+    "duration": 5.639
+  },
+  {
+    "text": "so then this would be another entry here",
+    "start": 497.96,
+    "duration": 5.32
+  },
+  {
+    "text": "and you can see as we continue into this",
+    "start": 500.919,
+    "duration": 4.28
+  },
+  {
+    "text": "sequence it gets more and more",
+    "start": 503.28,
+    "duration": 4.199
+  },
+  {
+    "text": "confirmation that we have formed a low",
+    "start": 505.199,
+    "duration": 3.761
+  },
+  {
+    "text": "however we would be entering further and",
+    "start": 507.479,
+    "duration": 3.72
+  },
+  {
+    "text": "further over away from this low now if",
+    "start": 508.96,
+    "duration": 4.36
+  },
+  {
+    "text": "you look right here have we formed four",
+    "start": 511.199,
+    "duration": 4.52
+  },
+  {
+    "text": "and five or a fair value Gap or a",
+    "start": 513.32,
+    "duration": 5.719
+  },
+  {
+    "text": "breaker block we have you can see here",
+    "start": 515.719,
+    "duration": 5.76
+  },
+  {
+    "text": "we have formed a fair value Gap and",
+    "start": 519.039,
+    "duration": 5.401
+  },
+  {
+    "text": "taking a look for a breaker do we have a",
+    "start": 521.479,
+    "duration": 7.841
+  },
+  {
+    "text": "low high lower low higher high so we do",
+    "start": 524.44,
+    "duration": 7.399
+  },
+  {
+    "text": "so then marking out the series of up",
+    "start": 529.32,
+    "duration": 5.56
+  },
+  {
+    "text": "closed candles from this low to this",
+    "start": 531.839,
+    "duration": 6.12
+  },
+  {
+    "text": "high before the lower low and higher",
+    "start": 534.88,
+    "duration": 5.88
+  },
+  {
+    "text": "high right here that would be our",
+    "start": 537.959,
+    "duration": 5.081
+  },
+  {
+    "text": "breaker block so I can mark that out",
+    "start": 540.76,
+    "duration": 5.319
+  },
+  {
+    "text": "there clean up my chart a little bit and",
+    "start": 543.04,
+    "duration": 5.32
+  },
+  {
+    "text": "let's see how this works",
+    "start": 546.079,
+    "duration": 5.601
+  },
+  {
+    "text": "out so as we go we get a retracement",
+    "start": 548.36,
+    "duration": 5.4
+  },
+  {
+    "text": "back into this fair value Gap do we get",
+    "start": 551.68,
+    "duration": 4.2
+  },
+  {
+    "text": "a continuation",
+    "start": 553.76,
+    "duration": 4.319
+  },
+  {
+    "text": "higher we find some support",
+    "start": 555.88,
+    "duration": 4.32
+  },
+  {
+    "text": "consolidation there and then we expand",
+    "start": 558.079,
+    "duration": 3.961
+  },
+  {
+    "text": "higher through this other side of the",
+    "start": 560.2,
+    "duration": 4.72
+  },
+  {
+    "text": "range so reviewing this one more time",
+    "start": 562.04,
+    "duration": 5.08
+  },
+  {
+    "text": "the order of a reversal we have that",
+    "start": 564.92,
+    "duration": 5.159
+  },
+  {
+    "text": "turtle soup or a purge of a low",
+    "start": 567.12,
+    "duration": 5.159
+  },
+  {
+    "text": "this wouldn't have to occur if we have",
+    "start": 570.079,
+    "duration": 6.361
+  },
+  {
+    "text": "smt the next is a inversion right or a",
+    "start": 572.279,
+    "duration": 5.961
+  },
+  {
+    "text": "close through the fair value Gap that",
+    "start": 576.44,
+    "duration": 4.519
+  },
+  {
+    "text": "made this low the next is a change in",
+    "start": 578.24,
+    "duration": 4.48
+  },
+  {
+    "text": "the state of delivery or the order block",
+    "start": 580.959,
+    "duration": 3.88
+  },
+  {
+    "text": "formation or the series of down Clos",
+    "start": 582.72,
+    "duration": 4.239
+  },
+  {
+    "text": "candles that made the low gets closed",
+    "start": 584.839,
+    "duration": 4.68
+  },
+  {
+    "text": "over and then we have a fair value gap",
+    "start": 586.959,
+    "duration": 4.281
+  },
+  {
+    "text": "which would be this three candle pattern",
+    "start": 589.519,
+    "duration": 3.44
+  },
+  {
+    "text": "right here and then we have a breaker",
+    "start": 591.24,
+    "duration": 4.719
+  },
+  {
+    "text": "block which is a low high lower low",
+    "start": 592.959,
+    "duration": 4.601
+  },
+  {
+    "text": "higher high now if you remember earlier",
+    "start": 595.959,
+    "duration": 3.601
+  },
+  {
+    "text": "in this video I said to pay attention to",
+    "start": 597.56,
+    "duration": 4.2
+  },
+  {
+    "text": "one of these and the reason for that is",
+    "start": 599.56,
+    "duration": 3.719
+  },
+  {
+    "text": "if you were trying to focus on every",
+    "start": 601.76,
+    "duration": 3.36
+  },
+  {
+    "text": "single one of these every single time",
+    "start": 603.279,
+    "duration": 3.68
+  },
+  {
+    "text": "you're likely to get overwhelmed for",
+    "start": 605.12,
+    "duration": 3.88
+  },
+  {
+    "text": "example what is easier to see is it",
+    "start": 606.959,
+    "duration": 3.88
+  },
+  {
+    "text": "easier to understand price action when",
+    "start": 609.0,
+    "duration": 3.76
+  },
+  {
+    "text": "everything is shown here or is it easier",
+    "start": 610.839,
+    "duration": 4.12
+  },
+  {
+    "text": "to understand if I get rid of almost all",
+    "start": 612.76,
+    "duration": 4.84
+  },
+  {
+    "text": "of these and just focus on an inversion",
+    "start": 614.959,
+    "duration": 5.0
+  },
+  {
+    "text": "or get rid of almost all of these and",
+    "start": 617.6,
+    "duration": 4.52
+  },
+  {
+    "text": "just focus on a change in the state of",
+    "start": 619.959,
+    "duration": 4.201
+  },
+  {
+    "text": "delivery is when you simplify things",
+    "start": 622.12,
+    "duration": 4.959
+  },
+  {
+    "text": "down it becomes more and more clear so",
+    "start": 624.16,
+    "duration": 4.48
+  },
+  {
+    "text": "taking what you wrote down as your",
+    "start": 627.079,
+    "duration": 3.401
+  },
+  {
+    "text": "favorite PD array or the one that makes",
+    "start": 628.64,
+    "duration": 4.48
+  },
+  {
+    "text": "sense to you go ahead and remove all the",
+    "start": 630.48,
+    "duration": 5.159
+  },
+  {
+    "text": "other drawings except for that one right",
+    "start": 633.12,
+    "duration": 5.2
+  },
+  {
+    "text": "and focus on that performing reversals",
+    "start": 635.639,
+    "duration": 4.2
+  },
+  {
+    "text": "now let's hop into a few examples of",
+    "start": 638.32,
+    "duration": 3.44
+  },
+  {
+    "text": "actually going top down using this",
+    "start": 639.839,
+    "duration": 4.24
+  },
+  {
+    "text": "method so here we are with our next",
+    "start": 641.76,
+    "duration": 4.319
+  },
+  {
+    "text": "example and if you remember this from",
+    "start": 644.079,
+    "duration": 4.361
+  },
+  {
+    "text": "Twitter I talked about it but we have",
+    "start": 646.079,
+    "duration": 4.081
+  },
+  {
+    "text": "manipulated the low in this",
+    "start": 648.44,
+    "duration": 3.88
+  },
+  {
+    "text": "consolidation range we've closed back",
+    "start": 650.16,
+    "duration": 4.04
+  },
+  {
+    "text": "inside the previous bar and we have",
+    "start": 652.32,
+    "duration": 4.0
+  },
+  {
+    "text": "continued to expand higher here so",
+    "start": 654.2,
+    "duration": 4.36
+  },
+  {
+    "text": "looking left where is Price likely to go",
+    "start": 656.32,
+    "duration": 4.199
+  },
+  {
+    "text": "is it more likely to reach for this low",
+    "start": 658.56,
+    "duration": 4.04
+  },
+  {
+    "text": "or more likely to reach for this high",
+    "start": 660.519,
+    "duration": 3.841
+  },
+  {
+    "text": "and in my eyes it is more likely to",
+    "start": 662.6,
+    "duration": 4.08
+  },
+  {
+    "text": "reach to this high so continuing this",
+    "start": 664.36,
+    "duration": 4.56
+  },
+  {
+    "text": "bullish bias into this next day let's go",
+    "start": 666.68,
+    "duration": 4.36
+  },
+  {
+    "text": "down to the lower time frames so here we",
+    "start": 668.92,
+    "duration": 4.0
+  },
+  {
+    "text": "are down on the lower time frames and if",
+    "start": 671.04,
+    "duration": 4.239
+  },
+  {
+    "text": "we take a look at the daily profile what",
+    "start": 672.92,
+    "duration": 6.28
+  },
+  {
+    "text": "do we see well we see Asia form a high",
+    "start": 675.279,
+    "duration": 5.721
+  },
+  {
+    "text": "with a bunch of failure swings and then",
+    "start": 679.2,
+    "duration": 4.879
+  },
+  {
+    "text": "we decline into London which just has a",
+    "start": 681.0,
+    "duration": 5.2
+  },
+  {
+    "text": "consolidation so if we are bullish on",
+    "start": 684.079,
+    "duration": 4.481
+  },
+  {
+    "text": "the day we can anticipate London highs",
+    "start": 686.2,
+    "duration": 4.48
+  },
+  {
+    "text": "or these equal highs up here to get",
+    "start": 688.56,
+    "duration": 4.48
+  },
+  {
+    "text": "taken out and then if we are in a",
+    "start": 690.68,
+    "duration": 5.04
+  },
+  {
+    "text": "manipulation we want to see what we want",
+    "start": 693.04,
+    "duration": 5.4
+  },
+  {
+    "text": "to see either a manipulation of a low or",
+    "start": 695.72,
+    "duration": 6.52
+  },
+  {
+    "text": "an smt to form and confirm this reversal",
+    "start": 698.44,
+    "duration": 6.6
+  },
+  {
+    "text": "to trade higher so as we let this play",
+    "start": 702.24,
+    "duration": 6.039
+  },
+  {
+    "text": "out and here we get a purge of that low",
+    "start": 705.04,
+    "duration": 4.919
+  },
+  {
+    "text": "so if we are anticipating this to trade",
+    "start": 708.279,
+    "duration": 4.0
+  },
+  {
+    "text": "higher to Asia highs this would be the",
+    "start": 709.959,
+    "duration": 4.721
+  },
+  {
+    "text": "turtle soup entry now there isn't much",
+    "start": 712.279,
+    "duration": 4.56
+  },
+  {
+    "text": "confirmation here so if I let one more",
+    "start": 714.68,
+    "duration": 5.2
+  },
+  {
+    "text": "candle form what do we have now we have",
+    "start": 716.839,
+    "duration": 5.361
+  },
+  {
+    "text": "a fair value Gap that has formed here",
+    "start": 719.88,
+    "duration": 4.24
+  },
+  {
+    "text": "that can be used as an",
+    "start": 722.2,
+    "duration": 5.439
+  },
+  {
+    "text": "inversion so that would be step two does",
+    "start": 724.12,
+    "duration": 6.12
+  },
+  {
+    "text": "that form in step two yes we now have an",
+    "start": 727.639,
+    "duration": 5.2
+  },
+  {
+    "text": "inversion but what else has we but what",
+    "start": 730.24,
+    "duration": 5.2
+  },
+  {
+    "text": "else have we had form here we also have",
+    "start": 732.839,
+    "duration": 4.8
+  },
+  {
+    "text": "step three or the change in the state of",
+    "start": 735.44,
+    "duration": 5.04
+  },
+  {
+    "text": "delivery and we also have the breaker",
+    "start": 737.639,
+    "duration": 6.161
+  },
+  {
+    "text": "block formation right here so marking",
+    "start": 740.48,
+    "duration": 6.12
+  },
+  {
+    "text": "all of those out we can see if we form a",
+    "start": 743.8,
+    "duration": 6.12
+  },
+  {
+    "text": "fair value Gap here which we do so now",
+    "start": 746.6,
+    "duration": 5.32
+  },
+  {
+    "text": "you can see all of these basically",
+    "start": 749.92,
+    "duration": 4.96
+  },
+  {
+    "text": "overlapping or acting as a Confluence",
+    "start": 751.92,
+    "duration": 6.279
+  },
+  {
+    "text": "together to trade higher from this area",
+    "start": 754.88,
+    "duration": 6.84
+  },
+  {
+    "text": "here so like I said before it makes more",
+    "start": 758.199,
+    "duration": 6.08
+  },
+  {
+    "text": "sense to focus on one so what I would be",
+    "start": 761.72,
+    "duration": 4.4
+  },
+  {
+    "text": "focusing on here is just the change in",
+    "start": 764.279,
+    "duration": 3.8
+  },
+  {
+    "text": "the state of delivery and then the main",
+    "start": 766.12,
+    "duration": 4.32
+  },
+  {
+    "text": "threshold of this order",
+    "start": 768.079,
+    "duration": 4.921
+  },
+  {
+    "text": "block so as we let this continue you can",
+    "start": 770.44,
+    "duration": 5.12
+  },
+  {
+    "text": "see we get a reaction out of this area",
+    "start": 773.0,
+    "duration": 4.6
+  },
+  {
+    "text": "and we start to trade higher now where",
+    "start": 775.56,
+    "duration": 4.279
+  },
+  {
+    "text": "do we want to see price trade to our",
+    "start": 777.6,
+    "duration": 4.96
+  },
+  {
+    "text": "Asia highs or continue higher within our",
+    "start": 779.839,
+    "duration": 5.321
+  },
+  {
+    "text": "daily profile so just to review one more",
+    "start": 782.56,
+    "duration": 5.44
+  },
+  {
+    "text": "time we have a bullish bias we have a",
+    "start": 785.16,
+    "duration": 5.039
+  },
+  {
+    "text": "daily profile this is then when we can",
+    "start": 788.0,
+    "duration": 4.68
+  },
+  {
+    "text": "use our order of a reversal to look for",
+    "start": 790.199,
+    "duration": 5.481
+  },
+  {
+    "text": "our turtle soup inversion Chang in the",
+    "start": 792.68,
+    "duration": 5.24
+  },
+  {
+    "text": "state of delivery breaker block and fair",
+    "start": 795.68,
+    "duration": 4.64
+  },
+  {
+    "text": "value Gap but like I said I think it is",
+    "start": 797.92,
+    "duration": 4.76
+  },
+  {
+    "text": "important to focus on one or two of",
+    "start": 800.32,
+    "duration": 4.56
+  },
+  {
+    "text": "these and not all of them so for",
+    "start": 802.68,
+    "duration": 4.12
+  },
+  {
+    "text": "instance I focus on the change in the",
+    "start": 804.88,
+    "duration": 4.44
+  },
+  {
+    "text": "state of delivery as that is how I trade",
+    "start": 806.8,
+    "duration": 3.76
+  },
+  {
+    "text": "but there are other people that only",
+    "start": 809.32,
+    "duration": 3.519
+  },
+  {
+    "text": "focus on inversions that only focus on",
+    "start": 810.56,
+    "duration": 4.44
+  },
+  {
+    "text": "Breaker blocks really the most important",
+    "start": 812.839,
+    "duration": 3.761
+  },
+  {
+    "text": "thing here is you have to find what",
+    "start": 815.0,
+    "duration": 4.199
+  },
+  {
+    "text": "catches your eye and what works for you",
+    "start": 816.6,
+    "duration": 4.32
+  },
+  {
+    "text": "so here we are with another example if",
+    "start": 819.199,
+    "duration": 3.76
+  },
+  {
+    "text": "we take a look at our daily chart here",
+    "start": 820.92,
+    "duration": 3.68
+  },
+  {
+    "text": "we have swept out this High we have",
+    "start": 822.959,
+    "duration": 4.081
+  },
+  {
+    "text": "closed back in that high or into the",
+    "start": 824.6,
+    "duration": 5.039
+  },
+  {
+    "text": "range and then we have a continuation",
+    "start": 827.04,
+    "duration": 4.799
+  },
+  {
+    "text": "lower so I could be looking for this low",
+    "start": 829.639,
+    "duration": 4.281
+  },
+  {
+    "text": "to get taken out as well as looking to",
+    "start": 831.839,
+    "duration": 3.68
+  },
+  {
+    "text": "fill some of these pair value gaps here",
+    "start": 833.92,
+    "duration": 3.279
+  },
+  {
+    "text": "on the left side so down here on the",
+    "start": 835.519,
+    "duration": 3.12
+  },
+  {
+    "text": "hourly chart you can see we have all",
+    "start": 837.199,
+    "duration": 3.841
+  },
+  {
+    "text": "these lows resting right here so let's",
+    "start": 838.639,
+    "duration": 5.041
+  },
+  {
+    "text": "drop down to the 15minute Chart so here",
+    "start": 841.04,
+    "duration": 4.68
+  },
+  {
+    "text": "we are going into the day and I want to",
+    "start": 843.68,
+    "duration": 5.079
+  },
+  {
+    "text": "see if this low gets taken out you can",
+    "start": 845.72,
+    "duration": 5.479
+  },
+  {
+    "text": "see we don't take it out yet we get a",
+    "start": 848.759,
+    "duration": 5.361
+  },
+  {
+    "text": "consolidation or a retracement higher so",
+    "start": 851.199,
+    "duration": 4.64
+  },
+  {
+    "text": "if I'm still anticipating this low to",
+    "start": 854.12,
+    "duration": 4.12
+  },
+  {
+    "text": "get taken out and we have expansion and",
+    "start": 855.839,
+    "duration": 4.641
+  },
+  {
+    "text": "I'm viewing this as a retracement or a",
+    "start": 858.24,
+    "duration": 4.12
+  },
+  {
+    "text": "consolidation right here I either want",
+    "start": 860.48,
+    "duration": 3.84
+  },
+  {
+    "text": "to see a close below these up close",
+    "start": 862.36,
+    "duration": 4.159
+  },
+  {
+    "text": "candles here to validate this high or",
+    "start": 864.32,
+    "duration": 4.92
+  },
+  {
+    "text": "for this High to get swept out so look",
+    "start": 866.519,
+    "duration": 4.921
+  },
+  {
+    "text": "to see which one of those happens first",
+    "start": 869.24,
+    "duration": 4.599
+  },
+  {
+    "text": "what do we",
+    "start": 871.44,
+    "duration": 5.759
+  },
+  {
+    "text": "get we have more EV consolidation here",
+    "start": 873.839,
+    "duration": 6.12
+  },
+  {
+    "text": "so then I stop considering this I'm",
+    "start": 877.199,
+    "duration": 5.2
+  },
+  {
+    "text": "zooming in and I see us reaching for",
+    "start": 879.959,
+    "duration": 4.68
+  },
+  {
+    "text": "this",
+    "start": 882.399,
+    "duration": 2.24
+  },
+  {
+    "text": "high you can see we still never closed",
+    "start": 886.079,
+    "duration": 4.361
+  },
+  {
+    "text": "below there but I wouldn't be interested",
+    "start": 888.639,
+    "duration": 4.44
+  },
+  {
+    "text": "in it as it is a consolidation and now",
+    "start": 890.44,
+    "duration": 4.68
+  },
+  {
+    "text": "we have swept out this high so if I'm",
+    "start": 893.079,
+    "duration": 4.401
+  },
+  {
+    "text": "viewing this as a consolidation reaching",
+    "start": 895.12,
+    "duration": 4.88
+  },
+  {
+    "text": "into London we sweep out this this high",
+    "start": 897.48,
+    "duration": 4.56
+  },
+  {
+    "text": "and I'm expecting a reversal to form",
+    "start": 900.0,
+    "duration": 4.32
+  },
+  {
+    "text": "here to trade lower I would anticipate",
+    "start": 902.04,
+    "duration": 5.2
+  },
+  {
+    "text": "this to be a turtle soup or step one in",
+    "start": 904.32,
+    "duration": 6.0
+  },
+  {
+    "text": "a reversal where would be step two an",
+    "start": 907.24,
+    "duration": 5.159
+  },
+  {
+    "text": "inversion forming here so let's see if",
+    "start": 910.32,
+    "duration": 3.28
+  },
+  {
+    "text": "that",
+    "start": 912.399,
+    "duration": 4.041
+  },
+  {
+    "text": "occurs here we get the inversion so then",
+    "start": 913.6,
+    "duration": 5.799
+  },
+  {
+    "text": "that would be an entry or step two now",
+    "start": 916.44,
+    "duration": 5.0
+  },
+  {
+    "text": "step three would be looking for this",
+    "start": 919.399,
+    "duration": 3.841
+  },
+  {
+    "text": "change in the state of delivery or the",
+    "start": 921.44,
+    "duration": 4.24
+  },
+  {
+    "text": "order block",
+    "start": 923.24,
+    "duration": 4.64
+  },
+  {
+    "text": "formation right here we do get that",
+    "start": 925.68,
+    "duration": 3.76
+  },
+  {
+    "text": "order block formation or the change in",
+    "start": 927.88,
+    "duration": 3.56
+  },
+  {
+    "text": "the state of delivery and then right",
+    "start": 929.44,
+    "duration": 4.28
+  },
+  {
+    "text": "after what do we get we get a breaker",
+    "start": 931.44,
+    "duration": 4.759
+  },
+  {
+    "text": "block formation and a fair value Gap so",
+    "start": 933.72,
+    "duration": 4.84
+  },
+  {
+    "text": "you can see get our fair value Gap right",
+    "start": 936.199,
+    "duration": 5.361
+  },
+  {
+    "text": "here marking that out and then marking",
+    "start": 938.56,
+    "duration": 6.079
+  },
+  {
+    "text": "out our breaker block is from our low to",
+    "start": 941.56,
+    "duration": 5.56
+  },
+  {
+    "text": "our high this one isn't very clear so",
+    "start": 944.639,
+    "duration": 4.481
+  },
+  {
+    "text": "generally on this I would just use this",
+    "start": 947.12,
+    "duration": 5.56
+  },
+  {
+    "text": "whole leg up so marking that out you can",
+    "start": 949.12,
+    "duration": 5.36
+  },
+  {
+    "text": "see how those overlap then I would",
+    "start": 952.68,
+    "duration": 4.04
+  },
+  {
+    "text": "anticipate price to continue to these",
+    "start": 954.48,
+    "duration": 5.0
+  },
+  {
+    "text": "lows after this reversal has formed so",
+    "start": 956.72,
+    "duration": 4.599
+  },
+  {
+    "text": "we reach back up into that fair value",
+    "start": 959.48,
+    "duration": 3.96
+  },
+  {
+    "text": "Gap into that breaker body is still",
+    "start": 961.319,
+    "duration": 3.88
+  },
+  {
+    "text": "respecting the change in the state of",
+    "start": 963.44,
+    "duration": 4.0
+  },
+  {
+    "text": "delivery and how I would view this is we",
+    "start": 965.199,
+    "duration": 4.601
+  },
+  {
+    "text": "get a new propulsion block right here",
+    "start": 967.44,
+    "duration": 5.56
+  },
+  {
+    "text": "but as we go to trade lower we go and we",
+    "start": 969.8,
+    "duration": 5.36
+  },
+  {
+    "text": "take out that low there so just to",
+    "start": 973.0,
+    "duration": 4.199
+  },
+  {
+    "text": "review one more time we get our turtle",
+    "start": 975.16,
+    "duration": 5.56
+  },
+  {
+    "text": "soup or the sweep of a high then we get",
+    "start": 977.199,
+    "duration": 5.521
+  },
+  {
+    "text": "our inversion or a close through the",
+    "start": 980.72,
+    "duration": 4.28
+  },
+  {
+    "text": "fair value Gap that made this High then",
+    "start": 982.72,
+    "duration": 3.44
+  },
+  {
+    "text": "we get our change in the state of",
+    "start": 985.0,
+    "duration": 3.519
+  },
+  {
+    "text": "delivery or the order block formation",
+    "start": 986.16,
+    "duration": 4.2
+  },
+  {
+    "text": "then we get our breaker block and our",
+    "start": 988.519,
+    "duration": 3.76
+  },
+  {
+    "text": "fair value Gap and then we get a",
+    "start": 990.36,
+    "duration": 4.159
+  },
+  {
+    "text": "continuation as the reversal has then",
+    "start": 992.279,
+    "duration": 5.12
+  },
+  {
+    "text": "confirmed and I'm a huge fan of this",
+    "start": 994.519,
+    "duration": 5.201
+  },
+  {
+    "text": "propulsion block right there within my",
+    "start": 997.399,
+    "duration": 4.641
+  },
+  {
+    "text": "strategy so I hope you found this video",
+    "start": 999.72,
+    "duration": 4.72
+  },
+  {
+    "text": "helpful if you do have any questions or",
+    "start": 1002.04,
+    "duration": 4.64
+  },
+  {
+    "text": "concerns or if you need a video on",
+    "start": 1004.44,
+    "duration": 4.16
+  },
+  {
+    "text": "something please leave a comment below",
+    "start": 1006.68,
+    "duration": 4.04
+  },
+  {
+    "text": "and I will read through those but with",
+    "start": 1008.6,
+    "duration": 3.76
+  },
+  {
+    "text": "that thanks for watching and I'll see",
+    "start": 1010.72,
+    "duration": 5.919
+  },
+  {
+    "text": "you guys next time have a good one",
+    "start": 1012.36,
+    "duration": 4.279
+  }
+]

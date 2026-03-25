@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-03-23T20:20:43.438540+00:00",
+  "summary": {
+    "generated_script_count": 6,
+    "generated_candidate_contract_count": 6
+  },
+  "generated_scripts": [
+    {
+      "spec_path": "results\\indicator_specs\\continuation_entry_model.json",
+      "spec_key": "continuation_entry_model",
+      "script_title": "TTrades Continuation Entry Model [Draft]",
+      "output_path": "results\\pine_scripts\\continuation_entry_model.pine"
+    },
+    {
+      "spec_path": "results\\indicator_specs\\daily_bias_c123_map.json",
+      "spec_key": "daily_bias_c123_map",
+      "script_title": "TTrades Daily Bias C1/C2/C3 Map [Draft]",
+      "output_path": "results\\pine_scripts\\daily_bias_c123_map.pine"
+    },
+    {
+      "spec_path": "results\\indicator_specs\\daily_bias_framework.json",
+      "spec_key": "daily_bias_framework",
+      "script_title": "TTrades Daily Bias Framework [Draft]",
+      "output_path": "results\\pine_scripts\\daily_bias_framework.pine"
+    },
+    {
+      "spec_path": "results\\indicator_specs\\daily_profile_models.json",
+      "spec_key": "daily_profile_models",
+      "script_title": "TTrades Daily Profile Models [Draft]",
+      "output_path": "results\\pine_scripts\\daily_profile_models.pine"
+    },
+    {
+      "spec_path": "results\\indicator_specs\\fractal_closure_model.json",
+      "spec_key": "fractal_closure_model",
+      "script_title": "TTrades Fractal Closure Model [Draft]",
+      "output_path": "results\\pine_scripts\\fractal_closure_model.pine"
+    },
+    {
+      "spec_path": "results\\indicator_specs\\reversal_sequence_model.json",
+      "spec_key": "reversal_sequence_model",
+      "script_title": "TTrades Reversal Sequence Model [Draft]",
+      "output_path": "results\\pine_scripts\\reversal_sequence_model.pine"
+    }
+  ],
+  "candidate_event_contracts": [
+    {
+      "spec_key": "continuation_entry_model",
+      "script_title": "TTrades Continuation Entry Model [Draft]",
+      "output_path": "results\\pine_candidate_event_contracts\\continuation_entry_model.candidate_event_contract.json",
+      "alert_count": 2
+    },
+    {
+      "spec_key": "daily_bias_c123_map",
+      "script_title": "TTrades Daily Bias C1/C2/C3 Map [Draft]",
+      "output_path": "results\\pine_candidate_event_contracts\\daily_bias_c123_map.candidate_event_contract.json",
+      "alert_count": 2
+    },
+    {
+      "spec_key": "daily_bias_framework",
+      "script_title": "TTrades Daily Bias Framework [Draft]",
+      "output_path": "results\\pine_candidate_event_contracts\\daily_bias_framework.candidate_event_contract.json",
+      "alert_count": 3
+    },
+    {
+      "spec_key": "daily_profile_models",
+      "script_title": "TTrades Daily Profile Models [Draft]",
+      "output_path": "results\\pine_candidate_event_contracts\\daily_profile_models.candidate_event_contract.json",
+      "alert_count": 2
+    },
+    {
+      "spec_key": "fractal_closure_model",
+      "script_title": "TTrades Fractal Closure Model [Draft]",
+      "output_path": "results\\pine_candidate_event_contracts\\fractal_closure_model.candidate_event_contract.json",
+      "alert_count": 2
+    },
+    {
+      "spec_key": "reversal_sequence_model",
+      "script_title": "TTrades Reversal Sequence Model [Draft]",
+      "output_path": "results\\pine_candidate_event_contracts\\reversal_sequence_model.candidate_event_contract.json",
+      "alert_count": 2
+    }
+  ]
+}

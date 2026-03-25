@@ -1,0 +1,433 @@
+[5.49] [Music]
+[11.04] how's it going everyone this video is
+[12.96] going to be over building an entry model
+[15.40] I will first talk about the concepts
+[17.20] used within an entry model and then a
+[19.48] few confluences as well as how a
+[21.80] reversal forms and which entry model is
+[24.48] correct for you so let's get into the
+[26.88] video the first thing we need to cover
+[28.88] before we get into the Concepts is the
+[31.48] kill zones so if I'm looking to trade
+[33.76] inaday which is what I include to be
+[36.28] below the hourly chart I'm going to want
+[38.60] to focus on the kill zones or taking
+[40.76] trades Within These time Windows now I
+[43.44] personally focus on the New York am
+[45.32] session for indices so I'm going to
+[47.32] focus on 8:30 to 11 for my trading
+[50.28] however if I was a London Trader I would
+[52.20] generally want to be looking between 2
+[54.20] to 5 a.m. and all times are an Eastern
+[57.32] Standard Time now when choosing a time
+[59.56] frame It generally works out as
+[61.44] impatient people want to be on a lower
+[63.56] time frame while patient people are
+[65.72] generally better suited for a higher
+[67.64] time frame I personally find myself
+[69.56] right in between those two and I focus
+[71.80] on executing on a 5 minute time frame is
+[74.84] not only does that align with the daily
+[76.80] profile very well but I also just find
+[79.16] it to be the correct time frame for me
+[81.40] now this is something you have to figure
+[82.84] out for yourself and we will talk about
+[84.64] time frame alignment in a future video
+[86.96] now we are going to get into the
+[88.36] concepts now don't f focus on
+[90.68] understanding and mastering every single
+[92.68] concept that is a mistake that I see
+[94.68] many people make instead focus on one of
+[97.52] these Concepts and master that and if
+[99.56] you have followed me long enough you
+[100.92] know that my focus is on order blocks so
+[103.20] getting into our first Concepts here we
+[105.24] have a fair value Gap now most of these
+[107.40] I have an individual video on so if you
+[109.80] are confused I would check out those
+[111.64] videos and I will link those in the top
+[113.64] right corner as we go through this now
+[115.64] with a fair value Gap it is a three
+[117.48] Candlestick pattern in which the high of
+[120.24] the third candle does not overlap the
+[122.60] low of the first candle or where the low
+[125.28] of the third candle does not overlap the
+[127.52] high of the first candle now this is a
+[130.00] point of Interest by drawing out the
+[131.60] high and the low that do not overlap to
+[133.96] look for price to react off of now the
+[136.36] next concept we are going to cover is an
+[138.12] inversion and that is when a fair value
+[140.36] Gap gets closed over and then is used as
+[143.88] support to trade higher or resistance to
+[146.76] trade lower the next concept is an order
+[149.44] block this is what I focus on personally
+[152.28] this is when we have price reach into a
+[154.80] point of Interest I take the series of
+[157.16] up closed candles into that point of
+[158.84] interest when it is then closed below
+[161.40] I'm expecting this High to remain and
+[163.68] this to be a point of interest to trade
+[166.04] lower so you can see over here when we
+[167.96] trade into an important level the series
+[170.64] in this case a single candle is then
+[172.80] closed over and that level is used as
+[174.96] support to trade higher the next concept
+[177.48] is a breaker block this is very similar
+[179.52] to an order block but it is where we
+[181.28] have a high a low a higher high and a
+[184.64] lower low I'm then marking out the down
+[187.60] close candles in between that high and
+[190.56] that low to use as resistance to trade
+[192.96] lower similarly for the bullish breaker
+[195.60] block we have a low high lower low
+[199.32] higher high I'm going to use the up
+[201.36] close candles from that low to the high
+[204.16] as the point of interest for price to
+[206.04] trade higher now the next concept is OT
+[209.56] and this is when I'm taking an Impulse
+[211.52] leg or a displacement leg and marking
+[213.72] out from the high to the low with a
+[216.32] Fibonacci and using the Fibonacci
+[218.48] retracements and specifically the 705
+[222.16] area looking for a lower high tube form
+[224.60] and then trade back lower to the low or
+[227.56] following the trend now that we' have
+[229.48] gotten through the main Concepts I want
+[231.04] you to focus on which one stood out to
+[232.80] you the most and either write that down
+[234.84] or remember in your head and just be
+[236.92] focusing on that now as we get into
+[239.24] additional or confluences this will be
+[241.60] things that can be paired with our
+[243.24] previous Concepts so you can see here
+[245.96] when we use premium in discount or A5
+[248.76] FIB of a range I can then look for
+[251.28] either a fair value Gap or an order
+[252.92] block or whatever PD array that I chose
+[256.56] in that area so you can see here we have
+[258.76] a fair value Gap in a discount to look
+[261.08] for a low to form and then here we have
+[263.20] an order Block in a premium to look for
+[265.64] a high to form now another additional
+[268.00] Confluence and this would be my person
+[269.72] personal favorite as a Confluence is smt
+[272.88] or with correlated assets having a
+[275.56] difference in structure so you can see
+[277.68] marking out this low here and this low
+[279.80] here one asset made a higher low while
+[282.56] the other one made a lower low this can
+[285.12] indicate or be used as a Confluence of a
+[288.24] reversal now let's talk about an order
+[290.48] of a reversal forming so now if you go
+[292.72] ahead and remember which PD array you
+[294.84] chose from the concepts or focused on
+[297.48] watch that in here as we go throughout
+[299.44] this list the confirmation of the
+[302.08] reversal forming will become greater and
+[304.28] greater however you are getting in later
+[306.80] to the move now I personally prefer to
+[308.92] trade continuations so later into the
+[311.12] move however you will see when each
+[312.92] concept forms so I want you to remember
+[315.08] what you wrote down or what concept you
+[317.00] are focused on and find it in here when
+[318.88] we go now each reversal It won't always
+[321.72] include this but this is generally how
+[323.52] reversals form is we first have a purge
+[325.80] of a low or a turtle soup now we will
+[328.88] not have this if we have smt right now
+[331.32] the next thing that forms will be an
+[332.92] inversion right so the move down that
+[335.24] Purge the low once we close over the
+[337.92] fair value Gap if there is one in this
+[339.72] leg down that created it that will be
+[341.68] the second thing to form now the next
+[343.48] thing to form will be the change in the
+[345.52] state of delivery or an order block
+[347.32] formation once we close through this
+[349.52] series of down closed candles that Purge
+[351.80] that low now after that this is where
+[353.76] four and five kind of blend together but
+[356.20] generally we will have either a fair
+[357.96] value Gap here or a break breaker block
+[360.64] now those will be the last things to
+[362.52] form in the reversal so almost every
+[365.28] reversal starts with either a purge of a
+[367.44] low or an smt we then have an inversion
+[371.44] a change in the state of delivery and
+[373.68] then once we close through or over this
+[376.04] High we'll have either a breaker block
+[378.08] or a fair value Gap and what I said
+[379.72] about confirmation is the further down
+[382.04] this list the more confirmation there is
+[384.32] that it has formed a reversal so if we
+[386.32] go back to the very beginning you can
+[387.92] see we still have this trend down we
+[389.92] swept out this low there's not very much
+[391.68] confirmation that this reversal has
+[393.32] formed yet versus as we get to you know
+[395.96] a breaker block there is quite a bit of
+[398.12] confirmation as we get the move down the
+[400.32] inversion the change in the state of
+[401.92] delivery and this displacement up that
+[403.92] this reversal has formed right so you
+[406.44] sacrifice more confirmation for entering
+[409.24] higher into the move so let's hop into
+[411.36] trading view now to go over some
+[413.16] examples so here we are with our first
+[415.28] example and in this we are just going to
+[417.16] focus on the order of the reversal or
+[419.80] how a reversal forms with a little
+[422.08] context you can see we have failed to
+[423.92] displace out of either side of this
+[425.52] range and we are
+[427.04] consolidating so understanding how
+[429.16] consolidations work and I'm looking for
+[430.88] a manipulation I can Mark out the high
+[433.36] and the low of this consolidation range
+[436.20] as we let this
+[438.88] continue you can see we have taken out
+[441.44] this low so if we are anticipating price
+[443.88] to manipulate this side of the range and
+[445.92] then trade to this high I can anticipate
+[448.40] this to be a turtle soup or that would
+[450.92] be step one in the reversal you can see
+[453.36] there's not much confirmation here yet
+[455.84] now that step two would be what looking
+[458.08] for an inversion so let's see when we
+[460.40] get a close over the fair value Gap that
+[463.32] made that leg down as we let this
+[466.16] continue you can see here we get this
+[468.48] close through right so this is the
+[470.36] inversion and that would be that entry
+[472.96] you can see this has more confirmation
+[475.16] than the turtle soup or just entering
+[477.16] below the lows now what is our next
+[479.52] confirmation or the order of the
+[481.44] reversal would be a change in the state
+[484.08] of delivery or an order block formation
+[486.48] when we close through the series of down
+[488.56] closed candles in this case it is a
+[490.40] singular candle that made the low so as
+[493.36] we take a
+[495.28] look there we get the close through that
+[497.96] so then this would be another entry here
+[500.92] and you can see as we continue into this
+[503.28] sequence it gets more and more
+[505.20] confirmation that we have formed a low
+[507.48] however we would be entering further and
+[508.96] further over away from this low now if
+[511.20] you look right here have we formed four
+[513.32] and five or a fair value Gap or a
+[515.72] breaker block we have you can see here
+[519.04] we have formed a fair value Gap and
+[521.48] taking a look for a breaker do we have a
+[524.44] low high lower low higher high so we do
+[529.32] so then marking out the series of up
+[531.84] closed candles from this low to this
+[534.88] high before the lower low and higher
+[537.96] high right here that would be our
+[540.76] breaker block so I can mark that out
+[543.04] there clean up my chart a little bit and
+[546.08] let's see how this works
+[548.36] out so as we go we get a retracement
+[551.68] back into this fair value Gap do we get
+[553.76] a continuation
+[555.88] higher we find some support
+[558.08] consolidation there and then we expand
+[560.20] higher through this other side of the
+[562.04] range so reviewing this one more time
+[564.92] the order of a reversal we have that
+[567.12] turtle soup or a purge of a low
+[570.08] this wouldn't have to occur if we have
+[572.28] smt the next is a inversion right or a
+[576.44] close through the fair value Gap that
+[578.24] made this low the next is a change in
+[580.96] the state of delivery or the order block
+[582.72] formation or the series of down Clos
+[584.84] candles that made the low gets closed
+[586.96] over and then we have a fair value gap
+[589.52] which would be this three candle pattern
+[591.24] right here and then we have a breaker
+[592.96] block which is a low high lower low
+[595.96] higher high now if you remember earlier
+[597.56] in this video I said to pay attention to
+[599.56] one of these and the reason for that is
+[601.76] if you were trying to focus on every
+[603.28] single one of these every single time
+[605.12] you're likely to get overwhelmed for
+[606.96] example what is easier to see is it
+[609.00] easier to understand price action when
+[610.84] everything is shown here or is it easier
+[612.76] to understand if I get rid of almost all
+[614.96] of these and just focus on an inversion
+[617.60] or get rid of almost all of these and
+[619.96] just focus on a change in the state of
+[622.12] delivery is when you simplify things
+[624.16] down it becomes more and more clear so
+[627.08] taking what you wrote down as your
+[628.64] favorite PD array or the one that makes
+[630.48] sense to you go ahead and remove all the
+[633.12] other drawings except for that one right
+[635.64] and focus on that performing reversals
+[638.32] now let's hop into a few examples of
+[639.84] actually going top down using this
+[641.76] method so here we are with our next
+[644.08] example and if you remember this from
+[646.08] Twitter I talked about it but we have
+[648.44] manipulated the low in this
+[650.16] consolidation range we've closed back
+[652.32] inside the previous bar and we have
+[654.20] continued to expand higher here so
+[656.32] looking left where is Price likely to go
+[658.56] is it more likely to reach for this low
+[660.52] or more likely to reach for this high
+[662.60] and in my eyes it is more likely to
+[664.36] reach to this high so continuing this
+[666.68] bullish bias into this next day let's go
+[668.92] down to the lower time frames so here we
+[671.04] are down on the lower time frames and if
+[672.92] we take a look at the daily profile what
+[675.28] do we see well we see Asia form a high
+[679.20] with a bunch of failure swings and then
+[681.00] we decline into London which just has a
+[684.08] consolidation so if we are bullish on
+[686.20] the day we can anticipate London highs
+[688.56] or these equal highs up here to get
+[690.68] taken out and then if we are in a
+[693.04] manipulation we want to see what we want
+[695.72] to see either a manipulation of a low or
+[698.44] an smt to form and confirm this reversal
+[702.24] to trade higher so as we let this play
+[705.04] out and here we get a purge of that low
+[708.28] so if we are anticipating this to trade
+[709.96] higher to Asia highs this would be the
+[712.28] turtle soup entry now there isn't much
+[714.68] confirmation here so if I let one more
+[716.84] candle form what do we have now we have
+[719.88] a fair value Gap that has formed here
+[722.20] that can be used as an
+[724.12] inversion so that would be step two does
+[727.64] that form in step two yes we now have an
+[730.24] inversion but what else has we but what
+[732.84] else have we had form here we also have
+[735.44] step three or the change in the state of
+[737.64] delivery and we also have the breaker
+[740.48] block formation right here so marking
+[743.80] all of those out we can see if we form a
+[746.60] fair value Gap here which we do so now
+[749.92] you can see all of these basically
+[751.92] overlapping or acting as a Confluence
+[754.88] together to trade higher from this area
+[758.20] here so like I said before it makes more
+[761.72] sense to focus on one so what I would be
+[764.28] focusing on here is just the change in
+[766.12] the state of delivery and then the main
+[768.08] threshold of this order
+[770.44] block so as we let this continue you can
+[773.00] see we get a reaction out of this area
+[775.56] and we start to trade higher now where
+[777.60] do we want to see price trade to our
+[779.84] Asia highs or continue higher within our
+[782.56] daily profile so just to review one more
+[785.16] time we have a bullish bias we have a
+[788.00] daily profile this is then when we can
+[790.20] use our order of a reversal to look for
+[792.68] our turtle soup inversion Chang in the
+[795.68] state of delivery breaker block and fair
+[797.92] value Gap but like I said I think it is
+[800.32] important to focus on one or two of
+[802.68] these and not all of them so for
+[804.88] instance I focus on the change in the
+[806.80] state of delivery as that is how I trade
+[809.32] but there are other people that only
+[810.56] focus on inversions that only focus on
+[812.84] Breaker blocks really the most important
+[815.00] thing here is you have to find what
+[816.60] catches your eye and what works for you
+[819.20] so here we are with another example if
+[820.92] we take a look at our daily chart here
+[822.96] we have swept out this High we have
+[824.60] closed back in that high or into the
+[827.04] range and then we have a continuation
+[829.64] lower so I could be looking for this low
+[831.84] to get taken out as well as looking to
+[833.92] fill some of these pair value gaps here
+[835.52] on the left side so down here on the
+[837.20] hourly chart you can see we have all
+[838.64] these lows resting right here so let's
+[841.04] drop down to the 15minute Chart so here
+[843.68] we are going into the day and I want to
+[845.72] see if this low gets taken out you can
+[848.76] see we don't take it out yet we get a
+[851.20] consolidation or a retracement higher so
+[854.12] if I'm still anticipating this low to
+[855.84] get taken out and we have expansion and
+[858.24] I'm viewing this as a retracement or a
+[860.48] consolidation right here I either want
+[862.36] to see a close below these up close
+[864.32] candles here to validate this high or
+[866.52] for this High to get swept out so look
+[869.24] to see which one of those happens first
+[871.44] what do we
+[873.84] get we have more EV consolidation here
+[877.20] so then I stop considering this I'm
+[879.96] zooming in and I see us reaching for
+[882.40] this
+[886.08] high you can see we still never closed
+[888.64] below there but I wouldn't be interested
+[890.44] in it as it is a consolidation and now
+[893.08] we have swept out this high so if I'm
+[895.12] viewing this as a consolidation reaching
+[897.48] into London we sweep out this this high
+[900.00] and I'm expecting a reversal to form
+[902.04] here to trade lower I would anticipate
+[904.32] this to be a turtle soup or step one in
+[907.24] a reversal where would be step two an
+[910.32] inversion forming here so let's see if
+[912.40] that
+[913.60] occurs here we get the inversion so then
+[916.44] that would be an entry or step two now
+[919.40] step three would be looking for this
+[921.44] change in the state of delivery or the
+[923.24] order block
+[925.68] formation right here we do get that
+[927.88] order block formation or the change in
+[929.44] the state of delivery and then right
+[931.44] after what do we get we get a breaker
+[933.72] block formation and a fair value Gap so
+[936.20] you can see get our fair value Gap right
+[938.56] here marking that out and then marking
+[941.56] out our breaker block is from our low to
+[944.64] our high this one isn't very clear so
+[947.12] generally on this I would just use this
+[949.12] whole leg up so marking that out you can
+[952.68] see how those overlap then I would
+[954.48] anticipate price to continue to these
+[956.72] lows after this reversal has formed so
+[959.48] we reach back up into that fair value
+[961.32] Gap into that breaker body is still
+[963.44] respecting the change in the state of
+[965.20] delivery and how I would view this is we
+[967.44] get a new propulsion block right here
+[969.80] but as we go to trade lower we go and we
+[973.00] take out that low there so just to
+[975.16] review one more time we get our turtle
+[977.20] soup or the sweep of a high then we get
+[980.72] our inversion or a close through the
+[982.72] fair value Gap that made this High then
+[985.00] we get our change in the state of
+[986.16] delivery or the order block formation
+[988.52] then we get our breaker block and our
+[990.36] fair value Gap and then we get a
+[992.28] continuation as the reversal has then
+[994.52] confirmed and I'm a huge fan of this
+[997.40] propulsion block right there within my
+[999.72] strategy so I hope you found this video
+[1002.04] helpful if you do have any questions or
+[1004.44] concerns or if you need a video on
+[1006.68] something please leave a comment below
+[1008.60] and I will read through those but with
+[1010.72] that thanks for watching and I'll see
+[1012.36] you guys next time have a good one

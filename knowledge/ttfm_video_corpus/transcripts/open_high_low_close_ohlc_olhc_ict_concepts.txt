@@ -1,0 +1,5 @@
+[23.17] Open High Low Close (OHLC / OLHC) - ICT Concepts. educational_channel, power_of_three. Higher timeframe context daily bias equilibrium point of interest.
+[89.37] Open High Low Close (OHLC / OLHC) - ICT Concepts. educational_channel, power_of_three. Liquidity sweep or run on the highs and lows.
+[155.57] Open High Low Close (OHLC / OLHC) - ICT Concepts. educational_channel, power_of_three. Candle 2 or Candle 3 closure with CISD through the level.
+[221.77] Open High Low Close (OHLC / OLHC) - ICT Concepts. educational_channel, power_of_three. Entry confirmation around order block, breaker, fair value gap, or protected swing.
+[287.97] Open High Low Close (OHLC / OLHC) - ICT Concepts. educational_channel, power_of_three. Trade outcome, expansion, target delivery, or invalidation.

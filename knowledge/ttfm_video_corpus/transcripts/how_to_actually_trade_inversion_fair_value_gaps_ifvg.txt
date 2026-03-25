@@ -1,0 +1,349 @@
+[10.96] How's it going everyone? In this video,
+[12.72] we are going to talk about how to trade
+[14.56] inversion fair value gaps or IFGs. Let's
+[18.32] get into the PDF. So, the first thing
+[20.16] you have to understand is what is a fair
+[22.40] value gap? A fair value gap is a three
+[24.48] candlestick pattern 1 2 3 in which the
+[27.84] wick of candle one and the wick of
+[29.84] candle three do not overlap leaving a
+[32.56] gap. So this is an example of a bearish
+[34.88] fair value gap and this is an example of
+[36.96] a bullish fair value gap. Now an
+[38.80] inversion fair value gap is when this
+[40.48] fair value gap is not respected and
+[42.64] swiftly closed over. So you can see here
+[44.96] we have a nice expansion candle closing
+[47.44] over that fair value gap which creates
+[49.92] an inversion fair value gap. So now what
+[52.64] should have been resistance is now going
+[54.72] to become support and what is once
+[57.44] support is now resistance. So from here
+[60.32] now I can anticipate price to continue
+[62.24] higher in this bullish trend or lower in
+[64.88] this bearish trend. Now what is the
+[67.60] mistake that most people make when
+[69.04] trading inversion fair value gaps is
+[71.36] that they fail to look at the higher
+[72.96] time frames. They do not understand
+[74.72] swing points and they are simply trading
+[76.40] a pattern. So they're looking for some
+[78.32] sort of sweep, an inversion, and they're
+[80.80] essentially pattern trading this. So you
+[82.56] can see here that is what happens. We
+[84.40] take out a high, we have an inversion.
+[86.88] If you take an entry here, you're going
+[88.40] to get stopped out. Now, what would this
+[90.16] look like if you looked at the higher
+[91.68] time frames? So if you use time frame
+[93.76] alignment and look at the higher time
+[95.44] frame, you can see if you're going to be
+[97.44] trading inversions, you want to be
+[98.80] understanding candle 2 and wick size,
+[101.20] but you're trading candle 2. So you want
+[103.12] to wait for a candle that supports
+[104.88] expansion lower. So you can see we have
+[107.12] candle 2 here sweeping out the high of
+[109.28] candle 1. So that's that important
+[110.80] liquidity at a higher time frame key
+[113.04] level. We have a small wick which
+[114.96] supports expansion. So then when we get
+[117.12] this inversion then we can anticipate
+[118.88] this trend to continue lower. So what do
+[121.12] we need to look for a valid inversion
+[123.04] setup within the fractal model. We need
+[125.28] a candle 2 which supports expansion
+[127.60] which means we need a small wick. So
+[129.60] right here I will be looking for a sweep
+[131.92] of candle 1's high or low, a small wick,
+[134.96] and then an inversion. Now, if you want
+[136.96] extra confluence, then look for an SMT
+[139.68] between candle 1's high and candle 2's
+[142.08] high. So let's get into Trading View and
+[144.16] go over a few examples of this. So here
+[146.64] we are in our first example. We're on
+[148.40] EuroUSD on the 15-minute chart. If you
+[151.04] notice, we have a fair value gap right
+[153.12] here. So let's see what happens.
+[158.16] You can see we do create an inversion
+[160.16] here. So, are we interested in this? No.
+[163.20] Why is that? Well, we need to go back to
+[164.96] what we learned in the PDF. If we don't
+[167.36] have a candle which supports expansion,
+[169.04] which this previous one didn't, we are
+[170.96] then waiting for candle 2 to form. So,
+[173.28] you can see we want a sweep of this
+[175.04] previous high in order to be looking for
+[177.12] a short setup, right? And so, we have
+[178.96] not swept that out. This is just simply
+[180.88] a consolidation.
+[184.16] Let's see if we can go take out this
+[185.36] high. We do. Now, do we create an
+[187.92] inversion? Let's see. Nope, we do not.
+[190.80] So, there is no valid setup here to
+[192.56] trade the reversal because we lack the
+[194.96] relevant level on this inversion. We
+[196.88] never created an inversion here. Now,
+[198.88] this candle does not support expansion,
+[200.64] but it doesn't have a wick. So, this can
+[202.32] be used as a drawn liquidity, but we
+[204.80] would want to wait for a new candle
+[206.32] open. So, here we have a new candle
+[208.40] open, and we take out the previous
+[210.80] candle's high as you can see here. So,
+[213.36] do we have an inversion? Well, we don't
+[214.96] have a fair value gap until down here.
+[216.96] So, let's see if we do get aggressive
+[218.80] displacement lower here.
+[223.60] You can see we do not. And we make a new
+[226.08] high. So, now you can see we are
+[227.92] sweeping out a short-term high above
+[230.24] this previous 4hour high. And what do we
+[232.88] have right in here? An inversion. So, we
+[235.60] can go ahead and mark that out right
+[237.60] here. And let's see what happens.
+[240.80] And there you can see we have an
+[242.00] inversion and a change in the state of
+[243.68] delivery, which means it is valid to be
+[245.44] looking for a move lower. Here you can
+[247.60] see how this inversion has a lot more
+[249.76] context. We're above the previous 4hour
+[252.24] high. We have a sweep of a short-term
+[254.48] high, a change in the state of delivery,
+[256.00] and an inversion. And we have failure
+[258.40] swings below, as well as this candle
+[260.64] with no wick. So let's see how this
+[262.32] looks.
+[264.56] You can see once we open the new candle,
+[266.48] we get that continuation lower. So, just
+[269.36] to review, we want to make sure we have
+[271.20] a sweep of a higher time frame candle
+[273.20] and then an inversion, right? As you can
+[275.44] see, we sweep out the previous candle's
+[277.28] high and then we have an inversion. Now,
+[279.36] if we have SMT here, that would be an
+[281.60] even better confluence, but we do not in
+[283.68] this case. So, let's get into another
+[285.68] example.
+[287.44] So, here we are in our next example. You
+[289.28] can see we've had a nice reversal lower
+[291.20] running out these consolidation lows on
+[293.20] the left with multiple candles of
+[295.28] expansion. We could look to see a new
+[297.04] phase of price. Let's see what happens
+[299.12] here. If we're going to want to look for
+[300.72] an inversion, what do we want to see? A
+[302.64] sweep of this previous low or with SMT
+[305.52] and then inversion.
+[308.08] You can see we do get the sweep of that
+[309.84] previous low right here. Now, do we get
+[311.68] an inversion? You can see there are
+[313.20] multiple fair value gaps here. So, in
+[314.96] this case, I want to use all of those
+[316.32] fair value gaps and treat it like one
+[318.00] big fair value gap. And you can see we
+[321.20] do not go and just close through it. So,
+[323.92] this is a case where when we fail to
+[325.84] have a nice V-shaped reversal, this is
+[327.92] where I want to avoid price. Even if
+[330.16] this was to work out, price is just
+[332.24] consolidating here. And many times when
+[334.40] price does run higher, it's just running
+[336.16] out the highs of the consolidation to
+[338.16] then go lower. So, even if this goes
+[340.00] higher, I'm not interested in this type
+[341.68] of move because it is not meeting the
+[344.00] requirements for my model. So, just to
+[346.48] review, this is something that if I do
+[348.48] see it, I'm going to avoid it because it
+[350.40] is not high probability for me and I'd
+[352.40] want to see another run of the lows
+[354.00] before a move higher. So, here we are in
+[356.24] our next example. We are on gold on the
+[358.32] 3minut chart with the 30-inut candles on
+[360.64] the indicator here. Now, what do we
+[362.40] notice here? Well, we are in a bearish
+[365.12] move here in a consolidation. So, I want
+[367.44] to wait for the consolidation lows to be
+[369.28] taken out before I look to trade to the
+[371.28] highs as my phases of price videos talk
+[374.16] about. Let's wait for these lows to get
+[376.16] ran out. And there they get ran out. So
+[378.64] we could be looking for an inversion to
+[380.48] trade this higher as we have swept out
+[382.32] this previous candle's low. Now what do
+[384.48] we notice about this specific example?
+[386.64] Do we have a small wick here that
+[388.40] supports expansion? We do not. Right? We
+[390.88] are not opening up around this low
+[393.12] making a small wick and then looking to
+[394.96] trade that higher. Right? It is opening
+[397.20] trading higher first and then expanding
+[399.52] lower. This is a bearish candle. So, if
+[401.60] we are going to form a reversal, I'm not
+[403.52] expecting it to be an expansion candle.
+[405.52] I'm just expecting it to go back towards
+[407.20] its opening price and form a reversal
+[409.20] candle. So, where would our inversion
+[411.28] be? Once again, these two fair value
+[413.44] apps right here added together. Let's
+[415.60] see what happens.
+[417.92] And you can see we do get a pretty nice
+[420.00] close through that area. Now, this is a
+[422.24] case where yes, on that closure, I could
+[424.40] look to trade it, but I might as well
+[426.08] just wait for the open of the new higher
+[428.00] time frame candle. So from here I could
+[430.24] look to trade it in here on the open of
+[432.40] the next higher time frame candle allow
+[434.16] my stop loss to reach into that fair
+[435.76] value up and then look towards the other
+[437.20] side of the range or for 2 R or I could
+[439.36] look for a continuation that follows.
+[442.80] So you can see here we get another
+[444.80] continuation here. So you can see we
+[446.80] reach into an important level this fair
+[448.48] value gap and then closure over. So if
+[451.60] you want to use and what I'm talking
+[453.52] about here is an inversion in place of a
+[456.08] change in the state of delivery that is
+[457.68] something you can do and still look to
+[459.36] trade the continuation or you can also
+[461.68] look to trade the reversal. But the main
+[463.68] lesson I want you to pull from this is
+[465.12] when we have a large opposing run
+[467.12] generally that expansion is going to
+[468.40] wait for the next higher time frame
+[469.92] candle. Let's see how this plays out.
+[472.80] And you can see we do get that move
+[474.40] higher and either of those entries would
+[476.64] have worked. So just to review, we have
+[479.04] the sweep of the previous low in
+[480.88] inversion. This candle doesn't support
+[483.04] expansion as it has a large opposing
+[485.12] run. So then generally I want to wait
+[487.04] for the open of the next higher time
+[488.64] frame candle to either just take an
+[490.48] entry or look for a continuation entry.
+[494.16] Let's go through a whole top down
+[495.60] example here where we will get a daily
+[497.68] bias and then align that with a lower
+[499.92] time frame fractal model and then use
+[502.08] inversions with that. So here you can
+[504.16] see we have multiple days of expansion
+[506.32] and a consolidation. After 3 days of
+[508.72] expansion, I don't want to trade in the
+[510.64] same direction. So I will generally be
+[512.48] looking for a reversal. Now we're going
+[514.40] to form a reversal here. Where are we
+[516.00] going to form that? Off of previous day
+[518.40] high. So looking for a previous day high
+[520.96] sweep. Let's see if we get that on the
+[523.04] 4hour chart here. So here you can see on
+[525.52] the 4hour chart we get a nice candle to
+[528.08] closure sweeping out a previous high. So
+[530.24] we have a candle to closure at a point
+[532.08] of interest and a shallow wick
+[533.92] supporting expansion lower on the daily
+[536.16] candle. So what would we want to look
+[538.16] for? Well, with the 4hour chart, we can
+[540.32] go down to the 15-minute chart to look
+[542.00] for our fractal model. And we can use
+[543.92] inversions on the lower time frame here.
+[546.00] So here we are on the 15-minute time
+[547.84] frame with the 4hour chart on the right.
+[549.92] And what do we notice? If we wanted to
+[551.92] look for that reversal on the previous
+[553.92] day high, we could have used this
+[555.60] inversion right here with this small
+[557.36] fair value gap. or we can be looking for
+[559.60] a continuation. Now, what would this
+[561.68] continuation look like? Well, we can use
+[563.60] an inversion as well. So, let's see if
+[565.60] we get a continuation in this next
+[567.04] candle. Well, it's kind of hard to trust
+[569.28] it, right? If this sells down, you want
+[570.88] to see a consolidation or retracement.
+[572.72] That's a V-shaped reversal. So, ideally,
+[574.72] we make a new high. This is a
+[576.24] consolidation. So, what could we
+[578.48] anticipate? A new candle too once we get
+[581.12] this closure. So, here we get this
+[583.60] closure. We have a new high and we make
+[586.72] a new high here. So if we're going to
+[589.04] remain in respect to this high and trade
+[590.80] lower, we'd want to see a reversal here
+[592.64] forming a candle too. And then what
+[594.64] could we use? An inversion. So marking
+[597.60] out those fair value gaps or the series
+[599.28] of fair value gaps using that as our
+[601.20] change in the state of delivery. Do we
+[603.04] get a closure through those levels?
+[606.56] And no, we do not. Right? So we save
+[608.72] oursel a loss here because we're waiting
+[610.88] for a closure through both of those fair
+[612.80] value gaps. And that's why I would use
+[614.64] the series of fair value gaps and not
+[616.56] just one. So what do we have now? We now
+[619.36] have a new high being made. So what do
+[622.24] we have? One fair value gap. So we keep
+[625.12] the same idea, right? We're still in
+[627.20] respect to around 50% of this higher
+[629.52] time frame candle. Let's see if we get
+[631.12] an inversion here.
+[633.92] No, not yet. We'd kind of need it to
+[635.52] close in one more candle. There it goes.
+[637.44] Right. So, the one rule I have is if it
+[640.72] rejects it once, that's fine as long as
+[642.56] we quickly close back below it. But if
+[644.64] we continue to fail and form a
+[646.40] consolidation, then I want to see a new
+[648.16] high. Now, this is okay for me. So, we
+[650.48] can go ahead and take an entry and put
+[652.72] our stop on that swing point or on the
+[654.96] high and then look for 2R. We're back
+[657.20] towards that lower end of the range. And
+[660.64] you can see we do go ahead and get 2 R.
+[663.12] We almost get stopped out there. So that
+[665.20] is something to be mindful of in terms
+[666.96] of stop-loss placement. But this is a
+[668.96] whole top down example where if we go
+[670.96] look at the daily chart one more time,
+[672.96] what do we have? We have price with
+[675.20] three expansion candles into a point of
+[677.36] interest. And then the next day we are
+[679.36] forming a reversal because we have a
+[681.20] small opposing run. So we go down to the
+[683.36] hourly. Look at this structure in here.
+[685.60] You can see we have a small opposing run
+[687.52] which is the most important part as this
+[689.68] candle supports expansion. a small
+[691.76] opposing run, a change in the state of
+[693.36] delivery, and then this is a
+[694.64] continuation lower. Now, I just showed
+[696.72] how we use the 4 hour and 15 minute
+[699.36] model with this, but you can also use,
+[701.76] for instance, the hourly and 5minute
+[704.40] model in here. You can see we have a
+[705.76] candle 3 closure in here, which is
+[707.52] actually an ideal candle 3 closure, and
+[709.44] you could be looking to short in here.
+[711.36] So, we go also take a look at that on
+[713.20] the 5-minute chart, and you can see how
+[715.36] that works. And you could also use an
+[717.04] inversion in there. So, with that, I
+[720.16] hope you found this video helpful. If
+[722.08] you have any questions or comments,
+[723.84] please leave them below and I'll look to
+[725.44] get to those. But just in review, if
+[728.16] you're looking to trade inversions, you
+[729.84] want to be doing that in a higher time
+[731.68] frame expansion candle. So, you want a
+[733.84] candle with a small wick. If it has a
+[735.84] large wick, it's okay to look at it, but
+[737.52] generally that expansion happens in
+[739.20] candle 3. And with that, you want to see
+[742.08] a nice V-shaped reversal and ideally
+[744.64] SMT. I hope you guys have a great rest
+[746.88] of your day and I'll see you guys next
+[748.08] time. Have a good one.

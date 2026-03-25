@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-03-23T20:20:43.435540+00:00",
+  "artifact_type": "pine_candidate_event_contract",
+  "spec_key": "daily_bias_framework",
+  "trade_model": {
+    "slug": "daily_bias_framework",
+    "name": "Daily Bias Framework"
+  },
+  "script_title": "TTrades Daily Bias Framework [Draft]",
+  "script_output_path": "results\\pine_scripts\\daily_bias_framework.pine",
+  "alert_titles": [
+    "Daily bias state changed",
+    "Reversal confirmed",
+    "Continuation bias active"
+  ],
+  "rule_state_fields": [
+    "referenceRangeHigh",
+    "referenceRangeLow",
+    "referenceRangeEquilibrium",
+    "previousRangeInteractionState",
+    "dailyBiasState",
+    "wickExpectationState",
+    "equilibriumRespectState",
+    "alignmentState",
+    "lowerTimeframeConfirmationState",
+    "phaseShiftWarningState",
+    "biasTargetModel",
+    "continuationPoiTop",
+    "continuationPoiBottom",
+    "reversalAnchorPrice",
+    "targetPrimaryPrice",
+    "targetSecondaryPrice"
+  ],
+  "required_event_fields": [
+    "trade_model",
+    "chart_context",
+    "annotation",
+    "candidate_signal"
+  ],
+  "candidate_signal_required_fields": [
+    "timestamp",
+    "side",
+    "stop_price",
+    "target_price"
+  ],
+  "default_event": {
+    "profile_slug": "ttrades_curriculum",
+    "topic": "bias",
+    "trade_model": "daily_bias_framework",
+    "relation_type": "bias_framework",
+    "chart_context": {
+      "setup_variant": "daily_bias_framework",
+      "source_kind": "tradingview_pine_alert",
+      "timeframe_scope": [],
+      "session_scope": []
+    },
+    "annotation": {
+      "fired_alert": "",
+      "rule_states": {
+        "referenceRangeHigh": "",
+        "referenceRangeLow": "",
+        "referenceRangeEquilibrium": "",
+        "previousRangeInteractionState": "",
+        "dailyBiasState": "",
+        "wickExpectationState": "",
+        "equilibriumRespectState": "",
+        "alignmentState": "",
+        "lowerTimeframeConfirmationState": "",
+        "phaseShiftWarningState": "",
+        "biasTargetModel": "",
+        "continuationPoiTop": "",
+        "continuationPoiBottom": "",
+        "reversalAnchorPrice": "",
+        "targetPrimaryPrice": "",
+        "targetSecondaryPrice": ""
+      }
+    },
+    "candidate_signal": {
+      "timestamp": "",
+      "side": "",
+      "stop_price": "",
+      "target_price": "",
+      "quantity": 1.0,
+      "session": "",
+      "thesis": ""
+    }
+  }
+}

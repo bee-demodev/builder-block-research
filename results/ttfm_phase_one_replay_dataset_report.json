@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-03-24T19:32:43.583923+00:00",
+  "dataset_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_teacher_visual_dataset.jsonl",
+  "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_phase_one_replay_dataset.jsonl",
+  "report_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_phase_one_replay_dataset_report.json",
+  "summary": {
+    "teacher_row_count": 50,
+    "teacher_case_count": 10,
+    "phase_one_case_count": 2,
+    "exported_case_count": 0,
+    "exported_case_refs": [],
+    "skipped_case_counts": {
+      "not_fully_aligned": 2,
+      "missing_bars_path": 0,
+      "missing_bars_file": 0,
+      "missing_anchor_timestamp": 0,
+      "empty_bars": 0,
+      "missing_anchor_bucket": 0
+    },
+    "timeframe_stack": {
+      "bias": "D",
+      "structure": "60",
+      "execution": "5"
+    },
+    "phase_one_primary_trade_model": "daily_bias_framework",
+    "phase_one_execution_spec": "daily_bias_c123_map"
+  }
+}

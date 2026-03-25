@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-03-24T20:23:18.146158+00:00",
+  "summary": {
+    "row_count": 75,
+    "input_weak_row_count": 75,
+    "input_window_row_count": 75,
+    "audio_clip_job_count": 75,
+    "skipped_missing_window_count": 0,
+    "ready_for_weak_training_count": 55,
+    "eligible_for_training_count": 55,
+    "review_status_counts": {
+      "missing_frame": 5,
+      "needs_label_review": 11,
+      "needs_teacher_review": 4,
+      "ready_for_weak_training": 55
+    },
+    "audio_clips_extracted_count": 0,
+    "audio_clips_skipped_existing_count": 75,
+    "audio_clips_missing_video_count": 0
+  }
+}

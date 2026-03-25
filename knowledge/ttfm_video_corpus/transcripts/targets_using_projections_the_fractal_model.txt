@@ -1,0 +1,301 @@
+[11.36] How's it going everyone? In this video,
+[13.04] we are going to talk about projections
+[15.12] specifically within my fractal model and
+[17.68] how they are used. They are mechanical
+[20.00] targets and I personally use them as a
+[22.16] confluence to existing liquidity
+[24.48] targets. Let's get into the PDF. So, the
+[27.12] first thing you're going to have to do
+[28.16] is grab a Fibonacci tool and then apply
+[30.88] these settings. So, we'll want to mark
+[32.64] out a 1, 0, 1, -2, -2.5, -4, and -4.5.
+[40.32] You can always add levels that you find
+[42.64] work for you. These are just the ones
+[44.40] that I use. So, how do we actually mark
+[46.32] out a projection? So, it's always going
+[48.72] to be within candle 2 at the reversal
+[51.36] point. So here you can see we have the
+[53.44] change in the state of delivery or the
+[55.52] change in the state of delivery here in
+[56.88] the bearish scenario and I'm going to
+[58.72] find the manipulation leg. So once we
+[61.36] have a change in the state of delivery,
+[62.96] I'm going to look for that low and then
+[65.36] I'm going to find the high that made
+[66.80] that low, that whole manipulation leg,
+[68.88] and I'm going to go ahead and mark that
+[70.32] out. From there, I'm going to draw my
+[72.72] projection. I'm going to anchor it to
+[74.64] the low and then draw it to the high
+[76.24] that made that low. By doing that, I'll
+[78.40] be able to draw out a projection that
+[80.56] then gives me targets for this move
+[82.32] based off the manipulation leg. So, by
+[84.80] removing that manipulation leg and
+[86.40] cleaning it up, you can see we are just
+[88.16] measuring that high that made that low
+[90.08] for a bullish scenario or the low that
+[92.32] made that high in the bearish scenario.
+[94.64] This is going to provide targets for
+[96.24] this move higher. Now, with a average or
+[98.96] normal size manipulation leg, I'm
+[100.72] generally looking for price to reach to
+[102.00] the -2 or -2.5. if price is going to
+[105.04] expand the -4 to4.5.
+[108.40] So I will look for liquidity targets in
+[110.88] that area to be paired with and I'm
+[112.96] going to use these projections as a
+[114.64] confluence. Now let's say we have a
+[116.96] large manipulation leg. So here you can
+[118.96] see this opposing run or the change in
+[121.28] the stage delivery is very large. When I
+[124.00] have a large manipulation leg, I'm not
+[126.16] looking for price to reach for that -2
+[128.00] to -2.5. That is just too much range.
+[130.80] I'm then going to use the -1 as my
+[133.12] target. And I personally love to use
+[134.88] this on the hourly chart for the daily
+[136.88] range. So now that you understand how to
+[139.04] mark out these projections, where they
+[141.12] go, let's go into Trading View and go
+[143.20] over a few examples of this so you can
+[145.04] actually understand what is going on. So
+[147.60] here we are with our first example. And
+[149.52] if you take a look, we have Bitcoin on
+[151.68] the 4hour chart paired with the weekly
+[154.16] chart looking at the fractal model. So
+[156.40] we have a candle to closure as price has
+[158.64] swept out its previous week's low and
+[160.48] [clears throat] closed back inside. We
+[162.16] have a change in the state of delivery.
+[164.40] So as we discussed in the PDF, what are
+[166.72] we going to look for? We're going to
+[168.32] find the low. We're going to find the
+[169.92] high that made that low. And that is our
+[171.68] manipulation leg. We're then going to
+[173.36] take our Fibonacci retracement tool,
+[175.28] anchor from the low, drag it to the high
+[177.60] that made the low, and with those
+[179.68] settings that we talked about in the
+[180.96] PDF, we will project out targets for
+[183.76] this move. So, cleaning up the chart a
+[185.84] little, you may also notice how these
+[187.76] projections also align with liquidity
+[190.00] targets. We have equal highs sitting
+[192.00] here as well as a previous high sitting
+[194.56] here. So, in this next candle, this next
+[197.44] week, we could be looking for price to
+[199.20] trade into those liquidity targets using
+[201.44] the projections as a confluence.
+[204.72] And there you can see we hit our first
+[206.40] projection target as well as liquidity
+[208.64] point. And if we get a nice closure on
+[210.56] this next week's candle, then we can
+[212.24] look for the fourth candle in the swing
+[214.48] to trade higher as well.
+[217.28] And you can see with that good closure,
+[219.04] we're looking for a shallow wick on this
+[221.20] weekly candle to finish trading into the
+[223.04] highs.
+[224.80] And there you can see we have hit our
+[226.64] targets as well as our projections. But
+[229.04] like I said in the PDF, I prefer to use
+[231.44] projections as a confluence to a target.
+[233.76] But you can also use them alone as if
+[235.68] you do not have liquidity in a certain
+[237.44] area, you can use those projections as a
+[239.84] target. Here we are in our next example
+[242.08] and we are on gold on the hourly chart.
+[244.56] Now, if you notice, we have Thursday
+[246.16] forming a nice candle 2 closure with a
+[248.48] large wick and we have a change in the
+[250.56] state of delivery. So, if we're going to
+[252.40] project out targets, where are we going
+[254.08] to do that? Well, it's always going to
+[255.52] be in candle 2 at the reversal. We have
+[258.00] a change in the state of delivery. We'll
+[259.60] find the low. We'll find the series of
+[261.52] candles that made that low or the swing
+[263.12] high that made that low. Mark that out.
+[265.52] Then we'll grab our Fibonacci
+[266.88] retracement, anchor to the low, go to
+[269.36] that swing high, and then now we have
+[271.28] projections for this move. Now, you
+[273.36] notice how the -2 to -2.5 is also lining
+[276.88] up with this previous day's high as well
+[279.44] as the liquidity to the left. So, that
+[282.00] is a good confluence to see. We want to
+[284.48] see that. So, let's see how this plays
+[286.16] out.
+[289.20] And there you can see we go ahead and
+[290.88] hit that target and we go right through
+[292.56] it. So then we could also be looking for
+[294.88] price to trade to the -4 to -4.5.
+[299.04] Let's see what happens. There we go. We
+[301.52] get a nice retracement open low I close
+[304.80] we trade to that max target. So just to
+[307.36] review when we have that candle to
+[309.28] closure or a reversal or a swing point
+[311.84] look for a change in the state of
+[313.20] delivery. Find the manipulation leg.
+[315.60] Mark out the manipulation leg and then
+[317.52] look for targets that align with that.
+[319.84] Or if you are lacking targets,
+[321.52] projections make a great tool for
+[323.36] trading at all-time highs or areas where
+[325.84] you do not have any liquidity resting.
+[328.88] So here we are with our next example. We
+[330.88] are on YM on the 5-minute chart. And if
+[333.60] you're taking a look, we do have a
+[335.28] reversal here, right? It's not very
+[336.96] clean. And if you look, the range is not
+[339.04] very large. So I have pretty low
+[340.80] expectations for this move. But what do
+[342.88] we notice about this manipulation leg?
+[344.72] we have a change in the state of
+[345.92] delivery. So finding the high, finding
+[348.64] the low that made that high, that's
+[350.88] quite the manipulation leg. So if we go
+[352.80] ahead and mark that out and then clean
+[355.68] up the chart, you can see that we have
+[358.08] quite a projection. It's not very
+[360.32] reasonable for late into this New York
+[363.12] session to anticipate YM to just go 500
+[366.24] to 600 points. So this is an example of
+[368.88] when we have a large manipulation leg. I
+[371.60] can use that negative one standard
+[373.04] deviation as a target. So it would be
+[375.68] nice to look back to the left and see if
+[377.76] this lines up with anything. And here
+[379.60] you can see we do have a low that lines
+[381.76] up with that negative one standard
+[383.12] deviation. Let's see how this works out.
+[389.52] And you can see that is where we go and
+[391.36] hit. We take out that low. We hit our
+[393.28] negative one standard deviation. and
+[394.96] then we form a reversal back into the
+[397.20] range. So this is an example of when I
+[400.32] have a large manipulation leg, I'm not
+[402.72] really looking for price to go to the
+[404.64] -2, -2.5 or the -4. I'm going to look
+[408.64] and lower my expectations and look for
+[410.64] that -1 standard deviation. So here we
+[413.12] are with our next example and you can
+[414.88] see we have formed a candle 2 closure.
+[417.12] We have a change in the state of
+[418.48] delivery and we have failure swings on
+[420.48] the left. But what do we notice about
+[422.08] this manipulation leg? It is quite
+[424.40] large. We mark out the low. We find the
+[426.80] high that made that low. And we look at
+[428.64] the range. Our range or our target is
+[431.28] right here. And our manipulation leg is
+[433.60] almost half of that. That's quite a
+[435.44] large manipulation leg. So marking out
+[437.52] our projections. What would we want to
+[439.60] do here? We'd want to focus on targeting
+[441.68] that -1 standard deviation instead of
+[444.16] looking for price to expand all the way
+[445.84] to the -4 because that's just an absurd
+[448.16] move. So coming back in, let's see what
+[450.72] happens here.
+[453.76] You can see we have a nice open low,
+[455.92] high close, and we trade right through
+[457.76] the negative one. Now, if we're not
+[459.28] going to reverse off this high, that's
+[460.96] when we can look for price to expand
+[462.96] further to our next targets.
+[466.80] You can see there we get an expansion
+[468.40] into that -2 to -2.5. And let's see how
+[471.28] this daily candle closes. So now we have
+[474.16] a candle 2 closure. We have yet to form
+[476.40] a change in the state of delivery. So we
+[478.08] need to wait for that.
+[480.56] And now that we have that change in the
+[481.84] state of delivery, what can we look for?
+[483.76] Well, we can go ahead and mark out the
+[485.52] manipulation leg. So, from this high to
+[487.92] the low that made that high. And then I
+[490.32] can go ahead and mark that out with my
+[491.84] projections. Now, what I can also do is
+[494.40] if I use my indicator, I can just go
+[496.48] into the settings here and I will turn
+[498.64] on the projections. And this will allow
+[500.72] me to do the exact same thing without
+[502.64] having to mark them up. You can see we
+[504.96] get our projections on the screen. What
+[506.80] do we notice about this manipulation
+[508.32] leg? It is quite large. This is where am
+[511.60] I really expecting this current daily
+[513.28] range to go expand all the way down
+[515.28] here? Probably not. So, this is where I
+[517.84] can look for price to expand to the -1
+[520.48] within this current daily range. Let's
+[522.40] see how this works out.
+[524.96] There we hit our negative one. Now, if
+[526.96] we're going to get a continuation to
+[528.24] these lows, we have all these failure
+[530.32] swings that lines up with the -2 to
+[532.80] -2.5. So, then that gives me a
+[535.12] confluence to the target for this
+[536.64] downside move.
+[539.36] And you can see there we go and run out
+[541.60] these lows as well as hit all of these
+[544.40] standard deviation projection targets.
+[546.80] So here we are in our last and final
+[548.80] example and let's take a look at a few
+[551.20] scenarios. So what do we notice about
+[553.20] this reversal right here? If we take a
+[555.36] look at the range, it is quite a large
+[557.60] manipulation leg. So what would I want
+[559.92] to be targeting in this scenario? Well,
+[562.16] the negative one, right? And so we hit
+[564.40] our negative one, we get a
+[565.92] consolidation. We're starting to form a
+[567.84] little reversal off of that. Now let's
+[569.84] play through this and see what happens
+[571.76] and how projections can add some
+[573.60] confluence. So here we get a reversal.
+[576.56] Do we get the closure? We do. So taking
+[579.04] a look at this, what do we notice? We
+[580.72] have our -2 to -2.5 just before that
+[583.92] low. Now, when this occurs, I like to
+[586.16] take my profit at that liquidity point
+[589.28] prior to the final target because a lot
+[591.68] of times price will take out this low
+[593.28] and then if it's consolidating, go back
+[595.36] into the range. So, I'll go ahead and
+[597.92] see how does this work out. We go and
+[600.80] hit that target. We open up a new candle
+[604.40] and we go and hit that final target. But
+[606.96] that's just a scenario where most of the
+[608.72] time I'm going to take my profit here
+[610.80] and not be greedy to hold for it extra
+[612.72] few points and give up the entire move.
+[615.28] Now let's see if we form a reversal in
+[616.96] the other direction. We do. And what do
+[619.76] we notice about these targets? Right,
+[622.32] the -1 aligns with some equal highs here
+[625.20] and the -2 to -2.5 lines up with these
+[628.00] failure swing highs here. Now, if price
+[630.32] is going to remain in a consolidation,
+[632.24] this is where I'm going to want to
+[633.44] actually pay attention to this negative
+[634.96] one target because it's the liquidity
+[636.72] point internal to this range. But let's
+[638.80] see how this works out.
+[641.12] So, we go and we do not reverse off this
+[643.28] high. So, I could be looking for price
+[644.88] to trade higher into the highs. And this
+[647.36] is where we actually are currently. So,
+[649.60] we'll see if this high eventually does
+[651.36] get taken out. But that is what I would
+[653.04] be looking for. The projections are a
+[654.80] confluence to this target here. Now, I
+[657.36] hope you enjoyed this video. If it does
+[658.96] make sense to you, please like and
+[660.80] subscribe. And if you have any
+[661.92] questions, leave them in the comment
+[663.44] section below. With that, I hope you
+[665.36] have a great rest of your day and I'll
+[666.48] see you guys next time. Have a good one.

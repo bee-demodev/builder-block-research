@@ -1,0 +1,437 @@
+{
+  "generated_at": "2026-03-24T19:33:52.796559+00:00",
+  "framework_slug": "ttfm",
+  "profile_slug": "ttrades_curriculum",
+  "brain_type": "setup_scorer",
+  "status": "ok",
+  "failed_optional_stages": [],
+  "video_corpus_stage": {
+    "generated_at": "2026-03-24T19:32:37.778034+00:00",
+    "channel_inventory": {
+      "inventory_output": "knowledge/ttfm_video_corpus/channel_inventory.json",
+      "entry_count": 181,
+      "trade_review_candidate_count": 9,
+      "category_counts": {
+        "chart_lesson": 4,
+        "trade_example": 1,
+        "trade_review": 2,
+        "weekly_recap": 2
+      }
+    },
+    "trade_review_manifest": {
+      "manifest_output": "knowledge/ttfm_video_corpus/trade_review_video_manifest.json",
+      "video_count": 9
+    },
+    "active_manifest": {
+      "manifest_output": "knowledge/ttfm_video_corpus/video_manifest.json",
+      "video_count": 15,
+      "partition_counts": {
+        "seed_curriculum": 6,
+        "trade_review": 9
+      }
+    },
+    "corpus_manifest": {
+      "manifest_output": "knowledge/ttfm_video_corpus/video_manifest.json",
+      "chunk_output": "knowledge/ttfm_video_corpus/chunks.jsonl",
+      "video_count": 15,
+      "transcript_fetch_count": 0,
+      "transcript_reuse_count": 15,
+      "synthetic_transcript_count": 1
+    },
+    "video_downloads": {
+      "video_count": 15,
+      "status_counts": {
+        "skipped_exists": 15
+      },
+      "video_dir": "knowledge\\ttfm_video_corpus\\videos",
+      "overwrite": false
+    },
+    "visual_windows": {
+      "windows_output": "knowledge/ttfm_video_corpus/visual_windows.jsonl",
+      "report_output": "knowledge/ttfm_video_corpus/visual_windows_report.json",
+      "window_count": 75,
+      "video_count": 15,
+      "with_local_video_count": 15,
+      "missing_chunk_video_count": 0,
+      "checkpoint_counts": {
+        "closure": 15,
+        "confirmation": 15,
+        "context": 15,
+        "outcome": 15,
+        "sweep": 15
+      },
+      "frame_status_counts": {
+        "extract_failed": 5,
+        "extracted": 70
+      },
+      "extract_frames": true
+    },
+    "weak_visual_dataset": {
+      "dataset_output": "results/ttfm_video_weak_visual_dataset.jsonl",
+      "report_output": "results/ttfm_video_weak_visual_dataset_report.json",
+      "row_count": 75,
+      "window_count": 75,
+      "video_count": 15,
+      "ready_for_weak_training_count": 70,
+      "weak_labeled_row_count": 59,
+      "skipped_missing_frame_count": 5,
+      "checkpoint_counts": {
+        "closure": 15,
+        "confirmation": 15,
+        "context": 15,
+        "outcome": 15,
+        "sweep": 15
+      },
+      "frame_status_counts": {
+        "extract_failed": 5,
+        "extracted": 70
+      },
+      "review_status_counts": {
+        "missing_frame": 5,
+        "ready_for_weak_training": 70
+      },
+      "active_label_counts": {
+        "breaker": 13,
+        "candle_2_closure": 12,
+        "candle_3_closure": 8,
+        "equilibrium": 12,
+        "fair_value_gap": 29,
+        "invalidation": 16,
+        "liquidity_sweep": 14,
+        "order_block": 26,
+        "point_of_interest": 10,
+        "protected_swing": 7,
+        "top_down_alignment": 1,
+        "wick_logic": 12
+      }
+    },
+    "validation": {
+      "ok": true,
+      "corpus_dir": "knowledge\\ttfm_video_corpus",
+      "video_count": 15,
+      "chunk_count": 162,
+      "manifest_path": "knowledge\\ttfm_video_corpus\\video_manifest.json",
+      "chunks_path": "knowledge\\ttfm_video_corpus\\chunks.jsonl"
+    }
+  },
+  "embedding_backend": "google_gemini",
+  "text_embedding_stage": {
+    "status": "refreshed",
+    "expected_count": 162,
+    "generated_at": "2026-03-24T19:32:41.427243+00:00",
+    "model": "models/gemini-embedding-001",
+    "output_dimensionality": 768,
+    "normalization": "l2",
+    "item_count": 162,
+    "index_path": "knowledge\\ttfm_video_corpus\\google_embedding_index.json",
+    "ok": true,
+    "chunks_path": "knowledge\\ttfm_video_corpus\\chunks.jsonl"
+  },
+  "visual_embedding_stage": {
+    "status": "reused",
+    "expected_count": 75,
+    "exists": true,
+    "manifest_path": "knowledge/ttfm_video_corpus/visual_embedding_manifest.json",
+    "item_count": 75,
+    "model": "models/gemini-embedding-2-preview",
+    "index_path": "knowledge\\ttfm_video_corpus\\visual_embedding_index.json"
+  },
+  "visual_teacher_loop": {
+    "generated_at": "2026-03-24T19:32:45.917638+00:00",
+    "sync_applied": false,
+    "teacher_dataset": {
+      "row_count": 50,
+      "mapped_case_count": 2,
+      "fully_aligned_case_count": 0,
+      "alignment_status_counts": {
+        "market_context_only": 10,
+        "unmapped": 40
+      },
+      "mapping_provenance_counts": {
+        "tradingview_validation_proxy": 10,
+        "unmapped": 40
+      }
+    },
+    "review_queue": {
+      "case_count": 10,
+      "alignment_status_counts": {
+        "market_context_only": 2,
+        "unmapped": 8
+      },
+      "recommended_action_counts": {
+        "find_alternate_chart_evidence": 2,
+        "identify_symbol_and_anchor_timestamp": 8
+      },
+      "source_image_kind_counts": {
+        "source_article_image": 10
+      }
+    },
+    "weak_promotions": {
+      "input_row_count": 75,
+      "promoted_row_count": 0,
+      "pending_review_count": 70,
+      "blocked_review_status_count": 75,
+      "blocked_contradiction_count": 0,
+      "missing_screenshot_count": 0,
+      "missing_label_count": 0,
+      "review_status_counts": {
+        "missing_frame": 5,
+        "ready_for_weak_training": 70
+      },
+      "contradiction_status_counts": {
+        "unreviewed": 75
+      }
+    },
+    "weak_promotion_queue": {
+      "row_count": 75,
+      "ready_to_promote_count": 0,
+      "review_candidate_count": 59,
+      "blocked_contradiction_count": 0,
+      "missing_frame_count": 0,
+      "recommended_action_counts": {
+        "collect_more_label_evidence": 16,
+        "review_for_teacher_promotion": 59
+      },
+      "priority_band_counts": {
+        "high": 32,
+        "low": 16,
+        "medium": 27
+      }
+    },
+    "phase_one_replay_dataset": {
+      "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_phase_one_replay_dataset.jsonl",
+      "report_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_phase_one_replay_dataset_report.json",
+      "phase_one_case_count": 2,
+      "exported_case_count": 0,
+      "skipped_case_counts": {
+        "not_fully_aligned": 2,
+        "missing_bars_path": 0,
+        "missing_bars_file": 0,
+        "missing_anchor_timestamp": 0,
+        "empty_bars": 0,
+        "missing_anchor_bucket": 0
+      }
+    },
+    "visual_model": {
+      "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_visual\\ttfm_visual_pattern_net.pt",
+      "model_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_visual\\ttfm_visual_pattern_net_report.json",
+      "device": "cuda",
+      "label_space_size": 12,
+      "best_epoch": 18,
+      "best_validation_f1": 0.2105263157894737,
+      "best_prediction_threshold": 0.45,
+      "validation_micro_f1": 0.2105263157894737,
+      "validation_micro_precision": 0.12121212121212122,
+      "validation_micro_recall": 0.8,
+      "validation_positive_predictions": 66,
+      "validation_positive_labels": 10,
+      "train_micro_f1": 0.27027027027027023
+    },
+    "review_artifacts": {
+      "dashboard_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_market_context_review_dashboard.html",
+      "override_template_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_market_context_override_templates.json"
+    }
+  },
+  "multimodal_teacher_loop": {
+    "generated_at": "2026-03-24T19:33:49.568928+00:00",
+    "weak_multimodal_dataset": {
+      "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_video_multimodal_dataset.jsonl",
+      "row_count": 75,
+      "input_weak_row_count": 75,
+      "input_window_row_count": 75,
+      "audio_clip_job_count": 75,
+      "skipped_missing_window_count": 0,
+      "ready_for_weak_training_count": 70,
+      "review_status_counts": {
+        "missing_frame": 5,
+        "ready_for_weak_training": 70
+      },
+      "audio_clips_extracted_count": 4,
+      "audio_clips_skipped_existing_count": 71,
+      "audio_clips_missing_video_count": 0
+    },
+    "blended_multimodal_dataset": {
+      "dataset_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_blended_multimodal_dataset.jsonl",
+      "row_count": 125,
+      "teacher_row_count": 50,
+      "weak_row_count": 75,
+      "source_tier_counts": {
+        "teacher": 50,
+        "weak": 75
+      },
+      "review_status_counts": {
+        "missing_frame": 5,
+        "ready_for_weak_training": 70,
+        "teacher_visual_baseline": 50
+      },
+      "contradiction_status_counts": {
+        "not_applicable": 50,
+        "unreviewed": 75
+      },
+      "audio_enabled_row_count": 75,
+      "text_enabled_row_count": 75,
+      "deduped_overlap_count": 0
+    },
+    "multimodal_review_queue": {
+      "queue_output": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ttfm_multimodal_review_queue.json",
+      "row_count": 75,
+      "ready_to_promote_count": 0,
+      "review_candidate_count": 75,
+      "blocked_contradiction_count": 0,
+      "model_disagreement_count": 66,
+      "mean_disagreement_count": 3.613333,
+      "reviewed_row_count": 0,
+      "reviewed_alignment_precision": 0.0,
+      "recommended_action_counts": {
+        "collect_more_multimodal_evidence": 16,
+        "review_model_disagreement": 59
+      },
+      "priority_band_counts": {
+        "high": 59,
+        "low": 11,
+        "medium": 5
+      }
+    },
+    "multimodal_model": {
+      "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_blended_multimodal\\ttfm_blended_multimodal_pattern_net.pt",
+      "model_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_blended_multimodal\\ttfm_blended_multimodal_pattern_net_report.json",
+      "device": "cuda",
+      "brain_type": "setup_scorer",
+      "embedding_backend": "google_gemini",
+      "visual_embedding_model": "models/gemini-embedding-2-preview",
+      "text_embedding_model": "models/gemini-embedding-001",
+      "audio_semantic_mode": "models/gemini-2.0-flash",
+      "label_space_size": 13,
+      "audio_enabled_example_count": 70,
+      "audio_semantic_example_count": 70,
+      "text_enabled_example_count": 120,
+      "best_epoch": 16,
+      "best_validation_f1": 0.4685714285714286,
+      "best_prediction_threshold": 0.41923076923076924,
+      "best_prediction_threshold_mode": "per_label",
+      "best_prediction_thresholds": {
+        "breaker": 0.35,
+        "candle_2_closure": 0.35,
+        "candle_3_closure": 0.35,
+        "equilibrium": 0.5,
+        "fair_value_gap": 0.3,
+        "invalidation": 0.25,
+        "liquidity_sweep": 0.5,
+        "order_block": 0.3,
+        "point_of_interest": 0.5,
+        "protected_swing": 0.55,
+        "top_down_alignment": 0.5,
+        "wick_logic": 0.55,
+        "zone_boundary": 0.45
+      },
+      "validation_micro_f1": 0.4685714285714286,
+      "validation_micro_precision": 0.3203125,
+      "validation_micro_recall": 0.8723404255319149,
+      "validation_positive_predictions": 128,
+      "validation_positive_labels": 47,
+      "validation_average_setup_confidence": 0.1720220446586609,
+      "train_micro_f1": 0.5506329113924051
+    }
+  },
+  "multimodal_model": {
+    "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_blended_multimodal\\ttfm_blended_multimodal_pattern_net.pt",
+    "model_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\ttfm_blended_multimodal\\ttfm_blended_multimodal_pattern_net_report.json",
+    "device": "cuda",
+    "brain_type": "setup_scorer",
+    "embedding_backend": "google_gemini",
+    "visual_embedding_model": "models/gemini-embedding-2-preview",
+    "text_embedding_model": "models/gemini-embedding-001",
+    "audio_semantic_mode": "models/gemini-2.0-flash",
+    "label_space_size": 13,
+    "audio_enabled_example_count": 70,
+    "audio_semantic_example_count": 70,
+    "text_enabled_example_count": 120,
+    "best_epoch": 16,
+    "best_validation_f1": 0.4685714285714286,
+    "best_prediction_threshold": 0.41923076923076924,
+    "best_prediction_threshold_mode": "per_label",
+    "best_prediction_thresholds": {
+      "breaker": 0.35,
+      "candle_2_closure": 0.35,
+      "candle_3_closure": 0.35,
+      "equilibrium": 0.5,
+      "fair_value_gap": 0.3,
+      "invalidation": 0.25,
+      "liquidity_sweep": 0.5,
+      "order_block": 0.3,
+      "point_of_interest": 0.5,
+      "protected_swing": 0.55,
+      "top_down_alignment": 0.5,
+      "wick_logic": 0.55,
+      "zone_boundary": 0.45
+    },
+    "validation_micro_f1": 0.4685714285714286,
+    "validation_micro_precision": 0.3203125,
+    "validation_micro_recall": 0.8723404255319149,
+    "validation_positive_predictions": 128,
+    "validation_positive_labels": 47,
+    "validation_average_setup_confidence": 0.1720220446586609,
+    "train_micro_f1": 0.5506329113924051
+  },
+  "review_queue": {
+    "row_count": 75,
+    "ready_to_promote_count": 0,
+    "review_candidate_count": 75,
+    "blocked_contradiction_count": 0,
+    "model_disagreement_count": 66,
+    "mean_disagreement_count": 3.613333,
+    "reviewed_row_count": 0,
+    "reviewed_alignment_precision": 0.0,
+    "recommended_action_counts": {
+      "collect_more_multimodal_evidence": 16,
+      "review_model_disagreement": 59
+    },
+    "priority_band_counts": {
+      "high": 59,
+      "low": 11,
+      "medium": 5
+    }
+  },
+  "trade_review_readiness": {
+    "corpus_partition": "trade_review",
+    "row_count": 45,
+    "video_count": 9,
+    "model_disagreement_count": 36,
+    "reviewed_row_count": 0,
+    "reviewed_alignment_precision": 0.0,
+    "mean_disagreement_count": 2.488889,
+    "recommended_action_counts": {
+      "collect_more_multimodal_evidence": 16,
+      "review_model_disagreement": 29
+    }
+  },
+  "review_packets": {
+    "packet_count": 5,
+    "source_queue_row_count": 75,
+    "requested_limit": 5
+  },
+  "improvement_plan": {
+    "generated_at": "2026-03-24T19:33:52.754447+00:00",
+    "framework_slug": "ttfm",
+    "profile_slug": "ttrades_curriculum",
+    "brain_type": "setup_scorer",
+    "status": "ok",
+    "next_action": "review_top_disagreements",
+    "pine_status": "deferred",
+    "priority_actions": [
+      {
+        "priority": 1,
+        "action": "review_top_disagreements",
+        "success_metric": "Top disagreement packets are reviewed and corrected.",
+        "details": [
+          "youtube_ttrades_top_down_chart_lessons_2_visual_v1::closure",
+          "youtube_candle_2_closure_foundation_visual_v1::sweep",
+          "youtube_equilibrium_for_expansions_visual_v1::closure"
+        ]
+      }
+    ]
+  },
+  "next_action": "review_top_disagreements",
+  "pine_status": "deferred",
+  "healthy_streak": 0
+}

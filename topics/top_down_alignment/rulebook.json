@@ -1,0 +1,180 @@
+{
+  "topic": "top_down_alignment",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_top_down_analysis",
+      "url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_aligning_candles",
+      "url": "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_easy_daily_bias",
+      "url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "higher_timeframe_sets_direction",
+      "name": "The higher timeframe sets the directional bias and lower timeframes should not override it on their own",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["higher_timeframe_candle_or_structure_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Start from the higher timeframe and classify it as expansion higher, expansion lower, or consolidation before looking for lower-timeframe entries",
+      "confirmationTrigger": "Only keep lower-timeframe directional ideas that agree with the higher-timeframe bias or phase read",
+      "protectedSwingDefinition": "Lower-timeframe protected swings are only high quality when they develop in the same direction as the higher-timeframe intent",
+      "invalidationCondition": "A lower-timeframe pattern is traded as standalone direction even though the higher timeframe is clearly framed the other way or still consolidating",
+      "targetLogic": "Use the higher timeframe to choose the directional objective, then let lower timeframes optimize entry rather than redefine the thesis",
+      "exceptions": [
+        "Countertrend lower-timeframe moves can still occur, but they should be treated as retracements or lower-confidence exceptions rather than default trade direction"
+      ],
+      "evidenceRefs": [
+        "ttrades_top_down_analysis#why_multiple_timeframe_analysis_matters",
+        "ttrades_top_down_analysis#establish_a_higher_timeframe_bias",
+        "ttrades_aligning_candles#bias_always_comes_from_the_higher_timeframe"
+      ],
+      "visualVerificationRefs": [
+        "article:top_down_higher_timeframe_bias_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe phase state",
+        "higher-timeframe directional bias",
+        "lower-timeframe directional setup flag"
+      ],
+      "machineChecks": [
+        "Require a higher-timeframe directional classification before evaluating lower-timeframe entries",
+        "Reject lower-timeframe continuation signals that directly oppose the higher-timeframe bias",
+        "Downgrade all lower-timeframe setups when the higher timeframe is still unresolved consolidation"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "intermediate_timeframe_confirms_structure",
+      "name": "The intermediate timeframe must confirm the higher-timeframe bias with structure, a point of interest, and a directional closure",
+      "timeframeScope": ["higher", "intermediate"],
+      "marketPhasePrecondition": ["higher_timeframe_bias_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "After the higher timeframe sets direction, drop to the intermediate timeframe to map the point of interest and local structure",
+      "confirmationTrigger": "Require an intermediate-timeframe reaction, candle closure, or CISD in the point of interest that agrees with the higher-timeframe bias",
+      "protectedSwingDefinition": "The intermediate timeframe is where new protected swings begin to validate that the higher-timeframe idea is expressing itself structurally",
+      "invalidationCondition": "The intermediate timeframe never confirms at the point of interest or prints structure against the higher-timeframe bias",
+      "targetLogic": "Use the intermediate timeframe to turn the higher-timeframe directional idea into a tradeable structure before refining entry further",
+      "exceptions": [
+        "A very clean higher-timeframe setup can sometimes be traded directly from the intermediate timeframe without a deeper lower-timeframe drill-down"
+      ],
+      "evidenceRefs": [
+        "ttrades_top_down_analysis#define_structure_on_an_intermediate_timeframe",
+        "ttrades_top_down_analysis#bullish_example",
+        "ttrades_easy_daily_bias#using_lower_timeframes_for_confirmation"
+      ],
+      "visualVerificationRefs": [
+        "article:top_down_intermediate_structure_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe bias state",
+        "intermediate-timeframe point of interest flag",
+        "intermediate-timeframe candle closure flag",
+        "intermediate-timeframe CISD proxy",
+        "protected swing proxy"
+      ],
+      "machineChecks": [
+        "Require an intermediate-timeframe point of interest that agrees with higher-timeframe direction",
+        "Require a directional closure or CISD before promoting the setup to execution-ready state",
+        "Flag the setup as pending when higher-timeframe bias exists but intermediate-timeframe structure is still missing"
+      ],
+      "ambiguityNotes": [
+        "The strict first-pass proxy for CISD still needs a cleaner algorithm than the current narrative description"
+      ]
+    },
+    {
+      "id": "lower_timeframe_refines_entry_only_after_alignment",
+      "name": "The lower timeframe is for entry precision only after the higher and intermediate timeframes are already aligned",
+      "timeframeScope": ["intermediate", "lower"],
+      "marketPhasePrecondition": ["higher_and_intermediate_timeframes_aligned"],
+      "direction": "bidirectional",
+      "setupAnchor": "Move to the lower timeframe only after the higher timeframe bias and intermediate-timeframe structure are pointing in the same direction",
+      "confirmationTrigger": "Accept the lower-timeframe entry when it confirms the aligned direction through a protected swing, continuation order block, or similar structure event",
+      "protectedSwingDefinition": "The lower timeframe contributes execution-quality protected swings after alignment, not before it",
+      "invalidationCondition": "The lower timeframe is used to force a trade before the higher and intermediate layers agree, or its structure immediately fails against the aligned direction",
+      "targetLogic": "Use the lower timeframe to improve risk-to-reward and timing while the higher layers continue to define the main target",
+      "exceptions": [
+        "If the structure timeframe already gives a clean entry, a lower-timeframe refinement is optional rather than mandatory"
+      ],
+      "evidenceRefs": [
+        "ttrades_top_down_analysis#refine_entry_on_a_lower_timeframe",
+        "ttrades_top_down_analysis#managing_trades_with_top_down_analysis",
+        "ttrades_top_down_analysis#the_core_principle"
+      ],
+      "visualVerificationRefs": [
+        "article:top_down_lower_timeframe_refinement_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "alignment flag between higher and intermediate timeframes",
+        "lower-timeframe protected swing proxy",
+        "lower-timeframe continuation structure proxy"
+      ],
+      "machineChecks": [
+        "Gate lower-timeframe entry logic behind an explicit higher-plus-intermediate alignment flag",
+        "Treat lower-timeframe structure as execution refinement instead of independent direction selection",
+        "Invalidate the refined entry when lower-timeframe structure immediately breaks against the aligned thesis"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "aligned_expansion_candles_define_clean_trend",
+      "name": "A clean trend requires aligned expansion-supporting candles across at least two timeframes",
+      "timeframeScope": ["higher", "intermediate", "lower"],
+      "marketPhasePrecondition": ["multi_timeframe_candles_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Check whether the parent candles across the active timeframe stack all support expansion with small opposing wicks and directional closes",
+      "confirmationTrigger": "Treat the trend as clean when at least two timeframes support expansion in the same direction; treat three aligned timeframes as the ideal trend case",
+      "protectedSwingDefinition": "Protected swings are more likely to extend cleanly when the parent candles above them are all aligned for expansion",
+      "invalidationCondition": "One of the parent candles prints a large opposing wick or otherwise fails to support expansion, breaking the alignment stack",
+      "targetLogic": "Press continuation expectations when multiple timeframes are aligned and reduce expectations when one of the parent candles stops supporting expansion",
+      "exceptions": [
+        "A single lower-timeframe trend can still occur without full stack alignment, but it should be treated as weaker than the multi-timeframe version"
+      ],
+      "evidenceRefs": [
+        "ttrades_aligning_candles#aligning_expansion_candles_across_timeframes",
+        "ttrades_aligning_candles#trading_candle_three_for_continuation",
+        "ttrades_aligning_candles#why_multi_timeframe_alignment_matters_most"
+      ],
+      "visualVerificationRefs": [
+        "article:top_down_aligned_expansion_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe expansion-support flag",
+        "intermediate-timeframe expansion-support flag",
+        "lower-timeframe expansion-support flag"
+      ],
+      "machineChecks": [
+        "Require at least two expansion-supporting timeframe flags for the clean-trend classification",
+        "Elevate the setup quality when all three monitored timeframes align",
+        "Downgrade or defer the setup when any parent timeframe prints a non-expansion-supporting candle"
+      ],
+      "ambiguityNotes": [
+        "The first strict numeric rule for what makes a candle expansion-supporting still depends on the wick-logic thresholds"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What is the best first explicit proxy for CISD so intermediate-timeframe confirmation can be scored without discretionary chart reading?",
+    "How many alignment failures across the stack should immediately cancel a setup instead of merely downgrading it?"
+  ]
+}

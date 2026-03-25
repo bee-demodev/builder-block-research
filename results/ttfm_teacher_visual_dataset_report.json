@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-03-24T19:32:43.569300+00:00",
+  "summary": {
+    "row_count": 50,
+    "checkpoint_count": 70,
+    "skipped_missing_screenshot_count": 20,
+    "alignment_status_counts": {
+      "market_context_only": 10,
+      "unmapped": 40
+    },
+    "mapping_provenance_counts": {
+      "tradingview_validation_proxy": 10,
+      "unmapped": 40
+    },
+    "mapped_case_count": 2,
+    "fully_aligned_case_count": 0,
+    "trade_model_proxy_case_count": 2
+  }
+}

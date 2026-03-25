@@ -1,0 +1,282 @@
+[10.88] How's it going everyone? This video is
+[12.72] going to be about how the change in the
+[14.40] state of delivery confirms swing points.
+[16.80] So what is the change in the state of
+[18.24] delivery? The change in the state of
+[19.68] delivery is the order block formation
+[21.52] that forms when trend changes. So here
+[24.32] you can see we have a bearish trend
+[26.40] right here. we change the trend or the
+[28.80] trend shifts to bullish. Right here we
+[31.12] have a bullish trend and then it shifts
+[32.96] to bearish. What defines a change in the
+[35.52] state of delivery is price reaching into
+[37.52] an important level sweeping out a low or
+[40.00] reaching into a fair value gap and then
+[41.84] closing through the series of candles
+[43.68] that wretch into that important level.
+[46.08] Now, how do I use a change in the state
+[48.24] of delivery? Here you can see I'm going
+[50.40] to be looking for a change in the state
+[51.84] of delivery on the lower time frame in
+[54.32] combination with a swing point. So, when
+[56.56] I have a candle 2 or a candle 3 closure
+[59.12] on the higher time frame, I'm going to
+[60.96] look inside that higher time frame
+[62.56] candle and make sure it has a change in
+[64.48] the state of delivery. If it doesn't
+[66.40] have a change in the state of delivery,
+[68.00] I'm not going to be looking for that as
+[69.52] a valid shift in trend and looking for a
+[71.92] continuation. Going to wait for that
+[73.76] change in the state of delivery to occur
+[75.76] or I'm going to ignore the setup. Let's
+[77.60] take a look at what this looks like in
+[79.04] my fractal model. So, here you can see
+[80.88] we have a valid candle 2 closure. So you
+[83.52] can see we have a candle 2 closure as
+[85.36] price sweeps out its previous candle and
+[87.60] closes back in. Now what do I look for
+[89.76] on the lower time frame? I need to have
+[91.68] that change in the state of delivery. So
+[93.44] I find the high. I find the series of
+[95.12] candles that made that high. Do we have
+[96.80] a closure through that level? We do. So
+[99.60] this meets both of the requirements and
+[101.36] it is valid to be looking for a
+[102.88] continuation lower. Now let's take a
+[105.12] look at an example of an invalid case.
+[107.36] Here you can see we have a candle to
+[109.28] closure. It sweeps out the previous,
+[111.12] closes back in. Do we have a change in
+[113.04] this delivery? I find the high. I find
+[115.04] the series of candles that made that
+[116.48] high. Did we close below that level? No.
+[119.20] So, this is not a valid fractal model
+[121.68] and I would not be looking for a
+[123.12] continuation yet. Now, let's take a look
+[124.96] at another invalid case. Here you can
+[127.20] see we don't have a candle to closure.
+[130.32] So, even though we have a change in the
+[132.08] state of delivery, it does not mean
+[133.92] anything to me unless it is paired with
+[136.08] a higher time frame candle closure. Now,
+[138.48] let's take a look at a candle 3 closure
+[140.64] scenario. Here's an example of where
+[142.80] both requirements are met. We have a
+[144.96] candle 3 closure because we don't have a
+[147.12] candle 2 and then candle 3 closes below
+[149.52] the opening price in candle 2. So once I
+[152.48] have that candle closure, I go and
+[154.24] check. I find the high, the series of
+[156.32] candles that made that high. Have we
+[157.92] closed through it? Yes. So this meets
+[160.40] both the requirements and is valid to be
+[162.16] looking for a continuation in candle 4.
+[164.80] Now let's take a look at an invalid
+[166.56] scenario. We have a candle 3 closure on
+[169.12] the higher time frames. But when we drop
+[170.96] down to the lower time frame here, we
+[172.72] fail to close below this level. And now
+[174.88] we are just forming a consolidation. Now
+[177.36] let's take a look at another scenario.
+[179.36] This is not a valid candle 3 closure
+[181.76] because price never closes below the
+[183.92] opening price in candle 2. So I'd never
+[186.00] be looking to the lower time frames. So
+[188.00] this change in the state of delivery
+[189.44] means nothing to me. So now that you
+[191.52] understand why I look for a change in
+[192.96] the state of delivery, let's go into
+[194.48] trading view and go over a few examples
+[196.40] of this. So here we are in the first
+[198.88] example. And do we have a candle 2
+[201.52] closure or a candle 3 closure? Yes, we
+[203.92] do. As we have taken out this high and
+[206.16] closed back below it. So that is the
+[208.16] first requirement that is met. And then
+[209.92] I want to find the high. Do I have this
+[211.92] series of upclose candles that made that
+[213.68] high? Is it closed below? It does. And
+[216.64] here you can see as we play ahead it
+[219.36] does mark that out on the indicator
+[220.96] because it is a valid model. We have the
+[223.44] sweep, we have the change in the state
+[225.04] of delivery and I can be looking for a
+[227.04] continuation in this next day as it is a
+[230.00] valid continuation.
+[233.44] And there you can see we get a
+[235.04] continuation lower.
+[237.28] So here we are in an example and you can
+[239.28] see price has swept out its previous
+[241.52] days low and closed back inside. As you
+[244.32] can see on this higher time frame, is it
+[246.24] a valid fractal model? Yes, because it
+[248.40] is paired with a lower time frame change
+[250.32] in the state of delivery. That means I
+[252.16] could be looking long in this next day.
+[254.64] Now, here you can see we have what a
+[257.36] candle to closure. Let's go see if this
+[259.92] is a valid candle to closure by going to
+[262.24] my time frame pairing. So, going down to
+[264.72] the 5minut time frame here. Do we have a
+[267.36] valid candle to closure? Well, I want to
+[270.24] find what? I want to find the low. find
+[272.64] the series of candles that made it. In
+[274.24] this case, it's one. And have we closed
+[276.40] over it? Yes, we have. So, as I move
+[278.96] forward, my indicator will plot that
+[280.64] out. And we have a valid candle to
+[282.88] closure. Looking for a continuation
+[285.20] higher.
+[288.56] And we do get that continuation higher.
+[291.12] So, you can see it's a fractal concept.
+[293.52] And so, we can apply it to any time
+[295.28] frame. But let's go out to the monthly
+[297.04] time frame. So, here on the monthly time
+[298.80] frame, do we have a candle to closure?
+[300.96] We do. Do we have a change in the state
+[303.12] of delivery? Well, we need to go down to
+[305.44] the daily time frame to see if we have a
+[307.44] change in the state of delivery. So,
+[309.44] finding that sweep, we find the low. We
+[311.60] find the series of candles that made it.
+[313.20] In this case, it's a singular one. And
+[314.96] the indicator has plotted that out
+[316.72] because that's our change in the state
+[318.00] of delivery. Since we have two of those
+[320.24] requirements met, then it will print out
+[322.56] the rest of the logic, right? We have
+[324.80] the T-spot and the EQ, and price reaches
+[327.52] in, respects that area, and we do get a
+[329.76] reaction higher. Now, let's go look at a
+[332.40] few lower time frame examples. Now,
+[334.64] let's take a look at this example here.
+[336.40] We have a candle to closure as price
+[338.80] takes out its previous high and closes
+[341.12] back below. Now, if I want to confirm
+[342.96] this swing point, I'd be looking for a
+[344.96] lower time frame change in the state of
+[346.64] delivery. Now, looking on the lower time
+[348.40] frame, I find the high. Do we have the
+[350.72] series of candles that made that high?
+[352.48] Yes. So, do we close below it confirming
+[355.44] the swing point? We haven't yet. So,
+[358.00] what happens? We do not do that and we
+[360.64] take out this high. So by waiting for
+[363.36] the closure through or having both parts
+[365.68] of the fractal model, the candle closure
+[368.08] and the swing point confirmation or the
+[370.40] change in the state of delivery, I saved
+[372.32] myself from taking losses that look like
+[374.32] this. Let's take a look at another
+[376.16] example that looks like this. Let's take
+[378.24] a look at this example here. You can see
+[380.16] we run out all the highs to the left
+[382.00] here and we have a nice V-shaped
+[383.76] reversal. This closes as a candle to
+[386.32] closure bearish. Now, yes, I do note
+[388.80] that we have a bullish closure as well.
+[391.52] But let's focus on why this is not a
+[393.60] valid bearish setup. So, if we're
+[396.00] looking for this to be valid, we want to
+[397.68] confirm it with a lower time frame
+[399.52] change in the state of delivery, which
+[401.04] would be this level here.
+[403.60] As you can see, price fails to go and
+[406.32] close below this level. When it fails to
+[408.56] form a change in the state of delivery,
+[410.32] that means it's not a valid bearish
+[412.00] setup. And you can see my indicator will
+[413.84] not print a bearish setup. Usually when
+[416.32] we fail to form a change in the state of
+[418.56] delivery, we're going to consolidate,
+[420.40] form a consolidation, and then take out
+[422.40] one side of the range and trade to the
+[424.24] other. Let's see what happens.
+[428.40] You can see we have this range. We sweep
+[430.48] out this side. Then we go and trade to
+[432.96] the other side. Now we take out this
+[435.20] side. Do we go trade to the other side?
+[438.32] Yes, cuz we're just in a consolidation.
+[440.96] Now let's let this trade ahead.
+[444.72] You can see we do get a decent reaction
+[446.56] out of this T-spot area here. But what
+[448.80] do we notice? We form a continuation
+[451.68] right here. And then we go ahead and
+[454.16] fail, right? We take out that protected
+[456.08] swing. That means this trend is not
+[457.92] looking that great. And it is just
+[459.84] consolidating
+[462.00] there. We go ahead and sweep out the
+[463.52] low. We are waiting for a proper
+[465.60] closure. Right.
+[468.16] And here you can see we have a candle to
+[470.40] closure. Now, is this confirmed? Well,
+[472.72] I'm going to go find the low, find the
+[474.80] series of candles that made it and how
+[476.56] we close through this level. Yes. So
+[478.72] then I could be looking for price to
+[480.32] continue higher in this next candle.
+[484.40] You can see we open, we trade lower into
+[486.88] a point of interest, form a continuation
+[489.20] order block and then trade higher
+[491.36] towards these highs on the left. Now,
+[493.68] what I want to review here is just when
+[496.32] looking for a higher time frame closure,
+[498.96] you just want to confirm that on the
+[500.72] lower time frame. Now, not all lower
+[503.20] time frame structure is the same. Just
+[505.36] because it does have a closure over,
+[507.36] doesn't mean it's a good closure over.
+[509.44] If it consolidates for half of the
+[510.96] candle and then closes over, it's
+[512.80] usually just a consolidation. You want
+[514.48] to see that nice V-shaped reversal or
+[516.80] Vshape paired with the change in the
+[518.96] state of delivery. So, let's get into
+[520.64] another example. Let's go through one
+[522.80] final example of blending change in the
+[525.68] state of delivery with swing points. So
+[528.08] here you can see we have a candle 2
+[530.00] closure and we're sweeping out a range
+[532.00] high. So we have a consolidation or an
+[534.24] accumulation, a sweep of a high and you
+[536.88] see how we have that V-shaped reversal
+[538.88] and that V-shaped reversal forms the
+[541.12] change in the state of delivery. That's
+[542.80] ideally what I want to see with a setup.
+[544.64] So here we have the candle closure, we
+[546.32] have the change in the state of
+[547.28] delivery, and here we actually have SMT
+[549.52] as well. Now, if you use what I posted
+[551.76] in the last video, what do I want to be
+[553.92] looking for here? I just want to be
+[555.60] looking for a continuation order block.
+[557.92] So here we have a point of interest. Do
+[559.84] we get a continuation order block here?
+[561.92] We reach in, we have a candle closure,
+[563.76] but do we form a continuation? No. So
+[566.88] then we go ahead and make a new high. Do
+[568.80] we form a continuation here? Let's see.
+[574.16] And there we do. We get a nice
+[575.92] displacement lower. So this is where I
+[578.16] then want to see price trade lower as we
+[580.00] formed a protected swing inside this
+[582.24] higher time frame candle. You can see
+[584.00] the low resistance liquidity here. Let's
+[586.48] see if this trades lower. We do get that
+[588.88] move lower and we get that continuation.
+[592.40] So, one more thing to review. When
+[594.48] looking at a higher time frame candle
+[596.08] closure, I'm not just looking at the
+[597.84] closure. I'm also going to be looking at
+[599.92] the lower time frame and making sure it
+[602.08] has that structure or the lower time
+[604.00] frame change in the state of delivery
+[605.52] which confirms that swing point. So,
+[607.76] with that, that will be the end of this
+[609.44] video. I hope you found it helpful. If
+[611.68] you do enjoy it, please let me know in
+[613.28] the comments section below. And I'll see
+[614.56] you guys next time. Have a good one.

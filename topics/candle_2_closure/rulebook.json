@@ -1,0 +1,180 @@
+{
+  "topic": "candle_2_closure",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_candle_2_closure",
+      "url": "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_candle_3_closure",
+      "url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_next_day_model",
+      "url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "candle_two_reversal_closure_definition",
+      "name": "A Candle 2 closure is always a reversal closure that sweeps the previous candle and closes back inside its range",
+      "timeframeScope": ["fractal"],
+      "marketPhasePrecondition": ["previous_candle_ohlc_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Use the previous candle's high and low as the reference range for the active Candle 2",
+      "confirmationTrigger": "Bullish Candle 2 sweeps the previous low and closes back above it, while bearish Candle 2 sweeps the previous high and closes back below it",
+      "protectedSwingDefinition": "The Candle 2 reversal creates the first valid swing reference only once the reversal closure is complete",
+      "invalidationCondition": "Price sweeps the previous candle but fails to close back inside the range or closes in continuation mode instead",
+      "targetLogic": "Treat the closure as the turning point that sets up Candle 3 continuation and later Candle 4 expansion if the sequence remains intact",
+      "exceptions": [
+        "A continuation closure beyond the previous candle's high or low is not a Candle 2 closure even if the sweep occurred first"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_2_closure#what_exactly_is_a_candle_2_closure",
+        "ttrades_candle_2_closure#what_a_continuation_closure_vs_reversal_closure_really_means"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_2_closure_definition_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "previous candle high",
+        "previous candle low",
+        "current candle high",
+        "current candle low",
+        "current candle close"
+      ],
+      "machineChecks": [
+        "Detect sweep beyond the previous candle high or low",
+        "Require the Candle 2 close to finish back inside the previous candle range",
+        "Classify the event as bullish or bearish based on which side was swept and reclaimed"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "candle_two_requires_point_of_interest",
+      "name": "A Candle 2 closure is only valid when it forms at a higher-timeframe point of interest",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["higher_timeframe_point_of_interest_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "Map the active swing high or low, fair value gap, or fallback opposing candle before looking for the Candle 2 reversal closure",
+      "confirmationTrigger": "Only accept the Candle 2 closure when the reversal forms at the mapped point of interest and aligns with the higher-timeframe directional idea",
+      "protectedSwingDefinition": "The swing is ignored unless both ingredients exist: the point of interest and the valid Candle 2 closure",
+      "invalidationCondition": "A reversal closure appears away from the mapped point of interest or without higher-timeframe alignment",
+      "targetLogic": "Use the valid point of interest plus closure pair as the anchor for lower-timeframe confirmation and continuation into Candle 3",
+      "exceptions": [
+        "If no swing high or low or fair value gap exists, an opposing candle can act as the fallback point of interest"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_2_closure#candle_2_closures_need_a_point_of_interest",
+        "ttrades_candle_2_closure#putting_it_all_together",
+        "ttrades_next_day_model#how_to_use_it_in_your_trading"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_2_closure_poi_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe swing highs and lows",
+        "fair value gap proxy",
+        "opposing candle proxy",
+        "active bias state",
+        "Candle 2 closure flag"
+      ],
+      "machineChecks": [
+        "Require a mapped point of interest before a Candle 2 closure can become actionable",
+        "Allow a fallback opposing-candle anchor only when no clearer higher-timeframe point of interest exists",
+        "Reject Candle 2 events that form without higher-timeframe alignment"
+      ],
+      "ambiguityNotes": [
+        "The fallback opposing-candle point of interest still needs a stricter first-pass ranking rule"
+      ]
+    },
+    {
+      "id": "candle_two_starts_candle_three_sequence",
+      "name": "A valid Candle 2 closure should hand off to Candle 3 continuation in the new direction",
+      "timeframeScope": ["fractal", "lower"],
+      "marketPhasePrecondition": ["valid_candle_two_closure_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "Once Candle 2 closes as a reversal at the point of interest, use its range and directional shift as the new reference structure",
+      "confirmationTrigger": "Candle 3 expands beyond Candle 2 in the new direction and confirms that the reversal is transitioning into continuation",
+      "protectedSwingDefinition": "The Candle 2 turning point becomes the structural pivot that later continuation must protect while Candle 3 and Candle 4 develop",
+      "invalidationCondition": "Candle 3 fails to continue through Candle 2's directional edge or immediately disrespects the new turning point",
+      "targetLogic": "Use Candle 2 as the swing-turn anchor and Candle 3 as the continuation confirmation before anticipating Candle 4 expansion",
+      "exceptions": [
+        "If Candle 3 does not continue, the model remains incomplete and should not be forced into a continuation read"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_2_closure#how_candle_3_fits_into_the_picture",
+        "ttrades_candle_2_closure#candle_2_closures_as_turning_points"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_2_to_candle_3_sequence_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "valid Candle 2 closure flag",
+        "Candle 2 high and low",
+        "Candle 3 high and low",
+        "Candle 3 close"
+      ],
+      "machineChecks": [
+        "Store the Candle 2 range after a valid reversal closure appears",
+        "Detect whether Candle 3 closes beyond Candle 2 in the new direction",
+        "Invalidate the sequence when Candle 3 cannot confirm the directional handoff"
+      ],
+      "ambiguityNotes": []
+    },
+    {
+      "id": "candle_two_eq_and_wick_filter",
+      "name": "Large-wick Candle 2 closures should keep Candle 3 above or below the wick midpoint to remain valid",
+      "timeframeScope": ["fractal", "lower"],
+      "marketPhasePrecondition": ["valid_candle_two_closure_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "Measure the full Candle 2 wick and mark its midpoint when Candle 2 prints a large rejection wick",
+      "confirmationTrigger": "Candle 3 should respect the Candle 2 wick midpoint in the direction of the new swing for the fractal model to remain intact",
+      "protectedSwingDefinition": "The midpoint filter helps separate strong turning points from weak swings that are unlikely to hold",
+      "invalidationCondition": "Candle 3 disrespects the Candle 2 wick midpoint and trades through the wrong side of the rejection",
+      "targetLogic": "Only keep the fractal sequence active when Candle 3 respects the midpoint and continues into the next expansion phase",
+      "exceptions": [
+        "Midpoint filtering matters most when Candle 2 forms a visibly large rejection wick"
+      ],
+      "evidenceRefs": [
+        "ttrades_candle_2_closure#using_eq_and_wick_theory_with_candle_2_closures"
+      ],
+      "visualVerificationRefs": [
+        "article:candle_2_midpoint_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "Candle 2 wick high",
+        "Candle 2 wick low",
+        "Candle 2 wick midpoint",
+        "Candle 3 close location"
+      ],
+      "machineChecks": [
+        "Compute the Candle 2 wick midpoint from the rejection candle",
+        "Track whether Candle 3 respects the midpoint in the direction of the reversal",
+        "Downgrade the setup when midpoint respect fails before continuation develops"
+      ],
+      "ambiguityNotes": [
+        "The minimum wick size that deserves midpoint filtering is not yet numeric"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What is the first useful numeric tolerance for saying Candle 3 respected versus disrespected the Candle 2 wick midpoint?",
+    "How should the fallback opposing-candle point of interest be ranked against clearer swing or fair-value-gap anchors?"
+  ]
+}

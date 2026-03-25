@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-03-24T19:32:37.778034+00:00",
+  "channel_inventory": {
+    "inventory_output": "knowledge/ttfm_video_corpus/channel_inventory.json",
+    "entry_count": 181,
+    "trade_review_candidate_count": 9,
+    "category_counts": {
+      "chart_lesson": 4,
+      "trade_example": 1,
+      "trade_review": 2,
+      "weekly_recap": 2
+    }
+  },
+  "trade_review_manifest": {
+    "manifest_output": "knowledge/ttfm_video_corpus/trade_review_video_manifest.json",
+    "video_count": 9
+  },
+  "active_manifest": {
+    "manifest_output": "knowledge/ttfm_video_corpus/video_manifest.json",
+    "video_count": 15,
+    "partition_counts": {
+      "seed_curriculum": 6,
+      "trade_review": 9
+    }
+  },
+  "corpus_manifest": {
+    "manifest_output": "knowledge/ttfm_video_corpus/video_manifest.json",
+    "chunk_output": "knowledge/ttfm_video_corpus/chunks.jsonl",
+    "video_count": 15,
+    "transcript_fetch_count": 0,
+    "transcript_reuse_count": 15,
+    "synthetic_transcript_count": 1
+  },
+  "video_downloads": {
+    "video_count": 15,
+    "status_counts": {
+      "skipped_exists": 15
+    },
+    "video_dir": "knowledge\\ttfm_video_corpus\\videos",
+    "overwrite": false
+  },
+  "visual_windows": {
+    "windows_output": "knowledge/ttfm_video_corpus/visual_windows.jsonl",
+    "report_output": "knowledge/ttfm_video_corpus/visual_windows_report.json",
+    "window_count": 75,
+    "video_count": 15,
+    "with_local_video_count": 15,
+    "missing_chunk_video_count": 0,
+    "checkpoint_counts": {
+      "closure": 15,
+      "confirmation": 15,
+      "context": 15,
+      "outcome": 15,
+      "sweep": 15
+    },
+    "frame_status_counts": {
+      "extract_failed": 5,
+      "extracted": 70
+    },
+    "extract_frames": true
+  },
+  "weak_visual_dataset": {
+    "dataset_output": "results/ttfm_video_weak_visual_dataset.jsonl",
+    "report_output": "results/ttfm_video_weak_visual_dataset_report.json",
+    "row_count": 75,
+    "window_count": 75,
+    "video_count": 15,
+    "ready_for_weak_training_count": 70,
+    "weak_labeled_row_count": 59,
+    "skipped_missing_frame_count": 5,
+    "checkpoint_counts": {
+      "closure": 15,
+      "confirmation": 15,
+      "context": 15,
+      "outcome": 15,
+      "sweep": 15
+    },
+    "frame_status_counts": {
+      "extract_failed": 5,
+      "extracted": 70
+    },
+    "review_status_counts": {
+      "missing_frame": 5,
+      "ready_for_weak_training": 70
+    },
+    "active_label_counts": {
+      "breaker": 13,
+      "candle_2_closure": 12,
+      "candle_3_closure": 8,
+      "equilibrium": 12,
+      "fair_value_gap": 29,
+      "invalidation": 16,
+      "liquidity_sweep": 14,
+      "order_block": 26,
+      "point_of_interest": 10,
+      "protected_swing": 7,
+      "top_down_alignment": 1,
+      "wick_logic": 12
+    }
+  },
+  "validation": {
+    "ok": true,
+    "corpus_dir": "knowledge\\ttfm_video_corpus",
+    "video_count": 15,
+    "chunk_count": 162,
+    "manifest_path": "knowledge\\ttfm_video_corpus\\video_manifest.json",
+    "chunks_path": "knowledge\\ttfm_video_corpus\\chunks.jsonl"
+  }
+}

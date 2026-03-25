@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-03-24T20:18:06.922912+00:00",
+  "summary": {
+    "row_count": 75,
+    "window_count": 75,
+    "video_count": 15,
+    "ready_for_weak_training_count": 55,
+    "eligible_for_training_count": 55,
+    "weak_labeled_row_count": 59,
+    "skipped_missing_frame_count": 5,
+    "synthetic_transcript_count": 5,
+    "checkpoint_counts": {
+      "closure": 15,
+      "confirmation": 15,
+      "context": 15,
+      "outcome": 15,
+      "sweep": 15
+    },
+    "frame_status_counts": {
+      "extract_failed": 5,
+      "extracted": 70
+    },
+    "review_status_counts": {
+      "missing_frame": 5,
+      "needs_label_review": 11,
+      "needs_teacher_review": 4,
+      "ready_for_weak_training": 55
+    },
+    "active_label_counts": {
+      "breaker": 13,
+      "candle_2_closure": 12,
+      "candle_3_closure": 8,
+      "equilibrium": 12,
+      "fair_value_gap": 29,
+      "invalidation": 16,
+      "liquidity_sweep": 14,
+      "order_block": 26,
+      "point_of_interest": 10,
+      "protected_swing": 7,
+      "top_down_alignment": 1,
+      "wick_logic": 12
+    },
+    "training_blocker_counts": {
+      "missing_frame": 5,
+      "missing_weak_labels": 16,
+      "synthetic_transcript": 5
+    }
+  }
+}

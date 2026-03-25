@@ -1,0 +1,28 @@
+{
+  "task_name": "continuation_entry_model",
+  "state_count": 2,
+  "accepted_signal_count": 0,
+  "scores": [
+    {
+      "case_ref": "sample_continuation_candidate",
+      "task_name": "continuation_entry_model",
+      "probability": 0.34592074155807495,
+      "prediction": false,
+      "threshold": 0.5,
+      "device": "cuda",
+      "matched_vocabulary_token_count": 37,
+      "input_token_count": 39
+    },
+    {
+      "case_ref": "sample_bias_only_candidate",
+      "task_name": "continuation_entry_model",
+      "probability": 0.08162419497966766,
+      "prediction": false,
+      "threshold": 0.5,
+      "device": "cuda",
+      "matched_vocabulary_token_count": 24,
+      "input_token_count": 30
+    }
+  ],
+  "signals": []
+}

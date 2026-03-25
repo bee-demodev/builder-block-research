@@ -1,0 +1,8 @@
+{
+  "notes": [
+    "Populate case_overrides as teacher screenshots are matched to replayable market bars.",
+    "Use anchor_timestamp only when the screenshot or source explicitly identifies the chart time.",
+    "Until then, the teacher-visual dataset may rely on lower-confidence trade-model proxy mappings from TradingView validation."
+  ],
+  "case_overrides": []
+}

@@ -1,0 +1,5 @@
+[41.72] Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Higher timeframe context daily bias equilibrium point of interest.
+[160.92] Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Liquidity sweep or run on the highs and lows.
+[280.12] Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Candle 2 or Candle 3 closure with CISD through the level.
+[399.32] Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Entry confirmation around order block, breaker, fair value gap, or protected swing.
+[518.52] Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Trade outcome, expansion, target delivery, or invalidation.

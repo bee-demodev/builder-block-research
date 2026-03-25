@@ -1,0 +1,468 @@
+{
+  "windows_path": "knowledge\\ttfm_video_corpus\\visual_windows.jsonl",
+  "index_path": "knowledge\\ttfm_video_corpus\\visual_embedding_index.json",
+  "manifest_path": "knowledge\\ttfm_video_corpus\\visual_embedding_manifest.json",
+  "model": "models/gemini-embedding-2-preview",
+  "output_dimensionality": 768,
+  "summary": {
+    "document_count": 75,
+    "asset_backed_document_count": 70,
+    "text_fallback_count": 0,
+    "frame_status_counts": {
+      "extract_failed": 5,
+      "extracted": 70
+    }
+  },
+  "diagnostics": [
+    {
+      "chunk_id": "youtube_fractal_model_fundamentals_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\context_00119280.jpg"
+    },
+    {
+      "chunk_id": "youtube_fractal_model_fundamentals_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\sweep_00751840.jpg"
+    },
+    {
+      "chunk_id": "youtube_fractal_model_fundamentals_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\closure_00322600.jpg"
+    },
+    {
+      "chunk_id": "youtube_fractal_model_fundamentals_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\confirmation_00959840.jpg"
+    },
+    {
+      "chunk_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\outcome_00394480.jpg"
+    },
+    {
+      "chunk_id": "youtube_equilibrium_for_expansions_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\context_00046585.jpg"
+    },
+    {
+      "chunk_id": "youtube_equilibrium_for_expansions_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\sweep_00790519.jpg"
+    },
+    {
+      "chunk_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\closure_00638000.jpg"
+    },
+    {
+      "chunk_id": "youtube_equilibrium_for_expansions_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\confirmation_00940119.jpg"
+    },
+    {
+      "chunk_id": "youtube_equilibrium_for_expansions_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\outcome_00867299.jpg"
+    },
+    {
+      "chunk_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\context_00994040.jpg"
+    },
+    {
+      "chunk_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\sweep_00517000.jpg"
+    },
+    {
+      "chunk_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\closure_00657280.jpg"
+    },
+    {
+      "chunk_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\confirmation_00303480.jpg"
+    },
+    {
+      "chunk_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\outcome_00855320.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_2_closure_foundation_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\context_00346720.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_2_closure_foundation_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\sweep_00101800.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_2_closure_foundation_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\closure_00041600.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_2_closure_foundation_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\confirmation_00165120.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_2_closure_foundation_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\outcome_00407640.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_candle_3_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\context_01515680.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_candle_3_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\sweep_00599520.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_candle_3_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\closure_00180040.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_candle_3_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\confirmation_00857440.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_candle_3_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\outcome_02043200.jpg"
+    },
+    {
+      "chunk_id": "youtube_cisd_validates_swing_points_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\context_00371359.jpg"
+    },
+    {
+      "chunk_id": "youtube_cisd_validates_swing_points_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\sweep_00104000.jpg"
+    },
+    {
+      "chunk_id": "youtube_cisd_validates_swing_points_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\closure_00167719.jpg"
+    },
+    {
+      "chunk_id": "youtube_cisd_validates_swing_points_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\confirmation_00235759.jpg"
+    },
+    {
+      "chunk_id": "youtube_cisd_validates_swing_points_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\outcome_00578960.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\context_00427640.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\sweep_00349320.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\closure_00194880.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\confirmation_00270800.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\outcome_00480900.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\context_00173000.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\sweep_00375760.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\closure_00107040.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\confirmation_00240520.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\outcome_00306640.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\context_00307320.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\sweep_00648520.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\closure_00108240.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\confirmation_00372520.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\outcome_00512800.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\context_00096500.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\sweep_00675500.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\closure_00482500.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\confirmation_00868500.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\outcome_00289500.jpg"
+    },
+    {
+      "chunk_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\context_00129140.jpg"
+    },
+    {
+      "chunk_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\sweep_00048385.jpg"
+    },
+    {
+      "chunk_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\closure_00206500.jpg"
+    },
+    {
+      "chunk_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\confirmation_00269020.jpg"
+    },
+    {
+      "chunk_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\outcome_00048385.jpg"
+    },
+    {
+      "chunk_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\context_00212539.jpg"
+    },
+    {
+      "chunk_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\sweep_00131059.jpg"
+    },
+    {
+      "chunk_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\closure_00292820.jpg"
+    },
+    {
+      "chunk_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\confirmation_00462339.jpg"
+    },
+    {
+      "chunk_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\outcome_00375400.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_trade_example_15_second_entry_visual_v1::context",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_ict_trade_example_15_second_entry_visual_v1::sweep",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_ict_trade_example_15_second_entry_visual_v1::closure",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_ict_trade_example_15_second_entry_visual_v1::confirmation",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_ict_trade_example_15_second_entry_visual_v1::outcome",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\context_00829360.jpg"
+    },
+    {
+      "chunk_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\sweep_00924520.jpg"
+    },
+    {
+      "chunk_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\closure_00567659.jpg"
+    },
+    {
+      "chunk_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\confirmation_00132120.jpg"
+    },
+    {
+      "chunk_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\outcome_00743320.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\context_00316000.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\sweep_00131840.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\closure_00223840.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\confirmation_00368460.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\outcome_00045275.jpg"
+    }
+  ]
+}

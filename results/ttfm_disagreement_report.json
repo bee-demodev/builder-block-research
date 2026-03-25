@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-03-22T19:13:55.888775+00:00",
+  "summary": {
+    "evaluated_checkpoint_count": 0,
+    "anchor_checkpoint_count": 0,
+    "anchor_case_regressions": 0,
+    "anchor_label_agreement": 1.0,
+    "macro_f1": 0.0,
+    "micro_f1": 0.0,
+    "timeframe_consistency": 1.0,
+    "sequence_consistency": 1.0,
+    "rule_mismatch_count": 0,
+    "rule_mismatch_rate": 0.0,
+    "rule_mismatch_delta": 0.0,
+    "mistake_cluster_count": 0
+  },
+  "per_label_metrics": {},
+  "checkpoint_results": [],
+  "mistake_clusters": []
+}

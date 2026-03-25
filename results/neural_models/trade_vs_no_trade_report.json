@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-03-23T22:57:54.545445+00:00",
+  "task_name": "trade_vs_no_trade",
+  "positive_label": "trade",
+  "negative_label": "no_trade",
+  "device": "cuda",
+  "torch_version": "2.9.1+cu128",
+  "cuda_visible_to_torch": true,
+  "cuda_version": "12.8",
+  "example_count": 2,
+  "positive_count": 1,
+  "negative_count": 1,
+  "skipped_example_count": 0,
+  "train_count": 2,
+  "validation_count": 0,
+  "vocabulary_size": 135,
+  "hyperparameters": {
+    "epochs": 40,
+    "learning_rate": 0.02,
+    "hidden_dim": 32,
+    "validation_ratio": 0.0,
+    "seed": 42
+  },
+  "best_epoch": 40,
+  "metrics": {
+    "train": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "positive_predictions": 1,
+      "positive_labels": 1,
+      "confusion": {
+        "true_positive": 1,
+        "true_negative": 1,
+        "false_positive": 0,
+        "false_negative": 0
+      },
+      "loss": 0.0039770049042999744
+    },
+    "validation": {}
+  },
+  "model_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\trade_vs_no_trade.pt",
+  "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\trade_vs_no_trade_report.json"
+}

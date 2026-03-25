@@ -1,0 +1,176 @@
+{
+  "topic": "protected_swings",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_protected_swings",
+      "url": "https://ttrades.com/protected-swings-understanding-trends-and-invalidations/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_stop_loss_mastery",
+      "url": "https://ttrades.com/stop-loss-mastery-using-protected-swings-for-precise-invalidations/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_top_down_expansion",
+      "url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "role": "supporting"
+    },
+    {
+      "id": "tradingview_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "protected_swing_definition",
+      "name": "Protected swing is the structure expected to hold if trend continues",
+      "timeframeScope": ["fractal"],
+      "marketPhasePrecondition": ["directional_context"],
+      "direction": "bidirectional",
+      "setupAnchor": "Recent swing high or low interacting with a sweep or fair value gap",
+      "confirmationTrigger": "Closure through the opposing candle series after the interaction",
+      "protectedSwingDefinition": "Bullish protected low or bearish protected high formed after sweep/FVG interaction and confirming close",
+      "invalidationCondition": "Protected swing high or low is violated",
+      "targetLogic": "Use the protected swing to define directional continuation and invalidation",
+      "exceptions": [
+        "A sweep without the confirming close is not a protected swing"
+      ],
+      "evidenceRefs": [
+        "ttrades_protected_swings#what_is_a_protected_swing",
+        "ttrades_protected_swings#highs_and_lows",
+        "ttrades_protected_swings#fair_value_gaps"
+      ],
+      "visualVerificationRefs": [
+        "article:protected_swings_page_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "short-term swing highs and lows",
+        "series of opposing candles",
+        "bar-close confirmation"
+      ],
+      "machineChecks": [
+        "Detect liquidity sweep beyond local swing",
+        "Detect confirming close beyond reference candle series"
+      ],
+      "ambiguityNotes": [
+        "Candle series segmentation needs a strict implementation rule"
+      ]
+    },
+    {
+      "id": "protected_swing_stop_logic",
+      "name": "Protected swings provide structural stop placement",
+      "timeframeScope": ["execution"],
+      "marketPhasePrecondition": ["protected_swing_confirmed"],
+      "direction": "bidirectional",
+      "setupAnchor": "Confirmed protected swing",
+      "confirmationTrigger": "Entry is taken in the direction of the confirmed protected swing",
+      "protectedSwingDefinition": "Stop reference is the protected swing itself by default",
+      "invalidationCondition": "Price trades through the protected swing",
+      "targetLogic": "Hold until higher timeframe objective or next phase transition",
+      "exceptions": [
+        "Candle body stop can be used to improve RR with higher stop-out risk",
+        "If RR is poor, wait for continuation protected swing instead of forcing entry"
+      ],
+      "evidenceRefs": [
+        "ttrades_stop_loss_mastery#why_use_protected_swings_for_stop_loss_placement",
+        "ttrades_stop_loss_mastery#adjusting_for_risk_to_reward",
+        "ttrades_stop_loss_mastery#protected_swings_in_trending_markets"
+      ],
+      "visualVerificationRefs": [
+        "article:stop_loss_page_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "protected swing price",
+        "candle body price",
+        "continuation protected swing updates"
+      ],
+      "machineChecks": [
+        "Default stop equals protected swing extreme",
+        "Optional aggressive stop equals candle body reference",
+        "Allow trailing stop updates from newer protected swings"
+      ],
+      "ambiguityNotes": [
+        "Body-based stop logic should probably be optional and clearly flagged as aggressive"
+      ]
+    },
+    {
+      "id": "protected_swing_trend_filter",
+      "name": "Trade direction should follow the most recent valid protected swing logic",
+      "timeframeScope": ["higher", "intermediate", "lower"],
+      "marketPhasePrecondition": ["protected_swing_confirmed"],
+      "direction": "bidirectional",
+      "setupAnchor": "Most recent valid protected high or low",
+      "confirmationTrigger": "Continuation entry forms in same direction as the structure",
+      "protectedSwingDefinition": "New protected swings can stack and become stepping stones",
+      "invalidationCondition": "Opposite-direction protected swing confirms a structure shift",
+      "targetLogic": "Use the active structure until invalidated or higher timeframe objective is reached",
+      "exceptions": [
+        "Lower timeframe protected swings should not override higher timeframe bias without broader confirmation"
+      ],
+      "evidenceRefs": [
+        "ttrades_protected_swings#why_do_they_matter",
+        "ttrades_protected_swings#continuation_using_protected_high",
+        "ttrades_top_down_expansion#core_principle"
+      ],
+      "visualVerificationRefs": [
+        "article:protected_swings_page_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "active protected swing registry",
+        "timeframe alignment state"
+      ],
+      "machineChecks": [
+        "Maintain most recent protected swing by direction and timeframe",
+        "Reject entries that oppose active higher timeframe structure"
+      ],
+      "ambiguityNotes": [
+        "Need explicit precedence rules when timeframes disagree"
+      ]
+    },
+    {
+      "id": "protected_swing_confirmation_gate",
+      "name": "Anticipation is allowed, but confirmation requires the correct closing event",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["key_level_reached"],
+      "direction": "bidirectional",
+      "setupAnchor": "Potential protected swing forms at a fair value gap or sweep location",
+      "confirmationTrigger": "Price closes through the correct candle series on the originating timeframe",
+      "protectedSwingDefinition": "Before that close, the swing is only anticipated and not structurally confirmed",
+      "invalidationCondition": "Lower timeframe entry taken before higher timeframe confirmation is riskier because the broader shift is not yet validated",
+      "targetLogic": "Use anticipation only for closer invalidation and better RR, not as a replacement for confirmation",
+      "exceptions": [
+        "Lower timeframe CISD can be used before higher timeframe confirmation, but only as an aggressive entry model"
+      ],
+      "evidenceRefs": [
+        "ttrades_protected_swings#anticipation_vs_confirmation",
+        "ttrades_protected_swings#refining_on_lower_timeframes"
+      ],
+      "visualVerificationRefs": [
+        "article:protected_swings_page_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "candidate protected swing state",
+        "confirmed protected swing state",
+        "origin timeframe close event",
+        "lower timeframe CISD event"
+      ],
+      "machineChecks": [
+        "Represent anticipated and confirmed protected swings as distinct states",
+        "Require originating timeframe close for confirmation",
+        "Flag pre-confirmation entries as aggressive mode"
+      ],
+      "ambiguityNotes": [
+        "Need a strict definition of the correct candle series before confirmation can be fully codified"
+      ]
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "How should a candle series be segmented algorithmically for confirmation?",
+    "What is the best first-pass local swing definition for liquidity sweeps?",
+    "How should multi-timeframe protected swing precedence be ranked?"
+  ]
+}

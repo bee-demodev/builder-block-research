@@ -1,0 +1,16 @@
+run_at	topic	grounding_score	determinism_score	visual_verification_score	pine_translatability_score	contradiction_penalty	weighted_score	status	description
+2026-03-21T15:43:15.364584+00:00	expansion	1.0000	0.7600	1.0000	0.7600	1	0.8380	keep	baseline synced after evaluator hardening
+2026-03-21T15:43:15.369586+00:00	protected_swings	1.0000	0.7925	1.0000	0.8200	1	0.8627	keep	baseline synced after evaluator hardening
+2026-03-21T15:50:19.389383+00:00	bias	1.0000	0.7420	1.0000	0.7760	1	0.8366	keep	initial bias baseline from TTrades daily bias, next day model, and wick logic
+2026-03-21T16:23:20.265055+00:00	reversal	1.0000	0.7375	1.0000	0.7000	2	0.7862	keep	initial reversal baseline from phases of price, reversal sequence, wicks, and candle 3 closure
+2026-03-21T17:13:17.903327+00:00	continuation	1.0000	0.8416	1.0000	0.8600	0	0.9175	keep	initial continuation baseline with portable framework vocabulary and generic continuation anchors
+2026-03-21T18:22:38.985894+00:00	retracement	1.0000	0.8812	1.0000	0.8200	0	0.9194	keep	initial retracement baseline with portable phase rules and explicit continuation-model dependency
+2026-03-21T18:24:42.538396+00:00	consolidation	1.0000	0.8662	1.0000	0.8800	0	0.9299	keep	initial consolidation baseline with range-manipulation rules and explicit continuation/profile dependencies
+2026-03-21T20:41:53.732522+00:00	daily_profiles	1.0000	0.8822	1.0000	0.8800	0	0.9347	keep	initial daily profile baseline
+2026-03-21T20:41:57.180667+00:00	candle_2_closure	1.0000	0.8256	1.0000	0.8000	0	0.8977	keep	initial candle 2 closure baseline
+2026-03-21T20:42:00.552563+00:00	candle_3_closure	1.0000	0.8166	1.0000	0.7300	0	0.8775	keep	initial candle 3 closure baseline
+2026-03-21T21:53:18.046392+00:00	equilibrium	1.0000	0.8631	1.0000	0.8100	0	0.9114	keep	initial equilibrium baseline
+2026-03-21T21:53:21.719863+00:00	wick_logic	1.0000	0.8616	1.0000	0.8600	0	0.9235	keep	initial wick logic baseline
+2026-03-21T21:53:29.249439+00:00	top_down_alignment	1.0000	0.8531	1.0000	0.8500	0	0.9184	keep	initial top down alignment baseline
+2026-03-21T22:00:35.160618+00:00	invalidation	1.0000	0.7966	1.0000	0.8200	0	0.8940	keep	initial invalidation baseline
+2026-03-21T22:04:19.393751+00:00	reversal	1.0000	0.8962	1.0000	0.8800	0	0.9389	keep	tightened reversal baseline after invalidation and support-topic formalization

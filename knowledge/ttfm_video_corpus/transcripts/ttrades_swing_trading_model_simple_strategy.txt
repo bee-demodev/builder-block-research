@@ -1,0 +1,497 @@
+[9.68] How's it going everyone and welcome back
+[11.52] to another video. This is a highly
+[13.84] requested video swing trading using my
+[16.32] fractal model. Now we will talk about
+[18.64] using this on the weekly, the daily, and
+[21.36] the hourly for entries, but it's also
+[23.68] viable to use this for a monthly,
+[26.00] weekly, and then 4hour for entries.
+[28.48] Let's get into the PDF. So, step one is
+[30.80] always going to be getting a weekly
+[32.64] bias. And what do I mean by that? I mean
+[35.12] on the weekly time frame, I want to
+[36.96] anticipate if price is going to move
+[38.80] higher or lower. So, to do that, I will
+[41.44] use liquidity, highs and lows, fair
+[43.92] value gaps, as well as candle closures.
+[46.56] So, here you can see we have internal to
+[49.12] external liquidity with a candle 2
+[51.28] closure. It's reasonable to anticipate
+[53.60] expansion on this candle 3 of the weekly
+[56.00] time frame. So now we have a bias for
+[58.32] the week, right? We want to see this
+[59.68] week trade higher. From here, I'm going
+[62.16] to be looking for a daily swing point to
+[64.56] form the wick of the daily candle. I'll
+[67.04] be looking for a candle 2 or a candle
+[69.04] three on the daily chart. And then I'll
+[70.88] be looking to trade the expansion in the
+[72.88] following candles. So here you can see
+[75.20] if this was Monday, this was Tuesday,
+[78.24] Tuesday is forming a low using a candle
+[80.64] to closure, I can anticipate that
+[82.32] Wednesday and Thursday could expand
+[84.32] higher. Now, Thursday is totally
+[86.24] dependent on Wednesday's closure, but
+[88.32] you get what I mean within the weekly
+[90.00] profile. After I have that daily candle
+[92.32] closure, I'll be making sure that daily
+[94.08] candle has a change in the state of
+[95.84] delivery. So, here you can see on
+[97.60] Tuesday, we have a candle to closure. We
+[99.52] have a change in the state of delivery.
+[101.20] That means it's valid to look for the
+[102.64] fractal model higher in Wednesday. So,
+[105.68] what will I be looking for? I'll be
+[107.52] looking for the wick of candle 3 or
+[109.84] Wednesday to form and then look to get
+[111.76] on side with that. Once I'm on side with
+[114.08] that move, I can hold that through
+[116.00] Wednesday, even Thursday into that drawn
+[119.04] liquidity above. And what are we doing?
+[121.76] We are aligning the weekly time frame
+[123.68] and our bias and anticipation for it to
+[125.60] move higher with a daily swing point and
+[127.84] then an hourly entry. Now, like I said,
+[130.72] this is a fractal concept. So, if you
+[132.88] want to swing trade on the higher time
+[134.32] frames, which I know a lot of people
+[135.60] like to do on crypto, you can use the
+[137.92] monthly time frame, then a weekly swing
+[140.32] point, and then a 4hour entry as well.
+[142.96] So, let's get into Trading View and go
+[144.48] over a few examples. So, here we are in
+[146.64] our first example, and I just want to
+[148.40] see, do I expect the weekly candle to
+[151.04] expand lower or higher? Or it can be as
+[154.24] simple as am I going to reach for
+[156.16] previous week's low or previous week's
+[158.08] high. Well, you can see here we have a
+[160.16] candle to closure on the weekly. So, I
+[162.48] could anticipate price to at least go
+[164.32] towards previous week's low, if not
+[166.40] these lows that are lower. So, with this
+[169.12] weekly bias, I will then go to the daily
+[171.28] chart. Now, do I have a swing point on
+[173.76] the daily to trade away from? No, I do
+[176.32] not. Right. So, I'm not going to be able
+[178.32] to take a trade here because right now I
+[180.56] currently have a candle to closure that
+[182.72] is bullish. Let's see what happens on
+[184.80] this next candle. You can see this
+[187.20] bullish candle 2 closure failed and now
+[189.52] we have a swing point forming to the
+[191.92] downside. And it's nice to see that
+[193.76] these are left because those are failure
+[195.68] swings. So now what do we have? We have
+[198.64] a candle 2 closure that is bearish
+[201.04] aligned with the anticipated weekly
+[203.44] candle to reach for its previous week's
+[205.36] low. But we also have these nice failure
+[207.84] swings down here which could be the full
+[210.16] expansion target. So now that we have a
+[212.32] candle 2 closure, we'll drop down to our
+[214.08] aligned time frame, which is the hourly
+[216.00] chart. So down here on the hourly chart,
+[218.08] you can see we have now formed a
+[220.08] continuation, right? As we have closed
+[222.32] through the series of candles here. Now,
+[224.56] this continuation is not something I
+[226.40] would personally look to trade because
+[228.00] my stop loss is just too big. It doesn't
+[230.72] make sense to put my stop loss all the
+[232.08] way up there. So we have expansion into
+[234.80] some lows. Let's see if we can get on
+[237.12] side before these lows get taken out
+[239.04] here or before these lows get taken out
+[241.84] over here. So, we have nice targets
+[243.84] there as well. We have expansion. Let's
+[246.72] see if we get a new phase of price. All
+[248.56] right, we're already in through that
+[250.00] low. So, let's see if we get a new phase
+[252.56] of price here. All right, I don't know
+[254.56] if this is reversal or retracement
+[256.24] currently. And what is it doing? It is
+[259.52] consolidating. So consolidation, we
+[262.80] sweep out into a fair value on the high.
+[265.84] So this is enough. I could take a candle
+[268.48] to closure entry or I could give it one
+[270.64] more candle to see if it wants to trade
+[272.08] away. It does. I could then take an
+[274.96] entry here. Now you might be saying,
+[277.20] hey, there is no continuation here yet.
+[279.52] And that is valid, right? There is no
+[281.60] continuation yet. There are times where
+[283.68] you can apply your own discretion to the
+[285.92] model to look for entries. Let's see if
+[288.48] we get 2 R, which is just below that
+[290.32] low. And let's see how this works. We
+[293.52] do. And then you can see we get another
+[295.76] potential continuation here. I
+[298.08] personally wouldn't trust this because
+[299.68] it did not reach into here unless we
+[301.76] have SMT on another asset. Let's see if
+[304.40] we get another continuation. Not before
+[306.56] running out this low. But if we're
+[308.88] taking a look at this and rewind, what
+[311.28] do we have? We have an anticipated
+[313.28] bearish weekly candle, right? reach into
+[315.84] its previous week's low as well as these
+[318.16] failure swings below. Then what I'm
+[320.40] going to do is align that with a daily
+[322.24] candle. Here we have a daily candle to
+[324.40] closure and then an hourly entry that
+[326.40] aligns with that. And really what you're
+[328.48] doing is aligning all time frames in one
+[330.80] direction and then trading the trend.
+[332.88] Let's get into another example. Now here
+[334.72] we are in our next example. And if
+[336.48] you've been on my Ninja Trader stream,
+[338.16] you've known I was talking about this
+[339.76] one early into this year. But what do we
+[342.40] have? We have a swing point on the
+[344.16] weekly time frame and we can be looking
+[345.84] to see this trade higher. So if we go to
+[348.08] the weekly chart here, you can see we
+[350.56] have this swing point here and we can
+[351.84] look for it to trade higher here into
+[353.76] all of these failure swings here and
+[355.84] this high. Now what do we notice about
+[357.76] this high here? It just fell shy of that
+[360.72] relevant swing. Now it doesn't really
+[362.80] make sense for me to try to trade a
+[365.04] reversal away from this. So I view this
+[366.88] as a retracement and I want to trade it
+[368.96] back into those equal highs there. So,
+[371.68] with that idea, what would I want to
+[373.36] wait for? Right? And you might see this.
+[375.44] Not this isn't a super clear weekly
+[377.52] candle bias, but I have a clear bias,
+[379.84] which still allows me to look for swing
+[381.36] entries. Now, why wouldn't I want to see
+[384.00] price trade all the way down into this
+[385.52] fair value gap? Well, if during an
+[387.92] expansion, price retraces all the way
+[389.92] down to here, this is when price becomes
+[392.08] bearish, and it might as well just take
+[393.52] out this low. So, I want to see price
+[395.52] remain in the upper half of this, so
+[397.28] ideally in this area before trading
+[399.52] away. But I need to wait for a daily
+[401.28] swing point. Let's see if we can get
+[403.20] that.
+[405.28] Here you can see we do have a daily
+[407.20] swing point. So now what do we have? We
+[409.44] have a swing point aligned with my bias
+[411.60] to these highs, right? And so what I'm
+[413.92] going to do is go down to the hourly
+[415.60] time frame. And I want to look for
+[417.20] protected swings. And what do we notice
+[419.36] here? We have a nice reversal with an
+[421.36] SMT. We'll clear up our drawings here.
+[424.00] And what else do we have? We have price
+[426.32] opening up right near a protected swing.
+[429.12] And I really like the look of this
+[430.40] because we have a nice V-shaped reversal
+[432.40] here. This is what you want to see when
+[434.16] you have a reversal structure
+[436.32] consolidation. Nice V-shaped reversal.
+[439.12] It makes sense to see us retrace back
+[440.56] into the range here as we've taken out
+[442.08] some short-term highs into a gap. So,
+[444.40] what could I do here? Well, really, I
+[446.16] could look to just take an entry
+[447.76] positionally if I wanted to and put my
+[449.52] stop on that protected swing and then
+[451.44] look for the higher time frame
+[453.04] objective, right? Which is that high
+[454.80] right there, which gives us plenty over
+[456.48] our 2R. So, let's see how this works
+[458.48] out. You can see we do get what? If we
+[462.56] missed our first entry right here, we
+[464.40] have a sweep of this low right here. And
+[467.28] then what do we have that nice V-shaped
+[469.60] reversal? You see what we're looking for
+[471.60] here? A nice V-shaped reversal. Nice
+[473.84] V-shaped reversal. And this would have
+[475.68] been another possible entry here is
+[478.00] that's creating a new protected swing.
+[480.16] This would be the intracandle change in
+[481.68] the state of delivery. Does this give 2
+[483.68] R? Yep, there's our 2R. And we could
+[485.92] also look for, you know, around that 4R,
+[488.24] right around our target. Let's see how
+[490.72] this works.
+[492.48] You can see we could have gotten stopped
+[495.44] out right there. And sometimes that
+[497.12] happens, right? Let's see if this other
+[498.56] one still works out.
+[506.24] You can see it takes quite a while, but
+[508.40] that's an example. Not all trades are
+[510.72] going to work out, right? This is a
+[512.40] valid loss, you know, and you could say,
+[514.80] "Oh, I could prevent it, you know, but
+[516.88] at the end of the day, you are going to
+[518.64] take some losses." You can see our first
+[521.04] entry would have worked. We would have
+[522.48] gotten our 3.74R out of it. Second one
+[525.84] would have failed, right? So, that would
+[527.44] be a valid stop-loss to me. It has the
+[530.16] context, it has the bias, and it has the
+[532.32] structure. It just comes and stops us
+[534.16] back out. After we get stopped out, you
+[536.56] know, we do have another V-shaped
+[538.16] reversal, right? and we have another
+[540.96] continuation out of there. You could
+[542.72] still trade that away if you wanted to,
+[544.88] but this is a pretty realistic approach
+[546.72] of what can occur when you're swing
+[548.40] trading. So, let's go over another
+[550.16] example here. What do we have? Well, we
+[552.48] had a bullish candle 2 closure, which
+[554.80] then had an expansion higher, but failed
+[557.36] and formed a bearish candle to closure
+[559.52] to the downside. But on this weekly time
+[561.84] frame, I could anticipate price to want
+[563.84] to move lower. Then I would go down to
+[566.08] the daily time frame because I want to
+[568.24] find a daily swing point that aligns
+[570.24] with that. And what do we have here?
+[572.24] Well, we have a nice V-shaped reversal
+[574.64] or a BPR and a consolidation. So, I want
+[577.84] to see price open, make a high, ideally
+[580.56] running out these swing points right
+[582.08] here before trading lower. So, let's see
+[584.80] if we can get that. Here we do get a
+[586.88] move higher, a nice large wick reversal
+[589.28] candle. We could be looking to trade
+[591.12] that if we wanted to. It's not a candle
+[593.28] 2 closure, but it's a reversal and price
+[595.36] should respect the lower half of the
+[596.80] wick if we want to trade that lower
+[598.88] there. Now, we'll see if that provides
+[601.84] an opportunity right. But I also want to
+[604.88] talk about one thing we can do here.
+[606.88] Let's see. Do we get a continuation?
+[609.04] Let's see if we do. We're just going to
+[610.72] be looking for a continuation on the
+[612.24] hourly chart.
+[616.72] And there we get a closure below the
+[618.72] series of upclose candles. So that is a
+[621.68] continuation. I can look to take an
+[623.44] entry there and see if that works out as
+[626.08] we start to trade lower, right? And
+[627.44] we'll look for 2 R. But we can
+[628.72] anticipate expansion,
+[631.04] right? And there we get 2 R. So let's go
+[634.32] back out to the daily time frame. See
+[636.64] how that works out. You can see we get a
+[638.72] nice expansion or strong candle closure
+[641.84] through there. Now we have a
+[643.36] continuation on the daily chart. Now,
+[646.56] since this candle expanded quite a bit,
+[648.16] we could look for entries in this
+[649.44] following candle, but it took out all
+[650.96] these lows here. So, I generally like to
+[652.72] wait for a new phase of price. [snorts]
+[655.84] But here you can see we get a little
+[657.28] consolidation. Let's see if we form a
+[658.88] new swing point.
+[661.20] You can see we do that all in one
+[662.64] candle. Is it possible to trade that
+[664.64] reversal candle? It is. But now we have
+[666.80] a candle to closure going this way. So,
+[670.08] let's see if we can find something on
+[671.60] the lower time frames in here reaching
+[673.84] lower. So going down to the hourly time
+[676.32] frame, what do we have? You can see it's
+[678.80] a bit messy. And this is why I wanted to
+[680.72] talk about this example. You don't have
+[682.72] to use this defined time frame
+[684.88] alignment. If things are a bit messy,
+[687.28] you can move up one time frame. So for
+[689.60] instance, intraday, if I'm on the 30
+[691.36] minute and it's messy, I can move up to
+[692.96] the hourly or in this case, since it's a
+[695.28] bit messy on the hourly, I can always
+[696.96] use the 4hour time frame. And you can
+[699.12] see it cleans it up a bit where we have
+[701.20] a clear consolidation, a V-shaped
+[703.68] reversal. Let's see if we can get a
+[705.20] continuation on the 4hour chart here.
+[709.84] And here you can see we do reach into
+[711.60] this fair value gap here. Let's see if
+[713.04] we can get a continuation or a closure
+[714.72] below here.
+[717.12] And you can see we do. Is that too much
+[719.28] to take an entry? I would probably want
+[721.12] some sort of retracement back into the
+[722.72] range. If I'm going to try to trade to
+[724.24] this low so I can get 2 R. Let's see if
+[726.72] we get that. We do. And then we do get a
+[729.60] move lower. So that is one possibility
+[732.16] that if it is not clean, you can move up
+[734.24] one time frame, right? It doesn't have
+[736.24] to be so defined if you do not want it
+[738.32] to be. But those are two pretty good
+[740.32] examples where you're aligning the
+[742.32] weekly time frame and where you're
+[744.00] expecting it to go and then looking to
+[745.68] trade those daily swing points. You can
+[747.68] trade the reversal candles themselves. I
+[749.92] just prefer to trade that candle three
+[751.68] as I find it easier. Now let's see if we
+[753.92] can keep going here because we are in
+[756.24] this consolidation. We have failure
+[757.92] swings on the highs and we just ran out
+[759.52] this low. If we are going to get a
+[761.68] reaction at this low, what would we do?
+[764.32] Well, let's actually clear up all the
+[766.00] drawings. We have a sweep. This is a
+[769.12] candle to closure closing on its wick.
+[771.76] We'd want to see the upper half
+[773.28] respected. If price is going to trade
+[775.68] higher from this low here, now this
+[778.80] would mean on the weekly time frame.
+[781.12] This is what I like to see. We're either
+[782.80] going to respect 0.5 of this wick and
+[784.56] trade higher or we're going to run out
+[786.16] the low and then we have a larger wick.
+[788.00] So, I'm not expecting as much expansion.
+[790.32] So, how would we want to approach this?
+[792.72] Well, we have the context. We'd want to
+[794.40] go to the hourly and see if we have a
+[796.08] model and then some way to trade this.
+[798.48] So, we'd want to see that area
+[799.76] respected, which is actually just the
+[801.60] T-spot here on the daily and hourly. And
+[804.72] let's see if we get a move, right? And
+[806.96] this might be a bit messy as well,
+[808.64] right? So, we could probably go up to
+[810.24] the 4hour time frame here if we want to,
+[813.04] right? And then we have a pretty clear
+[814.40] 4hour fair value gap right in here. We
+[816.80] can see if price reaches back into that
+[818.56] area.
+[820.48] You can see it does. I did skip ahead a
+[823.28] little bit. So, we'll go back to here
+[824.64] where we have a 4hour time frame. And
+[826.80] like I said, you can either just enter
+[828.80] here on the 4hour time frame or what can
+[831.20] you do? You can use what I talked about
+[832.88] in my favorite fractal model video where
+[834.96] I have a 4hour candle. I can go down to
+[837.36] the 15-minute time frame and look for a
+[839.52] fractal model here. Right, we have a
+[842.32] sweep and a closure through confirming
+[845.04] this low and a consolidation. I'd want
+[847.52] to see a sweep of this consolidation if
+[849.28] we're going to trade higher,
+[851.44] right? And you can see in this case, it
+[852.80] just expands without me. But you can see
+[855.60] the context there in ways you can filter
+[858.00] through time frames. You have to find
+[859.92] out what works best for you. Some people
+[862.16] want to stay on the higher time frames.
+[863.92] Some people want more confirmation on
+[865.44] the lower time frames. What I'm trying
+[867.28] to show you here is it really doesn't
+[869.12] matter what time frame you choose as
+[871.04] long as you have the higher time frame
+[872.56] context and understand where price
+[874.72] should trade away from. We know once we
+[876.80] form the low on the 4hour in this fair
+[878.56] value gap here, we don't want to see
+[880.08] price come all the way back down here.
+[881.84] So then we're just looking to find areas
+[883.52] to trade in here into these higher time
+[885.84] frame targets. And before we end this
+[888.16] example, just taking a look at the same
+[890.16] example on the correlated asset or
+[892.48] Ethereum, you can see it's a bit cleaner
+[894.56] here on the 15-minute and we probably
+[895.92] would have been able to find an entry as
+[897.76] we have a protected low here and then
+[899.76] continuations into this area as we trade
+[902.16] higher. I could have taken an entry in
+[904.08] here and had a protected low to trade
+[906.24] away from as we look for two R towards
+[908.48] that higher time frame objective. Let's
+[911.04] get into another example. Now, in this
+[913.04] final example, we will change it up a
+[915.04] little bit. I've been talking about how
+[916.72] you can use the weekly for bias, the
+[918.72] daily for a swing point, and then the
+[920.48] hourly for entries, but you can also
+[922.56] adjust how you approach this. For
+[924.56] instance, you can go directly from the
+[926.32] weekly to the 4hour and just use a
+[928.88] normal fractal model for a swing trade.
+[931.68] You don't need any other alignment
+[933.12] besides that. You just need some
+[934.80] context. And this trade is actually an
+[936.56] example from a trade that I saw a trader
+[938.88] in the lens take. So, you can go ahead
+[940.64] and check that out there on the screen
+[942.32] now. But, let's get into it. What is the
+[944.32] context? We have a expansion lower, a
+[947.84] consolidation, a sweep opposing that
+[950.48] order flow. So what are we looking for
+[952.40] here? Now that we have a candle to
+[954.24] closure, we can be looking for price to
+[956.32] trade lower in this following candle. I
+[958.64] can go directly to the 4hour time frame.
+[961.36] So here we are on the 4hour time frame.
+[963.44] You can see I have the weekly chart up
+[964.88] as well as the daily here. And we are
+[967.12] expanding away, right? We're respecting
+[969.20] the lower half of this wick. And what do
+[971.92] we get next? Right, we have expansion.
+[974.40] And this is looking like a retracement
+[975.84] or a consolidation. So let's see what
+[978.00] happens here. You can see what do we
+[980.40] get? We get a sweep and then we get a
+[982.88] closure through. Right? So that is
+[984.96] creating an opposing candle or a
+[986.88] protected swing and I could look to take
+[988.64] an entry there with my stop there. Now a
+[991.68] lot of you are going to say, "Hey guys,
+[993.20] there's a candle with no wick here." And
+[995.12] yes, if price is so weak that it can't
+[997.52] trade back up into that wick. You can
+[999.20] see it could have done that here. It
+[1001.12] doesn't want to. That's fine. and we can
+[1002.96] let it trade away once we get a
+[1004.24] continuation. I wouldn't want to take an
+[1006.00] entry before it does that, but once it
+[1007.92] shows me that it's not going to go up
+[1009.36] there, I can look for a continuation
+[1011.04] lower. And you can see there is 3R. Or
+[1014.00] you could be looking for these lows down
+[1015.76] here, which is what Daniel did. But
+[1017.68] let's see if we can get this right here.
+[1020.80] You can see we get a pretty quick move
+[1022.72] into that short-term objective. And then
+[1024.96] we'll go ahead and watch the rest of
+[1026.56] this play out.
+[1030.48] And there you can see we hit that final
+[1032.32] TP there before we can see if we get a
+[1035.28] new phase of price for either a
+[1036.56] continuation lower or a reversal. But my
+[1039.44] whole point of showing this is there's
+[1041.36] lots of ways you can combine the fractal
+[1043.44] model in lots of different time frame
+[1045.52] alignments you can use. At the end of
+[1047.52] the day, you have to figure out what
+[1048.96] type of trader you are and what time
+[1051.04] frames you prefer. Do you prefer taking
+[1053.20] swing trades on the weekly and the
+[1054.88] 4hour? Do you like to use the weekly,
+[1056.88] then the daily, then the hourly? or are
+[1059.20] you an intraday trader? You have to
+[1061.28] decide that for yourself because no one
+[1062.96] else is going to be able to tell you
+[1064.32] that. But with that, if you enjoyed this
+[1066.08] video, please give it a like and
+[1067.68] subscribe and I'll see you guys next
+[1069.04] time. Have a good one.

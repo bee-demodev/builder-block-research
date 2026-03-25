@@ -1,0 +1,5 @@
+[10.08] Improve Your Trade Entries Within Fair Value Gaps (FVG). educational_channel, fair_value_gap. Higher timeframe context daily bias equilibrium point of interest.
+[38.88] Improve Your Trade Entries Within Fair Value Gaps (FVG). educational_channel, fair_value_gap. Liquidity sweep or run on the highs and lows.
+[67.68] Improve Your Trade Entries Within Fair Value Gaps (FVG). educational_channel, fair_value_gap. Candle 2 or Candle 3 closure with CISD through the level.
+[96.48] Improve Your Trade Entries Within Fair Value Gaps (FVG). educational_channel, fair_value_gap. Entry confirmation around order block, breaker, fair value gap, or protected swing.
+[125.28] Improve Your Trade Entries Within Fair Value Gaps (FVG). educational_channel, fair_value_gap. Trade outcome, expansion, target delivery, or invalidation.

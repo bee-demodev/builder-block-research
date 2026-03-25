@@ -1,0 +1,75 @@
+{
+  "episodes": [
+    {
+      "episode_id": "iteration_001_bias_continuation_clean",
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "trade_model": "daily_bias_framework",
+      "relation_type": "bias_framework",
+      "checkpoint_predictions": [
+        {
+          "checkpoint": "context",
+          "component_labels": ["equilibrium"]
+        },
+        {
+          "checkpoint": "sweep",
+          "component_labels": []
+        },
+        {
+          "checkpoint": "closure",
+          "component_labels": []
+        },
+        {
+          "checkpoint": "confirmation",
+          "component_labels": ["equilibrium"]
+        },
+        {
+          "checkpoint": "outcome",
+          "component_labels": []
+        }
+      ],
+      "notes": "Clean continuation-day read with equilibrium carried from higher timeframe into confirmation."
+    },
+    {
+      "episode_id": "iteration_002_continuation_partial",
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "trade_model": "continuation_entry_model",
+      "relation_type": "bias_framework",
+      "checkpoint_predictions": [
+        {
+          "checkpoint": "context",
+          "component_labels": ["equilibrium"]
+        },
+        {
+          "checkpoint": "confirmation",
+          "component_labels": ["liquidity_sweep"]
+        },
+        {
+          "checkpoint": "outcome",
+          "component_labels": []
+        }
+      ],
+      "notes": "Partial read: equilibrium context recognized, but confirmation and relation type were misclassified."
+    },
+    {
+      "episode_id": "iteration_003_bias_reversal_weak",
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "trade_model": "continuation_entry_model",
+      "relation_type": "execution_model",
+      "checkpoint_predictions": [
+        {
+          "checkpoint": "context",
+          "component_labels": ["equilibrium"]
+        },
+        {
+          "checkpoint": "confirmation",
+          "component_labels": []
+        },
+        {
+          "checkpoint": "outcome",
+          "component_labels": []
+        }
+      ],
+      "notes": "Weak reversal-day interpretation that misses zone boundary logic and collapses the case into an execution setup."
+    }
+  ]
+}

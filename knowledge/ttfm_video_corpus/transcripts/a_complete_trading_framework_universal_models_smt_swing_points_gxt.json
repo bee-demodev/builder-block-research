@@ -1,0 +1,4112 @@
+[
+  {
+    "text": "How's it going everyone and welcome back",
+    "start": 11.2,
+    "duration": 4.319
+  },
+  {
+    "text": "to another tea talk. In this tea talk we",
+    "start": 13.04,
+    "duration": 4.4
+  },
+  {
+    "text": "are going to have Garrett on here for a",
+    "start": 15.519,
+    "duration": 4.241
+  },
+  {
+    "text": "second time to talk about universal",
+    "start": 17.44,
+    "duration": 5.28
+  },
+  {
+    "text": "models swing points and SMT. I hope you",
+    "start": 19.76,
+    "duration": 5.759
+  },
+  {
+    "text": "guys enjoy. What is up everybody? I am",
+    "start": 22.72,
+    "duration": 6.559
+  },
+  {
+    "text": "back for a second episode of TT Talks.",
+    "start": 25.519,
+    "duration": 6.241
+  },
+  {
+    "text": "Thank you T trades for the opportunity",
+    "start": 29.279,
+    "duration": 5.921
+  },
+  {
+    "text": "here. Today's lecture we are going to",
+    "start": 31.76,
+    "duration": 6.24
+  },
+  {
+    "text": "cover reversal confirmations",
+    "start": 35.2,
+    "duration": 5.519
+  },
+  {
+    "text": "a complete approach to the market. The",
+    "start": 38.0,
+    "duration": 4.879
+  },
+  {
+    "text": "lecture topics are going to be universal",
+    "start": 40.719,
+    "duration": 6.641
+  },
+  {
+    "text": "model swing formations SMT SMT pairing",
+    "start": 42.879,
+    "duration": 7.52
+  },
+  {
+    "text": "and two-stage SMT sequence. I'm going to",
+    "start": 47.36,
+    "duration": 4.719
+  },
+  {
+    "text": "show you guys how to pair these all",
+    "start": 50.399,
+    "duration": 4.721
+  },
+  {
+    "text": "together for a complete framework and",
+    "start": 52.079,
+    "duration": 5.681
+  },
+  {
+    "text": "approach the market. Credit goes to T",
+    "start": 55.12,
+    "duration": 5.919
+  },
+  {
+    "text": "trades, AM trades, the MXM trader,",
+    "start": 57.76,
+    "duration": 5.68
+  },
+  {
+    "text": "trader day, and ICT, which I would",
+    "start": 61.039,
+    "duration": 4.961
+  },
+  {
+    "text": "consider all my mentors. I have taken",
+    "start": 63.44,
+    "duration": 5.84
+  },
+  {
+    "text": "little bits and pieces of each one of my",
+    "start": 66.0,
+    "duration": 6.799
+  },
+  {
+    "text": "mentors and blended them together for my",
+    "start": 69.28,
+    "duration": 5.92
+  },
+  {
+    "text": "personal approach and that's what I will",
+    "start": 72.799,
+    "duration": 4.401
+  },
+  {
+    "text": "be sharing a piece of with you all",
+    "start": 75.2,
+    "duration": 4.72
+  },
+  {
+    "text": "today. Let's get into it. So, here we",
+    "start": 77.2,
+    "duration": 4.959
+  },
+  {
+    "text": "are on universal models. We're going to",
+    "start": 79.92,
+    "duration": 4.72
+  },
+  {
+    "text": "be covering internal to external,",
+    "start": 82.159,
+    "duration": 4.64
+  },
+  {
+    "text": "external to internal, and manipulation",
+    "start": 84.64,
+    "duration": 4.0
+  },
+  {
+    "text": "ranges. This is something I really",
+    "start": 86.799,
+    "duration": 4.32
+  },
+  {
+    "text": "learned from the MXM traders back when I",
+    "start": 88.64,
+    "duration": 4.799
+  },
+  {
+    "text": "was first learning how to really trade",
+    "start": 91.119,
+    "duration": 4.561
+  },
+  {
+    "text": "ICT. He really simplified it. So, I'm",
+    "start": 93.439,
+    "duration": 3.841
+  },
+  {
+    "text": "going to try to do my best here for you",
+    "start": 95.68,
+    "duration": 4.96
+  },
+  {
+    "text": "guys. So, all internal to external a",
+    "start": 97.28,
+    "duration": 5.839
+  },
+  {
+    "text": "universal model really is is a",
+    "start": 100.64,
+    "duration": 4.32
+  },
+  {
+    "text": "framework, right? It tells us, hey, when",
+    "start": 103.119,
+    "duration": 3.921
+  },
+  {
+    "text": "price hits this key level, in this case",
+    "start": 104.96,
+    "duration": 4.32
+  },
+  {
+    "text": "being internal range, a fair value gap,",
+    "start": 107.04,
+    "duration": 4.719
+  },
+  {
+    "text": "we can expect price to reverse and trade",
+    "start": 109.28,
+    "duration": 4.72
+  },
+  {
+    "text": "to the high or the external range that",
+    "start": 111.759,
+    "duration": 4.881
+  },
+  {
+    "text": "caused the retracement into the gap.",
+    "start": 114.0,
+    "duration": 4.719
+  },
+  {
+    "text": "Right? So, here we are on external to",
+    "start": 116.64,
+    "duration": 5.28
+  },
+  {
+    "text": "internal. Once price reaches an external",
+    "start": 118.719,
+    "duration": 6.08
+  },
+  {
+    "text": "high or manipulates a range high, we can",
+    "start": 121.92,
+    "duration": 5.28
+  },
+  {
+    "text": "expect price to retrace back into the",
+    "start": 124.799,
+    "duration": 5.761
+  },
+  {
+    "text": "range to see continuation from that gap",
+    "start": 127.2,
+    "duration": 5.44
+  },
+  {
+    "text": "or a failure to reverse from this gap",
+    "start": 130.56,
+    "duration": 3.759
+  },
+  {
+    "text": "and target the opposing side of the",
+    "start": 132.64,
+    "duration": 4.16
+  },
+  {
+    "text": "range. But regardless, this fair value",
+    "start": 134.319,
+    "duration": 4.64
+  },
+  {
+    "text": "gap becomes your first target. And",
+    "start": 136.8,
+    "duration": 4.48
+  },
+  {
+    "text": "lastly, order pairing ranges or",
+    "start": 138.959,
+    "duration": 6.241
+  },
+  {
+    "text": "manipulation ranges, a high or low or",
+    "start": 141.28,
+    "duration": 7.52
+  },
+  {
+    "text": "range low being the key level. the",
+    "start": 145.2,
+    "duration": 6.399
+  },
+  {
+    "text": "opposing side of the range or swing high",
+    "start": 148.8,
+    "duration": 5.28
+  },
+  {
+    "text": "being the targets. Now, we are going to",
+    "start": 151.599,
+    "duration": 5.521
+  },
+  {
+    "text": "be going over swing formations. Why are",
+    "start": 154.08,
+    "duration": 4.64
+  },
+  {
+    "text": "swing formations so important? Because",
+    "start": 157.12,
+    "duration": 3.839
+  },
+  {
+    "text": "the market cannot reverse without a",
+    "start": 158.72,
+    "duration": 4.239
+  },
+  {
+    "text": "swing formation. This is the whole logic",
+    "start": 160.959,
+    "duration": 4.721
+  },
+  {
+    "text": "behind the TH fractal model and why it",
+    "start": 162.959,
+    "duration": 5.041
+  },
+  {
+    "text": "is so logical. So, firstly, let's go",
+    "start": 165.68,
+    "duration": 4.16
+  },
+  {
+    "text": "over a candle 2 closure. What is a",
+    "start": 168.0,
+    "duration": 4.08
+  },
+  {
+    "text": "candle 2 closure? It is simply when",
+    "start": 169.84,
+    "duration": 4.64
+  },
+  {
+    "text": "candle 2 closes back inside of candle",
+    "start": 172.08,
+    "duration": 5.2
+  },
+  {
+    "text": "1's range. Once we have that closure, we",
+    "start": 174.48,
+    "duration": 4.479
+  },
+  {
+    "text": "mark out equilibrium of the previous",
+    "start": 177.28,
+    "duration": 4.64
+  },
+  {
+    "text": "candle's range, wanting to see the upper",
+    "start": 178.959,
+    "duration": 5.36
+  },
+  {
+    "text": "half of that range support price higher",
+    "start": 181.92,
+    "duration": 5.36
+  },
+  {
+    "text": "and form the low of candle 3. So why do",
+    "start": 184.319,
+    "duration": 4.961
+  },
+  {
+    "text": "we do this? Why do we mark our EQ of",
+    "start": 187.28,
+    "duration": 4.239
+  },
+  {
+    "text": "ranges? It is a mechanical way to",
+    "start": 189.28,
+    "duration": 4.8
+  },
+  {
+    "text": "measure wick size. What is wick size and",
+    "start": 191.519,
+    "duration": 4.321
+  },
+  {
+    "text": "why do we care about it? Well, we know",
+    "start": 194.08,
+    "duration": 3.84
+  },
+  {
+    "text": "that expansion candles, right, they have",
+    "start": 195.84,
+    "duration": 4.96
+  },
+  {
+    "text": "these small wicks. Reversal candles have",
+    "start": 197.92,
+    "duration": 4.64
+  },
+  {
+    "text": "these large wicks, which is what we",
+    "start": 200.8,
+    "duration": 3.84
+  },
+  {
+    "text": "typically want to avoid. We want to",
+    "start": 202.56,
+    "duration": 4.64
+  },
+  {
+    "text": "trade expansion with this large wick. We",
+    "start": 204.64,
+    "duration": 5.04
+  },
+  {
+    "text": "know price cannot expand. So after",
+    "start": 207.2,
+    "duration": 5.28
+  },
+  {
+    "text": "candle 3 expands, seeking continuation",
+    "start": 209.68,
+    "duration": 5.6
+  },
+  {
+    "text": "in candle 4 is if we close candle 3",
+    "start": 212.48,
+    "duration": 5.119
+  },
+  {
+    "text": "above candle 2's high. Once we have that",
+    "start": 215.28,
+    "duration": 4.879
+  },
+  {
+    "text": "closure, mark a equilibrium of the",
+    "start": 217.599,
+    "duration": 4.881
+  },
+  {
+    "text": "candle 3 expansion. This is where we",
+    "start": 220.159,
+    "duration": 5.041
+  },
+  {
+    "text": "seek a candle for continuation forming a",
+    "start": 222.48,
+    "duration": 5.36
+  },
+  {
+    "text": "low in the upper half of candle 3's",
+    "start": 225.2,
+    "duration": 5.36
+  },
+  {
+    "text": "range. So here we are with a candle 2",
+    "start": 227.84,
+    "duration": 5.119
+  },
+  {
+    "text": "reversal to expansion. It is the exact",
+    "start": 230.56,
+    "duration": 4.72
+  },
+  {
+    "text": "same thing as a reversal candle. The",
+    "start": 232.959,
+    "duration": 4.56
+  },
+  {
+    "text": "only difference is the wick size. Right?",
+    "start": 235.28,
+    "duration": 4.08
+  },
+  {
+    "text": "So here we can see that we have a small",
+    "start": 237.519,
+    "duration": 4.8
+  },
+  {
+    "text": "wick which allows price to reverse and",
+    "start": 239.36,
+    "duration": 4.879
+  },
+  {
+    "text": "expand in the same candle. So when",
+    "start": 242.319,
+    "duration": 4.401
+  },
+  {
+    "text": "candle one closes an expansion candle",
+    "start": 244.239,
+    "duration": 4.56
+  },
+  {
+    "text": "after hitting a key level, we can",
+    "start": 246.72,
+    "duration": 4.48
+  },
+  {
+    "text": "already anticipate a reversal. But if",
+    "start": 248.799,
+    "duration": 4.72
+  },
+  {
+    "text": "candle one did not reverse, then we must",
+    "start": 251.2,
+    "duration": 4.8
+  },
+  {
+    "text": "reverse off of its high or low here. As",
+    "start": 253.519,
+    "duration": 5.041
+  },
+  {
+    "text": "you see, we reverse off the low. If we",
+    "start": 256.0,
+    "duration": 4.56
+  },
+  {
+    "text": "form a small wick, then we can actually",
+    "start": 258.56,
+    "duration": 3.84
+  },
+  {
+    "text": "participate in this candle because it",
+    "start": 260.56,
+    "duration": 4.0
+  },
+  {
+    "text": "supports expansion away from the",
+    "start": 262.4,
+    "duration": 4.32
+  },
+  {
+    "text": "reversal. So here we are with a candle",
+    "start": 264.56,
+    "duration": 4.16
+  },
+  {
+    "text": "three closure. This is simply when",
+    "start": 266.72,
+    "duration": 4.56
+  },
+  {
+    "text": "candle one hits a key level or candle 2",
+    "start": 268.72,
+    "duration": 4.56
+  },
+  {
+    "text": "hits a key level, but we do not get a",
+    "start": 271.28,
+    "duration": 4.08
+  },
+  {
+    "text": "candle 2 closure. As you see, this is",
+    "start": 273.28,
+    "duration": 4.479
+  },
+  {
+    "text": "where candle 3 will just expand away",
+    "start": 275.36,
+    "duration": 4.399
+  },
+  {
+    "text": "from candle 2's low without actually",
+    "start": 277.759,
+    "duration": 4.801
+  },
+  {
+    "text": "taking that low out. So prior to candle",
+    "start": 279.759,
+    "duration": 4.88
+  },
+  {
+    "text": "3's open, we cannot anticipate this",
+    "start": 282.56,
+    "duration": 3.6
+  },
+  {
+    "text": "reversal because we have no closure,",
+    "start": 284.639,
+    "duration": 3.361
+  },
+  {
+    "text": "right? The only way we anticipate this",
+    "start": 286.16,
+    "duration": 3.759
+  },
+  {
+    "text": "reversal is after the swing formation",
+    "start": 288.0,
+    "duration": 3.919
+  },
+  {
+    "text": "actually forms. Right? Candle 1, candle",
+    "start": 289.919,
+    "duration": 4.161
+  },
+  {
+    "text": "2, candle 3. Once we have a strong",
+    "start": 291.919,
+    "duration": 4.641
+  },
+  {
+    "text": "candle 3 closure, mechanically defined",
+    "start": 294.08,
+    "duration": 5.36
+  },
+  {
+    "text": "as closing over the body of candle 2.",
+    "start": 296.56,
+    "duration": 4.56
+  },
+  {
+    "text": "This is where we can mark out",
+    "start": 299.44,
+    "duration": 4.88
+  },
+  {
+    "text": "equilibrium of candle 3's range seeking",
+    "start": 301.12,
+    "duration": 6.799
+  },
+  {
+    "text": "expansion or continuation in candle 4",
+    "start": 304.32,
+    "duration": 5.36
+  },
+  {
+    "text": "where the low is formed in the upper",
+    "start": 307.919,
+    "duration": 4.161
+  },
+  {
+    "text": "half of candle 3's range. So now we're",
+    "start": 309.68,
+    "duration": 4.88
+  },
+  {
+    "text": "going to put the two together. universal",
+    "start": 312.08,
+    "duration": 5.28
+  },
+  {
+    "text": "models with swing points. We know that",
+    "start": 314.56,
+    "duration": 5.359
+  },
+  {
+    "text": "when market hits these key levels, we",
+    "start": 317.36,
+    "duration": 4.88
+  },
+  {
+    "text": "know we should expect a reversal and we",
+    "start": 319.919,
+    "duration": 4.081
+  },
+  {
+    "text": "also know that the market cannot reverse",
+    "start": 322.24,
+    "duration": 3.519
+  },
+  {
+    "text": "without a swing point. So this is when",
+    "start": 324.0,
+    "duration": 4.4
+  },
+  {
+    "text": "we blend the two together to confirm our",
+    "start": 325.759,
+    "duration": 5.121
+  },
+  {
+    "text": "framework. So as you can see market",
+    "start": 328.4,
+    "duration": 4.96
+  },
+  {
+    "text": "trades lower into this gap creates a",
+    "start": 330.88,
+    "duration": 5.36
+  },
+  {
+    "text": "candle too indicating a reversal from",
+    "start": 333.36,
+    "duration": 4.96
+  },
+  {
+    "text": "the internal range of liquidity. Once we",
+    "start": 336.24,
+    "duration": 3.84
+  },
+  {
+    "text": "hit internal range liquidity, we know we",
+    "start": 338.32,
+    "duration": 3.2
+  },
+  {
+    "text": "should target the opposing side of the",
+    "start": 340.08,
+    "duration": 3.76
+  },
+  {
+    "text": "range that caused a retracement. This is",
+    "start": 341.52,
+    "duration": 4.48
+  },
+  {
+    "text": "where we seek a continuation within",
+    "start": 343.84,
+    "duration": 5.199
+  },
+  {
+    "text": "candle 3 respecting the upper half of",
+    "start": 346.0,
+    "duration": 5.68
+  },
+  {
+    "text": "the previous candle's range. So here we",
+    "start": 349.039,
+    "duration": 5.281
+  },
+  {
+    "text": "have a reversal into expansion candle",
+    "start": 351.68,
+    "duration": 4.56
+  },
+  {
+    "text": "where candle one hits the key level",
+    "start": 354.32,
+    "duration": 4.24
+  },
+  {
+    "text": "being external range of liquidity, but",
+    "start": 356.24,
+    "duration": 4.08
+  },
+  {
+    "text": "candle one does not reverse. We're",
+    "start": 358.56,
+    "duration": 3.76
+  },
+  {
+    "text": "opening near the candle's high. So that",
+    "start": 360.32,
+    "duration": 4.4
+  },
+  {
+    "text": "becomes the reversal point. If we create",
+    "start": 362.32,
+    "duration": 4.4
+  },
+  {
+    "text": "that small wick, this is what allows the",
+    "start": 364.72,
+    "duration": 5.199
+  },
+  {
+    "text": "candle to reverse and expand into the",
+    "start": 366.72,
+    "duration": 5.039
+  },
+  {
+    "text": "fair value gap. So, we actually can",
+    "start": 369.919,
+    "duration": 4.321
+  },
+  {
+    "text": "participate in this reversal candle. So,",
+    "start": 371.759,
+    "duration": 5.201
+  },
+  {
+    "text": "here we are with order pairing ranges.",
+    "start": 374.24,
+    "duration": 5.6
+  },
+  {
+    "text": "Here we have a candle 3 closure where",
+    "start": 376.96,
+    "duration": 5.519
+  },
+  {
+    "text": "candle one trades into the range low but",
+    "start": 379.84,
+    "duration": 4.24
+  },
+  {
+    "text": "does not reverse. So, we do not",
+    "start": 382.479,
+    "duration": 3.201
+  },
+  {
+    "text": "participate in this candle because it",
+    "start": 384.08,
+    "duration": 3.2
+  },
+  {
+    "text": "does not support expansion. And once",
+    "start": 385.68,
+    "duration": 3.44
+  },
+  {
+    "text": "candle 3 opens, we also cannot",
+    "start": 387.28,
+    "duration": 3.52
+  },
+  {
+    "text": "participate in this candle because",
+    "start": 389.12,
+    "duration": 4.72
+  },
+  {
+    "text": "candle 2 showed no signs of reversal. So",
+    "start": 390.8,
+    "duration": 5.519
+  },
+  {
+    "text": "we must wait for the close. If it closes",
+    "start": 393.84,
+    "duration": 4.88
+  },
+  {
+    "text": "above the body of candle 2, this is what",
+    "start": 396.319,
+    "duration": 4.561
+  },
+  {
+    "text": "validates us to trade candle 4.",
+    "start": 398.72,
+    "duration": 5.039
+  },
+  {
+    "text": "Continuation marking out equilibrium of",
+    "start": 400.88,
+    "duration": 5.36
+  },
+  {
+    "text": "candle 3 and looking for candle 4 to",
+    "start": 403.759,
+    "duration": 5.121
+  },
+  {
+    "text": "respect the upper half of that range and",
+    "start": 406.24,
+    "duration": 4.64
+  },
+  {
+    "text": "targeting the opposing side of that",
+    "start": 408.88,
+    "duration": 4.72
+  },
+  {
+    "text": "range. Now we're going to get into SMT.",
+    "start": 410.88,
+    "duration": 4.08
+  },
+  {
+    "text": "One thing we know about the market is",
+    "start": 413.6,
+    "duration": 2.96
+  },
+  {
+    "text": "the market cannot reverse without a",
+    "start": 414.96,
+    "duration": 3.6
+  },
+  {
+    "text": "swing point, but the market can also not",
+    "start": 416.56,
+    "duration": 3.919
+  },
+  {
+    "text": "reverse without SMT. So this is where",
+    "start": 418.56,
+    "duration": 4.24
+  },
+  {
+    "text": "we're going to combine the two. And this",
+    "start": 420.479,
+    "duration": 4.16
+  },
+  {
+    "text": "is really the whole goal of this lecture",
+    "start": 422.8,
+    "duration": 3.679
+  },
+  {
+    "text": "is to show you the power of combining",
+    "start": 424.639,
+    "duration": 3.441
+  },
+  {
+    "text": "the two and how you can build a",
+    "start": 426.479,
+    "duration": 3.601
+  },
+  {
+    "text": "mechanical framework and system around",
+    "start": 428.08,
+    "duration": 4.72
+  },
+  {
+    "text": "this logic. With SMT, we must understand",
+    "start": 430.08,
+    "duration": 4.8
+  },
+  {
+    "text": "the correlated markets to pair",
+    "start": 432.8,
+    "duration": 4.399
+  },
+  {
+    "text": "divergences with. So for me personally,",
+    "start": 434.88,
+    "duration": 4.0
+  },
+  {
+    "text": "I view correlated markets through a",
+    "start": 437.199,
+    "duration": 3.921
+  },
+  {
+    "text": "triad that is simply three correlated",
+    "start": 438.88,
+    "duration": 5.439
+  },
+  {
+    "text": "markets. So for forex we have DXY,",
+    "start": 441.12,
+    "duration": 4.799
+  },
+  {
+    "text": "EURUSD,",
+    "start": 444.319,
+    "duration": 6.641
+  },
+  {
+    "text": "GBPUSD. For indices we have ENQ, ESYM.",
+    "start": 445.919,
+    "duration": 9.84
+  },
+  {
+    "text": "For gold we have gold or GC X AU Euro",
+    "start": 450.96,
+    "duration": 8.639
+  },
+  {
+    "text": "and X AU GBP. For the oil triad we have",
+    "start": 455.759,
+    "duration": 7.44
+  },
+  {
+    "text": "CL, RB and HO. Firstly, we're going to",
+    "start": 459.599,
+    "duration": 6.081
+  },
+  {
+    "text": "be using SMT between highs and lows.",
+    "start": 463.199,
+    "duration": 5.201
+  },
+  {
+    "text": "This is the most common form of SMT. It",
+    "start": 465.68,
+    "duration": 5.28
+  },
+  {
+    "text": "is where one market manipulates a low or",
+    "start": 468.4,
+    "duration": 4.72
+  },
+  {
+    "text": "range low where the other one simply",
+    "start": 470.96,
+    "duration": 4.32
+  },
+  {
+    "text": "does not take that low. This is a Ken",
+    "start": 473.12,
+    "duration": 4.4
+  },
+  {
+    "text": "correlation. It signals a potential",
+    "start": 475.28,
+    "duration": 4.639
+  },
+  {
+    "text": "reversal. Secondly, and the other key",
+    "start": 477.52,
+    "duration": 4.56
+  },
+  {
+    "text": "level we are going to be using S&T with",
+    "start": 479.919,
+    "duration": 5.84
+  },
+  {
+    "text": "is a fair value gap or also known as SMT",
+    "start": 482.08,
+    "duration": 6.239
+  },
+  {
+    "text": "fill. This is where one asset fills in a",
+    "start": 485.759,
+    "duration": 4.88
+  },
+  {
+    "text": "gap or trades into a gap and the other",
+    "start": 488.319,
+    "duration": 4.241
+  },
+  {
+    "text": "one leaves it open, right? A breakaway",
+    "start": 490.639,
+    "duration": 3.68
+  },
+  {
+    "text": "gap. And this can signal a potential",
+    "start": 492.56,
+    "duration": 3.84
+  },
+  {
+    "text": "reversal. So now we're going to combine",
+    "start": 494.319,
+    "duration": 5.44
+  },
+  {
+    "text": "swing points and SMT with our universal",
+    "start": 496.4,
+    "duration": 6.0
+  },
+  {
+    "text": "models for a mechanical approach to the",
+    "start": 499.759,
+    "duration": 5.12
+  },
+  {
+    "text": "market. So as you see, price trades into",
+    "start": 502.4,
+    "duration": 4.88
+  },
+  {
+    "text": "the gap creates SMT with the gap. That",
+    "start": 504.879,
+    "duration": 5.04
+  },
+  {
+    "text": "is our first sign of reversal and that",
+    "start": 507.28,
+    "duration": 5.28
+  },
+  {
+    "text": "is confirmed by the candle 2 closure.",
+    "start": 509.919,
+    "duration": 4.641
+  },
+  {
+    "text": "Once we have that close, mark out",
+    "start": 512.56,
+    "duration": 4.8
+  },
+  {
+    "text": "equilibrium or 0.5 of that range. And",
+    "start": 514.56,
+    "duration": 4.56
+  },
+  {
+    "text": "this is where we look for candle 3",
+    "start": 517.36,
+    "duration": 4.239
+  },
+  {
+    "text": "continuation to form a low in the upper",
+    "start": 519.12,
+    "duration": 4.88
+  },
+  {
+    "text": "half of candle 2's range. Here we are",
+    "start": 521.599,
+    "duration": 4.24
+  },
+  {
+    "text": "with external to internal where one",
+    "start": 524.0,
+    "duration": 4.08
+  },
+  {
+    "text": "asset reaches into external, the other",
+    "start": 525.839,
+    "duration": 4.161
+  },
+  {
+    "text": "one does not. This creates that",
+    "start": 528.08,
+    "duration": 4.72
+  },
+  {
+    "text": "divergence, that potential reversal. And",
+    "start": 530.0,
+    "duration": 4.64
+  },
+  {
+    "text": "since we have this small wick, we can",
+    "start": 532.8,
+    "duration": 3.52
+  },
+  {
+    "text": "actually trade it back into the range,",
+    "start": 534.64,
+    "duration": 3.199
+  },
+  {
+    "text": "right? We can actually anticipate this",
+    "start": 536.32,
+    "duration": 3.92
+  },
+  {
+    "text": "reversal. Not only because of the small",
+    "start": 537.839,
+    "duration": 4.081
+  },
+  {
+    "text": "wick, but it is also because of that",
+    "start": 540.24,
+    "duration": 4.0
+  },
+  {
+    "text": "divergence. Here we have manipulation",
+    "start": 541.92,
+    "duration": 4.479
+  },
+  {
+    "text": "ranges where one asset trades into the",
+    "start": 544.24,
+    "duration": 4.719
+  },
+  {
+    "text": "range low or swing low. The other one",
+    "start": 546.399,
+    "duration": 4.641
+  },
+  {
+    "text": "does not. It creates a failure swing.",
+    "start": 548.959,
+    "duration": 4.401
+  },
+  {
+    "text": "This is what signifies a potential",
+    "start": 551.04,
+    "duration": 4.799
+  },
+  {
+    "text": "reversal that is not confirmed until we",
+    "start": 553.36,
+    "duration": 4.8
+  },
+  {
+    "text": "get that candle 3 closure closing above",
+    "start": 555.839,
+    "duration": 4.161
+  },
+  {
+    "text": "candle 2's body. Once we have that",
+    "start": 558.16,
+    "duration": 3.92
+  },
+  {
+    "text": "closure, we can anticipate a candle for",
+    "start": 560.0,
+    "duration": 4.32
+  },
+  {
+    "text": "continuation into the opposing side of",
+    "start": 562.08,
+    "duration": 5.28
+  },
+  {
+    "text": "the range as our target. And as you see",
+    "start": 564.32,
+    "duration": 5.04
+  },
+  {
+    "text": "after we mark out equilibrium, it",
+    "start": 567.36,
+    "duration": 4.56
+  },
+  {
+    "text": "respects EQ of that range supporting",
+    "start": 569.36,
+    "duration": 4.08
+  },
+  {
+    "text": "expansion.",
+    "start": 571.92,
+    "duration": 3.359
+  },
+  {
+    "text": "Now we are going to be going over swing",
+    "start": 573.44,
+    "duration": 4.24
+  },
+  {
+    "text": "confirmations. Since we know the market",
+    "start": 575.279,
+    "duration": 5.12
+  },
+  {
+    "text": "can't reverse out of swing point or SMT,",
+    "start": 577.68,
+    "duration": 6.719
+  },
+  {
+    "text": "now we can apply SMT with swing points.",
+    "start": 580.399,
+    "duration": 6.88
+  },
+  {
+    "text": "So here we have swing point SMT between",
+    "start": 584.399,
+    "duration": 5.681
+  },
+  {
+    "text": "candle 1 and candle 2 on the correlated",
+    "start": 587.279,
+    "duration": 4.081
+  },
+  {
+    "text": "market. This is where we create that",
+    "start": 590.08,
+    "duration": 3.6
+  },
+  {
+    "text": "failure swing that indicates that",
+    "start": 591.36,
+    "duration": 4.24
+  },
+  {
+    "text": "potential reversal and this is where we",
+    "start": 593.68,
+    "duration": 4.4
+  },
+  {
+    "text": "look to trade a candle 3 continuation.",
+    "start": 595.6,
+    "duration": 5.44
+  },
+  {
+    "text": "Here we have an SMT between candle 2 and",
+    "start": 598.08,
+    "duration": 6.0
+  },
+  {
+    "text": "candle 3. We're on the candle 2 closure.",
+    "start": 601.04,
+    "duration": 6.0
+  },
+  {
+    "text": "The SMT is confirming that reversal and",
+    "start": 604.08,
+    "duration": 5.199
+  },
+  {
+    "text": "we look to trade candle 3 continuation",
+    "start": 607.04,
+    "duration": 5.52
+  },
+  {
+    "text": "lower. So here we have a two-stage SMT.",
+    "start": 609.279,
+    "duration": 6.481
+  },
+  {
+    "text": "A two-stage SMT is where we have one",
+    "start": 612.56,
+    "duration": 5.519
+  },
+  {
+    "text": "stage of SMT and immediately following",
+    "start": 615.76,
+    "duration": 5.68
+  },
+  {
+    "text": "that is confirmed by a second SMT. We",
+    "start": 618.079,
+    "duration": 5.44
+  },
+  {
+    "text": "can use this via swing point where we",
+    "start": 621.44,
+    "duration": 4.0
+  },
+  {
+    "text": "have an SMT between candle 1 and candle",
+    "start": 623.519,
+    "duration": 4.481
+  },
+  {
+    "text": "2 and then an SMT between candle 2 and",
+    "start": 625.44,
+    "duration": 4.8
+  },
+  {
+    "text": "candle 3. This is a very strong",
+    "start": 628.0,
+    "duration": 4.48
+  },
+  {
+    "text": "signature in price that we can use to",
+    "start": 630.24,
+    "duration": 4.48
+  },
+  {
+    "text": "confirm reversals. Now we are going to",
+    "start": 632.48,
+    "duration": 4.96
+  },
+  {
+    "text": "be covering the PSP. This is a concept",
+    "start": 634.72,
+    "duration": 5.2
+  },
+  {
+    "text": "taught by trader day. So all the credit",
+    "start": 637.44,
+    "duration": 5.36
+  },
+  {
+    "text": "in the world to him is very very simple.",
+    "start": 639.92,
+    "duration": 6.08
+  },
+  {
+    "text": "It is where between a correlated markets",
+    "start": 642.8,
+    "duration": 5.84
+  },
+  {
+    "text": "they close in opposite directions. So as",
+    "start": 646.0,
+    "duration": 4.88
+  },
+  {
+    "text": "you see over here this candle closes",
+    "start": 648.64,
+    "duration": 4.96
+  },
+  {
+    "text": "bullish. This one closes bearish. And",
+    "start": 650.88,
+    "duration": 5.44
+  },
+  {
+    "text": "this indicates a potential reversal. It",
+    "start": 653.6,
+    "duration": 5.84
+  },
+  {
+    "text": "is as simple as that. Now we're going to",
+    "start": 656.32,
+    "duration": 5.84
+  },
+  {
+    "text": "go over a two-stage PSP. It's",
+    "start": 659.44,
+    "duration": 4.24
+  },
+  {
+    "text": "essentially what we just talked about",
+    "start": 662.16,
+    "duration": 4.0
+  },
+  {
+    "text": "with SMT between candle one and candle 2",
+    "start": 663.68,
+    "duration": 4.8
+  },
+  {
+    "text": "or candle 2 and candle 3. Now we're just",
+    "start": 666.16,
+    "duration": 4.96
+  },
+  {
+    "text": "adding in a precision swing point. So",
+    "start": 668.48,
+    "duration": 5.12
+  },
+  {
+    "text": "with this SMT between candle one and",
+    "start": 671.12,
+    "duration": 5.36
+  },
+  {
+    "text": "candle 2, this is our first stage SMT",
+    "start": 673.6,
+    "duration": 6.08
+  },
+  {
+    "text": "which is confirmed by the PSP creating a",
+    "start": 676.48,
+    "duration": 6.08
+  },
+  {
+    "text": "two-stage SMT. Then we look to trade the",
+    "start": 679.68,
+    "duration": 4.64
+  },
+  {
+    "text": "following candle in the opposing",
+    "start": 682.56,
+    "duration": 4.88
+  },
+  {
+    "text": "direction. Here is a two-stage PSP",
+    "start": 684.32,
+    "duration": 6.48
+  },
+  {
+    "text": "between candle 2 and candle 3. This is",
+    "start": 687.44,
+    "duration": 6.959
+  },
+  {
+    "text": "when a S&T between candle 2 and candle 3",
+    "start": 690.8,
+    "duration": 6.32
+  },
+  {
+    "text": "confirms the PSP. So as you can see the",
+    "start": 694.399,
+    "duration": 6.0
+  },
+  {
+    "text": "PSP forms first and the SMT between",
+    "start": 697.12,
+    "duration": 5.76
+  },
+  {
+    "text": "candle 2 and candle 3 forms after that",
+    "start": 700.399,
+    "duration": 5.601
+  },
+  {
+    "text": "is what confirms the PSP. This is when",
+    "start": 702.88,
+    "duration": 5.76
+  },
+  {
+    "text": "we look to trade candle 3 lower or a",
+    "start": 706.0,
+    "duration": 5.12
+  },
+  {
+    "text": "candle 2 reversal into expansion. And",
+    "start": 708.64,
+    "duration": 5.36
+  },
+  {
+    "text": "here is the continuation PSP. This is",
+    "start": 711.12,
+    "duration": 5.12
+  },
+  {
+    "text": "what we look for in expansion away from",
+    "start": 714.0,
+    "duration": 5.04
+  },
+  {
+    "text": "a true reversal towards a target. It is",
+    "start": 716.24,
+    "duration": 4.88
+  },
+  {
+    "text": "simply where one asset retraces back",
+    "start": 719.04,
+    "duration": 4.64
+  },
+  {
+    "text": "into the range. On the close it creates",
+    "start": 721.12,
+    "duration": 5.36
+  },
+  {
+    "text": "a PSP on one market. it runs out the",
+    "start": 723.68,
+    "duration": 5.599
+  },
+  {
+    "text": "PSP's high which creates that two-stage",
+    "start": 726.48,
+    "duration": 5.44
+  },
+  {
+    "text": "PSP on the other asset. It does not",
+    "start": 729.279,
+    "duration": 4.8
+  },
+  {
+    "text": "create a swing point at all. So now what",
+    "start": 731.92,
+    "duration": 4.56
+  },
+  {
+    "text": "we're going to do is recovering SMT",
+    "start": 734.079,
+    "duration": 4.88
+  },
+  {
+    "text": "sequences that confirm our universal",
+    "start": 736.48,
+    "duration": 4.72
+  },
+  {
+    "text": "model framework. So the first sequence",
+    "start": 738.959,
+    "duration": 5.201
+  },
+  {
+    "text": "is simply where we have an SMT fill",
+    "start": 741.2,
+    "duration": 5.28
+  },
+  {
+    "text": "where one asset trades into the gap the",
+    "start": 744.16,
+    "duration": 5.119
+  },
+  {
+    "text": "other one does not. This can confirm our",
+    "start": 746.48,
+    "duration": 5.2
+  },
+  {
+    "text": "internal to external range framework.",
+    "start": 749.279,
+    "duration": 4.961
+  },
+  {
+    "text": "The next SMT sequence is simply where we",
+    "start": 751.68,
+    "duration": 4.8
+  },
+  {
+    "text": "trade into an external range, but we do",
+    "start": 754.24,
+    "duration": 5.12
+  },
+  {
+    "text": "not form SMT at that level. This is",
+    "start": 756.48,
+    "duration": 5.359
+  },
+  {
+    "text": "where this is confirmed by a swing",
+    "start": 759.36,
+    "duration": 5.279
+  },
+  {
+    "text": "point, right? So SMT between candle one",
+    "start": 761.839,
+    "duration": 5.201
+  },
+  {
+    "text": "and candle 2. Once that's confirmed,",
+    "start": 764.639,
+    "duration": 4.64
+  },
+  {
+    "text": "then we can trade back into the range",
+    "start": 767.04,
+    "duration": 4.4
+  },
+  {
+    "text": "completing this external to internal",
+    "start": 769.279,
+    "duration": 4.721
+  },
+  {
+    "text": "model. The next scenario is when we just",
+    "start": 771.44,
+    "duration": 5.28
+  },
+  {
+    "text": "have a PSP close, right? There's no SMT",
+    "start": 774.0,
+    "duration": 4.88
+  },
+  {
+    "text": "with our key level being a high or low",
+    "start": 776.72,
+    "duration": 4.559
+  },
+  {
+    "text": "or fair value gap, but we get a",
+    "start": 778.88,
+    "duration": 4.32
+  },
+  {
+    "text": "precision swing point. This can be",
+    "start": 781.279,
+    "duration": 4.641
+  },
+  {
+    "text": "enough to hint a reversal to go from",
+    "start": 783.2,
+    "duration": 6.16
+  },
+  {
+    "text": "external range low to external range",
+    "start": 785.92,
+    "duration": 5.599
+  },
+  {
+    "text": "high. So now we are going to be pairing",
+    "start": 789.36,
+    "duration": 4.8
+  },
+  {
+    "text": "two-stage SMT sequences with our",
+    "start": 791.519,
+    "duration": 4.801
+  },
+  {
+    "text": "universal models. So here we have our",
+    "start": 794.16,
+    "duration": 5.44
+  },
+  {
+    "text": "first stage SMT with the fair value gap",
+    "start": 796.32,
+    "duration": 5.12
+  },
+  {
+    "text": "itself with our key level. And that",
+    "start": 799.6,
+    "duration": 4.479
+  },
+  {
+    "text": "first SMT is confirmed by a second stage",
+    "start": 801.44,
+    "duration": 5.519
+  },
+  {
+    "text": "SMT via swing point with candle 2 and",
+    "start": 804.079,
+    "duration": 5.361
+  },
+  {
+    "text": "candle 3. The next two-stage SMT",
+    "start": 806.959,
+    "duration": 4.481
+  },
+  {
+    "text": "sequence is when we hit a fair value",
+    "start": 809.44,
+    "duration": 5.519
+  },
+  {
+    "text": "gap. We do not have SMT between our key",
+    "start": 811.44,
+    "duration": 5.68
+  },
+  {
+    "text": "level, but we get our first stage SMT",
+    "start": 814.959,
+    "duration": 4.961
+  },
+  {
+    "text": "with candle one and candle 2. And that",
+    "start": 817.12,
+    "duration": 5.839
+  },
+  {
+    "text": "is confirmed by candle 2 and candle 3",
+    "start": 819.92,
+    "duration": 5.919
+  },
+  {
+    "text": "SMT as our second stage SMT. In this",
+    "start": 822.959,
+    "duration": 5.68
+  },
+  {
+    "text": "two-stage SMT sequence, we have an SMT",
+    "start": 825.839,
+    "duration": 5.521
+  },
+  {
+    "text": "with our key level being a higher low or",
+    "start": 828.639,
+    "duration": 4.961
+  },
+  {
+    "text": "a fair value gap, which is confirmed by",
+    "start": 831.36,
+    "duration": 4.479
+  },
+  {
+    "text": "a precision swing point. This confirms",
+    "start": 833.6,
+    "duration": 4.32
+  },
+  {
+    "text": "the reversal and we look to trade the",
+    "start": 835.839,
+    "duration": 4.481
+  },
+  {
+    "text": "following candles as continuation",
+    "start": 837.92,
+    "duration": 4.96
+  },
+  {
+    "text": "towards our target. This next two-stage",
+    "start": 840.32,
+    "duration": 4.959
+  },
+  {
+    "text": "SMT sequence is where we hit a key",
+    "start": 842.88,
+    "duration": 4.319
+  },
+  {
+    "text": "level, do not have SMT with that key",
+    "start": 845.279,
+    "duration": 4.481
+  },
+  {
+    "text": "level. Our first stage SMT will be a",
+    "start": 847.199,
+    "duration": 4.88
+  },
+  {
+    "text": "precision swing point confirmed by an",
+    "start": 849.76,
+    "duration": 5.36
+  },
+  {
+    "text": "SMT between swing points. Here we have a",
+    "start": 852.079,
+    "duration": 5.281
+  },
+  {
+    "text": "cracking correlation with candle 2 and",
+    "start": 855.12,
+    "duration": 4.56
+  },
+  {
+    "text": "candle 3. Once that forms, we look to",
+    "start": 857.36,
+    "duration": 4.479
+  },
+  {
+    "text": "trade the continuation away from the",
+    "start": 859.68,
+    "duration": 4.32
+  },
+  {
+    "text": "external range towards the target which",
+    "start": 861.839,
+    "duration": 4.081
+  },
+  {
+    "text": "is the opposing side of the range. And",
+    "start": 864.0,
+    "duration": 4.56
+  },
+  {
+    "text": "lastly, this is the highest probability",
+    "start": 865.92,
+    "duration": 5.44
+  },
+  {
+    "text": "reversal signature or confirmation that",
+    "start": 868.56,
+    "duration": 4.8
+  },
+  {
+    "text": "I use. That is when we have our first",
+    "start": 871.36,
+    "duration": 4.4
+  },
+  {
+    "text": "stage SMT with a key level. In this",
+    "start": 873.36,
+    "duration": 4.64
+  },
+  {
+    "text": "case, the internal range liquidity or",
+    "start": 875.76,
+    "duration": 5.84
+  },
+  {
+    "text": "fair value gap. Next, we form a PSP and",
+    "start": 878.0,
+    "duration": 5.92
+  },
+  {
+    "text": "then we get a Kraken correlation with a",
+    "start": 881.6,
+    "duration": 4.88
+  },
+  {
+    "text": "swing point. So, essentially, we have a",
+    "start": 883.92,
+    "duration": 5.039
+  },
+  {
+    "text": "SMT with a key level and then a",
+    "start": 886.48,
+    "duration": 5.12
+  },
+  {
+    "text": "two-stage PSP following that first stage",
+    "start": 888.959,
+    "duration": 4.961
+  },
+  {
+    "text": "Kraken correlation. Now, let's get into",
+    "start": 891.6,
+    "duration": 4.32
+  },
+  {
+    "text": "some examples. So, with this first",
+    "start": 893.92,
+    "duration": 3.76
+  },
+  {
+    "text": "example, we pretty much have a model",
+    "start": 895.92,
+    "duration": 4.08
+  },
+  {
+    "text": "inside of a model where we have price",
+    "start": 897.68,
+    "duration": 4.32
+  },
+  {
+    "text": "manipulating the range low. Price",
+    "start": 900.0,
+    "duration": 4.56
+  },
+  {
+    "text": "displaces away. That displacement away",
+    "start": 902.0,
+    "duration": 4.8
+  },
+  {
+    "text": "creates a gap leaving the opposing side",
+    "start": 904.56,
+    "duration": 4.16
+  },
+  {
+    "text": "of the range as a target creating",
+    "start": 906.8,
+    "duration": 4.08
+  },
+  {
+    "text": "failure swings. So when price trades in",
+    "start": 908.72,
+    "duration": 4.08
+  },
+  {
+    "text": "this gap, we want to use this gap as a",
+    "start": 910.88,
+    "duration": 4.079
+  },
+  {
+    "text": "key level to reach into the opposing",
+    "start": 912.8,
+    "duration": 4.56
+  },
+  {
+    "text": "side of the range as our targets. And as",
+    "start": 914.959,
+    "duration": 4.0
+  },
+  {
+    "text": "you see, when price reaches into that",
+    "start": 917.36,
+    "duration": 4.56
+  },
+  {
+    "text": "level, it is confirmed by SMT with the",
+    "start": 918.959,
+    "duration": 5.68
+  },
+  {
+    "text": "correlated asset being HO. Once this",
+    "start": 921.92,
+    "duration": 4.32
+  },
+  {
+    "text": "forms, we look to trade the following",
+    "start": 924.639,
+    "duration": 4.721
+  },
+  {
+    "text": "candles away from the reversal into our",
+    "start": 926.24,
+    "duration": 5.2
+  },
+  {
+    "text": "target. Here we are on the oil tread",
+    "start": 929.36,
+    "duration": 5.2
+  },
+  {
+    "text": "again. We have HO on the left, RB on the",
+    "start": 931.44,
+    "duration": 5.759
+  },
+  {
+    "text": "right. What we see is price has expanded",
+    "start": 934.56,
+    "duration": 5.92
+  },
+  {
+    "text": "away leaving failure swings at the point",
+    "start": 937.199,
+    "duration": 5.921
+  },
+  {
+    "text": "of retracement here. Traces into a gap.",
+    "start": 940.48,
+    "duration": 4.719
+  },
+  {
+    "text": "We do not form SMT with a gap, but we",
+    "start": 943.12,
+    "duration": 4.32
+  },
+  {
+    "text": "get our confirmation via swing point.",
+    "start": 945.199,
+    "duration": 4.401
+  },
+  {
+    "text": "Once this forms, we look to trade the",
+    "start": 947.44,
+    "duration": 5.6
+  },
+  {
+    "text": "distribution into the range lows. So",
+    "start": 949.6,
+    "duration": 5.679
+  },
+  {
+    "text": "here we are on the gold triad. We have",
+    "start": 953.04,
+    "duration": 5.919
+  },
+  {
+    "text": "GC on the left, gold GBP on the right.",
+    "start": 955.279,
+    "duration": 6.321
+  },
+  {
+    "text": "Now, it is important when using the gold",
+    "start": 958.959,
+    "duration": 5.201
+  },
+  {
+    "text": "triad that you use the right feed with",
+    "start": 961.6,
+    "duration": 4.96
+  },
+  {
+    "text": "this Forex.com feed. It actually opens",
+    "start": 964.16,
+    "duration": 5.599
+  },
+  {
+    "text": "up at 1,800 as well. We have GC on the",
+    "start": 966.56,
+    "duration": 6.0
+  },
+  {
+    "text": "left and gold GP on the right. As you",
+    "start": 969.759,
+    "duration": 6.0
+  },
+  {
+    "text": "see, price trades into a range high on",
+    "start": 972.56,
+    "duration": 5.839
+  },
+  {
+    "text": "both assets and does not create that",
+    "start": 975.759,
+    "duration": 5.041
+  },
+  {
+    "text": "SMT. And that reversal here is confirmed",
+    "start": 978.399,
+    "duration": 5.841
+  },
+  {
+    "text": "by a PSP. Once that forms, it confirms",
+    "start": 980.8,
+    "duration": 5.2
+  },
+  {
+    "text": "the reversal and we can trade into the",
+    "start": 984.24,
+    "duration": 3.519
+  },
+  {
+    "text": "opposing side of the range as our",
+    "start": 986.0,
+    "duration": 3.519
+  },
+  {
+    "text": "targets. Here, we're going to be going",
+    "start": 987.759,
+    "duration": 4.88
+  },
+  {
+    "text": "over a two-stage SMT sequence where the",
+    "start": 989.519,
+    "duration": 6.24
+  },
+  {
+    "text": "first SMT is between a gap on the 4hour",
+    "start": 992.639,
+    "duration": 5.361
+  },
+  {
+    "text": "time frame. We drop lower to the 30",
+    "start": 995.759,
+    "duration": 4.64
+  },
+  {
+    "text": "minute. This is where we see our second",
+    "start": 998.0,
+    "duration": 4.72
+  },
+  {
+    "text": "stage SMT confirming the higher time",
+    "start": 1000.399,
+    "duration": 5.521
+  },
+  {
+    "text": "frame SMT. Once this SMT forms, it",
+    "start": 1002.72,
+    "duration": 5.28
+  },
+  {
+    "text": "confirms the reversal and we look to",
+    "start": 1005.92,
+    "duration": 4.159
+  },
+  {
+    "text": "target the opposing side of the range,",
+    "start": 1008.0,
+    "duration": 4.0
+  },
+  {
+    "text": "which is that external range on the",
+    "start": 1010.079,
+    "duration": 5.041
+  },
+  {
+    "text": "4hour time frame. And as you can see,",
+    "start": 1012.0,
+    "duration": 5.36
+  },
+  {
+    "text": "price trades into it perfectly. And this",
+    "start": 1015.12,
+    "duration": 4.56
+  },
+  {
+    "text": "is where we look for continuation PSPs",
+    "start": 1017.36,
+    "duration": 4.32
+  },
+  {
+    "text": "to form. So, as you can see with this",
+    "start": 1019.68,
+    "duration": 4.48
+  },
+  {
+    "text": "530 candle, how does it form? On the",
+    "start": 1021.68,
+    "duration": 5.519
+  },
+  {
+    "text": "left of screen, it closes bearish. On",
+    "start": 1024.16,
+    "duration": 5.84
+  },
+  {
+    "text": "the right of screen, it closes bullish.",
+    "start": 1027.199,
+    "duration": 4.48
+  },
+  {
+    "text": "On the right of screen over here, we",
+    "start": 1030.0,
+    "duration": 4.319
+  },
+  {
+    "text": "create equal highs here. So a lot of you",
+    "start": 1031.679,
+    "duration": 5.441
+  },
+  {
+    "text": "are going to think this is a PSP to",
+    "start": 1034.319,
+    "duration": 4.88
+  },
+  {
+    "text": "reverse price. This is where narrative",
+    "start": 1037.12,
+    "duration": 4.48
+  },
+  {
+    "text": "comes in. If both assets are expanding",
+    "start": 1039.199,
+    "duration": 4.24
+  },
+  {
+    "text": "away from the original reversal,",
+    "start": 1041.6,
+    "duration": 3.599
+  },
+  {
+    "text": "typically that means both assets are",
+    "start": 1043.439,
+    "duration": 3.52
+  },
+  {
+    "text": "going to reach a draw liquidity.",
+    "start": 1045.199,
+    "duration": 3.921
+  },
+  {
+    "text": "Especially when it leaves these highs,",
+    "start": 1046.959,
+    "duration": 3.761
+  },
+  {
+    "text": "right, we automatically know this is",
+    "start": 1049.12,
+    "duration": 3.6
+  },
+  {
+    "text": "like a retracement. Once the asset to",
+    "start": 1050.72,
+    "duration": 4.16
+  },
+  {
+    "text": "the left runs this candle's low, that",
+    "start": 1052.72,
+    "duration": 4.56
+  },
+  {
+    "text": "creates that two-stage PSP, creating a",
+    "start": 1054.88,
+    "duration": 4.72
+  },
+  {
+    "text": "candle two on this asset. And as you can",
+    "start": 1057.28,
+    "duration": 4.32
+  },
+  {
+    "text": "see, we have that small wick. Once you",
+    "start": 1059.6,
+    "duration": 3.68
+  },
+  {
+    "text": "confirm this wick, you can then trade",
+    "start": 1061.6,
+    "duration": 3.439
+  },
+  {
+    "text": "the expansion into the draw on",
+    "start": 1063.28,
+    "duration": 3.6
+  },
+  {
+    "text": "liquidity. With our next reversal",
+    "start": 1065.039,
+    "duration": 3.681
+  },
+  {
+    "text": "sequence, we have an order pairing",
+    "start": 1066.88,
+    "duration": 4.4
+  },
+  {
+    "text": "ranges framework where price trades into",
+    "start": 1068.72,
+    "duration": 5.04
+  },
+  {
+    "text": "the range high but does not form SMT",
+    "start": 1071.28,
+    "duration": 5.04
+  },
+  {
+    "text": "with that level. So therefore, we look",
+    "start": 1073.76,
+    "duration": 5.279
+  },
+  {
+    "text": "for a swing confirmation to confirm this",
+    "start": 1076.32,
+    "duration": 4.96
+  },
+  {
+    "text": "reversal. And here we have a two-stage",
+    "start": 1079.039,
+    "duration": 4.801
+  },
+  {
+    "text": "SMT between swing points where our first",
+    "start": 1081.28,
+    "duration": 4.32
+  },
+  {
+    "text": "stage SMT is between candle one and",
+    "start": 1083.84,
+    "duration": 4.0
+  },
+  {
+    "text": "candle 2. over here. As you can see, we",
+    "start": 1085.6,
+    "duration": 4.079
+  },
+  {
+    "text": "create a failure swing that is",
+    "start": 1087.84,
+    "duration": 4.16
+  },
+  {
+    "text": "immediately followed by a second stage",
+    "start": 1089.679,
+    "duration": 5.041
+  },
+  {
+    "text": "SMT between candle 2 and candle 3 where",
+    "start": 1092.0,
+    "duration": 4.64
+  },
+  {
+    "text": "on the left screen we create a failure",
+    "start": 1094.72,
+    "duration": 4.64
+  },
+  {
+    "text": "swing. Once that forms, that confirms",
+    "start": 1096.64,
+    "duration": 4.72
+  },
+  {
+    "text": "the reversal and we look to trade the",
+    "start": 1099.36,
+    "duration": 5.04
+  },
+  {
+    "text": "following candle lower into our targets.",
+    "start": 1101.36,
+    "duration": 5.76
+  },
+  {
+    "text": "Here we are on the indices triad. Left",
+    "start": 1104.4,
+    "duration": 5.6
+  },
+  {
+    "text": "of screen is NQ, right of screen is YM.",
+    "start": 1107.12,
+    "duration": 5.28
+  },
+  {
+    "text": "As you can see on YM, we run the range",
+    "start": 1110.0,
+    "duration": 5.12
+  },
+  {
+    "text": "low. This is where we look to trade the",
+    "start": 1112.4,
+    "duration": 5.68
+  },
+  {
+    "text": "range high. And as you see, we have SMT",
+    "start": 1115.12,
+    "duration": 5.04
+  },
+  {
+    "text": "with that range low, which is",
+    "start": 1118.08,
+    "duration": 4.64
+  },
+  {
+    "text": "immediately followed and confirmed by a",
+    "start": 1120.16,
+    "duration": 4.399
+  },
+  {
+    "text": "precision swing point. So, what makes",
+    "start": 1122.72,
+    "duration": 4.72
+  },
+  {
+    "text": "this SMT so significant is the timing of",
+    "start": 1124.559,
+    "duration": 5.601
+  },
+  {
+    "text": "when this SMT is actually printed. As",
+    "start": 1127.44,
+    "duration": 5.44
+  },
+  {
+    "text": "you can see, this PSP is the 9:00 a.m.",
+    "start": 1130.16,
+    "duration": 4.879
+  },
+  {
+    "text": "close. What resides within that 9:00",
+    "start": 1132.88,
+    "duration": 4.72
+  },
+  {
+    "text": "a.m. time window is the equities open.",
+    "start": 1135.039,
+    "duration": 5.52
+  },
+  {
+    "text": "Right? We can use this driver to pair",
+    "start": 1137.6,
+    "duration": 5.6
+  },
+  {
+    "text": "with reversal or manipulation. And as",
+    "start": 1140.559,
+    "duration": 4.161
+  },
+  {
+    "text": "you see, once we get that candle 2",
+    "start": 1143.2,
+    "duration": 3.92
+  },
+  {
+    "text": "closure, this is where we seek a 10 a.m.",
+    "start": 1144.72,
+    "duration": 4.8
+  },
+  {
+    "text": "continuation. I actually took this trade",
+    "start": 1147.12,
+    "duration": 5.28
+  },
+  {
+    "text": "as well, but on YM, as you see, once we",
+    "start": 1149.52,
+    "duration": 5.279
+  },
+  {
+    "text": "get this strong candle 3 closure, this",
+    "start": 1152.4,
+    "duration": 4.48
+  },
+  {
+    "text": "is where we seek a candle for",
+    "start": 1154.799,
+    "duration": 5.441
+  },
+  {
+    "text": "continuation into our range high. Here",
+    "start": 1156.88,
+    "duration": 5.6
+  },
+  {
+    "text": "we have an order pairing ranges model",
+    "start": 1160.24,
+    "duration": 5.2
+  },
+  {
+    "text": "between the gold triad. Here we have GC",
+    "start": 1162.48,
+    "duration": 5.28
+  },
+  {
+    "text": "on the left, gold pound on the right.",
+    "start": 1165.44,
+    "duration": 5.119
+  },
+  {
+    "text": "Pound engages with the high here but",
+    "start": 1167.76,
+    "duration": 4.72
+  },
+  {
+    "text": "does not form SMTs. So what do we",
+    "start": 1170.559,
+    "duration": 5.201
+  },
+  {
+    "text": "confirm this with? Is a swing point in a",
+    "start": 1172.48,
+    "duration": 5.199
+  },
+  {
+    "text": "swing confirmation. This swing",
+    "start": 1175.76,
+    "duration": 5.279
+  },
+  {
+    "text": "confirmation is a PSP as our first stage",
+    "start": 1177.679,
+    "duration": 4.961
+  },
+  {
+    "text": "and a cracking correlation between",
+    "start": 1181.039,
+    "duration": 4.961
+  },
+  {
+    "text": "candle 2 and candle 3. as you see",
+    "start": 1182.64,
+    "duration": 5.12
+  },
+  {
+    "text": "confirming that PSP creating the",
+    "start": 1186.0,
+    "duration": 5.2
+  },
+  {
+    "text": "two-stage SMT and as you see GBP trades",
+    "start": 1187.76,
+    "duration": 5.6
+  },
+  {
+    "text": "into the range low while the stronger",
+    "start": 1191.2,
+    "duration": 5.04
+  },
+  {
+    "text": "asset GC trades into this gap. So this",
+    "start": 1193.36,
+    "duration": 5.6
+  },
+  {
+    "text": "can be viewed as external to internal.",
+    "start": 1196.24,
+    "duration": 4.799
+  },
+  {
+    "text": "So here we are on the indices triad.",
+    "start": 1198.96,
+    "duration": 4.16
+  },
+  {
+    "text": "We're going to do a top down on a trade",
+    "start": 1201.039,
+    "duration": 4.161
+  },
+  {
+    "text": "that I took a little while ago and this",
+    "start": 1203.12,
+    "duration": 3.84
+  },
+  {
+    "text": "is something I want to touch up on and",
+    "start": 1205.2,
+    "duration": 4.16
+  },
+  {
+    "text": "it is actually when S&T breaks and this",
+    "start": 1206.96,
+    "duration": 4.959
+  },
+  {
+    "text": "is a potential trigger for markets to",
+    "start": 1209.36,
+    "duration": 4.64
+  },
+  {
+    "text": "reverse. So you can actually see that",
+    "start": 1211.919,
+    "duration": 4.88
+  },
+  {
+    "text": "here with YM. Mark out this same high",
+    "start": 1214.0,
+    "duration": 6.72
+  },
+  {
+    "text": "that just got traded into on NQ and ES.",
+    "start": 1216.799,
+    "duration": 5.76
+  },
+  {
+    "text": "So as you see, we clearly failed to",
+    "start": 1220.72,
+    "duration": 4.16
+  },
+  {
+    "text": "manipulate it. If you've seen my SMT",
+    "start": 1222.559,
+    "duration": 4.561
+  },
+  {
+    "text": "video on YouTube, you know that this is",
+    "start": 1224.88,
+    "duration": 5.039
+  },
+  {
+    "text": "when SMTs are typically going to fail.",
+    "start": 1227.12,
+    "duration": 5.439
+  },
+  {
+    "text": "So as you see, once the weakest asset",
+    "start": 1229.919,
+    "duration": 4.561
+  },
+  {
+    "text": "actually catches up to that SMT and",
+    "start": 1232.559,
+    "duration": 4.161
+  },
+  {
+    "text": "breaks it, this is when markets can",
+    "start": 1234.48,
+    "duration": 4.079
+  },
+  {
+    "text": "potentially reverse. So you're actually",
+    "start": 1236.72,
+    "duration": 4.16
+  },
+  {
+    "text": "going to see this across multiple time",
+    "start": 1238.559,
+    "duration": 4.0
+  },
+  {
+    "text": "frames here. So now we're going to drop",
+    "start": 1240.88,
+    "duration": 3.039
+  },
+  {
+    "text": "down to the daily and you're going to",
+    "start": 1242.559,
+    "duration": 4.401
+  },
+  {
+    "text": "see the same exact sequence. So dropping",
+    "start": 1243.919,
+    "duration": 4.88
+  },
+  {
+    "text": "down to the daily here, what do we",
+    "start": 1246.96,
+    "duration": 4.48
+  },
+  {
+    "text": "actually see? Let's mark out these highs",
+    "start": 1248.799,
+    "duration": 6.161
+  },
+  {
+    "text": "on the triad here. So marking out this",
+    "start": 1251.44,
+    "duration": 6.0
+  },
+  {
+    "text": "high here, what do we notice about it?",
+    "start": 1254.96,
+    "duration": 5.199
+  },
+  {
+    "text": "ES just hits this high, which creates an",
+    "start": 1257.44,
+    "duration": 5.2
+  },
+  {
+    "text": "SMT with YM. What about INQ? Let's mark",
+    "start": 1260.159,
+    "duration": 5.041
+  },
+  {
+    "text": "out that same high on INQ, which is",
+    "start": 1262.64,
+    "duration": 5.68
+  },
+  {
+    "text": "right here. We can clearly see that the",
+    "start": 1265.2,
+    "duration": 5.599
+  },
+  {
+    "text": "market clearly failed to manipulate it.",
+    "start": 1268.32,
+    "duration": 4.64
+  },
+  {
+    "text": "This means we can expect one or both",
+    "start": 1270.799,
+    "duration": 4.721
+  },
+  {
+    "text": "assets to catch up. And this sequence is",
+    "start": 1272.96,
+    "duration": 4.88
+  },
+  {
+    "text": "even higher probability than the one we",
+    "start": 1275.52,
+    "duration": 4.0
+  },
+  {
+    "text": "saw on the weekly. This is essentially",
+    "start": 1277.84,
+    "duration": 4.0
+  },
+  {
+    "text": "where the middle asset breaks the SMT",
+    "start": 1279.52,
+    "duration": 4.399
+  },
+  {
+    "text": "and that is the trigger for reversal",
+    "start": 1281.84,
+    "duration": 4.079
+  },
+  {
+    "text": "while the third market or the weakest",
+    "start": 1283.919,
+    "duration": 4.161
+  },
+  {
+    "text": "market is creating a divergence with",
+    "start": 1285.919,
+    "duration": 4.401
+  },
+  {
+    "text": "that high. If we go back to the weekly,",
+    "start": 1288.08,
+    "duration": 3.92
+  },
+  {
+    "text": "this is simply where all markets break",
+    "start": 1290.32,
+    "duration": 4.0
+  },
+  {
+    "text": "the SMT and the lagging asset is the",
+    "start": 1292.0,
+    "duration": 4.32
+  },
+  {
+    "text": "trigger for reversal. So now dropping",
+    "start": 1294.32,
+    "duration": 3.92
+  },
+  {
+    "text": "down to the four, let's do that profile.",
+    "start": 1296.32,
+    "duration": 4.64
+  },
+  {
+    "text": "How do we want a bearish day to form? We",
+    "start": 1298.24,
+    "duration": 5.04
+  },
+  {
+    "text": "want it to open high, right? So, it",
+    "start": 1300.96,
+    "duration": 5.04
+  },
+  {
+    "text": "opens high and creates the high of day",
+    "start": 1303.28,
+    "duration": 5.12
+  },
+  {
+    "text": "from a key level, right? This range",
+    "start": 1306.0,
+    "duration": 4.72
+  },
+  {
+    "text": "high, which is actually breaking that",
+    "start": 1308.4,
+    "duration": 4.8
+  },
+  {
+    "text": "higher time frame SMT. Now, what do we",
+    "start": 1310.72,
+    "duration": 5.04
+  },
+  {
+    "text": "want to see? If you seen my last Tox, we",
+    "start": 1313.2,
+    "duration": 5.839
+  },
+  {
+    "text": "want to see that 4hour swing formation.",
+    "start": 1315.76,
+    "duration": 5.44
+  },
+  {
+    "text": "So, what would this be? A 4hour C2",
+    "start": 1319.039,
+    "duration": 4.481
+  },
+  {
+    "text": "closure, which is a London reversal. But",
+    "start": 1321.2,
+    "duration": 4.08
+  },
+  {
+    "text": "what is it also? What does this closure",
+    "start": 1323.52,
+    "duration": 4.639
+  },
+  {
+    "text": "also create? It creates a precision",
+    "start": 1325.28,
+    "duration": 5.44
+  },
+  {
+    "text": "swing point. Right? So boom. This would",
+    "start": 1328.159,
+    "duration": 4.081
+  },
+  {
+    "text": "be your second stage cracking",
+    "start": 1330.72,
+    "duration": 3.439
+  },
+  {
+    "text": "correlation because your first stage",
+    "start": 1332.24,
+    "duration": 4.08
+  },
+  {
+    "text": "cracking correlation is with the range",
+    "start": 1334.159,
+    "duration": 4.4
+  },
+  {
+    "text": "high. Right? Now, if you guys have also",
+    "start": 1336.32,
+    "duration": 4.8
+  },
+  {
+    "text": "seen my PSP video on YouTube, you know",
+    "start": 1338.559,
+    "duration": 4.401
+  },
+  {
+    "text": "what this is, right? If you see my SMT",
+    "start": 1341.12,
+    "duration": 4.48
+  },
+  {
+    "text": "video, my PSP video, this is a strength",
+    "start": 1342.96,
+    "duration": 5.199
+  },
+  {
+    "text": "switch PSP. We're not going to get too",
+    "start": 1345.6,
+    "duration": 4.72
+  },
+  {
+    "text": "deep into it here, but I definitely",
+    "start": 1348.159,
+    "duration": 4.321
+  },
+  {
+    "text": "recommend checking that out. But this is",
+    "start": 1350.32,
+    "duration": 4.4
+  },
+  {
+    "text": "not what I took, right? I didn't I don't",
+    "start": 1352.48,
+    "duration": 3.76
+  },
+  {
+    "text": "trade London. And I don't trade early on",
+    "start": 1354.72,
+    "duration": 3.439
+  },
+  {
+    "text": "in this candle. We're going to actually",
+    "start": 1356.24,
+    "duration": 4.96
+  },
+  {
+    "text": "trade the continuation around 9:30. So",
+    "start": 1358.159,
+    "duration": 4.961
+  },
+  {
+    "text": "let's now go ahead and drop down to the",
+    "start": 1361.2,
+    "duration": 4.32
+  },
+  {
+    "text": "30inut chart. So here we are dropping",
+    "start": 1363.12,
+    "duration": 4.48
+  },
+  {
+    "text": "down to the 30 minute time frame. What",
+    "start": 1365.52,
+    "duration": 4.24
+  },
+  {
+    "text": "are we trading? We're trading a New York",
+    "start": 1367.6,
+    "duration": 5.12
+  },
+  {
+    "text": "continuation with that 2 a.m. reversal",
+    "start": 1369.76,
+    "duration": 6.72
+  },
+  {
+    "text": "or London reversal. And as you see on YM",
+    "start": 1372.72,
+    "duration": 6.319
+  },
+  {
+    "text": "930 trades back into the range, taking",
+    "start": 1376.48,
+    "duration": 5.52
+  },
+  {
+    "text": "out this swing high, which we can use as",
+    "start": 1379.039,
+    "duration": 6.0
+  },
+  {
+    "text": "our first stage SMT. When we trade into",
+    "start": 1382.0,
+    "duration": 6.159
+  },
+  {
+    "text": "that high, what do we create? A PSP. Why",
+    "start": 1385.039,
+    "duration": 5.52
+  },
+  {
+    "text": "is this significant? Because 930 creates",
+    "start": 1388.159,
+    "duration": 4.961
+  },
+  {
+    "text": "it. We can pair a driver with",
+    "start": 1390.559,
+    "duration": 4.961
+  },
+  {
+    "text": "manipulation. And here is that sequence",
+    "start": 1393.12,
+    "duration": 5.039
+  },
+  {
+    "text": "where we get an SMT with a key level",
+    "start": 1395.52,
+    "duration": 5.44
+  },
+  {
+    "text": "followed by a two-stage PSP. Like I",
+    "start": 1398.159,
+    "duration": 5.041
+  },
+  {
+    "text": "mentioned, this is the highest probable",
+    "start": 1400.96,
+    "duration": 4.56
+  },
+  {
+    "text": "reversal confirmation. So like I said, I",
+    "start": 1403.2,
+    "duration": 4.719
+  },
+  {
+    "text": "did trade this. I took this on the 3",
+    "start": 1405.52,
+    "duration": 5.039
+  },
+  {
+    "text": "minutes. As you can see, this reversal",
+    "start": 1407.919,
+    "duration": 5.281
+  },
+  {
+    "text": "is confirmed by this order block here or",
+    "start": 1410.559,
+    "duration": 5.281
+  },
+  {
+    "text": "this change in say delivery using time",
+    "start": 1413.2,
+    "duration": 4.24
+  },
+  {
+    "text": "frame alignment here. I am actually",
+    "start": 1415.84,
+    "duration": 5.199
+  },
+  {
+    "text": "trading a C2 reversal. Right? If it has",
+    "start": 1417.44,
+    "duration": 6.0
+  },
+  {
+    "text": "that small wick, price can expand away",
+    "start": 1421.039,
+    "duration": 4.801
+  },
+  {
+    "text": "from our key level, which is the range",
+    "start": 1423.44,
+    "duration": 4.64
+  },
+  {
+    "text": "high. What can I target? The opposing",
+    "start": 1425.84,
+    "duration": 3.44
+  },
+  {
+    "text": "side of the range, right? Right? So,",
+    "start": 1428.08,
+    "duration": 2.959
+  },
+  {
+    "text": "this would be order pairing ranges. But",
+    "start": 1429.28,
+    "duration": 5.279
+  },
+  {
+    "text": "this low here is not the actual higher",
+    "start": 1431.039,
+    "duration": 5.12
+  },
+  {
+    "text": "time frame target, right? It's just a",
+    "start": 1434.559,
+    "duration": 4.401
+  },
+  {
+    "text": "low on the way to our higher time frame",
+    "start": 1436.159,
+    "duration": 5.76
+  },
+  {
+    "text": "target. This is our actual higher time",
+    "start": 1438.96,
+    "duration": 4.48
+  },
+  {
+    "text": "frame draw right here. So, now let's",
+    "start": 1441.919,
+    "duration": 3.841
+  },
+  {
+    "text": "drop into the 3minut. Check out what our",
+    "start": 1443.44,
+    "duration": 4.96
+  },
+  {
+    "text": "entry looked like. So, like I said,",
+    "start": 1445.76,
+    "duration": 6.0
+  },
+  {
+    "text": "entered on the creation of the CSD and I",
+    "start": 1448.4,
+    "duration": 6.32
+  },
+  {
+    "text": "looked for this range low for a 7-hour",
+    "start": 1451.76,
+    "duration": 4.64
+  },
+  {
+    "text": "trade. Let's see what happens. As you",
+    "start": 1454.72,
+    "duration": 3.439
+  },
+  {
+    "text": "see, price kind of messes around a",
+    "start": 1456.4,
+    "duration": 4.0
+  },
+  {
+    "text": "little bit, but ultimately we get to our",
+    "start": 1458.159,
+    "duration": 4.88
+  },
+  {
+    "text": "draw liquidity. And that is a very good",
+    "start": 1460.4,
+    "duration": 5.279
+  },
+  {
+    "text": "example of going from the top down into",
+    "start": 1463.039,
+    "duration": 5.441
+  },
+  {
+    "text": "confirmation. Now, let's go into another",
+    "start": 1465.679,
+    "duration": 6.161
+  },
+  {
+    "text": "top down example. Here we are on RB.",
+    "start": 1468.48,
+    "duration": 5.679
+  },
+  {
+    "text": "Let's mark out that weekly profile. So,",
+    "start": 1471.84,
+    "duration": 5.12
+  },
+  {
+    "text": "here we go. Monday, we open up right",
+    "start": 1474.159,
+    "duration": 5.041
+  },
+  {
+    "text": "here the new weekly candle. And for this",
+    "start": 1476.96,
+    "duration": 4.24
+  },
+  {
+    "text": "week, my draw liquidity was actually all",
+    "start": 1479.2,
+    "duration": 4.16
+  },
+  {
+    "text": "these lows, right? Looks very obvious,",
+    "start": 1481.2,
+    "duration": 4.56
+  },
+  {
+    "text": "but price actually creates a divergence",
+    "start": 1483.36,
+    "duration": 4.559
+  },
+  {
+    "text": "with one of these failure swings, which",
+    "start": 1485.76,
+    "duration": 5.12
+  },
+  {
+    "text": "I do not deem as relevant until price",
+    "start": 1487.919,
+    "duration": 5.201
+  },
+  {
+    "text": "shows me that it wants to expand away.",
+    "start": 1490.88,
+    "duration": 3.84
+  },
+  {
+    "text": "So, as you see throughout the week, we",
+    "start": 1493.12,
+    "duration": 3.919
+  },
+  {
+    "text": "ended up expanding away once price",
+    "start": 1494.72,
+    "duration": 3.92
+  },
+  {
+    "text": "expands away or prints that reversal",
+    "start": 1497.039,
+    "duration": 3.12
+  },
+  {
+    "text": "signature. That's when you can actually",
+    "start": 1498.64,
+    "duration": 3.76
+  },
+  {
+    "text": "trust trading away from failure swings.",
+    "start": 1500.159,
+    "duration": 4.321
+  },
+  {
+    "text": "So, as you can see, the first three days",
+    "start": 1502.4,
+    "duration": 4.24
+  },
+  {
+    "text": "of the week actually expand, right?",
+    "start": 1504.48,
+    "duration": 4.559
+  },
+  {
+    "text": "Creating a daily fair value gap. And as",
+    "start": 1506.64,
+    "duration": 4.639
+  },
+  {
+    "text": "you see, Thursday retraces back within",
+    "start": 1509.039,
+    "duration": 4.801
+  },
+  {
+    "text": "the weekly range and prints a reversal,",
+    "start": 1511.279,
+    "duration": 4.321
+  },
+  {
+    "text": "right? So if you look at the correlate",
+    "start": 1513.84,
+    "duration": 3.92
+  },
+  {
+    "text": "market, we actually have an SMT with",
+    "start": 1515.6,
+    "duration": 5.28
+  },
+  {
+    "text": "this gap. So what is that? That is a SMT",
+    "start": 1517.76,
+    "duration": 5.36
+  },
+  {
+    "text": "with a key level. We can use this key",
+    "start": 1520.88,
+    "duration": 4.799
+  },
+  {
+    "text": "level to get to our overall draw on",
+    "start": 1523.12,
+    "duration": 5.12
+  },
+  {
+    "text": "liquidity, which is this range high. Now",
+    "start": 1525.679,
+    "duration": 4.321
+  },
+  {
+    "text": "that we have our candle closure, what",
+    "start": 1528.24,
+    "duration": 3.84
+  },
+  {
+    "text": "can we do now? We can actually mark out",
+    "start": 1530.0,
+    "duration": 5.279
+  },
+  {
+    "text": "EQ of this previous day's range. We want",
+    "start": 1532.08,
+    "duration": 6.079
+  },
+  {
+    "text": "to see the next day form its low within",
+    "start": 1535.279,
+    "duration": 5.28
+  },
+  {
+    "text": "the upper half. So now all we need is a",
+    "start": 1538.159,
+    "duration": 5.041
+  },
+  {
+    "text": "daily profile to confirm this narrative.",
+    "start": 1540.559,
+    "duration": 5.041
+  },
+  {
+    "text": "So let's drop down to the 4 hour. So",
+    "start": 1543.2,
+    "duration": 4.479
+  },
+  {
+    "text": "here we are on the 4hour chart. We have",
+    "start": 1545.6,
+    "duration": 4.88
+  },
+  {
+    "text": "marked out our daily open. How do we",
+    "start": 1547.679,
+    "duration": 5.12
+  },
+  {
+    "text": "want a bullish day to form? Ideally want",
+    "start": 1550.48,
+    "duration": 5.199
+  },
+  {
+    "text": "to open low. Respect the upper half of",
+    "start": 1552.799,
+    "duration": 4.721
+  },
+  {
+    "text": "the previous candle's range forming that",
+    "start": 1555.679,
+    "duration": 4.24
+  },
+  {
+    "text": "small wick so we can expand. So as you",
+    "start": 1557.52,
+    "duration": 4.399
+  },
+  {
+    "text": "can see we open low first respecting",
+    "start": 1559.919,
+    "duration": 4.561
+  },
+  {
+    "text": "equilibrium of the previous days range.",
+    "start": 1561.919,
+    "duration": 4.88
+  },
+  {
+    "text": "This is actually where we form an SMT",
+    "start": 1564.48,
+    "duration": 4.72
+  },
+  {
+    "text": "between candle 1 and candle 2 on the",
+    "start": 1566.799,
+    "duration": 4.961
+  },
+  {
+    "text": "4hour time frame. If we drop lower we",
+    "start": 1569.2,
+    "duration": 5.68
+  },
+  {
+    "text": "can actually see a two-stage SMT. Here",
+    "start": 1571.76,
+    "duration": 6.32
+  },
+  {
+    "text": "is our first stage SMT. Here is our",
+    "start": 1574.88,
+    "duration": 5.84
+  },
+  {
+    "text": "second stage SMT. So now we have a",
+    "start": 1578.08,
+    "duration": 6.32
+  },
+  {
+    "text": "two-stage SMT confirming this low of the",
+    "start": 1580.72,
+    "duration": 5.92
+  },
+  {
+    "text": "day. If you just look at overall phases",
+    "start": 1584.4,
+    "duration": 4.399
+  },
+  {
+    "text": "of price, you have our SMT with that",
+    "start": 1586.64,
+    "duration": 4.32
+  },
+  {
+    "text": "previous day's low, which is that daily",
+    "start": 1588.799,
+    "duration": 4.0
+  },
+  {
+    "text": "fair value gap. What kind of phase of",
+    "start": 1590.96,
+    "duration": 4.319
+  },
+  {
+    "text": "price is printed after that SMT? That",
+    "start": 1592.799,
+    "duration": 4.48
+  },
+  {
+    "text": "V-shaped reversal, right? If you seen my",
+    "start": 1595.279,
+    "duration": 4.4
+  },
+  {
+    "text": "first TT talks, we know that this is a",
+    "start": 1597.279,
+    "duration": 4.561
+  },
+  {
+    "text": "reversal signature. This confirms the",
+    "start": 1599.679,
+    "duration": 4.561
+  },
+  {
+    "text": "reversal. And as you can see, this can",
+    "start": 1601.84,
+    "duration": 4.8
+  },
+  {
+    "text": "be a potential target. But really, our",
+    "start": 1604.24,
+    "duration": 4.799
+  },
+  {
+    "text": "overall target is this higher time frame",
+    "start": 1606.64,
+    "duration": 4.08
+  },
+  {
+    "text": "draw liquidity. As you can see, when",
+    "start": 1609.039,
+    "duration": 4.481
+  },
+  {
+    "text": "price expands away, it leaves all these",
+    "start": 1610.72,
+    "duration": 5.12
+  },
+  {
+    "text": "fair swings, right? What do we see here?",
+    "start": 1613.52,
+    "duration": 4.88
+  },
+  {
+    "text": "Large expansion range followed by a",
+    "start": 1615.84,
+    "duration": 5.12
+  },
+  {
+    "text": "choppy and slow retracement. We know",
+    "start": 1618.4,
+    "duration": 4.879
+  },
+  {
+    "text": "that is a continuous signature. So, we",
+    "start": 1620.96,
+    "duration": 4.079
+  },
+  {
+    "text": "actually trade into a relevant level,",
+    "start": 1623.279,
+    "duration": 3.76
+  },
+  {
+    "text": "which is this fair value gap located",
+    "start": 1625.039,
+    "duration": 3.601
+  },
+  {
+    "text": "within the upper half of the previous",
+    "start": 1627.039,
+    "duration": 3.681
+  },
+  {
+    "text": "stage range. This is ideally where we",
+    "start": 1628.64,
+    "duration": 4.0
+  },
+  {
+    "text": "want to see that reversal rate and that",
+    "start": 1630.72,
+    "duration": 4.559
+  },
+  {
+    "text": "is confirmed by this two-stage SMT. So",
+    "start": 1632.64,
+    "duration": 4.48
+  },
+  {
+    "text": "now let's drop to the 30 minute so we",
+    "start": 1635.279,
+    "duration": 3.841
+  },
+  {
+    "text": "can get a little better visual",
+    "start": 1637.12,
+    "duration": 3.6
+  },
+  {
+    "text": "representation. And look what we have",
+    "start": 1639.12,
+    "duration": 3.52
+  },
+  {
+    "text": "here on the 30 minute, right? Price",
+    "start": 1640.72,
+    "duration": 5.199
+  },
+  {
+    "text": "trades into our key level and expands",
+    "start": 1642.64,
+    "duration": 6.0
+  },
+  {
+    "text": "away. What does that form that V-shaped",
+    "start": 1645.919,
+    "duration": 4.561
+  },
+  {
+    "text": "signature once we have that V-shaped",
+    "start": 1648.64,
+    "duration": 4.08
+  },
+  {
+    "text": "signature that confirms the low of the",
+    "start": 1650.48,
+    "duration": 4.4
+  },
+  {
+    "text": "day. Now we're looking for continuation.",
+    "start": 1652.72,
+    "duration": 3.92
+  },
+  {
+    "text": "You can see that we have a fair value up",
+    "start": 1654.88,
+    "duration": 4.24
+  },
+  {
+    "text": "here. But when I go to the hourly chart,",
+    "start": 1656.64,
+    "duration": 4.08
+  },
+  {
+    "text": "this is actually where we see that",
+    "start": 1659.12,
+    "duration": 3.919
+  },
+  {
+    "text": "continuation PSP, right? Why is this a",
+    "start": 1660.72,
+    "duration": 4.079
+  },
+  {
+    "text": "continuation PSP? because we still have",
+    "start": 1663.039,
+    "duration": 3.841
+  },
+  {
+    "text": "our target open up here. The",
+    "start": 1664.799,
+    "duration": 4.321
+  },
+  {
+    "text": "continuation PSP is forming after we",
+    "start": 1666.88,
+    "duration": 4.799
+  },
+  {
+    "text": "form the low of the day. So, it's within",
+    "start": 1669.12,
+    "duration": 5.679
+  },
+  {
+    "text": "continuation. So, any PSP opposing our",
+    "start": 1671.679,
+    "duration": 4.88
+  },
+  {
+    "text": "draw liquidity will not be used as",
+    "start": 1674.799,
+    "duration": 3.76
+  },
+  {
+    "text": "reversal. I know when I first learned",
+    "start": 1676.559,
+    "duration": 4.161
+  },
+  {
+    "text": "this concept, it really confused me and",
+    "start": 1678.559,
+    "duration": 4.081
+  },
+  {
+    "text": "I would always get stopped out trying to",
+    "start": 1680.72,
+    "duration": 4.4
+  },
+  {
+    "text": "trade this reversal when in reality it's",
+    "start": 1682.64,
+    "duration": 4.32
+  },
+  {
+    "text": "just used for continuation. So, let's",
+    "start": 1685.12,
+    "duration": 4.4
+  },
+  {
+    "text": "drop into the lower time frame. This is",
+    "start": 1686.96,
+    "duration": 4.319
+  },
+  {
+    "text": "personally what I took. Now, ideally,",
+    "start": 1689.52,
+    "duration": 4.0
+  },
+  {
+    "text": "you enter down here by the actual",
+    "start": 1691.279,
+    "duration": 4.801
+  },
+  {
+    "text": "reversal, but I was not on the charts at",
+    "start": 1693.52,
+    "duration": 4.48
+  },
+  {
+    "text": "this point. This is around 8:00 here.",
+    "start": 1696.08,
+    "duration": 4.16
+  },
+  {
+    "text": "This is the ideal area to get in right",
+    "start": 1698.0,
+    "duration": 4.88
+  },
+  {
+    "text": "here. This is the actual two-stage SMT",
+    "start": 1700.24,
+    "duration": 5.439
+  },
+  {
+    "text": "down here, but I opted to enter on the",
+    "start": 1702.88,
+    "duration": 5.36
+  },
+  {
+    "text": "continuation over here. So, I got around",
+    "start": 1705.679,
+    "duration": 4.561
+  },
+  {
+    "text": "here, right? I entered this gap, I",
+    "start": 1708.24,
+    "duration": 4.08
+  },
+  {
+    "text": "believe. Yep. You can go check my X or",
+    "start": 1710.24,
+    "duration": 3.84
+  },
+  {
+    "text": "whatever, right? And I targeted this",
+    "start": 1712.32,
+    "duration": 4.8
+  },
+  {
+    "text": "high for around",
+    "start": 1714.08,
+    "duration": 5.76
+  },
+  {
+    "text": "2.8 R. Let's see how that plays out.",
+    "start": 1717.12,
+    "duration": 4.72
+  },
+  {
+    "text": "very nice expansion all the way to our",
+    "start": 1719.84,
+    "duration": 5.04
+  },
+  {
+    "text": "draw. And yeah, that is a nice top down",
+    "start": 1721.84,
+    "duration": 4.88
+  },
+  {
+    "text": "example there. For our last example,",
+    "start": 1724.88,
+    "duration": 3.36
+  },
+  {
+    "text": "we're going to be covering a trade that",
+    "start": 1726.72,
+    "duration": 4.319
+  },
+  {
+    "text": "I took on RTY. So, let's get into it.",
+    "start": 1728.24,
+    "duration": 4.559
+  },
+  {
+    "text": "Here we are on the daily. First, let's",
+    "start": 1731.039,
+    "duration": 3.441
+  },
+  {
+    "text": "cover the higher time frame framework",
+    "start": 1732.799,
+    "duration": 3.681
+  },
+  {
+    "text": "and intraweek development. So, as you",
+    "start": 1734.48,
+    "duration": 3.919
+  },
+  {
+    "text": "can see, price kind of opens up within",
+    "start": 1736.48,
+    "duration": 4.24
+  },
+  {
+    "text": "this gap and we expand away kind of",
+    "start": 1738.399,
+    "duration": 4.321
+  },
+  {
+    "text": "creating these failure swings, right? So",
+    "start": 1740.72,
+    "duration": 3.439
+  },
+  {
+    "text": "originally this is really not something",
+    "start": 1742.72,
+    "duration": 3.36
+  },
+  {
+    "text": "that I really like to trade away from.",
+    "start": 1744.159,
+    "duration": 4.081
+  },
+  {
+    "text": "But when price failed to manipulate this",
+    "start": 1746.08,
+    "duration": 4.64
+  },
+  {
+    "text": "high here, this tells us that we will",
+    "start": 1748.24,
+    "duration": 4.08
+  },
+  {
+    "text": "not do something like this, right? We",
+    "start": 1750.72,
+    "duration": 3.439
+  },
+  {
+    "text": "will not manipulate this high to then go",
+    "start": 1752.32,
+    "duration": 3.76
+  },
+  {
+    "text": "lower. We can then manipulate the",
+    "start": 1754.159,
+    "duration": 4.081
+  },
+  {
+    "text": "internal high and target the external",
+    "start": 1756.08,
+    "duration": 4.319
+  },
+  {
+    "text": "high as a potential draw liquidity",
+    "start": 1758.24,
+    "duration": 4.319
+  },
+  {
+    "text": "trusting this low of the week. So here",
+    "start": 1760.399,
+    "duration": 4.16
+  },
+  {
+    "text": "we are on the 4hour. As you can see,",
+    "start": 1762.559,
+    "duration": 3.761
+  },
+  {
+    "text": "price expands away from the low of the",
+    "start": 1764.559,
+    "duration": 3.761
+  },
+  {
+    "text": "week creating those failure swings. Like",
+    "start": 1766.32,
+    "duration": 3.92
+  },
+  {
+    "text": "I said, when price fails to manipulate",
+    "start": 1768.32,
+    "duration": 4.32
+  },
+  {
+    "text": "this internal high here and starts to",
+    "start": 1770.24,
+    "duration": 4.08
+  },
+  {
+    "text": "continue through it, that's when we can",
+    "start": 1772.64,
+    "duration": 3.759
+  },
+  {
+    "text": "assume, okay, we can definitely trust to",
+    "start": 1774.32,
+    "duration": 3.599
+  },
+  {
+    "text": "trade away from these fair swings and",
+    "start": 1776.399,
+    "duration": 3.52
+  },
+  {
+    "text": "target the opposing side of the range.",
+    "start": 1777.919,
+    "duration": 4.081
+  },
+  {
+    "text": "Here we have 1,800 creating the low of",
+    "start": 1779.919,
+    "duration": 3.921
+  },
+  {
+    "text": "day. Pretty much just expanding off of",
+    "start": 1782.0,
+    "duration": 4.96
+  },
+  {
+    "text": "the open. This is when we create an SMT",
+    "start": 1783.84,
+    "duration": 6.719
+  },
+  {
+    "text": "fill with YM. That is the correlated",
+    "start": 1786.96,
+    "duration": 6.88
+  },
+  {
+    "text": "market for RTY. I don't really use in Q",
+    "start": 1790.559,
+    "duration": 5.761
+  },
+  {
+    "text": "or ES for it. So now let's drop into the",
+    "start": 1793.84,
+    "duration": 4.24
+  },
+  {
+    "text": "lower time frame.",
+    "start": 1796.32,
+    "duration": 4.0
+  },
+  {
+    "text": "So here we are on the 30 minute time",
+    "start": 1798.08,
+    "duration": 4.16
+  },
+  {
+    "text": "frame and as you can see here is our",
+    "start": 1800.32,
+    "duration": 4.8
+  },
+  {
+    "text": "4hour gap. What is that confirmed by? A",
+    "start": 1802.24,
+    "duration": 4.799
+  },
+  {
+    "text": "lower time frame swing formation",
+    "start": 1805.12,
+    "duration": 4.0
+  },
+  {
+    "text": "cracking correlation between candle 2",
+    "start": 1807.039,
+    "duration": 5.201
+  },
+  {
+    "text": "and candle 3 and that creates a CSD",
+    "start": 1809.12,
+    "duration": 6.96
+  },
+  {
+    "text": "here. If we have a reversal prior to a",
+    "start": 1812.24,
+    "duration": 7.28
+  },
+  {
+    "text": "driver we mark that out. What should 930",
+    "start": 1816.08,
+    "duration": 5.68
+  },
+  {
+    "text": "do? It should do what? It should expand",
+    "start": 1819.52,
+    "duration": 4.24
+  },
+  {
+    "text": "away. So once that really expands away",
+    "start": 1821.76,
+    "duration": 3.519
+  },
+  {
+    "text": "from that reversal, that's what really",
+    "start": 1823.76,
+    "duration": 3.84
+  },
+  {
+    "text": "confirms to me that we can also trade",
+    "start": 1825.279,
+    "duration": 4.241
+  },
+  {
+    "text": "into this higher time frame draw",
+    "start": 1827.6,
+    "duration": 3.84
+  },
+  {
+    "text": "liquidity. So dropping down to the lower",
+    "start": 1829.52,
+    "duration": 4.08
+  },
+  {
+    "text": "time frame being the 15-minute. So here",
+    "start": 1831.44,
+    "duration": 4.4
+  },
+  {
+    "text": "we are on the 15-minut time frame. And",
+    "start": 1833.6,
+    "duration": 5.04
+  },
+  {
+    "text": "what can we see? RTY is trading into a",
+    "start": 1835.84,
+    "duration": 5.36
+  },
+  {
+    "text": "gap. If I pull up YM here, we do not",
+    "start": 1838.64,
+    "duration": 5.12
+  },
+  {
+    "text": "trade into any gap. So So what would",
+    "start": 1841.2,
+    "duration": 4.479
+  },
+  {
+    "text": "this be? This would be that continuation",
+    "start": 1843.76,
+    "duration": 4.56
+  },
+  {
+    "text": "in PHP. Why? Because we have an open",
+    "start": 1845.679,
+    "duration": 4.48
+  },
+  {
+    "text": "draw liquidity. We're trading it away",
+    "start": 1848.32,
+    "duration": 4.88
+  },
+  {
+    "text": "from reversal. And this is an extremely",
+    "start": 1850.159,
+    "duration": 5.601
+  },
+  {
+    "text": "extremely high probability reversal",
+    "start": 1853.2,
+    "duration": 5.359
+  },
+  {
+    "text": "confirmation within continuation towards",
+    "start": 1855.76,
+    "duration": 4.48
+  },
+  {
+    "text": "the John liquidity. So what can you",
+    "start": 1858.559,
+    "duration": 3.761
+  },
+  {
+    "text": "really trade this like? You wait for the",
+    "start": 1860.24,
+    "duration": 4.72
+  },
+  {
+    "text": "candle close to form. As you can see, we",
+    "start": 1862.32,
+    "duration": 4.4
+  },
+  {
+    "text": "mark out 10 a.m. open. And this what",
+    "start": 1864.96,
+    "duration": 3.839
+  },
+  {
+    "text": "this does is essentially forms the low",
+    "start": 1866.72,
+    "duration": 5.199
+  },
+  {
+    "text": "of the 10 a.m. 4hour candle as it",
+    "start": 1868.799,
+    "duration": 5.521
+  },
+  {
+    "text": "reaches into a key level which is the",
+    "start": 1871.919,
+    "duration": 5.281
+  },
+  {
+    "text": "15minute fair gap confirmed by SMT. So",
+    "start": 1874.32,
+    "duration": 4.479
+  },
+  {
+    "text": "now you have a higher time frame candle",
+    "start": 1877.2,
+    "duration": 3.52
+  },
+  {
+    "text": "reaching into a key level and it's",
+    "start": 1878.799,
+    "duration": 4.161
+  },
+  {
+    "text": "confirmed by SMT. So now you can assume",
+    "start": 1880.72,
+    "duration": 4.16
+  },
+  {
+    "text": "that the higher time frame candle's low",
+    "start": 1882.96,
+    "duration": 4.719
+  },
+  {
+    "text": "is put in and trade the body. Right? So",
+    "start": 1884.88,
+    "duration": 4.159
+  },
+  {
+    "text": "once you have this little swing",
+    "start": 1887.679,
+    "duration": 3.36
+  },
+  {
+    "text": "formation here, right? Candle to",
+    "start": 1889.039,
+    "duration": 3.841
+  },
+  {
+    "text": "closure. What do you want to do? Want to",
+    "start": 1891.039,
+    "duration": 3.76
+  },
+  {
+    "text": "mark out EQ of this candle's range. We",
+    "start": 1892.88,
+    "duration": 3.679
+  },
+  {
+    "text": "want to see price respect the upper",
+    "start": 1894.799,
+    "duration": 3.6
+  },
+  {
+    "text": "half. And this is where you can use the",
+    "start": 1896.559,
+    "duration": 4.72
+  },
+  {
+    "text": "fractal model for your entry. Right? We",
+    "start": 1898.399,
+    "duration": 5.12
+  },
+  {
+    "text": "have the SMT, we have the swing point,",
+    "start": 1901.279,
+    "duration": 4.721
+  },
+  {
+    "text": "the key level. Now it just comes down to",
+    "start": 1903.519,
+    "duration": 4.16
+  },
+  {
+    "text": "the lower time frame to get on side with",
+    "start": 1906.0,
+    "duration": 3.76
+  },
+  {
+    "text": "that. So here we are dropping down to",
+    "start": 1907.679,
+    "duration": 3.6
+  },
+  {
+    "text": "the one minute. Let's kind of clear all",
+    "start": 1909.76,
+    "duration": 4.0
+  },
+  {
+    "text": "this stuff. Here we have that V-shaped",
+    "start": 1911.279,
+    "duration": 4.161
+  },
+  {
+    "text": "reversal signature that we love to see,",
+    "start": 1913.76,
+    "duration": 3.759
+  },
+  {
+    "text": "right? Expansion into the low, creating",
+    "start": 1915.44,
+    "duration": 4.959
+  },
+  {
+    "text": "the SMT, expansion away, confirmed by an",
+    "start": 1917.519,
+    "duration": 6.0
+  },
+  {
+    "text": "SMT. Now it's about getting on side with",
+    "start": 1920.399,
+    "duration": 5.361
+  },
+  {
+    "text": "those continuation order blocks. And",
+    "start": 1923.519,
+    "duration": 4.16
+  },
+  {
+    "text": "this is personally what I entered. I",
+    "start": 1925.76,
+    "duration": 4.399
+  },
+  {
+    "text": "entered this fair value gap as I was not",
+    "start": 1927.679,
+    "duration": 4.641
+  },
+  {
+    "text": "really looking at RTY at this time. I",
+    "start": 1930.159,
+    "duration": 4.081
+  },
+  {
+    "text": "literally opened up the charts and saw",
+    "start": 1932.32,
+    "duration": 4.479
+  },
+  {
+    "text": "that we were retracing and I saw this",
+    "start": 1934.24,
+    "duration": 4.799
+  },
+  {
+    "text": "gap and said, \"Okay, I can get on side",
+    "start": 1936.799,
+    "duration": 4.72
+  },
+  {
+    "text": "with that and I looked for wherever that",
+    "start": 1939.039,
+    "duration": 4.081
+  },
+  {
+    "text": "high is on the higher time frame.\" And",
+    "start": 1941.519,
+    "duration": 3.28
+  },
+  {
+    "text": "as you can see, I have it marked out",
+    "start": 1943.12,
+    "duration": 4.399
+  },
+  {
+    "text": "now. It was about a three-hour trade",
+    "start": 1944.799,
+    "duration": 5.041
+  },
+  {
+    "text": "wrapping up my week. So, thank you guys",
+    "start": 1947.519,
+    "duration": 4.16
+  },
+  {
+    "text": "for all watching. Thank you again,",
+    "start": 1949.84,
+    "duration": 4.0
+  },
+  {
+    "text": "Trades, for having me on for the second",
+    "start": 1951.679,
+    "duration": 3.761
+  },
+  {
+    "text": "time. Hopefully you guys learned",
+    "start": 1953.84,
+    "duration": 3.28
+  },
+  {
+    "text": "something. If you guys want to learn",
+    "start": 1955.44,
+    "duration": 3.68
+  },
+  {
+    "text": "more, you can check me out on all",
+    "start": 1957.12,
+    "duration": 3.919
+  },
+  {
+    "text": "platforms. If you want in-depth",
+    "start": 1959.12,
+    "duration": 5.039
+  },
+  {
+    "text": "lectures, live streams, access to me,",
+    "start": 1961.039,
+    "duration": 6.0
+  },
+  {
+    "text": "check us out at the marketlens.com. I",
+    "start": 1964.159,
+    "duration": 4.4
+  },
+  {
+    "text": "hope you stay safe and good luck",
+    "start": 1967.039,
+    "duration": 4.52
+  },
+  {
+    "text": "trading.",
+    "start": 1968.559,
+    "duration": 3.0
+  }
+]

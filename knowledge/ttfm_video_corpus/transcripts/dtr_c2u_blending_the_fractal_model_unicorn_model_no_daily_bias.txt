@@ -1,0 +1,544 @@
+[4.16] [Music]
+[11.08] how's it going everyone and welcome back
+[12.84] to another tea talk today we are joined
+[15.52] by day trading realtor who is going to
+[17.52] talk about his entry model that does not
+[19.80] require daily bias he is going to talk
+[22.24] about how he Blends am's daily profiles
+[25.20] with my fractal model and the unicorn
+[27.44] model to gain entry into the market I
+[29.48] hope you guys find it insightful and
+[31.16] enjoy it thank you T and I am honored to
+[33.96] be on this episode of T talks I am the
+[36.20] day trading realtor yes I am a real
+[38.80] estate agent and yes I am also a day
+[41.00] trader that is one of the beauties of
+[43.16] being a realtor is that I have the
+[45.08] flexibility in my schedule to also day
+[47.96] trade I'm here to talk about my model
+[50.64] which I call the c2u or the C2 unicorn
+[54.16] and it's a blend of the trades fractal
+[56.88] model and the unicorn model and it's a
+[59.44] point of interest based model first and
+[61.92] foremost before we get into the
+[63.32] nitty-gritty of my model I have to pay
+[66.04] tribute to some individuals that have
+[68.88] played a large role in becoming a day
+[71.88] trader myself first and foremost
+[74.48] obviously ICT but even more than ICT te
+[78.20] trades without him I would not be this
+[80.28] far along in my journey as well as Ash
+[82.80] trades over at the Unicorn University
+[85.04] he's the one that I learned all the ins
+[87.44] and outs of the unicorn model and am
+[89.92] trades where I have learned about the
+[92.04] expansion model and specifically how he
+[94.52] uses the 7-h hour candle for the daily
+[96.80] profiles without those individuals
+[99.04] collectively I would not have been able
+[100.44] to create the model that I have today
+[102.60] now out of respect for T and am and Ash
+[107.72] there are parts of my model that I'm not
+[110.12] going to speak about today those are
+[113.00] paid private mentorships and it would
+[114.92] not be right for me to give some of the
+[116.84] secrets away that they use if you truly
+[119.92] want to learn the ins and outs of my
+[121.20] model I highly recommend that you join
+[123.16] either the market lens or the Unicorn
+[125.52] University this way you can see all the
+[128.24] ins and outs of what I have learned to
+[131.16] fully build this model so let's go ahead
+[133.32] and get into the model what do I mean by
+[135.56] points of interest based model well what
+[138.36] that basically means is that I don't
+[140.28] specifically rely on a daily bias in
+[142.88] order to enter a trade now you can pair
+[145.56] it with a daily bias if you'd like I
+[148.12] personally don't and the reason why is I
+[151.24] always had an issue with daily bias
+[153.28] because there are so many different ways
+[154.84] to create a daily bias you have internal
+[157.68] to external you have uh T's way of of
+[160.84] coming up with daily bias and I never
+[162.80] was able to buy into one specific way of
+[165.36] doing a daily bias so I do have the
+[168.52] great pleasure of knowing T personally
+[170.60] and uh have worked with him for almost a
+[172.76] year now on learning his model and how
+[175.56] he trades and one day we were talking
+[177.96] and he said to me well if you don't want
+[179.64] to to trade with a daily bias then don't
+[181.56] trade with a daily bias nothing says
+[183.28] that you have to trade with a daily bias
+[185.88] find a model that works for you that
+[189.08] doesn't use a daily bias so that's what
+[191.16] I did I'm sure all of you who have
+[194.04] followed T's journey and follow him on
+[196.48] YouTube and seen some of his videos or
+[198.48] in his his mentorship you hear him say
+[201.36] all the time that price cannot reverse
+[203.80] without creating a swing
+[205.52] point and also those who know the
+[208.04] unicorn model know that I C claims that
+[211.52] the unicorn model is the most powerful
+[214.80] algorithmic reversal pattern so then I
+[218.20] started to think to myself well is there
+[219.92] a way to join a
+[223.44] unicorn and a swing point so I jumped on
+[227.04] the charts and that's what I started
+[228.32] doing I simply started from the hourly
+[230.36] time frame and would identify all hourly
+[233.76] swing points and once I identified
+[235.84] hourly swing points I looked where those
+[238.52] hourly swing points would reach into a
+[240.76] point of Interest whether it was another
+[242.52] swing High a swing low opposing range
+[245.60] candles fair value gaps previous day
+[249.08] higher low previous session higher low
+[251.84] or previous week higher low I then
+[254.16] started to observe what the hourly
+[256.40] swingp Point candle would do once it
+[258.52] reached one of those points of interests
+[260.96] especially hourly swingo candles that
+[263.60] had larger Wicks when I dropped down to
+[265.96] a five-minute chart I started to notice
+[268.04] that inside of those wicks
+[270.48] there would be 5 minute unicorns that
+[272.28] would form so using this knowledge of
+[275.12] watching hourly swing points form at one
+[277.68] of those points of interest and then
+[279.48] dropping down to the F minute and seeing
+[281.20] unicorns inside of those swing points I
+[283.48] started to back test that model and then
+[285.48] I started to see how the unicorns that
+[288.44] would form in 10 to 12 candles or less
+[292.52] seemed to be better unicorns that would
+[294.44] form when there was more candles
+[296.56] involved and the reason behind this is
+[298.80] because when it forms in 8 to 10 to
+[301.84] maybe 12 candles that's happening pretty
+[304.84] fast so it's showing clear and decisive
+[308.72] movement I don't like the unicorns that
+[311.48] are either further down the candle body
+[315.00] or created over a few hour period even
+[318.68] though some of those do wind up being
+[320.24] winners um to me in my eyes it looks
+[323.52] like they're just it's consolidation and
+[325.80] if you have a breaker and then a bunch
+[327.32] of consolidation in between the breaker
+[330.08] and the the actual close through the
+[332.56] breaker forming the unicorn in my mind
+[335.12] that's just happened to be a swing high
+[337.92] and swing low mixed with consolidation I
+[340.56] want to see a unicorn form quickly and
+[344.24] concisely within that 10 to 12 candle
+[346.76] range or even less than that so let's
+[349.84] get into some examples of how I trade my
+[352.08] model okay let's start off with my A+
+[355.08] setup so we're on the 7-hour chart and
+[358.64] as you can see the these are 7-hour
+[360.44] candles and you can learn how this works
+[363.92] in am's expansion model course he uses
+[367.72] the 7h hour candle as the daily profile
+[371.28] it's a much simpler version of viewing
+[374.12] the daily profiles this candle here is
+[376.64] the 1:00 candle so it's 1:00 a.m. to
+[378.88] 8:00 a.m. that is the London candle and
+[381.44] as you can see this is a London C2
+[383.68] candle which to me is a London reversal
+[387.04] all while being inside of a 7h hour
+[389.64] bearish fair value Gap and also sweeping
+[393.76] a few other highs this is the previous
+[395.80] day high here that had swept which that
+[398.08] previous day high swept this high as
+[400.00] well so the other thing I look at is
+[402.80] that we are also where we are on the
+[405.08] average daily range so at the close of
+[407.24] London the current average daily range
+[409.76] for the last 6 months on inq has been
+[411.60] 335 points we have gone
+[415.40] 214 points for the day at that point in
+[418.92] time so if my profit Target is the
+[421.88] London low down here I would like to
+[424.28] measure from where price currently is
+[426.96] down to that London low and that gives
+[429.56] us about 90 points so that would put us
+[432.48] right around uh just under the average
+[435.56] daily range so it makes sense to me that
+[437.84] price can easily reach down there
+[440.36] without having to go past the average
+[442.32] daily range so dropping down to the f-
+[444.68] minute chart which is my preferred time
+[447.00] frame you can see that there is mult
+[449.52] multiple confluences and a stacking of
+[452.44] points of interest so to start off with
+[454.96] since this was a London reversal we want
+[457.00] to see that 50% of the previous candle
+[460.16] which is the 7h hour candle 50% of that
+[463.08] candle is respected in this case because
+[465.64] it was such a large wick on that candle
+[467.64] I would use 50% of the wick and that is
+[470.36] right here you can see how New York open
+[473.20] ran up to that 50% and then started to
+[477.36] reverse off of that 50%
+[480.52] along with that we had hourly opposing
+[483.20] candles and an hourly inverted fair
+[485.92] value Gap so there was multiple points
+[487.80] of interest stacked on top of each other
+[490.52] so here's the C2 candle so it opens up
+[493.72] runs higher and then it forms a unicorn
+[497.36] now this is where my model will differ
+[499.72] from the fractal model I don't wait for
+[502.40] a valid C2 closure and take the trade in
+[505.88] in Candle 3 if the Unicorn forms in C 2
+[510.20] I I use the formation of the Unicorn as
+[514.16] my confirmation that this will be a
+[516.92] valid C2 candle closure based on the
+[519.16] fractal model the other Confluence you
+[521.84] have is you can see earlier in the
+[523.84] London session there was also a hourly
+[526.04] C2 candle granted it wasn't at any type
+[528.72] of point of interest at that point in
+[530.28] time but it also created a unicorn and
+[534.24] you can see price went right up to that
+[536.32] unicorn and respected as well so you can
+[538.92] see we have have four different points
+[541.12] of interest stacked on top of each other
+[543.36] for Confluence for this trade we use the
+[546.48] London low as our takeprofit Target and
+[549.00] you can see how price just ran straight
+[551.36] to that London low pretty much no
+[553.72] retracement at all during this trade so
+[557.04] this is an example of my A+ setup and if
+[560.40] I could just trade London reversals all
+[562.72] the time that's what I would trade this
+[564.72] is a fantastic setup and I wish these
+[567.52] happened all the time but unfortunately
+[569.12] they don't okay here's another example
+[571.00] this is on gold and once again we're
+[573.04] starting from the 7-h hour chart here we
+[575.56] are in London uh you can see that Asia
+[577.88] made the high of the day yet London
+[580.92] didn't continue uh so if Asia makes the
+[583.68] high and London doesn't continue lower
+[586.64] more than likely we're going to have a
+[588.08] New York reversal now granted we are in
+[590.44] this this 7h hour bearish fair value Gap
+[593.96] however where is Price more likely to
+[596.48] reach all the way back down here or to
+[599.56] get this high up here and that's what I
+[601.68] was figuring was that we're going to go
+[603.24] ahead and reach this daily high so what
+[605.24] I was looking for was a New York
+[607.60] reversal which would sweep out the low
+[609.72] of London and Asia and then continue
+[612.16] higher Also let's look at the average
+[615.08] daily range and see if that would make
+[617.24] sense so we got $17 left in the average
+[620.12] daily range and so at the close of
+[622.84] London up to that
+[625.00] high it's about $22 so it's a little
+[628.12] further than 17 but obviously price can
+[631.28] expand a little bit further past the
+[634.00] average daily range but does it make
+[635.92] sense for it to go up and reach that
+[638.04] high in in my opinion yes it does so
+[640.84] let's go down to the f- minute
+[643.04] chart and here we are on the five-minute
+[645.64] chart as you can see our points of
+[648.64] interest are a Asian London hourly swing
+[653.08] low which is also the low for both
+[655.40] sessions so here's your Asia low here is
+[658.68] a London swing low and we also had a
+[662.20] fair value Gap there very small but it
+[664.08] was an hourly fair value Gap and this
+[666.68] pattern right here of a hourly swing
+[669.32] Point sitting resting just above a
+[672.16] hourly fair value Gap is one of my
+[674.52] favorite things to see so if you're
+[676.48] bullish you want to see an hourly swing
+[679.12] Point sitting just above the fair value
+[682.00] Gap and if you're bearish it's opposite
+[683.64] you want to see an hourly swing Point
+[685.28] sitting just below a bearish fair value
+[687.52] Gap that's usually a good sign that
+[689.00] price is going to sweep into them and
+[691.52] react off of that so that's what we had
+[693.44] at the 8:00 open moved up went down we
+[697.44] swept all that out and then we created
+[699.52] the fair value Gap along with the
+[702.48] breaker here forming our unicorn and as
+[705.68] you can see there is actually a t-spot
+[707.56] in here however because the t-pot
+[710.04] doesn't form until the C2 candle has
+[712.96] closed um there was no actually entry
+[715.52] off the t-spot but there was a confirmed
+[718.84] unicorn orn inside of the C2 candle and
+[721.72] once again how many candles did it take
+[723.72] to create the unicorn and we have 1 2 3
+[726.56] 4 5 six seven eight candles to create
+[730.36] the unicorn and that's what I like to
+[732.60] see I like to see 10 to 12 or less
+[734.60] candles create a unicorn confirming that
+[737.20] clear and concise movement away from the
+[740.68] points of interest now just for low
+[743.28] hanging fruit we targeted Asia high that
+[745.76] gave us a 2.41 R but my initial Target
+[748.92] of that previous day high did wind up
+[751.08] getting hit and if you were to trim here
+[753.88] and use a trailing method you could have
+[756.20] received more of a of a win there on
+[759.08] this trade but I just try to Target low
+[761.44] hanging fruit which is the Asia high and
+[763.68] there we go okay here's our next example
+[765.88] this is on ES once again we're back at
+[768.00] the 7-h hour chart and unlike the
+[770.84] previous two examples you can see how
+[773.36] this day has already reached past the
+[776.96] average daily range uh the Jay range is
+[780.08] 66 points and we have already price has
+[783.12] already run 73.5 points so what do I see
+[787.60] here I see a 7h hour swing low sitting
+[791.40] just above a 7h hour bullish fair value
+[794.60] Gap so I love to see this formation
+[797.80] happen London sweeps that low we have a
+[800.64] little bit of a reaction off of it now
+[802.76] what I want to see is an open low into
+[805.40] this fair value Gap and then a reaction
+[807.52] off of it I don't think we're going to
+[809.20] come all the way back up here for the
+[810.84] day however uh we don't need to do that
+[813.88] we just need to try to grab two R so
+[815.84] let's go down to the F minute chart and
+[817.28] see what we got okay here we are on the
+[819.16] five-minute chart and as you can see
+[821.08] once again we have multiple points of
+[822.88] interest stacked on top of each other we
+[825.20] are at a hourly fair value gap which
+[828.04] happens to also overlay with that 7h
+[830.96] hour fair value Gap we are below an
+[833.96] hourly swing low and we just reached
+[836.32] into hourly opposing candles so putting
+[840.52] that all together from the 7h hour daily
+[844.20] profile we have already expanded pretty
+[847.36] far past the average daily range so we
+[850.20] can be expecting a
+[852.00] reversal and there is a lwh hanging
+[855.08] fruit Target right here which is the
+[856.52] open of the New York session so we
+[859.12] reached into this level created a
+[861.64] unicorn once again how many candles did
+[863.80] it take one two three four five six 7
+[868.08] eight nine candles to form so it's that
+[871.32] clear and concise reaction off of this
+[874.56] level creates the unicorn and off to the
+[878.84] TP Target that we hit now once again we
+[881.36] could have trimmed and received a little
+[883.60] bit more but as a funded Trader all I'm
+[886.24] trying to do is just grab my two to two
+[888.36] and a half R and call it a day whatever
+[890.80] that low hanging fruit Target is that's
+[892.76] all I'm trying to reach so this is a
+[894.48] beautiful example of how using the daily
+[898.12] profile align line with the average
+[900.20] daily range to see okay we've already
+[902.48] expanded past it now we could probably
+[905.24] look for a reversal which also happened
+[908.24] to line up with a 7h hour fair value Gap
+[911.56] and all these other points of interest
+[913.56] as well in the next example on 6C you
+[916.48] can see that looking at the 7-hour daily
+[919.00] profile we' already swept both sides of
+[921.56] the range of Asia with London we did
+[924.56] have a bullish fair value Gap and a
+[927.64] swing low here that was swept but we
+[929.36] also have an opposing range candle that
+[931.36] was closed through so price could go
+[933.80] either direction here today so what did
+[936.64] help on this day was that thanks to the
+[938.84] ttfm fractal indicator I did receive an
+[941.84] alert overnight saying that we did have
+[944.52] a bearish C2 candle closure on 6C which
+[949.04] means that we have a bearish C2 daily
+[953.00] tpot dropping down to the five minute
+[955.32] you can see that right here I love the
+[957.52] daily te- spot because it's an
+[959.04] open-ended point of Interest I don't
+[961.04] need any other points of interest for
+[962.72] the C2 candle to engage in order to form
+[965.92] a trade as you can see there were no
+[968.08] other points of interest at this time
+[970.28] and it was just the daily t-spot earlier
+[972.44] in the London session it created a C2
+[975.68] and looks like a little unicorn there or
+[977.92] here depending on which one you're
+[978.92] looking at and obviously respected that
+[981.28] so until we get an hourly closure past
+[984.80] this daily t-spot this is an open point
+[987.36] of interest for me to take action on on
+[989.56] so as you can see going into 9:00 we
+[992.68] opened up went higher formed a unicorn a
+[996.08] very quick unicorn one two three four
+[1000.44] five six seven candles this unicorn
+[1002.76] formed in we had a tag in and we ran
+[1005.56] straight to profit the lwh hanging fruit
+[1007.32] Target was right there that was
+[1009.44] 2.25 we had another one down here and
+[1012.08] another one down here and I think this
+[1013.28] one was close to 4 R so this was a very
+[1016.40] nice quick trade all simply based on the
+[1020.16] fact that we had a daily C2 t-spot and
+[1023.72] we respected that created our C2 candle
+[1026.52] we had our unicorn and it ran straight
+[1028.88] to profit so this is a great example how
+[1031.28] you only need one point of interest to
+[1033.72] actually execute this trade when it's
+[1035.88] the daily t-spot so in this next example
+[1038.84] just like the fractal model can be used
+[1040.68] across multiple time frames the C2
+[1043.16] unicorn can also be used across multiple
+[1045.76] time frames so this example on gold from
+[1048.52] this month on February and this is going
+[1050.24] to show how you can use a 15minute C2
+[1053.44] aligned with a 1 minute unicorn inside
+[1055.80] that 15minute
+[1057.20] C2 now once again we start on the 7-hour
+[1060.84] chart as you can see price had reached
+[1063.80] into a 7our opposing candle respecting
+[1066.84] 50% of that body right
+[1070.00] there creating a C2 7-hour candle in
+[1074.32] London which means we can expect a
+[1076.28] continuation into New York up to this
+[1078.96] high so here we are on a one minute
+[1081.60] chart using 15minute candles so this one
+[1085.36] was very simple we're just expecting a
+[1087.88] continuation due to the London reversal
+[1090.60] up to take this high up here our point
+[1092.92] of Interest was one 15minute fair value
+[1095.80] Gap you can see this 15minute C2 candle
+[1099.68] went into the 15minute fair value Gap
+[1102.20] and in the wick of that C2 candle was a
+[1105.56] one minute unicorn and there was no real
+[1107.92] lwh hang fruit targets there was this
+[1110.12] here wasn't quite two R this was close
+[1112.40] enough to look at this as a Target and
+[1114.80] this trade ran for three R so this is a
+[1117.52] great example of how the Unicorn the C2
+[1120.64] unicorn can be used fractally just like
+[1123.00] the fractor model can so you would pair
+[1126.20] a 15minute C2 with a 1 minute unicorn a
+[1129.60] 1H hour C2 with a 5 minute unicorn a
+[1133.12] 4our C2 with a 15-minute unicorn and so
+[1136.96] on so this is a great example of that so
+[1140.00] this is an example for all the London
+[1141.52] Traders out there if you do want to
+[1143.88] trade this model in London more than
+[1145.76] likely you will be trading the reversal
+[1148.36] also want to point out this indicator
+[1150.24] this is another ADR indicator that I use
+[1152.84] this one's actually
+[1154.28] free and it's by Jimmy trades it's
+[1157.28] called the average daily
+[1159.72] range and what's nice about it is it
+[1162.00] shows the percentage of the ADR so you
+[1165.04] can look at at this point in the day
+[1166.60] we've only reached 54% of the ADR and it
+[1169.40] sets a condition of medium volatility
+[1172.68] once we go further you can see this was
+[1175.80] a very large expansion candle in the New
+[1178.16] York session and it will show that we
+[1180.32] win 158% of the ADR and that we have
+[1183.12] higher volatility so this is a great
+[1185.00] free tool if you want an ADR indicator
+[1188.68] but let's drop down to the five minute
+[1190.28] and see what this looks like on the
+[1191.52] charts so dropping down to the five-
+[1193.60] minute chart our points of interest are
+[1196.40] a bunch of hourly relative equal lows
+[1198.92] and then a 7h hour and 1 hour fair value
+[1201.12] Gap so this is the London low and this
+[1204.64] you'd be playing as the
+[1206.36] reversal and this is a great example of
+[1209.56] not all of the trades are going to go
+[1212.08] straight to profit on you some of them
+[1213.84] are going to wind up being losses and
+[1215.28] some of them are going to wind up being
+[1216.52] Marathon trades so this one you were in
+[1218.52] this trade from 5:00 a.m. until 9:00
+[1220.92] a.m. so that was a 4H hour trade you
+[1222.68] were going to have to hold through and
+[1223.84] then there was a second entry another
+[1226.28] tag in so there was a little bit of draw
+[1228.44] down but this is just a great example of
+[1231.00] how if you want to play this model in
+[1233.20] the London session more than likely you
+[1236.04] will be playing the reversal so this is
+[1238.56] a great example of that in this example
+[1241.48] once again you can see the fractal of
+[1243.40] the C2 unicorn along with the fractal
+[1245.36] model so this is a little different of a
+[1248.16] model this is a 4-Hour candle and
+[1250.60] specifically what I look for with this
+[1252.72] is I want the C2 candle to be the 6 a.m.
+[1257.60] candle what I'm trying to take advantage
+[1259.84] of is that 10:00 open so we want to see
+[1262.68] a 600 a.m. 4H hour C2 candle at a point
+[1266.96] of Interest so you have a swing High
+[1268.80] here swept the swing high and then going
+[1271.56] down to a 15minute we want to see a
+[1273.44] 15minute unicorn form inside of this 6
+[1276.44] a.m. candle and then we want to see a
+[1278.40] 10:00 open high and then go lower so
+[1282.88] taking advantage of the Open high part
+[1285.60] of it or open low depending on if it's a
+[1287.88] long at the 10 o'clock open so let's
+[1290.52] drop down to the 15 minute and see what
+[1292.12] we get so here we are on the 15 minute
+[1294.60] and as you can see this is the 6 a.m.
+[1296.80] candle here which created the C2 we have
+[1299.40] a point of interest of a 4-Hour swing
+[1301.40] high and you can see that there is a
+[1304.04] 15minute unicorn now this one's not
+[1307.40] perfect since it was confirmed earlier
+[1310.76] in the the 6 a.m. candle it did have a
+[1313.40] few tagins but this is what I'm looking
+[1315.80] for is I want to see the 10 o'cl open
+[1317.88] higher which it did and it respected
+[1320.80] that unicorn tagged in and then ran
+[1323.48] straight to profit which was the lwh
+[1325.16] hanging fruit of the London low so hope
+[1327.44] everyone's enjoyed learning about my C2
+[1329.64] unicorn today uh these are just some of
+[1331.88] the examples and as with any model
+[1334.68] nothing is 100% you're going to take
+[1336.48] wins you're going to take losses but I
+[1338.24] challenge everyone to get on the charts
+[1340.96] back test and figure out a model for
+[1343.44] yourself whether it's the C2 unicorn
+[1346.44] whether it's the TR trades fractal model
+[1348.52] model whether it's the am expansion
+[1350.48] model whether it's the unicorn model
+[1352.76] whatever it is build the model that
+[1355.52] works best for you not every model is
+[1357.88] going to work for everybody make it your
+[1359.80] own once you make it your own and you
+[1361.84] know why you're entering the market not
+[1364.60] because somebody else says to Market at
+[1366.28] this point in time but because you know
+[1368.36] why you're entering the market that's
+[1370.28] when you'll become a successful Trader I
+[1372.64] also have another method that I use uh
+[1375.16] called osok and we use that method just
+[1377.96] for p passing evals in one shot we take
+[1380.40] advantage of high volatile news events
+[1383.44] like NFP CPI and fomc you can learn more
+[1386.92] about that on my YouTube channel I
+[1388.36] actually stream live on those specific
+[1390.80] news events every month uh so that way
+[1393.36] we can all try to pass as many evals
+[1395.52] together as possible so once again thank
+[1398.12] you T for having me this has been a
+[1399.76] great honor and I hope you all enjoyed
+[1402.56] have a wonderful day and stay safe risk
+[1406.96] properly and happy Trading

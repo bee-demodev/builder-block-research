@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-03-23T20:20:43.979619+00:00",
+  "summary": {
+    "pine_target_spec_count": 6,
+    "generated_script_count": 6,
+    "compile_shaped_script_count": 6,
+    "editor_accepted_count": 2,
+    "validated_script_count": 1,
+    "playwriter_validated_count": 1,
+    "qa_gate_pass_count": 1,
+    "generated_script_coverage": 1.0,
+    "compile_shaped_coverage": 1.0,
+    "editor_success_coverage": 0.3333,
+    "validation_coverage": 0.1667,
+    "playwriter_validation_coverage": 0.1667,
+    "workflow_doc_present": true,
+    "workflow_score": 0.7333,
+    "pending_spec_keys": [
+      "continuation_entry_model",
+      "daily_bias_framework",
+      "daily_profile_models",
+      "fractal_closure_model",
+      "reversal_sequence_model"
+    ]
+  },
+  "per_spec_status": [
+    {
+      "spec_key": "continuation_entry_model",
+      "name": "Continuation Entry Model",
+      "generated_script": true,
+      "compile_shaped_script": true,
+      "editor_accepted_in_tradingview": false,
+      "validated_in_tradingview": false,
+      "validated_with_playwriter": false,
+      "validations": []
+    },
+    {
+      "spec_key": "daily_bias_c123_map",
+      "name": "Daily Bias C1/C2/C3 Map",
+      "generated_script": true,
+      "compile_shaped_script": true,
+      "editor_accepted_in_tradingview": true,
+      "validated_in_tradingview": true,
+      "validated_with_playwriter": true,
+      "validations": [
+        {
+          "recorded_at": "2026-03-23T15:38:39.037275+00:00",
+          "spec_key": "daily_bias_c123_map",
+          "script_path": "C:/Users/satvi/Repos/builder-block-research/results/pine_scripts/daily_bias_c123_map.pine",
+          "validation_status": "added_to_chart",
+          "validation_method": "playwriter",
+          "notes": "Script compiled and was added to the 1H TradingView chart, but the visual output did not match the phase 1 contract.",
+          "chart_url": "https://www.tradingview.com/chart/wwgrhNUG/",
+          "chart_symbol": "NQM2026",
+          "qa_status": "fail",
+          "semantic_score": 0.35,
+          "visual_score": 0.2,
+          "scope_score": 0.4,
+          "qa_notes": "Observed repeated broad POI blocks across the chart, legacy study clutter still present on chart, and no clear hourly C1/C2/C3 callouts visible near the active daily POI in the captured view. Screenshot: C:/Users/satvi/Repos/builder-block-research/tmp/tradingview-hourly-phase1.png"
+        },
+        {
+          "recorded_at": "2026-03-23T15:44:41.227433+00:00",
+          "spec_key": "daily_bias_c123_map",
+          "script_path": "C:/Users/satvi/Repos/builder-block-research/results/pine_scripts/daily_bias_c123_map.pine",
+          "validation_status": "added_to_chart",
+          "validation_method": "playwriter",
+          "notes": "Second TradingView pass compiled and rendered a cleaner phase 1 overlay on the 1H chart, but semantic validation remains incomplete because no active hourly C1/C2/C3 labels were visible on the tested view.",
+          "chart_url": "https://www.tradingview.com/chart/wwgrhNUG/",
+          "chart_symbol": "NQM2026",
+          "qa_status": "fail",
+          "semantic_score": 0.55,
+          "visual_score": 0.82,
+          "scope_score": 0.72,
+          "qa_notes": "Improved output now shows a single active daily POI box and explicit daily bias label on the right edge. Historical fill clutter is gone. Current chart still does not display a confirmed active hourly C1/C2/C3 sequence, so the phase 1 contract is not yet fully validated. Screenshot: C:/Users/satvi/Repos/builder-block-research/tmp/tradingview-hourly-phase1-v4.png"
+        },
+        {
+          "recorded_at": "2026-03-23T16:09:57.317895+00:00",
+          "spec_key": "daily_bias_c123_map",
+          "script_path": "results/pine_scripts/daily_bias_c123_map.pine",
+          "validation_status": "compiled_on_chart",
+          "validation_method": "manual_tradingview_browser_qa",
+          "notes": "Phase-1 chart is cleaner and now shows POI, daily bias, C2, C3, and Entry; C1 is still not clearly visible on the current live 1H view.",
+          "chart_url": "https://www.tradingview.com/chart/wwgrhNUG/",
+          "chart_symbol": "CME_MINI:NQM2026",
+          "qa_status": "fail",
+          "semantic_score": 0.72,
+          "visual_score": 0.86,
+          "scope_score": 0.9,
+          "qa_notes": "Improved low-clutter phase-1 rendering. Daily POI and bias are readable. C2/C3/Entry are visible, but C1 is not clearly evidenced in the live chart, so the sequence display is not yet fully acceptable."
+        },
+        {
+          "recorded_at": "2026-03-23T20:11:15.798292+00:00",
+          "spec_key": "daily_bias_c123_map",
+          "script_path": "results/pine_scripts/daily_bias_c123_map.pine",
+          "validation_status": "compiled_on_chart",
+          "validation_method": "playwriter",
+          "notes": "Playwriter visual QA on the live 1H chart showed the phase-1 contract behaving correctly for a no-sequence state: bearish daily bias banner, single active daily POI zone, and a wait-for-short-C2 cue with no historical clutter.",
+          "chart_url": "https://www.tradingview.com/chart/wwgrhNUG/",
+          "chart_symbol": "CME_MINI:NQM2026",
+          "qa_status": "pass",
+          "semantic_score": 0.9,
+          "visual_score": 0.88,
+          "scope_score": 0.9,
+          "qa_notes": "Live chart screenshot C:/Users/satvi/Repos/builder-block-research/tmp/tv_phase1_c123_visible.png shows the expected phase-1 fallback state: no active hourly sequence is present, so C1/C2/C3 labels are absent while the waiting cue remains visible inside the current daily POI. This matches the active-sequence-only display contract and removes the earlier ambiguity that treated no live sequence as an automatic failure."
+        }
+      ]
+    },
+    {
+      "spec_key": "daily_bias_framework",
+      "name": "Daily Bias Framework",
+      "generated_script": true,
+      "compile_shaped_script": true,
+      "editor_accepted_in_tradingview": true,
+      "validated_in_tradingview": false,
+      "validated_with_playwriter": false,
+      "validations": [
+        {
+          "recorded_at": "2026-03-22T19:46:57.991303+00:00",
+          "spec_key": "daily_bias_framework",
+          "script_path": "results/pine_scripts/daily_bias_framework.pine",
+          "validation_status": "blocked_monaco_sync",
+          "validation_method": "playwriter",
+          "notes": "Playwriter store-level script swap changed the TradingView editor title but did not update the Monaco source buffer; Add to chart compiled the stale on-screen script instead of the generated draft, so this attempt does not count as Pine validation.",
+          "chart_url": "https://www.tradingview.com/chart/wwgrhNUG/",
+          "chart_symbol": "NQM2026"
+        },
+        {
+          "recorded_at": "2026-03-22T20:26:25.692440+00:00",
+          "spec_key": "daily_bias_framework",
+          "script_path": "results/pine_scripts/daily_bias_framework.pine",
+          "validation_status": "added_to_chart",
+          "validation_method": "playwriter",
+          "notes": "Playwriter inserted the generated Pine v6 draft into the live Monaco editor via keyboard selection replacement, then TradingView accepted Update on chart and rendered TTrades Daily Bias Framework [Draft] in the chart legend.",
+          "chart_url": "https://www.tradingview.com/chart/wwgrhNUG/",
+          "chart_symbol": "NQM2026"
+        }
+      ]
+    },
+    {
+      "spec_key": "daily_profile_models",
+      "name": "Daily Profile Models",
+      "generated_script": true,
+      "compile_shaped_script": true,
+      "editor_accepted_in_tradingview": false,
+      "validated_in_tradingview": false,
+      "validated_with_playwriter": false,
+      "validations": []
+    },
+    {
+      "spec_key": "fractal_closure_model",
+      "name": "Fractal Closure Model",
+      "generated_script": true,
+      "compile_shaped_script": true,
+      "editor_accepted_in_tradingview": false,
+      "validated_in_tradingview": false,
+      "validated_with_playwriter": false,
+      "validations": []
+    },
+    {
+      "spec_key": "reversal_sequence_model",
+      "name": "Reversal Sequence Model",
+      "generated_script": true,
+      "compile_shaped_script": true,
+      "editor_accepted_in_tradingview": false,
+      "validated_in_tradingview": false,
+      "validated_with_playwriter": false,
+      "validations": []
+    }
+  ]
+}

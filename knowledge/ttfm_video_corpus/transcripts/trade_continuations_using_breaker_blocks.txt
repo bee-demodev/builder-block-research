@@ -1,0 +1,367 @@
+[5.49] [Music]
+[11.00] how's it going everyone this video is
+[12.76] going to be over trading breaker blocks
+[14.52] for
+[15.48] continuations now most people know how
+[17.40] to trade breaker blocks at the reversal
+[19.80] but if you know my model I like to trade
+[21.84] continuations using order blocks however
+[24.52] we are going to show how to do that
+[25.68] using breaker blocks as well so let's
+[27.76] get into the PDF so the first first
+[30.12] thing we're going to do is review what a
+[31.84] breaker block is so a breaker block is a
+[34.92] Candlestick pattern in which we have a
+[36.76] high low higher high and lower Low by
+[40.80] marking out the down close candles from
+[42.80] this high to the low that is the area in
+[45.00] which I want to see resist price or when
+[46.96] price returns into that to push it lower
+[49.52] now with a bullish breaker block we have
+[51.72] a low a high lower low higher high and
+[56.12] with that I'm going to Mark out the up
+[57.84] close candles before this move for the
+[60.32] lower low and those up closed candles
+[62.32] are what I want to see support price
+[64.20] higher so now how would we trade a
+[66.56] breaker Block in a continuation so you
+[69.20] can see here we have the breaker block
+[70.68] at the reversal we have a low we have a
+[73.36] high we have a lower low and a higher
+[75.56] high so that is our change in the state
+[77.52] of delivery or our shift of trend from
+[79.80] bearish to bullish so if we are going to
+[82.28] find a breaker Block in the continuation
+[84.68] what do we have to wait for we have to
+[86.56] wait for a sweep of a low because now we
+[89.08] have a low a high a lower low so when
+[92.72] does this breaker block form when we
+[94.60] have a higher high so by marking out
+[97.24] that breaker block or in this case this
+[99.20] whole series from this low to this high
+[102.08] I can then anticipate this to support
+[103.84] price higher and so if I want to take an
+[105.72] entry on this I can look to take an
+[107.24] entry on the close on the retest or just
+[110.04] get in around here with my stop on the
+[112.16] swing low and there you go we get that
+[114.44] continuation higher now does it always
+[116.72] have to take out the low and yes it does
+[119.16] unless it is paired with smt if it is
+[121.84] paired with smt then I can consider this
+[124.12] low protected treat it as a breaker
+[126.52] block with my stop on this low to trade
+[128.72] it higher because the other asset has
+[130.96] formed the breaker block now this is a
+[133.84] little bit more discretionary as it
+[135.36] doesn't form a true breaker but if we do
+[138.24] not have a low that can be swept out in
+[140.92] terms of advanced Market structure we
+[142.52] are looking for an intermediate term low
+[144.60] or high which is either going to form by
+[147.04] sweeping out a low or reaching into a
+[149.04] fair value Gap so if it also reaches
+[151.36] into a fair value Gap I can consider
+[153.60] that up close candle before that move
+[155.60] into the fair value gap which is then
+[157.40] closed over to trade higher now many
+[159.92] will say it's not a breaker and it
+[161.80] really isn't but I do find that it works
+[164.08] so it was worth a mention in the PDF
+[166.04] here so now that you understand what we
+[168.12] are looking for let's hop into trading
+[170.12] view for some
+[171.64] examples so here we are with our first
+[174.00] example and you can see we were trading
+[176.08] within this range here we have a range
+[178.16] low to a Range High
+[180.64] we've taken out the range low and we
+[182.08] have failure swings on the high now I
+[183.96] don't personally trust this low until we
+[185.72] start to trade away and put in some
+[187.20] bullish structure let's see if that
+[189.24] happens we have down Clos candles here
+[192.04] we have down Clos candles here if we can
+[193.80] close over
+[195.64] those we do close over them so with that
+[200.24] if we are going to continue to these
+[201.68] highs I'd want to see these lows held SO
+[204.44] waiting for a swing low to form to trade
+[206.60] away from
+[210.76] consolidation we get a swing low not
+[215.08] yet there is a pretty solid closure so
+[218.36] from here I could look on the lower time
+[220.52] frames for a setup now since I'm on the
+[222.96] hourly chart on RB I'll go down to the
+[225.44] 5minute Chart now down here on the
+[227.64] 5minute chart I found the series of down
+[230.24] Clos candles that form the low did we
+[232.44] close through the opening price in that
+[234.60] we did so we have a change in the state
+[236.44] of delivery so now I can anticipate this
+[238.76] low to hold if we are going to trade
+[240.84] higher off of that swing point so if I'm
+[243.80] going to look for a breaker continuation
+[245.76] what do I want to look for I want to
+[247.48] First find a swing
+[249.16] low wait for the swing low to be ran out
+[252.32] then let a breaker form and then look
+[254.44] for an entry now what is this actually
+[256.40] doing well if you understand Advanced
+[258.48] Market structure from my video I'm
+[260.72] having a short-term low a sweep of that
+[263.76] and then anticipating another short-term
+[265.68] low which forms an intermediate term low
+[268.36] so let's see if this forms we sweep out
+[270.64] a low a nice reaction do we make a high
+[274.68] we do now with these Wicks kind of
+[277.20] everywhere I will focus on the bodies
+[279.88] drag that out that is my breaker
+[282.48] block and look for an entry on the start
+[285.08] of that my stop either on the low or the
+[288.08] other side of the breaker other side of
+[290.24] the breaker in this case and then
+[292.44] looking for this Range High so let's see
+[296.36] what happens
+[300.40] and there we go after a little while we
+[302.36] do go take out that Range High so going
+[305.60] back to our hourly chart just to review
+[307.72] we had a range we swept out the low in
+[309.88] the range looking to trade to the high
+[311.76] in the range we had bullish structure
+[314.40] looking for a swing point to form off
+[316.20] that bullish structure and then looking
+[317.88] for a breaker in a continuation to trade
+[320.68] to the other side of the range let's get
+[322.56] into another example so here we are with
+[325.36] our next example you can see we have
+[327.32] taken out this High here we had a nice
+[329.96] bearish closure on The Daily so if I'm
+[332.76] going down to the hourly I can look for
+[334.40] a setup to trade lower to these lows to
+[336.92] the left here let's drop down to the
+[338.80] hourly so down here on the hourly chart
+[341.52] I do have my indicator up so we can
+[343.36] visualize these higher time frame
+[345.16] candles we have that sweep the closure
+[347.36] back in and we have a change in the
+[349.20] state of delivery so looking bearish on
+[351.28] this day let's see if we can find a
+[353.00] breaker
+[354.04] continuation the trend is already
+[356.36] bearish so let's see do we have any
+[359.20] highs that that can be swept out we
+[361.08] sweep out a high here so we have a high
+[363.96] a low a higher high and a lower low so
+[367.84] marking out those down close candles on
+[370.48] the move down so just from this high to
+[372.64] this low that would be a breaker block
+[375.36] and then now I could look for an entry
+[377.08] there so I could look to enter on the
+[378.96] retest my stop on the other side of the
+[380.72] breaker or on this high in this case
+[383.16] I'll just do the other side of the
+[384.24] breaker then I can look for two r or two
+[387.40] these lows to the left here let's see
+[392.80] happens right there we hit our to our
+[395.40] Target so you can see we have a breaker
+[398.52] in a continuation right I'm not looking
+[400.72] for a breaker here I'm just letting this
+[402.52] reversal form and I'm looking for a
+[404.48] breaker in the continuation so here we
+[406.88] are in our next example and we'll go
+[408.52] ahead and work this one top down you can
+[410.88] see we have had a nice aggressive
+[413.12] selloff sweeping out a low and then
+[415.76] closing back higher which is a bullish
+[417.76] candle so we can look to trade to this
+[419.92] high so for the next day looking to
+[421.92] trade higher as we have closed over the
+[424.48] previous so going from the daily we'll
+[426.84] drop down to the hourly chart so down
+[428.76] here on the hourly chart we have a
+[433.00] consolidation we go ahead and sweep this
+[435.44] consolidation low right we sweep out
+[437.60] these lows into a fair value Gap and
+[439.80] then we start to trade this higher now I
+[442.12] don't personally trust this type of low
+[444.28] until we get a change in the state of
+[446.68] delivery once we get a closure through
+[448.80] that then I I could look to trade to
+[450.80] this
+[451.80] high with this closure through I can go
+[454.32] ahead and drop down to the 5minute time
+[456.24] frame to see if I can find a
+[457.92] continuation there so here we are on the
+[460.72] 5 minute we can identify the phases of
+[463.16] price we have expansion into
+[465.36] consolidation which case I'd want a
+[467.28] manipulation to trade higher or a purge
+[469.40] of the lows let's let this
+[473.60] continue do we purge the
+[475.88] lows there we go so now with this it's a
+[479.80] bit messy but we find the high that made
+[482.76] the low in this case it's a bit messy
+[484.84] like I said but low high lower low do we
+[488.04] make a higher high once we do then I can
+[490.80] go ahead and take a look at these
+[492.20] breaker blocks here do we close over we
+[495.80] made a
+[497.08] high and now I can look to get in on
+[500.12] this retest my stop below that and
+[503.08] looking for about 2 R just that so it's
+[506.72] right around 2 R see if we get in we get
+[509.16] tag in and then we go right now if this
+[512.24] is going to be an expansion day we
+[514.12] should continue higher so let's see what
+[516.20] happens and if there's any more
+[519.08] continuations and now this is one of
+[521.08] those scenarios where I talk we don't
+[523.08] sweep out this low here but it is paired
+[525.80] with smt so since this is paired with
+[529.36] smt then I can consider these up close
+[532.40] candles here as the breaker once we
+[534.52] break through
+[535.60] those so let's see do we close over that
+[540.92] we do so I could go ahead and look for
+[542.80] an entry on the retest my stop on the
+[546.08] low and then once again let's see if we
+[548.48] can get two R out of this or if we take
+[550.16] a
+[551.36] loss we do get in that and we hit 2 R so
+[555.12] this is an example of a continuation so
+[557.72] instead of getting caught in this chop
+[559.76] just wait for a sweep of a low and then
+[561.60] catch the move right stop getting caught
+[563.56] up in this price action and then wait
+[565.44] for the manipulation to occur and then
+[567.52] catch the expansion that follows so
+[569.96] let's get into another example here you
+[572.04] can see we have had expansion
+[574.80] retracement a continued expansion and
+[577.96] then now we have formed a swing high so
+[580.20] if we have formed a swing high after
+[582.12] expansion can be looking for a
+[583.96] continuation lower or a retracement on
+[586.08] this higher time frame which would be a
+[587.92] bearish day if I can drop down to the
+[590.28] hourly do we have that confirmation of a
+[593.44] bearish day coming along well going
+[596.16] ahead and looking for our change in the
+[597.64] state of delivery we did have that
+[599.92] there right and then taking a look here
+[602.40] do we have a breaker block that would
+[604.36] work as a
+[605.56] continuation well taking a look we've
+[608.12] swept out this High to the left so that
+[610.96] gives us a high low higher high lower
+[614.44] low so looking at the down close candles
+[617.60] here as our breaker block can mark that
+[620.08] out and I could be looking for a
+[621.68] continuation of this trend lower from
+[623.76] here so letting this continue I don't
+[626.80] like to blindly short this I could if if
+[629.44] I want and that may work out can
+[631.84] actually put that on there and see if it
+[633.56] would right something like this looking
+[636.36] for 2 R so if we run out these lows it
+[638.72] would work without hitting those Highs
+[640.76] but I would rather wait for bearish
+[642.64] closures in here something like this
+[644.72] where we sweep up the high of the
+[646.48] previous we engulf it we have a very
+[648.92] bearish closure then I would also drop
+[651.32] down to the 5 minute time frame and see
+[653.20] if it aligns there so here we are down
+[655.36] on the 5 minute I have my indicator on
+[657.60] the screen so with this change in the
+[660.44] state of delivery I can anticipate this
+[662.16] High to hold do we have a breaker for a
+[664.88] continuation here well we sweep out
+[666.52] these highs as well as this High here so
+[669.16] we have highs low higher high do we form
+[672.36] a lower
+[673.84] low Let's see we do as we form in it
+[677.72] break this low here so I could look to
+[679.96] get in on the retest of this down close
+[682.24] candle here let me go ahead and Mark
+[684.12] that out as my breaker
+[686.52] block and I can put my stop right here
+[689.48] or on the high and then look for two R
+[692.44] so let's see what happens we get tagged
+[695.12] in and there we go we hit to R now let's
+[698.64] go ahead and zoom back out to our hourly
+[701.32] you can see we took the daily we
+[703.96] anticipated a direction on the daily
+[705.92] chart look for an hourly continuation
+[708.48] out of this continuation breaker block
+[710.68] and then refine that down now would this
+[712.96] have worked out if we took this entry
+[715.00] just from the hourly well let's go ahead
+[716.80] and see if it would right looking for 2
+[719.68] R let's
+[721.88] see it would have just would have taken
+[724.68] a little bit of time so that is one way
+[726.60] you can either refine it down or just
+[728.20] use the current time frame you are on so
+[731.32] here we are on our next example and to
+[734.12] give a little context we have these
+[735.68] equal highs right here we have just
+[738.08] formed smt off these lows with
+[741.96] NQ and so we can look to trade this
+[744.64] higher because we have a bullish candle
+[746.72] closure right here so dropping down to
+[749.24] the 1 minute time frame is that as our
+[750.72] time frame pairing with the 15minute
+[753.04] chart you can see I have my indicator on
+[754.76] here to show the higher time frame
+[756.08] candles we have a change in the state of
+[758.08] delivery price retraces into that is the
+[761.36] mean threshold or 50% of this respected
+[764.16] it is and then once again this is going
+[767.52] to become a propulsion block I'd want to
+[769.52] see that be respected as
+[772.08] well let's see if we get a close through
+[775.40] that we do so now I can anticipate that
+[778.00] to hold so if we are going to continue
+[780.60] higher trading to these highs to the
+[782.72] left do we get a breaker continuation or
+[785.44] a way to get on side with
+[788.60] this so here we have a consolidation we
+[791.88] reached back into a fair value
+[795.16] Gap and then do we close higher not
+[798.32] quite yet we are getting a continuation
+[800.84] from my
+[801.96] indicator Let's see we do get the
+[805.20] closure through here so with the way I
+[808.12] analyze I I don't expect this low to get
+[810.28] taken we have these lows right here so
+[812.84] those would be what I'm looking for to
+[814.96] get swept out in order to form a breaker
+[819.28] continuation so here we get those swept
+[821.48] out do we make a high well we have low
+[825.08] high lower low do we make a higher high
+[828.48] if we do these up close candles here
+[830.76] will be the breaker block Let's
+[834.60] see we do now I can look to take an
+[837.72] entry this one look to take on the close
+[841.20] see if I can have my stop on this low or
+[843.40] on this
+[844.48] body and then look forward to
+[848.24] our let's see how this plays
+[858.12] out and after some time we go ahead and
+[861.92] hit to R there so hopefully that makes
+[865.24] sense how even if I am a little bit late
+[867.64] into the trend I'm not trying to to pick
+[869.44] a high I'm waiting for a continuation
+[872.20] now although I prefer to just use order
+[874.08] blocks as I find them more simple and
+[876.56] easy you can use breaker blocks if that
+[879.16] is what makes more sense to you you just
+[881.32] have to find out what works for you I
+[883.48] hope you guys enjoyed this video if you
+[885.32] do have topics you want videos made on
+[887.52] please go ahead and leave those in the
+[888.96] comment section below I hope you have a
+[890.72] great rest of your day and I'll see you
+[892.00] guys next time

@@ -1,0 +1,2584 @@
+{
+  "generated_at": "2026-03-23T20:47:46.112401+00:00",
+  "framework_slug": "ttfm",
+  "framework_name": "TTrades Fractal Model",
+  "summary": {
+    "framework_slug": "ttfm",
+    "case_count": 14,
+    "checkpoint_count": 70,
+    "missing_screenshot_count": 20,
+    "missing_anchor_label_count": 70,
+    "missing_evidence_ref_count": 0,
+    "missing_annotation_notes_count": 20,
+    "screenshot_coverage": 0.7143,
+    "anchor_coverage": 0.0,
+    "multi_timeframe_case_ratio": 0.7857,
+    "component_counts": {
+      "breaker": 1,
+      "candle_2_closure": 3,
+      "candle_3_closure": 2,
+      "equilibrium": 8,
+      "fair_value_gap": 2,
+      "liquidity_sweep": 7,
+      "order_block": 2,
+      "point_of_interest": 4,
+      "protected_swing": 6,
+      "top_down_alignment": 9,
+      "wick_logic": 1,
+      "zone_boundary": 3
+    },
+    "label_provenance_counts": {
+      "rule_derived": 14
+    },
+    "active_label_provenance_counts": {
+      "rule_derived": 46,
+      "unlabeled": 24
+    },
+    "remaining_missing_evidence_counts": {
+      "screenshot": 20,
+      "anchor_labels": 70,
+      "evidence_refs": 0,
+      "annotation_notes": 20
+    }
+  },
+  "case_packets": [
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+      "topic": "bias",
+      "source_url": "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+      "notes": "Baseline teacher-style continuation-day bias case from Easy Daily Bias.",
+      "timeframe_stack": {
+        "htf": "higher",
+        "etf": "lower",
+        "ltf": "lower",
+        "labels": [
+          "higher",
+          "lower"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "daily_bias_framework"
+      ],
+      "relation_types": [
+        "bias_framework"
+      ],
+      "component_labels": [
+        "equilibrium"
+      ],
+      "supporting_topics": [
+        "equilibrium"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__daily_bias_framework"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "daily_bias_continuation_setup"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/context_Framework.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+            "topic:bias",
+            "topic:equilibrium",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/sweep_Framework-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+            "topic:bias",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/closure_Framework-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+            "topic:bias",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/confirmation_Framework-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+            "topic:bias",
+            "topic:equilibrium",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_continuation_baseline_v1/outcome_Framework-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Framework-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/easy-daily-bias-a-mechanical-trading-framework/",
+            "topic:bias",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_daily_bias_reversal_baseline_v1",
+      "topic": "bias",
+      "source_url": "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+      "notes": "Baseline teacher-style reversal-day bias case from Next Day Model.",
+      "timeframe_stack": {
+        "htf": "higher",
+        "etf": "lower",
+        "ltf": "lower",
+        "labels": [
+          "higher",
+          "lower"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "daily_bias_framework"
+      ],
+      "relation_types": [
+        "bias_framework"
+      ],
+      "component_labels": [
+        "equilibrium",
+        "zone_boundary"
+      ],
+      "supporting_topics": [
+        "daily_profiles",
+        "equilibrium",
+        "invalidation"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__daily_bias_framework"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "daily_bias_reversal_setup"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "equilibrium",
+            "zone_boundary"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "zone_boundary"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/context_Next-Day-model.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+            "topic:bias",
+            "topic:equilibrium",
+            "topic:daily_profiles",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/sweep_Next-Day-model-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+            "topic:bias",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/closure_Next-Day-model-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+            "topic:bias",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/confirmation_Next-Day-model-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+            "topic:bias",
+            "topic:equilibrium",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "zone_boundary"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "zone_boundary"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_daily_bias_reversal_baseline_v1/outcome_Next-Day-model-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Next-Day-model-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/next-day-model-a-fractal-way-to-build-trading-bias/",
+            "topic:bias",
+            "topic:daily_profiles",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__daily_bias_framework"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_candle_2_closure_reversal_baseline_v1",
+      "topic": "candle_2_closure",
+      "source_url": "https://ttrades.com/understanding-candle-2-closures-within-the-fractal-model/",
+      "notes": "Composite reversal case where an early candle 2 closure supplies the fractal confirmation for the broader reversal model.",
+      "timeframe_stack": {
+        "htf": "fractal",
+        "etf": "lower_timeframe_refinement",
+        "ltf": "lower_timeframe_refinement",
+        "labels": [
+          "fractal",
+          "lower_timeframe_refinement"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "fractal_closure_model",
+        "reversal_sequence_model"
+      ],
+      "relation_types": [
+        "confirmation_framework",
+        "execution_model"
+      ],
+      "component_labels": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "equilibrium",
+        "liquidity_sweep",
+        "point_of_interest",
+        "top_down_alignment"
+      ],
+      "supporting_topics": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "continuation",
+        "equilibrium",
+        "protected_swings",
+        "reversal",
+        "top_down_alignment"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__fractal_closure_model",
+        "ttrades_curriculum__reversal_sequence_model"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "candle_2_reversal_confirmation"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "equilibrium",
+            "point_of_interest",
+            "top_down_alignment"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "point_of_interest",
+              "top_down_alignment"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:candle_2_closure",
+            "topic:equilibrium",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:top_down_alignment",
+            "draft_spec:ttrades_curriculum__fractal_closure_model",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:candle_2_closure",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__fractal_closure_model",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "candle_2_closure",
+            "candle_3_closure"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "candle_2_closure",
+              "candle_3_closure"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:candle_2_closure",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "draft_spec:ttrades_curriculum__fractal_closure_model",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "candle_2_closure",
+            "candle_3_closure",
+            "equilibrium",
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "candle_2_closure",
+              "candle_3_closure",
+              "equilibrium",
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:candle_2_closure",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:equilibrium",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__fractal_closure_model",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:candle_2_closure",
+            "draft_spec:ttrades_curriculum__fractal_closure_model",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_candle_3_closure_continuation_baseline_v1",
+      "topic": "candle_3_closure",
+      "source_url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "notes": "Fractal-closure example where candle 3 rescues the setup after candle 2 fails.",
+      "timeframe_stack": {
+        "htf": "fractal",
+        "etf": "lower_timeframe_refinement",
+        "ltf": "lower_timeframe_refinement",
+        "labels": [
+          "fractal",
+          "lower_timeframe_refinement"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "fractal_closure_model"
+      ],
+      "relation_types": [
+        "confirmation_framework"
+      ],
+      "component_labels": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "equilibrium",
+        "liquidity_sweep",
+        "point_of_interest",
+        "top_down_alignment",
+        "zone_boundary"
+      ],
+      "supporting_topics": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "continuation",
+        "daily_profiles",
+        "equilibrium",
+        "invalidation",
+        "protected_swings",
+        "reversal",
+        "top_down_alignment"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__fractal_closure_model"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "candle_3_continuation_confirmation"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "equilibrium",
+            "point_of_interest",
+            "top_down_alignment",
+            "zone_boundary"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "point_of_interest",
+              "top_down_alignment",
+              "zone_boundary"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/context_c2.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+            "topic:candle_3_closure",
+            "topic:equilibrium",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:top_down_alignment",
+            "topic:daily_profiles",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__fractal_closure_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/sweep_c2-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__fractal_closure_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "candle_2_closure",
+            "candle_3_closure"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "candle_2_closure",
+              "candle_3_closure"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/closure_c2-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+            "topic:candle_3_closure",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "draft_spec:ttrades_curriculum__fractal_closure_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "candle_2_closure",
+            "candle_3_closure",
+            "equilibrium",
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "candle_2_closure",
+              "candle_3_closure",
+              "equilibrium",
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/confirmation_c2-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+            "topic:candle_3_closure",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:equilibrium",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__fractal_closure_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "zone_boundary"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "zone_boundary"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_candle_3_closure_continuation_baseline_v1/outcome_c2-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image c2-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+            "topic:candle_3_closure",
+            "topic:daily_profiles",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__fractal_closure_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_continuation_breaker_block_retest_baseline_v1",
+      "topic": "continuation",
+      "source_url": "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+      "notes": "Continuation breaker-block example where structure completes after a sweep or SMT divergence and is traded on the retest.",
+      "timeframe_stack": {
+        "htf": "higher",
+        "etf": "intraday",
+        "ltf": "intraday",
+        "labels": [
+          "higher",
+          "intraday"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "component_labels": [
+        "breaker",
+        "liquidity_sweep",
+        "protected_swing",
+        "top_down_alignment"
+      ],
+      "supporting_topics": [
+        "continuation",
+        "invalidation",
+        "protected_swings",
+        "reversal",
+        "top_down_alignment"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__continuation_entry_model"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "continuation_breaker_block_retest"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "breaker",
+            "top_down_alignment"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "breaker",
+              "top_down_alignment"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/context_Entry20Model.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+            "topic:continuation",
+            "topic:continuation",
+            "topic:reversal",
+            "topic:top_down_alignment",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "breaker",
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "breaker",
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/sweep_Entry20Model-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+            "topic:continuation",
+            "topic:continuation",
+            "topic:reversal",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "intraday",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/closure_Entry20Model-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "intraday",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "breaker",
+            "liquidity_sweep",
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "breaker",
+              "liquidity_sweep",
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/confirmation_Entry20Model-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+            "topic:continuation",
+            "topic:continuation",
+            "topic:reversal",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_breaker_block_retest_baseline_v1/outcome_Entry20Model-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+            "topic:continuation",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_continuation_equilibrium_hold_baseline_v1",
+      "topic": "continuation",
+      "source_url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "notes": "Baseline teacher-style continuation case from equilibrium respect.",
+      "timeframe_stack": {
+        "htf": "fractal",
+        "etf": "fractal",
+        "ltf": "fractal",
+        "labels": [
+          "fractal"
+        ],
+        "is_multi_timeframe": false
+      },
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "component_labels": [
+        "equilibrium",
+        "protected_swing"
+      ],
+      "supporting_topics": [
+        "equilibrium",
+        "invalidation",
+        "protected_swings"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__continuation_entry_model"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "equilibrium_continuation_entry"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/context_EQ-1.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-equilibrium-in-continuations/",
+            "topic:continuation",
+            "topic:equilibrium",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/sweep_EQ-1-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-equilibrium-in-continuations/",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/closure_EQ-1-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-equilibrium-in-continuations/",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "equilibrium",
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/confirmation_EQ-1-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-equilibrium-in-continuations/",
+            "topic:continuation",
+            "topic:equilibrium",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_equilibrium_hold_baseline_v1/outcome_EQ-1-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EQ-1-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-equilibrium-in-continuations/",
+            "topic:continuation",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_continuation_failure_baseline_v1",
+      "topic": "continuation",
+      "source_url": "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+      "notes": "Baseline failure-filter case for the teacher-style continuation model.",
+      "timeframe_stack": {
+        "htf": "fractal",
+        "etf": "fractal",
+        "ltf": "fractal",
+        "labels": [
+          "fractal"
+        ],
+        "is_multi_timeframe": false
+      },
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "component_labels": [
+        "top_down_alignment"
+      ],
+      "supporting_topics": [
+        "top_down_alignment"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__continuation_entry_model"
+      ],
+      "outcome": {
+        "decision": "no_trade",
+        "reason": "continuation_failure_filter"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "top_down_alignment"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "top_down_alignment"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/context_Ideal-Continuation.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+            "topic:continuation",
+            "topic:top_down_alignment",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/sweep_Ideal-Continuation-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/closure_Ideal-Continuation-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/confirmation_Ideal-Continuation-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_failure_baseline_v1/outcome_Ideal-Continuation-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Ideal-Continuation-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_continuation_order_block_retest_baseline_v1",
+      "topic": "continuation",
+      "source_url": "https://ttrades.com/using-order-blocks-for-continuations/",
+      "notes": "Continuation order-block example where a fair value gap or sweep leads to a validated continuation order block.",
+      "timeframe_stack": {
+        "htf": "higher",
+        "etf": "intraday",
+        "ltf": "lower_timeframe_refinement",
+        "labels": [
+          "higher",
+          "intraday",
+          "lower_timeframe_refinement"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "component_labels": [
+        "equilibrium",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "order_block",
+        "protected_swing",
+        "top_down_alignment"
+      ],
+      "supporting_topics": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "continuation",
+        "equilibrium",
+        "invalidation",
+        "protected_swings",
+        "reversal",
+        "top_down_alignment"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__continuation_entry_model"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "continuation_order_block_retest"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "equilibrium",
+            "fair_value_gap",
+            "order_block",
+            "top_down_alignment"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "fair_value_gap",
+              "order_block",
+              "top_down_alignment"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/context_Entry20Model-1.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-order-blocks-for-continuations/",
+            "topic:continuation",
+            "topic:equilibrium",
+            "topic:continuation",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:continuation",
+            "topic:top_down_alignment",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "fair_value_gap",
+            "liquidity_sweep",
+            "order_block"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "fair_value_gap",
+              "liquidity_sweep",
+              "order_block"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/sweep_Entry20Model-1-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-order-blocks-for-continuations/",
+            "topic:continuation",
+            "topic:continuation",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/closure_Entry20Model-1-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-order-blocks-for-continuations/",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "equilibrium",
+            "fair_value_gap",
+            "liquidity_sweep",
+            "order_block",
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "fair_value_gap",
+              "liquidity_sweep",
+              "order_block",
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/confirmation_Entry20Model-1-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-order-blocks-for-continuations/",
+            "topic:continuation",
+            "topic:equilibrium",
+            "topic:continuation",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "topic:continuation",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_order_block_retest_baseline_v1/outcome_Entry20Model-1-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image Entry20Model-1-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/using-order-blocks-for-continuations/",
+            "topic:continuation",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_new_york_reversal_profile_baseline_v1",
+      "topic": "daily_profiles",
+      "source_url": "https://ttrades.com/understanding-the-new-york-reversal-in-daily-profiles/",
+      "notes": "Composite teacher-style case where the daily profile context and reversal execution align.",
+      "timeframe_stack": {
+        "htf": "higher",
+        "etf": "intraday",
+        "ltf": "intraday",
+        "labels": [
+          "higher",
+          "intraday"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "daily_profile_models",
+        "reversal_sequence_model"
+      ],
+      "relation_types": [
+        "execution_model",
+        "session_profile"
+      ],
+      "component_labels": [
+        "equilibrium",
+        "liquidity_sweep",
+        "point_of_interest",
+        "top_down_alignment",
+        "zone_boundary"
+      ],
+      "supporting_topics": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "continuation",
+        "daily_profiles",
+        "equilibrium",
+        "invalidation",
+        "protected_swings",
+        "reversal",
+        "top_down_alignment"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__daily_profile_models",
+        "ttrades_curriculum__reversal_sequence_model"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "new_york_reversal_profile_execution"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "equilibrium",
+            "point_of_interest",
+            "top_down_alignment",
+            "zone_boundary"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "point_of_interest",
+              "top_down_alignment",
+              "zone_boundary"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "topic:equilibrium",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:top_down_alignment",
+            "topic:daily_profiles",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__daily_profile_models",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__daily_profile_models",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "intraday",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "draft_spec:ttrades_curriculum__daily_profile_models",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "intraday",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "equilibrium",
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "topic:equilibrium",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__daily_profile_models",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "zone_boundary"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "zone_boundary"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "topic:daily_profiles",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__daily_profile_models",
+            "draft_spec:ttrades_curriculum__reversal_sequence_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_seek_and_destroy_profile_filter_baseline_v1",
+      "topic": "daily_profiles",
+      "source_url": "https://ttrades.com/understanding-the-seek-and-destroy-daily-profile-in-trading/",
+      "notes": "Profile example where the model is more useful as a non-opportunity filter than as an entry trigger.",
+      "timeframe_stack": {
+        "htf": "daily",
+        "etf": "intraday",
+        "ltf": "intraday",
+        "labels": [
+          "daily",
+          "intraday"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "daily_profile_models"
+      ],
+      "relation_types": [
+        "session_profile"
+      ],
+      "component_labels": [
+        "equilibrium",
+        "liquidity_sweep"
+      ],
+      "supporting_topics": [
+        "continuation",
+        "equilibrium",
+        "protected_swings",
+        "reversal"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__daily_profile_models"
+      ],
+      "outcome": {
+        "decision": "no_trade",
+        "reason": "seek_and_destroy_profile_filter"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "daily",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "equilibrium"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "topic:equilibrium",
+            "draft_spec:ttrades_curriculum__daily_profile_models"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__daily_profile_models"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "intraday",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "draft_spec:ttrades_curriculum__daily_profile_models"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "intraday",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "equilibrium",
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "equilibrium",
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "topic:equilibrium",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__daily_profile_models"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:daily_profiles",
+            "draft_spec:ttrades_curriculum__daily_profile_models"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_expansion_curriculum_baseline_v1",
+      "topic": "expansion",
+      "source_url": "https://ttrades.com/phases-of-price-part-2-mastering-expansion-for-strong-trend-trades/",
+      "notes": "Baseline curriculum-derived annotation for expansion behavior.",
+      "timeframe_stack": {
+        "htf": "fractal",
+        "etf": "fractal",
+        "ltf": "fractal",
+        "labels": [
+          "fractal"
+        ],
+        "is_multi_timeframe": false
+      },
+      "trade_models": [
+        "phases_of_price_framework"
+      ],
+      "relation_types": [
+        "phase_framework"
+      ],
+      "component_labels": [
+        "protected_swing"
+      ],
+      "supporting_topics": [
+        "invalidation",
+        "protected_swings"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [],
+      "outcome": null,
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:expansion"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:expansion"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:expansion"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "fractal",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:expansion",
+            "topic:protected_swings",
+            "topic:invalidation"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "fractal",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "missing",
+          "screenshot_path": null,
+          "annotation_notes": [],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "topic:expansion",
+            "topic:protected_swings",
+            "topic:invalidation"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+      "topic": "retracement",
+      "source_url": "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+      "notes": "No-trade retracement case where the pullback never forms the confirmation needed for a continuation entry.",
+      "timeframe_stack": {
+        "htf": "fractal",
+        "etf": "lower_timeframe_refinement",
+        "ltf": "lower_timeframe_refinement",
+        "labels": [
+          "fractal",
+          "lower_timeframe_refinement"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "component_labels": [
+        "candle_2_closure",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "protected_swing",
+        "top_down_alignment"
+      ],
+      "supporting_topics": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "continuation",
+        "invalidation",
+        "protected_swings",
+        "reversal",
+        "top_down_alignment"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__continuation_entry_model"
+      ],
+      "outcome": {
+        "decision": "no_trade",
+        "reason": "retracement_missing_confirmation_filter"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "fractal",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "fair_value_gap",
+            "top_down_alignment"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "fair_value_gap",
+              "top_down_alignment"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/context_RETRACEMENT.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+            "topic:retracement",
+            "topic:continuation",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:top_down_alignment",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "fair_value_gap",
+            "liquidity_sweep"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "fair_value_gap",
+              "liquidity_sweep"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/sweep_RETRACEMENT-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+            "topic:retracement",
+            "topic:continuation",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "candle_2_closure"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "candle_2_closure"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/closure_RETRACEMENT-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+            "topic:retracement",
+            "topic:candle_2_closure",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "candle_2_closure",
+            "fair_value_gap",
+            "liquidity_sweep",
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "candle_2_closure",
+              "fair_value_gap",
+              "liquidity_sweep",
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/confirmation_RETRACEMENT-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+            "topic:retracement",
+            "topic:candle_2_closure",
+            "topic:continuation",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:protected_swings",
+            "topic:continuation",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_retracement_missing_confirmation_filter_baseline_v1/outcome_RETRACEMENT-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image RETRACEMENT-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/phases-of-price-part-3-mastering-retracements-for-high-probability-setups/",
+            "topic:retracement",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_continuation_top_down_alignment_baseline_v1",
+      "topic": "top_down_alignment",
+      "source_url": "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+      "notes": "Top-down alignment example where higher, intermediate, and lower timeframes all point in the same continuation direction.",
+      "timeframe_stack": {
+        "htf": "higher",
+        "etf": "intraday",
+        "ltf": "lower_timeframe_refinement",
+        "labels": [
+          "higher",
+          "intraday",
+          "lower_timeframe_refinement"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "component_labels": [
+        "order_block",
+        "point_of_interest",
+        "protected_swing",
+        "top_down_alignment"
+      ],
+      "supporting_topics": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "continuation",
+        "invalidation",
+        "protected_swings",
+        "reversal",
+        "top_down_alignment"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__continuation_entry_model"
+      ],
+      "outcome": {
+        "decision": "trade",
+        "reason": "top_down_aligned_continuation_entry"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "order_block",
+            "point_of_interest",
+            "top_down_alignment"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "order_block",
+              "point_of_interest",
+              "top_down_alignment"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/context_top-down_.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+            "topic:top_down_alignment",
+            "topic:continuation",
+            "topic:candle_2_closure",
+            "topic:candle_3_closure",
+            "topic:reversal",
+            "topic:top_down_alignment",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "order_block"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "order_block"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/sweep_top-down_-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+            "topic:top_down_alignment",
+            "topic:continuation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/closure_top-down_-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+            "topic:top_down_alignment",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower_timeframe_refinement",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "order_block",
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "order_block",
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/confirmation_top-down_-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+            "topic:top_down_alignment",
+            "topic:continuation",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "intraday",
+          "timeframe_role": "etf",
+          "expected_component_labels": [
+            "protected_swing"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "protected_swing"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_top_down_alignment_baseline_v1/outcome_top-down_-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image top-down_-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/mastering-top-down-analysis-aligning-multiple-timeframes-for-expansion-trading/",
+            "topic:top_down_alignment",
+            "topic:protected_swings",
+            "topic:invalidation",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        }
+      ]
+    },
+    {
+      "framework_slug": "ttfm",
+      "framework_name": "TTrades Fractal Model",
+      "profile_slug": "ttrades_curriculum",
+      "profile_name": "TTrades Curriculum",
+      "case_ref": "ttrades_continuation_large_wick_filter_baseline_v1",
+      "topic": "wick_logic",
+      "source_url": "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+      "notes": "No-trade continuation filter where the lower timeframe wick is too large to support efficient expansion.",
+      "timeframe_stack": {
+        "htf": "higher",
+        "etf": "lower",
+        "ltf": "lower",
+        "labels": [
+          "higher",
+          "lower"
+        ],
+        "is_multi_timeframe": true
+      },
+      "trade_models": [
+        "continuation_entry_model"
+      ],
+      "relation_types": [
+        "execution_model"
+      ],
+      "component_labels": [
+        "top_down_alignment",
+        "wick_logic"
+      ],
+      "supporting_topics": [
+        "top_down_alignment",
+        "wick_logic"
+      ],
+      "label_provenance": "rule_derived",
+      "draft_spec_keys": [
+        "ttrades_curriculum__continuation_entry_model"
+      ],
+      "outcome": {
+        "decision": "no_trade",
+        "reason": "large_wick_continuation_filter"
+      },
+      "checkpoints": [
+        {
+          "checkpoint": "context",
+          "timeframe": "higher",
+          "timeframe_role": "htf",
+          "expected_component_labels": [
+            "top_down_alignment",
+            "wick_logic"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "top_down_alignment",
+              "wick_logic"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/context_EA.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+            "topic:wick_logic",
+            "topic:top_down_alignment",
+            "topic:wick_logic",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "sweep",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/sweep_EA-300x169.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA-300x169.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+            "topic:wick_logic",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "closure",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [
+            "wick_logic"
+          ],
+          "active_label_provenance": "rule_derived",
+          "labels_by_provenance": {
+            "rule_derived": [
+              "wick_logic"
+            ]
+          },
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/closure_EA-1024x576.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA-1024x576.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+            "topic:wick_logic",
+            "topic:wick_logic",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "confirmation",
+          "timeframe": "lower",
+          "timeframe_role": "ltf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/confirmation_EA-768x432.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA-768x432.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+            "topic:wick_logic",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        },
+        {
+          "checkpoint": "outcome",
+          "timeframe": "lower",
+          "timeframe_role": "etf",
+          "expected_component_labels": [],
+          "active_label_provenance": "unlabeled",
+          "labels_by_provenance": {},
+          "screenshot_required": true,
+          "screenshot_status": "attached",
+          "screenshot_path": "artifacts/ttfm/screenshots/ttrades_continuation_large_wick_filter_baseline_v1/outcome_EA-1536x864.png",
+          "annotation_notes": [
+            "Bootstrapped from source article image EA-1536x864.png; requires visual review before anchor promotion."
+          ],
+          "zone_geometry": null,
+          "evidence_refs": [
+            "https://ttrades.com/aligning-candles-for-expansion-how-true-trends-actually-form/",
+            "topic:wick_logic",
+            "draft_spec:ttrades_curriculum__continuation_entry_model"
+          ]
+        }
+      ]
+    }
+  ]
+}

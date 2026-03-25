@@ -1,0 +1,215 @@
+{
+  "topic": "continuation",
+  "version": 1,
+  "sources": [
+    {
+      "id": "ttrades_using_equilibrium_continuations",
+      "url": "https://ttrades.com/using-equilibrium-in-continuations/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_using_order_blocks_continuations",
+      "url": "https://ttrades.com/using-order-blocks-for-continuations/",
+      "role": "primary"
+    },
+    {
+      "id": "ttrades_breaker_blocks_continuations",
+      "url": "https://ttrades.com/trading-breaker-blocks-for-continuations/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_why_continuations_fail",
+      "url": "https://ttrades.com/why-your-continuations-fail-order-blocks-cisd-explained/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_protected_swings",
+      "url": "https://ttrades.com/protected-swings-understanding-trends-and-invalidations/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_candle_3_closure",
+      "url": "https://ttrades.com/candle-3-closure-a-complete-guide-to-identifying-continuations-and-reversals/",
+      "role": "supporting"
+    },
+    {
+      "id": "ttrades_phases_of_price_part_5",
+      "url": "https://ttrades.com/phases-of-price-part-5-how-to-blend-expansion-retracement-consolidation-reversal/",
+      "role": "supporting"
+    },
+    {
+      "id": "pine_type_system",
+      "url": "https://www.tradingview.com/pine-script-docs/language/type-system/",
+      "role": "implementation"
+    },
+    {
+      "id": "pine_limitations",
+      "url": "https://www.tradingview.com/pine-script-docs/writing/limitations/",
+      "role": "implementation"
+    }
+  ],
+  "rules": [
+    {
+      "id": "continuation_definition",
+      "name": "A valid continuation resumes the active move quickly after a controlled pullback or liquidity reaction",
+      "timeframeScope": ["fractal"],
+      "marketPhasePrecondition": ["higher_timeframe_bias_set", "prior_expansion_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "Price retraces into the respected half of a range, imbalance, order block, breaker, or recent liquidity sweep area",
+      "confirmationTrigger": "Price reacts fast, closes through the opposing candle series, and prints immediate displacement in the bias direction",
+      "protectedSwingDefinition": "The continuation swing becomes protected once the reaction closes through the opposing candle series and the new high or low holds",
+      "invalidationCondition": "Price drifts sideways, trades deeper through the anchor zone, or breaks the newly protected swing before expansion resumes",
+      "targetLogic": "Primary objective is the next external liquidity pool or prior session or daily objective in the direction of bias",
+      "exceptions": [
+        "Grinding recoveries are lower quality than one-to-three-candle reactions",
+        "Late continuations after a higher-timeframe objective is already met should be avoided"
+      ],
+      "evidenceRefs": [
+        "ttrades_using_equilibrium_continuations#applying_equilibrium_in_expansions",
+        "ttrades_using_order_blocks_continuations#step_3_confirmation_for_entry",
+        "ttrades_why_continuations_fail#what_an_ideal_continuation_looks_like"
+      ],
+      "visualVerificationRefs": [
+        "article:continuation_baseline_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "higher-timeframe bias state",
+        "anchor zone boundaries",
+        "close through opposing candle series",
+        "protected swing state",
+        "one-to-three-bar reaction count"
+      ],
+      "machineChecks": [
+        "Require active bias direction before continuation logic is enabled",
+        "Require reaction close beyond the opposing candle series",
+        "Flag low-quality setups when recovery takes more than three candles"
+      ],
+      "ambiguityNotes": [
+        "Anchor-zone ranking still needs explicit precedence rules"
+      ]
+    },
+    {
+      "id": "equilibrium_respect_continuation",
+      "name": "Continuation quality improves when price respects the correct half of the range around equilibrium",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["reference_range_available", "active_expansion_or_reversal_complete"],
+      "direction": "bidirectional",
+      "setupAnchor": "Mark equilibrium from wick high to wick low on the chosen range or candle",
+      "confirmationTrigger": "Bullish continuation holds the upper half of the range and bearish continuation holds the lower half, then lower timeframe structure confirms in the same direction",
+      "protectedSwingDefinition": "A protected swing formed while price respects the correct half of the range is stronger than a continuation formed after deep range violation",
+      "invalidationCondition": "Price closes through the wrong side of equilibrium and fails to reclaim it before the next continuation attempt",
+      "targetLogic": "Use equilibrium as the divider for continuation intent and combine it with higher-timeframe targets or standard deviation projections",
+      "exceptions": [
+        "Respect does not require an exact midpoint touch",
+        "A candle with a large opposing wick weakens continuation quality even if equilibrium initially holds"
+      ],
+      "evidenceRefs": [
+        "ttrades_using_equilibrium_continuations#why_i_use_equilibrium_differently",
+        "ttrades_using_equilibrium_continuations#step_by_step_using_equilibrium_in_continuations",
+        "ttrades_using_order_blocks_continuations#example_bearish_continuation"
+      ],
+      "visualVerificationRefs": [
+        "article:equilibrium_continuation_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "range high",
+        "range low",
+        "equilibrium midpoint",
+        "close location relative to midpoint",
+        "higher-timeframe wick ratio"
+      ],
+      "machineChecks": [
+        "Compute equilibrium as midpoint of wick high and wick low",
+        "Track whether closes remain on the respected half of the range",
+        "Demote continuation quality when opposing wick ratio expands materially"
+      ],
+      "ambiguityNotes": [
+        "Equilibrium tolerance band is not yet numeric"
+      ]
+    },
+    {
+      "id": "continuation_structure_variants",
+      "name": "Order blocks, breaker blocks, and imbalances are valid continuation anchors only after structure confirms",
+      "timeframeScope": ["lower"],
+      "marketPhasePrecondition": ["bias_aligned", "liquidity_or_imbalance_anchor_available"],
+      "direction": "bidirectional",
+      "setupAnchor": "A fair value gap, order block, breaker block, or swept high or low forms inside the active directional narrative",
+      "confirmationTrigger": "After the anchor forms, price closes through the opposing candle series and confirms a new protected swing in the bias direction",
+      "protectedSwingDefinition": "Continuation order blocks and breaker blocks only matter after the swing created by the reaction is structurally protected",
+      "invalidationCondition": "The anchor is revisited without confirmation, or the swing that validated it fails immediately after entry",
+      "targetLogic": "Enter on the retest of the validated anchor and target the next external high or low rather than small internal range objectives",
+      "exceptions": [
+        "A breaker without a qualifying sweep is weaker unless paired with SMT divergence",
+        "If no protected swing forms, treat the anchor as unconfirmed and stand aside"
+      ],
+      "evidenceRefs": [
+        "ttrades_using_order_blocks_continuations#step_2_recognize_points_of_interest",
+        "ttrades_using_order_blocks_continuations#step_3_confirmation_for_entry",
+        "ttrades_breaker_blocks_continuations#continuation_vs_reversal_breakers",
+        "ttrades_protected_swings#what_is_a_protected_swing"
+      ],
+      "visualVerificationRefs": [
+        "article:continuation_structure_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "fair value gap proxy",
+        "order block proxy",
+        "breaker block proxy",
+        "sweep state",
+        "SMT divergence optional input",
+        "protected swing state"
+      ],
+      "machineChecks": [
+        "Separate anchor detection from continuation confirmation",
+        "Require the validating close through the opposing candle series before entry eligibility",
+        "Allow optional SMT divergence as a secondary qualifier for breaker structures"
+      ],
+      "ambiguityNotes": [
+        "Order block and breaker proxies still need stricter first-pass formulas"
+      ]
+    },
+    {
+      "id": "continuation_failure_filters",
+      "name": "Most failed continuations are consolidation, completed liquidity objectives, or late entries after the move is spent",
+      "timeframeScope": ["higher", "lower"],
+      "marketPhasePrecondition": ["continuation_candidate_present"],
+      "direction": "bidirectional",
+      "setupAnchor": "A continuation candidate forms after a pullback, sweep, or minor structure shift",
+      "confirmationTrigger": "Quality is accepted only when price expands cleanly instead of rotating across a local range and only when higher-timeframe objectives remain open",
+      "protectedSwingDefinition": "If the supposed continuation cannot protect the new swing quickly, it should be treated as range behavior or phase transition risk",
+      "invalidationCondition": "Price rotates across the local range, sweeps a short-term target and stalls, or forms after the higher-timeframe objective has already been reached",
+      "targetLogic": "Pass on weak setups and wait for the next clean continuation after the sweep or after the range resolves",
+      "exceptions": [
+        "Waiting one more candle is often enough to separate real expansion from range manipulation",
+        "Missing a move is preferable to entering after the objective is complete"
+      ],
+      "evidenceRefs": [
+        "ttrades_why_continuations_fail#reason_one_consolidation_disguised_as_continuation",
+        "ttrades_why_continuations_fail#reason_two_continuation_forms_while_taking_short_term_targets",
+        "ttrades_why_continuations_fail#reason_three_higher_timeframe_targets_already_met",
+        "ttrades_phases_of_price_part_5#continuation_vs_reversal_signatures"
+      ],
+      "visualVerificationRefs": [
+        "article:continuation_failure_scan_2026_03_21"
+      ],
+      "pineInputsNeeded": [
+        "local range high and low",
+        "recent sweep state",
+        "higher-timeframe objective state",
+        "bar overlap or rotation count",
+        "next-candle confirmation flag"
+      ],
+      "machineChecks": [
+        "Detect local range rotation before approving continuation entries",
+        "Block continuation entries once the higher-timeframe target has been marked as reached",
+        "Add a one-more-candle filter before final entry approval"
+      ],
+      "ambiguityNotes": []
+    }
+  ],
+  "contradictions": [],
+  "openQuestions": [
+    "What is the best first-pass formula for order block and breaker block detection without overfitting to one educator's drawing style?",
+    "How should the project rank overlapping continuation anchors when equilibrium, a sweep, and an imbalance all align in the same area?"
+  ]
+}

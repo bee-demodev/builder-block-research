@@ -1,0 +1,849 @@
+{
+  "generated_at": "2026-03-24T20:03:25.136816+00:00",
+  "methodology": {
+    "purpose": "Separate strong research-loop maturity from true neural-trading readiness so ontology quality cannot be mistaken for live execution readiness.",
+    "stage_threshold": 0.73,
+    "indicator_spec_stage_scores": {
+      "candidate": 0.35,
+      "draft": 0.6,
+      "reviewed": 0.8,
+      "validated": 0.9,
+      "verified": 0.9,
+      "production": 1.0,
+      "implemented": 1.0,
+      "live": 1.0
+    },
+    "hard_cap_policy": "Real-time stages are capped when runtime infrastructure is absent, specs are draft-only, or the label space is not broadly trainable."
+  },
+  "snapshot": {
+    "generated_at": "2026-03-24T20:03:25.136816+00:00",
+    "research_run_count": 15,
+    "research_logging_score": 1.0,
+    "backlog_counts": {
+      "article_sources_missing_text_artifacts": 60,
+      "video_sources_missing_transcripts": 79,
+      "topic_groups": 12,
+      "trade_model_groups": 6,
+      "artifact_present": true
+    },
+    "backlog_visibility_score": 1.0,
+    "topic_count": 14,
+    "topic_coverage_score": 1.0,
+    "trade_model_count": 6,
+    "active_trade_models": [
+      "continuation_entry_model",
+      "daily_bias_framework",
+      "daily_profile_models",
+      "fractal_closure_model",
+      "phases_of_price_framework",
+      "reversal_sequence_model"
+    ],
+    "indicator_ready_trade_models": [
+      "continuation_entry_model",
+      "daily_bias_framework",
+      "daily_profile_models",
+      "fractal_closure_model",
+      "reversal_sequence_model"
+    ],
+    "indicator_spec_coverage": 1.0,
+    "annotation_trade_model_coverage": 1.0,
+    "indicator_specs": {
+      "count": 5,
+      "status_counts": {
+        "draft": 4,
+        "reviewed": 1
+      },
+      "stage_score": 0.64,
+      "realtime_feature_score": 1.0,
+      "non_draft_status_count": 1,
+      "trade_model_slugs": [
+        "continuation_entry_model",
+        "daily_bias_framework",
+        "daily_profile_models",
+        "fractal_closure_model",
+        "reversal_sequence_model"
+      ]
+    },
+    "indicator_spec_machine_checkability_average": 0.8467,
+    "training_surface": {
+      "generated_at": "2026-03-24T13:44:53.273750+00:00",
+      "example_count": 66,
+      "unique_case_count": 61,
+      "unique_trade_model_count": 7,
+      "unique_relation_type_count": 5,
+      "labeled_outcome_count": 34,
+      "unknown_outcome_count": 32,
+      "trade_model_counts": {
+        "continuation_entry_model": 11,
+        "daily_bias_c123_map": 23,
+        "daily_bias_framework": 7,
+        "daily_profile_models": 2,
+        "fractal_closure_model": 20,
+        "phases_of_price_framework": 1,
+        "reversal_sequence_model": 2
+      },
+      "relation_type_counts": {
+        "bias_framework": 7,
+        "confirmation_framework": 20,
+        "execution_model": 36,
+        "phase_framework": 1,
+        "session_profile": 2
+      },
+      "outcome_decision_counts": {
+        "no_trade": 16,
+        "trade": 18
+      },
+      "task_readiness": {
+        "trade_model_classification": {
+          "ready": false,
+          "total_examples": 66,
+          "class_count": 7,
+          "minimum_examples_per_class": 1,
+          "recommended_total_examples": 25,
+          "recommended_examples_per_class": 5,
+          "class_counts": {
+            "continuation_entry_model": 11,
+            "daily_bias_c123_map": 23,
+            "daily_bias_framework": 7,
+            "daily_profile_models": 2,
+            "fractal_closure_model": 20,
+            "phases_of_price_framework": 1,
+            "reversal_sequence_model": 2
+          },
+          "blockers": [
+            "Smallest class has 1 rows; recommend at least 5."
+          ]
+        },
+        "relation_type_classification": {
+          "ready": false,
+          "total_examples": 66,
+          "class_count": 5,
+          "minimum_examples_per_class": 1,
+          "recommended_total_examples": 25,
+          "recommended_examples_per_class": 5,
+          "class_counts": {
+            "bias_framework": 7,
+            "confirmation_framework": 20,
+            "execution_model": 36,
+            "phase_framework": 1,
+            "session_profile": 2
+          },
+          "blockers": [
+            "Smallest class has 1 rows; recommend at least 5."
+          ]
+        },
+        "no_trade_filter": {
+          "ready": true,
+          "total_examples": 34,
+          "class_count": 2,
+          "minimum_examples_per_class": 16,
+          "recommended_total_examples": 12,
+          "recommended_examples_per_class": 4,
+          "class_counts": {
+            "no_trade": 16,
+            "trade": 18
+          },
+          "blockers": []
+        }
+      },
+      "trade_model_binary_tasks": [
+        {
+          "trade_model": "continuation_entry_model",
+          "positive_examples": 11,
+          "negative_examples": 55,
+          "recommended_positive_examples": 5,
+          "recommended_negative_examples": 5,
+          "additional_positive_examples_needed": 0,
+          "additional_negative_examples_needed": 0,
+          "ready": true
+        },
+        {
+          "trade_model": "daily_bias_c123_map",
+          "positive_examples": 23,
+          "negative_examples": 43,
+          "recommended_positive_examples": 5,
+          "recommended_negative_examples": 5,
+          "additional_positive_examples_needed": 0,
+          "additional_negative_examples_needed": 0,
+          "ready": true
+        },
+        {
+          "trade_model": "daily_bias_framework",
+          "positive_examples": 7,
+          "negative_examples": 59,
+          "recommended_positive_examples": 5,
+          "recommended_negative_examples": 5,
+          "additional_positive_examples_needed": 0,
+          "additional_negative_examples_needed": 0,
+          "ready": true
+        },
+        {
+          "trade_model": "fractal_closure_model",
+          "positive_examples": 20,
+          "negative_examples": 46,
+          "recommended_positive_examples": 5,
+          "recommended_negative_examples": 5,
+          "additional_positive_examples_needed": 0,
+          "additional_negative_examples_needed": 0,
+          "ready": true
+        },
+        {
+          "trade_model": "daily_profile_models",
+          "positive_examples": 2,
+          "negative_examples": 64,
+          "recommended_positive_examples": 5,
+          "recommended_negative_examples": 5,
+          "additional_positive_examples_needed": 3,
+          "additional_negative_examples_needed": 0,
+          "ready": false
+        },
+        {
+          "trade_model": "reversal_sequence_model",
+          "positive_examples": 2,
+          "negative_examples": 64,
+          "recommended_positive_examples": 5,
+          "recommended_negative_examples": 5,
+          "additional_positive_examples_needed": 3,
+          "additional_negative_examples_needed": 0,
+          "ready": false
+        },
+        {
+          "trade_model": "phases_of_price_framework",
+          "positive_examples": 1,
+          "negative_examples": 65,
+          "recommended_positive_examples": 5,
+          "recommended_negative_examples": 5,
+          "additional_positive_examples_needed": 4,
+          "additional_negative_examples_needed": 0,
+          "ready": false
+        }
+      ],
+      "recommendations": [
+        "Collect more labeled chart cases per trade model before training any multi-class classifier.",
+        "The fastest narrow-task path is one-vs-rest scoring for daily_profile_models once it gains 3 more positive examples."
+      ],
+      "base_example_count": 16,
+      "reinforcement_example_count": 4,
+      "merged_example_count": 66,
+      "graded_episode_count": 3,
+      "skipped_episode_count": 0,
+      "label_volume_score": 1.0,
+      "outcome_label_coverage": 0.5152,
+      "trade_model_classification_progress": 0.7333,
+      "relation_type_classification_progress": 0.7333,
+      "ready_indicator_binary_count": 3,
+      "ready_indicator_binary_coverage": 0.6
+    },
+    "iteration_retraining": {
+      "dataset_example_count": 66,
+      "trained_task_count": 5,
+      "trained_task_names": [
+        "continuation_entry_model",
+        "daily_bias_c123_map",
+        "daily_bias_framework",
+        "fractal_closure_model",
+        "trade_vs_no_trade"
+      ],
+      "output_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\neural_models\\iteration_retrained",
+      "devices": [
+        "cuda"
+      ]
+    },
+    "iteration_challengers": {
+      "compared_task_count": 2,
+      "challenger_win_count": 0,
+      "champion_win_count": 0,
+      "tie_task_count": 2,
+      "promotion_candidate_count": 0,
+      "promotion_candidate_tasks": []
+    },
+    "iteration_promotions": {
+      "candidate_task_count": 0,
+      "promoted_task_count": 0,
+      "skipped_task_count": 3,
+      "promoted_tasks": [],
+      "skipped_tasks": [
+        "continuation_entry_model",
+        "daily_bias_framework",
+        "trade_vs_no_trade"
+      ]
+    },
+    "understanding": {
+      "overall": {
+        "topic_average": 0.9,
+        "indicator_spec_average": 0.9633,
+        "scenario_average": 0.9193,
+        "overall_understanding_score": 0.928,
+        "grade": "A-",
+        "topic_count": 14,
+        "indicator_spec_count": 5,
+        "scenario_case_count": 15,
+        "scenario_contract_count": 15,
+        "scenario_total_count": 16,
+        "scenario_contract_coverage": 0.9375
+      },
+      "weakest_topics": [
+        {
+          "topic": "bias",
+          "name": "Bias",
+          "status": "active",
+          "source_count": 56,
+          "rule_count": 5,
+          "understanding_score": 0.8366,
+          "grade": "B+",
+          "dimensions": {
+            "grounding": 1.0,
+            "determinism": 0.742,
+            "visual_verification": 1.0,
+            "pine_translatability": 0.776
+          },
+          "contradiction_penalty": 1
+        },
+        {
+          "topic": "expansion",
+          "name": "Expansion",
+          "status": "active",
+          "source_count": 47,
+          "rule_count": 5,
+          "understanding_score": 0.838,
+          "grade": "B+",
+          "dimensions": {
+            "grounding": 1.0,
+            "determinism": 0.76,
+            "visual_verification": 1.0,
+            "pine_translatability": 0.76
+          },
+          "contradiction_penalty": 1
+        },
+        {
+          "topic": "protected_swings",
+          "name": "Protected Swings",
+          "status": "active",
+          "source_count": 18,
+          "rule_count": 4,
+          "understanding_score": 0.8627,
+          "grade": "A-",
+          "dimensions": {
+            "grounding": 1.0,
+            "determinism": 0.7925,
+            "visual_verification": 1.0,
+            "pine_translatability": 0.82
+          },
+          "contradiction_penalty": 1
+        }
+      ],
+      "weakest_indicator_specs": [
+        {
+          "spec_key": "ttrades_curriculum__daily_bias_framework",
+          "name": "TTrades Curriculum - Daily Bias Framework Indicator Candidate",
+          "topic": "bias",
+          "target_language": "pine",
+          "status": "reviewed",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "daily_bias_framework",
+          "translation_stage": "reviewed",
+          "artifact_path": "results\\indicator_specs\\daily_bias_framework.json",
+          "understanding_score": 0.9478,
+          "grade": "A",
+          "dimensions": {
+            "scope_fidelity": 1.0,
+            "rule_reference_validity": 1.0,
+            "implementation_richness": 0.9722,
+            "machine_checkability": 0.7917,
+            "ambiguity_awareness": 0.95
+          },
+          "issues": [],
+          "scenario_case_count": 2,
+          "scenario_average": 0.935
+        },
+        {
+          "spec_key": "ttrades_curriculum__reversal_sequence_model",
+          "name": "TTrades Curriculum - Reversal Sequence Model Indicator Candidate",
+          "topic": "reversal",
+          "target_language": "pine",
+          "status": "draft",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "reversal_sequence_model",
+          "translation_stage": "draft",
+          "artifact_path": "results\\indicator_specs\\reversal_sequence_model.json",
+          "understanding_score": 0.9478,
+          "grade": "A",
+          "dimensions": {
+            "scope_fidelity": 1.0,
+            "rule_reference_validity": 1.0,
+            "implementation_richness": 0.9722,
+            "machine_checkability": 0.7917,
+            "ambiguity_awareness": 0.95
+          },
+          "issues": [],
+          "scenario_case_count": 2,
+          "scenario_average": 0.785
+        },
+        {
+          "spec_key": "ttrades_curriculum__fractal_closure_model",
+          "name": "TTrades Curriculum - Fractal Closure Model Indicator Candidate",
+          "topic": "candle_2_closure",
+          "target_language": "pine",
+          "status": "draft",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "fractal_closure_model",
+          "translation_stage": "draft",
+          "artifact_path": "results\\indicator_specs\\fractal_closure_model.json",
+          "understanding_score": 0.9577,
+          "grade": "A",
+          "dimensions": {
+            "scope_fidelity": 1.0,
+            "rule_reference_validity": 1.0,
+            "implementation_richness": 1.0,
+            "machine_checkability": 0.8333,
+            "ambiguity_awareness": 0.91
+          },
+          "issues": [],
+          "scenario_case_count": 2,
+          "scenario_average": 1.0
+        }
+      ],
+      "weakest_scenarios": [
+        {
+          "case_ref": "ttrades_expansion_curriculum_baseline_v1",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "phases_of_price_framework",
+          "relation_type": "phase_framework",
+          "topic": "expansion",
+          "spec_key": null,
+          "scenario_score": 0.0,
+          "grade": "D",
+          "dimensions": {
+            "model_match": 0.0,
+            "topic_match": 0.0,
+            "timeframe_match": 0.0,
+            "concept_match": 0.0
+          },
+          "expected_concepts": [],
+          "matched_concepts": [],
+          "missing_concepts": [],
+          "issues": [
+            "No indicator spec exists for this profile + trade-model link."
+          ]
+        },
+        {
+          "case_ref": "ttrades_retracement_missing_confirmation_filter_baseline_v1",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "continuation_entry_model",
+          "relation_type": "execution_model",
+          "topic": "retracement",
+          "spec_key": "ttrades_curriculum__continuation_entry_model",
+          "contract_defined": true,
+          "scenario_score": 0.61,
+          "grade": "C",
+          "dimensions": {
+            "model_match": 1.0,
+            "topic_match": 1.0,
+            "timeframe_match": 1.0,
+            "concept_match": 0.4
+          },
+          "expected_concepts": [
+            "retracement",
+            "no_sweep",
+            "no_fair_value_gap",
+            "no_new_protected_swing",
+            "wait_for_confirmation"
+          ],
+          "matched_concepts": [
+            "retracement",
+            "wait_for_confirmation"
+          ],
+          "missing_concepts": [
+            "no_sweep",
+            "no_fair_value_gap",
+            "no_new_protected_swing"
+          ],
+          "issues": [
+            "Missing scenario concepts: no_sweep, no_fair_value_gap, no_new_protected_swing"
+          ]
+        },
+        {
+          "case_ref": "ttrades_candle_2_closure_reversal_baseline_v1",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "reversal_sequence_model",
+          "relation_type": "execution_model",
+          "topic": "candle_2_closure",
+          "spec_key": "ttrades_curriculum__reversal_sequence_model",
+          "contract_defined": true,
+          "scenario_score": 0.72,
+          "grade": "B-",
+          "dimensions": {
+            "model_match": 1.0,
+            "topic_match": 0.0,
+            "timeframe_match": 1.0,
+            "concept_match": 0.8
+          },
+          "expected_concepts": [
+            "candle_2",
+            "reversal",
+            "point_of_interest",
+            "invalidation",
+            "opposing_liquidity"
+          ],
+          "matched_concepts": [
+            "reversal",
+            "point_of_interest",
+            "invalidation",
+            "opposing_liquidity"
+          ],
+          "missing_concepts": [
+            "candle_2"
+          ],
+          "issues": [
+            "Missing scenario concepts: candle_2"
+          ]
+        },
+        {
+          "case_ref": "ttrades_new_york_reversal_profile_baseline_v1",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "reversal_sequence_model",
+          "relation_type": "execution_model",
+          "topic": "daily_profiles",
+          "spec_key": "ttrades_curriculum__reversal_sequence_model",
+          "contract_defined": true,
+          "scenario_score": 0.85,
+          "grade": "B+",
+          "dimensions": {
+            "model_match": 1.0,
+            "topic_match": 0.0,
+            "timeframe_match": 1.0,
+            "concept_match": 1.0
+          },
+          "expected_concepts": [
+            "reversal",
+            "liquidity_sweep",
+            "cisd",
+            "invalidation",
+            "liquidity_target"
+          ],
+          "matched_concepts": [
+            "reversal",
+            "liquidity_sweep",
+            "cisd",
+            "invalidation",
+            "liquidity_target"
+          ],
+          "missing_concepts": [],
+          "issues": []
+        },
+        {
+          "case_ref": "ttrades_daily_bias_continuation_baseline_v1",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "daily_bias_framework",
+          "relation_type": "bias_framework",
+          "topic": "bias",
+          "spec_key": "ttrades_curriculum__daily_bias_framework",
+          "contract_defined": true,
+          "scenario_score": 0.87,
+          "grade": "A-",
+          "dimensions": {
+            "model_match": 1.0,
+            "topic_match": 1.0,
+            "timeframe_match": 1.0,
+            "concept_match": 0.8
+          },
+          "expected_concepts": [
+            "previous_day",
+            "equilibrium",
+            "continuation",
+            "lower_timeframe_confirmation",
+            "external_liquidity"
+          ],
+          "matched_concepts": [
+            "previous_day",
+            "equilibrium",
+            "continuation",
+            "lower_timeframe_confirmation"
+          ],
+          "missing_concepts": [
+            "external_liquidity"
+          ],
+          "issues": [
+            "Missing scenario concepts: external_liquidity"
+          ]
+        }
+      ],
+      "uncontracted_scenarios": [
+        {
+          "case_ref": "ttrades_expansion_curriculum_baseline_v1",
+          "profile_slug": "ttrades_curriculum",
+          "trade_model_slug": "phases_of_price_framework",
+          "relation_type": "phase_framework",
+          "topic": "expansion",
+          "spec_key": null,
+          "scenario_score": 0.0,
+          "grade": "D",
+          "dimensions": {
+            "model_match": 0.0,
+            "topic_match": 0.0,
+            "timeframe_match": 0.0,
+            "concept_match": 0.0
+          },
+          "expected_concepts": [],
+          "matched_concepts": [],
+          "missing_concepts": [],
+          "issues": [
+            "No indicator spec exists for this profile + trade-model link."
+          ]
+        }
+      ]
+    },
+    "annotation_manifest_sync": {
+      "manifest_case_count": 14,
+      "db_case_count": 14,
+      "missing_in_db": [],
+      "extra_in_db": [],
+      "sync_score": 1.0
+    },
+    "runtime": {
+      "required_artifacts": [
+        {
+          "path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\__main__.py",
+          "exists": false
+        },
+        {
+          "path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\harness.py",
+          "exists": true
+        },
+        {
+          "path": "C:\\Users\\satvi\\Repos\\builder-block-research\\scripts\\backtest_analyzer.py",
+          "exists": true
+        }
+      ],
+      "runtime_score": 0.6667
+    },
+    "tradingview_pine": {
+      "workflow_score": 0.7333,
+      "generated_script_coverage": 1.0,
+      "validation_coverage": 0.1667,
+      "playwriter_validation_coverage": 0.1667,
+      "validated_script_count": 1,
+      "playwriter_validated_count": 1,
+      "workflow_doc_present": true,
+      "pending_spec_keys": [
+        "continuation_entry_model",
+        "daily_bias_framework",
+        "daily_profile_models",
+        "fractal_closure_model",
+        "reversal_sequence_model"
+      ]
+    },
+    "phase_one_chart_state_bootstrap": {
+      "exported_example_count": 2,
+      "positive_example_count": 1,
+      "negative_example_count": 1,
+      "outcome_decision_counts": {
+        "no_trade": 1,
+        "trade": 1
+      },
+      "source_kind_counts": {
+        "tradingview_pine_alert": 1,
+        "tradingview_validation": 1
+      },
+      "artifact_present": true
+    },
+    "label_space": {
+      "training_trade_models": [
+        "continuation_entry_model",
+        "daily_bias_c123_map",
+        "daily_bias_framework",
+        "daily_profile_models",
+        "fractal_closure_model",
+        "phases_of_price_framework",
+        "reversal_sequence_model"
+      ],
+      "indicator_spec_trade_models": [
+        "continuation_entry_model",
+        "daily_bias_framework",
+        "daily_profile_models",
+        "fractal_closure_model",
+        "reversal_sequence_model"
+      ],
+      "all_extra_training_labels_without_indicator_specs": [
+        "phases_of_price_framework"
+      ],
+      "extra_training_labels_without_indicator_specs": [],
+      "deferred_training_labels_without_indicator_specs": [
+        "phases_of_price_framework"
+      ],
+      "ready_binary_trade_models": [
+        "continuation_entry_model",
+        "daily_bias_c123_map",
+        "daily_bias_framework",
+        "fractal_closure_model"
+      ]
+    },
+    "phase_one_focus": {
+      "goal": "Train the neural network to understand daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment.",
+      "primary_trade_model": "daily_bias_framework",
+      "execution_spec": "daily_bias_c123_map",
+      "timeframe_stack": {
+        "bias": "D",
+        "structure": "60",
+        "execution": "5"
+      },
+      "indicator_ready": true,
+      "status": "ready",
+      "ready_now": true,
+      "bootstrap_ready": true,
+      "positive_examples": 7,
+      "negative_examples": 59,
+      "additional_positive_examples_needed": 0,
+      "bootstrap_positive_examples_required": 4,
+      "current_training_target": "daily_bias_framework"
+    }
+  },
+  "phase_one_focus": {
+    "goal": "Train the neural network to understand daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment.",
+    "primary_trade_model": "daily_bias_framework",
+    "execution_spec": "daily_bias_c123_map",
+    "timeframe_stack": {
+      "bias": "D",
+      "structure": "60",
+      "execution": "5"
+    },
+    "indicator_ready": true,
+    "status": "ready",
+    "ready_now": true,
+    "bootstrap_ready": true,
+    "positive_examples": 7,
+    "negative_examples": 59,
+    "additional_positive_examples_needed": 0,
+    "bootstrap_positive_examples_required": 4,
+    "current_training_target": "daily_bias_framework"
+  },
+  "stages": {
+    "karpathy_style_autoresearch_loop": {
+      "stage": "karpathy_style_autoresearch_loop",
+      "base_score": 0.9379,
+      "score": 0.9379,
+      "grade": "A",
+      "readiness_threshold": 0.73,
+      "ready": true,
+      "verdict": "go",
+      "score_breakdown": {
+        "understanding": 0.2042,
+        "research_logging": 0.13,
+        "backlog_visibility": 0.08,
+        "topic_coverage": 0.08,
+        "indicator_spec_coverage": 0.08,
+        "annotation_trade_model_coverage": 0.08,
+        "scenario_contract_coverage": 0.0938,
+        "manifest_sync": 0.08,
+        "tradingview_workflow": 0.11
+      },
+      "caps_applied": [],
+      "blockers": [],
+      "recommendation": "Keep the loop focused on backlog burn-down, scenario contracts, and label density instead of adding new abstract graph layers."
+    },
+    "offline_narrow_ml": {
+      "stage": "offline_narrow_ml",
+      "base_score": 0.8469,
+      "score": 0.8469,
+      "grade": "B+",
+      "readiness_threshold": 0.73,
+      "ready": true,
+      "verdict": "cautious_go",
+      "score_breakdown": {
+        "understanding": 0.1299,
+        "scenario_quality": 0.0827,
+        "scenario_contract_coverage": 0.0844,
+        "machine_checkability": 0.1185,
+        "label_volume": 0.1,
+        "outcome_label_coverage": 0.0464,
+        "no_trade_filter": 0.14,
+        "ready_binary_trade_models": 0.06,
+        "manifest_sync": 0.05,
+        "generated_pine_scripts": 0.03,
+        "tradingview_validation": 0.005
+      },
+      "caps_applied": [],
+      "blockers": [],
+      "recommendation": "Train only narrow offline baselines now: `continuation_entry_model` one-vs-rest and the `trade` vs `no_trade` filter."
+    },
+    "real_time_neural_assist": {
+      "stage": "real_time_neural_assist",
+      "base_score": 0.8401,
+      "score": 0.8401,
+      "grade": "B+",
+      "readiness_threshold": 0.73,
+      "ready": true,
+      "verdict": "cautious_go",
+      "score_breakdown": {
+        "understanding": 0.0928,
+        "scenario_quality": 0.0735,
+        "scenario_contract_coverage": 0.075,
+        "machine_checkability": 0.0762,
+        "indicator_spec_stage": 0.0576,
+        "indicator_realtime_features": 0.07,
+        "indicator_spec_coverage": 0.06,
+        "runtime_infrastructure": 0.0667,
+        "ready_binary_trade_models": 0.06,
+        "no_trade_filter": 0.1,
+        "manifest_sync": 0.05,
+        "tradingview_workflow": 0.0367,
+        "generated_pine_scripts": 0.02,
+        "tradingview_validation": 0.0017
+      },
+      "caps_applied": [],
+      "blockers": [],
+      "recommendation": "Do not deploy real-time neural assistance yet; use the rules engine live and keep the neural layer offline until specs graduate beyond draft and more model-specific scorers are ready."
+    },
+    "real_time_neural_execution": {
+      "stage": "real_time_neural_execution",
+      "base_score": 0.5786,
+      "score": 0.42,
+      "grade": "D",
+      "readiness_threshold": 0.73,
+      "ready": false,
+      "verdict": "hard_no",
+      "score_breakdown": {
+        "understanding": 0.0557,
+        "scenario_quality": 0.0552,
+        "scenario_contract_coverage": 0.0562,
+        "machine_checkability": 0.0508,
+        "indicator_spec_stage": 0.0384,
+        "indicator_realtime_features": 0.06,
+        "runtime_infrastructure": 0.0667,
+        "trade_model_multiclass": 0.0,
+        "relation_type_multiclass": 0.0,
+        "ready_binary_trade_models": 0.054,
+        "no_trade_filter": 0.04,
+        "manifest_sync": 0.05,
+        "tradingview_workflow": 0.0367,
+        "tradingview_validation": 0.0083,
+        "playwriter_validation": 0.0067
+      },
+      "caps_applied": [
+        {
+          "cap": 0.42,
+          "reason": "Autonomous execution is capped hard until the label space is trainable beyond single-task binaries."
+        }
+      ],
+      "blockers": [
+        "Trade-model classification is not ready.",
+        "Relation-type classification is not ready.",
+        "Too few trade-model scorers are ready to support autonomous real-time execution."
+      ],
+      "recommendation": "Keep autonomous real-time trading as a hard no for now. The correct path is still rules live, neural offline, then paper-trade assist, then execution only after the label space, specs, and runtime are all mature."
+    }
+  },
+  "global_blockers": [
+    "Trade-model multiclass classification is still under-labeled.",
+    "Relation-type classification is still under-labeled."
+  ],
+  "next_actions": [
+    "Backfill scenario expectation contracts for the ungraded case-model links so new labels strengthen the strict understanding harness instead of bypassing it.",
+    "Collect more positive labeled cases for the next indicator-ready scorers: daily_profile_models (+3), reversal_sequence_model (+3).",
+    "Benchmark the latest iteration-retrained challengers (continuation_entry_model, daily_bias_c123_map, daily_bias_framework, fractal_closure_model, trade_vs_no_trade) against the current offline baselines before promoting any new model artifact.",
+    "Validate more spec-generated Pine drafts in TradingView and log the outcome so readiness is grounded in editor-checked scripts, not prose alone.",
+    "Phase 1 chart-state bootstrap is now live with 2 labeled examples (1 trade, 1 no-trade), so keep using it as the seed surface for narrow chart-state experiments.",
+    "Expand the phase-one chart-state bootstrap surface beyond the current tiny seed set before treating the resulting `trade_vs_no_trade` model as meaningful.",
+    "Phase 1 training focus is `daily_bias_framework`, anchored to daily bias, higher-time-frame levels, and 1H-to-5m C1/C2/C3 alignment."
+  ]
+}

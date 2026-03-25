@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-03-24T19:32:33.254530+00:00",
+  "summary": {
+    "video_count": 15,
+    "status_counts": {
+      "skipped_exists": 15
+    },
+    "video_dir": "knowledge\\ttfm_video_corpus\\videos",
+    "overwrite": false
+  },
+  "videos": [
+    {
+      "slug": "fractal_model_fundamentals",
+      "video_id": "TNybDCtwBnc",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\fractal_model_fundamentals.mp4"
+    },
+    {
+      "slug": "equilibrium_for_expansions",
+      "video_id": "IPZjNI1B5a0",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\equilibrium_for_expansions.mp4"
+    },
+    {
+      "slug": "easy_daily_bias_mechanical_framework",
+      "video_id": "-KKuZb5Z5aU",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\easy_daily_bias_mechanical_framework.mp4"
+    },
+    {
+      "slug": "candle_2_closure_foundation",
+      "video_id": "tyoxl1l-6iI",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\candle_2_closure_foundation.mp4"
+    },
+    {
+      "slug": "trading_candle_3",
+      "video_id": "qdQYhePcvGE",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\trading_candle_3.mp4"
+    },
+    {
+      "slug": "cisd_validates_swing_points",
+      "video_id": "vn1RYjhJUnQ",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\cisd_validates_swing_points.mp4"
+    },
+    {
+      "slug": "ttrades_top_down_chart_lessons_4",
+      "video_id": "w-JekHg6Ldk",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\ttrades_top_down_chart_lessons_4.mp4"
+    },
+    {
+      "slug": "ttrades_top_down_chart_lessons_3",
+      "video_id": "IzOQmcgLyA0",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\ttrades_top_down_chart_lessons_3.mp4"
+    },
+    {
+      "slug": "ttrades_top_down_chart_lessons_2",
+      "video_id": "UBTl7za9obc",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\ttrades_top_down_chart_lessons_2.mp4"
+    },
+    {
+      "slug": "ttrades_top_down_chart_lessons_1",
+      "video_id": "Nlw-PZhoViQ",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\ttrades_top_down_chart_lessons_1.mp4"
+    },
+    {
+      "slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "video_id": "OZfaUs437O0",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\mara_trade_review_h1_market_maker_buy_model_mmxm.mp4"
+    },
+    {
+      "slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "video_id": "0R61Y6Pn74Q",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm.mp4"
+    },
+    {
+      "slug": "ict_trade_example_15_second_entry",
+      "video_id": "k_Qoou9vi5c",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\ict_trade_example_15_second_entry.mp4"
+    },
+    {
+      "slug": "index_futures_weekly_recap_ict_concepts",
+      "video_id": "s9Poh_RaN2o",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\index_futures_weekly_recap_ict_concepts.mp4"
+    },
+    {
+      "slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "video_id": "LR85yoIuWuA",
+      "status": "skipped_exists",
+      "video_path": "knowledge\\ttfm_video_corpus\\videos\\ict_index_futures_weekly_recap_week_of_5_16_22.mp4"
+    }
+  ]
+}
