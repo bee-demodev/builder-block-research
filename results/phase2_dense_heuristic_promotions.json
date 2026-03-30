@@ -1,0 +1,1610 @@
+{
+  "items": [
+    {
+      "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0007",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.2648,
+            0.7194,
+            0.4703,
+            0.1278
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_2::dense::ttrades_top_down_chart_lessons_2:0005",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.5594,
+            0.5611,
+            0.0813,
+            0.0833
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "how_to_trade_retracement_phases_of_price::dense::how_to_trade_retracement_phases_of_price:0012",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4664,
+            0.4278,
+            0.0641,
+            0.1667
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models::dense::the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models:0020",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5922,
+            0.8542,
+            0.2594,
+            0.0361
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm::dense::cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0001",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.1531,
+            0.2625,
+            0.2437,
+            0.0806
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.3992,
+            0.5417,
+            0.3516,
+            0.1611
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0009",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5656,
+            0.3667,
+            0.0656,
+            0.2556
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0009",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5047,
+            0.5264,
+            0.1469,
+            0.1806
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0005",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5703,
+            0.4611,
+            0.1437,
+            0.3056
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0004",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.5086,
+            0.3972,
+            0.0203,
+            0.2056
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "higher_timeframe_analysis_for_trading_aligning_expansion_candles::dense::higher_timeframe_analysis_for_trading_aligning_expansion_candles:0005",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5445,
+            0.5111,
+            0.1109,
+            0.1611
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0008",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4344,
+            0.5667,
+            0.2406,
+            0.1
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models::dense::the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models:0007",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.7242,
+            0.5111,
+            0.3859,
+            0.0444
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0007",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5023,
+            0.375,
+            0.0578,
+            0.05
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0010",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6102,
+            0.5542,
+            0.0422,
+            0.075
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0004",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6078,
+            0.2625,
+            0.1313,
+            0.2694
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0009",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4922,
+            0.5375,
+            0.0781,
+            0.0694
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0002",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4789,
+            0.4111,
+            0.0672,
+            0.0556
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0005",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.6281,
+            0.6306,
+            0.1437,
+            0.2444
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0004",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.593,
+            0.6625,
+            0.0516,
+            0.3194
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0001",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6539,
+            0.3819,
+            0.0703,
+            0.2806
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0011",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.3398,
+            0.1792,
+            0.5984,
+            0.1083
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0011",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6078,
+            0.6278,
+            0.0344,
+            0.2556
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_4::dense::ttrades_top_down_chart_lessons_4:0004",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5234,
+            0.3181,
+            0.1688,
+            0.3472
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0013",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.2742,
+            0.6028,
+            0.3984,
+            0.0944
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0016",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6758,
+            0.2847,
+            0.1453,
+            0.2583
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0012",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6016,
+            0.5014,
+            0.1781,
+            0.3472
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0007",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.5273,
+            0.6292,
+            0.2859,
+            0.0972
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_phases_of_price_action_a_blueprint_for_market_movement::dense::the_phases_of_price_action_a_blueprint_for_market_movement:0020",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6438,
+            0.5056,
+            0.1656,
+            0.2389
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "niper_internal_external_liquidity_ict_daily_bias::dense::niper_internal_external_liquidity_ict_daily_bias:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.7156,
+            0.425,
+            0.0219,
+            0.2111
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_easiest_draw_on_liquidity_dol_daily_bias_ict::dense::the_easiest_draw_on_liquidity_dol_daily_bias_ict:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5547,
+            0.3056,
+            0.1469,
+            0.3778
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0010",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.8141,
+            0.1431,
+            0.1,
+            0.0528
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0005",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5023,
+            0.4375,
+            0.1078,
+            0.075
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0012",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5336,
+            0.5722,
+            0.0484,
+            0.0833
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "find_lower_time_frame_entries_using_bias_ict_concepts::dense::find_lower_time_frame_entries_using_bias_ict_concepts:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4859,
+            0.45,
+            0.1156,
+            0.2111
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0003",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.3625,
+            0.3681,
+            0.0469,
+            0.1806
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0002",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6211,
+            0.3222,
+            0.1078,
+            0.4222
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts::dense::change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6039,
+            0.4222,
+            0.1484,
+            0.3889
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_silver_bullet_strategy_no_daily_bias_with_backtest::dense::ict_silver_bullet_strategy_no_daily_bias_with_backtest:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.2672,
+            0.3806,
+            0.0625,
+            0.4389
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "market_structure_shift_vs_change_in_state_of_delivery_ict::dense::market_structure_shift_vs_change_in_state_of_delivery_ict:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5938,
+            0.3222,
+            0.0938,
+            0.0667
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "order_blocks_simplified_ict_concepts::dense::order_blocks_simplified_ict_concepts:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5617,
+            0.3153,
+            0.1484,
+            0.4694
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0018",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5055,
+            0.5944,
+            0.0578,
+            0.0444
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0009",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.5969,
+            0.4042,
+            0.1219,
+            0.2639
+          ]
+        },
+        {
+          "class_id": 4,
+          "bbox": [
+            0.4453,
+            0.6792,
+            0.1625,
+            0.1028
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5969,
+            0.4042,
+            0.1219,
+            0.2639
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4453,
+            0.6792,
+            0.1625,
+            0.1028
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0007",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.5344,
+            0.4806,
+            0.0406,
+            0.05
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5344,
+            0.4806,
+            0.0406,
+            0.05
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5344,
+            0.4806,
+            0.0406,
+            0.05
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5921956896781921,
+            0.5443432331085205,
+            0.19887113571166992,
+            0.16457171738147736
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0010",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.3695,
+            0.4,
+            0.0797,
+            0.0889
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0014",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6562,
+            0.725,
+            0.1969,
+            0.0333
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5508,
+            0.4708,
+            0.0734,
+            0.0694
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6562,
+            0.5972,
+            0.1156,
+            0.0389
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0012",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4117,
+            0.4028,
+            0.1047,
+            0.05
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0004",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6492,
+            0.3528,
+            0.1359,
+            0.1444
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5234,
+            0.4569,
+            0.05,
+            0.0472
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0029",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.5938,
+            0.4111,
+            0.0594,
+            0.1667
+          ]
+        },
+        {
+          "class_id": 4,
+          "bbox": [
+            0.6508,
+            0.4125,
+            0.0266,
+            0.1694
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5938,
+            0.4111,
+            0.0594,
+            0.1667
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6508,
+            0.4125,
+            0.0266,
+            0.1694
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0022",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.618,
+            0.5264,
+            0.1766,
+            0.3306
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.618,
+            0.5264,
+            0.1766,
+            0.3306
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0016",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6773,
+            0.3333,
+            0.1547,
+            0.3778
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6742,
+            0.1181,
+            0.1922,
+            0.0306
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0007",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6992,
+            0.6153,
+            0.2016,
+            0.2806
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5727,
+            0.3319,
+            0.0391,
+            0.0417
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6992,
+            0.6153,
+            0.2016,
+            0.2806
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5727,
+            0.3319,
+            0.0391,
+            0.0417
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0004",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.9352,
+            0.5292,
+            0.0547,
+            0.1083
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0027",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5766,
+            0.3958,
+            0.0938,
+            0.0972
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0008",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5719,
+            0.2861,
+            0.0844,
+            0.0722
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5719,
+            0.2861,
+            0.0844,
+            0.0722
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0031",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4898,
+            0.2625,
+            0.0547,
+            0.0694
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5742,
+            0.4403,
+            0.0297,
+            0.0861
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.0234,
+            0.4639,
+            0.0469,
+            0.0389
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0006",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5367,
+            0.4194,
+            0.0453,
+            0.0333
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5367,
+            0.4194,
+            0.0453,
+            0.0333
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0008",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4258,
+            0.7764,
+            0.0828,
+            0.0472
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4258,
+            0.7764,
+            0.0828,
+            0.0472
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "intro_to_ttrades_fractal_model_indicator_settings::dense::intro_to_ttrades_fractal_model_indicator_settings:0014",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.3289,
+            0.5208,
+            0.4266,
+            0.0861
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0011",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.0609,
+            0.3722,
+            0.0344,
+            0.3444
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.0609,
+            0.3722,
+            0.0344,
+            0.3444
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.0609,
+            0.3722,
+            0.0344,
+            0.3444
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0002",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4977,
+            0.6014,
+            0.0609,
+            0.1472
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4422,
+            0.6042,
+            0.0156,
+            0.1417
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0006",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.3047,
+            0.7153,
+            0.5375,
+            0.1806
+          ]
+        },
+        {
+          "class_id": 4,
+          "bbox": [
+            0.6937,
+            0.3444,
+            0.1156,
+            0.2611
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.3047,
+            0.7153,
+            0.5375,
+            0.1806
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6937,
+            0.3444,
+            0.1156,
+            0.2611
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0005",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6852,
+            0.5403,
+            0.1609,
+            0.2528
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6852,
+            0.5403,
+            0.1609,
+            0.2528
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0003",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.6078,
+            0.4125,
+            0.0531,
+            0.0306
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0005",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.2977,
+            0.7153,
+            0.5234,
+            0.1806
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "timeframe_alignment_how_to_align_timeframes_for_expansion::dense::timeframe_alignment_how_to_align_timeframes_for_expansion:0009",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5641,
+            0.6903,
+            0.1875,
+            0.1306
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6375,
+            0.3889,
+            0.0719,
+            0.3056
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0013",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5805,
+            0.4292,
+            0.0391,
+            0.0417
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0006",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4359,
+            0.3167,
+            0.1094,
+            0.0222
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0002",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.5586,
+            0.6056,
+            0.0391,
+            0.0611
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5586,
+            0.6056,
+            0.0391,
+            0.0611
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0004",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.2328,
+            0.2569,
+            0.3906,
+            0.025
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6359,
+            0.2569,
+            0.3094,
+            0.025
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.893,
+            0.8889,
+            0.0391,
+            0.05
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0011",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4313,
+            0.3861,
+            0.0625,
+            0.0389
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0009",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.6258,
+            0.5181,
+            0.0609,
+            0.025
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6258,
+            0.5181,
+            0.0609,
+            0.025
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "inversion_fair_value_gaps_ifvg_ict_concepts::dense::inversion_fair_value_gaps_ifvg_ict_concepts:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.218,
+            0.7292,
+            0.0984,
+            0.0528
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5789,
+            0.35,
+            0.0484,
+            0.0889
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0005",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.4984,
+            0.9278,
+            0.9969,
+            0.1444
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4984,
+            0.9278,
+            0.9969,
+            0.1444
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0010",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4523,
+            0.2861,
+            0.8234,
+            0.1889
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0006",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4961,
+            0.45,
+            0.0516,
+            0.1111
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4961,
+            0.45,
+            0.0516,
+            0.1111
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Bulk-promoted from dense packet recommended_action=accept."
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0008",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5182839035987854,
+            0.4045974314212799,
+            0.0782407745718956,
+            0.021016692742705345
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Auto-promoted from packet recommended_action=accept (max_confidence=0.459)."
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0003",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5796287655830383,
+            0.4821378290653229,
+            0.09564457088708878,
+            0.3127690255641937
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Auto-promoted from packet recommended_action=accept (max_confidence=0.355)."
+    },
+    {
+      "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0004",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.7626460790634155,
+            0.35533252358436584,
+            0.1530047506093979,
+            0.3466944992542267
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.7630382180213928,
+            0.3549025058746338,
+            0.15315790474414825,
+            0.34582048654556274
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Auto-promoted from packet recommended_action=accept (max_confidence=0.354)."
+    }
+  ]
+}

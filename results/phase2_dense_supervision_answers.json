@@ -1,0 +1,724 @@
+{
+  "items": [
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0000",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.56,
+            0.58,
+            0.18,
+            0.28
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0010",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.43,
+            0.42,
+            0.18,
+            0.1
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.5,
+            0.12,
+            0.05,
+            0.07
+          ]
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.6,
+            0.61,
+            0.05,
+            0.08
+          ]
+        },
+        {
+          "class_id": 0,
+          "bbox": [
+            0.82,
+            0.39,
+            0.05,
+            0.07
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0002",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.58,
+            0.57,
+            0.05,
+            0.07
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0004",
+      "detections": [
+        {
+          "class_id": 8,
+          "bbox": [
+            0.56,
+            0.71,
+            0.15,
+            0.11
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0007",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.59,
+            0.55,
+            0.2,
+            0.17
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0012",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.41,
+            0.57,
+            0.13,
+            0.09
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0001",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.31,
+            0.57,
+            0.15,
+            0.23
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.69,
+            0.59,
+            0.19,
+            0.21
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0003",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.6,
+            0.43,
+            0.15,
+            0.08
+          ]
+        },
+        {
+          "class_id": 2,
+          "bbox": [
+            0.82,
+            0.73,
+            0.09,
+            0.19
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0006",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.56,
+            0.41,
+            0.11,
+            0.06
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0004",
+      "detections": [
+        {
+          "class_id": 7,
+          "bbox": [
+            0.91,
+            0.64,
+            0.09,
+            0.14
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0007",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.73,
+            0.61,
+            0.16,
+            0.12
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0006",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.61,
+            0.82,
+            0.08,
+            0.08
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
+      "detections": [
+        {
+          "class_id": 5,
+          "bbox": [
+            0.59,
+            0.48,
+            0.06,
+            0.08
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0009",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.43,
+            0.68,
+            0.18,
+            0.12
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0013",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.64,
+            0.38,
+            0.16,
+            0.16
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0014",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.68,
+            0.58,
+            0.17,
+            0.11
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0005",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6,
+            0.58,
+            0.1,
+            0.05
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0006",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.5,
+            0.56,
+            0.16,
+            0.14
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0003",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.59,
+            0.47,
+            0.11,
+            0.1
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0008",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.6,
+            0.46,
+            0.13,
+            0.11
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
+      "detections": [
+        {
+          "class_id": 5,
+          "bbox": [
+            0.56,
+            0.43,
+            0.05,
+            0.06
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0006",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.58,
+            0.54,
+            0.07,
+            0.05
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0005",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.41,
+            0.53,
+            0.17,
+            0.11
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "how_to_actually_trade_inversion_fair_value_gaps_ifvg::dense::how_to_actually_trade_inversion_fair_value_gaps_ifvg:0003",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.742,
+            0.503,
+            0.236,
+            0.269
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0002",
+      "detections": [
+        {
+          "class_id": 7,
+          "bbox": [
+            0.452,
+            0.739,
+            0.12,
+            0.072
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0008",
+      "detections": [
+        {
+          "class_id": 7,
+          "bbox": [
+            0.435,
+            0.748,
+            0.118,
+            0.061
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0027",
+      "detections": [
+        {
+          "class_id": 7,
+          "bbox": [
+            0.597,
+            0.431,
+            0.104,
+            0.111
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0007",
+      "detections": [
+        {
+          "class_id": 7,
+          "bbox": [
+            0.578,
+            0.393,
+            0.075,
+            0.086
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0029",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.697,
+            0.633,
+            0.175,
+            0.356
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "how_to_actually_trade_inversion_fair_value_gaps_ifvg::dense::how_to_actually_trade_inversion_fair_value_gaps_ifvg:0002",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.205,
+            0.728,
+            0.144,
+            0.083
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "timeframe_alignment_how_to_align_timeframes_for_expansion::dense::timeframe_alignment_how_to_align_timeframes_for_expansion:0009",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.558,
+            0.7,
+            0.197,
+            0.156
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "ttrades_fractal_model_trading_candle_4::dense::ttrades_fractal_model_trading_candle_4:0010",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.536,
+            0.361,
+            0.1,
+            0.336
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0016",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.661,
+            0.531,
+            0.188,
+            0.419
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0010",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.497,
+            0.739,
+            0.582,
+            0.222
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0004",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.6492,
+            0.3528,
+            0.1359,
+            0.1444
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0029",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5938,
+            0.4111,
+            0.0594,
+            0.1667
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0007",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.6992,
+            0.6153,
+            0.2016,
+            0.2806
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0002",
+      "detections": [
+        {
+          "class_id": 7,
+          "bbox": [
+            0.563,
+            0.643,
+            0.067,
+            0.089
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0005",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.712,
+            0.72,
+            0.14,
+            0.403
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0022",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.618,
+            0.5264,
+            0.1766,
+            0.3306
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0009",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.6258,
+            0.5181,
+            0.0609,
+            0.025
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "intro_to_ttrades_fractal_model_indicator_settings::dense::intro_to_ttrades_fractal_model_indicator_settings:0014",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.3289,
+            0.5208,
+            0.4266,
+            0.0861
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Accepted dominant bearish reaction-zone proposal from teaching-moment packet."
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0003",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.3992,
+            0.5417,
+            0.3516,
+            0.1611
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Accepted dominant bearish reaction-zone proposal from cue-aligned packet."
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0004",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.5086,
+            0.3972,
+            0.0203,
+            0.2056
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Accepted single liquidity-sweep-low proposal from top-down-analysis packet."
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0010",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.8141,
+            0.1431,
+            0.1,
+            0.0528
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Accepted dominant liquidity-sweep-low proposal; kept only the largest candidate box."
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0001",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.6539,
+            0.3819,
+            0.0703,
+            0.2806
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Accepted dominant bearish reaction-zone proposal; discarded overlapping duplicate candidates."
+    },
+    {
+      "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0005",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.5703,
+            0.4611,
+            0.1437,
+            0.3056
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": "Manual scarce-class review: clear bearish reaction zone around the highlighted reversal block."
+    }
+  ]
+}

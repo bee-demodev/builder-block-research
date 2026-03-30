@@ -1,0 +1,948 @@
+{
+  "generated_at": "2026-03-30T17:33:54.876998+00:00",
+  "completed_phase": "phase4",
+  "phase_report": {
+    "training_mode": "prototype_fallback",
+    "best_epoch": 0,
+    "best_val_macro_accuracy": 0.714286,
+    "best_val_head_accuracy": {
+      "path_family": 0.5,
+      "fractal_stage": 1.0,
+      "setup_quality": 0.5,
+      "entry_state": 1.0,
+      "htf_bias": 1.0,
+      "poi_type": 0.0,
+      "poi_direction": 1.0,
+      "macro_accuracy": 0.714286
+    },
+    "train_bundle_count": 32,
+    "val_bundle_count": 8,
+    "usable_bundle_count": 40,
+    "skipped_rows": {
+      "missing_frames": 0,
+      "invalid_labels": 0
+    },
+    "bundle_seed_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed.jsonl",
+    "checkpoint_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\chart_state_ttrades_best.pth",
+    "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_chart_state.tsv",
+    "warnings": [
+      "PyTorch runtime unavailable, used prototype fallback: [WinError 10106] The requested service provider could not be loaded or initialized"
+    ]
+  },
+  "phase1": {
+    "best_epoch": 2,
+    "best_val_F1_macro": 0.190476,
+    "train_example_count": 23,
+    "val_example_count": 6,
+    "checkpoint_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\mlp_ttrades_best.pth",
+    "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_mlp.tsv"
+  },
+  "phase2": {
+    "mode": "supervision_answers",
+    "selection": {
+      "method": "simple_kmeans",
+      "cluster_count": 120,
+      "selected_count": 1087
+    },
+    "dataset_stats": {
+      "dataset_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo",
+      "train_count": 66,
+      "val_count": 16,
+      "benchmark_count": 49,
+      "benchmark_hard_negative_count": 2,
+      "class_counts": {
+        "liquidity_sweep_low": 36,
+        "protected_swing": 62,
+        "bullish_reaction_zone": 12,
+        "bearish_reaction_zone": 7
+      },
+      "examples": [
+        {
+          "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0004",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0004.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0004.txt",
+          "box_count": 3,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_fractal_model_fundamentals_visual_v1::confirmation",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_fractal_model_fundamentals_visual_v1____confirmation.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_fractal_model_fundamentals_visual_v1____confirmation.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0006",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0006.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0006.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_equilibrium_for_expansions_visual_v1::sweep",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_equilibrium_for_expansions_visual_v1____sweep.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_equilibrium_for_expansions_visual_v1____sweep.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_equilibrium_for_expansions_visual_v1::confirmation",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_equilibrium_for_expansions_visual_v1____confirmation.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_equilibrium_for_expansions_visual_v1____confirmation.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::sweep",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_easy_daily_bias_mechanical_framework_visual_v1____sweep.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_easy_daily_bias_mechanical_framework_visual_v1____sweep.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0006",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0006.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0006.txt",
+          "box_count": 2,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_candle_2_closure_foundation_visual_v1::outcome",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_candle_2_closure_foundation_visual_v1____outcome.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_candle_2_closure_foundation_visual_v1____outcome.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "trading_candle_3::dense::trading_candle_3:0004",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\trading_candle_3____dense____trading_candle_3__0004.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\trading_candle_3____dense____trading_candle_3__0004.txt",
+          "box_count": 3,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "trading_candle_3::dense::trading_candle_3:0005",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\trading_candle_3____dense____trading_candle_3__0005.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\trading_candle_3____dense____trading_candle_3__0005.txt",
+          "box_count": 2,
+          "review_outcome": "accepted"
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
+          "safe_name": "candle_2_closure_foundation____dense____candle_2_closure_foundation__0005",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.txt",
+          "box_count": 3,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0002",
+          "safe_name": "cisd_validates_swing_points____dense____cisd_validates_swing_points__0002",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0002.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0002.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
+          "safe_name": "equilibrium_for_expansions____dense____equilibrium_for_expansions__0011",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
+          "safe_name": "equilibrium_for_expansions____dense____equilibrium_for_expansions__0014",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_cisd_validates_swing_points_visual_v1::context",
+          "safe_name": "youtube_cisd_validates_swing_points_visual_v1____context",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cisd_validates_swing_points_visual_v1____context.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cisd_validates_swing_points_visual_v1____context.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::context",
+          "safe_name": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1____context",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1____context.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1____context.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::outcome",
+          "safe_name": "youtube_easy_daily_bias_mechanical_framework_visual_v1____outcome",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_easy_daily_bias_mechanical_framework_visual_v1____outcome.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_easy_daily_bias_mechanical_framework_visual_v1____outcome.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+          "safe_name": "youtube_fractal_model_fundamentals_visual_v1____outcome",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_fractal_model_fundamentals_visual_v1____outcome.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_fractal_model_fundamentals_visual_v1____outcome.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0010",
+          "safe_name": "fractal_model_fundamentals____dense____fractal_model_fundamentals__0010",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0010.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0010.txt",
+          "box_count": 1,
+          "review_outcome": "accepted"
+        },
+        {
+          "example_id": "youtube_cisd_validates_swing_points_visual_v1::outcome",
+          "safe_name": "youtube_cisd_validates_swing_points_visual_v1____outcome",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cisd_validates_swing_points_visual_v1____outcome.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cisd_validates_swing_points_visual_v1____outcome.txt",
+          "box_count": 2,
+          "review_outcome": "accepted"
+        }
+      ],
+      "benchmark_manifest_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\benchmark_manifest.json"
+    },
+    "supervision_answers_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_supervision_answers.json",
+    "dense_supervision_answers_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_dense_supervision_answers.json",
+    "dense_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_dense_heuristic_promotions.json",
+    "teacher_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_teacher_heuristic_promotions.json",
+    "weak_visual_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_weak_visual_promotions.json",
+    "synthetic_sidecar_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_synthetic_sidecar.json",
+    "priority_review_queue_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_priority_review_queue.json",
+    "used_answer_count": 156,
+    "reviewed_window_count": 156,
+    "positive_reviewed_count": 154,
+    "hard_negative_reviewed_count": 2,
+    "heuristic_auto_label_count": 0,
+    "setup_quality_auto_label_count": 0,
+    "accept_packet_auto_label_count": 0,
+    "scarce_accept_packet_auto_label_count": 0,
+    "teacher_auto_label_count": 0,
+    "weak_visual_auto_label_count": 0,
+    "synthetic_sidecar_count": 0,
+    "priority_review_count": 100,
+    "bundle_artifacts": {
+      "bundle_count": 3,
+      "bundle_dataset_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_dataset.jsonl",
+      "bundle_dataset_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_dataset_report.json",
+      "benchmark_target_count": 18,
+      "benchmark_satisfied_target_count": 0,
+      "benchmark_coverage_ratio": 0.0,
+      "bundle_gold_seed_count": 40,
+      "bundle_gold_seed_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed.jsonl",
+      "bundle_gold_seed_report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed_report.json",
+      "bundle_gold_seed_benchmark_satisfied_target_count": 1,
+      "bundle_gold_seed_benchmark_coverage_ratio": 0.0556
+    }
+  },
+  "phase2_dataset": {
+    "dataset_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo",
+    "train_count": 66,
+    "val_count": 16,
+    "benchmark_count": 49,
+    "benchmark_hard_negative_count": 2,
+    "class_counts": {
+      "liquidity_sweep_low": 36,
+      "protected_swing": 62,
+      "bullish_reaction_zone": 12,
+      "bearish_reaction_zone": 7
+    },
+    "examples": [
+      {
+        "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0004",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0004.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0004.txt",
+        "box_count": 3,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_fractal_model_fundamentals_visual_v1::confirmation",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_fractal_model_fundamentals_visual_v1____confirmation.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_fractal_model_fundamentals_visual_v1____confirmation.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0006",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0006.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0006.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_equilibrium_for_expansions_visual_v1::sweep",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_equilibrium_for_expansions_visual_v1____sweep.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_equilibrium_for_expansions_visual_v1____sweep.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_equilibrium_for_expansions_visual_v1::confirmation",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_equilibrium_for_expansions_visual_v1____confirmation.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_equilibrium_for_expansions_visual_v1____confirmation.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::sweep",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_easy_daily_bias_mechanical_framework_visual_v1____sweep.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_easy_daily_bias_mechanical_framework_visual_v1____sweep.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0006",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0006.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0006.txt",
+        "box_count": 2,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_candle_2_closure_foundation_visual_v1::outcome",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_candle_2_closure_foundation_visual_v1____outcome.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_candle_2_closure_foundation_visual_v1____outcome.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "trading_candle_3::dense::trading_candle_3:0004",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\trading_candle_3____dense____trading_candle_3__0004.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\trading_candle_3____dense____trading_candle_3__0004.txt",
+        "box_count": 3,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "trading_candle_3::dense::trading_candle_3:0005",
+        "split": "train",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\trading_candle_3____dense____trading_candle_3__0005.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\trading_candle_3____dense____trading_candle_3__0005.txt",
+        "box_count": 2,
+        "review_outcome": "accepted"
+      }
+    ],
+    "benchmark_examples": [
+      {
+        "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
+        "safe_name": "candle_2_closure_foundation____dense____candle_2_closure_foundation__0005",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.txt",
+        "box_count": 3,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0002",
+        "safe_name": "cisd_validates_swing_points____dense____cisd_validates_swing_points__0002",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0002.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0002.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
+        "safe_name": "equilibrium_for_expansions____dense____equilibrium_for_expansions__0011",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
+        "safe_name": "equilibrium_for_expansions____dense____equilibrium_for_expansions__0014",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_cisd_validates_swing_points_visual_v1::context",
+        "safe_name": "youtube_cisd_validates_swing_points_visual_v1____context",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cisd_validates_swing_points_visual_v1____context.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cisd_validates_swing_points_visual_v1____context.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::context",
+        "safe_name": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1____context",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1____context.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1____context.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::outcome",
+        "safe_name": "youtube_easy_daily_bias_mechanical_framework_visual_v1____outcome",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_easy_daily_bias_mechanical_framework_visual_v1____outcome.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_easy_daily_bias_mechanical_framework_visual_v1____outcome.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+        "safe_name": "youtube_fractal_model_fundamentals_visual_v1____outcome",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_fractal_model_fundamentals_visual_v1____outcome.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_fractal_model_fundamentals_visual_v1____outcome.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0010",
+        "safe_name": "fractal_model_fundamentals____dense____fractal_model_fundamentals__0010",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0010.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0010.txt",
+        "box_count": 1,
+        "review_outcome": "accepted"
+      },
+      {
+        "example_id": "youtube_cisd_validates_swing_points_visual_v1::outcome",
+        "safe_name": "youtube_cisd_validates_swing_points_visual_v1____outcome",
+        "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cisd_validates_swing_points_visual_v1____outcome.jpg",
+        "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cisd_validates_swing_points_visual_v1____outcome.txt",
+        "box_count": 2,
+        "review_outcome": "accepted"
+      }
+    ],
+    "benchmark_manifest_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\benchmark_manifest.json"
+  },
+  "phase2_bundle": {
+    "bundle_count": 3,
+    "counts": {
+      "path_family": {
+        "continuation": 3
+      },
+      "direction": {
+        "none": 2,
+        "bearish": 1
+      },
+      "fractal_stage": {
+        "c1": 2,
+        "c2": 1
+      },
+      "setup_quality": {
+        "bad_setup": 3
+      },
+      "review_outcome": {
+        "needs_review": 3
+      }
+    },
+    "benchmark": {
+      "target_count": 18,
+      "satisfied_target_count": 0,
+      "unsatisfied_target_count": 18,
+      "coverage_ratio": 0.0,
+      "targets": [
+        {
+          "path_family": "continuation",
+          "direction": "bullish",
+          "fractal_stage": "c1",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bullish",
+          "fractal_stage": "c2",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bullish",
+          "fractal_stage": "c3",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bullish",
+          "fractal_stage": "c4",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bearish",
+          "fractal_stage": "c1",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bearish",
+          "fractal_stage": "c2",
+          "minimum_examples": 10,
+          "observed_count": 1,
+          "gap": 9,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bearish",
+          "fractal_stage": "c3",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bearish",
+          "fractal_stage": "c4",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bullish",
+          "fractal_stage": "c1",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bullish",
+          "fractal_stage": "c2",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bullish",
+          "fractal_stage": "c3",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bullish",
+          "fractal_stage": "c4",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bearish",
+          "fractal_stage": "c1",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bearish",
+          "fractal_stage": "c2",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bearish",
+          "fractal_stage": "c3",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bearish",
+          "fractal_stage": "c4",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "setup_quality": "bad_setup",
+          "minimum_examples": 10,
+          "observed_count": 3,
+          "gap": 7,
+          "meets_minimum": false
+        },
+        {
+          "setup_quality": "no_setup",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        }
+      ]
+    },
+    "output_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_dataset.jsonl",
+    "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_dataset_report.json",
+    "state_spec_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\fractal_state_machine.json",
+    "benchmark_targets_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\bundle_benchmark_targets.json",
+    "source_paths": [
+      "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\trader_annotation_cases.json",
+      "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\topic_model_graph.json",
+      "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\tradingview_pine_validation.json",
+      "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\indicator_specs\\continuation_entry_model.json"
+    ]
+  },
+  "phase2_bundle_gold_seed": {
+    "bundle_count": 40,
+    "counts": {
+      "path_family": {
+        "continuation": 28,
+        "reversal": 12
+      },
+      "direction": {
+        "none": 40
+      },
+      "fractal_stage": {
+        "c1": 10,
+        "c2": 10,
+        "c3": 10,
+        "c4": 10
+      },
+      "setup_quality": {
+        "good_setup": 28,
+        "bad_setup": 12
+      },
+      "review_outcome": {
+        "seed_gold": 40
+      }
+    },
+    "benchmark": {
+      "target_count": 18,
+      "satisfied_target_count": 1,
+      "unsatisfied_target_count": 17,
+      "coverage_ratio": 0.0556,
+      "targets": [
+        {
+          "path_family": "continuation",
+          "direction": "bullish",
+          "fractal_stage": "c1",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bullish",
+          "fractal_stage": "c2",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bullish",
+          "fractal_stage": "c3",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bullish",
+          "fractal_stage": "c4",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bearish",
+          "fractal_stage": "c1",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bearish",
+          "fractal_stage": "c2",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bearish",
+          "fractal_stage": "c3",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "continuation",
+          "direction": "bearish",
+          "fractal_stage": "c4",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bullish",
+          "fractal_stage": "c1",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bullish",
+          "fractal_stage": "c2",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bullish",
+          "fractal_stage": "c3",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bullish",
+          "fractal_stage": "c4",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bearish",
+          "fractal_stage": "c1",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bearish",
+          "fractal_stage": "c2",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bearish",
+          "fractal_stage": "c3",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "path_family": "reversal",
+          "direction": "bearish",
+          "fractal_stage": "c4",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        },
+        {
+          "setup_quality": "bad_setup",
+          "minimum_examples": 10,
+          "observed_count": 12,
+          "gap": 0,
+          "meets_minimum": true
+        },
+        {
+          "setup_quality": "no_setup",
+          "minimum_examples": 10,
+          "observed_count": 0,
+          "gap": 10,
+          "meets_minimum": false
+        }
+      ]
+    },
+    "output_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed.jsonl",
+    "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed_report.json",
+    "state_spec_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\fractal_state_machine.json",
+    "benchmark_targets_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\bundle_benchmark_targets.json",
+    "screenshot_manifest_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\ttfm_screenshot_manifest.json"
+  },
+  "phase3": {
+    "save_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ultralytics_runs\\ttrades_yolo",
+    "base_model_requested": "yolo26n.pt",
+    "base_model_resolved": "yolo26n.pt",
+    "preflight_warnings": [],
+    "best_weights_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\yolo26_ttrades_markup_best.pt",
+    "best_onnx_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\yolo26_ttrades_markup_best.onnx",
+    "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_yolo.tsv",
+    "class_names": [
+      "liquidity_sweep_high",
+      "liquidity_sweep_low",
+      "protected_swing",
+      "bullish_reaction_zone",
+      "bearish_reaction_zone"
+    ],
+    "best_val_mAP50_95": 0.3717,
+    "train_count_at_run": 70,
+    "val_count_at_run": 17,
+    "benchmark_count": 49,
+    "benchmark_report": {
+      "mAP50_95": 0.098574,
+      "mAP50": 0.111536,
+      "classwise_ap50_95": {
+        "liquidity_sweep_high": 0.0,
+        "liquidity_sweep_low": 0.169299,
+        "protected_swing": 0.12832,
+        "bullish_reaction_zone": 0.019287,
+        "bearish_reaction_zone": 0.175962
+      },
+      "hard_negative_count": 2,
+      "hard_negative_false_positive_count": 0,
+      "hard_negative_false_positive_rate": 0.0,
+      "overlay_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\benchmark_overlays\\latest"
+    },
+    "source_composition": {
+      "focused_reviewed_count": 15,
+      "dense_reviewed_count": 47,
+      "heuristic_auto_label_count": 76,
+      "teacher_auto_label_count": 7,
+      "weak_visual_auto_label_count": 15,
+      "dense_remaining_count": 143
+    }
+  },
+  "phase4": {
+    "training_mode": "prototype_fallback",
+    "best_epoch": 0,
+    "best_val_macro_accuracy": 0.714286,
+    "best_val_head_accuracy": {
+      "path_family": 0.5,
+      "fractal_stage": 1.0,
+      "setup_quality": 0.5,
+      "entry_state": 1.0,
+      "htf_bias": 1.0,
+      "poi_type": 0.0,
+      "poi_direction": 1.0,
+      "macro_accuracy": 0.714286
+    },
+    "train_bundle_count": 32,
+    "val_bundle_count": 8,
+    "usable_bundle_count": 40,
+    "skipped_rows": {
+      "missing_frames": 0,
+      "invalid_labels": 0
+    },
+    "bundle_seed_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed.jsonl",
+    "checkpoint_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\chart_state_ttrades_best.pth",
+    "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_chart_state.tsv",
+    "warnings": [
+      "PyTorch runtime unavailable, used prototype fallback: [WinError 10106] The requested service provider could not be loaded or initialized"
+    ]
+  },
+  "corpus": {
+    "dense_embedding_count": 1036,
+    "audio_clip_count": 79,
+    "audio_semantic_entry_count": 74
+  },
+  "metrics": {
+    "phase1_best_val_F1_macro": 0.190476,
+    "phase3_best_val_mAP50_95": 0.3717,
+    "yolo_train_count": 66,
+    "yolo_val_count": 16,
+    "focused_reviewed_count": 15,
+    "dense_reviewed_count": 48,
+    "heuristic_auto_label_count": 79,
+    "teacher_auto_label_count": 7,
+    "weak_visual_auto_label_count": 15,
+    "reviewed_answer_count": 164,
+    "positive_reviewed_count": 164,
+    "negative_reviewed_count": 0,
+    "dense_remaining_count": 142,
+    "reviewed_since_last_phase3": 4,
+    "positive_reviewed_since_last_phase3": 4,
+    "yolo_train_since_last_phase3": 0,
+    "recommended_dense_label_batch_size": 40,
+    "recommended_positive_review_batch_size": 25,
+    "scarce_classes": [
+      "liquidity_sweep_high",
+      "bearish_reaction_zone"
+    ],
+    "benchmark_mAP50_95": 0.098574,
+    "hard_negative_false_positive_rate": 1.0,
+    "bundle_record_count": 3,
+    "bundle_benchmark_target_count": 18,
+    "bundle_benchmark_satisfied_target_count": 0,
+    "bundle_benchmark_unsatisfied_target_count": 18,
+    "bundle_benchmark_coverage_ratio": 0.0,
+    "bundle_gold_seed_count": 40,
+    "bundle_gold_seed_benchmark_coverage_ratio": 0.0556,
+    "phase4_best_val_macro_accuracy": 0.714286
+  },
+  "assessment": {
+    "next_action": "label_more_dense_examples",
+    "rationale": "YOLO dataset is still too small to trust detector quality; keep labeling dense TTrades examples until the train and validation splits are materially larger.",
+    "minimum_train_images_for_confidence": 150,
+    "minimum_val_images_for_confidence": 40,
+    "live_readiness_benchmark_map_threshold": 0.25,
+    "live_readiness_hard_negative_fp_threshold": 0.1
+  }
+}

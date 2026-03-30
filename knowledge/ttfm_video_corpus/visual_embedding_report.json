@@ -5,12 +5,13 @@
   "model": "models/gemini-embedding-2-preview",
   "output_dimensionality": 768,
   "summary": {
-    "document_count": 75,
-    "asset_backed_document_count": 70,
+    "document_count": 605,
+    "asset_backed_document_count": 570,
     "text_fallback_count": 0,
     "frame_status_counts": {
-      "extract_failed": 5,
-      "extracted": 70
+      "extract_failed": 25,
+      "extracted": 570,
+      "missing_video": 10
     }
   },
   "diagnostics": [
@@ -195,6 +196,306 @@
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\outcome_00578960.jpg"
     },
     {
+      "chunk_id": "youtube_which_swing_highs_and_lows_matter_in_trading_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\which_swing_highs_and_lows_matter_in_trading\\context_00046400.jpg"
+    },
+    {
+      "chunk_id": "youtube_which_swing_highs_and_lows_matter_in_trading_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\which_swing_highs_and_lows_matter_in_trading\\sweep_00528600.jpg"
+    },
+    {
+      "chunk_id": "youtube_which_swing_highs_and_lows_matter_in_trading_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\which_swing_highs_and_lows_matter_in_trading\\closure_00184240.jpg"
+    },
+    {
+      "chunk_id": "youtube_which_swing_highs_and_lows_matter_in_trading_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\which_swing_highs_and_lows_matter_in_trading\\confirmation_00666080.jpg"
+    },
+    {
+      "chunk_id": "youtube_which_swing_highs_and_lows_matter_in_trading_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\which_swing_highs_and_lows_matter_in_trading\\outcome_00115760.jpg"
+    },
+    {
+      "chunk_id": "youtube_eurgbp_for_relative_strength_eu_vs_gu_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\eurgbp_for_relative_strength_eu_vs_gu\\context_00194080.jpg"
+    },
+    {
+      "chunk_id": "youtube_eurgbp_for_relative_strength_eu_vs_gu_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\eurgbp_for_relative_strength_eu_vs_gu\\sweep_00679000.jpg"
+    },
+    {
+      "chunk_id": "youtube_eurgbp_for_relative_strength_eu_vs_gu_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\eurgbp_for_relative_strength_eu_vs_gu\\closure_00333720.jpg"
+    },
+    {
+      "chunk_id": "youtube_eurgbp_for_relative_strength_eu_vs_gu_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\eurgbp_for_relative_strength_eu_vs_gu\\confirmation_00264760.jpg"
+    },
+    {
+      "chunk_id": "youtube_eurgbp_for_relative_strength_eu_vs_gu_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\eurgbp_for_relative_strength_eu_vs_gu\\outcome_00542120.jpg"
+    },
+    {
+      "chunk_id": "youtube_relative_strength_weakness_smt_divergence_full_guide_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\relative_strength_weakness_smt_divergence_full_guide\\context_00112160.jpg"
+    },
+    {
+      "chunk_id": "youtube_relative_strength_weakness_smt_divergence_full_guide_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\relative_strength_weakness_smt_divergence_full_guide\\sweep_00176080.jpg"
+    },
+    {
+      "chunk_id": "youtube_relative_strength_weakness_smt_divergence_full_guide_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\relative_strength_weakness_smt_divergence_full_guide\\closure_00314240.jpg"
+    },
+    {
+      "chunk_id": "youtube_relative_strength_weakness_smt_divergence_full_guide_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\relative_strength_weakness_smt_divergence_full_guide\\confirmation_00600520.jpg"
+    },
+    {
+      "chunk_id": "youtube_relative_strength_weakness_smt_divergence_full_guide_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\relative_strength_weakness_smt_divergence_full_guide\\outcome_00887560.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_swing_trading_model_simple_strategy_visual_v1::context",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_ttrades_swing_trading_model_simple_strategy_visual_v1::sweep",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_ttrades_swing_trading_model_simple_strategy_visual_v1::closure",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_ttrades_swing_trading_model_simple_strategy_visual_v1::confirmation",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_ttrades_swing_trading_model_simple_strategy_visual_v1::outcome",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_why_your_continuations_fail_order_blocks_cisd_explained_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\why_your_continuations_fail_order_blocks_cisd_explained\\context_00562520.jpg"
+    },
+    {
+      "chunk_id": "youtube_why_your_continuations_fail_order_blocks_cisd_explained_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\why_your_continuations_fail_order_blocks_cisd_explained\\sweep_01215840.jpg"
+    },
+    {
+      "chunk_id": "youtube_why_your_continuations_fail_order_blocks_cisd_explained_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\why_your_continuations_fail_order_blocks_cisd_explained\\closure_01152520.jpg"
+    },
+    {
+      "chunk_id": "youtube_why_your_continuations_fail_order_blocks_cisd_explained_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\why_your_continuations_fail_order_blocks_cisd_explained\\confirmation_00175240.jpg"
+    },
+    {
+      "chunk_id": "youtube_why_your_continuations_fail_order_blocks_cisd_explained_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\why_your_continuations_fail_order_blocks_cisd_explained\\outcome_01674640.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_scalping_model_simple_day_trading_strategy_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_scalping_model_simple_day_trading_strategy\\context_00044280.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_scalping_model_simple_day_trading_strategy_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_scalping_model_simple_day_trading_strategy\\sweep_00176239.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_scalping_model_simple_day_trading_strategy_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_scalping_model_simple_day_trading_strategy\\closure_00587400.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_scalping_model_simple_day_trading_strategy_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_scalping_model_simple_day_trading_strategy\\confirmation_00660440.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_scalping_model_simple_day_trading_strategy_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_scalping_model_simple_day_trading_strategy\\outcome_00806640.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_best_timeframe_for_ttrades_fractal_model_simple_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_best_timeframe_for_ttrades_fractal_model_simple\\context_00043400.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_best_timeframe_for_ttrades_fractal_model_simple_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_best_timeframe_for_ttrades_fractal_model_simple\\sweep_00302240.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_best_timeframe_for_ttrades_fractal_model_simple_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_best_timeframe_for_ttrades_fractal_model_simple\\closure_00104480.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_best_timeframe_for_ttrades_fractal_model_simple_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_best_timeframe_for_ttrades_fractal_model_simple\\confirmation_00439760.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_best_timeframe_for_ttrades_fractal_model_simple_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_best_timeframe_for_ttrades_fractal_model_simple\\outcome_00840920.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_actually_trade_inversion_fair_value_gaps_ifvg_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_actually_trade_inversion_fair_value_gaps_ifvg\\context_00046760.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_actually_trade_inversion_fair_value_gaps_ifvg_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_actually_trade_inversion_fair_value_gaps_ifvg\\sweep_00249520.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_actually_trade_inversion_fair_value_gaps_ifvg_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_actually_trade_inversion_fair_value_gaps_ifvg\\closure_00113720.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_actually_trade_inversion_fair_value_gaps_ifvg_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_actually_trade_inversion_fair_value_gaps_ifvg\\confirmation_00317040.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_actually_trade_inversion_fair_value_gaps_ifvg_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_actually_trade_inversion_fair_value_gaps_ifvg\\outcome_00639120.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_timeframe_analysis_for_trading_aligning_expansion_candles_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_timeframe_analysis_for_trading_aligning_expansion_candles\\context_00374920.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_timeframe_analysis_for_trading_aligning_expansion_candles_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_timeframe_analysis_for_trading_aligning_expansion_candles\\sweep_00306040.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_timeframe_analysis_for_trading_aligning_expansion_candles_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_timeframe_analysis_for_trading_aligning_expansion_candles\\closure_00642320.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_timeframe_analysis_for_trading_aligning_expansion_candles_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_timeframe_analysis_for_trading_aligning_expansion_candles\\confirmation_00171760.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_timeframe_analysis_for_trading_aligning_expansion_candles_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_timeframe_analysis_for_trading_aligning_expansion_candles\\outcome_00443520.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_only_trading_strategy_you_need_for_2026_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_only_trading_strategy_you_need_for_2026\\context_00225120.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_only_trading_strategy_you_need_for_2026_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_only_trading_strategy_you_need_for_2026\\sweep_00163880.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_only_trading_strategy_you_need_for_2026_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_only_trading_strategy_you_need_for_2026\\closure_00287240.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_only_trading_strategy_you_need_for_2026_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_only_trading_strategy_you_need_for_2026\\confirmation_00421480.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_only_trading_strategy_you_need_for_2026_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_only_trading_strategy_you_need_for_2026\\outcome_00557480.jpg"
+    },
+    {
       "chunk_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::context",
       "used_asset": true,
       "used_text_fallback": false,
@@ -255,6 +556,156 @@
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\outcome_00306640.jpg"
     },
     {
+      "chunk_id": "youtube_candle_3_closure_ttrades_fractal_model_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_3_closure_ttrades_fractal_model\\context_00376040.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_3_closure_ttrades_fractal_model_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_3_closure_ttrades_fractal_model\\sweep_00175400.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_3_closure_ttrades_fractal_model_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_3_closure_ttrades_fractal_model\\closure_00043440.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_3_closure_ttrades_fractal_model_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_3_closure_ttrades_fractal_model\\confirmation_00573360.jpg"
+    },
+    {
+      "chunk_id": "youtube_candle_3_closure_ttrades_fractal_model_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\candle_3_closure_ttrades_fractal_model\\outcome_00506440.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_using_projections_the_fractal_model_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_using_projections_the_fractal_model\\context_00596680.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_using_projections_the_fractal_model_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_using_projections_the_fractal_model\\sweep_00178640.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_using_projections_the_fractal_model_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_using_projections_the_fractal_model\\closure_00243720.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_using_projections_the_fractal_model_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_using_projections_the_fractal_model\\confirmation_00456160.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_using_projections_the_fractal_model_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_using_projections_the_fractal_model\\outcome_00311000.jpg"
+    },
+    {
+      "chunk_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\context_00416680.jpg"
+    },
+    {
+      "chunk_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\sweep_00683520.jpg"
+    },
+    {
+      "chunk_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\closure_00549920.jpg"
+    },
+    {
+      "chunk_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\confirmation_01538519.jpg"
+    },
+    {
+      "chunk_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\outcome_00111480.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_complete_trading_framework_universal_models_smt_swing_points_gxt_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_complete_trading_framework_universal_models_smt_swing_points_gxt\\context_00500519.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_complete_trading_framework_universal_models_smt_swing_points_gxt_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_complete_trading_framework_universal_models_smt_swing_points_gxt\\sweep_00350920.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_complete_trading_framework_universal_models_smt_swing_points_gxt_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_complete_trading_framework_universal_models_smt_swing_points_gxt\\closure_00280799.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_complete_trading_framework_universal_models_smt_swing_points_gxt_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_complete_trading_framework_universal_models_smt_swing_points_gxt\\confirmation_00811760.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_complete_trading_framework_universal_models_smt_swing_points_gxt_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_complete_trading_framework_universal_models_smt_swing_points_gxt\\outcome_01696760.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_the_4_hour_power_of_three_ohlc_olhc_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_the_4_hour_power_of_three_ohlc_olhc\\context_00975600.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_the_4_hour_power_of_three_ohlc_olhc_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_the_4_hour_power_of_three_ohlc_olhc\\sweep_00355760.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_the_4_hour_power_of_three_ohlc_olhc_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_the_4_hour_power_of_three_ohlc_olhc\\closure_00108160.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_the_4_hour_power_of_three_ohlc_olhc_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_the_4_hour_power_of_three_ohlc_olhc\\confirmation_00843440.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_the_4_hour_power_of_three_ohlc_olhc_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_the_4_hour_power_of_three_ohlc_olhc\\outcome_00565800.jpg"
+    },
+    {
       "chunk_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::context",
       "used_asset": true,
       "used_text_fallback": false,
@@ -283,6 +734,36 @@
       "used_asset": true,
       "used_text_fallback": false,
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\outcome_00512800.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_2_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_2\\context_00385880.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_2_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_2\\sweep_00456520.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_2_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_2\\closure_01065700.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_2_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_2\\confirmation_00856840.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_2_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_2\\outcome_00783040.jpg"
     },
     {
       "chunk_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::context",
@@ -315,6 +796,606 @@
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\outcome_00289500.jpg"
     },
     {
+      "chunk_id": "youtube_the_phases_of_price_action_a_blueprint_for_market_movement_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_phases_of_price_action_a_blueprint_for_market_movement\\context_00762920.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_phases_of_price_action_a_blueprint_for_market_movement_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_phases_of_price_action_a_blueprint_for_market_movement\\sweep_00614760.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_phases_of_price_action_a_blueprint_for_market_movement_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_phases_of_price_action_a_blueprint_for_market_movement\\closure_00901400.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_phases_of_price_action_a_blueprint_for_market_movement_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_phases_of_price_action_a_blueprint_for_market_movement\\confirmation_01466519.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_phases_of_price_action_a_blueprint_for_market_movement_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_phases_of_price_action_a_blueprint_for_market_movement\\outcome_00184000.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_reversal_phases_of_price_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_reversal_phases_of_price\\context_01038660.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_reversal_phases_of_price_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_reversal_phases_of_price\\sweep_00408839.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_reversal_phases_of_price_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_reversal_phases_of_price\\closure_00617880.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_reversal_phases_of_price_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_reversal_phases_of_price\\confirmation_00687720.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_reversal_phases_of_price_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_reversal_phases_of_price\\outcome_00335000.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_retracement_phases_of_price_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_retracement_phases_of_price\\context_00394440.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_retracement_phases_of_price_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_retracement_phases_of_price\\sweep_00937400.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_retracement_phases_of_price_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_retracement_phases_of_price\\closure_00108040.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_retracement_phases_of_price_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_retracement_phases_of_price\\confirmation_00599880.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_retracement_phases_of_price_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_retracement_phases_of_price\\outcome_00866040.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_expansion_phases_of_price_visual_v1::context",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_expansion_phases_of_price_visual_v1::sweep",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_expansion_phases_of_price_visual_v1::closure",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_expansion_phases_of_price_visual_v1::confirmation",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_expansion_phases_of_price_visual_v1::outcome",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_consolidation_phases_of_price_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_consolidation_phases_of_price\\context_00495480.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_consolidation_phases_of_price_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_consolidation_phases_of_price\\sweep_00645040.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_consolidation_phases_of_price_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_consolidation_phases_of_price\\closure_00342240.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_consolidation_phases_of_price_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_consolidation_phases_of_price\\confirmation_01042519.jpg"
+    },
+    {
+      "chunk_id": "youtube_how_to_trade_consolidation_phases_of_price_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\how_to_trade_consolidation_phases_of_price\\outcome_00201840.jpg"
+    },
+    {
+      "chunk_id": "youtube_protected_swings_understanding_trend_and_invalidations_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\protected_swings_understanding_trend_and_invalidations\\context_00922040.jpg"
+    },
+    {
+      "chunk_id": "youtube_protected_swings_understanding_trend_and_invalidations_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\protected_swings_understanding_trend_and_invalidations\\sweep_00119920.jpg"
+    },
+    {
+      "chunk_id": "youtube_protected_swings_understanding_trend_and_invalidations_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\protected_swings_understanding_trend_and_invalidations\\closure_00552560.jpg"
+    },
+    {
+      "chunk_id": "youtube_protected_swings_understanding_trend_and_invalidations_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\protected_swings_understanding_trend_and_invalidations\\confirmation_00847799.jpg"
+    },
+    {
+      "chunk_id": "youtube_protected_swings_understanding_trend_and_invalidations_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\protected_swings_understanding_trend_and_invalidations\\outcome_00981380.jpg"
+    },
+    {
+      "chunk_id": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\gxtradez_phases_of_price_profiles_for_expansion\\context_00904680.jpg"
+    },
+    {
+      "chunk_id": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\gxtradez_phases_of_price_profiles_for_expansion\\sweep_00692240.jpg"
+    },
+    {
+      "chunk_id": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\gxtradez_phases_of_price_profiles_for_expansion\\closure_00763440.jpg"
+    },
+    {
+      "chunk_id": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\gxtradez_phases_of_price_profiles_for_expansion\\confirmation_02448640.jpg"
+    },
+    {
+      "chunk_id": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\gxtradez_phases_of_price_profiles_for_expansion\\outcome_00203719.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_4_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_4\\context_00190460.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_4_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_4\\sweep_00565940.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_4_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_4\\closure_00417759.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_4_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_4\\confirmation_00784760.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_trading_candle_4_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_4\\outcome_00637160.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_inversion_intraday_strategy_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_inversion_intraday_strategy\\context_00114820.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_inversion_intraday_strategy_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_inversion_intraday_strategy\\sweep_00987479.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_inversion_intraday_strategy_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_inversion_intraday_strategy\\closure_00185039.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_inversion_intraday_strategy_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_inversion_intraday_strategy\\confirmation_00407000.jpg"
+    },
+    {
+      "chunk_id": "youtube_ttrades_fractal_model_inversion_intraday_strategy_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_inversion_intraday_strategy\\outcome_00849100.jpg"
+    },
+    {
+      "chunk_id": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ap_use_market_structure_fibonacci_levels_for_sniper_entries\\context_01153600.jpg"
+    },
+    {
+      "chunk_id": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ap_use_market_structure_fibonacci_levels_for_sniper_entries\\sweep_02336880.jpg"
+    },
+    {
+      "chunk_id": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ap_use_market_structure_fibonacci_levels_for_sniper_entries\\closure_03663440.jpg"
+    },
+    {
+      "chunk_id": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ap_use_market_structure_fibonacci_levels_for_sniper_entries\\confirmation_03135079.jpg"
+    },
+    {
+      "chunk_id": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ap_use_market_structure_fibonacci_levels_for_sniper_entries\\outcome_03597880.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_breaker_blocks_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_breaker_blocks\\context_00266580.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_breaker_blocks_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_breaker_blocks\\sweep_00415700.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_breaker_blocks_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_breaker_blocks\\closure_00650219.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_breaker_blocks_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_breaker_blocks\\confirmation_00115580.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_breaker_blocks_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_breaker_blocks\\outcome_00575020.jpg"
+    },
+    {
+      "chunk_id": "youtube_dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias\\context_00279380.jpg"
+    },
+    {
+      "chunk_id": "youtube_dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias\\sweep_00361880.jpg"
+    },
+    {
+      "chunk_id": "youtube_dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias\\closure_00527520.jpg"
+    },
+    {
+      "chunk_id": "youtube_dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias\\confirmation_00684800.jpg"
+    },
+    {
+      "chunk_id": "youtube_dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias\\outcome_00766459.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_order_blocks_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_order_blocks\\context_00043845.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_order_blocks_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_order_blocks\\sweep_00117640.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_order_blocks_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_order_blocks\\closure_00349920.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_order_blocks_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_order_blocks\\confirmation_00512200.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_continuations_using_order_blocks_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_order_blocks\\outcome_00587620.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_like_ttrades_top_down_analysis_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_like_ttrades_top_down_analysis\\context_00550560.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_like_ttrades_top_down_analysis_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_like_ttrades_top_down_analysis\\sweep_00254659.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_like_ttrades_top_down_analysis_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_like_ttrades_top_down_analysis\\closure_01048400.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_like_ttrades_top_down_analysis_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_like_ttrades_top_down_analysis\\confirmation_00331860.jpg"
+    },
+    {
+      "chunk_id": "youtube_trade_like_ttrades_top_down_analysis_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trade_like_ttrades_top_down_analysis\\outcome_00908580.jpg"
+    },
+    {
+      "chunk_id": "youtube_timeframe_alignment_how_to_align_timeframes_for_expansion_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\timeframe_alignment_how_to_align_timeframes_for_expansion\\context_00044480.jpg"
+    },
+    {
+      "chunk_id": "youtube_timeframe_alignment_how_to_align_timeframes_for_expansion_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\timeframe_alignment_how_to_align_timeframes_for_expansion\\sweep_00725020.jpg"
+    },
+    {
+      "chunk_id": "youtube_timeframe_alignment_how_to_align_timeframes_for_expansion_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\timeframe_alignment_how_to_align_timeframes_for_expansion\\closure_00882519.jpg"
+    },
+    {
+      "chunk_id": "youtube_timeframe_alignment_how_to_align_timeframes_for_expansion_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\timeframe_alignment_how_to_align_timeframes_for_expansion\\confirmation_00117080.jpg"
+    },
+    {
+      "chunk_id": "youtube_timeframe_alignment_how_to_align_timeframes_for_expansion_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\timeframe_alignment_how_to_align_timeframes_for_expansion\\outcome_00419860.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_sequence_ttrs_how_to_blend_pd_arrays_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_sequence_ttrs_how_to_blend_pd_arrays\\context_00187160.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_sequence_ttrs_how_to_blend_pd_arrays_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_sequence_ttrs_how_to_blend_pd_arrays\\sweep_00918340.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_sequence_ttrs_how_to_blend_pd_arrays_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_sequence_ttrs_how_to_blend_pd_arrays\\closure_00469920.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_sequence_ttrs_how_to_blend_pd_arrays_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_sequence_ttrs_how_to_blend_pd_arrays\\confirmation_00549359.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_sequence_ttrs_how_to_blend_pd_arrays_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_sequence_ttrs_how_to_blend_pd_arrays\\outcome_00844640.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_ttrades_fractal_model_indicator_settings\\context_01014480.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_ttrades_fractal_model_indicator_settings\\sweep_00114720.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_ttrades_fractal_model_indicator_settings\\closure_00395439.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_ttrades_fractal_model_indicator_settings\\confirmation_00934420.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_ttrades_fractal_model_indicator_settings\\outcome_01093360.jpg"
+    },
+    {
+      "chunk_id": "youtube_master_candlestick_wicks_the_key_to_catching_reversals_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\master_candlestick_wicks_the_key_to_catching_reversals\\context_00349000.jpg"
+    },
+    {
+      "chunk_id": "youtube_master_candlestick_wicks_the_key_to_catching_reversals_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\master_candlestick_wicks_the_key_to_catching_reversals\\sweep_00428940.jpg"
+    },
+    {
+      "chunk_id": "youtube_master_candlestick_wicks_the_key_to_catching_reversals_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\master_candlestick_wicks_the_key_to_catching_reversals\\closure_00271120.jpg"
+    },
+    {
+      "chunk_id": "youtube_master_candlestick_wicks_the_key_to_catching_reversals_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\master_candlestick_wicks_the_key_to_catching_reversals\\confirmation_00662000.jpg"
+    },
+    {
+      "chunk_id": "youtube_master_candlestick_wicks_the_key_to_catching_reversals_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\master_candlestick_wicks_the_key_to_catching_reversals\\outcome_00508440.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_irl_erl_with_order_blocks_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_irl_erl_with_order_blocks_ict_concepts\\context_00326440.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_irl_erl_with_order_blocks_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_irl_erl_with_order_blocks_ict_concepts\\sweep_00042484.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_irl_erl_with_order_blocks_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_irl_erl_with_order_blocks_ict_concepts\\closure_00539060.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_irl_erl_with_order_blocks_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_irl_erl_with_order_blocks_ict_concepts\\confirmation_00769780.jpg"
+    },
+    {
+      "chunk_id": "youtube_trading_irl_erl_with_order_blocks_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\trading_irl_erl_with_order_blocks_ict_concepts\\outcome_00840840.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_fractal_way_to_get_bias_for_trading\\context_00192920.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_fractal_way_to_get_bias_for_trading\\sweep_00267900.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_fractal_way_to_get_bias_for_trading\\closure_00741020.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_fractal_way_to_get_bias_for_trading\\confirmation_00657979.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_fractal_way_to_get_bias_for_trading\\outcome_00968219.jpg"
+    },
+    {
       "chunk_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::context",
       "used_asset": true,
       "used_text_fallback": false,
@@ -343,6 +1424,426 @@
       "used_asset": true,
       "used_text_fallback": false,
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\mara_trade_review_h1_market_maker_buy_model_mmxm\\outcome_00048385.jpg"
+    },
+    {
+      "chunk_id": "youtube_afyz_trading_the_daily_ohlc_protraction_profiles_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\afyz_trading_the_daily_ohlc_protraction_profiles\\context_00625160.jpg"
+    },
+    {
+      "chunk_id": "youtube_afyz_trading_the_daily_ohlc_protraction_profiles_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\afyz_trading_the_daily_ohlc_protraction_profiles\\sweep_00535119.jpg"
+    },
+    {
+      "chunk_id": "youtube_afyz_trading_the_daily_ohlc_protraction_profiles_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\afyz_trading_the_daily_ohlc_protraction_profiles\\closure_00718180.jpg"
+    },
+    {
+      "chunk_id": "youtube_afyz_trading_the_daily_ohlc_protraction_profiles_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\afyz_trading_the_daily_ohlc_protraction_profiles\\confirmation_00805500.jpg"
+    },
+    {
+      "chunk_id": "youtube_afyz_trading_the_daily_ohlc_protraction_profiles_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\afyz_trading_the_daily_ohlc_protraction_profiles\\outcome_00116260.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models\\context_00547500.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models\\sweep_01329040.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models\\closure_00269520.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models\\confirmation_00979880.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models\\outcome_01415760.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_new_york_reversal_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_new_york_reversal\\context_00188180.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_new_york_reversal_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_new_york_reversal\\sweep_00263120.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_new_york_reversal_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_new_york_reversal\\closure_00709679.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_new_york_reversal_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_new_york_reversal\\confirmation_00410120.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_new_york_reversal_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_new_york_reversal\\outcome_00483280.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_london_reversal_new_york_continuation_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_london_reversal_new_york_continuation\\context_00132420.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_london_reversal_new_york_continuation_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_london_reversal_new_york_continuation\\sweep_00562959.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_london_reversal_new_york_continuation_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_london_reversal_new_york_continuation\\closure_00219159.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_london_reversal_new_york_continuation_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_london_reversal_new_york_continuation\\confirmation_00480080.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_profile_london_reversal_new_york_continuation_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_profile_london_reversal_new_york_continuation\\outcome_00048500.jpg"
+    },
+    {
+      "chunk_id": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\nickdoesfutures_unicorn_model_experiences_with_ict\\context_01416120.jpg"
+    },
+    {
+      "chunk_id": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\nickdoesfutures_unicorn_model_experiences_with_ict\\sweep_01146400.jpg"
+    },
+    {
+      "chunk_id": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\nickdoesfutures_unicorn_model_experiences_with_ict\\closure_01010339.jpg"
+    },
+    {
+      "chunk_id": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\nickdoesfutures_unicorn_model_experiences_with_ict\\confirmation_01281820.jpg"
+    },
+    {
+      "chunk_id": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\nickdoesfutures_unicorn_model_experiences_with_ict\\outcome_01349940.jpg"
+    },
+    {
+      "chunk_id": "youtube_high_resistance_vs_low_resistance_liquidity_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\high_resistance_vs_low_resistance_liquidity_ict_concepts\\context_00070200.jpg"
+    },
+    {
+      "chunk_id": "youtube_high_resistance_vs_low_resistance_liquidity_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\high_resistance_vs_low_resistance_liquidity_ict_concepts\\sweep_00491400.jpg"
+    },
+    {
+      "chunk_id": "youtube_high_resistance_vs_low_resistance_liquidity_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\high_resistance_vs_low_resistance_liquidity_ict_concepts\\closure_00351000.jpg"
+    },
+    {
+      "chunk_id": "youtube_high_resistance_vs_low_resistance_liquidity_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\high_resistance_vs_low_resistance_liquidity_ict_concepts\\confirmation_00631800.jpg"
+    },
+    {
+      "chunk_id": "youtube_high_resistance_vs_low_resistance_liquidity_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\high_resistance_vs_low_resistance_liquidity_ict_concepts\\outcome_00210600.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_twitter_model_the_mmxm_trader_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_twitter_model_the_mmxm_trader_ict_concepts\\context_00057200.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_twitter_model_the_mmxm_trader_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_twitter_model_the_mmxm_trader_ict_concepts\\sweep_00400400.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_twitter_model_the_mmxm_trader_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_twitter_model_the_mmxm_trader_ict_concepts\\closure_00286000.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_twitter_model_the_mmxm_trader_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_twitter_model_the_mmxm_trader_ict_concepts\\confirmation_00514800.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_twitter_model_the_mmxm_trader_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_twitter_model_the_mmxm_trader_ict_concepts\\outcome_00171600.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_model_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_model_ict_concepts\\context_00097800.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_model_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_model_ict_concepts\\sweep_00684600.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_model_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_model_ict_concepts\\closure_00489000.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_model_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_model_ict_concepts\\confirmation_00880200.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_model_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_model_ict_concepts\\outcome_00293400.jpg"
+    },
+    {
+      "chunk_id": "youtube_niper_internal_external_liquidity_ict_daily_bias_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\niper_internal_external_liquidity_ict_daily_bias\\context_00162600.jpg"
+    },
+    {
+      "chunk_id": "youtube_niper_internal_external_liquidity_ict_daily_bias_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\niper_internal_external_liquidity_ict_daily_bias\\sweep_01138200.jpg"
+    },
+    {
+      "chunk_id": "youtube_niper_internal_external_liquidity_ict_daily_bias_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\niper_internal_external_liquidity_ict_daily_bias\\closure_00813000.jpg"
+    },
+    {
+      "chunk_id": "youtube_niper_internal_external_liquidity_ict_daily_bias_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\niper_internal_external_liquidity_ict_daily_bias\\confirmation_01463400.jpg"
+    },
+    {
+      "chunk_id": "youtube_niper_internal_external_liquidity_ict_daily_bias_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\niper_internal_external_liquidity_ict_daily_bias\\outcome_00487800.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_advanced_market_structure_simplified_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_advanced_market_structure_simplified\\context_00084300.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_advanced_market_structure_simplified_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_advanced_market_structure_simplified\\sweep_00590100.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_advanced_market_structure_simplified_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_advanced_market_structure_simplified\\closure_00421500.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_advanced_market_structure_simplified_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_advanced_market_structure_simplified\\confirmation_00758700.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_advanced_market_structure_simplified_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_advanced_market_structure_simplified\\outcome_00252900.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_market_structure_for_trading_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_market_structure_for_trading\\context_00084600.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_market_structure_for_trading_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_market_structure_for_trading\\sweep_00592200.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_market_structure_for_trading_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_market_structure_for_trading\\closure_00423000.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_market_structure_for_trading_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_market_structure_for_trading\\confirmation_00761400.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_market_structure_for_trading_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_market_structure_for_trading\\outcome_00253800.jpg"
+    },
+    {
+      "chunk_id": "youtube_jokerszn_daily_orderflow_ict_daily_bias_visual_v1::context",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_jokerszn_daily_orderflow_ict_daily_bias_visual_v1::sweep",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_jokerszn_daily_orderflow_ict_daily_bias_visual_v1::closure",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_jokerszn_daily_orderflow_ict_daily_bias_visual_v1::confirmation",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_jokerszn_daily_orderflow_ict_daily_bias_visual_v1::outcome",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\context_00102700.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\sweep_00718900.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\closure_00513500.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\confirmation_00718900.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\outcome_00924300.jpg"
+    },
+    {
+      "chunk_id": "youtube_ash_trades_the_journey_to_profitability_the_unicorn_model_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ash_trades_the_journey_to_profitability_the_unicorn_model\\context_00557700.jpg"
+    },
+    {
+      "chunk_id": "youtube_ash_trades_the_journey_to_profitability_the_unicorn_model_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ash_trades_the_journey_to_profitability_the_unicorn_model\\sweep_03903900.jpg"
+    },
+    {
+      "chunk_id": "youtube_ash_trades_the_journey_to_profitability_the_unicorn_model_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ash_trades_the_journey_to_profitability_the_unicorn_model\\closure_02788500.jpg"
+    },
+    {
+      "chunk_id": "youtube_ash_trades_the_journey_to_profitability_the_unicorn_model_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ash_trades_the_journey_to_profitability_the_unicorn_model\\confirmation_05019300.jpg"
+    },
+    {
+      "chunk_id": "youtube_ash_trades_the_journey_to_profitability_the_unicorn_model_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ash_trades_the_journey_to_profitability_the_unicorn_model\\outcome_01673100.jpg"
     },
     {
       "chunk_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::context",
@@ -375,6 +1876,1236 @@
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\outcome_00375400.jpg"
     },
     {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\context_00080600.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\sweep_00564200.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\closure_00403000.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\confirmation_00564200.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\outcome_00725400.jpg"
+    },
+    {
+      "chunk_id": "youtube_order_blocks_simplified_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\order_blocks_simplified_ict_concepts\\context_00089700.jpg"
+    },
+    {
+      "chunk_id": "youtube_order_blocks_simplified_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\order_blocks_simplified_ict_concepts\\sweep_00627900.jpg"
+    },
+    {
+      "chunk_id": "youtube_order_blocks_simplified_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\order_blocks_simplified_ict_concepts\\closure_00448500.jpg"
+    },
+    {
+      "chunk_id": "youtube_order_blocks_simplified_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\order_blocks_simplified_ict_concepts\\confirmation_00807300.jpg"
+    },
+    {
+      "chunk_id": "youtube_order_blocks_simplified_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\order_blocks_simplified_ict_concepts\\outcome_00269100.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_change_in_state_of_delivery_ict_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_change_in_state_of_delivery_ict\\context_00056100.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_change_in_state_of_delivery_ict_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_change_in_state_of_delivery_ict\\sweep_00392700.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_change_in_state_of_delivery_ict_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_change_in_state_of_delivery_ict\\closure_00280500.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_change_in_state_of_delivery_ict_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_change_in_state_of_delivery_ict\\confirmation_00504900.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_change_in_state_of_delivery_ict_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_change_in_state_of_delivery_ict\\outcome_00168300.jpg"
+    },
+    {
+      "chunk_id": "youtube_inversion_fair_value_gaps_ifvg_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\inversion_fair_value_gaps_ifvg_ict_concepts\\context_00061500.jpg"
+    },
+    {
+      "chunk_id": "youtube_inversion_fair_value_gaps_ifvg_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\inversion_fair_value_gaps_ifvg_ict_concepts\\sweep_00430500.jpg"
+    },
+    {
+      "chunk_id": "youtube_inversion_fair_value_gaps_ifvg_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\inversion_fair_value_gaps_ifvg_ict_concepts\\closure_00307500.jpg"
+    },
+    {
+      "chunk_id": "youtube_inversion_fair_value_gaps_ifvg_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\inversion_fair_value_gaps_ifvg_ict_concepts\\confirmation_00553500.jpg"
+    },
+    {
+      "chunk_id": "youtube_inversion_fair_value_gaps_ifvg_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\inversion_fair_value_gaps_ifvg_ict_concepts\\outcome_00184500.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_daily_bias_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_daily_bias_ict_concepts\\context_00073600.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_daily_bias_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_daily_bias_ict_concepts\\sweep_00515200.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_daily_bias_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_daily_bias_ict_concepts\\closure_00368000.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_daily_bias_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_daily_bias_ict_concepts\\confirmation_00662400.jpg"
+    },
+    {
+      "chunk_id": "youtube_internal_external_liquidity_daily_bias_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\internal_external_liquidity_daily_bias_ict_concepts\\outcome_00220800.jpg"
+    },
+    {
+      "chunk_id": "youtube_change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts\\context_00094400.jpg"
+    },
+    {
+      "chunk_id": "youtube_change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts\\sweep_00660800.jpg"
+    },
+    {
+      "chunk_id": "youtube_change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts\\closure_00472000.jpg"
+    },
+    {
+      "chunk_id": "youtube_change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts\\confirmation_00849600.jpg"
+    },
+    {
+      "chunk_id": "youtube_change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts\\outcome_00283200.jpg"
+    },
+    {
+      "chunk_id": "youtube_standard_deviation_projections_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\standard_deviation_projections_ict_concepts\\context_00087100.jpg"
+    },
+    {
+      "chunk_id": "youtube_standard_deviation_projections_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\standard_deviation_projections_ict_concepts\\sweep_00609700.jpg"
+    },
+    {
+      "chunk_id": "youtube_standard_deviation_projections_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\standard_deviation_projections_ict_concepts\\closure_00435500.jpg"
+    },
+    {
+      "chunk_id": "youtube_standard_deviation_projections_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\standard_deviation_projections_ict_concepts\\confirmation_00783900.jpg"
+    },
+    {
+      "chunk_id": "youtube_standard_deviation_projections_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\standard_deviation_projections_ict_concepts\\outcome_00261300.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_easiest_draw_on_liquidity_dol_daily_bias_ict_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_easiest_draw_on_liquidity_dol_daily_bias_ict\\context_00078400.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_easiest_draw_on_liquidity_dol_daily_bias_ict_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_easiest_draw_on_liquidity_dol_daily_bias_ict\\sweep_00548800.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_easiest_draw_on_liquidity_dol_daily_bias_ict_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_easiest_draw_on_liquidity_dol_daily_bias_ict\\closure_00392000.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_easiest_draw_on_liquidity_dol_daily_bias_ict_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_easiest_draw_on_liquidity_dol_daily_bias_ict\\confirmation_00705600.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_easiest_draw_on_liquidity_dol_daily_bias_ict_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\the_easiest_draw_on_liquidity_dol_daily_bias_ict\\outcome_00235200.jpg"
+    },
+    {
+      "chunk_id": "youtube_important_liquidity_levels_draw_on_liquidity_ict_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\important_liquidity_levels_draw_on_liquidity_ict\\context_00076800.jpg"
+    },
+    {
+      "chunk_id": "youtube_important_liquidity_levels_draw_on_liquidity_ict_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\important_liquidity_levels_draw_on_liquidity_ict\\sweep_00537600.jpg"
+    },
+    {
+      "chunk_id": "youtube_important_liquidity_levels_draw_on_liquidity_ict_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\important_liquidity_levels_draw_on_liquidity_ict\\closure_00384000.jpg"
+    },
+    {
+      "chunk_id": "youtube_important_liquidity_levels_draw_on_liquidity_ict_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\important_liquidity_levels_draw_on_liquidity_ict\\confirmation_00691200.jpg"
+    },
+    {
+      "chunk_id": "youtube_important_liquidity_levels_draw_on_liquidity_ict_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\important_liquidity_levels_draw_on_liquidity_ict\\outcome_00230400.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_son_s_model_higher_time_frames_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_son_s_model_higher_time_frames\\context_00074400.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_son_s_model_higher_time_frames_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_son_s_model_higher_time_frames\\sweep_00520800.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_son_s_model_higher_time_frames_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_son_s_model_higher_time_frames\\closure_00372000.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_son_s_model_higher_time_frames_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_son_s_model_higher_time_frames\\confirmation_00669600.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_son_s_model_higher_time_frames_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_son_s_model_higher_time_frames\\outcome_00223200.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_block_fvg_entry_model_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_block_fvg_entry_model_ict_concepts\\context_00046700.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_block_fvg_entry_model_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_block_fvg_entry_model_ict_concepts\\sweep_00140100.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_block_fvg_entry_model_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_block_fvg_entry_model_ict_concepts\\closure_00233500.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_block_fvg_entry_model_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_block_fvg_entry_model_ict_concepts\\confirmation_00326900.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_block_fvg_entry_model_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_block_fvg_entry_model_ict_concepts\\outcome_00420300.jpg"
+    },
+    {
+      "chunk_id": "youtube_optimal_trade_entry_ote_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\optimal_trade_entry_ote_ict_concepts\\context_00076500.jpg"
+    },
+    {
+      "chunk_id": "youtube_optimal_trade_entry_ote_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\optimal_trade_entry_ote_ict_concepts\\sweep_00535500.jpg"
+    },
+    {
+      "chunk_id": "youtube_optimal_trade_entry_ote_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\optimal_trade_entry_ote_ict_concepts\\closure_00382500.jpg"
+    },
+    {
+      "chunk_id": "youtube_optimal_trade_entry_ote_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\optimal_trade_entry_ote_ict_concepts\\confirmation_00688500.jpg"
+    },
+    {
+      "chunk_id": "youtube_optimal_trade_entry_ote_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\optimal_trade_entry_ote_ict_concepts\\outcome_00229500.jpg"
+    },
+    {
+      "chunk_id": "youtube_my_favorite_reversal_pattern_orderblocks_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\my_favorite_reversal_pattern_orderblocks_ict_concepts\\context_00069400.jpg"
+    },
+    {
+      "chunk_id": "youtube_my_favorite_reversal_pattern_orderblocks_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\my_favorite_reversal_pattern_orderblocks_ict_concepts\\sweep_00485800.jpg"
+    },
+    {
+      "chunk_id": "youtube_my_favorite_reversal_pattern_orderblocks_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\my_favorite_reversal_pattern_orderblocks_ict_concepts\\closure_00347000.jpg"
+    },
+    {
+      "chunk_id": "youtube_my_favorite_reversal_pattern_orderblocks_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\my_favorite_reversal_pattern_orderblocks_ict_concepts\\confirmation_00624600.jpg"
+    },
+    {
+      "chunk_id": "youtube_my_favorite_reversal_pattern_orderblocks_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\my_favorite_reversal_pattern_orderblocks_ict_concepts\\outcome_00208200.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_daily_bias_to_entries_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_daily_bias_to_entries_ict_concepts\\context_00065200.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_daily_bias_to_entries_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_daily_bias_to_entries_ict_concepts\\sweep_00456400.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_daily_bias_to_entries_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_daily_bias_to_entries_ict_concepts\\closure_00326000.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_daily_bias_to_entries_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_daily_bias_to_entries_ict_concepts\\confirmation_00586800.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_daily_bias_to_entries_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_daily_bias_to_entries_ict_concepts\\outcome_00195600.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_silver_bullet_strategy_no_daily_bias_with_backtest_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_silver_bullet_strategy_no_daily_bias_with_backtest\\context_00174800.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_silver_bullet_strategy_no_daily_bias_with_backtest_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_silver_bullet_strategy_no_daily_bias_with_backtest\\sweep_01223600.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_silver_bullet_strategy_no_daily_bias_with_backtest_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_silver_bullet_strategy_no_daily_bias_with_backtest\\closure_00874000.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_silver_bullet_strategy_no_daily_bias_with_backtest_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_silver_bullet_strategy_no_daily_bias_with_backtest\\confirmation_01573200.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_silver_bullet_strategy_no_daily_bias_with_backtest_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_silver_bullet_strategy_no_daily_bias_with_backtest\\outcome_00524400.jpg"
+    },
+    {
+      "chunk_id": "youtube_the_best_relative_strength_indicator_for_es_nq_ict_visual_v1::context",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_the_best_relative_strength_indicator_for_es_nq_ict_visual_v1::sweep",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_the_best_relative_strength_indicator_for_es_nq_ict_visual_v1::closure",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_the_best_relative_strength_indicator_for_es_nq_ict_visual_v1::confirmation",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_the_best_relative_strength_indicator_for_es_nq_ict_visual_v1::outcome",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_simplified_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intraday_bias_simplified_ict_concepts\\context_00150300.jpg"
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_simplified_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intraday_bias_simplified_ict_concepts\\sweep_01052100.jpg"
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_simplified_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intraday_bias_simplified_ict_concepts\\closure_00751500.jpg"
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_simplified_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intraday_bias_simplified_ict_concepts\\confirmation_01352700.jpg"
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_simplified_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intraday_bias_simplified_ict_concepts\\outcome_00450900.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_the_only_video_you_will_ever_need_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias_the_only_video_you_will_ever_need\\context_00110900.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_the_only_video_you_will_ever_need_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias_the_only_video_you_will_ever_need\\sweep_00776300.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_the_only_video_you_will_ever_need_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias_the_only_video_you_will_ever_need\\closure_00554500.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_the_only_video_you_will_ever_need_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias_the_only_video_you_will_ever_need\\confirmation_00998100.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_the_only_video_you_will_ever_need_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias_the_only_video_you_will_ever_need\\outcome_00332700.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_liquidity_grab_ict_concepts\\context_00092000.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_liquidity_grab_ict_concepts\\sweep_00644000.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_liquidity_grab_ict_concepts\\closure_00460000.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_liquidity_grab_ict_concepts\\confirmation_00828000.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_vs_liquidity_grab_ict_concepts\\outcome_00276000.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_ict_concepts\\context_00048700.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_ict_concepts\\sweep_00340900.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_ict_concepts\\closure_00243500.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_ict_concepts\\confirmation_00438300.jpg"
+    },
+    {
+      "chunk_id": "youtube_market_structure_shift_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\market_structure_shift_ict_concepts\\outcome_00146100.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\context_00051800.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\sweep_00362600.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\closure_00259000.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\confirmation_00362600.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\outcome_00466200.jpg"
+    },
+    {
+      "chunk_id": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\liquidity_buyside_sellside_ict_concepts\\context_00059500.jpg"
+    },
+    {
+      "chunk_id": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\liquidity_buyside_sellside_ict_concepts\\sweep_00416500.jpg"
+    },
+    {
+      "chunk_id": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\liquidity_buyside_sellside_ict_concepts\\closure_00297500.jpg"
+    },
+    {
+      "chunk_id": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\liquidity_buyside_sellside_ict_concepts\\confirmation_00535500.jpg"
+    },
+    {
+      "chunk_id": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\liquidity_buyside_sellside_ict_concepts\\outcome_00178500.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\context_00065800.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\sweep_00460600.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\closure_00329000.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\confirmation_00460600.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\outcome_00592200.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_fair_value_gaps_fvg_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_fair_value_gaps_fvg_ict_concepts\\context_00059600.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_fair_value_gaps_fvg_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_fair_value_gaps_fvg_ict_concepts\\sweep_00417200.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_fair_value_gaps_fvg_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_fair_value_gaps_fvg_ict_concepts\\closure_00298000.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_fair_value_gaps_fvg_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_fair_value_gaps_fvg_ict_concepts\\confirmation_00536400.jpg"
+    },
+    {
+      "chunk_id": "youtube_understanding_fair_value_gaps_fvg_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\understanding_fair_value_gaps_fvg_ict_concepts\\outcome_00178800.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_the_mmxm_trader_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_the_mmxm_trader_ict_concepts\\context_00081500.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_the_mmxm_trader_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_the_mmxm_trader_ict_concepts\\sweep_00570500.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_the_mmxm_trader_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_the_mmxm_trader_ict_concepts\\closure_00407500.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_the_mmxm_trader_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_the_mmxm_trader_ict_concepts\\confirmation_00733500.jpg"
+    },
+    {
+      "chunk_id": "youtube_next_day_model_the_mmxm_trader_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\next_day_model_the_mmxm_trader_ict_concepts\\outcome_00244500.jpg"
+    },
+    {
+      "chunk_id": "youtube_low_resistance_liquidity_run_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\low_resistance_liquidity_run_ict_concepts\\context_00054500.jpg"
+    },
+    {
+      "chunk_id": "youtube_low_resistance_liquidity_run_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\low_resistance_liquidity_run_ict_concepts\\sweep_00381500.jpg"
+    },
+    {
+      "chunk_id": "youtube_low_resistance_liquidity_run_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\low_resistance_liquidity_run_ict_concepts\\closure_00272500.jpg"
+    },
+    {
+      "chunk_id": "youtube_low_resistance_liquidity_run_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\low_resistance_liquidity_run_ict_concepts\\confirmation_00490500.jpg"
+    },
+    {
+      "chunk_id": "youtube_low_resistance_liquidity_run_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\low_resistance_liquidity_run_ict_concepts\\outcome_00163500.jpg"
+    },
+    {
+      "chunk_id": "youtube_open_high_low_close_ohlc_olhc_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\open_high_low_close_ohlc_olhc_ict_concepts\\context_00033100.jpg"
+    },
+    {
+      "chunk_id": "youtube_open_high_low_close_ohlc_olhc_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\open_high_low_close_ohlc_olhc_ict_concepts\\sweep_00231700.jpg"
+    },
+    {
+      "chunk_id": "youtube_open_high_low_close_ohlc_olhc_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\open_high_low_close_ohlc_olhc_ict_concepts\\closure_00165500.jpg"
+    },
+    {
+      "chunk_id": "youtube_open_high_low_close_ohlc_olhc_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\open_high_low_close_ohlc_olhc_ict_concepts\\confirmation_00297900.jpg"
+    },
+    {
+      "chunk_id": "youtube_open_high_low_close_ohlc_olhc_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\open_high_low_close_ohlc_olhc_ict_concepts\\outcome_00099300.jpg"
+    },
+    {
+      "chunk_id": "youtube_scalping_made_simple_building_a_scalping_model_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\scalping_made_simple_building_a_scalping_model\\context_00037100.jpg"
+    },
+    {
+      "chunk_id": "youtube_scalping_made_simple_building_a_scalping_model_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\scalping_made_simple_building_a_scalping_model\\sweep_00259700.jpg"
+    },
+    {
+      "chunk_id": "youtube_scalping_made_simple_building_a_scalping_model_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\scalping_made_simple_building_a_scalping_model\\closure_00185500.jpg"
+    },
+    {
+      "chunk_id": "youtube_scalping_made_simple_building_a_scalping_model_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\scalping_made_simple_building_a_scalping_model\\confirmation_00333900.jpg"
+    },
+    {
+      "chunk_id": "youtube_scalping_made_simple_building_a_scalping_model_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\scalping_made_simple_building_a_scalping_model\\outcome_00111300.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\context_00102700.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\sweep_00718900.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\closure_00513500.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\confirmation_00718900.jpg"
+    },
+    {
+      "chunk_id": "youtube_smt_divergence_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\outcome_00924300.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_with_standard_deviation_projections_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_with_standard_deviation_projections_ict_concepts\\context_00054000.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_with_standard_deviation_projections_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_with_standard_deviation_projections_ict_concepts\\sweep_00378000.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_with_standard_deviation_projections_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_with_standard_deviation_projections_ict_concepts\\closure_00270000.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_with_standard_deviation_projections_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_with_standard_deviation_projections_ict_concepts\\confirmation_00486000.jpg"
+    },
+    {
+      "chunk_id": "youtube_targets_with_standard_deviation_projections_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\targets_with_standard_deviation_projections_ict_concepts\\outcome_00162000.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\context_00080600.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\sweep_00564200.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\closure_00403000.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\confirmation_00564200.jpg"
+    },
+    {
+      "chunk_id": "youtube_breaker_blocks_simplified_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\breaker_blocks_simplified_ict_concepts\\outcome_00725400.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_example_1_18_23_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_example_1_18_23_ict_concepts\\context_00020500.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_example_1_18_23_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_example_1_18_23_ict_concepts\\sweep_00143500.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_example_1_18_23_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_example_1_18_23_ict_concepts\\closure_00102500.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_example_1_18_23_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_example_1_18_23_ict_concepts\\confirmation_00184500.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_example_1_18_23_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_example_1_18_23_ict_concepts\\outcome_00061500.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_dol_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_dol_ict_concepts\\context_00049600.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_dol_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_dol_ict_concepts\\sweep_00347200.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_dol_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_dol_ict_concepts\\closure_00248000.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_dol_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_dol_ict_concepts\\confirmation_00446400.jpg"
+    },
+    {
+      "chunk_id": "youtube_draw_on_liquidity_dol_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\draw_on_liquidity_dol_ict_concepts\\outcome_00148800.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_ict_concepts\\context_00048100.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_ict_concepts\\sweep_00336700.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_ict_concepts\\closure_00240500.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_ict_concepts\\confirmation_00432900.jpg"
+    },
+    {
+      "chunk_id": "youtube_top_down_analysis_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\top_down_analysis_ict_concepts\\outcome_00144300.jpg"
+    },
+    {
+      "chunk_id": "youtube_choosing_dealing_ranges_displacement_ranges_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\choosing_dealing_ranges_displacement_ranges_ict_concepts\\context_00035000.jpg"
+    },
+    {
+      "chunk_id": "youtube_choosing_dealing_ranges_displacement_ranges_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\choosing_dealing_ranges_displacement_ranges_ict_concepts\\sweep_00245000.jpg"
+    },
+    {
+      "chunk_id": "youtube_choosing_dealing_ranges_displacement_ranges_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\choosing_dealing_ranges_displacement_ranges_ict_concepts\\closure_00175000.jpg"
+    },
+    {
+      "chunk_id": "youtube_choosing_dealing_ranges_displacement_ranges_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\choosing_dealing_ranges_displacement_ranges_ict_concepts\\confirmation_00315000.jpg"
+    },
+    {
+      "chunk_id": "youtube_choosing_dealing_ranges_displacement_ranges_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\choosing_dealing_ranges_displacement_ranges_ict_concepts\\outcome_00105000.jpg"
+    },
+    {
+      "chunk_id": "youtube_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\structure_shift_vs_liquidity_grab_ict_concepts\\context_00048000.jpg"
+    },
+    {
+      "chunk_id": "youtube_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\structure_shift_vs_liquidity_grab_ict_concepts\\sweep_00336000.jpg"
+    },
+    {
+      "chunk_id": "youtube_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\structure_shift_vs_liquidity_grab_ict_concepts\\closure_00240000.jpg"
+    },
+    {
+      "chunk_id": "youtube_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\structure_shift_vs_liquidity_grab_ict_concepts\\confirmation_00432000.jpg"
+    },
+    {
+      "chunk_id": "youtube_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\structure_shift_vs_liquidity_grab_ict_concepts\\outcome_00144000.jpg"
+    },
+    {
+      "chunk_id": "youtube_lower_time_frame_entries_using_htf_poi_ict_concepts_visual_v1::context",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_lower_time_frame_entries_using_htf_poi_ict_concepts_visual_v1::sweep",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_lower_time_frame_entries_using_htf_poi_ict_concepts_visual_v1::closure",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_lower_time_frame_entries_using_htf_poi_ict_concepts_visual_v1::confirmation",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_lower_time_frame_entries_using_htf_poi_ict_concepts_visual_v1::outcome",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_higher_time_frame_points_of_interest_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_time_frame_points_of_interest_ict_concepts\\context_00038300.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_time_frame_points_of_interest_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_time_frame_points_of_interest_ict_concepts\\sweep_00268100.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_time_frame_points_of_interest_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_time_frame_points_of_interest_ict_concepts\\closure_00191500.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_time_frame_points_of_interest_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_time_frame_points_of_interest_ict_concepts\\confirmation_00344700.jpg"
+    },
+    {
+      "chunk_id": "youtube_higher_time_frame_points_of_interest_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\higher_time_frame_points_of_interest_ict_concepts\\outcome_00114900.jpg"
+    },
+    {
+      "chunk_id": "youtube_build_an_entry_model_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\build_an_entry_model_ict_concepts\\context_00033700.jpg"
+    },
+    {
+      "chunk_id": "youtube_build_an_entry_model_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\build_an_entry_model_ict_concepts\\sweep_00235900.jpg"
+    },
+    {
+      "chunk_id": "youtube_build_an_entry_model_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\build_an_entry_model_ict_concepts\\closure_00168500.jpg"
+    },
+    {
+      "chunk_id": "youtube_build_an_entry_model_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\build_an_entry_model_ict_concepts\\confirmation_00303300.jpg"
+    },
+    {
+      "chunk_id": "youtube_build_an_entry_model_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\build_an_entry_model_ict_concepts\\outcome_00101100.jpg"
+    },
+    {
+      "chunk_id": "youtube_find_lower_time_frame_entries_using_bias_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\find_lower_time_frame_entries_using_bias_ict_concepts\\context_00043400.jpg"
+    },
+    {
+      "chunk_id": "youtube_find_lower_time_frame_entries_using_bias_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\find_lower_time_frame_entries_using_bias_ict_concepts\\sweep_00303800.jpg"
+    },
+    {
+      "chunk_id": "youtube_find_lower_time_frame_entries_using_bias_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\find_lower_time_frame_entries_using_bias_ict_concepts\\closure_00217000.jpg"
+    },
+    {
+      "chunk_id": "youtube_find_lower_time_frame_entries_using_bias_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\find_lower_time_frame_entries_using_bias_ict_concepts\\confirmation_00390600.jpg"
+    },
+    {
+      "chunk_id": "youtube_find_lower_time_frame_entries_using_bias_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\find_lower_time_frame_entries_using_bias_ict_concepts\\outcome_00130200.jpg"
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_ict_concepts_visual_v1::context",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_ict_concepts_visual_v1::sweep",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_ict_concepts_visual_v1::closure",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_ict_concepts_visual_v1::confirmation",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_intraday_bias_ict_concepts_visual_v1::outcome",
+      "used_asset": false,
+      "used_text_fallback": false,
+      "asset_path": null
+    },
+    {
       "chunk_id": "youtube_ict_trade_example_15_second_entry_visual_v1::context",
       "used_asset": false,
       "used_text_fallback": false,
@@ -403,6 +3134,366 @@
       "used_asset": false,
       "used_text_fallback": false,
       "asset_path": null
+    },
+    {
+      "chunk_id": "youtube_intro_to_the_inducement_model_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_the_inducement_model_ict_concepts\\context_00018600.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_the_inducement_model_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_the_inducement_model_ict_concepts\\sweep_00130200.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_the_inducement_model_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_the_inducement_model_ict_concepts\\closure_00093000.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_the_inducement_model_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_the_inducement_model_ict_concepts\\confirmation_00167400.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_the_inducement_model_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_the_inducement_model_ict_concepts\\outcome_00055800.jpg"
+    },
+    {
+      "chunk_id": "youtube_ote_optimal_trade_entry_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ote_optimal_trade_entry_ict_concepts\\context_00018700.jpg"
+    },
+    {
+      "chunk_id": "youtube_ote_optimal_trade_entry_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ote_optimal_trade_entry_ict_concepts\\sweep_00130900.jpg"
+    },
+    {
+      "chunk_id": "youtube_ote_optimal_trade_entry_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ote_optimal_trade_entry_ict_concepts\\closure_00093500.jpg"
+    },
+    {
+      "chunk_id": "youtube_ote_optimal_trade_entry_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ote_optimal_trade_entry_ict_concepts\\confirmation_00168300.jpg"
+    },
+    {
+      "chunk_id": "youtube_ote_optimal_trade_entry_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ote_optimal_trade_entry_ict_concepts\\outcome_00056100.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\context_00065800.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\sweep_00460600.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\closure_00329000.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\confirmation_00460600.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_ict_entry_checklist_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_ict_entry_checklist_ict_concepts\\outcome_00592200.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\context_00051800.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\sweep_00362600.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\closure_00259000.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\confirmation_00362600.jpg"
+    },
+    {
+      "chunk_id": "youtube_discount_premium_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\outcome_00466200.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_liquidity_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_liquidity_ict_concepts\\context_00028600.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_liquidity_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_liquidity_ict_concepts\\sweep_00200200.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_liquidity_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_liquidity_ict_concepts\\closure_00143000.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_liquidity_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_liquidity_ict_concepts\\confirmation_00257400.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_liquidity_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_liquidity_ict_concepts\\outcome_00085800.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_displacement_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_displacement_ict_concepts\\context_00014700.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_displacement_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_displacement_ict_concepts\\sweep_00102900.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_displacement_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_displacement_ict_concepts\\closure_00073500.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_displacement_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_displacement_ict_concepts\\confirmation_00132300.jpg"
+    },
+    {
+      "chunk_id": "youtube_what_is_displacement_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\what_is_displacement_ict_concepts\\outcome_00044100.jpg"
+    },
+    {
+      "chunk_id": "youtube_price_targets_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\price_targets_ict_concepts\\context_00023500.jpg"
+    },
+    {
+      "chunk_id": "youtube_price_targets_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\price_targets_ict_concepts\\sweep_00164500.jpg"
+    },
+    {
+      "chunk_id": "youtube_price_targets_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\price_targets_ict_concepts\\closure_00117500.jpg"
+    },
+    {
+      "chunk_id": "youtube_price_targets_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\price_targets_ict_concepts\\confirmation_00211500.jpg"
+    },
+    {
+      "chunk_id": "youtube_price_targets_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\price_targets_ict_concepts\\outcome_00070500.jpg"
+    },
+    {
+      "chunk_id": "youtube_smart_money_divergences_smt_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smart_money_divergences_smt_ict_concepts\\context_00026900.jpg"
+    },
+    {
+      "chunk_id": "youtube_smart_money_divergences_smt_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smart_money_divergences_smt_ict_concepts\\sweep_00188300.jpg"
+    },
+    {
+      "chunk_id": "youtube_smart_money_divergences_smt_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smart_money_divergences_smt_ict_concepts\\closure_00134500.jpg"
+    },
+    {
+      "chunk_id": "youtube_smart_money_divergences_smt_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smart_money_divergences_smt_ict_concepts\\confirmation_00242100.jpg"
+    },
+    {
+      "chunk_id": "youtube_smart_money_divergences_smt_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\smart_money_divergences_smt_ict_concepts\\outcome_00080700.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts\\context_00027000.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts\\sweep_00189000.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts\\closure_00135000.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts\\confirmation_00243000.jpg"
+    },
+    {
+      "chunk_id": "youtube_reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts\\outcome_00081000.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts\\context_00024400.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts\\sweep_00170800.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts\\closure_00122000.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts\\confirmation_00219600.jpg"
+    },
+    {
+      "chunk_id": "youtube_intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts\\outcome_00073200.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias\\context_00034800.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias\\sweep_00243600.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias\\closure_00174000.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias\\confirmation_00313200.jpg"
+    },
+    {
+      "chunk_id": "youtube_ict_daily_bias_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_daily_bias\\outcome_00104400.jpg"
+    },
+    {
+      "chunk_id": "youtube_improve_your_trade_entries_within_fair_value_gaps_fvg_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\improve_your_trade_entries_within_fair_value_gaps_fvg\\context_00014400.jpg"
+    },
+    {
+      "chunk_id": "youtube_improve_your_trade_entries_within_fair_value_gaps_fvg_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\improve_your_trade_entries_within_fair_value_gaps_fvg\\sweep_00100800.jpg"
+    },
+    {
+      "chunk_id": "youtube_improve_your_trade_entries_within_fair_value_gaps_fvg_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\improve_your_trade_entries_within_fair_value_gaps_fvg\\closure_00072000.jpg"
+    },
+    {
+      "chunk_id": "youtube_improve_your_trade_entries_within_fair_value_gaps_fvg_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\improve_your_trade_entries_within_fair_value_gaps_fvg\\confirmation_00129600.jpg"
+    },
+    {
+      "chunk_id": "youtube_improve_your_trade_entries_within_fair_value_gaps_fvg_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\improve_your_trade_entries_within_fair_value_gaps_fvg\\outcome_00043200.jpg"
     },
     {
       "chunk_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::context",
@@ -435,6 +3526,36 @@
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\outcome_00743320.jpg"
     },
     {
+      "chunk_id": "youtube_simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries\\context_00027300.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries\\sweep_00191100.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries\\closure_00136500.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries\\confirmation_00245700.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries\\outcome_00081900.jpg"
+    },
+    {
       "chunk_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::context",
       "used_asset": true,
       "used_text_fallback": false,
@@ -463,6 +3584,66 @@
       "used_asset": true,
       "used_text_fallback": false,
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\outcome_00045275.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_triple_s_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_triple_s\\context_00031700.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_triple_s_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_triple_s\\sweep_00221900.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_triple_s_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_triple_s\\closure_00158500.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_triple_s_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_triple_s\\confirmation_00285300.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_triple_s_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_triple_s\\outcome_00095100.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_intro_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_intro\\context_00015500.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_intro_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_intro\\sweep_00108500.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_intro_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_intro\\closure_00077500.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_intro_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_intro\\confirmation_00139500.jpg"
+    },
+    {
+      "chunk_id": "youtube_simple_day_trading_strategy_intro_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_intro\\outcome_00046500.jpg"
     }
   ]
 }

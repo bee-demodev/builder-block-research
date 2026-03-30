@@ -1,0 +1,617 @@
+{
+  "mode": "workflow_loop",
+  "cycle_count": 1,
+  "stopped_reason": "phase2_growth_stalled",
+  "cycles": [
+    {
+      "cycle": 1,
+      "phase2_report": {
+        "mode": "supervision_answers",
+        "selection": {
+          "method": "hdbscan",
+          "cluster_count": 4,
+          "selected_count": 44
+        },
+        "dataset_stats": {
+          "dataset_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo",
+          "train_count": 36,
+          "val_count": 9,
+          "benchmark_count": 6,
+          "class_counts": {
+            "fractal_swing_high": 1,
+            "order_block_bullish": 18,
+            "order_block_bearish": 12,
+            "inversion_fvg": 3,
+            "liquidity_sweep_high": 3,
+            "candle_3_closure_zone": 1,
+            "protected_swing": 9
+          },
+          "examples": [
+            {
+              "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_fractal_model_fundamentals_visual_v1____outcome.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_fractal_model_fundamentals_visual_v1____outcome.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0005",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0005.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0005.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_equilibrium_for_expansions_visual_v1____closure.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_equilibrium_for_expansions_visual_v1____closure.txt",
+              "box_count": 0
+            },
+            {
+              "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0010",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0010.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0010.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0012",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0012.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0012.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0007",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0007.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0007.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0009",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0009.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0009.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0013",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0013.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0013.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0014",
+              "split": "train",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0014.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0014.txt",
+              "box_count": 1
+            }
+          ],
+          "benchmark_examples": [
+            {
+              "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.txt",
+              "box_count": 3
+            },
+            {
+              "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0004",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_3_closure_ttrades_fractal_model____dense____candle_3_closure_ttrades_fractal_model__0004.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_3_closure_ttrades_fractal_model____dense____candle_3_closure_ttrades_fractal_model__0004.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0003",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0003.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0003.txt",
+              "box_count": 2
+            },
+            {
+              "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0004",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0004.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0004.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.txt",
+              "box_count": 1
+            },
+            {
+              "example_id": "youtube_cisd_validates_swing_points_visual_v1::sweep",
+              "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cisd_validates_swing_points_visual_v1____sweep.jpg",
+              "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cisd_validates_swing_points_visual_v1____sweep.txt",
+              "box_count": 1
+            }
+          ],
+          "benchmark_manifest_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\benchmark_manifest.json"
+        },
+        "supervision_answers_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_supervision_answers.json",
+        "dense_supervision_answers_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_dense_supervision_answers.json",
+        "dense_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_dense_heuristic_promotions.json",
+        "used_answer_count": 51,
+        "heuristic_auto_label_count": 12
+      },
+      "train_count": 36,
+      "val_count": 9,
+      "heuristic_auto_label_count": 12,
+      "next_action": "label_more_dense_examples",
+      "grew_dataset": false
+    }
+  ],
+  "phase3_report": null,
+  "final_status": {
+    "generated_at": "2026-03-25T21:02:13.791463+00:00",
+    "completed_phase": "phase2",
+    "phase_report": {
+      "mode": "supervision_answers",
+      "selection": {
+        "method": "hdbscan",
+        "cluster_count": 4,
+        "selected_count": 44
+      },
+      "dataset_stats": {
+        "dataset_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo",
+        "train_count": 36,
+        "val_count": 9,
+        "benchmark_count": 6,
+        "class_counts": {
+          "fractal_swing_high": 1,
+          "order_block_bullish": 18,
+          "order_block_bearish": 12,
+          "inversion_fvg": 3,
+          "liquidity_sweep_high": 3,
+          "candle_3_closure_zone": 1,
+          "protected_swing": 9
+        },
+        "examples": [
+          {
+            "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_fractal_model_fundamentals_visual_v1____outcome.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_fractal_model_fundamentals_visual_v1____outcome.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0005",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0005.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0005.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_equilibrium_for_expansions_visual_v1____closure.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_equilibrium_for_expansions_visual_v1____closure.txt",
+            "box_count": 0
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0010",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0010.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0010.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0012",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0012.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0012.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0007",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0007.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0007.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0009",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0009.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0009.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0013",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0013.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0013.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0014",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0014.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0014.txt",
+            "box_count": 1
+          }
+        ],
+        "benchmark_examples": [
+          {
+            "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.txt",
+            "box_count": 3
+          },
+          {
+            "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0004",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_3_closure_ttrades_fractal_model____dense____candle_3_closure_ttrades_fractal_model__0004.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_3_closure_ttrades_fractal_model____dense____candle_3_closure_ttrades_fractal_model__0004.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0003",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0003.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0003.txt",
+            "box_count": 2
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0004",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0004.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0004.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "youtube_cisd_validates_swing_points_visual_v1::sweep",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cisd_validates_swing_points_visual_v1____sweep.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cisd_validates_swing_points_visual_v1____sweep.txt",
+            "box_count": 1
+          }
+        ],
+        "benchmark_manifest_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\benchmark_manifest.json"
+      },
+      "supervision_answers_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_supervision_answers.json",
+      "dense_supervision_answers_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_dense_supervision_answers.json",
+      "dense_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_dense_heuristic_promotions.json",
+      "used_answer_count": 51,
+      "heuristic_auto_label_count": 12
+    },
+    "phase1": {
+      "best_epoch": 2,
+      "best_val_F1_macro": 0.190476,
+      "train_example_count": 23,
+      "val_example_count": 6,
+      "checkpoint_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\mlp_ttrades_best.pth",
+      "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_mlp.tsv"
+    },
+    "phase2": {
+      "mode": "supervision_answers",
+      "selection": {
+        "method": "hdbscan",
+        "cluster_count": 4,
+        "selected_count": 44
+      },
+      "dataset_stats": {
+        "dataset_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo",
+        "train_count": 36,
+        "val_count": 9,
+        "benchmark_count": 6,
+        "class_counts": {
+          "fractal_swing_high": 1,
+          "order_block_bullish": 18,
+          "order_block_bearish": 12,
+          "inversion_fvg": 3,
+          "liquidity_sweep_high": 3,
+          "candle_3_closure_zone": 1,
+          "protected_swing": 9
+        },
+        "examples": [
+          {
+            "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_fractal_model_fundamentals_visual_v1____outcome.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_fractal_model_fundamentals_visual_v1____outcome.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0005",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0005.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0005.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_equilibrium_for_expansions_visual_v1____closure.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_equilibrium_for_expansions_visual_v1____closure.txt",
+            "box_count": 0
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0010",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0010.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0010.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0012",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0012.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0012.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0007",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0007.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0007.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0009",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0009.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0009.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0013",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0013.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0013.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0014",
+            "split": "train",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0014.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0014.txt",
+            "box_count": 1
+          }
+        ],
+        "benchmark_examples": [
+          {
+            "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.txt",
+            "box_count": 3
+          },
+          {
+            "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0004",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_3_closure_ttrades_fractal_model____dense____candle_3_closure_ttrades_fractal_model__0004.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_3_closure_ttrades_fractal_model____dense____candle_3_closure_ttrades_fractal_model__0004.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0003",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0003.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0003.txt",
+            "box_count": 2
+          },
+          {
+            "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0004",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0004.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0004.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.txt",
+            "box_count": 1
+          },
+          {
+            "example_id": "youtube_cisd_validates_swing_points_visual_v1::sweep",
+            "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cisd_validates_swing_points_visual_v1____sweep.jpg",
+            "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cisd_validates_swing_points_visual_v1____sweep.txt",
+            "box_count": 1
+          }
+        ],
+        "benchmark_manifest_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\benchmark_manifest.json"
+      },
+      "supervision_answers_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_supervision_answers.json",
+      "dense_supervision_answers_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_dense_supervision_answers.json",
+      "dense_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_dense_heuristic_promotions.json",
+      "used_answer_count": 51,
+      "heuristic_auto_label_count": 12
+    },
+    "phase2_dataset": {
+      "dataset_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo",
+      "train_count": 36,
+      "val_count": 9,
+      "benchmark_count": 6,
+      "class_counts": {
+        "fractal_swing_high": 1,
+        "order_block_bullish": 18,
+        "order_block_bearish": 12,
+        "inversion_fvg": 3,
+        "liquidity_sweep_high": 3,
+        "candle_3_closure_zone": 1,
+        "protected_swing": 9
+      },
+      "examples": [
+        {
+          "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_fractal_model_fundamentals_visual_v1____outcome.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_fractal_model_fundamentals_visual_v1____outcome.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0005",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0005.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0005.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_equilibrium_for_expansions_visual_v1____closure.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_equilibrium_for_expansions_visual_v1____closure.txt",
+          "box_count": 0
+        },
+        {
+          "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0010",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0010.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0010.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0012",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0012.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0012.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0014.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0007",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0007.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0007.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0009",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0009.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0009.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0013",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0013.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0013.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0014",
+          "split": "train",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0014.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0014.txt",
+          "box_count": 1
+        }
+      ],
+      "benchmark_examples": [
+        {
+          "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0005.txt",
+          "box_count": 3
+        },
+        {
+          "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0004",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\candle_3_closure_ttrades_fractal_model____dense____candle_3_closure_ttrades_fractal_model__0004.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\candle_3_closure_ttrades_fractal_model____dense____candle_3_closure_ttrades_fractal_model__0004.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0003",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0003.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\cisd_validates_swing_points____dense____cisd_validates_swing_points__0003.txt",
+          "box_count": 2
+        },
+        {
+          "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0004",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0004.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\easy_daily_bias_mechanical_framework____dense____easy_daily_bias_mechanical_framework__0004.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0011.txt",
+          "box_count": 1
+        },
+        {
+          "example_id": "youtube_cisd_validates_swing_points_visual_v1::sweep",
+          "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\images\\youtube_cisd_validates_swing_points_visual_v1____sweep.jpg",
+          "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo_benchmark\\labels\\youtube_cisd_validates_swing_points_visual_v1____sweep.txt",
+          "box_count": 1
+        }
+      ],
+      "benchmark_manifest_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\benchmark_manifest.json"
+    },
+    "phase3": {
+      "save_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ultralytics_runs\\ttrades_yolo",
+      "base_model_requested": "yolo26n.pt",
+      "base_model_resolved": "yolo26n.pt",
+      "preflight_warnings": [],
+      "best_weights_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\yolo26_ttrades_markup_best.pt",
+      "best_onnx_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\yolo26_ttrades_markup_best.onnx",
+      "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_yolo.tsv",
+      "class_names": [
+        "fractal_swing_high",
+        "fractal_swing_low",
+        "order_block_bullish",
+        "order_block_bearish",
+        "inversion_fvg",
+        "liquidity_sweep_high",
+        "liquidity_sweep_low",
+        "candle_3_closure_zone",
+        "protected_swing"
+      ],
+      "best_val_mAP50_95": 0.17863
+    },
+    "corpus": {
+      "dense_embedding_count": 1036,
+      "audio_clip_count": 79,
+      "audio_semantic_entry_count": 74
+    },
+    "metrics": {
+      "phase1_best_val_F1_macro": 0.190476,
+      "phase3_best_val_mAP50_95": 0.17863,
+      "yolo_train_count": 36,
+      "yolo_val_count": 9,
+      "focused_reviewed_count": 11,
+      "dense_reviewed_count": 24,
+      "heuristic_auto_label_count": 12,
+      "reviewed_answer_count": 47,
+      "dense_remaining_count": 444,
+      "reviewed_since_last_phase3": 12,
+      "yolo_train_since_last_phase3": 0,
+      "recommended_dense_label_batch_size": 10
+    },
+    "assessment": {
+      "next_action": "label_more_dense_examples",
+      "rationale": "YOLO dataset is still too small to trust detector quality; keep labeling dense TTrades examples until the train and validation splits are materially larger.",
+      "minimum_train_images_for_confidence": 50,
+      "minimum_val_images_for_confidence": 15
+    }
+  }
+}

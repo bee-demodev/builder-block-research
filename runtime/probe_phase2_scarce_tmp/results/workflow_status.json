@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-03-27T20:39:43.445596+00:00",
+  "completed_phase": "phase2",
+  "phase_report": {
+    "mode": "supervision_answers",
+    "selection": {
+      "method": "kmeans",
+      "cluster_count": 1,
+      "selected_count": 0
+    },
+    "dataset_stats": {
+      "train_count": 1,
+      "val_count": 0
+    },
+    "supervision_answers_path": null,
+    "dense_supervision_answers_path": null,
+    "dense_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_dense_heuristic_promotions.json",
+    "teacher_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_teacher_heuristic_promotions.json",
+    "weak_visual_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_weak_visual_promotions.json",
+    "synthetic_sidecar_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_synthetic_sidecar.json",
+    "priority_review_queue_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_priority_review_queue.json",
+    "used_answer_count": 1,
+    "reviewed_window_count": 1,
+    "positive_reviewed_count": 1,
+    "hard_negative_reviewed_count": 0,
+    "heuristic_auto_label_count": 1,
+    "setup_quality_auto_label_count": 0,
+    "accept_packet_auto_label_count": 0,
+    "scarce_accept_packet_auto_label_count": 0,
+    "teacher_auto_label_count": 0,
+    "weak_visual_auto_label_count": 0,
+    "synthetic_sidecar_count": 0,
+    "priority_review_count": 0
+  },
+  "phase1": {},
+  "phase2": {
+    "mode": "supervision_answers",
+    "selection": {
+      "method": "kmeans",
+      "cluster_count": 1,
+      "selected_count": 0
+    },
+    "dataset_stats": {
+      "train_count": 1,
+      "val_count": 0
+    },
+    "supervision_answers_path": null,
+    "dense_supervision_answers_path": null,
+    "dense_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_dense_heuristic_promotions.json",
+    "teacher_heuristic_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_teacher_heuristic_promotions.json",
+    "weak_visual_promotions_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_weak_visual_promotions.json",
+    "synthetic_sidecar_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_synthetic_sidecar.json",
+    "priority_review_queue_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\runtime\\probe_phase2_scarce_tmp\\results\\phase2_priority_review_queue.json",
+    "used_answer_count": 1,
+    "reviewed_window_count": 1,
+    "positive_reviewed_count": 1,
+    "hard_negative_reviewed_count": 0,
+    "heuristic_auto_label_count": 1,
+    "setup_quality_auto_label_count": 0,
+    "accept_packet_auto_label_count": 0,
+    "scarce_accept_packet_auto_label_count": 0,
+    "teacher_auto_label_count": 0,
+    "weak_visual_auto_label_count": 0,
+    "synthetic_sidecar_count": 0,
+    "priority_review_count": 0
+  },
+  "phase2_dataset": {},
+  "phase3": {},
+  "corpus": {
+    "dense_embedding_count": 0,
+    "audio_clip_count": 0,
+    "audio_semantic_entry_count": 0
+  },
+  "metrics": {
+    "phase1_best_val_F1_macro": 0.0,
+    "phase3_best_val_mAP50_95": 0.0,
+    "yolo_train_count": 0,
+    "yolo_val_count": 0,
+    "focused_reviewed_count": 0,
+    "dense_reviewed_count": 0,
+    "heuristic_auto_label_count": 1,
+    "teacher_auto_label_count": 0,
+    "weak_visual_auto_label_count": 0,
+    "reviewed_answer_count": 1,
+    "positive_reviewed_count": 1,
+    "negative_reviewed_count": 0,
+    "dense_remaining_count": 1,
+    "reviewed_since_last_phase3": 1,
+    "positive_reviewed_since_last_phase3": 1,
+    "yolo_train_since_last_phase3": 0,
+    "recommended_dense_label_batch_size": 40,
+    "recommended_positive_review_batch_size": 25,
+    "scarce_classes": [
+      "liquidity_sweep_high",
+      "liquidity_sweep_low",
+      "protected_swing",
+      "bullish_reaction_zone",
+      "bearish_reaction_zone"
+    ],
+    "benchmark_mAP50_95": 0.0,
+    "hard_negative_false_positive_rate": 1.0
+  },
+  "assessment": {
+    "next_action": "label_more_dense_examples",
+    "rationale": "YOLO dataset is still too small to trust detector quality; keep labeling dense TTrades examples until the train and validation splits are materially larger.",
+    "minimum_train_images_for_confidence": 150,
+    "minimum_val_images_for_confidence": 40,
+    "live_readiness_benchmark_map_threshold": 0.25,
+    "live_readiness_hard_negative_fp_threshold": 0.1
+  }
+}

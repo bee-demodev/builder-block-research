@@ -1,0 +1,236 @@
+{
+  "mode": "supervision_only",
+  "items": [
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\sweep_00790519.jpg",
+      "time_index": 6,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\confirmation_00303480.jpg",
+      "time_index": 13,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\sweep_00101800.jpg",
+      "time_index": 16,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\closure_00180040.jpg",
+      "time_index": 22,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\confirmation_00235759.jpg",
+      "time_index": 28,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_scalping_model_simple_day_trading_strategy_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_scalping_model_simple_day_trading_strategy\\outcome_00806640.jpg",
+      "time_index": 59,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_higher_timeframe_analysis_for_trading_aligning_expansion_candles_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\higher_timeframe_analysis_for_trading_aligning_expansion_candles\\sweep_00306040.jpg",
+      "time_index": 71,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_candle_3_closure_ttrades_fractal_model_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\candle_3_closure_ttrades_fractal_model\\outcome_00506440.jpg",
+      "time_index": 94,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\closure_00549920.jpg",
+      "time_index": 102,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_a_complete_trading_framework_universal_models_smt_swing_points_gxt_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\a_complete_trading_framework_universal_models_smt_swing_points_gxt\\closure_00280799.jpg",
+      "time_index": 107,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_fractal_model_trading_candle_2_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_2\\closure_01065700.jpg",
+      "time_index": 122,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_fractal_model_trading_candle_2_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_2\\outcome_00783040.jpg",
+      "time_index": 124,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_how_to_trade_consolidation_phases_of_price_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\how_to_trade_consolidation_phases_of_price\\sweep_00645040.jpg",
+      "time_index": 151,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\gxtradez_phases_of_price_profiles_for_expansion\\confirmation_02448640.jpg",
+      "time_index": 163,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_fractal_model_trading_candle_4_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_4\\closure_00417759.jpg",
+      "time_index": 167,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_fractal_model_trading_candle_4_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_trading_candle_4\\outcome_00637160.jpg",
+      "time_index": 169,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_fractal_model_inversion_intraday_strategy_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_fractal_model_inversion_intraday_strategy\\closure_00185039.jpg",
+      "time_index": 172,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_trade_continuations_using_breaker_blocks_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\trade_continuations_using_breaker_blocks\\confirmation_00115580.jpg",
+      "time_index": 183,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\next_day_model_fractal_way_to_get_bias_for_trading\\confirmation_00657979.jpg",
+      "time_index": 228,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_afyz_trading_the_daily_ohlc_protraction_profiles_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\afyz_trading_the_daily_ohlc_protraction_profiles\\sweep_00535119.jpg",
+      "time_index": 236,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\nickdoesfutures_unicorn_model_experiences_with_ict\\context_01416120.jpg",
+      "time_index": 255,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_order_blocks_simplified_ict_concepts_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\order_blocks_simplified_ict_concepts\\confirmation_00807300.jpg",
+      "time_index": 318,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_my_favorite_reversal_pattern_orderblocks_ict_concepts_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\my_favorite_reversal_pattern_orderblocks_ict_concepts\\confirmation_00624600.jpg",
+      "time_index": 373,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\liquidity_buyside_sellside_ict_concepts\\confirmation_00535500.jpg",
+      "time_index": 418,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_understanding_fair_value_gaps_fvg_ict_concepts_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\understanding_fair_value_gaps_fvg_ict_concepts\\sweep_00417200.jpg",
+      "time_index": 426,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_smt_divergence_ict_concepts_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\smt_divergence_ict_concepts\\closure_00513500.jpg",
+      "time_index": 452,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_build_an_entry_model_ict_concepts_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\build_an_entry_model_ict_concepts\\closure_00168500.jpg",
+      "time_index": 502,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_find_lower_time_frame_entries_using_bias_ict_concepts_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\find_lower_time_frame_entries_using_bias_ict_concepts\\confirmation_00390600.jpg",
+      "time_index": 508,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_discount_premium_ict_concepts_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\sweep_00362600.jpg",
+      "time_index": 536,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_discount_premium_ict_concepts_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\discount_premium_ict_concepts\\closure_00259000.jpg",
+      "time_index": 537,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_price_targets_ict_concepts_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\price_targets_ict_concepts\\sweep_00164500.jpg",
+      "time_index": 551,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_smart_money_divergences_smt_ict_concepts_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\smart_money_divergences_smt_ict_concepts\\sweep_00188300.jpg",
+      "time_index": 556,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_simple_day_trading_strategy_intro_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_intro\\confirmation_00139500.jpg",
+      "time_index": 603,
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    }
+  ]
+}

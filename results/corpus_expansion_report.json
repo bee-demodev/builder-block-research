@@ -1,0 +1,24 @@
+{
+  "inventory_entry_count": 181,
+  "active_video_count": 121,
+  "transcript_video_count": 121,
+  "download_status_counts": {
+    "downloaded": 82,
+    "skipped_exists": 39
+  },
+  "window_count": 605,
+  "visual_manifest": {
+    "generated_at": "2026-03-25T12:10:14.281948+00:00",
+    "model": "models/gemini-embedding-2-preview",
+    "output_dimensionality": 768,
+    "normalization": "l2",
+    "item_count": 605,
+    "index_path": "knowledge\\ttfm_video_corpus\\visual_embedding_index.json",
+    "source_path": "knowledge\\ttfm_video_corpus\\visual_windows.jsonl",
+    "source_fingerprint": "37bc94b00edbbf2322b18ff6d90dd3174582c015",
+    "ok": true,
+    "windows_path": "knowledge\\ttfm_video_corpus\\visual_windows.jsonl",
+    "report_path": "knowledge\\ttfm_video_corpus\\visual_embedding_report.json",
+    "text_fallback_count": 0
+  }
+}

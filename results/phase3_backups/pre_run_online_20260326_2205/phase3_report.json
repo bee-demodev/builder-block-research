@@ -1,0 +1,48 @@
+{
+  "save_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\ultralytics_runs\\ttrades_yolo",
+  "base_model_requested": "yolo26n.pt",
+  "base_model_resolved": "yolo26n.pt",
+  "preflight_warnings": [],
+  "best_weights_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\yolo26_ttrades_markup_best.pt",
+  "best_onnx_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\yolo26_ttrades_markup_best.onnx",
+  "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_yolo.tsv",
+  "class_names": [
+    "fractal_swing_high",
+    "fractal_swing_low",
+    "order_block_bullish",
+    "order_block_bearish",
+    "inversion_fvg",
+    "liquidity_sweep_high",
+    "liquidity_sweep_low",
+    "candle_3_closure_zone",
+    "protected_swing"
+  ],
+  "best_val_mAP50_95": 0.16169,
+  "train_count_at_run": 48,
+  "val_count_at_run": 12,
+  "benchmark_count": 3,
+  "benchmark_report": {
+    "mAP50_95": 0.0,
+    "mAP50": 0.0,
+    "classwise_ap50_95": {
+      "fractal_swing_high": 0.0,
+      "fractal_swing_low": 0.0,
+      "order_block_bullish": 0.0,
+      "order_block_bearish": 0.0,
+      "inversion_fvg": 0.0,
+      "liquidity_sweep_high": 0.0,
+      "liquidity_sweep_low": 0.0,
+      "candle_3_closure_zone": 0.0,
+      "protected_swing": 0.0
+    },
+    "overlay_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\benchmark_overlays\\latest"
+  },
+  "source_composition": {
+    "focused_reviewed_count": 11,
+    "dense_reviewed_count": 24,
+    "heuristic_auto_label_count": 5,
+    "teacher_auto_label_count": 0,
+    "weak_visual_auto_label_count": 8,
+    "dense_remaining_count": 444
+  }
+}

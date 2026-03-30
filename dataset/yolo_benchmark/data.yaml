@@ -1,0 +1,9 @@
+path: C:\Users\satvi\Repos\builder-block-research\dataset\yolo_benchmark
+train: images
+val: images
+names:
+  0: liquidity_sweep_high
+  1: liquidity_sweep_low
+  2: protected_swing
+  3: bullish_reaction_zone
+  4: bearish_reaction_zone

@@ -1,0 +1,191 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            4hx45woysqoeeuz2c01sgk4dvvz49m9x:
+                args:
+                    - --phase
+                    - "3"
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 12
+                cpu_count_logical: 24
+                cudaVersion: "13.2"
+                disk:
+                    /:
+                        total: "1999473512448"
+                        used: "990701084672"
+                email: satvik.ramineni@gmail.com
+                executable: C:\Users\satvi\Repos\builder-block-research\.venv\Scripts\python.exe
+                git:
+                    commit: e7d3fcb7f54d6f20cb0bc17c65b3271533407e10
+                    remote: https://github.com/bee-demodev/builder-block-research
+                gpu: NVIDIA GeForce RTX 3080
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 8704
+                      memoryTotal: "10737418240"
+                      name: NVIDIA GeForce RTX 3080
+                      uuid: GPU-910ff269-950d-2bf6-ab7c-a24edcec9322
+                host: DESKTOP-F208RK6
+                memory:
+                    total: "67768819712"
+                os: Windows-10-10.0.22631-SP0
+                program: C:\Users\satvi\Repos\builder-block-research\main.py
+                python: CPython 3.11.13
+                root: C:\Users\satvi\Repos\builder-block-research
+                startedAt: "2026-03-25T18:34:28.752179Z"
+                writerId: 4hx45woysqoeeuz2c01sgk4dvvz49m9x
+        m: []
+        python_version: 3.11.13
+        t:
+            "2":
+                - 1
+                - 41
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+            "4": 3.11.13
+            "5": 0.25.1
+            "8":
+                - 3
+            "10":
+                - 20
+            "12": 0.25.1
+            "13": windows-amd64
+active_embedding_dim:
+    value: 768
+mixed_precision:
+    value: true
+paths:
+    value:
+        additional_embedding_dirs: []
+        additional_image_dirs: []
+        anchors_path: C:\Users\satvi\Repos\builder-block-research\data\ttrades_anchor_examples.json
+        corpus_expansion_report_path: C:\Users\satvi\Repos\builder-block-research\results\corpus_expansion_report.json
+        data_dir: C:\Users\satvi\Repos\builder-block-research\data
+        dataset_dir: C:\Users\satvi\Repos\builder-block-research\dataset
+        dense_frame_dir: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\dense_frames
+        dense_visual_embedding_index_path: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\dense_visual_embedding_index.json
+        dense_visual_embedding_manifest_path: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\dense_visual_embedding_manifest.json
+        dense_visual_windows_path: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\dense_visual_windows.jsonl
+        dense_visual_windows_report_path: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\dense_visual_windows_report.json
+        ffmpeg_bin: ffmpeg
+        frame_dir: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\frames
+        knowledge_dir: C:\Users\satvi\Repos\builder-block-research\knowledge
+        models_dir: C:\Users\satvi\Repos\builder-block-research\models
+        phase1_pseudo_labels_path: C:\Users\satvi\Repos\builder-block-research\results\phase1_pseudo_labels.jsonl
+        phase1_review_queue_path: C:\Users\satvi\Repos\builder-block-research\results\phase1_review_queue.json
+        phase2_dataset_stats_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_dataset_stats.json
+        phase2_dense_heuristic_promotions_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_dense_heuristic_promotions.json
+        phase2_dense_supervision_answers_example_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_dense_supervision_answers.example.json
+        phase2_dense_supervision_answers_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_dense_supervision_answers.json
+        phase2_dense_supervision_packet_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_dense_supervision_packet.json
+        phase2_report_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_report.json
+        phase2_representatives_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_representatives.json
+        phase2_review_queue_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_review_queue.json
+        phase2_supervision_answers_example_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_supervision_answers.example.json
+        phase2_supervision_answers_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_supervision_answers.json
+        phase2_supervision_packet_path: C:\Users\satvi\Repos\builder-block-research\results\phase2_supervision_packet.json
+        predict_output_dir: C:\Users\satvi\Repos\builder-block-research\results\predictions
+        results_dir: C:\Users\satvi\Repos\builder-block-research\results
+        root_dir: C:\Users\satvi\Repos\builder-block-research
+        screenshot_manifest_path: C:\Users\satvi\Repos\builder-block-research\data\ttfm_screenshot_manifest.json
+        screenshot_root_dir: C:\Users\satvi\Repos\builder-block-research\artifacts\ttfm\screenshots
+        scripts_dir: C:\Users\satvi\Repos\builder-block-research\scripts
+        suggested_anchors_path: C:\Users\satvi\Repos\builder-block-research\results\suggested_anchor_examples.json
+        video_dir: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\videos
+        video_manifest_path: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\video_manifest.json
+        visual_embedding_index_path: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\visual_embedding_index.json
+        visual_embedding_manifest_path: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\visual_embedding_manifest.json
+        visual_windows_path: C:\Users\satvi\Repos\builder-block-research\knowledge\ttfm_video_corpus\visual_windows.jsonl
+        workflow_history_path: C:\Users\satvi\Repos\builder-block-research\results\workflow_history.jsonl
+        workflow_status_path: C:\Users\satvi\Repos\builder-block-research\results\workflow_status.json
+        yolo_data_yaml_path: C:\Users\satvi\Repos\builder-block-research\dataset\yolo\data.yaml
+        yolo_dir: C:\Users\satvi\Repos\builder-block-research\dataset\yolo
+        yolo_images_train_dir: C:\Users\satvi\Repos\builder-block-research\dataset\yolo\images\train
+        yolo_images_val_dir: C:\Users\satvi\Repos\builder-block-research\dataset\yolo\images\val
+        yolo_labels_train_dir: C:\Users\satvi\Repos\builder-block-research\dataset\yolo\labels\train
+        yolo_labels_val_dir: C:\Users\satvi\Repos\builder-block-research\dataset\yolo\labels\val
+        yt_channel_url: https://www.youtube.com/@TTrades_edu/videos
+        yt_dlp_bin: yt-dlp
+phase1:
+    value:
+        abstain_threshold: 0.62
+        anchor_examples_per_class: 3
+        batch_size: 64
+        confidence_floor: 0.68
+        dropout: 0.15
+        hidden_dim: 256
+        knn_k: 5
+        knn_weight: 0.45
+        learning_rate: 0.0003
+        max_epochs: 120
+        min_margin: 0.08
+        patience: 15
+        prototype_weight: 0.55
+        serving_min_confidence: 0.55
+        serving_min_margin: 0.1
+        uncertain_label: uncertain
+        validation_ratio: 0.2
+        weight_decay: 0.0001
+phase2:
+    value:
+        auto_expand_if_needed: false
+        cluster_method: hdbscan
+        dense_chunk_pass_enabled: true
+        dense_max_chunks_per_video: 18
+        dense_supervision_packet_limit: 600
+        dense_supervision_per_video_cap: 8
+        heuristic_auto_label_enabled: true
+        heuristic_auto_label_max_bbox_area: 0.08
+        heuristic_auto_label_max_new_per_run: 12
+        heuristic_auto_label_min_bbox_area: 0.0025
+        max_clusters: 120
+        max_expansion_rounds: 1
+        max_retries: 3
+        min_clusters: 80
+        random_samples_per_cluster: 10
+        representative_budget_max: 1500
+        representative_budget_min: 800
+        request_timeout_seconds: 180
+        review_confidence_floor: 0.75
+        sample_seed: 42
+        suspicious_box_limit: 30
+        suspicious_class_limit: 10
+        validation_ratio: 0.2
+        vision_model: gpt-5.4-pro
+phase3:
+    value:
+        amp: true
+        batch: -1
+        device: auto
+        epochs: 150
+        example_log_interval: 10
+        export_onnx: true
+        fallback_model_names:
+            - yolo11n.pt
+            - yolov8n.pt
+        imgsz: 1024
+        model_name: yolo26n.pt
+        patience: 40
+project_name:
+    value: ttrades_autoresearch
+root_dir:
+    value: C:\Users\satvi\Repos\builder-block-research
+seed:
+    value: 42
+use_torch_compile:
+    value: true
+wandb:
+    value:
+        entity: null
+        mode: online
+        project: ttrades_autoresearch
+        run_name_prefix: ttrades_autoresearch
+        tags:
+            - ttrades
+            - autoresearch

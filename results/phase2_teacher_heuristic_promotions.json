@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+      "example_id": "ttrades_retracement_missing_confirmation_filter_baseline_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.3451,
+            0.1863,
+            0.599,
+            0.3264
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_continuation_top_down_alignment_baseline_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5501,
+            0.375,
+            0.0482,
+            0.2778
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_retracement_missing_confirmation_filter_baseline_v1::outcome",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.3451,
+            0.1875,
+            0.599,
+            0.3264
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_continuation_top_down_alignment_baseline_v1::outcome",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5505,
+            0.3744,
+            0.0475,
+            0.2789
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_continuation_breaker_block_retest_baseline_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4134,
+            0.3947,
+            0.6289,
+            0.2338
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_continuation_order_block_retest_baseline_v1::outcome",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4141,
+            0.3947,
+            0.6289,
+            0.2315
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_continuation_breaker_block_retest_baseline_v1::outcome",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.4141,
+            0.3947,
+            0.6289,
+            0.2315
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "note": ""
+    }
+  ]
+}

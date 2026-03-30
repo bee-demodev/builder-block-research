@@ -1,0 +1,392 @@
+{
+  "mode": "supervision_only",
+  "instructions": "Codex supervision packet for Phase 2.\nReview each queued chart manually or with an in-session image workflow.\nFor every chart:\n- decide whether the image is labelable\n- identify visible structures from the approved class list\n- produce strict JSON detections using the Phase 2 schema\n- note ambiguous charts that should remain in review instead of entering YOLO training\n",
+  "response_schema": {
+    "items": [
+      {
+        "example_id": "string",
+        "detections": [
+          {
+            "class_id": "int",
+            "bbox": [
+              0.5,
+              0.5,
+              0.25,
+              0.15
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "class_names": {
+    "0": "fractal_swing_high",
+    "1": "fractal_swing_low",
+    "2": "order_block_bullish",
+    "3": "order_block_bearish",
+    "4": "inversion_fvg",
+    "5": "liquidity_sweep_high",
+    "6": "liquidity_sweep_low",
+    "7": "candle_3_closure_zone",
+    "8": "protected_swing"
+  },
+  "item_count": 11,
+  "items": [
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\outcome_00394480.jpg",
+      "time_index": 4,
+      "cluster_id": -1,
+      "title": "TTrades Playbook | Fractal Model Fundamentals (TTFM)",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "outcome",
+      "video_slug": "fractal_model_fundamentals",
+      "video_id": "TNybDCtwBnc",
+      "topics": [
+        "fractal_model",
+        "candle_2",
+        "candle_3",
+        "cisd",
+        "daily_bias",
+        "poi"
+      ],
+      "candidate_labels": [
+        "invalidation"
+      ],
+      "cue_terms": [
+        "expansion",
+        "stop"
+      ],
+      "source_url": "https://youtu.be/TNybDCtwBnc",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\outcome_00394480.jpg",
+      "transcript_excerpt": "previous high and we are also closing inside that previous candle. So now I can drop down to the 5minut time frame. Now down here on the 5minut time frame I want to see do I have a change in the state of delivery and I do. So now it is valid to look for shorts in this following candle anticipating it to expand lower. Now it's most ideal to have it open, make a high, get inside and trade it lower. ",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\closure_00638000.jpg",
+      "time_index": 7,
+      "cluster_id": -1,
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "closure",
+      "video_slug": "equilibrium_for_expansions",
+      "video_id": "IPZjNI1B5a0",
+      "topics": [
+        "equilibrium",
+        "continuation",
+        "expansion",
+        "range_half",
+        "cisd"
+      ],
+      "candidate_labels": [
+        "wick_logic"
+      ],
+      "cue_terms": [
+        "close through",
+        "closure",
+        "wick"
+      ],
+      "source_url": "https://youtu.be/IPZjNI1B5a0",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\closure_00638000.jpg",
+      "transcript_excerpt": "concerning thing is we have already taken out this previous High here which can set up a deeper retracement let's see what happens intraday here we are currently respecting this opposing candle do we get the confirmation of the close through the series of down Clos candles that made this low Let's see we do not so without that confirmation there is no bullish setup there and you can see it fails p",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\confirmation_00165120.jpg",
+      "time_index": 18,
+      "cluster_id": -1,
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "confirmation",
+      "video_slug": "candle_2_closure_foundation",
+      "video_id": "tyoxl1l-6iI",
+      "topics": [
+        "candle_2",
+        "reversal_closure",
+        "candle_3",
+        "poi",
+        "equilibrium"
+      ],
+      "candidate_labels": [
+        "candle_2_closure",
+        "candle_3_closure",
+        "equilibrium",
+        "fair_value_gap"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "eq",
+        "equilibrium",
+        "fair value gap"
+      ],
+      "source_url": "https://youtu.be/tyoxl1l-6iI",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\confirmation_00165120.jpg",
+      "transcript_excerpt": "So, we can anticipate price to expand higher as well in candle 4. And the same in the bearish scenario here. We close below candle 2's low. So, we can anticipate it to continue lower in candle four as well. And there you can see candle four gets an expansion which finishes off this candle 2 closure and this swing point. So, just to review, we have a candle 2 closure, closing back above the low of ",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\outcome_02043200.jpg",
+      "time_index": 24,
+      "cluster_id": -1,
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "outcome",
+      "video_slug": "trading_candle_3",
+      "video_id": "qdQYhePcvGE",
+      "topics": [
+        "candle_3",
+        "candle_4",
+        "wick_logic",
+        "continuation",
+        "cisd",
+        "protected_swing"
+      ],
+      "candidate_labels": [
+        "invalidation",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "expansion",
+        "protected swing",
+        "stop",
+        "target"
+      ],
+      "source_url": "https://youtu.be/qdQYhePcvGE",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\outcome_02043200.jpg",
+      "transcript_excerpt": "off at 2 R if it hits it. It didn't in this case, but if I'm waiting for the continuation, there is no entry yet. So, price returns to our entry. And what do we notice here? We are forming a continuation. Price does trade higher. This looks like an expansion, but it's met with expansion. So that's forming a wick on a slightly higher time frame. We now have a protected swing. This is where I could ",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\sweep_00104000.jpg",
+      "time_index": 26,
+      "cluster_id": -1,
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "sweep",
+      "video_slug": "cisd_validates_swing_points",
+      "video_id": "vn1RYjhJUnQ",
+      "topics": [
+        "cisd",
+        "candle_2",
+        "candle_3",
+        "swing_validation",
+        "continuation"
+      ],
+      "candidate_labels": [
+        "breaker",
+        "fair_value_gap",
+        "liquidity_sweep",
+        "order_block"
+      ],
+      "cue_terms": [
+        "continuation",
+        "sweep"
+      ],
+      "source_url": "https://youtu.be/vn1RYjhJUnQ",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\sweep_00104000.jpg",
+      "transcript_excerpt": "continuation. Going to wait for that change in the state of delivery to occur or I'm going to ignore the setup. Let's take a look at what this looks like in my fractal model. So, here you can see we have a valid candle 2 closure. So you can see we have a candle 2 closure as price sweeps out its previous candle and closes back in. Now what do I look for on the lower time frame? I need to have that ",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\closure_00194880.jpg",
+      "time_index": 32,
+      "cluster_id": -1,
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "closure",
+      "video_slug": "ttrades_top_down_chart_lessons_4",
+      "video_id": "w-JekHg6Ldk",
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "candidate_labels": [
+        "candle_2_closure",
+        "candle_3_closure"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "closure"
+      ],
+      "source_url": "https://youtu.be/w-JekHg6Ldk",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\closure_00194880.jpg",
+      "transcript_excerpt": "want to trade, I want to see that YN does not reverse here and trade lower. and Q does reverse here and trade higher and then I can look to take the middle asset because that's the next strongest asset. This is very similar to the last trade review I posted on ES as I am trading the middle asset because the other one I'm expecting some consolidation. So let's go ahead and zoom into ES here with th",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\context_00307320.jpg",
+      "time_index": 40,
+      "cluster_id": -1,
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "context",
+      "video_slug": "ttrades_top_down_chart_lessons_2",
+      "video_id": "UBTl7za9obc",
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "candidate_labels": [
+        "fair_value_gap",
+        "point_of_interest",
+        "top_down_alignment",
+        "wick_logic"
+      ],
+      "cue_terms": [
+        "fair value gap",
+        "poi",
+        "point of interest",
+        "top down alignment",
+        "wick"
+      ],
+      "source_url": "https://youtu.be/UBTl7za9obc",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\context_00307320.jpg",
+      "transcript_excerpt": "low here and trade to the highs. That is my whole idea. So, I'm looking for a reversal in here. Now, you can see price has a bearish reversal here on the 9:00 a.m. open. It does go to its max expansion. And what do we have? An aggressive move lower met with an aggressive move higher. That's forming this higher time frame wick. And I have a change in the state of delivery. Now, those of you that kn",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\sweep_00648520.jpg",
+      "time_index": 41,
+      "cluster_id": -1,
+      "title": "TTrades Top-Down Chart Lessons #2",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "sweep",
+      "video_slug": "ttrades_top_down_chart_lessons_2",
+      "video_id": "UBTl7za9obc",
+      "topics": [
+        "educational_channel",
+        "review",
+        "top_down_alignment",
+        "top_down_analysis",
+        "trade_review"
+      ],
+      "candidate_labels": [
+        "liquidity_sweep"
+      ],
+      "cue_terms": [
+        "sweep"
+      ],
+      "source_url": "https://youtu.be/UBTl7za9obc",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\sweep_00648520.jpg",
+      "transcript_excerpt": "if we come back out here on the hourly chart. But I am fine with my position and how I trailed it. And if you notice, we did get quite the retracement back into this area before it did occur. So the main points, if we're going to review this one more time before I end the video, is going out to the daily chart. If we're taking a look at the daily chart, I'm looking at the phases of price. I have e",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\context_00212539.jpg",
+      "time_index": 55,
+      "cluster_id": -1,
+      "title": "CPI Gold Trade Review | ICT Market Maker Sell Model [MMXM]",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "context",
+      "video_slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "video_id": "0R61Y6Pn74Q",
+      "topics": [
+        "educational_channel",
+        "review",
+        "trade_review"
+      ],
+      "candidate_labels": [
+        "fair_value_gap",
+        "order_block",
+        "wick_logic"
+      ],
+      "cue_terms": [
+        "fair value gap",
+        "order block",
+        "premium",
+        "wick"
+      ],
+      "source_url": "https://youtu.be/0R61Y6Pn74Q",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\context_00212539.jpg",
+      "transcript_excerpt": "want to see price reach back up into a premium of the range so after we put in this low here here I want to mark from this high down to this low and I'm ignoring the wick here because it's just CPI manipulation so here we are into a premium of the range and if I'm looking for a short setup I want to see an intermediate term High put in here in the premium of the range as I don't think we're going ",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\confirmation_00132120.jpg",
+      "time_index": 68,
+      "cluster_id": -1,
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "confirmation",
+      "video_slug": "index_futures_weekly_recap_ict_concepts",
+      "video_id": "s9Poh_RaN2o",
+      "topics": [
+        "recap",
+        "review",
+        "trade_review"
+      ],
+      "candidate_labels": [
+        "fair_value_gap",
+        "invalidation",
+        "order_block"
+      ],
+      "cue_terms": [
+        "entry",
+        "fair value gap",
+        "order block",
+        "stop"
+      ],
+      "source_url": "https://youtu.be/s9Poh_RaN2o",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\confirmation_00132120.jpg",
+      "transcript_excerpt": "took out stops and then made a move up one thing to notice here is this five minute fair value gap then we'll go down to the one minute to refine our entry so looking at the one minute a little bit better picture right you can see it came down made a short term high came back down and then broke that up so initially if were looking for this fair value up here on the one minute you didn't get entry",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\outcome_00743320.jpg",
+      "time_index": 69,
+      "cluster_id": -1,
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "source_type": "youtube_visual_window",
+      "checkpoint": "outcome",
+      "video_slug": "index_futures_weekly_recap_ict_concepts",
+      "video_id": "s9Poh_RaN2o",
+      "topics": [
+        "recap",
+        "review",
+        "trade_review"
+      ],
+      "candidate_labels": [
+        "invalidation"
+      ],
+      "cue_terms": [
+        "stop",
+        "target"
+      ],
+      "source_url": "https://youtu.be/s9Poh_RaN2o",
+      "frame_path": "knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\outcome_00743320.jpg",
+      "transcript_excerpt": "looking to take out these highs right here we want to see us grab this liquidity and then move up so zooming in on this you could you could just take it right here but if you wanted a more confirmed entry get a market structure shift here move up there is this fair value gap here that you could put your stop there but i kind of like the single order block with the fair value gap so enter right the",
+      "reason": "codex_supervision_required",
+      "notes": "OPENAI_API_KEY is not configured, so live GPT-5.4 vision labeling was skipped."
+    }
+  ]
+}

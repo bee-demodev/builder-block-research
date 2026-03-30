@@ -1,8 +1,28 @@
 [project]
-name = "trading-autoresearch"
+name = "ttrades-autoresearch"
 version = "0.1.0"
-description = "Karpathy-style autoresearch for trading basics and Pine indicator design"
+description = "Root-level TTrades autoresearch workflow for embedding retrieval, pseudo-labeling, and YOLO markup training"
 requires-python = ">=3.11"
+
+[tool.uv]
+python-preference = "only-system"
+python-downloads = "never"
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu124", marker = "sys_platform == 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cu124", marker = "sys_platform == 'win32'" },
+]
+torchaudio = [
+  { index = "pytorch-cu124", marker = "sys_platform == 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
 
 [tool.pyright]
 typeCheckingMode = "basic"

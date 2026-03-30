@@ -1,0 +1,8 @@
+{
+  "best_epoch": 2,
+  "best_val_F1_macro": 0.190476,
+  "train_example_count": 23,
+  "val_example_count": 6,
+  "checkpoint_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\mlp_ttrades_best.pth",
+  "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_mlp.tsv"
+}

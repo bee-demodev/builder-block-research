@@ -1,0 +1,196 @@
+{
+  "bundle_count": 40,
+  "counts": {
+    "path_family": {
+      "continuation": 28,
+      "reversal": 12
+    },
+    "direction": {
+      "none": 40
+    },
+    "fractal_stage": {
+      "c1": 10,
+      "c2": 10,
+      "c3": 10,
+      "c4": 10
+    },
+    "setup_quality": {
+      "good_setup": 28,
+      "bad_setup": 12
+    },
+    "review_outcome": {
+      "seed_gold": 40
+    }
+  },
+  "benchmark": {
+    "target_count": 18,
+    "satisfied_target_count": 1,
+    "unsatisfied_target_count": 17,
+    "coverage_ratio": 0.0556,
+    "targets": [
+      {
+        "path_family": "continuation",
+        "direction": "bullish",
+        "fractal_stage": "c1",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "continuation",
+        "direction": "bullish",
+        "fractal_stage": "c2",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "continuation",
+        "direction": "bullish",
+        "fractal_stage": "c3",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "continuation",
+        "direction": "bullish",
+        "fractal_stage": "c4",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "continuation",
+        "direction": "bearish",
+        "fractal_stage": "c1",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "continuation",
+        "direction": "bearish",
+        "fractal_stage": "c2",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "continuation",
+        "direction": "bearish",
+        "fractal_stage": "c3",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "continuation",
+        "direction": "bearish",
+        "fractal_stage": "c4",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "reversal",
+        "direction": "bullish",
+        "fractal_stage": "c1",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "reversal",
+        "direction": "bullish",
+        "fractal_stage": "c2",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "reversal",
+        "direction": "bullish",
+        "fractal_stage": "c3",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "reversal",
+        "direction": "bullish",
+        "fractal_stage": "c4",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "reversal",
+        "direction": "bearish",
+        "fractal_stage": "c1",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "reversal",
+        "direction": "bearish",
+        "fractal_stage": "c2",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "reversal",
+        "direction": "bearish",
+        "fractal_stage": "c3",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "path_family": "reversal",
+        "direction": "bearish",
+        "fractal_stage": "c4",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      },
+      {
+        "setup_quality": "bad_setup",
+        "minimum_examples": 10,
+        "observed_count": 12,
+        "gap": 0,
+        "meets_minimum": true
+      },
+      {
+        "setup_quality": "no_setup",
+        "minimum_examples": 10,
+        "observed_count": 0,
+        "gap": 10,
+        "meets_minimum": false
+      }
+    ]
+  },
+  "output_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed.jsonl",
+  "report_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed_report.json",
+  "state_spec_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\fractal_state_machine.json",
+  "benchmark_targets_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\bundle_benchmark_targets.json",
+  "screenshot_manifest_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\data\\ttfm_screenshot_manifest.json"
+}

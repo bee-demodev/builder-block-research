@@ -1,0 +1,507 @@
+{
+  "summary": {
+    "row_count": 70,
+    "labeled_count": 29,
+    "abstained_count": 41,
+    "label_counts": {
+      "high_probability_long": 11,
+      "high_probability_short": 6,
+      "invalid_chop": 12
+    },
+    "anchor_count": 9
+  },
+  "items": [
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\context_00119280.jpg",
+      "confidence": 0.679923,
+      "margin": 0.023949,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.655973,
+        "high_probability_short": 0.571066,
+        "invalid_chop": 0.679923
+      }
+    },
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\fractal_model_fundamentals\\sweep_00751840.jpg",
+      "confidence": 0.702044,
+      "margin": 0.022797,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.575826,
+        "high_probability_short": 0.679247,
+        "invalid_chop": 0.702044
+      }
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\context_00046585.jpg",
+      "confidence": 0.672855,
+      "margin": 0.002158,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.544684,
+        "high_probability_short": 0.670696,
+        "invalid_chop": 0.672855
+      }
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\closure_00638000.jpg",
+      "confidence": 0.690218,
+      "margin": 0.000872,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.575655,
+        "high_probability_short": 0.689346,
+        "invalid_chop": 0.690218
+      }
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\equilibrium_for_expansions\\confirmation_00940119.jpg",
+      "confidence": 0.68778,
+      "margin": 0.007059,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.565685,
+        "high_probability_short": 0.68778,
+        "invalid_chop": 0.680721
+      }
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\closure_00657280.jpg",
+      "confidence": 0.683036,
+      "margin": 0.017844,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.5824,
+        "high_probability_short": 0.665192,
+        "invalid_chop": 0.683036
+      }
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\confirmation_00303480.jpg",
+      "confidence": 0.674124,
+      "margin": 0.018091,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.573616,
+        "high_probability_short": 0.656033,
+        "invalid_chop": 0.674124
+      }
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\easy_daily_bias_mechanical_framework\\outcome_00855320.jpg",
+      "confidence": 0.678592,
+      "margin": 0.01252,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.582594,
+        "high_probability_short": 0.666072,
+        "invalid_chop": 0.678592
+      }
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\context_00346720.jpg",
+      "confidence": 0.684661,
+      "margin": 0.01734,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.578457,
+        "high_probability_short": 0.667321,
+        "invalid_chop": 0.684661
+      }
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\sweep_00101800.jpg",
+      "confidence": 0.682996,
+      "margin": 0.021032,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.575658,
+        "high_probability_short": 0.661964,
+        "invalid_chop": 0.682996
+      }
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\closure_00041600.jpg",
+      "confidence": 0.677756,
+      "margin": 0.022261,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.561622,
+        "high_probability_short": 0.655494,
+        "invalid_chop": 0.677756
+      }
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\candle_2_closure_foundation\\outcome_00407640.jpg",
+      "confidence": 0.681916,
+      "margin": 0.008197,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.58735,
+        "high_probability_short": 0.673719,
+        "invalid_chop": 0.681916
+      }
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\context_01515680.jpg",
+      "confidence": 0.686413,
+      "margin": 0.015475,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.593127,
+        "high_probability_short": 0.670938,
+        "invalid_chop": 0.686413
+      }
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\confirmation_00857440.jpg",
+      "confidence": 0.681771,
+      "margin": 0.011428,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.592659,
+        "high_probability_short": 0.670344,
+        "invalid_chop": 0.681771
+      }
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\trading_candle_3\\outcome_02043200.jpg",
+      "confidence": 0.676609,
+      "margin": 0.002234,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.591921,
+        "high_probability_short": 0.674375,
+        "invalid_chop": 0.676609
+      }
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\cisd_validates_swing_points\\confirmation_00235759.jpg",
+      "confidence": 0.680971,
+      "margin": 0.015126,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.572647,
+        "high_probability_short": 0.665846,
+        "invalid_chop": 0.680971
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\context_00427640.jpg",
+      "confidence": 0.665285,
+      "margin": 0.009739,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.562913,
+        "high_probability_short": 0.665285,
+        "invalid_chop": 0.655546
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\sweep_00349320.jpg",
+      "confidence": 0.66449,
+      "margin": 0.009896,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.654594,
+        "high_probability_short": 0.66449,
+        "invalid_chop": 0.567314
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\closure_00194880.jpg",
+      "confidence": 0.665626,
+      "margin": 0.004796,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.66083,
+        "high_probability_short": 0.572305,
+        "invalid_chop": 0.665626
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\confirmation_00270800.jpg",
+      "confidence": 0.673123,
+      "margin": 0.006767,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.573084,
+        "high_probability_short": 0.673123,
+        "invalid_chop": 0.666356
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_4\\outcome_00480900.jpg",
+      "confidence": 0.659944,
+      "margin": 0.004113,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.549374,
+        "high_probability_short": 0.659944,
+        "invalid_chop": 0.655832
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\context_00173000.jpg",
+      "confidence": 0.661405,
+      "margin": 0.004475,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.656931,
+        "high_probability_short": 0.571851,
+        "invalid_chop": 0.661405
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\sweep_00375760.jpg",
+      "confidence": 0.669542,
+      "margin": 0.002991,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.571018,
+        "high_probability_short": 0.669542,
+        "invalid_chop": 0.666551
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\closure_00107040.jpg",
+      "confidence": 0.671031,
+      "margin": 0.009328,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.568611,
+        "high_probability_short": 0.661703,
+        "invalid_chop": 0.671031
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_3_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_3\\outcome_00306640.jpg",
+      "confidence": 0.672905,
+      "margin": 0.003392,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.561366,
+        "high_probability_short": 0.672905,
+        "invalid_chop": 0.669513
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\context_00307320.jpg",
+      "confidence": 0.681683,
+      "margin": 0.004253,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.681683,
+        "high_probability_short": 0.67743,
+        "invalid_chop": 0.582496
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\closure_00108240.jpg",
+      "confidence": 0.678504,
+      "margin": 0.012034,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.678504,
+        "high_probability_short": 0.666471,
+        "invalid_chop": 0.588455
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\confirmation_00372520.jpg",
+      "confidence": 0.672672,
+      "margin": 0.000747,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.583024,
+        "high_probability_short": 0.672672,
+        "invalid_chop": 0.671925
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_2\\outcome_00512800.jpg",
+      "confidence": 0.687839,
+      "margin": 0.009379,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.585146,
+        "high_probability_short": 0.687839,
+        "invalid_chop": 0.67846
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\closure_00482500.jpg",
+      "confidence": 0.667148,
+      "margin": 0.002478,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.66467,
+        "high_probability_short": 0.572812,
+        "invalid_chop": 0.667148
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\confirmation_00868500.jpg",
+      "confidence": 0.655656,
+      "margin": 0.001229,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.655656,
+        "high_probability_short": 0.567186,
+        "invalid_chop": 0.654427
+      }
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ttrades_top_down_chart_lessons_1\\outcome_00289500.jpg",
+      "confidence": 0.659938,
+      "margin": 0.002469,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.657469,
+        "high_probability_short": 0.659938,
+        "invalid_chop": 0.56002
+      }
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\sweep_00131059.jpg",
+      "confidence": 0.65839,
+      "margin": 0.005891,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.65839,
+        "high_probability_short": 0.570119,
+        "invalid_chop": 0.652499
+      }
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::closure",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\closure_00292820.jpg",
+      "confidence": 0.662113,
+      "margin": 0.005505,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.662113,
+        "high_probability_short": 0.57751,
+        "invalid_chop": 0.656608
+      }
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\cpi_gold_trade_review_ict_market_maker_sell_model_mmxm\\outcome_00375400.jpg",
+      "confidence": 0.654704,
+      "margin": 0.000235,
+      "reason": "below_confidence_floor",
+      "class_scores": {
+        "high_probability_long": 0.654704,
+        "high_probability_short": 0.571453,
+        "invalid_chop": 0.654469
+      }
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\context_00829360.jpg",
+      "confidence": 0.68675,
+      "margin": 0.038084,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.648666,
+        "high_probability_short": 0.68675,
+        "invalid_chop": 0.558597
+      }
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\sweep_00924520.jpg",
+      "confidence": 0.686152,
+      "margin": 0.034535,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.651617,
+        "high_probability_short": 0.686152,
+        "invalid_chop": 0.556664
+      }
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::confirmation",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\index_futures_weekly_recap_ict_concepts\\confirmation_00132120.jpg",
+      "confidence": 0.68361,
+      "margin": 0.02974,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.65387,
+        "high_probability_short": 0.68361,
+        "invalid_chop": 0.563664
+      }
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::context",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\context_00316000.jpg",
+      "confidence": 0.687756,
+      "margin": 0.046398,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.641358,
+        "high_probability_short": 0.687756,
+        "invalid_chop": 0.553487
+      }
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::sweep",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\sweep_00131840.jpg",
+      "confidence": 0.688555,
+      "margin": 0.042373,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.646182,
+        "high_probability_short": 0.688555,
+        "invalid_chop": 0.554775
+      }
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::outcome",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\knowledge\\ttfm_video_corpus\\frames\\ict_index_futures_weekly_recap_week_of_5_16_22\\outcome_00045275.jpg",
+      "confidence": 0.681889,
+      "margin": 0.043179,
+      "reason": "low_margin",
+      "class_scores": {
+        "high_probability_long": 0.63871,
+        "high_probability_short": 0.681889,
+        "invalid_chop": 0.552984
+      }
+    }
+  ]
+}

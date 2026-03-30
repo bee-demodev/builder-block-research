@@ -1,0 +1,15 @@
+numpy<2.0
+torch
+torchvision
+torchaudio
+ultralytics
+wandb
+scikit-learn
+faiss-cpu
+pandas
+tqdm
+opencv-python
+hdbscan
+onnx
+yt-dlp
+youtube-transcript-api

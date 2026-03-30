@@ -1,0 +1,470 @@
+{
+  "summary": {
+    "window_count": 1036,
+    "video_count": 115,
+    "max_chunks_per_video": 18,
+    "extract_frames": true
+  },
+  "videos": [
+    {
+      "video_slug": "fractal_model_fundamentals",
+      "selected_chunk_count": 17
+    },
+    {
+      "video_slug": "equilibrium_for_expansions",
+      "selected_chunk_count": 16
+    },
+    {
+      "video_slug": "easy_daily_bias_mechanical_framework",
+      "selected_chunk_count": 16
+    },
+    {
+      "video_slug": "candle_2_closure_foundation",
+      "selected_chunk_count": 13
+    },
+    {
+      "video_slug": "trading_candle_3",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "cisd_validates_swing_points",
+      "selected_chunk_count": 10
+    },
+    {
+      "video_slug": "which_swing_highs_and_lows_matter_in_trading",
+      "selected_chunk_count": 12
+    },
+    {
+      "video_slug": "eurgbp_for_relative_strength_eu_vs_gu",
+      "selected_chunk_count": 11
+    },
+    {
+      "video_slug": "relative_strength_weakness_smt_divergence_full_guide",
+      "selected_chunk_count": 14
+    },
+    {
+      "video_slug": "why_your_continuations_fail_order_blocks_cisd_explained",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "ttrades_scalping_model_simple_day_trading_strategy",
+      "selected_chunk_count": 13
+    },
+    {
+      "video_slug": "the_best_timeframe_for_ttrades_fractal_model_simple",
+      "selected_chunk_count": 16
+    },
+    {
+      "video_slug": "how_to_actually_trade_inversion_fair_value_gaps_ifvg",
+      "selected_chunk_count": 12
+    },
+    {
+      "video_slug": "higher_timeframe_analysis_for_trading_aligning_expansion_candles",
+      "selected_chunk_count": 11
+    },
+    {
+      "video_slug": "the_only_trading_strategy_you_need_for_2026",
+      "selected_chunk_count": 14
+    },
+    {
+      "video_slug": "ttrades_top_down_chart_lessons_4",
+      "selected_chunk_count": 7
+    },
+    {
+      "video_slug": "ttrades_top_down_chart_lessons_3",
+      "selected_chunk_count": 7
+    },
+    {
+      "video_slug": "candle_3_closure_ttrades_fractal_model",
+      "selected_chunk_count": 11
+    },
+    {
+      "video_slug": "targets_using_projections_the_fractal_model",
+      "selected_chunk_count": 10
+    },
+    {
+      "video_slug": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "a_complete_trading_framework_universal_models_smt_swing_points_gxt",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "trading_the_4_hour_power_of_three_ohlc_olhc",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "ttrades_top_down_chart_lessons_2",
+      "selected_chunk_count": 11
+    },
+    {
+      "video_slug": "ttrades_fractal_model_trading_candle_2",
+      "selected_chunk_count": 16
+    },
+    {
+      "video_slug": "ttrades_top_down_chart_lessons_1",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "the_phases_of_price_action_a_blueprint_for_market_movement",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "how_to_trade_reversal_phases_of_price",
+      "selected_chunk_count": 15
+    },
+    {
+      "video_slug": "how_to_trade_retracement_phases_of_price",
+      "selected_chunk_count": 16
+    },
+    {
+      "video_slug": "how_to_trade_consolidation_phases_of_price",
+      "selected_chunk_count": 15
+    },
+    {
+      "video_slug": "protected_swings_understanding_trend_and_invalidations",
+      "selected_chunk_count": 14
+    },
+    {
+      "video_slug": "gxtradez_phases_of_price_profiles_for_expansion",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "ttrades_fractal_model_trading_candle_4",
+      "selected_chunk_count": 14
+    },
+    {
+      "video_slug": "ttrades_fractal_model_inversion_intraday_strategy",
+      "selected_chunk_count": 15
+    },
+    {
+      "video_slug": "ap_use_market_structure_fibonacci_levels_for_sniper_entries",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "trade_continuations_using_breaker_blocks",
+      "selected_chunk_count": 12
+    },
+    {
+      "video_slug": "dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "trade_continuations_using_order_blocks",
+      "selected_chunk_count": 14
+    },
+    {
+      "video_slug": "trade_like_ttrades_top_down_analysis",
+      "selected_chunk_count": 17
+    },
+    {
+      "video_slug": "timeframe_alignment_how_to_align_timeframes_for_expansion",
+      "selected_chunk_count": 13
+    },
+    {
+      "video_slug": "reversal_sequence_ttrs_how_to_blend_pd_arrays",
+      "selected_chunk_count": 14
+    },
+    {
+      "video_slug": "intro_to_ttrades_fractal_model_indicator_settings",
+      "selected_chunk_count": 17
+    },
+    {
+      "video_slug": "master_candlestick_wicks_the_key_to_catching_reversals",
+      "selected_chunk_count": 10
+    },
+    {
+      "video_slug": "trading_irl_erl_with_order_blocks_ict_concepts",
+      "selected_chunk_count": 12
+    },
+    {
+      "video_slug": "next_day_model_fractal_way_to_get_bias_for_trading",
+      "selected_chunk_count": 14
+    },
+    {
+      "video_slug": "mara_trade_review_h1_market_maker_buy_model_mmxm",
+      "selected_chunk_count": 4
+    },
+    {
+      "video_slug": "afyz_trading_the_daily_ohlc_protraction_profiles",
+      "selected_chunk_count": 11
+    },
+    {
+      "video_slug": "the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "ict_daily_profile_new_york_reversal",
+      "selected_chunk_count": 11
+    },
+    {
+      "video_slug": "ict_daily_profile_london_reversal_new_york_continuation",
+      "selected_chunk_count": 9
+    },
+    {
+      "video_slug": "nickdoesfutures_unicorn_model_experiences_with_ict",
+      "selected_chunk_count": 18
+    },
+    {
+      "video_slug": "high_resistance_vs_low_resistance_liquidity_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "the_twitter_model_the_mmxm_trader_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "internal_external_liquidity_model_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "niper_internal_external_liquidity_ict_daily_bias",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "ict_advanced_market_structure_simplified",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "understanding_market_structure_for_trading",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "jokerszn_daily_orderflow_ict_daily_bias",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "smt_divergence_ict_concepts",
+      "selected_chunk_count": 10
+    },
+    {
+      "video_slug": "ash_trades_the_journey_to_profitability_the_unicorn_model",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm",
+      "selected_chunk_count": 6
+    },
+    {
+      "video_slug": "breaker_blocks_simplified_ict_concepts",
+      "selected_chunk_count": 10
+    },
+    {
+      "video_slug": "order_blocks_simplified_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "market_structure_shift_vs_change_in_state_of_delivery_ict",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "inversion_fair_value_gaps_ifvg_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "internal_external_liquidity_daily_bias_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "standard_deviation_projections_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "the_easiest_draw_on_liquidity_dol_daily_bias_ict",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "important_liquidity_levels_draw_on_liquidity_ict",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "ict_son_s_model_higher_time_frames",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "breaker_block_fvg_entry_model_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "optimal_trade_entry_ote_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "my_favorite_reversal_pattern_orderblocks_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "top_down_analysis_daily_bias_to_entries_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "ict_silver_bullet_strategy_no_daily_bias_with_backtest",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "the_best_relative_strength_indicator_for_es_nq_ict",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "intraday_bias_simplified_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "ict_daily_bias_the_only_video_you_will_ever_need",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "market_structure_shift_vs_liquidity_grab_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "market_structure_shift_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "discount_premium_ict_concepts",
+      "selected_chunk_count": 10
+    },
+    {
+      "video_slug": "liquidity_buyside_sellside_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "a_ict_entry_checklist_ict_concepts",
+      "selected_chunk_count": 10
+    },
+    {
+      "video_slug": "understanding_fair_value_gaps_fvg_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "next_day_model_the_mmxm_trader_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "low_resistance_liquidity_run_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "open_high_low_close_ohlc_olhc_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "scalping_made_simple_building_a_scalping_model",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "targets_with_standard_deviation_projections_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "draw_on_liquidity_example_1_18_23_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "draw_on_liquidity_dol_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "top_down_analysis_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "choosing_dealing_ranges_displacement_ranges_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "structure_shift_vs_liquidity_grab_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "lower_time_frame_entries_using_htf_poi_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "higher_time_frame_points_of_interest_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "build_an_entry_model_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "find_lower_time_frame_entries_using_bias_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "intraday_bias_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "ict_trade_example_15_second_entry",
+      "selected_chunk_count": 1
+    },
+    {
+      "video_slug": "intro_to_the_inducement_model_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "ote_optimal_trade_entry_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "what_is_liquidity_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "what_is_displacement_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "price_targets_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "smart_money_divergences_smt_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "ict_daily_bias",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "improve_your_trade_entries_within_fair_value_gaps_fvg",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "index_futures_weekly_recap_ict_concepts",
+      "selected_chunk_count": 12
+    },
+    {
+      "video_slug": "simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "ict_index_futures_weekly_recap_week_of_5_16_22",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "simple_day_trading_strategy_triple_s",
+      "selected_chunk_count": 5
+    },
+    {
+      "video_slug": "simple_day_trading_strategy_intro",
+      "selected_chunk_count": 5
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "items": [
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+      "detections": [
+        {
+          "class_id": 5,
+          "bbox": [0.52, 0.20, 0.10, 0.16]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::closure",
+      "detections": []
+    },
+    {
+      "example_id": "youtube_candle_2_closure_foundation_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 7,
+          "bbox": [0.74, 0.39, 0.23, 0.36]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::outcome",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [0.69, 0.43, 0.18, 0.18]
+        },
+        {
+          "class_id": 8,
+          "bbox": [0.63, 0.27, 0.09, 0.12]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 6,
+          "bbox": [0.68, 0.70, 0.09, 0.14]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_4_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 8,
+          "bbox": [0.63, 0.56, 0.15, 0.20]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::context",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [0.39, 0.69, 0.42, 0.34]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_2_visual_v1::sweep",
+      "detections": []
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::context",
+      "detections": [
+        {
+          "class_id": 5,
+          "bbox": [0.48, 0.17, 0.08, 0.22]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [0.54, 0.59, 0.18, 0.12]
+        },
+        {
+          "class_id": 4,
+          "bbox": [0.39, 0.72, 0.09, 0.07]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_index_futures_weekly_recap_ict_concepts_visual_v1::outcome",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [0.40, 0.86, 0.16, 0.11]
+        },
+        {
+          "class_id": 4,
+          "bbox": [0.65, 0.53, 0.15, 0.09]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::outcome",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [0.500, 0.240, 0.070, 0.110]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_trading_candle_3_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [0.683, 0.621, 0.084, 0.122]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::context",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [0.577, 0.247, 0.070, 0.111]
+        }
+      ]
+    },
+    {
+      "example_id": "youtube_cisd_validates_swing_points_visual_v1::outcome",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [0.816, 0.826, 0.076, 0.108]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-03-25T18:30:24.666092+00:00",
+  "model": "models/gemini-embedding-2-preview",
+  "output_dimensionality": 768,
+  "normalization": "l2",
+  "item_count": 1036,
+  "index_path": "knowledge\\ttfm_video_corpus\\dense_visual_embedding_index.json",
+  "source_path": "knowledge\\ttfm_video_corpus\\dense_visual_windows.jsonl",
+  "source_fingerprint": "dc869b0c9b9ecf88ed82206b57d1b64e08594370"
+}

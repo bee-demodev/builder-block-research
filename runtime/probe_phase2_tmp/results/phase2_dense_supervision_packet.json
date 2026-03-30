@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "example_id": "dense::good",
+      "candidate_detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.5,
+            0.5,
+            0.2,
+            0.2
+          ]
+        }
+      ],
+      "title": "Trade Continuations Using Order Blocks",
+      "candidate_labels": [
+        "bullish_reaction_zone"
+      ],
+      "cue_terms": [
+        "order block"
+      ],
+      "recommended_action": "accept",
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.91
+    },
+    {
+      "example_id": "dense::bad",
+      "candidate_detections": [],
+      "title": "Invalid Chop Example",
+      "candidate_labels": [],
+      "cue_terms": [
+        "range",
+        "chop"
+      ],
+      "recommended_action": "no_setup",
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.87
+    }
+  ]
+}

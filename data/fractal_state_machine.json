@@ -1,0 +1,247 @@
+{
+  "version": "1.0.0",
+  "description": "Machine-readable state contract for the TTrades fractal model. This file is the single source of truth for path families, POI ontology, stage transitions, invalidations, and entry-ready constraints.",
+  "locked_decisions": {
+    "c4_is_entry_ready_structure": true,
+    "path_families": [
+      "continuation",
+      "reversal"
+    ],
+    "detector_primitives": [
+      "liquidity_sweep_high",
+      "liquidity_sweep_low",
+      "protected_swing",
+      "bullish_reaction_zone",
+      "bearish_reaction_zone"
+    ]
+  },
+  "enums": {
+    "path_family": [
+      "continuation",
+      "reversal"
+    ],
+    "fractal_stage": [
+      "none",
+      "c1",
+      "c2",
+      "c3",
+      "c4"
+    ],
+    "direction": [
+      "bullish",
+      "bearish",
+      "none"
+    ],
+    "htf_bias": [
+      "bullish",
+      "bearish",
+      "neutral"
+    ],
+    "poi_type": [
+      "reaction_zone",
+      "equilibrium_zone",
+      "protected_swing_zone",
+      "liquidity_target_zone",
+      "none"
+    ],
+    "poi_direction": [
+      "bullish",
+      "bearish",
+      "neutral"
+    ],
+    "poi_source": [
+      "detector",
+      "rule_derived",
+      "manual_review",
+      "external_proposal",
+      "none"
+    ],
+    "setup_quality": [
+      "good_setup",
+      "bad_setup",
+      "no_setup"
+    ],
+    "entry_state": [
+      "wait",
+      "long_ready",
+      "short_ready"
+    ],
+    "invalidation_state": [
+      "intact",
+      "at_risk",
+      "broken",
+      "unknown"
+    ],
+    "session_context": [
+      "london",
+      "new_york",
+      "off_session",
+      "unknown"
+    ],
+    "kill_zone_alignment": [
+      "aligned",
+      "misaligned",
+      "neutral"
+    ]
+  },
+  "poi_mappings": {
+    "bullish_reaction_zone": {
+      "poi_type": "reaction_zone",
+      "poi_direction": "bullish",
+      "poi_source": "detector"
+    },
+    "bearish_reaction_zone": {
+      "poi_type": "reaction_zone",
+      "poi_direction": "bearish",
+      "poi_source": "detector"
+    },
+    "protected_swing": {
+      "poi_type": "protected_swing_zone",
+      "poi_direction": "neutral",
+      "poi_source": "detector"
+    },
+    "liquidity_sweep_high": {
+      "poi_type": "liquidity_target_zone",
+      "poi_direction": "bearish",
+      "poi_source": "detector"
+    },
+    "liquidity_sweep_low": {
+      "poi_type": "liquidity_target_zone",
+      "poi_direction": "bullish",
+      "poi_source": "detector"
+    }
+  },
+  "path_specs": {
+    "continuation": {
+      "description": "Directional continuation after higher-timeframe bias is established.",
+      "states": {
+        "none": {
+          "required_evidence": [],
+          "transition_conditions": [
+            "No valid continuation thesis is present."
+          ],
+          "fallback_behavior": "Remain in none."
+        },
+        "c1": {
+          "required_evidence": [
+            "Higher-timeframe directional bias is established.",
+            "Directional objective remains open."
+          ],
+          "transition_conditions": [
+            "Upgrade to c2 when an aligned ITF POI becomes valid."
+          ],
+          "fallback_behavior": "If HTF bias is lost, return to none."
+        },
+        "c2": {
+          "required_evidence": [
+            "An aligned ITF POI is tagged inside the HTF directional thesis."
+          ],
+          "transition_conditions": [
+            "Upgrade to c3 on ITF/LTF confirmation such as closure, CISD, or protected-swing confirmation."
+          ],
+          "fallback_behavior": "If POI invalidates before confirmation, return to c1 or none depending on HTF bias."
+        },
+        "c3": {
+          "required_evidence": [
+            "ITF or LTF confirmation has occurred.",
+            "Protected swing or closure evidence supports continuation."
+          ],
+          "transition_conditions": [
+            "Upgrade to c4 when confirmation, POI validity, and directional alignment indicate entry-ready structure."
+          ],
+          "fallback_behavior": "If confirmation fails or invalidates, return to c1 or c2."
+        },
+        "c4": {
+          "required_evidence": [
+            "Entry-ready continuation structure exists.",
+            "Confirmation is present.",
+            "POI remains valid."
+          ],
+          "transition_conditions": [
+            "Remain in c4 while invalidation is intact and no disqualifying session rule applies."
+          ],
+          "fallback_behavior": "If invalidation breaks, downgrade to c3 or none."
+        }
+      },
+      "invalidation_conditions": [
+        "Higher-timeframe bias is contradicted.",
+        "The protected swing breaks against the thesis.",
+        "POI is invalidated before or immediately after confirmation."
+      ]
+    },
+    "reversal": {
+      "description": "Reversal path after liquidity interaction or external objective sweep changes directional context.",
+      "states": {
+        "none": {
+          "required_evidence": [],
+          "transition_conditions": [
+            "No valid reversal context is present."
+          ],
+          "fallback_behavior": "Remain in none."
+        },
+        "c1": {
+          "required_evidence": [
+            "Liquidity sweep or external objective interaction creates reversal context."
+          ],
+          "transition_conditions": [
+            "Upgrade to c2 when reclaim/return validates a reversal POI."
+          ],
+          "fallback_behavior": "If sweep context resolves without reclaim, return to none."
+        },
+        "c2": {
+          "required_evidence": [
+            "Reclaim or return through the swept area has occurred.",
+            "A reversal POI is valid."
+          ],
+          "transition_conditions": [
+            "Upgrade to c3 when reversal confirmation occurs through closure, CISD, or protected-swing change."
+          ],
+          "fallback_behavior": "If reclaim fails, return to c1 or none."
+        },
+        "c3": {
+          "required_evidence": [
+            "Reversal confirmation is present.",
+            "Directional change is supported by local structure."
+          ],
+          "transition_conditions": [
+            "Upgrade to c4 when reversal confirmation, POI validity, and directional alignment indicate entry-ready structure."
+          ],
+          "fallback_behavior": "If confirmation is lost, return to c1 or c2."
+        },
+        "c4": {
+          "required_evidence": [
+            "Entry-ready reversal structure exists.",
+            "Confirmation is present.",
+            "POI remains valid."
+          ],
+          "transition_conditions": [
+            "Remain in c4 while invalidation is intact and no disqualifying session rule applies."
+          ],
+          "fallback_behavior": "If invalidation breaks, downgrade to c3 or none."
+        }
+      },
+      "invalidation_conditions": [
+        "Reclaim fails and price accepts back through the swept area.",
+        "Protected swing re-breaks against the reversal thesis.",
+        "POI is invalidated before entry readiness."
+      ]
+    }
+  },
+  "entry_rules": {
+    "default_entry_ready_constraints": [
+      "fractal_stage must equal c4",
+      "setup_quality must equal good_setup",
+      "htf_bias must be directional and aligned",
+      "poi_type must not equal none",
+      "poi_validity must be true",
+      "ltf_confirmation_present must be true",
+      "invalidation_state must not equal broken",
+      "kill_zone_alignment must not equal misaligned"
+    ],
+    "direction_to_entry_state": {
+      "bullish": "long_ready",
+      "bearish": "short_ready",
+      "none": "wait"
+    }
+  }
+}

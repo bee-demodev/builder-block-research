@@ -1,0 +1,116 @@
+{
+  "version": "1.0.0",
+  "description": "Target composition for the real-data bundle benchmark. Synthetic and auto-promoted examples must not enter this benchmark without explicit review.",
+  "rules": {
+    "real_data_only": true,
+    "group_split_by_source_sequence": true,
+    "allow_synthetic": false,
+    "allow_auto_promoted_without_review": false
+  },
+  "targets": [
+    {
+      "path_family": "continuation",
+      "direction": "bullish",
+      "fractal_stage": "c1",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "continuation",
+      "direction": "bullish",
+      "fractal_stage": "c2",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "continuation",
+      "direction": "bullish",
+      "fractal_stage": "c3",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "continuation",
+      "direction": "bullish",
+      "fractal_stage": "c4",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "continuation",
+      "direction": "bearish",
+      "fractal_stage": "c1",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "continuation",
+      "direction": "bearish",
+      "fractal_stage": "c2",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "continuation",
+      "direction": "bearish",
+      "fractal_stage": "c3",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "continuation",
+      "direction": "bearish",
+      "fractal_stage": "c4",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "reversal",
+      "direction": "bullish",
+      "fractal_stage": "c1",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "reversal",
+      "direction": "bullish",
+      "fractal_stage": "c2",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "reversal",
+      "direction": "bullish",
+      "fractal_stage": "c3",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "reversal",
+      "direction": "bullish",
+      "fractal_stage": "c4",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "reversal",
+      "direction": "bearish",
+      "fractal_stage": "c1",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "reversal",
+      "direction": "bearish",
+      "fractal_stage": "c2",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "reversal",
+      "direction": "bearish",
+      "fractal_stage": "c3",
+      "minimum_examples": 10
+    },
+    {
+      "path_family": "reversal",
+      "direction": "bearish",
+      "fractal_stage": "c4",
+      "minimum_examples": 10
+    },
+    {
+      "setup_quality": "bad_setup",
+      "minimum_examples": 10
+    },
+    {
+      "setup_quality": "no_setup",
+      "minimum_examples": 10
+    }
+  ]
+}

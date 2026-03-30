@@ -1,0 +1,1084 @@
+{
+  "items": [
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0009",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0010",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0013",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0012",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0014",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0012",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0029",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0011",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0002",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0020",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0022",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0026",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0016",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0027",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0001",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0031",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0018",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0002",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "intro_to_ttrades_fractal_model_indicator_settings::dense::intro_to_ttrades_fractal_model_indicator_settings:0014",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0014",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0012",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0011",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "niper_internal_external_liquidity_ict_daily_bias::dense::niper_internal_external_liquidity_ict_daily_bias:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "internal_external_liquidity_daily_bias_ict_concepts::dense::internal_external_liquidity_daily_bias_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_easiest_draw_on_liquidity_dol_daily_bias_ict::dense::the_easiest_draw_on_liquidity_dol_daily_bias_ict:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0010",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0021",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0002",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "important_liquidity_levels_draw_on_liquidity_ict::dense::important_liquidity_levels_draw_on_liquidity_ict:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0010",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "higher_time_frame_points_of_interest_ict_concepts::dense::higher_time_frame_points_of_interest_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "discount_premium_ict_concepts::dense::discount_premium_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "high_resistance_vs_low_resistance_liquidity_ict_concepts::dense::high_resistance_vs_low_resistance_liquidity_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "internal_external_liquidity_model_ict_concepts::dense::internal_external_liquidity_model_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "market_structure_shift_vs_liquidity_grab_ict_concepts::dense::market_structure_shift_vs_liquidity_grab_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "liquidity_buyside_sellside_ict_concepts::dense::liquidity_buyside_sellside_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "low_resistance_liquidity_run_ict_concepts::dense::low_resistance_liquidity_run_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "draw_on_liquidity_example_1_18_23_ict_concepts::dense::draw_on_liquidity_example_1_18_23_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "draw_on_liquidity_dol_ict_concepts::dense::draw_on_liquidity_dol_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "structure_shift_vs_liquidity_grab_ict_concepts::dense::structure_shift_vs_liquidity_grab_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "what_is_liquidity_ict_concepts::dense::what_is_liquidity_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0009",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0024",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0009",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "my_favorite_reversal_pattern_orderblocks_ict_concepts::dense::my_favorite_reversal_pattern_orderblocks_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts::dense::reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0002",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0017",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0010",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0010",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0001",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0013",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0009",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0011",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0002",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0012",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0012",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "timeframe_alignment_how_to_align_timeframes_for_expansion::dense::timeframe_alignment_how_to_align_timeframes_for_expansion:0009",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "top_down_analysis_daily_bias_to_entries_ict_concepts::dense::top_down_analysis_daily_bias_to_entries_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "find_lower_time_frame_entries_using_bias_ict_concepts::dense::find_lower_time_frame_entries_using_bias_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0012",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0013",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0013",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "breaker_block_fvg_entry_model_ict_concepts::dense::breaker_block_fvg_entry_model_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0013",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0002",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0012",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models::dense::the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0011",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias::dense::dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_4::dense::ttrades_top_down_chart_lessons_4:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0011",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0009",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "higher_timeframe_analysis_for_trading_aligning_expansion_candles::dense::higher_timeframe_analysis_for_trading_aligning_expansion_candles:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_1::dense::ttrades_top_down_chart_lessons_1:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "top_down_analysis_ict_concepts::dense::top_down_analysis_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0002",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0011",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0010",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0009",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0010",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "breaker_blocks_simplified_ict_concepts::dense::breaker_blocks_simplified_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "inversion_fair_value_gaps_ifvg_ict_concepts::dense::inversion_fair_value_gaps_ifvg_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts::dense::change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_silver_bullet_strategy_no_daily_bias_with_backtest::dense::ict_silver_bullet_strategy_no_daily_bias_with_backtest:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "intraday_bias_simplified_ict_concepts::dense::intraday_bias_simplified_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_bias_the_only_video_you_will_ever_need::dense::ict_daily_bias_the_only_video_you_will_ever_need:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "understanding_fair_value_gaps_fvg_ict_concepts::dense::understanding_fair_value_gaps_fvg_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "targets_with_standard_deviation_projections_ict_concepts::dense::targets_with_standard_deviation_projections_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "price_targets_ict_concepts::dense::price_targets_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_bias::dense::ict_daily_bias:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "improve_your_trade_entries_within_fair_value_gaps_fvg::dense::improve_your_trade_entries_within_fair_value_gaps_fvg:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0005",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0010",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "order_blocks_simplified_ict_concepts::dense::order_blocks_simplified_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts::dense::intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0007",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0015",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0009",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0004",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0006",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "market_structure_shift_vs_change_in_state_of_delivery_ict::dense::market_structure_shift_vs_change_in_state_of_delivery_ict:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "standard_deviation_projections_ict_concepts::dense::standard_deviation_projections_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "optimal_trade_entry_ote_ict_concepts::dense::optimal_trade_entry_ote_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "a_ict_entry_checklist_ict_concepts::dense::a_ict_entry_checklist_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "build_an_entry_model_ict_concepts::dense::build_an_entry_model_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "ote_optimal_trade_entry_ict_concepts::dense::ote_optimal_trade_entry_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0003",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0018",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0000",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0023",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0008",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0012",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0020",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    }
+  ]
+}

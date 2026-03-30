@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "example_id": "dense::scarce",
+      "candidate_detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.4,
+            0.4,
+            0.2,
+            0.1
+          ],
+          "confidence": 0.24
+        }
+      ],
+      "title": "Dense Scarce",
+      "candidate_labels": [
+        "bearish_reaction_zone"
+      ],
+      "cue_terms": [
+        "wick",
+        "continuation"
+      ],
+      "recommended_action": "adjust"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "example_id": "dense::good",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.5,
+            0.5,
+            0.2,
+            0.2
+          ]
+        }
+      ],
+      "review_outcome": "accepted",
+      "source": "heuristic_auto_label"
+    },
+    {
+      "example_id": "dense::bad",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Auto-promoted to no_setup from setup-quality scorer (confidence=0.870).",
+      "source": "setup_quality_auto_label"
+    }
+  ]
+}

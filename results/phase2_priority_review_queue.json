@@ -1,0 +1,2396 @@
+{
+  "items": [
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0017",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\why_your_continuations_fail_order_blocks_cisd_explained\\chunk_01152520.jpg",
+      "title": "Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_high"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "extreme",
+        "fair value gap",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 13,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_high"
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\equilibrium_for_expansions\\chunk_00638000.jpg",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "bias",
+        "close through",
+        "closure",
+        "confirmation",
+        "continuation",
+        "eq",
+        "equilibrium",
+        "expansion",
+        "order block",
+        "sweep",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_4::dense::ttrades_top_down_chart_lessons_4:0005",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ttrades_top_down_chart_lessons_4\\chunk_00427640.jpg",
+      "title": "TTrades Top-Down Chart Lessons #4",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "candle 3",
+        "closure",
+        "entry",
+        "expansion",
+        "order block",
+        "poi",
+        "protected swing",
+        "target",
+        "top down alignment",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0020",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trading_candle_3\\chunk_01389039.jpg",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "closure",
+        "continuation",
+        "eq",
+        "expansion",
+        "fair value gap",
+        "sweep",
+        "target",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0005",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_breaker_blocks\\chunk_00415700.jpg",
+      "title": "Trade Continuations Using Breaker Blocks",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "closure",
+        "continuation",
+        "fair value gap",
+        "retest",
+        "stop",
+        "sweep",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\easy_daily_bias_mechanical_framework\\chunk_00588440.jpg",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "continuation",
+        "eq",
+        "equilibrium",
+        "poi",
+        "reversal",
+        "sweep",
+        "wick",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0006",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_breaker_blocks\\chunk_00496360.jpg",
+      "title": "Trade Continuations Using Breaker Blocks",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "closure",
+        "continuation",
+        "expansion",
+        "retest",
+        "stop",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_like_ttrades_top_down_analysis\\chunk_00254659.jpg",
+      "title": "Trade Like TTrades - Top Down Analysis",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "entry",
+        "fair value gap",
+        "order block",
+        "poi",
+        "point of interest",
+        "sweep",
+        "top down alignment",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0002",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ict_daily_profile_london_reversal_new_york_continuation\\chunk_00219159.jpg",
+      "title": "ICT Daily Profile - London Reversal / New York Continuation",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "continuation",
+        "order block",
+        "retest",
+        "reversal",
+        "stop",
+        "target",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0001",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ict_daily_profile_london_reversal_new_york_continuation\\chunk_00132420.jpg",
+      "title": "ICT Daily Profile - London Reversal / New York Continuation",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "continuation",
+        "eq",
+        "equilibrium",
+        "fair value gap",
+        "liquidity",
+        "reversal",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\equilibrium_for_expansions\\chunk_00268120.jpg",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "close through",
+        "continuation",
+        "eq",
+        "equilibrium",
+        "expansion",
+        "fair value gap",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0012",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\protected_swings_understanding_trend_and_invalidations\\chunk_00922040.jpg",
+      "title": "Protected Swings \u2013 Understanding Trend and Invalidations",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "fair value gap",
+        "invalidation",
+        "order block",
+        "poi",
+        "point of interest",
+        "protected swing",
+        "stop"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ict_daily_profile_new_york_reversal\\chunk_00263120.jpg",
+      "title": "ICT Daily Profile - New York Reversal",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "entry",
+        "order block",
+        "reversal",
+        "run the lows",
+        "stop",
+        "sweep",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0004",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\equilibrium_for_expansions\\chunk_00343300.jpg",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "continuation",
+        "eq",
+        "equilibrium",
+        "expansion",
+        "invalidation",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0013",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\how_to_trade_reversal_phases_of_price\\chunk_00969600.jpg",
+      "title": "How To Trade Reversal - Phases Of Price",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "expansion",
+        "fair value gap",
+        "reversal",
+        "target",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0002",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\equilibrium_for_expansions\\chunk_00196180.jpg",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "eq",
+        "equilibrium",
+        "fair value gap",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0009",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\how_to_trade_reversal_phases_of_price\\chunk_00687720.jpg",
+      "title": "How To Trade Reversal - Phases Of Price",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "eq",
+        "expansion",
+        "fair value gap",
+        "liquidity",
+        "reversal",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\why_your_continuations_fail_order_blocks_cisd_explained\\chunk_00562520.jpg",
+      "title": "Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "poi",
+        "point of interest",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias::dense::dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias\\chunk_00684800.jpg",
+      "title": "DTR | C2U - Blending The Fractal Model & Unicorn Model - No Daily Bias",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "entry",
+        "fair value gap",
+        "poi",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0004",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\cisd_validates_swing_points\\chunk_00304520.jpg",
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "candidate_labels": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "eq",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 3,
+      "suggested_classes": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0009",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\candle_2_closure_foundation\\chunk_00593360.jpg",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "close through",
+        "closure",
+        "eq",
+        "equilibrium",
+        "liquidity",
+        "poi",
+        "point of interest",
+        "sweep",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0013",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\the_best_timeframe_for_ttrades_fractal_model_simple\\chunk_00906880.jpg",
+      "title": "The Best Timeframe for TTrades Fractal Model (Simple)",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "closure",
+        "entry",
+        "eq",
+        "poi",
+        "point of interest",
+        "sweep",
+        "target",
+        "top down alignment"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0023",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\chunk_01538519.jpg",
+      "title": "Wick Size Matters: The Key to Understanding Reversal and Expansion Candles",
+      "candidate_labels": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "closure",
+        "confirmation",
+        "entry",
+        "expansion",
+        "liquidity",
+        "protected swing",
+        "reversal",
+        "target",
+        "wick",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0011",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\easy_daily_bias_mechanical_framework\\chunk_00788280.jpg",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "closure",
+        "continuation",
+        "equilibrium",
+        "expansion",
+        "reversal",
+        "sweep",
+        "target",
+        "wick",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "internal_external_liquidity_daily_bias_ict_concepts::dense::internal_external_liquidity_daily_bias_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\internal_external_liquidity_daily_bias_ict_concepts\\chunk_00515200.jpg",
+      "title": "Internal & External Liquidity (Daily Bias) - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "bias",
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0007",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\candle_3_closure_ttrades_fractal_model\\chunk_00506440.jpg",
+      "title": "Candle 3 Closure: TTrades Fractal Model",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "candle 3 closure",
+        "closure",
+        "fair value gap",
+        "poi",
+        "point of interest",
+        "protected swing",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "discount_premium_ict_concepts::dense::discount_premium_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\discount_premium_ict_concepts\\chunk_00362600.jpg",
+      "title": "Discount & Premium - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "discount",
+        "entry",
+        "eq",
+        "equilibrium",
+        "fair value gap",
+        "order block",
+        "premium",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "high_resistance_vs_low_resistance_liquidity_ict_concepts::dense::high_resistance_vs_low_resistance_liquidity_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\high_resistance_vs_low_resistance_liquidity_ict_concepts\\chunk_00491400.jpg",
+      "title": "High Resistance vs Low Resistance Liquidity - ICT Concepts",
+      "candidate_labels": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "low_resistance_liquidity_run_ict_concepts::dense::low_resistance_liquidity_run_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\low_resistance_liquidity_run_ict_concepts\\chunk_00381500.jpg",
+      "title": "Low Resistance Liquidity Run - ICT Concepts",
+      "candidate_labels": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0012",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\easy_daily_bias_mechanical_framework\\chunk_00855320.jpg",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "candidate_labels": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "equilibrium",
+        "protected swing",
+        "reversal",
+        "stop",
+        "wick",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_breaker_blocks\\chunk_00266580.jpg",
+      "title": "Trade Continuations Using Breaker Blocks",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "close through",
+        "continuation",
+        "entry",
+        "poi",
+        "stop",
+        "sweep",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0026",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trading_candle_3\\chunk_01777640.jpg",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "candidate_labels": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "bias",
+        "closure",
+        "continuation",
+        "eq",
+        "liquidity",
+        "order block",
+        "protected swing",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0007",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_breaker_blocks\\chunk_00575020.jpg",
+      "title": "Trade Continuations Using Breaker Blocks",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "confirmation",
+        "continuation",
+        "entry",
+        "expansion",
+        "retest",
+        "stop",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\candle_2_closure_foundation\\chunk_00226720.jpg",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "closure",
+        "eq",
+        "equilibrium",
+        "poi",
+        "sweep",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "important_liquidity_levels_draw_on_liquidity_ict::dense::important_liquidity_levels_draw_on_liquidity_ict:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\important_liquidity_levels_draw_on_liquidity_ict\\chunk_00537600.jpg",
+      "title": "Important Liquidity Levels - Draw On Liquidity - ICT",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "higher_time_frame_points_of_interest_ict_concepts::dense::higher_time_frame_points_of_interest_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\higher_time_frame_points_of_interest_ict_concepts\\chunk_00268100.jpg",
+      "title": "Higher Time Frame Points of Interest - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "poi",
+        "point of interest",
+        "protected swing",
+        "top down alignment"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "internal_external_liquidity_model_ict_concepts::dense::internal_external_liquidity_model_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\internal_external_liquidity_model_ict_concepts\\chunk_00684600.jpg",
+      "title": "Internal & External Liquidity Model - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "market_structure_shift_vs_liquidity_grab_ict_concepts::dense::market_structure_shift_vs_liquidity_grab_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\market_structure_shift_vs_liquidity_grab_ict_concepts\\chunk_00644000.jpg",
+      "title": "Market Structure Shift vs Liquidity Grab - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "liquidity_buyside_sellside_ict_concepts::dense::liquidity_buyside_sellside_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\liquidity_buyside_sellside_ict_concepts\\chunk_00416500.jpg",
+      "title": "Liquidity: Buyside & Sellside - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "draw_on_liquidity_example_1_18_23_ict_concepts::dense::draw_on_liquidity_example_1_18_23_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\draw_on_liquidity_example_1_18_23_ict_concepts\\chunk_00143500.jpg",
+      "title": "Draw on Liquidity Example (1/18/23) - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "draw_on_liquidity_dol_ict_concepts::dense::draw_on_liquidity_dol_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\draw_on_liquidity_dol_ict_concepts\\chunk_00347200.jpg",
+      "title": "Draw on Liquidity (DOL) - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "structure_shift_vs_liquidity_grab_ict_concepts::dense::structure_shift_vs_liquidity_grab_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\structure_shift_vs_liquidity_grab_ict_concepts\\chunk_00336000.jpg",
+      "title": "Structure Shift vs Liquidity Grab - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "what_is_liquidity_ict_concepts::dense::what_is_liquidity_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\what_is_liquidity_ict_concepts\\chunk_00200200.jpg",
+      "title": "What is Liquidity? - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "liquidity",
+        "liquidity sweep",
+        "order block",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\the_only_trading_strategy_you_need_for_2026\\chunk_00557480.jpg",
+      "title": "The Only Trading Strategy You Need For 2026",
+      "candidate_labels": [],
+      "cue_terms": [
+        "bias",
+        "closure",
+        "eq",
+        "expansion",
+        "fair value gap",
+        "invalidation",
+        "order block",
+        "poi",
+        "point of interest",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": []
+    },
+    {
+      "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0011",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trading_the_4_hour_power_of_three_ohlc_olhc\\chunk_00770760.jpg",
+      "title": "Trading The 4 Hour Power Of Three - OHLC / OLHC",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "candle 3",
+        "candle 3 closure",
+        "closure",
+        "entry",
+        "eq",
+        "poi",
+        "protected swing",
+        "stop",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0006",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\the_best_timeframe_for_ttrades_fractal_model_simple\\chunk_00439760.jpg",
+      "title": "The Best Timeframe for TTrades Fractal Model (Simple)",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "bias",
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "closure",
+        "expansion",
+        "fair value gap",
+        "protected swing",
+        "top down alignment"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0004",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\the_only_trading_strategy_you_need_for_2026\\chunk_00287240.jpg",
+      "title": "The Only Trading Strategy You Need For 2026",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "candle 3 closure",
+        "closure",
+        "eq",
+        "poi",
+        "sweep",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0007",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_like_ttrades_top_down_analysis\\chunk_00550560.jpg",
+      "title": "Trade Like TTrades - Top Down Analysis",
+      "candidate_labels": [],
+      "cue_terms": [
+        "bias",
+        "closure",
+        "entry",
+        "eq",
+        "fair value gap",
+        "poi",
+        "point of interest",
+        "target",
+        "top down alignment",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": []
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0014",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\how_to_trade_reversal_phases_of_price\\chunk_01038660.jpg",
+      "title": "How To Trade Reversal - Phases Of Price",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "eq",
+        "equilibrium",
+        "expansion",
+        "fair value gap",
+        "reversal",
+        "sweep",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0012",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\reversal_sequence_ttrs_how_to_blend_pd_arrays\\chunk_00918340.jpg",
+      "title": "Reversal Sequence (TTRS) - How To Blend PD Arrays",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "entry",
+        "fair value gap",
+        "order block",
+        "reversal",
+        "stop",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0006",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\candle_3_closure_ttrades_fractal_model\\chunk_00441720.jpg",
+      "title": "Candle 3 Closure: TTrades Fractal Model",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "closure",
+        "eq",
+        "fair value gap",
+        "poi",
+        "point of interest",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0010",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\easy_daily_bias_mechanical_framework\\chunk_00723959.jpg",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "equilibrium",
+        "poi",
+        "reversal",
+        "target",
+        "wick",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\easy_daily_bias_mechanical_framework\\chunk_00234800.jpg",
+      "title": "Easy Daily Bias - Mechanical Framework",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "eq",
+        "equilibrium",
+        "fair value gap",
+        "reversal",
+        "wick",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0024",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\why_your_continuations_fail_order_blocks_cisd_explained\\chunk_01610240.jpg",
+      "title": "Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "entry",
+        "fair value gap",
+        "poi",
+        "point of interest",
+        "sweep",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0010",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_breaker_blocks\\chunk_00813300.jpg",
+      "title": "Trade Continuations Using Breaker Blocks",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "close through",
+        "closure",
+        "continuation",
+        "entry",
+        "fair value gap",
+        "stop"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0013",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\equilibrium_for_expansions\\chunk_01013020.jpg",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "bias",
+        "close through",
+        "closure",
+        "continuation",
+        "eq",
+        "equilibrium",
+        "expansion",
+        "order block"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\chunk_00549920.jpg",
+      "title": "Wick Size Matters: The Key to Understanding Reversal and Expansion Candles",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "candle 3",
+        "closure",
+        "expansion",
+        "reversal",
+        "wick",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "top_down_analysis_daily_bias_to_entries_ict_concepts::dense::top_down_analysis_daily_bias_to_entries_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\top_down_analysis_daily_bias_to_entries_ict_concepts\\chunk_00456400.jpg",
+      "title": "Top Down Analysis | Daily Bias To Entries - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "bias",
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing",
+        "top down alignment"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "breaker_block_fvg_entry_model_ict_concepts::dense::breaker_block_fvg_entry_model_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\breaker_block_fvg_entry_model_ict_concepts\\chunk_00326900.jpg",
+      "title": "Breaker Block & FVG Entry Model - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "fvg",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0015",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_like_ttrades_top_down_analysis\\chunk_01119620.jpg",
+      "title": "Trade Like TTrades - Top Down Analysis",
+      "candidate_labels": [],
+      "cue_terms": [
+        "closure",
+        "entry",
+        "fair value gap",
+        "order block",
+        "poi",
+        "point of interest",
+        "stop",
+        "target",
+        "top down alignment"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": []
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0018",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trading_candle_3\\chunk_01259760.jpg",
+      "title": "TTrades Fractal Model - Trading Candle 3",
+      "candidate_labels": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "bias",
+        "closure",
+        "continuation",
+        "expansion",
+        "protected swing",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0021",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\why_your_continuations_fail_order_blocks_cisd_explained\\chunk_01415840.jpg",
+      "title": "Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "candidate_labels": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "continuation",
+        "poi",
+        "point of interest",
+        "protected swing",
+        "retest",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "my_favorite_reversal_pattern_orderblocks_ict_concepts::dense::my_favorite_reversal_pattern_orderblocks_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\my_favorite_reversal_pattern_orderblocks_ict_concepts\\chunk_00485800.jpg",
+      "title": "My Favorite Reversal Pattern | Orderblocks - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing",
+        "reversal"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts::dense::reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts\\chunk_00189000.jpg",
+      "title": "Reversal or Pullback? Using Market Structure To Determine Trend - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing",
+        "reversal"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0010",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\chunk_00683520.jpg",
+      "title": "Wick Size Matters: The Key to Understanding Reversal and Expansion Candles",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "confirmation",
+        "expansion",
+        "fair value gap",
+        "reversal",
+        "sweep",
+        "target",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0004",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\candle_2_closure_foundation\\chunk_00286160.jpg",
+      "title": "Candle 2 Closure: The Foundation of TTrades Fractal Model",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 2",
+        "candle 2 closure",
+        "closure",
+        "equilibrium",
+        "poi",
+        "point of interest",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0004",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_breaker_blocks\\chunk_00342280.jpg",
+      "title": "Trade Continuations Using Breaker Blocks",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "closure",
+        "continuation",
+        "entry",
+        "poi",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0012",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\how_to_trade_reversal_phases_of_price\\chunk_00897040.jpg",
+      "title": "How To Trade Reversal - Phases Of Price",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "eq",
+        "expansion",
+        "poi",
+        "reversal",
+        "sweep",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_breaker_blocks\\chunk_00650219.jpg",
+      "title": "Trade Continuations Using Breaker Blocks",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "closure",
+        "continuation",
+        "engulf",
+        "retest",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_1::dense::ttrades_top_down_chart_lessons_1:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ttrades_top_down_chart_lessons_1\\chunk_00675500.jpg",
+      "title": "TTrades Top-Down Chart Lessons #1",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing",
+        "top down alignment"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "top_down_analysis_ict_concepts::dense::top_down_analysis_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\top_down_analysis_ict_concepts\\chunk_00336700.jpg",
+      "title": "Top Down Analysis - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing",
+        "top down alignment"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\index_futures_weekly_recap_ict_concepts\\chunk_00743320.jpg",
+      "title": "Index Futures Weekly Recap- ICT Concepts",
+      "candidate_labels": [],
+      "cue_terms": [
+        "bias",
+        "entry",
+        "eq",
+        "fair value gap",
+        "liquidity",
+        "order block",
+        "stop",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": []
+    },
+    {
+      "example_id": "breaker_blocks_simplified_ict_concepts::dense::breaker_blocks_simplified_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\breaker_blocks_simplified_ict_concepts\\chunk_00564200.jpg",
+      "title": "Breaker Blocks Simplified - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "breaker block",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "intraday_bias_simplified_ict_concepts::dense::intraday_bias_simplified_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\intraday_bias_simplified_ict_concepts\\chunk_01052100.jpg",
+      "title": "Intraday Bias Simplified - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "bias",
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "ict_daily_bias_the_only_video_you_will_ever_need::dense::ict_daily_bias_the_only_video_you_will_ever_need:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ict_daily_bias_the_only_video_you_will_ever_need\\chunk_00776300.jpg",
+      "title": "ICT Daily Bias - The Only Video You Will Ever Need!",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "bias",
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "understanding_fair_value_gaps_fvg_ict_concepts::dense::understanding_fair_value_gaps_fvg_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\understanding_fair_value_gaps_fvg_ict_concepts\\chunk_00417200.jpg",
+      "title": "Understanding Fair Value Gaps (FVG) - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "fvg",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "targets_with_standard_deviation_projections_ict_concepts::dense::targets_with_standard_deviation_projections_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\targets_with_standard_deviation_projections_ict_concepts\\chunk_00378000.jpg",
+      "title": "Targets With Standard Deviation Projections - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "price_targets_ict_concepts::dense::price_targets_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\price_targets_ict_concepts\\chunk_00164500.jpg",
+      "title": "Price Targets - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "ict_daily_bias::dense::ict_daily_bias:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ict_daily_bias\\chunk_00243600.jpg",
+      "title": "ICT Daily Bias",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "bias",
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "improve_your_trade_entries_within_fair_value_gaps_fvg::dense::improve_your_trade_entries_within_fair_value_gaps_fvg:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\improve_your_trade_entries_within_fair_value_gaps_fvg\\chunk_00100800.jpg",
+      "title": "Improve Your Trade Entries Within Fair Value Gaps (FVG)",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "fvg",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trading_the_4_hour_power_of_three_ohlc_olhc\\chunk_00565800.jpg",
+      "title": "Trading The 4 Hour Power Of Three - OHLC / OLHC",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "entry",
+        "expansion",
+        "fair value gap",
+        "protected swing",
+        "stop",
+        "target",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "standard_deviation_projections_ict_concepts::dense::standard_deviation_projections_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\standard_deviation_projections_ict_concepts\\chunk_00609700.jpg",
+      "title": "Standard Deviation Projections - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0012",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\the_best_timeframe_for_ttrades_fractal_model_simple\\chunk_00840920.jpg",
+      "title": "The Best Timeframe for TTrades Fractal Model (Simple)",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "candle 3",
+        "eq",
+        "invalidation",
+        "protected swing",
+        "stop",
+        "target",
+        "top down alignment"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0020",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles\\chunk_01338080.jpg",
+      "title": "Wick Size Matters: The Key to Understanding Reversal and Expansion Candles",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "candle 3",
+        "close through",
+        "confirmation",
+        "expansion",
+        "reversal",
+        "target",
+        "wick logic"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0002",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_order_blocks\\chunk_00191920.jpg",
+      "title": "Trade Continuations Using Order Blocks",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "bias",
+        "continuation",
+        "eq",
+        "liquidity",
+        "sweep",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0007",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_order_blocks\\chunk_00587620.jpg",
+      "title": "Trade Continuations Using Order Blocks",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "continuation",
+        "entry",
+        "retest",
+        "stop",
+        "sweep",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0005",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\candle_3_closure_ttrades_fractal_model\\chunk_00376040.jpg",
+      "title": "Candle 3 Closure: TTrades Fractal Model",
+      "candidate_labels": [],
+      "cue_terms": [
+        "candle 2",
+        "candle 3",
+        "candle 3 closure",
+        "closure",
+        "fair value gap",
+        "poi",
+        "point of interest"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": []
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0006",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\why_your_continuations_fail_order_blocks_cisd_explained\\chunk_00428280.jpg",
+      "title": "Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "entry",
+        "expansion",
+        "fair value gap",
+        "poi"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0008",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\trade_continuations_using_order_blocks\\chunk_00664460.jpg",
+      "title": "Trade Continuations Using Order Blocks",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts::dense::intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts\\chunk_00170800.jpg",
+      "title": "Intro to Market Structure Shifts, Fair Value Gaps, and Displacement - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "optimal_trade_entry_ote_ict_concepts::dense::optimal_trade_entry_ote_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\optimal_trade_entry_ote_ict_concepts\\chunk_00535500.jpg",
+      "title": "Optimal Trade Entry (OTE) - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "a_ict_entry_checklist_ict_concepts::dense::a_ict_entry_checklist_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\a_ict_entry_checklist_ict_concepts\\chunk_00460600.jpg",
+      "title": "A+ ICT Entry Checklist - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "build_an_entry_model_ict_concepts::dense::build_an_entry_model_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\build_an_entry_model_ict_concepts\\chunk_00235900.jpg",
+      "title": "Build An Entry Model - ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "ote_optimal_trade_entry_ict_concepts::dense::ote_optimal_trade_entry_ict_concepts:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ote_optimal_trade_entry_ict_concepts\\chunk_00130900.jpg",
+      "title": "OTE Optimal Trade Entry- ICT Concepts",
+      "candidate_labels": [
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "breaker",
+        "confirmation",
+        "entry",
+        "fair value gap",
+        "order block",
+        "protected swing"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "protected_swing"
+      ]
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0004",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\how_to_trade_reversal_phases_of_price\\chunk_00335000.jpg",
+      "title": "How To Trade Reversal - Phases Of Price",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "expansion",
+        "fair value gap",
+        "reversal",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0009",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\equilibrium_for_expansions\\chunk_00714080.jpg",
+      "title": "You Are Using Discount and Premium Wrong! - EQ For Expansions",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "eq",
+        "equilibrium",
+        "expansion"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0012",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\why_your_continuations_fail_order_blocks_cisd_explained\\chunk_00832320.jpg",
+      "title": "Why Your Continuations Fail (Order Blocks + CISD Explained)",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "continuation",
+        "liquidity",
+        "poi",
+        "point of interest",
+        "wick"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0003",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\reversal_sequence_ttrs_how_to_blend_pd_arrays\\chunk_00262020.jpg",
+      "title": "Reversal Sequence (TTRS) - How To Blend PD Arrays",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "discount",
+        "fair value gap",
+        "order block",
+        "premium",
+        "reversal"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0005",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\ict_daily_profile_london_reversal_new_york_continuation\\chunk_00480080.jpg",
+      "title": "ICT Daily Profile - London Reversal / New York Continuation",
+      "candidate_labels": [
+        "liquidity_sweep_low"
+      ],
+      "cue_terms": [
+        "continuation",
+        "liquidity",
+        "reversal",
+        "stop",
+        "target"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low"
+      ]
+    },
+    {
+      "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0006",
+      "image_path": "knowledge\\ttfm_video_corpus\\dense_frames\\cisd_validates_swing_points\\chunk_00441160.jpg",
+      "title": "Validating Swing Points Using Lower Timeframe Confirmation (CISD)",
+      "candidate_labels": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ],
+      "cue_terms": [
+        "closure",
+        "continuation",
+        "protected swing",
+        "sweep"
+      ],
+      "candidate_detections": [],
+      "recommended_action": "adjust",
+      "scarcity_score": 0,
+      "suggested_classes": [
+        "liquidity_sweep_low",
+        "protected_swing"
+      ]
+    }
+  ]
+}

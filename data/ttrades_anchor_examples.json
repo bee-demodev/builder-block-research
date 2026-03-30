@@ -1,0 +1,85 @@
+{
+  "anchors": [
+    {
+      "class_label": "high_probability_long",
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::closure",
+      "image_path": "knowledge/ttfm_video_corpus/frames/mara_trade_review_h1_market_maker_buy_model_mmxm/closure_00206500.jpg",
+      "note": "Auto-bootstrapped long anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    },
+    {
+      "class_label": "high_probability_long",
+      "example_id": "youtube_trading_candle_3_visual_v1::sweep",
+      "image_path": "knowledge/ttfm_video_corpus/frames/trading_candle_3/sweep_00599520.jpg",
+      "note": "Auto-bootstrapped long anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    },
+    {
+      "class_label": "high_probability_long",
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::context",
+      "image_path": "knowledge/ttfm_video_corpus/frames/mara_trade_review_h1_market_maker_buy_model_mmxm/context_00129140.jpg",
+      "note": "Auto-bootstrapped long anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    },
+    {
+      "class_label": "high_probability_short",
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::closure",
+      "image_path": "knowledge/ttfm_video_corpus/frames/ict_index_futures_weekly_recap_week_of_5_16_22/closure_00223840.jpg",
+      "note": "Auto-bootstrapped short anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    },
+    {
+      "class_label": "high_probability_short",
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::outcome",
+      "image_path": "knowledge/ttfm_video_corpus/frames/fractal_model_fundamentals/outcome_00394480.jpg",
+      "note": "Auto-bootstrapped short anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    },
+    {
+      "class_label": "high_probability_short",
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::sweep",
+      "image_path": "knowledge/ttfm_video_corpus/frames/equilibrium_for_expansions/sweep_00790519.jpg",
+      "note": "Auto-bootstrapped short anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    },
+    {
+      "class_label": "invalid_chop",
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::outcome",
+      "image_path": "knowledge/ttfm_video_corpus/frames/equilibrium_for_expansions/outcome_00867299.jpg",
+      "note": "Auto-bootstrapped invalid/chop anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    },
+    {
+      "class_label": "invalid_chop",
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::closure",
+      "image_path": "knowledge/ttfm_video_corpus/frames/fractal_model_fundamentals/closure_00322600.jpg",
+      "note": "Auto-bootstrapped invalid/chop anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    },
+    {
+      "class_label": "invalid_chop",
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::confirmation",
+      "image_path": "knowledge/ttfm_video_corpus/frames/fractal_model_fundamentals/confirmation_00959840.jpg",
+      "note": "Auto-bootstrapped invalid/chop anchor from the existing corpus.",
+      "metadata": {
+        "source": "bootstrap_v1"
+      }
+    }
+  ]
+}

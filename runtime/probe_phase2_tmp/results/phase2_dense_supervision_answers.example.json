@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "example_id": "dense::good",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    },
+    {
+      "example_id": "dense::bad",
+      "detections": [],
+      "review_outcome": "accepted",
+      "note": ""
+    }
+  ]
+}
