@@ -1,23 +1,21 @@
 import {
-  ArrowCircleRightIcon,
   ArrowLeftIcon,
   ArrowRightIcon,
   CheckCircleIcon,
-  CircleIcon,
   ClockCounterClockwiseIcon,
+  ClockIcon,
   DatabaseIcon,
-  ProhibitIcon,
   TriangleIcon,
   WarningCircleIcon,
   WarningIcon,
   XCircleIcon,
 } from '@phosphor-icons/react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { focusedStep, planWords, sections, setSide, sideChoices, stepPrice, suggestionText } from '../decision';
+import { checkpointText, planWords, sections, setSide, sideChoices, suggestionText, waitingText } from '../decision';
 import { pathLine, plainText, sentenceCase, wallClock } from '../format';
 import { isStale, type Model } from '../store';
-import { checkTotals, decisionTone, directionTone, isStopLevel, readTone, stepTone } from '../tones';
-import type { ClientFrame, Direction, Plan, Step, VerdictView } from '../wire';
+import { checkTotals, decisionTone, directionTone, isStopLevel, readTone } from '../tones';
+import type { ClientFrame, Direction, Plan, VerdictView } from '../wire';
 import { Skeleton, StatusIcon, toneClass } from './ui';
 
 interface Props {
@@ -41,9 +39,10 @@ export function DecisionPanel({ model, mode, onToggleMode, send }: Props) {
   const ready = model.link === 'open' && server !== null;
   const { panelRef, headRef, tall } = useTallHead();
 
-  // Three bands. The head always shows: the side, the decision and what has to happen
-  // next. The middle (the plan, why, the top-down read, levels) scrolls when it does not
-  // fit. The foot button always shows.
+  // Three bands. The head always shows: the side, the decision, what it is waiting for
+  // and the one-line chain 1D -> 1h -> 5m (the charts carry the reasons). The middle (the
+  // plan or levels, the session clock) scrolls when it does not fit. The foot button
+  // (the scorecard) always shows.
   return (
     <aside ref={panelRef} className={`panel${tall ? ' is-tall' : ''}`} aria-label="Decision">
       <div ref={headRef} className="panel-head">
@@ -62,7 +61,7 @@ export function DecisionPanel({ model, mode, onToggleMode, send }: Props) {
         </div>
 
         {view ? <Verdict view={view} stale={stale} showWaiting={show!.waiting} /> : <NoVerdict symbol={symbol} hasError={Boolean(model.error)} />}
-        {view && show!.steps && <Steps steps={view.steps} stale={stale} />}
+        {view && <Chain view={view} stale={stale} />}
       </div>
 
       <ScrollBand>
@@ -87,9 +86,8 @@ export function DecisionPanel({ model, mode, onToggleMode, send }: Props) {
         )}
 
         {view?.plan && <PlanBlock plan={view.plan} stale={stale} />}
-        {view?.why && <p className={`why${stale ? ' is-stale' : ''}`}>{plainText(view.why)}</p>}
-        {view && <TopDown view={view} />}
         {view && show!.levels && <Levels view={view} />}
+        {view && clock && <SessionClock hour={clock.hour} minute={clock.minute} />}
       </ScrollBand>
 
       {view && (
@@ -193,18 +191,15 @@ function Verdict({ view, stale, showWaiting }: { view: VerdictView; stale: boole
         <span>{suggestionText(view)}</span>
       </h1>
       {line && <p className="path">{line}</p>}
-      {view.idea_state &&
-        (view.idea_alert ? (
-          <p className="idea-state is-alert" role="note">
-            <WarningIcon size={15} weight="bold" aria-hidden className="tone-watch" />
-            <span>
-              <span className="sr-only">Warning: </span>
-              {plainText(view.idea_state)}
-            </span>
-          </p>
-        ) : (
-          <p className="idea-state">{plainText(view.idea_state)}</p>
-        ))}
+      {view.idea_state && view.idea_alert && (
+        <p className="idea-state is-alert" role="note">
+          <WarningIcon size={15} weight="bold" aria-hidden className="tone-watch" />
+          <span>
+            <span className="sr-only">Warning: </span>
+            {plainText(view.idea_state)}
+          </span>
+        </p>
+      )}
       {view.auto_note && (
         <p className="auto-note">
           <span className="auto-note-label">By itself</span> {plainText(view.auto_note)}
@@ -213,61 +208,43 @@ function Verdict({ view, stale, showWaiting }: { view: VerdictView; stale: boole
       {showWaiting && (
         <div className="waiting">
           <p className="waiting-label">Waiting for</p>
-          <p className="waiting-text">{plainText(view.waiting_for)}</p>
+          <p className="waiting-text">{waitingText(view)}</p>
         </div>
       )}
     </div>
   );
 }
 
-const STEP_ICON = {
-  done: CheckCircleIcon,
-  next: ArrowCircleRightIcon,
-  later: CircleIcon,
-  blocked: ProhibitIcon,
-} as const;
-
-/** What has to happen, highest timeframe first. The next step is the focus; done steps recede. */
-function Steps({ steps, stale }: { steps: Step[]; stale: boolean }) {
-  const focus = focusedStep(steps);
+/** The chain at a glance, highest timeframe first: one line per read, its state by icon and colour. */
+function Chain({ view, stale }: { view: VerdictView; stale: boolean }) {
+  if (view.read.length === 0) return null;
   return (
-    <section className={`steps${stale ? ' is-stale' : ''}`} aria-labelledby="steps-title">
-      <h2 id="steps-title" className="section-label">
-        What has to happen
-      </h2>
-      <ol className="step-list">
-        {steps.map((s) => {
-          const Icon = STEP_ICON[s.status];
-          const price = stepPrice(s);
-          const detail = plainText(s.detail);
-          return (
-            <li key={s.number} className={`step step-${s.status}${s === focus ? ' is-focus' : ''}`} aria-current={s === focus ? 'step' : undefined}>
-              <span className="step-num mono" aria-label={`Step ${s.number}`}>
-                {s.number}
-              </span>
-              <div className="step-body">
-                <p className="step-head">
-                  <span className={`step-word ${toneClass(stepTone(s.status))}`}>
-                    <Icon size={14} weight={s.status === 'next' ? 'fill' : 'regular'} aria-hidden />
-                    {s.word || sentenceCase(s.status)}
-                  </span>
-                  <span className="step-label">{plainText(s.label)}</span>
-                </p>
-                {detail && (
-                  <p className="step-detail" title={s.status === 'done' ? detail : undefined}>
-                    {detail}
-                  </p>
-                )}
-              </div>
-              <div className="step-side mono">
-                <span className="step-tf">{s.timeframe}</span>
-                {price && <span className="step-price">{price}</span>}
-              </div>
-            </li>
-          );
-        })}
-      </ol>
-    </section>
+    <ol className={`chain${stale ? ' is-stale' : ''}`} aria-label="Top-down read">
+      {view.read.map((r) => {
+        const tone = readTone(r.status);
+        return (
+          <li key={r.role} className="chain-row" title={plainText(r.reason) || undefined}>
+            <span className="chain-tf mono">{r.timeframe}</span>
+            <span className="chain-role">{sentenceCase(r.role)}</span>
+            <span className={`chain-headline ${toneClass(tone)}`}>{plainText(r.headline)}</span>
+            <span className={`chain-icon ${toneClass(tone)}`}>
+              <StatusIcon status={r.status} />
+              <span className="sr-only">{r.word}</span>
+            </span>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
+/** The next New York checkpoint he works to (9:30, 9:45, 10:00, 10:30, 11:00). */
+function SessionClock({ hour, minute }: { hour: number; minute: number }) {
+  return (
+    <p className="session-clock">
+      <ClockIcon size={14} aria-hidden />
+      {checkpointText(hour, minute)}
+    </p>
   );
 }
 
@@ -326,33 +303,6 @@ function NoVerdict({ symbol, hasError }: { symbol: string; hasError: boolean }) 
         Press <span className="kbd">Check</span> to read {symbol || 'the market'} on this stack and style.
       </p>
     </div>
-  );
-}
-
-function TopDown({ view }: { view: VerdictView }) {
-  if (view.read.length === 0) return null;
-  return (
-    <ol className="topdown" aria-label="Top-down read">
-      {view.read.map((r) => {
-        const tone = readTone(r.status);
-        return (
-          <li key={r.role} className="read">
-            <span className="read-tf mono">{r.timeframe}</span>
-            <div className="read-body">
-              <p className="read-status">
-                <span className={`read-word ${toneClass(tone)}`}>
-                  <StatusIcon status={r.status} />
-                  {r.word}
-                </span>
-                <span className="read-role">{sentenceCase(r.role)}</span>
-              </p>
-              <p className="read-headline">{plainText(r.headline)}</p>
-              {r.reason && <p className="read-reason">{plainText(r.reason)}</p>}
-            </div>
-          </li>
-        );
-      })}
-    </ol>
   );
 }
 

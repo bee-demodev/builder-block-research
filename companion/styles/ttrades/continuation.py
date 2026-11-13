@@ -15,6 +15,7 @@ from companion.styles.ttrades.bias import BiasRead
 from companion.styles.ttrades.checklist import ADVISORY, CONTINUATION, GATE, Checklist
 from companion.styles.ttrades.context import Context, View
 from companion.styles.ttrades.primitives import (
+    Bars,
     CisdRead,
     PoiHit,
     Side,
@@ -37,6 +38,7 @@ from companion.styles.ttrades.risk import (
     pick_trigger,
     plan_trade,
 )
+from companion.timeframes import bar_close_time
 from companion.types import MarkupItem
 
 
@@ -129,9 +131,59 @@ def _dropped(s_view: View, pos: int, hit: PoiHit) -> str | None:
     return None
 
 
+@dataclass(frozen=True)
+class EntryRange:
+    """A consolidation on the entry timeframe (rules.md 6, stage c4; "Why Your Continuations
+    Fail"): the entry CISD closed through, but slowly, so price was ranging, not continuing.
+    ``low`` is the swing it was meant to protect, ``high`` the top of the leg it fell from."""
+
+    low: float
+    high: float
+    first: int  # first bar of the range (the leg's top)
+    confirm: int  # the slow close-through: a sweep of the range high, not a continuation
+    bars: int  # bars it took
+
+
+def entry_range(e: Bars, read: CisdRead | None, max_bars: int) -> EntryRange | None:
+    """The range a slow entry CISD leaves behind, or ``None`` when the turn was a quick V."""
+    if read is None or read.confirm is None or (read.bars_to_confirm or 0) <= max_bars:
+        return None
+    # the leg's top: the bar before the down-close series (it may sit before the swing candle)
+    first = max(0, (read.series[0] if read.series is not None else read.anchor) - 1)
+    high = float(e.high[first : read.confirm].max())
+    return EntryRange(read.anchor_low, high, first, read.confirm, read.bars_to_confirm or 0)
+
+
+def breakout_before(e: Bars, rng: EntryRange, before: int) -> int | None:
+    """First bar from the slow close-through up to ``before`` that closed above the range high."""
+    for pos in range(rng.confirm, before):
+        if float(e.close[pos]) > rng.high:
+            return pos
+    return None
+
+
+def ran_liquidity(e: Bars, pos: int, e_lo: int) -> Any:
+    """The first entry-timeframe swing high formed since ``e_lo`` that bar ``pos`` was the
+    first to take, or ``None`` (rules.md 6, ``cont_trigger_clear_of_liquidity``)."""
+    bar_high = float(e.high[pos])
+    for swing_high in e.swing_highs:
+        if (
+            e_lo <= swing_high.pos
+            and swing_high.pos + 1 < pos
+            and bar_high > swing_high.price
+            and float(e.high[swing_high.pos + 1 : pos].max()) <= swing_high.price
+        ):
+            return swing_high
+    return None
+
+
 def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
     cfg, stack, side = ctx.cfg, ctx.stack, bias.side
-    roles = {"cont_objective_open": cfg.objective_open_role, "cont_reward_at_least_2r": cfg.reward_check_role}
+    roles = {
+        "cont_objective_open": cfg.objective_open_role,
+        "cont_reward_at_least_2r": cfg.reward_check_role,
+        "cont_objective_open_at_trigger": cfg.objective_at_trigger_role,
+    }
     if not cfg.setup_body_alignment_required:
         roles["cont_setup_closure_body_aligned"] = ADVISORY
     cl = Checklist(CONTINUATION, stack, side, roles)
@@ -377,6 +429,9 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
             cl.set("cont_entry_cisd_swift", None, "Not evaluated: no entry CISD yet")
     out.seen["entry_read"] = read
 
+    rng = entry_range(e, read, cfg.cisd_max_bars)
+    out.seen["entry_range"] = rng
+
     # --- c4 --------------------------------------------------------------------
     allowed = 1 + cfg.entry_window_extra_candles
     strong_text = ""
@@ -443,7 +498,23 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
             blocks = [item for item in candidates if e.times[item.pos] >= window_start and in_window(item)]
         effective = "conservative" if mode == "aggressive" and not cisd_allowed else mode
         out.seen.update(mode=effective, cisd_allowed=cisd_allowed)
+        preferred = ""
+        if cfg.wait_for_clean_continuation:
+
+            def clean(item: Trigger) -> bool:
+                return _swift(item, cfg) and ran_liquidity(e, item.pos, e_lo) is None and _internal(e, rng, item) is None
+
+            first_pick, _ = pick_trigger(effective, cisd_trigger, blocks, cfg)
+            clean_cisd = cisd_trigger if cisd_trigger is not None and clean(cisd_trigger) else None
+            clean_blocks = [item for item in blocks if clean(item)]
+            if first_pick is not None and not clean(first_pick) and (clean_cisd is not None or clean_blocks):
+                cisd_trigger, blocks = clean_cisd, clean_blocks
+                preferred = (
+                    f"; the trigger at {e.at(first_pick.pos)} was not a clean continuation, so the next clean "
+                    f"continuation after it is used"
+                )
         trigger, how = pick_trigger(effective, cisd_trigger, blocks, cfg)
+        how += preferred
         forced = " (the CISD entry is not allowed: the bias Candle 2 expanded)" if out.conservative_forced else ""
         if trigger is None:
             outside = f" {formed} formed outside the entry window." if formed else ""
@@ -473,6 +544,10 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
                 f"{cisd_text(e, trigger.read)}. Trigger bar closed at {when(e.closes_at[trigger.pos])}",
             )
 
+    if trigger is not None:
+        _v_shape(cl, cfg, e, side, trigger)
+        _consolidation(cl, e, side, rng, trigger)
+
     if trigger is None:
         cl.fill("no entry trigger yet")
     else:
@@ -493,16 +568,8 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
                 f"stop swing {e.p(trigger.wick_stop)}",
             )
         bar_high = float(e.high[trigger.pos])
-        ran = [
-            swing_high
-            for swing_high in e.swing_highs
-            if e_lo <= swing_high.pos
-            and swing_high.pos + 1 < trigger.pos
-            and bar_high > swing_high.price
-            and float(e.high[swing_high.pos + 1 : trigger.pos].max()) <= swing_high.price
-        ]
-        if ran:
-            ran_first = ran[0]
+        ran_first = ran_liquidity(e, trigger.pos, e_lo)
+        if ran_first is not None:
             cl.set(
                 "cont_trigger_clear_of_liquidity",
                 False,
@@ -538,10 +605,155 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
                   else f" No second structural level: no untaken {b.tf} swing {side.hi} beyond it within {ctx.lookback} bars.")
         )
         cl.set("cont_reward_at_least_2r", plan.passed, plan.text + t2_text)
+        _objective_at_trigger(cl, ctx, view, side, trigger, t1)
+        _early_in_candle(cl, cfg, s, e, trigger)
+        _newer_protected_low(cl, cfg, e, side, trigger, plan)
 
     _markup(out, view, bias, level, eq, setup, read)
     _invalidation(out, view, bias, level, t1)
     return out
+
+
+def _swift(trigger: Trigger, cfg: Any) -> bool:
+    bars = trigger.read.bars_to_confirm if trigger.read is not None else None
+    return bars is not None and bars <= cfg.cisd_max_bars
+
+
+def _internal(e: Bars, rng: EntryRange | None, trigger: Trigger) -> str | None:
+    """Why ``trigger`` is an internal move of the entry range, or ``None`` when it is not."""
+    if rng is None:
+        return None
+    if trigger.mode == "aggressive":
+        return "it is the slow close-through itself"
+    anchor = trigger.read.anchor if trigger.read is not None else trigger.pos
+    if breakout_before(e, rng, anchor) is None:
+        return "no close above the range high came before its pullback"
+    return None
+
+
+def _v_shape(cl: Checklist, cfg: Any, e: Bars, side: Side, trigger: Trigger) -> None:
+    """``cont_trigger_v_shape`` (rules.md 6, stage c4): the trigger's own close-through came
+    within ``cisd_max_bars`` of its extreme. Slow means consolidating: wait for another
+    continuation (the trigger choice does that when ``wait_for_clean_continuation`` is on)."""
+    read = trigger.read
+    bars = read.bars_to_confirm if read is not None else None
+    if read is None or bars is None:
+        cl.set("cont_trigger_v_shape", None, "the trigger has no close-through to measure")
+        return
+    head = f"the trigger's close-through came {bars} {e.tf} bar(s) after its {side.lo}"
+    if bars <= cfg.cisd_max_bars:
+        cl.set("cont_trigger_v_shape", True, f"{head} (a V-shape is <= {cfg.cisd_max_bars})")
+    else:
+        cl.set(
+            "cont_trigger_v_shape",
+            False,
+            f"{head}: too slow, price is consolidating rather than continuing. Wait for another continuation",
+        )
+
+
+def _consolidation(cl: Checklist, e: Bars, side: Side, rng: EntryRange | None, trigger: Trigger) -> None:
+    """``cont_not_inside_consolidation`` (rules.md 6, stage c4; "Why Your Continuations Fail")."""
+    if rng is None:
+        cl.set(
+            "cont_not_inside_consolidation",
+            True,
+            f"no consolidation: the entry CISD closed through in a quick V, so its {side.lo} is protected",
+        )
+        return
+    box = (
+        f"the entry CISD took {rng.bars} {e.tf} bars to close through (at {e.at(rng.confirm)}), so price was "
+        f"consolidating between {e.p(rng.low)} and {e.p(rng.high)}; that close was a sweep of the range {side.hi}, "
+        f"not a continuation"
+    )
+    why = _internal(e, rng, trigger)
+    if why is None:
+        brk = breakout_before(e, rng, trigger.read.anchor if trigger.read is not None else trigger.pos)
+        cl.set(
+            "cont_not_inside_consolidation",
+            True,
+            f"{box}. Breakout: {e.tf} bar {e.at(brk or 0)} closed {side.above} {e.p(rng.high)}, and the trigger is a "
+            f"new continuation after it",
+        )
+        return
+    cl.set(
+        "cont_not_inside_consolidation",
+        False,
+        f"{box}. This trigger is internal to the range ({why}). Wait for a sweep of the range {side.lo} "
+        f"{e.p(rng.low)} and a quick V back through, or a close {side.above} {e.p(rng.high)} followed by a new "
+        f"continuation",
+    )
+
+
+def _objective_at_trigger(cl: Checklist, ctx: Context, view: View, side: Side, trigger: Trigger, t1: float) -> None:
+    """``cont_objective_open_at_trigger``: was the higher-timeframe target already met when
+    the trigger closed? Judged at the trigger, so a target reached after entry is the exit,
+    not a reason to drop the trade."""
+    e, b = view.E, view.B
+    if ctx.b_last_close is None:
+        cl.set("cont_objective_open_at_trigger", None, "no forming bias candle")
+        return
+    start = e.first_at_or_after(ctx.b_last_close)
+    if start > trigger.pos:
+        cl.set("cont_objective_open_at_trigger", None, f"no {e.tf} bar of the forming {b.tf} candle up to the trigger")
+        return
+    top = float(e.high[start : trigger.pos + 1].max())
+    taken = top > t1
+    cl.set(
+        "cont_objective_open_at_trigger",
+        not taken,
+        f"by the trigger close {when(e.closes_at[trigger.pos])} the forming {b.tf} candle had reached {side.p(top)}; the "
+        f"previous candle's {side.hi} {side.p(t1)} was "
+        + (
+            "already taken: the higher-timeframe target is met, where a new phase of price (consolidation or "
+            "reversal) can start, so a continuation here is late"
+            if taken
+            else "still open"
+        ),
+    )
+
+
+def _early_in_candle(cl: Checklist, cfg: Any, s: Bars, e: Bars, trigger: Trigger) -> None:
+    """``cont_entry_early_in_candle``: how far into its setup candle the trigger closed."""
+    closed = e.closes_at[trigger.pos]
+    last = s.last_closed_by(closed)
+    if last < 0:
+        cl.set("cont_entry_early_in_candle", None, f"no closed {s.tf} candle before the trigger")
+        return
+    opened = s.closes_at[last]
+    ends = bar_close_time(opened, s.tf)
+    frac = float((closed - opened) / (ends - opened)) if ends > opened else 0.0
+    ok = frac <= cfg.entry_latest_candle_frac + 1e-9
+    detail = f"trigger closed {when(closed)}, {frac:.0%} into the {s.tf} candle {when(opened)} to {when(ends)}" + (
+        " (first half: the mechanical ideal)" if frac <= 0.5 else ""
+    )
+    if not ok:
+        detail += f"; later than {cfg.entry_latest_candle_frac:.0%}, so wait for the next {s.tf} candle"
+    cl.set("cont_entry_early_in_candle", ok, detail)
+
+
+def _newer_protected_low(cl: Checklist, cfg: Any, e: Bars, side: Side, trigger: Trigger, plan: TradePlan) -> None:
+    """``cont_newer_protected_low`` (advisory): continuations after the entry that each leave
+    a higher protected low, the stepping stones a stop can trail to."""
+    anchor = trigger.read.anchor if trigger.read is not None else trigger.pos
+    later = find_continuation_triggers(
+        e, start=trigger.pos + 1, protected_low=trigger.wick_stop, protected_pos=anchor, order_block=None, cfg=cfg
+    )
+    live = [item for item in later if item.stopped_at is None and item.wick_stop > trigger.wick_stop]
+    if not live:
+        cl.set(
+            "cont_newer_protected_low",
+            None,
+            f"no newer protected {side.lo} since the entry; the stop stays on {e.p(trigger.wick_stop)}",
+        )
+        return
+    newest = live[-1]
+    locked = (newest.wick_stop - cfg.stop_buffer - plan.entry) / plan.risk if plan.risk > 0 else float("nan")
+    cl.set(
+        "cont_newer_protected_low",
+        True,
+        f"{len(live)} newer protected {side.lo}(s) since the entry; the newest is {e.p(newest.wick_stop)} "
+        f"(continuation at {when(e.closes_at[newest.pos])}). The stop can trail there: {locked:+.2f}R",
+    )
 
 
 def _markup(
@@ -553,16 +765,28 @@ def _markup(
         out.markup.append(
             MarkupItem(
                 "level", "Respect level (wick midpoint)", b.tf, price=side.px(level), start=b.times[b.n - 1],
-                role="reference", short="Wick 50%",
+                role="reference", short=f"{b.tf} wick 50%",
             )
         )
     # the same level on the setup chart, where the closes are judged against it
     out.markup.append(
         MarkupItem(
             "level", "Respect level on the setup timeframe", s.tf, price=side.px(level), start=view.ctx.b_last_close,
-            role="reference", short=f"{b.tf} wick 50%" if use_wick else f"{b.tf} EQ",
+            role="reference", short=f"{b.tf} wick 50%" if use_wick else f"{b.tf} EQ", shared=True,
         )
     )
+    if bias.swing_pos is not None and bias.candle_number is not None:
+        # the candles of the bias swing, by number: C1 (whose low C2 swept), C2, and C3 once closed
+        swing = bias.swing_pos
+        for number, pos in ((1, swing - 1), (2, swing), (3, swing + 1)):
+            if number > bias.candle_number - 1 or not 0 <= pos < b.n:
+                continue
+            out.markup.append(
+                MarkupItem(
+                    "marker", f"Bias Candle {number}", b.tf, price=side.px(float(b.low[pos])), start=b.times[pos],
+                    role="reference", short=f"C{number}",
+                )
+            )
     if bias.swing_pos is not None and bias.candle_number is not None:
         out.markup.append(
             MarkupItem(
@@ -655,7 +879,7 @@ def _markup(
             MarkupItem(
                 "level", "Entry CISD level (no close through it yet)", e.tf, price=side.px(read.level),
                 start=e.times[read.series[0] if read.series else read.anchor], role="waiting",
-                short=f"Close {side.above} = CISD",
+                short=f"Close {side.above} = CISD", shared=True,
             )
         )
     trigger = out.trigger
@@ -664,7 +888,7 @@ def _markup(
             MarkupItem(
                 "level", f"Protected {side.lo} (stop swing)", e.tf, price=side.px(trigger.wick_stop),
                 start=e.times[trigger.read.anchor] if trigger.read else e.times[trigger.pos],
-                role="protected", short=f"Protected {side.lo}",
+                role="protected", short=f"Protected {side.lo}", shared=True,
             )
         )
         out.markup.append(

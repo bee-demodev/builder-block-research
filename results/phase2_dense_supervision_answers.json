@@ -719,6 +719,2234 @@
       ],
       "review_outcome": "accepted",
       "note": "Manual scarce-class review: clear bearish reaction zone around the highlighted reversal block."
+    },
+    {
+      "example_id": "youtube_trade_continuations_using_order_blocks_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.3047,
+            0.7153,
+            0.5375,
+            0.1806
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Clear lower highlighted demand/order-block style zone; class narrowed to bullish_reaction_zone only. High-sweep candidate left unpromoted.",
+      "source": "codex_visual_review_conservative",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "youtube_how_to_actually_trade_inversion_fair_value_gaps_ifvg_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.6883,
+            0.4625,
+            0.1109,
+            0.125
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Clear highlighted reaction zone near bearish displacement; thin sweep marker left unpromoted.",
+      "source": "codex_visual_review_conservative",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "youtube_timeframe_alignment_how_to_align_timeframes_for_expansion_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.5641,
+            0.6903,
+            0.1875,
+            0.1306
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Clear lower highlighted reaction zone; class narrowed to bearish_reaction_zone only. Tall projection/sweep hint left unpromoted.",
+      "source": "codex_visual_review_conservative",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "youtube_cpi_gold_trade_review_ict_market_maker_sell_model_mmxm_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.505,
+            0.325,
+            0.12,
+            0.19
+          ],
+          "class_name": "liquidity_sweep_high"
+        },
+        {
+          "class_id": 4,
+          "bbox": [
+            0.61,
+            0.49,
+            0.08,
+            0.04
+          ],
+          "class_name": "bearish_reaction_zone"
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: run above local high followed by bearish displacement; also visible highlighted bearish reaction zone. Boxes tightened manually from image, not auto-promoted.",
+      "source": "codex_visual_review_high_sweep_seed",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "youtube_trading_irl_erl_with_order_blocks_ict_concepts_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.3273,
+            0.1778,
+            0.0672,
+            0.0389
+          ],
+          "class_name": "liquidity_sweep_high"
+        },
+        {
+          "class_id": 1,
+          "bbox": [
+            0.4445,
+            0.8069,
+            0.0609,
+            0.0417
+          ],
+          "class_name": "liquidity_sweep_low"
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked teaching slide explicitly marks Swing High and Swing Low under External Range Liquidity. Useful symmetric seed for high/low liquidity classes.",
+      "source": "codex_visual_review_high_sweep_seed",
+      "visual_review_confidence": "high"
+    },
+    {
+      "example_id": "youtube_ttrades_fractal_model_trading_candle_2_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.4875,
+            0.292,
+            0.15,
+            0.18
+          ],
+          "class_name": "liquidity_sweep_high"
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: compact box over local high/sweep cluster before bearish candle-2 displacement.",
+      "source": "codex_visual_review_high_sweep_seed",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0005",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.45,
+            0.285,
+            0.105,
+            0.18
+          ],
+          "class_name": "liquidity_sweep_high"
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: local high and immediate bearish rejection; kept as high-sweep seed only.",
+      "source": "codex_visual_review_high_sweep_seed",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm::dense::cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0000",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.505,
+            0.285,
+            0.125,
+            0.215
+          ],
+          "class_name": "liquidity_sweep_high"
+        },
+        {
+          "class_id": 4,
+          "bbox": [
+            0.61,
+            0.493,
+            0.075,
+            0.04
+          ],
+          "class_name": "bearish_reaction_zone"
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: same CPI sequence at a different frame; high sweep into bearish displacement plus visible bearish reaction zone.",
+      "source": "codex_visual_review_high_sweep_seed",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0005",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.44,
+            0.25,
+            0.07,
+            0.13
+          ],
+          "class_name": "liquidity_sweep_high"
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: annotated protected/high point before bearish invalidation leg; promoted as high-sweep style seed.",
+      "source": "codex_visual_review_high_sweep_seed",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0007",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.442,
+            0.285,
+            0.07,
+            0.145
+          ],
+          "class_name": "liquidity_sweep_high"
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: local high/protected point with sharp rejection candle; promoted as high-sweep style seed.",
+      "source": "codex_visual_review_high_sweep_seed",
+      "visual_review_confidence": "medium"
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::confirmation",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked hard negative: red TTRADES title card, no chart markup target.",
+      "source": "codex_visual_review_high_sweep_seed",
+      "visual_review_confidence": "high"
+    },
+    {
+      "example_id": "youtube_how_to_trade_retracement_phases_of_price_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.512,
+            0.355,
+            0.085,
+            0.245
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: high-side sweep/rejection into bearish candle; box kept around the rejection high, not the whole move."
+    },
+    {
+      "example_id": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm::dense::cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0005",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.495,
+            0.465,
+            0.095,
+            0.175
+          ]
+        },
+        {
+          "class_id": 4,
+          "bbox": [
+            0.628,
+            0.59,
+            0.065,
+            0.055
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: CPI sell-model frame with high rejection and small bearish reaction zone visible near the retest area."
+    },
+    {
+      "example_id": "ttrades_fractal_model_trading_candle_2::dense::ttrades_fractal_model_trading_candle_2:0006",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.505,
+            0.365,
+            0.11,
+            0.255
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: candle-2 high and immediate rejection are clearly marked in the frame."
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0010",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.495,
+            0.49,
+            0.095,
+            0.285
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: protected/high point with rejection candle; box targets the high cluster only."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0021",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.468,
+            0.43,
+            0.125,
+            0.19
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: continuation-failure frame with a visible high/protected point before bearish displacement. Box tightened after overlay review."
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0011",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.492,
+            0.395,
+            0.09,
+            0.145
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: wick-size lesson with a high-side wick and close back below the prior high."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0020",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.465,
+            0.39,
+            0.115,
+            0.225
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: high/protected-point rejection before bearish continuation; added as medium-confidence high-sweep seed."
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0009",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.488,
+            0.34,
+            0.08,
+            0.24
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: C2 high/rejection region before bearish continuation."
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0011",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.472,
+            0.31,
+            0.135,
+            0.235
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: top-side rejection in daily-bias example; box stays around the local high cluster."
+    },
+    {
+      "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0004",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.342,
+            0.24,
+            0.075,
+            0.205
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: C2-style high before bearish displacement."
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0004",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.345,
+            0.335,
+            0.08,
+            0.3
+          ]
+        },
+        {
+          "class_id": 0,
+          "bbox": [
+            0.728,
+            0.31,
+            0.08,
+            0.32
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: two annotated high-side wick/rejection regions in the candle-2 closure example."
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0004",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.442,
+            0.3,
+            0.09,
+            0.255
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: spike above prior highs followed by rejection; added as high-sweep seed."
+    },
+    {
+      "example_id": "master_candlestick_wicks_the_key_to_catching_reversals::dense::master_candlestick_wicks_the_key_to_catching_reversals:0003",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.458,
+            0.35,
+            0.085,
+            0.185
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: marked high/wick rejection in candlestick-wicks lesson."
+    },
+    {
+      "example_id": "ict_index_futures_weekly_recap_week_of_5_16_22::dense::ict_index_futures_weekly_recap_week_of_5_16_22:0002",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.638,
+            0.305,
+            0.115,
+            0.25
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: weekly recap short setup after taking the local high under the drawn trendline."
+    },
+    {
+      "example_id": "ttrades_fractal_model_trading_candle_2::dense::ttrades_fractal_model_trading_candle_2:0004",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.502,
+            0.385,
+            0.125,
+            0.18
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: candle-2 lesson with high-side rejection before bearish move."
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0003",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.523,
+            0.37,
+            0.095,
+            0.275
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: protected swing/high rejection with visible wick above the marked region."
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0021",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.497,
+            0.375,
+            0.09,
+            0.185
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: C2 high/wick rejection in wick-size lesson."
+    },
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.472,
+            0.3,
+            0.105,
+            0.24
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: TradingView closure frame with clear high rejection before bearish leg."
+    },
+    {
+      "example_id": "youtube_how_to_trade_consolidation_phases_of_price_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.64,
+            0.41,
+            0.115,
+            0.23
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked: consolidation frame with high-side stop run and return into the range."
+    },
+    {
+      "example_id": "master_candlestick_wicks_the_key_to_catching_reversals::dense::master_candlestick_wicks_the_key_to_catching_reversals:0001",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked hard negative: educational slide/toy diagram, no deployable chart markup target."
+    },
+    {
+      "example_id": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1::sweep",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked hard negative: pre-session gameplan slide with no chart markup target."
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0007",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.632,
+            0.335,
+            0.18,
+            0.25
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed3: candle-2 high/rejection region before bearish continuation; box targets the high-side rejection cluster only."
+    },
+    {
+      "example_id": "youtube_low_resistance_liquidity_run_ict_concepts_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.445,
+            0.36,
+            0.16,
+            0.28
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed3: low-resistance lesson frame with marked high-side wick/rejection before selloff."
+    },
+    {
+      "example_id": "youtube_high_resistance_vs_low_resistance_liquidity_ict_concepts_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.535,
+            0.4,
+            0.17,
+            0.34
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed3: high-resistance/liquidity lesson with highlighted high-side sweep area and rejection. Box adjusted after overlay review to include the candle cluster, not only the highlighted zone."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0026",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.595,
+            0.34,
+            0.16,
+            0.26
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed3: continuation-failure frame with clear local high and bearish rejection leg."
+    },
+    {
+      "example_id": "dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias::dense::dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias:0009",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.492,
+            0.44,
+            0.145,
+            0.28
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed3: DTR/C2U frame with marked high rejection from a red reference level."
+    },
+    {
+      "example_id": "youtube_ttrades_fractal_model_inversion_intraday_strategy_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.48,
+            0.36,
+            0.155,
+            0.27
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed3: inversion-model frame with high-side push and rejection before bearish leg."
+    },
+    {
+      "example_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.495,
+            0.365,
+            0.135,
+            0.26
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed3: indicator-settings frame still shows a clear C2 high and bearish rejection sequence."
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::confirmation",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed3 hard negative: chart context after bearish move, no clean active TTrades markup target to detect."
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::outcome",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed3 hard negative: small reaction frame without a valid sweep/reaction-zone markup target."
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::outcome",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed3 hard negative: clean chart context with no active TTrades detector target in the current frame."
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::sweep",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_what_is_liquidity_ict_concepts_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_top_down_analysis_daily_bias_to_entries_ict_concepts_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_the_easiest_draw_on_liquidity_dol_daily_bias_ict_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1::confirmation",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_market_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::sweep",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_internal_external_liquidity_model_ict_concepts_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_internal_external_liquidity_daily_bias_ict_concepts_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_important_liquidity_levels_draw_on_liquidity_ict_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_ict_silver_bullet_strategy_no_daily_bias_with_backtest_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_ict_daily_bias_the_only_video_you_will_ever_need_visual_v1::closure",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1::confirmation",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1::confirmation",
+      "detections": [],
+      "review_outcome": "no_setup",
+      "note": "Visual-checked seed4 hard negative: current frame has no clear active TTrades detector target; keep as no_setup benchmark pressure."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0026",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.365,
+            0.31,
+            0.125,
+            0.26
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed4 positive from high-sweep candidate orig 3: tight liquidity_sweep_high cluster."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0024",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.535,
+            0.55,
+            0.105,
+            0.17
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed4 positive from high-sweep candidate orig 10: tight liquidity_sweep_high cluster."
+    },
+    {
+      "example_id": "timeframe_alignment_how_to_align_timeframes_for_expansion::dense::timeframe_alignment_how_to_align_timeframes_for_expansion:0006",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.485,
+            0.285,
+            0.125,
+            0.145
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed4 positive from high-sweep candidate orig 11: tight liquidity_sweep_high cluster."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0006",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.485,
+            0.42,
+            0.09,
+            0.2
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed4 positive from high-sweep candidate orig 17: tight liquidity_sweep_high cluster."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0012",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.585,
+            0.455,
+            0.115,
+            0.25
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed4 positive from high-sweep candidate orig 21: tight liquidity_sweep_high cluster."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0014",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.59,
+            0.405,
+            0.105,
+            0.145
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed4 positive from high-sweep candidate orig 30: tight liquidity_sweep_high cluster."
+    },
+    {
+      "example_id": "how_to_actually_trade_inversion_fair_value_gaps_ifvg::dense::how_to_actually_trade_inversion_fair_value_gaps_ifvg:0007",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.575,
+            0.185,
+            0.095,
+            0.14
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed4 positive from high-sweep candidate orig 38: tight liquidity_sweep_high cluster."
+    },
+    {
+      "example_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.55,
+            0.565,
+            0.16,
+            0.085
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bullish sheet row 2, visible POI rectangle."
+    },
+    {
+      "example_id": "youtube_ict_daily_profile_new_york_reversal_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.565,
+            0.38,
+            0.12,
+            0.28
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bullish sheet row 3, visible POI rectangle."
+    },
+    {
+      "example_id": "youtube_trade_continuations_using_breaker_blocks_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.615,
+            0.43,
+            0.12,
+            0.36
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bullish sheet row 9, visible POI rectangle."
+    },
+    {
+      "example_id": "youtube_how_to_trade_retracement_phases_of_price_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.645,
+            0.435,
+            0.095,
+            0.23
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bullish sheet row 18, visible POI rectangle."
+    },
+    {
+      "example_id": "youtube_trading_irl_erl_with_order_blocks_ict_concepts_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.36,
+            0.625,
+            0.62,
+            0.13
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bullish sheet row 20, visible POI rectangle."
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0002",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.295,
+            0.65,
+            0.51,
+            0.16
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bullish sheet row 33, visible POI rectangle."
+    },
+    {
+      "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0010",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.565,
+            0.47,
+            0.11,
+            0.4
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bullish sheet row 38, visible POI rectangle."
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0006",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.475,
+            0.555,
+            0.13,
+            0.08
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bullish sheet row 49, visible POI rectangle."
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.575,
+            0.555,
+            0.15,
+            0.055
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bearish sheet row 2, visible POI rectangle."
+    },
+    {
+      "example_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.44,
+            0.51,
+            0.17,
+            0.045
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bearish sheet row 4, visible POI rectangle."
+    },
+    {
+      "example_id": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.625,
+            0.235,
+            0.27,
+            0.13
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bearish sheet row 24, visible POI rectangle."
+    },
+    {
+      "example_id": "dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias::dense::dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias:0004",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.47,
+            0.425,
+            0.24,
+            0.11
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bearish sheet row 34, visible POI rectangle."
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0006",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.235,
+            0.215,
+            0.41,
+            0.17
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed5 reaction-zone candidate: bearish sheet row 48, visible POI rectangle."
+    },
+    {
+      "example_id": "youtube_dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.625,
+            0.455,
+            0.13,
+            0.22
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed6: bullish reaction zone around the H1 FVG / Asian-London swing-low POI, avoiding the text-only annotation."
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0003",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.375,
+            0.64,
+            0.75,
+            0.19
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed6: broad bullish demand / reaction zone visible across the lower chart."
+    },
+    {
+      "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0011",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.275,
+            0.675,
+            0.55,
+            0.21
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed6: bullish reaction zone is the clearly shaded demand area under the intraday sweep."
+    },
+    {
+      "example_id": "how_to_trade_retracement_phases_of_price::dense::how_to_trade_retracement_phases_of_price:0013",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.515,
+            0.37,
+            0.105,
+            0.27
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed6: high sweep box wraps the candle/wick cluster that trades through the prior high before reacting."
+    },
+    {
+      "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0006",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.585,
+            0.275,
+            0.08,
+            0.17
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed6: compact high-sweep cluster at the trade trigger, separate from the long-position tool."
+    },
+    {
+      "example_id": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm::dense::cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0004",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.43,
+            0.375,
+            0.13,
+            0.43
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed6: high sweep and reversal cluster before the sell-side expansion, excluding the short-position tool."
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.665,
+            0.285,
+            0.13,
+            0.31
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed6: high sweep into the descending trendline followed by bearish displacement."
+    },
+    {
+      "example_id": "youtube_dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.5,
+            0.365,
+            0.22,
+            0.13
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: bearish reaction zone is the clearly shaded supply/POI rectangle above price."
+    },
+    {
+      "example_id": "youtube_trade_like_ttrades_top_down_analysis_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.555,
+            0.445,
+            0.13,
+            0.31
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: bearish reaction zone around the shaded retracement/POI block near the active candle."
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0014",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.405,
+            0.13,
+            0.075,
+            0.23
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: high-sweep box wraps the candle/wick cluster that trades through the prior high."
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0008",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.55,
+            0.47,
+            0.13,
+            0.22
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: bearish reaction zone is the shaded block price reacts from after the retracement."
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0006",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.47,
+            0.46,
+            0.12,
+            0.29
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: bearish reaction zone around the grey shaded point of interest before continuation lower."
+    },
+    {
+      "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0007",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.18,
+            0.49,
+            0.18,
+            0.18
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: bullish reaction zone is the visible green demand/order-block rectangle."
+    },
+    {
+      "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0004",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.29,
+            0.485,
+            0.13,
+            0.17
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: bullish reaction zone is the mid-chart green shaded demand block."
+    },
+    {
+      "example_id": "how_to_trade_retracement_phases_of_price::dense::how_to_trade_retracement_phases_of_price:0008",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.57,
+            0.52,
+            0.12,
+            0.08
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: bullish reaction zone is the small lower POI rectangle, excluding the trade-position projection."
+    },
+    {
+      "example_id": "targets_using_projections_the_fractal_model::dense::targets_using_projections_the_fractal_model:0009",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.58,
+            0.56,
+            0.16,
+            0.16
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed7: bullish reaction zone is the visible green shaded block during the expansion setup."
+    },
+    {
+      "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0023",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.68125,
+            0.706944,
+            0.234375,
+            0.119444
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=1."
+    },
+    {
+      "example_id": "youtube_ttrades_fractal_model_trading_candle_4_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.4625,
+            0.320833,
+            0.06875,
+            0.130556
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=2."
+    },
+    {
+      "example_id": "youtube_reversal_sequence_ttrs_how_to_blend_pd_arrays_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.491406,
+            0.509722,
+            0.076563,
+            0.125
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=3."
+    },
+    {
+      "example_id": "youtube_the_best_timeframe_for_ttrades_fractal_model_simple_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.271094,
+            0.536111,
+            0.095312,
+            0.1
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=4."
+    },
+    {
+      "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0010",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.454688,
+            0.586111,
+            0.096875,
+            0.161111
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=5."
+    },
+    {
+      "example_id": "ttrades_top_down_chart_lessons_2::dense::ttrades_top_down_chart_lessons_2:0008",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.44375,
+            0.798611,
+            0.18125,
+            0.086111
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=6."
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0008",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.721875,
+            0.580556,
+            0.165625,
+            0.138889
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=7."
+    },
+    {
+      "example_id": "how_to_trade_retracement_phases_of_price::dense::how_to_trade_retracement_phases_of_price:0007",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.676562,
+            0.513889,
+            0.071875,
+            0.111111
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=8."
+    },
+    {
+      "example_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::context",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.341406,
+            0.526389,
+            0.392188,
+            0.119444
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=10."
+    },
+    {
+      "example_id": "how_to_actually_trade_inversion_fair_value_gaps_ifvg::dense::how_to_actually_trade_inversion_fair_value_gaps_ifvg:0009",
+      "detections": [
+        {
+          "class_id": 3,
+          "bbox": [
+            0.157812,
+            0.663889,
+            0.11875,
+            0.222222
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bullish reaction zone / demand POI visible on chart. Source=bullish_worker item=12."
+    },
+    {
+      "example_id": "youtube_how_to_trade_reversal_phases_of_price_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.490625,
+            0.5625,
+            0.14375,
+            0.291667
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=3."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0018",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.627344,
+            0.425,
+            0.035937,
+            0.133333
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=4."
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0008",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.478906,
+            0.544444,
+            0.042188,
+            0.138889
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=5."
+    },
+    {
+      "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0015",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.535156,
+            0.533333,
+            0.076563,
+            0.205556
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=6."
+    },
+    {
+      "example_id": "intro_to_ttrades_fractal_model_indicator_settings::dense::intro_to_ttrades_fractal_model_indicator_settings:0011",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.623437,
+            0.4375,
+            0.1,
+            0.102778
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=7."
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0011",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.617188,
+            0.4875,
+            0.15,
+            0.036111
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=8."
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0005",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.394531,
+            0.490278,
+            0.317188,
+            0.041667
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=9."
+    },
+    {
+      "example_id": "targets_using_projections_the_fractal_model::dense::targets_using_projections_the_fractal_model:0005",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.549219,
+            0.455556,
+            0.085938,
+            0.216667
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=10."
+    },
+    {
+      "example_id": "how_to_trade_retracement_phases_of_price::dense::how_to_trade_retracement_phases_of_price:0010",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.5125,
+            0.584722,
+            0.05625,
+            0.113889
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=bearish_worker item=11."
+    },
+    {
+      "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0008",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.383,
+            0.701,
+            0.078,
+            0.403
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=1."
+    },
+    {
+      "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0010",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.371,
+            0.663,
+            0.102,
+            0.336
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=2."
+    },
+    {
+      "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0003",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.613,
+            0.66,
+            0.039,
+            0.292
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=3."
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0011",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.472,
+            0.771,
+            0.066,
+            0.281
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=4."
+    },
+    {
+      "example_id": "youtube_which_swing_highs_and_lows_matter_in_trading_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.52,
+            0.717,
+            0.07,
+            0.267
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=5."
+    },
+    {
+      "example_id": "youtube_ttrades_scalping_model_simple_day_trading_strategy_visual_v1::sweep",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.478,
+            0.674,
+            0.066,
+            0.319
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=6."
+    },
+    {
+      "example_id": "ttrades_fractal_model_trading_candle_2::dense::ttrades_fractal_model_trading_candle_2:0010",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.578,
+            0.779,
+            0.063,
+            0.253
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=7."
+    },
+    {
+      "example_id": "youtube_targets_using_projections_the_fractal_model_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.586,
+            0.761,
+            0.047,
+            0.244
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=8."
+    },
+    {
+      "example_id": "youtube_targets_using_projections_the_fractal_model_visual_v1::outcome",
+      "detections": [
+        {
+          "class_id": 1,
+          "bbox": [
+            0.482,
+            0.822,
+            0.045,
+            0.2
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=9."
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0008",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.535,
+            0.347,
+            0.07,
+            0.239
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=10."
+    },
+    {
+      "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0003",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.52,
+            0.285,
+            0.075,
+            0.2
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=11."
+    },
+    {
+      "example_id": "the_phases_of_price_action_a_blueprint_for_market_movement::dense::the_phases_of_price_action_a_blueprint_for_market_movement:0015",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.46,
+            0.319,
+            0.067,
+            0.389
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=12."
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0003",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.564,
+            0.465,
+            0.091,
+            0.264
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=13."
+    },
+    {
+      "example_id": "the_phases_of_price_action_a_blueprint_for_market_movement::dense::the_phases_of_price_action_a_blueprint_for_market_movement:0019",
+      "detections": [
+        {
+          "class_id": 0,
+          "bbox": [
+            0.422,
+            0.319,
+            0.094,
+            0.25
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed8 accepted: visible liquidity sweep wick/candle cluster. Source=sweeps_worker item=14."
+    },
+    {
+      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.512,
+            0.603,
+            0.086,
+            0.103
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=1."
+    },
+    {
+      "example_id": "youtube_the_only_trading_strategy_you_need_for_2026_visual_v1::context",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.397,
+            0.797,
+            0.1,
+            0.25
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=2."
+    },
+    {
+      "example_id": "youtube_candle_3_closure_ttrades_fractal_model_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.416,
+            0.773,
+            0.075,
+            0.075
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=3."
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0004",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.47,
+            0.704,
+            0.084,
+            0.153
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=4."
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0006",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.609,
+            0.503,
+            0.059,
+            0.167
+          ]
+        },
+        {
+          "class_id": 4,
+          "bbox": [
+            0.359375,
+            0.363889,
+            0.190625,
+            0.116667
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=5. Seed9 duplicate example merged with additional detection."
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0002",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.453,
+            0.703,
+            0.08,
+            0.205
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=6."
+    },
+    {
+      "example_id": "youtube_protected_swings_understanding_trend_and_invalidations_visual_v1::context",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.531,
+            0.728,
+            0.075,
+            0.172
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=7."
+    },
+    {
+      "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0004",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.565,
+            0.333,
+            0.07,
+            0.15
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=8."
+    },
+    {
+      "example_id": "youtube_protected_swings_understanding_trend_and_invalidations_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.438,
+            0.3,
+            0.066,
+            0.144
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=9."
+    },
+    {
+      "example_id": "youtube_protected_swings_understanding_trend_and_invalidations_visual_v1::outcome",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.5,
+            0.705,
+            0.08,
+            0.135
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=10."
+    },
+    {
+      "example_id": "ttrades_fractal_model_trading_candle_2::dense::ttrades_fractal_model_trading_candle_2:0009",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.654,
+            0.714,
+            0.055,
+            0.15
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=11."
+    },
+    {
+      "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0008",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.557,
+            0.735,
+            0.07,
+            0.175
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=12."
+    },
+    {
+      "example_id": "youtube_the_best_timeframe_for_ttrades_fractal_model_simple_visual_v1::confirmation",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.495,
+            0.728,
+            0.07,
+            0.12
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=13."
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::closure",
+      "detections": [
+        {
+          "class_id": 2,
+          "bbox": [
+            0.468,
+            0.748,
+            0.075,
+            0.17
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: protected swing / invalidation swing point visible on chart. Source=protected_worker item=14."
+    },
+    {
+      "example_id": "trading_candle_3::dense::trading_candle_3:0009",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.184375,
+            0.538889,
+            0.36875,
+            0.136111
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=reactions_worker item=1."
+    },
+    {
+      "example_id": "ict_index_futures_weekly_recap_week_of_5_16_22::dense::ict_index_futures_weekly_recap_week_of_5_16_22:0001",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.605469,
+            0.552778,
+            0.117188,
+            0.025
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=reactions_worker item=2."
+    },
+    {
+      "example_id": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm::dense::cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0003",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.4875,
+            0.565278,
+            0.2375,
+            0.083333
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=reactions_worker item=5."
+    },
+    {
+      "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0005",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.453125,
+            0.51,
+            0.225,
+            0.177778
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=reactions_worker item=8."
+    },
+    {
+      "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0006",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.264844,
+            0.297222,
+            0.442188,
+            0.047222
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=reactions_worker item=9."
+    },
+    {
+      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0012",
+      "detections": [
+        {
+          "class_id": 4,
+          "bbox": [
+            0.509375,
+            0.326389,
+            0.190625,
+            0.080556
+          ]
+        }
+      ],
+      "review_outcome": "adjusted",
+      "note": "Visual-checked seed9 accepted: bounded bearish reaction zone / supply POI visible on chart. Source=reactions_worker item=10."
     }
-  ]
+  ],
+  "metadata": {
+    "last_append_source": "results\\ttfm_corpus_priority_review_answers.visual_checked_seed5_reaction_zones_20260622.json",
+    "last_append_count": 13
+  }
 }

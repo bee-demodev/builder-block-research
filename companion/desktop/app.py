@@ -10,6 +10,10 @@ What happens:
    message box, with what to do.
 3. The core (``companion.core``) starts in this process on a free loopback port and the
    window opens on that server's own URL (the server only accepts its own origin).
+   In live mode a background step makes sure TradingView Desktop runs with the live-data
+   link (debug port 9222, which the TradingView MCP uses too): it starts TradingView when
+   it is not running, and asks before restarting one that was opened without the link
+   (``companion.tradingview.launch``; off with ``"start_tradingview": false`` in desktop.json).
 4. Closing the window stops the core as Ctrl+C does for ``python -m companion.core``: the
    selections are saved and the feed is taken out of TradingView's page. The window's
    size and place are remembered.
@@ -24,6 +28,7 @@ import logging
 import logging.handlers
 import os
 import sys
+import threading
 import time
 from collections.abc import Sequence
 from functools import partial
@@ -172,8 +177,8 @@ async def _note_client(request: Any, response: Any) -> None:
         log.info("UI connected over the WebSocket (Origin %s).", request.headers.get("Origin"))
 
 
-def start_core(state: Path, args: argparse.Namespace, ui: Path) -> Any:
-    """The core and its server on a free loopback port; returns the running ``ServerThread``."""
+def start_core(state: Path, args: argparse.Namespace, ui: Path) -> tuple[Any, Any]:
+    """The core and its server on a free loopback port; returns the running ``ServerThread`` and the core."""
     try:
         from companion.core.background import ServerThread, bind_preferred
         from companion.core.server import make_app
@@ -196,7 +201,43 @@ def start_core(state: Path, args: argparse.Namespace, ui: Path) -> Any:
         raise Problem(f"The companion core could not start:\n{type(error).__name__}: {error}") from error
     settings.save_settings(state, last_port=server.port)
     log.info("Core listening on %s (data: %s).", url, core.controller.state.data)
-    return server
+    return server, core
+
+
+# --- TradingView's live-data link ---------------------------------------------------
+
+
+def link_tradingview(state: Path, core: Any) -> threading.Thread | None:
+    """In live mode, make sure TradingView runs with the debug port, on a background thread
+    (the window opens meanwhile). Starts a check once TradingView was (re)started."""
+    from companion.core import wire
+    from companion.tradingview import launch
+
+    if not settings.start_tradingview(state):
+        log.info("Starting TradingView is off (\"start_tradingview\": false in %s).", Path(state) / settings.SETTINGS_FILE)
+        return None
+    if core.controller.state.data != DATA_LIVE or not launch.available():
+        return None
+
+    def work() -> None:
+        try:
+            outcome = launch.ensure_link(winapi.ask_yes_no)
+        except Exception:  # noqa: BLE001 - the window keeps working without it
+            log.exception("Starting TradingView with the live-data link failed.")
+            return
+        log.info("TradingView live-data link: %s%s", outcome.result, f" ({outcome.detail})" if outcome.detail else "")
+        if outcome.result in (launch.STARTED, launch.RESTARTED):
+            core.submit(wire.Command("check"))
+        elif outcome.result in (launch.NOT_FOUND, launch.FAILED):
+            winapi.message_box(
+                f"Trading Companion could not start TradingView with the live-data link.\n\n{outcome.detail}\n\n"
+                f"Start it with {launch.LAUNCHER} instead.",
+                error=False,
+            )
+
+    thread = threading.Thread(target=work, name="tradingview-link", daemon=True)
+    thread.start()
+    return thread
 
 
 # --- the window --------------------------------------------------------------------
@@ -295,7 +336,8 @@ def run(args: argparse.Namespace, state: Path) -> int:
         ui = Path(args.ui) if args.ui is not None else paths.default_ui_dir()
         check_ui(ui)
         log.info("WebView2 runtime %s; UI %s.", check_webview2(), ui)
-        server = start_core(state, args, ui)
+        server, core = start_core(state, args, ui)
+        link_tradingview(state, core)
         try:
             show_window(server.url, state, debug=args.debug)
         finally:

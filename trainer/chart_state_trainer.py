@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import contextlib
+import importlib.util
 import json
 from dataclasses import dataclass
 from pathlib import Path
@@ -9,7 +10,7 @@ from typing import Any
 import numpy as np
 
 from config import AppConfig, config_to_dict
-from data_loader import load_chart_corpus
+from data_loader import embed_chart_image, load_chart_corpus
 from fractal_state import load_state_machine
 
 try:
@@ -105,6 +106,8 @@ def _can_use_torch_compile(device: torch.device) -> bool:
         return False
     if not hasattr(torch, "compile"):
         return False
+    if importlib.util.find_spec("triton") is None:
+        return False
     return True
 
 
@@ -139,12 +142,20 @@ def _load_label_spaces() -> dict[str, list[str]]:
 
 
 def load_bundle_training_rows(config: AppConfig, bundle_seed_path: Path | None = None) -> tuple[list[BundleTrainingRow], dict[str, int]]:
-    seed_path = bundle_seed_path or config.paths.phase2_bundle_gold_seed_path
-    corpus = load_chart_corpus(config)
-    embedding_lookup = {
-        str(example.image_path.resolve()): example.embedding.astype(np.float32)
-        for example in corpus.examples
-    }
+    seed_paths = [bundle_seed_path or config.paths.phase2_bundle_gold_seed_path]
+    if (
+        config.paths.live_tradingview_bundle_seed_path.exists()
+        and config.paths.live_tradingview_bundle_seed_path not in seed_paths
+    ):
+        seed_paths.append(config.paths.live_tradingview_bundle_seed_path)
+    try:
+        corpus = load_chart_corpus(config)
+        embedding_lookup = {
+            str(example.image_path.resolve()): example.embedding.astype(np.float32)
+            for example in corpus.examples
+        }
+    except RuntimeError:
+        embedding_lookup = {}
     label_spaces = _load_label_spaces()
     label_to_index = {
         head_name: {label: index for index, label in enumerate(labels)}
@@ -155,48 +166,59 @@ def load_bundle_training_rows(config: AppConfig, bundle_seed_path: Path | None =
     skipped = {
         "missing_frames": 0,
         "invalid_labels": 0,
+        "embedding_failures": 0,
     }
-    for payload in _read_jsonl(seed_path):
-        try:
-            frame_paths = [
-                _resolve_frame_path(config.root_dir, str(payload["htf_frame_path"])),
-                _resolve_frame_path(config.root_dir, str(payload["itf_frame_path"])),
-                _resolve_frame_path(config.root_dir, str(payload["ltf_frame_path"])),
-            ]
-        except Exception:
-            skipped["missing_frames"] += 1
-            continue
-        embeddings: list[np.ndarray] = []
-        for frame_path in frame_paths:
-            embedding = embedding_lookup.get(str(frame_path.resolve()))
-            if embedding is None:
-                embeddings = []
-                break
-            embeddings.append(embedding)
-        if len(embeddings) != 3:
-            skipped["missing_frames"] += 1
-            continue
+    for seed_path in seed_paths:
+        for payload in _read_jsonl(seed_path):
+            try:
+                frame_paths = [
+                    _resolve_frame_path(config.root_dir, str(payload["htf_frame_path"])),
+                    _resolve_frame_path(config.root_dir, str(payload["itf_frame_path"])),
+                    _resolve_frame_path(config.root_dir, str(payload["ltf_frame_path"])),
+                ]
+            except Exception:
+                skipped["missing_frames"] += 1
+                continue
+            embeddings: list[np.ndarray] = []
+            for frame_path in frame_paths:
+                resolved_path = str(frame_path.resolve())
+                embedding = embedding_lookup.get(resolved_path)
+                if embedding is None and frame_path.exists():
+                    try:
+                        embedding = embed_chart_image(frame_path, config).astype(np.float32)
+                        embedding_lookup[resolved_path] = embedding
+                    except Exception:
+                        skipped["embedding_failures"] += 1
+                        embeddings = []
+                        break
+                if embedding is None:
+                    embeddings = []
+                    break
+                embeddings.append(embedding)
+            if len(embeddings) != 3:
+                skipped["missing_frames"] += 1
+                continue
 
-        raw_labels = {
-            head_name: str(payload.get(head_name, "")).strip()
-            for head_name in HEAD_FIELDS
-        }
-        if any(raw_labels[head_name] not in label_to_index[head_name] for head_name in HEAD_FIELDS):
-            skipped["invalid_labels"] += 1
-            continue
+            raw_labels = {
+                head_name: str(payload.get(head_name, "")).strip()
+                for head_name in HEAD_FIELDS
+            }
+            if any(raw_labels[head_name] not in label_to_index[head_name] for head_name in HEAD_FIELDS):
+                skipped["invalid_labels"] += 1
+                continue
 
-        rows.append(
-            BundleTrainingRow(
-                bundle_id=str(payload.get("bundle_id", "")).strip(),
-                case_key=_bundle_case_key(str(payload.get("bundle_id", "")).strip()),
-                features=np.concatenate(embeddings, axis=0).astype(np.float32),
-                labels={
-                    head_name: label_to_index[head_name][raw_labels[head_name]]
-                    for head_name in HEAD_FIELDS
-                },
-                raw_labels=raw_labels,
+            rows.append(
+                BundleTrainingRow(
+                    bundle_id=str(payload.get("bundle_id", "")).strip(),
+                    case_key=_bundle_case_key(str(payload.get("bundle_id", "")).strip()),
+                    features=np.concatenate(embeddings, axis=0).astype(np.float32),
+                    labels={
+                        head_name: label_to_index[head_name][raw_labels[head_name]]
+                        for head_name in HEAD_FIELDS
+                    },
+                    raw_labels=raw_labels,
+                )
             )
-        )
     return rows, skipped
 
 

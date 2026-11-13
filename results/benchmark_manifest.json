@@ -492,6 +492,201 @@
       "class_names": [
         "bearish_reaction_zone"
       ]
+    },
+    {
+      "example_id": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm::dense::cpi_gold_trade_review_ict_market_maker_sell_model_mmxm:0000",
+      "safe_name": "cpi_gold_trade_review_ict_market_maker_sell_model_mmxm____dense____cpi_gold_trade_review_ict_market_maker_sell_model_mmxm__0000",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "adjusted",
+      "hard_negative": false,
+      "class_names": [
+        "bearish_reaction_zone",
+        "liquidity_sweep_high"
+      ]
+    },
+    {
+      "example_id": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1::confirmation",
+      "safe_name": "youtube_ict_index_futures_weekly_recap_week_of_5_16_22_visual_v1____confirmation",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "master_candlestick_wicks_the_key_to_catching_reversals::dense::master_candlestick_wicks_the_key_to_catching_reversals:0001",
+      "safe_name": "master_candlestick_wicks_the_key_to_catching_reversals____dense____master_candlestick_wicks_the_key_to_catching_reversals__0001",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1::sweep",
+      "safe_name": "youtube_nickdoesfutures_unicorn_model_experiences_with_ict_visual_v1____sweep",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_equilibrium_for_expansions_visual_v1::outcome",
+      "safe_name": "youtube_equilibrium_for_expansions_visual_v1____outcome",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::outcome",
+      "safe_name": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1____outcome",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_ttrades_top_down_chart_lessons_1_visual_v1::confirmation",
+      "safe_name": "youtube_ttrades_top_down_chart_lessons_1_visual_v1____confirmation",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1::confirmation",
+      "safe_name": "youtube_ap_use_market_structure_fibonacci_levels_for_sniper_entries_visual_v1____confirmation",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1::confirmation",
+      "safe_name": "youtube_gxtradez_phases_of_price_profiles_for_expansion_visual_v1____confirmation",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_ict_daily_bias_the_only_video_you_will_ever_need_visual_v1::closure",
+      "safe_name": "youtube_ict_daily_bias_the_only_video_you_will_ever_need_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_ict_silver_bullet_strategy_no_daily_bias_with_backtest_visual_v1::closure",
+      "safe_name": "youtube_ict_silver_bullet_strategy_no_daily_bias_with_backtest_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_important_liquidity_levels_draw_on_liquidity_ict_visual_v1::closure",
+      "safe_name": "youtube_important_liquidity_levels_draw_on_liquidity_ict_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_internal_external_liquidity_daily_bias_ict_concepts_visual_v1::closure",
+      "safe_name": "youtube_internal_external_liquidity_daily_bias_ict_concepts_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_internal_external_liquidity_model_ict_concepts_visual_v1::closure",
+      "safe_name": "youtube_internal_external_liquidity_model_ict_concepts_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1::sweep",
+      "safe_name": "youtube_intro_to_ttrades_fractal_model_indicator_settings_visual_v1____sweep",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1::closure",
+      "safe_name": "youtube_liquidity_buyside_sellside_ict_concepts_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1::sweep",
+      "safe_name": "youtube_mara_trade_review_h1_market_maker_buy_model_mmxm_visual_v1____sweep",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_market_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::closure",
+      "safe_name": "youtube_market_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1::confirmation",
+      "safe_name": "youtube_next_day_model_fractal_way_to_get_bias_for_trading_visual_v1____confirmation",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1::closure",
+      "safe_name": "youtube_structure_shift_vs_liquidity_grab_ict_concepts_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_the_easiest_draw_on_liquidity_dol_daily_bias_ict_visual_v1::closure",
+      "safe_name": "youtube_the_easiest_draw_on_liquidity_dol_daily_bias_ict_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_top_down_analysis_daily_bias_to_entries_ict_concepts_visual_v1::closure",
+      "safe_name": "youtube_top_down_analysis_daily_bias_to_entries_ict_concepts_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_what_is_liquidity_ict_concepts_visual_v1::closure",
+      "safe_name": "youtube_what_is_liquidity_ict_concepts_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
+    },
+    {
+      "example_id": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1::closure",
+      "safe_name": "youtube_wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles_visual_v1____closure",
+      "benchmark_version": "v1_fractal_core",
+      "review_outcome": "no_setup",
+      "hard_negative": true,
+      "class_names": []
     }
   ]
 }

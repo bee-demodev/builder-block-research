@@ -46,6 +46,13 @@ The key modeling move is:
 - use local embeddings for retrieval over transcripts, rulebooks, and examples
 - use local vision when chart screenshots and markup become part of the workflow
 
+### 3b. Post-analysis second brain
+- maintain a markdown-first second brain for ex-post review, journaling, and case synthesis
+- ingest post-trade notes, screenshots, replay comments, benchmark cases, and workflow reports into an Obsidian-readable vault
+- let the LLM compile recurring patterns, failure modes, contradictions, and playbook updates across those cases
+- keep journal observations separate from validated playbook claims so discretionary reflections do not masquerade as rules
+- treat the second brain as a research and improvement layer, not as the live execution engine
+
 ### 4. Model-training surface before modeling
 - export one supervised row per annotation-to-trade-model link
 - keep features structured: topic, setup variant, timeframe scope, session scope, annotation keys, and explicit outcome labels
@@ -85,6 +92,25 @@ The key modeling move is:
 - start with simple baselines first, not end-to-end black-box trading policies
 - target ranking, imitation, or policy-style prediction over structured trader decisions
 - only let a neural layer score or rank rule-grounded setups before asking it to drive entries directly
+
+## Promotion boundary
+
+The second brain may propose:
+- candidate setup refinements
+- candidate failure modes
+- candidate scenario contracts
+- candidate benchmark additions
+
+But it must not directly rewrite the live decision path.
+
+Only reviewed and structured promotions may flow back into:
+- benchmark manifests
+- scenario contracts
+- labeled training rows
+- chart-state heads
+- detector datasets
+
+This boundary exists to prevent narrative drift, hindsight bias, and compounded wiki errors from leaking into runtime behavior.
 
 ## Practical implication for hardware
 

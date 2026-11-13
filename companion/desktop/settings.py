@@ -7,6 +7,8 @@ Files in the state folder (``~/.trading_companion``, or ``TRADING_COMPANION_HOME
 - ``desktop.json``: settings the trader may edit by hand:
   ``history_dir``: the folder of the saved ``<symbol>_minute.csv`` files (default: the
   repo's ``data/databento/bars`` from source, ``<folder of the exe>/history`` packaged);
+  ``start_tradingview`` (default true): in live mode, start TradingView Desktop with the
+  live-data link when the app starts, and offer to restart one opened without it;
   ``last_port`` is written by the app (the UI keeps the same origin between runs when
   that port is still free);
 - ``desktop.log``: what the app did, and the traceback of anything that went wrong.
@@ -127,6 +129,10 @@ def save_settings(state: Path, **changes: Any) -> bool:
     except OSError:
         return False
     return True
+
+
+def start_tradingview(state: Path) -> bool:
+    return load_settings(state).get("start_tradingview", True) is not False
 
 
 def last_port(state: Path) -> int | None:

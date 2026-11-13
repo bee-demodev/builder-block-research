@@ -6,6 +6,7 @@
 - ``work_areas`` / ``placement``: monitors and the window's restored rectangle, for
   remembering where the window was.
 - ``message_box``: the plain dialog for anything that stops the app.
+- ``ask_yes_no``: a Yes/No question (restarting TradingView with the live-data link).
 - ``webview2_version``: the installed Edge WebView2 Runtime, if any.
 """
 
@@ -23,6 +24,9 @@ ERROR_ALREADY_EXISTS = 183
 MB_OK = 0x0
 MB_ICONERROR = 0x10
 MB_ICONINFORMATION = 0x40
+MB_ICONQUESTION = 0x20
+MB_YESNO = 0x4
+IDYES = 6
 MB_SETFOREGROUND = 0x10000
 MB_TOPMOST = 0x40000
 
@@ -265,6 +269,15 @@ def message_box(text: str, title: str = "Trading Companion", error: bool = True)
         return
     style = (MB_ICONERROR if error else MB_ICONINFORMATION) | MB_OK | MB_SETFOREGROUND | MB_TOPMOST
     _user32.MessageBoxW(None, text, title, style)
+
+
+def ask_yes_no(text: str, title: str = "Trading Companion") -> bool:
+    """A blocking Yes/No question; True for Yes. Off Windows (tests) it answers No."""
+    if not IS_WINDOWS:
+        print(f"{title}: {text} [answered No]", file=sys.stderr)
+        return False
+    style = MB_ICONQUESTION | MB_YESNO | MB_SETFOREGROUND | MB_TOPMOST
+    return _user32.MessageBoxW(None, text, title, style) == IDYES
 
 
 def webview2_version() -> str | None:

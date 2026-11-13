@@ -1,16 +1,25 @@
 {
   "dataset_dir": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo",
-  "train_count": 66,
-  "val_count": 16,
-  "benchmark_count": 49,
-  "benchmark_hard_negative_count": 2,
+  "train_count": 170,
+  "val_count": 42,
+  "benchmark_count": 73,
+  "benchmark_hard_negative_count": 25,
   "class_counts": {
-    "liquidity_sweep_low": 36,
-    "protected_swing": 62,
-    "bullish_reaction_zone": 12,
-    "bearish_reaction_zone": 7
+    "liquidity_sweep_high": 56,
+    "liquidity_sweep_low": 52,
+    "protected_swing": 82,
+    "bullish_reaction_zone": 38,
+    "bearish_reaction_zone": 36
   },
   "examples": [
+    {
+      "example_id": "youtube_fractal_model_fundamentals_visual_v1::closure",
+      "split": "train",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_fractal_model_fundamentals_visual_v1____closure.jpg",
+      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_fractal_model_fundamentals_visual_v1____closure.txt",
+      "box_count": 1,
+      "review_outcome": "adjusted"
+    },
     {
       "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0004",
       "split": "train",
@@ -20,12 +29,28 @@
       "review_outcome": "accepted"
     },
     {
+      "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0005",
+      "split": "train",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0005.jpg",
+      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\fractal_model_fundamentals____dense____fractal_model_fundamentals__0005.txt",
+      "box_count": 1,
+      "review_outcome": "adjusted"
+    },
+    {
       "example_id": "youtube_fractal_model_fundamentals_visual_v1::confirmation",
       "split": "train",
       "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_fractal_model_fundamentals_visual_v1____confirmation.jpg",
       "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_fractal_model_fundamentals_visual_v1____confirmation.txt",
       "box_count": 1,
       "review_outcome": "accepted"
+    },
+    {
+      "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0004",
+      "split": "train",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0004.jpg",
+      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\equilibrium_for_expansions____dense____equilibrium_for_expansions__0004.txt",
+      "box_count": 1,
+      "review_outcome": "adjusted"
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0006",
@@ -52,43 +77,19 @@
       "review_outcome": "accepted"
     },
     {
-      "example_id": "youtube_easy_daily_bias_mechanical_framework_visual_v1::sweep",
+      "example_id": "controlled_NQ_h1_20260304T190000-0500",
       "split": "train",
-      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_easy_daily_bias_mechanical_framework_visual_v1____sweep.jpg",
-      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_easy_daily_bias_mechanical_framework_visual_v1____sweep.txt",
-      "box_count": 1,
-      "review_outcome": "accepted"
-    },
-    {
-      "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0006",
-      "split": "train",
-      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0006.jpg",
-      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\candle_2_closure_foundation____dense____candle_2_closure_foundation__0006.txt",
-      "box_count": 2,
-      "review_outcome": "accepted"
-    },
-    {
-      "example_id": "youtube_candle_2_closure_foundation_visual_v1::outcome",
-      "split": "train",
-      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\youtube_candle_2_closure_foundation_visual_v1____outcome.jpg",
-      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\youtube_candle_2_closure_foundation_visual_v1____outcome.txt",
-      "box_count": 1,
-      "review_outcome": "accepted"
-    },
-    {
-      "example_id": "trading_candle_3::dense::trading_candle_3:0004",
-      "split": "train",
-      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\trading_candle_3____dense____trading_candle_3__0004.jpg",
-      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\trading_candle_3____dense____trading_candle_3__0004.txt",
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\controlled_NQ_h1_20260304T190000-0500.png",
+      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\controlled_NQ_h1_20260304T190000-0500.txt",
       "box_count": 3,
       "review_outcome": "accepted"
     },
     {
-      "example_id": "trading_candle_3::dense::trading_candle_3:0005",
+      "example_id": "controlled_NQ_m5_20260304T190000-0500",
       "split": "train",
-      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\trading_candle_3____dense____trading_candle_3__0005.jpg",
-      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\trading_candle_3____dense____trading_candle_3__0005.txt",
-      "box_count": 2,
+      "image_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\images\\train\\controlled_NQ_m5_20260304T190000-0500.png",
+      "label_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\dataset\\yolo\\labels\\train\\controlled_NQ_m5_20260304T190000-0500.txt",
+      "box_count": 3,
       "review_outcome": "accepted"
     }
   ],

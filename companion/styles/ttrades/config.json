@@ -32,6 +32,24 @@
       "open_question": 10,
       "description": "A change in state of delivery is 'swift' when it confirms within this many bars of the extreme."
     },
+    "wait_for_clean_continuation": {
+      "value": true,
+      "rules": "6 (stage c4), 13",
+      "open_question": 35,
+      "description": "Source: 'Why Your Continuations Fail' (2026-02-14). true: the trigger reported is the first one that is a clean continuation: a V-shaped close-through (<= cisd_max_bars), not formed while running short-term liquidity, and not an internal move inside a consolidation (cont_not_inside_consolidation). Until one forms the engine waits ('wait for another continuation'). false: the trigger is picked as before and the failing checks keep the verdict at watch."
+    },
+    "objective_at_trigger_role": {
+      "value": "quality",
+      "rules": "6 (stage c4), 13",
+      "open_question": 36,
+      "description": "Class of cont_objective_open_at_trigger: the previous bias candle's high/low (the higher-timeframe target) must not have been taken before the trigger bar closed (teacher reason three: 'a higher time frame target has already been taken'). 'quality' (default) or 'advisory'. Unlike cont_objective_open it is judged at the trigger, so reaching the target after entry never demotes the trade."
+    },
+    "entry_latest_candle_frac": {
+      "value": 0.75,
+      "rules": "6 (stage c4), 13",
+      "open_question": 37,
+      "description": "cont_entry_early_in_candle: the trigger must close no later than this fraction into the setup candle the trade belongs to (the setup candle open at the trigger's close). Teacher, 'When To Take Entries For Trading Expansions': first half if you want it mechanical; with three quarters gone, wait for the next candle. 1.0 switches it off; 0.5 is the strict reading."
+    },
     "entry_mode_continuation": {
       "value": "either",
       "rules": "6 (stage c4), 11",

@@ -551,9 +551,20 @@ def test_markup_items_go_to_the_chart_of_their_timeframe(tmp_path: Path) -> None
     assert {"Entry CISD", "Entry trigger"} <= labels["entry"]
     # entry, stop and target are drawn once, by the risk / reward tool, not as three more lines
     assert not {"Entry", "Stop", "Target 1"} & labels["entry"] and entry.tool is not None
-    for chart in view.charts:  # nothing on a chart that belongs to another timeframe
-        wanted = {item.label for item in outcome.verdict.markup if item.timeframe == chart.timeframe}
+    shared = {item.label for item in outcome.verdict.markup if item.shared}
+    for chart in view.charts:  # from another timeframe, only the shared levels the whole chain is read against
+        wanted = {item.label for item in outcome.verdict.markup if item.timeframe == chart.timeframe} | shared
         assert {mark.title for mark in chart.marks} <= wanted
+    # the same levels, under the same names, on all three charts: the chain reads as one idea
+    for price in (105.0, 88.0):  # PDH and the respect level (the wick midpoint here)
+        names = {mark.label for chart in view.charts for mark in chart.marks if mark.kind == "level" and mark.price == pytest.approx(price)}
+        assert len(names) == 1, (price, names)
+    # the protected low is a line on the bias and setup charts; on the entry chart the risk / reward tool's stop is that line
+    assert all(any(m.title == "Protected low (stop swing)" for m in chart.marks) for chart in (bias, setup))
+    assert entry.tool.stop == pytest.approx(91.0)
+    assert next(m.label for m in bias.marks if m.title == "Previous bias candle high") == "PDH"
+    # the bias swing's candles carry their numbers on the bias chart only
+    assert {"Bias Candle 1", "Bias Candle 2"} <= labels["bias"] and not {"Bias Candle 1", "Bias Candle 2"} & labels["setup"]
     assert "Forming bias candle open" not in labels["bias"]  # context a chart leaves out
     # a marked candle is the one the style named: the CISD marker sits on the candle that closed at 97.40
     cisd = next(mark for mark in entry.marks if mark.title == "Entry CISD")

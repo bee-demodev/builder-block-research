@@ -82,7 +82,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.348368,
+        "high_probability_short": 0.315806,
+        "invalid_chop": 0.335826
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.348368,
+      "setup_margin": 0.012542
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0009",
@@ -173,7 +181,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.347776,
+        "high_probability_short": 0.313491,
+        "invalid_chop": 0.338733
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.347776,
+      "setup_margin": 0.009042
     },
     {
       "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0005",
@@ -224,7 +240,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.337939,
+        "high_probability_short": 0.318466,
+        "invalid_chop": 0.343595
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.343595,
+      "setup_margin": 0.005657
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0007",
@@ -305,7 +329,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.350486,
+        "high_probability_short": 0.300298,
+        "invalid_chop": 0.349217
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.350486,
+      "setup_margin": 0.001269
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0010",
@@ -367,7 +399,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.334895,
+        "high_probability_short": 0.332983,
+        "invalid_chop": 0.332122
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.334895,
+      "setup_margin": 0.001913
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0013",
@@ -416,7 +456,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.343897,
+        "high_probability_short": 0.308173,
+        "invalid_chop": 0.34793
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.34793,
+      "setup_margin": 0.004033
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0012",
@@ -465,7 +513,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.347931,
+        "high_probability_short": 0.316224,
+        "invalid_chop": 0.335845
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.347931,
+      "setup_margin": 0.012086
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0014",
@@ -541,7 +597,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.340867,
+        "high_probability_short": 0.305182,
+        "invalid_chop": 0.353951
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.353951,
+      "setup_margin": 0.013084
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0012",
@@ -601,7 +665,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.336819,
+        "high_probability_short": 0.326159,
+        "invalid_chop": 0.337022
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.337022,
+      "setup_margin": 0.000203
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0004",
@@ -667,7 +739,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.359573,
+        "high_probability_short": 0.300426,
+        "invalid_chop": 0.340001
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.359573,
+      "setup_margin": 0.019572
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0003",
@@ -714,7 +794,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.370773,
+        "high_probability_short": 0.301217,
+        "invalid_chop": 0.328011
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.370773,
+      "setup_margin": 0.042762
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0029",
@@ -800,7 +888,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.345947,
+        "high_probability_short": 0.314542,
+        "invalid_chop": 0.339511
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.345947,
+      "setup_margin": 0.006436
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0011",
@@ -851,7 +947,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.354971,
+        "high_probability_short": 0.317969,
+        "invalid_chop": 0.32706
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.354971,
+      "setup_margin": 0.027911
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0002",
@@ -955,7 +1059,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.344167,
+        "high_probability_short": 0.310136,
+        "invalid_chop": 0.345696
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.345696,
+      "setup_margin": 0.001529
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0020",
@@ -1007,7 +1119,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.344562,
+        "high_probability_short": 0.309183,
+        "invalid_chop": 0.346255
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.346255,
+      "setup_margin": 0.001693
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0011",
@@ -1056,7 +1176,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.345029,
+        "high_probability_short": 0.318537,
+        "invalid_chop": 0.336434
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.345029,
+      "setup_margin": 0.008594
     },
     {
       "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0003",
@@ -1102,7 +1230,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.336002,
+        "high_probability_short": 0.31056,
+        "invalid_chop": 0.353438
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.353438,
+      "setup_margin": 0.017436
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0022",
@@ -1171,7 +1307,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.348906,
+        "high_probability_short": 0.30051,
+        "invalid_chop": 0.350584
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.350584,
+      "setup_margin": 0.001677
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0008",
@@ -1224,7 +1368,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.346583,
+        "high_probability_short": 0.322584,
+        "invalid_chop": 0.330834
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.346583,
+      "setup_margin": 0.015749
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0014",
@@ -1276,7 +1428,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.352554,
+        "high_probability_short": 0.311841,
+        "invalid_chop": 0.335605
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.352554,
+      "setup_margin": 0.016949
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0026",
@@ -1327,7 +1487,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.351504,
+        "high_probability_short": 0.301241,
+        "invalid_chop": 0.347255
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.351504,
+      "setup_margin": 0.00425
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0016",
@@ -1395,7 +1563,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.352772,
+        "high_probability_short": 0.302335,
+        "invalid_chop": 0.344893
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.352772,
+      "setup_margin": 0.007878
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0007",
@@ -1480,7 +1656,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.346608,
+        "high_probability_short": 0.309999,
+        "invalid_chop": 0.343393
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.346608,
+      "setup_margin": 0.003215
     },
     {
       "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0004",
@@ -1538,7 +1722,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.339211,
+        "high_probability_short": 0.305963,
+        "invalid_chop": 0.354826
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.354826,
+      "setup_margin": 0.015616
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0027",
@@ -1598,7 +1790,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.3511,
+        "high_probability_short": 0.314722,
+        "invalid_chop": 0.334178
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.3511,
+      "setup_margin": 0.016922
     },
     {
       "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0007",
@@ -1647,7 +1847,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.33416,
+        "high_probability_short": 0.306139,
+        "invalid_chop": 0.359701
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.359701,
+      "setup_margin": 0.025542
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0005",
@@ -1710,7 +1918,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.334247,
+        "high_probability_short": 0.321001,
+        "invalid_chop": 0.344752
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.344752,
+      "setup_margin": 0.010504
     },
     {
       "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0008",
@@ -1776,7 +1992,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.347766,
+        "high_probability_short": 0.293369,
+        "invalid_chop": 0.358864
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.358864,
+      "setup_margin": 0.011098
     },
     {
       "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0006",
@@ -1820,7 +2044,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.34485,
+        "high_probability_short": 0.296418,
+        "invalid_chop": 0.358732
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.358732,
+      "setup_margin": 0.013882
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0005",
@@ -1868,7 +2100,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.366116,
+        "high_probability_short": 0.299401,
+        "invalid_chop": 0.334483
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.366116,
+      "setup_margin": 0.031633
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0001",
@@ -1949,7 +2189,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.360687,
+        "high_probability_short": 0.315041,
+        "invalid_chop": 0.324273
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.360687,
+      "setup_margin": 0.036414
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0031",
@@ -2020,7 +2268,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.353712,
+        "high_probability_short": 0.312288,
+        "invalid_chop": 0.334
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.353712,
+      "setup_margin": 0.019711
     },
     {
       "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0006",
@@ -2087,7 +2343,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.348756,
+        "high_probability_short": 0.298861,
+        "invalid_chop": 0.352383
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.352383,
+      "setup_margin": 0.003628
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0005",
@@ -2133,7 +2397,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.347593,
+        "high_probability_short": 0.316302,
+        "invalid_chop": 0.336105
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.347593,
+      "setup_margin": 0.011488
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0018",
@@ -2182,7 +2454,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.33977,
+        "high_probability_short": 0.31501,
+        "invalid_chop": 0.34522
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.34522,
+      "setup_margin": 0.00545
     },
     {
       "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0003",
@@ -2224,7 +2504,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.335949,
+        "high_probability_short": 0.310825,
+        "invalid_chop": 0.353226
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.353226,
+      "setup_margin": 0.017277
     },
     {
       "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0002",
@@ -2269,7 +2557,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.382159,
+        "high_probability_short": 0.295294,
+        "invalid_chop": 0.322547
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.382159,
+      "setup_margin": 0.059612
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0004",
@@ -2316,7 +2612,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.347084,
+        "high_probability_short": 0.322525,
+        "invalid_chop": 0.330391
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.347084,
+      "setup_margin": 0.016694
     },
     {
       "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0008",
@@ -2383,7 +2687,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.346063,
+        "high_probability_short": 0.311014,
+        "invalid_chop": 0.342923
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.346063,
+      "setup_margin": 0.003141
     },
     {
       "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0003",
@@ -2449,7 +2761,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.355729,
+        "high_probability_short": 0.309784,
+        "invalid_chop": 0.334488
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.355729,
+      "setup_margin": 0.021241
     },
     {
       "example_id": "intro_to_ttrades_fractal_model_indicator_settings::dense::intro_to_ttrades_fractal_model_indicator_settings:0014",
@@ -2506,7 +2826,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.337385,
+        "high_probability_short": 0.315001,
+        "invalid_chop": 0.347614
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.347614,
+      "setup_margin": 0.01023
     },
     {
       "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0014",
@@ -2549,7 +2877,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.358266,
+        "high_probability_short": 0.317141,
+        "invalid_chop": 0.324593
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.358266,
+      "setup_margin": 0.033674
     },
     {
       "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0012",
@@ -2593,7 +2929,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.356003,
+        "high_probability_short": 0.302331,
+        "invalid_chop": 0.341666
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.356003,
+      "setup_margin": 0.014336
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0011",
@@ -2671,7 +3015,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.344533,
+        "high_probability_short": 0.307551,
+        "invalid_chop": 0.347916
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.347916,
+      "setup_margin": 0.003383
     },
     {
       "example_id": "niper_internal_external_liquidity_ict_daily_bias::dense::niper_internal_external_liquidity_ict_daily_bias:0003",
@@ -2742,7 +3094,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.367974,
+        "high_probability_short": 0.290343,
+        "invalid_chop": 0.341684
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.367974,
+      "setup_margin": 0.02629
     },
     {
       "example_id": "internal_external_liquidity_daily_bias_ict_concepts::dense::internal_external_liquidity_daily_bias_ict_concepts:0003",
@@ -2785,7 +3145,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.362443,
+        "high_probability_short": 0.295736,
+        "invalid_chop": 0.341821
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.362443,
+      "setup_margin": 0.020622
     },
     {
       "example_id": "the_easiest_draw_on_liquidity_dol_daily_bias_ict::dense::the_easiest_draw_on_liquidity_dol_daily_bias_ict:0003",
@@ -2838,7 +3206,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.362896,
+        "high_probability_short": 0.292329,
+        "invalid_chop": 0.344776
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.362896,
+      "setup_margin": 0.01812
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0007",
@@ -2886,7 +3262,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.35859,
+        "high_probability_short": 0.319798,
+        "invalid_chop": 0.321612
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.35859,
+      "setup_margin": 0.036977
     },
     {
       "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0006",
@@ -2932,7 +3316,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.340882,
+        "high_probability_short": 0.306793,
+        "invalid_chop": 0.352326
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.352326,
+      "setup_margin": 0.011444
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0010",
@@ -2981,7 +3373,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.355556,
+        "high_probability_short": 0.30631,
+        "invalid_chop": 0.338134
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.355556,
+      "setup_margin": 0.017421
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0021",
@@ -3028,7 +3428,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.350444,
+        "high_probability_short": 0.318957,
+        "invalid_chop": 0.330599
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.350444,
+      "setup_margin": 0.019846
     },
     {
       "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0003",
@@ -3075,7 +3483,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.336018,
+        "high_probability_short": 0.308621,
+        "invalid_chop": 0.355361
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.355361,
+      "setup_margin": 0.019343
     },
     {
       "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0004",
@@ -3132,7 +3548,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.368511,
+        "high_probability_short": 0.298727,
+        "invalid_chop": 0.332763
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.368511,
+      "setup_margin": 0.035748
     },
     {
       "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0002",
@@ -3196,7 +3620,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.344799,
+        "high_probability_short": 0.304689,
+        "invalid_chop": 0.350512
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.350512,
+      "setup_margin": 0.005713
     },
     {
       "example_id": "important_liquidity_levels_draw_on_liquidity_ict::dense::important_liquidity_levels_draw_on_liquidity_ict:0003",
@@ -3237,7 +3669,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.369832,
+        "high_probability_short": 0.29421,
+        "invalid_chop": 0.335959
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.369832,
+      "setup_margin": 0.033873
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0006",
@@ -3322,7 +3762,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.372038,
+        "high_probability_short": 0.300015,
+        "invalid_chop": 0.327947
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.372038,
+      "setup_margin": 0.044091
     },
     {
       "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0010",
@@ -3401,7 +3849,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.328815,
+        "high_probability_short": 0.318037,
+        "invalid_chop": 0.353149
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.353149,
+      "setup_margin": 0.024334
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0003",
@@ -3448,7 +3904,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.344434,
+        "high_probability_short": 0.310444,
+        "invalid_chop": 0.345122
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.345122,
+      "setup_margin": 0.000688
     },
     {
       "example_id": "easy_daily_bias_mechanical_framework::dense::easy_daily_bias_mechanical_framework:0008",
@@ -3498,7 +3962,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.344069,
+        "high_probability_short": 0.315793,
+        "invalid_chop": 0.340138
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.344069,
+      "setup_margin": 0.003931
     },
     {
       "example_id": "higher_time_frame_points_of_interest_ict_concepts::dense::higher_time_frame_points_of_interest_ict_concepts:0003",
@@ -3540,7 +4012,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.35322,
+        "high_probability_short": 0.301672,
+        "invalid_chop": 0.345108
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.35322,
+      "setup_margin": 0.008113
     },
     {
       "example_id": "trading_candle_3::dense::trading_candle_3:0005",
@@ -3606,7 +4086,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.345474,
+        "high_probability_short": 0.311411,
+        "invalid_chop": 0.343115
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.345474,
+      "setup_margin": 0.002359
     },
     {
       "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0007",
@@ -3653,7 +4141,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.338151,
+        "high_probability_short": 0.313138,
+        "invalid_chop": 0.348712
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.348712,
+      "setup_margin": 0.010561
     },
     {
       "example_id": "discount_premium_ict_concepts::dense::discount_premium_ict_concepts:0003",
@@ -3696,7 +4192,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.347912,
+        "high_probability_short": 0.331006,
+        "invalid_chop": 0.321082
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.347912,
+      "setup_margin": 0.016906
     },
     {
       "example_id": "high_resistance_vs_low_resistance_liquidity_ict_concepts::dense::high_resistance_vs_low_resistance_liquidity_ict_concepts:0003",
@@ -3738,7 +4242,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.366482,
+        "high_probability_short": 0.304672,
+        "invalid_chop": 0.328846
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.366482,
+      "setup_margin": 0.037635
     },
     {
       "example_id": "internal_external_liquidity_model_ict_concepts::dense::internal_external_liquidity_model_ict_concepts:0003",
@@ -3779,7 +4291,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.362102,
+        "high_probability_short": 0.304561,
+        "invalid_chop": 0.333337
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.362102,
+      "setup_margin": 0.028765
     },
     {
       "example_id": "market_structure_shift_vs_liquidity_grab_ict_concepts::dense::market_structure_shift_vs_liquidity_grab_ict_concepts:0003",
@@ -3820,7 +4340,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.36108,
+        "high_probability_short": 0.312297,
+        "invalid_chop": 0.326624
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.36108,
+      "setup_margin": 0.034456
     },
     {
       "example_id": "liquidity_buyside_sellside_ict_concepts::dense::liquidity_buyside_sellside_ict_concepts:0003",
@@ -3861,7 +4389,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.361899,
+        "high_probability_short": 0.299625,
+        "invalid_chop": 0.338476
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.361899,
+      "setup_margin": 0.023423
     },
     {
       "example_id": "low_resistance_liquidity_run_ict_concepts::dense::low_resistance_liquidity_run_ict_concepts:0003",
@@ -3903,7 +4439,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.372558,
+        "high_probability_short": 0.301373,
+        "invalid_chop": 0.326069
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.372558,
+      "setup_margin": 0.04649
     },
     {
       "example_id": "draw_on_liquidity_example_1_18_23_ict_concepts::dense::draw_on_liquidity_example_1_18_23_ict_concepts:0003",
@@ -3944,7 +4488,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.372888,
+        "high_probability_short": 0.278219,
+        "invalid_chop": 0.348893
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.372888,
+      "setup_margin": 0.023995
     },
     {
       "example_id": "draw_on_liquidity_dol_ict_concepts::dense::draw_on_liquidity_dol_ict_concepts:0003",
@@ -3985,7 +4537,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.362229,
+        "high_probability_short": 0.292188,
+        "invalid_chop": 0.345584
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.362229,
+      "setup_margin": 0.016645
     },
     {
       "example_id": "structure_shift_vs_liquidity_grab_ict_concepts::dense::structure_shift_vs_liquidity_grab_ict_concepts:0003",
@@ -4026,7 +4586,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.353861,
+        "high_probability_short": 0.312185,
+        "invalid_chop": 0.333955
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.353861,
+      "setup_margin": 0.019906
     },
     {
       "example_id": "what_is_liquidity_ict_concepts::dense::what_is_liquidity_ict_concepts:0003",
@@ -4067,7 +4635,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.36145,
+        "high_probability_short": 0.300508,
+        "invalid_chop": 0.338042
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.36145,
+      "setup_margin": 0.023408
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0005",
@@ -4114,7 +4690,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.340508,
+        "high_probability_short": 0.329327,
+        "invalid_chop": 0.330165
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.340508,
+      "setup_margin": 0.010343
     },
     {
       "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0004",
@@ -4156,7 +4740,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.361206,
+        "high_probability_short": 0.327618,
+        "invalid_chop": 0.311176
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.361206,
+      "setup_margin": 0.033588
     },
     {
       "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0004",
@@ -4201,7 +4793,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.381639,
+        "high_probability_short": 0.289015,
+        "invalid_chop": 0.329346
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.381639,
+      "setup_margin": 0.052294
     },
     {
       "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0009",
@@ -4258,7 +4858,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.342777,
+        "high_probability_short": 0.303738,
+        "invalid_chop": 0.353485
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.353485,
+      "setup_margin": 0.010708
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0024",
@@ -4304,7 +4912,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.355656,
+        "high_probability_short": 0.323543,
+        "invalid_chop": 0.320801
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.355656,
+      "setup_margin": 0.032113
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0009",
@@ -4369,7 +4985,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.363881,
+        "high_probability_short": 0.308302,
+        "invalid_chop": 0.327817
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.363881,
+      "setup_margin": 0.036064
     },
     {
       "example_id": "my_favorite_reversal_pattern_orderblocks_ict_concepts::dense::my_favorite_reversal_pattern_orderblocks_ict_concepts:0003",
@@ -4408,7 +5032,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.361579,
+        "high_probability_short": 0.302872,
+        "invalid_chop": 0.33555
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.361579,
+      "setup_margin": 0.026029
     },
     {
       "example_id": "reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts::dense::reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts:0003",
@@ -4447,7 +5079,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.366106,
+        "high_probability_short": 0.313238,
+        "invalid_chop": 0.320656
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.366106,
+      "setup_margin": 0.045451
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0002",
@@ -4489,7 +5129,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.366935,
+        "high_probability_short": 0.30049,
+        "invalid_chop": 0.332575
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.366935,
+      "setup_margin": 0.03436
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0017",
@@ -4535,7 +5183,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.364428,
+        "high_probability_short": 0.309685,
+        "invalid_chop": 0.325887
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.364428,
+      "setup_margin": 0.038542
     },
     {
       "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0005",
@@ -4598,7 +5254,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.373851,
+        "high_probability_short": 0.303554,
+        "invalid_chop": 0.322595
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.373851,
+      "setup_margin": 0.051255
     },
     {
       "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0008",
@@ -4643,7 +5307,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.338724,
+        "high_probability_short": 0.30335,
+        "invalid_chop": 0.357926
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.357926,
+      "setup_margin": 0.019202
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0006",
@@ -4691,7 +5363,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.379185,
+        "high_probability_short": 0.300661,
+        "invalid_chop": 0.320154
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.379185,
+      "setup_margin": 0.059031
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0010",
@@ -4736,7 +5416,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.365381,
+        "high_probability_short": 0.317075,
+        "invalid_chop": 0.317545
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.365381,
+      "setup_margin": 0.047836
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0004",
@@ -4801,7 +5489,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.367341,
+        "high_probability_short": 0.300229,
+        "invalid_chop": 0.33243
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.367341,
+      "setup_margin": 0.034911
     },
     {
       "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0010",
@@ -4848,7 +5544,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.364038,
+        "high_probability_short": 0.31565,
+        "invalid_chop": 0.320312
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.364038,
+      "setup_margin": 0.043726
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0003",
@@ -4901,7 +5605,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.355957,
+        "high_probability_short": 0.316588,
+        "invalid_chop": 0.327454
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.355957,
+      "setup_margin": 0.028503
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0007",
@@ -4946,7 +5658,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.379376,
+        "high_probability_short": 0.303057,
+        "invalid_chop": 0.317567
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.379376,
+      "setup_margin": 0.061809
     },
     {
       "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0007",
@@ -5010,7 +5730,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.354159,
+        "high_probability_short": 0.298954,
+        "invalid_chop": 0.346888
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.354159,
+      "setup_margin": 0.007271
     },
     {
       "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0004",
@@ -5056,7 +5784,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.331964,
+        "high_probability_short": 0.320744,
+        "invalid_chop": 0.347292
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.347292,
+      "setup_margin": 0.015328
     },
     {
       "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0001",
@@ -5100,7 +5836,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.364844,
+        "high_probability_short": 0.302877,
+        "invalid_chop": 0.332279
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.364844,
+      "setup_margin": 0.032566
     },
     {
       "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0005",
@@ -5176,7 +5920,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.362755,
+        "high_probability_short": 0.309209,
+        "invalid_chop": 0.328036
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.362755,
+      "setup_margin": 0.03472
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0013",
@@ -5224,7 +5976,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.336589,
+        "high_probability_short": 0.325201,
+        "invalid_chop": 0.33821
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.33821,
+      "setup_margin": 0.001621
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0003",
@@ -5271,7 +6031,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.344755,
+        "high_probability_short": 0.330397,
+        "invalid_chop": 0.324848
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.344755,
+      "setup_margin": 0.014358
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0004",
@@ -5317,7 +6085,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.36928,
+        "high_probability_short": 0.316425,
+        "invalid_chop": 0.314295
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.36928,
+      "setup_margin": 0.052855
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0005",
@@ -5373,7 +6149,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.358453,
+        "high_probability_short": 0.305954,
+        "invalid_chop": 0.335593
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.358453,
+      "setup_margin": 0.02286
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0009",
@@ -5419,7 +6203,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.351402,
+        "high_probability_short": 0.317875,
+        "invalid_chop": 0.330723
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.351402,
+      "setup_margin": 0.020679
     },
     {
       "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0005",
@@ -5463,7 +6255,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.333272,
+        "high_probability_short": 0.313781,
+        "invalid_chop": 0.352947
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.352947,
+      "setup_margin": 0.019675
     },
     {
       "example_id": "ttrades_scalping_model_simple_day_trading_strategy::dense::ttrades_scalping_model_simple_day_trading_strategy:0011",
@@ -5525,7 +6325,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.347718,
+        "high_probability_short": 0.321046,
+        "invalid_chop": 0.331236
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.347718,
+      "setup_margin": 0.016482
     },
     {
       "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0008",
@@ -5572,7 +6380,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.353098,
+        "high_probability_short": 0.317811,
+        "invalid_chop": 0.329091
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.353098,
+      "setup_margin": 0.024006
     },
     {
       "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0003",
@@ -5617,7 +6433,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.365687,
+        "high_probability_short": 0.300431,
+        "invalid_chop": 0.333882
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.365687,
+      "setup_margin": 0.031804
     },
     {
       "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0002",
@@ -5670,7 +6494,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.355502,
+        "high_probability_short": 0.307621,
+        "invalid_chop": 0.336876
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.355502,
+      "setup_margin": 0.018626
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0012",
@@ -5715,7 +6547,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.345202,
+        "high_probability_short": 0.323531,
+        "invalid_chop": 0.331266
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.345202,
+      "setup_margin": 0.013936
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0012",
@@ -5770,7 +6610,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.381575,
+        "high_probability_short": 0.2997,
+        "invalid_chop": 0.318725
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.381575,
+      "setup_margin": 0.062849
     },
     {
       "example_id": "timeframe_alignment_how_to_align_timeframes_for_expansion::dense::timeframe_alignment_how_to_align_timeframes_for_expansion:0009",
@@ -5836,7 +6684,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.359893,
+        "high_probability_short": 0.306497,
+        "invalid_chop": 0.333611
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.359893,
+      "setup_margin": 0.026282
     },
     {
       "example_id": "top_down_analysis_daily_bias_to_entries_ict_concepts::dense::top_down_analysis_daily_bias_to_entries_ict_concepts:0003",
@@ -5877,7 +6733,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.365809,
+        "high_probability_short": 0.302289,
+        "invalid_chop": 0.331901
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.365809,
+      "setup_margin": 0.033908
     },
     {
       "example_id": "find_lower_time_frame_entries_using_bias_ict_concepts::dense::find_lower_time_frame_entries_using_bias_ict_concepts:0003",
@@ -5937,7 +6801,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.357286,
+        "high_probability_short": 0.292959,
+        "invalid_chop": 0.349756
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.357286,
+      "setup_margin": 0.00753
     },
     {
       "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0012",
@@ -5981,7 +6853,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.353935,
+        "high_probability_short": 0.288443,
+        "invalid_chop": 0.357622
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.357622,
+      "setup_margin": 0.003687
     },
     {
       "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0013",
@@ -6033,7 +6913,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.359353,
+        "high_probability_short": 0.30421,
+        "invalid_chop": 0.336436
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.359353,
+      "setup_margin": 0.022917
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0006",
@@ -6090,7 +6978,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.343388,
+        "high_probability_short": 0.325065,
+        "invalid_chop": 0.331546
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.343388,
+      "setup_margin": 0.011842
     },
     {
       "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0013",
@@ -6133,7 +7029,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.374657,
+        "high_probability_short": 0.308063,
+        "invalid_chop": 0.31728
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.374657,
+      "setup_margin": 0.057377
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0008",
@@ -6178,7 +7082,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.348944,
+        "high_probability_short": 0.318237,
+        "invalid_chop": 0.332819
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.348944,
+      "setup_margin": 0.016125
     },
     {
       "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0003",
@@ -6219,7 +7131,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.340389,
+        "high_probability_short": 0.318478,
+        "invalid_chop": 0.341133
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.341133,
+      "setup_margin": 0.000744
     },
     {
       "example_id": "breaker_block_fvg_entry_model_ict_concepts::dense::breaker_block_fvg_entry_model_ict_concepts:0003",
@@ -6260,7 +7180,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.356359,
+        "high_probability_short": 0.308724,
+        "invalid_chop": 0.334917
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.356359,
+      "setup_margin": 0.021442
     },
     {
       "example_id": "candle_3_closure_ttrades_fractal_model::dense::candle_3_closure_ttrades_fractal_model:0005",
@@ -6304,7 +7232,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.330639,
+        "high_probability_short": 0.310618,
+        "invalid_chop": 0.358744
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.358744,
+      "setup_margin": 0.028105
     },
     {
       "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0013",
@@ -6353,7 +7289,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.34532,
+        "high_probability_short": 0.309393,
+        "invalid_chop": 0.345287
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.34532,
+      "setup_margin": 3.3e-05
     },
     {
       "example_id": "ttrades_top_down_chart_lessons_3::dense::ttrades_top_down_chart_lessons_3:0002",
@@ -6421,7 +7365,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.352598,
+        "high_probability_short": 0.301575,
+        "invalid_chop": 0.345827
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.352598,
+      "setup_margin": 0.006771
     },
     {
       "example_id": "ict_daily_profile_london_reversal_new_york_continuation::dense::ict_daily_profile_london_reversal_new_york_continuation:0005",
@@ -6465,7 +7417,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.373448,
+        "high_probability_short": 0.292497,
+        "invalid_chop": 0.334054
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.373448,
+      "setup_margin": 0.039394
     },
     {
       "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0004",
@@ -6545,7 +7505,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.330581,
+        "high_probability_short": 0.319915,
+        "invalid_chop": 0.349504
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.349504,
+      "setup_margin": 0.018923
     },
     {
       "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0012",
@@ -6589,7 +7557,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.370275,
+        "high_probability_short": 0.310422,
+        "invalid_chop": 0.319303
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.370275,
+      "setup_margin": 0.050971
     },
     {
       "example_id": "the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models::dense::the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models:0007",
@@ -6643,7 +7619,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.344577,
+        "high_probability_short": 0.327373,
+        "invalid_chop": 0.32805
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.344577,
+      "setup_margin": 0.016527
     },
     {
       "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0006",
@@ -6689,7 +7673,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.338086,
+        "high_probability_short": 0.308553,
+        "invalid_chop": 0.353361
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.353361,
+      "setup_margin": 0.015274
     },
     {
       "example_id": "protected_swings_understanding_trend_and_invalidations::dense::protected_swings_understanding_trend_and_invalidations:0011",
@@ -6744,7 +7736,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.351959,
+        "high_probability_short": 0.286694,
+        "invalid_chop": 0.361347
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.361347,
+      "setup_margin": 0.009389
     },
     {
       "example_id": "trade_continuations_using_breaker_blocks::dense::trade_continuations_using_breaker_blocks:0008",
@@ -6790,7 +7790,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.365671,
+        "high_probability_short": 0.313703,
+        "invalid_chop": 0.320626
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.365671,
+      "setup_margin": 0.045045
     },
     {
       "example_id": "dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias::dense::dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias:0008",
@@ -6835,7 +7843,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.358412,
+        "high_probability_short": 0.305344,
+        "invalid_chop": 0.336245
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.358412,
+      "setup_margin": 0.022167
     },
     {
       "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0005",
@@ -6877,7 +7893,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.362595,
+        "high_probability_short": 0.305443,
+        "invalid_chop": 0.331962
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.362595,
+      "setup_margin": 0.030633
     },
     {
       "example_id": "ttrades_top_down_chart_lessons_4::dense::ttrades_top_down_chart_lessons_4:0005",
@@ -6927,7 +7951,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.350829,
+        "high_probability_short": 0.311266,
+        "invalid_chop": 0.337905
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.350829,
+      "setup_margin": 0.012925
     },
     {
       "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0011",
@@ -6974,7 +8006,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.355056,
+        "high_probability_short": 0.31813,
+        "invalid_chop": 0.326815
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.355056,
+      "setup_margin": 0.028241
     },
     {
       "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0009",
@@ -7027,7 +8067,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.333828,
+        "high_probability_short": 0.311597,
+        "invalid_chop": 0.354575
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.354575,
+      "setup_margin": 0.020746
     },
     {
       "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0006",
@@ -7075,7 +8123,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.348448,
+        "high_probability_short": 0.317322,
+        "invalid_chop": 0.334231
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.348448,
+      "setup_margin": 0.014217
     },
     {
       "example_id": "higher_timeframe_analysis_for_trading_aligning_expansion_candles::dense::higher_timeframe_analysis_for_trading_aligning_expansion_candles:0005",
@@ -7131,7 +8187,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.349586,
+        "high_probability_short": 0.32505,
+        "invalid_chop": 0.325364
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.349586,
+      "setup_margin": 0.024222
     },
     {
       "example_id": "ttrades_top_down_chart_lessons_1::dense::ttrades_top_down_chart_lessons_1:0003",
@@ -7173,7 +8237,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.381346,
+        "high_probability_short": 0.302087,
+        "invalid_chop": 0.316566
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.381346,
+      "setup_margin": 0.06478
     },
     {
       "example_id": "top_down_analysis_ict_concepts::dense::top_down_analysis_ict_concepts:0003",
@@ -7212,7 +8284,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.362036,
+        "high_probability_short": 0.311992,
+        "invalid_chop": 0.325972
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.362036,
+      "setup_margin": 0.036064
     },
     {
       "example_id": "equilibrium_for_expansions::dense::equilibrium_for_expansions:0002",
@@ -7257,7 +8337,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.350646,
+        "high_probability_short": 0.322085,
+        "invalid_chop": 0.327269
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.350646,
+      "setup_margin": 0.023377
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0006",
@@ -7301,7 +8389,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.339231,
+        "high_probability_short": 0.337598,
+        "invalid_chop": 0.32317
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.339231,
+      "setup_margin": 0.001633
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0011",
@@ -7373,7 +8469,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.377049,
+        "high_probability_short": 0.286672,
+        "invalid_chop": 0.336279
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.377049,
+      "setup_margin": 0.04077
     },
     {
       "example_id": "reversal_sequence_ttrs_how_to_blend_pd_arrays::dense::reversal_sequence_ttrs_how_to_blend_pd_arrays:0010",
@@ -7437,7 +8541,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.355778,
+        "high_probability_short": 0.298512,
+        "invalid_chop": 0.34571
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.355778,
+      "setup_margin": 0.010068
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0009",
@@ -7502,7 +8614,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.350287,
+        "high_probability_short": 0.322978,
+        "invalid_chop": 0.326735
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.350287,
+      "setup_margin": 0.023552
     },
     {
       "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0010",
@@ -7545,7 +8665,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.360573,
+        "high_probability_short": 0.322766,
+        "invalid_chop": 0.316662
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.360573,
+      "setup_margin": 0.037807
     },
     {
       "example_id": "fractal_model_fundamentals::dense::fractal_model_fundamentals:0003",
@@ -7604,7 +8732,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.337626,
+        "high_probability_short": 0.31633,
+        "invalid_chop": 0.346045
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.346045,
+      "setup_margin": 0.008419
     },
     {
       "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0008",
@@ -7649,7 +8785,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.352806,
+        "high_probability_short": 0.291115,
+        "invalid_chop": 0.356079
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.356079,
+      "setup_margin": 0.003273
     },
     {
       "example_id": "breaker_blocks_simplified_ict_concepts::dense::breaker_blocks_simplified_ict_concepts:0003",
@@ -7689,7 +8833,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.363354,
+        "high_probability_short": 0.312001,
+        "invalid_chop": 0.324645
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.363354,
+      "setup_margin": 0.038709
     },
     {
       "example_id": "inversion_fair_value_gaps_ifvg_ict_concepts::dense::inversion_fair_value_gaps_ifvg_ict_concepts:0003",
@@ -7747,7 +8899,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.352638,
+        "high_probability_short": 0.308338,
+        "invalid_chop": 0.339024
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.352638,
+      "setup_margin": 0.013614
     },
     {
       "example_id": "change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts::dense::change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts:0003",
@@ -7814,7 +8974,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.364177,
+        "high_probability_short": 0.302264,
+        "invalid_chop": 0.33356
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.364177,
+      "setup_margin": 0.030617
     },
     {
       "example_id": "ict_silver_bullet_strategy_no_daily_bias_with_backtest::dense::ict_silver_bullet_strategy_no_daily_bias_with_backtest:0003",
@@ -7872,7 +9040,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.354676,
+        "high_probability_short": 0.309513,
+        "invalid_chop": 0.335811
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.354676,
+      "setup_margin": 0.018865
     },
     {
       "example_id": "intraday_bias_simplified_ict_concepts::dense::intraday_bias_simplified_ict_concepts:0003",
@@ -7911,7 +9087,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.375594,
+        "high_probability_short": 0.294287,
+        "invalid_chop": 0.330119
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.375594,
+      "setup_margin": 0.045476
     },
     {
       "example_id": "ict_daily_bias_the_only_video_you_will_ever_need::dense::ict_daily_bias_the_only_video_you_will_ever_need:0003",
@@ -7950,7 +9134,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.359277,
+        "high_probability_short": 0.295345,
+        "invalid_chop": 0.345378
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.359277,
+      "setup_margin": 0.013899
     },
     {
       "example_id": "understanding_fair_value_gaps_fvg_ict_concepts::dense::understanding_fair_value_gaps_fvg_ict_concepts:0003",
@@ -7989,7 +9181,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.34791,
+        "high_probability_short": 0.320104,
+        "invalid_chop": 0.331986
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.34791,
+      "setup_margin": 0.015924
     },
     {
       "example_id": "targets_with_standard_deviation_projections_ict_concepts::dense::targets_with_standard_deviation_projections_ict_concepts:0003",
@@ -8028,7 +9228,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.359613,
+        "high_probability_short": 0.309544,
+        "invalid_chop": 0.330843
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.359613,
+      "setup_margin": 0.028771
     },
     {
       "example_id": "price_targets_ict_concepts::dense::price_targets_ict_concepts:0003",
@@ -8067,7 +9275,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.35741,
+        "high_probability_short": 0.303144,
+        "invalid_chop": 0.339447
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.35741,
+      "setup_margin": 0.017963
     },
     {
       "example_id": "ict_daily_bias::dense::ict_daily_bias:0003",
@@ -8106,7 +9322,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.364329,
+        "high_probability_short": 0.297832,
+        "invalid_chop": 0.337839
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.364329,
+      "setup_margin": 0.02649
     },
     {
       "example_id": "improve_your_trade_entries_within_fair_value_gaps_fvg::dense::improve_your_trade_entries_within_fair_value_gaps_fvg:0003",
@@ -8145,7 +9369,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.353901,
+        "high_probability_short": 0.309585,
+        "invalid_chop": 0.336513
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.353901,
+      "setup_margin": 0.017388
     },
     {
       "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0005",
@@ -8211,7 +9443,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.33238,
+        "high_probability_short": 0.298622,
+        "invalid_chop": 0.368998
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.368998,
+      "setup_margin": 0.036619
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0008",
@@ -8256,7 +9496,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.382851,
+        "high_probability_short": 0.294507,
+        "invalid_chop": 0.322642
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.382851,
+      "setup_margin": 0.060209
     },
     {
       "example_id": "trade_continuations_using_order_blocks::dense::trade_continuations_using_order_blocks:0010",
@@ -8311,7 +9559,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.369828,
+        "high_probability_short": 0.305054,
+        "invalid_chop": 0.325118
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.369828,
+      "setup_margin": 0.04471
     },
     {
       "example_id": "order_blocks_simplified_ict_concepts::dense::order_blocks_simplified_ict_concepts:0003",
@@ -8368,7 +9624,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.357316,
+        "high_probability_short": 0.311219,
+        "invalid_chop": 0.331465
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.357316,
+      "setup_margin": 0.025852
     },
     {
       "example_id": "intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts::dense::intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts:0003",
@@ -8406,7 +9670,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.355797,
+        "high_probability_short": 0.32292,
+        "invalid_chop": 0.321284
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.355797,
+      "setup_margin": 0.032877
     },
     {
       "example_id": "the_only_trading_strategy_you_need_for_2026::dense::the_only_trading_strategy_you_need_for_2026:0004",
@@ -8450,7 +9722,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.348709,
+        "high_probability_short": 0.309324,
+        "invalid_chop": 0.341968
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.348709,
+      "setup_margin": 0.006741
     },
     {
       "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0007",
@@ -8496,7 +9776,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.34575,
+        "high_probability_short": 0.306446,
+        "invalid_chop": 0.347804
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.347804,
+      "setup_margin": 0.002054
     },
     {
       "example_id": "trade_like_ttrades_top_down_analysis::dense::trade_like_ttrades_top_down_analysis:0015",
@@ -8539,7 +9827,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.34184,
+        "high_probability_short": 0.318168,
+        "invalid_chop": 0.339992
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.34184,
+      "setup_margin": 0.001848
     },
     {
       "example_id": "ict_daily_profile_new_york_reversal::dense::ict_daily_profile_new_york_reversal:0003",
@@ -8584,7 +9880,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.368122,
+        "high_probability_short": 0.296392,
+        "invalid_chop": 0.335485
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.368122,
+      "setup_margin": 0.032637
     },
     {
       "example_id": "how_to_trade_reversal_phases_of_price::dense::how_to_trade_reversal_phases_of_price:0009",
@@ -8629,7 +9933,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.351765,
+        "high_probability_short": 0.318343,
+        "invalid_chop": 0.329892
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.351765,
+      "setup_margin": 0.021874
     },
     {
       "example_id": "cisd_validates_swing_points::dense::cisd_validates_swing_points:0004",
@@ -8673,7 +9985,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.339132,
+        "high_probability_short": 0.305886,
+        "invalid_chop": 0.354981
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.354981,
+      "setup_margin": 0.015849
     },
     {
       "example_id": "candle_2_closure_foundation::dense::candle_2_closure_foundation:0006",
@@ -8741,7 +10061,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.33335,
+        "high_probability_short": 0.312755,
+        "invalid_chop": 0.353895
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.353895,
+      "setup_margin": 0.020546
     },
     {
       "example_id": "trading_the_4_hour_power_of_three_ohlc_olhc::dense::trading_the_4_hour_power_of_three_ohlc_olhc:0008",
@@ -8786,7 +10114,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.372636,
+        "high_probability_short": 0.295203,
+        "invalid_chop": 0.332162
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.372636,
+      "setup_margin": 0.040474
     },
     {
       "example_id": "market_structure_shift_vs_change_in_state_of_delivery_ict::dense::market_structure_shift_vs_change_in_state_of_delivery_ict:0003",
@@ -8835,7 +10171,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.359156,
+        "high_probability_short": 0.319697,
+        "invalid_chop": 0.321147
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.359156,
+      "setup_margin": 0.038008
     },
     {
       "example_id": "standard_deviation_projections_ict_concepts::dense::standard_deviation_projections_ict_concepts:0003",
@@ -8874,7 +10218,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.358373,
+        "high_probability_short": 0.317687,
+        "invalid_chop": 0.32394
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.358373,
+      "setup_margin": 0.034433
     },
     {
       "example_id": "optimal_trade_entry_ote_ict_concepts::dense::optimal_trade_entry_ote_ict_concepts:0003",
@@ -8911,7 +10263,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.353508,
+        "high_probability_short": 0.309438,
+        "invalid_chop": 0.337054
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.353508,
+      "setup_margin": 0.016454
     },
     {
       "example_id": "a_ict_entry_checklist_ict_concepts::dense::a_ict_entry_checklist_ict_concepts:0003",
@@ -8949,7 +10309,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.35424,
+        "high_probability_short": 0.309672,
+        "invalid_chop": 0.336088
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.35424,
+      "setup_margin": 0.018151
     },
     {
       "example_id": "build_an_entry_model_ict_concepts::dense::build_an_entry_model_ict_concepts:0003",
@@ -8986,7 +10354,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.359641,
+        "high_probability_short": 0.304424,
+        "invalid_chop": 0.335935
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.359641,
+      "setup_margin": 0.023706
     },
     {
       "example_id": "ote_optimal_trade_entry_ict_concepts::dense::ote_optimal_trade_entry_ict_concepts:0003",
@@ -9023,7 +10399,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.343178,
+        "high_probability_short": 0.314601,
+        "invalid_chop": 0.342221
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.343178,
+      "setup_margin": 0.000957
     },
     {
       "example_id": "index_futures_weekly_recap_ict_concepts::dense::index_futures_weekly_recap_ict_concepts:0003",
@@ -9066,7 +10450,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.351516,
+        "high_probability_short": 0.29344,
+        "invalid_chop": 0.355044
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.355044,
+      "setup_margin": 0.003528
     },
     {
       "example_id": "why_your_continuations_fail_order_blocks_cisd_explained::dense::why_your_continuations_fail_order_blocks_cisd_explained:0018",
@@ -9120,7 +10512,15 @@
       ],
       "recommended_action": "accept",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.360374,
+        "high_probability_short": 0.316874,
+        "invalid_chop": 0.322753
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.360374,
+      "setup_margin": 0.037621
     },
     {
       "example_id": "trading_irl_erl_with_order_blocks_ict_concepts::dense::trading_irl_erl_with_order_blocks_ict_concepts:0000",
@@ -9156,7 +10556,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.35066,
+        "high_probability_short": 0.309088,
+        "invalid_chop": 0.340252
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.35066,
+      "setup_margin": 0.010408
     },
     {
       "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0023",
@@ -9205,7 +10613,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.363039,
+        "high_probability_short": 0.309513,
+        "invalid_chop": 0.327448
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.363039,
+      "setup_margin": 0.035591
     },
     {
       "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0008",
@@ -9250,7 +10666,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.339328,
+        "high_probability_short": 0.314719,
+        "invalid_chop": 0.345953
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.345953,
+      "setup_margin": 0.006624
     },
     {
       "example_id": "the_best_timeframe_for_ttrades_fractal_model_simple::dense::the_best_timeframe_for_ttrades_fractal_model_simple:0012",
@@ -9296,7 +10720,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.338779,
+        "high_probability_short": 0.309592,
+        "invalid_chop": 0.351629
+      },
+      "setup_type": "invalid_chop",
+      "setup_confidence": 0.351629,
+      "setup_margin": 0.01285
     },
     {
       "example_id": "wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles::dense::wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles:0020",
@@ -9343,7 +10775,15 @@
       "candidate_detections": [],
       "recommended_action": "adjust",
       "reason": "dense_codex_supervision_required",
-      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch."
+      "notes": "Teaching-moment review packet mined from the TTrades YouTube corpus. Review nearby frames and correct candidate detections rather than authoring labels from scratch.",
+      "setup_scores": {
+        "high_probability_long": 0.364612,
+        "high_probability_short": 0.309509,
+        "invalid_chop": 0.325879
+      },
+      "setup_type": "high_probability_long",
+      "setup_confidence": 0.364612,
+      "setup_margin": 0.038733
     }
   ]
 }

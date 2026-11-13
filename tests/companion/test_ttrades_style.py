@@ -327,11 +327,100 @@ def test_previous_high_already_taken_ends_the_continuation_only_as_a_gate() -> N
     verdict = evaluate(scenario, "trigger")
     taken = criterion(verdict, "cont_objective_open")
     assert (taken.passed, taken.role) == (False, "advisory") and "already taken" in taken.detail
-    assert (verdict.decision, verdict.path_family, verdict.stage) == ("long", "continuation", "c4")
+    # the path stays alive, but the higher-timeframe target was met before the trigger: late, so watch
+    assert (verdict.decision, verdict.path_family, verdict.stage) == ("watch", "continuation", "c4")
+    assert failed(verdict, "quality") == ["cont_objective_open_at_trigger"]
+    assert "already taken" in criterion(verdict, "cont_objective_open_at_trigger").detail
+    advisory = evaluate(scenario, "trigger", objective_at_trigger_role="advisory")
+    assert (advisory.decision, advisory.path_family, advisory.stage) == ("long", "continuation", "c4")
     old = evaluate(scenario, "trigger", objective_open_role="gate")
     assert criterion(old, "cont_objective_open").role == "gate"
     assert old.decision != "long" and old.path_family != "continuation"
     assert "98.00 being taken before entry" not in verdict.invalidation
+
+
+# --- entries: "Why Your Continuations Fail", timing, stepping stones (rules.md 6, 2026-11-12) --
+
+# the dip to 91 is fine, but the entry CISD needs 5 bars to close back above 97.0: not a V
+SLOW_SWING = [
+    (97.0, 97.2, 95.0, 95.2),
+    (95.2, 95.5, 93.0, 93.2),
+    (93.2, 93.5, 91.0, 91.5),  # the setup swing low
+    (91.5, 94.0, 91.2, 93.8),
+    (93.8, 95.0, 93.0, 94.5),
+    (94.5, 96.5, 94.0, 95.0),
+    (95.0, 96.8, 94.8, 96.6),
+    (96.6, 97.6, 96.5, 97.4),  # the slow close-through: range 91.00-97.80 (97.80 = the leg's top)
+]
+# after the slow close-through: a close above the range high, a pullback, a quick close-through
+BREAKOUT_CONTINUATION = [
+    (97.5, 98.4, 97.4, 98.2),  # breakout: closes above 97.80
+    (98.2, 98.3, 97.2, 97.3),
+    (97.3, 97.4, 96.9, 97.0),  # pullback into the entry order block
+    (97.0, 98.35, 96.95, 98.3),  # new continuation: closes above 98.2 one bar after the low
+]
+# after the pullback low 95.5 price chops for three bars and closes above 97.5 on the fourth: slow
+SLOW_TRIGGER = [
+    (97.5, 97.8, 96.5, 96.6),
+    (96.6, 96.8, 95.5, 95.8),
+    (95.8, 96.9, 95.7, 96.5),
+    (96.5, 97.0, 96.0, 96.6),
+    (96.6, 97.1, 96.1, 96.8),
+    (96.8, 97.9, 96.7, 97.7),
+]
+# then another pullback into the entry order block and a quick close above 97.7
+NEXT_CONTINUATION = [(97.7, 97.8, 97.1, 97.2), (97.2, 97.25, 96.9, 97.0), (97.0, 97.85, 96.95, 97.8)]
+ORDER_BLOCK_ONLY = {"closed_wick_large_frac": 0.7}  # bias Candle 2 expanded: only the order-block entry
+
+
+def test_a_slow_close_through_makes_a_range_and_internal_triggers_are_not_taken() -> None:
+    verdict = evaluate(continuation_scenario(DAILY, swing_rows=SLOW_SWING), "trigger")
+    assert (verdict.decision, verdict.stage) == ("watch", "c4")
+    assert "cont_not_inside_consolidation" in failed(verdict, "quality")
+    detail = criterion(verdict, "cont_not_inside_consolidation").detail
+    assert "consolidating between 91.00 and 97.80" in detail and "internal to the range" in detail
+    swift = criterion(verdict, "cont_entry_cisd_swift")
+    assert (swift.passed, swift.role) == (False, "advisory")
+
+
+def test_a_breakout_of_the_range_with_a_new_continuation_is_taken() -> None:
+    scenario = continuation_scenario(DAILY, swing_rows=SLOW_SWING, trigger_rows=BREAKOUT_CONTINUATION)
+    verdict = evaluate(scenario, "trigger")
+    assert verdict.decision == "long"
+    assert verdict.entry == pytest.approx(98.3) and verdict.stop == pytest.approx(96.9)
+    check = criterion(verdict, "cont_not_inside_consolidation")
+    assert check.passed is True and "Breakout" in check.detail
+    assert "not a clean continuation" in criterion(verdict, "cont_entry_trigger").detail
+
+
+def test_a_slow_trigger_is_skipped_for_the_next_clean_continuation() -> None:
+    alone = evaluate(continuation_scenario(DAILY, trigger_rows=SLOW_TRIGGER), "trigger", **ORDER_BLOCK_ONLY)
+    assert (alone.decision, alone.stage) == ("watch", "c4")
+    assert failed(alone, "quality") == ["cont_trigger_v_shape"]
+    assert "Wait for another continuation" in criterion(alone, "cont_trigger_v_shape").detail
+    scenario = continuation_scenario(DAILY, trigger_rows=[*SLOW_TRIGGER, *NEXT_CONTINUATION])
+    verdict = evaluate(scenario, "trigger", **ORDER_BLOCK_ONLY)
+    assert verdict.decision == "long" and criterion(verdict, "cont_trigger_v_shape").passed is True
+    assert verdict.entry == pytest.approx(97.8) and verdict.stop == pytest.approx(96.9)
+    old = evaluate(scenario, "trigger", wait_for_clean_continuation=False, **ORDER_BLOCK_ONLY)
+    assert old.decision == "watch" and failed(old, "quality") == ["cont_trigger_v_shape"]
+
+
+def test_a_trigger_late_in_its_setup_candle_waits_for_the_next_one() -> None:
+    scenario = continuation_scenario(DAILY)
+    on_time = evaluate(scenario, "trigger", **ORDER_BLOCK_ONLY)  # closes 08:15, 25% into the 08:00 candle
+    assert on_time.decision == "long"
+    assert "25% into the 1h candle" in criterion(on_time, "cont_entry_early_in_candle").detail
+    late = evaluate(scenario, "trigger", entry_latest_candle_frac=0.2, **ORDER_BLOCK_ONLY)
+    assert late.decision == "watch" and failed(late, "quality") == ["cont_entry_early_in_candle"]
+
+
+def test_a_newer_protected_low_after_the_entry_is_reported_for_the_stop_only() -> None:
+    # the CISD entry (stop 91) fires first; the order block that follows leaves a higher protected low 95.5
+    verdict = evaluate(continuation_scenario(DAILY), "trigger")
+    assert verdict.decision == "long" and verdict.stop == pytest.approx(91.0)
+    check = criterion(verdict, "cont_newer_protected_low")
+    assert (check.passed, check.role) == (True, "advisory") and "95.50" in check.detail
 
 
 # --- reversal ------------------------------------------------------------------
@@ -538,6 +627,8 @@ def test_every_documented_criterion_is_returned_once() -> None:
         "cont_setup_closure_body_aligned", "cont_entry_cisd_confirmed", "cont_entry_cisd_swift",
         "cont_entry_window_open", "cont_entry_trigger", "cont_protected_swing_intact",
         "cont_trigger_clear_of_liquidity", "cont_reward_at_least_2r",
+        "cont_not_inside_consolidation", "cont_trigger_v_shape", "cont_objective_open_at_trigger",
+        "cont_entry_early_in_candle", "cont_newer_protected_low",
         "rev_key_level_reached", "rev_expansion_into_level", "rev_opposing_run_small", "rev_formed_early",
         "rev_reclaim", "rev_cisd_confirmed", "rev_cisd_swift", "rev_entry_trigger", "rev_wick_intact",
         "rev_reward_at_least_2r",

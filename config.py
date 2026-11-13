@@ -82,6 +82,7 @@ class PathsConfig:
     phase2_dense_heuristic_promotions_path: Path = Path()
     phase2_teacher_heuristic_promotions_path: Path = Path()
     phase2_weak_visual_promotions_path: Path = Path()
+    phase2_controlled_chart_pseudo_promotions_path: Path = Path()
     phase2_synthetic_sidecar_path: Path = Path()
     synthetic_sidecar_dir: Path = Path()
     phase2_priority_review_queue_path: Path = Path()
@@ -95,6 +96,10 @@ class PathsConfig:
     fractal_state_spec_path: Path = Path()
     phase2_report_path: Path = Path()
     phase4_report_path: Path = Path()
+    live_tradingview_capture_dir: Path = Path()
+    live_tradingview_bundle_seed_path: Path = Path()
+    live_tradingview_report_path: Path = Path()
+    live_tradingview_decision_packet_path: Path = Path()
     workflow_loop_report_path: Path = Path()
     workflow_status_path: Path = Path()
     workflow_history_path: Path = Path()
@@ -294,6 +299,7 @@ def _default_paths(root_dir: Path) -> PathsConfig:
         phase2_dense_heuristic_promotions_path=results_dir / "phase2_dense_heuristic_promotions.json",
         phase2_teacher_heuristic_promotions_path=results_dir / "phase2_teacher_heuristic_promotions.json",
         phase2_weak_visual_promotions_path=results_dir / "phase2_weak_visual_promotions.json",
+        phase2_controlled_chart_pseudo_promotions_path=results_dir / "controlled_charts" / "auto_pseudo_labels.json",
         phase2_synthetic_sidecar_path=results_dir / "phase2_synthetic_sidecar.json",
         synthetic_sidecar_dir=results_dir / "synthetic_sidecar",
         phase2_priority_review_queue_path=results_dir / "phase2_priority_review_queue.json",
@@ -307,6 +313,10 @@ def _default_paths(root_dir: Path) -> PathsConfig:
         fractal_state_spec_path=data_dir / "fractal_state_machine.json",
         phase2_report_path=results_dir / "phase2_report.json",
         phase4_report_path=results_dir / "phase4_report.json",
+        live_tradingview_capture_dir=results_dir / "live_tradingview",
+        live_tradingview_bundle_seed_path=results_dir / "live_tradingview_bundle_seed.jsonl",
+        live_tradingview_report_path=results_dir / "live_tradingview_report.json",
+        live_tradingview_decision_packet_path=results_dir / "live_tradingview_decision_packet.json",
         workflow_loop_report_path=results_dir / "workflow_loop_report.json",
         workflow_status_path=results_dir / "workflow_status.json",
         workflow_history_path=results_dir / "workflow_history.jsonl",

@@ -30,6 +30,7 @@ from labeler.embedding_labeler import (
     select_representative_examples,
 )
 from labeler.synthetic_teacher import generate_synthetic_sidecar
+from labeler.tradingview_weak_labeler import capture_live_tradingview_bundle
 from labeler.vision_labeler import (
     build_dense_supervision_packet_from_rows,
     build_priority_review_queue,
@@ -480,11 +481,13 @@ def run_phase_2(config: AppConfig) -> dict:
         dense_promotion_answers = load_supervision_answers(config.paths.phase2_dense_heuristic_promotions_path) if config.paths.phase2_dense_heuristic_promotions_path.exists() else []
         teacher_promotion_answers = load_supervision_answers(config.paths.phase2_teacher_heuristic_promotions_path) if config.paths.phase2_teacher_heuristic_promotions_path.exists() else []
         weak_visual_promotion_answers = load_supervision_answers(config.paths.phase2_weak_visual_promotions_path) if config.paths.phase2_weak_visual_promotions_path.exists() else []
+        controlled_chart_pseudo_answers = load_supervision_answers(config.paths.phase2_controlled_chart_pseudo_promotions_path) if config.paths.phase2_controlled_chart_pseudo_promotions_path.exists() else []
         precomputed_answers = [
             *manual_answers,
             *dense_promotion_answers,
             *teacher_promotion_answers,
             *weak_visual_promotion_answers,
+            *controlled_chart_pseudo_answers,
         ]
         existing_answer_ids = {str(item.get("example_id", "")).strip() for item in precomputed_answers}
         heuristic_auto_answers = []
@@ -594,17 +597,16 @@ def run_phase_2(config: AppConfig) -> dict:
                     )
                     continue
                 dense_row = dense_window_lookup.get(answer["example_id"])
-                if dense_row is None:
-                    continue
-                labeled_rows.append(
+                if dense_row is not None:
+                    labeled_rows.append(
                         {
                             "example_id": str(dense_row.get("example_id", "")),
                             "image_path": str(dense_row.get("frame_path", "")),
                             "time_index": canonical_time_index(
                                 video_slug=str(dense_row.get("video_slug", "")).strip(),
-                            start_seconds=float(dense_row.get("start", 0.0) or 0.0),
-                            video_order_lookup=video_order_lookup,
-                            fallback_index=int(dense_row.get("__lookup_order", 0) or 0),
+                                start_seconds=float(dense_row.get("start", 0.0) or 0.0),
+                                video_order_lookup=video_order_lookup,
+                                fallback_index=int(dense_row.get("__lookup_order", 0) or 0),
                             ),
                             "detections": answer["detections"],
                             "review_outcome": answer.get("review_outcome", "accepted"),
@@ -612,6 +614,25 @@ def run_phase_2(config: AppConfig) -> dict:
                             "issues": [],
                         }
                     )
+                    continue
+                direct_image_path = answer.get("image_path")
+                if direct_image_path:
+                    image_path = Path(str(direct_image_path))
+                    if not image_path.is_absolute():
+                        image_path = (config.root_dir / image_path).resolve()
+                    if image_path.exists():
+                        labeled_rows.append(
+                            {
+                                "example_id": answer["example_id"],
+                                "image_path": str(image_path),
+                                "time_index": int(answer.get("time_index") or 0),
+                                "detections": answer["detections"],
+                                "review_outcome": answer.get("review_outcome", "accepted"),
+                                "note": answer.get("note", ""),
+                                "issues": [],
+                            }
+                        )
+                    continue
             reviewed_window_count = len(labeled_rows)
             positive_reviewed_count = sum(1 for row in labeled_rows if row.get("review_outcome") in {"accepted", "adjusted"} and row.get("detections"))
             hard_negative_reviewed_count = sum(1 for row in labeled_rows if row.get("review_outcome") == "no_setup")
@@ -646,6 +667,7 @@ def run_phase_2(config: AppConfig) -> dict:
                 "dense_heuristic_promotions_path": str(config.paths.phase2_dense_heuristic_promotions_path.resolve()) if config.paths.phase2_dense_heuristic_promotions_path.exists() else None,
                 "teacher_heuristic_promotions_path": str(config.paths.phase2_teacher_heuristic_promotions_path.resolve()) if config.paths.phase2_teacher_heuristic_promotions_path.exists() else None,
                 "weak_visual_promotions_path": str(config.paths.phase2_weak_visual_promotions_path.resolve()) if config.paths.phase2_weak_visual_promotions_path.exists() else None,
+                "controlled_chart_pseudo_promotions_path": str(config.paths.phase2_controlled_chart_pseudo_promotions_path.resolve()) if config.paths.phase2_controlled_chart_pseudo_promotions_path.exists() else None,
                 "synthetic_sidecar_path": str(config.paths.phase2_synthetic_sidecar_path.resolve()) if config.paths.phase2_synthetic_sidecar_path.exists() else None,
                 "priority_review_queue_path": str(config.paths.phase2_priority_review_queue_path.resolve()),
                 "used_answer_count": reviewed_window_count,
@@ -658,6 +680,7 @@ def run_phase_2(config: AppConfig) -> dict:
                 "scarce_accept_packet_auto_label_count": len(scarce_accept_packet_auto_answers),
                 "teacher_auto_label_count": len(teacher_auto_answers),
                 "weak_visual_auto_label_count": len(weak_visual_auto_answers),
+                "controlled_chart_pseudo_label_count": len(controlled_chart_pseudo_answers),
                 "synthetic_sidecar_count": len(synthetic_sidecar_rows),
                 "priority_review_count": len(priority_review_queue),
                 "bundle_artifacts": bundle_artifacts,
@@ -818,6 +841,27 @@ def run_phase_4(config: AppConfig) -> dict:
     return report
 
 
+def run_phase_tv(config: AppConfig) -> dict:
+    capture_report = capture_live_tradingview_bundle(config)
+    training_report = None
+    training_error = None
+    try:
+        training_report = run_phase_4(config)
+    except Exception as exc:  # pragma: no cover - depends on local training/runtime state
+        training_error = str(exc)
+    report = {
+        "mode": "live_tradingview_weak_labeling",
+        "capture_report": capture_report,
+        "training_report": training_report,
+        "training_error": training_error,
+        "live_tradingview_report_path": str(config.paths.live_tradingview_report_path.resolve()),
+        "live_tradingview_bundle_seed_path": str(config.paths.live_tradingview_bundle_seed_path.resolve()),
+        "live_tradingview_decision_packet_path": str(config.paths.live_tradingview_decision_packet_path.resolve()),
+    }
+    config.paths.live_tradingview_report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    return report
+
+
 def run_autonomous_workflow_loop(config: AppConfig) -> dict:
     if config.phase2.dense_chunk_pass_enabled and not dense_visual_corpus_is_fresh(config):
         build_dense_visual_corpus(config)
@@ -880,10 +924,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
         description=(
             "TTrades AutoResearch root operator. "
             "Run Phase 1 for pseudo-labeling + MLP, Phase 2 for YOLO dataset prep, "
-            "Phase 3 for YOLO training, or Phase 4 for chart-state bundle training."
+            "Phase 3 for YOLO training, Phase 4 for chart-state bundle training, "
+            "or Phase tv for live TradingView weak labeling + retraining."
         )
     )
-    parser.add_argument("--phase", required=True, choices=("1", "2", "3", "4", "loop"))
+    parser.add_argument("--phase", required=True, choices=("1", "2", "3", "4", "tv", "loop"))
     parser.add_argument("--anchors", type=Path, default=None)
     parser.add_argument("--wandb-mode", choices=("online", "offline", "disabled"), default=None)
     parser.add_argument("--allow-expand", action="store_true", help="Allow Phase 2 to expand the YouTube corpus when coverage is too small.")
@@ -909,6 +954,8 @@ def main(argv: list[str] | None = None) -> dict | None:
         return run_phase_3(config)
     if args.phase == "4":
         return run_phase_4(config)
+    if args.phase == "tv":
+        return run_phase_tv(config)
     if args.phase == "loop":
         return run_autonomous_workflow_loop(config)
     return None

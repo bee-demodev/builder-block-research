@@ -39,6 +39,9 @@ class TTradesConfig:
     min_rr: float
     reward_check_role: str
     cisd_max_bars: int
+    wait_for_clean_continuation: bool
+    objective_at_trigger_role: str
+    entry_latest_candle_frac: float
     entry_mode_continuation: str
     entry_mode_reversal: str
     entry_either_pick: str
@@ -92,6 +95,7 @@ class TTradesConfig:
             "reward_check_role": ("advisory", "quality"),
             "session_filter_role": ("advisory", "quality"),
             "objective_open_role": ("advisory", "gate"),
+            "objective_at_trigger_role": ("quality", "advisory"),
             "wick_yardstick": ("avg_range", "body"),
             "reversal_expansion_test": ("directional_run", "off"),
         }
@@ -119,6 +123,8 @@ class TTradesConfig:
         for name in ("reversal_level_tolerance_frac", "reversal_expansion_min_bars", "reversal_expansion_min_travel_frac"):
             if getattr(self, name) < 0:
                 raise ValueError(f"{name} must not be negative")
+        if not 0 < self.entry_latest_candle_frac <= 1:
+            raise ValueError("entry_latest_candle_frac must be in (0, 1]")
         if not 0 < self.wick_body_small_frac <= self.wick_body_large_frac:
             raise ValueError("wick_body_small_frac must be positive and at most wick_body_large_frac")
 

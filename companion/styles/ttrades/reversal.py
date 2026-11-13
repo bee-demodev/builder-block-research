@@ -445,7 +445,7 @@ def evaluate_reversal(ctx: Context, side: Side) -> PathOutcome:
         MarkupItem(
             "level", f"Protected {side.lo} (stop swing)", e.tf, price=side.px(trigger.wick_stop),
             start=e.times[trigger.read.anchor] if trigger.mode == "conservative" and trigger.read else view.f_low_time,
-            role="protected", short=f"Protected {side.lo}",
+            role="protected", short=f"Protected {side.lo}", shared=True,
         )
     )
     out.markup.append(

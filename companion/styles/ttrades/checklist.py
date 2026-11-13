@@ -11,7 +11,8 @@ a criterion feeds the decision (rules.md section 10):
 The class written in a ``Spec`` is the default. Four criteria take theirs from the config
 (``session_filter_role``, ``objective_open_role``, ``reward_check_role`` and, through
 ``reversal_expansion_test``, ``rev_expansion_into_level``); the path modules pass the
-configured class in ``roles``.
+configured class in ``roles``. ``cont_objective_open_at_trigger`` takes its class from
+``objective_at_trigger_role`` the same way.
 """
 
 from __future__ import annotations
@@ -99,7 +100,7 @@ CONTINUATION: tuple[Spec, ...] = (
         "cont_entry_cisd_confirmed", "Entry timeframe confirms the setup swing", "continuation", "c3", STEP, "entry"
     ),
     Spec(
-        "cont_entry_cisd_swift", "That confirmation was a quick, V-shaped turn", "continuation", "c3", QUALITY, "entry"
+        "cont_entry_cisd_swift", "That confirmation was a quick, V-shaped turn", "continuation", "c3", ADVISORY, "entry"
     ),
     Spec(
         "cont_entry_window_open",
@@ -117,6 +118,39 @@ CONTINUATION: tuple[Spec, ...] = (
         "continuation",
         "c4",
         QUALITY,
+        "entry",
+    ),
+    Spec("cont_trigger_v_shape", "Trigger closed through in a quick V", "continuation", "c4", QUALITY, "entry"),
+    Spec(
+        "cont_not_inside_consolidation",
+        "Trigger is not an internal move inside a consolidation",
+        "continuation",
+        "c4",
+        QUALITY,
+        "entry",
+    ),
+    Spec(
+        "cont_objective_open_at_trigger",
+        "Higher-timeframe target (previous bias candle's {hi}) was still open at the trigger",
+        "continuation",
+        "c4",
+        QUALITY,
+        "bias",
+    ),
+    Spec(
+        "cont_entry_early_in_candle",
+        "Trigger closed early enough in its setup candle",
+        "continuation",
+        "c4",
+        QUALITY,
+        "setup",
+    ),
+    Spec(
+        "cont_newer_protected_low",
+        "Newer protected {lo} since the entry (stop can trail)",
+        "continuation",
+        "c4",
+        ADVISORY,
         "entry",
     ),
     Spec(

@@ -13,6 +13,7 @@ def test_main_dispatches_phase_handlers(monkeypatch, tmp_path: Path) -> None:
     monkeypatch.setattr(main, "run_phase_2", lambda config: called.append(("phase2", None)))
     monkeypatch.setattr(main, "run_phase_3", lambda config: called.append(("phase3", None)))
     monkeypatch.setattr(main, "run_phase_4", lambda config: called.append(("phase4", None)))
+    monkeypatch.setattr(main, "run_phase_tv", lambda config: called.append(("phasetv", None)))
     monkeypatch.setattr(main, "run_autonomous_workflow_loop", lambda config: called.append(("loop", None)))
 
     anchors_path = tmp_path / "anchors.json"
@@ -22,6 +23,7 @@ def test_main_dispatches_phase_handlers(monkeypatch, tmp_path: Path) -> None:
     main.main(["--phase", "2"])
     main.main(["--phase", "3"])
     main.main(["--phase", "4"])
+    main.main(["--phase", "tv"])
     main.main(["--phase", "loop"])
 
     assert called == [
@@ -29,6 +31,7 @@ def test_main_dispatches_phase_handlers(monkeypatch, tmp_path: Path) -> None:
         ("phase2", None),
         ("phase3", None),
         ("phase4", None),
+        ("phasetv", None),
         ("loop", None),
     ]
 

@@ -128,6 +128,8 @@ def continuation_scenario(
     previous_setup_bar: Row = (96.8, 97.8, 96.5, 97.0),
     inside_bias_bar: bool = False,
     with_aftermath: bool = False,
+    swing_rows: list[Row] | None = None,
+    trigger_rows: list[Row] | None = None,
 ) -> Scenario:
     """A bullish continuation that reaches entry-ready (rules.md section 6, case A).
 
@@ -146,6 +148,11 @@ def continuation_scenario(
 
     Named times: ``before_setup`` (swing bar still forming), ``setup_closed``,
     ``trigger`` (close of the trigger bar), ``window_closed``.
+
+    ``swing_rows`` replace the entry rows inside the setup swing candle (the dip to the low
+    and the entry CISD). ``trigger_rows`` replace the entry rows of
+    the setup candle after the swing (pullback and order-block trigger); ``trigger`` is then
+    the close of their last row and ``after_trigger`` the close of the row after it.
     """
     build = ScenarioBuilder(stack, mirror)
     swing_slot = _SWING_SLOT[stack.bias]
@@ -171,7 +178,8 @@ def continuation_scenario(
     build.setup(swing_slot - 1, previous_setup_bar)
     build.entries(
         swing_slot,
-        [
+        swing_rows
+        or [
             (97.0, 97.2, 95.0, 95.2),
             (95.2, 95.5, 93.0, 93.2),
             (93.2, 93.5, 91.0, 91.5),  # the setup swing low
@@ -180,18 +188,17 @@ def continuation_scenario(
             (97.4, 98.0, 97.0, 97.5),
         ],
     )
-    build.entries(
-        swing_slot + 1,
-        [
-            (97.5, 97.8, 96.5, 96.6),
-            (96.6, 96.8, 95.5, 95.8),  # pullback low: the new protected low
-            (95.8, 97.9, 95.7, 97.7),  # trigger: closes above 97.5
-        ],
-    )
+    rows = trigger_rows or [
+        (97.5, 97.8, 96.5, 96.6),
+        (96.6, 96.8, 95.5, 95.8),  # pullback low: the new protected low
+        (95.8, 97.9, 95.7, 97.7),  # trigger: closes above 97.5
+    ]
+    build.entries(swing_slot + 1, rows)
     times = {
         "before_setup": build.at(swing_slot, 3),
         "setup_closed": build.at(swing_slot + 1),
-        "trigger": build.at(swing_slot + 1, 3),
+        "trigger": build.at(swing_slot + 1, len(rows)),
+        "after_trigger": build.at(swing_slot + 1, len(rows) + 1),
         "window_closed": build.at(swing_slot + 2) + pd.Timedelta(minutes=1),
     }
     if with_aftermath:

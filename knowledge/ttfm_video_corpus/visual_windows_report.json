@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-25T12:00:30.624759+00:00",
+  "generated_at": "2026-06-21T13:27:19.458992+00:00",
   "summary": {
-    "window_count": 605,
-    "video_count": 121,
-    "with_local_video_count": 119,
+    "window_count": 610,
+    "video_count": 122,
+    "with_local_video_count": 120,
     "missing_chunk_video_count": 0,
     "checkpoint_counts": {
-      "closure": 121,
-      "confirmation": 121,
-      "context": 121,
-      "outcome": 121,
-      "sweep": 121
+      "closure": 122,
+      "confirmation": 122,
+      "context": 122,
+      "outcome": 122,
+      "sweep": 122
     },
     "frame_status_counts": {
       "extract_failed": 25,
-      "extracted": 570,
+      "extracted": 575,
       "missing_video": 10
     },
     "extract_frames": true

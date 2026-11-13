@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { Connection, type SocketLike } from './connection';
-import { focusedStep, formatR, planWords, sections, setSide, sideChoices, stepPrice, suggestionText } from './decision';
+import { checkpointText, focusedStep, formatR, nextCheckpoint, planWords, sections, setSide, sideChoices, stepPrice, suggestionText, waitingText } from './decision';
 import { longView, watchView } from './demo/fixtures';
 import { parseRealSnapshot } from './demo/real';
 import type { Options } from './wire';
@@ -30,21 +30,41 @@ describe('what has to happen', () => {
     expect(focusedStep(triggered.steps)).toBeNull();
   });
 
-  it('shows the step list instead of the waiting block, and the plan instead of the levels', () => {
+  it('shows the waiting block while something is pending, and the plan instead of the levels', () => {
     expect(planned.waiting_for).not.toBe('');
-    expect(sections(planned)).toEqual({ steps: true, waiting: false, plan: true, levels: false });
+    expect(sections(planned)).toEqual({ waiting: true, plan: true, levels: false });
     expect(triggered.has_levels).toBe(true);
-    expect(sections(triggered)).toEqual({ steps: true, waiting: false, plan: true, levels: false });
+    expect(sections({ ...triggered, waiting_for: '' })).toEqual({ waiting: false, plan: true, levels: false });
   });
 
-  it('falls back to the waiting block and the levels when the core sends no steps and no plan', () => {
+  it('falls back to the levels when the core sends no plan', () => {
     const old = { ...watchView(), steps: [], plan: null };
-    expect(sections(old)).toEqual({ steps: false, waiting: true, plan: false, levels: true });
+    expect(sections(old)).toEqual({ waiting: true, plan: false, levels: true });
     expect(sections({ ...old, waiting_for: '' }).waiting).toBe(false);
+  });
+
+  it('waits on the core text first, then on the step marked next', () => {
+    expect(waitingText(watchView())).toBe('A 5m close above 25,468.25');
+    expect(waitingText({ ...watchView(), waiting_for: '' })).toBe('5m close above 25,468.25, after the low 25,398.75');
+    expect(waitingText({ waiting_for: '', steps: triggered.steps })).toBe('');
   });
 
   it('prints a step price only when the step has one', () => {
     expect(planned.steps.map(stepPrice)).toEqual(['', '24,958.25', '']);
+  });
+});
+
+describe('the session clock', () => {
+  it('names the next checkpoint and how long until it', () => {
+    expect(nextCheckpoint(9, 29)).toEqual({ time: '09:30', label: 'New York open', minutes: 1 });
+    expect(nextCheckpoint(9, 30)?.time).toBe('09:45');
+    expect(checkpointText(9, 50)).toBe('Next 10:00, new 4H and 1H candles, in 10 min');
+    expect(checkpointText(7, 15)).toBe('Next 09:30, New York open, in 2 h 15 min');
+  });
+
+  it('says the window has closed after 11:00', () => {
+    expect(nextCheckpoint(11, 0)).toBeNull();
+    expect(checkpointText(14, 5)).toBe('His window closed at 11:00');
   });
 });
 

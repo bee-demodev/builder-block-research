@@ -672,6 +672,27 @@ def _place(item: MarkupItem, opens: pd.DatetimeIndex) -> ChartMark | None:
     return ChartMark(item.kind, role, item.short or item.label, item.label, item.price, item.top, item.bottom, start, end)
 
 
+def _shared_marks(
+    markup: tuple[MarkupItem, ...], timeframe: str, opens: pd.DatetimeIndex, own: list[ChartMark]
+) -> list[ChartMark]:
+    """The shared levels of the other timeframes, for this chart: the levels the whole chain
+    is read against, so the bias, setup and entry charts show the same lines under the same
+    names. A level this chart already draws at that price is not drawn twice."""
+    taken = [mark.price for mark in own if mark.kind == "level" and mark.price is not None]
+    out: list[ChartMark] = []
+    for item in markup:
+        if not item.shared or item.timeframe == timeframe or item.kind != "level" or item.price is None:
+            continue
+        if any(abs(item.price - price) <= 1e-9 * max(1.0, abs(price)) for price in taken):
+            continue
+        # its start (a moment) lands on this chart's candle that holds it, or on the left edge
+        mark = _place(item, opens)
+        if mark is not None:
+            out.append(mark)
+            taken.append(item.price)
+    return out
+
+
 def build_charts(
     source: _bars.BarSource,
     symbol: str,
@@ -704,6 +725,7 @@ def build_charts(
                 candles.append(forming)
         opens = pd.DatetimeIndex([candle.time for candle in candles])
         marks = [mark for mark in (_place(item, opens) for item in markup if item.timeframe == timeframe) if mark is not None]
+        marks += _shared_marks(markup, timeframe, opens, marks)
         charts.append(
             ChartView(role, timeframe, tuple(candles), tuple(marks), as_of=moment.strftime("%H:%M"), minutes=max(0, _minutes(timeframe)))
         )

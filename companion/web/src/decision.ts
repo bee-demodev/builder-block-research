@@ -15,9 +15,7 @@ export function focusedStep(steps: readonly Step[]): Step | null {
 }
 
 export interface Sections {
-  /** "What has to happen": the step list. */
-  steps: boolean;
-  /** The single "Waiting for" block, the fallback when the core sends no steps. */
+  /** The single "Waiting for" block: what has to happen next. */
   waiting: boolean;
   /** The plan block; it replaces the levels rows. */
   plan: boolean;
@@ -25,14 +23,62 @@ export interface Sections {
 }
 
 export function sections(view: Pick<VerdictView, 'steps' | 'waiting_for' | 'plan' | 'has_levels' | 'levels'>): Sections {
-  const steps = view.steps.length > 0;
   const plan = view.plan !== null;
   return {
-    steps,
-    waiting: !steps && view.waiting_for.trim() !== '',
+    waiting: waitingText(view) !== '',
     plan,
     levels: !plan && view.has_levels && view.levels.length > 0,
   };
+}
+
+/**
+ * The one thing the trader is waiting for: the core's `waiting_for`, else the detail
+ * (or label) of the step marked next, else "" when nothing is pending.
+ */
+export function waitingText(view: Pick<VerdictView, 'steps' | 'waiting_for'>): string {
+  const told = plainText(view.waiting_for).trim();
+  if (told) return told;
+  const next = focusedStep(view.steps);
+  return next ? plainText(next.detail || next.label).trim() : '';
+}
+
+/**
+ * The New York session checkpoints TTrades works to (knowledge/ttrades_livestream_playbook.md,
+ * "The session clock"): the open, the first 15m close, 10:00 when the 4H and 1H open, and
+ * the end of his window.
+ */
+export const CHECKPOINTS: readonly { time: string; label: string }[] = [
+  { time: '09:30', label: 'New York open' },
+  { time: '09:45', label: 'first 15m close' },
+  { time: '10:00', label: 'new 4H and 1H candles' },
+  { time: '10:30', label: 'window closing' },
+  { time: '11:00', label: 'window closed' },
+];
+
+export interface Checkpoint {
+  time: string;
+  label: string;
+  /** Minutes from the clock to the checkpoint. */
+  minutes: number;
+}
+
+/** The next checkpoint after `hour:minute` New York, or null once the 11:00 window has closed. */
+export function nextCheckpoint(hour: number, minute: number): Checkpoint | null {
+  const now = hour * 60 + minute;
+  for (const c of CHECKPOINTS) {
+    const [h, m] = c.time.split(':').map(Number) as [number, number];
+    const at = h * 60 + m;
+    if (at > now) return { time: c.time, label: c.label, minutes: at - now };
+  }
+  return null;
+}
+
+/** "Next 10:00, new 4H and 1H candles, in 10 min"; after 11:00 "His window closed at 11:00". */
+export function checkpointText(hour: number, minute: number): string {
+  const next = nextCheckpoint(hour, minute);
+  if (!next) return 'His window closed at 11:00';
+  const wait = next.minutes < 60 ? `${next.minutes} min` : `${Math.floor(next.minutes / 60)} h ${String(next.minutes % 60).padStart(2, '0')} min`;
+  return `Next ${next.time}, ${next.label}, in ${wait}`;
 }
 
 /** A step's price as the trader reads it ("24,958.25"), or "" when the step has none. */

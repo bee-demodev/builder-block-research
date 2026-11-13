@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-25T12:10:14.281948+00:00",
+  "generated_at": "2026-06-21T13:35:13.733798+00:00",
   "model": "models/gemini-embedding-2-preview",
   "output_dimensionality": 768,
   "normalization": "l2",
-  "item_count": 605,
+  "item_count": 610,
   "index_path": "knowledge\\ttfm_video_corpus\\visual_embedding_index.json",
   "source_path": "knowledge\\ttfm_video_corpus\\visual_windows.jsonl",
-  "source_fingerprint": "37bc94b00edbbf2322b18ff6d90dd3174582c015"
+  "source_fingerprint": "1e53e447e5fd9b834ee4437831eceb24c8581e22"
 }

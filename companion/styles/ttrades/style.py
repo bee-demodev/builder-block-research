@@ -104,10 +104,21 @@ def _base_markup(ctx: Context) -> list[MarkupItem]:
     start = ctx.b.index[-1]
     high, low = float(last["high"]), float(last["low"])
     eq = (high + low) / 2.0
+    daily = stack.bias == "1D"
+    hi_name, lo_name = ("PDH", "PDL") if daily else (f"Prev {stack.bias} high", f"Prev {stack.bias} low")
     items = [
-        MarkupItem("level", "Previous bias candle high", stack.bias, price=high, start=start, role="reference", short="Prev high"),
-        MarkupItem("level", "Previous bias candle low", stack.bias, price=low, start=start, role="reference", short="Prev low"),
-        MarkupItem("level", "Previous bias candle equilibrium", stack.bias, price=eq, start=start, role="reference", short="EQ"),
+        MarkupItem(
+            "level", "Previous bias candle high", stack.bias, price=high, start=start, role="reference", short=hi_name,
+            shared=True,
+        ),
+        MarkupItem(
+            "level", "Previous bias candle low", stack.bias, price=low, start=start, role="reference", short=lo_name,
+            shared=True,
+        ),
+        MarkupItem(
+            "level", "Previous bias candle equilibrium", stack.bias, price=eq, start=start, role="reference",
+            short="PD EQ" if daily else "EQ",
+        ),
     ]
     if ctx.forming is not None:
         items.append(

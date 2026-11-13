@@ -1,28 +1,25 @@
 {
-  "training_mode": "prototype_fallback",
-  "best_epoch": 0,
-  "best_val_macro_accuracy": 0.714286,
+  "best_epoch": 10,
+  "best_val_macro_accuracy": 0.785714,
   "best_val_head_accuracy": {
     "path_family": 0.5,
     "fractal_stage": 1.0,
     "setup_quality": 0.5,
     "entry_state": 1.0,
     "htf_bias": 1.0,
-    "poi_type": 0.0,
+    "poi_type": 0.5,
     "poi_direction": 1.0,
-    "macro_accuracy": 0.714286
+    "macro_accuracy": 0.785714
   },
   "train_bundle_count": 32,
   "val_bundle_count": 8,
   "usable_bundle_count": 40,
   "skipped_rows": {
-    "missing_frames": 0,
-    "invalid_labels": 0
+    "missing_frames": 1,
+    "invalid_labels": 0,
+    "embedding_failures": 1
   },
   "bundle_seed_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\phase2_bundle_gold_seed.jsonl",
   "checkpoint_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\models\\chart_state_ttrades_best.pth",
-  "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_chart_state.tsv",
-  "warnings": [
-    "PyTorch runtime unavailable, used prototype fallback: [WinError 10106] The requested service provider could not be loaded or initialized"
-  ]
+  "results_tsv_path": "C:\\Users\\satvi\\Repos\\builder-block-research\\results\\results_chart_state.tsv"
 }

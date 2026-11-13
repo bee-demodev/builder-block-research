@@ -1359,14 +1359,25 @@ def load_supervision_answers(path: Path) -> list[dict[str, Any]]:
             raise ValueError(f"Supervision answer for {example_id} failed validation: {issues}")
         if review_outcome in {"rejected", "ambiguous"}:
             continue
-        validated.append(
-            {
-                "example_id": example_id,
-                "detections": [{"class_id": det.class_id, "bbox": det.bbox} for det in detections],
-                "review_outcome": review_outcome,
-                "note": str(row.get("note", "")).strip(),
-            }
-        )
+        validated_row = {
+            "example_id": example_id,
+            "detections": [{"class_id": det.class_id, "bbox": det.bbox} for det in detections],
+            "review_outcome": review_outcome,
+            "note": str(row.get("note", "")).strip(),
+        }
+        for optional_key in (
+            "image_path",
+            "time_index",
+            "source",
+            "promotion_type",
+            "weak_supervision",
+            "symbol",
+            "timeframe",
+            "confidence",
+        ):
+            if optional_key in row:
+                validated_row[optional_key] = row[optional_key]
+        validated.append(validated_row)
     return validated
 
 

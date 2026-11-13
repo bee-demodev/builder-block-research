@@ -3,8 +3,8 @@
 The fixtures are ``snapshot`` messages the core sends from the saved minute history for
 NQ (1D / 1h / 5m, ttrades). The UI is built against them:
 
-- ``fixtures/snapshot_v1.json``: 2025-11-18 08:25 New York, side Auto (a short, no plan).
-- ``fixtures/snapshot_v1_triggered.json``: 2025-11-18 08:30, side Short: a triggered plan,
+- ``fixtures/snapshot_v1.json``: 2025-11-11 08:45 New York, side Auto (a short).
+- ``fixtures/snapshot_v1_triggered.json``: 2025-11-11 08:45, side Short: a triggered plan,
   every step done, the risk / reward tool on the entry chart.
 - ``fixtures/snapshot_v1_planned.json``: 2025-11-19 10:15, side Short: a planned plan
   (nothing triggered), steps blocked / next / later, the next step's level on its chart.
@@ -34,8 +34,8 @@ from companion.core import wire
 from companion.core.loop import Core, inline
 
 FIXTURES = Path(__file__).resolve().parent / "fixtures"
-MOMENT = {"symbol": "NQ", "stack": "1D / 1h / 5m", "style": "ttrades", "data": DATA_HISTORY, "when": "2025-11-18 08:25"}
-TRIGGERED = {**MOMENT, "when": "2025-11-18 08:30", "side": "short"}
+MOMENT = {"symbol": "NQ", "stack": "1D / 1h / 5m", "style": "ttrades", "data": DATA_HISTORY, "when": "2025-11-11 08:45"}
+TRIGGERED = {**MOMENT, "when": "2025-11-11 08:45", "side": "short"}
 PLANNED = {**MOMENT, "when": "2025-11-19 10:15", "side": "short"}
 SAVED = {"snapshot_v1.json": MOMENT, "snapshot_v1_triggered.json": TRIGGERED, "snapshot_v1_planned.json": PLANNED}
 needs_data = pytest.mark.skipif(not (DATA_DIR / "nq_minute.csv").exists(), reason="minute data not present")

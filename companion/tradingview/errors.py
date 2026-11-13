@@ -8,11 +8,12 @@ LAUNCHER = "Start-TradingView-Live.cmd"
 MESSAGES: dict[str, str] = {
     "not_running": (
         "TradingView Desktop is not running. "
-        f"Start it with {LAUNCHER} (in the companion's folder), then press Check."
+        f"Restart the Trading Companion (it starts TradingView with the live-data link), or start it with {LAUNCHER}."
     ),
     "no_debug_port": (
         "TradingView is running, but it was started without the live-data link, so the companion cannot read it. "
-        f"Close TradingView and start it again with {LAUNCHER}."
+        "Restart the Trading Companion and answer Yes when it offers to restart TradingView, "
+        f"or close TradingView and start it again with {LAUNCHER}."
     ),
     "loading": "TradingView is still loading the chart{detail}. The companion will try again in a moment.",
     "symbol_not_found": (

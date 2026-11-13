@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from dataclasses import replace
 from pathlib import Path
 
@@ -43,6 +44,43 @@ class _FakeBenchmarkYOLO(_FakeYOLO):
 
     def predict(self, **_kwargs):
         return None
+
+
+class _FakeBoxes:
+    def __init__(self, classes: list[int], confidences: list[float], xyxy: list[list[float]]) -> None:
+        self.cls = np.array(classes, dtype=np.float32)
+        self.conf = np.array(confidences, dtype=np.float32)
+        self.xyxy = np.array(xyxy, dtype=np.float32)
+
+    def __len__(self) -> int:
+        return len(self.cls)
+
+
+class _FakePrediction:
+    def __init__(self, path: Path, boxes: _FakeBoxes) -> None:
+        self.path = str(path)
+        self.boxes = boxes
+
+
+class _FakeBenchmarkYOLOWithPredictions(_FakeBenchmarkYOLO):
+    def predict(self, **kwargs):
+        source = Path(kwargs["source"])
+        project = Path(kwargs["project"])
+        name = kwargs["name"]
+        overlay_dir = project / name
+        overlay_dir.mkdir(parents=True, exist_ok=True)
+        for image_path in source.glob("*.jpg"):
+            (overlay_dir / image_path.name).write_bytes(b"overlay")
+        return [
+            _FakePrediction(
+                source / "hard_negative.jpg",
+                _FakeBoxes([0], [0.42], [[1.0, 2.0, 30.0, 40.0]]),
+            ),
+            _FakePrediction(
+                source / "positive.jpg",
+                _FakeBoxes([], [], []),
+            ),
+        ]
 
 
 def test_resolve_yolo_base_model_uses_requested_model(tmp_path: Path) -> None:
@@ -168,3 +206,69 @@ def test_compute_benchmark_report_accepts_numpy_maps(tmp_path: Path) -> None:
     assert report["mAP50_95"] == 0.12
     assert report["mAP50"] == 0.34
     assert "liquidity_sweep_high" in report["classwise_ap50_95"]
+
+
+def test_compute_benchmark_report_writes_per_image_prediction_manifest(tmp_path: Path) -> None:
+    config = build_config(root_dir=tmp_path)
+    config = replace(config, phase3=replace(config.phase3, device="0"))
+    config.paths.yolo_benchmark_images_dir.mkdir(parents=True, exist_ok=True)
+    config.paths.yolo_benchmark_labels_dir.mkdir(parents=True, exist_ok=True)
+    (config.paths.yolo_benchmark_images_dir / "hard_negative.jpg").write_bytes(b"a")
+    (config.paths.yolo_benchmark_images_dir / "positive.jpg").write_bytes(b"b")
+    (config.paths.yolo_benchmark_labels_dir / "hard_negative.txt").write_text("", encoding="utf-8")
+    (config.paths.yolo_benchmark_labels_dir / "positive.txt").write_text(
+        "3 0.500000 0.500000 0.250000 0.250000\n",
+        encoding="utf-8",
+    )
+    config.paths.yolo_benchmark_data_yaml_path.write_text(
+        "path: benchmark\ntrain: images\nval: images\nnames:\n  0: liquidity_sweep_high\n  3: bullish_reaction_zone\n",
+        encoding="utf-8",
+    )
+    config.paths.benchmark_manifest_path.write_text(
+        json.dumps(
+            {
+                "target_count": 2,
+                "items": [
+                    {
+                        "example_id": "hard-negative",
+                        "safe_name": "hard_negative",
+                        "hard_negative": True,
+                        "review_outcome": "no_setup",
+                        "class_names": [],
+                    },
+                    {
+                        "example_id": "positive",
+                        "safe_name": "positive",
+                        "hard_negative": False,
+                        "review_outcome": "accepted",
+                        "class_names": ["bullish_reaction_zone"],
+                    },
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+    weights = tmp_path / "weights.pt"
+    weights.write_text("x", encoding="utf-8")
+
+    import trainer.yolo_trainer as yolo_trainer
+
+    original_select_device = yolo_trainer._select_device
+    yolo_trainer._select_device = lambda _config: "0"
+    try:
+        report = _compute_benchmark_report(config, weights_path=weights, yolo_factory=_FakeBenchmarkYOLOWithPredictions)
+    finally:
+        yolo_trainer._select_device = original_select_device
+
+    prediction_report_path = Path(report["per_image_report_path"])
+    prediction_report = json.loads(prediction_report_path.read_text(encoding="utf-8"))
+    hard_negative = next(item for item in prediction_report["items"] if item["safe_name"] == "hard_negative")
+    positive = next(item for item in prediction_report["items"] if item["safe_name"] == "positive")
+
+    assert report["hard_negative_false_positive_count"] == 1
+    assert report["per_image_review_queue_count"] == 2
+    assert prediction_report["summary"]["hard_negative_false_positive_rate"] == 1.0
+    assert hard_negative["review_bucket"] == "hard_negative_fp"
+    assert hard_negative["predicted_boxes"][0]["class_name"] == "liquidity_sweep_high"
+    assert positive["review_bucket"] == "single_label_miss"
+    assert positive["missing_class_names"] == ["bullish_reaction_zone"]

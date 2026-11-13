@@ -27,9 +27,11 @@ interface Props {
   display: ChartDisplay;
 }
 
-const ORDER = ['setup', 'bias', 'entry'] as const;
-/** Candles each chart opens on: more on the large setup chart, fewer on the small ones. */
-const OPEN_BARS = { setup: 60, bias: 40, entry: 40 } as const;
+/** The chain of thought, read left to right: bias (1D), setup (1h), entry (5m). */
+const ORDER = ['bias', 'setup', 'entry'] as const;
+/** Candles each chart opens on. The three panes are the same size, so each shows only
+ *  as much history as its job needs and the candles stay readable. */
+const OPEN_BARS = { bias: 24, setup: 30, entry: 36 } as const;
 
 export function ChartsArea({ model, theme, display }: Props) {
   const { view } = model;
@@ -56,8 +58,9 @@ export function ChartsArea({ model, theme, display }: Props) {
     );
   }
 
-  // Setup on top, bias and entry below. Unknown roles fill the remaining slots in order.
+  // Bias, setup, entry from left to right. Unknown roles fill the remaining slots in order.
   const byRole = new Map(view.charts.map((c) => [c.role, c]));
+  const reasons = new Map<string, string>(view.read.map((r) => [r.role, r.reason]));
   const rest = view.charts.filter((c) => !(ORDER as readonly string[]).includes(c.role));
   const slots = ORDER.map((role) => byRole.get(role) ?? rest.shift());
   const stale = isStale(model);
@@ -67,7 +70,15 @@ export function ChartsArea({ model, theme, display }: Props) {
       {slots.map((chart, i) => (
         <div key={ORDER[i]} className={`slot slot-${ORDER[i]}`}>
           {chart ? (
-            <ChartPane chart={chart} direction={view.direction} theme={theme} stale={stale} openBars={OPEN_BARS[ORDER[i]!]} {...display} />
+            <ChartPane
+              chart={chart}
+              reason={reasons.get(chart.role) ?? ''}
+              direction={view.direction}
+              theme={theme}
+              stale={stale}
+              openBars={OPEN_BARS[ORDER[i]!]}
+              {...display}
+            />
           ) : (
             <div className="pane pane-missing">No chart</div>
           )}
@@ -79,13 +90,15 @@ export function ChartsArea({ model, theme, display }: Props) {
 
 interface PaneProps extends ChartDisplay {
   chart: ChartView;
+  /** The read's reason for this timeframe: the second line of the chain-of-thought caption. */
+  reason: string;
   direction: Direction;
   theme: ResolvedTheme;
   stale: boolean;
   openBars: number;
 }
 
-const ChartPane = memo(function ChartPane({ chart, direction, theme, stale, openBars, overlays, scheme, scale, openMenu }: PaneProps) {
+const ChartPane = memo(function ChartPane({ chart, reason, direction, theme, stale, openBars, overlays, scheme, scale, openMenu }: PaneProps) {
   const hostRef = useRef<HTMLDivElement>(null);
   const chartRef = useRef<CandleChart | null>(null);
   const [hover, setHover] = useState<Candle | null>(null);
@@ -154,6 +167,7 @@ const ChartPane = memo(function ChartPane({ chart, direction, theme, stale, open
           <GearSixIcon size={14} aria-hidden />
         </button>
       </header>
+      {reason && <p className="pane-caption">{plainText(reason)}</p>}
       <div className="pane-body" onContextMenu={onContextMenu}>
         <div ref={hostRef} className="pane-chart" onMouseLeave={() => setTip(null)} />
         {tip && <MarkTip tip={tip} width={hostRef.current?.clientWidth ?? 0} />}

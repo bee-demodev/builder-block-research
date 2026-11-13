@@ -420,9 +420,20 @@ def build_corpus(
         "videos": manifest_rows,
     }
     (output_dir / "video_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    # Livestream transcripts and their analyses live outside video_manifest.json (see
+    # scripts/build_livestream_corpus_chunks.py); keep them in chunks.jsonl on every rebuild.
+    livestream_chunks_path = output_dir / "livestream_chunks.jsonl"
+    livestream_lines = (
+        [line for line in livestream_chunks_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+        if livestream_chunks_path.exists()
+        else []
+    )
     with (output_dir / "chunks.jsonl").open("w", encoding="utf-8") as handle:
         for row in chunk_rows:
             handle.write(json.dumps(row) + "\n")
+        for line in livestream_lines:
+            handle.write(line + "\n")
+    manifest["livestream_chunk_count"] = len(livestream_lines)
     return manifest
 
 

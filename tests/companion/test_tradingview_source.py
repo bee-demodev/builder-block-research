@@ -326,7 +326,7 @@ def test_symbol_problems_are_explained(minutes: pd.DataFrame, tmp_path: Path) ->
     ("kind", "detail", "says", "connection"),
     [
         ("not_running", "", ("TradingView Desktop is not running", LAUNCHER), True),
-        ("no_debug_port", "", ("started without the live-data link", "Close TradingView", LAUNCHER), True),
+        ("no_debug_port", "", ("started without the live-data link", "answer Yes when it offers to restart TradingView", LAUNCHER), True),
         ("loading", "", ("still loading the chart", "try again"), False),
         ("symbol_not_found", "CME_MINI:NQX1!", ("does not know the symbol CME_MINI:NQX1!", "symbols.json"), False),
         ("no_permission", "COMEX:GC1!", ("not sending market data for COMEX:GC1!", "subscription"), False),

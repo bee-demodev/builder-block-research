@@ -31,6 +31,188 @@ def _benchmark_manifest_count(payload: dict[str, Any]) -> int:
     return 0
 
 
+def _tensor_like_to_list(value: Any) -> list[Any]:
+    if value is None:
+        return []
+    if hasattr(value, "detach"):
+        value = value.detach()
+    if hasattr(value, "cpu"):
+        value = value.cpu()
+    if hasattr(value, "tolist"):
+        result = value.tolist()
+        return result if isinstance(result, list) else [result]
+    try:
+        return list(value)
+    except TypeError:
+        return [value]
+
+
+def _extract_prediction_boxes(prediction: Any) -> list[dict[str, Any]]:
+    boxes = getattr(prediction, "boxes", None)
+    if boxes is None:
+        return []
+    try:
+        box_count = len(boxes)
+    except TypeError:
+        box_count = 0
+    cls_values = _tensor_like_to_list(getattr(boxes, "cls", []))
+    conf_values = _tensor_like_to_list(getattr(boxes, "conf", []))
+    xyxy_values = _tensor_like_to_list(getattr(boxes, "xyxy", []))
+
+    extracted: list[dict[str, Any]] = []
+    for index in range(box_count):
+        class_id = int(float(cls_values[index])) if index < len(cls_values) else -1
+        confidence = float(conf_values[index]) if index < len(conf_values) else 0.0
+        xyxy = xyxy_values[index] if index < len(xyxy_values) else []
+        if not isinstance(xyxy, list):
+            xyxy = _tensor_like_to_list(xyxy)
+        class_name = YOLO_CLASS_NAMES[class_id] if 0 <= class_id < len(YOLO_CLASS_NAMES) else str(class_id)
+        extracted.append(
+            {
+                "class_id": class_id,
+                "class_name": class_name,
+                "confidence": round(confidence, 6),
+                "xyxy": [round(float(value), 3) for value in xyxy[:4]],
+            }
+        )
+    return extracted
+
+
+def _read_yolo_label_class_ids(label_path: Path) -> list[int]:
+    if not label_path.exists():
+        return []
+    class_ids: list[int] = []
+    for line in label_path.read_text(encoding="utf-8").splitlines():
+        parts = line.strip().split()
+        if not parts:
+            continue
+        try:
+            class_ids.append(int(float(parts[0])))
+        except ValueError:
+            continue
+    return class_ids
+
+
+def _class_names_from_ids(class_ids: list[int]) -> list[str]:
+    return [
+        YOLO_CLASS_NAMES[class_id] if 0 <= class_id < len(YOLO_CLASS_NAMES) else str(class_id)
+        for class_id in class_ids
+    ]
+
+
+def _build_benchmark_prediction_report(
+    *,
+    config: AppConfig,
+    benchmark_overlay_dir: Path,
+    manifest_payload: dict[str, Any],
+    predictions: Any,
+    classwise_ap50_95: dict[str, float],
+) -> dict[str, Any]:
+    prediction_lookup: dict[str, Any] = {}
+    for prediction in predictions or []:
+        image_path = Path(str(getattr(prediction, "path", "")))
+        if image_path.name:
+            prediction_lookup[image_path.stem] = prediction
+
+    manifest_items = [
+        item
+        for item in manifest_payload.get("items", [])
+        if isinstance(item, dict) and str(item.get("safe_name", "")).strip()
+    ]
+    items: list[dict[str, Any]] = []
+    manifest_label_mismatch_count = 0
+    hard_negative_false_positive_count = 0
+    review_queue_count = 0
+
+    for item in manifest_items:
+        safe_name = str(item.get("safe_name", "")).strip()
+        label_class_ids = _read_yolo_label_class_ids(config.paths.yolo_benchmark_labels_dir / f"{safe_name}.txt")
+        label_class_names = _class_names_from_ids(label_class_ids)
+        manifest_class_names = [str(class_name) for class_name in item.get("class_names", [])]
+        if sorted(label_class_names) != sorted(manifest_class_names):
+            manifest_label_mismatch_count += 1
+
+        prediction = prediction_lookup.get(safe_name)
+        predicted_boxes = _extract_prediction_boxes(prediction)
+        predicted_class_names = [box["class_name"] for box in predicted_boxes]
+        predicted_set = set(predicted_class_names)
+        label_set = set(label_class_names)
+        hard_negative = bool(item.get("hard_negative"))
+        failure_reasons: list[str] = []
+        missing_classes = sorted(label_set - predicted_set)
+        extra_classes = sorted(predicted_set - label_set)
+
+        if hard_negative and predicted_boxes:
+            failure_reasons.append("hard_negative_false_positive")
+            hard_negative_false_positive_count += 1
+        if label_class_names and not predicted_boxes:
+            failure_reasons.append("positive_miss")
+        elif missing_classes:
+            failure_reasons.append("class_miss")
+        if extra_classes and not hard_negative:
+            failure_reasons.append("class_confusion")
+
+        if "hard_negative_false_positive" in failure_reasons:
+            review_bucket = "hard_negative_fp"
+        elif "positive_miss" in failure_reasons:
+            review_bucket = "single_label_miss" if len(label_set) == 1 else "multi_label_miss"
+        elif failure_reasons:
+            review_bucket = "multi_label_confusion"
+        else:
+            review_bucket = "clean"
+        if review_bucket != "clean":
+            review_queue_count += 1
+
+        max_confidence = max((float(box["confidence"]) for box in predicted_boxes), default=0.0)
+        items.append(
+            {
+                "example_id": item.get("example_id"),
+                "safe_name": safe_name,
+                "review_bucket": review_bucket,
+                "failure_reasons": failure_reasons,
+                "hard_negative": hard_negative,
+                "review_outcome": item.get("review_outcome"),
+                "image_path": str(config.paths.yolo_benchmark_images_dir / f"{safe_name}.jpg"),
+                "label_path": str(config.paths.yolo_benchmark_labels_dir / f"{safe_name}.txt"),
+                "overlay_path": str(benchmark_overlay_dir / f"{safe_name}.jpg"),
+                "manifest_class_names": manifest_class_names,
+                "label_file_class_ids": label_class_ids,
+                "label_file_class_names": label_class_names,
+                "missing_class_names": missing_classes,
+                "extra_class_names": extra_classes,
+                "predicted_boxes": predicted_boxes,
+                "predicted_count": len(predicted_boxes),
+                "max_prediction_confidence": round(max_confidence, 6),
+                "benchmark_class_ap50_95": {
+                    class_name: classwise_ap50_95.get(class_name, 0.0)
+                    for class_name in sorted(label_set | predicted_set)
+                },
+            }
+        )
+
+    report = {
+        "summary": {
+            "benchmark_count": len(manifest_items),
+            "target_count": manifest_payload.get("target_count"),
+            "hard_negative_count": len([item for item in manifest_items if bool(item.get("hard_negative"))]),
+            "hard_negative_false_positive_count": hard_negative_false_positive_count,
+            "hard_negative_false_positive_rate": round(
+                hard_negative_false_positive_count
+                / max(1, len([item for item in manifest_items if bool(item.get("hard_negative"))])),
+                6,
+            ),
+            "review_queue_count": review_queue_count,
+            "manifest_label_mismatch_count": manifest_label_mismatch_count,
+            "classwise_ap50_95": classwise_ap50_95,
+            "class_names": list(YOLO_CLASS_NAMES),
+        },
+        "items": items,
+    }
+    output_path = benchmark_overlay_dir / "benchmark_predictions.json"
+    output_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    return report
+
+
 def _compute_benchmark_report(config: AppConfig, *, weights_path: Path, yolo_factory=None) -> dict[str, Any]:
     benchmark_images_dir = config.paths.yolo_benchmark_images_dir
     benchmark_data_yaml_path = config.paths.yolo_benchmark_data_yaml_path
@@ -53,13 +235,14 @@ def _compute_benchmark_report(config: AppConfig, *, weights_path: Path, yolo_fac
     box_metrics = getattr(benchmark_metrics, "box", None)
     maps_value = getattr(box_metrics, "maps", None)
     class_maps = [] if maps_value is None else [float(value) for value in list(maps_value)]
+    classwise_ap50_95 = {
+        YOLO_CLASS_NAMES[index]: round(float(value), 6)
+        for index, value in enumerate(class_maps[: len(YOLO_CLASS_NAMES)])
+    }
     benchmark_report = {
         "mAP50_95": round(float(getattr(box_metrics, "map", 0.0) or 0.0), 6),
         "mAP50": round(float(getattr(box_metrics, "map50", 0.0) or 0.0), 6),
-        "classwise_ap50_95": {
-            YOLO_CLASS_NAMES[index]: round(float(value), 6)
-            for index, value in enumerate(class_maps[: len(YOLO_CLASS_NAMES)])
-        },
+        "classwise_ap50_95": classwise_ap50_95,
     }
     benchmark_overlay_dir = config.paths.results_dir / "benchmark_overlays" / "latest"
     reset_yolo_run_directory(benchmark_overlay_dir)
@@ -73,29 +256,27 @@ def _compute_benchmark_report(config: AppConfig, *, weights_path: Path, yolo_fac
         verbose=False,
     )
     manifest_payload = _load_optional_json(config.paths.benchmark_manifest_path)
+    per_image_report = _build_benchmark_prediction_report(
+        config=config,
+        benchmark_overlay_dir=benchmark_overlay_dir,
+        manifest_payload=manifest_payload,
+        predictions=predictions,
+        classwise_ap50_95=classwise_ap50_95,
+    )
     hard_negative_items = [item for item in manifest_payload.get("items", []) if bool(item.get("hard_negative"))]
     if hard_negative_items:
-        prediction_lookup: dict[str, Any] = {}
-        for prediction in predictions:
-            image_path = Path(str(getattr(prediction, "path", "")))
-            if not image_path.name:
-                continue
-            prediction_lookup[image_path.stem] = prediction
-        hard_negative_false_positives = 0
-        for item in hard_negative_items:
-            safe_name = str(item.get("safe_name", "")).strip()
-            prediction = prediction_lookup.get(safe_name)
-            predicted_count = 0
-            if prediction is not None and getattr(prediction, "boxes", None) is not None:
-                predicted_count = len(prediction.boxes)
-            if predicted_count > 0:
-                hard_negative_false_positives += 1
+        hard_negative_false_positives = int(
+            per_image_report["summary"]["hard_negative_false_positive_count"]
+        )
         benchmark_report["hard_negative_count"] = len(hard_negative_items)
         benchmark_report["hard_negative_false_positive_count"] = hard_negative_false_positives
         benchmark_report["hard_negative_false_positive_rate"] = round(
             hard_negative_false_positives / len(hard_negative_items), 6
         )
     benchmark_report["overlay_dir"] = str(benchmark_overlay_dir.resolve())
+    benchmark_report["per_image_report_path"] = str((benchmark_overlay_dir / "benchmark_predictions.json").resolve())
+    benchmark_report["per_image_review_queue_count"] = int(per_image_report["summary"]["review_queue_count"])
+    benchmark_report["manifest_label_mismatch_count"] = int(per_image_report["summary"]["manifest_label_mismatch_count"])
     return benchmark_report
 
 

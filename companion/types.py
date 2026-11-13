@@ -142,6 +142,10 @@ class MarkupItem:
     # "reference". ``short`` is a label of a few words for the chart.
     role: str = ""
     short: str = ""
+    # True for a level the whole chain is read against (the previous bias candle's high
+    # and low, the respect level, the protected swing, the trigger): it is drawn on every
+    # chart of the stack, not only on its own timeframe's, so the three charts agree.
+    shared: bool = False
 
 
 @dataclass(frozen=True)

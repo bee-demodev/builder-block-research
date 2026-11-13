@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-24T21:24:17.321134+00:00",
+  "generated_at": "2026-06-21T13:26:01.693594+00:00",
   "manifest_source": "educational_channel_inventory",
   "source_channel_url": "https://www.youtube.com/@TTrades_edu/videos",
-  "video_count": 121,
+  "video_count": 122,
   "videos": [
     {
       "slug": "which_swing_highs_and_lows_matter_in_trading",
@@ -2255,6 +2255,98 @@
       ],
       "discovery_source": "youtube_channel_inventory",
       "channel_url": "https://www.youtube.com/@TTrades_edu/videos"
+    },
+    {
+      "slug": "a_simple_3_step_trading_model_full_breakdown",
+      "title": "A Simple 3-Step Trading Model (Full Breakdown)",
+      "video_id": "5Be2jPftFFw",
+      "url": "https://youtu.be/5Be2jPftFFw",
+      "source_page": null,
+      "topics": [
+        "daily_bias",
+        "daily_profiles",
+        "session_profile",
+        "fractal_model",
+        "top_down_alignment",
+        "candle_2",
+        "candle_3",
+        "cisd",
+        "protected_swing",
+        "continuation",
+        "reversal",
+        "invalidation",
+        "point_of_interest",
+        "fair_value_gap",
+        "correlated_pair_divergence"
+      ],
+      "corpus_partition": "educational_youtube",
+      "review_categories": [],
+      "educational_categories": [
+        "bias_framework",
+        "fractal_model",
+        "execution_model",
+        "timeframe_alignment",
+        "trading_framework",
+        "continuation_reversal"
+      ],
+      "discovery_source": "manual_youtube_intake",
+      "channel": "TTrades",
+      "channel_url": "https://www.youtube.com/channel/UCQwUEVakiYDmNGe7UBza4sQ",
+      "upload_date": "2026-06-20",
+      "duration_seconds": 3769,
+      "chapters": [
+        {
+          "title": "Intro",
+          "start": 0.0,
+          "end": 26.0
+        },
+        {
+          "title": "Daily Bias",
+          "start": 26.0,
+          "end": 1079.0
+        },
+        {
+          "title": "Exclusive Live Training",
+          "start": 1079.0,
+          "end": 1111.0
+        },
+        {
+          "title": "Daily Profile (7 hour)",
+          "start": 1111.0,
+          "end": 1793.0
+        },
+        {
+          "title": "TTFM Entries",
+          "start": 1793.0,
+          "end": 2155.0
+        },
+        {
+          "title": "Example 1",
+          "start": 2155.0,
+          "end": 2701.0
+        },
+        {
+          "title": "Example 2",
+          "start": 2701.0,
+          "end": 3178.0
+        },
+        {
+          "title": "Example 3",
+          "start": 3178.0,
+          "end": 3528.0
+        },
+        {
+          "title": "Example 4",
+          "start": 3528.0,
+          "end": 3743.0
+        },
+        {
+          "title": "Outro",
+          "start": 3743.0,
+          "end": 3769.0
+        }
+      ],
+      "source_notes": "Manual intake from user-provided YouTube URL for a daily-bias -> 7-hour daily-profile -> TTFM-entry teaching model."
     }
   ]
 }

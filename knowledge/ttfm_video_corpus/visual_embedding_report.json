@@ -5,12 +5,12 @@
   "model": "models/gemini-embedding-2-preview",
   "output_dimensionality": 768,
   "summary": {
-    "document_count": 605,
-    "asset_backed_document_count": 570,
+    "document_count": 610,
+    "asset_backed_document_count": 575,
     "text_fallback_count": 0,
     "frame_status_counts": {
       "extract_failed": 25,
-      "extracted": 570,
+      "extracted": 575,
       "missing_video": 10
     }
   },
@@ -3644,6 +3644,36 @@
       "used_asset": true,
       "used_text_fallback": false,
       "asset_path": "knowledge\\ttfm_video_corpus\\frames\\simple_day_trading_strategy_intro\\outcome_00046500.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_simple_3_step_trading_model_full_breakdown_visual_v1::context",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_simple_3_step_trading_model_full_breakdown\\context_03390040.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_simple_3_step_trading_model_full_breakdown_visual_v1::sweep",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_simple_3_step_trading_model_full_breakdown\\sweep_03662340.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_simple_3_step_trading_model_full_breakdown_visual_v1::closure",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_simple_3_step_trading_model_full_breakdown\\closure_01877140.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_simple_3_step_trading_model_full_breakdown_visual_v1::confirmation",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_simple_3_step_trading_model_full_breakdown\\confirmation_02009300.jpg"
+    },
+    {
+      "chunk_id": "youtube_a_simple_3_step_trading_model_full_breakdown_visual_v1::outcome",
+      "used_asset": true,
+      "used_text_fallback": false,
+      "asset_path": "knowledge\\ttfm_video_corpus\\frames\\a_simple_3_step_trading_model_full_breakdown\\outcome_02278380.jpg"
     }
   ]
 }
