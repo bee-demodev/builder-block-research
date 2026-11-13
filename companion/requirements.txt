@@ -1,0 +1,8 @@
+# What the Trading Companion needs (the Tk window, the headless core, the desktop app and their tests).
+# The repo's root requirements.txt carries the research and ML stack; the companion does not need it.
+#   uv pip install -r companion/requirements.txt
+pandas>=3.0
+numpy>=1.26
+aiohttp>=3.9  # companion.core: the local WebSocket server
+pywebview>=6.0  # companion.desktop: the native window (Edge WebView2 on Windows, through pythonnet)
+pytest>=8  # tests/companion

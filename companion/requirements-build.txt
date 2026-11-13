@@ -1,0 +1,4 @@
+# Building the packaged app (Build-Companion.ps1), on top of companion/requirements.txt.
+#   uv pip install -r companion/requirements.txt -r companion/requirements-build.txt
+pyinstaller>=6.10  # one-folder, windowed build of companion.desktop
+pillow>=10  # companion/desktop/make_icon.py, and PyInstaller's .ico handling

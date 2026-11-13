@@ -1,0 +1,219 @@
+/* The whole design system. Colour is reserved for meaning:
+   long / short    = the side of a trade (decision, entry lines, direction marks)
+   bull            = confirmed / passed / done
+   bear            = failed / blocked / an error
+   watch           = waiting / the next step
+   reward / risk   = the risk / reward tool's zones, its target and its stop
+   Theme: follows prefers-color-scheme unless html[data-theme] is set by the toggle.
+   Direction colours: html[data-scheme] (grey is the default and has no attribute).
+   Every scheme sets the same nine tokens in both themes; contrast.test.ts holds each
+   of them to WCAG AA. A dark block exists twice (system and explicit dark): keep the
+   copies identical, the test checks that too. */
+
+:root {
+  /* light */
+  --bg: #f1f2f4;
+  --surface: #fbfbfc;
+  --raised: #e9ebee;
+  --line: #dadde2;
+  --text: #15171a;
+  --muted: #565c65;
+  --faint: #7e848d;
+  --on-primary: var(--bg);
+  color-scheme: light;
+
+  /* grey scheme, light */
+  --long: #0c7650;
+  --short: #bc3636;
+  --bull: #2160c4;
+  --bear: #bc3636;
+  --watch: #8f5d00;
+  --reward: #0c7650;
+  --risk: #bc3636;
+  --candle-up: #3a3f46;
+  --candle-down: #7c8189;
+  --candle-up-hollow: 0;
+
+  --radius: 6px;
+  --font-sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  --tint: 11%;
+  --dur: 140ms;
+  /* Text size multiplier, from the Display menu (Normal 1, Large 1.25, Larger 1.5). */
+  --fs: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0d0e10;
+    --surface: #141619;
+    --raised: #1d2024;
+    --line: #262a2f;
+    --text: #ecedee;
+    --muted: #9297a0;
+    --faint: #666b74;
+    --long: #4cbb8d;
+    --short: #e66868;
+    --bull: #5b9dff;
+    --bear: #e66868;
+    --watch: #e2a63b;
+    --reward: #4cbb8d;
+    --risk: #e66868;
+    --candle-up: #c9cdd3;
+    --candle-down: #71767f;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #0d0e10;
+  --surface: #141619;
+  --raised: #1d2024;
+  --line: #262a2f;
+  --text: #ecedee;
+  --muted: #9297a0;
+  --faint: #666b74;
+  --long: #4cbb8d;
+  --short: #e66868;
+  --bull: #5b9dff;
+  --bear: #e66868;
+  --watch: #e2a63b;
+  --reward: #4cbb8d;
+  --risk: #e66868;
+  --candle-up: #c9cdd3;
+  --candle-down: #71767f;
+  color-scheme: dark;
+}
+
+/* ---------- Green / red: green up and long, red down and short ---------- */
+:root[data-scheme='green-red'] {
+  --long: #08724a;
+  --short: #b92f2f;
+  --bull: #2160c4;
+  --bear: #b92f2f;
+  --watch: #855700;
+  --reward: #08724a;
+  --risk: #b92f2f;
+  --candle-up: #0b8556;
+  --candle-down: #d63e3e;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-scheme='green-red']:not([data-theme='light']) {
+    --long: #3fdc97;
+    --short: #ff6b6b;
+    --bull: #5b9dff;
+    --bear: #ff6b6b;
+    --watch: #ffc857;
+    --reward: #3fdc97;
+    --risk: #ff6b6b;
+    --candle-up: #3fdc97;
+    --candle-down: #ff6b6b;
+  }
+}
+:root[data-scheme='green-red'][data-theme='dark'] {
+  --long: #3fdc97;
+  --short: #ff6b6b;
+  --bull: #5b9dff;
+  --bear: #ff6b6b;
+  --watch: #ffc857;
+  --reward: #3fdc97;
+  --risk: #ff6b6b;
+  --candle-up: #3fdc97;
+  --candle-down: #ff6b6b;
+}
+
+/* ---------- Blue / orange: colour-blind safe. Confirmed is green, failed is magenta ---------- */
+:root[data-scheme='blue-orange'] {
+  --long: #1b5fc0;
+  --short: #9a5200;
+  --bull: #0a7346;
+  --bear: #b32a74;
+  --watch: #6e5f00;
+  --reward: #1b5fc0;
+  --risk: #9a5200;
+  --candle-up: #2f6fd0;
+  --candle-down: #b56700;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-scheme='blue-orange']:not([data-theme='light']) {
+    --long: #4c9bff;
+    --short: #ff9f1c;
+    --bull: #60f0a0;
+    --bear: #ff7ab6;
+    --watch: #ffe36e;
+    --reward: #4c9bff;
+    --risk: #ff9f1c;
+    --candle-up: #4c9bff;
+    --candle-down: #ff9f1c;
+  }
+}
+:root[data-scheme='blue-orange'][data-theme='dark'] {
+  --long: #4c9bff;
+  --short: #ff9f1c;
+  --bull: #60f0a0;
+  --bear: #ff7ab6;
+  --watch: #ffe36e;
+  --reward: #4c9bff;
+  --risk: #ff9f1c;
+  --candle-up: #4c9bff;
+  --candle-down: #ff9f1c;
+}
+
+/* ---------- Monochrome: hollow up, filled down; long and short told apart by shape and words ---------- */
+:root[data-scheme='mono'] {
+  --long: #15171a;
+  --short: #15171a;
+  --bull: #2160c4;
+  --bear: #bc3636;
+  --watch: #8f5d00;
+  --reward: #3a3f46;
+  --risk: #4a4f57;
+  --candle-up: #3a3f46;
+  --candle-down: #3a3f46;
+  --candle-up-hollow: 1;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-scheme='mono']:not([data-theme='light']) {
+    --long: #ecedee;
+    --short: #ecedee;
+    --bull: #5b9dff;
+    --bear: #e66868;
+    --watch: #e2a63b;
+    --reward: #c9cdd3;
+    --risk: #aeb3ba;
+    --candle-up: #c9cdd3;
+    --candle-down: #c9cdd3;
+  }
+}
+:root[data-scheme='mono'][data-theme='dark'] {
+  --long: #ecedee;
+  --short: #ecedee;
+  --bull: #5b9dff;
+  --bear: #e66868;
+  --watch: #e2a63b;
+  --reward: #c9cdd3;
+  --risk: #aeb3ba;
+  --candle-up: #c9cdd3;
+  --candle-down: #c9cdd3;
+}
+
+/* ---------- text size ---------- */
+:root[data-text='large'] {
+  --fs: 1.25;
+}
+:root[data-text='larger'] {
+  --fs: 1.5;
+}
+
+/* Soft tints: the status colour at about 11% alpha. */
+:root {
+  --tint-watch: color-mix(in srgb, var(--watch) var(--tint), transparent);
+  --tint-bull: color-mix(in srgb, var(--bull) var(--tint), transparent);
+  --tint-bear: color-mix(in srgb, var(--bear) var(--tint), transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur: 0ms;
+  }
+}

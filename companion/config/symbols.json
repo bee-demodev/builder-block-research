@@ -1,0 +1,17 @@
+{
+  "about": "How the companion's symbols map to TradingView tickers for the live feed. Edit 'ticker' to follow a dated contract (for example CME_MINI:NQZ2026) or add a symbol: a new entry is all it takes. 'settings' tunes the live feed; companion/tradingview/symbols.py says what each one means.",
+  "symbols": {
+    "NQ": {"ticker": "CME_MINI:NQ1!", "name": "E-mini Nasdaq-100, front contract"},
+    "ES": {"ticker": "CME_MINI:ES1!", "name": "E-mini S&P 500, front contract"},
+    "GC": {"ticker": "COMEX:GC1!", "name": "Gold, front contract"}
+  },
+  "settings": {
+    "port": 9222,
+    "settle_seconds": 3,
+    "daily_stamp_shift_days": 0,
+    "daily_and_above": "native",
+    "max_series": 4,
+    "settlement_as_close": false,
+    "session": "extended"
+  }
+}

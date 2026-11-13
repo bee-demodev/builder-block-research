@@ -1,0 +1,100 @@
+import { readFileSync } from 'node:fs';
+import { describe, expect, it } from 'vitest';
+import { Connection, type SocketLike } from './connection';
+import { focusedStep, formatR, planWords, sections, setSide, sideChoices, stepPrice, suggestionText } from './decision';
+import { longView, watchView } from './demo/fixtures';
+import { parseRealSnapshot } from './demo/real';
+import type { Options } from './wire';
+
+const real = (name: string) => parseRealSnapshot(readFileSync(new URL(`./demo/${name}.json`, import.meta.url), 'utf8')).view!;
+const planned = real('real-planned');
+const triggered = real('real-triggered');
+
+describe('the suggestion line', () => {
+  it('reads the core banner in sentence case, without the middle dot', () => {
+    expect(suggestionText(planned)).toBe('Watch, short');
+    expect(suggestionText(triggered)).toBe('Trade short');
+    expect(suggestionText({ suggestion: 'SHORT · TARGET REACHED', decision_word: '' })).toBe('Short, target reached');
+    expect(suggestionText({ suggestion: '', decision_word: "DON'T TRADE" })).toBe("Don't trade");
+  });
+});
+
+describe('what has to happen', () => {
+  it('focuses the step marked next', () => {
+    expect(focusedStep(planned.steps)?.number).toBe(2);
+    expect(focusedStep(watchView().steps)?.label).toMatch(/the entry/);
+  });
+
+  it('focuses nothing once every step is done', () => {
+    expect(triggered.steps.every((s) => s.status === 'done')).toBe(true);
+    expect(focusedStep(triggered.steps)).toBeNull();
+  });
+
+  it('shows the step list instead of the waiting block, and the plan instead of the levels', () => {
+    expect(planned.waiting_for).not.toBe('');
+    expect(sections(planned)).toEqual({ steps: true, waiting: false, plan: true, levels: false });
+    expect(triggered.has_levels).toBe(true);
+    expect(sections(triggered)).toEqual({ steps: true, waiting: false, plan: true, levels: false });
+  });
+
+  it('falls back to the waiting block and the levels when the core sends no steps and no plan', () => {
+    const old = { ...watchView(), steps: [], plan: null };
+    expect(sections(old)).toEqual({ steps: false, waiting: true, plan: false, levels: true });
+    expect(sections({ ...old, waiting_for: '' }).waiting).toBe(false);
+  });
+
+  it('prints a step price only when the step has one', () => {
+    expect(planned.steps.map(stepPrice)).toEqual(['', '24,958.25', '']);
+  });
+});
+
+describe('the plan block', () => {
+  it('words a triggered plan with its time, last close and R', () => {
+    expect(planWords(triggered.plan!)).toEqual({ title: 'Short', state: 'Triggered 08:20', outcome: '', last: { price: '24,713.25', r: '+0.19R' } });
+  });
+
+  it('words a planned plan without a last close', () => {
+    expect(planWords(planned.plan!)).toMatchObject({ title: 'Planned short', state: 'Planned', last: null });
+  });
+
+  it('names the outcome and its time once the trade is over', () => {
+    const plan = { ...longView().plan!, outcome: 'stopped' as const, outcome_at: '2026-11-12T10:50:00-05:00' };
+    expect(planWords(plan).outcome).toBe('Stopped 10:50');
+  });
+
+  it('writes R with a true minus sign and no negative zero', () => {
+    expect(formatR(-1)).toBe('−1.00R');
+    expect(formatR(-0.001)).toBe('+0.00R');
+  });
+});
+
+describe('the side selector', () => {
+  const options: Pick<Options, 'sides' | 'side_labels'> = { sides: ['', 'long', 'short'], side_labels: { '': 'Auto', long: 'Long', short: 'Short' } };
+
+  it('shows the side the core reports, not the one last clicked', () => {
+    expect(sideChoices(options, { side: 'short' }).map((c) => [c.label, c.pressed])).toEqual([
+      ['Auto', false],
+      ['Long', false],
+      ['Short', true],
+    ]);
+    expect(sideChoices(options, null).some((c) => c.pressed)).toBe(false);
+  });
+
+  it('offers Auto, Long and Short before the first hello', () => {
+    expect(sideChoices(null, null).map((c) => c.label)).toEqual(['Auto', 'Long', 'Short']);
+  });
+
+  it('sends set {side} and nothing else: the core re-checks by itself', () => {
+    const sent: string[] = [];
+    const socket: SocketLike = { onopen: null, onmessage: null, onclose: null, onerror: null, readyState: 1, send: (d) => sent.push(d), close: () => {} };
+    const conn = new Connection(() => socket, () => {});
+    conn.start();
+    conn.send(setSide('short'));
+    conn.send(setSide(''));
+    expect(sent.map((s) => JSON.parse(s))).toEqual([
+      { type: 'set', side: 'short' },
+      { type: 'set', side: '' },
+    ]);
+    conn.stop();
+  });
+});

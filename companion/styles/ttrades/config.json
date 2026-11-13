@@ -1,0 +1,291 @@
+{
+  "style": "ttrades",
+  "about": "Every tunable of the TTrades checklist. Edit 'value' only. 'rules' names the rules.md section, 'open_question' the numbered question in rules.md section 12 that the value answers or raises (null when the source states it). A description starting ANSWERED records a trader answer of 2026-11-12; PROPOSAL marks a default nobody has confirmed.",
+  "parameters": {
+    "target_rr": {
+      "value": 2.0,
+      "rules": "8.3, 11",
+      "open_question": 15,
+      "description": "ANSWERED (questions 15, 16). The exit: a fixed reward-to-risk multiple of the risk (entry to stop). With target_mode 'r_multiple', Verdict.targets[0] = entry +/- target_rr * risk. The trader said 'one to one or one to two'; 2.0 is the default, 1.0 the other value named."
+    },
+    "target_mode": {
+      "value": "r_multiple",
+      "rules": "8.3, 11",
+      "open_question": 15,
+      "description": "'r_multiple' (default, the trader's answer): the only target is the target_rr price and the structural levels are information. 'structural' (the rule before the answer): the targets are the structural levels T1 / T2."
+    },
+    "min_rr": {
+      "value": 2.0,
+      "rules": "8.3, 11",
+      "open_question": 15,
+      "description": "Threshold of *_reward_at_least_2r: the structural first level (previous bias candle high / low on a continuation, its equilibrium on a reversal) sits at least this many multiples of risk away. Information only unless reward_check_role is 'quality'."
+    },
+    "reward_check_role": {
+      "value": "advisory",
+      "rules": "6 (stage c4), 7 (stage c4), 8.3",
+      "open_question": 15,
+      "description": "Class of cont_reward_at_least_2r / rev_reward_at_least_2r. 'advisory' (default, from the trader's answer: the exit is the R multiple, so the structural distance no longer blocks). 'quality' restores the old rule: the structural first level must be min_rr away or the verdict stays watch, and the body stop may be used to reach it."
+    },
+    "cisd_max_bars": {
+      "value": 3,
+      "rules": "3.11, 11",
+      "open_question": 10,
+      "description": "A change in state of delivery is 'swift' when it confirms within this many bars of the extreme."
+    },
+    "entry_mode_continuation": {
+      "value": "either",
+      "rules": "6 (stage c4), 11",
+      "open_question": 14,
+      "description": "ANSWERED (question 14). 'either' (default): the trigger is whichever of the entry-timeframe CISD or a continuation order block confirms first. 'aggressive': only the entry CISD. 'conservative': only a continuation order block after it. When the bias Candle 2 expanded the CISD entry is not allowed, so 'either' and 'aggressive' are left with the order block."
+    },
+    "entry_mode_reversal": {
+      "value": "either",
+      "rules": "7 (stage c4), 11",
+      "open_question": 14,
+      "description": "ANSWERED (question 14). Same choice for the reversal path: 'either' (default), 'aggressive' (the bar that confirmed the reversal CISD) or 'conservative' (a continuation order block after it)."
+    },
+    "entry_either_pick": {
+      "value": "first",
+      "rules": "6 (stage c4), 7 (stage c4)",
+      "open_question": 28,
+      "description": "PROPOSAL. In 'either' mode, when a CISD trigger and one or more continuation order blocks all exist and none has been stopped: 'first' reports the one that confirmed first (it stays the trigger at later checks), 'latest' reports the most recent one (fresher entry price, tighter stop)."
+    },
+    "kill_zones": {
+      "value": [["02:00", "05:00"], ["08:30", "11:00"]],
+      "rules": "9.1, 11",
+      "open_question": 18,
+      "description": "New York clock windows (start, end, both inclusive) that session_filter_ok reports on. Sources give 11:00, 11:30 and 12:00 for the New York AM end. Whether the result affects the decision is session_filter_role."
+    },
+    "session_filter_role": {
+      "value": "advisory",
+      "rules": "9.1, 10.3",
+      "open_question": 18,
+      "description": "ANSWERED (question 18). Class of session_filter_ok. 'advisory' (default, the trader's answer): computed and shown, never changes the decision. 'quality' restores the old rule: a trigger outside the kill zones keeps the verdict at watch."
+    },
+    "kill_zone_applies_below_minutes": {
+      "value": 60,
+      "rules": "4.3, 9.1",
+      "open_question": 18,
+      "description": "Kill zones apply only when the entry timeframe is shorter than this many minutes (60 = below 1h)."
+    },
+    "reversal_entry_tf_confirm_bias": {
+      "value": ["1D"],
+      "rules": "4.3, 7 (stage c3)",
+      "open_question": 19,
+      "description": "Bias timeframes for which the reversal CISD may be read on the entry timeframe instead of the setup timeframe."
+    },
+    "reversal_entry_tf_confirm_window": {
+      "value": ["08:30", "11:00"],
+      "rules": "4.3, 7 (stage c3)",
+      "open_question": 19,
+      "description": "New York clock window in which that entry-timeframe confirmation is accepted."
+    },
+    "sweep_reclaim_max_bars": {
+      "value": {"bias": 0, "setup": 3, "entry": 3},
+      "rules": "3.2, 11",
+      "open_question": null,
+      "description": "Bars allowed between a level being taken and the close back inside for a Sweep. Listed in rules.md section 11 but no criterion in sections 6 or 7 uses a Sweep, so this value is currently not read by any check."
+    },
+    "avg_range_bars": {
+      "value": 20,
+      "rules": "3.8, 11",
+      "open_question": 2,
+      "description": "Closed bias candles averaged (high - low) to get the yardstick for wick size."
+    },
+    "wick_yardstick": {
+      "value": "avg_range",
+      "rules": "3.8, 11",
+      "open_question": 2,
+      "description": "ANSWERED (question 2): keep 'avg_range' (the opposing run as a share of the avg_range_bars average bias range). 'body' is the alternative the trader described: the opposing run measured against that same candle's body so far, using wick_body_small_frac / wick_body_large_frac."
+    },
+    "wick_small_frac": {
+      "value": 0.25,
+      "rules": "3.8, 11",
+      "open_question": 2,
+      "description": "Yardstick 'avg_range': the forming candle's wick is 'small' when the opposing run is at most this share of the average range (and it formed early)."
+    },
+    "wick_large_frac": {
+      "value": 0.5,
+      "rules": "3.8, 11",
+      "open_question": 2,
+      "description": "Yardstick 'avg_range': the forming candle's wick is 'large' when the opposing run is at least this share of the average range (or it formed late)."
+    },
+    "wick_body_small_frac": {
+      "value": 0.5,
+      "rules": "3.8, 11",
+      "open_question": 31,
+      "description": "PROPOSAL, yardstick 'body' only: the wick is 'small' when the opposing run is at most this multiple of the candle's body so far (and it formed early)."
+    },
+    "wick_body_large_frac": {
+      "value": 1.0,
+      "rules": "3.8, 11",
+      "open_question": 31,
+      "description": "PROPOSAL, yardstick 'body' only: the wick is 'large' when the opposing run is at least this multiple of the body so far (a wick as long as the body), or it formed late."
+    },
+    "wick_time_frac_max": {
+      "value": 0.5,
+      "rules": "3.8, 4.3, 11",
+      "open_question": 3,
+      "description": "Non-daily bias: the wick is 'early' when its extreme is made within this share of the bias candle's duration."
+    },
+    "daily_wick_deadline": {
+      "value": "11:00",
+      "rules": "3.8, 4.3, 11",
+      "open_question": 3,
+      "description": "Daily bias: the wick is 'early' when its extreme is made before this New York clock time on the candle's trading day."
+    },
+    "respect_level_mode": {
+      "value": "auto",
+      "rules": "3.9",
+      "open_question": 4,
+      "description": "'auto' uses the wick midpoint when the previous bias candle is a Candle 2 closure with a large closed wick and the equilibrium otherwise; 'eq' or 'wick_mid' fixes the choice."
+    },
+    "closed_wick_large_frac": {
+      "value": 0.5,
+      "rules": "3.8, 3.9, 11",
+      "open_question": 4,
+      "description": "A closed candle's wick is 'large' when it is at least this share of the candle's range."
+    },
+    "eq_tolerance_frac": {
+      "value": 0.0,
+      "rules": "3.9, 11",
+      "open_question": 5,
+      "description": "How far past the respect level a setup-timeframe close may go, as a share of the previous bias candle's range."
+    },
+    "objective_open_role": {
+      "value": "advisory",
+      "rules": "6 (stage c1), 9.2",
+      "open_question": 16,
+      "description": "ANSWERED (question 16). Class of cont_objective_open ('previous bias candle high / low not yet taken'). 'advisory' (default: the exit is the R multiple, so the continuation path stays alive after that level trades). 'gate' restores the old rule: the path ends once it is taken."
+    },
+    "candle3_body_edge": {
+      "value": "far",
+      "rules": "3.6",
+      "open_question": 6,
+      "description": "Body edge of Candle 2 that a Candle 3 closure must close beyond: 'far' (max(open, close) bullish) or 'open'."
+    },
+    "doji_in_series": {
+      "value": true,
+      "rules": "2.2, 3.11",
+      "open_question": 9,
+      "description": "Whether a close == open candle is folded into the run of opposite-close candles that defines a CISD level. It never starts a series."
+    },
+    "setup_body_alignment_required": {
+      "value": true,
+      "rules": "3.5, 6 (stage c3)",
+      "open_question": 11,
+      "description": "true: a setup Candle 2 closure whose body disagrees with the direction blocks entry-ready (quality). false: reported as advisory only."
+    },
+    "fvg_min_size": {
+      "value": 0.0,
+      "rules": "3.10, 11",
+      "open_question": null,
+      "description": "Smallest fair value gap (top - bottom, in price units) that counts as a point of interest."
+    },
+    "bias_poi_lookback_bars": {
+      "value": {"1h": 69, "4h": 90, "1D": 66, "1W": 13, "1M": 12, "default": 60},
+      "rules": "3.1, 11",
+      "open_question": 13,
+      "description": "How many bias-timeframe bars back a swing or gap may sit to count as the bias point of interest, by bias timeframe. 'default' serves bias timeframes not listed (custom stacks)."
+    },
+    "reversal_key_levels": {
+      "value": ["previous_candle", "swing", "fvg"],
+      "rules": "7.1, 11",
+      "open_question": 1,
+      "description": "ANSWERED (question 1). Which bias-timeframe levels count as a key level for a reversal: 'previous_candle' (its high / low), 'swing' (untaken swing highs / lows inside bias_poi_lookback_bars), 'fvg' (unfilled fair value gaps inside the same lookback). [\"previous_candle\"] with reversal_level_tolerance_frac 0 is the old 'has run the previous candle's high / low' test."
+    },
+    "reversal_level_tolerance_frac": {
+      "value": 0.1,
+      "rules": "7.1, 11",
+      "open_question": 29,
+      "description": "PROPOSAL for 'at or near a key level': the forming bias candle's extreme has reached a key level when it traded through it (a gap: into it) or came within this share of the avg_range_bars average bias range. 0 = the level must be traded through."
+    },
+    "reversal_expansion_test": {
+      "value": "directional_run",
+      "rules": "7.1, 11",
+      "open_question": 30,
+      "description": "PROPOSAL for 'expansion out' (rev_expansion_into_level, a quality check). 'directional_run': the setup-timeframe candles into the extreme are a run of candles closing toward the level, at least reversal_expansion_min_bars long, that travelled at least reversal_expansion_min_travel_frac of the average setup-timeframe range. 'off': reaching the level is sufficient; the same measurement is shown as advisory."
+    },
+    "reversal_expansion_min_bars": {
+      "value": 1,
+      "rules": "7.1, 11",
+      "open_question": 30,
+      "description": "PROPOSAL. Minimum number of consecutive setup-timeframe candles closing toward the level in the run that ends at the extreme. TTrades often shows a one-candle series, hence 1."
+    },
+    "reversal_expansion_min_travel_frac": {
+      "value": 1.0,
+      "rules": "7.1, 11",
+      "open_question": 30,
+      "description": "PROPOSAL. Minimum distance from the first open of that run to the extreme, as a multiple of the average range of the last avg_range_bars closed setup-timeframe candles. 0 switches the distance test off."
+    },
+    "protected_swing_break_on": {
+      "value": "wick",
+      "rules": "3.15",
+      "open_question": 24,
+      "description": "'wick': any trade through a protected swing breaks it. 'close': only a close beyond it."
+    },
+    "body_stop_allowed": {
+      "value": true,
+      "rules": "8.2",
+      "open_question": 25,
+      "description": "Whether the stop may move to the bodies of the trigger series to reach the minimum reward. Only acts when reward_check_role is 'quality'; with the default advisory reward check the stop always rests on the protected swing."
+    },
+    "body_stop_min_body_frac": {
+      "value": 0.6,
+      "rules": "8.2, 11",
+      "open_question": 25,
+      "description": "The body stop is allowed only when every candle of the trigger series has a body of at least this share of its range."
+    },
+    "stop_buffer": {
+      "value": 0.0,
+      "rules": "8.2, 11",
+      "open_question": null,
+      "description": "Extra room beyond the stop swing, in price units."
+    },
+    "entry_window_extra_candles": {
+      "value": 0,
+      "rules": "6 (stage c4, entry window)",
+      "open_question": 21,
+      "description": "Setup-timeframe candles allowed for the trigger beyond the rule (Candle 3, plus Candle 4 after a strong Candle 3)."
+    },
+    "block_unstated_stacks": {
+      "value": false,
+      "rules": "4.2",
+      "open_question": 22,
+      "description": "false: a stack TTrades never states still runs and is flagged by the advisory stack_pairing_stated. true: that criterion becomes a gate."
+    },
+    "setup_cover_bias_bars": {
+      "value": 5,
+      "rules": "6 (data_sufficient)",
+      "open_question": null,
+      "description": "Setup-timeframe history requested, in bias candles. Must cover the three candles data_sufficient asks for."
+    },
+    "entry_cover_bias_bars": {
+      "value": 3,
+      "rules": "6 (data_sufficient)",
+      "open_question": null,
+      "description": "Entry-timeframe history requested, in bias candles. Must cover the previous bias candle and the forming one."
+    },
+    "max_frame_bars": {
+      "value": 12000,
+      "rules": "implementation",
+      "open_question": null,
+      "description": "Upper bound on the bars requested for one timeframe."
+    },
+    "stated_stacks": {
+      "value": [
+        ["1D", "1h", "5m"], ["1W", "4h", "15m"], ["4h", "15m", "1m"], ["1D", "4h", "15m"], ["1D", "30m", "3m"],
+        ["1W", "1D", "1h"], ["1M", "1W", "4h"], ["1M", "1D", "1h"], ["1h", "15m", "1m"]
+      ],
+      "rules": "4.2",
+      "open_question": 22,
+      "description": "Bias / setup / entry stacks TTrades states (rules.md 4.2 stack table)."
+    },
+    "stated_pairings": {
+      "value": [["1W", "4h"], ["1D", "1h"], ["4h", "15m"], ["1h", "5m"], ["30m", "3m"], ["15m", "1m"], ["1M", "1D"]],
+      "rules": "4.2",
+      "open_question": 22,
+      "description": "Higher : lower timeframe pairings TTrades states (rules.md 4.2 pairing table)."
+    }
+  }
+}
