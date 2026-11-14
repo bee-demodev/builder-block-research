@@ -1374,6 +1374,30 @@ ul {
   font-size: calc(12px * var(--fs));
   color: var(--muted);
 }
+.plan-size {
+  margin-top: 2px;
+  font-size: calc(12px * var(--fs));
+  color: var(--muted);
+}
+/* What the backtest measured: a small grade line and its record, information only. */
+.plan-evidence {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+  font-size: calc(12px * var(--fs));
+  line-height: 1.45;
+}
+.evidence-grade {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+.evidence-line,
+.evidence-exits {
+  margin-top: 2px;
+  color: var(--muted);
+}
 .plan-outcome {
   display: inline-flex;
   align-items: center;

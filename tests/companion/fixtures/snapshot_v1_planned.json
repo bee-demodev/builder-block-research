@@ -5677,8 +5677,17 @@
    "risk_adr": 0.05639136571763005,
    "cost_r_mini": 0.016239316239316237,
    "cost_r_micro": 0.03418803418803419,
-   "cost_note": "Stop 5.6% of ADR · costs 0.02R mini, 0.03R micro"
-  }
+   "cost_note": "Stop 5.6% of ADR · costs 0.02R mini, 0.03R micro",
+   "size_note": "1 micro risks $60 · 1 mini $594",
+   "evidence": {
+    "grade": "no_edge",
+    "label": "No edge measured",
+    "line": "This stack: −0.08R a trade over 2,262 taken trades (2021, 2024-26), up in 0 of 4 years tested.",
+    "exits": "Exits here: 2R −0.08R · 3R −0.11R · hold to the 1D close −0.15R a trade.",
+    "source": "results/phase_b: TradingView 5m, NQ ES GC YM RTY CL SI 6E, Aug 2021 to Nov 2026, taken trades, market entry at the first report, 2R target, net of costs"
+   }
+  },
+  "look_for": null
  },
  "error": "",
  "offer_history": false,
@@ -5689,10 +5698,10 @@
  },
  "timing": {
   "bar_closed_at": null,
-  "detected_at": "2026-11-13T20:42:07.735000-05:00",
+  "detected_at": "2026-11-14T13:02:12.824000-05:00",
   "fetch_ms": 0,
-  "compute_ms": 611,
+  "compute_ms": 847,
   "lag_ms": null,
-  "load_ms": 1781
+  "load_ms": 2054
  }
 }

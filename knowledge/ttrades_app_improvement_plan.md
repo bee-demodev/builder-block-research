@@ -47,6 +47,31 @@ Cut from v1: the "best-measured setup" tag (a sign-test pass is not significance
 population), the separate ADR-used readout (folded into A2), kill-zone shading (no evidence; the 02:00-05:00 result was
 found after looking), the 10% stop warning band (rested on low-confidence Databento data), the 1W/1D/1h stack.
 
+## Phase B step 1: pre-registered tests (2026-11-14)
+
+Rules written first in [PREREGISTERED_PHASE_B.md](../results/phase_b/PREREGISTERED_PHASE_B.md); results in
+[report.md](../results/phase_b/report.md). Every year re-run on the current engine (played-out trades no longer count
+as taken: 114 of 290 taken 1D/4h/15m trades in 2022 were first reported a median 750 minutes after their target or stop
+had traded). Aug-Dec 2021 was untouched. A worker-process leak in the first run was caught and re-run before scoring
+(logged in the pre-registration). 8 symbols, 3,750 taken trades.
+
+| Test | Result | Verdict |
+|---|---|---|
+| T1 limit at the plan entry vs market at the first report | -0.001 R per signal (t -0.07), up 2 of 6 years, fill rate ~92% | FAIL: no difference |
+| T2 exits on 2021 (1D-bias stacks) | bias close -0.088 R and 3R -0.060 R against 2R | FAIL: 2R stays |
+| T3 replay with the quality checks off | checks helped in 2022-23 (+0.058 R), hurt in 2021 (-0.088 R) | FAIL: effect unproven |
+| T4 best-measured setup (CISD, stop >= 10% ADR, 1D/4h/15m + 1W/1D/1h) on 2021 | +0.060 R, n 73, 4 of 8 symbols | FAIL (needed 5 of 8) |
+
+Descriptive, all years, taken trades net of costs: all -0.033 R (t -1.3); **1D/1h/5m -0.075 R (t -2.4), negative in
+every year tested and on 5 of 8 symbols** (gross -0.02 R: costs plus a slight negative; continuation -0.12 R);
+1D/4h/15m +0.042 R (t 0.9, up 4 of 6 years); 1W/4h/15m 0.000; 1W/1D/1h +0.054 (n 119); **stops under 4% of ADR
+-0.309 R (t -3.7, every year negative)**.
+
+Built from it: the plan panel shows the dollars one contract risks, and a grade with its record from
+`companion/config/evidence.json` (written by `scripts/phase_b_evidence.py`): "Small stop", "No edge measured" with the
+stack's record and its exits, or "Not backtested". The best-measured grade is suppressed because its re-test failed.
+Stack-menu notes carry the same numbers.
+
 ## Phase B: next session (the trader's discretion is the only place an edge can still be)
 
 - **Decision journal** (both reviewers' top missing item): log every verdict the trader saw (including `watch` triggers),

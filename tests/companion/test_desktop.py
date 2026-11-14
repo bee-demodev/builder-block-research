@@ -47,7 +47,7 @@ def frozen(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
 
 
 def test_from_source_resources_are_the_repo_files_and_every_loader_uses_them() -> None:
-    from companion import bars, timeframes
+    from companion import bars, evidence, timeframes
     from companion.core import server
     from companion.styles.ttrades import config as ttrades_config
     from companion.tradingview import symbols
@@ -57,7 +57,7 @@ def test_from_source_resources_are_the_repo_files_and_every_loader_uses_them() -
     assert paths.package_dir() == repo / "companion" and paths.app_dir() == repo
     for parts in paths.RUNTIME_DATA_FILES + paths.REFERENCE_FILES:
         assert paths.resource(*parts).is_file(), parts  # the build copies exactly these
-    loaded = {timeframes.STACKS_PATH, symbols.SYMBOLS_PATH, ttrades_config.CONFIG_PATH}
+    loaded = {timeframes.STACKS_PATH, symbols.SYMBOLS_PATH, ttrades_config.CONFIG_PATH, evidence.EVIDENCE_PATH}
     assert loaded == {paths.resource(*parts) for parts in paths.RUNTIME_DATA_FILES}
     assert bars.DATA_DIR == repo / "data" / "databento" / "bars"
     assert server.DIST == repo / "companion" / "web" / "dist"

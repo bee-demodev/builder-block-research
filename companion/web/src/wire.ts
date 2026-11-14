@@ -171,6 +171,24 @@ export interface Plan {
   cost_r_micro: number | null;
   /** Those in words: "Stop 6% of ADR · costs 0.05R mini, 0.11R micro" ('' when unknown). */
   cost_note: string;
+  /** What one contract loses at the stop: "1 micro risks $96 · 1 mini $960" ('' when unknown). */
+  size_note: string;
+  /** What the backtest measured for this setup, while the outcome is open (information only). */
+  evidence: Evidence | null;
+}
+
+export type EvidenceGrade = 'small_stop' | 'best_measured' | 'no_edge' | 'untested';
+
+export interface Evidence {
+  grade: EvidenceGrade;
+  /** "Best-measured setup", "No edge measured", "Small stop", "Not backtested". */
+  label: string;
+  /** The record in one sentence. */
+  line: string;
+  /** How the exits compared on this stack ('' when not measured). */
+  exits: string;
+  /** Where the numbers come from. */
+  source: string;
 }
 
 export type StageLabel = '' | 'forming' | 'actionable' | 'late' | 'played_out';
@@ -601,6 +619,19 @@ const plan = obj<Plan>({
   cost_r_mini: optional(nullable(num), () => null),
   cost_r_micro: optional(nullable(num), () => null),
   cost_note: optional(str, () => ''),
+  size_note: optional(str, () => ''),
+  evidence: optional(
+    nullable(
+      obj<Evidence>({
+        grade: oneOf<EvidenceGrade>('small_stop', 'best_measured', 'no_edge', 'untested'),
+        label: str,
+        line: str,
+        exits: optional(str, () => ''),
+        source: optional(str, () => ''),
+      }),
+    ),
+    () => null,
+  ),
 });
 
 const lookFor = obj<LookFor>({

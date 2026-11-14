@@ -1,0 +1,63 @@
+{
+  "generated": "2026-11-14",
+  "source": "results/phase_b: TradingView 5m, NQ ES GC YM RTY CL SI 6E, Aug 2021 to Nov 2026, taken trades, market entry at the first report, 2R target, net of costs",
+  "stacks": {
+    "1D / 1h / 5m": {
+      "n": 2262,
+      "r": -0.0753,
+      "years_up": 0,
+      "years": 4,
+      "span": "2021, 2024-26",
+      "exits_line": "Exits here: 2R \u22120.08R \u00b7 3R \u22120.11R \u00b7 hold to the 1D close \u22120.15R a trade."
+    },
+    "1D / 4h / 15m": {
+      "n": 1008,
+      "r": 0.0416,
+      "years_up": 4,
+      "years": 6,
+      "span": "2021-26",
+      "exits_line": "Exits here: 2R +0.04R \u00b7 3R +0.02R \u00b7 hold to the 1D close \u22120.03R a trade."
+    },
+    "1W / 4h / 15m": {
+      "n": 361,
+      "r": 0.0001,
+      "years_up": 1,
+      "years": 3,
+      "span": "2024-26",
+      "exits_line": "Exits here: 2R +0.00R \u00b7 3R +0.05R a trade."
+    },
+    "1W / 1D / 1h": {
+      "n": 119,
+      "r": 0.0544,
+      "years_up": 3,
+      "years": 6,
+      "span": "2021-26",
+      "exits_line": "Exits here: 2R +0.05R \u00b7 3R +0.06R a trade."
+    }
+  },
+  "setups": {
+    "small_stop": {
+      "max_risk_adr": 0.04,
+      "n": 270,
+      "r": -0.3085,
+      "years_up": 0,
+      "years": 5,
+      "span": "2021-22, 2024-26"
+    },
+    "best_measured": {
+      "stacks": [
+        "1D / 4h / 15m",
+        "1W / 1D / 1h"
+      ],
+      "trigger": "cisd",
+      "min_risk_adr": 0.1,
+      "n": 936,
+      "r": 0.0719,
+      "years_up": 4,
+      "years": 6,
+      "span": "2021-26",
+      "retest": "FAIL",
+      "caveat": "Passed its 2022-23 test, then failed the 2021 re-test: not an edge."
+    }
+  }
+}

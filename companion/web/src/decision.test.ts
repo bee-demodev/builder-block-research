@@ -78,6 +78,8 @@ describe('the plan block', () => {
       stage: '', // a snapshot from a core that predates the stage
       stageAlert: false,
       cost: '',
+      size: '', // nor the size and the backtest record
+      evidence: null,
     });
   });
 
@@ -90,6 +92,16 @@ describe('the plan block', () => {
 
   it('passes the stop size and cost line through', () => {
     expect(planWords(longView().plan!).cost).toBe('Stop 17% of ADR · costs 0.01R mini, 0.01R micro');
+  });
+
+  it('passes the dollar risk through and grades the setup while the trade is open', () => {
+    const plan = longView().plan!;
+    expect(planWords(plan).size).toBe('1 micro risks $141 · 1 mini $1,400');
+    const best = { ...plan, evidence: { grade: 'best_measured' as const, label: 'Best-measured setup', line: '+0.07R a trade', exits: '', source: 's' } };
+    expect(planWords(best).evidence).toEqual({ label: 'Best-measured setup', line: '+0.07R a trade', exits: '', source: 's', tone: 'reward' });
+    const small = { ...best, evidence: { ...best.evidence, grade: 'small_stop' as const, label: 'Small stop' } };
+    expect(planWords(small).evidence?.tone).toBe('watch');
+    expect(planWords({ ...best, outcome: 'target_reached' as const }).evidence).toBeNull();
   });
 
   it('words a planned plan without a last close', () => {

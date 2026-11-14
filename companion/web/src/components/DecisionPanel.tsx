@@ -1,6 +1,7 @@
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
+  ChartBarIcon,
   CheckCircleIcon,
   CircleIcon,
   ClockCounterClockwiseIcon,
@@ -426,8 +427,29 @@ function PlanBlock({ plan, stale }: { plan: Plan; stale: boolean }) {
           {w.cost}
         </p>
       )}
+      {w.size && (
+        <p className="plan-size mono" title="Dollars lost on one contract if the stop is hit, a tick of slippage and commission included">
+          {w.size}
+        </p>
+      )}
+      {w.evidence && <EvidenceRow evidence={w.evidence} />}
       {plan.note && <p className="plan-note">{plainText(plan.note)}</p>}
     </section>
+  );
+}
+
+/** What the backtest measured for this setup: a grade, its record and how the exits compared. Information only. */
+function EvidenceRow({ evidence }: { evidence: NonNullable<ReturnType<typeof planWords>['evidence']> }) {
+  const Icon = evidence.tone === 'watch' ? WarningIcon : ChartBarIcon;
+  return (
+    <div className="plan-evidence" title={evidence.source ? `Backtest: ${evidence.source}` : undefined}>
+      <p className={`evidence-grade tone-${evidence.tone}`}>
+        <Icon size={13} aria-hidden weight={evidence.tone === 'watch' ? 'bold' : 'regular'} />
+        {evidence.label}
+      </p>
+      <p className="evidence-line">{evidence.line}</p>
+      {evidence.exits && <p className="evidence-exits">{evidence.exits}</p>}
+    </div>
   );
 }
 

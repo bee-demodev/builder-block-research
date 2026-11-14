@@ -107,7 +107,14 @@ export interface PlanWords {
   stageAlert: boolean;
   /** "Stop 6% of ADR · costs 0.05R mini, 0.11R micro", or "". */
   cost: string;
+  /** "1 micro risks $96 · 1 mini $960", or "". */
+  size: string;
+  /** What the backtest measured for this setup, or null (not shown once the outcome is in). */
+  evidence: { label: string; line: string; exits: string; source: string; tone: string } | null;
 }
+
+/** small_stop warns; best_measured is the one setup that passed a test (weak); the rest are plain. */
+const EVIDENCE_TONES: Record<string, string> = { small_stop: 'watch', best_measured: 'reward', no_edge: 'muted', untested: 'muted' };
 
 const STAGE_WORDS: Record<string, string> = { actionable: 'Actionable', late: 'Late', played_out: 'Played out' };
 
@@ -124,6 +131,17 @@ export function planWords(plan: Plan): PlanWords {
     stage: stageWords(plan),
     stageAlert: plan.stage_label === 'late' || plan.stage_label === 'played_out',
     cost: plan.cost_note,
+    size: plan.size_note,
+    evidence:
+      plan.evidence && plan.outcome === 'open'
+        ? {
+            label: plan.evidence.label,
+            line: plainText(plan.evidence.line),
+            exits: plainText(plan.evidence.exits),
+            source: plan.evidence.source,
+            tone: EVIDENCE_TONES[plan.evidence.grade] ?? 'muted',
+          }
+        : null,
   };
 }
 

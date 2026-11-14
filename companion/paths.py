@@ -23,6 +23,7 @@ RUNTIME_DATA_FILES: tuple[tuple[str, ...], ...] = (
     ("config", "stacks.json"),  # companion.timeframes: the timeframe stacks
     ("config", "symbols.json"),  # companion.tradingview.symbols: live symbols and the debug port
     ("styles", "ttrades", "config.json"),  # companion.styles.ttrades.config: the style's numbers
+    ("config", "evidence.json"),  # companion.evidence: the backtest record shown on a plan
 )
 # Shipped alongside for the trader to read; nothing opens it at run time.
 REFERENCE_FILES: tuple[tuple[str, ...], ...] = (("styles", "ttrades", "rules.md"),)

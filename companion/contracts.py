@@ -43,6 +43,15 @@ def cost_points(contract: Contract) -> float:
     return contract.tick + contract.commission / contract.point_value
 
 
+def risk_usd(symbol: str, risk: float) -> tuple[float | None, float | None]:
+    """``(mini, micro)``: dollars lost on one contract if the stop is hit, round-turn cost included."""
+    pair = CONTRACTS.get(root(symbol))
+    if pair is None or not risk > 0:
+        return None, None
+    mini, micro = pair
+    return ((risk + cost_points(mini)) * mini.point_value, (risk + cost_points(micro)) * micro.point_value)
+
+
 def cost_in_r(symbol: str, risk: float) -> tuple[float | None, float | None]:
     """``(mini, micro)``: the round-turn cost of one contract as a share of ``risk`` (price points)."""
     pair = CONTRACTS.get(root(symbol))

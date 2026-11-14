@@ -1,0 +1,6 @@
+# Raw per-run outputs stay local (rebuild with python -m scripts.phase_b_runs); only the report, the
+# pre-registration and the scored signals are committed
+*.jsonl.gz
+*.states.csv.gz
+*.log
+_contaminated/

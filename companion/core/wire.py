@@ -115,7 +115,11 @@ from the entry in multiples of the risk) | null; ``stage_label`` (forming | acti
 late | played_out | ""), ``age_bars`` (triggered: closed entry bars after the trigger) |
 null, ``risk_adr`` (the stop as a share of the 14-day average daily range) | null,
 ``cost_r_mini`` / ``cost_r_micro`` (one contract's round-turn cost as a share of the risk)
-| null, ``cost_note`` (those in words, "" when unknown).
+| null, ``cost_note`` (those in words, "" when unknown); ``size_note`` (what one contract loses
+at the stop: "1 micro risks $96 · 1 mini $960", "" for an unknown contract); ``evidence``:
+``{"grade", "label", "line", "exits", "source"}`` | null (what the backtest measured for this
+setup, from ``companion/config/evidence.json``; grade small_stop | best_measured | no_edge |
+untested; null once the outcome is not open or without the file). Information only.
 
 ``LookFor``: ``direction`` (long | short), ``timeframe`` (the timeframe to watch for the
 setup, "1h"), ``entry_timeframe`` ("5m"), ``steps``: ``[{"label", "status"}]`` (status as a

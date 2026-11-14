@@ -30,7 +30,7 @@ export const demoOptions: Options = {
   sides: ['', 'long', 'short'],
   side_labels: { '': 'Auto', long: 'Long', short: 'Short' },
   stack_notes: {
-    '1D / 1h / 5m': 'Backtest 2024-26: flat after costs.',
+    '1D / 1h / 5m': 'Backtest 2021, 2024-26: -0.08 R a trade (n 2,262), negative every year tested. The weakest stack measured.',
     '4h / 15m / 1m': 'Not validated: 1-minute entries were only backtested on incomplete data.',
   },
 };
@@ -324,8 +324,19 @@ function longPlan(planned: boolean, since: string, last: number): Plan {
     cost_r_mini: 0.007,
     cost_r_micro: 0.014,
     cost_note: 'Stop 17% of ADR · costs 0.01R mini, 0.01R micro',
+    size_note: '1 micro risks $141 · 1 mini $1,400',
+    evidence: DEMO_EVIDENCE,
   };
 }
+
+/** The 1D / 1h / 5m record as companion/config/evidence.json words it (demo copy). */
+const DEMO_EVIDENCE: Plan['evidence'] = {
+  grade: 'no_edge',
+  label: 'No edge measured',
+  line: 'This stack: −0.08R a trade over 2,262 taken trades (2021, 2024-26), up in 0 of 4 years tested.',
+  exits: 'Exits here: 2R −0.08R · 3R −0.11R · hold to the 1D close −0.15R a trade.',
+  source: 'results/phase_b (demo copy)',
+};
 
 export const step = (number: number, status: Step['status'], timeframe: string, label: string, detail: string, price: number | null = null, level_label = ''): Step => ({
   number,

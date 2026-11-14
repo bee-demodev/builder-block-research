@@ -5688,8 +5688,11 @@
    "risk_adr": 0.08083336698025598,
    "cost_r_mini": 0.013286713286713285,
    "cost_r_micro": 0.027972027972027972,
-   "cost_note": "Stop 8.1% of ADR · costs 0.01R mini, 0.03R micro"
-  }
+   "cost_note": "Stop 8.1% of ADR · costs 0.01R mini, 0.03R micro",
+   "size_note": "1 micro risks $74 · 1 mini $724",
+   "evidence": null
+  },
+  "look_for": null
  },
  "error": "",
  "offer_history": false,
@@ -5700,10 +5703,10 @@
  },
  "timing": {
   "bar_closed_at": null,
-  "detected_at": "2026-11-13T20:42:05.713000-05:00",
+  "detected_at": "2026-11-14T13:02:09.711000-05:00",
   "fetch_ms": 0,
-  "compute_ms": 562,
+  "compute_ms": 964,
   "lag_ms": null,
-  "load_ms": 1440
+  "load_ms": 2105
  }
 }

@@ -36,6 +36,8 @@ from typing import Any, Callable, get_args, get_type_hints
 import pandas as pd
 
 from companion import bars as _bars
+from companion import contracts as _contracts
+from companion import evidence as _evidence
 from companion import engine as _engine
 from companion import timeframes as _timeframes
 from companion.styles import base as _styles
@@ -537,6 +539,8 @@ class PlanView:
     cost_r_mini: float | None = None
     cost_r_micro: float | None = None
     cost_note: str = ""  # those three in words: "Stop 6% of ADR · costs 0.05R mini, 0.11R micro"
+    size_note: str = ""  # what one contract loses at the stop: "1 micro risks $96 · 1 mini $960"
+    evidence: _evidence.Evidence | None = None  # what the backtest measured for this setup (information only)
 
 
 @dataclass(frozen=True)
@@ -876,7 +880,7 @@ def idea_state(verdict: Verdict) -> tuple[str, str, str, bool]:
     return word, tone, f"Triggered {since} · open · last close {moved} from the entry.", False
 
 
-def plan_view(plan: PositionPlan | None) -> PlanView | None:
+def plan_view(plan: PositionPlan | None, symbol: str = "", evidence: _evidence.Evidence | None = None) -> PlanView | None:
     if plan is None:
         return None
     risk, reward = abs(plan.entry - plan.stop), abs(plan.target - plan.entry)
@@ -891,8 +895,27 @@ def plan_view(plan: PositionPlan | None) -> PlanView | None:
         entry=plan.entry, stop=plan.stop, target=plan.target, r_multiple=plan.r_multiple, timeframe=plan.timeframe,
         since=_new_york_or_none(plan.since), outcome_at=_new_york_or_none(plan.outcome_at), last=plan.last, r_now=plan.r_now,
         stage_label=plan.stage_label, age_bars=plan.age_bars, risk_adr=plan.risk_adr, cost_r_mini=plan.cost_r_mini,
-        cost_r_micro=plan.cost_r_micro, cost_note=cost_note(plan),
+        cost_r_micro=plan.cost_r_micro, cost_note=cost_note(plan), size_note=size_note(symbol, risk), evidence=evidence,
     )  # fmt: skip
+
+
+def plan_evidence(verdict: Verdict) -> _evidence.Evidence | None:
+    """The backtest's record for the plan's setup, while its outcome is open; None otherwise or when unknown."""
+    plan = verdict.plan
+    if plan is None or plan.outcome != "open":
+        return None
+    try:
+        return _evidence.grade(verdict.stack.name, _evidence.trigger_kind(verdict), plan.risk_adr)
+    except Exception:  # noqa: BLE001 - information only: a bad evidence file must never break the read
+        return None
+
+
+def size_note(symbol: str, risk: float) -> str:
+    """What one contract loses if the stop is hit, round-turn cost included ("" for an unknown contract)."""
+    mini, micro = _contracts.risk_usd(symbol, risk)
+    if mini is None or micro is None:
+        return ""
+    return f"1 micro risks ${micro:,.0f} · 1 mini ${mini:,.0f}"
 
 
 def cost_note(plan: PositionPlan) -> str:
@@ -1083,7 +1106,7 @@ def present(
         idea_alert=alert,
         auto_note=verdict.auto_note,
         steps=step_rows(verdict),
-        plan=plan_view(verdict.plan),
+        plan=plan_view(verdict.plan, verdict.symbol, plan_evidence(verdict)),
         look_for=verdict.look_for,
         last=last_price(verdict, charts),
         decision=verdict.decision,
