@@ -1,7 +1,7 @@
 import { ChartLineIcon, GearSixIcon, WarningCircleIcon } from '@phosphor-icons/react';
 import { memo, useEffect, useMemo, useRef, useState, type MouseEvent } from 'react';
 import { CandleChart, type MarkHover } from '../chart/CandleChart';
-import { layerMarks, type Overlays, type Scheme } from '../display';
+import { layerMarks, lookSceneFor, type Overlays, type Scheme } from '../display';
 import { buildColumn, capBand, columnNote, numberedCandles } from '../chart/htf';
 import { paneFocus } from '../chart/look';
 import type { LookScene } from '../chart/LookLayer';
@@ -162,7 +162,7 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
   );
   const band = useMemo(() => capBand(chart.candles.slice(from)), [chart.candles, from]);
 
-  const lookScene = useMemo<LookScene | null>(() => (look && look.options.length ? { look, choice: lookChoice, pane } : null), [look, lookChoice, pane]);
+  const lookScene = useMemo<LookScene | null>(() => lookSceneFor(look, lookChoice, pane, overlays), [look, lookChoice, pane, overlays]);
 
   useEffect(() => {
     chartRef.current?.setView(chart, direction, column, band, lookScene);

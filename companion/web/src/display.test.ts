@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { DEFAULT_DISPLAY, DISPLAY_KEY, isDefault, layerMarks, loadDisplay, parseDisplay, saveDisplay, stepTextSize, textScale, type DisplayOptions } from './display';
+import { DEFAULT_DISPLAY, DISPLAY_KEY, isDefault, layerMarks, lookSceneFor, loadDisplay, parseDisplay, saveDisplay, stepTextSize, textScale, type DisplayOptions } from './display';
 
 class MemoryStorage {
   data = new Map<string, string>();
@@ -14,7 +14,7 @@ class MemoryStorage {
   }
 }
 
-const custom: DisplayOptions = { textSize: 'larger', scheme: 'blue-orange', overlays: { levelNames: false, zones: true, markerLabels: false, riskReward: true, sessionLevels: true } };
+const custom: DisplayOptions = { textSize: 'larger', scheme: 'blue-orange', overlays: { levelNames: false, zones: true, markerLabels: false, riskReward: true, sessionLevels: true, lookFor: false } };
 
 describe('display options persistence', () => {
   it('round-trips through storage', () => {
@@ -72,5 +72,27 @@ describe('the session levels layer', () => {
   it('shows the session marks when turned on, and an older stored choice falls back to off', () => {
     expect(layerMarks(marks, { ...DEFAULT_DISPLAY.overlays, sessionLevels: true })).toHaveLength(3);
     expect(parseDisplay(JSON.stringify({ overlays: { zones: false } })).overlays.sessionLevels).toBe(false);
+  });
+});
+
+describe('the look-for layer', () => {
+  const look = { options: [{ key: 'A' }] };
+
+  it('is on by default, and an older stored choice without it keeps it on', () => {
+    expect(DEFAULT_DISPLAY.overlays.lookFor).toBe(true);
+    expect(parseDisplay(JSON.stringify({ overlays: { zones: false } })).overlays.lookFor).toBe(true);
+  });
+
+  it('turned off, no pane draws the expected path; the choice is remembered', () => {
+    expect(lookSceneFor(look, 'B', 'setup', DEFAULT_DISPLAY.overlays)).toEqual({ look, choice: 'B', pane: 'setup' });
+    const off = { ...DEFAULT_DISPLAY.overlays, lookFor: false };
+    expect(lookSceneFor(look, 'A', 'entry', off)).toBeNull();
+    expect(parseDisplay(JSON.stringify({ ...DEFAULT_DISPLAY, overlays: off })).overlays.lookFor).toBe(false);
+    expect(isDefault({ ...DEFAULT_DISPLAY, overlays: off })).toBe(false);
+  });
+
+  it('draws nothing when the core sends nothing to look for', () => {
+    expect(lookSceneFor(null, 'A', 'setup', DEFAULT_DISPLAY.overlays)).toBeNull();
+    expect(lookSceneFor({ options: [] }, 'A', 'setup', DEFAULT_DISPLAY.overlays)).toBeNull();
   });
 });

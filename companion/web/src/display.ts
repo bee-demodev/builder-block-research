@@ -16,6 +16,8 @@ export interface Overlays {
   riskReward: boolean;
   /** Intraday reference levels (Asia and London high / low, midnight and 09:30 opens, PDH / PDL). Off by default. */
   sessionLevels: boolean;
+  /** The look-for layer: the expected C1 / C2 boxes and the "entry forms here" box ahead of the last candle. */
+  lookFor: boolean;
 }
 
 export interface DisplayOptions {
@@ -44,12 +46,13 @@ export const OVERLAYS: readonly { key: keyof Overlays; label: string }[] = [
   { key: 'markerLabels', label: 'Marker labels' },
   { key: 'riskReward', label: 'Risk / reward box' },
   { key: 'sessionLevels', label: 'Session levels' },
+  { key: 'lookFor', label: 'Look for (expected path)' },
 ];
 
 export const DEFAULT_DISPLAY: DisplayOptions = {
   textSize: 'normal',
   scheme: 'grey',
-  overlays: { levelNames: true, zones: true, markerLabels: true, riskReward: true, sessionLevels: false },
+  overlays: { levelNames: true, zones: true, markerLabels: true, riskReward: true, sessionLevels: false, lookFor: true },
 };
 
 export const DISPLAY_KEY = 'companion.display';
@@ -57,6 +60,11 @@ export const DISPLAY_KEY = 'companion.display';
 /** The marks a chart draws with these overlays: the session levels layer only when it is on. */
 export function layerMarks<T extends { role: string }>(marks: readonly T[], overlays: Overlays): T[] {
   return overlays.sessionLevels ? [...marks] : marks.filter((m) => m.role !== 'session');
+}
+
+/** The look-for scene a pane draws: none when the layer is off or the core sent nothing to look for. */
+export function lookSceneFor<L extends { options: readonly unknown[] }, P>(look: L | null, choice: string, pane: P, overlays: Overlays): { look: L; choice: string; pane: P } | null {
+  return look && overlays.lookFor && look.options.length ? { look, choice, pane } : null;
 }
 
 export function textScale(size: TextSize): number {
@@ -92,6 +100,7 @@ export function parseDisplay(raw: string | null): DisplayOptions {
       markerLabels: flag('markerLabels'),
       riskReward: flag('riskReward'),
       sessionLevels: flag('sessionLevels'),
+      lookFor: flag('lookFor'),
     },
   };
 }
