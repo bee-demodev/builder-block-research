@@ -842,7 +842,7 @@ def test_a_reached_target_from_a_real_check_qualifies_the_suggestion(tmp_path: P
     scenario.builder.entries(_SWING_SLOT["1D"] + 1, [(97.7, 111.0, 97.6, 110.8)], first=3)
     moment = scenario.times["trigger"] + pd.Timedelta(minutes=5)
     _controller, outcome, view = checked_side(tmp_path, scenario, moment)
-    assert outcome.verdict.decision == "long"
+    assert outcome.verdict.decision == "watch"  # played out: no longer an entry (rules.md question 33)
     assert (view.suggestion, view.idea_alert) == ("LONG · TARGET REACHED", True) and "110.50 traded at 09:15" in view.idea_state
     tool = view.charts[2].tool
     assert tool is not None and tool.outcome == "target_reached"

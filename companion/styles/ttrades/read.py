@@ -532,6 +532,7 @@ def build_read(
     session_blocks: bool,
     session_text: str = "",
     forced: Side | None = None,
+    entry_blocks: tuple[str, ...] = (),
 ) -> tuple[tuple[ReadStep, ...], str, str]:
     """``(read, why, waiting_for)`` for the verdict being returned.
 
@@ -606,6 +607,7 @@ def build_read(
     blockers = _blockers(selected, ctx, at_entry_ready=stage == "c4")
     if session_blocks and not session_ok:
         blockers["entry"].append("the trigger closed outside the kill zones")
+    blockers["entry"].extend(entry_blocks)  # held back by the style itself: stop size, played out
 
     if selected.family == "continuation":
         bias_line = _bias_line(ctx, bias, selected)

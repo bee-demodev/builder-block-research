@@ -111,7 +111,11 @@ numbers: ``entry``, ``stop``, ``target``, ``r_multiple``: float, ``timeframe`` (
 timeframe), ``since`` (triggered: open of the trigger bar; planned: open of the last
 closed entry bar) | null, ``outcome_at`` (open of the bar that reached the target or the
 stop) | null, ``last`` (last closed entry close) | null, ``r_now`` (triggered: ``last``
-from the entry in multiples of the risk) | null.
+from the entry in multiples of the risk) | null; ``stage_label`` (forming | actionable |
+late | played_out | ""), ``age_bars`` (triggered: closed entry bars after the trigger) |
+null, ``risk_adr`` (the stop as a share of the 14-day average daily range) | null,
+``cost_r_mini`` / ``cost_r_micro`` (one contract's round-turn cost as a share of the risk)
+| null, ``cost_note`` (those in words, "" when unknown).
 
 ``LookFor``: ``direction`` (long | short), ``timeframe`` (the timeframe to watch for the
 setup, "1h"), ``entry_timeframe`` ("5m"), ``steps``: ``[{"label", "status"}]`` (status as a
@@ -130,7 +134,8 @@ role, "" when none), ``word``, ``headline``, ``as_of``, ``minutes`` (nominal can
 ``Candle``: ``time``, ``t``, ``open``, ``high``, ``low``, ``close``, ``forming``, ``label``.
 
 ``Mark``: ``kind`` (level | zone | marker), ``role`` (reference | poi | protected | confirm |
-waiting | entry | stop | target | next), ``label`` (short, drawn on the chart), ``title``
+waiting | entry | stop | target | next | session; ``session`` marks are the intraday
+reference levels, a layer a client shows only when asked), ``label`` (short, drawn on the chart), ``title``
 (full), ``price``, ``top``, ``bottom``: float | null, ``start``, ``end``: candle position |
 null (start null: began before the candles shown; end null: runs to the right edge). The
 next step's level is a ``level`` mark with role ``next`` and label "Next: <level_label>"
@@ -322,6 +327,7 @@ def options(controller: CompanionController) -> dict[str, Any]:
     return {
         "symbols": controller.symbols(),
         "stacks": controller.stack_choices(),
+        "stack_notes": controller.stack_notes(),  # what the backtest found, by stack name
         "timeframes": controller.timeframe_choices(),
         "styles": controller.style_choices(),
         "data": list(DATA_LABELS),  # the values ``state.data`` and ``set.data`` use

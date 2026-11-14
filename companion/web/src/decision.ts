@@ -101,7 +101,15 @@ export interface PlanWords {
   outcome: string;
   /** Last close and where it stands, only once triggered: "24,713.25", "+0.19R". */
   last: { price: string; r: string } | null;
+  /** Triggered: "Actionable", "Late · 5 bars", "Played out"; "" otherwise. */
+  stage: string;
+  /** Whether that stage says the entry is gone or stale (late, played out). */
+  stageAlert: boolean;
+  /** "Stop 6% of ADR · costs 0.05R mini, 0.11R micro", or "". */
+  cost: string;
 }
+
+const STAGE_WORDS: Record<string, string> = { actionable: 'Actionable', late: 'Late', played_out: 'Played out' };
 
 export function planWords(plan: Plan): PlanWords {
   const at = (iso: string | null) => (iso ? (wallClock(iso)?.time ?? '') : '');
@@ -113,7 +121,17 @@ export function planWords(plan: Plan): PlanWords {
     state: triggered ? `Triggered ${at(plan.since)}`.trim() : 'Planned',
     outcome: outcome ? `${outcome} ${at(plan.outcome_at)}`.trim() : '',
     last: triggered && plan.last !== null ? { price: formatPrice(plan.last, decimals), r: plan.r_now === null ? '' : formatR(plan.r_now) } : null,
+    stage: stageWords(plan),
+    stageAlert: plan.stage_label === 'late' || plan.stage_label === 'played_out',
+    cost: plan.cost_note,
   };
+}
+
+function stageWords(plan: Plan): string {
+  const word = STAGE_WORDS[plan.stage_label] ?? '';
+  if (!word) return '';
+  const age = plan.age_bars === null ? '' : ` · ${plan.age_bars} ${plan.age_bars === 1 ? 'bar' : 'bars'}`;
+  return plan.stage_label === 'played_out' ? word : `${word}${age}`;
 }
 
 export interface SideChoice {

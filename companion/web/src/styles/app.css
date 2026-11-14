@@ -1365,6 +1365,15 @@ ul {
   border-style: dashed;
   color: var(--muted);
 }
+.plan-stage {
+  font-size: calc(12px * var(--fs));
+  font-weight: 600;
+}
+.plan-cost {
+  margin-top: 6px;
+  font-size: calc(12px * var(--fs));
+  color: var(--muted);
+}
 .plan-outcome {
   display: inline-flex;
   align-items: center;

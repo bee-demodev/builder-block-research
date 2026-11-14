@@ -53,6 +53,11 @@ class Context:
     b_last_close: pd.Timestamp | None  # close time of B[-1] = where B[0] begins
     avg_range: float | None
     lookback: int
+    adr: float | None = None  # mean high - low of the last ``adr_days`` closed 1D bars, whatever the stack
+    d: pd.DataFrame | None = None  # those closed 1D bars
+    # closed entry-timeframe bars covering the current trading day from its 18:00 open, for
+    # the intraday reference levels (None when the entry timeframe is above 1h)
+    sess: pd.DataFrame | None = None
     _views: dict[str, "View"] = field(default_factory=dict)
 
     def view(self, side: Side) -> "View":
@@ -200,6 +205,36 @@ def _forming(stack: TimeframeStack, b_last_close: pd.Timestamp, e: pd.DataFrame)
     )
 
 
+def trading_day(moment: pd.Timestamp) -> pd.Timestamp:
+    """Calendar date (naive midnight) of the trading day ``moment`` belongs to: it opens at 18:00 the evening before."""
+    return (moment.tz_localize(None) + pd.Timedelta(hours=6)).normalize()
+
+
+def at_clock(day: pd.Timestamp, tz: object, hours: float) -> pd.Timestamp:
+    """New York wall clock ``hours`` after midnight of calendar ``day`` (negative: the evening before)."""
+    return (day + pd.Timedelta(hours=hours)).tz_localize(tz, nonexistent="shift_forward", ambiguous=False)
+
+
+def _session_frame(
+    symbol: str, as_of: pd.Timestamp, stack: TimeframeStack, source: BarSource, e: pd.DataFrame
+) -> pd.DataFrame | None:
+    """Closed entry-timeframe bars from the 18:00 open of the current trading day. The entry
+    frame is reused when it reaches back that far; otherwise the same timeframe is asked for
+    with a longer lookback (the entry frame's length serves the rules, not the session
+    levels). Always the entry timeframe: it is the series a live feed keeps current, where a
+    finer one would go stale between checks. So a 1h entry has no 09:30 open."""
+    entry_minutes = parse_timeframe(stack.entry).nominal_minutes
+    if entry_minutes > 60 or not len(e):
+        return None
+    opened = at_clock(trading_day(e.index[-1]), e.index.tz, -6.0)
+    if e.index[0] <= opened:
+        return e
+    try:
+        return source.get_bars(symbol, stack.entry, as_of, int(math.ceil(25 * 60 / entry_minutes)) + 10)
+    except Exception:  # noqa: BLE001 - information-only levels must never fail the read
+        return None
+
+
 def load_context(
     symbol: str, as_of: pd.Timestamp, stack: TimeframeStack, source: BarSource, cfg: TTradesConfig
 ) -> Context:
@@ -216,6 +251,14 @@ def load_context(
         forming = _forming(stack, b_last_close, e)
         recent = b.iloc[-cfg.avg_range_bars :]
         avg_range = float((recent["high"] - recent["low"]).mean())
+    daily: pd.DataFrame | None = b
+    if stack.bias != "1D":
+        try:
+            daily = source.get_bars(symbol, "1D", as_of, cfg.adr_days)
+        except Exception:  # noqa: BLE001 - an information-only number must never fail the read
+            daily = None
+    recent_days = daily.iloc[-cfg.adr_days :] if daily is not None else None
+    adr = float((recent_days["high"] - recent_days["low"]).mean()) if recent_days is not None and len(recent_days) else None
     return Context(
         symbol=symbol,
         as_of=as_of,
@@ -228,4 +271,7 @@ def load_context(
         b_last_close=b_last_close,
         avg_range=avg_range,
         lookback=cfg.bias_lookback(stack.bias),
+        adr=adr,
+        d=daily,
+        sess=_session_frame(symbol, as_of, stack, source, e),
     )

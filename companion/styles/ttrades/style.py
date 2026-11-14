@@ -2,22 +2,26 @@
 
 from __future__ import annotations
 
+from dataclasses import replace
 from datetime import datetime
 from pathlib import Path
 
+import pandas as pd
 
 from companion.bars import BarSource
 from companion.styles.ttrades.bias import BiasRead, read_bias
-from companion.styles.ttrades.checklist import CONTINUATION, GATE, REVERSAL, SESSION, SHARED, STAGES, Checklist
+from companion.styles.ttrades.checklist import (
+    CONTINUATION, GATE, QUALITY, REVERSAL, SESSION, SHARED, STAGES, STOP_SIZE, Checklist,
+)
 from companion.styles.ttrades.config import TTradesConfig, load_config
-from companion.styles.ttrades.context import Context, load_context
+from companion.styles.ttrades.context import Context, at_clock, load_context, trading_day
 from companion.styles.ttrades.continuation import PathOutcome, evaluate_continuation
 from companion.styles.ttrades.plan import build_look_for, build_plan
 from companion.styles.ttrades.primitives import BEAR, BULL, Side, fmt, when
 from companion.styles.ttrades.read import build_read
 from companion.styles.ttrades.reversal import evaluate_reversal
 from companion.styles.ttrades.risk import session_filter
-from companion.timeframes import to_new_york
+from companion.timeframes import parse_timeframe, to_new_york
 from companion.types import (
     CriterionResult,
     Decision,
@@ -36,7 +40,36 @@ _REWARD_OR_SESSION = ("cont_reward_at_least_2r", "rev_reward_at_least_2r", "sess
 # At an entry-ready stage that is not a trade, the trigger's own levels are still told
 # when nothing but these stands in the way: the trigger formed inside its entry window and
 # the window has since passed, or its stop has since been taken.
-_PLAN_STILL_TOLD = (*_REWARD_OR_SESSION, "cont_entry_window_open", "cont_protected_swing_intact")
+_PLAN_STILL_TOLD = (*_REWARD_OR_SESSION, "stop_size_ok", "cont_entry_window_open", "cont_protected_swing_intact")
+# A few words per check, for the label of a drawn trigger the checks hold back (plan A4).
+BLOCK_WORDS = {
+    "cont_setup_closure_body_aligned": "body against",
+    "cont_entry_window_open": "window passed",
+    "cont_protected_swing_intact": "stop taken",
+    "cont_trigger_clear_of_liquidity": "ran liquidity",
+    "cont_trigger_v_shape": "not a V",
+    "cont_not_inside_consolidation": "in a range",
+    "cont_objective_open_at_trigger": "target already hit",
+    "cont_entry_early_in_candle": "late in candle",
+    "cont_reward_at_least_2r": "under 2R",
+    "rev_expansion_into_level": "no expansion",
+    "rev_opposing_run_small": "wick too big",
+    "rev_formed_early": "wick too late",
+    "rev_cisd_swift": "slow turn",
+    "rev_wick_intact": "extreme retaken",
+    "rev_reward_at_least_2r": "under 2R",
+    "session_filter_ok": "outside kill zone",
+    "stop_size_ok": "stop too small",
+    "played_out": "played out",
+}
+
+
+def _cap(text: str) -> str:
+    return text[:1].upper() + text[1:]
+
+
+def blocked_words(keys: list[str]) -> str:
+    return ", ".join(BLOCK_WORDS.get(key, key.replace("_", " ")) for key in keys)
 
 
 def _shared(ctx: Context) -> Checklist:
@@ -131,6 +164,52 @@ def _base_markup(ctx: Context) -> list[MarkupItem]:
     return items
 
 
+def stop_big_enough(risk: float, adr: float, frac: float) -> bool:
+    """``risk / adr >= frac``, with room for float error so a stop of exactly that share passes."""
+    return risk / adr >= frac - 1e-9
+
+
+def _session_levels(ctx: Context) -> list[MarkupItem]:
+    """Intraday reference levels of the current trading day, as ``session`` markup (plan A6).
+
+    Information only: no rule reads them. A window's high / low is drawn once the window
+    has closed. Needs an entry timeframe of 1h or less. Read from ``ctx.sess`` (entry
+    bars from the trading day's open) and drawn on the entry chart. A level whose moment is
+    not a bar open of the entry timeframe (09:30 on a 1h entry) is left out."""
+    e, sess, stack = ctx.e, ctx.sess, ctx.stack
+    if not len(e) or parse_timeframe(stack.entry).nominal_minutes > 60:
+        return []
+    items: list[MarkupItem] = []
+    if stack.bias != "1D" and ctx.d is not None and len(ctx.d):  # needs no session bars
+        prev, start = ctx.d.iloc[-1], ctx.d.index[-1]
+        for word, short, price in (("high", "PDH", float(prev["high"])), ("low", "PDL", float(prev["low"]))):
+            items.append(
+                MarkupItem("level", f"Previous day {word}", stack.entry, price=price, start=start, role="session", short=short)
+            )
+    if sess is None or not len(sess):
+        return items
+    tz = e.index.tz
+    day = trading_day(e.index[-1])
+    for name, begin, end in (("Asia", -6.0, 0.0), ("London", 2.0, 5.0)):
+        start, stop = at_clock(day, tz, begin), at_clock(day, tz, end)
+        inside = sess[(sess.index >= start) & (sess.index < stop)]
+        if not len(inside) or ctx.as_of < stop:
+            continue
+        for word, price in (("high", float(inside["high"].max())), ("low", float(inside["low"].min()))):
+            items.append(
+                MarkupItem(
+                    "level", f"{name} session {word}", stack.entry, price=price, start=start, role="session",
+                    short=f"{name} {word[0].upper()}",
+                )
+            )
+    for name, hours in (("Midnight open", 0.0), ("09:30 open", 9.5)):
+        moment = at_clock(day, tz, hours)
+        if moment in sess.index:
+            price = float(sess.loc[moment, "open"])
+            items.append(MarkupItem("level", name, stack.entry, price=price, start=moment, role="session", short=name))
+    return items
+
+
 class TTradesStyle:
     """Rule-based TTrades Fractal Model. Deterministic; reads only closed bars."""
 
@@ -157,6 +236,7 @@ class TTradesStyle:
         shared = _shared(ctx)
         session = Checklist((SESSION,), stack, None, {"session_filter_ok": cfg.session_filter_role})
         session_blocks = cfg.session_filter_role == "quality"
+        stop_size = Checklist((STOP_SIZE,), stack, None, {"stop_size_ok": cfg.stop_size_role})
 
         def verdict(
             decision: Decision,
@@ -171,17 +251,27 @@ class TTradesStyle:
             planned: tuple[tuple[PlanStep, ...], PositionPlan | None] = ((), None),
             auto_note: str = "",
             look_for: LookFor | None = None,
+            blocked: list[str] | None = None,
         ) -> Verdict:
             criteria: list[CriterionResult] = []
             for group in groups:
                 criteria.extend(group.results())
-            markup = _base_markup(ctx)
+            markup = _base_markup(ctx) + _session_levels(ctx)
             invalidation = ""
             entry = stop = None
             targets: tuple[float, ...] = ()
             if path is not None and path.side is not None:
                 side = path.side
-                markup.extend(path.markup)
+                if blocked:
+                    # say on the chart why a drawn trigger is not a trade (plan A4)
+                    markup.extend(
+                        replace(item, short=f"{item.short or 'Trigger'} · blocked: {blocked_words(blocked)}")
+                        if item.role == "entry" and item.label == "Entry trigger"
+                        else item
+                        for item in path.markup
+                    )
+                else:
+                    markup.extend(path.markup)
                 parts = list(path.invalidation)
                 if show_plan and path.plan is not None:
                     plan = path.plan
@@ -244,7 +334,7 @@ class TTradesStyle:
             )
 
         if shared.passed("data_sufficient") is not True:
-            empty = [Checklist(CONTINUATION, stack), Checklist(REVERSAL, stack), session]
+            empty = [Checklist(CONTINUATION, stack), Checklist(REVERSAL, stack), session, stop_size]
             for group in empty:
                 group.fill("not enough history")
             detail = shared.results()[0].detail
@@ -295,17 +385,40 @@ class TTradesStyle:
         else:
             ok, text = session_filter(stack.entry, moment, "no trigger yet; as_of", cfg)
         session.set("session_filter_ok", ok, text)
-        groups = [shared, cont.checklist, reversal.checklist, session]
+        # plan A1: the stop against the average daily range, judged on the trigger's own stop
+        if selected is not None and selected.trigger is not None and selected.plan is not None:
+            risk = selected.plan.entry - selected.plan.stop
+            if ctx.adr:
+                share = risk / ctx.adr
+                big_enough = stop_big_enough(risk, ctx.adr, cfg.min_stop_adr_frac)
+                stop_size.set(
+                    "stop_size_ok", big_enough,
+                    f"stop {fmt(risk)} is {share:.1%} of the {cfg.adr_days}-day average daily range {fmt(ctx.adr)} "
+                    f"(at least {cfg.min_stop_adr_frac:.0%} wanted)"
+                    + ("" if big_enough else "; costs take a large share of a stop this small"),
+                )  # fmt: skip
+            else:
+                stop_size.set("stop_size_ok", None, f"no {cfg.adr_days}-day average daily range yet")
+        else:
+            stop_size.set("stop_size_ok", None, "no trigger yet; judged on the trigger's stop once it forms")
+        stop_blocks = cfg.stop_size_role == QUALITY and stop_size.passed("stop_size_ok") is False
+        groups = [shared, cont.checklist, reversal.checklist, session, stop_size]
         bias_text = f"Bias {bias.bias} (case {bias.case}: {bias.text})."
 
-        def tell(decision: str, stage: str) -> tuple[tuple[ReadStep, ...], str, str]:
+        # why an entry-ready trigger is held back besides its own checks: told on the entry line and step
+        held: list[str] = []
+        if stop_blocks:
+            held.append(f"the stop is under {cfg.min_stop_adr_frac:.0%} of the daily range, so costs take a large share of it")
+
+        def tell(decision: str, stage: str, extra: tuple[str, ...] = ()) -> tuple[tuple[ReadStep, ...], str, str]:
             return build_read(
                 ctx, bias, shared, cont, reversal, selected, decision=decision, stage=stage, session_ok=ok,
-                session_blocks=session_blocks, forced=forced,
+                session_blocks=session_blocks, forced=forced, entry_blocks=(*held, *extra),
             )
 
         def plan_for(
-            decision: str, stage: str, told: tuple[tuple[ReadStep, ...], str, str], plan_told: bool = False
+            decision: str, stage: str, told: tuple[tuple[ReadStep, ...], str, str], plan_told: bool = False,
+            extra: tuple[str, ...] = (),
         ) -> tuple[tuple[PlanStep, ...], PositionPlan | None]:
             routes: dict[str, bool] = {}
             if shared.gates_pass():  # a reversal route can be named where no key level is reached yet
@@ -316,7 +429,7 @@ class TTradesStyle:
                 }
             return build_plan(
                 ctx, bias, selected, told[0], decision=decision, stage=stage, session_ok=ok, session_blocks=session_blocks,
-                plan_told=plan_told, forced=forced, reversals_open=routes,
+                plan_told=plan_told, forced=forced, reversals_open=routes, entry_blocks=(*held, *extra),
             )
 
         if selected is None:
@@ -343,7 +456,11 @@ class TTradesStyle:
         assert side is not None
         checklist = selected.checklist
         stage = checklist.stage()
-        failing = checklist.failing_quality() + (["session_filter_ok"] if session_blocks and not ok else [])
+        failing = (
+            checklist.failing_quality()
+            + (["session_filter_ok"] if session_blocks and not ok else [])
+            + (["stop_size_ok"] if stop_blocks else [])
+        )
         head = f"{selected.family} {side.trade} at stage {stage}"
         if stage != "c4":
             next_stage = STAGES[_stage_rank(stage)]
@@ -359,14 +476,28 @@ class TTradesStyle:
                 "watch", bias.bias, selected.family, stage, groups, summary, selected, told=told,
                 planned=planned, auto_note=auto_note, look_for=build_look_for(ctx, bias, selected, planned[0]),
             )
+        def played_out(position: PositionPlan | None) -> tuple[str, ...]:
+            """rules.md question 33: why a triggered plan whose target or stop has traded is no longer an entry."""
+            if position is None or position.state != "triggered" or position.outcome == "open":
+                return ()
+            what = "reached its target" if position.outcome == "target_reached" else "been stopped"
+            return (f"this trigger has already played out (it has {what})",)
+
         if failing:
             show = all(key in _REWARD_OR_SESSION for key in failing)
-            summary = f"Watch: {head}, entry-ready structure but quality checks fail: {', '.join(failing)}. {bias_text}"
             told = tell("watch", stage)
             still_told = all(key in _PLAN_STILL_TOLD for key in failing)
+            planned = plan_for("watch", stage, told, still_told)
+            blocked, gone = list(failing), played_out(planned[1])
+            tail = ""
+            if gone:  # the trigger has also played out: say so, and keep the legacy levels for a trade (10.3)
+                show, blocked, tail = False, [*failing, "played_out"], f" {_cap(gone[0])}."
+                told = tell("watch", stage, gone)
+                planned = plan_for("watch", stage, told, still_told, gone)
+            summary = f"Watch: {head}, entry-ready structure but quality checks fail: {', '.join(failing)}.{tail} {bias_text}"
             return verdict(
                 "watch", bias.bias, selected.family, stage, groups, summary, selected, show_plan=show,
-                told=told, planned=plan_for("watch", stage, told, still_told), auto_note=auto_note,
+                told=told, planned=planned, auto_note=auto_note, blocked=blocked,
             )
         decision: Decision = "long" if side.bullish else "short"
         plan = selected.plan
@@ -382,9 +513,19 @@ class TTradesStyle:
             f"({plan.reward / plan.risk:.2f}R).{body}{forced}{outside} {bias_text}"
         )
         told = tell(decision, stage)
+        planned = plan_for(decision, stage, told)
+        gone = played_out(planned[1])
+        if gone:
+            # rules.md open question 33: a trade whose target or stop has traded is no longer an entry
+            summary = f"Watch: {head}; {gone[0]}. {bias_text}"
+            told = tell("watch", stage, gone)
+            return verdict(  # the levels stay on the position plan; the legacy fields are for a trade (10.3)
+                "watch", bias.bias, selected.family, stage, groups, summary, selected,
+                told=told, planned=plan_for("watch", stage, told, True, gone), auto_note=auto_note, blocked=["played_out"],
+            )
         return verdict(
             decision, bias.bias, selected.family, stage, groups, summary, selected, show_plan=True,
-            told=told, planned=plan_for(decision, stage, told), auto_note=auto_note,
+            told=told, planned=planned, auto_note=auto_note,
         )
 
 

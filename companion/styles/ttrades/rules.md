@@ -548,6 +548,7 @@ The stop follows the kind of trigger that fired, whatever `entry_mode` selected 
 - **Body stop (source rule, conditional).** The stop may move to the body of the swing candle to reach 2R, only when the opposing candles are full-bodied. `[src: the_only_trading_strategy_you_need_for_2026.txt — "put my stop on the bodies because they are nice and fullbodied candles"]` and the same page: "Only use candle body invalidation if there are big bulking opposing candles." "Full-bodied" has no number. **Proposal:** allowed when every candle in the trigger series has `abs(close - open) >= body_stop_min_body_frac * (high - low)`; body stop = lowest body edge of the series. The verdict must say when the body stop is in use. The body stop exists only to reach the minimum reward to the structural level, so it is considered only when that check blocks (`reward_check_role = quality`). With the default advisory check the stop always rests on the protected swing.
 - **Buffer beyond the swing:** `[src: fractal_model_fundamentals.txt — "maybe I'll just give it a little bit of room to sweep if it wants to"]`. No amount given. **Proposal:** `stop_buffer = 0`.
 - `Verdict.invalidation` text: "trade through {stop} ({what it is})", plus the path-level invalidations from section 9.2.
+- **Stop size against the daily range (`stop_size_ok`, backtest 2026-11-13, question 38).** Not a source rule. ADR = mean `high - low` of the last `adr_days` (14) closed 1D bars, whatever the stack. The check passes when the trigger's own risk (entry to stop) is at least `min_stop_adr_frac` (0.04) of the ADR; it is `None` until a trigger exists. Class from `stop_size_role`: `advisory` by default (trader answer: "ADR is not that big of a deal"), `quality` keeps a small-stop trigger at `watch`. Evidence: on TradingView data, 8 futures, triggers with a stop under 4% of ADR lost -0.32 / -0.22 / -0.12 R a trade (2024 / 2025 / 2026), about 58% of it costs.
 
 ### 8.3 Targets
 
@@ -671,7 +672,7 @@ One source alternative is deliberately not encoded: when a POI is closed through
 
 A criteria never change the decision. By default that now includes `session_filter_ok`, `cont_objective_open` and `*_reward_at_least_2r` (sections 6, 7, 9.1); each can be switched back to its old class in `config.json`. `entry`, `stop`, `targets` are filled only for `long` / `short`, and for `watch` at `c4` when the only failing Q is `*_reward_at_least_2r` or `session_filter_ok` (possible only when those are switched back to Q).
 
-A `long` / `short` verdict describes a trigger that has formed and whose stop is untaken. It does not check whether price has since travelled to the exit; the entry is the trigger bar's close, which can be well before `as_of` (open question 33).
+A `long` / `short` verdict describes a trigger that has formed and whose stop is untaken. **Played out (question 33, 2026-11-13):** when the position plan's `outcome` is `target_reached` or `stopped` (10.6), the decision is `watch` instead (and a `watch` at `c4` whose trigger is still told adds the same reason to its own), with "this trigger has already played out" in the summary, the read and the entry step; the trigger's levels stay on the position plan (the legacy `entry` / `stop` / `targets` stay empty, as for any `watch`) and its chart label ends "blocked: played out". A trade that is open but old or far from its entry keeps its decision; the plan's `stage_label` says `late` (10.6).
 
 ### 10.4 Mapping to `entry_rules.default_entry_ready_constraints`
 
@@ -708,7 +709,13 @@ The first step that has not happened is `next`, and it alone carries the exact c
 - *planned*: nothing has triggered and the CISD entry is allowed. Entry = the level the trigger has to close through (continuation: the entry CISD level of the active setup closure; reversal: the nearest pending CISD level), stop = the current structural extreme (setup swing low; reversal wick low) minus `stop_buffer`, target = entry + `target_rr` x risk (or the structural first level in `target_mode = structural`). The real entry will be the trigger bar's close, beyond that level, and all three move if price makes a new extreme first. A trigger that exists below `c4` (a reversal that turned before its reclaim) is told as planned with its own levels.
 - no plan when those levels cannot be computed: no setup closure or key level yet, only an order-block entry is allowed, the entry window has passed, or no path is alive.
 
-None of this answers open question 33. The decision stays `long` / `short` after the exit has traded; the plan's `outcome` and `r_now` only make that visible, and the window words the suggestion from them.
+**Where the idea stands** (`PositionPlan.stage_label`, question 33). `forming`: planned. `actionable`: triggered, at most `actionable_entry_bars` (3) closed entry bars after the trigger bar (`age_bars`) and the last close within `actionable_max_r` (0.5) R of the entry. `late`: triggered and open, but older or further than that. `played_out`: `outcome` is `target_reached` or `stopped` (the decision is then `watch`, 10.3). Age is counted in entry bars so it scales with the timeframe. Evidence: 31% of 1D / 1h / 5m verdicts in the 2025 audit reached the trader over 15 minutes after the trigger, a median 1.74 R from the entry.
+
+**Stop size and cost** (`PositionPlan.risk_adr`, `cost_r_mini`, `cost_r_micro`). The risk as a share of the ADR (8.2), and one contract's round-turn cost (one tick of slippage plus commission, `companion/contracts.py`) as a share of the risk, for the mini and the micro of the symbol. Information only.
+
+**Why a drawn trigger is blocked.** On a `watch` at `c4` with a trigger, the trigger's chart label ends "blocked: " and a few words per failing check ("not a V", "in a range", "stop too small", "played out").
+
+**Intraday reference levels** (`session` markup, information only, no rule reads them). For entry timeframes of 1h or less: the Asia (18:00-00:00) and London (02:00-05:00) high and low of the current trading day once each window has closed, the midnight and 09:30 opens, and the previous day's high and low when the bias is not 1D (a 1D bias already draws them). They are read from entry-timeframe bars covering the trading day from its 18:00 open (the same series with a longer lookback when the entry frame is shorter; a finer series would go stale between live checks) and drawn on the entry chart. A 1h entry has no 09:30 open, since no 1h bar opens then. A client shows them only when the trader turns the layer on.
 
 ---
 
@@ -750,6 +757,11 @@ None of this answers open question 33. The decision stays `long` / `short` after
 | `reversal_expansion_min_travel_frac` | 1.0 of the average setup-timeframe range | Proposal (open question 30) |
 | `body_stop_min_body_frac` | 0.6 | Proposal |
 | `stop_buffer` | 0 | Proposal |
+| `adr_days` | 14 closed 1D bars | Backtest 2026-11-13 (question 38) |
+| `min_stop_adr_frac` | 0.04 of the ADR | Backtest 2026-11-13 (question 38) |
+| `stop_size_role` | `advisory` | **Trader answer** 2026-11-13 ("ADR is not that big of a deal"); `quality` holds small stops at `watch` |
+| `actionable_entry_bars` | 3 entry bars | Backtest audit 2026-11-13 (question 33) |
+| `actionable_max_r` | 0.5 R | Backtest audit 2026-11-13 (question 33) |
 
 ---
 
@@ -789,7 +801,7 @@ Questions 1, 2, 14, 15, 16 and 18 were answered by the trader on 2026-11-12 (spo
 30. **"Expansion out" — what I chose.** You did not define it. I test the setup-timeframe candles leading into the extreme: the unbroken run of candles closing toward the level that ends at the extreme (the same series the CISD closes through) must have at least 1 candle and must have travelled at least 1.0 times the average setup-timeframe range (20 candles) from its first open to the extreme. It is a quality check (`rev_expansion_into_level`): failing it keeps the verdict at `watch`. `reversal_expansion_test = off` makes reaching the level sufficient. It failed in 192 of the 672 reversal checks that reached stage c4 on 1D / 1h / 5m. Is a run of candles the right picture of "expansion", and is one average candle of travel the right size?
 31. **Body-relative wick thresholds.** With `wick_yardstick = body` I propose small ≤ 0.5 × body and large ≥ 1.0 × body, where body is the forming candle's `abs(last - open)`. Right after a reversal turns the body is tiny, so this yardstick calls nearly every reversal wick large until price has moved away. Is that the intent, or should the body be the previous closed candle's?
 32. **What should `Verdict.bias` read on a reversal?** Unanswered half of question 1. It keeps the closure-based value, so a reversal short can show `bias = bullish`. The reversal path also ignores a confirmed opposite bias, although TTrades treats that case as a retracement.
-33. **A verdict stays `long` / `short` after the move has happened.** The entry is the trigger bar's close. Nothing switches the verdict off once price has reached the exit, and a reversal trigger has no entry window. In the 2025 sweep on 1D / 1h / 5m the median time between the trigger and the first check that reported it was 85 minutes, and in 45 of 96 trades price had already traded 1R in favour by that first check. Should a verdict expire (after N entry bars, or once the exit price has traded), and should the entry shown be the current price?
+33. **ANSWERED 2026-11-13 (Phase A of the backtest plan, approved by the trader): a played-out trigger is `watch`, an old or distant one is labelled `late` (10.3, 10.6).** *Original question:* **A verdict stays `long` / `short` after the move has happened.** The entry is the trigger bar's close. Nothing switches the verdict off once price has reached the exit, and a reversal trigger has no entry window. In the 2025 sweep on 1D / 1h / 5m the median time between the trigger and the first check that reported it was 85 minutes, and in 45 of 96 trades price had already traded 1R in favour by that first check. Should a verdict expire (after N entry bars, or once the exit price has traded), and should the entry shown be the current price?
 34. **Two paths alive at once.** Now that the continuation survives the previous high/low being taken and a reversal is alive near any key level, both are often alive together, sometimes in opposite directions. I report the path at the higher stage and prefer the continuation on a tie. Is that the order you want?
 
 Questions 35 to 37 come from the entry rules added on 2026-11-12 (protected swings, and consolidations read the way "Why Your Continuations Fail" reads them). In the 2025 sweep on 1D / 1h / 5m they cut continuation trades from 27 to 6. At 2R, measured from the first check that reported each trade, the continuation trades went from 8 wins / 16 losses to 3 / 3. `cont_objective_open_at_trigger` failed at 124 checks, `cont_trigger_v_shape` at 44 and `cont_not_inside_consolidation` at 38. Reversal trades are unchanged.
@@ -799,6 +811,8 @@ Questions 35 to 37 come from the entry rules added on 2026-11-12 (protected swin
 37. **How late in the candle is too late?** 0.75 (the source's "three quarters, wait for the next candle") is the default. The source also says "first half if you want to make it mechanical". Which one?
 
 ---
+
+38. **Is a stop under 4% of the daily range worth flagging?** The backtest says those trades lose mostly to costs; the trader said ADR is "not that big of a deal", so `stop_size_ok` only informs (`stop_size_role = advisory`). Should it ever hold a trade at `watch`, and is 4% the right line for a micro contract, where costs per point are about twice a mini's?
 
 ## 13. Sources
 

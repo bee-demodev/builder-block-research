@@ -3,9 +3,12 @@
 The fixtures are ``snapshot`` messages the core sends from the saved minute history for
 NQ (1D / 1h / 5m, ttrades). The UI is built against them:
 
-- ``fixtures/snapshot_v1.json``: 2025-11-11 08:45 New York, side Auto (a short).
-- ``fixtures/snapshot_v1_triggered.json``: 2025-11-11 08:45, side Short: a triggered plan,
-  every step done, the risk / reward tool on the entry chart.
+- ``fixtures/snapshot_v1.json``: 2025-11-11 08:45 New York, side Auto: a WATCH. The short
+  triggered Nov 10 19:15 and reached its target at 00:15, so it has played out (rules.md
+  question 33).
+- ``fixtures/snapshot_v1_triggered.json``: 2025-11-11 08:45, side Short: that triggered plan,
+  played out, every step done but the entry step, which is blocked and says why; the risk /
+  reward tool on the entry chart.
 - ``fixtures/snapshot_v1_planned.json``: 2025-11-19 10:15, side Short: a planned plan
   (nothing triggered), steps blocked / next / later, the next step's level on its chart.
 
@@ -103,7 +106,9 @@ def test_a_real_verdict_view_survives_the_wire(checked: tuple[dict[str, Any], Ve
     sent = json.loads(wire.dumps(snapshot))["view"]
     assert rebuild(VerdictView, sent) == view  # every field, nested ones too, under its own name
 
-    assert view.decision == "short" and view.has_levels and view.charts and view.groups
+    # the short triggered Nov 10 19:15 and reached its target at 00:15: played out, so watch (rules.md question 33)
+    assert view.decision == "watch" and not view.has_levels and view.charts and view.groups  # levels live on the plan
+    assert view.plan is not None and view.plan.stage_label == "played_out" and view.plan.outcome == "target_reached"
     for group, original in zip(sent["groups"], view.groups):
         assert group["tally"] == original.tally
     candle = sent["charts"][2]["candles"][-1]
@@ -159,7 +164,9 @@ def test_a_forced_side_sends_a_plan_its_steps_and_a_tool_that_agree(
     assert [step["number"] for step in steps] == list(range(1, len(steps) + 1))
     upcoming = [step for step in steps if step["status"] == "next"]
     if state == "triggered":
-        assert not upcoming and {step["status"] for step in steps} == {"done"}
+        # this short reached its target at 00:15: played out, so its entry step is blocked and says why
+        assert not upcoming and [step["status"] for step in steps][-1] == "blocked"
+        assert {step["status"] for step in steps[:-1]} == {"done"} and "played out" in steps[-1]["detail"]
         return
     assert {"next", "later"} <= {step["status"] for step in steps} and len(upcoming) == 1
     step = upcoming[0]

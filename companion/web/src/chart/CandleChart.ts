@@ -15,7 +15,7 @@ import {
   type Time,
   type UTCTimestamp,
 } from 'lightweight-charts';
-import { DEFAULT_DISPLAY, type Overlays } from '../display';
+import { DEFAULT_DISPLAY, layerMarks, type Overlays } from '../display';
 import { axisLabel, crosshairLabel, formatPrice, priceDecimals } from '../format';
 import type { Candle, ChartView, Direction, Mark, Tool } from '../wire';
 import { COLUMN_SLOT, type Band, type HtfColumn } from './htf';
@@ -179,7 +179,7 @@ export class CandleChart {
 
   /** Every mark start, and the tool's, for the opening window. */
   private starts(): { start: number | null }[] {
-    const starts: { start: number | null }[] = [...(this.marks ?? [])];
+    const starts: { start: number | null }[] = layerMarks(this.marks ?? [], this.opts.overlays);
     if (this.tool) starts.push({ start: this.tool.start });
     return starts;
   }
@@ -206,7 +206,7 @@ export class CandleChart {
   }
 
   private applyMarks(): void {
-    const marks = this.marks ?? [];
+    const marks = layerMarks(this.marks ?? [], this.opts.overlays);
     // Which levels are too far away to draw is judged against the window the chart
     // opens on, so a level near old prices cannot squash the recent candles.
     const from = initialWindowStart(this.candles.length, this.starts(), this.visibleBars);

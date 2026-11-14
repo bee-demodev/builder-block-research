@@ -84,6 +84,11 @@ class TTradesConfig:
     max_frame_bars: int
     stated_stacks: tuple[tuple[str, str, str], ...]
     stated_pairings: tuple[tuple[str, str], ...]
+    adr_days: int
+    min_stop_adr_frac: float
+    stop_size_role: str
+    actionable_entry_bars: int
+    actionable_max_r: float
 
     def __post_init__(self) -> None:
         for name in ("entry_mode_continuation", "entry_mode_reversal"):
@@ -98,6 +103,7 @@ class TTradesConfig:
             "objective_at_trigger_role": ("quality", "advisory"),
             "wick_yardstick": ("avg_range", "body"),
             "reversal_expansion_test": ("directional_run", "off"),
+            "stop_size_role": ("advisory", "quality"),
         }
         for name, allowed in choices.items():
             if getattr(self, name) not in allowed:
@@ -117,10 +123,13 @@ class TTradesConfig:
             if clock_minutes(start) > clock_minutes(end):
                 raise ValueError(f"Window {start}-{end} ends before it starts")
         clock_minutes(self.daily_wick_deadline)
-        for name in ("min_rr", "target_rr", "cisd_max_bars", "avg_range_bars"):
+        for name in ("min_rr", "target_rr", "cisd_max_bars", "avg_range_bars", "adr_days"):
             if getattr(self, name) <= 0:
                 raise ValueError(f"{name} must be positive")
-        for name in ("reversal_level_tolerance_frac", "reversal_expansion_min_bars", "reversal_expansion_min_travel_frac"):
+        for name in (
+            "reversal_level_tolerance_frac", "reversal_expansion_min_bars", "reversal_expansion_min_travel_frac",
+            "min_stop_adr_frac", "actionable_max_r", "actionable_entry_bars",
+        ):
             if getattr(self, name) < 0:
                 raise ValueError(f"{name} must not be negative")
         if not 0 < self.entry_latest_candle_frac <= 1:

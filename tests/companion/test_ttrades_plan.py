@@ -243,7 +243,7 @@ def test_a_forced_side_never_tells_the_other_direction_and_changes_no_rule(side:
         # no rule passes or fails differently: the shared and continuation results are the same
         # objects' worth, and so are the reversal's whenever both tell the same side
         for item in forced.criteria:
-            if item.group.startswith("reversal") or item.key == "session_filter_ok":
+            if item.group.startswith("reversal") or item.key in ("session_filter_ok", "stop_size_ok"):
                 continue
             assert item == criterion(auto, item.key), (name, item.key)
         if auto.idea == side:
@@ -436,7 +436,7 @@ def test_target_rr_sets_the_planned_and_triggered_target(stack: TimeframeStack) 
 
 @STACKS
 @pytest.mark.parametrize("mirror", [False, True], ids=["bullish", "bearish"])
-def test_target_reached_is_reported_and_the_decision_is_left_alone(stack: TimeframeStack, mirror: bool) -> None:
+def test_target_reached_is_reported_and_the_trade_is_demoted_to_watch(stack: TimeframeStack, mirror: bool) -> None:
     scenario, (first, second) = extended(stack, [(97.7, 99.0, 97.6, 98.9), (98.9, 111.0, 98.8, 110.8)], mirror)
     side = "short" if mirror else "long"
     running = evaluate(scenario, first)
@@ -444,7 +444,11 @@ def test_target_reached_is_reported_and_the_decision_is_left_alone(stack: Timefr
     there = evaluate(scenario, second)
     plan = there.plan
     assert plan is not None
-    assert there.decision == side  # open question 33: finished ideas are the trader's call, the rules do not expire them
+    # open question 33: a trade whose target has traded is no longer an entry; the plan still says what happened
+    assert there.decision == "watch" and "played out" in there.summary
+    assert plan.stage_label == "played_out"
+    trigger = next(item for item in there.markup if item.label == "Entry trigger")
+    assert trigger.short.endswith("blocked: played out")
     assert (plan.state, plan.outcome, plan.outcome_at) == ("triggered", "target_reached", first.to_pydatetime())
     assert plan.r_now == pytest.approx((110.8 - 97.5) / 6.5)
     assert statuses(there).count("next") == 0

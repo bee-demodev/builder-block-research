@@ -31,6 +31,7 @@ TradeSide = Literal["long", "short"]
 StepStatus = Literal["done", "next", "later", "blocked"]
 PlanState = Literal["planned", "triggered"]
 PlanOutcome = Literal["open", "target_reached", "stopped"]
+StageLabel = Literal["", "forming", "actionable", "late", "played_out"]
 
 
 @dataclass(frozen=True)
@@ -206,6 +207,16 @@ class PositionPlan:
     last: float | None = None  # last closed entry-timeframe close
     r_now: float | None = None  # triggered: how far ``last`` is from the entry, in multiples of the risk
     note: str = ""  # one sentence the trader should read with the levels
+    # Where the idea stands, for the trader (rules.md open question 33):
+    # "forming" (planned), "actionable" (triggered, young and near its entry), "late"
+    # (triggered, but too old or too far from the entry), "played_out" (target or stop traded).
+    stage_label: StageLabel = ""
+    age_bars: int | None = None  # triggered: closed entry bars after the trigger bar
+    # The stop's size against the 14-day average daily range, and what one contract costs
+    # (one tick of slippage plus commission) as a share of the risk. None when unknown.
+    risk_adr: float | None = None
+    cost_r_mini: float | None = None
+    cost_r_micro: float | None = None
 
 
 @dataclass(frozen=True)

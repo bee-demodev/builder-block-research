@@ -1,7 +1,7 @@
 import { ChartLineIcon, GearSixIcon, WarningCircleIcon } from '@phosphor-icons/react';
 import { memo, useEffect, useMemo, useRef, useState, type MouseEvent } from 'react';
 import { CandleChart, type MarkHover } from '../chart/CandleChart';
-import type { Overlays, Scheme } from '../display';
+import { layerMarks, type Overlays, type Scheme } from '../display';
 import { buildColumn, capBand, columnNote, numberedCandles } from '../chart/htf';
 import { paneFocus } from '../chart/look';
 import type { LookScene } from '../chart/LookLayer';
@@ -153,7 +153,9 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
 
   const decimals = useMemo(() => priceDecimals(chart.candles.slice(-200).flatMap((c) => [c.open, c.close])), [chart.candles]);
   // The window the chart opens on: off-scale levels and the column's cap are judged against it.
-  const from = useMemo(() => initialWindowStart(chart.candles.length, chart.marks, openBars), [chart.candles.length, chart.marks, openBars]);
+  // Session levels count only when they are shown (Display menu).
+  const marks = useMemo(() => layerMarks(chart.marks, overlays), [chart.marks, overlays]);
+  const from = useMemo(() => initialWindowStart(chart.candles.length, marks, openBars), [chart.candles.length, marks, openBars]);
   const column = useMemo(
     () => (above ? buildColumn(chart.candles, above.candles, above.timeframe, numberedCandles(above.marks)) : null),
     [chart.candles, above],
@@ -167,10 +169,10 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
   }, [chart, direction, column, band, lookScene]);
 
   const notes = useMemo(() => {
-    const out = offScaleNotes(partitionMarks(chart.candles.slice(from), chart.marks), decimals);
+    const out = offScaleNotes(partitionMarks(chart.candles.slice(from), marks), decimals);
     const cut = column ? columnNote(column, band, decimals) : '';
     return cut ? [...out, cut] : out;
-  }, [chart.candles, chart.marks, decimals, from, column, band]);
+  }, [chart.candles, marks, decimals, from, column, band]);
   const shown = hover ?? chart.candles[chart.candles.length - 1] ?? null;
   const tone = readTone(chart.status);
   const onContextMenu = (e: MouseEvent) => {

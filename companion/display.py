@@ -115,8 +115,9 @@ MARK_STYLE: dict[str, tuple[str, tuple[int, ...] | None, int]] = {
     "stop": (WHITE, (7, 4), 1),
     "target": (WHITE, (2, 3), 1),
     "next": (WAITING, (9, 3), 2),
+    "session": (MUTED, (2, 4), 1),
 }
-MARK_PRIORITY = ("entry", "stop", "target", "next", "confirm", "waiting", "protected", "poi", "reference")
+MARK_PRIORITY = ("entry", "stop", "target", "next", "confirm", "waiting", "protected", "poi", "reference", "session")
 
 
 def mark_style(theme: Theme, role: str) -> tuple[str, tuple[int, ...] | None, int]:
@@ -679,6 +680,8 @@ def apply_overlays(chart: ChartView, shown: dict[str, bool]) -> ChartView:
     on = {name: bool(shown.get(name, True)) for name in OVERLAYS}
     marks = []
     for mark in chart.marks:
+        if mark.role == "session":
+            continue  # the session reference levels are a layer of the web window only
         if mark.kind == "zone" and not on["zones"]:
             continue
         if mark.kind in ("level", "zone") and not on["level_names"]:

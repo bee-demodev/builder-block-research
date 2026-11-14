@@ -27,14 +27,16 @@ interface SelectProps {
   value: string;
   options: readonly string[];
   disabled?: boolean;
+  /** A tooltip for the chosen value. */
+  hint?: string;
   onChange: (value: string) => void;
 }
 
 /** A native <select> under a styled face: full keyboard and screen reader support for free. */
-export function Select({ label, value, options, disabled, onChange }: SelectProps) {
+export function Select({ label, value, options, disabled, hint, onChange }: SelectProps) {
   const list = options.includes(value) || !value ? options : [value, ...options];
   return (
-    <label className={`select${disabled ? ' is-disabled' : ''}`}>
+    <label className={`select${disabled ? ' is-disabled' : ''}`} title={hint || undefined}>
       <span className="select-label">{label}</span>
       <span className="select-value mono">{value || '-'}</span>
       <CaretDownIcon size={12} aria-hidden className="select-caret" />

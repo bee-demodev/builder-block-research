@@ -529,6 +529,14 @@ class PlanView:
     outcome_at: pd.Timestamp | None = None  # open of the entry bar that reached the target or the stop
     last: float | None = None  # last closed entry-timeframe close
     r_now: float | None = None  # triggered: how far ``last`` is from the entry, in multiples of the risk
+    # where the idea stands (forming | actionable | late | played_out; "" unknown), its age in
+    # entry bars, the stop as a share of the average daily range and one contract's cost in R
+    stage_label: str = ""
+    age_bars: int | None = None
+    risk_adr: float | None = None
+    cost_r_mini: float | None = None
+    cost_r_micro: float | None = None
+    cost_note: str = ""  # those three in words: "Stop 6% of ADR · costs 0.05R mini, 0.11R micro"
 
 
 @dataclass(frozen=True)
@@ -618,7 +626,7 @@ def read_rows(verdict: Verdict) -> tuple[ReadRow, ...]:
 
 # --- charts -----------------------------------------------------------------------
 
-_CHART_ROLES = {"reference", "poi", "protected", "confirm", "waiting", "entry", "stop", "target"}
+_CHART_ROLES = {"reference", "poi", "protected", "confirm", "waiting", "entry", "stop", "target", "session"}
 _ALWAYS_IN_VIEW = {"entry", "stop", "target", "confirm", "waiting", "protected", "poi", "next"}
 STEP_WORDS = {"done": "Done", "next": "Next", "later": "Later", "blocked": "Blocked"}
 LATE_SHARE = 0.5  # an open idea whose last close is at least this far on the way to its target is called late
@@ -848,6 +856,14 @@ def idea_state(verdict: Verdict) -> tuple[str, str, str, bool]:
         return f"{side} · {name}", "no_trade", f"Finished: {what} traded at {at}. Triggered {since}; this is not an entry now.", True
     if decision not in ("long", "short"):
         return f"{word} · {side}", tone, f"{side.capitalize()} triggered {since} and is open ({moved} from entry), but it is no longer an entry: see the blocked step.", True
+    if plan.stage_label == "late":
+        bars = f"{plan.age_bars} {plan.timeframe} bar{'' if plan.age_bars == 1 else 's'} ago" if plan.age_bars is not None else since
+        return (
+            f"{side} · LATE", tone,
+            f"Triggered {bars}, still open, but late: the last close is {moved} from the entry. Entering now is a "
+            f"different trade from the one planned.",
+            True,
+        )  # fmt: skip
     progress = (plan.last - plan.entry) / (plan.target - plan.entry) if plan.last is not None and plan.target != plan.entry else 0.0
     if progress >= LATE_SHARE:
         behind = abs(plan.last - plan.entry) if plan.last is not None else 0.0
@@ -874,7 +890,19 @@ def plan_view(plan: PositionPlan | None) -> PlanView | None:
         plan.direction, plan.state, plan.outcome, title, levels, plan.note,
         entry=plan.entry, stop=plan.stop, target=plan.target, r_multiple=plan.r_multiple, timeframe=plan.timeframe,
         since=_new_york_or_none(plan.since), outcome_at=_new_york_or_none(plan.outcome_at), last=plan.last, r_now=plan.r_now,
+        stage_label=plan.stage_label, age_bars=plan.age_bars, risk_adr=plan.risk_adr, cost_r_mini=plan.cost_r_mini,
+        cost_r_micro=plan.cost_r_micro, cost_note=cost_note(plan),
     )  # fmt: skip
+
+
+def cost_note(plan: PositionPlan) -> str:
+    """The stop against the daily range and one contract's round-turn cost, in a line ("" when unknown)."""
+    parts = []
+    if plan.risk_adr is not None:
+        parts.append(f"Stop {plan.risk_adr:.1%} of ADR")
+    if plan.cost_r_mini is not None and plan.cost_r_micro is not None:
+        parts.append(f"costs {plan.cost_r_mini:.2f}R mini, {plan.cost_r_micro:.2f}R micro")
+    return " · ".join(parts)
 
 
 def _new_york_or_none(moment: object) -> pd.Timestamp | None:
@@ -1221,6 +1249,12 @@ class CompanionController:
 
     def stack_names(self) -> list[str]:
         return [stack.name for stack in _timeframes.list_stacks()]
+
+    def stack_notes(self) -> dict[str, str]:
+        try:
+            return _timeframes.stack_notes()
+        except (OSError, ValueError, KeyError):  # a note must never break the window
+            return {}
 
     def stack_choices(self) -> list[str]:
         return [*self.stack_names(), CUSTOM_CHOICE]

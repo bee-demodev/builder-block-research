@@ -23,7 +23,14 @@ export function TopBar({ model, send }: Props) {
 
       <div className="topbar-group">
         <Select label="Symbol" value={server?.symbol ?? ''} options={options?.symbols ?? []} disabled={!ready} onChange={(symbol) => send({ type: 'set', symbol })} />
-        <Select label="Stack" value={server?.stack ?? ''} options={options?.stacks ?? []} disabled={!ready} onChange={(stack) => send({ type: 'set', stack })} />
+        <Select
+          label="Stack"
+          value={server?.stack ?? ''}
+          options={options?.stacks ?? []}
+          disabled={!ready}
+          hint={options?.stack_notes[server?.stack ?? '']}
+          onChange={(stack) => send({ type: 'set', stack })}
+        />
         <Select label="Style" value={server?.style ?? ''} options={options?.styles ?? []} disabled={!ready} onChange={(style) => send({ type: 'set', style })} />
       </div>
 
