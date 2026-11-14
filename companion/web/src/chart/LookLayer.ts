@@ -69,6 +69,20 @@ export function otherOptionPrices(scene: LookScene): number[] {
   return scene.look.options.filter((o) => o !== chosen).flatMap((o) => [o.top, o.bottom]);
 }
 
+/**
+ * The prices the look-for widens a pane's scale to, given the band the pane's own candles
+ * span (null: no band). The chosen option's shapes always count, except a reversal's on
+ * the entry pane while its step is not the one awaited: a bias key level can sit far past
+ * the entry candles, and the box would flatten them, so there it counts only inside the
+ * band and is cut at the pane edge (as far options are). The other options count only
+ * inside the band.
+ */
+export function lookScalePrices(scene: LookScene, band: { lo: number; hi: number } | null): number[] {
+  const inside = (p: number) => !band || (p >= band.lo && p <= band.hi);
+  const capped = scene.look.kind === 'reversal' && scene.pane === 'entry' && !paneFocus(scene.look).entry;
+  return [...lookPrices(scene).filter((p) => !capped || inside(p)), ...otherOptionPrices(scene).filter(inside)];
+}
+
 /** Box fills, behind the candles. */
 export function drawLookFills(ctx: CanvasRenderingContext2D, hr: number, vr: number, env: LookEnv, hits: LookHit[]): void {
   const { look, chosen, pane } = rows(env);

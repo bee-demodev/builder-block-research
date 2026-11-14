@@ -16,7 +16,7 @@ from companion.styles.ttrades.checklist import (
 from companion.styles.ttrades.config import TTradesConfig, load_config
 from companion.styles.ttrades.context import Context, at_clock, load_context, trading_day
 from companion.styles.ttrades.continuation import PathOutcome, evaluate_continuation
-from companion.styles.ttrades.plan import build_look_for, build_plan
+from companion.styles.ttrades.plan import build_look_for, build_plan, build_reversal_look_for, build_route_look_for
 from companion.styles.ttrades.primitives import BEAR, BULL, Side, fmt, when
 from companion.styles.ttrades.read import build_read
 from companion.styles.ttrades.reversal import evaluate_reversal
@@ -410,6 +410,14 @@ class TTradesStyle:
         if stop_blocks:
             held.append(f"the stop is under {cfg.min_stop_adr_frac:.0%} of the daily range, so costs take a large share of it")
 
+        routes: dict[str, bool] = {}
+        if shared.gates_pass():  # a reversal route can be named where no key level is reached yet
+            routes = {
+                path.side.direction: path.checklist.passed("rev_key_level_reached") is not True
+                for path in reversals
+                if path.side is not None
+            }
+
         def tell(decision: str, stage: str, extra: tuple[str, ...] = ()) -> tuple[tuple[ReadStep, ...], str, str]:
             return build_read(
                 ctx, bias, shared, cont, reversal, selected, decision=decision, stage=stage, session_ok=ok,
@@ -420,13 +428,6 @@ class TTradesStyle:
             decision: str, stage: str, told: tuple[tuple[ReadStep, ...], str, str], plan_told: bool = False,
             extra: tuple[str, ...] = (),
         ) -> tuple[tuple[PlanStep, ...], PositionPlan | None]:
-            routes: dict[str, bool] = {}
-            if shared.gates_pass():  # a reversal route can be named where no key level is reached yet
-                routes = {
-                    path.side.direction: path.checklist.passed("rev_key_level_reached") is not True
-                    for path in reversals
-                    if path.side is not None
-                }
             return build_plan(
                 ctx, bias, selected, told[0], decision=decision, stage=stage, session_ok=ok, session_blocks=session_blocks,
                 plan_told=plan_told, forced=forced, reversals_open=routes, entry_blocks=(*held, *extra),
@@ -450,6 +451,7 @@ class TTradesStyle:
             return verdict(
                 "no_trade", bias.bias, "none", "none", groups, f"{lead} {bias_text} {'; '.join(reasons)}.",
                 told=told, planned=plan_for("no_trade", "none", told), auto_note=auto_note,
+                look_for=build_route_look_for(ctx, routes, forced),
             )
 
         side = selected.side
@@ -474,7 +476,10 @@ class TTradesStyle:
             planned = plan_for("watch", stage, told)
             return verdict(
                 "watch", bias.bias, selected.family, stage, groups, summary, selected, told=told,
-                planned=planned, auto_note=auto_note, look_for=build_look_for(ctx, bias, selected, planned[0]),
+                planned=planned, auto_note=auto_note,
+                look_for=build_look_for(ctx, bias, selected, planned[0])
+                if selected.family == "continuation"
+                else build_reversal_look_for(ctx, selected, planned[0], planned[1]),
             )
         def played_out(position: PositionPlan | None) -> tuple[str, ...]:
             """rules.md question 33: why a triggered plan whose target or stop has traded is no longer an entry."""

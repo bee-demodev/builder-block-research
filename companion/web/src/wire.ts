@@ -247,6 +247,8 @@ export interface LookFor {
   target_price: number | null;
   /** The entry forms while the setup's C2 forms; false: after it (the conservative entry). */
   entry_during: boolean;
+  /** "continuation": the options are setup points of interest; "reversal": the bias key levels a reversal waits for. */
+  kind: LookKind;
 }
 
 export type JournalMark = '' | 'took' | 'skipped';
@@ -291,6 +293,8 @@ export interface Journal {
   reasons: { key: string; label: string }[];
   stats: JournalStats;
 }
+
+export type LookKind = 'continuation' | 'reversal';
 
 export interface ChartView {
   role: string;
@@ -661,6 +665,7 @@ const lookFor = obj<LookFor>({
   target: str,
   target_price: optional(nullable(num), () => null),
   entry_during: optional(bool, () => true),
+  kind: optional(oneOf<LookKind>('continuation', 'reversal'), () => 'continuation'),
 });
 
 const tally = obj<JournalTally>({ n: num, avg_r: nullable(num) });

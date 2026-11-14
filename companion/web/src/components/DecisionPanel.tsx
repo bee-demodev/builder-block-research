@@ -13,7 +13,7 @@ import {
   XCircleIcon,
 } from '@phosphor-icons/react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { chosenOption, lookDecimals } from '../chart/look';
+import { chosenOption, lookDecimals, lookLine } from '../chart/look';
 import { checkpointText, planWords, sections, setSide, sideChoices, suggestionText, waitingText } from '../decision';
 import { formatPrice, pathLine, plainText, sentenceCase, wallClock } from '../format';
 import { isStale, type Model } from '../store';
@@ -226,14 +226,6 @@ function Verdict({ view, stale, showWaiting, lookChoice }: { view: VerdictView; 
       )}
     </div>
   );
-}
-
-/** "1h C1, C2 at the POI 25,410 to 25,428": what to look for, where, in one line. */
-function lookLine(look: LookFor, choice: string): string {
-  const o = chosenOption(look, choice);
-  if (!o) return '';
-  const d = lookDecimals(look);
-  return `${look.timeframe} C1, C2 at the POI ${formatPrice(o.bottom, d)} to ${formatPrice(o.top, d)}`;
 }
 
 /** The step's state by shape, so it never rests on colour: a ring with a dot is the one awaited now. */
