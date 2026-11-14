@@ -72,6 +72,11 @@ function JournalCall({
       <div className="journal-call">
         <h2 className="journal-label">Your call on this trigger</h2>
         <p className="journal-ended">{endedLine(trigger)}</p>
+        {(trigger.reason || trigger.note) && (
+          <p className="journal-ended">
+            {[reasons.find((r) => r.key === trigger.reason)?.label, trigger.note].filter(Boolean).join(': ')}
+          </p>
+        )}
       </div>
     );
   }

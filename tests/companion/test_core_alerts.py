@@ -178,3 +178,23 @@ def test_a_thread_that_cannot_start_never_raises_and_frees_the_trigger(monkeypat
     assert alerts.consider(verdict()) is False
     alerts._background = False
     assert alerts.consider(verdict()) is True and len(sent) == 1
+
+
+def test_two_alerts_finishing_together_both_stay_remembered(tmp_path: Path):
+    import threading
+
+    gate = threading.Barrier(2)
+
+    def post(url, payload):
+        gate.wait(timeout=5)  # both posts land at the same moment
+
+    alerts = DiscordAlerts(URL, tmp_path, post=post, background=True)
+    first, second = verdict(), verdict(since=datetime(2026, 11, 12, 10, 5, tzinfo=NY))
+    assert alerts.consider(first) and alerts.consider(second)
+    for _ in range(200):
+        saved = json.loads((tmp_path / SENT_FILE).read_text(encoding="utf-8")) if (tmp_path / SENT_FILE).exists() else []
+        if len(saved) == 2:
+            break
+        threading.Event().wait(0.02)
+    assert sorted(saved) == sorted([trigger_key(first), trigger_key(second)])
+    assert sorted(DiscordAlerts(URL, tmp_path, post=post)._sent) == sorted(saved)  # after a restart, neither is sent again

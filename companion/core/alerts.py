@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import threading
 import urllib.error
 import urllib.request
@@ -132,6 +133,7 @@ class DiscordAlerts:
         self._post = post or post_json
         self._background = background
         self._lock = threading.Lock()
+        self._save_lock = threading.Lock()  # one save at a time, each writing the newest list
         self._sent: list[str] = self._load()
         self._busy: set[str] = set()  # posting now
         self._tries: dict[str, int] = {}  # failed posts per trigger
@@ -182,13 +184,14 @@ class DiscordAlerts:
             log.exception("Discord alert failed: %s", key)
         with self._lock:
             self._busy.discard(key)
-            if delivered:
-                self._sent = [*self._sent, key][-KEEP:]
-                sent = list(self._sent)
-            else:
+            if not delivered:
                 self._tries[key] = self._tries.get(key, 0) + 1
                 return
-        self._save(sent)
+            self._sent = [*self._sent, key][-KEEP:]
+        with self._save_lock:  # read the list inside the save lock, so a later save never writes an older one
+            with self._lock:
+                sent = list(self._sent)
+            self._save(sent)
 
     def _load(self) -> list[str]:
         if self.state is None:
@@ -204,6 +207,8 @@ class DiscordAlerts:
             return
         try:
             self.state.mkdir(parents=True, exist_ok=True)
-            (self.state / SENT_FILE).write_text(json.dumps(sent), encoding="utf-8")
+            spare = self.state / (SENT_FILE + ".tmp")
+            spare.write_text(json.dumps(sent), encoding="utf-8")
+            os.replace(spare, self.state / SENT_FILE)  # whole or not at all
         except OSError:
             log.warning("Could not save %s.", self.state / SENT_FILE)

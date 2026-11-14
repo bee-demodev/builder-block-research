@@ -432,3 +432,31 @@ def test_the_panel_stats_never_pool_symbols_or_styles(tmp_path: Path) -> None:
     assert journal.stats(STACK.name)["all"]["n"] == 2  # the stack across everything
     assert journal.stats(STACK.name, "NQ", "ttrades")["all"] == {"n": 1, "avg_r": -1.0}
     assert journal.view(verdict())["stats"]["all"] == {"n": 1, "avg_r": -1.0}  # what the panel shows: this symbol only
+
+
+def test_a_call_made_after_the_ending_bar_closed_is_hindsight_even_when_the_app_learned_of_it_late(tmp_path: Path) -> None:
+    journal = Journal(tmp_path / JOURNAL_FILE)
+    journal.observe(verdict(), follow=True, now=NOW)  # the 09:40 short, stop 25,436
+    key = journal.records()[0]["key"]
+    journal.mark(key, "took", now=pd.Timestamp("2026-11-12 10:00", tz=NY))  # paused: the record still looked open
+    journal.observe(verdict(minute=55), follow=True, now=NOW, bars=[Bar("09:40", 25420, 25405), Bar("09:45", 25440, 25410)])
+    assert journal.get(key)["outcome"] == "stopped"  # the 09:45 bar closed at 09:50, before the 10:00 call
+    stats = journal.stats(STACK.name)
+    assert stats["taken"]["n"] == 0 and stats["late"] == 1
+
+
+def test_a_call_made_before_the_ending_bar_closed_counts(tmp_path: Path) -> None:
+    journal = Journal(tmp_path / JOURNAL_FILE)
+    journal.observe(verdict(), follow=True, now=NOW)
+    key = journal.records()[0]["key"]
+    journal.mark(key, "took", now=pd.Timestamp("2026-11-12 09:47", tz=NY))  # inside the bar that later stops it
+    journal.observe(verdict(minute=55), follow=True, now=NOW, bars=[Bar("09:40", 25420, 25405), Bar("09:45", 25440, 25410)])
+    assert journal.stats(STACK.name)["taken"] == {"n": 1, "avg_r": -1.0}
+
+
+def test_flush_says_so_when_the_write_failed(tmp_path: Path) -> None:
+    blocker = tmp_path / "blocker"
+    blocker.write_text("a file, not a folder", encoding="utf-8")
+    journal = Journal(blocker / JOURNAL_FILE, background=True)
+    journal.observe(verdict(), follow=True, now=NOW)
+    assert journal.flush() is False

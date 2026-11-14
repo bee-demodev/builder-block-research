@@ -144,3 +144,11 @@ describe('a trigger whose trade has ended', () => {
     expect(html).toContain('nothing to mark');
   });
 });
+
+it('a finished trade keeps the reason and note given in time, read only', () => {
+  const trigger = { ...demoTrigger('2026-11-12T10:30:00-05:00'), mark: 'skipped' as const, reason: 'news', note: 'CPI at 10', outcome: 'stopped' as const, result_r: -1 };
+  const html = renderToStaticMarkup(createElement(JournalBlock, { journal: demoJournal(trigger), send: () => {} }));
+  expect(html).toContain('You skipped it. It was stopped (-1.00R).');
+  expect(html).toContain('News: CPI at 10');
+  expect(html).not.toContain('<button');
+});

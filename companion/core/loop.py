@@ -36,6 +36,7 @@ journal for its stack. The journal never changes a verdict and never fails a che
 from __future__ import annotations
 
 import json
+import logging
 import queue
 import threading
 import traceback
@@ -63,6 +64,8 @@ from companion.bars import bar_close_times
 from companion.core import wire
 from companion.core.alerts import DiscordAlerts
 from companion.core.journal import Journal, JournalError
+
+log = logging.getLogger("companion.core")
 
 TIMINGS_NAME = "timings.jsonl"
 ERROR_LOG_NAME = "core_error.log"
@@ -179,8 +182,8 @@ class Core:
         for pool in self._pools:
             pool.shutdown(wait=False, cancel_futures=True)
         self.controller.save()
-        if self.journal is not None:
-            self.journal.flush(2.0)  # the last call on disk before the app goes
+        if self.journal is not None and not self.journal.flush(2.0):  # the last call on disk before the app goes
+            log.warning("The decision journal's last changes may not be on disk.")
         self.controller.shutdown()
 
     # --- the loop ---

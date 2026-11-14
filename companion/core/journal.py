@@ -41,6 +41,7 @@ import pandas as pd
 
 from companion.core import wire
 from companion.core.alerts import plan_key
+from companion.timeframes import bar_close_time
 from companion.types import Verdict
 
 log = logging.getLogger("companion.journal")
@@ -81,8 +82,24 @@ def _result_r(outcome: str, r_multiple: float | None) -> float | None:
 
 
 def _hindsight(record: Record) -> bool:
-    """The call on this trigger could not have been made before it ended."""
-    return bool(record.get("late")) or bool(record.get("seen_closed"))
+    """The call on this trigger was made once its end could be seen: refused or flagged at the
+    time (``late``), a trigger first seen already played out (``seen_closed``), or, from the
+    times alone, a call made at or after the close of the bar that ended it. The last covers
+    an outcome the app learned of late (paused, waiting for a refresh) and journals written
+    before calls were checked."""
+    if record.get("late") or record.get("seen_closed"):
+        return True
+    if record.get("mark") not in ("took", "skipped"):
+        return False
+    marked, ended = _naive(record.get("marked_at")), _naive(record.get("outcome_at"))
+    if marked is None or ended is None:
+        return False
+    try:
+        entry = str(record.get("stack", "")).split("/")[-1].strip()
+        closed = _naive(bar_close_time(ended, entry))
+    except (ValueError, TypeError):
+        closed = ended  # unknown timeframe: the bar's open is the earliest it could be seen
+    return closed is not None and marked >= closed
 
 
 def _naive(value: Any) -> pd.Timestamp | None:
@@ -117,6 +134,7 @@ class Journal:
         self._changed = threading.Condition(self._lock)
         self._version = 0  # bumps with every change
         self._written = 0  # the version last written (or given up on)
+        self._failed = False  # the last write did not reach the disk
         self._writer: threading.Thread | None = None
 
     @classmethod
@@ -339,7 +357,7 @@ class Journal:
             return
         self._version += 1
         if not self._background:
-            self._write(list(self._records.values()))
+            self._failed = not self._write(list(self._records.values()))
             self._written = self._version
             return
         try:
@@ -347,7 +365,7 @@ class Journal:
                 self._writer = threading.Thread(target=self._write_loop, name="journal-writer", daemon=True)
                 self._writer.start()
         except RuntimeError:  # no thread to be had: write here rather than lose it
-            self._write(list(self._records.values()))
+            self._failed = not self._write(list(self._records.values()))
             self._written = self._version
             return
         self._changed.notify_all()
@@ -358,28 +376,33 @@ class Journal:
                 while self._written >= self._version:
                     self._changed.wait()
                 version, records = self._version, [dict(record) for record in self._records.values()]
-            self._write(records)
+            ok = self._write(records)
             with self._lock:
                 self._written = max(self._written, version)
+                self._failed = not ok
                 self._changed.notify_all()
 
     def flush(self, timeout: float = 5.0) -> bool:
-        """Wait until every change is on disk (tests, and the core when it stops). True when it is."""
+        """Wait until every change is on disk (tests, and the core when it stops). True only when
+        the last write succeeded; False on a timeout or a write that failed."""
         with self._lock:
-            return self._changed.wait_for(lambda: self._written >= self._version, timeout)
+            done = self._changed.wait_for(lambda: self._written >= self._version, timeout)
+            return done and not self._failed
 
-    def _write(self, records: list[Record]) -> None:
-        """Rewrite the file from ``records``. A failure is logged, never raised."""
+    def _write(self, records: list[Record]) -> bool:
+        """Rewrite the file from ``records``. A failure is logged, never raised. True when written."""
         if self.path is None:
-            return
+            return True
         try:
             self.path.parent.mkdir(parents=True, exist_ok=True)
             spare = self.path.with_name(self.path.name + ".tmp")
             lines = (json.dumps(record, ensure_ascii=False, separators=(",", ":")) for record in records)
             spare.write_text("".join(f"{line}\n" for line in lines), encoding="utf-8")
             os.replace(spare, self.path)
+            return True
         except (OSError, TypeError, ValueError):
             log.exception("Could not write the decision journal %s.", self.path)
+            return False
 
     # --- for the client ---
 
