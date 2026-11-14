@@ -33,6 +33,7 @@ export const demoOptions: Options = {
   side_labels: { '': 'Auto', long: 'Long', short: 'Short' },
   stack_notes: {
     '1D / 1h / 5m': 'Backtest 2024-26: flat after costs.',
+    '1W / 4h / 15m': 'Not validated: flat to slightly negative in the backtest.',
     '4h / 15m / 1m': 'Not validated: 1-minute entries were only backtested on incomplete data.',
   },
 };
@@ -539,11 +540,11 @@ export function sideView(view: VerdictView, side: Side): VerdictView {
   };
 }
 
-/** The sample journal for 1D / 1h / 5m: invented counts, under 20 closed so the panel says they mean nothing yet. */
-export function demoJournal(trigger: JournalTrigger | null): Journal {
+/** A sample journal for `stack`: invented counts, under 20 closed so the panel says they mean nothing yet. */
+export function demoJournal(trigger: JournalTrigger | null, stack = '1D / 1h / 5m'): Journal {
   return {
-    stack: '1D / 1h / 5m',
-    note: demoOptions.stack_notes['1D / 1h / 5m'] ?? '',
+    stack,
+    note: demoOptions.stack_notes[stack] ?? '',
     trigger,
     reasons: [
       { key: 'late', label: 'Late' },

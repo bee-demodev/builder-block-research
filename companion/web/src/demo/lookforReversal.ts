@@ -268,7 +268,7 @@ export function lookForReversalView(): VerdictView {
     steps: STEPS,
     plan: null,
     look_for: LOOK_FOR_REVERSAL,
-    journal: demoJournal(null),
+    journal: demoJournal(null, '1W / 4h / 15m'),
     charts: [
       chart('bias', '1W', 10080, bias, biasRead, []),
       chart('setup', '4h', 240, setup, setupRead, [
