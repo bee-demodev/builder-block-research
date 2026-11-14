@@ -277,3 +277,34 @@ def test_entering_saved_history_moves_a_live_now_to_the_end_of_the_data(tmp_path
     controller.state.when = "2026-06-01 10:00"  # a saved time the data does not cover, found at start
     Core(controller, run_check=lambda job: None, run_watch=inline).begin()
     assert controller.state.when == "2026-03-04 19:00"
+
+
+# --- Discord alerts -----------------------------------------------------------------
+
+
+class RecordingAlerts:
+    def __init__(self) -> None:
+        self.seen: list[Any] = []
+
+    def consider(self, verdict: Any) -> bool:
+        self.seen.append(verdict)
+        return False
+
+
+def test_alerts_see_every_live_verdict_that_follows_now_and_none_when_looking_back(minutes: pd.DataFrame, tmp_path: Path) -> None:
+    h = Harness(minutes, tmp_path)
+    assert h.core.alerts is None  # no discord_webhook in desktop.json: alerts are off
+    alerts = RecordingAlerts()
+    h.core.alerts = alerts  # type: ignore[assignment]
+    h.walk("10:49:59.5", "10:50:04")  # the 10:45 bar's successor opens: one live check
+    assert [v.as_of.strftime("%H:%M") for v in alerts.seen] == ["10:50"]
+    h.send("step", direction=-1)  # looking back at an older bar: never an alert
+    assert len(alerts.seen) == 1
+
+
+def test_alerts_turn_on_from_the_webhook_in_desktop_json(minutes: pd.DataFrame, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr("companion.core.alerts.post_json", lambda url, payload: None)  # never reach the network
+    (tmp_path / "state").mkdir()
+    (tmp_path / "state" / "desktop.json").write_text(json.dumps({"discord_webhook": "https://discord.com/api/webhooks/1/x"}), encoding="utf-8")
+    h = Harness(minutes, tmp_path)
+    assert h.core.alerts is not None and h.core.alerts.webhook.endswith("/1/x")

@@ -22,6 +22,9 @@ called on the core thread with dicts built by ``companion.core.wire``.
 Every live check also appends one line to ``timings.jsonl`` in the companion's state
 folder: when the bar closed, when the core noticed, how long it waited for the worker,
 the read, loading bars it did not hold, the engine, and the total lag.
+
+A live check that follows "now" and turns into an actionable long or short also posts one
+Discord message, when ``discord_webhook`` is set in ``desktop.json`` (``companion.core.alerts``).
 """
 
 from __future__ import annotations
@@ -52,6 +55,7 @@ from companion.app_model import (
 )
 from companion.bars import bar_close_times
 from companion.core import wire
+from companion.core.alerts import DiscordAlerts
 
 TIMINGS_NAME = "timings.jsonl"
 ERROR_LOG_NAME = "core_error.log"
@@ -97,12 +101,16 @@ class Core:
         run_check: Runner | None = None,
         run_watch: Runner | None = None,
         timings_path: Path | None = None,
+        alerts: DiscordAlerts | None | bool = True,
     ) -> None:
         self.controller = controller
         self.watch_ms = max(50, int(watch_ms))
         self.tick_ms = max(20, int(tick_ms))
         self.timings_path = Path(timings_path) if timings_path is not None else controller.state_path.parent / TIMINGS_NAME
         self._listeners: list[Listener] = [listener] if listener is not None else []
+        # Discord alerts for entries that trigger: True reads the webhook from desktop.json, False is off.
+        state = controller.state_path.parent
+        self.alerts = DiscordAlerts.from_state(state) if alerts is True else (alerts or None)
         self._inbox: queue.Queue[tuple[Any, ...]] = queue.Queue()
         self._run_check = run_check
         self._run_watch = run_watch
@@ -439,6 +447,8 @@ class Core:
         )
         self._render(outcome, timing)
         self._emit_state()
+        if self.alerts is not None and follow and outcome.verdict is not None:
+            self.alerts.consider(outcome.verdict)  # never raises; sends on its own thread
         if outcome.request.live:
             self._record(job, outcome, started, ready, lag)
 

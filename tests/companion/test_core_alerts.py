@@ -1,0 +1,139 @@
+"""Discord alerts: who gets one, what it says, once per trigger, and never breaking a check."""
+
+from __future__ import annotations
+
+import json
+from dataclasses import replace
+from datetime import datetime
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import pytest
+
+from companion.core.alerts import SENT_FILE, DiscordAlerts, message, trigger_key, webhook_from_state
+from companion.types import PositionPlan, TimeframeStack, Verdict
+
+NY = ZoneInfo("America/New_York")
+URL = "https://discord.com/api/webhooks/123/abc"
+
+
+def verdict(**plan_changes) -> Verdict:
+    plan = PositionPlan(
+        direction="short",
+        state="triggered",
+        entry=25410.0,
+        stop=25436.0,
+        target=25358.0,
+        r_multiple=2.0,
+        timeframe="5m",
+        since=datetime(2026, 11, 12, 9, 40, tzinfo=NY),
+        note="Entry is the close of the 5m candle at 09:40 (the turn). Stop: high of the setup swing candle (protected high from the entry CISD).",
+        stage_label="actionable",
+        age_bars=1,
+        risk_adr=0.062,
+        cost_r_mini=0.05,
+        cost_r_micro=0.11,
+    )
+    plan = replace(plan, **plan_changes)
+    return Verdict(
+        style="ttrades",
+        symbol="NQ",
+        as_of=datetime(2026, 11, 12, 9, 45, tzinfo=NY),
+        stack=TimeframeStack("1D / 1h / 5m", "1D", "1h", "5m"),
+        decision="short",
+        bias="bearish",
+        path_family="continuation",
+        stage="c4",
+        criteria=(),
+        entry=plan.entry,
+        stop=plan.stop,
+        targets=(plan.target,),
+        why="Daily Candle 2 swept the high; the 1h closed back down at the fair value gap and the 5m turned.",
+        plan=plan,
+    )
+
+
+def collect() -> tuple[list[tuple[str, dict]], DiscordAlerts]:
+    sent: list[tuple[str, dict]] = []
+    return sent, DiscordAlerts(URL, post=lambda url, payload: sent.append((url, payload)), background=False)
+
+
+def test_an_actionable_trigger_sends_one_message_with_levels_stop_reason_and_setup():
+    sent, alerts = collect()
+    assert alerts.consider(verdict()) is True
+    assert len(sent) == 1
+    url, payload = sent[0]
+    assert url == URL
+    text = payload["content"]
+    assert text.startswith("**NQ SHORT** · 1D / 1h / 5m · continuation · Thu 12 Nov 09:45 New York")
+    assert "Entry **25,410.00** · Stop **25,436.00** · Target **25,358.00** (2.0R)" in text
+    assert "protected high from the entry CISD" in text  # the stop's protected swing
+    assert "Stop 6.2% of adr · costs 0.05r mini, 0.11r micro".lower() in text.lower()
+    assert "Why: Daily Candle 2 swept the high" in text
+    assert payload["allowed_mentions"] == {"parse": []}  # an alert never pings anyone
+
+
+def test_the_same_trigger_is_sent_once_and_a_new_trigger_again():
+    sent, alerts = collect()
+    alerts.consider(verdict())
+    alerts.consider(verdict(age_bars=2))  # the next check, same trigger
+    assert len(sent) == 1
+    alerts.consider(verdict(since=datetime(2026, 11, 12, 10, 5, tzinfo=NY)))
+    assert len(sent) == 2
+
+
+@pytest.mark.parametrize(
+    "change",
+    [
+        {"stage_label": "late"},  # first seen long after it triggered
+        {"state": "planned"},
+        {"outcome": "target_reached"},
+        {"outcome": "stopped"},
+    ],
+)
+def test_no_alert_unless_the_trade_has_just_triggered_and_is_open(change):
+    sent, alerts = collect()
+    assert alerts.consider(verdict(**change)) is False
+    assert sent == []
+
+
+def test_no_alert_on_watch_or_no_trade_or_without_a_plan():
+    sent, alerts = collect()
+    assert alerts.consider(replace(verdict(), decision="watch")) is False
+    assert alerts.consider(replace(verdict(), decision="no_trade")) is False
+    assert alerts.consider(replace(verdict(), plan=None)) is False
+    assert alerts.consider(None) is False
+    assert sent == []
+
+
+def test_a_failing_webhook_is_logged_and_never_raises(caplog):
+    def refuse(url, payload):
+        raise OSError("connection refused")
+
+    alerts = DiscordAlerts(URL, post=refuse, background=False)
+    assert alerts.consider(verdict()) is True
+    assert "Discord alert failed" in caplog.text
+
+
+def test_sent_triggers_are_remembered_across_restarts(tmp_path: Path):
+    sent: list = []
+    post = lambda url, payload: sent.append(payload)  # noqa: E731
+    DiscordAlerts(URL, tmp_path, post=post, background=False).consider(verdict())
+    assert json.loads((tmp_path / SENT_FILE).read_text(encoding="utf-8")) == [trigger_key(verdict())]
+    DiscordAlerts(URL, tmp_path, post=post, background=False).consider(verdict())  # the app restarted
+    assert len(sent) == 1
+
+
+def test_webhook_is_read_from_desktop_json_and_only_a_discord_url_counts(tmp_path: Path):
+    assert webhook_from_state(tmp_path) == ""
+    assert DiscordAlerts.from_state(tmp_path) is None
+    (tmp_path / "desktop.json").write_text(json.dumps({"discord_webhook": "https://example.com/hook"}), encoding="utf-8")
+    assert webhook_from_state(tmp_path) == ""
+    (tmp_path / "desktop.json").write_text(json.dumps({"history_dir": "x", "discord_webhook": f" {URL} "}), encoding="utf-8")
+    assert webhook_from_state(tmp_path) == URL
+    assert DiscordAlerts.from_state(tmp_path) is not None
+
+
+def test_message_stays_under_discords_limit():
+    long = verdict(note="x" * 5000)
+    assert len(message(long)) <= 2000
