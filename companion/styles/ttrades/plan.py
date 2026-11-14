@@ -21,12 +21,13 @@ from dataclasses import dataclass
 import numpy as np
 
 from companion.styles.ttrades.bias import BiasRead
+from companion.styles.ttrades.config import TTradesConfig
 from companion.styles.ttrades.context import Context, View
 from companion.styles.ttrades.continuation import PathOutcome
 from companion.styles.ttrades.primitives import BEAR, BULL, CisdRead, Side, candle3_edge
 from companion.styles.ttrades.read import _Teller, _blockers, _cap, level_words, money
 from companion.styles.ttrades.reversal import nearest_level
-from companion.types import PlanStep, PositionPlan, ReadStep
+from companion.types import LookFor, LookOption, LookStep, PlanStep, PositionPlan, ReadStep
 
 DONE, NEXT, LATER, BLOCKED = "done", "next", "later", "blocked"
 
@@ -86,27 +87,54 @@ def _assemble(drafts: list[_Draft], blockers: dict[str, list[str]], restart: int
 # --- continuation -----------------------------------------------------------------
 
 
-def _nearest_poi(view: View, bias: BiasRead, level: float) -> tuple[float, str, float | None] | None:
-    """The point of interest a setup candle reaches first from above (rules.md 3.14, stage
-    c2): the highest of the untaken setup swing lows, the unfilled gaps above the respect
-    level and the bias order block. Returns its near edge, its name and, for the order
-    block, the mean threshold a candle that trades into it has to close at or above."""
+@dataclass(frozen=True)
+class _Poi:
+    """A point of interest ahead of a pullback, in the side's mirrored space."""
+
+    near: float  # the edge a pullback from above reaches first
+    top: float  # the zone drawn for it (a swing low is its candle's lower wick)
+    bottom: float
+    name: str  # in a sentence: "the unfilled 1h fair value gap"
+    short: str  # on its own: "1h fair value gap"
+    mid: float | None  # the order block's mean threshold
+
+
+def _pois(view: View, bias: BiasRead, level: float) -> list[_Poi]:
+    """The points of interest a setup candle can reach from above (rules.md 3.14, stage
+    c2): the untaken setup swing lows, the unfilled gaps above the respect level and the
+    bias order block, nearest (highest near edge) first. Ties keep this order."""
     s, b, cfg, side = view.S, view.B, view.ctx.cfg, view.side
     if not s.n or not view.has_forming:
-        return None
-    found: list[tuple[float, str, float | None]] = []
+        return []
+    found: list[_Poi] = []
     first = s.first_at_or_after(b.times[b.n - 2]) if b.n >= 2 else 0
     for swing in s.swing_lows:
         if swing.pos + 1 >= s.n or swing.pos < first or float(s.low[swing.pos + 1 :].min()) < swing.price:
             continue
-        found.append((swing.price, f"the untaken {s.tf} swing {side.lo}", None))
+        body = float(min(s.open[swing.pos], s.close[swing.pos]))
+        found.append(_Poi(swing.price, body, swing.price, f"the untaken {s.tf} swing {side.lo}", f"{s.tf} swing {side.lo}", None))
     for gap in s.gaps:
         if gap.pos + 1 >= s.n or gap.fill_pos is not None or gap.top - gap.bottom < cfg.fvg_min_size or not gap.top > level:
             continue
-        found.append((gap.top, f"the unfilled {s.tf} fair value gap", None))
+        found.append(_Poi(gap.top, gap.top, gap.bottom, f"the unfilled {s.tf} fair value gap", f"{s.tf} fair value gap", None))
     if bias.order_block is not None:
-        found.append((bias.order_block.top, "the bias order block", bias.order_block.mid))
-    return max(found, key=lambda item: item[0]) if found else None
+        ob = bias.order_block
+        found.append(_Poi(ob.top, ob.top, ob.bottom, "the bias order block", "Bias order block", ob.mid))
+    return sorted(found, key=lambda poi: poi.near, reverse=True)
+
+
+def _nearest_poi(view: View, bias: BiasRead, level: float) -> tuple[float, str, float | None] | None:
+    """The point of interest a setup candle reaches first from above: its near edge, its
+    name and, for the order block, the mean threshold a candle that trades into it has to
+    close at or above."""
+    found = _pois(view, bias, level)
+    return (found[0].near, found[0].name, found[0].mid) if found else None
+
+
+def _conservative(cfg: TTradesConfig, path: PathOutcome) -> bool:
+    """The continuation entry is the conservative one: by configuration, or forced because
+    the bias Candle 2 expanded (rules.md 6)."""
+    return cfg.entry_mode_continuation == "conservative" or path.checklist.passed("bias_c2_not_expanded") is False
 
 
 def _order_block_need(tell: _Teller, read: CisdRead, low: float) -> tuple[str, float, str]:
@@ -203,7 +231,7 @@ def _continuation(ctx: Context, bias: BiasRead, path: PathOutcome, tell: _Teller
     # the turn on the entry timeframe, and the entry
     read: CisdRead | None = seen.get("entry_read")
     trigger = path.trigger
-    conservative = cfg.entry_mode_continuation == "conservative" or cl.passed("bias_c2_not_expanded") is False
+    conservative = _conservative(cfg, path)
 
     def turn_need() -> tuple[str, float | None, str]:
         if read is None:
@@ -424,7 +452,7 @@ def _position(ctx: Context, path: PathOutcome, tell: _Teller, decision: str, sta
     k = b.n - 1
     if path.family == "continuation":
         read: CisdRead | None = path.seen.get("entry_read")
-        conservative = cfg.entry_mode_continuation == "conservative" or path.checklist.passed("bias_c2_not_expanded") is False
+        conservative = _conservative(cfg, path)
         if path.seen.get("setup") is None or conservative or read is None or read.confirmed or read.lower_low is not None:
             return None
         if path.checklist.passed("cont_entry_window_open") is False:
@@ -491,3 +519,108 @@ def build_plan(
         blockers = {role: [phrase for phrase in phrases if "entry window" not in phrase] for role, phrases in blockers.items()}
     steps = _assemble(drafts, blockers, restart)
     return steps, _position(ctx, selected, tell, decision, stage, plan_told)
+
+
+# --- what to look for -------------------------------------------------------------
+
+
+def look_options(found: list[_Poi], side: Side, setup_tf: str) -> tuple[LookOption, ...]:
+    """Option A, the nearest point of interest, and option B, the first one wholly beyond A
+    (one that overlaps A is part of the same pullback, not a next level). Real prices."""
+    if not found:
+        return ()
+
+    def option(key: str, poi: _Poi, condition: str = "") -> LookOption:
+        top, bottom = side.zone(poi.top, poi.bottom)
+        return LookOption(key, poi.short, top, bottom, condition)
+
+    a = found[0]
+    beyond = min(a.top, a.bottom)
+    b = next((poi for poi in found[1:] if max(poi.top, poi.bottom) < beyond), None)
+    if b is None:
+        return (option("A", a),)
+    return option("A", a), option("B", b, f"only after a {setup_tf} close {side.below} the POI")
+
+
+def build_look_for(ctx: Context, bias: BiasRead, path: PathOutcome | None, steps: tuple[PlanStep, ...]) -> LookFor | None:
+    """What to look for while a continuation waits on its setup (display only).
+
+    Shown while no setup closure has happened and a point of interest lies ahead: the
+    setup timeframe's C1 into the nearest one (option A), its C2 sweeping C1, and the entry
+    while that C2 forms. Option B is the next point of interest beyond A, in play only
+    after a setup close through A. Nothing here changes a decision, a check or a level.
+    """
+    if path is None or path.side is None or path.family != "continuation" or path.trigger is not None:
+        return None
+    if path.seen.get("setup") is not None:
+        return None
+    setup_steps = [step for step in steps if step.role == "setup"]
+    entry_steps = [step for step in steps if step.role == "entry"]
+    if len(setup_steps) != 2 or not entry_steps:
+        return None  # not the continuation's pullback, closure and entry: nothing to restate
+    level = path.seen.get("level")
+    if level is None:
+        return None
+    tell = _Teller(ctx, path.side)
+    side, b, s, e = tell.side, tell.view.B, tell.view.S, tell.view.E
+    found = _pois(tell.view, bias, level)
+    if not found or not b.n:
+        return None
+    cfg = ctx.cfg
+    options = look_options(found, side, s.tf)
+    conservative = _conservative(cfg, path)
+    if conservative:
+        entry_step = f"After that C2: a {e.tf} turn {tell.up}, a pullback that holds, and a close back {tell.up}"
+        entry_words = f"{e.tf} close back {tell.up} after a pullback that holds"
+    else:
+        entry_step = f"While that C2 forms: a {e.tf} close {side.above} the {side.down_close} run"
+        entry_words = f"{e.tf} close {side.above} the run"
+    pullback, closure = setup_steps
+    statuses = _look_progress(tell, found[0], (pullback.status, closure.status, entry_steps[-1].status))
+    look_steps = (
+        LookStep(f"{s.tf} C1 pushes into the POI", statuses[0]),
+        LookStep(f"{s.tf} C2 sweeps C1's {side.lo}", statuses[1]),
+        LookStep(entry_step, statuses[2]),
+    )
+    structural = float(b.high[b.n - 1])  # the previous bias candle's high: the structural level (rules.md 8.3)
+    name = ("PDH" if side.bullish else "PDL") if b.tf == "1D" else f"previous {b.tf} {side.hi}"
+    target = f"{cfg.target_rr:g}R, then {name}" if cfg.target_mode == "r_multiple" else name
+    return LookFor(
+        direction=side.trade,  # type: ignore[arg-type]
+        timeframe=s.tf,
+        entry_timeframe=e.tf,
+        steps=look_steps,
+        options=options,
+        entry=entry_words,
+        stop=f"{side.below} the {s.tf} C2 {side.lo}",
+        target=target,
+        target_price=side.px(structural),
+        entry_during=not conservative,
+    )
+
+
+def _look_progress(tell: _Teller, a: _Poi, statuses: tuple[str, str, str]) -> tuple[str, str, str]:
+    """Where the look-for sequence stands, read from the setup candle still forming.
+
+    The steps the rules keep move on closed setup candles only, so on their own they would
+    show "C1 next" all through a forming C2. For display only, the closed entry bars inside
+    the forming setup candle say more: C1 (the last closed setup candle) or the forming one
+    has reached the zone, and the forming one has taken C1's low. Nothing here feeds a
+    check or a decision; a blocked step keeps what the rules say.
+    """
+    if "blocked" in statuses or "done" in statuses[1:]:
+        return statuses
+    s, e = tell.view.S, tell.view.E
+    if not s.n:
+        return statuses
+    part = e.first_at_or_after(s.closes_at[s.n - 1])
+    low_now = float(e.low[part:].min()) if part < e.n else None  # the forming setup candle, from closed entry bars
+    c1_low = float(s.low[s.n - 1])
+    c1_in = c1_low <= a.near
+    swept = low_now is not None and low_now < c1_low
+    reached = c1_in or (low_now is not None and low_now <= a.near)
+    if swept and reached:
+        return "done", "done", "next"  # C2 is forming and has swept C1: its entry is what comes now
+    if c1_in:
+        return "done", "next", "later"
+    return statuses

@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import types
 import typing
 from dataclasses import fields, is_dataclass
@@ -32,6 +33,7 @@ from companion.app_model import DATA_HISTORY, Candle, CompanionController, LiveS
 from companion.bars import DATA_DIR
 from companion.core import wire
 from companion.core.loop import Core, inline
+from companion.types import LookFor, LookOption, LookStep
 
 FIXTURES = Path(__file__).resolve().parent / "fixtures"
 MOMENT = {"symbol": "NQ", "stack": "1D / 1h / 5m", "style": "ttrades", "data": DATA_HISTORY, "when": "2025-11-11 08:45"}
@@ -73,6 +75,9 @@ def checked(all_checked: dict[str, tuple[dict[str, Any], VerdictView]]) -> tuple
 def rebuild(hint: Any, value: Any) -> Any:
     """Turn a wire value back into the Python type ``hint`` names (the test's own reading of the contract)."""
     origin = typing.get_origin(hint)
+    if origin is typing.Literal:
+        assert value in typing.get_args(hint), (hint, value)
+        return value
     if origin in (typing.Union, types.UnionType):
         options = [arg for arg in typing.get_args(hint) if arg is not type(None)]
         return None if value is None else rebuild(options[0], value)
@@ -84,7 +89,7 @@ def rebuild(hint: Any, value: Any) -> Any:
         return pd.Timestamp(value)
     if is_dataclass(hint):
         assert isinstance(value, dict)
-        hints = typing.get_type_hints(hint, vars(app_model))
+        hints = typing.get_type_hints(hint, {**vars(sys.modules[hint.__module__]), **vars(app_model)})
         return hint(**{item.name: rebuild(hints[item.name], value[item.name]) for item in fields(hint)})
     if hint is float:
         return float(value)
@@ -194,6 +199,41 @@ def shape(value: Any, path: str = "") -> set[str]:
         return set()
     kind = "number" if isinstance(value, (int, float)) and not isinstance(value, bool) else type(value).__name__
     return {f"{path}:{kind}"}
+
+
+# --- what to look for -------------------------------------------------------------------
+
+
+LOOK = LookFor(
+    direction="short",
+    timeframe="1h",
+    entry_timeframe="5m",
+    steps=(LookStep("1h C1 pushes into the POI", "next"), LookStep("1h C2 sweeps C1's high", "later")),
+    options=(
+        LookOption("A", "1h fair value gap", 25428.0, 25410.0),
+        LookOption("B", "Bias order block", 25525.0, 25505.0, "only after a 1h close above the POI"),
+    ),
+    entry="5m close below the run",
+    stop="above the 1h C2 high",
+    target="2R, then PDL",
+    target_price=25360.0,
+)
+
+
+def test_look_for_survives_the_wire() -> None:
+    sent = json.loads(wire.dumps({"look_for": wire.plain(LOOK)}))["look_for"]
+    assert rebuild(LookFor, sent) == LOOK
+    assert sent["options"][1] == {"key": "B", "name": "Bias order block", "top": 25525.0, "bottom": 25505.0, "condition": "only after a 1h close above the POI"}
+
+
+def test_the_view_carries_look_for_and_null_when_there_is_none() -> None:
+    for look in (LOOK, None):
+        view = VerdictView(
+            decision="watch", decision_word="WATCH", tone="watch", headline="", bias="", path="", stage="", levels=(),
+            has_levels=False, invalidation="", summary="", groups=(), look_for=look,
+        )  # fmt: skip
+        sent = json.loads(wire.dumps({"view": wire.view(view)}))["view"]
+        assert ("look_for" in sent) and rebuild(VerdictView, sent) == view
 
 
 # --- values ---------------------------------------------------------------------------

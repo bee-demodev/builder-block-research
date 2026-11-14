@@ -209,6 +209,46 @@ class PositionPlan:
 
 
 @dataclass(frozen=True)
+class LookStep:
+    """One line of "look for": what the trader watches for, in order, with its status."""
+
+    label: str  # e.g. "1h C1 pushes into the POI"
+    status: StepStatus
+
+
+@dataclass(frozen=True)
+class LookOption:
+    """A zone the setup may play out at. "A" is the nearest; "B" the next one beyond it."""
+
+    key: str  # "A" | "B"
+    name: str  # what the zone is, e.g. "1h fair value gap"
+    top: float  # real prices
+    bottom: float
+    condition: str = ""  # "" for A; when B comes into play, e.g. "only after a 1h close above the POI"
+
+
+@dataclass(frozen=True)
+class LookFor:
+    """What to look for while an idea waits on its setup: display only, nothing here decides.
+
+    Built from what the rules already computed (the steps, the points of interest, the
+    structural level). ``target`` names the exit in words ("2R, then PDL") because the 2R
+    price depends on a candle that has not formed; ``target_price`` is the structural level.
+    """
+
+    direction: TradeSide
+    timeframe: str  # the timeframe to watch for the setup, e.g. "1h"
+    entry_timeframe: str  # e.g. "5m"
+    steps: tuple[LookStep, ...]
+    options: tuple[LookOption, ...]  # A first
+    entry: str  # e.g. "5m close below the run"
+    stop: str  # e.g. "above the 1h C2 high"
+    target: str  # e.g. "2R, then PDL"
+    target_price: float | None = None  # the structural level named in ``target``
+    entry_during: bool = True  # the entry forms while the setup's C2 forms (False: after it, the conservative entry)
+
+
+@dataclass(frozen=True)
 class Verdict:
     style: str  # e.g. "ttrades"
     symbol: str
@@ -239,3 +279,5 @@ class Verdict:
     # rules cannot compute its levels yet; the steps then say what must come first.
     steps: tuple[PlanStep, ...] = field(default_factory=tuple)
     plan: PositionPlan | None = None
+    # What to look for while the setup is still ahead (display only); None when there is nothing to show.
+    look_for: LookFor | None = None

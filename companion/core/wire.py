@@ -87,6 +87,8 @@ snapshot) | null. ``load_ms`` was added within version 1: a client that ignores 
   warning), ``auto_note`` (with a forced side: how the style reads it by itself; "" otherwise).
 - ``steps``: ``[Step]``, what has to happen, highest timeframe first.
 - ``plan``: ``Plan`` | null, the trade plan.
+- ``look_for``: ``LookFor`` | null, what to look for while the setup is still ahead
+  (display only; null when there is nothing to show, and absent from an older core).
 
 ``Level``: ``name``, ``price`` (formatted "24,722.50"), ``note``.
 ``Group``: ``name``, ``title``, ``path``, ``active``, ``collapsed``, ``rows``: ``[Row]``,
@@ -110,6 +112,15 @@ timeframe), ``since`` (triggered: open of the trigger bar; planned: open of the 
 closed entry bar) | null, ``outcome_at`` (open of the bar that reached the target or the
 stop) | null, ``last`` (last closed entry close) | null, ``r_now`` (triggered: ``last``
 from the entry in multiples of the risk) | null.
+
+``LookFor``: ``direction`` (long | short), ``timeframe`` (the timeframe to watch for the
+setup, "1h"), ``entry_timeframe`` ("5m"), ``steps``: ``[{"label", "status"}]`` (status as a
+``Step``'s), ``options``: ``[{"key": "A" | "B", "name", "top", "bottom", "condition"}]`` (A,
+the nearest point of interest, first; B the next one beyond it, ``condition`` saying when it
+comes into play; real prices), ``entry``, ``stop``, ``target`` (words: "5m close below the
+run", "above the 1h C2 high", "2R, then PDL"; no price that depends on a candle not yet
+formed), ``target_price``: float | null (the structural level ``target`` names),
+``entry_during``: bool (the entry forms while the setup's C2 forms; false: after it).
 
 ``Chart``: ``role`` (bias | setup | entry), ``timeframe``, ``candles``: ``[Candle]`` (never
 one after the analysis time), ``marks``: ``[Mark]``, ``status`` (the read's status for this
@@ -161,7 +172,7 @@ libraries draw UTC and this makes their axis read New York time.
 Version
 -------
 Every field added since the first release of version 1 (``side``, ``sides``,
-``side_labels``, ``load_ms``, the plan, the steps and the tool) is an addition, so
+``side_labels``, ``load_ms``, the plan, the steps, the tool and ``look_for``) is an addition, so
 ``version`` stays 1. The one narrowing: ``compute_ms`` no longer includes loading bars
 (now ``load_ms``); a version 1 client only displays it, and it now says what its name
 says. Unknown keys must be ignored by a client.

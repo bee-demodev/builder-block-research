@@ -3,7 +3,7 @@
 // these are those, plus text size and the direction colours.
 
 export type TextSize = 'normal' | 'large' | 'larger';
-export type Scheme = 'grey' | 'green-red' | 'blue-orange' | 'mono';
+export type Scheme = 'grey' | 'green-red' | 'green-black' | 'blue-orange' | 'mono';
 
 export interface Overlays {
   /** Names on level lines. Off: trade lines keep their bare role word. */
@@ -31,6 +31,7 @@ export const TEXT_SIZES: readonly { value: TextSize; label: string; scale: numbe
 export const SCHEMES: readonly { value: Scheme; label: string; hint: string }[] = [
   { value: 'grey', label: 'Grey candles', hint: 'Colour only where it means something' },
   { value: 'green-red', label: 'Green / red', hint: 'Up and long green, down and short red' },
+  { value: 'green-black', label: 'Green / black', hint: 'Up green, down black; the stop stays red' },
   { value: 'blue-orange', label: 'Blue / orange', hint: 'Colour-blind safe' },
   { value: 'mono', label: 'Monochrome', hint: 'Hollow up, filled down, sides in words' },
 ];

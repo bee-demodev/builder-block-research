@@ -41,7 +41,7 @@ from companion import timeframes as _timeframes
 from companion.styles import base as _styles
 from companion.tradingview import symbols as _tv_symbols
 from companion.tradingview.errors import TradingViewError
-from companion.types import MarkupItem, PositionPlan, TimeframeStack, Verdict
+from companion.types import LookFor, MarkupItem, PositionPlan, TimeframeStack, Verdict
 
 CUSTOM_CHOICE = "Custom…"
 WHEN_FORMAT = "%Y-%m-%d %H:%M"
@@ -565,6 +565,7 @@ class VerdictView:
     auto_note: str = ""  # a forced side the style itself reads differently
     steps: tuple[StepRow, ...] = ()
     plan: PlanView | None = None
+    look_for: LookFor | None = None  # what to look for while the setup is ahead (display only)
 
 
 def path_families() -> tuple[str, ...]:
@@ -1055,6 +1056,7 @@ def present(
         auto_note=verdict.auto_note,
         steps=step_rows(verdict),
         plan=plan_view(verdict.plan),
+        look_for=verdict.look_for,
         last=last_price(verdict, charts),
         decision=verdict.decision,
         decision_word=DECISION_WORDS.get(verdict.decision, verdict.decision.replace("_", " ").upper()),

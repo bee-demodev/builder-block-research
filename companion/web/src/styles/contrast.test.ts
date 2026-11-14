@@ -54,6 +54,9 @@ const over = (fg: string, alpha: number, bg: string) => {
   return `#${[16, 8, 0].map((sh) => mix(sh).toString(16).padStart(2, '0')).join('')}`;
 };
 
+/** What outlines a candle: a down candle's own line colour when the scheme sets one (a black body), else its fill. */
+const shape = (t: Record<string, string>, c: 'candle-up' | 'candle-down') => (c === 'candle-down' ? (t['candle-down-line'] ?? t[c]!) : t[c]!);
+
 const cases = SCHEMES.flatMap((s) => (['light', 'dark'] as const).map((theme) => [`${s.value} ${theme}`, tokens(s.value, theme)] as const));
 
 describe.each(cases)('%s', (_name, t) => {
@@ -85,9 +88,9 @@ describe.each(cases)('%s', (_name, t) => {
     for (const zone of ['reward', 'risk']) {
       const fill = over(t[zone]!, ZONE_ALPHA, t.surface!);
       expect(ratio(t[zone]!, fill), `${zone} caption on its zone`).toBeGreaterThanOrEqual(4.5);
-      for (const c of ['candle-up', 'candle-down']) expect(ratio(t[c]!, fill), `${c} over the ${zone} zone`).toBeGreaterThanOrEqual(3);
+      for (const c of ['candle-up', 'candle-down'] as const) expect(ratio(shape(t, c), fill), `${c} over the ${zone} zone`).toBeGreaterThanOrEqual(3);
     }
-    for (const c of ['candle-up', 'candle-down']) expect(ratio(t[c]!, t.surface!), `${c} on the pane`).toBeGreaterThanOrEqual(3);
+    for (const c of ['candle-up', 'candle-down'] as const) expect(ratio(shape(t, c), t.surface!), `${c} on the pane`).toBeGreaterThanOrEqual(3);
   });
 });
 

@@ -3,7 +3,8 @@
 // Every incoming frame goes through parseServerFrame; a malformed frame is
 // logged and dropped there and never reaches the reducer or render.
 // Fields added within version 1 (the side, the suggestion, steps, plan, tool,
-// load_ms) are read with a fallback, so a frame from an older core still parses.
+// load_ms, look_for) are read with a fallback, so a frame from an older core still parses.
+// look_for is display only: a malformed one is logged and read as null, the frame kept.
 
 export const WIRE_VERSION = 1;
 
@@ -199,6 +200,39 @@ export interface Tool {
   captions: { reward: string; risk: string };
 }
 
+export interface LookStep {
+  label: string;
+  status: StepStatus;
+}
+
+/** A zone the setup may play out at: "A" the nearest point of interest, "B" the next one beyond it. */
+export interface LookOption {
+  key: string;
+  name: string;
+  top: number;
+  bottom: number;
+  /** "" for A; when B comes into play, e.g. "only after a 1h close above the POI". */
+  condition: string;
+}
+
+/** What to look for while the setup is still ahead. Display only. */
+export interface LookFor {
+  direction: TradeSide;
+  /** The timeframe to watch for the setup, e.g. "1h". */
+  timeframe: string;
+  entry_timeframe: string;
+  steps: LookStep[];
+  options: LookOption[];
+  /** Words: "5m close below the run", "above the 1h C2 high", "2R, then PDL". */
+  entry: string;
+  stop: string;
+  target: string;
+  /** The structural level `target` names. */
+  target_price: number | null;
+  /** The entry forms while the setup's C2 forms; false: after it (the conservative entry). */
+  entry_during: boolean;
+}
+
 export interface ChartView {
   role: string;
   timeframe: string;
@@ -246,6 +280,7 @@ export interface VerdictView {
   auto_note: string;
   steps: Step[];
   plan: Plan | null;
+  look_for: LookFor | null;
 }
 
 // ---------- frames ----------
@@ -546,6 +581,33 @@ const plan = obj<Plan>({
   r_now: nullable(num),
 });
 
+const lookFor = obj<LookFor>({
+  direction: tradeSide,
+  timeframe: str,
+  entry_timeframe: str,
+  steps: arr(obj<LookStep>({ label: str, status: oneOf<StepStatus>('done', 'next', 'later', 'blocked') })),
+  options: arr(obj<LookOption>({ key: str, name: str, top: num, bottom: num, condition: optional(str, () => '') })),
+  entry: str,
+  stop: str,
+  target: str,
+  target_price: optional(nullable(num), () => null),
+  entry_during: optional(bool, () => true),
+});
+
+/** A display-only field: when it does not parse, log it and read null; the frame is kept. */
+const lenient =
+  <T>(r: Reader<T>): Reader<T | null> =>
+  (v, p) => {
+    if (v === undefined || v === null) return null;
+    try {
+      return r(v, p);
+    } catch (e) {
+      if (!(e instanceof FrameError)) throw e;
+      console.warn(`[wire] ignored ${e.message}`);
+      return null;
+    }
+  };
+
 const chartView = obj<ChartView>({
   role: str,
   timeframe: str,
@@ -594,6 +656,7 @@ const verdictFields = obj<VerdictView>({
   auto_note: optional(str, () => ''),
   steps: optional(arr(step), () => []),
   plan: optional(nullable(plan), () => null),
+  look_for: lenient(lookFor),
 });
 
 /** An older core sends no suggestion: its decision is the suggestion then. */

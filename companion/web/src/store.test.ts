@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { demoOptions, demoState, errorStaleExtra, longView, snapshot, watchView } from './demo/fixtures';
-import { initialModel, isPaused, isStale, mergeCandle, reduce, type Model } from './store';
+import { foldIntoForming, initialModel, isPaused, isStale, mergeCandle, reduce, type Model } from './store';
 import type { Candle, ServerFrame } from './wire';
 
 const frame = (m: Model, f: ServerFrame) => reduce(m, { type: 'frame', frame: f });
@@ -99,7 +99,7 @@ describe('ticks', () => {
     return c[c.length - 1]!;
   };
 
-  it('updates only the chart with the tick timeframe, in place', () => {
+  it('updates the chart of the tick timeframe in place', () => {
     const m0 = frame(hello(), snapshot(1, watchView()));
     const entry = m0.view!.charts.find((c) => c.timeframe === '5m')!;
     const forming = entry.candles[entry.candles.length - 1]!;
@@ -108,12 +108,38 @@ describe('ticks', () => {
 
     expect(lastOf(m1, '5m').close).toBe(forming.close + 3);
     expect(m1.view!.charts.find((c) => c.timeframe === '5m')!.candles).toHaveLength(entry.candles.length);
-    // other charts untouched (same objects)
-    expect(m1.view!.charts.find((c) => c.timeframe === '1h')).toBe(m0.view!.charts.find((c) => c.timeframe === '1h'));
-    expect(m1.view!.charts.find((c) => c.timeframe === '1D')).toBe(m0.view!.charts.find((c) => c.timeframe === '1D'));
     // earlier candles keep identity so the chart can update without a redraw
     expect(m1.view!.charts.find((c) => c.timeframe === '5m')!.candles[0]).toBe(entry.candles[0]);
     expect(m1.lastPrice['5m']).toBe(candle.close);
+  });
+
+  it('moves the forming candle of every higher timeframe the tick falls inside, so the panes keep agreeing', () => {
+    const m0 = frame(hello(), snapshot(1, watchView()));
+    const entry = m0.view!.charts.find((c) => c.timeframe === '5m')!;
+    const forming = entry.candles[entry.candles.length - 1]!;
+    const spike = lastOf(m0, '1D').high + 40; // above anything on screen
+    const candle: Candle = { ...forming, close: spike - 10, high: spike };
+    const m1 = frame(m0, { type: 'tick', timeframe: '5m', candle, last: candle.close });
+    for (const tf of ['1h', '1D']) {
+      const before = m0.view!.charts.find((c) => c.timeframe === tf)!.candles;
+      const after = m1.view!.charts.find((c) => c.timeframe === tf)!.candles;
+      expect(after).toHaveLength(before.length);
+      expect(after.at(-1)).toMatchObject({ high: spike, close: spike - 10, low: before.at(-1)!.low, open: before.at(-1)!.open, forming: true });
+      expect(after[0]).toBe(before[0]);
+    }
+  });
+
+  it('leaves a higher timeframe alone when the tick is outside its forming candle, and never moves a lower one', () => {
+    const m0 = frame(hello(), snapshot(1, watchView()));
+    const setup = m0.view!.charts.find((c) => c.timeframe === '1h')!;
+    const hourLast = setup.candles.at(-1)!;
+    const late: Candle = { ...hourLast, t: hourLast.t + 3600, high: hourLast.high + 50 }; // past the forming 1h candle
+    expect(foldIntoForming(setup.candles, 60, late)).toBe(setup.candles);
+    const closed = [...setup.candles.slice(0, -1), { ...hourLast, forming: false }];
+    expect(foldIntoForming(closed, 60, { ...hourLast, high: hourLast.high + 50 })).toBe(closed);
+    // a 1h tick does not touch the 5m chart
+    const m1 = frame(m0, { type: 'tick', timeframe: '1h', candle: { ...hourLast, close: hourLast.close + 1 }, last: 0 });
+    expect(m1.view!.charts.find((c) => c.timeframe === '5m')).toBe(m0.view!.charts.find((c) => c.timeframe === '5m'));
   });
 
   it('ignores a tick for a timeframe that is not on screen, and a tick with no verdict', () => {

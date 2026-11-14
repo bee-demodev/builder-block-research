@@ -129,7 +129,7 @@ function entryCandles(): Candle[] {
 
 // ---------- marks ----------
 
-const level = (role: string, label: string, price: number, start: number | null, title = label): Mark => ({
+export const level = (role: string, label: string, price: number, start: number | null, title = label): Mark => ({
   kind: 'level',
   role,
   label,
@@ -165,9 +165,12 @@ const marker = (role: string, label: string, start: number, price: number | null
   end: null,
 });
 
+/** A numbered bias candle, titled as the core titles it ("Bias Candle 2", short "C2"). */
+export const biasCandle = (n: number, start: number, price: number, role = 'reference'): Mark => ({ ...marker(role, `C${n}`, start, price), title: `Bias Candle ${n}` });
+
 // ---------- checklist ----------
 
-const row = (key: string, status: CheckRow['status'], label: string, detail: string, tag: string, advisory = false): CheckRow => ({
+export const row = (key: string, status: CheckRow['status'], label: string, detail: string, tag: string, advisory = false): CheckRow => ({
   key,
   status,
   mark: status === 'pass' ? 'ok' : status === 'fail' ? 'x' : '...',
@@ -177,7 +180,7 @@ const row = (key: string, status: CheckRow['status'], label: string, detail: str
   advisory,
 });
 
-function group(name: string, title: string, path: string, rows: CheckRow[], extra: Partial<CheckGroup> = {}): CheckGroup {
+export function group(name: string, title: string, path: string, rows: CheckRow[], extra: Partial<CheckGroup> = {}): CheckGroup {
   const counted = rows.filter((r) => !r.advisory);
   const passed = counted.filter((r) => r.status === 'pass').length;
   const failed = counted.filter((r) => r.status === 'fail').length;
@@ -232,7 +235,7 @@ function groups(entryConfirmed: boolean): CheckGroup[] {
 
 // ---------- views ----------
 
-function chart(role: string, timeframe: string, minutes: number, candles: Candle[], read: Read, marks: Mark[], tool: Tool | null = null): ChartView {
+export function chart(role: string, timeframe: string, minutes: number, candles: Candle[], read: Read, marks: Mark[], tool: Tool | null = null): ChartView {
   const last = candles[candles.length - 1]!;
   return {
     role,
@@ -314,7 +317,7 @@ function longPlan(planned: boolean, since: string, last: number): Plan {
   };
 }
 
-const step = (number: number, status: Step['status'], timeframe: string, label: string, detail: string, price: number | null = null, level_label = ''): Step => ({
+export const step = (number: number, status: Step['status'], timeframe: string, label: string, detail: string, price: number | null = null, level_label = ''): Step => ({
   number,
   status,
   word: status.charAt(0).toUpperCase() + status.slice(1),
@@ -399,6 +402,7 @@ export function watchView(): VerdictView {
     auto_note: '',
     steps: longSteps(false),
     plan: longPlan(true, entry.at(-1)!.time, 25455.25),
+    look_for: null,
     charts: [
       chart('setup', '1h', 60, setup, setupRead, [
         level('target', 'Target 1', 25540, 14),
@@ -410,7 +414,8 @@ export function watchView(): VerdictView {
       ]),
       chart('bias', '1D', 1440, bias, biasRead, [
         level('confirm', 'Prior high', 25371, 27),
-        marker('confirm', 'C2', 28, 25431),
+        biasCandle(1, 27, 25371),
+        biasCandle(2, 28, 25431, 'confirm'),
       ]),
       chart('entry', '5m', 5, entry, entryRead, [marker('protected', 'Swept low', 20, 25398.75)], longTool(true, entry.length - 1)),
     ],
@@ -470,7 +475,8 @@ export function longView(): VerdictView {
       ]),
       chart('bias', '1D', 1440, bias, biasRead, [
         level('confirm', 'Prior high', 25371, 27),
-        marker('confirm', 'C2', 28, 25431),
+        biasCandle(1, 27, 25371),
+        biasCandle(2, 28, 25431, 'confirm'),
       ]),
       chart('entry', '5m', 5, entry, entryRead, [
         level('target', 'Target 1', 25540, 34),
@@ -508,6 +514,7 @@ export function sideView(view: VerdictView, side: Side): VerdictView {
     levels: [],
     waiting_for: '',
     plan: null,
+    look_for: null,
     steps: [
       step(1, 'blocked', '1D', '1D bias is bearish', 'The 1D bias is bullish: candle 2 closed above the prior high 25,371.00, so a short has nothing to follow'),
       step(2, 'later', '1h', '1h pulls back to a point of interest', ''),
@@ -554,3 +561,4 @@ export const errorStaleExtra = {
   status: { state: 'stale', text: 'No new bars for 2 min · last good 10:35', stale: true } satisfies Status,
   timing: null,
 } as const;
+

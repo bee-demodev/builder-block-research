@@ -15,13 +15,14 @@ import {
   snapshot,
   watchView,
 } from './fixtures';
+import { LOOK_WHEN, lookForView } from './lookfor';
 import { loadRealSnapshot, realStates, type RealScenario } from './real';
 import { rng, roundTick } from './seeded';
 
-export const DEMO_SCENARIOS = ['tour', 'watch', 'long', 'error', 'chart-problem', 'no-verdict', 'history', 'connecting', 'drop', 'real', 'real-triggered', 'real-planned'] as const;
+export const DEMO_SCENARIOS = ['tour', 'watch', 'long', 'error', 'chart-problem', 'no-verdict', 'history', 'connecting', 'drop', 'real', 'real-triggered', 'real-planned', 'look-for'] as const;
 export type DemoScenario = (typeof DEMO_SCENARIOS)[number];
 
-type Step = 'watch' | 'long' | 'error' | 'chart-problem';
+type Step = 'watch' | 'long' | 'error' | 'chart-problem' | 'look-for';
 const TOUR: Step[] = ['watch', 'long', 'error', 'chart-problem'];
 
 class DemoServer {
@@ -41,7 +42,8 @@ class DemoServer {
       this.state = { ...realStates[scenario as RealScenario] };
       this.real = loadRealSnapshot(scenario as RealScenario);
     }
-    this.step = scenario === 'long' ? 'long' : scenario === 'error' ? 'error' : scenario === 'chart-problem' ? 'chart-problem' : 'watch';
+    this.step = scenario === 'long' ? 'long' : scenario === 'error' ? 'error' : scenario === 'chart-problem' ? 'chart-problem' : scenario === 'look-for' ? 'look-for' : 'watch';
+    if (scenario === 'look-for') this.state = { ...this.state, when: LOOK_WHEN };
   }
 
   attach(socket: FakeSocket): void {
@@ -167,7 +169,7 @@ class DemoServer {
       this.stopTicks();
       return;
     }
-    const base = this.step === 'long' ? longView() : this.step === 'chart-problem' ? chartProblemView() : watchView();
+    const base = this.step === 'long' ? longView() : this.step === 'chart-problem' ? chartProblemView() : this.step === 'look-for' ? lookForView() : watchView();
     this.view = sideView(base, this.state.side);
     if (this.state.data === 'Saved history') {
       this.view = { ...this.view, source_note: 'Sample data, demo mode. Pretending to read saved history.' };

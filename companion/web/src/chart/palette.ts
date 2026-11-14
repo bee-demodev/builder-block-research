@@ -12,6 +12,8 @@ export interface Palette {
   faint: string;
   up: string;
   down: string;
+  /** The down candle's outline and wick: its own colour unless the scheme sets one (a black body on a dark pane). */
+  downLine: string;
   watch: string;
   bull: string;
   bear: string;
@@ -23,7 +25,7 @@ export interface Palette {
   hollowUp: boolean;
 }
 
-type ColourKey = Exclude<keyof Palette, 'hollowUp'>;
+type ColourKey = Exclude<keyof Palette, 'hollowUp' | 'downLine'>;
 
 const VARS: Record<ColourKey, string> = {
   bg: '--bg',
@@ -50,6 +52,7 @@ export function readPalette(el: Element = document.documentElement): Palette {
   for (const key of Object.keys(VARS) as ColourKey[]) {
     out[key] = style.getPropertyValue(VARS[key]).trim() || '#888888';
   }
+  out.downLine = style.getPropertyValue('--candle-down-line').trim() || out.down;
   out.hollowUp = style.getPropertyValue('--candle-up-hollow').trim() === '1';
   return out;
 }

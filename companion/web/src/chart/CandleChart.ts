@@ -18,7 +18,9 @@ import {
 import { DEFAULT_DISPLAY, type Overlays } from '../display';
 import { axisLabel, crosshairLabel, formatPrice, priceDecimals } from '../format';
 import type { Candle, ChartView, Direction, Mark, Tool } from '../wire';
-import { MarksPrimitive } from './MarksPrimitive';
+import { COLUMN_SLOT, type Band, type HtfColumn } from './htf';
+import type { LookScene } from './LookLayer';
+import { MarksPrimitive, columnGap, projectedSlots } from './MarksPrimitive';
 import { diffCandles, initialWindowStart, partitionMarks } from './marks';
 import { withAlpha, type Palette } from './palette';
 
@@ -46,6 +48,9 @@ export class CandleChart {
   private candles: readonly Candle[] = [];
   private marks: readonly Mark[] | null = null;
   private tool: Tool | null = null;
+  private column: HtfColumn | null = null;
+  private columnBand: Band | null = null;
+  private look: LookScene | null = null;
   private direction: Direction = '';
   private opts: ChartOptions = { overlays: DEFAULT_DISPLAY.overlays, stale: false, scale: 1 };
   private byTime = new Map<number, Candle>();
@@ -117,10 +122,18 @@ export class CandleChart {
     this.applyMarks();
   }
 
-  /** Bring the chart to `view`. A snapshot redraws; a tick updates the tail in place. */
-  setView(view: ChartView, direction: Direction): void {
+  /**
+   * Bring the chart to `view`. A snapshot redraws; a tick updates the tail in place.
+   * `column` is the timeframe above, drawn right of the last candle (see htf.ts), held
+   * to `band` on the price scale. `look` is what to look for on this pane (LookLayer.ts).
+   */
+  setView(view: ChartView, direction: Direction, column: HtfColumn | null = null, band: Band | null = null, look: LookScene | null = null): void {
     const diff = diffCandles(this.candles, view.candles);
-    const marksChanged = view.marks !== this.marks || view.tool !== this.tool || direction !== this.direction;
+    const columnChanged = column !== this.column || band !== this.columnBand || look !== this.look;
+    this.column = column;
+    this.columnBand = band;
+    this.look = look;
+    const marksChanged = view.marks !== this.marks || view.tool !== this.tool || direction !== this.direction || columnChanged;
     this.intraday = view.minutes < 1440;
     if (diff.kind === 'reset') {
       this.decimals = priceDecimals(view.candles.flatMap((c) => [c.open, c.close]).slice(-200));
@@ -139,17 +152,29 @@ export class CandleChart {
       this.applyMarks();
     }
     if (diff.kind === 'reset') this.fit();
+    else if (this.chart.timeScale().options().rightOffset !== this.rightPad()) {
+      // the column grew (a new higher-timeframe candle) or "look for" came or went: keep its room
+      this.chart.timeScale().applyOptions({ rightOffset: this.rightPad() });
+    }
   }
 
   /** Open on the recent window (plus the start of every mark); older candles scroll into view. */
   private fit(): void {
     const count = this.candles.length;
     const from = initialWindowStart(count, this.starts(), this.visibleBars);
-    const pad = this.tool ? RIGHT_PAD_TOOL : RIGHT_PAD;
+    const pad = this.rightPad();
     const ts = this.chart.timeScale();
     ts.applyOptions({ rightOffset: pad });
-    if (from === 0 && count <= this.visibleBars && !this.tool) ts.fitContent();
+    if (from === 0 && count <= this.visibleBars && !this.tool && !this.column?.bars.length) ts.fitContent();
     else ts.setVisibleLogicalRange({ from: from - 0.5, to: count - 1 + pad });
+  }
+
+  /** Empty bars right of the last candle: room for the tool's zones, or for the column. */
+  private rightPad(): number {
+    const base = this.tool ? RIGHT_PAD_TOOL : RIGHT_PAD;
+    const n = (this.column?.bars.length ?? 0) + projectedSlots(this.look);
+    if (n === 0) return this.look ? Math.max(base, columnGap(!!this.tool, true)) : base;
+    return Math.max(base, columnGap(!!this.tool, !!this.look) + COLUMN_SLOT * n + 1.5);
   }
 
   /** Every mark start, and the tool's, for the opening window. */
@@ -174,9 +199,9 @@ export class CandleChart {
       upColor: p.hollowUp ? withAlpha(p.surface, 0) : p.up,
       downColor: p.down,
       borderUpColor: p.up,
-      borderDownColor: p.down,
+      borderDownColor: p.downLine,
       wickUpColor: p.up,
-      wickDownColor: p.down,
+      wickDownColor: p.downLine,
     });
   }
 
@@ -196,6 +221,9 @@ export class CandleChart {
       overlays: this.opts.overlays,
       stale: this.opts.stale,
       scale: this.opts.scale,
+      column: this.column,
+      columnBand: this.columnBand,
+      look: this.look,
     });
   }
 

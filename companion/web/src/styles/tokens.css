@@ -6,7 +6,8 @@
    reward / risk   = the risk / reward tool's zones, its target and its stop
    Theme: follows prefers-color-scheme unless html[data-theme] is set by the toggle.
    Direction colours: html[data-scheme] (grey is the default and has no attribute).
-   Every scheme sets the same nine tokens in both themes; contrast.test.ts holds each
+   Every scheme sets the same nine tokens in both themes (a scheme may add
+   --candle-down-line, the down candle's outline and wick, when its fill is too dark to see); contrast.test.ts holds each
    of them to WCAG AA. A dark block exists twice (system and explicit dark): keep the
    copies identical, the test checks that too. */
 
@@ -45,43 +46,43 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #0d0e10;
-    --surface: #141619;
-    --raised: #1d2024;
-    --line: #262a2f;
+    --bg: #1a1c1f;
+    --surface: #212327;
+    --raised: #2a2d31;
+    --line: #34383d;
     --text: #ecedee;
-    --muted: #9297a0;
+    --muted: #a2a7af;
     --faint: #666b74;
     --long: #4cbb8d;
-    --short: #e66868;
+    --short: #f07878;
     --bull: #5b9dff;
-    --bear: #e66868;
+    --bear: #f07878;
     --watch: #e2a63b;
     --reward: #4cbb8d;
-    --risk: #e66868;
+    --risk: #f07878;
     --candle-up: #c9cdd3;
-    --candle-down: #71767f;
+    --candle-down: #80858e;
     color-scheme: dark;
   }
 }
 
 :root[data-theme='dark'] {
-  --bg: #0d0e10;
-  --surface: #141619;
-  --raised: #1d2024;
-  --line: #262a2f;
+  --bg: #1a1c1f;
+  --surface: #212327;
+  --raised: #2a2d31;
+  --line: #34383d;
   --text: #ecedee;
-  --muted: #9297a0;
+  --muted: #a2a7af;
   --faint: #666b74;
   --long: #4cbb8d;
-  --short: #e66868;
+  --short: #f07878;
   --bull: #5b9dff;
-  --bear: #e66868;
+  --bear: #f07878;
   --watch: #e2a63b;
   --reward: #4cbb8d;
-  --risk: #e66868;
+  --risk: #f07878;
   --candle-up: #c9cdd3;
-  --candle-down: #71767f;
+  --candle-down: #80858e;
   color-scheme: dark;
 }
 
@@ -159,6 +160,47 @@
   --candle-down: #ff9f1c;
 }
 
+/* ---------- Green / black: green up, black down (outlined in grey on the dark theme so it
+   stays visible); long green, short and the stop still red ---------- */
+:root[data-scheme='green-black'] {
+  --long: #08724a;
+  --short: #b92f2f;
+  --bull: #2160c4;
+  --bear: #b92f2f;
+  --watch: #855700;
+  --reward: #08724a;
+  --risk: #b92f2f;
+  --candle-up: #3f7a5e;
+  --candle-down: #15171a;
+  --candle-down-line: #15171a;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-scheme='green-black']:not([data-theme='light']) {
+    --long: #3fdc97;
+    --short: #ff6b6b;
+    --bull: #5b9dff;
+    --bear: #ff6b6b;
+    --watch: #ffc857;
+    --reward: #3fdc97;
+    --risk: #ff6b6b;
+    --candle-up: #5a9076;
+    --candle-down: #050607;
+    --candle-down-line: #8b919a;
+  }
+}
+:root[data-scheme='green-black'][data-theme='dark'] {
+  --long: #3fdc97;
+  --short: #ff6b6b;
+  --bull: #5b9dff;
+  --bear: #ff6b6b;
+  --watch: #ffc857;
+  --reward: #3fdc97;
+  --risk: #ff6b6b;
+  --candle-up: #5a9076;
+  --candle-down: #050607;
+  --candle-down-line: #8b919a;
+}
+
 /* ---------- Monochrome: hollow up, filled down; long and short told apart by shape and words ---------- */
 :root[data-scheme='mono'] {
   --long: #15171a;
@@ -177,7 +219,7 @@
     --long: #ecedee;
     --short: #ecedee;
     --bull: #5b9dff;
-    --bear: #e66868;
+    --bear: #f07878;
     --watch: #e2a63b;
     --reward: #c9cdd3;
     --risk: #aeb3ba;
@@ -189,7 +231,7 @@
   --long: #ecedee;
   --short: #ecedee;
   --bull: #5b9dff;
-  --bear: #e66868;
+  --bear: #f07878;
   --watch: #e2a63b;
   --reward: #c9cdd3;
   --risk: #aeb3ba;

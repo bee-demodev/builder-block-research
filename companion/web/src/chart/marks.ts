@@ -140,6 +140,22 @@ export interface Box {
   h: number;
 }
 
+export interface LabelChoice {
+  text: string;
+  w: number;
+  candidates: Box[];
+}
+
+/** A label waiting for its place: its wordings, fullest first, each with the spots it may take. */
+export interface PendingLabel {
+  title: string;
+  color: string;
+  priority: number;
+  choices: LabelChoice[];
+  /** Captions are drawn in a heavier weight. */
+  caption?: boolean;
+}
+
 export const overlaps = (a: Box, b: Box, pad = 1): boolean =>
   a.x < b.x + b.w + pad && b.x < a.x + a.w + pad && a.y < b.y + b.h + pad && b.y < a.y + a.h + pad;
 

@@ -125,18 +125,38 @@ function reduceFrame(model: Model, frame: ServerFrame): Model {
 /**
  * Apply a tick to every chart of that timeframe. Same open time: replace the last
  * candle. Later open time: the previous candle closed, append. Older: ignore.
- * Earlier candles keep their identity so the chart can update in place.
+ * The tick also moves the forming candle of every higher timeframe it falls inside
+ * (high and low widen, close follows), so panes drawn on one price scale keep agreeing
+ * between checks. Earlier candles keep their identity so the chart can update in place.
  */
 export function applyTick(view: VerdictView, tick: TickFrame): VerdictView {
+  const own = view.charts.find((c) => c.timeframe === tick.timeframe);
   let changed = false;
   const charts = view.charts.map((chart) => {
-    if (chart.timeframe !== tick.timeframe) return chart;
-    const candles = mergeCandle(chart.candles, tick.candle);
+    let candles: Candle[];
+    if (chart.timeframe === tick.timeframe) candles = mergeCandle(chart.candles, tick.candle);
+    else if (own && chart.minutes > own.minutes) candles = foldIntoForming(chart.candles, chart.minutes, tick.candle);
+    else return chart;
     if (candles === chart.candles) return chart;
     changed = true;
     return { ...chart, candles };
   });
   return changed ? { ...view, charts } : view;
+}
+
+/**
+ * A lower-timeframe candle folded into the forming candle of a higher timeframe of
+ * `minutes`, when it opened inside that candle. Anything else (a closed last candle, a
+ * tick from before it or past its length) leaves the candles as they are: the next
+ * check brings the new candle.
+ */
+export function foldIntoForming(candles: readonly Candle[], minutes: number, next: Candle): Candle[] {
+  const last = candles[candles.length - 1];
+  if (!last || !last.forming || next.t < last.t || next.t >= last.t + minutes * 60) return candles as Candle[];
+  const high = Math.max(last.high, next.high);
+  const low = Math.min(last.low, next.low);
+  if (high === last.high && low === last.low && next.close === last.close) return candles as Candle[];
+  return [...candles.slice(0, -1), { ...last, high, low, close: next.close }];
 }
 
 export function mergeCandle(candles: readonly Candle[], next: Candle): Candle[] {

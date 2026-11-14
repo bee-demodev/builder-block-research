@@ -680,8 +680,8 @@ ul {
 /* ---------- charts ---------- */
 .charts {
   display: grid;
-  /* three equal panes, bias -> setup -> entry, read left to right */
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* two panes side by side, read left to right: setup (1D candles on its right), then entry (1h on its right) */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: minmax(0, 1fr);
   gap: 12px;
   padding: 16px;
@@ -1562,7 +1562,7 @@ ul {
   gap: 3px;
   padding: 3px 5px;
   border-radius: 4px;
-  background: #141619;
+  background: #212327;
 }
 .swatch > span {
   display: block;
@@ -1579,13 +1579,20 @@ ul {
   background: #c9cdd3;
 }
 [data-swatch='grey'] .swatch-down {
-  background: #71767f;
+  background: #80858e;
 }
 [data-swatch='green-red'] .swatch-up {
   background: #3fdc97;
 }
 [data-swatch='green-red'] .swatch-down {
   background: #ff6b6b;
+}
+[data-swatch='green-black'] .swatch-up {
+  background: #5a9076;
+}
+[data-swatch='green-black'] .swatch-down {
+  background: #050607;
+  box-shadow: inset 0 0 0 1px #8b919a;
 }
 [data-swatch='blue-orange'] .swatch-up {
   background: #4c9bff;
@@ -1653,8 +1660,9 @@ ul {
 }
 @media (max-width: 760px) {
   .charts {
+    /* too narrow for two side by side: stack them */
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: repeat(3, calc(420px * var(--fs)));
+    grid-template-rows: repeat(2, calc(380px * var(--fs)));
   }
   .details-cols,
   .details-other-groups {
@@ -1666,4 +1674,120 @@ ul {
   .footer-hint {
     display: none;
   }
+}
+
+/* ---------- look for: the steps, the zones (A, B) and the trade if one plays ---------- */
+.look {
+  margin-top: 4px;
+  transition: opacity var(--dur) ease;
+}
+.look.is-stale {
+  opacity: 0.55;
+}
+.look-label {
+  margin-top: 18px;
+  font-size: calc(12px * var(--fs));
+  line-height: calc(16px * var(--fs));
+  font-weight: 500;
+  color: var(--muted);
+}
+.look-steps {
+  margin-top: 8px;
+  display: grid;
+  gap: 9px;
+}
+.look-step {
+  display: grid;
+  grid-template-columns: calc(15px * var(--fs)) minmax(0, 1fr);
+  gap: 9px;
+  align-items: start;
+  font-size: calc(13px * var(--fs));
+  line-height: calc(18px * var(--fs));
+}
+.look-step.is-later {
+  color: var(--muted);
+}
+.look-icon {
+  margin-top: 2px;
+}
+.look-icon-later {
+  color: var(--faint);
+}
+.look-options {
+  margin-top: 6px;
+  display: grid;
+  gap: 2px;
+}
+.look-option {
+  display: grid;
+  grid-template-columns: calc(15px * var(--fs)) minmax(0, 1fr);
+  gap: 2px 9px;
+  align-items: start;
+  width: 100%;
+  padding: 6px 6px;
+  margin: 0 -6px;
+  border: 0;
+  border-radius: var(--radius);
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: calc(13px * var(--fs));
+  line-height: calc(18px * var(--fs));
+  text-align: left;
+  cursor: pointer;
+}
+.look-option:hover {
+  background: var(--raised);
+}
+.look-option:focus-visible {
+  outline: 2px solid var(--watch);
+  outline-offset: 1px;
+}
+.look-option.is-on {
+  color: var(--text);
+}
+.look-option-key {
+  margin-right: 8px;
+  font-weight: 600;
+}
+.look-option-zone {
+  grid-column: 2;
+  font-size: calc(12px * var(--fs));
+  white-space: nowrap;
+}
+.look-option-cond {
+  grid-column: 2;
+  font-size: calc(12px * var(--fs));
+  color: var(--muted);
+}
+.look-plan {
+  margin-top: 6px;
+  display: grid;
+  gap: 7px;
+}
+.look-plan > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: calc(13px * var(--fs));
+  line-height: calc(18px * var(--fs));
+}
+.look-plan dt {
+  color: var(--muted);
+}
+.look-plan dd {
+  text-align: right;
+}
+
+.pane-look {
+  font-size: calc(12px * var(--fs));
+  font-weight: 500;
+}
+.pane-look:not(.tone-watch) {
+  color: var(--muted);
+}
+.path.is-look {
+  font-size: calc(13px * var(--fs));
+  font-weight: 400;
+  color: var(--muted);
 }

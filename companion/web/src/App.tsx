@@ -29,14 +29,26 @@ export function App() {
     [overlays, display.options.scheme, display.scale, openMenu],
   );
   const displayBtn = useRef<HTMLButtonElement>(null);
+  const [lookChoice, chooseLook] = useLookChoice(model);
 
   return (
     <div className="app">
       <TopBar model={model} send={send} />
       <Banners model={model} url={url} retryNow={retryNow} dismissNotice={dismissNotice} />
       <main className="layout">
-        <DecisionPanel model={model} mode={showDetails ? 'details' : 'charts'} onToggleMode={() => setMode(showDetails ? 'charts' : 'details')} send={send} />
-        {showDetails ? <Checklist model={model} view={model.view!} /> : <ChartsArea model={model} theme={theme.resolved} display={chartDisplay} />}
+        <DecisionPanel
+          model={model}
+          mode={showDetails ? 'details' : 'charts'}
+          onToggleMode={() => setMode(showDetails ? 'charts' : 'details')}
+          send={send}
+          lookChoice={lookChoice}
+          onLookChoice={chooseLook}
+        />
+        {showDetails ? (
+          <Checklist model={model} view={model.view!} />
+        ) : (
+          <ChartsArea model={model} theme={theme.resolved} display={chartDisplay} lookChoice={lookChoice} />
+        )}
       </main>
       <footer className="footer">
         <p className="footer-source">{model.view ? plainText(model.view.source_note) : demo ? 'Sample data, demo mode.' : ''}</p>
@@ -125,6 +137,18 @@ function ThemeToggle({ pref, onClick }: { pref: ThemePref; onClick: () => void }
       <Icon size={14} aria-hidden />
     </button>
   );
+}
+
+/**
+ * The "look for" option the trader picked: client-only, and back to A whenever the core
+ * sends different zones (a new moment can move them).
+ */
+function useLookChoice(model: Model): [string, (key: string) => void] {
+  const look = model.view?.look_for ?? null;
+  const zones = look ? look.options.map((o) => `${o.key}:${o.top}:${o.bottom}`).join('|') : '';
+  const [picked, setPicked] = useState({ zones, key: 'A' });
+  const choose = useCallback((key: string) => setPicked({ zones, key }), [zones]);
+  return [picked.zones === zones ? picked.key : 'A', choose];
 }
 
 const SIDE_KEYS: Record<string, Side> = { a: '', l: 'long', s: 'short' };

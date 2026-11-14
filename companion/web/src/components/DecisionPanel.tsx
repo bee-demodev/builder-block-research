@@ -2,20 +2,23 @@ import {
   ArrowLeftIcon,
   ArrowRightIcon,
   CheckCircleIcon,
+  CircleIcon,
   ClockCounterClockwiseIcon,
   ClockIcon,
   DatabaseIcon,
+  RadioButtonIcon,
   TriangleIcon,
   WarningCircleIcon,
   WarningIcon,
   XCircleIcon,
 } from '@phosphor-icons/react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { chosenOption, lookDecimals } from '../chart/look';
 import { checkpointText, planWords, sections, setSide, sideChoices, suggestionText, waitingText } from '../decision';
-import { pathLine, plainText, sentenceCase, wallClock } from '../format';
+import { formatPrice, pathLine, plainText, sentenceCase, wallClock } from '../format';
 import { isStale, type Model } from '../store';
 import { checkTotals, decisionTone, directionTone, isStopLevel, readTone } from '../tones';
-import type { ClientFrame, Direction, Plan, VerdictView } from '../wire';
+import type { ClientFrame, Direction, LookFor, Plan, StepStatus, VerdictView } from '../wire';
 import { Skeleton, StatusIcon, toneClass } from './ui';
 
 interface Props {
@@ -23,9 +26,12 @@ interface Props {
   mode: 'charts' | 'details';
   onToggleMode: () => void;
   send: (frame: ClientFrame) => void;
+  /** The "look for" option picked ("A" or "B") and how to pick another; client-only. */
+  lookChoice?: string;
+  onLookChoice?: (key: string) => void;
 }
 
-export function DecisionPanel({ model, mode, onToggleMode, send }: Props) {
+export function DecisionPanel({ model, mode, onToggleMode, send, lookChoice = 'A', onLookChoice = () => {} }: Props) {
   const { view, server } = model;
   const firstLoad = !model.everConnected && !view;
   const waitingForSnapshot = model.everConnected && !model.snapshotReceived && !view;
@@ -60,8 +66,12 @@ export function DecisionPanel({ model, mode, onToggleMode, send }: Props) {
           <SideSelector model={model} disabled={!ready} send={send} />
         </div>
 
-        {view ? <Verdict view={view} stale={stale} showWaiting={show!.waiting} /> : <NoVerdict symbol={symbol} hasError={Boolean(model.error)} />}
-        {view && <Chain view={view} stale={stale} />}
+        {view ? (
+          <Verdict view={view} stale={stale} showWaiting={show!.waiting && !view.look_for} lookChoice={lookChoice} />
+        ) : (
+          <NoVerdict symbol={symbol} hasError={Boolean(model.error)} />
+        )}
+        {view && !view.look_for && <Chain view={view} stale={stale} />}
       </div>
 
       <ScrollBand>
@@ -85,6 +95,7 @@ export function DecisionPanel({ model, mode, onToggleMode, send }: Props) {
           </div>
         )}
 
+        {view?.look_for && <LookForBlock look={view.look_for} choice={lookChoice} onChoose={onLookChoice} stale={stale} />}
         {view?.plan && <PlanBlock plan={view.plan} stale={stale} />}
         {view && show!.levels && <Levels view={view} />}
         {view && clock && <SessionClock hour={clock.hour} minute={clock.minute} />}
@@ -181,8 +192,8 @@ function ScrollBand({ children }: { children: ReactNode }) {
   );
 }
 
-function Verdict({ view, stale, showWaiting }: { view: VerdictView; stale: boolean; showWaiting: boolean }) {
-  const line = pathLine(view);
+function Verdict({ view, stale, showWaiting, lookChoice }: { view: VerdictView; stale: boolean; showWaiting: boolean; lookChoice: string }) {
+  const line = view.look_for ? lookLine(view.look_for, lookChoice) || pathLine(view) : pathLine(view);
   const ideaSide = view.suggestion_tone === 'long' || view.suggestion_tone === 'short' || view.suggestion_tone === 'watch' ? view.idea : '';
   return (
     <div className={`verdict${stale ? ' is-stale' : ''}`} key={view.suggestion + view.path}>
@@ -190,7 +201,7 @@ function Verdict({ view, stale, showWaiting }: { view: VerdictView; stale: boole
         <DirectionIcon side={ideaSide} size={20} />
         <span>{suggestionText(view)}</span>
       </h1>
-      {line && <p className="path">{line}</p>}
+      {line && <p className={`path${view.look_for ? ' is-look' : ''}`}>{line}</p>}
       {view.idea_state && view.idea_alert && (
         <p className="idea-state is-alert" role="note">
           <WarningIcon size={15} weight="bold" aria-hidden className="tone-watch" />
@@ -212,6 +223,122 @@ function Verdict({ view, stale, showWaiting }: { view: VerdictView; stale: boole
         </div>
       )}
     </div>
+  );
+}
+
+/** "1h C1, C2 at the POI 25,410 to 25,428": what to look for, where, in one line. */
+function lookLine(look: LookFor, choice: string): string {
+  const o = chosenOption(look, choice);
+  if (!o) return '';
+  const d = lookDecimals(look);
+  return `${look.timeframe} C1, C2 at the POI ${formatPrice(o.bottom, d)} to ${formatPrice(o.top, d)}`;
+}
+
+/** The step's state by shape, so it never rests on colour: a ring with a dot is the one awaited now. */
+function LookStepIcon({ status }: { status: StepStatus }) {
+  if (status === 'done') return <CheckCircleIcon size={15} aria-hidden className="look-icon tone-bull" />;
+  if (status === 'blocked') return <XCircleIcon size={15} aria-hidden className="look-icon tone-bear" />;
+  if (status === 'next') return <RadioButtonIcon size={15} aria-hidden className="look-icon tone-watch" />;
+  return <CircleIcon size={15} aria-hidden className="look-icon look-icon-later" />;
+}
+
+const STEP_WORD: Record<StepStatus, string> = { done: 'Done', next: 'Now', later: 'Later', blocked: 'Blocked' };
+
+/**
+ * What to look for while the setup is ahead: the steps in order (the one awaited now
+ * marked), the zones it may play out at (A the nearest, B the next one beyond it, with
+ * its condition; picking one highlights its box on the charts), and the trade if it plays.
+ */
+function LookForBlock({ look, choice, onChoose, stale }: { look: LookFor; choice: string; onChoose: (key: string) => void; stale: boolean }) {
+  const chosen = chosenOption(look, choice);
+  const d = lookDecimals(look);
+  const f = (p: number) => formatPrice(p, d);
+  return (
+    <section className={`look${stale ? ' is-stale' : ''}`} aria-label="What to look for">
+      <h2 className="look-label">Look for</h2>
+      <ol className="look-steps">
+        {look.steps.map((step, i) => (
+          <li key={i} className={`look-step is-${step.status}`}>
+            <LookStepIcon status={step.status} />
+            <span className="look-step-text">
+              <span className="sr-only">{STEP_WORD[step.status]}: </span>
+              {plainText(step.label)}
+            </span>
+          </li>
+        ))}
+      </ol>
+      {look.options.length > 0 && (
+        <>
+          <h2 className="look-label" id="look-options">
+            Options
+          </h2>
+          <div
+            className="look-options"
+            role="radiogroup"
+            aria-labelledby="look-options"
+            onKeyDown={(e) => {
+              // arrow keys move between the options, as in any radio group
+              const step = e.key === 'ArrowDown' || e.key === 'ArrowRight' ? 1 : e.key === 'ArrowUp' || e.key === 'ArrowLeft' ? -1 : 0;
+              if (!step || !chosen) return;
+              e.preventDefault();
+              const i = look.options.indexOf(chosen);
+              const next = look.options[(i + step + look.options.length) % look.options.length]!;
+              onChoose(next.key);
+              const buttons = e.currentTarget.querySelectorAll<HTMLButtonElement>('[role="radio"]');
+              buttons[look.options.indexOf(next)]?.focus();
+            }}
+          >
+            {look.options.map((o) => {
+              const on = o === chosen;
+              return (
+                <button
+                  key={o.key}
+                  type="button"
+                  role="radio"
+                  aria-checked={on}
+                  tabIndex={on ? 0 : -1}
+                  className={`look-option${on ? ' is-on' : ''}`}
+                  onClick={() => onChoose(o.key)}
+                  title={on ? undefined : `Show ${o.key} on the charts`}
+                >
+                  {on ? <RadioButtonIcon size={15} aria-hidden className="look-icon tone-watch" /> : <CircleIcon size={15} aria-hidden className="look-icon look-icon-later" />}
+                  <span className="look-option-name">
+                    <span className="look-option-key">{o.key}</span>
+                    {plainText(o.name)}
+                  </span>
+                  <span className="look-option-zone mono">
+                    {f(o.bottom)} to {f(o.top)}
+                  </span>
+                  {o.condition && <span className="look-option-cond">{plainText(o.condition)}</span>}
+                </button>
+              );
+            })}
+          </div>
+        </>
+      )}
+      {chosen && (
+        <>
+          <h2 className="look-label">If {chosen.key} plays</h2>
+          <dl className="look-plan">
+            <div>
+              <dt>Entry</dt>
+              <dd>{plainText(look.entry)}</dd>
+            </div>
+            <div>
+              <dt>Stop</dt>
+              <dd>{plainText(look.stop)}</dd>
+            </div>
+            <div>
+              <dt>Target</dt>
+              <dd>
+                {plainText(look.target)}
+                {look.target_price !== null && <span className="mono"> {f(look.target_price)}</span>}
+              </dd>
+            </div>
+          </dl>
+        </>
+      )}
+    </section>
   );
 }
 

@@ -12,7 +12,7 @@ from companion.styles.ttrades.checklist import CONTINUATION, GATE, REVERSAL, SES
 from companion.styles.ttrades.config import TTradesConfig, load_config
 from companion.styles.ttrades.context import Context, load_context
 from companion.styles.ttrades.continuation import PathOutcome, evaluate_continuation
-from companion.styles.ttrades.plan import build_plan
+from companion.styles.ttrades.plan import build_look_for, build_plan
 from companion.styles.ttrades.primitives import BEAR, BULL, Side, fmt, when
 from companion.styles.ttrades.read import build_read
 from companion.styles.ttrades.reversal import evaluate_reversal
@@ -21,6 +21,7 @@ from companion.timeframes import to_new_york
 from companion.types import (
     CriterionResult,
     Decision,
+    LookFor,
     MarkupItem,
     PlanStep,
     PositionPlan,
@@ -169,6 +170,7 @@ class TTradesStyle:
             told: tuple[tuple[ReadStep, ...], str, str] = ((), "", ""),
             planned: tuple[tuple[PlanStep, ...], PositionPlan | None] = ((), None),
             auto_note: str = "",
+            look_for: LookFor | None = None,
         ) -> Verdict:
             criteria: list[CriterionResult] = []
             for group in groups:
@@ -238,6 +240,7 @@ class TTradesStyle:
                 auto_note=auto_note,
                 steps=planned[0],
                 plan=planned[1],
+                look_for=look_for,
             )
 
         if shared.passed("data_sufficient") is not True:
@@ -351,9 +354,10 @@ class TTradesStyle:
             ]
             summary = f"Watch: {head}. {bias_text} Waiting for: {', '.join(waiting)}."
             told = tell("watch", stage)
+            planned = plan_for("watch", stage, told)
             return verdict(
                 "watch", bias.bias, selected.family, stage, groups, summary, selected, told=told,
-                planned=plan_for("watch", stage, told), auto_note=auto_note,
+                planned=planned, auto_note=auto_note, look_for=build_look_for(ctx, bias, selected, planned[0]),
             )
         if failing:
             show = all(key in _REWARD_OR_SESSION for key in failing)
