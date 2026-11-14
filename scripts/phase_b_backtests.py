@@ -20,6 +20,7 @@ import pandas as pd
 ROOT = Path("results/backtest_phase_b")
 TICKS = {"NQ": 0.25, "ES": 0.25, "YM": 1.0, "RTY": 0.1, "GC": 0.1, "SI": 0.005, "CL": 0.01, "6E": 0.00005}
 SYMBOLS = list(TICKS)
+YEARS = range(2022, 2027)
 QUALITY_CHECKS = (
     "cont_setup_closure_body_aligned", "cont_entry_window_open", "cont_protected_swing_intact",
     "cont_trigger_clear_of_liquidity", "cont_trigger_v_shape", "cont_not_inside_consolidation",
@@ -179,8 +180,9 @@ def test2(out: Path) -> tuple[pd.DataFrame, list[str]]:
         notes.append(f"{stack} taken, W=3: n {len(view)}, fill rate {view['lim_filled'].mean():.1%}, filled mean "
                      f"{filled['lim3_net_2r'].mean():+.3f}, per signal {view['lim_signal'].mean():+.3f} vs market "
                      f"{view['net_2r'].mean():+.3f}")
-    htf = valid_market(read_runs(ROOT / "htf"))
-    for stack, part in htf[htf["taken"]].groupby("stack"):
+    htf = read_runs(ROOT / "htf")
+    htf = valid_market(htf) if not htf.empty else htf
+    for stack, part in (htf[htf["taken"]].groupby("stack") if not htf.empty else []):
         view = limit_view(part, 3)
         filled = view[view["lim_filled"]]
         notes.append(f"{stack} taken (35-day horizon, not scored), W=3: n {len(view)}, fill rate "
@@ -256,8 +258,8 @@ def test4(out: Path) -> tuple[pd.DataFrame, int]:
     base_all = read_runs(ROOT / "core")
     rows, missing = [], 0
     for check in QUALITY_CHECKS:
-        runs = [ROOT / "checks_off" / str(year) / f"off-{check}" for year in range(2022, 2027)]
-        if not all(r.exists() and len(list(r.glob("*.jsonl.gz"))) == 8 for r in runs):
+        runs = [ROOT / "checks_off" / str(year) / f"off-{check}" for year in YEARS]
+        if not all(r.exists() and len(list(r.glob("*.jsonl.gz"))) == len(SYMBOLS) for r in runs):
             missing += 1
             rows.append({"check": check, "verdict": "not run"})
             continue
