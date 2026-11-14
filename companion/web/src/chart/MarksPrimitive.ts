@@ -863,6 +863,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       const yH = series.priceToCoordinate(p.candle.high);
       const yL = series.priceToCoordinate(p.candle.low);
       if (!g || yH === null || yL === null) continue;
+      if (yL < 0 || yH > plot.h) continue; // the outline is off the pane: no name floating at its edge
       const w = measure(p.label);
       const x = Math.min(Math.max(g.x - w / 2, 2), plot.w - w - 2);
       pending.push({

@@ -282,6 +282,8 @@ export interface JournalStats {
   open: number;
   /** Below this many closed trades an average means nothing yet. */
   min_n: number;
+  /** Calls made after the trade had ended: kept, but out of the took / skipped rows. */
+  late: number;
 }
 
 /** The decision journal for the view's stack. Display only: it never changes the decision. */
@@ -686,7 +688,7 @@ const journal = obj<Journal>({
     }),
   ),
   reasons: optional(arr(obj<{ key: string; label: string }>({ key: str, label: str })), () => []),
-  stats: obj<JournalStats>({ taken: tally, skipped: tally, all: tally, open: num, min_n: optional(num, () => 20) }),
+  stats: obj<JournalStats>({ taken: tally, skipped: tally, all: tally, open: num, min_n: optional(num, () => 20), late: optional(num, () => 0) }),
 });
 
 /** A display-only field: when it does not parse, log it and read null; the frame is kept. */

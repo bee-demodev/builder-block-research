@@ -559,6 +559,7 @@ export function demoJournal(trigger: JournalTrigger | null, stack = '1D / 1h / 5
       all: { n: 23, avg_r: 0.04 },
       open: 2,
       min_n: 20,
+      late: 0,
     },
   };
 }

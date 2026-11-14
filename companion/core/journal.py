@@ -11,13 +11,21 @@ against it, stack by stack.
 - **Marked**: the trader says "took" or "skipped", with a reason from ``wire.JOURNAL_REASONS``
   and an optional note. Marking again overwrites.
 - **Outcome**: filled from later live checks of the same trigger (whatever their decision):
-  the target reached is ``+r_multiple``, stopped is ``-1`` R. A trigger the app stops seeing
-  stays open; no outcome is invented. R is the plan's, before costs.
+  the target reached is ``+r_multiple``, stopped is ``-1`` R. Every open record of the
+  symbol and stack is also resolved from the entry chart's closed bars with its own frozen
+  levels (the plan's rule: the first bar after the trigger bar through the stop or the
+  target; one that does both is stopped), so a trigger stays counted when the app moves on
+  to another idea. One older than the bars on screen stays open; no outcome is invented.
+  R is the plan's, before costs.
+- **Honest averages**: a call made after the trade had already ended (``late``), or on a
+  trigger first seen already played out, is kept but left out of the took / skipped
+  averages; the all-triggers baseline counts every closed trigger.
 
 Records live in ``journal.jsonl`` in the state folder, one JSON object per line and per
-trigger, rewritten whole (temp file, then replace) when one changes. The journal never
-changes a decision, the checklist or a setting, and ``observe`` never raises: a write that
-fails is logged and the check goes on.
+trigger, rewritten whole (temp file, then replace) when one changes, by a writer thread
+when the core runs it (``background``), so a slow disk never delays a check. The journal
+never changes a decision, the checklist or a setting, and ``observe`` never raises: a write
+that fails is logged and the check goes on.
 """
 
 from __future__ import annotations
@@ -27,7 +35,9 @@ import logging
 import os
 import threading
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterable
+
+import pandas as pd
 
 from companion.core import wire
 from companion.core.alerts import plan_key
@@ -70,6 +80,24 @@ def _result_r(outcome: str, r_multiple: float | None) -> float | None:
     return None
 
 
+def _hindsight(record: Record) -> bool:
+    """The call on this trigger could not have been made before it ended."""
+    return bool(record.get("late")) or bool(record.get("seen_closed"))
+
+
+def _naive(value: Any) -> pd.Timestamp | None:
+    """A time as naive New York, for comparing record times with chart bars."""
+    if value is None or value == "":
+        return None
+    try:
+        stamp = pd.Timestamp(value)
+    except (TypeError, ValueError):
+        return None
+    if stamp.tzinfo is not None:
+        stamp = stamp.tz_convert("America/New_York").tz_localize(None)
+    return stamp
+
+
 def _number(value: Any) -> float | None:
     try:
         number = float(value)
@@ -81,14 +109,19 @@ def _number(value: Any) -> float | None:
 class Journal:
     """The trigger records, held in memory and kept in ``path``. ``observe`` is cheap and never raises."""
 
-    def __init__(self, path: Path | None = None) -> None:
+    def __init__(self, path: Path | None = None, background: bool = False) -> None:
         self.path = Path(path) if path is not None else None
         self._lock = threading.Lock()
         self._records: dict[str, Record] = self._load()
+        self._background = background
+        self._changed = threading.Condition(self._lock)
+        self._version = 0  # bumps with every change
+        self._written = 0  # the version last written (or given up on)
+        self._writer: threading.Thread | None = None
 
     @classmethod
     def from_state(cls, state: Path) -> Journal:
-        return cls(Path(state) / JOURNAL_FILE)
+        return cls(Path(state) / JOURNAL_FILE, background=True)
 
     # --- reading ---
 
@@ -123,28 +156,70 @@ class Journal:
             values = [_number(row.get("result_r")) or 0.0 for row in rows]
             return {"n": len(values), "avg_r": round(sum(values) / len(values), 4) if values else None}
 
+        called = [r for r in closed if not _hindsight(r)]
         return {
-            "taken": tally([r for r in closed if r.get("mark") == "took"]),
-            "skipped": tally([r for r in closed if r.get("mark") == "skipped"]),
+            "taken": tally([r for r in called if r.get("mark") == "took"]),
+            "skipped": tally([r for r in called if r.get("mark") == "skipped"]),
             "all": tally(closed),
             "open": len(mine) - len(closed),
             "min_n": MIN_N,
+            "late": sum(1 for r in closed if r.get("mark") in ("took", "skipped") and _hindsight(r)),
         }
 
     # --- writing ---
 
-    def observe(self, verdict: Verdict | None, *, follow: bool, now: object | None = None) -> Record | None:
+    def observe(
+        self, verdict: Verdict | None, *, follow: bool, now: object | None = None, bars: Iterable[Any] = ()
+    ) -> Record | None:
         """Log a new trigger, or fill the outcome of a logged one, from a finished check.
 
+        ``bars``: the entry chart's candles (``time``, ``high``, ``low``, ``forming``); the
+        closed ones resolve every open record of this symbol and stack with its own levels.
         Only a live check that follows the latest bars counts (``follow``): looking back at
         history never logs nor fills. Returns the trigger's record, or None. Never raises."""
         if verdict is None or not follow:
             return None
         try:
-            return self._observe(verdict, now)
+            record = self._observe(verdict, now)
+            self._resolve(verdict, bars, now)
+            return self.get(record["key"]) if record is not None else None
         except Exception:  # noqa: BLE001 - the journal must never break a check
             log.exception("Could not update the decision journal.")
             return None
+
+    def _resolve(self, verdict: Verdict, bars: Iterable[Any], now: object | None) -> None:
+        """Close open records of ``verdict``'s symbol and stack from closed entry bars (the plan's own rule)."""
+        closed = [(_naive(bar.time), float(bar.high), float(bar.low)) for bar in bars if not getattr(bar, "forming", False)]
+        closed = [bar for bar in closed if bar[0] is not None]
+        if not closed:
+            return
+        first = closed[0][0]
+        with self._lock:
+            changed = False
+            for record in self._records.values():
+                if record.get("outcome", "open") != "open":
+                    continue
+                if record.get("symbol") != verdict.symbol or record.get("stack") != verdict.stack.name:
+                    continue
+                since, stop, target = _naive(record.get("since")), _number(record.get("stop")), _number(record.get("target"))
+                if since is None or stop is None or target is None or since < first:
+                    continue  # its bars are no longer on screen: leave it open rather than guess
+                long = record.get("side") == "long"
+                for time, high, low in closed:
+                    if time <= since:
+                        continue
+                    hit_stop = low < stop if long else high > stop
+                    hit_target = high >= target if long else low <= target
+                    if hit_stop or hit_target:
+                        outcome = "stopped" if hit_stop else "target_reached"  # a bar that does both is stopped
+                        record["outcome"] = outcome
+                        record["outcome_at"] = wire.iso(time)
+                        record["result_r"] = _result_r(outcome, _number(record.get("r_multiple")))
+                        record["closed_at"] = wire.iso(now) if now is not None else None
+                        changed = True
+                        break
+            if changed:
+                self._save()
 
     def _observe(self, verdict: Verdict, now: object | None) -> Record | None:
         key = plan_key(verdict)
@@ -157,6 +232,7 @@ class Journal:
                 if verdict.decision not in LOGGED_DECISIONS:
                     return None
                 record = self._new(key, verdict, now)
+                record["seen_closed"] = plan.outcome != "open"  # first seen already played out: no call in time
                 self._records[key] = record
                 changed = True
             else:
@@ -214,6 +290,8 @@ class Journal:
             if record is None:
                 raise JournalError("That trigger is not in the journal.")
             cleared = mark == ""
+            # a call made once the trade has ended is hindsight: kept, but out of the averages
+            record["late"] = not cleared and record.get("outcome", "open") != "open"
             record["mark"] = mark
             record["reason"] = "" if cleared else reason
             record["note"] = "" if cleared else note.strip()
@@ -247,13 +325,48 @@ class Journal:
         return records
 
     def _save(self) -> None:
-        """Rewrite the file (called with the lock held). A failure is logged, never raised."""
+        """Rewrite the file (called with the lock held): now, or on the writer thread when ``background``."""
+        if self.path is None:
+            return
+        self._version += 1
+        if not self._background:
+            self._write(list(self._records.values()))
+            self._written = self._version
+            return
+        try:
+            if self._writer is None or not self._writer.is_alive():
+                self._writer = threading.Thread(target=self._write_loop, name="journal-writer", daemon=True)
+                self._writer.start()
+        except RuntimeError:  # no thread to be had: write here rather than lose it
+            self._write(list(self._records.values()))
+            self._written = self._version
+            return
+        self._changed.notify_all()
+
+    def _write_loop(self) -> None:
+        while True:
+            with self._lock:
+                while self._written >= self._version:
+                    self._changed.wait()
+                version, records = self._version, [dict(record) for record in self._records.values()]
+            self._write(records)
+            with self._lock:
+                self._written = max(self._written, version)
+                self._changed.notify_all()
+
+    def flush(self, timeout: float = 5.0) -> bool:
+        """Wait until every change is on disk (tests, and the core when it stops). True when it is."""
+        with self._lock:
+            return self._changed.wait_for(lambda: self._written >= self._version, timeout)
+
+    def _write(self, records: list[Record]) -> None:
+        """Rewrite the file from ``records``. A failure is logged, never raised."""
         if self.path is None:
             return
         try:
             self.path.parent.mkdir(parents=True, exist_ok=True)
             spare = self.path.with_name(self.path.name + ".tmp")
-            lines = (json.dumps(record, ensure_ascii=False, separators=(",", ":")) for record in self._records.values())
+            lines = (json.dumps(record, ensure_ascii=False, separators=(",", ":")) for record in records)
             spare.write_text("".join(f"{line}\n" for line in lines), encoding="utf-8")
             os.replace(spare, self.path)
         except (OSError, TypeError, ValueError):

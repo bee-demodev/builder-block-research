@@ -657,20 +657,17 @@ def _level_band(ctx: Context, side: Side, level: KeyLevel) -> tuple[float, float
     if level.kind == "fvg":
         return level.edge, level.hold
     tolerance = ctx.cfg.reversal_level_tolerance_frac * (ctx.avg_range or 0.0)
+    pair = CONTRACTS.get(root(ctx.symbol))
+    tick = pair[0].tick if pair is not None else 0.0
     if tolerance > 0:
         far = level.edge + tolerance
-        pair = CONTRACTS.get(root(ctx.symbol))
-        if pair is not None:
-            tick = pair[0].tick
+        if tick:
             far = round(math.floor(far / tick + 1e-9) * tick, 10)
         if far > level.edge:
             return far, level.edge
-    b = ctx.view(side).B
-    for pos in range(b.n - 1, -1, -1):
-        if float(b.low[pos]) == level.edge:
-            body = float(min(b.open[pos], b.close[pos]))
-            return (body, level.edge) if body > level.edge else None
-    return None
+    # no tolerance: price has to trade to the level itself, so the box runs from the level one
+    # tick through it (every price in it counts), never a wick the rules do not test against
+    return (level.edge, round(level.edge - tick, 10)) if tick else None
 
 
 def _level_names(tf: str, side: Side, level: KeyLevel) -> tuple[str, str]:
@@ -699,7 +696,7 @@ def reversal_options(ctx: Context, side: Side, level: KeyLevel, levels: list[Key
     for other in sorted(levels, key=lambda item: item.edge, reverse=True):
         zone = None if other is level else _level_band(ctx, side, other)
         if zone is not None and max(zone) < beyond:
-            return a, option("B", other, zone, f"only after a {setup_tf} close {side.below} the key level")
+            return a, option("B", other, zone, "if price trades through A first")
     return (a,)
 
 
@@ -723,8 +720,13 @@ def _reversal_look(ctx: Context, side: Side, level: KeyLevel, statuses: tuple[st
         stop = f"{side.below} the {e.tf} pullback {side.lo}"  # rules.md 8.2, order-block trigger
     else:
         # the CISD that confirms the wick is read on the setup timeframe, and on the entry
-        # timeframe too for the biases rules.md 4.3 allows it on
-        turn = f"{s.tf} or {e.tf}" if ctx.stack.bias in cfg.reversal_entry_tf_confirm_bias else s.tf
+        # timeframe too only for the biases rules.md 4.3 allows it on and only inside its
+        # clock window (the engine's own test in reversal.py stage c3)
+        if ctx.stack.bias in cfg.reversal_entry_tf_confirm_bias:
+            start, end = cfg.reversal_entry_tf_confirm_window
+            turn = f"{s.tf} (or {e.tf} from {start} to {end})"
+        else:
+            turn = s.tf
         entry_step = f"{turn} turns {tell.up}: a close {side.above} the {side.down_close} run, the entry"
         entry_words = f"{turn} close {side.above} the run"
         stop = f"{side.below} the reversal wick {side.lo}"  # rules.md 8.2, CISD trigger

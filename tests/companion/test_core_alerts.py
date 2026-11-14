@@ -137,3 +137,44 @@ def test_webhook_is_read_from_desktop_json_and_only_a_discord_url_counts(tmp_pat
 def test_message_stays_under_discords_limit():
     long = verdict(note="x" * 5000)
     assert len(message(long)) <= 2000
+
+
+def test_a_failed_post_is_tried_again_on_the_next_check_and_given_up_after_three(tmp_path: Path):
+    calls: list = []
+
+    def flaky(url, payload):
+        calls.append(payload)
+        if len(calls) < 2:
+            raise OSError("429 too many requests")
+
+    alerts = DiscordAlerts(URL, tmp_path, post=flaky, background=False)
+    alerts.consider(verdict())
+    assert not (tmp_path / SENT_FILE).exists()  # nothing counts as sent until Discord took it
+    alerts.consider(verdict(age_bars=2))  # the next check of the same trigger
+    assert len(calls) == 2 and json.loads((tmp_path / SENT_FILE).read_text(encoding="utf-8")) == [trigger_key(verdict())]
+    alerts.consider(verdict(age_bars=3))
+    assert len(calls) == 2
+
+    def down(url, payload):
+        calls.append(payload)
+        raise OSError("no network")
+
+    other = DiscordAlerts(URL, post=down, background=False)
+    later = verdict(since=datetime(2026, 11, 12, 10, 5, tzinfo=NY))
+    for _ in range(5):
+        other.consider(later)
+    assert len(calls) == 2 + 3
+
+
+def test_a_thread_that_cannot_start_never_raises_and_frees_the_trigger(monkeypatch):
+    sent, alerts = collect()
+    alerts._background = True
+
+    class NoThread:
+        def __init__(self, *a, **k):
+            raise RuntimeError("can't start new thread")
+
+    monkeypatch.setattr("companion.core.alerts.threading.Thread", NoThread)
+    assert alerts.consider(verdict()) is False
+    alerts._background = False
+    assert alerts.consider(verdict()) is True and len(sent) == 1

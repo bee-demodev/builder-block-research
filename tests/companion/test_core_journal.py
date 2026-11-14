@@ -64,7 +64,7 @@ def lines(path: Path) -> list[dict[str, Any]]:
 
 
 def test_each_trigger_is_logged_once_with_what_was_shown(tmp_path: Path) -> None:
-    journal = Journal.from_state(tmp_path)
+    journal = Journal(tmp_path / JOURNAL_FILE)
     record = journal.observe(verdict(), follow=True, now=NOW)
     journal.observe(verdict(age_bars=2, stage_label="late"), follow=True, now=NOW + pd.Timedelta(minutes=5))  # the next check
     assert record is not None and record["key"] == plan_key(verdict())
@@ -107,13 +107,13 @@ def test_a_watch_held_back_by_quality_checks_is_logged_with_why() -> None:
     ids=["no-trade", "planned", "no-plan", "no-verdict"],
 )
 def test_nothing_is_logged_without_a_triggered_plan_on_a_trade_or_watch(seen: Verdict | None, tmp_path: Path) -> None:
-    journal = Journal.from_state(tmp_path)
+    journal = Journal(tmp_path / JOURNAL_FILE)
     assert journal.observe(seen, follow=True) is None
     assert journal.records() == [] and not (tmp_path / JOURNAL_FILE).exists()
 
 
 def test_looking_back_at_history_neither_logs_nor_fills(tmp_path: Path) -> None:
-    journal = Journal.from_state(tmp_path)
+    journal = Journal(tmp_path / JOURNAL_FILE)
     assert journal.observe(verdict(), follow=False) is None
     assert journal.records() == []
     journal.observe(verdict(), follow=True)
@@ -151,7 +151,7 @@ def test_a_trigger_first_seen_after_it_played_out_is_logged_closed() -> None:
 
 
 def test_took_and_skipped_are_kept_and_changing_ones_mind_overwrites(tmp_path: Path) -> None:
-    journal = Journal.from_state(tmp_path)
+    journal = Journal(tmp_path / JOURNAL_FILE)
     key = journal.observe(verdict(), follow=True)["key"]  # type: ignore[index]
     journal.mark(key, "skipped", "late", " chased it ", now=NOW)
     record = lines(tmp_path / JOURNAL_FILE)[0]
@@ -203,12 +203,12 @@ def test_stats_count_closed_outcomes_per_stack_taken_skipped_and_all() -> None:
 
 
 def test_the_journal_is_read_back_after_a_restart_and_bad_lines_are_skipped(tmp_path: Path) -> None:
-    first = Journal.from_state(tmp_path)
+    first = Journal(tmp_path / JOURNAL_FILE)
     key = first.observe(verdict(), follow=True)["key"]  # type: ignore[index]
     first.mark(key, "took")
     with (tmp_path / JOURNAL_FILE).open("a", encoding="utf-8") as handle:
         handle.write("{not json\n\n")
-    again = Journal.from_state(tmp_path)
+    again = Journal(tmp_path / JOURNAL_FILE)
     assert again.get(key)["mark"] == "took"  # type: ignore[index]
     again.observe(verdict(), follow=True)  # the same trigger after a restart: still one record
     assert len(again.records()) == 1
@@ -337,6 +337,7 @@ def test_a_live_check_logs_its_trigger_and_the_trader_marks_it(tmp_path: Path) -
     assert market.replies == []
     answered = market.last_view()["journal"]["trigger"]
     assert len(market.messages) > before and (answered["mark"], answered["reason"], answered["note"]) == ("skipped", "news", "CPI at 10")
+    assert journal.flush()  # the core writes on its own thread
     assert lines(tmp_path / "state" / JOURNAL_FILE)[0]["mark"] == "skipped"
 
     market.send("journal", key="not a trigger", mark="took")
@@ -362,3 +363,63 @@ def test_a_live_check_without_journal_is_unchanged(tmp_path: Path) -> None:
     assert "journal" not in market.last_view()
     market.send("journal", key="k", mark="took")
     assert "off" in market.replies[-1]["message"]
+
+
+# --- council fixes: outcomes from the bars, hindsight calls, the writer thread ----------
+
+
+class Bar:
+    def __init__(self, hhmm: str, high: float, low: float, forming: bool = False) -> None:
+        self.time = pd.Timestamp(f"2026-11-12 {hhmm}")  # naive New York, like the chart's candles
+        self.high, self.low, self.forming = high, low, forming
+
+
+def test_an_open_trigger_is_resolved_from_the_bars_even_when_the_app_shows_another_idea(tmp_path: Path) -> None:
+    journal = Journal(tmp_path / JOURNAL_FILE)
+    journal.observe(verdict(), follow=True, now=NOW)  # the 09:40 short: stop 25,436, target 25,358
+    other = verdict(decision="long", minute=55, direction="long", entry=25400.0, stop=25380.0, target=25440.0)
+    bars = [Bar("09:40", 25420, 25405), Bar("09:45", 25440, 25410), Bar("09:50", 25445, 25430)]
+    journal.observe(other, follow=True, now=NOW, bars=bars)  # the screen moved on; the short was stopped at 09:45
+    short = [r for r in journal.records() if r["side"] == "short"][0]
+    assert (short["outcome"], short["result_r"]) == ("stopped", -1.0)
+    assert short["outcome_at"].startswith("2026-11-12T09:45")
+
+
+def test_a_bar_through_both_levels_is_stopped_and_the_trigger_bar_and_forming_bars_never_count(tmp_path: Path) -> None:
+    journal = Journal(tmp_path / JOURNAL_FILE)
+    journal.observe(verdict(), follow=True, now=NOW)
+    key = journal.records()[0]["key"]
+    journal.observe(verdict(), follow=True, now=NOW, bars=[Bar("09:40", 25500, 25300), Bar("09:45", 25420, 25300, forming=True)])
+    assert journal.get(key)["outcome"] == "open"  # the trigger bar itself and a forming bar decide nothing
+    journal.observe(verdict(), follow=True, now=NOW, bars=[Bar("09:40", 25420, 25405), Bar("09:45", 25440, 25350)])
+    assert (journal.get(key)["outcome"], journal.get(key)["result_r"]) == ("stopped", -1.0)
+
+
+def test_a_trigger_older_than_the_bars_on_screen_stays_open(tmp_path: Path) -> None:
+    journal = Journal(tmp_path / JOURNAL_FILE)
+    journal.observe(verdict(), follow=True, now=NOW)
+    key = journal.records()[0]["key"]
+    journal.observe(verdict(minute=55), follow=True, now=NOW, bars=[Bar("10:00", 25300, 25200)])
+    assert journal.get(key)["outcome"] == "open"
+
+
+def test_calls_made_after_the_trade_ended_stay_out_of_the_averages(tmp_path: Path) -> None:
+    journal = Journal(tmp_path / JOURNAL_FILE)
+    journal.observe(verdict(), follow=True, now=NOW)
+    key = journal.records()[0]["key"]
+    journal.observe(verdict(outcome="target_reached"), follow=True, now=NOW)
+    journal.mark(key, "took", now=NOW)  # marked a winner after the fact
+    stats = journal.stats(STACK.name)
+    assert stats["taken"]["n"] == 0 and stats["all"]["n"] == 1 and stats["late"] == 1
+    journal.observe(verdict(minute=55, decision="watch", outcome="stopped", stage_label="played_out"), follow=True, now=NOW)
+    seen_late = [r for r in journal.records() if r["key"] != key][0]
+    journal.mark(seen_late["key"], "skipped", now=NOW)  # first seen already played out: a call cannot be in time
+    stats = journal.stats(STACK.name)
+    assert stats["skipped"]["n"] == 0 and stats["all"]["n"] == 2 and stats["late"] == 2
+
+
+def test_the_core_journal_writes_on_its_own_thread_and_flush_waits_for_it(tmp_path: Path) -> None:
+    journal = Journal.from_state(tmp_path)
+    journal.observe(verdict(), follow=True, now=NOW)
+    assert journal.flush()
+    assert len(lines(tmp_path / JOURNAL_FILE)) == 1

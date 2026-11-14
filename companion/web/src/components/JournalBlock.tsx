@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { journalReasons, journalRows, markFrame, noteFrame, openNote, reasonFrame, sampleNote } from '../journal';
+import { journalReasons, journalRows, lateNote, markFrame, noteFrame, openNote, reasonFrame, sampleNote } from '../journal';
 import type { ClientFrame, Journal, JournalTrigger } from '../wire';
 
 interface Props {
@@ -18,6 +18,7 @@ export function JournalBlock({ journal, send, disabled = false }: Props) {
   const rows = journalRows(journal.stats);
   const few = sampleNote(journal.stats);
   const open = openNote(journal.stats);
+  const late = lateNote(journal.stats);
   return (
     <section className="journal" aria-label="Decision journal">
       {journal.trigger && <JournalCall key={journal.trigger.key} trigger={journal.trigger} reasons={journalReasons(journal)} send={send} disabled={disabled} />}
@@ -42,7 +43,7 @@ export function JournalBlock({ journal, send, disabled = false }: Props) {
         </tbody>
       </table>
       <p className="journal-hint">
-        Average R per closed trade, before costs{open ? `; ${open}` : ''}.{few ? ` ${few}` : ''}
+        Average R per closed trade, before costs{open ? `; ${open}` : ''}.{few ? ` ${few}` : ''}{late ? ` ${late}` : ''}
       </p>
       {journal.note && <p className="journal-evidence">{journal.note}</p>}
     </section>

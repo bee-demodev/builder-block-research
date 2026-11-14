@@ -27,8 +27,9 @@ MIRROR = pytest.mark.parametrize("mirror", [False, True], ids=["long", "short"])
 
 
 def _turn(stack: TimeframeStack) -> str:
-    # the CISD that confirms the wick: the setup timeframe, and the entry timeframe too with a 1D bias (rules.md 4.3)
-    return f"{stack.setup} or {stack.entry}" if stack.bias == "1D" else stack.setup
+    # the CISD that confirms the wick: the setup timeframe, and the entry timeframe too with a 1D bias,
+    # only inside its clock window (rules.md 4.3, reversal.py stage c3)
+    return f"{stack.setup} (or {stack.entry} from 08:30 to 11:00)" if stack.bias == "1D" else stack.setup
 
 
 def _reach_band(verdict: Verdict) -> float:
@@ -81,7 +82,7 @@ def test_the_nearer_side_is_the_one_shown_with_the_next_level_beyond_as_b(stack:
     assert (a.name, a.top) == (f"Previous {stack.bias} high", 71.0) and a.bottom < 71.0
     # the gap 71-80 touches A, so it is the same place; B is the next one wholly beyond
     assert (b.key, b.name, b.top, b.bottom) == ("B", f"{stack.bias} fair value gap", 90.0, 86.0)
-    assert b.condition == f"only after a {stack.setup} close above the key level"
+    assert b.condition == "if price trades through A first"  # rules.md 7.1 counts a trade into a level, not a close
     # the steps still name both routes; the look-for has one direction
     assert [step.label for step in verdict.steps[-2:]] == [
         f"A long opens if the {stack.bias} reaches a key level", f"A short opens if the {stack.bias} reaches a key level",
@@ -94,11 +95,11 @@ def test_a_forced_side_shows_its_own_level_even_when_the_other_is_nearer() -> No
     assert [(option.name, option.bottom) for option in look.options] == [("Previous 1D low", 20.0)]
 
 
-def test_without_a_tolerance_the_band_is_the_level_candle_wick() -> None:
+def test_without_a_tolerance_the_band_is_the_level_and_one_tick_through_it() -> None:
     look = evaluate(reversal_scenario(DAILY, previous_low=20.0), "level_taken", reversal_level_tolerance_frac=0.0).look_for
     assert look is not None
-    # the previous candle O 70 H 71: its upper wick 70-71
-    assert (look.options[0].top, look.options[0].bottom) == (71.0, 70.0)
+    # the previous high 71 must itself trade: the box is 71 to one NQ tick above, all of it counting as reached
+    assert (look.options[0].top, look.options[0].bottom) == (71.25, 71.0)
 
 
 @STACKS

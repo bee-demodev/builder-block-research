@@ -3,7 +3,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { describe, expect, it, vi } from 'vitest';
 import { JournalBlock } from './components/JournalBlock';
 import { demoJournal, demoTrigger, longView, snapshot, watchView } from './demo/fixtures';
-import { journalRows, markFrame, noteFrame, openNote, reasonFrame, sampleNote, signedR } from './journal';
+import { journalRows, lateNote, markFrame, noteFrame, openNote, reasonFrame, sampleNote, signedR } from './journal';
 import { parseServerFrame, validateFrame, type Journal, type JournalTrigger } from './wire';
 
 const trigger = (changes: Partial<JournalTrigger> = {}): JournalTrigger => ({ ...demoTrigger('2026-11-12T10:30:00-05:00'), ...changes });
@@ -117,5 +117,14 @@ describe('the journal block', () => {
     const html = render({ ...j, note: '', stats: { ...j.stats, skipped: { n: 0, avg_r: null } } });
     expect(html).toMatch(/Skipped<\/th><td class="mono">0<\/td><td class="mono">none closed/);
     expect(html).not.toContain('journal-evidence');
+  });
+});
+
+describe('calls made after the trade ended', () => {
+  const base = { taken: { n: 0, avg_r: null }, skipped: { n: 0, avg_r: null }, all: { n: 3, avg_r: 0.5 }, open: 0, min_n: 20 };
+  it('says how many are left out of Took and Skipped, and nothing when none are', () => {
+    expect(lateNote({ ...base, late: 0 })).toBe('');
+    expect(lateNote({ ...base, late: 1 })).toBe('1 call made after its trade ended is left out of Took and Skipped.');
+    expect(lateNote({ ...base, late: 2 })).toBe('2 calls made after their trades ended are left out of Took and Skipped.');
   });
 });

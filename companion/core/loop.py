@@ -179,6 +179,8 @@ class Core:
         for pool in self._pools:
             pool.shutdown(wait=False, cancel_futures=True)
         self.controller.save()
+        if self.journal is not None:
+            self.journal.flush(2.0)  # the last call on disk before the app goes
         self.controller.shutdown()
 
     # --- the loop ---
@@ -462,7 +464,10 @@ class Core:
         ready = controller.now()
         follow = outcome.request.live and outcome.request.follow
         if self.journal is not None and follow and outcome.verdict is not None:
-            self.journal.observe(outcome.verdict, follow=True, now=ready)  # never raises; before the snapshot, which shows it
+            entry = next((chart for chart in outcome.charts if chart.role == "entry"), None)
+            self.journal.observe(  # never raises; before the snapshot, which shows it
+                outcome.verdict, follow=True, now=ready, bars=entry.candles if entry is not None else ()
+            )
         lag = _ms(ready - outcome.data_time) if follow and outcome.data_time is not None else None
         timing = wire.timing(
             bar_closed_at=outcome.data_time,
@@ -474,8 +479,8 @@ class Core:
         )
         self._render(outcome, timing)
         self._emit_state()
-        if self.alerts is not None and follow and outcome.verdict is not None:
-            self.alerts.consider(outcome.verdict)  # never raises; sends on its own thread
+        if self.alerts is not None and follow and outcome.verdict is not None and not controller.is_stale(outcome, ready):
+            self.alerts.consider(outcome.verdict)  # never raises; sends on its own thread. Stale bars never alert
         if outcome.request.live:
             self._record(job, outcome, started, ready, lag)
 

@@ -192,7 +192,7 @@ export const LOOK_FOR_REVERSAL: LookFor = {
   ],
   options: [
     { key: 'A', name: 'Previous 1W high', top: STORY.prevHigh, bottom: STORY.prevHigh - STORY.band, condition: '' },
-    { key: 'B', name: '1W swing high', top: STORY.swingHigh, bottom: STORY.swingHigh - STORY.band, condition: 'only after a 4h close above the key level' },
+    { key: 'B', name: '1W swing high', top: STORY.swingHigh, bottom: STORY.swingHigh - STORY.band, condition: 'if price trades through A first' },
   ],
   entry: '4h close below the run',
   stop: 'above the reversal wick high',

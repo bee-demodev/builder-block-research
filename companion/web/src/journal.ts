@@ -34,6 +34,14 @@ export function sampleNote(stats: JournalStats): string {
   return `Under ${stats.min_n} closed trades is too few to mean anything yet.`;
 }
 
+/** "1 call made after its trade ended is left out of Took and Skipped." or "". */
+export function lateNote(stats: JournalStats): string {
+  if (!stats.late) return '';
+  return stats.late === 1
+    ? '1 call made after its trade ended is left out of Took and Skipped.'
+    : `${stats.late} calls made after their trades ended are left out of Took and Skipped.`;
+}
+
 /** "2 still open" or "". */
 export function openNote(stats: JournalStats): string {
   return stats.open > 0 ? `${stats.open} still open` : '';
