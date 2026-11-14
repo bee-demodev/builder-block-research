@@ -245,6 +245,9 @@ class LookFor:
     Built from what the rules already computed (the steps, the points of interest, the
     structural level). ``target`` names the exit in words ("2R, then PDL") because the 2R
     price depends on a candle that has not formed; ``target_price`` is the structural level.
+    A reversal (``kind`` "reversal") is shown while it waits for its key level, even on a
+    no_trade verdict, and at the level until the rules can price the turn; its options are
+    the key levels with the band that counts as reaching them.
     """
 
     direction: TradeSide
@@ -257,6 +260,7 @@ class LookFor:
     target: str  # e.g. "2R, then PDL"
     target_price: float | None = None  # the structural level named in ``target``
     entry_during: bool = True  # the entry forms while the setup's C2 forms (False: after it, the conservative entry)
+    kind: str = "continuation"  # "continuation" (a POI on the setup timeframe) | "reversal" (a bias-timeframe key level)
 
 
 @dataclass(frozen=True)

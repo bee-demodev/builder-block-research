@@ -124,7 +124,9 @@ the nearest point of interest, first; B the next one beyond it, ``condition`` sa
 comes into play; real prices), ``entry``, ``stop``, ``target`` (words: "5m close below the
 run", "above the 1h C2 high", "2R, then PDL"; no price that depends on a candle not yet
 formed), ``target_price``: float | null (the structural level ``target`` names),
-``entry_during``: bool (the entry forms while the setup's C2 forms; false: after it).
+``entry_during``: bool (the entry forms while the setup's C2 forms; false: after it),
+``kind`` (continuation | reversal: the options are setup points of interest, or the
+bias-timeframe key levels a reversal waits for, each with the band that counts as reaching it).
 
 ``Chart``: ``role`` (bias | setup | entry), ``timeframe``, ``candles``: ``[Candle]`` (never
 one after the analysis time), ``marks``: ``[Mark]``, ``status`` (the read's status for this

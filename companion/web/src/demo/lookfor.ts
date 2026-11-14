@@ -188,6 +188,7 @@ export const LOOK_FOR_SHORT: LookFor = {
   target: '2R, then PDL',
   target_price: 25360,
   entry_during: true,
+  kind: 'continuation',
 };
 
 const biasRead: Read = {

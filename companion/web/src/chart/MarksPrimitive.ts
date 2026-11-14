@@ -49,8 +49,7 @@ import {
   drawOutlineCandle,
   lookAxisTags,
   lookLabels,
-  lookPrices,
-  otherOptionPrices,
+  lookScalePrices,
   type LookEnv,
   type LookScene,
 } from './LookLayer';
@@ -279,10 +278,8 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     }
     const look = this.scene?.look;
     if (look && this.lastIndex() <= endTimePoint) {
-      for (const p of lookPrices(look)) take(p);
-      // the other options widen the scale only as far as the column may (a far one is cut)
-      const band = this.scene?.columnBand ?? null;
-      for (const p of otherOptionPrices(look)) if (!band || (p >= band.lo && p <= band.hi)) take(p);
+      // the other options (and a far reversal level on the entry pane) widen the scale only as far as the column may
+      for (const p of lookScalePrices(look, this.scene?.columnBand ?? null)) take(p);
     }
     if (!Number.isFinite(min) && above === 0 && below === 0) return null;
     return {
