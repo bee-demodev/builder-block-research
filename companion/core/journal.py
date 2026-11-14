@@ -317,8 +317,6 @@ class Journal:
             if record.get("outcome", "open") != "open":
                 raise JournalError("That trade has already ended; a call now would be hindsight, so it is not recorded.")
             cleared = mark == ""
-            # a call made once the trade has ended is hindsight: kept, but out of the averages
-            record["late"] = not cleared and record.get("outcome", "open") != "open"
             record["mark"] = mark
             record["reason"] = "" if cleared else reason
             record["note"] = "" if cleared else note.strip()

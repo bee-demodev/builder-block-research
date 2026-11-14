@@ -648,12 +648,13 @@ def _look_progress(tell: _Teller, a: _Poi, statuses: tuple[str, str, str]) -> tu
 
 
 def _level_band(ctx: Context, side: Side, level: KeyLevel) -> tuple[float, float] | None:
-    """The zone drawn for a key level, mirrored ``(top, bottom)``: a gap is the gap itself; a
-    price level is the band the rules count as reaching it (rules.md 7.1, the level plus
-    ``reversal_level_tolerance_frac`` of the average bias range, on price's side of it).
-    The band's far edge is the last tick that still counts (rounded toward the level), so
-    the box never prints a price the market cannot trade. With no tolerance, the wick of
-    the bias candle that made the level. None: no height."""
+    """The zone drawn for a key level, mirrored ``(top, bottom)``. A price level: the band the
+    rules count as reaching it (rules.md 7.1, the level plus ``reversal_level_tolerance_frac``
+    of the average bias range, on price's side of it), its far edge the last tick that still
+    counts (rounded toward the level), so the box never prints a price the market cannot
+    trade. A gap: the gap plus that same band before its near edge. With no tolerance: the
+    level and one tick through it (price has to trade through the level). None: no height
+    (no tolerance and an unknown contract)."""
     tolerance = ctx.cfg.reversal_level_tolerance_frac * (ctx.avg_range or 0.0)
     pair = CONTRACTS.get(root(ctx.symbol))
     tick = pair[0].tick if pair is not None else 0.0
@@ -670,7 +671,7 @@ def _level_band(ctx: Context, side: Side, level: KeyLevel) -> tuple[float, float
         if far > level.edge:
             return far, level.edge
     # no tolerance: price has to trade to the level itself, so the box runs from the level one
-    # tick through it (every price in it counts), never a wick the rules do not test against
+    # tick through it (trading into that tick is what counts), never a wick the rules do not test against
     return (level.edge, round(level.edge - tick, 10)) if tick else None
 
 
