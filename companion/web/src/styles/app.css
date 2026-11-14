@@ -1386,7 +1386,8 @@ ul {
 }
 .plan-level {
   display: grid;
-  grid-template-columns: calc(78px * var(--fs)) auto minmax(0, 1fr);
+  /* label | price, the note on its own line under the price: the panel is too narrow for three columns */
+  grid-template-columns: calc(78px * var(--fs)) minmax(0, 1fr);
   align-items: baseline;
   column-gap: 12px;
   padding: 3px 0;
@@ -1400,11 +1401,14 @@ ul {
   font-weight: 500;
 }
 .plan-note-cell {
+  grid-column: 2;
+  min-width: 0;
   font-size: calc(12px * var(--fs));
+  line-height: 1.35;
   color: var(--muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+}
+.plan-note-cell:empty {
+  display: none;
 }
 .plan-note {
   margin-top: 8px;

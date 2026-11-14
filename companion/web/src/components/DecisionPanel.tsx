@@ -409,7 +409,9 @@ function PlanBlock({ plan, stale }: { plan: Plan; stale: boolean }) {
             <div key={l.name} className="plan-level">
               <dt>{l.name}</dt>
               <dd className={`plan-price mono ${tone}`}>{l.price}</dd>
-              <dd className="plan-note-cell">{plainText(l.note)}</dd>
+              <dd className="plan-note-cell" title={plainText(l.note) || undefined}>
+                {plainText(l.note)}
+              </dd>
             </div>
           );
         })}
