@@ -61,6 +61,10 @@ found after looking), the 10% stop warning band (rested on low-confidence Databe
 - **Backtest follow-ups, pre-registered first**: (1) 1W / 1M stacks with a horizon of at least one bias candle;
   (2) a limit-at-plan-entry variant; (3) taken vs shadow on 1D/4h/15m restricted to c4 rows (holdout gap +0.13 R);
   (4) eligibility replay of the quality checks (a causal test, not the first-report comparison).
+  **Done 2026-11-14**, [ttrades_phase_b_backtests.md](ttrades_phase_b_backtests.md): all four fail their
+  pre-registered thresholds (weekly / monthly stacks still flat at a 35-day horizon; a limit at the plan entry moves
+  expectancy by about a tick; the 1D/4h/15m c4 taken-vs-shadow gap does not hold in 2024-26; no single quality check
+  is shown to help or hurt).
 
 ## Verification for Phase A
 

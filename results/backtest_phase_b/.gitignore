@@ -1,0 +1,6 @@
+# trade files stay local; only small summaries are committed
+*.jsonl.gz
+*.states.csv.gz
+*.pkl
+*.log
+trades*.csv.gz

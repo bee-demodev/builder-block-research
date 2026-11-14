@@ -28,6 +28,7 @@ minute bars from the fill onward only. Data gaps are not filled.
 from __future__ import annotations
 
 import argparse
+import contextlib
 import dataclasses
 import gzip
 import json
@@ -44,6 +45,7 @@ import numpy as np
 import pandas as pd
 
 from companion.bars import HistoricalBarSource, bar_close_times, resample
+from companion.styles.ttrades.checklist import ADVISORY, QUALITY, Checklist
 from companion.styles.ttrades.config import load_config
 from companion.styles.ttrades.style import TTradesStyle
 from companion.timeframes import bar_close_time, make_stack, parse_timeframe
@@ -83,6 +85,46 @@ VARIANTS: dict[str, dict[str, Any]] = {
     "latest_trigger": {"entry_either_pick": "latest"},
     "no_clean_wait": {"wait_for_clean_continuation": False},
 }
+# "off-<criterion key>" (or several keys joined by "+") runs the baseline config with those
+# quality checks made advisory for that run only: computed and shown, never blocking.
+OFF_PREFIX = "off-"
+# Outcome fields copied under a prefix for the limit, eligibility and extra-horizon outcomes.
+SUB_FIELDS = ("skipped", "status", "at_open", "minutes_to_fill", "fill", "fill_time", "risk", "cost_r", "mfe_r",
+              "first_1r", "first_2r", "first_3r", "net_1r", "net_1.5r", "net_2r", "net_3r", "minutes_2r", "r_bias_close")
+
+
+def variant_config(variant: str) -> tuple[dict[str, Any], tuple[str, ...]]:
+    """(config overrides, quality checks switched off) of a variant name."""
+    if variant.startswith(OFF_PREFIX):
+        return {}, tuple(key for key in variant[len(OFF_PREFIX):].split("+") if key)
+    return VARIANTS[variant], ()
+
+
+@contextlib.contextmanager
+def checks_off(keys: Sequence[str]) -> Iterator[None]:
+    """Make the named quality checks advisory while the block runs (backtest only; restored after).
+
+    Path selection reads stages, not quality checks, so this changes only whether an
+    entry-ready trigger is reported as long / short or held at watch."""
+    if not keys:
+        yield
+        return
+    original = Checklist.role
+    off = frozenset(keys)
+
+    def role(self: Checklist, key: str) -> str:
+        found = original(self, key)
+        return ADVISORY if key in off and found == QUALITY else found
+
+    Checklist.role = role  # type: ignore[method-assign]
+    try:
+        yield
+    finally:
+        Checklist.role = original  # type: ignore[method-assign]
+
+
+def _sub(prefix: str, outcome: dict[str, Any] | None) -> dict[str, Any]:
+    return {f"{prefix}{key}": outcome[key] for key in SUB_FIELDS if outcome is not None and key in outcome}
 
 
 def stack_name(parts: Sequence[str]) -> str:
@@ -183,7 +225,9 @@ class Simulator:
         self.tick = tick
         self.commission = COMMISSION_USD / point_value if point_value else 0.0
 
-    def run(self, direction: str, at: pd.Timestamp, stop: float, bias_close: pd.Timestamp | None) -> dict[str, Any] | None:
+    def run(self, direction: str, at: pd.Timestamp, stop: float, bias_close: pd.Timestamp | None,
+            max_days: float | None = None) -> dict[str, Any] | None:
+        """Market entry: the open of the first bar at or after ``at``, one tick worse."""
         first = int(self._index.searchsorted(at, side="left"))
         if first >= len(self._index) or self._index[first] - at > pd.Timedelta(hours=2):
             return None
@@ -192,12 +236,59 @@ class Simulator:
         risk = sign * (fill - stop)
         if not (risk > 0):
             return {"skipped": "fill beyond stop", "fill": fill}
-        horizon = at + pd.Timedelta(days=self.max_days)
+        return self._walk(first, fill, sign, risk, at, bias_close, max_days, whole_first_bar=True)
+
+    def run_limit(self, direction: str, at: pd.Timestamp, entry: float, stop: float, until: pd.Timestamp,
+                  bias_close: pd.Timestamp | None, max_days: float | None = None) -> dict[str, Any]:
+        """Limit order at ``entry``, placed at ``at`` and cancelled at ``until`` if unfilled.
+
+        A bar that opens at or beyond the entry (long: open <= entry) fills at its open, the
+        better price. Otherwise the order fills at ``entry`` on the first bar that trades through
+        it by one tick (long: low <= entry - tick). On that bar the stop counts (adverse extreme
+        beyond the stop = loss) but a target does not: the bar's favourable extreme may have come
+        before the fill, so only its close counts in the trade's favour. A bar that opens beyond
+        the stop before any fill would fill already through the stop: ``gap_beyond_stop``, no
+        outcome. Costs: commission and one tick of stop slippage; no entry slippage (a limit).
+        ``status``: ``filled``, ``no_fill`` (window ended), ``gap_beyond_stop`` or ``no_data``.
+        """
+        first = int(self._index.searchsorted(at, side="left"))
+        if first >= len(self._index) or self._index[first] - at > pd.Timedelta(hours=2):
+            return {"status": "no_data"}
+        sign = 1.0 if direction == "long" else -1.0
+        if not (sign * (entry - stop) > 0):
+            return {"status": "gap_beyond_stop"}
+        window_end = int(self._index.searchsorted(until, side="left"))
+        through = entry - sign * self.tick
+        for index in range(first, min(len(self._index), max(first + 1, window_end))):
+            bar_open = float(self._open[index])
+            waited = float((self._index[index] - at) / pd.Timedelta(minutes=1))
+            if sign * (bar_open - entry) <= 0:  # opens at or beyond the entry: fills at the open
+                if sign * (bar_open - stop) <= 0:
+                    return {"status": "gap_beyond_stop", "fill": bar_open}
+                out = self._walk(index, bar_open, sign, sign * (bar_open - stop), at, bias_close, max_days,
+                                 whole_first_bar=True)
+                return {"status": "filled", "at_open": True, "minutes_to_fill": waited, **out}
+            if (self._low[index] <= through) if sign > 0 else (self._high[index] >= through):
+                out = self._walk(index, entry, sign, sign * (entry - stop), at, bias_close, max_days,
+                                 whole_first_bar=False)
+                return {"status": "filled", "at_open": False, "minutes_to_fill": waited, **out}
+        return {"status": "no_fill"}
+
+    def _walk(self, first: int, fill: float, sign: float, risk: float, at: pd.Timestamp,
+              bias_close: pd.Timestamp | None, max_days: float | None, whole_first_bar: bool) -> dict[str, Any]:
+        """Outcomes of a position filled at ``fill`` on bar ``first``, walked to ``at`` + the horizon.
+
+        ``whole_first_bar`` False: the fill came inside bar ``first`` (a limit), so only that
+        bar's close counts in the trade's favour."""
+        horizon = at + pd.Timedelta(days=self.max_days if max_days is None else max_days)
         last = int(self._index.searchsorted(horizon, side="left"))
         highs, lows, closes = self._high[first:last], self._low[first:last], self._close[first:last]
         times = self._index[first:last]
         favour = (highs - fill) if sign > 0 else (fill - lows)
         against = (fill - lows) if sign > 0 else (highs - fill)
+        if not whole_first_bar and len(favour):
+            favour = favour.copy()
+            favour[0] = max(0.0, sign * (float(closes[0]) - fill))
         stopped = np.nonzero(against >= risk)[0]
         stop_at = int(stopped[0]) if len(stopped) else None
         cost_r = (self.tick + self.commission) / risk  # stop slippage + commission; entry tick is in the fill
@@ -250,8 +341,30 @@ def daily_range(minutes: pd.DataFrame) -> pd.Series:
 
 def scan(symbol: str, stack_parts: Sequence[str], start: str, end: str, variant: str = "baseline",
          hours: tuple[int, int] | None = None, max_days: float = 10.0,
-         minute_bars: pd.DataFrame | None = None, progress: bool = False) -> tuple[list[dict[str, Any]], list[tuple]]:
-    """Run one symbol / stack / period. Returns (trades, per-check state rows)."""
+         minute_bars: pd.DataFrame | None = None, progress: bool = False,
+         limit_windows: Sequence[int] = (), eligibility: bool = False,
+         extra_horizons: Sequence[float] = ()) -> tuple[list[dict[str, Any]], list[tuple]]:
+    """Run one symbol / stack / period. Returns (trades, per-check state rows).
+
+    Opt-in extras (all off by default; the base fields do not change):
+
+    - ``limit_windows``: for each W, a limit order at the plan entry placed at the first report
+      and cancelled after W entry-timeframe bars (``Simulator.run_limit``); fields ``lim<W>_*``.
+    - ``eligibility``: the first check at which the trigger is reported long / short (the first
+      report if it was taken there, else a later check of the same trigger), with a market
+      entry at that check; fields ``elig_check``, ``elig_lag_min``, ``elig_*``. None if never.
+    - ``extra_horizons``: the market outcomes again with other horizons (days); ``h<D>_*``.
+    """
+    overrides, off = variant_config(variant)
+    with checks_off(off):
+        return _scan(symbol, stack_parts, start, end, variant, overrides, hours, max_days, minute_bars, progress,
+                     limit_windows, eligibility, extra_horizons)
+
+
+def _scan(symbol: str, stack_parts: Sequence[str], start: str, end: str, variant: str, overrides: dict[str, Any],
+          hours: tuple[int, int] | None, max_days: float, minute_bars: pd.DataFrame | None, progress: bool,
+          limit_windows: Sequence[int], eligibility: bool,
+          extra_horizons: Sequence[float]) -> tuple[list[dict[str, Any]], list[tuple]]:
     stack = make_stack(*stack_parts)
     begin = pd.Timestamp(start, tz=BARS_TIMEZONE)
     finish = pd.Timestamp(end, tz=BARS_TIMEZONE)
@@ -262,11 +375,13 @@ def scan(symbol: str, stack_parts: Sequence[str], start: str, end: str, variant:
     else:
         source = HistoricalBarSource(start=begin - history, end=finish + pd.Timedelta(days=max_days + 3))
     minutes = source.minute_bars(symbol)
-    style = TTradesStyle(config=load_config(overrides=VARIANTS[variant]))
+    style = TTradesStyle(config=load_config(overrides=overrides))
+    entry_minutes = parse_timeframe(stack.entry).nominal_minutes
     sim = Simulator(minutes, symbol, max_days)
     adr = daily_range(minutes)
     times = check_times(minutes, stack.entry, begin, finish, hours)
     seen: set[tuple] = set()
+    rows_by_key: dict[tuple, dict[str, Any]] = {}
     trades: list[dict[str, Any]] = []
     states: list[tuple] = []
     started = time.time()
@@ -286,12 +401,19 @@ def scan(symbol: str, stack_parts: Sequence[str], start: str, end: str, variant:
             continue
         direction, since, entry_level, stop_level = trigger
         key = (direction, verdict.path_family, since.isoformat(), round(entry_level, 4), round(stop_level, 4))
+        bias_open = _markup_start(verdict, "Forming bias candle open")
+        bias_close = bar_close_time(bias_open, stack.bias) if bias_open is not None else None
         if key in seen:
+            earlier = rows_by_key.get(key)
+            if (eligibility and earlier is not None and earlier["elig_check"] is None
+                    and verdict.decision in ("long", "short")):
+                later = sim.run(direction, moment, stop_level, bias_close)
+                earlier["elig_check"] = moment.isoformat()
+                earlier["elig_lag_min"] = float((moment - pd.Timestamp(earlier["trigger_close"])) / pd.Timedelta(minutes=1))
+                earlier.update(_sub("elig_", later) if later is not None else {"elig_skipped": "no data"})
             continue
         seen.add(key)
         trigger_close = bar_close_time(since, stack.entry)
-        bias_open = _markup_start(verdict, "Forming bias candle open")
-        bias_close = bar_close_time(bias_open, stack.bias) if bias_open is not None else None
         trigger_key = "cont_entry_trigger" if verdict.path_family == "continuation" else "rev_entry_trigger"
         trigger_item = _criterion(verdict, trigger_key)
         detail = trigger_item.detail if trigger_item is not None else ""
@@ -332,6 +454,17 @@ def scan(symbol: str, stack_parts: Sequence[str], start: str, end: str, variant:
         row.update(outcome)
         if "risk" in row and adr_now == adr_now and adr_now > 0:
             row["risk_adr"] = row["risk"] / adr_now
+        for window in limit_windows:
+            until = moment + pd.Timedelta(minutes=window * entry_minutes)
+            row.update(_sub(f"lim{window}_", sim.run_limit(direction, moment, entry_level, stop_level, until, bias_close)))
+        for days in extra_horizons:
+            row.update(_sub(f"h{days:g}_", sim.run(direction, moment, stop_level, bias_close, max_days=days)))
+        if eligibility:
+            row["elig_check"] = row["check"] if row["taken"] else None
+            row["elig_lag_min"] = row["lag_min"] if row["taken"] else None
+            if row["taken"]:
+                row.update(_sub("elig_", outcome))
+            rows_by_key[key] = row
         trades.append(row)
     return trades, states
 
@@ -371,7 +504,8 @@ def run_job(job: dict[str, Any]) -> dict[str, Any]:
         bars = read_bars_file(job["bars_file"]) if job.get("bars_file") else None
         trades, states = scan(job["symbol"], job["stack"], job["start"], job["end"], job.get("variant", "baseline"),
                               tuple(job["hours"]) if job.get("hours") else None, job.get("max_days", 10.0),
-                              minute_bars=bars)
+                              minute_bars=bars, limit_windows=job.get("limit_windows", ()),
+                              eligibility=job.get("eligibility", False), extra_horizons=job.get("extra_horizons", ()))
     except Exception as error:
         return {**job, "status": f"error: {type(error).__name__}: {error}"}
     meta = {**job, "checks": len(states), "trades": len(trades), "seconds": round(time.time() - started, 1)}
@@ -381,7 +515,9 @@ def run_job(job: dict[str, Any]) -> dict[str, Any]:
 
 def grid_jobs(symbols: Sequence[str], years: Sequence[int], stacks: Sequence[tuple[str, str, str]],
               variants: Sequence[str], out_dir: Path, bars_dir: Path | None = None,
-              bars_tf: str = "5m") -> Iterator[dict[str, Any]]:
+              bars_tf: str = "5m", **extras: Any) -> Iterator[dict[str, Any]]:
+    """One job per year x variant x stack x symbol. ``extras`` (``max_days``, ``limit_windows``,
+    ``eligibility``, ``extra_horizons``) are copied into every job."""
     for year in years:
         for variant in variants:
             for parts in stacks:
@@ -400,6 +536,7 @@ def grid_jobs(symbols: Sequence[str], years: Sequence[int], stacks: Sequence[tup
                         # minute-entry stacks: London open to New York close only (runtime)
                         "hours": [1, 16] if parts[2] == "1m" else None,
                         "out": str(out_dir / f"{year}" / variant / f"{symbol}_{slug}.jsonl.gz"),
+                        **extras,
                     }
 
 
@@ -411,7 +548,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     one.add_argument("--stack", default="1D / 1h / 5m")
     one.add_argument("--start", required=True)
     one.add_argument("--end", required=True)
-    one.add_argument("--variant", default="baseline", choices=sorted(VARIANTS))
+    one.add_argument("--variant", default="baseline", help=f"one of {sorted(VARIANTS)} or {OFF_PREFIX}<quality check key>")
     one.add_argument("--hours", nargs=2, type=int)
     one.add_argument("--out", required=True)
     one.add_argument("--bars-file", help="CSV of bars to use instead of the Databento minute set")
@@ -424,13 +561,24 @@ def main(argv: Sequence[str] | None = None) -> int:
     grid.add_argument("--out-dir", default="results/backtest")
     grid.add_argument("--bars-dir", help="read <dir>/<SYMBOL>_<bars-tf>.csv instead of the Databento minute set")
     grid.add_argument("--bars-tf", default="5m")
+    grid.add_argument("--dry-run", action="store_true", help="print the jobs and exit")
+    for command in (one, grid):
+        command.add_argument("--max-days", type=float, default=10.0, help="outcome horizon in calendar days")
+        command.add_argument("--limit-windows", nargs="*", type=int, default=[],
+                             help="limit-at-plan-entry outcomes, order valid for W entry bars (lim<W>_*)")
+        command.add_argument("--eligibility", action="store_true", help="record the first check reporting long / short")
+        command.add_argument("--extra-horizons", nargs="*", type=float, default=[], help="market outcomes at other horizons")
     args = parser.parse_args(argv)
+    extras = {"max_days": args.max_days, "limit_windows": args.limit_windows, "eligibility": args.eligibility,
+              "extra_horizons": args.extra_horizons}
 
     if args.command == "run":
         parts = [part.strip() for part in args.stack.split("/")]
         bars = read_bars_file(args.bars_file) if args.bars_file else None
         trades, states = scan(args.symbol, parts, args.start, args.end, args.variant,
-                              tuple(args.hours) if args.hours else None, progress=True, minute_bars=bars)
+                              tuple(args.hours) if args.hours else None, args.max_days, progress=True, minute_bars=bars,
+                              limit_windows=args.limit_windows, eligibility=args.eligibility,
+                              extra_horizons=args.extra_horizons)
         _write(Path(args.out), trades, states, {"symbol": args.symbol, "stack": parts, "start": args.start, "end": args.end})
         taken = [t for t in trades if t["taken"]]
         print(f"{len(states)} checks, {len(trades)} triggers, {len(taken)} taken")
@@ -438,7 +586,10 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     stacks = ALL_STACKS if not args.stacks else [tuple(p.strip() for p in s.split("/")) for s in args.stacks]
     jobs = list(grid_jobs(args.symbols, args.years, stacks, args.variants, Path(args.out_dir),
-                          Path(args.bars_dir) if args.bars_dir else None, args.bars_tf))
+                          Path(args.bars_dir) if args.bars_dir else None, args.bars_tf, **extras))
+    if args.dry_run:
+        print(json.dumps(jobs, indent=1))
+        return 0
     # longest jobs (minute entry) first so the pool drains evenly
     jobs.sort(key=lambda job: {"1m": 0, "3m": 1, "5m": 2}.get(job["stack"][2], 3))
     print(f"{len(jobs)} jobs on {args.workers} workers", flush=True)
