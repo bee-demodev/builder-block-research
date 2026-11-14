@@ -6,14 +6,17 @@ trader pastes it there; it never goes in the repo). Without one, nothing is sent
 A message goes out only for a live check that follows the latest bars, whose decision is
 long or short and whose plan has just triggered ("actionable": at most a few entry bars
 old and price still near the entry). Each trigger is sent once, also across restarts:
-the keys already sent are kept in ``discord_sent.json``. Sending runs on its own thread
-and never fails or slows a check; a failure is only logged.
+the keys Discord accepted are kept in ``discord_sent.json``. A failed post is tried again
+on the next check while the trigger is still actionable (at most ``MAX_ATTEMPTS`` times).
+Sending and saving run on their own thread and never fail or slow a check; a failure is
+only logged. The core only asks on fresh data (``CompanionController.is_stale``).
 """
 
 from __future__ import annotations
 
 import json
 import logging
+import os
 import threading
 import urllib.error
 import urllib.request
@@ -27,6 +30,7 @@ log = logging.getLogger("companion.alerts")
 SETTINGS_FILE = "desktop.json"
 SENT_FILE = "discord_sent.json"
 KEEP = 200  # trigger keys remembered
+MAX_ATTEMPTS = 3  # failed posts of one trigger before it is given up
 TIMEOUT_S = 8.0
 
 Post = Callable[[str, dict[str, Any]], None]
@@ -55,10 +59,24 @@ def webhook_from_state(state: Path) -> str:
     if not isinstance(url, str):
         return ""
     url = url.strip()
-    ok = url.startswith(("https://discord.com/api/webhooks/", "https://discordapp.com/api/webhooks/"))
+    hosts = ("discord.com", "discordapp.com", "ptb.discord.com", "canary.discord.com")
+    ok = url.startswith(tuple(f"https://{host}/api/webhooks/" for host in hosts))
     if url and not ok:
         log.warning("discord_webhook in %s is not a Discord webhook URL; alerts are off.", Path(state) / SETTINGS_FILE)
     return url if ok else ""
+
+
+def plan_key(verdict: Verdict) -> str | None:
+    """Which trigger a verdict's plan is (symbol, stack, style, side, trigger bar), or None when nothing has triggered.
+
+    The same trigger keeps its key from check to check, whatever the decision or the stage
+    says about it, so the alerts and the decision journal can each act on it once."""
+    plan = verdict.plan
+    if plan is None or plan.state != "triggered":
+        return None
+    since = plan.since.isoformat() if plan.since is not None else ""
+    stack = verdict.stack
+    return f"{verdict.symbol}|{stack.bias}/{stack.setup}/{stack.entry}|{verdict.style}|{plan.direction}|{since}"
 
 
 def trigger_key(verdict: Verdict) -> str | None:
@@ -68,9 +86,7 @@ def trigger_key(verdict: Verdict) -> str | None:
         return None
     if plan.state != "triggered" or plan.outcome != "open" or plan.stage_label != "actionable":
         return None
-    since = plan.since.isoformat() if plan.since is not None else ""
-    stack = verdict.stack
-    return f"{verdict.symbol}|{stack.bias}/{stack.setup}/{stack.entry}|{verdict.style}|{plan.direction}|{since}"
+    return plan_key(verdict)
 
 
 def _price(value: float) -> str:
@@ -96,14 +112,20 @@ def message(verdict: Verdict) -> str:
     if plan.cost_r_mini is not None:
         extras.append(f"costs {plan.cost_r_mini:.2f}R mini" + (f", {plan.cost_r_micro:.2f}R micro" if plan.cost_r_micro is not None else ""))
     if extras:
-        lines.append(" · ".join(extras).capitalize())
+        joined = " · ".join(extras)
+        lines.append(joined[:1].upper() + joined[1:])  # not str.capitalize, which lowercases "ADR" and "R"
     if verdict.why:
         lines.append(f"Why: {verdict.why}")
     return "\n".join(lines)[:1900]  # Discord caps a message at 2000 characters
 
 
 class DiscordAlerts:
-    """Sends one Discord message per actionable trigger. ``consider`` is cheap and never raises."""
+    """Sends one Discord message per actionable trigger. ``consider`` is cheap and never raises.
+
+    A trigger counts as sent only once Discord took the message: a failed post (no network,
+    a refusal, a rate limit) frees it again, so the next check of the same still-actionable
+    trigger tries again, up to ``MAX_ATTEMPTS`` times. The sent list is saved by the sending
+    thread, never on the check thread."""
 
     def __init__(self, webhook: str, state: Path | None = None, post: Post | None = None, background: bool = True) -> None:
         self.webhook = webhook
@@ -111,7 +133,10 @@ class DiscordAlerts:
         self._post = post or post_json
         self._background = background
         self._lock = threading.Lock()
+        self._save_lock = threading.Lock()  # one save at a time, each writing the newest list
         self._sent: list[str] = self._load()
+        self._busy: set[str] = set()  # posting now
+        self._tries: dict[str, int] = {}  # failed posts per trigger
 
     @classmethod
     def from_state(cls, state: Path) -> DiscordAlerts | None:
@@ -125,33 +150,48 @@ class DiscordAlerts:
         """Send an alert if ``verdict`` is a new actionable trade. True when one was sent (or queued)."""
         if verdict is None:
             return False
+        key: str | None = None
         try:
             key = trigger_key(verdict)
             if key is None:
                 return False
             with self._lock:
-                if key in self._sent:
+                if key in self._sent or key in self._busy or self._tries.get(key, 0) >= MAX_ATTEMPTS:
                     return False
-                self._sent = [*self._sent, key][-KEEP:]
-                self._save()
+                self._busy.add(key)
             payload = {"content": message(verdict), "username": "Trading Companion", "allowed_mentions": {"parse": []}}
+            if self._background:
+                threading.Thread(target=self._send, args=(payload, key), name="discord-alert", daemon=True).start()
+            else:
+                self._send(payload, key)
+            return True
         except Exception:  # an alert must never break a check
             log.exception("Could not prepare a Discord alert.")
+            if key is not None:
+                with self._lock:
+                    self._busy.discard(key)
             return False
-        if self._background:
-            threading.Thread(target=self._send, args=(payload, key), name="discord-alert", daemon=True).start()
-        else:
-            self._send(payload, key)
-        return True
 
     def _send(self, payload: dict[str, Any], key: str) -> None:
+        delivered = False
         try:
             self._post(self.webhook, payload)
+            delivered = True
             log.info("Discord alert sent: %s", key)
         except (urllib.error.URLError, OSError, ValueError) as problem:
             log.warning("Discord alert failed (%s): %s", key, problem)
         except Exception:
             log.exception("Discord alert failed: %s", key)
+        with self._lock:
+            self._busy.discard(key)
+            if not delivered:
+                self._tries[key] = self._tries.get(key, 0) + 1
+                return
+            self._sent = [*self._sent, key][-KEEP:]
+        with self._save_lock:  # read the list inside the save lock, so a later save never writes an older one
+            with self._lock:
+                sent = list(self._sent)
+            self._save(sent)
 
     def _load(self) -> list[str]:
         if self.state is None:
@@ -162,11 +202,13 @@ class DiscordAlerts:
             return []
         return [str(k) for k in data][-KEEP:] if isinstance(data, list) else []
 
-    def _save(self) -> None:
+    def _save(self, sent: list[str]) -> None:
         if self.state is None:
             return
         try:
             self.state.mkdir(parents=True, exist_ok=True)
-            (self.state / SENT_FILE).write_text(json.dumps(self._sent), encoding="utf-8")
+            spare = self.state / (SENT_FILE + ".tmp")
+            spare.write_text(json.dumps(sent), encoding="utf-8")
+            os.replace(spare, self.state / SENT_FILE)  # whole or not at all
         except OSError:
-            pass
+            log.warning("Could not save %s.", self.state / SENT_FILE)

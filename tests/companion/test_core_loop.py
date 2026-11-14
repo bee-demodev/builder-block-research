@@ -308,3 +308,12 @@ def test_alerts_turn_on_from_the_webhook_in_desktop_json(minutes: pd.DataFrame, 
     (tmp_path / "state" / "desktop.json").write_text(json.dumps({"discord_webhook": "https://discord.com/api/webhooks/1/x"}), encoding="utf-8")
     h = Harness(minutes, tmp_path)
     assert h.core.alerts is not None and h.core.alerts.webhook.endswith("/1/x")
+
+
+def test_a_check_on_stale_bars_never_alerts(minutes: pd.DataFrame, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    h = Harness(minutes, tmp_path)
+    alerts = RecordingAlerts()
+    h.core.alerts = alerts  # type: ignore[assignment]
+    monkeypatch.setattr(h.controller, "is_stale", lambda outcome, now=None: True)  # TradingView handed back old bars
+    h.walk("10:49:59.5", "10:50:04")
+    assert h.verdicts() and alerts.seen == []

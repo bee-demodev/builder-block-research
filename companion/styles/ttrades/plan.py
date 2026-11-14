@@ -16,18 +16,19 @@ that leaves is a real price.
 
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass
 
 import numpy as np
 
-from companion.contracts import cost_in_r
+from companion.contracts import CONTRACTS, cost_in_r, root
 from companion.styles.ttrades.bias import BiasRead
 from companion.styles.ttrades.config import TTradesConfig
 from companion.styles.ttrades.context import Context, View
 from companion.styles.ttrades.continuation import PathOutcome
 from companion.styles.ttrades.primitives import BEAR, BULL, CisdRead, Side, candle3_edge
 from companion.styles.ttrades.read import _Teller, _blockers, _cap, level_words, money
-from companion.styles.ttrades.reversal import nearest_level
+from companion.styles.ttrades.reversal import KeyLevel, key_levels, nearest_level
 from companion.types import LookFor, LookOption, LookStep, PlanStep, PositionPlan, ReadStep
 
 DONE, NEXT, LATER, BLOCKED = "done", "next", "later", "blocked"
@@ -641,3 +642,168 @@ def _look_progress(tell: _Teller, a: _Poi, statuses: tuple[str, str, str]) -> tu
     if c1_in:
         return "done", "next", "later"
     return statuses
+
+
+# --- what to look for: the reversal -----------------------------------------------
+
+
+def _level_band(ctx: Context, side: Side, level: KeyLevel) -> tuple[float, float] | None:
+    """The zone drawn for a key level, mirrored ``(top, bottom)``. A price level: the band the
+    rules count as reaching it (rules.md 7.1, the level plus ``reversal_level_tolerance_frac``
+    of the average bias range, on price's side of it), its far edge the last tick that still
+    counts (rounded toward the level), so the box never prints a price the market cannot
+    trade. A gap: the gap plus that same band before its near edge. With no tolerance: the
+    level and one tick through it (price has to trade through the level). None: no height
+    (no tolerance and an unknown contract)."""
+    tolerance = ctx.cfg.reversal_level_tolerance_frac * (ctx.avg_range or 0.0)
+    pair = CONTRACTS.get(root(ctx.symbol))
+    tick = pair[0].tick if pair is not None else 0.0
+    if level.kind == "fvg":
+        # the gap, plus the band before its near edge that the reach check also counts
+        near = level.edge + tolerance
+        if tolerance > 0 and tick:
+            near = round(math.floor(near / tick + 1e-9) * tick, 10)
+        return max(near, level.edge), level.hold
+    if tolerance > 0:
+        far = level.edge + tolerance
+        if tick:
+            far = round(math.floor(far / tick + 1e-9) * tick, 10)
+        if far > level.edge:
+            return far, level.edge
+    # no tolerance: price has to trade to the level itself, so the box runs from the level one
+    # tick through it (trading into that tick is what counts), never a wick the rules do not test against
+    return (level.edge, round(level.edge - tick, 10)) if tick else None
+
+
+def _level_names(tf: str, side: Side, level: KeyLevel) -> tuple[str, str]:
+    """A key level on its own ("Previous 1W high") and in a sentence ("the previous 1W high")."""
+    if level.kind == "previous_candle":
+        return f"Previous {tf} {side.lo}", f"the previous {tf} {side.lo}"
+    if level.kind == "swing":
+        return f"{tf} swing {side.lo}", f"the {tf} swing {side.lo}"
+    return f"{tf} fair value gap", f"the {tf} fair value gap"
+
+
+def reversal_options(ctx: Context, side: Side, level: KeyLevel, levels: list[KeyLevel], setup_tf: str) -> tuple[LookOption, ...]:
+    """Option A, the key level the reversal waits for, and option B, the nearest key level on
+    the same side wholly beyond A (one that overlaps A is the same place). Real prices."""
+    tf = ctx.stack.bias
+    band = _level_band(ctx, side, level)
+    if band is None:
+        return ()
+
+    def option(key: str, found: KeyLevel, zone: tuple[float, float], condition: str = "") -> LookOption:
+        top, bottom = side.zone(*zone)
+        return LookOption(key, _level_names(tf, side, found)[0], top, bottom, condition)
+
+    a = option("A", level, band)
+    beyond = min(band)
+    for other in sorted(levels, key=lambda item: item.edge, reverse=True):
+        zone = None if other is level else _level_band(ctx, side, other)
+        if zone is not None and max(zone) < beyond:
+            return a, option("B", other, zone, "if price trades through A first")
+    return (a,)
+
+
+def _reversal_look(ctx: Context, side: Side, level: KeyLevel, statuses: tuple[str, str, str]) -> LookFor | None:
+    """The reversal at ``level`` as a look-for: the bias candle trades into the level, the
+    setup's C1 / C2 there closes back, the turn is the entry (rules.md 7, 8)."""
+    tell = _Teller(ctx, side)
+    view, cfg = tell.view, ctx.cfg
+    b, s, e = view.B, view.S, view.E
+    if not b.n:
+        return None
+    levels = key_levels(ctx, side)
+    if view.has_forming:
+        levels = [item for item in levels if not item.through(view.f_low)]
+    options = reversal_options(ctx, side, level, levels, s.tf)
+    if not options:
+        return None
+    if cfg.entry_mode_reversal == "conservative":
+        entry_step = f"After the turn: a {e.tf} pullback that holds, then a close back {tell.up}"
+        entry_words = f"{e.tf} close back {tell.up} after a pullback that holds"
+        stop = f"{side.below} the {e.tf} pullback {side.lo}"  # rules.md 8.2, order-block trigger
+    else:
+        # the CISD that confirms the wick is read on the setup timeframe, and on the entry
+        # timeframe too only for the biases rules.md 4.3 allows it on and only inside its
+        # clock window (the engine's own test in reversal.py stage c3)
+        if ctx.stack.bias in cfg.reversal_entry_tf_confirm_bias:
+            start, end = cfg.reversal_entry_tf_confirm_window
+            turn = f"{s.tf} (or {e.tf} from {start} to {end})"
+        else:
+            turn = s.tf
+        entry_step = f"{turn} turns {tell.up}: a close {side.above} the {side.down_close} run, the entry"
+        entry_words = f"{turn} close {side.above} the run"
+        stop = f"{side.below} the reversal wick {side.lo}"  # rules.md 8.2, CISD trigger
+    k = b.n - 1
+    eq = float((b.high[k] + b.low[k]) / 2.0)  # S1 of a reversal: the previous bias candle's equilibrium (rules.md 8.3)
+    name = "previous day EQ" if b.tf == "1D" else f"previous {b.tf} EQ"
+    toward = "down" if side.bullish else "up"
+    return LookFor(
+        direction=side.trade,  # type: ignore[arg-type]
+        timeframe=s.tf,
+        entry_timeframe=e.tf,
+        steps=(
+            LookStep(f"{b.tf} trades {toward} into {_level_names(b.tf, side, level)[1]}", statuses[0]),  # type: ignore[arg-type]
+            LookStep(f"{s.tf} C1 / C2 there, closing back {side.above} it", statuses[1]),  # type: ignore[arg-type]
+            LookStep(entry_step, statuses[2]),  # type: ignore[arg-type]
+        ),
+        options=options,
+        entry=entry_words,
+        stop=stop,
+        target=f"{cfg.target_rr:g}R, then {name}" if cfg.target_mode == "r_multiple" else name,
+        target_price=side.px(eq),
+        entry_during=cfg.entry_mode_reversal != "conservative",
+        kind="reversal",
+    )
+
+
+def build_reversal_look_for(
+    ctx: Context, path: PathOutcome | None, steps: tuple[PlanStep, ...], position: PositionPlan | None
+) -> LookFor | None:
+    """What to look for while a reversal that has reached its key level waits on its setup
+    (display only). Once the rules can price the turn (a planned or triggered position)
+    the plan says it, so there is nothing to look for."""
+    if path is None or path.side is None or path.family != "reversal" or path.trigger is not None or position is not None:
+        return None
+    level = path.seen.get("level")
+    bias = [step for step in steps if step.role == "bias"]
+    setup = [step for step in steps if step.role == "setup"]
+    entry = [step for step in steps if step.role == "entry"]
+    if level is None or not (bias and setup and entry):
+        return None
+    return _reversal_look(ctx, path.side, level, (bias[0].status, setup[0].status, _group_status(entry)))
+
+
+def _group_status(steps: list[PlanStep]) -> str:
+    """One status for the rules' steps one look-for line stands for (the conservative entry
+    is a turn and then the entry): next or blocked when any is, done when all are."""
+    statuses = [step.status for step in steps]
+    for status in (NEXT, BLOCKED):
+        if status in statuses:
+            return status
+    return DONE if all(status == DONE for status in statuses) else LATER
+
+
+def build_route_look_for(ctx: Context, reversals_open: dict[str, bool], forced: Side | None = None) -> LookFor | None:
+    """What to look for while no idea is alive and a reversal waits for price to reach a key
+    level (display only): the side whose nearest key level is nearer (``forced``: that side
+    only). Its first step is next; nothing after it has started."""
+    best: tuple[Side, KeyLevel, float] | None = None
+    for side in (forced,) if forced is not None else (BULL, BEAR):
+        if not reversals_open.get(side.direction):
+            continue
+        found = nearest_level(ctx, side)
+        if found is None:
+            continue
+        level, away = found
+        if away is None:  # no forming candle yet: how far the last close is from the level
+            e = ctx.view(side).E
+            if not e.n:
+                continue
+            away = float(e.close[e.n - 1]) - level.edge
+        if best is None or away < best[2]:
+            best = (side, level, away)
+    if best is None:
+        return None
+    return _reversal_look(ctx, best[0], best[1], (NEXT, LATER, LATER))

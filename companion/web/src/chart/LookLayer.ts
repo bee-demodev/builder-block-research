@@ -10,7 +10,7 @@
 import type { ISeriesApi, SeriesType, Time } from 'lightweight-charts';
 import { formatPrice } from '../format';
 import type { LookFor } from '../wire';
-import { candleEmphasis, chosenOption, entryCaption, entryGeometry, lookDecimals, paneFocus, projectedCandles, setupCaption, stopCaption, type Ohlc } from './look';
+import { candleEmphasis, candleSteps, chosenOption, entryCaption, entryGeometry, lookDecimals, paneFocus, projectedCandles, setupCaption, stopCaption, type Ohlc } from './look';
 import type { Box, PendingLabel } from './marks';
 import { withAlpha, type Palette } from './palette';
 
@@ -67,6 +67,20 @@ export function otherOptionPrices(scene: LookScene): number[] {
   if (scene.pane !== 'setup') return [];
   const chosen = chosenOption(scene.look, scene.choice);
   return scene.look.options.filter((o) => o !== chosen).flatMap((o) => [o.top, o.bottom]);
+}
+
+/**
+ * The prices the look-for widens a pane's scale to, given the band the pane's own candles
+ * span (null: no band). The chosen option's shapes always count, except a reversal's on
+ * the entry pane while its step is not the one awaited: a bias key level can sit far past
+ * the entry candles, and the box would flatten them, so there it counts only inside the
+ * band and is cut at the pane edge (as far options are). The other options count only
+ * inside the band.
+ */
+export function lookScalePrices(scene: LookScene, band: { lo: number; hi: number } | null): number[] {
+  const inside = (p: number) => !band || (p >= band.lo && p <= band.hi);
+  const capped = scene.look.kind === 'reversal' && scene.pane === 'entry' && !paneFocus(scene.look).entry;
+  return [...lookPrices(scene).filter((p) => !capped || inside(p)), ...otherOptionPrices(scene).filter(inside)];
 }
 
 /** Box fills, behind the candles. */
@@ -157,7 +171,7 @@ export function drawLookStrokes(ctx: CanvasRenderingContext2D, hr: number, vr: n
       const box = drawOutlineCandle(ctx, hr, vr, env.series, candles[k]!, slot.x, slot.body, color);
       if (box) {
         obstacles.push(box);
-        hits.push({ box, title: `${look.steps[k]?.label ?? `C${k + 1}`} (what to look for, not a forecast)`, priority: LOOK_PRIORITY });
+        hits.push({ box, title: `${candleSteps(look)[k]?.label ?? `C${k + 1}`} (what to look for, not a forecast)`, priority: LOOK_PRIORITY });
       }
     });
     return obstacles;
@@ -222,7 +236,7 @@ export function lookLabels(env: LookEnv, plot: { w: number; h: number }, measure
       const x = slot.x - w / 2;
       const under: Box = { x, y: Math.max(yLow, yHigh) + 3, w, h: LH };
       const over: Box = { x, y: Math.min(yLow, yHigh) - LH - 3, w, h: LH };
-      at(text, emphasis[k] ? p.watch : p.muted, LOOK_PRIORITY + 0.1, look.direction === 'short' ? [under, over] : [over, under], look.steps[k]?.label ?? text);
+      at(text, emphasis[k] ? p.watch : p.muted, LOOK_PRIORITY + 0.1, look.direction === 'short' ? [under, over] : [over, under], candleSteps(look)[k]?.label ?? text);
     });
     return out;
   }

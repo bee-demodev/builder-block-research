@@ -5,6 +5,8 @@ import type {
   ChartView,
   CheckGroup,
   CheckRow,
+  Journal,
+  JournalTrigger,
   Mark,
   Options,
   Plan,
@@ -31,6 +33,7 @@ export const demoOptions: Options = {
   side_labels: { '': 'Auto', long: 'Long', short: 'Short' },
   stack_notes: {
     '1D / 1h / 5m': 'Backtest 2021, 2024-26: -0.08 R a trade (n 2,262), negative every year tested. The weakest stack measured.',
+    '1W / 4h / 15m': 'Backtest 2024-26: 0.00 R a trade (n 361), up in 1 of 3 years. No edge.',
     '4h / 15m / 1m': 'Not validated: 1-minute entries were only backtested on incomplete data.',
   },
 };
@@ -424,6 +427,7 @@ export function watchView(): VerdictView {
     steps: longSteps(false),
     plan: longPlan(true, entry.at(-1)!.time, 25455.25),
     look_for: null,
+    journal: demoJournal(null),
     charts: [
       chart('setup', '1h', 60, setup, setupRead, [
         level('target', 'Target 1', 25540, 14),
@@ -474,6 +478,7 @@ export function longView(): VerdictView {
     idea_state: 'Triggered 10:30 \u00b7 open \u00b7 last close +0.08R from the entry.',
     steps: longSteps(true),
     plan: longPlan(false, entry.at(-2)!.time, 25474),
+    journal: demoJournal(demoTrigger(entry.at(-2)!.time)),
     stage: 'C4',
     why: 'Daily is bullish, the 1h swept its low and the 5m has now closed above 25,468.25.',
     waiting_for: '',
@@ -536,6 +541,7 @@ export function sideView(view: VerdictView, side: Side): VerdictView {
     waiting_for: '',
     plan: null,
     look_for: null,
+    journal: view.journal ? { ...view.journal, trigger: null } : null,
     steps: [
       step(1, 'blocked', '1D', '1D bias is bearish', 'The 1D bias is bullish: candle 2 closed above the prior high 25,371.00, so a short has nothing to follow'),
       step(2, 'later', '1h', '1h pulls back to a point of interest', ''),
@@ -543,6 +549,34 @@ export function sideView(view: VerdictView, side: Side): VerdictView {
     ],
     charts: watch.charts.map((c) => (c.role === 'entry' ? { ...c, tool: null } : c)),
   };
+}
+
+/** A sample journal for `stack`: invented counts, under 20 closed so the panel says they mean nothing yet. */
+export function demoJournal(trigger: JournalTrigger | null, stack = '1D / 1h / 5m'): Journal {
+  return {
+    stack,
+    note: demoOptions.stack_notes[stack] ?? '',
+    trigger,
+    reasons: [
+      { key: 'late', label: 'Late' },
+      { key: 'no_confluence', label: 'No confluence' },
+      { key: 'news', label: 'News' },
+      { key: 'risk_too_big', label: 'Risk too big' },
+      { key: 'other', label: 'Other' },
+    ],
+    stats: {
+      taken: { n: 6, avg_r: 0.42 },
+      skipped: { n: 9, avg_r: -0.11 },
+      all: { n: 23, avg_r: 0.04 },
+      open: 2,
+      min_n: 20,
+      late: 0,
+    },
+  };
+}
+
+export function demoTrigger(since: string): JournalTrigger {
+  return { key: `NQ1!|1D/1h/5m|TTrades|long|${since}`, side: 'long', since, mark: '', reason: '', note: '', outcome: 'open', result_r: null };
 }
 
 export function chartProblemView(): VerdictView {

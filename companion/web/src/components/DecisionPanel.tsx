@@ -14,12 +14,13 @@ import {
   XCircleIcon,
 } from '@phosphor-icons/react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { chosenOption, lookDecimals } from '../chart/look';
+import { chosenOption, lookDecimals, lookLine } from '../chart/look';
 import { checkpointText, planWords, sections, setSide, sideChoices, suggestionText, waitingText } from '../decision';
 import { formatPrice, pathLine, plainText, sentenceCase, wallClock } from '../format';
 import { isStale, type Model } from '../store';
 import { checkTotals, decisionTone, directionTone, isStopLevel, readTone } from '../tones';
 import type { ClientFrame, Direction, LookFor, Plan, StepStatus, VerdictView } from '../wire';
+import { JournalBlock } from './JournalBlock';
 import { Skeleton, StatusIcon, toneClass } from './ui';
 
 interface Props {
@@ -99,6 +100,7 @@ export function DecisionPanel({ model, mode, onToggleMode, send, lookChoice = 'A
         {view?.look_for && <LookForBlock look={view.look_for} choice={lookChoice} onChoose={onLookChoice} stale={stale} />}
         {view?.plan && <PlanBlock plan={view.plan} stale={stale} />}
         {view && show!.levels && <Levels view={view} />}
+        {view?.journal && <JournalBlock journal={view.journal} send={send} disabled={!ready} />}
         {view && clock && <SessionClock hour={clock.hour} minute={clock.minute} />}
       </ScrollBand>
 
@@ -225,14 +227,6 @@ function Verdict({ view, stale, showWaiting, lookChoice }: { view: VerdictView; 
       )}
     </div>
   );
-}
-
-/** "1h C1, C2 at the POI 25,410 to 25,428": what to look for, where, in one line. */
-function lookLine(look: LookFor, choice: string): string {
-  const o = chosenOption(look, choice);
-  if (!o) return '';
-  const d = lookDecimals(look);
-  return `${look.timeframe} C1, C2 at the POI ${formatPrice(o.bottom, d)} to ${formatPrice(o.top, d)}`;
 }
 
 /** The step's state by shape, so it never rests on colour: a ring with a dot is the one awaited now. */
@@ -408,7 +402,9 @@ function PlanBlock({ plan, stale }: { plan: Plan; stale: boolean }) {
             <div key={l.name} className="plan-level">
               <dt>{l.name}</dt>
               <dd className={`plan-price mono ${tone}`}>{l.price}</dd>
-              <dd className="plan-note-cell">{plainText(l.note)}</dd>
+              <dd className="plan-note-cell" title={plainText(l.note) || undefined}>
+                {plainText(l.note)}
+              </dd>
             </div>
           );
         })}

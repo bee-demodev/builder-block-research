@@ -6,7 +6,7 @@
 // high 25,505 to 25,525 beyond it (option B). The 1D and 1h candles are built from the
 // timeframe below them, so the two panes agree on time and price.
 import type { Candle, LookFor, Read, Step, VerdictView } from '../wire';
-import { SAMPLE_SOURCE_NOTE, biasCandle, chart, group, level, row, step } from './fixtures';
+import { SAMPLE_SOURCE_NOTE, biasCandle, chart, demoJournal, group, level, row, step } from './fixtures';
 import { barTimes, isoNY, pin, walk, wall } from './seeded';
 
 export const LOOK_WHEN = '2026-11-12T07:15:00-05:00';
@@ -188,6 +188,7 @@ export const LOOK_FOR_SHORT: LookFor = {
   target: '2R, then PDL',
   target_price: 25360,
   entry_during: true,
+  kind: 'continuation',
 };
 
 const biasRead: Read = {
@@ -268,6 +269,7 @@ export function lookForView(): VerdictView {
     steps: STEPS,
     plan: null,
     look_for: LOOK_FOR_SHORT,
+    journal: demoJournal(null),
     charts: [
       chart('bias', '1D', 1440, bias, biasRead, [biasCandle(1, n - 3, bias[n - 3]!.high), biasCandle(2, n - 2, bias[n - 2]!.high, 'confirm')]),
       chart('setup', '1h', 60, setup, setupRead, [

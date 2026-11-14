@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { LOOK_FOR_SHORT } from '../demo/lookfor';
 import type { LookFor } from '../wire';
-import { chosenOption, entryCaption, entryGeometry, lookDecimals, paneFocus, projectedCandles, setupCaption, zoneEdges } from './look';
+import { candleEmphasis, candleSteps, chosenOption, entryCaption, entryGeometry, lookDecimals, paneFocus, projectedCandles, setupCaption, zoneEdges } from './look';
 
 const SHORT = LOOK_FOR_SHORT;
 const A = SHORT.options[0]!; // 25,410 to 25,428
@@ -79,5 +79,22 @@ describe('words', () => {
   it('carries no em or en dash in any word it draws', () => {
     const words = [setupCaption(SHORT, A), ...SHORT.steps.map((s) => s.label), SHORT.entry, SHORT.stop, SHORT.target];
     for (const w of words) expect(w).not.toMatch(/[–—]/);
+  });
+});
+
+describe('which step each projected candle stands for', () => {
+  const step = (label: string, status: 'done' | 'next' | 'later') => ({ label, status });
+  const base = { ...LOOK_FOR_SHORT };
+  it('a continuation: C1 and C2 are its first two steps', () => {
+    const look = { ...base, steps: [step('1h C1', 'next'), step('1h C2', 'later'), step('5m entry', 'later')] };
+    expect(candleEmphasis(look)).toEqual([true, false]);
+    expect(candleSteps(look).map((s) => s?.label)).toEqual(['1h C1', '1h C2']);
+  });
+  it('a reversal: neither is amber while the bias candle is still heading for the level, both once C1 / C2 is awaited', () => {
+    const waiting = { ...base, kind: 'reversal' as const, steps: [step('1W trades up into the previous 1W high', 'next'), step('4h C1 / C2 there', 'later'), step('4h turns down', 'later')] };
+    expect(candleEmphasis(waiting)).toEqual([false, false]);
+    expect(candleSteps(waiting).map((s) => s?.label)).toEqual(['4h C1 / C2 there', '4h C1 / C2 there']);
+    const there = { ...waiting, steps: [step('1W trades up into the previous 1W high', 'done'), step('4h C1 / C2 there', 'next'), step('4h turns down', 'later')] };
+    expect(candleEmphasis(there)).toEqual([true, true]);
   });
 });

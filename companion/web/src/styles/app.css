@@ -1410,7 +1410,8 @@ ul {
 }
 .plan-level {
   display: grid;
-  grid-template-columns: calc(78px * var(--fs)) auto minmax(0, 1fr);
+  /* label | price, the note on its own line under the price: the panel is too narrow for three columns */
+  grid-template-columns: calc(78px * var(--fs)) minmax(0, 1fr);
   align-items: baseline;
   column-gap: 12px;
   padding: 3px 0;
@@ -1424,11 +1425,14 @@ ul {
   font-weight: 500;
 }
 .plan-note-cell {
+  grid-column: 2;
+  min-width: 0;
   font-size: calc(12px * var(--fs));
+  line-height: 1.35;
   color: var(--muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+}
+.plan-note-cell:empty {
+  display: none;
 }
 .plan-note {
   margin-top: 8px;
@@ -1822,5 +1826,106 @@ ul {
 .path.is-look {
   font-size: calc(13px * var(--fs));
   font-weight: 400;
+  color: var(--muted);
+}
+
+/* ---------- decision journal: quiet, small, neutral (no colour: nothing here is a signal) ---------- */
+.journal {
+  margin-top: 16px;
+}
+.journal-label {
+  margin-top: 14px;
+  font-size: calc(12px * var(--fs));
+  line-height: calc(16px * var(--fs));
+  font-weight: 500;
+  color: var(--muted);
+}
+.journal > .journal-label:first-child,
+.journal-call > .journal-label:first-child {
+  margin-top: 0;
+}
+.journal-call + .journal-label {
+  margin-top: 16px;
+}
+.journal-marks {
+  margin-top: 6px;
+}
+.journal-reasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+.journal-chip {
+  height: calc(24px * var(--fs));
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: 500 calc(12px * var(--fs)) / 1 var(--font-sans);
+  cursor: pointer;
+}
+.journal-chip:not(:disabled):hover {
+  color: var(--text);
+}
+.journal-chip.is-on {
+  background: var(--raised);
+  color: var(--text);
+  border-color: var(--muted);
+}
+.journal-chip:disabled {
+  cursor: default;
+}
+.journal-note {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  height: calc(28px * var(--fs));
+  padding: 0 8px;
+  border: 1px solid var(--faint); /* a field's edge needs 3:1 on its background */
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  font: calc(12px * var(--fs)) / 1 var(--font-sans);
+}
+.journal-ended {
+  font-size: calc(12px * var(--fs));
+  line-height: 1.45;
+  color: var(--muted);
+}
+.journal-note::placeholder {
+  color: var(--muted);
+}
+.journal-note:focus-visible,
+.journal-chip:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 1px;
+}
+.journal-stats {
+  margin-top: 6px;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: calc(12px * var(--fs));
+  line-height: calc(18px * var(--fs));
+}
+.journal-stats th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--muted);
+}
+.journal-stats td {
+  text-align: right;
+  white-space: nowrap;
+  padding-left: 12px;
+}
+.journal-stats tr.is-few td {
+  color: var(--muted);
+}
+.journal-hint,
+.journal-evidence {
+  margin-top: 6px;
+  font-size: calc(12px * var(--fs));
+  line-height: 1.5;
   color: var(--muted);
 }

@@ -42,15 +42,14 @@ import { formatPrice, sentenceCase } from '../format';
 import { directionTone, markTone } from '../tones';
 import type { Candle, Direction, Mark, Tool, ToolLine, ToolRole } from '../wire';
 import { COLUMN_GAP, COLUMN_SLOT, barTitle, cappedRange, slotLogical, type Band, type HtfColumn } from './htf';
-import { candleEmphasis, chosenOption, projectedCandles, type Ohlc } from './look';
+import { candleEmphasis, candleSteps, chosenOption, projectedCandles, type Ohlc } from './look';
 import {
   drawLookFills,
   drawLookStrokes,
   drawOutlineCandle,
   lookAxisTags,
   lookLabels,
-  lookPrices,
-  otherOptionPrices,
+  lookScalePrices,
   type LookEnv,
   type LookScene,
 } from './LookLayer';
@@ -279,10 +278,8 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     }
     const look = this.scene?.look;
     if (look && this.lastIndex() <= endTimePoint) {
-      for (const p of lookPrices(look)) take(p);
-      // the other options widen the scale only as far as the column may (a far one is cut)
-      const band = this.scene?.columnBand ?? null;
-      for (const p of otherOptionPrices(look)) if (!band || (p >= band.lo && p <= band.hi)) take(p);
+      // the other options (and a far reversal level on the entry pane) widen the scale only as far as the column may
+      for (const p of lookScalePrices(look, this.scene?.columnBand ?? null)) take(p);
     }
     if (!Number.isFinite(min) && above === 0 && below === 0) return null;
     return {
@@ -825,7 +822,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       candle,
       color: emphasis[k] ? scene.palette.watch : withAlpha(scene.palette.watch, 0.5),
       textColor: emphasis[k] ? scene.palette.watch : scene.palette.muted,
-      title: (look.look.steps[k]?.label ?? 'C' + (k + 1)) + ' (what to look for, not a forecast)',
+      title: (candleSteps(look.look)[k]?.label ?? 'C' + (k + 1)) + ' (what to look for, not a forecast)',
       label: 'C' + (k + 1),
     }));
   }
@@ -866,6 +863,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       const yH = series.priceToCoordinate(p.candle.high);
       const yL = series.priceToCoordinate(p.candle.low);
       if (!g || yH === null || yL === null) continue;
+      if (yL < 0 || yH > plot.h) continue; // the outline is off the pane: no name floating at its edge
       const w = measure(p.label);
       const x = Math.min(Math.max(g.x - w / 2, 2), plot.w - w - 2);
       pending.push({

@@ -78,6 +78,11 @@ Stack-menu notes carry the same numbers.
   a take / skip button with a reason, and the outcome from the plan; show running expectancy per stack against the engine
   baseline. This is the only way to measure whether the trader's discretion adds what the rules alone do not.
 - **Evidence line per stack** (descriptive only: "2022-26, n …, ~0 R/trade net"), once the journal can sit next to it.
+- *Built (items 1 and 2, 2026-11-14):* `companion/core/journal.py` logs each trigger once (live checks that follow
+  the latest bars; long, short or watch with a triggered plan) to `journal.jsonl` in the state folder, fills the outcome
+  from later checks (+R at the target, -1R stopped, open triggers stay open), and takes the `journal` wire command for
+  "Took it" / "Skipped" with a reason. The left panel shows the call, taken / skipped / all-trigger average R per stack
+  (before costs, closed only, "too few" under 20) and the stack's `note`. Not yet tested on a live session.
 - **Backtest follow-ups, pre-registered first**: (1) 1W / 1M stacks with a horizon of at least one bias candle;
   (2) a limit-at-plan-entry variant; (3) taken vs shadow on 1D/4h/15m restricted to c4 rows (holdout gap +0.13 R);
   (4) eligibility replay of the quality checks (a causal test, not the first-report comparison).
