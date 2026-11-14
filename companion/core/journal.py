@@ -146,10 +146,17 @@ class Journal:
             log.exception("Could not look up a journal record.")
             return None
 
-    def stats(self, stack: str) -> dict[str, Any]:
-        """Closed outcomes on ``stack``: taken, skipped and every logged trigger (the engine's baseline)."""
+    def stats(self, stack: str, symbol: str | None = None, style: str | None = None) -> dict[str, Any]:
+        """Closed outcomes on ``stack`` (and ``symbol`` / ``style`` when given, so NQ and ES are
+        never pooled): taken, skipped and every logged trigger (the engine's baseline)."""
         with self._lock:
-            mine = [record for record in self._records.values() if record.get("stack") == stack]
+            mine = [
+                record
+                for record in self._records.values()
+                if record.get("stack") == stack
+                and (symbol is None or record.get("symbol") == symbol)
+                and (style is None or record.get("style") == style)
+            ]
         closed = [record for record in mine if _number(record.get("result_r")) is not None]
 
         def tally(rows: list[Record]) -> dict[str, Any]:
@@ -289,6 +296,8 @@ class Journal:
             record = self._records.get(key)
             if record is None:
                 raise JournalError("That trigger is not in the journal.")
+            if record.get("outcome", "open") != "open":
+                raise JournalError("That trade has already ended; a call now would be hindsight, so it is not recorded.")
             cleared = mark == ""
             # a call made once the trade has ended is hindsight: kept, but out of the averages
             record["late"] = not cleared and record.get("outcome", "open") != "open"
@@ -386,7 +395,7 @@ class Journal:
                 "note": stack_note,
                 "trigger": _trigger(record) if record is not None else None,
                 "reasons": [{"key": key, "label": label} for key, label in wire.JOURNAL_REASONS.items()],
-                "stats": self.stats(stack),
+                "stats": self.stats(stack, verdict.symbol, verdict.style),
             }
         except Exception:  # noqa: BLE001 - the journal must never break a check
             log.exception("Could not show the decision journal.")

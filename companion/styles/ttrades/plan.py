@@ -654,11 +654,15 @@ def _level_band(ctx: Context, side: Side, level: KeyLevel) -> tuple[float, float
     The band's far edge is the last tick that still counts (rounded toward the level), so
     the box never prints a price the market cannot trade. With no tolerance, the wick of
     the bias candle that made the level. None: no height."""
-    if level.kind == "fvg":
-        return level.edge, level.hold
     tolerance = ctx.cfg.reversal_level_tolerance_frac * (ctx.avg_range or 0.0)
     pair = CONTRACTS.get(root(ctx.symbol))
     tick = pair[0].tick if pair is not None else 0.0
+    if level.kind == "fvg":
+        # the gap, plus the band before its near edge that the reach check also counts
+        near = level.edge + tolerance
+        if tolerance > 0 and tick:
+            near = round(math.floor(near / tick + 1e-9) * tick, 10)
+        return max(near, level.edge), level.hold
     if tolerance > 0:
         far = level.edge + tolerance
         if tick:

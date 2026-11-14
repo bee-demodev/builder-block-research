@@ -4,7 +4,7 @@
 // inside and just beyond the chosen zone, and their prices are never printed (the axis
 // tags say "stop" and "entry", not a number).
 import { formatPrice } from '../format';
-import type { LookFor, LookOption } from '../wire';
+import type { LookFor, LookOption, LookStep } from '../wire';
 
 export interface Ohlc {
   open: number;
@@ -83,9 +83,19 @@ export function paneFocus(look: LookFor): { setup: boolean; entry: boolean } {
   return { setup: c1?.status === 'next' || c2?.status === 'next', entry: entry?.status === 'next' };
 }
 
-/** Status of C1 and C2 (the first two steps): the next one is drawn amber, later ones dimmer. */
+/**
+ * The step each projected candle stands for. A continuation's first two steps are its C1
+ * and its C2; a reversal's first step is the bias candle reaching the level and its
+ * second is "C1 / C2 there", so both candles stand for that second step.
+ */
+export function candleSteps(look: LookFor): [LookStep | undefined, LookStep | undefined] {
+  return look.kind === 'reversal' ? [look.steps[1], look.steps[1]] : [look.steps[0], look.steps[1]];
+}
+
+/** Whether C1 and C2 are the step awaited now: that one is drawn amber, the rest dimmer. */
 export function candleEmphasis(look: LookFor): [boolean, boolean] {
-  return [look.steps[0]?.status === 'next', look.steps[1]?.status === 'next'];
+  const [c1, c2] = candleSteps(look);
+  return [c1?.status === 'next', c2?.status === 'next'];
 }
 
 /**

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { journalReasons, journalRows, lateNote, markFrame, noteFrame, openNote, reasonFrame, sampleNote } from '../journal';
+import { endedLine, journalReasons, journalRows, lateNote, markFrame, noteFrame, openNote, reasonFrame, sampleNote } from '../journal';
 import type { ClientFrame, Journal, JournalTrigger } from '../wire';
 
 interface Props {
@@ -66,6 +66,15 @@ function JournalCall({
     const frame = noteFrame(trigger, note);
     if (frame) send(frame);
   };
+  if (trigger.outcome !== 'open') {
+    // the trade has ended: a call now would be hindsight, so there is nothing to press
+    return (
+      <div className="journal-call">
+        <h2 className="journal-label">Your call on this trigger</h2>
+        <p className="journal-ended">{endedLine(trigger)}</p>
+      </div>
+    );
+  }
   return (
     <div className="journal-call">
       <h2 className="journal-label" id="journal-call">

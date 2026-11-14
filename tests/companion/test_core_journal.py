@@ -403,19 +403,19 @@ def test_a_trigger_older_than_the_bars_on_screen_stays_open(tmp_path: Path) -> N
     assert journal.get(key)["outcome"] == "open"
 
 
-def test_calls_made_after_the_trade_ended_stay_out_of_the_averages(tmp_path: Path) -> None:
+def test_no_call_once_the_trade_has_ended_and_old_hindsight_calls_stay_out_of_the_averages(tmp_path: Path) -> None:
     journal = Journal(tmp_path / JOURNAL_FILE)
     journal.observe(verdict(), follow=True, now=NOW)
     key = journal.records()[0]["key"]
     journal.observe(verdict(outcome="target_reached"), follow=True, now=NOW)
-    journal.mark(key, "took", now=NOW)  # marked a winner after the fact
-    stats = journal.stats(STACK.name)
+    with pytest.raises(JournalError, match="hindsight"):
+        journal.mark(key, "took", now=NOW)  # a winner marked after the fact would flatter the call
+    assert journal.get(key)["mark"] == ""
+    # a journal written before calls were refused: its after-the-fact calls are kept but not averaged
+    closed = {**journal.get(key), "mark": "took", "late": True}
+    (tmp_path / JOURNAL_FILE).write_text(json.dumps(closed) + "\n", encoding="utf-8")
+    stats = Journal(tmp_path / JOURNAL_FILE).stats(STACK.name)
     assert stats["taken"]["n"] == 0 and stats["all"]["n"] == 1 and stats["late"] == 1
-    journal.observe(verdict(minute=55, decision="watch", outcome="stopped", stage_label="played_out"), follow=True, now=NOW)
-    seen_late = [r for r in journal.records() if r["key"] != key][0]
-    journal.mark(seen_late["key"], "skipped", now=NOW)  # first seen already played out: a call cannot be in time
-    stats = journal.stats(STACK.name)
-    assert stats["skipped"]["n"] == 0 and stats["all"]["n"] == 2 and stats["late"] == 2
 
 
 def test_the_core_journal_writes_on_its_own_thread_and_flush_waits_for_it(tmp_path: Path) -> None:
@@ -423,3 +423,12 @@ def test_the_core_journal_writes_on_its_own_thread_and_flush_waits_for_it(tmp_pa
     journal.observe(verdict(), follow=True, now=NOW)
     assert journal.flush()
     assert len(lines(tmp_path / JOURNAL_FILE)) == 1
+
+
+def test_the_panel_stats_never_pool_symbols_or_styles(tmp_path: Path) -> None:
+    journal = Journal(tmp_path / JOURNAL_FILE)
+    journal.observe(verdict(outcome="stopped", stage_label="played_out"), follow=True)
+    journal.observe(replace(verdict(minute=55, outcome="target_reached", stage_label="played_out"), symbol="ES"), follow=True)
+    assert journal.stats(STACK.name)["all"]["n"] == 2  # the stack across everything
+    assert journal.stats(STACK.name, "NQ", "ttrades")["all"] == {"n": 1, "avg_r": -1.0}
+    assert journal.view(verdict())["stats"]["all"] == {"n": 1, "avg_r": -1.0}  # what the panel shows: this symbol only

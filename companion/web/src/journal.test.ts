@@ -3,7 +3,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { describe, expect, it, vi } from 'vitest';
 import { JournalBlock } from './components/JournalBlock';
 import { demoJournal, demoTrigger, longView, snapshot, watchView } from './demo/fixtures';
-import { journalRows, lateNote, markFrame, noteFrame, openNote, reasonFrame, sampleNote, signedR } from './journal';
+import { endedLine, journalRows, lateNote, markFrame, noteFrame, openNote, reasonFrame, sampleNote, signedR } from './journal';
 import { parseServerFrame, validateFrame, type Journal, type JournalTrigger } from './wire';
 
 const trigger = (changes: Partial<JournalTrigger> = {}): JournalTrigger => ({ ...demoTrigger('2026-11-12T10:30:00-05:00'), ...changes });
@@ -126,5 +126,21 @@ describe('calls made after the trade ended', () => {
     expect(lateNote({ ...base, late: 0 })).toBe('');
     expect(lateNote({ ...base, late: 1 })).toBe('1 call made after its trade ended is left out of Took and Skipped.');
     expect(lateNote({ ...base, late: 2 })).toBe('2 calls made after their trades ended are left out of Took and Skipped.');
+  });
+});
+
+describe('a trigger whose trade has ended', () => {
+  const ended = (mark: '' | 'took' | 'skipped', outcome: 'target_reached' | 'stopped', r: number) => ({
+    ...demoTrigger('2026-11-12T10:30:00-05:00'),
+    mark,
+    outcome,
+    result_r: r,
+  });
+  it('says what happened instead of offering a call that would be hindsight', () => {
+    expect(endedLine(ended('', 'stopped', -1))).toBe('It was stopped (-1.00R) before a call was made, so there is nothing to mark.');
+    expect(endedLine(ended('took', 'target_reached', 2))).toBe('You took it. It reached its target (+2.00R).');
+    const html = renderToStaticMarkup(createElement(JournalBlock, { journal: demoJournal(ended('', 'stopped', -1)), send: () => {} }));
+    expect(html).not.toContain('Took it');
+    expect(html).toContain('nothing to mark');
   });
 });

@@ -1859,18 +1859,23 @@ ul {
   margin-top: 8px;
   height: calc(28px * var(--fs));
   padding: 0 8px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--faint); /* a field's edge needs 3:1 on its background */
   border-radius: var(--radius);
   background: var(--bg);
   color: var(--text);
   font: calc(12px * var(--fs)) / 1 var(--font-sans);
+}
+.journal-ended {
+  font-size: calc(12px * var(--fs));
+  line-height: 1.45;
+  color: var(--muted);
 }
 .journal-note::placeholder {
   color: var(--muted);
 }
 .journal-note:focus-visible,
 .journal-chip:focus-visible {
-  outline: 2px solid var(--watch);
+  outline: 2px solid var(--text);
   outline-offset: 1px;
 }
 .journal-stats {

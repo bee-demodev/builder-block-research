@@ -68,7 +68,7 @@ def test_an_actionable_trigger_sends_one_message_with_levels_stop_reason_and_set
     assert text.startswith("**NQ SHORT** · 1D / 1h / 5m · continuation · Thu 12 Nov 09:45 New York")
     assert "Entry **25,410.00** · Stop **25,436.00** · Target **25,358.00** (2.0R)" in text
     assert "protected high from the entry CISD" in text  # the stop's protected swing
-    assert "Stop 6.2% of adr · costs 0.05r mini, 0.11r micro".lower() in text.lower()
+    assert "Stop 6.2% of ADR · costs 0.05R mini, 0.11R micro" in text
     assert "Why: Daily Candle 2 swept the high" in text
     assert payload["allowed_mentions"] == {"parse": []}  # an alert never pings anyone
 

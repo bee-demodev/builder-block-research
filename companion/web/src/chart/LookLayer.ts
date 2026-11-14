@@ -10,7 +10,7 @@
 import type { ISeriesApi, SeriesType, Time } from 'lightweight-charts';
 import { formatPrice } from '../format';
 import type { LookFor } from '../wire';
-import { candleEmphasis, chosenOption, entryCaption, entryGeometry, lookDecimals, paneFocus, projectedCandles, setupCaption, stopCaption, type Ohlc } from './look';
+import { candleEmphasis, candleSteps, chosenOption, entryCaption, entryGeometry, lookDecimals, paneFocus, projectedCandles, setupCaption, stopCaption, type Ohlc } from './look';
 import type { Box, PendingLabel } from './marks';
 import { withAlpha, type Palette } from './palette';
 
@@ -171,7 +171,7 @@ export function drawLookStrokes(ctx: CanvasRenderingContext2D, hr: number, vr: n
       const box = drawOutlineCandle(ctx, hr, vr, env.series, candles[k]!, slot.x, slot.body, color);
       if (box) {
         obstacles.push(box);
-        hits.push({ box, title: `${look.steps[k]?.label ?? `C${k + 1}`} (what to look for, not a forecast)`, priority: LOOK_PRIORITY });
+        hits.push({ box, title: `${candleSteps(look)[k]?.label ?? `C${k + 1}`} (what to look for, not a forecast)`, priority: LOOK_PRIORITY });
       }
     });
     return obstacles;
@@ -236,7 +236,7 @@ export function lookLabels(env: LookEnv, plot: { w: number; h: number }, measure
       const x = slot.x - w / 2;
       const under: Box = { x, y: Math.max(yLow, yHigh) + 3, w, h: LH };
       const over: Box = { x, y: Math.min(yLow, yHigh) - LH - 3, w, h: LH };
-      at(text, emphasis[k] ? p.watch : p.muted, LOOK_PRIORITY + 0.1, look.direction === 'short' ? [under, over] : [over, under], look.steps[k]?.label ?? text);
+      at(text, emphasis[k] ? p.watch : p.muted, LOOK_PRIORITY + 0.1, look.direction === 'short' ? [under, over] : [over, under], candleSteps(look)[k]?.label ?? text);
     });
     return out;
   }

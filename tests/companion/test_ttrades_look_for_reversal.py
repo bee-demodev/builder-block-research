@@ -80,8 +80,10 @@ def test_the_nearer_side_is_the_one_shown_with_the_next_level_beyond_as_b(stack:
     assert verdict.decision == "no_trade" and look is not None and look.direction == "short"
     a, b = look.options
     assert (a.name, a.top) == (f"Previous {stack.bias} high", 71.0) and a.bottom < 71.0
-    # the gap 71-80 touches A, so it is the same place; B is the next one wholly beyond
-    assert (b.key, b.name, b.top, b.bottom) == ("B", f"{stack.bias} fair value gap", 90.0, 86.0)
+    # the gap 71-80 touches A, so it is the same place; B is the next one wholly beyond: the gap 86-90
+    # plus the band below it that the reach check also counts (rules.md 7.1), to the last tick that counts
+    assert (b.key, b.name, b.top) == ("B", f"{stack.bias} fair value gap", 90.0)
+    assert 86.0 - _reach_band(verdict) - 1e-9 <= b.bottom < 86.0
     assert b.condition == "if price trades through A first"  # rules.md 7.1 counts a trade into a level, not a close
     # the steps still name both routes; the look-for has one direction
     assert [step.label for step in verdict.steps[-2:]] == [

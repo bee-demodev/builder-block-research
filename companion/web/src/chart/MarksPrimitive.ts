@@ -42,7 +42,7 @@ import { formatPrice, sentenceCase } from '../format';
 import { directionTone, markTone } from '../tones';
 import type { Candle, Direction, Mark, Tool, ToolLine, ToolRole } from '../wire';
 import { COLUMN_GAP, COLUMN_SLOT, barTitle, cappedRange, slotLogical, type Band, type HtfColumn } from './htf';
-import { candleEmphasis, chosenOption, projectedCandles, type Ohlc } from './look';
+import { candleEmphasis, candleSteps, chosenOption, projectedCandles, type Ohlc } from './look';
 import {
   drawLookFills,
   drawLookStrokes,
@@ -822,7 +822,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       candle,
       color: emphasis[k] ? scene.palette.watch : withAlpha(scene.palette.watch, 0.5),
       textColor: emphasis[k] ? scene.palette.watch : scene.palette.muted,
-      title: (look.look.steps[k]?.label ?? 'C' + (k + 1)) + ' (what to look for, not a forecast)',
+      title: (candleSteps(look.look)[k]?.label ?? 'C' + (k + 1)) + ' (what to look for, not a forecast)',
       label: 'C' + (k + 1),
     }));
   }

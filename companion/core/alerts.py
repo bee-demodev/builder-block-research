@@ -58,7 +58,8 @@ def webhook_from_state(state: Path) -> str:
     if not isinstance(url, str):
         return ""
     url = url.strip()
-    ok = url.startswith(("https://discord.com/api/webhooks/", "https://discordapp.com/api/webhooks/"))
+    hosts = ("discord.com", "discordapp.com", "ptb.discord.com", "canary.discord.com")
+    ok = url.startswith(tuple(f"https://{host}/api/webhooks/" for host in hosts))
     if url and not ok:
         log.warning("discord_webhook in %s is not a Discord webhook URL; alerts are off.", Path(state) / SETTINGS_FILE)
     return url if ok else ""
@@ -110,7 +111,8 @@ def message(verdict: Verdict) -> str:
     if plan.cost_r_mini is not None:
         extras.append(f"costs {plan.cost_r_mini:.2f}R mini" + (f", {plan.cost_r_micro:.2f}R micro" if plan.cost_r_micro is not None else ""))
     if extras:
-        lines.append(" · ".join(extras).capitalize())
+        joined = " · ".join(extras)
+        lines.append(joined[:1].upper() + joined[1:])  # not str.capitalize, which lowercases "ADR" and "R"
     if verdict.why:
         lines.append(f"Why: {verdict.why}")
     return "\n".join(lines)[:1900]  # Discord caps a message at 2000 characters

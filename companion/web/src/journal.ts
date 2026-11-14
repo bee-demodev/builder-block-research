@@ -42,6 +42,15 @@ export function lateNote(stats: JournalStats): string {
     : `${stats.late} calls made after their trades ended are left out of Took and Skipped.`;
 }
 
+/** A trigger whose trade has ended: what happened, and the call if one was made in time. */
+export function endedLine(trigger: JournalTrigger): string {
+  const how = trigger.outcome === 'target_reached' ? 'reached its target' : 'was stopped';
+  const r = trigger.result_r === null ? '' : ` (${signedR(trigger.result_r)})`;
+  if (trigger.mark === 'took') return `You took it. It ${how}${r}.`;
+  if (trigger.mark === 'skipped') return `You skipped it. It ${how}${r}.`;
+  return `It ${how}${r} before a call was made, so there is nothing to mark.`;
+}
+
 /** "2 still open" or "". */
 export function openNote(stats: JournalStats): string {
   return stats.open > 0 ? `${stats.open} still open` : '';
