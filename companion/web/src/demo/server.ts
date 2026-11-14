@@ -123,6 +123,19 @@ class DemoServer {
         this.step = 'watch';
         this.publish();
         return;
+      case 'journal': {
+        // As the core does: the call is kept and the view on screen is sent again with it.
+        const trigger = this.view?.journal?.trigger;
+        if (!this.view?.journal || !trigger || trigger.key !== frame.key) {
+          this.send({ type: 'error', message: 'That trigger is not in the journal.' });
+          return;
+        }
+        const mark = frame.mark;
+        const marked = { ...trigger, mark, reason: mark ? (frame.reason ?? '') : '', note: mark ? (frame.note ?? '').trim() : '' };
+        this.view = { ...this.view, journal: { ...this.view.journal, trigger: marked } };
+        this.send(snapshot(++this.seq, this.view, { status: this.currentStatus() }));
+        return;
+      }
     }
   }
 

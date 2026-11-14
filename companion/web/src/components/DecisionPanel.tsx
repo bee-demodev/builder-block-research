@@ -19,6 +19,7 @@ import { formatPrice, pathLine, plainText, sentenceCase, wallClock } from '../fo
 import { isStale, type Model } from '../store';
 import { checkTotals, decisionTone, directionTone, isStopLevel, readTone } from '../tones';
 import type { ClientFrame, Direction, LookFor, Plan, StepStatus, VerdictView } from '../wire';
+import { JournalBlock } from './JournalBlock';
 import { Skeleton, StatusIcon, toneClass } from './ui';
 
 interface Props {
@@ -98,6 +99,7 @@ export function DecisionPanel({ model, mode, onToggleMode, send, lookChoice = 'A
         {view?.look_for && <LookForBlock look={view.look_for} choice={lookChoice} onChoose={onLookChoice} stale={stale} />}
         {view?.plan && <PlanBlock plan={view.plan} stale={stale} />}
         {view && show!.levels && <Levels view={view} />}
+        {view?.journal && <JournalBlock journal={view.journal} send={send} disabled={!ready} />}
         {view && clock && <SessionClock hour={clock.hour} minute={clock.minute} />}
       </ScrollBand>
 

@@ -61,6 +61,19 @@ def webhook_from_state(state: Path) -> str:
     return url if ok else ""
 
 
+def plan_key(verdict: Verdict) -> str | None:
+    """Which trigger a verdict's plan is (symbol, stack, style, side, trigger bar), or None when nothing has triggered.
+
+    The same trigger keeps its key from check to check, whatever the decision or the stage
+    says about it, so the alerts and the decision journal can each act on it once."""
+    plan = verdict.plan
+    if plan is None or plan.state != "triggered":
+        return None
+    since = plan.since.isoformat() if plan.since is not None else ""
+    stack = verdict.stack
+    return f"{verdict.symbol}|{stack.bias}/{stack.setup}/{stack.entry}|{verdict.style}|{plan.direction}|{since}"
+
+
 def trigger_key(verdict: Verdict) -> str | None:
     """The trigger an alert is about, or None when this verdict is not a fresh, actionable trade."""
     plan = verdict.plan
@@ -68,9 +81,7 @@ def trigger_key(verdict: Verdict) -> str | None:
         return None
     if plan.state != "triggered" or plan.outcome != "open" or plan.stage_label != "actionable":
         return None
-    since = plan.since.isoformat() if plan.since is not None else ""
-    stack = verdict.stack
-    return f"{verdict.symbol}|{stack.bias}/{stack.setup}/{stack.entry}|{verdict.style}|{plan.direction}|{since}"
+    return plan_key(verdict)
 
 
 def _price(value: float) -> str:

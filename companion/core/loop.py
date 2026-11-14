@@ -25,6 +25,12 @@ the read, loading bars it did not hold, the engine, and the total lag.
 
 A live check that follows "now" and turns into an actionable long or short also posts one
 Discord message, when ``discord_webhook`` is set in ``desktop.json`` (``companion.core.alerts``).
+
+Every live check that follows "now" and shows a triggered plan (long, short or watch) is
+logged once per trigger in the decision journal, ``journal.jsonl`` in the state folder
+(``companion.core.journal``); later checks of the same trigger fill its outcome, and the
+``journal`` command records the trader's call on it. A live snapshot's view carries the
+journal for its stack. The journal never changes a verdict and never fails a check.
 """
 
 from __future__ import annotations
@@ -56,6 +62,7 @@ from companion.app_model import (
 from companion.bars import bar_close_times
 from companion.core import wire
 from companion.core.alerts import DiscordAlerts
+from companion.core.journal import Journal, JournalError
 
 TIMINGS_NAME = "timings.jsonl"
 ERROR_LOG_NAME = "core_error.log"
@@ -102,6 +109,7 @@ class Core:
         run_watch: Runner | None = None,
         timings_path: Path | None = None,
         alerts: DiscordAlerts | None | bool = True,
+        journal: Journal | None | bool = True,
     ) -> None:
         self.controller = controller
         self.watch_ms = max(50, int(watch_ms))
@@ -111,6 +119,8 @@ class Core:
         # Discord alerts for entries that trigger: True reads the webhook from desktop.json, False is off.
         state = controller.state_path.parent
         self.alerts = DiscordAlerts.from_state(state) if alerts is True else (alerts or None)
+        # the decision journal: True keeps it in journal.jsonl in the state folder, False is off
+        self.journal = Journal.from_state(state) if journal is True else (journal or None)
         self._inbox: queue.Queue[tuple[Any, ...]] = queue.Queue()
         self._run_check = run_check
         self._run_watch = run_watch
@@ -126,6 +136,7 @@ class Core:
         self._good: CheckOutcome | None = None  # the last live "now" verdict, kept on screen (stale) when a refresh fails
         self._shown: CheckOutcome | None = None  # the outcome whose verdict is on screen
         self._snapshots = 0
+        self._last_snapshot: tuple[Any, str, bool, Message | None] | None = None  # view, error, offer_history, timing
         self._options: Message | None = None
         self._state: Message | None = None
         self._status: Message | None = None
@@ -342,6 +353,20 @@ class Core:
         controller.save()
         self._emit_status(controller.live_status(self._shown))
 
+    def _do_journal(self, command: wire.Command, reply: Reply) -> None:
+        """The trader's call on a logged trigger. The view on screen is sent again with it."""
+        if self.journal is None:
+            raise UserError("The decision journal is off.")
+        values = command.values
+        try:
+            self.journal.mark(values.get("key", ""), values.get("mark", ""), values.get("reason", ""), values.get("note", ""), self.controller.now())
+        except JournalError as problem:
+            raise UserError(str(problem)) from None
+        last = self._last_snapshot
+        if last is not None and last[0] is not None:
+            view, trouble, offer_history, timing = last
+            self._snapshot(view, trouble, offer_history, self.controller.live_status(self._shown), timing)
+
     def _do_use_history(self, command: wire.Command, reply: Reply) -> None:
         if self.controller.state.data != DATA_HISTORY:
             self.controller.set_data(DATA_HISTORY)
@@ -436,6 +461,8 @@ class Core:
         controller.accept(outcome)
         ready = controller.now()
         follow = outcome.request.live and outcome.request.follow
+        if self.journal is not None and follow and outcome.verdict is not None:
+            self.journal.observe(outcome.verdict, follow=True, now=ready)  # never raises; before the snapshot, which shows it
         lag = _ms(ready - outcome.data_time) if follow and outcome.data_time is not None else None
         timing = wire.timing(
             bar_closed_at=outcome.data_time,
@@ -591,6 +618,17 @@ class Core:
 
     # --- messages ---
 
+    def _journal_view(self, view: Any) -> Message | None:
+        """The journal for the verdict on screen: live only (saved history keeps its snapshot as it was)."""
+        shown = self._shown
+        if view is None or self.journal is None or shown is None or shown.verdict is None or not self.controller.is_live:
+            return None
+        try:
+            note = _journal_note(self.controller, shown.verdict.stack.name)
+        except Exception:  # noqa: BLE001 - a note must never break a snapshot
+            note = ""
+        return self.journal.view(shown.verdict, note)
+
     def _emit(self, message: Message) -> None:
         self.latest[message["type"]] = message
         for listener in list(self._listeners):
@@ -619,8 +657,13 @@ class Core:
 
     def _snapshot(self, view: Any, error: str, offer_history: bool, status: LiveStatus, timing: Message | None) -> None:
         self._snapshots += 1
-        self._emit(wire.snapshot(self._snapshots, view, error, offer_history, status, timing))
+        self._last_snapshot = (view, error, offer_history, timing)
+        self._emit(wire.snapshot(self._snapshots, view, error, offer_history, status, timing, self._journal_view(view)))
         self._emit_status(status, force=True)  # so a client that only follows status messages agrees with the snapshot
+
+
+def _journal_note(controller: CompanionController, stack: str) -> str:
+    return controller.stack_notes().get(stack, "")
 
 
 def _ms(delta: pd.Timedelta) -> int:

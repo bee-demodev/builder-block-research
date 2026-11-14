@@ -39,6 +39,12 @@ Client to server
 - ``check``, ``latest``, ``use_history``: no fields.
 - ``step``: ``{"direction": -1 | 1}``.
 - ``pause``: ``{"paused": true | false}``.
+- ``journal``: ``{"key", "mark", "reason"?, "note"?}``, the trader's call on a trigger in the
+  decision journal (``companion.core.journal``). ``key`` is ``Journal.trigger.key`` from the
+  view; ``mark`` is ``"took"``, ``"skipped"`` or ``""`` (clear it); ``reason`` ``""`` or one of
+  ``JOURNAL_REASONS`` (late, no_confluence, news, risk_too_big, other); ``note`` free text
+  of at most ``MAX_TEXT`` characters. Marking again overwrites. The answer is a new
+  ``snapshot`` whose view carries the updated journal; an unknown key gets an ``error``.
 
 Shapes
 ------
@@ -89,6 +95,20 @@ snapshot) | null. ``load_ms`` was added within version 1: a client that ignores 
 - ``plan``: ``Plan`` | null, the trade plan.
 - ``look_for``: ``LookFor`` | null, what to look for while the setup is still ahead
   (display only; null when there is nothing to show, and absent from an older core).
+- ``journal``: ``Journal`` | null, the decision journal for this view's stack. Only in a
+  live snapshot (absent on saved history and from an older core); display only, it never
+  changes the decision.
+
+``Journal``: ``stack`` (the stack's name), ``note`` (its backtest note from stacks.json, ""
+when none), ``trigger``: ``JournalTrigger`` | null (the trigger on screen, when the journal
+has logged it), ``reasons``: ``[{"key", "label"}]`` (the skip reasons the client offers),
+``stats``: ``{"taken", "skipped", "all": {"n": int, "avg_r": float | null}, "open": int,
+"min_n": int}``: closed outcomes on this stack, the trader's taken and skipped triggers and
+every logged trigger (the engine's baseline), average R before costs; ``open`` counts the
+logged triggers still open; an ``n`` under ``min_n`` is too small to mean anything.
+``JournalTrigger``: ``key``, ``side`` (long | short), ``since`` (open of the trigger bar) | null,
+``mark`` ("" | took | skipped), ``reason`` ("" or a reason key), ``note``, ``outcome`` (open |
+target_reached | stopped), ``result_r`` (+r_multiple at the target, -1 stopped) | null.
 
 ``Level``: ``name``, ``price`` (formatted "24,722.50"), ``note``.
 ``Group``: ``name``, ``title``, ``path``, ``active``, ``collapsed``, ``rows``: ``[Row]``,
@@ -177,7 +197,8 @@ libraries draw UTC and this makes their axis read New York time.
 Version
 -------
 Every field added since the first release of version 1 (``side``, ``sides``,
-``side_labels``, ``load_ms``, the plan, the steps, the tool and ``look_for``) is an addition, so
+``side_labels``, ``load_ms``, the plan, the steps, the tool, ``look_for``, ``journal`` and the
+``journal`` command) is an addition, so
 ``version`` stays 1. The one narrowing: ``compute_ms`` no longer includes loading bars
 (now ``load_ms``); a version 1 client only displays it, and it now says what its name
 says. Unknown keys must be ignored by a client.
@@ -213,8 +234,10 @@ from companion.types import BARS_TIMEZONE
 VERSION = 1
 SET_FIELDS = ("symbol", "stack", "style", "data", "when", "side")
 CUSTOM_FIELDS = ("custom_bias", "custom_setup", "custom_entry")  # the "Custom…" stack's three timeframes
-COMMANDS = ("set", "check", "step", "latest", "pause", "use_history")
+COMMANDS = ("set", "check", "step", "latest", "pause", "use_history", "journal")
 MAX_TEXT = 200  # longest string value a command may carry
+JOURNAL_MARKS = ("took", "skipped", "")  # "" clears the trader's call
+JOURNAL_REASONS = {"late": "Late", "no_confluence": "No confluence", "news": "News", "risk_too_big": "Risk too big", "other": "Other"}
 
 _EPOCH = pd.Timestamp("1970-01-01")
 
@@ -385,12 +408,21 @@ def state_message(state_: dict[str, Any]) -> dict[str, Any]:
 
 
 def snapshot(
-    seq: int, view_: VerdictView | None, error_: str, offer_history: bool, status_: LiveStatus, timing_: dict[str, Any] | None
+    seq: int,
+    view_: VerdictView | None,
+    error_: str,
+    offer_history: bool,
+    status_: LiveStatus,
+    timing_: dict[str, Any] | None,
+    journal: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    shown = view(view_)
+    if shown is not None and journal is not None:
+        shown["journal"] = plain(journal)  # live only: a saved-history snapshot keeps the shape it always had
     return {
         "type": "snapshot",
         "seq": int(seq),
-        "view": view(view_),
+        "view": shown,
         "error": error_ or "",
         "offer_history": bool(offer_history),
         "status": status(status_),
@@ -428,6 +460,7 @@ class Command:
     values: dict[str, str] = field(default_factory=dict)  # set: the fields to change
     direction: int = 0  # step
     paused: bool = False  # pause
+    # journal: values holds "key", "mark", "reason", "note"
 
 
 def parse_command(text: str | bytes) -> Command:
@@ -470,13 +503,32 @@ def parse_command(text: str | bytes) -> Command:
         if not isinstance(paused, bool):
             raise WireError("pause needs \"paused\": true or false.")
         return Command("pause", paused=paused)
+    if kind == "journal":
+        return Command("journal", _journal_values(message))
     return Command(kind)
+
+
+def _journal_values(message: dict[str, Any]) -> dict[str, str]:
+    values: dict[str, str] = {}
+    for key in ("key", "mark", "reason", "note"):
+        value = message.get(key, "")
+        if not isinstance(value, str) or len(value) > MAX_TEXT:
+            raise WireError(f"journal: {key} must be a string of at most {MAX_TEXT} characters.")
+        values[key] = value
+    if not values["key"]:
+        raise WireError("journal needs \"key\": the trigger's key from the view.")
+    if "mark" not in message or values["mark"] not in JOURNAL_MARKS:
+        raise WireError(f"journal needs \"mark\": {', '.join(json.dumps(mark) for mark in JOURNAL_MARKS)}.")
+    if values["reason"] and values["reason"] not in JOURNAL_REASONS:
+        raise WireError(f"journal: reason must be \"\" or one of: {', '.join(JOURNAL_REASONS)}.")
+    return values
 
 
 _ALLOWED: dict[str, set[str]] = {
     "set": {*SET_FIELDS, *CUSTOM_FIELDS},
     "step": {"direction"},
     "pause": {"paused"},
+    "journal": {"key", "mark", "reason", "note"},
 }
 
 

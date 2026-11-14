@@ -5,6 +5,7 @@
 // Fields added within version 1 (the side, the suggestion, steps, plan, tool,
 // load_ms, look_for) are read with a fallback, so a frame from an older core still parses.
 // look_for is display only: a malformed one is logged and read as null, the frame kept.
+// journal (the decision journal, live only) is read the same lenient way.
 
 export const WIRE_VERSION = 1;
 
@@ -248,6 +249,49 @@ export interface LookFor {
   entry_during: boolean;
 }
 
+export type JournalMark = '' | 'took' | 'skipped';
+
+/** The trigger on screen, as the decision journal logged it. */
+export interface JournalTrigger {
+  key: string;
+  side: TradeSide;
+  since: string | null;
+  /** The trader's call: '' none yet. */
+  mark: JournalMark;
+  /** '' or a reason key from Journal.reasons. */
+  reason: string;
+  note: string;
+  outcome: Outcome;
+  /** +r_multiple at the target, -1 stopped; null while open. */
+  result_r: number | null;
+}
+
+export interface JournalTally {
+  n: number;
+  /** Average R per closed trade, before costs; null when n is 0. */
+  avg_r: number | null;
+}
+
+export interface JournalStats {
+  taken: JournalTally;
+  skipped: JournalTally;
+  /** Every logged trigger: the engine's baseline. */
+  all: JournalTally;
+  open: number;
+  /** Below this many closed trades an average means nothing yet. */
+  min_n: number;
+}
+
+/** The decision journal for the view's stack. Display only: it never changes the decision. */
+export interface Journal {
+  stack: string;
+  /** The stack's backtest note ('' when none). */
+  note: string;
+  trigger: JournalTrigger | null;
+  reasons: { key: string; label: string }[];
+  stats: JournalStats;
+}
+
 export interface ChartView {
   role: string;
   timeframe: string;
@@ -296,6 +340,8 @@ export interface VerdictView {
   steps: Step[];
   plan: Plan | null;
   look_for: LookFor | null;
+  /** Live only; null on saved history and from an older core. */
+  journal: Journal | null;
 }
 
 // ---------- frames ----------
@@ -342,7 +388,8 @@ export type ClientFrame =
   | { type: 'step'; direction: -1 | 1 }
   | { type: 'latest' }
   | { type: 'pause'; paused: boolean }
-  | { type: 'use_history' };
+  | { type: 'use_history' }
+  | { type: 'journal'; key: string; mark: JournalMark; reason?: string; note?: string };
 
 // ---------- validation ----------
 
@@ -616,6 +663,27 @@ const lookFor = obj<LookFor>({
   entry_during: optional(bool, () => true),
 });
 
+const tally = obj<JournalTally>({ n: num, avg_r: nullable(num) });
+
+const journal = obj<Journal>({
+  stack: str,
+  note: optional(str, () => ''),
+  trigger: nullable(
+    obj<JournalTrigger>({
+      key: str,
+      side: tradeSide,
+      since: nullable(str),
+      mark: oneOf<JournalMark>('', 'took', 'skipped'),
+      reason: optional(str, () => ''),
+      note: optional(str, () => ''),
+      outcome,
+      result_r: nullable(num),
+    }),
+  ),
+  reasons: optional(arr(obj<{ key: string; label: string }>({ key: str, label: str })), () => []),
+  stats: obj<JournalStats>({ taken: tally, skipped: tally, all: tally, open: num, min_n: optional(num, () => 20) }),
+});
+
 /** A display-only field: when it does not parse, log it and read null; the frame is kept. */
 const lenient =
   <T>(r: Reader<T>): Reader<T | null> =>
@@ -679,6 +747,7 @@ const verdictFields = obj<VerdictView>({
   steps: optional(arr(step), () => []),
   plan: optional(nullable(plan), () => null),
   look_for: lenient(lookFor),
+  journal: lenient(journal),
 });
 
 /** An older core sends no suggestion: its decision is the suggestion then. */
