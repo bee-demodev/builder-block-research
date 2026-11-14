@@ -20,6 +20,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
+from companion.contracts import cost_in_r
 from companion.styles.ttrades.bias import BiasRead
 from companion.styles.ttrades.context import Context, View
 from companion.styles.ttrades.continuation import PathOutcome
@@ -377,6 +378,7 @@ def _position(ctx: Context, path: PathOutcome, tell: _Teller, decision: str, sta
         if not risk > 0 or not target > entry:
             return None  # the rules cannot give these levels a reward-to-risk
         outcome, at, r_now = "open", None, None
+        stage_label, age = "forming", None
         if state == "triggered":
             after = since + 1
             stopped = np.flatnonzero(e.low[after:] < stop)
@@ -388,6 +390,14 @@ def _position(ctx: Context, path: PathOutcome, tell: _Teller, decision: str, sta
             elif first_target is not None:
                 outcome, at = "target_reached", e.times[first_target].to_pydatetime()
             r_now = (last - entry) / risk
+            age = e.n - 1 - since  # closed entry bars after the trigger bar
+            if outcome != "open":
+                stage_label = "played_out"
+            elif age > cfg.actionable_entry_bars or abs(r_now) > cfg.actionable_max_r:
+                stage_label = "late"
+            else:
+                stage_label = "actionable"
+        cost_mini, cost_micro = cost_in_r(ctx.symbol, risk)
         return PositionPlan(
             direction=trade,  # type: ignore[arg-type]
             state=state,  # type: ignore[arg-type]
@@ -402,6 +412,11 @@ def _position(ctx: Context, path: PathOutcome, tell: _Teller, decision: str, sta
             last=side.px(last),
             r_now=r_now,
             note=note,
+            stage_label=stage_label,  # type: ignore[arg-type]
+            age_bars=age,
+            risk_adr=risk / ctx.adr if ctx.adr else None,
+            cost_r_mini=cost_mini,
+            cost_r_micro=cost_micro,
         )
 
     if trigger is not None and plan is not None:
@@ -467,6 +482,7 @@ def build_plan(
     plan_told: bool,
     forced: Side | None = None,
     reversals_open: dict[str, bool] | None = None,
+    entry_blocks: tuple[str, ...] = (),
 ) -> tuple[tuple[PlanStep, ...], PositionPlan | None]:
     """``(steps, plan)`` for the verdict being returned.
 
@@ -482,6 +498,7 @@ def build_plan(
     blockers = _blockers(selected, ctx, at_entry_ready=stage == "c4")
     if session_blocks and not session_ok:
         blockers["entry"].append("the trigger closed outside the kill zones")
+    blockers["entry"].extend(entry_blocks)
     restart: int | None = None
     if selected.family == "continuation":
         drafts, restart = _continuation(ctx, bias, selected, tell)

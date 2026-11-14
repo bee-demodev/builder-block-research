@@ -14,6 +14,8 @@ export interface Overlays {
   markerLabels: boolean;
   /** The risk / reward box on the entry chart (its zones and captions; its lines always stay). */
   riskReward: boolean;
+  /** Intraday reference levels (Asia and London high / low, midnight and 09:30 opens, PDH / PDL). Off by default. */
+  sessionLevels: boolean;
 }
 
 export interface DisplayOptions {
@@ -40,15 +42,21 @@ export const OVERLAYS: readonly { key: keyof Overlays; label: string }[] = [
   { key: 'zones', label: 'Zones' },
   { key: 'markerLabels', label: 'Marker labels' },
   { key: 'riskReward', label: 'Risk / reward box' },
+  { key: 'sessionLevels', label: 'Session levels' },
 ];
 
 export const DEFAULT_DISPLAY: DisplayOptions = {
   textSize: 'normal',
   scheme: 'grey',
-  overlays: { levelNames: true, zones: true, markerLabels: true, riskReward: true },
+  overlays: { levelNames: true, zones: true, markerLabels: true, riskReward: true, sessionLevels: false },
 };
 
 export const DISPLAY_KEY = 'companion.display';
+
+/** The marks a chart draws with these overlays: the session levels layer only when it is on. */
+export function layerMarks<T extends { role: string }>(marks: readonly T[], overlays: Overlays): T[] {
+  return overlays.sessionLevels ? [...marks] : marks.filter((m) => m.role !== 'session');
+}
 
 export function textScale(size: TextSize): number {
   return TEXT_SIZES.find((s) => s.value === size)?.scale ?? 1;
@@ -77,7 +85,13 @@ export function parseDisplay(raw: string | null): DisplayOptions {
   return {
     textSize: TEXT_SIZES.some((s) => s.value === d.textSize) ? (d.textSize as TextSize) : DEFAULT_DISPLAY.textSize,
     scheme: SCHEMES.some((s) => s.value === d.scheme) ? (d.scheme as Scheme) : DEFAULT_DISPLAY.scheme,
-    overlays: { levelNames: flag('levelNames'), zones: flag('zones'), markerLabels: flag('markerLabels'), riskReward: flag('riskReward') },
+    overlays: {
+      levelNames: flag('levelNames'),
+      zones: flag('zones'),
+      markerLabels: flag('markerLabels'),
+      riskReward: flag('riskReward'),
+      sessionLevels: flag('sessionLevels'),
+    },
   };
 }
 

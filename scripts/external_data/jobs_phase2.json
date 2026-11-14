@@ -1,0 +1,202 @@
+[
+ {
+  "symbol": "YM",
+  "stack": "1W/1D/1h",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/YM_5m.csv",
+  "out": "results/backtest/external/tradingview/YM_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "YM",
+  "stack": "1M/1D/1h",
+  "start": "2023-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/YM_5m.csv",
+  "out": "results/backtest/external/tradingview/YM_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1W/1D/1h",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/RTY_5m.csv",
+  "out": "results/backtest/external/tradingview/RTY_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1M/1D/1h",
+  "start": "2023-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/RTY_5m.csv",
+  "out": "results/backtest/external/tradingview/RTY_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "CL",
+  "stack": "1W/1D/1h",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/CL_5m.csv",
+  "out": "results/backtest/external/tradingview/CL_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "CL",
+  "stack": "1M/1D/1h",
+  "start": "2023-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/CL_5m.csv",
+  "out": "results/backtest/external/tradingview/CL_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "SI",
+  "stack": "1W/1D/1h",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/SI_5m.csv",
+  "out": "results/backtest/external/tradingview/SI_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "SI",
+  "stack": "1M/1D/1h",
+  "start": "2023-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/SI_5m.csv",
+  "out": "results/backtest/external/tradingview/SI_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "6E",
+  "stack": "1W/1D/1h",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/6E_5m.csv",
+  "out": "results/backtest/external/tradingview/6E_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "6E",
+  "stack": "1M/1D/1h",
+  "start": "2023-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/6E_5m.csv",
+  "out": "results/backtest/external/tradingview/6E_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "YM",
+  "stack": "1W/4h/15m",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/YM_5m.csv",
+  "out": "results/backtest/external/tradingview/YM_1W-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "YM",
+  "stack": "1D/4h/15m",
+  "start": "2021-04-19",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/YM_5m.csv",
+  "out": "results/backtest/external/tradingview/YM_1D-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1W/4h/15m",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/RTY_5m.csv",
+  "out": "results/backtest/external/tradingview/RTY_1W-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1D/4h/15m",
+  "start": "2021-04-19",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/RTY_5m.csv",
+  "out": "results/backtest/external/tradingview/RTY_1D-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "CL",
+  "stack": "1W/4h/15m",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/CL_5m.csv",
+  "out": "results/backtest/external/tradingview/CL_1W-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "CL",
+  "stack": "1D/4h/15m",
+  "start": "2021-04-19",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/CL_5m.csv",
+  "out": "results/backtest/external/tradingview/CL_1D-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "SI",
+  "stack": "1W/4h/15m",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/SI_5m.csv",
+  "out": "results/backtest/external/tradingview/SI_1W-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "SI",
+  "stack": "1D/4h/15m",
+  "start": "2021-04-19",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/SI_5m.csv",
+  "out": "results/backtest/external/tradingview/SI_1D-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "6E",
+  "stack": "1W/4h/15m",
+  "start": "2021-06-21",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/6E_5m.csv",
+  "out": "results/backtest/external/tradingview/6E_1W-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "6E",
+  "stack": "1D/4h/15m",
+  "start": "2021-04-19",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/6E_5m.csv",
+  "out": "results/backtest/external/tradingview/6E_1D-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "YM",
+  "stack": "1D/1h/5m",
+  "start": "2024-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/YM_5m.csv",
+  "out": "results/backtest/external/tradingview/YM_1D-1h-5m.jsonl.gz"
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1D/1h/5m",
+  "start": "2024-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/RTY_5m.csv",
+  "out": "results/backtest/external/tradingview/RTY_1D-1h-5m.jsonl.gz"
+ },
+ {
+  "symbol": "CL",
+  "stack": "1D/1h/5m",
+  "start": "2024-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/CL_5m.csv",
+  "out": "results/backtest/external/tradingview/CL_1D-1h-5m.jsonl.gz"
+ },
+ {
+  "symbol": "SI",
+  "stack": "1D/1h/5m",
+  "start": "2024-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/SI_5m.csv",
+  "out": "results/backtest/external/tradingview/SI_1D-1h-5m.jsonl.gz"
+ },
+ {
+  "symbol": "6E",
+  "stack": "1D/1h/5m",
+  "start": "2024-01-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/6E_5m.csv",
+  "out": "results/backtest/external/tradingview/6E_1D-1h-5m.jsonl.gz"
+ }
+]

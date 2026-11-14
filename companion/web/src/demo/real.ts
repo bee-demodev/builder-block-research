@@ -1,5 +1,7 @@
 // REAL snapshots, saved from the Python core on saved history (NQ, 1D / 1h / 5m,
-// ttrades). Copies of tests/companion/fixtures/snapshot_v1*.json:
+// ttrades). Copies of tests/companion/fixtures/snapshot_v1*.json as saved on 2025-11-18,
+// by an older core: kept as they are because they show a live triggered trade, which the
+// regenerated core fixtures (now a played-out WATCH) no longer do:
 //  - real:           2025-11-18, side Auto, a triggered short.
 //  - real-triggered: 2025-11-18 08:30, side Short, plan triggered, every step done.
 //  - real-planned:   2025-11-19 10:15, side Short, plan only planned; steps blocked, next, later.

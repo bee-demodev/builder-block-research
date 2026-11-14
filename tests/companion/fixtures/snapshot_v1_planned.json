@@ -47,12 +47,21 @@
       "detail": "no trigger yet; as_of 2025-11-19 10:15 New York is inside the kill zones (02:00-05:00, 08:30-11:00)",
       "tags": "advisory · 5m",
       "advisory": true
+     },
+     {
+      "key": "stop_size_ok",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Stop is wide enough for its costs (share of the daily range)",
+      "detail": "no trigger yet; judged on the trigger's stop once it forms",
+      "tags": "advisory · 5m",
+      "advisory": true
      }
     ],
     "passed": 3,
     "failed": 0,
-    "not_evaluated": 0,
-    "tally": "3 of 3 passed"
+    "not_evaluated": 1,
+    "tally": "3 of 4 passed, 1 not evaluated"
    },
    {
     "name": "continuation c1",
@@ -210,8 +219,8 @@
       "mark": "N/A",
       "label": "That confirmation was a quick, V-shaped turn",
       "detail": "Not evaluated: no active setup closure",
-      "tags": "quality · 5m",
-      "advisory": false
+      "tags": "advisory · 5m",
+      "advisory": true
      }
     ],
     "passed": 0,
@@ -263,6 +272,51 @@
       "advisory": false
      },
      {
+      "key": "cont_trigger_v_shape",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Trigger closed through in a quick V",
+      "detail": "Not evaluated: no active setup closure",
+      "tags": "quality · 5m",
+      "advisory": false
+     },
+     {
+      "key": "cont_not_inside_consolidation",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Trigger is not an internal move inside a consolidation",
+      "detail": "Not evaluated: no active setup closure",
+      "tags": "quality · 5m",
+      "advisory": false
+     },
+     {
+      "key": "cont_objective_open_at_trigger",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Higher-timeframe target (previous bias candle's low) was still open at the trigger",
+      "detail": "Not evaluated: no active setup closure",
+      "tags": "quality · 1D",
+      "advisory": false
+     },
+     {
+      "key": "cont_entry_early_in_candle",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Trigger closed early enough in its setup candle",
+      "detail": "Not evaluated: no active setup closure",
+      "tags": "quality · 1h",
+      "advisory": false
+     },
+     {
+      "key": "cont_newer_protected_low",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Newer protected high since the entry (stop can trail)",
+      "detail": "Not evaluated: no active setup closure",
+      "tags": "advisory · 5m",
+      "advisory": true
+     },
+     {
       "key": "cont_reward_at_least_2r",
       "status": "na",
       "mark": "N/A",
@@ -274,8 +328,8 @@
     ],
     "passed": 0,
     "failed": 1,
-    "not_evaluated": 4,
-    "tally": "0 of 5 passed, 1 failed, 4 not evaluated"
+    "not_evaluated": 9,
+    "tally": "0 of 10 passed, 1 failed, 9 not evaluated"
    },
    {
     "name": "reversal c1",
@@ -2071,7 +2125,7 @@
      {
       "kind": "level",
       "role": "reference",
-      "label": "Prev high",
+      "label": "PDH",
       "title": "Previous bias candle high",
       "price": 24958.25,
       "top": null,
@@ -2082,7 +2136,7 @@
      {
       "kind": "level",
       "role": "reference",
-      "label": "Prev low",
+      "label": "PDL",
       "title": "Previous bias candle low",
       "price": 24383.25,
       "top": null,
@@ -2093,7 +2147,7 @@
      {
       "kind": "level",
       "role": "reference",
-      "label": "EQ",
+      "label": "PD EQ",
       "title": "Previous bias candle equilibrium",
       "price": 24670.75,
       "top": null,
@@ -3727,6 +3781,17 @@
     "marks": [
      {
       "kind": "level",
+      "role": "reference",
+      "label": "PDL",
+      "title": "Previous bias candle low",
+      "price": 24383.25,
+      "top": null,
+      "bottom": null,
+      "start": 121,
+      "end": null
+     },
+     {
+      "kind": "level",
       "role": "next",
       "label": "Next: 1h close below",
       "title": "1h close back below 24,958.25, after the high 24,951.75",
@@ -5351,6 +5416,72 @@
     ],
     "marks": [
      {
+      "kind": "level",
+      "role": "session",
+      "label": "Asia H",
+      "title": "Asia session high",
+      "price": 24655.5,
+      "top": null,
+      "bottom": null,
+      "start": null,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "session",
+      "label": "Asia L",
+      "title": "Asia session low",
+      "price": 24492.25,
+      "top": null,
+      "bottom": null,
+      "start": null,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "session",
+      "label": "London H",
+      "title": "London session high",
+      "price": 24682.5,
+      "top": null,
+      "bottom": null,
+      "start": 61,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "session",
+      "label": "London L",
+      "title": "London session low",
+      "price": 24531.75,
+      "top": null,
+      "bottom": null,
+      "start": 61,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "session",
+      "label": "Midnight open",
+      "title": "Midnight open",
+      "price": 24523.25,
+      "top": null,
+      "bottom": null,
+      "start": 37,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "session",
+      "label": "09:30 open",
+      "title": "09:30 open",
+      "price": 24603.0,
+      "top": null,
+      "bottom": null,
+      "start": 151,
+      "end": null
+     },
+     {
       "kind": "marker",
       "role": "protected",
       "label": "Wick high",
@@ -5359,6 +5490,28 @@
       "top": null,
       "bottom": null,
       "start": 159,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "reference",
+      "label": "PDH",
+      "title": "Previous bias candle high",
+      "price": 24958.25,
+      "top": null,
+      "bottom": null,
+      "start": null,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "reference",
+      "label": "PDL",
+      "title": "Previous bias candle low",
+      "price": 24383.25,
+      "top": null,
+      "bottom": null,
+      "start": null,
       "end": null
      }
     ],
@@ -5518,7 +5671,13 @@
    "since": "2025-11-19T10:10:00-05:00",
    "outcome_at": null,
    "last": 24948.0,
-   "r_now": null
+   "r_now": null,
+   "stage_label": "forming",
+   "age_bars": null,
+   "risk_adr": 0.05639136571763005,
+   "cost_r_mini": 0.016239316239316237,
+   "cost_r_micro": 0.03418803418803419,
+   "cost_note": "Stop 5.6% of ADR · costs 0.02R mini, 0.03R micro"
   }
  },
  "error": "",
@@ -5530,10 +5689,10 @@
  },
  "timing": {
   "bar_closed_at": null,
-  "detected_at": "2026-11-12T19:28:28.682000-05:00",
+  "detected_at": "2026-11-13T20:42:07.735000-05:00",
   "fetch_ms": 0,
-  "compute_ms": 77,
+  "compute_ms": 611,
   "lag_ms": null,
-  "load_ms": 983
+  "load_ms": 1781
  }
 }

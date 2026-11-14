@@ -620,7 +620,7 @@ def test_every_documented_criterion_is_returned_once() -> None:
     keys = [item.key for item in verdict.criteria]
     assert len(keys) == len(set(keys))
     expected = {
-        "data_sufficient", "stack_pairing_stated", "session_filter_ok",
+        "data_sufficient", "stack_pairing_stated", "session_filter_ok", "stop_size_ok",
         "bias_closure_directional", "bias_poi_present", "bias_cisd_confirmed", "bias_candle_index_ok",
         "bias_swing_intact", "cont_objective_open", "bias_c2_not_expanded", "cont_eq_respected",
         "cont_poi_tagged", "cont_opened_against_bias_first", "cont_setup_closure",
@@ -637,6 +637,6 @@ def test_every_documented_criterion_is_returned_once() -> None:
     assert all(item.label and item.detail and item.group and item.role for item in verdict.criteria)
     roles = {item.key: item.role for item in verdict.criteria}
     # the classes the trader's answers changed (rules.md section 12)
-    assert roles["session_filter_ok"] == roles["cont_objective_open"] == "advisory"
+    assert roles["session_filter_ok"] == roles["cont_objective_open"] == roles["stop_size_ok"] == "advisory"
     assert roles["cont_reward_at_least_2r"] == roles["rev_reward_at_least_2r"] == "advisory"
     assert (roles["rev_key_level_reached"], roles["rev_expansion_into_level"]) == ("step", "quality")

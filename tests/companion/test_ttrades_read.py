@@ -14,7 +14,7 @@ import pytest
 
 from companion.engine import render_text
 from companion.styles.ttrades import TTradesStyle, load_config
-from companion.styles.ttrades.checklist import CONTINUATION, REVERSAL, SESSION, SHARED
+from companion.styles.ttrades.checklist import CONTINUATION, REVERSAL, SESSION, SHARED, STOP_SIZE
 from companion.timeframes import candle_label, get_stack
 from companion.types import ReadStep, TimeframeStack, Verdict
 from ttrades_scenarios import SYMBOL, Scenario, continuation_scenario, reversal_scenario
@@ -23,7 +23,7 @@ DAILY = get_stack("1D / 1h / 5m")
 FOUR_HOUR = get_stack("4h / 15m / 1m")
 STACKS = pytest.mark.parametrize("stack", [DAILY, FOUR_HOUR], ids=lambda stack: stack.name)
 
-KEYS = [spec.key for spec in (*SHARED, SESSION, *CONTINUATION, *REVERSAL)]
+KEYS = [spec.key for spec in (*SHARED, SESSION, STOP_SIZE, *CONTINUATION, *REVERSAL)]
 STAGE_CODE = re.compile(r"\bc[1-4]\b")
 
 

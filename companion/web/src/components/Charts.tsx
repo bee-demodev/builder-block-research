@@ -1,7 +1,7 @@
 import { ChartLineIcon, GearSixIcon, WarningCircleIcon } from '@phosphor-icons/react';
 import { memo, useEffect, useMemo, useRef, useState, type MouseEvent } from 'react';
 import { CandleChart, type MarkHover } from '../chart/CandleChart';
-import type { Overlays, Scheme } from '../display';
+import { layerMarks, type Overlays, type Scheme } from '../display';
 import { initialWindowStart, offScaleNotes, partitionMarks } from '../chart/marks';
 import { readPalette } from '../chart/palette';
 import { formatPrice, plainText, priceDecimals, sentenceCase } from '../format';
@@ -133,9 +133,10 @@ const ChartPane = memo(function ChartPane({ chart, reason, direction, theme, sta
 
   const decimals = useMemo(() => priceDecimals(chart.candles.slice(-200).flatMap((c) => [c.open, c.close])), [chart.candles]);
   const notes = useMemo(() => {
-    const from = initialWindowStart(chart.candles.length, chart.marks, openBars);
-    return offScaleNotes(partitionMarks(chart.candles.slice(from), chart.marks), decimals);
-  }, [chart.candles, chart.marks, decimals, openBars]);
+    const marks = layerMarks(chart.marks, overlays);
+    const from = initialWindowStart(chart.candles.length, marks, openBars);
+    return offScaleNotes(partitionMarks(chart.candles.slice(from), marks), decimals);
+  }, [chart.candles, chart.marks, decimals, openBars, overlays]);
   const shown = hover ?? chart.candles[chart.candles.length - 1] ?? null;
   const tone = readTone(chart.status);
   const onContextMenu = (e: MouseEvent) => {

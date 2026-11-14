@@ -70,7 +70,26 @@ describe('the session clock', () => {
 
 describe('the plan block', () => {
   it('words a triggered plan with its time, last close and R', () => {
-    expect(planWords(triggered.plan!)).toEqual({ title: 'Short', state: 'Triggered 08:20', outcome: '', last: { price: '24,713.25', r: '+0.19R' } });
+    expect(planWords(triggered.plan!)).toEqual({
+      title: 'Short',
+      state: 'Triggered 08:20',
+      outcome: '',
+      last: { price: '24,713.25', r: '+0.19R' },
+      stage: '', // a snapshot from a core that predates the stage
+      stageAlert: false,
+      cost: '',
+    });
+  });
+
+  it('says how old a triggered plan is and flags a late one', () => {
+    const plan = { ...longView().plan!, stage_label: 'late' as const, age_bars: 5 };
+    expect(planWords(plan)).toMatchObject({ stage: 'Late · 5 bars', stageAlert: true });
+    expect(planWords({ ...plan, stage_label: 'actionable', age_bars: 1 })).toMatchObject({ stage: 'Actionable · 1 bar', stageAlert: false });
+    expect(planWords({ ...plan, stage_label: 'forming', age_bars: null }).stage).toBe('');
+  });
+
+  it('passes the stop size and cost line through', () => {
+    expect(planWords(longView().plan!).cost).toBe('Stop 17% of ADR · costs 0.01R mini, 0.01R micro');
   });
 
   it('words a planned plan without a last close', () => {

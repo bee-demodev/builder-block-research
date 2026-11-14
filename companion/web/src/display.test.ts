@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { DEFAULT_DISPLAY, DISPLAY_KEY, isDefault, loadDisplay, parseDisplay, saveDisplay, stepTextSize, textScale, type DisplayOptions } from './display';
+import { DEFAULT_DISPLAY, DISPLAY_KEY, isDefault, layerMarks, loadDisplay, parseDisplay, saveDisplay, stepTextSize, textScale, type DisplayOptions } from './display';
 
 class MemoryStorage {
   data = new Map<string, string>();
@@ -14,7 +14,7 @@ class MemoryStorage {
   }
 }
 
-const custom: DisplayOptions = { textSize: 'larger', scheme: 'blue-orange', overlays: { levelNames: false, zones: true, markerLabels: false, riskReward: true } };
+const custom: DisplayOptions = { textSize: 'larger', scheme: 'blue-orange', overlays: { levelNames: false, zones: true, markerLabels: false, riskReward: true, sessionLevels: true } };
 
 describe('display options persistence', () => {
   it('round-trips through storage', () => {
@@ -58,5 +58,19 @@ describe('text size', () => {
     expect(stepTextSize('larger', 1)).toBe('larger');
     expect(stepTextSize('normal', -1)).toBe('normal');
     expect(['normal', 'large', 'larger'].map((s) => textScale(s as DisplayOptions['textSize']))).toEqual([1, 1.25, 1.5]);
+  });
+});
+
+describe('the session levels layer', () => {
+  const marks = [{ role: 'reference' }, { role: 'session' }, { role: 'entry' }];
+
+  it('is off by default and keeps every other mark', () => {
+    expect(DEFAULT_DISPLAY.overlays.sessionLevels).toBe(false);
+    expect(layerMarks(marks, DEFAULT_DISPLAY.overlays).map((m) => m.role)).toEqual(['reference', 'entry']);
+  });
+
+  it('shows the session marks when turned on, and an older stored choice falls back to off', () => {
+    expect(layerMarks(marks, { ...DEFAULT_DISPLAY.overlays, sessionLevels: true })).toHaveLength(3);
+    expect(parseDisplay(JSON.stringify({ overlays: { zones: false } })).overlays.sessionLevels).toBe(false);
   });
 });

@@ -1,0 +1,506 @@
+[
+ {
+  "symbol": "NQ",
+  "stack": "1W/1D/1h",
+  "start": "2024-12-15",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/NQ_1h.csv",
+  "out": "results/backtest/external/yahoo/NQ_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1M/1D/1h",
+  "start": "2026-06-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/NQ_1h.csv",
+  "out": "results/backtest/external/yahoo/NQ_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "ES",
+  "stack": "1W/1D/1h",
+  "start": "2024-12-15",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/ES_1h.csv",
+  "out": "results/backtest/external/yahoo/ES_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "ES",
+  "stack": "1M/1D/1h",
+  "start": "2026-06-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/ES_1h.csv",
+  "out": "results/backtest/external/yahoo/ES_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "GC",
+  "stack": "1W/1D/1h",
+  "start": "2024-12-15",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/GC_1h.csv",
+  "out": "results/backtest/external/yahoo/GC_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "GC",
+  "stack": "1M/1D/1h",
+  "start": "2026-06-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/GC_1h.csv",
+  "out": "results/backtest/external/yahoo/GC_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "YM",
+  "stack": "1W/1D/1h",
+  "start": "2024-12-15",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/YM_1h.csv",
+  "out": "results/backtest/external/yahoo/YM_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "YM",
+  "stack": "1M/1D/1h",
+  "start": "2026-06-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/YM_1h.csv",
+  "out": "results/backtest/external/yahoo/YM_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1W/1D/1h",
+  "start": "2024-12-15",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/RTY_1h.csv",
+  "out": "results/backtest/external/yahoo/RTY_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1M/1D/1h",
+  "start": "2026-06-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/RTY_1h.csv",
+  "out": "results/backtest/external/yahoo/RTY_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "CL",
+  "stack": "1W/1D/1h",
+  "start": "2024-12-15",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/CL_1h.csv",
+  "out": "results/backtest/external/yahoo/CL_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "CL",
+  "stack": "1M/1D/1h",
+  "start": "2026-06-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/CL_1h.csv",
+  "out": "results/backtest/external/yahoo/CL_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "SI",
+  "stack": "1W/1D/1h",
+  "start": "2024-12-15",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/SI_1h.csv",
+  "out": "results/backtest/external/yahoo/SI_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "SI",
+  "stack": "1M/1D/1h",
+  "start": "2026-06-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/SI_1h.csv",
+  "out": "results/backtest/external/yahoo/SI_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "6E",
+  "stack": "1W/1D/1h",
+  "start": "2024-12-15",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/6E_1h.csv",
+  "out": "results/backtest/external/yahoo/6E_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "6E",
+  "stack": "1M/1D/1h",
+  "start": "2026-06-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/6E_1h.csv",
+  "out": "results/backtest/external/yahoo/6E_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1W/1D/1h",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/NQ_5m.csv",
+  "out": "results/backtest/external/tradingview/NQ_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1M/1D/1h",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/NQ_5m.csv",
+  "out": "results/backtest/external/tradingview/NQ_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1W/4h/15m",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/NQ_5m.csv",
+  "out": "results/backtest/external/tradingview/NQ_1W-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1D/4h/15m",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/NQ_5m.csv",
+  "out": "results/backtest/external/tradingview/NQ_1D-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "ES",
+  "stack": "1W/1D/1h",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/ES_5m.csv",
+  "out": "results/backtest/external/tradingview/ES_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "ES",
+  "stack": "1M/1D/1h",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/ES_5m.csv",
+  "out": "results/backtest/external/tradingview/ES_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "ES",
+  "stack": "1W/4h/15m",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/ES_5m.csv",
+  "out": "results/backtest/external/tradingview/ES_1W-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "ES",
+  "stack": "1D/4h/15m",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/ES_5m.csv",
+  "out": "results/backtest/external/tradingview/ES_1D-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "GC",
+  "stack": "1W/1D/1h",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/GC_5m.csv",
+  "out": "results/backtest/external/tradingview/GC_1W-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "GC",
+  "stack": "1M/1D/1h",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/GC_5m.csv",
+  "out": "results/backtest/external/tradingview/GC_1M-1D-1h.jsonl.gz"
+ },
+ {
+  "symbol": "GC",
+  "stack": "1W/4h/15m",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/GC_5m.csv",
+  "out": "results/backtest/external/tradingview/GC_1W-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "GC",
+  "stack": "1D/4h/15m",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/GC_5m.csv",
+  "out": "results/backtest/external/tradingview/GC_1D-4h-15m.jsonl.gz"
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1h/5m/1m",
+  "start": "2026-11-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/NQ_1m.csv",
+  "out": "results/backtest/external/tradingview/NQ_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1h/15m/1m",
+  "start": "2026-11-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/NQ_1m.csv",
+  "out": "results/backtest/external/tradingview/NQ_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "ES",
+  "stack": "1h/5m/1m",
+  "start": "2026-11-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/ES_1m.csv",
+  "out": "results/backtest/external/tradingview/ES_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "ES",
+  "stack": "1h/15m/1m",
+  "start": "2026-11-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/ES_1m.csv",
+  "out": "results/backtest/external/tradingview/ES_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "GC",
+  "stack": "1h/5m/1m",
+  "start": "2026-11-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/GC_1m.csv",
+  "out": "results/backtest/external/tradingview/GC_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "GC",
+  "stack": "1h/15m/1m",
+  "start": "2026-11-01",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/GC_1m.csv",
+  "out": "results/backtest/external/tradingview/GC_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1h/5m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/NQ_1m.csv",
+  "out": "results/backtest/external/yahoo/NQ_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "NQ",
+  "stack": "1h/15m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/NQ_1m.csv",
+  "out": "results/backtest/external/yahoo/NQ_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "ES",
+  "stack": "1h/5m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/ES_1m.csv",
+  "out": "results/backtest/external/yahoo/ES_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "ES",
+  "stack": "1h/15m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/ES_1m.csv",
+  "out": "results/backtest/external/yahoo/ES_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "GC",
+  "stack": "1h/5m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/GC_1m.csv",
+  "out": "results/backtest/external/yahoo/GC_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "GC",
+  "stack": "1h/15m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/GC_1m.csv",
+  "out": "results/backtest/external/yahoo/GC_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "YM",
+  "stack": "1h/5m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/YM_1m.csv",
+  "out": "results/backtest/external/yahoo/YM_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "YM",
+  "stack": "1h/15m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/YM_1m.csv",
+  "out": "results/backtest/external/yahoo/YM_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1h/5m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/RTY_1m.csv",
+  "out": "results/backtest/external/yahoo/RTY_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "RTY",
+  "stack": "1h/15m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/RTY_1m.csv",
+  "out": "results/backtest/external/yahoo/RTY_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "CL",
+  "stack": "1h/5m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/CL_1m.csv",
+  "out": "results/backtest/external/yahoo/CL_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "CL",
+  "stack": "1h/15m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/CL_1m.csv",
+  "out": "results/backtest/external/yahoo/CL_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "SI",
+  "stack": "1h/5m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/SI_1m.csv",
+  "out": "results/backtest/external/yahoo/SI_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "SI",
+  "stack": "1h/15m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/SI_1m.csv",
+  "out": "results/backtest/external/yahoo/SI_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "6E",
+  "stack": "1h/5m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/6E_1m.csv",
+  "out": "results/backtest/external/yahoo/6E_1h-5m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "6E",
+  "stack": "1h/15m/1m",
+  "start": "2026-10-25",
+  "end": "2026-11-14",
+  "bars_file": "data/external/yahoo/6E_1m.csv",
+  "out": "results/backtest/external/yahoo/6E_1h-15m-1m.jsonl.gz",
+  "hours": [
+   1,
+   16
+  ]
+ },
+ {
+  "symbol": "ES",
+  "stack": "1D/1h/5m",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/ES_5m.csv",
+  "out": "results/backtest/external/tradingview/ES_1D-1h-5m.jsonl.gz"
+ },
+ {
+  "symbol": "GC",
+  "stack": "1D/1h/5m",
+  "start": "2026-03-05",
+  "end": "2026-11-14",
+  "bars_file": "data/external/tradingview/GC_5m.csv",
+  "out": "results/backtest/external/tradingview/GC_1D-1h-5m.jsonl.gz"
+ }
+]

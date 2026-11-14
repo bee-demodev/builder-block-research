@@ -8,8 +8,8 @@ a criterion feeds the decision (rules.md section 10):
 - quality: ``False`` blocks entry-ready but keeps the path alive
 - advisory: reported, never changes the decision
 
-The class written in a ``Spec`` is the default. Four criteria take theirs from the config
-(``session_filter_role``, ``objective_open_role``, ``reward_check_role`` and, through
+The class written in a ``Spec`` is the default. Five criteria take theirs from the config
+(``session_filter_role``, ``stop_size_role``, ``objective_open_role``, ``reward_check_role`` and, through
 ``reversal_expansion_test``, ``rev_expansion_into_level``); the path modules pass the
 configured class in ``roles``. ``cont_objective_open_at_trigger`` takes its class from
 ``objective_at_trigger_role`` the same way.
@@ -43,6 +43,9 @@ SHARED: tuple[Spec, ...] = (
 )
 
 SESSION = Spec("session_filter_ok", "Inside a kill zone (information)", "shared", "", ADVISORY, "entry")
+
+# Class from ``stop_size_role`` (advisory by default). Measured on the trigger's own stop.
+STOP_SIZE = Spec("stop_size_ok", "Stop is wide enough for its costs (share of the daily range)", "shared", "", ADVISORY, "entry")
 
 CONTINUATION: tuple[Spec, ...] = (
     Spec("bias_closure_directional", "Bias candle closed with a direction", "continuation", "c1", GATE, "bias"),

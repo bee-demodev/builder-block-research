@@ -32,6 +32,8 @@ export interface Options {
   /** Values of `ServerState.side`. Auto, Long, Short from a core that predates the side. */
   sides: Side[];
   side_labels: Record<string, string>;
+  /** What the backtest found for a stack, by stack name; a stack may have none. */
+  stack_notes: Record<string, string>;
 }
 
 export interface ServerState {
@@ -157,7 +159,20 @@ export interface Plan {
   outcome_at: string | null;
   last: number | null;
   r_now: number | null;
+  /** Where the idea stands: forming | actionable | late | played_out ('' when the core did not say). */
+  stage_label: StageLabel;
+  /** Triggered: closed entry bars after the trigger bar. */
+  age_bars: number | null;
+  /** The stop as a share of the 14-day average daily range. */
+  risk_adr: number | null;
+  /** One contract's round-turn cost (a tick of slippage plus commission) as a share of the risk. */
+  cost_r_mini: number | null;
+  cost_r_micro: number | null;
+  /** Those in words: "Stop 6% of ADR · costs 0.05R mini, 0.11R micro" ('' when unknown). */
+  cost_note: string;
 }
+
+export type StageLabel = '' | 'forming' | 'actionable' | 'late' | 'played_out';
 
 export interface Zone {
   top: number;
@@ -402,6 +417,7 @@ const options = obj<Options>({
   data: arr(str),
   sides: optional(arr(side), () => [...DEFAULT_SIDES]),
   side_labels: optional(record(str), () => ({ ...DEFAULT_SIDE_LABELS })),
+  stack_notes: optional(record(str), () => ({})),
 });
 
 const serverState = obj<ServerState>({
@@ -544,6 +560,12 @@ const plan = obj<Plan>({
   outcome_at: nullable(str),
   last: nullable(num),
   r_now: nullable(num),
+  stage_label: optional(oneOf<StageLabel>('', 'forming', 'actionable', 'late', 'played_out'), () => '' as StageLabel),
+  age_bars: optional(nullable(num), () => null),
+  risk_adr: optional(nullable(num), () => null),
+  cost_r_mini: optional(nullable(num), () => null),
+  cost_r_micro: optional(nullable(num), () => null),
+  cost_note: optional(str, () => ''),
 });
 
 const chartView = obj<ChartView>({

@@ -260,6 +260,11 @@ function PlanBlock({ plan, stale }: { plan: Plan; stale: boolean }) {
           {w.title}
         </h2>
         <span className={`plan-state${planned ? ' is-planned' : ''}`}>{w.state}</span>
+        {w.stage && plan.outcome === 'open' && (
+          <span className={`plan-stage${w.stageAlert ? ' tone-watch' : ''}`} title="Actionable: few entry bars since the trigger and price still near the entry (actionable_entry_bars, actionable_max_r in the style settings)">
+            {w.stage}
+          </span>
+        )}
         {w.outcome && (
           <span className={`plan-outcome ${plan.outcome === 'target_reached' ? 'tone-bull' : 'tone-bear'}`}>
             {plan.outcome === 'target_reached' ? <CheckCircleIcon size={14} aria-hidden /> : <XCircleIcon size={14} aria-hidden />}
@@ -289,6 +294,11 @@ function PlanBlock({ plan, stale }: { plan: Plan; stale: boolean }) {
           </div>
         )}
       </dl>
+      {w.cost && (
+        <p className="plan-cost mono" title="Stop size against the average daily range; one contract's round-turn cost (a tick of slippage plus commission) as a share of the risk">
+          {w.cost}
+        </p>
+      )}
       {plan.note && <p className="plan-note">{plainText(plan.note)}</p>}
     </section>
   );

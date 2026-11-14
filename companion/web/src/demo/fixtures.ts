@@ -23,12 +23,16 @@ export const SAMPLE_SOURCE_NOTE = 'Sample data, demo mode. Bars are generated, n
 
 export const demoOptions: Options = {
   symbols: ['NQ1!', 'ES1!', 'YM1!', 'GC1!'],
-  stacks: ['1D / 1h / 5m', '4h / 15m / 1m', '1W / 4h / 15m'],
+  stacks: ['1D / 1h / 5m', '1D / 4h / 15m', '4h / 15m / 1m', '1W / 4h / 15m'],
   timeframes: ['1W', '1D', '4h', '1h', '15m', '5m', '1m'],
   styles: ['TTrades', 'Breakout', 'Mean reversion'],
   data: ['TradingView Desktop', 'Saved history'],
   sides: ['', 'long', 'short'],
   side_labels: { '': 'Auto', long: 'Long', short: 'Short' },
+  stack_notes: {
+    '1D / 1h / 5m': 'Backtest 2024-26: flat after costs.',
+    '4h / 15m / 1m': 'Not validated: 1-minute entries were only backtested on incomplete data.',
+  },
 };
 
 export const LATEST_WHEN = '2026-11-12T10:35:00-05:00';
@@ -311,6 +315,12 @@ function longPlan(planned: boolean, since: string, last: number): Plan {
     outcome_at: null,
     last,
     r_now: planned ? null : (last - ENTRY) / (ENTRY - STOP),
+    stage_label: planned ? 'forming' : 'actionable',
+    age_bars: planned ? null : 1,
+    risk_adr: 0.17,
+    cost_r_mini: 0.007,
+    cost_r_micro: 0.014,
+    cost_note: 'Stop 17% of ADR · costs 0.01R mini, 0.01R micro',
   };
 }
 

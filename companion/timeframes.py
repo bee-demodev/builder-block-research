@@ -202,6 +202,15 @@ def list_stacks(path: Path | None = None) -> list[TimeframeStack]:
     return stacks
 
 
+def stack_notes(path: Path | None = None) -> dict[str, str]:
+    """The ``note`` of each stack that has one, by stack name (what the backtest found for it)."""
+    return {
+        str(entry.get("name") or make_stack(entry["bias"], entry["setup"], entry["entry"]).name): str(entry["note"])
+        for entry in _read_config(path)["stacks"]
+        if entry.get("note")
+    }
+
+
 def get_stack(name: str, path: Path | None = None) -> TimeframeStack:
     for stack in list_stacks(path):
         if stack.name == name:

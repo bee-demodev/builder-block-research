@@ -304,6 +304,36 @@
       "rules": "4.2",
       "open_question": 22,
       "description": "Higher : lower timeframe pairings TTrades states (rules.md 4.2 pairing table)."
+    },
+    "adr_days": {
+      "value": 14,
+      "rules": "8.2, 11",
+      "open_question": 38,
+      "description": "BACKTEST 2026-11-13. Closed 1D bars averaged (high - low) for the average daily range (ADR) that stop_size_ok and the plan's stop size are measured against, whatever the stack."
+    },
+    "min_stop_adr_frac": {
+      "value": 0.04,
+      "rules": "8.2, 11",
+      "open_question": 38,
+      "description": "BACKTEST 2026-11-13. stop_size_ok passes when the displayed risk (entry to stop) is at least this share of the ADR. Trades under 4% of ADR lost -0.32 / -0.22 / -0.12 R a trade in 2024 / 2025 / 2026 (TradingView data, 8 symbols), mostly to costs. 0 switches the check off."
+    },
+    "stop_size_role": {
+      "value": "advisory",
+      "rules": "8.2, 10.3",
+      "open_question": 38,
+      "description": "ANSWERED 2026-11-13 ('ADR is not that big of a deal'). Class of stop_size_ok. 'advisory' (default): shown, never changes the decision. 'quality': a stop under min_stop_adr_frac of the ADR keeps the verdict at watch."
+    },
+    "actionable_entry_bars": {
+      "value": 3,
+      "rules": "10.3",
+      "open_question": 33,
+      "description": "BACKTEST 2026-11-13. A triggered trade is 'actionable' while at most this many entry bars have closed after the trigger bar (and price is within actionable_max_r of the entry); after that it is 'late'. Counted in entry bars so it scales with the timeframe. Label only: the decision is not changed."
+    },
+    "actionable_max_r": {
+      "value": 0.5,
+      "rules": "10.3",
+      "open_question": 33,
+      "description": "BACKTEST 2026-11-13. A triggered trade whose last close is further than this many R from the entry (either way) is 'late'. The audit found 31% of 1D/1h/5m verdicts reached the trader over 15 minutes after the trigger, a median 1.74 R from the entry."
     }
   }
 }
