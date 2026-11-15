@@ -4,11 +4,13 @@ import { ChartsArea, type ChartDisplay } from './components/Charts';
 import { Checklist } from './components/Checklist';
 import { DecisionPanel } from './components/DecisionPanel';
 import { DisplayMenu, type MenuAnchor } from './components/DisplayMenu';
+import { SectionTabs, useSection } from './components/SectionTabs';
 import { TopBar } from './components/TopBar';
 import { setSide } from './decision';
 import { formatMs, plainText } from './format';
 import { useCompanion, useDisplay, useNow, useTheme, type ThemePref } from './hooks';
 import { isPaused, type Model } from './store';
+import { TcmExpansions } from './tcm/TcmExpansions';
 import type { ClientFrame, Side, Timing } from './wire';
 
 export function App() {
@@ -19,7 +21,8 @@ export function App() {
   const [menu, setMenu] = useState<MenuAnchor | null>(null);
   const showDetails = mode === 'details' && model.view !== null;
   const toggleMode = useCallback(() => setMode((m) => (m === 'details' ? 'charts' : 'details')), []);
-  useKeyboard(model, send, toggleMode);
+  const [section, setSection] = useSection();
+  useKeyboard(model, send, toggleMode, section === 'ttrades');
 
   const openMenu = useCallback((anchor: MenuAnchor) => setMenu(anchor), []);
   const closeMenu = useCallback(() => setMenu(null), []);
@@ -30,10 +33,21 @@ export function App() {
   );
   const displayBtn = useRef<HTMLButtonElement>(null);
   const [lookChoice, chooseLook] = useLookChoice(model);
+  const tabs = <SectionTabs value={section} onChange={setSection} />;
+  const themeToggle = <ThemeToggle pref={theme.pref} onClick={theme.cycle} />;
+
+  if (section === 'tcm') {
+    // The companion connection stays open: this section reads its charts.
+    return (
+      <div className="app">
+        <TcmExpansions model={model} send={send} theme={theme.resolved} scheme={display.options.scheme} scale={display.scale} tabs={tabs} footerEnd={themeToggle} />
+      </div>
+    );
+  }
 
   return (
     <div className="app">
-      <TopBar model={model} send={send} />
+      <TopBar model={model} send={send} tabs={tabs} />
       <Banners model={model} url={url} retryNow={retryNow} dismissNotice={dismissNotice} />
       <main className="layout">
         <DecisionPanel
@@ -58,7 +72,7 @@ export function App() {
           <a className="footer-credit" href="https://www.tradingview.com/" target="_blank" rel="noreferrer">
             Charts by TradingView Lightweight Charts
           </a>
-          <ThemeToggle pref={theme.pref} onClick={theme.cycle} />
+          {themeToggle}
           <button
             ref={displayBtn}
             type="button"
@@ -157,8 +171,8 @@ const SIDE_KEYS: Record<string, Side> = { a: '', l: 'long', s: 'short' };
  * Left/right arrows step one bar, space toggles pause, A / L / S choose the side
  * (Auto, Long, Short) and D opens or closes Details. Ignored while a control has focus.
  */
-function useKeyboard(model: Model, send: (f: ClientFrame) => void, toggleDetails: () => void) {
-  const ready = model.link === 'open' && model.server !== null;
+function useKeyboard(model: Model, send: (f: ClientFrame) => void, toggleDetails: () => void, enabled = true) {
+  const ready = enabled && model.link === 'open' && model.server !== null;
   const paused = isPaused(model);
   const follow = model.server?.follow ?? true;
   const side = model.server?.side ?? '';

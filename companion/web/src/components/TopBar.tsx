@@ -1,5 +1,5 @@
 import { CaretLeftIcon, CaretRightIcon, PauseIcon, PlayIcon } from '@phosphor-icons/react';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { statusParts, wallClock } from '../format';
 import { isPaused, type Model } from '../store';
 import { hasDot, statusTone } from '../tones';
@@ -9,9 +9,11 @@ import { Select, toneClass } from './ui';
 interface Props {
   model: Model;
   send: (frame: ClientFrame) => void;
+  /** The section tabs, beside the wordmark. */
+  tabs?: ReactNode;
 }
 
-export function TopBar({ model, send }: Props) {
+export function TopBar({ model, send, tabs }: Props) {
   const { server, options, link } = model;
   const ready = link === 'open' && server !== null && options !== null;
   const paused = isPaused(model);
@@ -20,6 +22,7 @@ export function TopBar({ model, send }: Props) {
   return (
     <header className="topbar">
       <div className="wordmark">Companion</div>
+      {tabs}
 
       <div className="topbar-group">
         <Select label="Symbol" value={server?.symbol ?? ''} options={options?.symbols ?? []} disabled={!ready} onChange={(symbol) => send({ type: 'set', symbol })} />
@@ -124,7 +127,7 @@ function TimeControl({ when, follow, disabled, send }: { when: string; follow: b
   );
 }
 
-function LiveStatus({ model }: { model: Model }) {
+export function LiveStatus({ model }: { model: Model }) {
   const { status, link, timing } = model;
   if (link !== 'open' || !status) {
     const word = link === 'down' ? 'Not connected' : 'Connecting';

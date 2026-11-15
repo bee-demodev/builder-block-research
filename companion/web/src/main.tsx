@@ -6,6 +6,7 @@ import '@fontsource/geist-mono/latin-500.css';
 import '@fontsource/geist-mono/latin-600.css';
 import './styles/tokens.css';
 import './styles/app.css';
+import './styles/tcm.css';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './App';
