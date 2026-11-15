@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { mergeCandle } from '../store';
 import type { Candle, Mark } from '../wire';
-import { diffCandles, distinctTags, initialWindowStart, labelPriority, markerTextX, markInRange, offScaleNotes, partitionMarks, placeLabels } from './marks';
+import { diffCandles, distinctTags, initialWindowStart, labelPriority, markerTextX, markInRange, offScaleNotes, partitionMarks, placeLabels, layoutTags, placePreferring, tickCovered } from './marks';
 
 const c = (t: number, low: number, high: number, forming = false): Candle => ({
   time: '',
@@ -140,5 +140,65 @@ describe('partitionMarks keeps the trade levels', () => {
     const p = partitionMarks(candles, [level('Target', 135), ref]);
     expect(p.shown.map((m) => m.label)).toEqual(['Target']);
     expect(p.above.map((m) => m.label)).toEqual(['Far ref']);
+  });
+});
+
+describe('placePreferring', () => {
+  const plot = { w: 200, h: 100 };
+  const box = (x: number, y: number, w = 40, h = 10) => ({ x, y, w, h });
+  it('places a more important label before a lesser one takes its fallback spot', () => {
+    const candle = box(0, 0, 30, 100);
+    const stop = { choices: [{ candidates: [box(5, 10)] }] }; // its only spot is on the candle
+    const reference = { choices: [{ candidates: [box(40, 10), box(120, 10)] }] }; // clear of the candle, but on the stop's spot
+    const [s, r] = placePreferring([stop, reference], plot, [], [candle]);
+    expect(s?.box).toEqual(box(5, 10)); // the stop keeps its place, on its halo
+    expect(r?.box).toEqual(box(120, 10)); // the reference label moves on
+  });
+  it('prefers a spot clear of the candles when one exists', () => {
+    const candle = box(0, 0, 30, 100);
+    const [r] = placePreferring([{ choices: [{ candidates: [box(5, 10), box(120, 10)] }] }], plot, [], [candle]);
+    expect(r?.box).toEqual(box(120, 10));
+  });
+  it('never covers a hard obstacle', () => {
+    const line = box(0, 10, 200, 3);
+    expect(placePreferring([{ choices: [{ candidates: [box(5, 8)] }] }], plot, [line], [])).toEqual([null]);
+  });
+});
+
+describe('layoutTags', () => {
+  it('keeps role tags where they are when they do not overlap, and hides a reference tag on one', () => {
+    const tags = [
+      { y: 100, quiet: false }, // stop
+      { y: 200, quiet: false }, // target
+      { y: 110, quiet: true }, // London H, on the stop: hidden
+      { y: 150, quiet: true }, // Asia H, clear: drawn where it is
+      { y: 160, quiet: true }, // Asia L, on Asia H: hidden
+      { y: null, quiet: false }, // off the scale
+    ];
+    expect(layoutTags(tags, 18)).toEqual([100, 200, null, 150, null, null]);
+  });
+  it('spreads overlapping role tags around their centre, and judges reference tags against where they end up', () => {
+    const tags = [
+      { y: 100, quiet: false }, // entry
+      { y: 104, quiet: false }, // stop, 4 px away: the two spread to 93 and 111
+      { y: 126, quiet: true }, // clear of 104, but within 18 of the stop's new place at 111: hidden
+      { y: 130, quiet: true }, // 19 below 111: drawn
+    ];
+    expect(layoutTags(tags, 18)).toEqual([93, 111, null, 130]);
+  });
+  it('merges groups that the spreading pushes into each other', () => {
+    const out = layoutTags([{ y: 100, quiet: false }, { y: 101, quiet: false }, { y: 118, quiet: false }], 18);
+    const ys = out as number[];
+    expect(ys[1]! - ys[0]!).toBe(18);
+    expect(ys[2]! - ys[1]!).toBe(18);
+  });
+});
+
+describe('tickCovered', () => {
+  it('hides a tick under a shown tag and keeps the rest', () => {
+    expect(tickCovered(548, [545], 15)).toBe(true);
+    expect(tickCovered(520, [545], 15)).toBe(false);
+    expect(tickCovered(null, [545], 15)).toBe(false);
+    expect(tickCovered(300, [], 15)).toBe(false);
   });
 });

@@ -53,8 +53,8 @@ import {
   type LookEnv,
   type LookScene,
 } from './LookLayer';
-import { TOOL_PRIORITY, distinctTags, labelPriority, markInRange, markerTextX, placeChoices, type Box, type LabelChoice, type PendingLabel } from './marks';
-import { toneColor, withAlpha, type Palette } from './palette';
+import { TOOL_PRIORITY, distinctTags, labelPriority, markInRange, markerTextX, layoutTags, placePreferring, type Box, type LabelChoice, type PendingLabel } from './marks';
+import { quietInk, toneColor, withAlpha, type Palette } from './palette';
 import { ZONE_ALPHA, captionFits, captionText, outcomePrice, toolLineLabels, toolLineStyle } from './tool';
 
 type CanvasRenderingTarget2D = Parameters<IPrimitivePaneRenderer['draw']>[0];
@@ -84,6 +84,8 @@ interface Resolved {
   label: string;
   color: string;
   priority: number;
+  /** A plain reference level (muted tone): dashed, behind the candles, with a light price tag. */
+  quiet: boolean;
 }
 
 interface Hit {
@@ -99,6 +101,14 @@ const ARROW_HALF_W = 4.5;
 const TRADE_ROLES = new Set(['entry', 'stop', 'target']);
 /** With a risk / reward tool the column sits further out, so the tool keeps room for its captions. */
 const COLUMN_GAP_TOOL = 8;
+/** Column candle bodies at half strength: the higher timeframe is context, not the pane's price. */
+const COLUMN_FILL_ALPHA = 0.5;
+/** A price tag is drawn 21 px tall at 12 px axis text (12 + 2 x 2.5 padding + 2 x 2 primitive padding): tags are kept 22 px apart. */
+const AXIS_TAG_GAP = 22;
+/** Added to a reference level's label priority for its price tag: after every role level. */
+const QUIET_RANK = 100;
+/** The column candles' high / low hairlines across the bars they cover: 0.65 keeps them near 3:1 on cream. */
+const SPAN_ALPHA = 0.65;
 /** Column candles' names rank after the trade's own labels and before the rest. */
 const COLUMN_LABEL_PRIORITY = 3.5;
 
@@ -123,6 +133,8 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
   private items: Resolved[] = [];
   private lastClose: number | null = null;
   private axisViews: ISeriesPrimitiveAxisView[] = [];
+  /** The y of every price tag shown, for the axis to hide the ticks under them. */
+  private tagYs: () => number[] = () => [];
   private hits: Hit[] = [];
   private zoneHits: Hit[] = [];
   /** Column candles drawn this frame, as label obstacles. */
@@ -149,6 +161,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
         label: this.markLabel(mark, overlays),
         color: toneColor(palette, markTone(mark.role, direction)),
         priority: labelPriority(mark.role),
+        quiet: markTone(mark.role, direction) === 'muted',
       }));
     this.lastClose = scene.candles[scene.candles.length - 1]?.close ?? null;
     this.axisViews = this.buildAxisViews();
@@ -208,36 +221,54 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     const series = this.series;
     const scene = this.scene;
     if (!series || !scene) return [];
-    const levels: { price: number; role: string; priority: number; color: string }[] = this.items
+    // A reference level ranks after every role level (QUIET_RANK), so it never wins a shared price
+    // and never keeps its tag beside a role tag.
+    const levels: { price: number; role: string; priority: number; color: string; quiet: boolean }[] = this.items
       .filter((it) => it.mark.kind === 'level' && it.mark.price !== null)
-      .map((it) => ({ price: it.mark.price!, role: it.mark.role, priority: it.priority, color: it.color }));
+      .map((it) => ({ price: it.mark.price!, role: it.mark.role, priority: it.priority + (it.quiet ? QUIET_RANK : 0), color: it.color, quiet: it.quiet }));
     if (scene.tool) {
-      for (const line of scene.tool.lines) levels.push({ price: line.price, role: line.role, priority: TOOL_PRIORITY[line.role], color: this.toolColor(line.role) });
+      for (const line of scene.tool.lines) levels.push({ price: line.price, role: line.role, priority: TOOL_PRIORITY[line.role], color: this.toolColor(line.role), quiet: false });
     }
-    const tags = distinctTags(levels, scene.decimals)
-      .sort((a, b) => a.priority - b.priority)
-      .map((it): ISeriesPrimitiveAxisView => ({
-        coordinate: () => series.priceToCoordinate(it.price) ?? -100,
-        text: () => formatPrice(it.price, scene.decimals),
-        textColor: () => scene.palette.bg,
-        backColor: () => it.color,
-        visible: () => series.priceToCoordinate(it.price) !== null,
+    const ordered = distinctTags(levels, scene.decimals).sort((a, b) => a.priority - b.priority);
+    type Tag = { price: number; text: string; textColor: string; backColor: string; quiet: boolean };
+    const roleTags: Tag[] = ordered
+      .filter((it) => !it.quiet)
+      .map((it) => ({ price: it.price, text: formatPrice(it.price, scene.decimals), textColor: scene.palette.bg, backColor: it.color, quiet: false }));
+    // "look for" names its stop and entry on the axis in words (their prices are not known yet): role tags too.
+    const lookTags: Tag[] = scene.look
+      ? lookAxisTags(scene.look, scene.palette).map((tag) => ({ price: tag.price, text: tag.text, textColor: scene.palette.bg, backColor: tag.back, quiet: false }))
+      : [];
+    // A plain reference level gets a light tag in pane ink, so the filled tags are the ones that matter.
+    const quietTags: Tag[] = ordered
+      .filter((it) => it.quiet)
+      .map((it) => ({ price: it.price, text: formatPrice(it.price, scene.decimals), textColor: scene.palette.text, backColor: scene.palette.raised, quiet: true }));
+    const all = [...roleTags, ...lookTags, ...quietTags];
+    // Laid out on every frame (the scale moves): role tags spread apart where they would overlap, then a
+    // reference tag only where it clears them. Drawn at exactly these places, and the ticks under them hidden.
+    const layout = () => layoutTags(all.map((t) => ({ y: series.priceToCoordinate(t.price), quiet: t.quiet })), Math.round(AXIS_TAG_GAP * scene.scale));
+    this.tagYs = () => layout().filter((y): y is number => y !== null);
+    const tags = all.map(
+      (t, i): ISeriesPrimitiveAxisView => ({
+        coordinate: () => series.priceToCoordinate(t.price) ?? -100,
+        fixedCoordinate: () => layout()[i] ?? undefined,
+        text: () => t.text,
+        textColor: () => t.textColor,
+        backColor: () => t.backColor,
+        visible: () => layout()[i] !== null,
         tickVisible: () => false,
-      }));
-    // "look for" names its stop and entry on the axis in words: their prices are not known yet
-    if (scene.look) {
-      for (const tag of lookAxisTags(scene.look, scene.palette)) {
-        tags.push({
-          coordinate: () => series.priceToCoordinate(tag.price) ?? -100,
-          text: () => tag.text,
-          textColor: () => scene.palette.bg,
-          backColor: () => tag.back,
-          visible: () => series.priceToCoordinate(tag.price) !== null,
-          tickVisible: () => false,
-        });
-      }
-    }
+      }),
+    );
     return tags;
+  }
+
+  /** The y of every price tag shown now, in media pixels. */
+  shownTagYs(): number[] {
+    return this.tagYs();
+  }
+
+  /** How far from a shown tag's centre an axis tick is hidden: half a tag plus half a tick label. */
+  tickGap(): number {
+    return Math.round((AXIS_TAG_GAP / 2 + 6) * (this.scene?.scale ?? 1));
   }
 
   /** Marks and the tool in the visible range widen the price scale so they are on screen. */
@@ -302,11 +333,11 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
   }
 
   private labelH(): number {
-    return Math.round(13 * (this.scene?.scale ?? 1));
+    return Math.round(15 * (this.scene?.scale ?? 1));
   }
 
   private font(weight = 500): string {
-    return `${weight} ${Math.round(11 * (this.scene?.scale ?? 1) * 10) / 10}px Geist, system-ui, sans-serif`;
+    return `${weight} ${Math.round(12 * (this.scene?.scale ?? 1) * 10) / 10}px Geist, system-ui, sans-serif`;
   }
 
   private markerAbove(mark: Mark): boolean {
@@ -319,6 +350,28 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     if (index === null || !this.chart) return fallback;
     const x = this.chart.timeScale().logicalToCoordinate(index as Logical);
     return x === null ? fallback : x;
+  }
+
+  /** The visible candles' high-low boxes (body width + 2 px), in media pixels: what a label should not cover. */
+  private candleBoxes(): Box[] {
+    const series = this.series;
+    const scene = this.scene;
+    const range = this.chart?.timeScale().getVisibleLogicalRange();
+    if (!series || !scene || !range) return [];
+    const half = Math.max(2, this.halfBar() * 0.8) + 2;
+    const out: Box[] = [];
+    const from = Math.max(0, Math.floor(range.from));
+    const to = Math.min(scene.candles.length - 1, Math.ceil(range.to));
+    for (let i = from; i <= to; i++) {
+      const c = scene.candles[i]!;
+      const yH = series.priceToCoordinate(c.high);
+      const yL = series.priceToCoordinate(c.low);
+      if (yH === null || yL === null) continue;
+      const x = this.x(i, -1);
+      if (x < 0) continue;
+      out.push({ x: x - half, y: yH - 2, w: 2 * half, h: yL - yH + 4 });
+    }
+    return out;
   }
 
   private halfBar(): number {
@@ -395,7 +448,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     const ts = this.chart.timeScale();
     const x = this.logicalX(slotLogical(this.lastIndex(), slot, this.gap()));
     if (x === null) return null;
-    const body = Math.max(3, Math.min(16, ts.options().barSpacing * COLUMN_SLOT * 0.5));
+    const body = Math.max(3, Math.min(12, ts.options().barSpacing * COLUMN_SLOT * 0.5));
     return { x, body };
   }
 
@@ -428,6 +481,20 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
         ctx.fillRect(Math.round(x1 * hr), top, Math.round((x2 - x1) * hr), Math.max(1, bottom - top));
         const title = mark.title || mark.label;
         if (title) zoneHits.push({ box: { x: x1, y: Math.min(y1, y2), w: x2 - x1, h: Math.max(2, Math.abs(y2 - y1)) }, title, priority: priority + 10 });
+      }
+
+      // Plain reference levels: dashed, in the faint ink, behind the candles, so structure never reads as price.
+      const lw = Math.max(1, Math.floor(vr));
+      const dash = Math.round(4 * hr);
+      ctx.fillStyle = quietInk(scene.palette);
+      for (const { mark, quiet } of this.items) {
+        if (!quiet || mark.kind !== 'level' || mark.price === null) continue;
+        const y = series.priceToCoordinate(mark.price);
+        if (y === null) continue;
+        const x = Math.max(0, mark.start === null ? 0 : this.x(mark.start, 0) - this.halfBar());
+        if (x >= width) continue;
+        const yb = Math.round(y * vr) - Math.floor(lw / 2);
+        for (let xb = Math.round(x * hr); xb < bitmapSize.width; xb += 2 * dash) ctx.fillRect(xb, yb, Math.min(dash, bitmapSize.width - xb), lw);
       }
 
       this.drawSpans(ctx, hr, vr, width, bitmapSize.height);
@@ -492,7 +559,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     // Lines in bitmap space so they stay sharp: levels first, the tool's lines over them.
     target.useBitmapCoordinateSpace(({ context: ctx, bitmapSize, horizontalPixelRatio: hr, verticalPixelRatio: vr }) => {
       const width = bitmapSize.width / hr;
-      for (const { mark, color, label, priority } of this.items) {
+      for (const { mark, color, label, priority, quiet } of this.items) {
         if (mark.kind !== 'level' || mark.price === null) continue;
         const y = series.priceToCoordinate(mark.price);
         if (y === null) continue;
@@ -502,8 +569,10 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
         lines.push({ x, y, color, label, title: mark.title || mark.label, price: mark.price, priority, next });
         const lineWidth = Math.max(1, Math.floor(vr)) * (next ? 2 : 1);
         const yb = Math.round(y * vr) - Math.floor(lineWidth / 2);
-        ctx.fillStyle = color;
-        ctx.fillRect(Math.round(x * hr), yb, bitmapSize.width - Math.round(x * hr), lineWidth);
+        if (!quiet) {
+          ctx.fillStyle = color;
+          ctx.fillRect(Math.round(x * hr), yb, bitmapSize.width - Math.round(x * hr), lineWidth);
+        }
         const title = mark.title || mark.label;
         if (title) hits.push({ box: { x, y: y - 4, w: width - x, h: 8 }, title, priority: priority + 5 });
       }
@@ -556,6 +625,8 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       }
       // Nor a column candle, nor what "look for" draws.
       obstacles.push(...this.columnBoxes, ...this.lookBoxes);
+      // Labels first look for a spot clear of the candles; one that finds none keeps its old place on its halo.
+      const candleBoxes = this.candleBoxes();
       const measure = (text: string, weight = 500) => {
         ctx.font = this.font(weight);
         return ctx.measureText(text).width + 6;
@@ -694,17 +765,18 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
 
       // ---- labels, last: most important first; ties keep their order ----
       const order = pending.map((l, i) => ({ l, i })).sort((a, b) => a.l.priority - b.l.priority || a.i - b.i);
-      const placed = placeChoices(
+      const placed = placePreferring(
         order.map((o) => o.l),
         plot,
         obstacles,
+        candleBoxes,
       );
       order.forEach(({ l }, k) => {
         const r = placed[k];
         if (!r) return;
         const { box } = r;
         // Halo in the pane colour keeps the label legible where it crosses a candle or a line.
-        ctx.fillStyle = withAlpha(scene.palette.surface, l.caption ? 0.7 : 0.82);
+        ctx.fillStyle = withAlpha(scene.palette.surface, l.caption ? 0.85 : 0.92);
         ctx.fillRect(box.x, box.y, box.w, box.h);
         ctx.font = this.font(l.caption ? 600 : 500);
         ctx.fillStyle = l.color;
@@ -727,7 +799,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     if (!column || column.bars.length === 0) return;
     const half = this.halfBar();
     const lw = Math.max(1, Math.floor(vr));
-    ctx.fillStyle = withAlpha(scene.palette.muted, 0.32);
+    ctx.fillStyle = withAlpha(scene.palette.muted, SPAN_ALPHA);
     for (const bar of column.bars) {
       if (bar.from === null || bar.to === null) continue;
       const x1 = Math.max(0, this.x(bar.from, 0) - half);
@@ -774,7 +846,8 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       const bottom = Math.max(top + 1, Math.round(Math.max(yO, yC) * vr));
       const yHb = Math.round(yH * vr);
       const yLb = Math.round(yL * vr);
-      ctx.fillStyle = up ? color : p.downLine;
+      const line = up ? p.upLine : p.downLine;
+      ctx.fillStyle = line;
       // Wick above and below the body, not through it, so a hollow body stays hollow.
       ctx.fillRect(cx - Math.floor(wick / 2), yHb, wick, Math.max(0, top - yHb));
       ctx.fillRect(cx - Math.floor(wick / 2), bottom, wick, Math.max(0, yLb - bottom));
@@ -785,11 +858,13 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
         ctx.fillRect(bx, top, b, bottom - top);
         ctx.fillRect(bx + bw - b, top, b, bottom - top);
       } else {
-        // the body in the line colour, then the fill inside it: a black down body keeps a visible edge
+        // The body in the line colour, then a half-strength fill inside it: context, quieter than the pane's own candles.
         ctx.fillRect(bx, top, bw, bottom - top);
-        if (!up && p.downLine !== color && bw > 2 && bottom - top > 2) {
+        if (bw > 2 && bottom - top > 2) {
           const b = Math.max(1, Math.floor(hr));
-          ctx.fillStyle = color;
+          ctx.fillStyle = p.surface;
+          ctx.fillRect(bx + b, top + b, bw - 2 * b, bottom - top - 2 * b);
+          ctx.fillStyle = withAlpha(color, COLUMN_FILL_ALPHA);
           ctx.fillRect(bx + b, top + b, bw - 2 * b, bottom - top - 2 * b);
         }
       }

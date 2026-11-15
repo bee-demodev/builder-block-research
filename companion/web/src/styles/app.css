@@ -787,9 +787,8 @@ ul {
   min-height: 0;
   transition: opacity var(--dur) ease;
 }
-.charts.is-stale .pane-body {
-  opacity: 0.6;
-}
+/* A stale chart is not faded: fading drops its labels below AA. The Stale word in the header and the
+   hatched, dashed plan say it instead. */
 .pane-chart {
   position: absolute;
   inset: 0 2px 4px 2px;
@@ -799,7 +798,7 @@ ul {
   z-index: 3;
   top: 2px;
   left: 16px;
-  font-size: calc(11px * var(--fs));
+  font-size: calc(12px * var(--fs));
   color: var(--muted);
   pointer-events: none;
 }
