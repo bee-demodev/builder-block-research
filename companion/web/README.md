@@ -40,6 +40,39 @@ live socket. Every number in the hand-written fixtures is invented (`?demo=real`
 Keys: left and right arrows step one bar, space pauses, A / L / S set the side (Auto, Long,
 Short), D opens Details, Ctrl+= / Ctrl+- / Ctrl+0 change the text size.
 
+## Sections: TTrades and TCM Expansions
+
+Tabs beside the wordmark switch between the TTrades companion and **TCM Expansions**
+(kept per device in `localStorage`, `companion.section`). Under 1600 px wide the tabs
+replace the wordmark so the top bar keeps room for the live status.
+
+TCM Expansions draws the expansion -> range -> CSD process from the TCM Core call
+"Revisiting Expansions" (rules, timestamps and transcript in `knowledge/tcm/`). Click a
+candle of an expansion (two or more candles closing beyond each other) and the tab draws
+the range high and low, EQ, 50% of the last candle and the CSD level, then walks the
+decision points candle by candle: range confirmed, size, OLR, 50%, CSD, the entry from
+the CSD candle's wick, the close past EQ that allows a hold, and the targets. A close
+through the range's far side voids it.
+
+- **Live** (default): the companion core's own entry, setup or bias chart, TradingView live
+  or saved history (Settings, Data). Symbol and Stack drive the same core as the TTrades
+  tab. With no candle picked the tab follows the newest range still in play, re-read on
+  every closed candle; a click pins one ("Follow the newest instead" unpins). Forming
+  candles are ignored. Not connected: the chart says so; no read yet: "Read the chart".
+- **Practice**: lessons redrawn from the video with invented prices, each tied to a video
+  timestamp.
+- **Shadow** (S, or the switch in the chart header): at the decision pending now, the next
+  candle both ways, A on plan and B not, as a pale ghost in a "What if" column, with the
+  rules' read of it under the header. Off when nothing is pending.
+- Arrows step the replay, Home restarts a lesson, End shows every candle (live: follows).
+- "Find latest expansion" picks the newest range still in play; Start / End nudge the
+  range by hand ("Use the rule" undoes that).
+- Settings (kept in `localStorage`, `companion.tcm.*`): min range in points (the size
+  rule), and in live mode the data source.
+- Code: `src/tcm/expansion.ts` (the rules, pure, tested in `expansion.test.ts`),
+  `src/tcm/RangeChart.ts` (drawing), `src/tcm/TcmExpansions.tsx` (the screen),
+  `src/styles/tcm.css`.
+
 ## Display options (per device)
 
 The Display button in the footer, a right-click on a chart, or the gear in a chart's header

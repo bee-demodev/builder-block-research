@@ -1,0 +1,451 @@
+/* Section tabs (both sections) and the TCM Expansions section. Tokens from tokens.css only. */
+
+/* ---------- section tabs, beside the wordmark ---------- */
+.sections {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+.section-tab {
+  height: calc(28px * var(--fs));
+  padding: 0 12px;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted);
+  font: 500 calc(13px * var(--fs)) / 1 var(--font-sans);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.section-tab:hover {
+  color: var(--text);
+}
+.section-tab.is-on {
+  background: var(--raised);
+  color: var(--text);
+}
+.topbar > .sections + .topbar-group {
+  margin-left: 8px;
+}
+/* Under 1600 px the tabs stand in for the wordmark, so the live status keeps its room. */
+@media (max-width: 1600px) {
+  .topbar > .wordmark:has(+ .sections) {
+    display: none;
+  }
+}
+
+/* ---------- segmented controls: the mode, the shadow ---------- */
+.seg {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: calc(32px * var(--fs));
+  padding: 2px;
+  border-radius: var(--radius);
+  background: var(--raised);
+}
+.seg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  padding: 0 10px;
+  border: 0;
+  border-radius: calc(var(--radius) - 1px);
+  background: transparent;
+  color: var(--muted);
+  font: 500 calc(13px * var(--fs)) / 1 var(--font-sans);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.seg-btn:not(:disabled):hover {
+  color: var(--text);
+}
+.seg-btn.is-on {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.seg-btn:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+.seg-small {
+  height: calc(26px * var(--fs));
+}
+.seg-small .seg-btn {
+  padding: 0 8px;
+  font-size: calc(12px * var(--fs));
+}
+.seg-key {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+.seg-btn.is-on .seg-text {
+  color: var(--text);
+}
+
+.tcm-cursor {
+  min-width: calc(56px * var(--fs));
+  text-align: center;
+  font-size: calc(13px * var(--fs));
+  color: var(--muted);
+}
+
+/* ---------- the panel ---------- */
+.tcm-panel .panel-scroll {
+  padding-top: 18px;
+}
+/* The lesson's description: one line (title and video time) until opened. */
+.tcm-note {
+  display: grid;
+  gap: 6px;
+  font-size: calc(13px * var(--fs));
+  color: var(--muted);
+}
+.tcm-note > summary {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  cursor: pointer;
+  list-style: none;
+}
+.tcm-note > summary::-webkit-details-marker {
+  display: none;
+}
+.tcm-note > summary:hover .tcm-note-title {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.tcm-caret {
+  flex: none;
+  align-self: center;
+  color: var(--muted);
+  transition: transform var(--dur) ease;
+}
+.tcm-note[open] .tcm-caret {
+  transform: rotate(90deg);
+}
+.tcm-note-title {
+  min-width: 0;
+  color: var(--text);
+  font-weight: 600;
+}
+.tcm-note-ref {
+  margin-left: auto;
+  flex: none;
+  font-size: calc(11px * var(--fs));
+}
+.tcm-note[open] > p:first-of-type {
+  margin-top: 2px;
+}
+.tcm-note-meta {
+  font-size: calc(12px * var(--fs));
+}
+.tcm-said {
+  display: grid;
+  gap: 3px;
+  margin-top: 10px;
+  padding: 9px 12px;
+  border-left: 2px solid var(--watch);
+  background: var(--raised);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: calc(13px * var(--fs));
+  line-height: 1.45;
+}
+.tcm-said-label {
+  font-size: calc(11px * var(--fs));
+  font-weight: 600;
+  color: var(--muted);
+}
+.tcm-reading {
+  margin-top: 16px;
+}
+.tcm-word {
+  font-size: calc(30px * var(--fs));
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.tcm-word-detail {
+  margin-top: 4px;
+  font-size: calc(13px * var(--fs));
+  color: var(--muted);
+}
+.tcm-steps {
+  display: grid;
+  gap: 2px;
+  margin-top: 14px;
+}
+.tcm-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px solid var(--line);
+}
+.tcm-step-icon {
+  padding-top: 2px;
+}
+/* A step is one line; its title opens its explanation (the step that matters now starts open). */
+.tcm-step-title {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: 600 calc(13px * var(--fs)) / 1.45 var(--font-sans);
+  text-align: left;
+  cursor: pointer;
+}
+.tcm-step-title:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.tcm-step.is-na .tcm-step-title,
+.tcm-step.is-na .tcm-step-detail {
+  color: var(--muted);
+}
+.tcm-step-detail {
+  margin-top: 2px;
+  font-size: calc(12px * var(--fs));
+  line-height: 1.45;
+  color: var(--muted);
+}
+.tcm-step.is-waiting .tcm-step-detail,
+.tcm-step.is-fail .tcm-step-detail {
+  color: var(--text);
+}
+.tcm-optional {
+  margin-left: 6px;
+  font-size: calc(11px * var(--fs));
+  font-weight: 500;
+  color: var(--muted);
+}
+.tcm-ref {
+  align-self: start;
+  height: fit-content;
+  padding: 1px 5px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted);
+  font-size: calc(11px * var(--fs));
+}
+button.tcm-ref {
+  cursor: pointer;
+}
+button.tcm-ref:hover {
+  color: var(--text);
+  background: var(--raised);
+}
+.tcm-levels {
+  display: grid;
+  gap: 3px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: calc(12px * var(--fs));
+}
+.tcm-levels > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tcm-levels dt {
+  font-family: var(--font-sans);
+  color: var(--muted);
+}
+.tcm-empty {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: calc(13px * var(--fs));
+  color: var(--muted);
+}
+.tcm-empty > svg {
+  flex: none;
+  margin-top: 2px;
+}
+.tcm-tools {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  margin-top: 16px;
+}
+.tcm-nudge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+.tcm-nudge-label {
+  margin: 0 2px 0 6px;
+  font-size: calc(12px * var(--fs));
+  color: var(--muted);
+}
+.tcm-nudge-label:first-child {
+  margin-left: 0;
+}
+.tcm-follow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+  font-size: calc(12px * var(--fs));
+  color: var(--muted);
+}
+.tcm-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.tcm-settings {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.tcm-settings-title {
+  font-size: calc(13px * var(--fs));
+  font-weight: 600;
+}
+.tcm-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: calc(12px * var(--fs));
+  color: var(--muted);
+}
+.tcm-setting-check input[type='checkbox'] {
+  width: auto;
+  height: auto;
+  accent-color: var(--text);
+}
+.tcm-setting input,
+.tcm-setting select {
+  width: calc(120px * var(--fs));
+  height: calc(28px * var(--fs));
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: calc(13px * var(--fs));
+}
+.tcm-rules {
+  margin-top: 18px;
+  font-size: calc(12px * var(--fs));
+}
+.tcm-rules summary {
+  cursor: pointer;
+  font-size: calc(13px * var(--fs));
+  font-weight: 600;
+}
+.tcm-rules ol {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+.tcm-rules li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.tcm-rules strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ---------- the chart ---------- */
+.tcm-charts {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* ---------- the shadow: the switch in the pane head, its caption under it ---------- */
+.tcm-shadow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+}
+.ohlc + .tcm-shadow {
+  margin-left: 6px;
+}
+.pane-head > .tcm-shadow:last-child:not(.ohlc + .tcm-shadow) {
+  margin-left: auto;
+}
+.tcm-shadow-label {
+  font-size: calc(12px * var(--fs));
+  color: var(--muted);
+}
+/* The A and B segments keep one width whatever their label, so stepping never moves the head. */
+.tcm-shadow .seg-btn + .seg-btn {
+  min-width: calc(104px * var(--fs));
+  justify-content: flex-start;
+}
+/* A narrow pane shows only Off, A and B (the caption names the branch). The breakpoint grows with the text
+   size: a container query cannot read --fs, so one per size. */
+@container (max-width: 760px) {
+  .tcm-shadow .seg-text,
+  .tcm-shadow-label {
+    display: none;
+  }
+  .tcm-shadow .seg-btn + .seg-btn {
+    min-width: 0;
+  }
+}
+@container (max-width: 950px) {
+  :root[data-text='large'] .tcm-shadow .seg-text,
+  :root[data-text='large'] .tcm-shadow-label {
+    display: none;
+  }
+  :root[data-text='large'] .tcm-shadow .seg-btn + .seg-btn {
+    min-width: 0;
+  }
+}
+@container (max-width: 1140px) {
+  :root[data-text='larger'] .tcm-shadow .seg-text,
+  :root[data-text='larger'] .tcm-shadow-label {
+    display: none;
+  }
+  :root[data-text='larger'] .tcm-shadow .seg-btn + .seg-btn {
+    min-width: 0;
+  }
+}
+/* Two lines, always, as the TTrades panes caption their read (.pane-caption clamps at two): nothing is cut
+   at any text size or width, and the row's height never changes, so the chart never moves. */
+.tcm-shadow-caption {
+  min-height: calc(38px * var(--fs));
+  color: var(--text);
+}
+.tcm-shadow-caption.is-quiet {
+  color: var(--muted);
+}
+.tcm-shadow-title {
+  font-weight: 600;
+}
+.tcm-shadow-arrow {
+  color: var(--muted);
+}
+.tcm-shadow-title .seg-key {
+  margin-right: 3px;
+}
+.tcm-chart {
+  cursor: crosshair;
+}
