@@ -131,7 +131,8 @@ export function useDisplay(): Display {
 
   useLayoutEffect(() => {
     const root = document.documentElement;
-    if (options.scheme === DEFAULT_DISPLAY.scheme) root.removeAttribute('data-scheme');
+    // grey is tokens.css's base and has no attribute; every other scheme, the default included, sets one
+    if (options.scheme === 'grey') root.removeAttribute('data-scheme');
     else root.setAttribute('data-scheme', options.scheme);
     if (options.textSize === DEFAULT_DISPLAY.textSize) root.removeAttribute('data-text');
     else root.setAttribute('data-text', options.textSize);

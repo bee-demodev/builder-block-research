@@ -3,7 +3,7 @@
 // these are those, plus text size and the direction colours.
 
 export type TextSize = 'normal' | 'large' | 'larger';
-export type Scheme = 'grey' | 'green-red' | 'green-black' | 'blue-orange' | 'mono';
+export type Scheme = 'tradingview' | 'grey' | 'green-red' | 'green-black' | 'blue-orange' | 'mono';
 
 export interface Overlays {
   /** Names on level lines. Off: trade lines keep their bare role word. */
@@ -33,6 +33,7 @@ export const TEXT_SIZES: readonly { value: TextSize; label: string; scale: numbe
 ];
 
 export const SCHEMES: readonly { value: Scheme; label: string; hint: string }[] = [
+  { value: 'tradingview', label: 'TradingView', hint: 'Your TradingView chart: cream pane, light up candles, black down' },
   { value: 'grey', label: 'Grey candles', hint: 'Colour only where it means something' },
   { value: 'green-red', label: 'Green / red', hint: 'Up and long green, down and short red' },
   { value: 'green-black', label: 'Green / black', hint: 'Up green, down black; the stop stays red' },
@@ -51,11 +52,17 @@ export const OVERLAYS: readonly { key: keyof Overlays; label: string }[] = [
 
 export const DEFAULT_DISPLAY: DisplayOptions = {
   textSize: 'normal',
-  scheme: 'grey',
+  scheme: 'tradingview',
   overlays: { levelNames: true, zones: true, markerLabels: true, riskReward: true, sessionLevels: false, lookFor: true },
 };
 
 export const DISPLAY_KEY = 'companion.display';
+
+/**
+ * Saved with the options. A scheme saved before TradingView became the default (no `epoch`)
+ * is dropped once, so every device opens on TradingView; a scheme picked after that is kept.
+ */
+export const SCHEME_EPOCH = 2;
 
 /** The marks a chart draws with these overlays: the session levels layer only when it is on. */
 export function layerMarks<T extends { role: string }>(marks: readonly T[], overlays: Overlays): T[] {
@@ -93,7 +100,7 @@ export function parseDisplay(raw: string | null): DisplayOptions {
   const flag = (k: keyof Overlays) => (typeof overlays[k] === 'boolean' ? (overlays[k] as boolean) : DEFAULT_DISPLAY.overlays[k]);
   return {
     textSize: TEXT_SIZES.some((s) => s.value === d.textSize) ? (d.textSize as TextSize) : DEFAULT_DISPLAY.textSize,
-    scheme: SCHEMES.some((s) => s.value === d.scheme) ? (d.scheme as Scheme) : DEFAULT_DISPLAY.scheme,
+    scheme: d.epoch === SCHEME_EPOCH && SCHEMES.some((s) => s.value === d.scheme) ? (d.scheme as Scheme) : DEFAULT_DISPLAY.scheme,
     overlays: {
       levelNames: flag('levelNames'),
       zones: flag('zones'),
@@ -123,7 +130,7 @@ export function loadDisplay(storage: Storage | null): DisplayOptions {
 export function saveDisplay(storage: Storage | null, options: DisplayOptions): void {
   try {
     if (isDefault(options)) storage?.removeItem(DISPLAY_KEY);
-    else storage?.setItem(DISPLAY_KEY, JSON.stringify(options));
+    else storage?.setItem(DISPLAY_KEY, JSON.stringify({ ...options, epoch: SCHEME_EPOCH }));
   } catch {
     /* storage unavailable: the choice lasts for this session only */
   }

@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import { SCHEMES } from '../display';
 import { ZONE_ALPHA } from '../chart/tool';
+import { quietInk } from '../chart/palette';
 
 const css = readFileSync(fileURLToPath(new URL('./tokens.css', import.meta.url)), 'utf8');
 
@@ -54,10 +55,17 @@ const over = (fg: string, alpha: number, bg: string) => {
   return `#${[16, 8, 0].map((sh) => mix(sh).toString(16).padStart(2, '0')).join('')}`;
 };
 
-/** What outlines a candle: a down candle's own line colour when the scheme sets one (a black body), else its fill. */
-const shape = (t: Record<string, string>, c: 'candle-up' | 'candle-down') => (c === 'candle-down' ? (t['candle-down-line'] ?? t[c]!) : t[c]!);
+/** What outlines a candle: its own line colour when the scheme sets one (a black or a pale body), else its fill. */
+const shape = (t: Record<string, string>, c: 'candle-up' | 'candle-down') => t[`${c}-line`] ?? t[c]!;
 
-const cases = SCHEMES.flatMap((s) => (['light', 'dark'] as const).map((theme) => [`${s.value} ${theme}`, tokens(s.value, theme)] as const));
+/** Schemes that give the charts' area its own tokens: the chart, the same in both themes. */
+const CHART_BLOCKS = ['tradingview'] as const;
+const chartTokens = (scheme: string) => ({ ...baseLight, ...block(`:root[data-scheme='${scheme}'] .pane-body`) });
+
+const cases = [
+  ...SCHEMES.flatMap((s) => (['light', 'dark'] as const).map((theme) => [`${s.value} ${theme}`, tokens(s.value, theme)] as const)),
+  ...CHART_BLOCKS.map((scheme) => [`${scheme} chart`, chartTokens(scheme)] as const),
+];
 
 describe.each(cases)('%s', (_name, t) => {
   it('sets every token', () => {
@@ -92,9 +100,23 @@ describe.each(cases)('%s', (_name, t) => {
     }
     for (const c of ['candle-up', 'candle-down'] as const) expect(ratio(shape(t, c), t.surface!), `${c} on the pane`).toBeGreaterThanOrEqual(3);
   });
+
+  it('chart ink: axis prices pass AA on the pane and on crosshair labels; reference levels keep 3:1', () => {
+    expect(ratio(t.text!, t.surface!), 'axis text on the pane').toBeGreaterThanOrEqual(4.5);
+    expect(ratio(t.text!, t.raised!), 'reference level price tag text').toBeGreaterThanOrEqual(4.5);
+    // Lightweight Charts picks black or white crosshair label text for the label background itself.
+    expect(Math.max(ratio('#000000', t.raised!), ratio('#ffffff', t.raised!)), 'crosshair label text').toBeGreaterThanOrEqual(4.5);
+    expect(ratio(quietInk({ faint: t.faint!, muted: t.muted!, surface: t.surface! }), t.surface!), 'reference level line').toBeGreaterThanOrEqual(3);
+  });
 });
 
 describe('token blocks', () => {
+  it("the TradingView chart copies the trader's own: cream pane, light up and black down candles in dark outlines", () => {
+    const t = chartTokens('tradingview');
+    expect([t.surface, t['candle-up'], t['candle-down'], t['candle-up-line'], t['candle-down-line']]).toEqual(['#faf8f0', '#cfdee7', '#181817', '#131722', '#131722']);
+    for (const k of ['bg', 'surface', 'raised', 'line', 'text', 'muted', 'faint']) expect(t[k], k).toBeDefined();
+  });
+
   it.each(SCHEMES.map((s) => s.value))('%s: the system-dark copy matches the explicit dark block', (scheme) => {
     const media = css.indexOf('@media (prefers-color-scheme: dark)', scheme === 'grey' ? 0 : css.indexOf(`[data-scheme='${scheme}']`));
     const selector = scheme === 'grey' ? ":root:not([data-theme='light'])" : `:root[data-scheme='${scheme}']:not([data-theme='light'])`;

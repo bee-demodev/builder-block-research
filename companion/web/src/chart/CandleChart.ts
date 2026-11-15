@@ -21,7 +21,7 @@ import type { Candle, ChartView, Direction, Mark, Tool } from '../wire';
 import { COLUMN_SLOT, type Band, type HtfColumn } from './htf';
 import type { LookScene } from './LookLayer';
 import { MarksPrimitive, columnGap, projectedSlots } from './MarksPrimitive';
-import { diffCandles, initialWindowStart, partitionMarks } from './marks';
+import { diffCandles, initialWindowStart, partitionMarks, tickCovered } from './marks';
 import { withAlpha, type Palette } from './palette';
 
 /** What the chart draws besides the candles, from the display options and the status. */
@@ -31,6 +31,8 @@ export interface ChartOptions {
   scale: number;
 }
 
+/** Axis prices and times, before the text scale: 12 px, as TradingView's own axis. */
+const AXIS_FONT = 12;
 /** Bars of empty space right of the last candle; more on a chart with a plan, so its zones have room. */
 const RIGHT_PAD = 4;
 const RIGHT_PAD_TOOL = 20;
@@ -69,9 +71,9 @@ export class CandleChart {
       autoSize: true,
       layout: {
         background: { type: ColorType.Solid, color: palette.surface },
-        textColor: palette.muted,
+        textColor: palette.text,
         fontFamily: "'Geist Mono', ui-monospace, monospace",
-        fontSize: 10,
+        fontSize: AXIS_FONT,
         // Attribution is given in the footer with a link to tradingview.com and in
         // the NOTICE file, as the licence asks; the on-chart logo is turned off.
         attributionLogo: false,
@@ -87,7 +89,8 @@ export class CandleChart {
       },
       localization: {
         priceFormatter: (p: number) => formatPrice(p, this.decimals),
-        tickmarksPriceFormatter: (ps: number[]) => ps.map((p) => formatPrice(p, 0)),
+        // A tick under a price tag is not drawn (half-covered prices read as garble), as in TradingView.
+        tickmarksPriceFormatter: (ps: number[]) => this.tickLabels(ps),
         timeFormatter: (time: Time) => crosshairLabel(time as number, this.intraday),
       },
       crosshair: { mode: CrosshairMode.Normal },
@@ -117,7 +120,7 @@ export class CandleChart {
 
   /** Display options or staleness changed: redraw the marks and the tool, keep the candles. */
   setOptions(opts: ChartOptions): void {
-    if (opts.scale !== this.opts.scale) this.chart.applyOptions({ layout: { fontSize: Math.round(10 * opts.scale) } });
+    if (opts.scale !== this.opts.scale) this.chart.applyOptions({ layout: { fontSize: Math.round(AXIS_FONT * opts.scale) } });
     this.opts = opts;
     this.applyMarks();
   }
@@ -187,20 +190,21 @@ export class CandleChart {
   private applyPalette(): void {
     const p = this.palette;
     this.chart.applyOptions({
-      layout: { background: { type: ColorType.Solid, color: p.surface }, textColor: p.muted },
+      layout: { background: { type: ColorType.Solid, color: p.surface }, textColor: p.text },
       crosshair: {
         vertLine: { color: p.faint, style: LineStyle.Dashed, width: 1, labelBackgroundColor: p.raised },
         horzLine: { color: p.faint, style: LineStyle.Dashed, width: 1, labelBackgroundColor: p.raised },
       },
     });
-    // Crosshair labels use layout.textColor on labelBackgroundColor: muted on raised passes AA.
+    // Crosshair labels sit on labelBackgroundColor (raised); the library picks black or white text for it
+    // itself, and contrast.test.ts holds that pick to AA.
     this.series.applyOptions({
       // Monochrome: up candles hollow (outline only), down candles filled.
       upColor: p.hollowUp ? withAlpha(p.surface, 0) : p.up,
       downColor: p.down,
-      borderUpColor: p.up,
+      borderUpColor: p.upLine,
       borderDownColor: p.downLine,
-      wickUpColor: p.up,
+      wickUpColor: p.upLine,
       wickDownColor: p.downLine,
     });
   }
@@ -225,14 +229,23 @@ export class CandleChart {
       columnBand: this.columnBand,
       look: this.look,
     });
+    // The price scale caches its tick labels until its range or formatter changes. The price tags just
+    // moved, so re-run the formatter: a tick a new tag covers hides, one a tag left shows again.
+    this.chart.applyOptions({ localization: {} });
   }
 
   /** Forming candle: outline only, so it reads as not yet closed. */
   private bar(c: Candle): CandlestickData<Time> {
     const base: CandlestickData<Time> = { time: c.t as UTCTimestamp, open: c.open, high: c.high, low: c.low, close: c.close };
     if (!c.forming) return base;
-    const color = c.close >= c.open ? this.palette.up : this.palette.down;
+    const color = c.close >= c.open ? this.palette.upLine : this.palette.downLine;
     return { ...base, color: withAlpha(this.palette.surface, 0), borderColor: color, wickColor: color };
+  }
+
+  private tickLabels(prices: number[]): string[] {
+    const tags = this.marksPrimitive.shownTagYs();
+    const gap = this.marksPrimitive.tickGap();
+    return prices.map((p) => (tickCovered(this.series?.priceToCoordinate(p) ?? null, tags, gap) ? '' : formatPrice(p, 0)));
   }
 
   private tickLabel(time: Time, type: TickMarkType): string {

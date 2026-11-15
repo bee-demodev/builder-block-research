@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { DEFAULT_DISPLAY, DISPLAY_KEY, isDefault, layerMarks, lookSceneFor, loadDisplay, parseDisplay, saveDisplay, stepTextSize, textScale, type DisplayOptions } from './display';
+import { DEFAULT_DISPLAY, DISPLAY_KEY, SCHEME_EPOCH, isDefault, layerMarks, lookSceneFor, loadDisplay, parseDisplay, saveDisplay, stepTextSize, textScale, type DisplayOptions } from './display';
 
 class MemoryStorage {
   data = new Map<string, string>();
@@ -34,8 +34,19 @@ describe('display options persistence', () => {
   it('falls back field by field when what is stored is broken or from another version', () => {
     expect(parseDisplay('{not json')).toEqual(DEFAULT_DISPLAY);
     expect(parseDisplay('null')).toEqual(DEFAULT_DISPLAY);
-    const partial = parseDisplay(JSON.stringify({ scheme: 'mono', textSize: 'huge', overlays: { zones: false, levelNames: 'yes' } }));
+    const partial = parseDisplay(JSON.stringify({ epoch: SCHEME_EPOCH, scheme: 'mono', textSize: 'huge', overlays: { zones: false, levelNames: 'yes' } }));
     expect(partial).toEqual({ ...DEFAULT_DISPLAY, scheme: 'mono', overlays: { ...DEFAULT_DISPLAY.overlays, zones: false } });
+  });
+
+  it('opens on TradingView once over a scheme saved before it was the default, then keeps what is picked', () => {
+    const s = new MemoryStorage();
+    s.setItem(DISPLAY_KEY, JSON.stringify({ textSize: 'large', scheme: 'green-black', overlays: { zones: false } }));
+    const migrated = loadDisplay(s);
+    expect(migrated.scheme).toBe('tradingview');
+    expect(migrated.textSize).toBe('large');
+    expect(migrated.overlays.zones).toBe(false);
+    saveDisplay(s, { ...migrated, scheme: 'green-black' });
+    expect(loadDisplay(s).scheme).toBe('green-black');
   });
 
   it('works without storage', () => {

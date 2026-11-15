@@ -131,10 +131,10 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
   useEffect(() => {
     const host = hostRef.current;
     if (!host) return;
-    const c = new CandleChart(host, readPalette(), setHover, openBars, setTip);
+    const c = new CandleChart(host, readPalette(host), setHover, openBars, setTip);
     chartRef.current = c;
     // Canvas labels draw with Geist once it has loaded.
-    void document.fonts?.ready.then(() => chartRef.current?.setPalette(readPalette()));
+    void document.fonts?.ready.then(() => chartRef.current?.setPalette(readPalette(host)));
     return () => {
       c.destroy();
       chartRef.current = null;
@@ -144,7 +144,7 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
 
   // The scheme and theme attributes are on <html> by now (set in layout effects).
   useEffect(() => {
-    chartRef.current?.setPalette(readPalette());
+    if (hostRef.current) chartRef.current?.setPalette(readPalette(hostRef.current));
   }, [theme, scheme]);
 
   useEffect(() => {

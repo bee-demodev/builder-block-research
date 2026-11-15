@@ -218,3 +218,65 @@ export function distinctTags<T extends { price: number; role: string; priority?:
   }
   return [...best.values()];
 }
+
+/**
+ * placeChoices with a soft preference: labels are placed one at a time in the order given
+ * (most important first). Each takes a spot clear of `hard` and `soft` (the candles) if it has
+ * one, else a spot clear of `hard` alone, before the next label is tried. So a less important
+ * label can never take the place a more important one needed.
+ */
+export function placePreferring(
+  labels: readonly { choices: readonly { candidates: readonly Box[] }[] }[],
+  plot: { w: number; h: number },
+  hard: readonly Box[],
+  soft: readonly Box[],
+): ({ choice: number; box: Box } | null)[] {
+  const taken: Box[] = [];
+  return labels.map((label) => {
+    const r = placeChoices([label], plot, [...hard, ...soft, ...taken])[0] ?? placeChoices([label], plot, [...hard, ...taken])[0] ?? null;
+    if (r) taken.push(r.box);
+    return r;
+  });
+}
+
+/** Whether an axis tick at `y` sits under a shown price tag (within `gap` px of its centre): it is then not drawn, as in TradingView. */
+export function tickCovered(y: number | null, tagYs: readonly number[], gap: number): boolean {
+  return y !== null && tagYs.some((t) => Math.abs(t - y) < gap);
+}
+
+/**
+ * Where each price tag is drawn, or null when it is not: given each tag's price y (null: off
+ * the scale) in order, role tags first. Role tags that would overlap are spread `gap` apart
+ * around their group's centre (as Lightweight Charts aligns labels); a reference tag is then
+ * drawn only where it clears every role tag's final place and every reference tag already
+ * admitted. The same places are used to draw the tags and to hide the ticks under them.
+ */
+export function layoutTags(tags: readonly { y: number | null; quiet: boolean }[], gap: number): (number | null)[] {
+  const out: (number | null)[] = tags.map(() => null);
+  const roles = tags.flatMap((t, i) => (t.y !== null && !t.quiet ? [{ i, y: t.y }] : [])).sort((a, b) => a.y - b.y);
+  // groups of chained overlaps, each laid out evenly around its mean; merge until none overlap
+  let groups = roles.map((r) => ({ members: [r], centre: r.y }));
+  const top = (g: { members: unknown[]; centre: number }) => g.centre - ((g.members.length - 1) * gap) / 2;
+  const bottom = (g: { members: unknown[]; centre: number }) => g.centre + ((g.members.length - 1) * gap) / 2;
+  for (let merged = true; merged; ) {
+    merged = false;
+    for (let k = 0; k + 1 < groups.length; k++) {
+      const a = groups[k]!;
+      const b = groups[k + 1]!;
+      if (top(b) - bottom(a) < gap) {
+        const members = [...a.members, ...b.members];
+        groups = [...groups.slice(0, k), { members, centre: members.reduce((sum, m) => sum + m.y, 0) / members.length }, ...groups.slice(k + 2)];
+        merged = true;
+        break;
+      }
+    }
+  }
+  const placed: number[] = [];
+  for (const g of groups) g.members.forEach((m, k) => placed.push((out[m.i] = top(g) + k * gap)));
+  tags.forEach((t, i) => {
+    if (t.y === null || !t.quiet) return;
+    if (placed.some((y) => Math.abs(y - t.y!) < gap)) return;
+    placed.push((out[i] = t.y));
+  });
+  return out;
+}

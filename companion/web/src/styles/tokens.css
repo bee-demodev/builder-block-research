@@ -7,7 +7,8 @@
    Theme: follows prefers-color-scheme unless html[data-theme] is set by the toggle.
    Direction colours: html[data-scheme] (grey is the default and has no attribute).
    Every scheme sets the same nine tokens in both themes (a scheme may add
-   --candle-down-line, the down candle's outline and wick, when its fill is too dark to see); contrast.test.ts holds each
+   --candle-down-line or --candle-up-line, a candle's outline and wick, when its fill is too dark or too pale to see;
+   TradingView also gives the charts' .pane-body its own full set); contrast.test.ts holds each
    of them to WCAG AA. A dark block exists twice (system and explicit dark): keep the
    copies identical, the test checks that too. */
 
@@ -84,6 +85,72 @@
   --candle-up: #c9cdd3;
   --candle-down: #80858e;
   color-scheme: dark;
+}
+
+/* ---------- TradingView (the default): the window keeps the grey scheme's colours; the charts take
+   the trader's own TradingView chart, copied from it once (2026-11-14): cream pane, no grid, black
+   prices, light grey-blue up candles and black down candles, both outlined in TradingView's dark ink.
+   The marks on it use darker colours that read on cream. The chart block is the same in both themes. ---------- */
+:root[data-scheme='tradingview'] {
+  --long: #0c7650;
+  --short: #bc3636;
+  --bull: #2160c4;
+  --bear: #bc3636;
+  --watch: #8f5d00;
+  --reward: #0c7650;
+  --risk: #bc3636;
+  --candle-up: #3a3f46;
+  --candle-down: #7c8189;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-scheme='tradingview']:not([data-theme='light']) {
+    --long: #4cbb8d;
+    --short: #f07878;
+    --bull: #5b9dff;
+    --bear: #f07878;
+    --watch: #e2a63b;
+    --reward: #4cbb8d;
+    --risk: #f07878;
+    --candle-up: #c9cdd3;
+    --candle-down: #80858e;
+  }
+}
+:root[data-scheme='tradingview'][data-theme='dark'] {
+  --long: #4cbb8d;
+  --short: #f07878;
+  --bull: #5b9dff;
+  --bear: #f07878;
+  --watch: #e2a63b;
+  --reward: #4cbb8d;
+  --risk: #f07878;
+  --candle-up: #c9cdd3;
+  --candle-down: #80858e;
+}
+:root[data-scheme='tradingview'] .pane-body {
+  --bg: #faf8f0;
+  --surface: #faf8f0;
+  --raised: #ebe8dd;
+  --line: #d9d5c8;
+  --text: #131722;
+  --muted: #4a4e59;
+  --faint: #6f727c;
+  --long: #0a6b47;
+  --short: #b02c2c;
+  --bull: #1f5bbd;
+  --bear: #b02c2c;
+  --watch: #7f5300;
+  --reward: #0a6b47;
+  --risk: #b02c2c;
+  --candle-up: #cfdee7;
+  --candle-up-line: #131722;
+  --candle-down: #181817;
+  --candle-down-line: #131722;
+  --tint-watch: color-mix(in srgb, var(--watch) var(--tint), transparent);
+  --tint-bull: color-mix(in srgb, var(--bull) var(--tint), transparent);
+  --tint-bear: color-mix(in srgb, var(--bear) var(--tint), transparent);
+  color-scheme: light;
+  color: var(--text);
+  background: var(--surface);
 }
 
 /* ---------- Green / red: green up and long, red down and short ---------- */
