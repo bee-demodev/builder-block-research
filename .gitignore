@@ -11,3 +11,8 @@ data/research.db-wal
 /build/
 /dist/
 node_modules/
+
+# Large local data, kept on disk only (over GitHub limits; videos are third-party)
+knowledge/ttfm_video_corpus/videos/
+data/databento/bars/
+data/databento/raw/
