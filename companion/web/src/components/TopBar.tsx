@@ -1,7 +1,9 @@
-import { CaretLeftIcon, CaretRightIcon, PauseIcon, PlayIcon } from '@phosphor-icons/react';
+import { CaretLeftIcon, CaretRightIcon, RewindIcon } from '@phosphor-icons/react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { statusParts, wallClock } from '../format';
-import { isPaused, type Model } from '../store';
+import type { ReplayControl } from '../hooks';
+import { atLatest } from '../replay';
+import type { Model } from '../store';
 import { hasDot, statusTone } from '../tones';
 import type { ClientFrame } from '../wire';
 import { Select, toneClass } from './ui';
@@ -11,12 +13,12 @@ interface Props {
   send: (frame: ClientFrame) => void;
   /** The section tabs, beside the wordmark. */
   tabs?: ReactNode;
+  replay: ReplayControl;
 }
 
-export function TopBar({ model, send, tabs }: Props) {
+export function TopBar({ model, send, tabs, replay }: Props) {
   const { server, options, link } = model;
   const ready = link === 'open' && server !== null && options !== null;
-  const paused = isPaused(model);
   const busy = server?.busy ?? false;
 
   return (
@@ -37,14 +39,10 @@ export function TopBar({ model, send, tabs }: Props) {
         <Select label="Style" value={server?.style ?? ''} options={options?.styles ?? []} disabled={!ready} onChange={(style) => send({ type: 'set', style })} />
       </div>
 
-      <TimeControl when={server?.when ?? ''} follow={server?.follow ?? true} disabled={!ready} send={send} />
+      <TimeControl when={server?.when ?? ''} latest={atLatest(server)} disabled={!ready} send={send} replay={replay} />
 
       <div className="topbar-right">
         <LiveStatus model={model} />
-        <button type="button" className="btn" disabled={!ready} onClick={() => send({ type: 'pause', paused: !paused })} aria-keyshortcuts="Space">
-          {paused ? <PlayIcon size={14} aria-hidden /> : <PauseIcon size={14} aria-hidden />}
-          {paused ? 'Resume' : 'Pause'}
-        </button>
         <button type="button" className="btn btn-primary btn-check" disabled={!ready || busy} onClick={() => send({ type: 'check' })}>
           {busy ? 'Checking' : 'Check'}
         </button>
@@ -53,7 +51,18 @@ export function TopBar({ model, send, tabs }: Props) {
   );
 }
 
-function TimeControl({ when, follow, disabled, send }: { when: string; follow: boolean; disabled: boolean; send: Props['send'] }) {
+interface TimeProps {
+  when: string;
+  /** Live and on the last closed bar: nothing later to step to. */
+  latest: boolean;
+  disabled: boolean;
+  send: Props['send'];
+  replay: ReplayControl;
+}
+
+function TimeControl({ when, latest, disabled, send, replay }: TimeProps) {
+  const replayOn = replay.replay.mode !== 'off';
+  const pause = () => replay.dispatch({ type: 'pause' });
   const clock = wallClock(when);
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState('');
@@ -69,13 +78,19 @@ function TimeControl({ when, follow, disabled, send }: { when: string; follow: b
   };
   const submit = () => {
     // The input has no offset; the core reads `when` as New York wall time.
-    if (draft) send({ type: 'set', when: draft });
+    if (draft) {
+      pause();
+      send({ type: 'set', when: draft });
+    }
     setEditing(false);
   };
 
   return (
     <div className="timectl" role="group" aria-label="Time">
-      <button type="button" className="btn btn-icon" aria-label="Step back one bar" aria-keyshortcuts="ArrowLeft" disabled={disabled} onClick={() => send({ type: 'step', direction: -1 })}>
+      <button type="button" className="btn btn-icon" aria-label="Step back one bar" aria-keyshortcuts="ArrowLeft" disabled={disabled} onClick={() => {
+          pause();
+          send({ type: 'step', direction: -1 });
+        }}>
         <CaretLeftIcon size={14} aria-hidden />
       </button>
       {editing ? (
@@ -117,11 +132,25 @@ function TimeControl({ when, follow, disabled, send }: { when: string; follow: b
           )}
         </button>
       )}
-      <button type="button" className="btn btn-icon" aria-label="Step forward one bar" aria-keyshortcuts="ArrowRight" disabled={disabled || follow} onClick={() => send({ type: 'step', direction: 1 })}>
+      <button type="button" className="btn btn-icon" aria-label="Step forward one bar" aria-keyshortcuts="ArrowRight" disabled={disabled || latest} onClick={() => {
+          pause();
+          send({ type: 'step', direction: 1 });
+        }}>
         <CaretRightIcon size={14} aria-hidden />
       </button>
-      <button type="button" className="btn" disabled={disabled || follow} aria-pressed={follow} onClick={() => send({ type: 'latest' })}>
+      <button type="button" className="btn" disabled={disabled || (latest && !replayOn)} aria-pressed={latest && !replayOn} onClick={replay.exit}>
         Latest
+      </button>
+      <button
+        type="button"
+        className={`btn${replayOn ? ' is-on' : ''}`}
+        aria-pressed={replayOn}
+        disabled={disabled && !replayOn}
+        title={replayOn ? 'End the replay and go back to the latest bar' : 'Bar replay: pick a bar, then play the bars after it'}
+        onClick={() => (replayOn ? replay.exit() : replay.dispatch({ type: 'open' }))}
+      >
+        <RewindIcon size={14} aria-hidden />
+        Replay
       </button>
     </div>
   );

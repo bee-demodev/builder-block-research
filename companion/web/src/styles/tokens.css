@@ -37,8 +37,11 @@
   --candle-up-hollow: 0;
 
   --radius: 6px;
-  --font-sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: 'Geist Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  /* TradingView's own font stack (Trebuchet MS on Windows), so the companion reads like the
+     trader's TradingView pane. Prices use it too, with tabular figures (.mono). CHART_FONT in
+     src/chart/palette.ts is the same stack for the chart canvas. */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;
+  --font-mono: var(--font-sans);
   --tint: 11%;
   --dur: 140ms;
   /* Text size multiplier, from the Display menu (Normal 1, Large 1.25, Larger 1.5). */

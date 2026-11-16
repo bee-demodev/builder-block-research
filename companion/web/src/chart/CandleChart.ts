@@ -15,14 +15,15 @@ import {
   type Time,
   type UTCTimestamp,
 } from 'lightweight-charts';
-import { DEFAULT_DISPLAY, layerMarks, type Overlays } from '../display';
+import { DEFAULT_DISPLAY, layerMarks, windowMarks, type Overlays } from '../display';
 import { axisLabel, crosshairLabel, formatPrice, priceDecimals } from '../format';
 import type { Candle, ChartView, Direction, Mark, Tool } from '../wire';
 import { COLUMN_SLOT, type Band, type HtfColumn } from './htf';
+import { currentSessionMarks, fromMark, groupKeyLevels, takenByKeys, tradingDay, type KeyLevel } from './keylevels';
 import type { LookScene } from './LookLayer';
 import { MarksPrimitive, columnGap, projectedSlots } from './MarksPrimitive';
 import { diffCandles, initialWindowStart, partitionMarks, tickCovered } from './marks';
-import { withAlpha, type Palette } from './palette';
+import { CHART_FONT, withAlpha, type Palette } from './palette';
 
 /** What the chart draws besides the candles, from the display options and the status. */
 export interface ChartOptions {
@@ -43,6 +44,13 @@ export interface MarkHover {
   y: number;
 }
 
+/** Bar replay's cut on the plot (media px from the chart's top left): later bars are shaded from `x` to `width`. */
+export interface CutGeometry {
+  x: number;
+  width: number;
+  height: number;
+}
+
 export class CandleChart {
   private readonly chart: IChartApi;
   private readonly series: ISeriesApi<'Candlestick', Time>;
@@ -53,11 +61,17 @@ export class CandleChart {
   private column: HtfColumn | null = null;
   private columnBand: Band | null = null;
   private look: LookScene | null = null;
+  private keys: readonly KeyLevel[] = [];
+  /** Trading day of the last candle when the core's marks arrived (see currentSessionMarks). */
+  private marksDay: number | null = null;
+  private htfMinutes = 0;
+  private minutes = 0;
   private direction: Direction = '';
   private opts: ChartOptions = { overlays: DEFAULT_DISPLAY.overlays, stale: false, scale: 1 };
   private byTime = new Map<number, Candle>();
   private decimals = 2;
   private intraday = true;
+  private onClick: ((candle: Candle) => void) | null = null;
 
   constructor(
     container: HTMLElement,
@@ -72,7 +86,7 @@ export class CandleChart {
       layout: {
         background: { type: ColorType.Solid, color: palette.surface },
         textColor: palette.text,
-        fontFamily: "'Geist Mono', ui-monospace, monospace",
+        fontFamily: CHART_FONT,
         fontSize: AXIS_FONT,
         // Attribution is given in the footer with a link to tradingview.com and in
         // the NOTICE file, as the licence asks; the on-chart logo is turned off.
@@ -104,10 +118,12 @@ export class CandleChart {
     this.series.attachPrimitive(this.marksPrimitive);
     this.applyPalette();
     this.chart.subscribeCrosshairMove(this.handleCrosshair);
+    this.chart.subscribeClick(this.handleClick);
   }
 
   destroy(): void {
     this.chart.unsubscribeCrosshairMove(this.handleCrosshair);
+    this.chart.unsubscribeClick(this.handleClick);
     this.chart.remove();
   }
 
@@ -116,6 +132,30 @@ export class CandleChart {
     this.applyPalette();
     this.series.setData(this.candles.map((c) => this.bar(c)));
     this.applyMarks();
+  }
+
+  /** Room at the top of the plot taken by the pane's notes (media px): the key levels' edge chips start below it. */
+  setTopInset(px: number): void {
+    this.marksPrimitive.setTopInset(px);
+  }
+
+  /** Bar replay's select mode: a click on a candle goes to `handler`; null stops listening. */
+  setClickHandler(handler: ((candle: Candle) => void) | null): void {
+    this.onClick = handler;
+  }
+
+  /** Where bar replay would cut after the candle opening at `t`: its right edge, and the plot's size. Null when off screen. */
+  cutGeometry(t: number): CutGeometry | null {
+    const ts = this.chart.timeScale();
+    const x = ts.timeToCoordinate(t as UTCTimestamp);
+    if (x === null) return null;
+    const logical = ts.coordinateToLogical(x);
+    const edge = logical === null ? null : ts.logicalToCoordinate((Math.round(logical) + 0.5) as typeof logical);
+    const width = ts.width();
+    const height = this.chart.paneSize().height;
+    const cut = edge ?? x;
+    if (cut < 0 || cut > width) return null;
+    return { x: cut, width, height };
   }
 
   /** Display options or staleness changed: redraw the marks and the tool, keep the candles. */
@@ -130,12 +170,23 @@ export class CandleChart {
    * `column` is the timeframe above, drawn right of the last candle (see htf.ts), held
    * to `band` on the price scale. `look` is what to look for on this pane (LookLayer.ts).
    */
-  setView(view: ChartView, direction: Direction, column: HtfColumn | null = null, band: Band | null = null, look: LookScene | null = null): void {
+  setView(
+    view: ChartView,
+    direction: Direction,
+    column: HtfColumn | null = null,
+    band: Band | null = null,
+    look: LookScene | null = null,
+    keys: readonly KeyLevel[] = [],
+    htfMinutes = 0,
+  ): void {
     const diff = diffCandles(this.candles, view.candles);
-    const columnChanged = column !== this.column || band !== this.columnBand || look !== this.look;
+    const columnChanged = column !== this.column || band !== this.columnBand || look !== this.look || keys !== this.keys;
     this.column = column;
     this.columnBand = band;
     this.look = look;
+    this.keys = keys;
+    this.htfMinutes = htfMinutes;
+    this.minutes = view.minutes;
     const marksChanged = view.marks !== this.marks || view.tool !== this.tool || direction !== this.direction || columnChanged;
     this.intraday = view.minutes < 1440;
     if (diff.kind === 'reset') {
@@ -149,6 +200,11 @@ export class CandleChart {
     this.byTime = new Map(view.candles.map((c) => [c.t, c]));
     if (diff.kind === 'update') this.marksPrimitive.setCandles(view.candles);
     if (marksChanged || diff.kind === 'reset') {
+      // the trading day the core's marks are of: ticks after the 18:00 roll keep them until the next snapshot
+      if (view.marks !== this.marks || diff.kind === 'reset') {
+        const last = view.candles[view.candles.length - 1];
+        this.marksDay = last ? tradingDay(last.t) : null;
+      }
       this.marks = view.marks;
       this.tool = view.tool;
       this.direction = direction;
@@ -182,7 +238,7 @@ export class CandleChart {
 
   /** Every mark start, and the tool's, for the opening window. */
   private starts(): { start: number | null }[] {
-    const starts: { start: number | null }[] = layerMarks(this.marks ?? [], this.opts.overlays);
+    const starts: { start: number | null }[] = windowMarks(layerMarks(this.marks ?? [], this.opts.overlays));
     if (this.tool) starts.push({ start: this.tool.start });
     return starts;
   }
@@ -210,13 +266,24 @@ export class CandleChart {
   }
 
   private applyMarks(): void {
-    const marks = layerMarks(this.marks ?? [], this.opts.overlays);
+    const lastT = this.candles[this.candles.length - 1]?.t ?? null;
+    const all = currentSessionMarks(layerMarks(this.marks ?? [], this.opts.overlays), this.marksDay, lastT);
+    // The key levels layer takes the session and plain reference levels: one line and one label per price.
+    const keyed = this.opts.overlays.keyLevels;
+    const taken = keyed ? all.filter((m) => takenByKeys(m, this.direction)) : [];
+    const marks = keyed ? all.filter((m) => !takenByKeys(m, this.direction)) : all;
     // Which levels are too far away to draw is judged against the window the chart
     // opens on, so a level near old prices cannot squash the recent candles.
     const from = initialWindowStart(this.candles.length, this.starts(), this.visibleBars);
     const { shown } = partitionMarks(this.candles.slice(from), marks);
+    const keys = keyed
+      ? groupKeyLevels([...taken.map(fromMark).filter((k): k is KeyLevel => k !== null), ...this.keys], this.decimals)
+      : null;
     this.marksPrimitive.setScene({
       marks: shown,
+      keys,
+      minutes: this.minutes,
+      htfMinutes: this.htfMinutes,
       tool: this.tool,
       candles: this.candles,
       direction: this.direction,
@@ -261,6 +328,12 @@ export class CandleChart {
         return axisLabel(t, 'time', this.intraday);
     }
   }
+
+  private readonly handleClick = (param: MouseEventParams<Time>): void => {
+    if (!this.onClick || param.time === undefined) return;
+    const candle = this.byTime.get(param.time as number);
+    if (candle) this.onClick(candle);
+  };
 
   private readonly handleCrosshair = (param: MouseEventParams<Time>): void => {
     const point = param.point;

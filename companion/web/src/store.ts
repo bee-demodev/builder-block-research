@@ -38,6 +38,8 @@ export interface Model {
   lastPrice: Record<string, number>;
   /** Message from the most recent `error` frame, until dismissed. */
   notice: string | null;
+  /** How many `error` frames have arrived: a repeat of the same message still counts (bar replay stops on one). */
+  errors: number;
 }
 
 export const initialModel: Model = {
@@ -56,6 +58,7 @@ export const initialModel: Model = {
   timing: null,
   lastPrice: {},
   notice: null,
+  errors: 0,
 };
 
 export type Action =
@@ -97,7 +100,7 @@ function reduceFrame(model: Model, frame: ServerFrame): Model {
     case 'status':
       return { ...model, status: frame.status };
     case 'error':
-      return { ...model, notice: frame.message };
+      return { ...model, notice: frame.message, errors: model.errors + 1 };
     case 'tick': {
       const lastPrice = { ...model.lastPrice, [frame.timeframe]: frame.last };
       const view = model.view ? applyTick(model.view, frame) : null;
@@ -176,11 +179,6 @@ export function mergeCandle(candles: readonly Candle[], next: Candle): Candle[] 
 export function isStale(model: Model): boolean {
   if (!model.view) return false;
   return model.viewStale || (model.status?.stale ?? false) || model.link !== 'open';
-}
-
-export function isPaused(model: Model): boolean {
-  if (model.status?.state === 'paused') return true;
-  return model.server ? !model.server.auto_refresh : false;
 }
 
 export function chartFor(view: VerdictView | null, role: string): ChartView | undefined {

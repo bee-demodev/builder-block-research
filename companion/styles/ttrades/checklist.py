@@ -24,6 +24,10 @@ from companion.styles.ttrades.primitives import Side
 from companion.types import CriterionResult, TimeframeStack
 
 GATE, STEP, QUALITY, ADVISORY = "gate", "step", "quality", "advisory"
+# TTrades, "Why Your Continuations Fail": the c4 checks for its three reasons (a consolidation
+# read as a continuation, a trigger that ran short-term liquidity, a target already met) and
+# its speed test, shown together under one group of the continuation path.
+WHY_FAIL = "continuation c4 · why continuations fail"
 STAGES: tuple[str, ...] = ("c1", "c2", "c3", "c4")
 
 
@@ -35,6 +39,7 @@ class Spec:
     stage: str  # "" for shared, else c1..c4
     role: str
     tf: str | None  # "bias" | "setup" | "entry" | None (all)
+    group: str = ""  # the checklist group it is shown under; "" = "<path> <stage>"
 
 
 SHARED: tuple[Spec, ...] = (
@@ -122,8 +127,9 @@ CONTINUATION: tuple[Spec, ...] = (
         "c4",
         QUALITY,
         "entry",
+        WHY_FAIL,
     ),
-    Spec("cont_trigger_v_shape", "Trigger closed through in a quick V", "continuation", "c4", QUALITY, "entry"),
+    Spec("cont_trigger_v_shape", "Trigger closed through in a quick V", "continuation", "c4", QUALITY, "entry", WHY_FAIL),
     Spec(
         "cont_not_inside_consolidation",
         "Trigger is not an internal move inside a consolidation",
@@ -131,6 +137,7 @@ CONTINUATION: tuple[Spec, ...] = (
         "c4",
         QUALITY,
         "entry",
+        WHY_FAIL,
     ),
     Spec(
         "cont_objective_open_at_trigger",
@@ -139,6 +146,7 @@ CONTINUATION: tuple[Spec, ...] = (
         "c4",
         QUALITY,
         "bias",
+        WHY_FAIL,
     ),
     Spec(
         "cont_entry_early_in_candle",
@@ -242,7 +250,7 @@ class Checklist:
             passed=None if passed is None else bool(passed),
             detail=detail,
             timeframe=frame,
-            group=f"{spec.path} {spec.stage}".strip(),
+            group=spec.group or f"{spec.path} {spec.stage}".strip(),
             role=self.role(key),
         )
 

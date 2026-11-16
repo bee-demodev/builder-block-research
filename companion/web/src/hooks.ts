@@ -3,7 +3,8 @@ import { Connection, socketUrl, type SocketLike } from './connection';
 import { demoScenario, demoSocketFactory } from './demo/server';
 import { initialModel, reduce, type Model } from './store';
 import { DEFAULT_DISPLAY, loadDisplay, saveDisplay, stepTextSize, textScale, type DisplayOptions, type Overlays } from './display';
-import type { ClientFrame } from './wire';
+import { atLatest, cutWhen, initialReplay, isSpeed, readyForNext, reduceReplay, speedMs, type Replay, type ReplayAction } from './replay';
+import type { Candle, ClientFrame } from './wire';
 
 export interface Companion {
   model: Model;
@@ -163,4 +164,94 @@ export function useDisplay(): Display {
   }, []);
 
   return { options, scale: textScale(options.textSize), set, reset };
+}
+
+// ---------- bar replay ----------
+
+const REPLAY_SPEED_KEY = 'companion.replay.speed';
+
+export interface ReplayControl {
+  replay: Replay;
+  dispatch: (action: ReplayAction) => void;
+  /** A candle of `minutes` was clicked in select mode: replay starts after it. */
+  cut: (candle: Candle, minutes: number) => void;
+  /** Back to the latest bar; replay ends. */
+  exit: () => void;
+  /** One bar forward by hand: pauses playback first. */
+  stepForward: () => void;
+}
+
+/**
+ * Bar replay (see replay.ts). Playing sends `step +1` only once the last step's snapshot is
+ * in and the speed's wait has passed, so the core is never asked for more than one bar at
+ * a time. An error reply pauses it (the end of the data, a step the core refused); so do
+ * reaching the live bar and losing the link. A new symbol, stack, style or data source
+ * ends it. The speed is kept per device.
+ */
+export function useReplay(model: Model, send: (frame: ClientFrame) => void): ReplayControl {
+  const [replay, dispatch] = useReducer(reduceReplay, undefined, () => {
+    const stored = storage()?.getItem(REPLAY_SPEED_KEY);
+    return initialReplay(isSpeed(stored) ? stored : undefined);
+  });
+  const seq = useRef(model.seq);
+  seq.current = model.seq;
+
+  useEffect(() => {
+    try {
+      storage()?.setItem(REPLAY_SPEED_KEY, replay.speed);
+    } catch {
+      /* storage unavailable: the speed lasts for this session only */
+    }
+  }, [replay.speed]);
+
+  useEffect(() => {
+    dispatch({ type: 'snapshot', seq: model.seq });
+  }, [model.seq]);
+
+  useEffect(() => {
+    if (model.errors > 0) dispatch({ type: 'stop' });
+  }, [model.errors]);
+
+  const latest = atLatest(model.server);
+  useEffect(() => {
+    if (latest || model.link !== 'open') dispatch({ type: 'stop' });
+  }, [latest, model.link]);
+
+  const s = model.server;
+  const selection = s ? `${s.symbol}|${s.stack}|${s.style}|${s.data}` : '';
+  const first = useRef(selection);
+  useEffect(() => {
+    if (selection === first.current) return;
+    first.current = selection;
+    dispatch({ type: 'close' });
+  }, [selection]);
+
+  const ready = readyForNext(replay);
+  useEffect(() => {
+    if (!ready) return;
+    const id = setTimeout(() => {
+      send({ type: 'step', direction: 1 });
+      dispatch({ type: 'stepped', seq: seq.current });
+    }, speedMs(replay.speed));
+    return () => clearTimeout(id);
+  }, [ready, replay.speed, send]);
+
+  const cut = useCallback(
+    (candle: Candle, minutes: number) => {
+      send({ type: 'set', when: cutWhen(candle, minutes) });
+      send({ type: 'check' });
+      dispatch({ type: 'cut', seq: seq.current });
+    },
+    [send],
+  );
+  const exit = useCallback(() => {
+    send({ type: 'latest' });
+    dispatch({ type: 'close' });
+  }, [send]);
+  const stepForward = useCallback(() => {
+    dispatch({ type: 'pause' });
+    send({ type: 'step', direction: 1 });
+  }, [send]);
+
+  return { replay, dispatch, cut, exit, stepForward };
 }

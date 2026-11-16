@@ -2,7 +2,7 @@
 // the suggestion line, which step is the focus, what replaces what, the plan's words
 // and the side selector's choices.
 import { formatPrice, plainText, priceDecimals, sentenceCase, wallClock } from './format';
-import { DEFAULT_SIDES, DEFAULT_SIDE_LABELS, type ClientFrame, type Options, type Plan, type ServerState, type Side, type Step, type VerdictView } from './wire';
+import { DEFAULT_SIDES, DEFAULT_SIDE_LABELS, type ClientFrame, type Odds, type OddsRow, type Options, type Plan, type ServerState, type Side, type Step, type VerdictView } from './wire';
 
 /** "WATCH · SHORT" -> "Watch, short"; "SHORT · TARGET REACHED" -> "Short, target reached". */
 export function suggestionText(view: Pick<VerdictView, 'suggestion' | 'decision_word'>): string {
@@ -110,7 +110,51 @@ export interface PlanWords {
   /** "1 micro risks $96 · 1 mini $960", or "". */
   size: string;
   /** What the backtest measured for this setup, or null (not shown once the outcome is in). */
-  evidence: { label: string; line: string; exits: string; source: string; tone: string } | null;
+  evidence: { label: string; line: string; exits: string; source: string; tone: string; odds: OddsWords | null } | null;
+}
+
+export interface OddsWords {
+  /** "This setup wins 33% to 2R (breakeven 34%), target ~3 h, stop ~1.7 h, 666 trades". */
+  line: string;
+  groups: { title: string; rows: OddsRowWords[] }[];
+}
+
+export interface OddsRowWords {
+  label: string;
+  /** "33%", or '' when the row has no honest win rate (then `note` says why). */
+  win: string;
+  breakeven: string;
+  win1r: string;
+  /** Whether the win rate is above break-even after costs (a tie is not). */
+  pays: boolean;
+  toTarget: string;
+  toStop: string;
+  n: string;
+  note: string;
+  current: boolean;
+}
+
+/** The odds board in words: stacks, the setups on this stack, then sessions; empty groups left out. */
+export function oddsWords(odds: Odds): OddsWords {
+  const rows = (list: OddsRow[]): OddsRowWords[] =>
+    list.map((r) => ({
+      label: r.label,
+      win: r.note ? '' : `${r.win}%`,
+      breakeven: `${r.breakeven}%`,
+      win1r: r.note ? '' : `${r.win_1r}%`,
+      pays: !r.note && r.win > r.breakeven,
+      toTarget: r.to_target,
+      toStop: r.to_stop,
+      n: r.n.toLocaleString('en-US'),
+      note: r.note,
+      current: r.current,
+    }));
+  const groups = [
+    { title: 'Stacks', rows: rows(odds.stacks) },
+    { title: 'Setups on this stack', rows: rows(odds.setups) },
+    { title: 'Sessions', rows: rows(odds.sessions) },
+  ].filter((g) => g.rows.length);
+  return { line: plainText(odds.line), groups };
 }
 
 /** small_stop warns; best_measured is the one setup that passed a test (weak); the rest are plain. */
@@ -140,6 +184,7 @@ export function planWords(plan: Plan): PlanWords {
             exits: plainText(plan.evidence.exits),
             source: plan.evidence.source,
             tone: EVIDENCE_TONES[plan.evidence.grade] ?? 'muted',
+            odds: plan.evidence.odds ? oddsWords(plan.evidence.odds) : null,
           }
         : null,
   };

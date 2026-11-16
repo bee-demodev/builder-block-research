@@ -245,6 +245,33 @@ export function tickCovered(y: number | null, tagYs: readonly number[], gap: num
 }
 
 /**
+ * layoutTags with key level tags: each `key` tag says which side of the last close it is on and
+ * how near (0 = nearest). The other tags are laid out first; then on each side the key tags are
+ * tried nearest first and the first that finds room is kept, so a farther level can never take
+ * the place the nearest one needed. At most one key tag a side is drawn.
+ */
+export function layoutWithKeyTags(
+  tags: readonly { y: number | null; quiet: boolean; key?: { side: 0 | 1; order: number } }[],
+  gap: number,
+): (number | null)[] {
+  const inputs = tags.map((t) => (t.key ? { y: null, quiet: true } : { y: t.y, quiet: t.quiet }));
+  for (const side of [0, 1] as const) {
+    const tries = tags
+      .map((t, i) => ({ t, i }))
+      .filter(({ t }) => t.key?.side === side && t.y !== null)
+      .sort((a, b) => a.t.key!.order - b.t.key!.order);
+    for (const { t, i } of tries) {
+      const trial = inputs.map((v, j) => (j === i ? { y: t.y, quiet: true } : v));
+      if (layoutTags(trial, gap)[i] !== null) {
+        inputs[i] = trial[i]!;
+        break;
+      }
+    }
+  }
+  return layoutTags(inputs, gap);
+}
+
+/**
  * Where each price tag is drawn, or null when it is not: given each tag's price y (null: off
  * the scale) in order, role tags first. Role tags that would overlap are spread `gap` apart
  * around their group's centre (as Lightweight Charts aligns labels); a reference tag is then

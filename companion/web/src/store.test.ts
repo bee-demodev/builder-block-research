@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { demoOptions, demoState, errorStaleExtra, longView, snapshot, watchView } from './demo/fixtures';
-import { foldIntoForming, initialModel, isPaused, isStale, mergeCandle, reduce, type Model } from './store';
+import { foldIntoForming, initialModel, isStale, mergeCandle, reduce, type Model } from './store';
 import type { Candle, ServerFrame } from './wire';
 
 const frame = (m: Model, f: ServerFrame) => reduce(m, { type: 'frame', frame: f });
@@ -77,12 +77,6 @@ describe('server state', () => {
     expect(m.server?.symbol).toBe('ES1!');
     m = frame(m, { type: 'state', state: { ...demoState, auto_refresh: false } });
     expect(m.server?.symbol).toBe('NQ1!');
-    expect(isPaused(m)).toBe(true);
-  });
-
-  it('treats a paused status as paused', () => {
-    const m = frame(hello(), { type: 'status', status: { state: 'paused', text: 'Paused', stale: false } });
-    expect(isPaused(m)).toBe(true);
   });
 
   it('keeps error frame messages until dismissed', () => {
@@ -90,6 +84,12 @@ describe('server state', () => {
     expect(m.notice).toBe('Unknown symbol');
     m = reduce(m, { type: 'dismissNotice' });
     expect(m.notice).toBeNull();
+  });
+
+  it('counts every error frame, a repeat of the same message too (bar replay pauses on each)', () => {
+    let m = frame(hello(), { type: 'error', message: 'That is the end of the data.' });
+    m = frame(m, { type: 'error', message: 'That is the end of the data.' });
+    expect(m.errors).toBe(2);
   });
 });
 

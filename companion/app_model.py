@@ -62,6 +62,11 @@ SIDE_LABELS: dict[str, str] = {SIDE_AUTO: "Auto", "long": "Long", "short": "Shor
 # that was due did not show up (a late tick, a holiday, delayed data). Both back off.
 RETRY_SECONDS = (5, 10, 20, 30)
 LATE_SECONDS = (2, 3, 5, 10, 15, 30)
+# TradingView is up but its chart tab is still opening (right after the app starts it):
+# read again quickly so the first data comes in by itself, then back off as above.
+QUICK_RETRY_KINDS = frozenset({"no_chart_tab", "loading"})
+QUICK_RETRY_SECONDS = 2
+QUICK_RETRIES = 15
 STALE_GRACE = pd.Timedelta(seconds=20)  # on top of one entry bar, before a verdict is called stale
 
 # Display options. The keys are what is saved; the labels are what the menus show.
@@ -905,7 +910,11 @@ def plan_evidence(verdict: Verdict) -> _evidence.Evidence | None:
     if plan is None or plan.outcome != "open":
         return None
     try:
-        return _evidence.grade(verdict.stack.name, _evidence.trigger_kind(verdict), plan.risk_adr)
+        moment = _timeframes.to_new_york(verdict.as_of)
+        return _evidence.grade(
+            verdict.stack.name, _evidence.trigger_kind(verdict), plan.risk_adr,
+            path=verdict.path_family if verdict.path_family != "none" else "", session=_evidence.session_label(moment),
+        )  # fmt: skip
     except Exception:  # noqa: BLE001 - information only: a bad evidence file must never break the read
         return None
 
@@ -1178,6 +1187,7 @@ class CompanionController:
         self.live_time: pd.Timestamp | None = None  # close of the last closed entry bar seen (naive New York)
         self.due: pd.Timestamp | None = None  # when the next automatic check should run
         self._failures = 0
+        self._quick = 0
         self._late = 0
         self._last_problem = ""
         self.state_path = Path(state_path) if state_path is not None else state_dir() / STATE_FILE_NAME
@@ -1220,7 +1230,7 @@ class CompanionController:
         self.follow = True
         self.live_time = None
         self.due = None
-        self._failures = self._late = 0
+        self._failures = self._late = self._quick = 0
         self._last_problem = ""
         self.normalise()
 
@@ -1242,7 +1252,7 @@ class CompanionController:
         self.follow = True
         self.live_time = None
         self.due = None
-        self._failures = self._late = 0
+        self._failures = self._late = self._quick = 0
         self._last_problem = ""
 
     def shutdown(self) -> None:
@@ -1399,6 +1409,27 @@ class CompanionController:
                 raise UserError(f"That is the start of the bars loaded from TradingView ({format_when(covered[0].tz_localize(None))} New York).")
             self.follow = False
         self.state.when = format_when(moved)
+        return self.state.when
+
+    def set_live_when(self, moment: pd.Timestamp) -> str:
+        """Move the live analysis time to ``moment`` (bar replay's start), inside the bars
+        TradingView has loaded. At or past the last closed bar is "now" again."""
+        self.resolve_stack()
+        if self.live_time is None:
+            raise UserError("Nothing is loaded from TradingView yet. Press Check first.")
+        if moment >= self.live_time:
+            self.follow = True
+            moment = self.live_time
+        else:
+            covered = None
+            try:
+                covered = self.live_source().coverage(self.state.symbol, self.resolve_stack().entry)
+            except TradingViewError:
+                pass
+            if covered is not None and moment < covered[0].tz_localize(None):
+                raise UserError(f"That is before the bars loaded from TradingView ({format_when(covered[0].tz_localize(None))} New York).")
+            self.follow = False
+        self.state.when = format_when(moment)
         return self.state.when
 
     def step(self, direction: int) -> str:
@@ -1558,10 +1589,14 @@ class CompanionController:
         self._last_problem = outcome.problem
         if outcome.problem:
             self._failures += 1
-            wait = RETRY_SECONDS[min(self._failures, len(RETRY_SECONDS)) - 1]
+            if outcome.problem in QUICK_RETRY_KINDS and self._quick < QUICK_RETRIES:
+                self._quick += 1
+                wait = QUICK_RETRY_SECONDS
+            else:
+                wait = RETRY_SECONDS[min(self._failures, len(RETRY_SECONDS)) - 1]
             self.due = moment + pd.Timedelta(seconds=wait) if outcome.retry else None
             return
-        self._failures = 0
+        self._failures = self._quick = 0
         if outcome.data_time is None:
             self.due = None
             return

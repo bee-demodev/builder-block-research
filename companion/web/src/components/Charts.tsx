@@ -1,8 +1,9 @@
 import { ChartLineIcon, GearSixIcon, WarningCircleIcon } from '@phosphor-icons/react';
 import { memo, useEffect, useMemo, useRef, useState, type MouseEvent } from 'react';
-import { CandleChart, type MarkHover } from '../chart/CandleChart';
-import { layerMarks, lookSceneFor, type Overlays, type Scheme } from '../display';
+import { CandleChart, type CutGeometry, type MarkHover } from '../chart/CandleChart';
+import { layerMarks, lookSceneFor, windowMarks, type Overlays, type Scheme } from '../display';
 import { buildColumn, capBand, columnNote, numberedCandles } from '../chart/htf';
+import { keyLevels, takenByKeys } from '../chart/keylevels';
 import { paneFocus } from '../chart/look';
 import type { LookScene } from '../chart/LookLayer';
 import { initialWindowStart, offScaleNotes, partitionMarks } from '../chart/marks';
@@ -30,6 +31,8 @@ interface Props {
   display: ChartDisplay;
   /** The "look for" option the trader picked ("A" or "B"); client-only. */
   lookChoice?: string;
+  /** Bar replay's select mode: a click on a candle cuts there. Null when not selecting. */
+  onCut?: ((candle: Candle, minutes: number) => void) | null;
 }
 
 /**
@@ -45,7 +48,7 @@ const ROLES = ['bias', 'setup', 'entry'] as const;
 /** Candles each chart opens on: each pane is half the width, so fewer than a full-width chart keeps the bars readable. */
 const OPEN_BARS = { setup: 44, entry: 44 } as const;
 
-export function ChartsArea({ model, theme, display, lookChoice = 'A' }: Props) {
+export function ChartsArea({ model, theme, display, lookChoice = 'A', onCut = null }: Props) {
   const { view } = model;
   if (!view) {
     if (!model.snapshotReceived) return <ChartsSkeleton />;
@@ -78,7 +81,7 @@ export function ChartsArea({ model, theme, display, lookChoice = 'A' }: Props) {
   const stale = isStale(model);
 
   return (
-    <section className={`charts${stale ? ' is-stale' : ''}`} aria-label="Charts">
+    <section className={`charts${stale ? ' is-stale' : ''}${onCut ? ' is-selecting' : ''}`} aria-label="Charts">
       {PANES.map(({ role, above }) => {
         const chart = byRole.get(role);
         return (
@@ -87,6 +90,7 @@ export function ChartsArea({ model, theme, display, lookChoice = 'A' }: Props) {
               <ChartPane
                 chart={chart}
                 above={byRole.get(above) ?? null}
+                stack={view.charts}
                 look={view.look_for}
                 lookChoice={lookChoice}
                 pane={role}
@@ -95,6 +99,7 @@ export function ChartsArea({ model, theme, display, lookChoice = 'A' }: Props) {
                 theme={theme}
                 stale={stale}
                 openBars={OPEN_BARS[role]}
+                onCut={onCut}
                 {...display}
               />
             ) : (
@@ -111,6 +116,8 @@ interface PaneProps extends ChartDisplay {
   chart: ChartView;
   /** The timeframe above, drawn as candles right of this chart's own; null for none. */
   above: ChartView | null;
+  /** Every chart of the stack: the daily (or weekly) one gives the pane its day and week key levels. */
+  stack: readonly ChartView[];
   look: LookFor | null;
   lookChoice: string;
   pane: 'setup' | 'entry';
@@ -120,9 +127,10 @@ interface PaneProps extends ChartDisplay {
   theme: ResolvedTheme;
   stale: boolean;
   openBars: number;
+  onCut: ((candle: Candle, minutes: number) => void) | null;
 }
 
-const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane, reason, direction, theme, stale, openBars, overlays, scheme, scale, openMenu }: PaneProps) {
+const ChartPane = memo(function ChartPane({ chart, above, stack, look, lookChoice, pane, reason, direction, theme, stale, openBars, onCut, overlays, scheme, scale, openMenu }: PaneProps) {
   const hostRef = useRef<HTMLDivElement>(null);
   const chartRef = useRef<CandleChart | null>(null);
   const [hover, setHover] = useState<Candle | null>(null);
@@ -133,7 +141,7 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
     if (!host) return;
     const c = new CandleChart(host, readPalette(host), setHover, openBars, setTip);
     chartRef.current = c;
-    // Canvas labels draw with Geist once it has loaded.
+    // Redraw once the page's fonts are ready (the canvas cannot wait for them itself).
     void document.fonts?.ready.then(() => chartRef.current?.setPalette(readPalette(host)));
     return () => {
       c.destroy();
@@ -153,9 +161,11 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
 
   const decimals = useMemo(() => priceDecimals(chart.candles.slice(-200).flatMap((c) => [c.open, c.close])), [chart.candles]);
   // The window the chart opens on: off-scale levels and the column's cap are judged against it.
-  // Session levels count only when they are shown (Display menu).
-  const marks = useMemo(() => layerMarks(chart.marks, overlays), [chart.marks, overlays]);
+  // Session levels never widen it (they start at the trading day's open) and are never listed as
+  // off the scale: the key levels layer shows them, with an edge chip when they are past the prices shown.
+  const marks = useMemo(() => windowMarks(layerMarks(chart.marks, overlays)), [chart.marks, overlays]);
   const from = useMemo(() => initialWindowStart(chart.candles.length, marks, openBars), [chart.candles.length, marks, openBars]);
+  const keys = useMemo(() => keyLevels(chart, above, stack), [chart, above, stack]);
   const column = useMemo(
     () => (above ? buildColumn(chart.candles, above.candles, above.timeframe, numberedCandles(above.marks)) : null),
     [chart.candles, above],
@@ -165,14 +175,34 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
   const lookScene = useMemo<LookScene | null>(() => lookSceneFor(look, lookChoice, pane, overlays), [look, lookChoice, pane, overlays]);
 
   useEffect(() => {
-    chartRef.current?.setView(chart, direction, column, band, lookScene);
-  }, [chart, direction, column, band, lookScene]);
+    chartRef.current?.setView(chart, direction, column, band, lookScene, keys, above?.minutes ?? 0);
+  }, [chart, direction, column, band, lookScene, keys, above]);
+
+  const minutes = chart.minutes;
+  useEffect(() => {
+    chartRef.current?.setClickHandler(onCut ? (candle) => onCut(candle, minutes) : null);
+  }, [onCut, minutes]);
+  // Bar replay's cut follows the hovered candle while selecting, as TradingView's scissors do.
+  const cut = onCut && hover ? (chartRef.current?.cutGeometry(hover.t) ?? null) : null;
 
   const notes = useMemo(() => {
-    const out = offScaleNotes(partitionMarks(chart.candles.slice(from), marks), decimals);
+    const listed = overlays.keyLevels ? marks.filter((m) => !takenByKeys(m, direction)) : marks;
+    const out = offScaleNotes(partitionMarks(chart.candles.slice(from), listed), decimals);
     const cut = column ? columnNote(column, band, decimals) : '';
     return cut ? [...out, cut] : out;
-  }, [chart.candles, marks, decimals, from, column, band]);
+  }, [chart.candles, marks, decimals, from, column, band, overlays.keyLevels, direction]);
+  // The key levels' top edge chips start below these notes, so the two never overlap.
+  const notesRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = notesRef.current;
+    const measure = () => chartRef.current?.setTopInset(el ? el.offsetTop + el.offsetHeight : 0);
+    measure();
+    if (!el || typeof ResizeObserver === 'undefined') return;
+    // a narrower pane wraps the notes onto more lines
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [notes, scale]);
   const shown = hover ?? chart.candles[chart.candles.length - 1] ?? null;
   const tone = readTone(chart.status);
   const onContextMenu = (e: MouseEvent) => {
@@ -212,9 +242,10 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
       {reason && <p className="pane-caption">{plainText(reason)}</p>}
       <div className="pane-body" onContextMenu={onContextMenu}>
         <div ref={hostRef} className="pane-chart" onMouseLeave={() => setTip(null)} />
-        {tip && <MarkTip tip={tip} width={hostRef.current?.clientWidth ?? 0} />}
+        {cut && <CutShade cut={cut} />}
+        {tip && !onCut && <MarkTip tip={tip} width={hostRef.current?.clientWidth ?? 0} />}
         {notes.length > 0 && (
-          <div className="pane-notes">
+          <div ref={notesRef} className="pane-notes">
             {notes.map((n) => (
               <p key={n}>{n}</p>
             ))}
@@ -224,6 +255,16 @@ const ChartPane = memo(function ChartPane({ chart, above, look, lookChoice, pane
     </article>
   );
 });
+
+/** Bar replay's select mode: the cut line after the hovered candle, and the later bars shaded. */
+function CutShade({ cut }: { cut: CutGeometry }) {
+  return (
+    <div className="pane-cut" aria-hidden>
+      <div className="pane-cut-shade" style={{ left: cut.x, width: Math.max(0, cut.width - cut.x), height: cut.height }} />
+      <div className="pane-cut-line" style={{ left: cut.x, height: cut.height }} />
+    </div>
+  );
+}
 
 /** "Look for" on the pane whose step is awaited now, "Later" on the other. */
 function LookTag({ look, pane, title }: { look: LookFor; pane: 'setup' | 'entry'; title: string }) {

@@ -1,5 +1,19 @@
 import { describe, expect, it } from 'vitest';
-import { DEFAULT_DISPLAY, DISPLAY_KEY, SCHEME_EPOCH, isDefault, layerMarks, lookSceneFor, loadDisplay, parseDisplay, saveDisplay, stepTextSize, textScale, type DisplayOptions } from './display';
+import {
+  DEFAULT_DISPLAY,
+  DISPLAY_KEY,
+  SCHEME_EPOCH,
+  isDefault,
+  layerMarks,
+  lookSceneFor,
+  loadDisplay,
+  parseDisplay,
+  saveDisplay,
+  stepTextSize,
+  textScale,
+  windowMarks,
+  type DisplayOptions,
+} from './display';
 
 class MemoryStorage {
   data = new Map<string, string>();
@@ -14,7 +28,7 @@ class MemoryStorage {
   }
 }
 
-const custom: DisplayOptions = { textSize: 'larger', scheme: 'blue-orange', overlays: { levelNames: false, zones: true, markerLabels: false, riskReward: true, sessionLevels: true, lookFor: false } };
+const custom: DisplayOptions = { textSize: 'larger', scheme: 'blue-orange', overlays: { levelNames: false, zones: true, markerLabels: false, riskReward: true, keyLevels: true, lookFor: false } };
 
 describe('display options persistence', () => {
   it('round-trips through storage', () => {
@@ -72,17 +86,22 @@ describe('text size', () => {
   });
 });
 
-describe('the session levels layer', () => {
+describe('the key levels layer', () => {
   const marks = [{ role: 'reference' }, { role: 'session' }, { role: 'entry' }];
 
-  it('is off by default and keeps every other mark', () => {
-    expect(DEFAULT_DISPLAY.overlays.sessionLevels).toBe(false);
-    expect(layerMarks(marks, DEFAULT_DISPLAY.overlays).map((m) => m.role)).toEqual(['reference', 'entry']);
+  it('is on by default and carries the core session marks', () => {
+    expect(DEFAULT_DISPLAY.overlays.keyLevels).toBe(true);
+    expect(layerMarks(marks, DEFAULT_DISPLAY.overlays)).toHaveLength(3);
   });
 
-  it('shows the session marks when turned on, and an older stored choice falls back to off', () => {
-    expect(layerMarks(marks, { ...DEFAULT_DISPLAY.overlays, sessionLevels: true })).toHaveLength(3);
-    expect(parseDisplay(JSON.stringify({ overlays: { zones: false } })).overlays.sessionLevels).toBe(false);
+  it('drops the session marks when turned off, and a stored choice without it keeps it on', () => {
+    expect(layerMarks(marks, { ...DEFAULT_DISPLAY.overlays, keyLevels: false }).map((m) => m.role)).toEqual(['reference', 'entry']);
+    expect(parseDisplay(JSON.stringify({ overlays: { zones: false, sessionLevels: false } })).overlays.keyLevels).toBe(true);
+  });
+
+  it('never lets a session level widen the opening window, however the role is cased', () => {
+    expect(windowMarks(marks).map((m) => m.role)).toEqual(['reference', 'entry']);
+    expect(windowMarks([{ role: ' Session ' }, { role: 'entry' }]).map((m) => m.role)).toEqual(['entry']);
   });
 });
 

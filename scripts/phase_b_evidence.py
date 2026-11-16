@@ -5,7 +5,10 @@
 Descriptive numbers from the Phase B runs on the current engine (results/phase_b, baseline,
 taken trades, market entry, net of costs): per stack, the small-stop cut, and the
 best-measured setup with the verdict of its pre-registered re-test (T4 in
-results/phase_b/report.md). Every year group counts once (2021 is August to December).
+results/phase_b/report.md), and the odds board: how often each stack, setup (path and
+trigger) and session reached 2R before the stop, the win rate needed to break even after
+costs, and how long a target or a stop took. Every year group counts once (2021 is August
+to December).
 """
 
 from __future__ import annotations
@@ -50,6 +53,28 @@ def record(frame: pd.DataFrame) -> dict[str, object]:
     }
 
 
+def odds(frame: pd.DataFrame) -> dict[str, object]:
+    """How often 2R came before the stop, the break-even rate after costs and the median times."""
+    won = frame["first_2r"] == "win"
+    lost = frame["first_2r"] == "loss"
+    win_r = float(frame.loc[won, "net_2r"].median()) if won.any() else 2.0
+    loss_r = float(-frame.loc[lost, "net_2r"].median()) if lost.any() else 1.0
+
+    def hours(mask: pd.Series) -> float | None:
+        return round(float(frame.loc[mask, "minutes_2r"].median()) / 60, 2) if mask.any() else None
+
+    return {
+        "n": int(len(frame)),
+        "win": round(float(won.mean()), 4),
+        "win_1r": round(float((frame["first_1r"] == "win").mean()), 4),
+        "open": round(float((frame["first_2r"] == "open").mean()), 4),
+        "breakeven": round(loss_r / (win_r + loss_r), 4),
+        "hours_to_target": hours(won),
+        "hours_to_stop": hours(lost),
+        "r": round(float(frame["net_2r"].mean()), 4),
+    }
+
+
 def r_text(value: float) -> str:
     return f"{'−' if value < 0 else '+'}{abs(value):.2f}R"
 
@@ -81,6 +106,17 @@ def main() -> int:
         "PASS": "Passed two pre-registered tests (2022-23, then 2021), but not significant: a lead, not an edge.",
         "FAIL": "Passed its 2022-23 test, then failed the 2021 re-test: not an edge.",
     }.get(retest, "Passed its 2022-23 test; not significant: a lead, not an edge.")
+    measured = taken[taken["stack"].isin(STACKS)].copy()
+    measured["setup"] = measured["path"] + "/" + measured["trigger_kind"]
+    board = {
+        "stacks": {name: odds(measured[measured["stack"] == name]) for name in STACKS if (measured["stack"] == name).any()},
+        "setups": {
+            name: {key: odds(part) for key, part in measured[measured["stack"] == name].groupby("setup")}
+            for name in STACKS
+            if (measured["stack"] == name).any()
+        },
+        "sessions": {key: odds(part) for key, part in measured.groupby("session")},
+    }
     data = {
         "generated": date.today().isoformat(),
         "source": "results/phase_b: TradingView 5m, NQ ES GC YM RTY CL SI 6E, Aug 2021 to Nov 2026, taken trades, "
@@ -90,6 +126,7 @@ def main() -> int:
             "small_stop": {"max_risk_adr": SMALL, **record(small)},
             "best_measured": {**BEST, **record(best), "retest": retest, "caveat": caveat},
         },
+        "odds": board,
     }
     OUT.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(data, indent=2))

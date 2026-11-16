@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { mergeCandle } from '../store';
 import type { Candle, Mark } from '../wire';
-import { diffCandles, distinctTags, initialWindowStart, labelPriority, markerTextX, markInRange, offScaleNotes, partitionMarks, placeLabels, layoutTags, placePreferring, tickCovered } from './marks';
+import { diffCandles, distinctTags, initialWindowStart, labelPriority, markerTextX, markInRange, offScaleNotes, partitionMarks, placeLabels, layoutTags, layoutWithKeyTags, placePreferring, tickCovered } from './marks';
 
 const c = (t: number, low: number, high: number, forming = false): Candle => ({
   time: '',
@@ -200,5 +200,28 @@ describe('tickCovered', () => {
     expect(tickCovered(520, [545], 15)).toBe(false);
     expect(tickCovered(null, [545], 15)).toBe(false);
     expect(tickCovered(300, [], 15)).toBe(false);
+  });
+});
+
+describe('layoutWithKeyTags', () => {
+  it('gives the nearest key level the tag even when a farther, more senior one comes first', () => {
+    // a weekly level 20 px above a daily one: both are drawn lines, but only one tag fits
+    const tags = [
+      { y: 140, quiet: false }, // a role tag (the entry)
+      { y: 60, quiet: true, key: { side: 0 as const, order: 1 } }, // PWH, farther
+      { y: 80, quiet: true, key: { side: 0 as const, order: 0 } }, // PDH, nearest
+    ];
+    expect(layoutWithKeyTags(tags, 22)).toEqual([140, null, 80]);
+  });
+
+  it('lets the next level stand in when the nearest has no room beside a role tag, one a side', () => {
+    const tags = [
+      { y: 100, quiet: false },
+      { y: 110, quiet: true, key: { side: 1 as const, order: 0 } }, // under the role tag
+      { y: 150, quiet: true, key: { side: 1 as const, order: 1 } },
+      { y: 190, quiet: true, key: { side: 1 as const, order: 2 } },
+      { y: 40, quiet: true, key: { side: 0 as const, order: 0 } },
+    ];
+    expect(layoutWithKeyTags(tags, 22)).toEqual([100, null, 150, null, 40]);
   });
 });

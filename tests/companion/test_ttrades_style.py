@@ -421,6 +421,128 @@ def test_a_newer_protected_low_after_the_entry_is_reported_for_the_stop_only() -
     assert verdict.decision == "long" and verdict.stop == pytest.approx(91.0)
     check = criterion(verdict, "cont_newer_protected_low")
     assert (check.passed, check.role) == (True, "advisory") and "95.50" in check.detail
+    # and it is drawn on the entry chart as the level the stop can trail to
+    trail = [item for item in verdict.markup if item.short == "Trail: protected low"]
+    assert len(trail) == 1 and trail[0].price == pytest.approx(95.5)
+    assert (trail[0].kind, trail[0].role, trail[0].timeframe) == ("level", "protected", "5m")
+    assert "the stop can trail here" in trail[0].label
+
+
+def consolidations(verdict: Verdict) -> list[Any]:
+    """The possible-consolidation boxes (the only zones drawn in the waiting colour)."""
+    return [item for item in verdict.markup if item.kind == "zone" and item.role == "waiting"]
+
+
+def shorts(verdict: Verdict) -> dict[str, Any]:
+    return {item.short: item for item in verdict.markup if item.timeframe == "5m"}
+
+
+def test_a_slow_continuation_after_the_entry_is_a_possible_consolidation_not_a_trail_level() -> None:
+    # after the CISD entry (stop 91) the pullback to 95.5 takes four bars to close through
+    verdict = evaluate(continuation_scenario(DAILY, trigger_rows=SLOW_TRIGGER), "trigger")
+    assert verdict.decision == "long" and verdict.stop == pytest.approx(91.0)
+    assert not any(item.short.startswith("Trail") for item in verdict.markup)
+    (zone,) = consolidations(verdict)
+    assert (zone.role, zone.timeframe, zone.short, zone.end) == ("waiting", "5m", "Consolidation?", None)
+    assert (zone.top, zone.bottom) == (pytest.approx(98.0), pytest.approx(95.5))
+    assert zone.label.startswith("Possible consolidation") and "95.50" in zone.label and "98.00" in zone.label
+    check = criterion(verdict, "cont_newer_protected_low")
+    assert check.passed is None and "slow continuation" in check.detail
+
+
+def test_a_quick_continuation_inside_an_unbroken_range_is_not_a_trail_level() -> None:
+    # the quick continuation after the slow one closes at 97.8, still inside its range (95.5 to 98.0)
+    scenario = continuation_scenario(DAILY, trigger_rows=[*SLOW_TRIGGER, *NEXT_CONTINUATION])
+    verdict = evaluate(scenario, "trigger")
+    assert not any(item.short.startswith("Trail") for item in verdict.markup)
+    assert len(consolidations(verdict)) == 1
+    assert "internal moves" in criterion(verdict, "cont_newer_protected_low").detail
+
+
+def test_the_slow_entry_cisd_range_is_drawn_until_price_leaves_it() -> None:
+    waiting = evaluate(continuation_scenario(DAILY, swing_rows=SLOW_SWING), "trigger")
+    (zone,) = consolidations(waiting)
+    assert (zone.top, zone.bottom, zone.end, zone.short) == (pytest.approx(97.8), pytest.approx(91.0), None, "Consolidation?")
+    assert "the entry CISD took 5 5m bars" in zone.label
+    scenario = continuation_scenario(DAILY, swing_rows=SLOW_SWING, trigger_rows=BREAKOUT_CONTINUATION)
+    (left,) = consolidations(evaluate(scenario, "trigger"))
+    assert left.end is not None and left.short == "Range: broke out"
+
+
+# --- a possible consolidation: its ways out ("Why Your Continuations Fail" @08:13-12:30) ---
+
+# after the slow continuation (range 95.5 to 98.0): a sweep of 95.5 to 95.2, then closes back above
+# the down-close run's open 97.7 two bars after the low
+MANIPULATION = [(97.7, 97.8, 96.0, 96.2), (96.2, 96.3, 95.2, 95.4), (95.4, 97.0, 95.3, 96.9), (96.9, 97.9, 96.8, 97.85)]
+
+
+def test_an_open_range_lists_its_ways_out_and_marks_both_edges() -> None:
+    verdict = evaluate(continuation_scenario(DAILY, trigger_rows=SLOW_TRIGGER), "trigger")
+    (zone,) = consolidations(verdict)
+    lines = zone.label.splitlines()
+    assert lines[0].endswith("Closes inside it are internal: ignore them. Ways out:")
+    assert lines[1] == "1. Sweep of 95.50, then a CISD back through in <= 3 bars: a low to trust (clean)"
+    assert lines[2].startswith("2. Close above 98.00, then a pullback to a POI and a quick CISD")
+    assert lines[3].startswith("3. A close above 98.00 that falls back across to 95.50 was a sweep of the high")
+    marks = shorts(verdict)
+    assert marks["Sweep + quick CISD"].price == pytest.approx(95.5)
+    assert marks["Break + new continuation"].price == pytest.approx(98.0)
+
+
+def test_a_sweep_of_the_range_low_then_a_quick_cisd_is_the_clean_way_out() -> None:
+    verdict = evaluate(continuation_scenario(DAILY, trigger_rows=[*SLOW_TRIGGER, *MANIPULATION]), "trigger")
+    (zone,) = consolidations(verdict)
+    assert zone.short == "Range: manipulated" and zone.end is not None
+    assert "then a CISD in 2 bar(s)" in zone.label and "A low to trust at 95.20" in zone.label
+    marks = shorts(verdict)
+    clean = marks["Clean CISD"]
+    assert (clean.kind, clean.role, clean.price) == ("marker", "confirm", pytest.approx(97.85))
+    # the trusted low is the newest trail level, drawn once
+    assert marks["Trail: protected low"].price == pytest.approx(95.2) and "Low to trust" not in marks
+
+
+def test_a_sweep_without_a_cisd_yet_shows_the_level_it_has_to_close_through() -> None:
+    verdict = evaluate(continuation_scenario(DAILY, trigger_rows=[*SLOW_TRIGGER, *MANIPULATION[:2]]), "trigger")
+    (zone,) = consolidations(verdict)
+    assert zone.short == "Consolidation" and "possible manipulation" in zone.label
+    level = shorts(verdict)["Close above = clean CISD"]
+    assert (level.role, level.price) == ("waiting", pytest.approx(97.7))
+    assert "within 3 bars of the low 95.20" in level.label
+
+
+def test_a_breakout_is_clean_only_with_a_new_continuation() -> None:
+    scenario = continuation_scenario(DAILY, swing_rows=SLOW_SWING, trigger_rows=BREAKOUT_CONTINUATION)
+    verdict = evaluate(scenario, "trigger")
+    (zone,) = consolidations(verdict)
+    assert zone.label.startswith("Broke out: closed above the range high 97.80")
+    assert "then a new continuation" in zone.label and "Protected low 96.90" in zone.label
+    marks = shorts(verdict)
+    assert marks["Clean CISD"].role == "confirm"
+    assert "Low to trust" not in marks  # 96.90 is the trade's own stop swing, already drawn
+
+
+def test_a_bearish_range_names_its_ways_out_the_other_way_round() -> None:
+    verdict = evaluate(continuation_scenario(DAILY, mirror=True, trigger_rows=SLOW_TRIGGER), "trigger")
+    (zone,) = consolidations(verdict)
+    lines = zone.label.splitlines()
+    assert "a high to trust" in lines[1] and lines[2].startswith("2. Close below")
+    assert "was a sweep of the low" in lines[3]
+
+
+def test_the_reasons_continuations_fail_share_one_checklist_group() -> None:
+    verdict = evaluate(continuation_scenario(DAILY), "trigger")
+    why = {item.key for item in verdict.criteria if item.group == "continuation c4 · why continuations fail"}
+    assert why == {
+        "cont_trigger_v_shape", "cont_not_inside_consolidation", "cont_trigger_clear_of_liquidity",
+        "cont_objective_open_at_trigger",
+    }  # fmt: skip
+
+
+def test_a_reversal_entry_draws_its_newer_protected_low() -> None:
+    verdict = evaluate(reversal_scenario(DAILY), "trigger")
+    assert verdict.path_family == "reversal" and verdict.stop == pytest.approx(54.0)
+    trail = [item for item in verdict.markup if item.short == "Trail: protected low"]
+    assert len(trail) == 1 and trail[0].price == pytest.approx(56.2)
 
 
 # --- reversal ------------------------------------------------------------------

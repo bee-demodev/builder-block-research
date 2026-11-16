@@ -263,6 +263,46 @@
       "advisory": false
      },
      {
+      "key": "cont_entry_early_in_candle",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Trigger closed early enough in its setup candle",
+      "detail": "Not evaluated: no active setup closure",
+      "tags": "quality · 1h",
+      "advisory": false
+     },
+     {
+      "key": "cont_newer_protected_low",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Newer protected low since the entry (stop can trail)",
+      "detail": "Not evaluated: no active setup closure",
+      "tags": "advisory · 5m",
+      "advisory": true
+     },
+     {
+      "key": "cont_reward_at_least_2r",
+      "status": "na",
+      "mark": "N/A",
+      "label": "Structural level (previous bias candle's high) is at least 2R away",
+      "detail": "Not evaluated: no active setup closure",
+      "tags": "advisory · 5m",
+      "advisory": true
+     }
+    ],
+    "passed": 0,
+    "failed": 1,
+    "not_evaluated": 5,
+    "tally": "0 of 6 passed, 1 failed, 5 not evaluated"
+   },
+   {
+    "name": "continuation c4 · why continuations fail",
+    "title": "CONTINUATION C4 · WHY CONTINUATIONS FAIL",
+    "path": "continuation",
+    "active": false,
+    "collapsed": true,
+    "rows": [
+     {
       "key": "cont_trigger_clear_of_liquidity",
       "status": "na",
       "mark": "N/A",
@@ -297,39 +337,12 @@
       "detail": "Not evaluated: no active setup closure",
       "tags": "quality · 1D",
       "advisory": false
-     },
-     {
-      "key": "cont_entry_early_in_candle",
-      "status": "na",
-      "mark": "N/A",
-      "label": "Trigger closed early enough in its setup candle",
-      "detail": "Not evaluated: no active setup closure",
-      "tags": "quality · 1h",
-      "advisory": false
-     },
-     {
-      "key": "cont_newer_protected_low",
-      "status": "na",
-      "mark": "N/A",
-      "label": "Newer protected low since the entry (stop can trail)",
-      "detail": "Not evaluated: no active setup closure",
-      "tags": "advisory · 5m",
-      "advisory": true
-     },
-     {
-      "key": "cont_reward_at_least_2r",
-      "status": "na",
-      "mark": "N/A",
-      "label": "Structural level (previous bias candle's high) is at least 2R away",
-      "detail": "Not evaluated: no active setup closure",
-      "tags": "advisory · 5m",
-      "advisory": true
      }
     ],
     "passed": 0,
-    "failed": 1,
-    "not_evaluated": 9,
-    "tally": "0 of 10 passed, 1 failed, 9 not evaluated"
+    "failed": 0,
+    "not_evaluated": 4,
+    "tally": "0 of 4 passed, 4 not evaluated"
    },
    {
     "name": "reversal c1",
@@ -5505,6 +5518,94 @@
      },
      {
       "kind": "level",
+      "role": "protected",
+      "label": "Protected high",
+      "title": "Newer protected high 25654.75: a continuation closed through in a quick V at 2025-11-11 04:20",
+      "price": 25654.75,
+      "top": null,
+      "bottom": null,
+      "start": 104,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "protected",
+      "label": "Protected high",
+      "title": "Newer protected high 25647.75: a continuation closed through in a quick V at 2025-11-11 06:20",
+      "price": 25647.75,
+      "top": null,
+      "bottom": null,
+      "start": 129,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "protected",
+      "label": "Trail: protected high",
+      "title": "Newer protected high 25627.25: a continuation closed through in a quick V at 2025-11-11 08:25; the stop can trail here",
+      "price": 25627.25,
+      "top": null,
+      "bottom": null,
+      "start": 153,
+      "end": null
+     },
+     {
+      "kind": "zone",
+      "role": "waiting",
+      "label": "Range: broke out",
+      "title": "Broke out: closed below the range low 25677.00 at 2025-11-11 02:05, then a new continuation: a quick CISD at 2025-11-11 02:25\nProtected high 25680.00: clean expansion expected",
+      "price": null,
+      "top": 25705.0,
+      "bottom": 25677.0,
+      "start": 72,
+      "end": 80
+     },
+     {
+      "kind": "marker",
+      "role": "confirm",
+      "label": "Clean CISD",
+      "title": "Broke out: closed below the range low 25677.00 at 2025-11-11 02:05, then a new continuation: a quick CISD at 2025-11-11 02:25\nProtected high 25680.00: clean expansion expected",
+      "price": 25661.0,
+      "top": null,
+      "bottom": null,
+      "start": 84,
+      "end": null
+     },
+     {
+      "kind": "level",
+      "role": "protected",
+      "label": "High to trust",
+      "title": "Protected high 25680.00: clean expansion expected",
+      "price": 25680.0,
+      "top": null,
+      "bottom": null,
+      "start": 82,
+      "end": null
+     },
+     {
+      "kind": "zone",
+      "role": "waiting",
+      "label": "Range: broke out",
+      "title": "Broke out: closed below the range low 25608.50 at 2025-11-11 07:40, then a new continuation: a quick CISD at 2025-11-11 08:20\nProtected high 25627.25: clean expansion expected",
+      "price": null,
+      "top": 25639.75,
+      "bottom": 25608.5,
+      "start": 136,
+      "end": 147
+     },
+     {
+      "kind": "marker",
+      "role": "confirm",
+      "label": "Clean CISD",
+      "title": "Broke out: closed below the range low 25608.50 at 2025-11-11 07:40, then a new continuation: a quick CISD at 2025-11-11 08:20\nProtected high 25627.25: clean expansion expected",
+      "price": 25590.0,
+      "top": null,
+      "bottom": null,
+      "start": 155,
+      "end": null
+     },
+     {
+      "kind": "level",
       "role": "reference",
       "label": "PDH",
       "title": "Previous bias candle high",
@@ -5703,10 +5804,10 @@
  },
  "timing": {
   "bar_closed_at": null,
-  "detected_at": "2026-11-14T13:02:09.711000-05:00",
+  "detected_at": "2026-11-14T21:50:17.308000-05:00",
   "fetch_ms": 0,
-  "compute_ms": 964,
+  "compute_ms": 111,
   "lag_ms": null,
-  "load_ms": 2105
+  "load_ms": 1267
  }
 }

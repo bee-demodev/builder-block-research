@@ -162,6 +162,269 @@ def breakout_before(e: Bars, rng: EntryRange, before: int) -> int | None:
     return None
 
 
+TRAIL_LEVELS_SHOWN = 3  # newer protected swings drawn after the entry, newest kept
+
+
+@dataclass(frozen=True)
+class RangeOutcome:
+    """Where a possible consolidation stands against the ways out of it that "Why Your
+    Continuations Fail" gives (transcript @08:13-12:30; playbook
+    ``ttfm-consolidations-why-continuations-fail``):
+
+    - manipulation: the range low is swept, then a quick CISD (<= ``cisd_max_bars``)
+      closes back through: "now we have a low we can trust";
+    - breakout and a new continuation: a close above the range high, then a pullback into
+      a point of interest and a quick CISD: "we're not going to trade the breakout unless
+      we have a continuation";
+    - failure: the close above the high was a sweep of it and price trades across the
+      range, or the sweep of the low gets no quick turn.
+
+    ``state``: "open" (still inside), "swept" (low taken, no clean CISD yet), "manipulated"
+    (low taken, then a clean CISD), "broke_out" (no new continuation yet), "continued"
+    (breakout, then a clean continuation), "failed" (no clean way out: the idea is off).
+    """
+
+    state: str
+    exit_at: int | None  # bar that left the range (the sweep or the breakout)
+    cisd: CisdRead | None  # the read that has to close through (swept) or did (manipulated / continued)
+    trusted_low: float | None  # the low a clean way out leaves behind
+    lines: tuple[str, ...]  # the tooltip, one outcome per line
+
+
+CLEAN_WAYS = ("manipulated", "continued")
+
+
+def range_outcome(e: Bars, side: Side, rng: EntryRange, cfg: Any, what: str) -> RangeOutcome:
+    """How ``rng`` has resolved so far, and what still has to happen for a clean expansion."""
+    lo, hi, quick = e.p(rng.low), e.p(rng.high), cfg.cisd_max_bars
+    head = f"Possible consolidation: {what} took {rng.bars} {e.tf} bars to close through, not a quick V (<= {quick})"
+    start = rng.confirm + 1  # the slow close itself flagged the range; it is not a way out of it
+    swept = next((pos for pos in range(start, e.n) if e.low[pos] < rng.low), None)
+    broke = next((pos for pos in range(start, e.n) if e.close[pos] > rng.high), None)
+
+    if swept is None and broke is None:
+        return RangeOutcome(
+            "open", None, None, None,
+            (
+                head + ". Closes inside it are internal: ignore them. Ways out:",
+                f"1. Sweep of {lo}, then a CISD back through in <= {quick} bars: a {side.lo} to trust (clean)",
+                f"2. Close {side.above} {hi}, then a pullback to a POI and a quick CISD: a new continuation (clean)",
+                f"3. A close {side.above} {hi} that falls back across to {lo} was a sweep of the {side.hi}: no trade",
+            ),
+        )
+
+    if swept is not None and (broke is None or swept <= broke):
+        low_pos = swept + int(np.argmin(e.low[swept:]))
+        read = anchored_cisd(e, low_pos, cfg.doji_in_series)
+        took = f"Swept the range {side.lo} {lo} at {e.at(swept)}"
+        if read.confirm is not None and (read.bars_to_confirm or 0) <= quick:
+            return RangeOutcome(
+                "manipulated", swept, read, read.anchor_low,
+                (
+                    f"{took}, then a CISD in {read.bars_to_confirm} bar(s) at {e.at(read.confirm)}: manipulation",
+                    f"A {side.lo} to trust at {e.p(read.anchor_low)}: clean expansion expected",
+                ),
+            )
+        if read.confirm is not None:
+            return RangeOutcome(
+                "failed", swept, read, None,
+                (f"{took}, but the turn took {read.bars_to_confirm} bars: no {side.lo} to trust, still ranging",),
+            )
+        waited = e.n - 1 - low_pos
+        if waited > quick:
+            return RangeOutcome(
+                "failed", swept, read, None,
+                (f"{took} with no CISD back {side.above} {e.p(read.level)} in {waited} bars: the range {side.lo} failed",),
+            )
+        return RangeOutcome(
+            "swept", swept, read, None,
+            (
+                f"{took}: possible manipulation",
+                f"Clean only with a close {side.above} {e.p(read.level)} within {quick} bars of the {side.lo} "
+                f"{e.p(read.anchor_low)}",
+            ),
+        )
+
+    assert broke is not None
+    out = f"Broke out: closed {side.above} the range {side.hi} {hi} at {e.at(broke)}"
+    across = next((pos for pos in range(broke + 1, e.n) if e.low[pos] < rng.low), None)
+    later = find_continuation_triggers(
+        e, start=broke + 1, protected_low=rng.low, protected_pos=rng.first, order_block=None, cfg=cfg
+    )
+    clean = next((t for t in later if _swift(t, cfg) and (across is None or t.pos < across)), None)
+    if clean is not None:
+        assert clean.read is not None
+        return RangeOutcome(
+            "continued", broke, clean.read, clean.wick_stop,
+            (
+                f"{out}, then a new continuation: a quick CISD at {e.at(clean.pos)}",
+                f"Protected {side.lo} {e.p(clean.wick_stop)}: clean expansion expected",
+            ),
+        )
+    if across is not None:
+        return RangeOutcome(
+            "failed", broke, None, None,
+            (f"{out}, but price traded back across to {lo} at {e.at(across)}: it was a sweep of the {side.hi}",),
+        )
+    return RangeOutcome(
+        "broke_out", broke, None, None,
+        (
+            f"{out}: don't trade the breakout itself",
+            f"Clean only after a pullback to a POI and a CISD within {quick} bars (a new continuation)",
+        ),
+    )
+
+
+def _is_range_hint(item: MarkupItem) -> bool:
+    return item.kind == "level" and (
+        item.short in ("Sweep + quick CISD", "Break + new continuation") or item.short.endswith(" to trust")
+    )
+
+
+def drop_repeated_hints(items: list[MarkupItem]) -> list[MarkupItem]:
+    """Drop a range's edge or trusted-low line where another line of the same chart already
+    sits at that price (the stop swing, a trail level): the range's note still says it."""
+
+    def taken(at: int, hint: MarkupItem) -> bool:
+        return any(
+            j != at and other.kind == "level" and other.timeframe == hint.timeframe
+            and other.price is not None and hint.price is not None and abs(other.price - hint.price) < 1e-9
+            and not (_is_range_hint(other) and j > at)  # of two hints at one price, the first stays
+            for j, other in enumerate(items)
+        )  # fmt: skip
+
+    return [item for at, item in enumerate(items) if not (_is_range_hint(item) and taken(at, item))]
+
+
+def consolidation_marks(e: Bars, side: Side, rng: EntryRange, cfg: Any, what: str) -> list[MarkupItem]:
+    """A possible consolidation on the entry chart, with its ways out in the hover note.
+
+    The box runs until price leaves the range. While it is open, its two edges carry what
+    each way out needs; once price has left, the CISD that makes the way out clean is drawn,
+    or the level it still has to close through."""
+    found = range_outcome(e, side, rng, cfg, what)
+    top, bottom = side.zone(rng.high, rng.low)
+    tip = "\n".join(found.lines)
+    short = {"open": "Consolidation?", "manipulated": "Range: manipulated", "continued": "Range: broke out"}
+    items = [
+        MarkupItem(
+            "zone", tip, e.tf, top=top, bottom=bottom, start=e.times[rng.first],
+            end=e.times[found.exit_at] if found.exit_at is not None else None, role="waiting",
+            short=short.get(found.state, "Consolidation"),
+        )
+    ]
+    if found.state == "open":
+        items.append(
+            MarkupItem(
+                "level", found.lines[1][3:], e.tf, price=side.px(rng.low), start=e.times[rng.first], role="waiting",
+                short="Sweep + quick CISD",
+            )
+        )
+        items.append(
+            MarkupItem(
+                "level", found.lines[2][3:], e.tf, price=side.px(rng.high), start=e.times[rng.first], role="waiting",
+                short="Break + new continuation",
+            )
+        )
+    elif found.state == "swept" and found.cisd is not None:
+        read = found.cisd
+        items.append(
+            MarkupItem(
+                "level", found.lines[1], e.tf, price=side.px(read.level),
+                start=e.times[read.series[0] if read.series else read.anchor], role="waiting",
+                short=f"Close {side.above} = clean CISD",
+            )
+        )
+    elif found.state in CLEAN_WAYS and found.cisd is not None and found.cisd.confirm is not None:
+        confirm = found.cisd.confirm
+        items.append(
+            MarkupItem(
+                "marker", tip, e.tf, price=side.px(float(e.close[confirm])), start=e.times[confirm], role="confirm",
+                short="Clean CISD",
+            )
+        )
+        assert found.trusted_low is not None
+        items.append(
+            MarkupItem(
+                "level", found.lines[-1], e.tf, price=side.px(found.trusted_low), start=e.times[found.cisd.anchor],
+                role="protected", short=f"{side.lo.capitalize()} to trust",
+            )
+        )
+    return items
+
+
+@dataclass(frozen=True)
+class AfterEntry:
+    """Continuations on the entry timeframe since the trigger that still hold, each with
+    a protected low above the stop. ``trail`` turned in a quick V: their lows are the
+    stepping stones a stop can trail to. ``slow`` took longer than ``cisd_max_bars`` to
+    close through: possible consolidations, so their lows are not treated as protected."""
+
+    trail: tuple[Trigger, ...]  # oldest first
+    slow: tuple[Trigger, ...]
+    inside: tuple[Trigger, ...] = ()  # quick, but inside a slow one's range before it broke out: internal moves
+
+
+def after_entry(e: Bars, trigger: Trigger, protected_pos: int, cfg: Any) -> AfterEntry:
+    """What formed after ``trigger``. ``protected_pos`` is the entry-frame position of its stop swing."""
+    later = find_continuation_triggers(
+        e, start=trigger.pos + 1, protected_low=trigger.wick_stop, protected_pos=protected_pos, order_block=None, cfg=cfg
+    )
+    trail: list[Trigger] = []
+    slow: list[Trigger] = []
+    inside: list[Trigger] = []
+
+    def internal(item: Trigger) -> bool:
+        """Quick, but formed inside a slow one's range before it broke out. One whose low is
+        below the range low swept it: that is the manipulation, a way out, not internal."""
+        for s in slow:
+            rng = entry_range(e, s.read, cfg.cisd_max_bars)
+            if rng is not None and item.wick_stop >= rng.low and _internal(e, rng, item):
+                return True
+        return False
+
+    for item in later:
+        if item.wick_stop <= trigger.wick_stop:
+            continue
+        if not _swift(item, cfg):
+            slow.append(item)  # kept once its low is swept too: the sweep is how its range resolves
+        elif item.stopped_at is not None:
+            continue
+        elif internal(item):
+            inside.append(item)
+        else:
+            trail.append(item)
+    return AfterEntry(tuple(trail), tuple(slow), tuple(inside))
+
+
+def after_entry_markup(e: Bars, side: Side, found: AfterEntry, cfg: Any) -> list[MarkupItem]:
+    """The newer protected swings since the entry (the newest ``TRAIL_LEVELS_SHOWN``) and
+    the slow continuations as possible consolidations."""
+    items: list[MarkupItem] = []
+    shown = found.trail[-TRAIL_LEVELS_SHOWN:]
+    for number, item in enumerate(shown, start=1):
+        newest = number == len(shown)
+        made = when(e.closes_at[item.pos])
+        assert item.read is not None
+        items.append(
+            MarkupItem(
+                "level",
+                f"Newer protected {side.lo} {e.p(item.wick_stop)}: a continuation closed through in a quick V at {made}"
+                + ("; the stop can trail here" if newest else ""),
+                e.tf,
+                price=side.px(item.wick_stop),
+                start=e.times[item.read.anchor],
+                role="protected",
+                short=f"Trail: protected {side.lo}" if newest else f"Protected {side.lo}",
+            )
+        )
+    for item in found.slow:
+        rng = entry_range(e, item.read, cfg.cisd_max_bars)
+        if rng is not None:
+            items.extend(consolidation_marks(e, side, rng, cfg, f"the continuation at {e.at(item.pos)}"))
+    return items
+
+
 def ran_liquidity(e: Bars, pos: int, e_lo: int) -> Any:
     """The first entry-timeframe swing high formed since ``e_lo`` that bar ``pos`` was the
     first to take, or ``None`` (rules.md 6, ``cont_trigger_clear_of_liquidity``)."""
@@ -546,7 +809,7 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
 
     if trigger is not None:
         _v_shape(cl, cfg, e, side, trigger)
-        _consolidation(cl, e, side, rng, trigger)
+        _consolidation(cl, cfg, e, side, rng, trigger)
 
     if trigger is None:
         cl.fill("no entry trigger yet")
@@ -607,7 +870,9 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
         cl.set("cont_reward_at_least_2r", plan.passed, plan.text + t2_text)
         _objective_at_trigger(cl, ctx, view, side, trigger, t1)
         _early_in_candle(cl, cfg, s, e, trigger)
-        _newer_protected_low(cl, cfg, e, side, trigger, plan)
+        found = after_entry(e, trigger, trigger.read.anchor if trigger.read is not None else trigger.pos, cfg)
+        out.seen["after_entry"] = found
+        _newer_protected_low(cl, cfg, e, side, found, trigger, plan)
 
     _markup(out, view, bias, level, eq, setup, read)
     _invalidation(out, view, bias, level, t1)
@@ -651,7 +916,7 @@ def _v_shape(cl: Checklist, cfg: Any, e: Bars, side: Side, trigger: Trigger) -> 
         )
 
 
-def _consolidation(cl: Checklist, e: Bars, side: Side, rng: EntryRange | None, trigger: Trigger) -> None:
+def _consolidation(cl: Checklist, cfg: Any, e: Bars, side: Side, rng: EntryRange | None, trigger: Trigger) -> None:
     """``cont_not_inside_consolidation`` (rules.md 6, stage c4; "Why Your Continuations Fail")."""
     if rng is None:
         cl.set(
@@ -680,8 +945,16 @@ def _consolidation(cl: Checklist, e: Bars, side: Side, rng: EntryRange | None, t
         False,
         f"{box}. This trigger is internal to the range ({why}). Wait for a sweep of the range {side.lo} "
         f"{e.p(rng.low)} and a quick V back through, or a close {side.above} {e.p(rng.high)} followed by a new "
-        f"continuation",
+        f"continuation. Now: {_range_now(e, side, rng, cfg)}",
     )
+
+
+def _range_now(e: Bars, side: Side, rng: EntryRange, cfg: Any) -> str:
+    """Where the range stands, in one sentence for the checklist."""
+    found = range_outcome(e, side, rng, cfg, "the entry CISD")
+    if found.state == "open":
+        return "price is still inside the range"
+    return "; ".join(found.lines)
 
 
 def _objective_at_trigger(cl: Checklist, ctx: Context, view: View, side: Side, trigger: Trigger, t1: float) -> None:
@@ -731,28 +1004,33 @@ def _early_in_candle(cl: Checklist, cfg: Any, s: Bars, e: Bars, trigger: Trigger
     cl.set("cont_entry_early_in_candle", ok, detail)
 
 
-def _newer_protected_low(cl: Checklist, cfg: Any, e: Bars, side: Side, trigger: Trigger, plan: TradePlan) -> None:
+def _newer_protected_low(cl: Checklist, cfg: Any, e: Bars, side: Side, found: AfterEntry, trigger: Trigger, plan: TradePlan) -> None:
     """``cont_newer_protected_low`` (advisory): continuations after the entry that each leave
-    a higher protected low, the stepping stones a stop can trail to."""
-    anchor = trigger.read.anchor if trigger.read is not None else trigger.pos
-    later = find_continuation_triggers(
-        e, start=trigger.pos + 1, protected_low=trigger.wick_stop, protected_pos=anchor, order_block=None, cfg=cfg
-    )
-    live = [item for item in later if item.stopped_at is None and item.wick_stop > trigger.wick_stop]
-    if not live:
+    a higher protected low, the stepping stones a stop can trail to. A slow one is a
+    possible consolidation ("Why Your Continuations Fail"), so its low is not one of them."""
+    slow = ""
+    if found.slow:
+        times = ", ".join(e.at(item.pos) for item in found.slow)
+        slow = (
+            f" {len(found.slow)} slow continuation(s) since the entry ({times}) took more than {cfg.cisd_max_bars} bars "
+            f"to close through: possible consolidation, so their {side.lo}s are not used"
+        )
+        if found.inside:
+            slow += f"; {len(found.inside)} quick one(s) formed inside that range before it broke out (internal moves)"
+    if not found.trail:
         cl.set(
             "cont_newer_protected_low",
             None,
-            f"no newer protected {side.lo} since the entry; the stop stays on {e.p(trigger.wick_stop)}",
+            f"no newer protected {side.lo} since the entry; the stop stays on {e.p(trigger.wick_stop)}.{slow}".rstrip("."),
         )
         return
-    newest = live[-1]
+    newest = found.trail[-1]
     locked = (newest.wick_stop - cfg.stop_buffer - plan.entry) / plan.risk if plan.risk > 0 else float("nan")
     cl.set(
         "cont_newer_protected_low",
         True,
-        f"{len(live)} newer protected {side.lo}(s) since the entry; the newest is {e.p(newest.wick_stop)} "
-        f"(continuation at {when(e.closes_at[newest.pos])}). The stop can trail there: {locked:+.2f}R",
+        f"{len(found.trail)} newer protected {side.lo}(s) since the entry; the newest is {e.p(newest.wick_stop)} "
+        f"(continuation at {when(e.closes_at[newest.pos])}). The stop can trail there: {locked:+.2f}R.{slow}".rstrip("."),
     )
 
 
@@ -873,6 +1151,9 @@ def _markup(
                 role="confirm", short="CISD",
             )
         )
+        rng = out.seen.get("entry_range")
+        if rng is not None:
+            out.markup.extend(consolidation_marks(e, side, rng, view.ctx.cfg, "the entry CISD"))
     elif read is not None and read.lower_low is None:
         # not confirmed yet: the price an entry-timeframe close has to get through
         out.markup.append(
@@ -897,6 +1178,10 @@ def _markup(
                 role="entry", short="Trigger",
             )
         )
+        found = out.seen.get("after_entry")
+        if found is not None:
+            out.markup.extend(after_entry_markup(e, side, found, view.ctx.cfg))
+    out.markup[:] = drop_repeated_hints(out.markup)
 
 
 def _invalidation(out: PathOutcome, view: View, bias: BiasRead, level: float, t1: float) -> None:

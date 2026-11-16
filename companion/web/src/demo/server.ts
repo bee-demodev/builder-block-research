@@ -2,9 +2,8 @@
 // text through a socket-shaped object, so frames take the same path as live ones
 // (validation, reducer, render). All content is SAMPLE DATA from ./fixtures.
 import type { SocketLike } from '../connection';
-import type { Candle, ClientFrame, ServerFrame, ServerState, SnapshotFrame, Status, VerdictView } from '../wire';
+import type { Candle, ChartView, ClientFrame, ServerFrame, ServerState, SnapshotFrame, Status, VerdictView } from '../wire';
 import {
-  LATEST_WHEN,
   chartProblemView,
   demoOptions,
   demoState,
@@ -37,6 +36,8 @@ class DemoServer {
   private connects = 0;
 
   private real: Promise<SnapshotFrame> | null = null;
+  /** The scenario's own moment: the latest bar. Earlier moments (a step back, bar replay) trim the candles to them. */
+  private readonly latestWhen: string;
 
   constructor(private readonly scenario: DemoScenario) {
     if (scenario === 'real' || scenario === 'real-triggered' || scenario === 'real-planned') {
@@ -47,6 +48,7 @@ class DemoServer {
     this.step = (named as readonly string[]).includes(scenario) ? (scenario as Step) : 'watch';
     if (scenario === 'look-for') this.state = { ...this.state, when: LOOK_WHEN };
     if (scenario === 'look-for-reversal') this.state = { ...this.state, when: LOOK_REVERSAL_WHEN, stack: LOOK_REVERSAL_STACK };
+    this.latestWhen = this.state.when;
   }
 
   attach(socket: FakeSocket): void {
@@ -68,13 +70,16 @@ class DemoServer {
 
   receive(frame: ClientFrame): void {
     if (this.real) {
-      // The saved real snapshot is fixed: Check (or any step) shows it again.
-      if (frame.type === 'pause') this.setState({ auto_refresh: !frame.paused });
+      // The saved real snapshot is fixed: Check (or any step) shows it again, cut to the
+      // moment asked for (a step back, bar replay); its verdict and plan stay as saved.
       // A new side re-checks by itself, as the core does; the saved verdict cannot change.
       if (frame.type === 'set' && frame.side !== undefined) {
         this.setState({ side: frame.side });
         void this.publishReal();
       }
+      if (frame.type === 'set' && frame.when) this.moveTo(frame.when);
+      if (frame.type === 'step' && !this.stepBy(frame.direction)) return;
+      if (frame.type === 'latest') this.setState({ when: this.latestWhen, follow: true });
       if (frame.type === 'check' || frame.type === 'step' || frame.type === 'latest') void this.publishReal();
       return;
     }
@@ -82,7 +87,8 @@ class DemoServer {
       case 'check':
         this.setState({ busy: true });
         setTimeout(() => {
-          if (this.scenario === 'tour') this.step = TOUR[(TOUR.indexOf(this.step) + 1) % TOUR.length]!;
+          // the tour moves on to its next state, except while looking back (bar replay reads the same one)
+          if (this.scenario === 'tour' && this.state.follow) this.step = TOUR[(TOUR.indexOf(this.step) + 1) % TOUR.length]!;
           this.setState({ busy: false });
           this.publish();
         }, 700);
@@ -90,7 +96,9 @@ class DemoServer {
       case 'set': {
         const { type: _type, ...patch } = frame;
         const selectionChanged = patch.symbol !== undefined || patch.stack !== undefined || patch.style !== undefined;
-        this.setState(patch.when ? { ...patch, follow: patch.when.slice(0, 16) === LATEST_WHEN.slice(0, 16) } : patch);
+        const { when, ...rest } = patch;
+        this.setState(rest);
+        if (when) this.moveTo(when);
         if (patch.side !== undefined && !selectionChanged) {
           // As in the core: a new side reads the same moment again at once, no Check needed.
           this.publish();
@@ -98,28 +106,17 @@ class DemoServer {
           // A new selection has no verdict until the trader presses Check.
           this.view = null;
           this.send(snapshot(++this.seq, null, { status: liveStatus }));
-        } else if (patch.when) {
+        } else if (when) {
           this.publish();
         }
         return;
       }
-      case 'step': {
-        const minutes = toMinutes(this.state.when) + frame.direction * 5;
-        const latest = toMinutes(LATEST_WHEN);
-        const when = fromMinutes(Math.min(minutes, latest));
-        this.setState({ when, follow: minutes >= latest });
-        this.publish();
+      case 'step':
+        if (this.stepBy(frame.direction)) this.publish();
         return;
-      }
       case 'latest':
-        this.setState({ when: LATEST_WHEN, follow: true });
+        this.setState({ when: this.latestWhen, follow: true });
         this.publish();
-        return;
-      case 'pause':
-        this.setState({ auto_refresh: !frame.paused });
-        this.send({ type: 'status', status: this.currentStatus() });
-        if (frame.paused) this.stopTicks();
-        else this.startTicks();
         return;
       case 'use_history':
         this.setState({ data: 'Saved history', live: false });
@@ -144,7 +141,33 @@ class DemoServer {
 
   private async publishReal(): Promise<void> {
     const frame = await this.real!;
-    this.send({ ...frame, seq: ++this.seq });
+    const view = frame.view && !this.state.follow ? cutView(frame.view, wallSeconds(this.state.when)) : frame.view;
+    this.send({ ...frame, view, seq: ++this.seq });
+  }
+
+  /** `set when`, as the core reads it: New York wall time; at or past the latest bar follows it again. */
+  private moveTo(text: string): void {
+    const latest = wallSeconds(this.latestWhen);
+    const t = Math.min(wallSeconds(text), latest);
+    this.setState({ when: fromWallSeconds(t, this.latestWhen), follow: t >= latest });
+  }
+
+  /** One 5m bar either way; false (after an error reply, as the core sends) past either end of the sample. */
+  private stepBy(direction: -1 | 1): boolean {
+    const latest = wallSeconds(this.latestWhen);
+    const now = wallSeconds(this.state.when);
+    if (direction > 0 && now >= latest) {
+      const message = this.state.live ? 'That is the last closed bar. The next one appears by itself when it closes.' : 'That is the end of the sample data.';
+      this.send({ type: 'error', message });
+      return false;
+    }
+    const t = Math.min(now + direction * 300, latest);
+    if (t < latest - SAMPLE_REACH) {
+      this.send({ type: 'error', message: 'That is the start of the sample data.' });
+      return false;
+    }
+    this.setState({ when: fromWallSeconds(t, this.latestWhen), follow: t >= latest });
+    return true;
   }
 
   private greet(): void {
@@ -196,15 +219,15 @@ class DemoServer {
               ? lookForReversalView()
               : watchView();
     this.view = sideView(base, this.state.side);
+    if (!this.state.follow) this.view = cutView(this.view, wallSeconds(this.state.when));
     if (this.state.data === 'Saved history') {
       this.view = { ...this.view, source_note: 'Sample data, demo mode. Pretending to read saved history.' };
     }
     this.send(snapshot(++this.seq, this.view, { status: this.currentStatus() }));
-    if (this.state.auto_refresh) this.startTicks();
+    this.startTicks();
   }
 
   private currentStatus(): Status {
-    if (!this.state.auto_refresh) return { state: 'paused', text: 'Paused · press Space to resume', stale: false };
     if (this.state.data === 'Saved history') return { state: 'history', text: 'Saved history · sample data', stale: false };
     if (!this.state.follow) return { state: 'past', text: `Replaying ${this.state.when.slice(11, 16)} · later bars hidden`, stale: false };
     return liveStatus;
@@ -247,15 +270,37 @@ class DemoServer {
   }
 }
 
-function toMinutes(iso: string): number {
-  return Date.parse(iso) / 60000;
+/** How far back the sample lets you step or replay from its latest bar: six hours of 5m bars. */
+const SAMPLE_REACH = 6 * 3600;
+
+/** New York wall time ("YYYY-MM-DD HH:MM", any offset ignored) as epoch seconds read as UTC, as a candle's `t`. */
+export function wallSeconds(when: string): number {
+  return Date.parse(`${when.slice(0, 10)}T${when.slice(11, 16)}:00Z`) / 1000;
 }
 
-function fromMinutes(minutes: number): string {
-  // Sample timestamps stay on 12 Nov 2026, which is EST (-05:00).
-  const d = new Date(minutes * 60000 - 5 * 3600 * 1000);
-  const pad = (n: number) => String(n).padStart(2, '0');
-  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}T${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:00-05:00`;
+/** Back to the sample's ISO form, with the offset of `like` (every sample stays inside one offset). */
+function fromWallSeconds(t: number, like: string): string {
+  return `${new Date(t * 1000).toISOString().slice(0, 16)}:00${like.slice(19) || '-05:00'}`;
+}
+
+/**
+ * The view as of wall time `t`: only candles that opened before it, the last of a higher
+ * timeframe left forming (sample data: its prices are the whole candle's). Marks and the
+ * plan that begin later are dropped; ones that ran on past it run to the right edge.
+ */
+export function cutView(view: VerdictView, t: number): VerdictView {
+  return { ...view, charts: view.charts.map((chart) => cutChart(chart, t)) };
+}
+
+function cutChart(chart: ChartView, t: number): ChartView {
+  const n = chart.candles.filter((c) => c.t < t).length;
+  if (n === chart.candles.length) return chart;
+  const candles = chart.candles.slice(0, n).map((c, i) => (i === n - 1 && c.t + chart.minutes * 60 > t ? { ...c, forming: true } : c));
+  const marks = chart.marks
+    .filter((m) => m.start === null || m.start < n)
+    .map((m) => (m.end !== null && m.end >= n ? { ...m, end: null } : m));
+  const tool = chart.tool && chart.tool.start < n ? chart.tool : null;
+  return { ...chart, candles, marks, tool };
 }
 
 class FakeSocket implements SocketLike {

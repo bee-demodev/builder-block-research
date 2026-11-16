@@ -2,7 +2,8 @@
 
 The screen for the Trading Companion. The Python core pushes decisions over a local
 WebSocket (wire contract v1, see `src/wire.ts`); this app renders them. It calls no
-external service at runtime: fonts are bundled, and there are no CDN links.
+external service at runtime: it uses TradingView's own system font stack (Trebuchet MS on
+Windows), nothing is downloaded, and there are no CDN links.
 
 ## Scripts
 
@@ -37,8 +38,25 @@ live socket. Every number in the hand-written fixtures is invented (`?demo=real`
   later): copies of `tests/companion/fixtures/snapshot_v1_triggered.json` and
   `snapshot_v1_planned.json`, loaded only when opened.
 
-Keys: left and right arrows step one bar, space pauses, A / L / S set the side (Auto, Long,
-Short), D opens Details, Ctrl+= / Ctrl+- / Ctrl+0 change the text size.
+Keys: left and right arrows step one bar, Space plays or pauses a bar replay, Esc leaves its
+Select bar, A / L / S set the side (Auto, Long, Short), D opens Details, Ctrl+= / Ctrl+- /
+Ctrl+0 change the text size.
+
+In demo mode a step or a replay cuts the sample candles to that moment (`cutView` in
+`src/demo/server.ts`); the verdict and plan stay the sample's own, so only the core shows a
+replay's verdict changing bar by bar. The sample reaches six hours back from its latest bar.
+
+## Bar replay
+
+Replay in the top bar works like TradingView's bar replay. Select bar, then click a candle on
+either chart: the replay starts after it (the client sends `set when` with that candle's close,
+then `check`). Play sends `step +1` once per bar at the chosen speed (0.1x to 10x, 1x being one
+bar a second), and never before the last step's snapshot is in, so every bar is a real check of
+that moment and no later bar reaches the screen early. The fastest a replay goes is one check per
+bar. An error reply pauses it (the end of the data, the start of what TradingView has loaded), and
+so does reaching the live bar. Back to latest (or Latest, or Replay again) ends it; a new symbol,
+stack, style or data source ends it too. Live, the start must lie inside the bars TradingView has
+loaded. The speed is kept per device (`companion.replay.speed`).
 
 ## Sections: TTrades and TCM Expansions
 
@@ -80,8 +98,8 @@ The Display button in the footer, a right-click on a chart, or the gear in a cha
 and never sent to the core: text size (Normal, Large, Larger), direction colours (Grey
 candles, Green / red, Blue / orange, Monochrome; `html[data-scheme]`, tokens in
 `src/styles/tokens.css`) and the chart overlays (level names, zones, marker labels, risk /
-reward box). Entry, stop and target lines always show. `src/styles/contrast.test.ts` holds
-every scheme to WCAG AA in both themes.
+reward box, key levels, look for). Entry, stop and target lines always show.
+`src/styles/contrast.test.ts` holds every scheme to WCAG AA in both themes.
 
 ## Layout of the code
 

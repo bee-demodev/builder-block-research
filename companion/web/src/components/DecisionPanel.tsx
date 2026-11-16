@@ -15,7 +15,7 @@ import {
 } from '@phosphor-icons/react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { chosenOption, lookDecimals, lookLine } from '../chart/look';
-import { checkpointText, planWords, sections, setSide, sideChoices, suggestionText, waitingText } from '../decision';
+import { checkpointText, planWords, sections, setSide, sideChoices, suggestionText, waitingText, type OddsWords } from '../decision';
 import { formatPrice, pathLine, plainText, sentenceCase, wallClock } from '../format';
 import { isStale, type Model } from '../store';
 import { checkTotals, decisionTone, directionTone, isStopLevel, readTone } from '../tones';
@@ -445,6 +445,65 @@ function EvidenceRow({ evidence }: { evidence: NonNullable<ReturnType<typeof pla
       </p>
       <p className="evidence-line">{evidence.line}</p>
       {evidence.exits && <p className="evidence-exits">{evidence.exits}</p>}
+      {evidence.odds && <OddsBoard odds={evidence.odds} />}
+    </div>
+  );
+}
+
+/**
+ * How often trades like this one reached 2R before the stop, against the rate needed to
+ * break even after costs, and how long they took. The line is always shown; the board
+ * opens on demand. Each row stands on its own: this trigger's row is marked.
+ */
+function OddsBoard({ odds }: { odds: OddsWords }) {
+  return (
+    <div className="odds">
+      <p className="odds-line mono">{odds.line}</p>
+      <details className="odds-board">
+        <summary>Odds board</summary>
+        <table className="odds-table">
+          <caption className="sr-only">Backtest win rate to 2R before the stop, the rate needed to break even after costs, and the median time to the target and to the stop</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" title="Reached 2R before the stop">Win</th>
+              <th scope="col" title="Win rate needed to break even at 2R after costs">Need</th>
+              <th scope="col" title="Reached 1R before the stop">1R</th>
+              <th scope="col" title="Median time to the target">Target</th>
+              <th scope="col" title="Median time to the stop">Stop</th>
+              <th scope="col" title="Taken trades in the backtest">Trades</th>
+            </tr>
+          </thead>
+          {odds.groups.map((g) => (
+            <tbody key={g.title}>
+              <tr className="odds-group">
+                <th scope="colgroup" colSpan={7}>
+                  {g.title}
+                </th>
+              </tr>
+              {g.rows.map((r) => (
+                <tr key={r.label} className={r.current ? 'is-current' : undefined} aria-current={r.current ? 'true' : undefined}>
+                  <th scope="row">{r.label}</th>
+                  {r.note ? (
+                    <td className="odds-note" colSpan={5}>
+                      {r.note}
+                    </td>
+                  ) : (
+                    <>
+                      <td className={`mono${r.pays ? ' tone-reward' : ''}`}>{r.win}</td>
+                      <td className="mono">{r.breakeven}</td>
+                      <td className="mono">{r.win1r}</td>
+                      <td className="mono">{r.toTarget}</td>
+                      <td className="mono">{r.toStop}</td>
+                    </>
+                  )}
+                  <td className="mono">{r.n}</td>
+                </tr>
+              ))}
+            </tbody>
+          ))}
+        </table>
+      </details>
     </div>
   );
 }

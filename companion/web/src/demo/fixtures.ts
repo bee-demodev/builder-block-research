@@ -339,6 +339,29 @@ const DEMO_EVIDENCE: Plan['evidence'] = {
   line: 'This stack: −0.08R a trade over 2,262 taken trades (2021, 2024-26), up in 0 of 4 years tested.',
   exits: 'Exits here: 2R −0.08R · 3R −0.11R · hold to the 1D close −0.15R a trade.',
   source: 'results/phase_b (demo copy)',
+  odds: {
+    line: "This setup wins 33% to 2R (breakeven 34%), target ~13 h, stop ~6 h, 1,113 trades",
+    stacks: [
+      { label: "1D / 1h / 5m", n: 2262, win: 32, breakeven: 34, win_1r: 48, to_target: "4.6 h", to_stop: "2.1 h", note: "", current: true },
+      { label: "1D / 4h / 15m", n: 1008, win: 33, breakeven: 34, win_1r: 51, to_target: "20.9 h", to_stop: "5.7 h", note: "", current: false },
+      { label: "1W / 4h / 15m", n: 361, win: 31, breakeven: 34, win_1r: 48, to_target: "20.8 h", to_stop: "11 h", note: "", current: false },
+      { label: "1W / 1D / 1h", n: 119, win: 13, breakeven: 33, win_1r: 36, to_target: "5.4 h", to_stop: "44.4 h", note: "Many still open after 10 days", current: false },
+    ],
+    setups: [
+      { label: "Continuation, CISD", n: 666, win: 33, breakeven: 34, win_1r: 49, to_target: "3 h", to_stop: "1.7 h", note: "", current: false },
+      { label: "Continuation, order block", n: 483, win: 30, breakeven: 36, win_1r: 44, to_target: "35 min", to_stop: "15 min", note: "", current: false },
+      { label: "Reversal, CISD", n: 1113, win: 33, breakeven: 34, win_1r: 49, to_target: "13 h", to_stop: "6 h", note: "", current: true },
+    ],
+    sessions: [
+      { label: "Asia", n: 1134, win: 31, breakeven: 34, win_1r: 48, to_target: "5.5 h", to_stop: "2.9 h", note: "", current: false },
+      { label: "London", n: 523, win: 33, breakeven: 34, win_1r: 50, to_target: "4.2 h", to_stop: "2.2 h", note: "", current: false },
+      { label: "Pre-NY", n: 629, win: 34, breakeven: 34, win_1r: 49, to_target: "4 h", to_stop: "2.5 h", note: "", current: false },
+      { label: "NY AM", n: 733, win: 33, breakeven: 34, win_1r: 50, to_target: "6 h", to_stop: "1.3 h", note: "", current: true },
+      { label: "NY lunch", n: 515, win: 30, breakeven: 34, win_1r: 45, to_target: "2 d", to_stop: "21.6 h", note: "", current: false },
+      { label: "NY PM", n: 202, win: 26, breakeven: 34, win_1r: 43, to_target: "2.8 d", to_stop: "23.3 h", note: "", current: false },
+      { label: "After hours", n: 14, win: 29, breakeven: 35, win_1r: 50, to_target: "25 min", to_stop: "3.3 h", note: "Too few trades to say (14)", current: false },
+    ],
+  },
 };
 
 export const step = (number: number, status: Step['status'], timeframe: string, label: string, detail: string, price: number | null = null, level_label = ''): Step => ({

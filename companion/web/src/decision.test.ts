@@ -1,10 +1,10 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { Connection, type SocketLike } from './connection';
-import { checkpointText, focusedStep, formatR, nextCheckpoint, planWords, sections, setSide, sideChoices, stepPrice, suggestionText, waitingText } from './decision';
+import { checkpointText, focusedStep, formatR, nextCheckpoint, oddsWords, planWords, sections, setSide, sideChoices, stepPrice, suggestionText, waitingText } from './decision';
 import { longView, watchView } from './demo/fixtures';
 import { parseRealSnapshot } from './demo/real';
-import type { Options } from './wire';
+import type { Odds, OddsRow, Options } from './wire';
 
 const real = (name: string) => parseRealSnapshot(readFileSync(new URL(`./demo/${name}.json`, import.meta.url), 'utf8')).view!;
 const planned = real('real-planned');
@@ -97,11 +97,32 @@ describe('the plan block', () => {
   it('passes the dollar risk through and grades the setup while the trade is open', () => {
     const plan = longView().plan!;
     expect(planWords(plan).size).toBe('1 micro risks $141 · 1 mini $1,400');
-    const best = { ...plan, evidence: { grade: 'best_measured' as const, label: 'Best-measured setup', line: '+0.07R a trade', exits: '', source: 's' } };
-    expect(planWords(best).evidence).toEqual({ label: 'Best-measured setup', line: '+0.07R a trade', exits: '', source: 's', tone: 'reward' });
+    const best = { ...plan, evidence: { grade: 'best_measured' as const, label: 'Best-measured setup', line: '+0.07R a trade', exits: '', source: 's', odds: null } };
+    expect(planWords(best).evidence).toEqual({ label: 'Best-measured setup', line: '+0.07R a trade', exits: '', source: 's', tone: 'reward', odds: null });
     const small = { ...best, evidence: { ...best.evidence, grade: 'small_stop' as const, label: 'Small stop' } };
     expect(planWords(small).evidence?.tone).toBe('watch');
     expect(planWords({ ...best, outcome: 'target_reached' as const }).evidence).toBeNull();
+  });
+
+  it('words the odds board: win against break-even, rows without an honest rate blanked, empty groups left out', () => {
+    const row = (label: string, win: number, breakeven: number, extra: Partial<OddsRow> = {}): OddsRow => ({
+      label, n: 1200, win, breakeven, win_1r: 49, to_target: '3 h', to_stop: '1.7 h', note: '', current: false, ...extra,
+    });
+    const odds: Odds = {
+      line: 'This setup wins 36% to 2R (breakeven 34%), target ~3 h, stop ~1.7 h, 1,200 trades',
+      stacks: [row('1D / 1h / 5m', 32, 34, { current: true }), row('1W / 1D / 1h', 13, 33, { note: 'Many still open after 10 days' })],
+      setups: [row('Continuation, CISD', 36, 34, { current: true }), row('Reversal, CISD', 34, 34)],
+      sessions: [],
+    };
+    const w = oddsWords(odds);
+    expect(w.line).toBe(odds.line);
+    expect(w.groups.map((g) => g.title)).toEqual(['Stacks', 'Setups on this stack']);
+    const [stacks, setups] = w.groups;
+    expect(stacks!.rows[0]).toEqual({ label: '1D / 1h / 5m', win: '32%', breakeven: '34%', win1r: '49%', pays: false, toTarget: '3 h', toStop: '1.7 h', n: '1,200', note: '', current: true });
+    expect(stacks!.rows[1]).toMatchObject({ win: '', win1r: '', pays: false, note: 'Many still open after 10 days' });
+    expect(setups!.rows.map((r) => r.pays)).toEqual([true, false]); // 36 over 34 pays; a tie does not
+    const plan = longView().plan!;
+    expect(planWords(plan).evidence?.odds?.groups[0]?.rows.some((r) => r.current)).toBe(true); // the demo carries a board
   });
 
   it('words a planned plan without a last close', () => {

@@ -12,6 +12,8 @@ from companion.app_model import (
     DATA_LABELS,
     DATA_LIVE,
     LATE_SECONDS,
+    QUICK_RETRIES,
+    QUICK_RETRY_SECONDS,
     RETRY_SECONDS,
     CheckOutcome,
     CompanionController,
@@ -242,6 +244,33 @@ def test_a_missing_connection_says_what_to_do_offers_history_and_retries_quietly
     recovered = check(controller)
     assert recovered.ok and controller.live_status(recovered).state in ("live", "stale")
     assert controller.due is not None
+
+
+def test_a_chart_tab_still_opening_is_read_again_quickly_until_data_comes_in(minutes: pd.DataFrame, tmp_path: Path) -> None:
+    # the app has just started TradingView: the port answers before its chart tab exists
+    controller, tv = live_controller(minutes, tmp_path)
+    tv.error = TradingViewError("not_running")
+    check(controller)
+    tv.error = TradingViewError("no_chart_tab")
+    waits = []
+    for _ in range(QUICK_RETRIES):
+        check(controller)
+        waits.append((controller.due - controller.now()).total_seconds())
+        tv.advance(seconds=waits[-1])
+        assert controller.should_refresh()
+    assert set(waits) == {QUICK_RETRY_SECONDS} and QUICK_RETRY_SECONDS < RETRY_SECONDS[0]
+
+    tv.error = None  # the chart tab is open: the next automatic read brings the data without a click
+    assert check(controller).ok
+
+
+def test_a_chart_tab_that_never_opens_backs_off_like_any_missing_connection(minutes: pd.DataFrame, tmp_path: Path) -> None:
+    controller, tv = live_controller(minutes, tmp_path)
+    tv.error = TradingViewError("no_chart_tab")
+    for _ in range(QUICK_RETRIES):
+        check(controller)
+    check(controller)
+    assert (controller.due - controller.now()).total_seconds() == RETRY_SECONDS[-1]
 
 
 def test_falling_back_to_saved_history(minutes: pd.DataFrame, tmp_path: Path) -> None:

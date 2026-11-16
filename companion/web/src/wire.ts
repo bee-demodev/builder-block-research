@@ -190,6 +190,36 @@ export interface Evidence {
   exits: string;
   /** Where the numbers come from. */
   source: string;
+  /** The odds board for this trigger, or null when the evidence file has none. */
+  odds: Odds | null;
+}
+
+export interface OddsRow {
+  /** "1D / 1h / 5m", "Continuation, CISD", "NY AM". */
+  label: string;
+  n: number;
+  /** Percent of trades that reached 2R before the stop. */
+  win: number;
+  /** Percent needed to break even at 2R after costs. */
+  breakeven: number;
+  /** Percent that reached 1R before the stop. */
+  win_1r: number;
+  /** Median time to the target / the stop: "4.6 h", "35 min" ('' when none). */
+  to_target: string;
+  to_stop: string;
+  /** "Many still open after 10 days" ('' when the win rate is honest). */
+  note: string;
+  /** This trigger's row. */
+  current: boolean;
+}
+
+export interface Odds {
+  /** "This setup wins 33% to 2R (breakeven 34%), target ~3 h, stop ~1.7 h, 666 trades". */
+  line: string;
+  stacks: OddsRow[];
+  /** The setups (path and trigger) on this trigger's stack. */
+  setups: OddsRow[];
+  sessions: OddsRow[];
 }
 
 export type StageLabel = '' | 'forming' | 'actionable' | 'late' | 'played_out';
@@ -411,7 +441,6 @@ export type ClientFrame =
   | { type: 'check' }
   | { type: 'step'; direction: -1 | 1 }
   | { type: 'latest' }
-  | { type: 'pause'; paused: boolean }
   | { type: 'use_history' }
   | { type: 'journal'; key: string; mark: JournalMark; reason?: string; note?: string };
 
@@ -650,6 +679,20 @@ const step = obj<Step>({
   level_label: optional(str, () => ''),
 });
 
+const oddsRow = obj<OddsRow>({
+  label: str,
+  n: num,
+  win: num,
+  breakeven: num,
+  win_1r: num,
+  to_target: optional(str, () => ''),
+  to_stop: optional(str, () => ''),
+  note: optional(str, () => ''),
+  current: optional(bool, () => false),
+});
+
+const odds = obj<Odds>({ line: str, stacks: arr(oddsRow), setups: arr(oddsRow), sessions: arr(oddsRow) });
+
 const plan = obj<Plan>({
   direction: tradeSide,
   state: oneOf('planned', 'triggered'),
@@ -681,6 +724,7 @@ const plan = obj<Plan>({
         line: str,
         exits: optional(str, () => ''),
         source: optional(str, () => ''),
+        odds: optional(nullable(odds), () => null),
       }),
     ),
     () => null,

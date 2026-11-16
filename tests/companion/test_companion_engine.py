@@ -208,6 +208,7 @@ def test_render_text_is_ascii_and_groups_the_checklist_by_stage() -> None:
     headers = [line for line in lines if line and line == line.upper() and not line.startswith(("DECISION", " "))]
     assert headers == [
         "SHARED", "CONTINUATION C1", "CONTINUATION C2", "CONTINUATION C3", "CONTINUATION C4",
+        "CONTINUATION C4 - WHY CONTINUATIONS FAIL",
         "REVERSAL C1", "REVERSAL C2", "REVERSAL C3", "REVERSAL C4",
     ]  # fmt: skip
     assert "  [PASS] Entry trigger has formed  (cont_entry_trigger; step, 5m)" in lines

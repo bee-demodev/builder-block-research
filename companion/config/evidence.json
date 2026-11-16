@@ -59,5 +59,241 @@
       "retest": "FAIL",
       "caveat": "Passed its 2022-23 test, then failed the 2021 re-test: not an edge."
     }
+  },
+  "odds": {
+    "stacks": {
+      "1D / 1h / 5m": {
+        "n": 2262,
+        "win": 0.321,
+        "win_1r": 0.4775,
+        "open": 0.0053,
+        "breakeven": 0.3412,
+        "hours_to_target": 4.58,
+        "hours_to_stop": 2.08,
+        "r": -0.0753
+      },
+      "1D / 4h / 15m": {
+        "n": 1008,
+        "win": 0.3274,
+        "win_1r": 0.5079,
+        "open": 0.0486,
+        "breakeven": 0.3369,
+        "hours_to_target": 20.92,
+        "hours_to_stop": 5.67,
+        "r": 0.0416
+      },
+      "1W / 4h / 15m": {
+        "n": 361,
+        "win": 0.313,
+        "win_1r": 0.4765,
+        "open": 0.0471,
+        "breakeven": 0.3365,
+        "hours_to_target": 20.83,
+        "hours_to_stop": 11.0,
+        "r": 0.0001
+      },
+      "1W / 1D / 1h": {
+        "n": 119,
+        "win": 0.1261,
+        "win_1r": 0.3613,
+        "open": 0.5042,
+        "breakeven": 0.3349,
+        "hours_to_target": 5.42,
+        "hours_to_stop": 44.42,
+        "r": 0.0544
+      }
+    },
+    "setups": {
+      "1D / 1h / 5m": {
+        "continuation/cisd": {
+          "n": 666,
+          "win": 0.3273,
+          "win_1r": 0.4865,
+          "open": 0.0015,
+          "breakeven": 0.3436,
+          "hours_to_target": 3.0,
+          "hours_to_stop": 1.67,
+          "r": -0.0565
+        },
+        "continuation/order_block": {
+          "n": 483,
+          "win": 0.3002,
+          "win_1r": 0.4389,
+          "open": 0.0,
+          "breakeven": 0.3605,
+          "hours_to_target": 0.58,
+          "hours_to_stop": 0.25,
+          "r": -0.2132
+        },
+        "reversal/cisd": {
+          "n": 1113,
+          "win": 0.3261,
+          "win_1r": 0.4888,
+          "open": 0.0099,
+          "breakeven": 0.3373,
+          "hours_to_target": 13.0,
+          "hours_to_stop": 6.0,
+          "r": -0.0267
+        }
+      },
+      "1D / 4h / 15m": {
+        "continuation/cisd": {
+          "n": 169,
+          "win": 0.3254,
+          "win_1r": 0.4201,
+          "open": 0.0,
+          "breakeven": 0.3393,
+          "hours_to_target": 5.75,
+          "hours_to_stop": 3.88,
+          "r": -0.0472
+        },
+        "continuation/order_block": {
+          "n": 131,
+          "win": 0.3282,
+          "win_1r": 0.5115,
+          "open": 0.0,
+          "breakeven": 0.347,
+          "hours_to_target": 1.58,
+          "hours_to_stop": 1.08,
+          "r": -0.0689
+        },
+        "reversal/cisd": {
+          "n": 708,
+          "win": 0.3277,
+          "win_1r": 0.5282,
+          "open": 0.0692,
+          "breakeven": 0.3358,
+          "hours_to_target": 41.04,
+          "hours_to_stop": 19.0,
+          "r": 0.0832
+        }
+      },
+      "1W / 4h / 15m": {
+        "continuation/cisd": {
+          "n": 104,
+          "win": 0.3846,
+          "win_1r": 0.5577,
+          "open": 0.0,
+          "breakeven": 0.3374,
+          "hours_to_target": 18.0,
+          "hours_to_stop": 7.96,
+          "r": 0.1393
+        },
+        "continuation/order_block": {
+          "n": 95,
+          "win": 0.3368,
+          "win_1r": 0.4526,
+          "open": 0.0,
+          "breakeven": 0.3485,
+          "hours_to_target": 1.75,
+          "hours_to_stop": 0.67,
+          "r": -0.0516
+        },
+        "reversal/cisd": {
+          "n": 162,
+          "win": 0.2531,
+          "win_1r": 0.4383,
+          "open": 0.1049,
+          "breakeven": 0.3351,
+          "hours_to_target": 53.0,
+          "hours_to_stop": 36.42,
+          "r": -0.059
+        }
+      },
+      "1W / 1D / 1h": {
+        "continuation/order_block": {
+          "n": 26,
+          "win": 0.3846,
+          "win_1r": 0.5769,
+          "open": 0.0,
+          "breakeven": 0.3417,
+          "hours_to_target": 4.58,
+          "hours_to_stop": 4.17,
+          "r": 0.1237
+        },
+        "reversal/cisd": {
+          "n": 93,
+          "win": 0.0538,
+          "win_1r": 0.3011,
+          "open": 0.6452,
+          "breakeven": 0.3342,
+          "hours_to_target": 164.75,
+          "hours_to_stop": 108.29,
+          "r": 0.0351
+        }
+      }
+    },
+    "sessions": {
+      "after_hours": {
+        "n": 14,
+        "win": 0.2857,
+        "win_1r": 0.5,
+        "open": 0.0714,
+        "breakeven": 0.351,
+        "hours_to_target": 0.42,
+        "hours_to_stop": 3.33,
+        "r": -0.0573
+      },
+      "asia": {
+        "n": 1134,
+        "win": 0.3086,
+        "win_1r": 0.4797,
+        "open": 0.0556,
+        "breakeven": 0.3423,
+        "hours_to_target": 5.5,
+        "hours_to_stop": 2.92,
+        "r": -0.0527
+      },
+      "london": {
+        "n": 523,
+        "win": 0.327,
+        "win_1r": 0.4971,
+        "open": 0.0115,
+        "breakeven": 0.3429,
+        "hours_to_target": 4.17,
+        "hours_to_stop": 2.21,
+        "r": -0.0477
+      },
+      "ny_am": {
+        "n": 733,
+        "win": 0.3288,
+        "win_1r": 0.4993,
+        "open": 0.0177,
+        "breakeven": 0.338,
+        "hours_to_target": 6.0,
+        "hours_to_stop": 1.33,
+        "r": -0.002
+      },
+      "ny_lunch": {
+        "n": 515,
+        "win": 0.2951,
+        "win_1r": 0.4544,
+        "open": 0.0641,
+        "breakeven": 0.3358,
+        "hours_to_target": 49.08,
+        "hours_to_stop": 21.58,
+        "r": -0.0324
+      },
+      "ny_pm": {
+        "n": 202,
+        "win": 0.2574,
+        "win_1r": 0.4307,
+        "open": 0.0842,
+        "breakeven": 0.3355,
+        "hours_to_target": 67.29,
+        "hours_to_stop": 23.33,
+        "r": -0.0936
+      },
+      "pre_ny": {
+        "n": 629,
+        "win": 0.3402,
+        "win_1r": 0.4913,
+        "open": 0.0079,
+        "breakeven": 0.3406,
+        "hours_to_target": 4.04,
+        "hours_to_stop": 2.5,
+        "r": 0.0012
+      }
+    }
   }
 }

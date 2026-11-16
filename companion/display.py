@@ -48,7 +48,7 @@ POI = "#b69cff"
 PROTECTED = "#d5dbe3"
 NEXT_BG = "#2d2410"  # the row of the next step, and the WATCH banner
 QUIET_BG = "#1a212b"  # the DON'T TRADE and neutral banners
-ZONE_FILL = {"poi": "#231f3b", "confirm": "#14233b", "reference": "#1b222c"}
+ZONE_FILL = {"poi": "#231f3b", "confirm": "#14233b", "reference": "#1b222c", "waiting": NEXT_BG}  # waiting: a possible consolidation
 
 
 @dataclass(frozen=True)

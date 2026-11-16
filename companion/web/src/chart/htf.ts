@@ -32,7 +32,7 @@ export const COLUMN_GAP = 3;
 export const COLUMN_SLOT = 2.5;
 
 /** Index of the first candle opening at or after `t` (candles sorted by `t`). */
-function firstAtOrAfter(candles: readonly Candle[], t: number): number {
+export function firstAtOrAfter(candles: readonly Candle[], t: number): number {
   let lo = 0;
   let hi = candles.length;
   while (lo < hi) {

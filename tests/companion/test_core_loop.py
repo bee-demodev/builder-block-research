@@ -33,13 +33,14 @@ def minutes() -> pd.DataFrame:
 class Harness:
     """A live core over the fake market, and every message it sent."""
 
-    def __init__(self, minutes: pd.DataFrame, tmp_path: Path, now: str = NOW, **settings: object) -> None:
+    def __init__(self, minutes: pd.DataFrame, tmp_path: Path, now: str = NOW, saved_paused: bool = False, **settings: object) -> None:
         self.tv = FakeTradingView(minutes, now)
         source = TradingViewBarSource(self.tv, symbols_path=write_symbols(tmp_path / "symbols.json", **settings), clock=self.tv.clock)
         self.controller = CompanionController(
             state_path=tmp_path / "state" / "ui_state.json", live_source=source, default_data=DATA_LIVE, clock=self.tv.clock
         )
         self.controller.state.symbol, self.controller.state.stack, self.controller.state.style = "NQ", DAILY.name, "ttrades"
+        self.controller.state.auto_refresh = not saved_paused  # as ui_state.json left it
         self.messages: list[dict[str, Any]] = []
         self.replies: list[dict[str, Any]] = []
         self.core = Core(self.controller, run_check=inline, run_watch=inline, listener=self.messages.append, watch_ms=500)
@@ -164,16 +165,11 @@ def test_with_close_on_next_bar_off_the_bar_waits_for_the_settle_time(minutes: p
     assert len(h.verdicts()) == 2 and h.timings()[-1]["trigger"] == "schedule"
 
 
-def test_pause_stops_every_automatic_check_and_resume_catches_up(minutes: pd.DataFrame, tmp_path: Path) -> None:
-    h = Harness(minutes, tmp_path)
-    h.send("pause", paused=True)
-    assert h.of("status")[-1]["status"]["state"] == "paused" and h.of("state")[-1]["state"]["auto_refresh"] is False
-    reads = entry_reads(h.tv)
-    h.walk("10:49:58", "10:56:00", every="1s")  # past two closes and both due times
-    assert entry_reads(h.tv) == reads and len(h.verdicts()) == 1
-
-    h.send("pause", paused=False)
-    assert entry_reads(h.tv) == reads + 1 and h.controller.live_time == pd.Timestamp("2026-03-10 10:55")
+def test_a_pause_saved_by_an_older_build_does_not_stick(minutes: pd.DataFrame, tmp_path: Path) -> None:
+    h = Harness(minutes, tmp_path, saved_paused=True)
+    assert h.of("state")[-1]["state"]["auto_refresh"] is True and h.of("status")[-1]["status"]["state"] != "paused"
+    h.walk("10:49:58", "10:56:00", every="1s")  # past two closes: both checked without anyone pressing Check
+    assert len(h.verdicts()) == 3 and h.controller.live_time == pd.Timestamp("2026-03-10 10:55")
 
 
 def test_a_failed_refresh_keeps_the_last_verdict_marked_stale(minutes: pd.DataFrame, tmp_path: Path) -> None:
@@ -205,12 +201,28 @@ def test_step_back_and_latest_move_between_bars(minutes: pd.DataFrame, tmp_path:
     assert "last closed bar" in h.replies[-1]["message"] and h.replies[-1]["type"] == "error"
 
 
+def test_set_when_live_picks_a_replay_start_inside_the_loaded_bars(minutes: pd.DataFrame, tmp_path: Path) -> None:
+    h = Harness(minutes, tmp_path)
+    h.clear()
+    h.send("set", values={"when": "2026-03-10 09:30"})
+    assert h.of("state")[-1]["state"]["follow"] is False and not h.verdicts()  # moved, not read until check
+    h.send("check")
+    assert "09:30 New York" in h.verdicts()[-1]["view"]["headline"] and h.of("status")[-1]["status"]["state"] == "past"
+    h.send("step", direction=1)
+    assert "09:35 New York" in h.verdicts()[-1]["view"]["headline"]
+
+    h.send("set", values={"when": "2026-03-10 12:00"})  # past the last closed bar: "now" again
+    assert h.of("state")[-1]["state"]["follow"] is True and h.controller.state.when.endswith("10:45")
+    h.send("set", values={"when": "2020-01-02 09:30"})
+    assert "before the bars loaded from TradingView" in h.replies[-1]["message"] and h.controller.follow is True
+
+
 def test_set_validates_and_reports_what_it_could_not_use(minutes: pd.DataFrame, tmp_path: Path) -> None:
     h = Harness(minutes, tmp_path)
     h.clear()
-    h.send("set", values={"symbol": "ZZ", "style": "nope", "when": "2026-03-10 09:00"})
+    h.send("set", values={"symbol": "ZZ", "style": "nope", "when": "2026-03-09 nope"})
     message = h.replies[-1]["message"]
-    assert "ZZ is not a symbol" in message and "“nope” is not a style" in message and "live mode the time is TradingView" in message
+    assert "ZZ is not a symbol" in message and "“nope” is not a style" in message and h.controller.state.when != "2026-03-09 nope"
     assert not h.verdicts() and h.of("state")  # nothing changed, nothing checked, but the state is confirmed
 
     h.send("set", values={"stack": "4h / 15m / 1m"})  # live: a new stack is read at once

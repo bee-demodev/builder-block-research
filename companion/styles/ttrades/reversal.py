@@ -13,7 +13,7 @@ import numpy as np
 
 from companion.styles.ttrades.checklist import ADVISORY, QUALITY, REVERSAL, Checklist
 from companion.styles.ttrades.context import Context
-from companion.styles.ttrades.continuation import PathOutcome
+from companion.styles.ttrades.continuation import PathOutcome, after_entry, after_entry_markup, drop_repeated_hints
 from companion.styles.ttrades.primitives import Bars, CisdRead, Side, Zone, anchored_cisd, cisd_text, fmt, when
 from companion.styles.ttrades.risk import Trigger, body_stop_of, find_continuation_triggers, pick_trigger, plan_trade
 from companion.types import MarkupItem
@@ -454,4 +454,10 @@ def evaluate_reversal(ctx: Context, side: Side) -> PathOutcome:
             role="entry", short="Trigger",
         )
     )
+    # the stop swing on the entry frame: the pullback's low, or the reversal wick low
+    stop_pos = trigger.read.anchor if trigger.mode == "conservative" and trigger.read else view.f_low_pos
+    found = after_entry(e, trigger, stop_pos, cfg)
+    out.seen["after_entry"] = found
+    out.markup.extend(after_entry_markup(e, side, found, cfg))
+    out.markup[:] = drop_repeated_hints(out.markup)
     return out

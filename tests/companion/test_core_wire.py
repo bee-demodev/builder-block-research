@@ -277,7 +277,7 @@ def test_naive_times_are_new_york_and_carry_its_offset() -> None:
         ('{"type": "step"}', "direction"),
         ('{"type": "step", "direction": true}', "direction"),
         ('{"type": "step", "direction": 2}', "direction"),
-        ('{"type": "pause", "paused": "yes"}', "paused"),
+        ('{"type": "pause", "paused": true}', "Unknown message type"),  # the web app has no pause
         ('{"type": "set"}', "at least one"),
         ('{"type": "set", "symbol": 5}', "string"),
         ('{"type": "set", "side": null}', "string"),
@@ -298,5 +298,4 @@ def test_commands_are_read_as_the_contract_writes_them() -> None:
     assert wire.parse_command('{"type": "set", "symbol": "ES", "when": "2026-03-10 10:00"}') == wire.Command("set", {"symbol": "ES", "when": "2026-03-10 10:00"})
     assert wire.parse_command('{"type": "set", "side": ""}') == wire.Command("set", {"side": ""})
     assert wire.parse_command('{"type": "step", "direction": -1}') == wire.Command("step", direction=-1)
-    assert wire.parse_command('{"type": "pause", "paused": false}') == wire.Command("pause", paused=False)
     assert [wire.parse_command(json.dumps({"type": kind})).type for kind in ("check", "latest", "use_history")] == ["check", "latest", "use_history"]

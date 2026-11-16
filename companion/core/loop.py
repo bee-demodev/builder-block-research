@@ -208,6 +208,9 @@ class Core:
             self._run_check = inline
         if self._run_watch is None:
             self._run_watch = inline
+        if not controller.state.auto_refresh:
+            # The web app has no pause: a pause saved by an older build (or the Tk window) must not stick.
+            controller.set_auto_refresh(True)
         self._fit_when()
         self._emit_hello(force=True)
         self._emit_state(force=True)
@@ -318,13 +321,13 @@ class Core:
                 side_changed = True
         if "when" in values:
             text = values.pop("when")
-            if controller.is_live:
-                problems.append("In live mode the time is TradingView's last closed bar: use step or latest to move it.")
-            else:
-                try:
+            try:
+                if controller.is_live:
+                    controller.set_live_when(parse_when(text))  # inside the bars TradingView has loaded
+                else:
                     current.when = format_when(parse_when(text))
-                except UserError as problem:
-                    problems.append(str(problem))
+            except UserError as problem:
+                problems.append(str(problem))
 
         if side_changed:
             self._good = None  # a kept live verdict was for the other side
@@ -351,12 +354,6 @@ class Core:
     def _do_latest(self, command: wire.Command, reply: Reply) -> None:
         self.controller.jump_to_latest()
         self._check(auto=False, trigger="command")
-
-    def _do_pause(self, command: wire.Command, reply: Reply) -> None:
-        controller = self.controller
-        controller.set_auto_refresh(not command.paused)
-        controller.save()
-        self._emit_status(controller.live_status(self._shown))
 
     def _do_journal(self, command: wire.Command, reply: Reply) -> None:
         """The trader's call on a logged trigger. The view on screen is sent again with it."""

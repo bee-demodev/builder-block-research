@@ -4,12 +4,14 @@ import { ChartsArea, type ChartDisplay } from './components/Charts';
 import { Checklist } from './components/Checklist';
 import { DecisionPanel } from './components/DecisionPanel';
 import { DisplayMenu, type MenuAnchor } from './components/DisplayMenu';
+import { ReplayBar } from './components/ReplayBar';
 import { SectionTabs, useSection } from './components/SectionTabs';
 import { TopBar } from './components/TopBar';
 import { setSide } from './decision';
 import { formatMs, plainText } from './format';
-import { useCompanion, useDisplay, useNow, useTheme, type ThemePref } from './hooks';
-import { isPaused, type Model } from './store';
+import { useCompanion, useDisplay, useNow, useReplay, useTheme, type ReplayControl, type ThemePref } from './hooks';
+import { atLatest } from './replay';
+import type { Model } from './store';
 import { TcmExpansions } from './tcm/TcmExpansions';
 import type { ClientFrame, Side, Timing } from './wire';
 
@@ -22,7 +24,13 @@ export function App() {
   const showDetails = mode === 'details' && model.view !== null;
   const toggleMode = useCallback(() => setMode((m) => (m === 'details' ? 'charts' : 'details')), []);
   const [section, setSection] = useSection();
-  useKeyboard(model, send, toggleMode, section === 'ttrades');
+  const replay = useReplay(model, send);
+  const replayMode = replay.replay.mode;
+  useKeyboard(model, send, toggleMode, replay, section === 'ttrades');
+  // a start bar is picked on the charts
+  useEffect(() => {
+    if (replayMode === 'select') setMode('charts');
+  }, [replayMode]);
 
   const openMenu = useCallback((anchor: MenuAnchor) => setMenu(anchor), []);
   const closeMenu = useCallback(() => setMenu(null), []);
@@ -47,7 +55,7 @@ export function App() {
 
   return (
     <div className="app">
-      <TopBar model={model} send={send} tabs={tabs} />
+      <TopBar model={model} send={send} tabs={tabs} replay={replay} />
       <Banners model={model} url={url} retryNow={retryNow} dismissNotice={dismissNotice} />
       <main className="layout">
         <DecisionPanel
@@ -61,13 +69,16 @@ export function App() {
         {showDetails ? (
           <Checklist model={model} view={model.view!} />
         ) : (
-          <ChartsArea model={model} theme={theme.resolved} display={chartDisplay} lookChoice={lookChoice} />
+          <div className={`charts-col${replayMode !== 'off' ? ' has-replay' : ''}`}>
+            <ChartsArea model={model} theme={theme.resolved} display={chartDisplay} lookChoice={lookChoice} onCut={replayMode === 'select' ? replay.cut : null} />
+            {replayMode !== 'off' && <ReplayBar model={model} control={replay} />}
+          </div>
         )}
       </main>
       <footer className="footer">
         <p className="footer-source">{model.view ? plainText(model.view.source_note) : demo ? 'Sample data, demo mode.' : ''}</p>
         <div className="footer-right">
-          <p className="footer-hint">Arrows step a bar. Space pauses. A, L, S set the side. D details.</p>
+          <p className="footer-hint">Arrows step a bar. Space plays a replay. A, L, S set the side. D details.</p>
           {model.timing && <TimingReadout timing={model.timing} />}
           <a className="footer-credit" href="https://www.tradingview.com/" target="_blank" rel="noreferrer">
             Charts by TradingView Lightweight Charts
@@ -168,30 +179,39 @@ function useLookChoice(model: Model): [string, (key: string) => void] {
 const SIDE_KEYS: Record<string, Side> = { a: '', l: 'long', s: 'short' };
 
 /**
- * Left/right arrows step one bar, space toggles pause, A / L / S choose the side
- * (Auto, Long, Short) and D opens or closes Details. Ignored while a control has focus.
+ * Left/right arrows step one bar (pausing a replay), Space plays or pauses a replay, Esc
+ * leaves its Select bar, A / L / S choose the side (Auto, Long, Short) and D opens or
+ * closes Details. Ignored while a control has focus (Esc only inside a field or dialog).
  */
-function useKeyboard(model: Model, send: (f: ClientFrame) => void, toggleDetails: () => void, enabled = true) {
+function useKeyboard(model: Model, send: (f: ClientFrame) => void, toggleDetails: () => void, replay: ReplayControl, enabled = true) {
   const ready = enabled && model.link === 'open' && model.server !== null;
-  const paused = isPaused(model);
-  const follow = model.server?.follow ?? true;
+  const latest = atLatest(model.server);
   const side = model.server?.side ?? '';
+  const mode = replay.replay.mode;
+  const { dispatch } = replay;
   useEffect(() => {
     if (!ready) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.altKey || e.ctrlKey || e.metaKey || e.defaultPrevented) return;
       const el = e.target as HTMLElement | null;
+      if (e.key === 'Escape' && mode === 'select') {
+        if (el && el.closest('input, select, textarea, [contenteditable="true"], [role="dialog"]')) return;
+        e.preventDefault();
+        dispatch({ type: 'cancelSelect' });
+        return;
+      }
       if (el && el.closest('input, select, textarea, button, a, [contenteditable="true"], [role="dialog"]')) return;
       const key = e.key.toLowerCase();
       if (e.key === 'ArrowLeft') {
         e.preventDefault();
+        dispatch({ type: 'pause' });
         send({ type: 'step', direction: -1 });
       } else if (e.key === 'ArrowRight') {
         e.preventDefault();
-        if (!follow) send({ type: 'step', direction: 1 });
-      } else if (e.key === ' ') {
+        if (!latest) replay.stepForward();
+      } else if (e.key === ' ' && (mode === 'paused' || mode === 'playing')) {
         e.preventDefault();
-        send({ type: 'pause', paused: !paused });
+        if (mode === 'playing' || !latest) dispatch({ type: 'toggle' });
       } else if (Object.hasOwn(SIDE_KEYS, key)) {
         e.preventDefault();
         if (SIDE_KEYS[key] !== side) send(setSide(SIDE_KEYS[key]!));
@@ -202,5 +222,5 @@ function useKeyboard(model: Model, send: (f: ClientFrame) => void, toggleDetails
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [ready, paused, follow, side, send, toggleDetails]);
+  }, [ready, latest, side, mode, send, toggleDetails, dispatch, replay.stepForward]);
 }

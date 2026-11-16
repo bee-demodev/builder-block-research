@@ -36,9 +36,14 @@ Client to server
   taken too; anything else is refused. As in the window, a new side reads the same moment
   again at once when the core is live or a verdict is on screen; there is no need to send
   ``check`` after it.
+
+  ``when`` (``"YYYY-MM-DD HH:MM"`` New York) moves the analysis time; send ``check`` after
+  it to read that moment. Live, it must lie inside the bars TradingView has loaded: before
+  them is refused, at or past the last closed bar follows "now" again (``follow`` true),
+  anything earlier looks back (``follow`` false), as ``step`` does. Bar replay picks its
+  start this way.
 - ``check``, ``latest``, ``use_history``: no fields.
 - ``step``: ``{"direction": -1 | 1}``.
-- ``pause``: ``{"paused": true | false}``.
 - ``journal``: ``{"key", "mark", "reason"?, "note"?}``, the trader's call on a trigger in the
   decision journal (``companion.core.journal``). ``key`` is ``Journal.trigger.key`` from the
   view; ``mark`` is ``"took"``, ``"skipped"`` or ``""`` (clear it); ``reason`` ``""`` or one of
@@ -240,7 +245,7 @@ from companion.types import BARS_TIMEZONE
 VERSION = 1
 SET_FIELDS = ("symbol", "stack", "style", "data", "when", "side")
 CUSTOM_FIELDS = ("custom_bias", "custom_setup", "custom_entry")  # the "Custom…" stack's three timeframes
-COMMANDS = ("set", "check", "step", "latest", "pause", "use_history", "journal")
+COMMANDS = ("set", "check", "step", "latest", "use_history", "journal")
 MAX_TEXT = 200  # longest string value a command may carry
 JOURNAL_MARKS = ("took", "skipped", "")  # "" clears the trader's call
 JOURNAL_REASONS = {"late": "Late", "no_confluence": "No confluence", "news": "News", "risk_too_big": "Risk too big", "other": "Other"}
@@ -465,7 +470,6 @@ class Command:
     type: str
     values: dict[str, str] = field(default_factory=dict)  # set: the fields to change
     direction: int = 0  # step
-    paused: bool = False  # pause
     # journal: values holds "key", "mark", "reason", "note"
 
 
@@ -504,11 +508,6 @@ def parse_command(text: str | bytes) -> Command:
         if isinstance(direction, bool) or direction not in (-1, 1):
             raise WireError("step needs \"direction\": -1 or 1.")
         return Command("step", direction=int(direction))
-    if kind == "pause":
-        paused = message.get("paused")
-        if not isinstance(paused, bool):
-            raise WireError("pause needs \"paused\": true or false.")
-        return Command("pause", paused=paused)
     if kind == "journal":
         return Command("journal", _journal_values(message))
     return Command(kind)
@@ -533,7 +532,6 @@ def _journal_values(message: dict[str, Any]) -> dict[str, str]:
 _ALLOWED: dict[str, set[str]] = {
     "set": {*SET_FIELDS, *CUSTOM_FIELDS},
     "step": {"direction"},
-    "pause": {"paused"},
     "journal": {"key", "mark", "reason", "note"},
 }
 

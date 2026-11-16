@@ -14,8 +14,12 @@ export interface Overlays {
   markerLabels: boolean;
   /** The risk / reward box on the entry chart (its zones and captions; its lines always stay). */
   riskReward: boolean;
-  /** Intraday reference levels (Asia and London high / low, midnight and 09:30 opens, PDH / PDL). Off by default. */
-  sessionLevels: boolean;
+  /**
+   * Higher-timeframe key levels (week open, PWH / PWL, day open, PDH / PDL, the previous
+   * higher-timeframe candle's range and equilibrium, Asia and London ranges), with the core's
+   * session levels folded in. On by default.
+   */
+  keyLevels: boolean;
   /** The look-for layer: the expected C1 / C2 boxes and the "entry forms here" box ahead of the last candle. */
   lookFor: boolean;
 }
@@ -46,14 +50,14 @@ export const OVERLAYS: readonly { key: keyof Overlays; label: string }[] = [
   { key: 'zones', label: 'Zones' },
   { key: 'markerLabels', label: 'Marker labels' },
   { key: 'riskReward', label: 'Risk / reward box' },
-  { key: 'sessionLevels', label: 'Session levels' },
+  { key: 'keyLevels', label: 'Key levels' },
   { key: 'lookFor', label: 'Look for (expected path)' },
 ];
 
 export const DEFAULT_DISPLAY: DisplayOptions = {
   textSize: 'normal',
   scheme: 'tradingview',
-  overlays: { levelNames: true, zones: true, markerLabels: true, riskReward: true, sessionLevels: false, lookFor: true },
+  overlays: { levelNames: true, zones: true, markerLabels: true, riskReward: true, keyLevels: true, lookFor: true },
 };
 
 export const DISPLAY_KEY = 'companion.display';
@@ -64,9 +68,22 @@ export const DISPLAY_KEY = 'companion.display';
  */
 export const SCHEME_EPOCH = 2;
 
-/** The marks a chart draws with these overlays: the session levels layer only when it is on. */
+/** Whether a mark is one of the core's session levels (PDH / PDL, session ranges, opens). */
+export function isSessionRole(role: string): boolean {
+  return role.trim().toLowerCase() === 'session';
+}
+
+/** The marks a chart draws with these overlays: the core's session levels only with the key levels layer. */
 export function layerMarks<T extends { role: string }>(marks: readonly T[], overlays: Overlays): T[] {
-  return overlays.sessionLevels ? [...marks] : marks.filter((m) => m.role !== 'session');
+  return overlays.keyLevels ? [...marks] : marks.filter((m) => !isSessionRole(m.role));
+}
+
+/**
+ * The marks whose start widens the window a chart opens on: not the session levels, which
+ * start at the trading day's open and would pull a 5m chart back to 18:00.
+ */
+export function windowMarks<T extends { role: string }>(marks: readonly T[]): T[] {
+  return marks.filter((m) => !isSessionRole(m.role));
 }
 
 /** The look-for scene a pane draws: none when the layer is off or the core sent nothing to look for. */
@@ -106,7 +123,7 @@ export function parseDisplay(raw: string | null): DisplayOptions {
       zones: flag('zones'),
       markerLabels: flag('markerLabels'),
       riskReward: flag('riskReward'),
-      sessionLevels: flag('sessionLevels'),
+      keyLevels: flag('keyLevels'),
       lookFor: flag('lookFor'),
     },
   };

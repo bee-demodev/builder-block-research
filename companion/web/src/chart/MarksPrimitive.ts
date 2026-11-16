@@ -42,6 +42,7 @@ import { formatPrice, sentenceCase } from '../format';
 import { directionTone, markTone } from '../tones';
 import type { Candle, Direction, Mark, Tool, ToolLine, ToolRole } from '../wire';
 import { COLUMN_GAP, COLUMN_SLOT, barTitle, cappedRange, slotLogical, type Band, type HtfColumn } from './htf';
+import { begunLevels, bestJustBegunSpot, clearOfSpans, leastCoverSpot, nameAnswers, edgeGroups, foldInto, groupTexts, groupTitle, keyNameSpots, nearestAround, shownLevels, stackChips, thinByGap, type KeyFamily, type KeyGroup, type KeyLevel } from './keylevels';
 import { candleEmphasis, candleSteps, chosenOption, projectedCandles, type Ohlc } from './look';
 import {
   drawLookFills,
@@ -53,8 +54,8 @@ import {
   type LookEnv,
   type LookScene,
 } from './LookLayer';
-import { TOOL_PRIORITY, distinctTags, labelPriority, markInRange, markerTextX, layoutTags, placePreferring, type Box, type LabelChoice, type PendingLabel } from './marks';
-import { quietInk, toneColor, withAlpha, type Palette } from './palette';
+import { TOOL_PRIORITY, distinctTags, labelPriority, layoutWithKeyTags, markInRange, markerTextX, overlaps, placeChoices, placePreferring, type Box, type LabelChoice, type PendingLabel } from './marks';
+import { CHART_FONT, quietInk, toneColor, withAlpha, type Palette } from './palette';
 import { ZONE_ALPHA, captionFits, captionText, outcomePrice, toolLineLabels, toolLineStyle } from './tool';
 
 type CanvasRenderingTarget2D = Parameters<IPrimitivePaneRenderer['draw']>[0];
@@ -76,7 +77,47 @@ export interface Scene {
   columnBand?: Band | null;
   /** What to look for, on this pane; null for none. */
   look?: LookScene | null;
+  /** Higher-timeframe key levels, one group per price; null when the layer is off. */
+  keys?: readonly KeyGroup[] | null;
+  /** The pane's timeframe and the column's, in minutes: how much time the visible bars span. */
+  minutes?: number;
+  htfMinutes?: number;
 }
+
+/** A key level group as this frame draws it: only the levels worth drawing at this zoom. */
+interface KeyShown {
+  group: KeyGroup;
+  levels: KeyLevel[];
+  /** Where its line starts: the earliest of the levels shown (null: before the loaded candles). */
+  start: number | null;
+}
+
+/** The finer families: a line of theirs with no room for its name is not drawn (it joins a neighbour's hover). */
+const FINE: ReadonlySet<KeyFamily> = new Set(['htf', 'session']);
+
+/** What one frame draws of the key levels (see keyFrame). */
+interface KeyFrame {
+  /** Lines on the visible prices drawn this frame, with their y. */
+  on: (KeyShown & { y: number })[];
+  /** Every line on the visible prices after thinning, before fine lines with no room for a name are left out. */
+  all: (KeyShown & { y: number })[];
+  /** Nearest past the top and the bottom, nearest first: the edge chips. */
+  above: KeyShown[];
+  below: KeyShown[];
+  /** Lines left out for being too close to a kept one, listed under it (for its hover). */
+  near: Map<KeyShown, KeyShown[]>;
+}
+
+/** Dash and gap of a key level line, by its most senior level: the week's long, the day's even, finer levels dotted. */
+const KEY_DASH: Record<KeyFamily, [number, number]> = { core: [4, 4], week: [8, 4], day: [4, 4], htf: [2, 3], session: [2, 3] };
+/** Key level labels come after every mark's, the most senior first. */
+const KEY_PRIORITY: Record<KeyFamily, number> = { core: 6, week: 6.1, day: 6.2, htf: 6.3, session: 6.4 };
+/** Edge chips per edge, nearest first. */
+const KEY_EDGE_MAX = 2;
+/** Slots an edge's chips may use, counted from the edge: room to step past lines and wicks there. */
+const KEY_EDGE_SLOTS = 6;
+/** Clear space either side of another label that a key level's name keeps, so the two never read as one phrase. */
+const KEY_LABEL_PAD = 8;
 
 interface Resolved {
   mark: Mark;
@@ -141,6 +182,21 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
   private columnBoxes: Box[] = [];
   /** "Look for" outlines and hairlines drawn this frame, as label obstacles. */
   private lookBoxes: Box[] = [];
+  private topInset = 0;
+  /** Bumped on every scene, so a frame's key levels are worked out again. */
+  private sceneId = 0;
+  private keyCache: { key: string; frame: KeyFrame | null } | null = null;
+  /** The column hairlines drawn this frame (media px): no key name may sit on one. */
+  private spanBoxes: (Box & { price: number })[] = [];
+  /** For measuring a name's width outside a draw (deciding which fine lines can be named). */
+  private measureCtx: CanvasRenderingContext2D | null = null;
+  /**
+   * Whether each fine line (by price and wording, so it lasts across ticks) had room for its name
+   * when the label pass last placed every name: the line pass draws from this. It changes only when
+   * the answer does (a pan, a zoom, a resize), never just because a tick came, so nothing flashes.
+   */
+  private fineNamed = new Map<string, boolean>();
+  private fineVersion = 0;
 
   private readonly zonesView: IPrimitivePaneView = {
     zOrder: (): PrimitivePaneViewZOrder => 'bottom',
@@ -153,6 +209,7 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
 
   setScene(scene: Scene): void {
     this.scene = scene;
+    this.sceneId++;
     const { palette, direction, overlays } = scene;
     this.items = scene.marks
       .filter((m) => overlays.zones || m.kind !== 'zone')
@@ -165,6 +222,13 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       }));
     this.lastClose = scene.candles[scene.candles.length - 1]?.close ?? null;
     this.axisViews = this.buildAxisViews();
+    this.requestUpdate?.();
+  }
+
+  /** Media px at the top of the plot the pane's notes cover: the top edge chips start below them. */
+  setTopInset(px: number): void {
+    if (px === this.topInset) return;
+    this.topInset = px;
     this.requestUpdate?.();
   }
 
@@ -242,10 +306,37 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     const quietTags: Tag[] = ordered
       .filter((it) => it.quiet)
       .map((it) => ({ price: it.price, text: formatPrice(it.price, scene.decimals), textColor: scene.palette.text, backColor: scene.palette.raised, quiet: true }));
-    const all = [...roleTags, ...lookTags, ...quietTags];
+    // Key levels: light tags too, the most senior first, each only while its group is drawn at this zoom.
+    const keyTags: (Tag & { group: KeyGroup })[] = [...(scene.keys ?? [])]
+      .sort((a, b) => keyRank(a) - keyRank(b))
+      .map((group) => ({ price: group.price, text: formatPrice(group.price, scene.decimals), textColor: scene.palette.text, backColor: scene.palette.raised, quiet: true, group }));
+    const all: (Tag & { group?: KeyGroup })[] = [...roleTags, ...lookTags, ...quietTags, ...keyTags];
     // Laid out on every frame (the scale moves): role tags spread apart where they would overlap, then a
     // reference tag only where it clears them. Drawn at exactly these places, and the ticks under them hidden.
-    const layout = () => layoutTags(all.map((t) => ({ y: series.priceToCoordinate(t.price), quiet: t.quiet })), Math.round(AXIS_TAG_GAP * scene.scale));
+    // Only one key level a side of the last close gets one (the nearest, else the next when the nearest
+    // has no room), so the axis keeps its prices. Laid out once per frame and reused by every tag.
+    let cache: { key: string; ys: (number | null)[] } | null = null;
+    const layout = () => {
+      const size = this.chart?.paneSize();
+      const key = this.frameKey(size?.height ?? 0, size?.width ?? 0);
+      if (cache && cache.key === key) return cache.ys;
+      // the groups this frame draws (after thinning), so a tag never names a level with no line
+      const frame = size ? this.keyFrame(size.height) : null;
+      const live = frame ? frame.on.map((k) => k.group) : []; // a tag only for a level on the plot
+      const near = this.lastClose === null ? { up: [], down: [] } : nearestAround(live, this.lastClose);
+      const order = new Map<KeyGroup, { side: 0 | 1; order: number }>();
+      near.up.forEach((g, k) => order.set(g, { side: 0, order: k }));
+      near.down.forEach((g, k) => order.set(g, { side: 1, order: k }));
+      const ys = layoutWithKeyTags(
+        all.map((t) => {
+          const key = t.group ? order.get(t.group) : undefined;
+          return { y: t.group && !key ? null : series.priceToCoordinate(t.price), quiet: t.quiet, key };
+        }),
+        Math.round(AXIS_TAG_GAP * scene.scale),
+      );
+      cache = { key, ys };
+      return ys;
+    };
     this.tagYs = () => layout().filter((y): y is number => y !== null);
     const tags = all.map(
       (t, i): ISeriesPrimitiveAxisView => ({
@@ -332,12 +423,149 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     return titles.length ? titles.join('\n') : null;
   }
 
+  /** Minutes of time the visible bars span: what decides which key levels are worth drawing. */
+  private spanMinutes(): number {
+    const range = this.chart?.timeScale().getVisibleLogicalRange();
+    const minutes = this.scene?.minutes ?? 0;
+    if (!range) return 0;
+    const bars = Math.max(1, Math.min(range.to, this.lastIndex()) - Math.max(range.from, 0));
+    return bars * minutes;
+  }
+
+  /** What decides a frame's key levels: the scene, the visible bars and prices, the pane size, the notes, the last close. */
+  private frameKey(height: number, width: number): string {
+    const range = this.chart?.timeScale().getVisibleLogicalRange();
+    const h = Math.round(height);
+    const top = this.series?.coordinateToPrice(0) ?? null;
+    const bottom = this.series?.coordinateToPrice(h) ?? null;
+    return `${this.sceneId}|${range?.from}|${range?.to}|${top}|${bottom}|${h}|${Math.round(width)}|${this.topInset}|${this.lastClose}|${this.fineVersion}`;
+  }
+
+  /** A key line's identity across scenes and ticks: its price and its wordings. */
+  private fineId(k: KeyShown): string {
+    return `${k.group.price.toFixed(this.scene?.decimals ?? 2)}|${k.levels.map((l) => l.short).join('+')}`;
+  }
+
+  /** Width of a name drawn in the label font, as the label pass measures it. */
+  private nameWidth(text: string): number {
+    if (!this.measureCtx && typeof document !== 'undefined') this.measureCtx = document.createElement('canvas').getContext('2d');
+    const ctx = this.measureCtx;
+    if (!ctx) return text.length * 7 + 6;
+    ctx.font = this.font(500);
+    return ctx.measureText(text).width + 6;
+  }
+
+  /**
+   * The key level groups worth drawing at this zoom, split into those on the visible prices and
+   * the nearest past each edge. Worked out once per frame (the lines, labels and tags share it).
+   */
+  private keyFrame(height: number): KeyFrame | null {
+    const key = this.frameKey(height, this.chart?.paneSize().width ?? 0);
+    if (this.keyCache && this.keyCache.key === key) return this.keyCache.frame;
+    const frame = this.buildKeyFrame(height);
+    this.keyCache = { key, frame };
+    return frame;
+  }
+
+  private buildKeyFrame(height: number): KeyFrame | null {
+    const scene = this.scene;
+    const series = this.series;
+    if (!scene?.keys?.length || !series) return null;
+    const span = this.spanMinutes();
+    const on: (KeyShown & { y: number })[] = [];
+    const off: (KeyShown & { price: number })[] = [];
+    // A level whose period begins right of what is shown did not exist yet: no line, label, chip or tag.
+    const right = this.chart ? this.keyRight(this.chart.paneSize().width) : Infinity;
+    // Judged per level, so a later level merged at an older one's price is not named before it began.
+    const xOf = (start: number) => this.x(start, Infinity) - this.halfBar();
+    for (const group of scene.keys) {
+      const levels = begunLevels(shownLevels(group, span, scene.htfMinutes ?? 0), xOf, right);
+      if (levels.length === 0) continue;
+      // the line starts with the earliest level shown, not one hidden at this zoom
+      const start = levels.some((l) => l.start === null) ? null : Math.min(...levels.map((l) => l.start!));
+      const y = series.priceToCoordinate(group.price);
+      if (y !== null && y >= 0 && y <= height) on.push({ group, levels, start, y });
+      else off.push({ group, levels, start, price: group.price });
+    }
+    const top = series.coordinateToPrice(0);
+    const bottom = series.coordinateToPrice(height);
+    const edges = top === null || bottom === null ? { above: [], below: [] } : edgeGroups(off, top, bottom, KEY_EDGE_MAX);
+    // Levels closer than a label to a more senior one are left out: one line, one name, no pile-up.
+    const thinned = thinByGap(on, this.labelH() + 6, this.lastClose);
+    // A fine line with no room for its name is left out too (a bare dotted line is noise), under its
+    // nearest neighbour with whatever that already held. The label pass's answer (fineNamed) decides;
+    // a line it has not placed yet is judged on candles and key lines alone. With names off nothing is
+    // named, so nothing is left out for it: the toggle hides names, not levels.
+    const all = thinned.kept;
+    const names = scene.overlays.levelNames;
+    const guess = names ? this.nameable(all, height) : null;
+    // The nearest level each side of the last close is never left out, named or not: it is what price
+    // trades against, and its tag and hover say what it is.
+    const keep = this.nearestEachSide(all);
+    // A short senior stub (zoomed out, shorter than three of its names) is judged like a fine line: the
+    // label pass's answer, else the guess. A longer senior line always stays, named or not (structure).
+    const nameRight = right - 6; // where names end, as the label pass has it
+    const shortStub = (k: KeyShown) => {
+      const x = Math.max(0, k.start === null ? 0 : this.x(k.start, 0) - this.halfBar());
+      const names = groupTexts(k.levels);
+      return nameRight - x < 3 * this.nameWidth(names[names.length - 1] ?? '');
+    };
+    const leaveOut = (k: KeyShown & { y: number }) =>
+      !!guess && !keep.has(k) && (FINE.has(k.levels[0]!.family) || shortStub(k)) && !(this.fineNamed.get(this.fineId(k)) ?? guess.has(k));
+    const kept = foldInto(all, thinned.near, leaveOut);
+    return { on: kept, all, near: thinned.near as Map<KeyShown, KeyShown[]>, ...edges };
+  }
+
+  /** The nearest line above the last close and the nearest below it. */
+  private nearestEachSide<T extends KeyShown>(lines: readonly T[]): Set<T> {
+    if (this.lastClose === null) return new Set();
+    const { up, down } = nearestAround(
+      lines.map((k) => ({ k, price: k.group.price })),
+      this.lastClose,
+      1,
+    );
+    return new Set([...up, ...down].map((x) => x.k));
+  }
+
+  /** The lines whose name (any wording) has a spot inside the plot clear of the candles and the other key lines. */
+  private nameable<T extends KeyShown & { y: number }>(lines: readonly T[], height: number): Set<T> {
+    const out = new Set<T>();
+    if (!this.chart || !this.scene?.overlays.levelNames) return out;
+    const width = this.chart.paneSize().width;
+    const right = this.keyRight(width) - 6;
+    const LH = this.labelH();
+    // every column hairline too (all of them: which are skipped depends on this very frame), except
+    // one at the line's own price, as the label pass does
+    const candleOnly = this.candleBoxes();
+    const allSpans = this.hairlines(width).map((s) => ({ x: s.x1, y: s.y - 1.5, w: s.x2 - s.x1, h: 3, price: s.price }));
+    const dec = this.scene.decimals;
+    const startX = (k: KeyShown) => Math.max(0, k.start === null ? 0 : this.x(k.start, 0) - this.halfBar());
+    for (const k of lines) {
+      const others = lines.filter((o) => o !== k).map((o) => ({ y: o.y, x: startX(o) }));
+      const below = this.lastClose !== null && k.group.price < this.lastClose;
+      const candles = [...candleOnly, ...allSpans.filter((s) => s.price.toFixed(dec) !== k.group.price.toFixed(dec))];
+      const fits = groupTexts(k.levels).some((text) =>
+        keyNameSpots({ x: startX(k), y: k.y }, others, this.nameWidth(text), right, LH, height, below, candles).some(
+          (b) => b.x >= 0 && b.y >= 0 && b.x + b.w <= width && b.y + b.h <= height && !candles.some((c) => overlaps(c, b)),
+        ),
+      );
+      if (fits) out.add(k);
+    }
+    return out;
+  }
+
+  /** Where key level lines end and their labels sit: the column's left edge, else the pane's right edge. */
+  private keyRight(width: number): number {
+    const left = this.columnLeft();
+    return left === null ? width : Math.max(0, Math.min(width, left));
+  }
+
   private labelH(): number {
     return Math.round(15 * (this.scene?.scale ?? 1));
   }
 
   private font(weight = 500): string {
-    return `${weight} ${Math.round(12 * (this.scene?.scale ?? 1) * 10) / 10}px Geist, system-ui, sans-serif`;
+    return `${weight} ${Math.round(12 * (this.scene?.scale ?? 1) * 10) / 10}px ${CHART_FONT}`;
   }
 
   private markerAbove(mark: Mark): boolean {
@@ -370,6 +598,25 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       const x = this.x(i, -1);
       if (x < 0) continue;
       out.push({ x: x - half, y: yH - 2, w: 2 * half, h: yL - yH + 4 });
+    }
+    return out;
+  }
+
+  /** The visible candles' bodies (open to close, body width + 1 px), in media pixels: what a name never covers. */
+  private bodyBoxes(): Box[] {
+    const series = this.series;
+    const scene = this.scene;
+    const range = this.chart?.timeScale().getVisibleLogicalRange();
+    if (!series || !scene || !range) return [];
+    const half = Math.max(1.5, this.halfBar() * 0.8) + 1;
+    const out: Box[] = [];
+    for (let i = Math.max(0, Math.floor(range.from)); i <= Math.min(scene.candles.length - 1, Math.ceil(range.to)); i++) {
+      const c = scene.candles[i]!;
+      const yO = series.priceToCoordinate(c.open);
+      const yC = series.priceToCoordinate(c.close);
+      const x = this.x(i, -1);
+      if (yO === null || yC === null || x < 0) continue;
+      out.push({ x: x - half, y: Math.min(yO, yC) - 1, w: 2 * half, h: Math.abs(yC - yO) + 2 });
     }
     return out;
   }
@@ -495,6 +742,21 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
         if (x >= width) continue;
         const yb = Math.round(y * vr) - Math.floor(lw / 2);
         for (let xb = Math.round(x * hr); xb < bitmapSize.width; xb += 2 * dash) ctx.fillRect(xb, yb, Math.min(dash, bitmapSize.width - xb), lw);
+      }
+
+      // Key levels: from where their period began to the column, dashed by how senior they are.
+      const frame = this.keyFrame(bitmapSize.height / vr);
+      if (frame) {
+        const ink = quietInk(scene.palette);
+        const right = Math.round(this.keyRight(width) * hr);
+        for (const { start, levels, y } of frame.on) {
+          const x = Math.round(Math.max(0, start === null ? 0 : this.x(start, 0) - this.halfBar()) * hr);
+          if (x >= right) continue;
+          const [on, off] = KEY_DASH[levels[0]!.family].map((n) => Math.max(1, Math.round(n * hr))) as [number, number];
+          const yb = Math.round(y * vr) - Math.floor(lw / 2);
+          ctx.fillStyle = ink;
+          for (let xb = x; xb < right; xb += on + off) ctx.fillRect(xb, yb, Math.min(on, right - xb), lw);
+        }
       }
 
       this.drawSpans(ctx, hr, vr, width, bitmapSize.height);
@@ -686,6 +948,112 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
         pending.push({ title: title || label, color, priority, choices: [{ text: label, w, candidates }] });
       }
 
+      // ---- key levels: edge chips for the nearest past the prices shown, then a label at each line's right end ----
+      // Their names are placed in a pass of their own, after every other label (see below).
+      const keyTitles = new Map<KeyShown, string>();
+      const chipBoxes: Box[] = [];
+      let keyLabel: ((shown: KeyShown & { y: number }, set: readonly (KeyShown & { y: number })[]) => PendingLabel) | null = null;
+      const frame = this.keyFrame(plot.h);
+      if (frame) {
+        const right = this.keyRight(plot.w) - 6;
+        // The farthest level sits at the edge and the nearest inward, so the stack reads in price
+        // order; a slot over a candle is skipped (a chip is opaque).
+        // A chip never covers a candle or a line on screen (a key line, a trade line, the next level):
+        // sitting on a line it would read as that line's name. Over a candle it slides left past it.
+        const chipBlocks: Box[] = [
+          ...candleBoxes,
+          ...obstacles,
+          ...frame.all.map((o) => {
+            const x = Math.max(0, o.start === null ? 0 : this.x(o.start, 0) - this.halfBar());
+            return { x, y: o.y - 2, w: Math.max(0, right + 6 - x), h: 4 };
+          }),
+        ];
+        const chipText = (k: KeyShown) => `${k.levels[0]!.short}${k.levels.length > 1 ? ' +' + (k.levels.length - 1) : ''}  ${formatPrice(k.group.price, scene.decimals)}`;
+        // The nearest levels get chips first (as many as find a slot), stacked with the farthest at the
+        // edge so the stack reads in price order (stackChips). Chips avoid every thinned key line, drawn
+        // or not (frame.all, not frame.on): which fine lines are drawn is the label pass's answer, and
+        // the chips come before it, so they must not depend on it (no feedback between the two).
+        const chips = (list: readonly KeyShown[], up: boolean) => {
+          const slotY = (n: number) => {
+            const y = up ? this.topInset + 4 + n * (LH + 3) : plot.h - 4 - LH - n * (LH + 3);
+            if (y < 0 || y + LH > plot.h) return null;
+            // never with a drawn key line between the chip and its edge: that line is priced nearer, and
+            // reading down the edge the chip would sit on the wrong side of it
+            const past = frame.all.some((o) => (up ? o.y < y : o.y > y + LH));
+            return past ? null : y;
+          };
+          const boxes = stackChips(list.map((k) => measure(chipText(k)) + 12), slotY, right, LH, chipBlocks, KEY_EDGE_SLOTS);
+          list.forEach((k, i) => {
+            const box = boxes[i];
+            if (box) chip(k, up, chipText(k), box);
+          });
+        };
+        const chip = (k: KeyShown, up: boolean, text: string, box: Box) => {
+          if (box.x < 4 || box.y < 0 || box.y + box.h > plot.h) return;
+          ctx.fillStyle = scene.palette.raised;
+          ctx.fillRect(box.x, box.y, box.w, box.h);
+          // a small triangle pointing to where the level is
+          const cx = box.x + 7;
+          const cy = box.y + LH / 2;
+          ctx.fillStyle = scene.palette.muted;
+          ctx.beginPath();
+          ctx.moveTo(cx, up ? cy - 3 : cy + 3);
+          ctx.lineTo(cx - 3.5, up ? cy + 2.5 : cy - 2.5);
+          ctx.lineTo(cx + 3.5, up ? cy + 2.5 : cy - 2.5);
+          ctx.closePath();
+          ctx.fill();
+          ctx.font = this.font(500);
+          ctx.fillStyle = scene.palette.text;
+          ctx.fillText(text, box.x + 14, box.y + LH - Math.round(3 * scene.scale));
+          obstacles.push({ x: box.x, y: box.y - 3, w: box.w, h: box.h + 6 }); // a little room above and below
+          chipBoxes.push(box);
+          hits.push({ box, title: `${up ? 'Above' : 'Below'} the prices shown: ${groupTitle(k.levels, k.group.price, scene.decimals)}`, priority: 8 });
+        };
+        chips(frame.above, true);
+        chips(frame.below, false);
+        const lineStart = (k: KeyShown) => Math.max(0, k.start === null ? 0 : this.x(k.start, 0) - this.halfBar());
+        for (const shown of frame.on) {
+          const { group, levels, y } = shown;
+          // A level left out for being too close to this one is named in this one's hover.
+          // ("nearby" within a few label heights; "also" for one only folded here for want of a closer line)
+          const held = frame.near.get(shown) ?? [];
+          // a level the core sent keeps its own name findable ("PD EQ 25,052.38 (... Respect level ...)")
+          const word = (n: KeyShown) => {
+            const core = n.levels.find((l) => l.coreSent || l.family === 'core');
+            return `${n.levels.map((l) => l.short).join(' · ')} ${formatPrice(n.group.price, scene.decimals)}${core ? ` (${core.name})` : ''}`;
+          };
+          const close = held.filter((n) => {
+            const ny = series.priceToCoordinate(n.group.price);
+            return ny !== null && Math.abs(ny - y) <= 3 * LH;
+          });
+          const far = held.filter((n) => !close.includes(n));
+          const title =
+            groupTitle(levels, group.price, scene.decimals) +
+            (close.length ? `; nearby: ${close.map(word).join(', ')}` : '') +
+            (far.length ? `; also: ${far.map(word).join(', ')}` : '');
+          const x = lineStart(shown);
+          hits.push({ box: { x, y: y - 4, w: Math.max(0, right + 6 - x), h: 8 }, title, priority: 9 });
+          keyTitles.set(shown, title);
+        }
+        // A name for a line among `set` (the lines that would be drawn): the spots keyNameSpots gives
+        // (its doc says the order), so a name always sits in its own line's strip.
+        keyLabel = (shown, set) => {
+          const { group, levels, y } = shown;
+          const x = lineStart(shown);
+          const below = this.lastClose !== null && group.price < this.lastClose;
+          const others = set.filter((o) => o !== shown).map((o) => ({ y: o.y, x: lineStart(o) }));
+          // column hairlines bar a name, except at its own price (whether that one is drawn depends
+          // on whether this line is, so ignoring it keeps the answer the same from any history)
+          const choices = groupTexts(levels).map((text): LabelChoice => {
+            const w = measure(text);
+            const spots = keyNameSpots({ x, y }, others, w, right, LH, plot.h, below, candleBoxes);
+            return { text, w, candidates: clearOfSpans(spots, this.spanBoxes, group.price, scene.decimals) };
+          });
+          const title = keyTitles.get(shown) ?? groupTitle(levels, group.price, scene.decimals);
+          return { title, color: scene.palette.muted, priority: KEY_PRIORITY[levels[0]!.family], choices };
+        };
+      }
+
       // ---- zone names: inside the zone at its right end when it is tall enough, else beside it ----
       for (const { mark, color, label, priority } of this.items) {
         if (mark.kind !== 'zone' || !label || mark.top === null || mark.bottom === null) continue;
@@ -771,8 +1139,118 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
         obstacles,
         candleBoxes,
       );
-      order.forEach(({ l }, k) => {
-        const r = placed[k];
+      // Key level names last, in their own pass: never on a candle (a name with no clear spot takes a
+      // shorter wording, else is left out; its line, hover and tag stay), and a little clear of every
+      // other label, so the two never read as one phrase.
+      // every placed label and edge chip, padded, so a key name never reads as part of either
+      const pad = (b: Box): Box => ({ x: b.x - KEY_LABEL_PAD, y: b.y - 2, w: b.w + 2 * KEY_LABEL_PAD, h: b.h + 4 });
+      // an edge chip gets twice the side clearance: a name beside a chip on one row reads as one phrase
+      const padChip = (b: Box): Box => ({ x: b.x - 2 * KEY_LABEL_PAD, y: b.y - 2, w: b.w + 4 * KEY_LABEL_PAD, h: b.h + 4 });
+      const others = [...placed.flatMap((r) => (r ? [pad(r.box)] : [])), ...chipBoxes.map(padChip)];
+      const hard = [...obstacles, ...candleBoxes, ...others];
+      // Which fine lines have room for a name, against everything placed (trade lines, mark labels,
+      // candles): place every name, leave out the fine lines whose name found no spot, and place again
+      // without them (their lines no longer bar a spot) until nothing more is left out.
+      let keyOrder: PendingLabel[] = [];
+      let keyPlaced: ({ choice: number; box: Box } | null)[] = [];
+      let keyLines: (KeyShown & { y: number })[] = [];
+      // The whole placement is worked out over every thinned line (frame.all), whatever this frame
+      // drew, so its answer does not depend on history; only the names of lines drawn are drawn.
+      const keyRightX = this.keyRight(plot.w) - 6;
+      const startOf = (k: KeyShown) => Math.max(0, k.start === null ? 0 : this.x(k.start, 0) - this.halfBar());
+      const allNearest = frame ? this.nearestEachSide(frame.all) : new Set<KeyShown>();
+      if (frame && keyLabel && scene.overlays.levelNames) {
+        const left = new Set<KeyShown>();
+        for (let pass = 0; pass < 4; pass++) {
+          const set = frame.all.filter((k) => !left.has(k));
+          // the nearest level each side of the last close is named first: it is what price trades against
+          const first = (x: { k: KeyShown & { y: number } }) => (allNearest.has(x.k) ? 0 : 1);
+          const labelled = set.map((k) => ({ k, l: keyLabel!(k, set) })).sort((a, b) => first(a) - first(b) || a.l.priority - b.l.priority);
+          keyPlaced = placeChoices(labelled.map((x) => x.l), plot, hard);
+          keyOrder = labelled.map((x) => x.l);
+          keyLines = labelled.map((x) => x.k);
+          let grew = false;
+          labelled.forEach((x, i) => {
+            if (!keyPlaced[i] && FINE.has(x.k.levels[0]!.family) && !left.has(x.k) && !allNearest.has(x.k)) {
+              left.add(x.k);
+              grew = true;
+            }
+          });
+          if (!grew) break;
+        }
+      }
+      const taken = keyPlaced.flatMap((r) => (r ? [r.box] : []));
+      const bodies = this.bodyBoxes();
+      // A week, day or core line whose period has only just begun (shorter than three of its names) and
+      // whose name found no clear spot takes the spot covering the fewest candles (bestJustBegunSpot),
+      // never over another label, a chip, a trade line or a column hairline.
+      keyOrder.forEach((l, i) => {
+        const k = keyLines[i];
+        if (keyPlaced[i] || !k || FINE.has(k.levels[0]!.family)) return;
+        const c = l.choices.length - 1; // the shortest wording
+        const choice = l.choices[c]!;
+        // how far into its period: the week's 10080 minutes, else a day's 1440 (day and core levels)
+        const elapsed = k.start === null ? Infinity : (this.lastIndex() - k.start + 1) * (scene.minutes ?? 0);
+        const period = k.levels[0]!.family === 'week' ? 10080 : 1440;
+        // candle bodies are blocks too: only wicks may be crossed
+        const blocks = [...obstacles, ...others, ...this.spansBut(k.group.price), ...taken, ...bodies];
+        const box = bestJustBegunSpot(keyRightX - startOf(k), choice.w, LH, choice.candidates, plot, blocks, candleBoxes, elapsed, period);
+        if (!box) return;
+        keyPlaced[i] = { choice: c, box };
+        taken.push(box);
+      });
+      // The nearest level each side of the last close (always drawn) with no clear spot takes the spot
+      // crossing the fewest wicks, never a body: what price trades against is named.
+      keyOrder.forEach((l, i) => {
+        const k = keyLines[i];
+        if (keyPlaced[i] || !k || !allNearest.has(k)) return;
+        const blocks = [...obstacles, ...others, ...this.spansBut(k.group.price), ...taken, ...bodies];
+        for (let c = l.choices.length - 1; c >= 0; c--) {
+          const choice = l.choices[c]!;
+          const spot = leastCoverSpot(choice.candidates, plot, blocks, candleBoxes);
+          if (spot) {
+            keyPlaced[i] = { choice: c, box: spot.box };
+            taken.push(spot.box);
+            return;
+          }
+        }
+      });
+      // Which lines have a name, for the line pass: a fine line, or a short senior stub (shorter than
+      // three of its names: zoomed out, a period just begun) that is not the nearest each side, is left
+      // out without one (a bare stub is noise); a long senior line stays as structure. Stored per level,
+      // so the line pass reads it; when it changed, draw again (the axis formatter too, so a tick under
+      // a tag's new place hides); a tick that leaves the answer as it was redraws nothing.
+      if (frame && scene.overlays.levelNames) {
+        let changed = false;
+        // every eligible line of frame.all: one dropped during the passes above is not in keyOrder at
+        // all, and must be recorded as unnamed too, or an earlier "named" would outlive it
+        const placedLines = new Set(keyLines.filter((_, i) => !!keyPlaced[i]));
+        const eligible = (k: KeyShown) => {
+          const names = groupTexts(k.levels);
+          return FINE.has(k.levels[0]!.family) || keyRightX - startOf(k) < 3 * this.nameWidth(names[names.length - 1] ?? '');
+        };
+        for (const [k, named] of nameAnswers(frame.all, placedLines, eligible)) {
+          const id = this.fineId(k);
+          if (this.fineNamed.get(id) !== named) {
+            if (this.fineNamed.size > 256) this.fineNamed.delete(this.fineNamed.keys().next().value!); // the oldest
+            this.fineNamed.set(id, named);
+            changed = true;
+          }
+        }
+        if (changed) {
+          this.fineVersion++;
+          // Lightweight Charts caches its axis tick labels until the price range or the formatter
+          // changes; applying an empty localization re-runs the formatter, which hides the ticks under
+          // the tags' new places. Queued, so it runs after this draw and not inside it.
+          const chart = this.chart;
+          queueMicrotask(() => chart?.applyOptions({ localization: {} }));
+          this.requestUpdate?.();
+        }
+      }
+      // Names only for lines drawn this frame.
+      const drawn = new Set<KeyShown>(frame?.on ?? []);
+      keyPlaced = keyPlaced.map((r, i) => (keyLines[i] && drawn.has(keyLines[i]!) ? r : null));
+      const draw = (l: PendingLabel, r: { choice: number; box: Box } | null) => {
         if (!r) return;
         const { box } = r;
         // Halo in the pane colour keeps the label legible where it crosses a candle or a line.
@@ -782,7 +1260,9 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
         ctx.fillStyle = l.color;
         ctx.fillText(l.choices[r.choice]!.text, box.x + 3, box.y + LH - Math.round(3 * scene.scale));
         hits.push({ box, title: l.title, priority: l.priority });
-      });
+      };
+      order.forEach(({ l }, k) => draw(l, placed[k] ?? null));
+      keyOrder.forEach((l, k) => draw(l, keyPlaced[k] ?? null));
     });
 
     this.hits = hits;
@@ -794,12 +1274,43 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
    */
   private drawSpans(ctx: CanvasRenderingContext2D, hr: number, vr: number, width: number, heightB: number): void {
     const scene = this.scene!;
-    const series = this.series!;
     const column = scene.column;
     if (!column || column.bars.length === 0) return;
-    const half = this.halfBar();
     const lw = Math.max(1, Math.floor(vr));
     ctx.fillStyle = withAlpha(scene.palette.muted, SPAN_ALPHA);
+    // A hairline at a price a key level draws now is left out: that price is named already (the previous
+    // candle's range is), and two line styles meeting at one price read as one line changing style.
+    const frame = this.keyFrame(heightB / vr);
+    const at = (p: number) => p.toFixed(scene.decimals);
+    const drawnAt = new Set((frame ? [...frame.on, ...frame.above, ...frame.below] : []).map((k) => at(k.group.price)));
+    this.spanBoxes = [];
+    for (const { x1, x2, y, price } of this.hairlines(width)) {
+      // a hairline at a price a key level draws is skipped (each on its own): one line style per price
+      if (drawnAt.has(at(price))) continue;
+      ctx.fillRect(Math.round(x1 * hr), Math.round(y * vr) - Math.floor(lw / 2), Math.round((x2 - x1) * hr), lw);
+      // a key name must not sit on it either: it would read as that line's name
+      this.spanBoxes.push({ x: x1, y: y - 1.5, w: x2 - x1, h: 3, price });
+    }
+    const left = this.columnLeft();
+    if (left !== null && left > 0 && left < width) {
+      ctx.fillStyle = withAlpha(scene.palette.faint, 0.5);
+      ctx.fillRect(Math.round(left * hr), 0, Math.max(1, Math.floor(hr)), heightB);
+    }
+  }
+
+  /** The column hairlines drawn this frame, except those at `price` (a line's own). */
+  private spansBut(price: number): Box[] {
+    const dec = this.scene?.decimals ?? 2;
+    return this.spanBoxes.filter((s) => s.price.toFixed(dec) !== price.toFixed(dec));
+  }
+
+  /** Every column hairline in media px: the high and low of each column candle across the bars it covers. */
+  private hairlines(width: number): { x1: number; x2: number; y: number; price: number }[] {
+    const column = this.scene?.column;
+    const series = this.series;
+    if (!column || !series) return [];
+    const half = this.halfBar();
+    const out: { x1: number; x2: number; y: number; price: number }[] = [];
     for (const bar of column.bars) {
       if (bar.from === null || bar.to === null) continue;
       const x1 = Math.max(0, this.x(bar.from, 0) - half);
@@ -807,15 +1318,10 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
       if (x2 <= x1) continue;
       for (const price of [bar.candle.high, bar.candle.low]) {
         const y = series.priceToCoordinate(price);
-        if (y === null) continue;
-        ctx.fillRect(Math.round(x1 * hr), Math.round(y * vr) - Math.floor(lw / 2), Math.round((x2 - x1) * hr), lw);
+        if (y !== null) out.push({ x1, x2, y, price });
       }
     }
-    const left = this.columnLeft();
-    if (left !== null && left > 0 && left < width) {
-      ctx.fillStyle = withAlpha(scene.palette.faint, 0.5);
-      ctx.fillRect(Math.round(left * hr), 0, Math.max(1, Math.floor(hr)), heightB);
-    }
+    return out;
   }
 
   /** The column's candles, in the pane's own candle colours; the forming one in outline. */
@@ -987,4 +1493,9 @@ export class MarksPrimitive implements ISeriesPrimitive<Time> {
     ctx.strokeStyle = ring;
     ctx.stroke();
   }
+}
+
+/** Order of a key level group's price tag: by its most senior level. */
+function keyRank(g: KeyGroup): number {
+  return KEY_PRIORITY[g.levels[0]?.family ?? 'session'];
 }

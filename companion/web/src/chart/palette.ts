@@ -3,6 +3,9 @@
 // area its own tokens (TradingView: the trader's cream pane). tokens.css stays the only source.
 import type { Semantic } from '../tones';
 
+/** The chart canvas font: TradingView's stack (Trebuchet MS on Windows), the same as --font-sans in tokens.css. */
+export const CHART_FONT = "-apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif";
+
 export interface Palette {
   bg: string;
   surface: string;
