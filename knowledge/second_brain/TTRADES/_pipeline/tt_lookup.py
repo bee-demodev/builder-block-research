@@ -108,7 +108,8 @@ def card(db, cid: str, rules: bool, grep: str | None) -> None:
     ids = {r[0] for r in rows}
     mine = [d for d in db.execute("select id, date, question, choice, settles, code from decisions") if ids & set(re.findall(r"[A-Z0-9]+-\d+", d[4])) or cid.replace("-", " ") in norm(" ".join(map(str, d[2:])))]
     for d in mine:
-        print(f"- {d[0]} ({d[1]}): {d[2]} -> {d[3]} | settles: {d[4]} | code: {d[5]}")
+        flag = "[PROPOSED, not decided by Vik] " if str(d[3]).lower().startswith("proposed") else ""
+        print(f"- {flag}{d[0]} ({d[1]}): {d[2]} -> {d[3]} | settles: {d[4]} | code: {d[5]}")
     if not mine:
         print("- none recorded for this concept")
     print("\n## Backtest evidence (evidence.md; the engine's own runs, never a reason to override the teacher unasked)")

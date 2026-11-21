@@ -67,3 +67,28 @@ rejection wick): on 1D/1h/5m, train +0.74 R/wk (t 2.35), 2025 +0.48, 2026 +0.70;
 2025 -0.39. So the 4H check is the missing layer on the 1h / 5m stack (his D-1H bias with a lower
 entry), and mostly redundant where the setup timeframe is the 4H. Engine runs: `htf_align` and
 `loop2` (= `loop1` + the 4H check) on 4h + W, `loop2` on 1D/1h/5m.
+
+| Turn | Change (variant) | Stacks | Card train / val / test | Δ train vs state, no cap | Δ train vs state, 1/day | Δ validate / test, no cap | Δ validate / test, 1/day | Kept | Teacher (test) | Ready |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 12a | 4H check alone vs baseline (`htf_align`) | 4h+W | 3.7 / 8.7 / 4.8 | +0.185 (1.48) | — | -0.444 / -0.013 | — | superseded by 12b | 0/13 | no |
+| 12b | `loop1` + 4H check (`loop2`) vs `loop1` | 4h+W | 5.1 / 8.6 / 6.3 | +0.109 (0.89) | +0.093 (0.88) | -0.513 / +0.070 | -0.238 / +0.433 | **no** (t under 1) | 0/13 | no |
+| 12c | `loop2` vs baseline (no `loop1` run on this stack) | 1D/1h/5m | 3.5 / 1.9 / 6.1 | +0.738 (2.05) | +0.523 (2.15) | +0.715 / +0.469 | +0.034 / +0.226 | **yes** | 2/13 | no |
+
+**State after turn 12**: `loop1` on 1D/4h/15m and 1W/1D/1h, `loop2` (= `loop1` + the 4H check) on
+1D/1h/5m. The 4H check is kept where the setup timeframe is below the 4H and not where it is the
+4H, which is how the teacher pairs them (D-1H bias, the 4H between bias and a lower entry). Against
+the baseline on all three stacks: train +0.91 R/wk (t 2.40), 2025 +0.74, 2026 +0.59.
+
+| State | Cap | Card train / val / test | Mean R/wk train / val / test | Trades/wk | Max DD (R) train / val / test | Teacher (test) | OOS score, edge | Ready |
+|---|---|---|---|---|---|---|---|---|
+| baseline, all stacks | none | 2.2 / 4.0 / 4.6 | -0.74 / +0.12 / +0.34 | 14.5 | -150 / -34 / -28 | 4/13 | 4.0, 0.6 | no |
+| after turn 12 | none | **4.5 / 8.0 / 6.7** | +0.17 / +0.86 / +0.93 | 5.5 | -32 / -16 / -15 | 2/13 | 6.7, 4.9 | no |
+| after turn 12 | 1/day | 2.7 / 6.9 / 6.3 | -0.09 / +0.51 / +0.56 | 3.0 | -34 / -20 / -8 | 1/13 | 6.3, 4.9 | no |
+| `loop2` on all stacks (not chosen: train t 0.89 on 4h+W) | none | 5.1 / 5.7 / 6.6 | +0.28 / +0.35 / +1.00 | 4.5 | -39 / -21 / -15 | 2/13 | 5.7, 2.9 | no |
+
+Grade after turn 12: **6.7 / 10** out of sample (edge 4.9 / 10). Not ready to trade: the train edge
+is t 0.67, the out-of-sample edges t 1.87 (2025) and 1.48 (2026), and the engine agrees with only 2
+of the teacher's 13 own trades in 2026. Next turns, by expected gain: teacher agreement (why it misses
+his NQ / ES shorts: bias CISD on the paired timeframe, the forming-wick check), then SMT for
+reversals. Each turn now costs 1-2 hours of grid time; the harness speed-up (next PR) is what makes
+more turns cheap.
