@@ -98,6 +98,10 @@ VARIANTS: dict[str, dict[str, Any]] = {
     "wick_setup": {"cont_setup_pick": "wick_extreme"},  # one CISD a day forms the wick
     # loop turn 11: the switches kept on train (paired weekly-R t >= 1; TTRADES/loop-log.md)
     "loop1": {"cont_setup_pick": "wick_extreme", "stop_size_role": "quality", "c4_after_double_expansion": "skip"},
+    # loop turn 12: the 4H candle has to support the trade (FM-12 / BIAS-23)
+    "htf_align": {"htf_align_role": "quality"},
+    "loop2": {"cont_setup_pick": "wick_extreme", "stop_size_role": "quality", "c4_after_double_expansion": "skip",
+              "htf_align_role": "quality"},
     "loop1_ny": {"cont_setup_pick": "wick_extreme", "stop_size_role": "quality", "c4_after_double_expansion": "skip",
                  "kill_zones": [["08:00", "10:30"]], "session_filter_role": "quality"},
 }

@@ -94,6 +94,7 @@ class TTradesConfig:
     profile_check_role: str
     c4_after_double_expansion: str
     cont_setup_pick: str
+    htf_align_role: str
 
     def __post_init__(self) -> None:
         for name in ("entry_mode_continuation", "entry_mode_reversal"):
@@ -113,6 +114,7 @@ class TTradesConfig:
             "profile_check_role": ("advisory", "quality"),
             "c4_after_double_expansion": ("trade", "skip"),
             "cont_setup_pick": ("latest", "wick_extreme"),
+            "htf_align_role": ("off", "advisory", "quality"),
         }
         for name, allowed in choices.items():
             if getattr(self, name) not in allowed:

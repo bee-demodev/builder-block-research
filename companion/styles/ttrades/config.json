@@ -364,6 +364,12 @@
       "rules": "6 (stage c3)",
       "open_question": null,
       "description": "PROPOSED TD-009 (backtest evidence; Vik decides). Which setup-timeframe Candle 2 / Candle 3 closure the continuation trades. 'latest' (default): the most recent intact one. 'wick_extreme': only a closure whose swing is the forming bias candle's extreme so far (its low for a long), so a later higher low inside the candle is not traded. Teacher 2026: 'you really only have one change in the state of delivery per day. That forms the daily wick.' (livestream_20260505, rule 5). No tolerance: the swing must be the extreme."
+        },
+    "htf_align_role": {
+      "value": "off",
+      "rules": "5, 6 (stage c1)",
+      "open_question": null,
+      "description": "PROPOSED TD-010 (backtest evidence; conflicts FM-12 / BIAS-23 are open, Vik decides). Whether the last closed 4H candle has to support the trade: it closed the trade's way and its wick beyond the close (the rejection side) is under closed_wick_large_frac of its range. 'off' (default): not read, not shown. 'advisory': shown as htf_candle_aligned, never blocks. 'quality': a 4H candle against the trade keeps the verdict at watch. Teacher 2026: 'you're trading against the 4-hour candle, which is a lot harder' (livestream_20260310 04:25-06:08); 'when true expansion occurs, it's when these timeframes are kind of all aligned together' (livestream_20260313 1:09:08). The candle test is my reading; he gives no number, so the wick yardstick reuses closed_wick_large_frac."
     }
   }
 }

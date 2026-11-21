@@ -11,7 +11,7 @@ import pandas as pd
 from companion.bars import BarSource
 from companion.styles.ttrades.bias import BiasRead, read_bias
 from companion.styles.ttrades.checklist import (
-    CONTINUATION, GATE, QUALITY, REVERSAL, SESSION, SHARED, STAGES, STOP_SIZE, Checklist,
+    CONTINUATION, GATE, HTF_ALIGN, QUALITY, REVERSAL, SESSION, SHARED, STAGES, STOP_SIZE, Checklist,
 )
 from companion.styles.ttrades.config import TTradesConfig, load_config
 from companion.styles.ttrades.context import Context, at_clock, load_context, trading_day
@@ -60,8 +60,41 @@ BLOCK_WORDS = {
     "rev_reward_at_least_2r": "under 2R",
     "session_filter_ok": "outside kill zone",
     "stop_size_ok": "stop too small",
+    "htf_candle_aligned": "4H candle against",
     "played_out": "played out",
 }
+
+HTF_ALIGN_TF = "4h"
+
+
+def htf_candle_aligned(
+    symbol: str, source: BarSource, at: pd.Timestamp, side: Side, wick_frac: float
+) -> tuple[bool | None, str]:
+    """Does the last 4H candle closed by ``at`` support a trade on ``side``? (proposed TD-010)
+
+    Teacher: "you're trading against the 4-hour candle, which is a lot harder"
+    (livestream_20260310 04:25-06:08); "when true expansion occurs, it's when these timeframes are
+    kind of all aligned together" (livestream_20260313 1:09:08). My reading, his words give no
+    number: the candle closed the trade's way and its wick beyond the close (the rejection side)
+    is under ``wick_frac`` (closed_wick_large_frac) of its range."""
+    try:
+        bars = source.get_bars(symbol, HTF_ALIGN_TF, at, 2)
+    except Exception:  # noqa: BLE001 - an optional check must never fail the read
+        return None, f"no {HTF_ALIGN_TF} bars"
+    if not len(bars):
+        return None, f"no closed {HTF_ALIGN_TF} candle yet"
+    last = bars.iloc[-1]
+    o, h, l, c = (float(last[k]) for k in ("open", "high", "low", "close"))
+    span = h - l
+    rejection = (h - c) if side.bullish else (c - l)
+    closed_its_way = c > o if side.bullish else c < o
+    share = rejection / span if span > 0 else 1.0
+    ok = bool(span > 0 and closed_its_way and share < wick_frac)
+    return ok, (
+        f"{HTF_ALIGN_TF} candle {when(bars.index[-1])} O {fmt(o)} H {fmt(h)} L {fmt(l)} C {fmt(c)}: closed "
+        f"{'with' if closed_its_way else 'against'} the {side.trade}, {'upper' if side.bullish else 'lower'} wick "
+        f"{share:.0%} of its range (under {wick_frac:.0%} wanted)"
+    )
 
 
 def _cap(text: str) -> str:
@@ -408,12 +441,25 @@ class TTradesStyle:
             stop_size.set("stop_size_ok", None, "no trigger yet; judged on the trigger's stop once it forms")
         stop_blocks = cfg.stop_size_role == QUALITY and stop_size.passed("stop_size_ok") is False
         groups = [shared, cont.checklist, reversal.checklist, session, stop_size]
+        # proposed TD-010: the 4H candle has to support the trade (off by default: not read at all)
+        htf_blocks = False
+        if cfg.htf_align_role != "off":
+            htf = Checklist((HTF_ALIGN,), stack, None, {"htf_candle_aligned": cfg.htf_align_role})
+            if selected is not None and selected.side is not None:
+                at = selected.trigger_close if selected.trigger_close is not None else moment
+                htf.set("htf_candle_aligned", *htf_candle_aligned(symbol, source, at, selected.side, cfg.closed_wick_large_frac))
+            else:
+                htf.set("htf_candle_aligned", None, "no path selected to judge")
+            htf_blocks = cfg.htf_align_role == QUALITY and htf.passed("htf_candle_aligned") is False
+            groups.append(htf)
         bias_text = f"Bias {bias.bias} (case {bias.case}: {bias.text})."
 
         # why an entry-ready trigger is held back besides its own checks: told on the entry line and step
         held: list[str] = []
         if stop_blocks:
             held.append(f"the stop is under {cfg.min_stop_adr_frac:.0%} of the daily range, so costs take a large share of it")
+        if htf_blocks:
+            held.append("the last closed 4H candle does not support the trade")
 
         routes: dict[str, bool] = {}
         if shared.gates_pass():  # a reversal route can be named where no key level is reached yet
@@ -467,6 +513,7 @@ class TTradesStyle:
             checklist.failing_quality()
             + (["session_filter_ok"] if session_blocks and not ok else [])
             + (["stop_size_ok"] if stop_blocks else [])
+            + (["htf_candle_aligned"] if htf_blocks else [])
         )
         head = f"{selected.family} {side.trade} at stage {stage}"
         if stage != "c4":

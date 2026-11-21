@@ -41,6 +41,10 @@ across the portfolio (PSY-1); "none" = one position per symbol and stack only.
 | CC-4, C4c | candle-closures | c4_after_double_expansion = skip | no_double_expansion_c4 | 4h+W | none | -0.03 (base -0.10) | +1.19 (base +1.15) | +0.37 (base +0.32) | passes | tv-5y |
 | T1, CISD | cisd | cont_setup_pick = wick_extreme (one CISD a day forms the wick) | wick_setup | 4h+W | none | +0.00 (base -0.10) | +1.06 (base +1.15) | +0.38 (base +0.32) | fails out of sample | tv-5y |
 | T1, CISD | cisd | cont_setup_pick = wick_extreme | wick_setup | 4h+W | 1/day | -0.07 (base -0.16) | +0.48 (base +0.41) | -0.02 (base -0.07) | passes | tv-5y |
+| T1, C4c, question 38 | cisd | loop turn 11: wick_extreme + c4 skip + stop gate together | loop1 | 4h+W | none | +0.08 (base -0.10) | +1.17 (base +1.15) | +0.44 (base +0.32) | passes | tv-5y-loop1 |
+| T1, C4c, question 38 | cisd | loop turn 11, one trade a day | loop1 | 4h+W | 1/day | +0.03 (base -0.16) | +0.53 (base +0.41) | -0.02 (base -0.07) | passes | tv-5y-loop1 |
+| FM-12, BIAS-23 | fractal-model | last closed 4H candle closed the trade's way, no rejection wick (post-run screen) | baseline + 4H screen | 1D/1h/5m | none | +0.10 (base -0.64) | -0.55 (base -1.03) | +0.72 (base +0.02) | passes (screen) | tv-5y |
+| FM-12, BIAS-23 | fractal-model | the same 4H screen | baseline + 4H screen | 4h+W | none | +0.03 (base -0.10) | +0.77 (base +1.15) | +0.33 (base +0.32) | fails out of sample (screen) | tv-5y |
 | FM-1, FM-5 | fractal-model | stack choice (each stack alone) | baseline | each | none | 1D/1h/5m -0.64, 1D/4h/15m -0.07, 1W/1D/1h -0.02 | -1.03, +1.00, +0.15 | +0.02, +0.21, +0.11 | 1D/4h/15m and 1W/1D/1h beat 1D/1h/5m in every period | tv-5y |
 | SES-22 | sessions-and-time | no fill on an FOMC statement day (post-run screen) | baseline + no_fomc_day | all | none | -0.58 (base -0.74) | -0.14 (base +0.12) | +0.42 (base +0.34) | fails out of sample (screen) | tv-5y |
 | SMT, index strength | smt-and-psp | one of NQ / ES / YM per day and direction (post-run screen) | baseline + one_index | all | none | -0.42 (base -0.74) | +0.56 (base +0.12) | +0.14 (base +0.34) | fails out of sample (screen) | tv-5y |

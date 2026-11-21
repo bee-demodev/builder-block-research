@@ -104,8 +104,20 @@ def test_the_wick_setup_ignores_a_later_higher_low(early_low: float, skipped: bo
         assert "cont_setup_pick is wick_extreme" in criterion(wick, "cont_setup_closure").detail
 
 
+@pytest.mark.parametrize(("first_bar", "aligned"), [((97.5, 97.9, 96.9, 97.0), False), ((96.9, 97.9, 96.8, 97.85), True)])
+def test_the_4h_check_is_absent_by_default_and_blocks_only_as_quality(first_bar: tuple, aligned: bool) -> None:
+    # the forming day's first setup bar is the only row in the last closed 4H candle before the trigger
+    scenario = continuation_scenario(DAILY, first_setup_bar=first_bar)
+    default = evaluate(scenario, "trigger")
+    assert default.decision == "long" and not [c for c in default.criteria if c.key == "htf_candle_aligned"]
+    shown = evaluate(scenario, "trigger", htf_align_role="advisory")
+    assert criterion(shown, "htf_candle_aligned").passed is aligned and shown.decision == "long"
+    gated = evaluate(scenario, "trigger", htf_align_role="quality")
+    assert gated.decision == ("long" if aligned else "watch")
+
+
 @pytest.mark.parametrize("name", ["next_continuation", "eq_soft", "profile_veto", "no_reversals", "ny_window",
                                   "cont_cisd_entry", "stop_gate", "swing_close_break", "no_double_expansion_c4",
-                                  "wick_setup"])
+                                  "wick_setup", "loop1", "loop1_ny", "htf_align", "loop2"])
 def test_every_teacher_variant_is_a_valid_config(name: str) -> None:
     load_config(overrides=VARIANTS[name])
