@@ -12,6 +12,8 @@
                                                 journal trades that match, with win rate and R
   python tt_lookup.py --day 2026-11-03          one journal day: its trades and note path
   python tt_lookup.py --backtest <id> [SYMBOL]  one registered backtest run
+  python tt_lookup.py --evidence [WORD]         the evidence ledger: each tested rule / switch, its walk-forward
+                                                R per week (train / validate / test) and verdict
 
 Rebuilds the index when any note is newer than it.
 """
@@ -69,6 +71,22 @@ def fts(db, table: str, phrase: str, limit: int, kind: str | None = None):
     return db.execute(sql, (" AND ".join(words),)).fetchall() or db.execute(sql, (" OR ".join(words),)).fetchall()
 
 
+def evidence_for(db, cid: str, conflict_ids: set[str]) -> list[tuple]:
+    """Ledger rows filed under the concept, or naming one of its conflict / rule ids."""
+    out = []
+    for row in db.execute("select * from evidence"):
+        named = set(re.findall(r"[A-Z0-9]+-\d+", row[0]))
+        if row[1] == cid or named & conflict_ids:
+            out.append(row)
+    return out
+
+
+def evidence_line(row: tuple) -> str:
+    rules, concept, switch, variant, stacks, cap, train, validate, test, verdict, run = row
+    return (f"- {rules} [{concept}] {switch} (variant {variant}; {stacks}; {cap}): R/week train {train} | "
+            f"validate {validate} | test {test} -> {verdict} [{run}]")
+
+
 def card(db, cid: str, rules: bool, grep: str | None) -> None:
     title, conf, steps, roles, path = db.execute("select title, confidence, chain_step, timeframe_role, path from concepts where id=?", (cid,)).fetchone()
     text = (KB / path).read_text(encoding="utf-8")
@@ -93,6 +111,12 @@ def card(db, cid: str, rules: bool, grep: str | None) -> None:
         print(f"- {d[0]} ({d[1]}): {d[2]} -> {d[3]} | settles: {d[4]} | code: {d[5]}")
     if not mine:
         print("- none recorded for this concept")
+    print("\n## Backtest evidence (evidence.md; the engine's own runs, never a reason to override the teacher unasked)")
+    found = evidence_for(db, cid, ids)
+    for row in found:
+        print(evidence_line(row))
+    if not found:
+        print("- no switch for this concept has been backtested yet")
     t = db.execute("select count(*), sum(result_r), sum(result_r>0) from trades where path_kind=? or trigger_kind=?", (cid, cid)).fetchone()
     if t[0]:
         print(f"\n## Journal evidence\n- {t[0]} journaled trades on this path / trigger, {t[2]} won, {t[1]:+.1f} R. Detail: --trades path={cid}")
@@ -208,6 +232,13 @@ def main() -> None:
         d = db.execute("select * from days where date=?", (args[1],)).fetchone()
         print(f"day note: {BRAIN.as_posix()}/{d[7]} | {d[2]} trades, {d[3]} won, {d[4]} lost, {d[5]:+.2f} R [{d[6]}]" if d else "no TTFM day note for that date")
         trades(db, [f"from={args[1]}", f"to={args[1]}"])
+        return
+    if cmd == "--evidence":
+        word = " ".join(args[1:]).lower()
+        rows = [r for r in db.execute("select * from evidence") if not word or word in " ".join(map(str, r)).lower()]
+        for row in rows:
+            print(evidence_line(row))
+        print(f"\n{len(rows)} ledger row(s). Ledger: {(KB / 'evidence.md').as_posix()}" if rows else "no ledger rows match")
         return
     if cmd == "--backtest":
         r = db.execute("select title, d_from, d_to, switches, tests, data, path from backtests where id=?", (args[1] if len(args) > 1 else "",)).fetchone()

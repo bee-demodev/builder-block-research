@@ -145,6 +145,7 @@ create table conflicts(id primary key, concept_id, question, side_a, side_b, kin
 create table decisions(id primary key, date, question, choice, reason, settles, code);
 create table backtests(id primary key, title, model, concepts, run_date, d_from, d_to, symbols, switches, tests, plans, total_r, data, path);
 create table backtest_rows(run_id, symbol, setup, grade, plans, tp1, tp2, stopped, avg_r, total_r);
+create table evidence(rules, concept, switch, variant, stacks, cap, train, validate, test, verdict, run);
 create table trades(id primary key, date, time, symbol, stack, source, path_kind, stage, trigger_kind, direction, bias, session,
                     weekday, entry, stop, risk, target_r, result_r, r_1, r_2, r_3, r_bias_close, mfe_r, mae_r, outcome,
                     status, verdict, mistakes, criteria_failed, why, note_path);
@@ -247,10 +248,29 @@ def index_backtests(db) -> None:
             continue
         db.execute("insert or replace into backtests values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
             fm["id"], fm["title"], fm.get("model"), json.dumps(fm.get("concepts") or []), str(fm.get("run_date")), str(fm.get("from")), str(fm.get("to")),
-            json.dumps(fm.get("symbols") or []), json.dumps(fm.get("switches") or {}), json.dumps(fm.get("tests") or []), fm.get("plans"), fm.get("total_r"), fm.get("data"), p.relative_to(KB).as_posix()))
+            json.dumps(fm.get("symbols") or []), json.dumps(fm.get("switches") or {}), json.dumps(fm.get("tests") or []), fm.get("plans"), fm.get("total_r"),
+            # one folder, or a list of them (a grid registered across its years)
+            ", ".join(fm["data"]) if isinstance(fm.get("data"), list) else fm.get("data"), p.relative_to(KB).as_posix()))
         for header, row in tables(text, "Per setup"):
             if len(row) >= 9:
                 db.execute("insert into backtest_rows values(?,?,?,?,?,?,?,?,?,?)", (fm["id"], *row[:9]))
+
+
+EVIDENCE_COLUMNS = ("rules", "concept", "switch", "variant", "stacks", "cap", "train", "validate", "test", "verdict", "run")
+
+
+def evidence_rows(text: str) -> list[tuple[str, ...]]:
+    """The rows of evidence.md's ledger: one tested rule (switch / variant) with its walk-forward result."""
+    return [tuple(row[:11]) for _, row in tables(text, "Ledger") if len(row) >= 11]
+
+
+def index_evidence(db) -> None:
+    p = KB / "evidence.md"
+    if not p.exists():
+        return
+    for row in evidence_rows(p.read_text(encoding="utf-8")):
+        db.execute("insert into evidence values(?,?,?,?,?,?,?,?,?,?,?)", row)
+        db.execute("insert into docs_fts values(?,?,?,?)", (f"evidence:{row[3]}", "evidence", f"{row[0]} {row[2]}", " ".join(row)))
 
 
 def index_docs(db) -> None:
@@ -318,6 +338,7 @@ def main() -> None:
     index_conflicts_and_decisions(db)
     index_backtests(db)
     chunks = index_docs(db)
+    index_evidence(db)
     index_journal(db)
     db.commit()
     q = lambda s: db.execute(s).fetchall()

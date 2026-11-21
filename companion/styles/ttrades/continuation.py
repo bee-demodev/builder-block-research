@@ -446,6 +446,10 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
         "cont_objective_open": cfg.objective_open_role,
         "cont_reward_at_least_2r": cfg.reward_check_role,
         "cont_objective_open_at_trigger": cfg.objective_at_trigger_role,
+        # proposed TD-002 (BIAS-1 / RNG-3): a close through EQ is a soft invalidation, not a kill
+        "cont_eq_respected": cfg.eq_respect_role,
+        # proposed TD-003 (BIAS-9 / PROF-1): the daily profile (open, low first, then higher) as a veto
+        "cont_opened_against_bias_first": cfg.profile_check_role,
     }
     if not cfg.setup_body_alignment_required:
         roles["cont_setup_closure_body_aligned"] = ADVISORY
@@ -496,7 +500,25 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
     else:
         cl.set("bias_cisd_confirmed", None, f"no closed {s.tf} bar inside the swing candle {b.at(swing)}")
 
-    if bias.candle_number is not None:
+    # proposed TD-008 (C4c, livestream_20260317 50:05): "When to avoid trading candle 4? Well, generally
+    # when candle 2 and candle 3 both expand." Expanded = the closed against-bias wick is under
+    # closed_wick_large_frac of the range, the same yardstick as bias_c2_not_expanded.
+    double_expansion = (
+        cfg.c4_after_double_expansion == "skip"
+        and bias.candle_number == 4
+        and k >= 1
+        and not closed_wick_is_large(b, k - 1, cfg.closed_wick_large_frac)[0]
+        and not closed_wick_is_large(b, k, cfg.closed_wick_large_frac)[0]
+    )
+    if double_expansion:
+        cl.set(
+            "bias_candle_index_ok",
+            False,
+            f"case {bias.closure}: the forming {b.tf} candle is Candle 4, but bias Candle 2 {b.at(k - 1)} and "
+            f"Candle 3 {b.at(k)} both expanded (wicks under {cfg.closed_wick_large_frac:.0%} of their range)",
+        )
+        cl.set("bias_swing_intact", None, "Not evaluated: Candle 4 after a double expansion is not traded")
+    elif bias.candle_number is not None:
         cl.set("bias_candle_index_ok", True, f"case {bias.closure}: the forming {b.tf} candle is Candle {bias.candle_number}")
         since = e.first_at_or_after(b.closes_at[swing])
         broke = e.first_break(since, swing_low, cfg.protected_swing_break_on)
@@ -615,6 +637,7 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
 
     # --- c3 --------------------------------------------------------------------
     setups: list[Setup] = []
+    not_extreme = 0
     for pos, hit in sorted(live.items()):
         if is_reversal_closure(s, pos):
             kind, closing = "c2", pos
@@ -624,8 +647,14 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
             continue
         if s.close[closing] < threshold:
             continue
-        after = e.first_at_or_after(s.closes_at[closing])
         low = float(s.low[pos])
+        # proposed TD-009 (livestream_20260505 rule 5): "you really only have one change in the state of
+        # delivery per day. That forms the daily wick." wick_extreme: only a setup whose swing is the
+        # forming candle's extreme so far, not a later higher low inside it.
+        if cfg.cont_setup_pick == "wick_extreme" and low > float(s.low[s0 : closing + 1].min()):
+            not_extreme += 1
+            continue
+        after = e.first_at_or_after(s.closes_at[closing])
         setups.append(Setup(kind, pos, closing, low, hit, e.first_break(after, low, cfg.protected_swing_break_on)))
     intact = [item for item in setups if item.broken_at is None]
     broken = [item for item in setups if item.broken_at is not None]
@@ -640,6 +669,11 @@ def evaluate_continuation(ctx: Context, bias: BiasRead) -> PathOutcome:
         )
     if setup is None:
         reason = "no point of interest is tagged" if not live else f"none of the {len(live)} tagged bar(s) closed as a Candle 2 or Candle 3 closure"
+        if not_extreme:
+            reason += (
+                f" ({not_extreme} closure(s) skipped: their {side.lo} is not the forming {b.tf} candle's {side.lo} so far,"
+                f" and cont_setup_pick is wick_extreme)"
+            )
         cl.set("cont_setup_closure", False, f"{reason}.{broken_text}")
         cl.set("cont_entry_cisd_confirmed", False, "no active setup closure to confirm yet")
         cl.set("cont_entry_trigger", False, "no entry CISD yet")

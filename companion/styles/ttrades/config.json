@@ -334,6 +334,36 @@
       "rules": "10.3",
       "open_question": 33,
       "description": "BACKTEST 2026-11-13. A triggered trade whose last close is further than this many R from the entry (either way) is 'late'. The audit found 31% of 1D/1h/5m verdicts reached the trader over 15 minutes after the trigger, a median 1.74 R from the entry."
+    },
+    "trade_reversals": {
+      "value": true,
+      "rules": "7, 10.1",
+      "open_question": null,
+      "description": "PROPOSED TD-004 (backtest evidence; conflict ENT-6 is open, Vik decides). true (default): the reversal path competes with the continuation (rules.md 10.1). false: the reversal path is still computed and shown, but never reported as the path to trade. Teacher 2026: \"I don't trade reversals ... I don't really trade reversals\" (livestream_20260325 50:13)."
+    },
+    "eq_respect_role": {
+      "value": "gate",
+      "rules": "3.9, 6 (stage c2)",
+      "open_question": 5,
+      "description": "PROPOSED TD-002 (backtest evidence; conflicts BIAS-1 / RNG-3 are open). Class of cont_eq_respected. 'gate' (default): a setup-timeframe close through the respect level ends the continuation for this bias candle. 'advisory': shown, never blocks. Teacher 2026: a close over EQ 'can be considered a soft invalidation ... I'm just adjusting my targets' (livestream_20260819 1:33:56)."
+    },
+    "profile_check_role": {
+      "value": "advisory",
+      "rules": "6 (stage c2)",
+      "open_question": 26,
+      "description": "PROPOSED TD-003 (backtest evidence; conflicts BIAS-9 / PROF-1 are open). Class of cont_opened_against_bias_first, the daily-profile test (bullish: open, make a low first, then trade higher). 'advisory' (default): shown, never blocks. 'quality': a bias candle that has not moved against the bias first keeps the verdict at watch. Teacher 2026: 'I can't trade long when my daily profile looks like this' (livestream_20261006 26:21)."
+        },
+    "c4_after_double_expansion": {
+      "value": "trade",
+      "rules": "3.8, 6 (stage c1)",
+      "open_question": null,
+      "description": "PROPOSED TD-008 (backtest evidence; Vik decides). 'trade' (default): a Candle 4 is traded like a Candle 3. 'skip': when the forming bias candle is Candle 4 and both bias Candle 2 and Candle 3 expanded (each closed with its against-bias wick under closed_wick_large_frac of its range), bias_candle_index_ok fails and the continuation is not traded. Teacher 2026: 'When to avoid trading candle 4? Well, generally when candle 2 and candle 3 both expand.' (livestream_20260317 50:05). No new number: the wick yardstick is closed_wick_large_frac."
+    },
+    "cont_setup_pick": {
+      "value": "latest",
+      "rules": "6 (stage c3)",
+      "open_question": null,
+      "description": "PROPOSED TD-009 (backtest evidence; Vik decides). Which setup-timeframe Candle 2 / Candle 3 closure the continuation trades. 'latest' (default): the most recent intact one. 'wick_extreme': only a closure whose swing is the forming bias candle's extreme so far (its low for a long), so a later higher low inside the candle is not traded. Teacher 2026: 'you really only have one change in the state of delivery per day. That forms the daily wick.' (livestream_20260505, rule 5). No tolerance: the swing must be the extreme."
     }
   }
 }

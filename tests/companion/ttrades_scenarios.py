@@ -126,6 +126,7 @@ def continuation_scenario(
     mirror: bool = False,
     first_target: float = 105.0,
     previous_setup_bar: Row = (96.8, 97.8, 96.5, 97.0),
+    first_setup_bar: Row = (97.5, 97.9, 96.9, 97.0),
     inside_bias_bar: bool = False,
     with_aftermath: bool = False,
     swing_rows: list[Row] | None = None,
@@ -174,7 +175,7 @@ def continuation_scenario(
         build.next_bias()
     assert build._count == history
     # B[0], the forming candle
-    build.setup(0, (97.5, 97.9, 96.9, 97.0))
+    build.setup(0, first_setup_bar)
     build.setup(swing_slot - 1, previous_setup_bar)
     build.entries(
         swing_slot,

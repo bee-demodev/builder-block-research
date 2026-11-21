@@ -120,9 +120,14 @@ def _stage_rank(stage: str) -> int:
     return 0 if stage == "none" else STAGES.index(stage) + 1
 
 
-def _select(shared: Checklist, cont: PathOutcome, reversal: PathOutcome, cont_allowed: bool = True) -> PathOutcome | None:
-    """rules.md 10.1: the path to report. Both alive: the higher stage, continuation on a tie."""
-    cont_alive, rev_alive = cont_allowed and _alive(shared, cont), _alive(shared, reversal)
+def _select(
+    shared: Checklist, cont: PathOutcome, reversal: PathOutcome, cont_allowed: bool = True, rev_allowed: bool = True
+) -> PathOutcome | None:
+    """rules.md 10.1: the path to report. Both alive: the higher stage, continuation on a tie.
+
+    ``rev_allowed`` False (config ``trade_reversals``, proposed TD-004 / ENT-6) never reports
+    the reversal path: "I don't trade reversals" (livestream 2026-03-25 50:13)."""
+    cont_alive, rev_alive = cont_allowed and _alive(shared, cont), rev_allowed and _alive(shared, reversal)
     if cont_alive and rev_alive:
         return cont if _stage_rank(cont.checklist.stage()) >= _stage_rank(reversal.checklist.stage()) else reversal
     if cont_alive:
@@ -368,14 +373,14 @@ class TTradesStyle:
             nearer_low = abs(ctx.forming.last - float(last["low"])) <= abs(float(last["high"]) - ctx.forming.last)
             reversal = reversals[0] if nearer_low else reversals[1]
 
-        auto = _select(shared, cont, reversal)
+        auto = _select(shared, cont, reversal, rev_allowed=cfg.trade_reversals)
         selected = auto
         auto_note = ""
         if forced is not None:
             # rules.md 10.6: the trader chose the side. Only that side's paths compete: the
             # continuation when the bias closure points that way, and that side's reversal.
             reversal = reversals[0] if forced.bullish else reversals[1]
-            selected = _select(shared, cont, reversal, cont_allowed=cont.side is forced)
+            selected = _select(shared, cont, reversal, cont_allowed=cont.side is forced, rev_allowed=cfg.trade_reversals)
             if auto is not None and auto.side is not None and auto.side is not forced:
                 auto_note = f"Auto reads this as a {auto.side.trade} setup ({auto.family})."
 
