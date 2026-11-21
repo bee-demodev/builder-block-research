@@ -1,0 +1,208 @@
+# Points of interest: FVG, IFVG, order blocks, breakers, gaps: definitions (206 rows, sorted by date)
+
+- 2022-05-26 (upload) [[simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries]] **Imbalance**: FVG or order block created by the displacement (02:48, 03:50).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Imbalance**: FVG or order block left by displacement (03:12, 10:17).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Single order block**: one-candle order block he uses to narrow a POI or place an entry (00:32, 12:02).
+- 2022-06-01 (upload) [[improve_your_trade_entries_within_fair_value_gaps_fvg]] **FVG 0.5**: midpoint of the fair value gap drawn with a fib (00:06-00:34).
+- 2022-06-01 (upload) [[improve_your_trade_entries_within_fair_value_gaps_fvg]] **Order block (bearish, here)**: series of up-close candles to the left of the FVG; its open is the entry (00:34-01:04).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Imbalances**: FVG and OB (on-screen checklist, frame 01:44).
+- 2022-06-10 (upload) [[intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts]] **Displacement**: energetic move through structure, leaving a FVG; "a distance" reached quickly before retracing (01:36-02:08).
+- 2022-06-10 (upload) [[intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts]] **Fair value gap (FVG)**: three-candle pattern where candle 1 and candle 3 wicks do not overlap — a break in price delivery (02:08-02:37).
+- 2022-06-13 (upload) [[reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts]] **Imbalance**: fair value gap created by the displacement (00:34, 03:41).
+- 2022-06-28 (upload) [[price_targets_ict_concepts]] **Imbalance**: fair value gap on the execution or higher timeframe (00:39).
+- 2022-08-02 (upload) [[ote_optimal_trade_entry_ict_concepts]] **Breaker structure**: the structure break setup he anchors the OTE to (01:05, 01:39).
+- 2022-08-08 (upload) [[intro_to_the_inducement_model_ict_concepts]] **Inducement**: a swing inside the range (often formed by a FVG entry) that lures traders in; its stops are run before the real move (00:34, 01:35, 02:34).
+- 2022-09-20 (upload) [[intraday_bias_ict_concepts]] **Intermediate-term high**: the high formed when London runs highs into a bearish FVG; its holding keeps bias bearish (02:05-02:35).
+- 2022-09-27 (upload) [[find_lower_time_frame_entries_using_bias_ict_concepts]] **Point of interest (POI)**: old highs/lows, equal highs/lows, imbalances, order blocks — areas to watch price (05:02-05:25).
+- 2022-09-27 (upload) [[find_lower_time_frame_entries_using_bias_ict_concepts]] **Order block (bearish, here)**: opening of a series of up-close (green) candles before they move down (03:30).
+- 2022-09-27 (upload) [[find_lower_time_frame_entries_using_bias_ict_concepts]] **Sell side of the curve**: the declining leg, where premium PD arrays should resist price (04:30).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **Model 1**: liquidity grab, structure break, retrace into FVG (03:15).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **BPR (balanced price range)**: overlap of opposing FVGs after an aggressive move met by an aggressive opposite move (04:11, 04:43).
+- 2022-10-18 (upload) [[higher_time_frame_points_of_interest_ict_concepts]] **Point of interest (POI)**: HTF level where a lower timeframe entry model is sought: highs/lows, FVG, OB, FVG fill, OTE, internal range liquidity (00:36, 00:52).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **BPR** (balanced price range): aggressive move one way and aggressive move back, overlapping gaps; he calls it "the box" (00:00, 06:19, 08:09).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **BPR**: balanced price range; here, an aggressive break followed by an immediate aggressive move back in, seen on a lower timeframe (05:26).
+- 2022-11-25 (upload) [[choosing_dealing_ranges_displacement_ranges_ict_concepts]] **PD array**: premium/discount array, e.g. order block (04:16).
+- 2022-12-24 (upload) [[top_down_analysis_ict_concepts]] **Point of interest (POI)**: HTF area marked for reactions: FVG fill area, blocks (01:29).
+- 2022-12-24 (upload) [[top_down_analysis_ict_concepts]] **Block (daily)**: order block marked from wick to open (01:56).
+- 2022-12-24 (upload) [[top_down_analysis_ict_concepts]] **2022 model**: liquidity run, break of structure, clean FVG (05:28).
+- 2023-01-09 (upload) [[draw_on_liquidity_dol_ict_concepts]] **Internal liquidity**: FVGs, order blocks, occasionally volume imbalances and gaps (01:02).
+- 2023-01-09 (upload) [[draw_on_liquidity_dol_ict_concepts]] **Failure to displace**: taking a level without a displacing close through it; points the other way (01:02, 04:53).
+- 2023-01-18 [[draw_on_liquidity_example_1_18_23_ict_concepts]] **Draw on liquidity**: where price is expected to reach (staged PD arrays and liquidity) (00:07, 02:06).
+- 2023-01-18 [[draw_on_liquidity_example_1_18_23_ict_concepts]] **BPR (balanced price range)**: used as a PD array target, not defined (01:04).
+- 2023-01-18 [[draw_on_liquidity_example_1_18_23_ict_concepts]] **Volume imbalance** (Whisper "volume in Don's"): daily PD array used as the short POI (00:07).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **Fair value gap (FVG)**: three-candle pattern with no overlap between candle 1's and candle 3's wicks (00:10).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **SIBI**: sell-side imbalance, buy-side inefficiency; bearish FVG (02:37).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **BISI**: buy-side imbalance, sell-side inefficiency; bullish FVG (02:37).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **Consequent encroachment (CE)**: 50% of the FVG (03:37).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **FVG inversion**: failed FVG (closed through) later acting as opposite support/resistance (05:32).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **Volume imbalance**: close-to-open gap between two candles with traded overlap of the wicks (08:50).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **Gap**: no trading at all between two candles (08:50).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Breaker block (bullish)**: up-close candles before the raid on liquidity (02:35).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Order block (bullish)**: down-close candle before the displacement (02:35).
+- 2023-07-07 (upload) [[discount_premium_ict_concepts]] **Next day model**: after a sweep of Monday/Friday high and a close back in, expect the next day to drop to the discount FVG (06:08). Named only.
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Displacement**: aggressive, full-bodied candle(s), usually leaving FVGs (00:10-00:39).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Stop raid**: sweep of the swing before the shift; forms the breaker and high resistance liquidity (02:07).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Breaker block**: formed by the raid-and-shift sequence; used with the FVG as the entry zone (02:34, 04:15).
+- 2023-07-25 (upload) [[market_structure_shift_vs_liquidity_grab_ict_concepts]] **Displacement**: large aggressive move, single or multiple candles, closing over structure; the FVG-creating candle is the focus (00:10-00:35).
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **Next day model**: credited to MMXM Trader; after a failure to displace or respect of a PD array, anticipate the next daily candle's shape (open-low-high-close bullish, open-high-low-close bearish) and keep that bias until the draw is met (08:21-09:09, 18:01).
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **PD array**: premium/discount array (FVG, order block) that price "respects" (08:47, 11:09).
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **Look left**: search older swing points for a draw when nearby ones are exhausted (12:44, 13:18).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Failure to displace**: price trades through a level (previous candle extreme or swing point) but cannot close beyond it; closes back in the range (01:04, 10:27).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Next candle model / next day model** (credited to the MMXM trader): after a failure to displace at a swing point, or a respected PD array, the next candle moves back into the range toward the draw (10:56, 11:23).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **PD array**: FVG, order block, etc.; a level price can respect (11:23, 13:54).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Mean threshold**: midpoint of an order block (22:52).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Consequent encroachment**: midpoint of an FVG, an alternative entry to its start (23:50).
+- 2023-08-15 (upload) [[the_best_relative_strength_indicator_for_es_nq_ict]] **Mean threshold**: 50% of an order block body (01:54, 07:52).
+- 2023-08-15 (upload) [[the_best_relative_strength_indicator_for_es_nq_ict]] **Consequent encroachment (CE)**: 50% of a wick or FVG (07:26, 09:45).
+- 2023-08-22 (upload) [[ict_silver_bullet_strategy_no_daily_bias_with_backtest]] **Breaker (as used)**: after a new high, the candle range whose low is closed through; entry on the return to it (05:34, 07:24).
+- 2023-08-22 (upload) [[ict_silver_bullet_strategy_no_daily_bias_with_backtest]] **Order block (as used)**: the last opposite-close candle (e.g. down-close before the move up) that supports or resists price; an order block "inside this mitigation or breaker" (09:57-10:39).
+- 2023-08-22 (upload) [[ict_silver_bullet_strategy_no_daily_bias_with_backtest]] **Consequent encroachment**: midpoint of the FVG, used as an entry level (02:48).
+- 2023-08-29 (upload) [[top_down_analysis_daily_bias_to_entries_ict_concepts]] **Point of interest (POI)**: the hourly array (OB, breaker plus FVG) aligned with daily bias where the entry timeframe is watched (01:23, 03:49).
+- 2023-08-29 (upload) [[top_down_analysis_daily_bias_to_entries_ict_concepts]] **Breaker (as used)**: the candle of a high, low, higher high, lower low swing that gets displaced through (04:20, 09:09).
+- 2023-09-05 (upload) [[my_favorite_reversal_pattern_orderblocks_ict_concepts]] **Important level**: PD array or buy-side / sell-side liquidity that price reaches (00:10).
+- 2023-09-05 (upload) [[my_favorite_reversal_pattern_orderblocks_ict_concepts]] **Order block**: the up-close (bearish) or down-close (bullish) candle or series that made the raid, validated when price closes beyond it; reference = opening price (00:39, 01:36).
+- 2023-09-05 (upload) [[my_favorite_reversal_pattern_orderblocks_ict_concepts]] **Market structure shift**: the close below/above the order block series (08:01).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **OTE (optimal trade entry)**: the 0.62-0.79 retracement of a swing range, midpoint 0.705 (00:37-01:05, 02:49).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **Mean threshold**: 50% of an order block's body (05:19).
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Fair value gap**: 3-candle pattern; candle 1 and candle 3 wicks do not overlap, leaving an imbalance (00:37).
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Breaker block**: structural pattern high-low-higher high-lower low (bearish) / low-high-lower low-higher high (bullish); marked on the last opposite-colour candle (or series) before the sweep leg (01:04-02:02).
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Unicorn model**: breaker block + overlapping FVG from the displacement through it (02:02-02:31).
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Mean threshold**: midpoint of the breaker's candle bodies/range (06:34).
+- 2023-10-03 (upload) [[ict_son_s_model_higher_time_frames]] **BISI**: buy-side imbalance sell-side inefficiency (bullish FVG), here closed below (03:32).
+- 2023-10-03 (upload) [[ict_son_s_model_higher_time_frames]] **Failure swings**: swing points used to take profit early (06:33).
+- 2023-10-24 (upload) [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] **Consequent encroachment (CE)**: midpoint of a fair value gap or gap; a down-close candle respecting it signals continuation (01:54, 08:12).
+- 2023-10-24 (upload) [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] **Order block validation**: a close below an up-close candle validates it as a bearish order block (06:43, 07:14).
+- 2023-10-24 (upload) [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] **New week opening gap (NWOG)**: gap between Friday close and Sunday open; he marks it and its CE on the Monday example (08:12).
+- 2023-11-21 (upload) [[change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts]] **Order block (here)**: the up-close (bearish OB) or down-close (bullish OB) candle(s) whose opening price was closed through; "validated" by that close (03:40, 10:50, 13:30).
+- 2023-11-21 (upload) [[change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts]] **Next day model**: daily candle respects a daily PD array and closes away; next day takes the previous day's extreme (04:21).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **Internal range liquidity (IRL)**: a fair value gap (00:10).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **Inversion**: displacement through an FVG, flipping bias (03:18).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **Intermediate-term high**: high formed in the 5m FVG used before the 1m entry (05:52).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **Fair value gap**: three-candle pattern, candle 1 low not overlapping candle 3 high (bearish) or candle 1 high not overlapping candle 3 low (bullish) (00:28).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **SIBI**: sell-side imbalance buy-side inefficiency = bearish FVG (00:57).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **BISI**: buy-side imbalance sell-side inefficiency = bullish FVG (01:47).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **Inversion (IFVG)**: a FVG closed through, which then acts from the other side (00:57, 05:34).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **Consequent encroachment (CE)**: 50% of a FVG (01:22).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **Propulsion block**: order block formed off an earlier order block (06:38).
+- 2023-12-12 (upload) [[market_structure_shift_vs_change_in_state_of_delivery_ict]] **Change in the state of delivery (CISD)**: close (with displacement) beyond the opening price of the opposite-colored candle series that ran into an important level; validates it as an order block (00:57).
+- 2023-12-12 (upload) [[market_structure_shift_vs_change_in_state_of_delivery_ict]] **Order block**: the up-close (bearish case) or down-close (bullish case) candle series validated by a CISD (00:57, 01:52).
+- 2023-12-12 (upload) [[market_structure_shift_vs_change_in_state_of_delivery_ict]] **Inversion**: a full close through an FVG, signalling changed order flow (05:42, 06:42).
+- 2023-12-12 (upload) [[market_structure_shift_vs_change_in_state_of_delivery_ict]] **Mean threshold (of an order block)**: its 0.5 level (04:18).
+- 2023-12-26 (upload) [[order_blocks_simplified_ict_concepts]] **Order block**: single or series of up-close (bearish) / down-close (bullish) candles into an important level, validated by displacement and a close beyond its opening price (00:38-01:05).
+- 2023-12-26 (upload) [[order_blocks_simplified_ict_concepts]] **Important level**: higher-timeframe PD array: previous order block, FVG, or a sweep (01:23, 06:52).
+- 2023-12-26 (upload) [[order_blocks_simplified_ict_concepts]] **Mean threshold**: 50% of the order block bodies, body low to body high (04:03).
+- 2024-01-02 (upload) [[breaker_blocks_simplified_ict_concepts]] **Breaker block (bullish)**: in low, high, lower low, higher high, the single/series of up-close candles between the low and the high, marked including wicks (00:39, 07:09).
+- 2024-01-02 (upload) [[breaker_blocks_simplified_ict_concepts]] **Breaker block (bearish)**: in high, low, higher high, lower low, the single/series of down-close candles (02:43).
+- 2024-01-02 (upload) [[breaker_blocks_simplified_ict_concepts]] **Unicorn model**: breaker block overlapping a same-direction FVG (03:53).
+- 2024-01-02 (upload) [[breaker_blocks_simplified_ict_concepts]] **Order block (vs breaker)**: series of opposite candles marked only at the opening price (07:09). See conflicts.
+- 2024-01-02 (upload) [[breaker_blocks_simplified_ict_concepts]] **Manipulation leg (in a breaker)**: the leg that made the lower low (bullish case) (08:02).
+- 2024-01-11 [[cpi_gold_trade_review_ict_market_maker_sell_model_mmxm]] **Order block (bearish, as used here)**: up-close candle series that price closes below after reaching into an FVG and displacing (00:25).
+- 2024-01-11 [[cpi_gold_trade_review_ict_market_maker_sell_model_mmxm]] **Mitigation block**: a bullish order block from the buy side of the curve reused as resistance on the sell side (03:30, 07:03).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Unicorn (model / entry function)**: breaker block plus an FVG formed in the displacement through it, aligned with the breaker; named by ICT (50:35, 1:15:34).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Breaker block**: in the bearish case, the lowest down-close candle before the leg up that took liquidity; consecutive same-direction closes are all included (1:16:36). Mirror for bullish (implied from the NQ example, 1:29:03).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Stop hunt**: price running above a swing high (or below a swing low) before reversing; required before a breaker is valid (36:38, 1:16:05).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Displacement**: a move that closes through the breaker block; he equates it loosely with "market structure shift" and "clear and decisive displacement" (37:49, 1:17:12).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Areas of interest**: hourly FVGs or swing points in the bias direction where the 5m entry function is searched (1:13:53).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Institutional swing points**: ICT core content month 5; two types, breaker block or failure swing (36:08).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **Breaker block**: in a high, low, higher high, lower low sequence, the down-close candle (bearish case) (09:44).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **Unicorn**: entry on a breaker block overlapping an FVG (07:35, used without separate definition).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Daily order flow**: the direction shown by how daily closes treat PD arrays; bullish when bullish PD arrays hold and bearish ones are closed through and inverted (10:17).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Inversion PD array / inversion FVG**: an FVG closed through by a daily candle, then used as a level from the other side (10:45, 11:15).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Balanced price range (BPR)**: the overlap of a former bullish FVG and a new bearish FVG (or the reverse); also how he reads a large daily wick on lower timeframes (14:39, 15:10, 30:19).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Mean threshold (MT)**: the midpoint of a PD array; closing past it signals the array will likely fail (16:43, 17:12).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **High-probability order block**: the last up-close (bearish OB) candle that swept buy-side before a close below a recent swing low / break in structure (01:35, 02:05, 22:42).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Stuck / trapped order flow**: price ranging between a bullish PD array below and bearish PD arrays above (26:12, 29:16).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Bullish / bearish trigger**: the daily close that ends the stuck state, e.g. close above the bearish OB (use it as a breaker) or close below the swing low and the FVG (26:12, 26:42).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **AMD**: accumulation range, manipulation (sweep into a HTF PD array), distribution to range lows, then expansion (31:45).
+- 2024-02-28 (upload) [[understanding_market_structure_for_trading]] **PD array**: premium/discount array such as an hourly FVG (13:08).
+- 2024-03-09 (upload) [[ict_advanced_market_structure_simplified]] **Rebalanced ITH/ITL**: swing created when price rebalances an FVG and trades away (01:25, 09:44).
+- 2024-03-09 (upload) [[ict_advanced_market_structure_simplified]] **Long-term high / low (LTH/LTL)**: swing formed by the reaction off an HTF level / PD array; validated by a short-term swing on the right and price trading away (01:25, 06:27).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Internal range liquidity (IRL)**: fair value gaps inside the range (01:56).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Market maker buy / sell model (MMBM/MMSM)**: run of HTF ERL (with SMT), LTF close above a swing high, retrace into LTF IRL/breaker, reaccumulation via mitigation blocks, then delivery to the HTF IRL draw / "original consolidation" (04:29-07:41).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Mitigation block**: up-close candle / order block on the "sell side of the curve" that price uses as support while reaccumulating (07:14, 17:38).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Internal liquidity**: a fair value gap (00:35).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Fair value gap**: three-candle pattern where candle 1 and candle 3 wicks do not overlap, showing aggressive price action (00:35).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **New day opening gap**: the hourly FVG in Example 1 is also the new day opening gap (03:22).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Mean threshold**: midpoint of a candle (here an up-close candle) used as a POI (08:17).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Consequent encroachment**: midpoint of an FVG, an entry point (09:51).
+- 2024-06-07 (upload) [[the_twitter_model_the_mmxm_trader_ict_concepts]] **Inversion**: an opposing FVG closed through and used the other way (02:31, 06:18).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **Order block**: down-close candle(s) into an important level, validated by a close above them (08:24, 09:23, 09:54).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **Mean threshold**: 50% of the order block; reaction / entry level (08:24, 09:23).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **Propulsion block**: order block formed off a prior order block's reaction; its mean threshold holds (10:24, 10:54).
+- 2024-08-16 (upload) [[nickdoesfutures_unicorn_model_experiences_with_ict]] **Unicorn strategy / model**: the breaker entry model he trades; the transcript names it while showing a 1h FVG, a 5m stop hunt and a breaker, entry on the breaker retest, stop at the FVG candle or breaker (21:27-21:38). Breaker + FVG overlap is the ICT-community meaning; he never states it in one sentence (implied).
+- 2024-08-16 (upload) [[nickdoesfutures_unicorn_model_experiences_with_ict]] **Trapped order flow**: price sitting between a bullish and a bearish HTF FVG (weekly FVG above and below, or daily FVG + weekly FVG + daily breaker) without closing through either; an "indecisive" state = low probability (12:49-13:42).
+- 2024-08-16 (upload) [[nickdoesfutures_unicorn_model_experiences_with_ict]] **Indecisive candle**: HTF candle that closed neither above the upper FVG nor below the lower one (13:00-13:05).
+- 2024-08-16 (upload) [[nickdoesfutures_unicorn_model_experiences_with_ict]] **Nested PD**: price trading inside a daily FVG while the setup forms (20:51-20:56). "PD" = PD array.
+- 2024-08-16 (upload) [[nickdoesfutures_unicorn_model_experiences_with_ict]] **Properly aligned time frame**: 4h->15m, 1h->5m, 15m->1m pairs (17:05-17:15); on-chart text at 21:21: "4H PD Array->15M MMXM, 1H PD Array->5M MMXM, 15M PD Array->1M MMXM".
+- 2024-08-26 (upload) [[ict_daily_profile_london_reversal_new_york_continuation]] **Propulsion block**: order block formed by down-close candles into an order block, which gets retested (03:52, 05:46).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **Order block (his usage here)**: the series of opposing candles whose close-through is the CISD (06:16).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **Propulsion block**: an order block built off an order block (07:03).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **Higher time frame imbalance**: a gap between HTF candles (11:14).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Low-risk sell**: the first lower-high sell point after the SMR at the key level in a sell model (13:00).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **PD array**: premium/discount array; here swing lows/highs, FVGs, daily imbalance, >H4 levels used as the key level (04:24-04:40, 07:10).
+- 2024-10-19 (upload) [[mara_trade_review_h1_market_maker_buy_model_mmxm]] **Opposing candle / order block**: the down-close candle(s) that formed the low; 0.5 of their bodies is the line not to lose (02:13).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Opposing candle**: the down-close candle before an up move (or vice versa); he uses it interchangeably with order block and volume imbalance zone in this video (02:55, 04:53, 07:37).
+- 2024-11-02 (upload) [[trading_irl_erl_with_order_blocks_ict_concepts]] **Propulsion block**: an order block formed after a further sweep, then closed over; retested as support (05:45, 08:48).
+- 2024-11-16 (upload) [[master_candlestick_wicks_the_key_to_catching_reversals]] **Wick 0.5 / 50%**: midpoint between the body edge and the wick extreme (00:47).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Candle equilibrium (EQ)**: the midpoint of the HTF candle, drawn on both HTF and LTF (11:05-11:17).
+- 2024-12-29 (upload) [[reversal_sequence_ttrs_how_to_blend_pd_arrays]] **FVG**: 3-candle non-overlap of candle 1 and candle 3 extremes (01:55).
+- 2024-12-29 (upload) [[reversal_sequence_ttrs_how_to_blend_pd_arrays]] **Inversion**: FVG closed through, reused as opposite support/resistance (02:18).
+- 2024-12-29 (upload) [[reversal_sequence_ttrs_how_to_blend_pd_arrays]] **Order block**: series of same-colour candles into a POI that gets closed through; expected to hold (02:29).
+- 2024-12-29 (upload) [[reversal_sequence_ttrs_how_to_blend_pd_arrays]] **Breaker block**: high-low-higher high-lower low (bearish); down-close candles between high and low (02:57).
+- 2025-01-11 (upload) [[timeframe_alignment_how_to_align_timeframes_for_expansion]] **Key level**: FVG, a high or low, or an order block on the structure timeframe (01:31).
+- 2025-01-11 (upload) [[timeframe_alignment_how_to_align_timeframes_for_expansion]] **Order block formation (entry)**: entry-timeframe price moves from bullish to bearish (close through the series) at the key level (01:55).
+- 2025-01-11 (upload) [[timeframe_alignment_how_to_align_timeframes_for_expansion]] **Propulsion block**: an order block formed off another order block (09:02).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Bias / structure / entry timeframes**: HTF gives direction, intermediate gives CISD confirmation and POIs, LTF gives the entry (02:02-02:21, 02:30-02:42).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Order block / opposing candles**: the series of opposite-close candles at a swing; a close through them makes it valid (00:29-00:36, 05:33-05:40).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Propulsion block**: an order block formed on a retrace into a POI that price then closes over; used for continuation entries (05:37-05:43, 17:21-17:28).
+- 2025-02-08 (upload) [[trade_continuations_using_order_blocks]] **Continuation entry**: entry after a confirmed reversal, off a new opposing candle / order block that forms the next swing (00:47-01:39).
+- 2025-02-08 (upload) [[trade_continuations_using_order_blocks]] **Opposing candle / order block (continuation)**: the series of opposing-colour candles that reached into a FVG or swept a swing; once closed through, it forms a new invalidation (01:20-02:10).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **C2U / C2 unicorn**: guest's model; a TTFM candle 2 at a POI whose wick contains an LTF unicorn (00:50-00:59, 04:35).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **Unicorn (model)**: ICT pattern; breaker with an FVG, "the most powerful algorithmic reversal pattern" per ICT (03:28); formed when price closes through the breaker (05:28-05:32); learned from Ash Trades / Unicorn University (01:20).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **Points of interest** (as he uses them): swing highs/lows, opposing range candles, FVGs, previous day/session/week highs/lows (03:58-04:14), hourly IFVG, 50% of the previous 7-hour candle/wick (07:34-08:05), daily C2 T-spot (15:53).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **T-spot** (heard "t-spot", "tpot", "te- spot"): TTrades term, here a POI that exists only once C2 has closed; daily C2 T-spot is open-ended until an hourly close past it (11:47, 15:51-16:29). Exact geometry not defined in this video.
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Protected low**: low formed out of an FVG after closing through the down-close candles (01:58, 03:43).
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Propulsion block**: order block that forms after closing through the down-close candle into an FVG + order block POI (18:19-18:23).
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **Breaker block (bearish)**: high, low, higher high, lower low; down-close candles from the high to the low (00:31-00:49).
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **Breaker block (bullish)**: low, high, lower low, higher high; up-close candles before the lower low (00:49-01:04).
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **Continuation breaker**: a breaker formed after the reversal, from a sweep of a short-term swing in the new trend plus a new higher high / lower low (01:19-01:43).
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **SMT breaker**: no sweep on this asset, but SMT with the correlated asset; the up-close candles are treated as the breaker once broken (01:56, 08:39-08:54).
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **Intermediate-term low** (advanced market structure): forms by sweeping a short-term low or reaching into an FVG (02:22-02:31, 04:16).
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **Propulsion block**: order block at the mean threshold that has been closed through (12:46-12:58).
+- 2025-03-22 (upload) [[ttrades_fractal_model_inversion_intraday_strategy]] **Inversion (1m)**: a close through an opposing FVG / level inside the T-spot, used as the entry trigger (01:44, 04:13).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Key levels he uses**: FVG / internal range liquidity, swing points, order blocks, plus "order paying ranges" [order-pairing? unclear], external-to-internal and opposing candles (11:17, 27:06).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Inducement**: a low taken into an FVG within a consolidation (10:11).
+- 2025-06-28 (upload) [[how_to_trade_expansion_phases_of_price]] **Expansion met with expansion**: overlapping opposing FVGs (BPR) forming a CISD; a reversal type covered in the reversal video (06:21, 09:08, 12:10).
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **Retracement**: slow, shallow, small-range move opposing the trend between expansions, usually into a PDA, generally an FVG (0:28-2:16, 4:49).
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **PDA**: price delivery array, here generally an FVG (2:07).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **Expansion**: visible as fair value gaps being created (11:27).
+- 2025-09-01 (upload) [[ttrades_top_down_chart_lessons_2]] **V-shaped reversal**: aggressive move lower met by an aggressive move higher, leaving FVGs on both sides (00:25-00:41).
+- 2025-09-06 (upload) [[trading_candle_3]] **Continuation order block / propulsion block**: within the new HTF candle, price opens, sweeps a high or reaches a POI, then an opposing candle formation shows the HTF wick is formed (02:04, 11:00).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **Positional entry**: entry without a precise POI, often at the HTF open, stop where invalidated (13:35, 16:22).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **External to internal**: key level = external high / manipulated range high; target = back into the range, FVG first (01:58).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **SMT fill**: SMT at an FVG; one asset fills/enters the gap, the other leaves a breakaway gap open (08:00).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **PSP (precision swing point)**: correlated markets close a candle in opposite directions; from Trader Day (10:34).
+- 2025-11-15 (upload) [[candle_2_closure_foundation]] **POI (for framing a closure)**: swing high/low, FVG (01:39); opposing candles after a protected swing (06:22); page adds "an opposing candle" when neither is present.
+- 2025-12-03 (upload) [[candle_3_closure_ttrades_fractal_model]] **New week opening gap**: used as a POI that price takes before a C3 closure (05:22).
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **Continuation day**: open, trade against the bias first into a POI around/before EQ, respect EQ, then through the previous day's extreme (00:52-01:02, 16:51-16:58).
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **EQ (equilibrium)**: midpoint of the previous day's (previous candle's) range (03:00-03:11).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Swing point**: the bullish or bearish turn that any reversal must form (00:28-00:40).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **POI**: FVG or low (bullish), FVG or high (bearish), inside the previous day's range (01:51-02:09).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Continuation order block**: after the CISD, a sweep of a short-term low/high into a POI, then a close through the series of opposing candles (02:57-03:08). Page: "price sweeps a short term high or low and then closes through a series of opposing candles."
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Structure timeframe**: the timeframe where the swing point and POI are read (hourly; some use 4h or 30m) (03:20-03:32).
+- 2026-01-10 (upload) [[cisd_validates_swing_points]] **Continuation order block**: LTF continuation (new CISD / protected swing) formed after the initial CISD, at a POI, used for entry (9:11-9:38).
+- 2026-01-24 (upload) [[how_to_actually_trade_inversion_fair_value_gaps_ifvg]] **FVG**: 3-candle pattern; candle 1 and candle 3 wicks do not overlap (00:22).
+- 2026-01-24 (upload) [[how_to_actually_trade_inversion_fair_value_gaps_ifvg]] **IFVG / inversion**: FVG not respected and swiftly closed over; polarity flips (00:38).
+- 2026-01-24 (upload) [[how_to_actually_trade_inversion_fair_value_gaps_ifvg]] **Series of FVGs**: multiple adjacent FVGs in one leg treated as one zone for inversion (05:13, 09:57).
+- 2026-01-31 (upload) [[the_best_timeframe_for_ttrades_fractal_model_simple]] **T-spot area**: area on the 4h/15m where the POI sits (09:03-09:16); not defined further here.
+- 2026-02-07 (upload) [[ttrades_scalping_model_simple_day_trading_strategy]] **Hourly internal to external**: trading from an hourly FVG (internal liquidity) to external liquidity (00:45, 09:05).
+- 2026-02-07 (upload) [[ttrades_scalping_model_simple_day_trading_strategy]] **A+ entry**: candle digs its wick into the POI then continues (07:09).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Ideal continuation**: POI reach + V-shaped recovery + quick closure through opposing candles in 1-3 candles, without having taken the previous high yet (04:16-05:40, 09:55).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Consolidation (vs retracement)**: price fails to close back through the opposing candles, or does so slowly/sideways; treat range highs/lows as POIs (07:18, 09:01).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **Weekly bias**: anticipated direction of the current weekly candle, from liquidity, highs/lows, FVGs and candle closures; minimal form: which previous-week extreme price reaches for (00:30-00:46, 02:28-02:38).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **Daily swing point**: daily candle 2 or candle 3 in the bias direction that forms the wick of the daily candle (01:02-01:12).
+- 2026-03-14 (upload) [[eurgbp_for_relative_strength_eu_vs_gu]] **Ideal candle-2 closure**: candle-2 closure out of an FVG that simultaneously creates a protected swing (5:20).
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **Swing point (bullish)**: a candle whose low has a higher low to its left and to its right (00:35). 3-candle fractal low.
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **Swing point (bearish)**: a candle whose high has a lower high to its left and to its right (00:45).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Invalidation point (daily)**: 50% of previous daily candle from close to opposing extreme (14:41-16:55).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Invalidation point (profile)**: 50% of the 01:00 7h candle from close to opposing swing (27:27-29:05).

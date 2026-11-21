@@ -1,0 +1,30 @@
+| Term | Aliases / mishearings | Meaning (as TTrades uses it) | Concept page | Main source (slug, time) |
+|---|---|---|---|---|
+| Liquidity | stops, resting liquidity, liquidity pool | Stop orders resting beyond obvious swing highs and lows; a swing high/low is liquidity. | [[liquidity]] | [[what_is_liquidity_ict_concepts]] 00:06; [[livestream_20260916_new_york_open_live_q_a_9yvbe_20hdg]] 24:50 |
+| Buy-side liquidity | BSL, buyside, "buy side" | Buy stops (shorts' stops) above swing highs. | [[liquidity]] | [[liquidity_buyside_sellside_ict_concepts]] 01:07 |
+| Sell-side liquidity | SSL, sellside, "cell side" | Sell stops (longs' stops) below swing lows. | [[liquidity]] | [[liquidity_buyside_sellside_ict_concepts]] 01:07 |
+| Draw on liquidity | DOL, draw, objective, "drawn liquidity" | The liquidity price is expected to reach next; doubles as the target. | [[liquidity]] | [[draw_on_liquidity_dol_ict_concepts]] 00:35; [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] 02:54 |
+| Liquidity sweep | sweep, raid, stop raid, stop run, stop hunt, liquidity grab, liquidity run, turtle soup | Price trades beyond a level and comes back in (aggressively, V-shape); a failure to displace through it. | [[liquidity]] | [[market_structure_shift_vs_liquidity_grab_ict_concepts]] 01:02; [[scalping_made_simple_building_a_scalping_model]] 01:28; [[livestream_20260325_new_york_open_live_q_a_aqny1yzvfys]] 1:20:30 |
+| Failure to displace | lack of displacement | Taking a level without closing/displacing beyond it; signals a return into the range or the opposite side. | [[liquidity]] | [[structure_shift_vs_liquidity_grab_ict_concepts]] 00:34; [[market_structure_shift_vs_liquidity_grab_ict_concepts]] 02:28 |
+| Relatively equal highs / lows | equal highs, equal lows, EQH, EQL, smooth highs, double top | Two or more swing points close together (not exact ties), treated as one pool and a target. | [[liquidity]] | [[liquidity_buyside_sellside_ict_concepts]] 04:30; [[index_futures_weekly_recap_ict_concepts]] 04:16 |
+| Old high / old low | previous high, single swing | A previous high/low where one swing point stands out. | [[liquidity]] | [[liquidity_buyside_sellside_ict_concepts]] 05:00 |
+| Failure swing | failure swings, stacked liquidity, lined-up highs/lows | Lined-up/stacked highs or lows not yet taken; the target, never a level to trade away from. | [[liquidity]] | [[which_swing_highs_and_lows_matter_in_trading]] 08:17; [[livestream_20260825_new_york_open_live_q_a_9h15zzvakpq]] 1:10:50 |
+| Low resistance liquidity | LRL, LRLR | Failure swings; liquidity price can run easily; the objective side. | [[liquidity]] | [[low_resistance_liquidity_run_ict_concepts]] 00:37; [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] 00:37 |
+| High resistance liquidity | HRL, HRLR | A swing that was just swept before the reversal; harder to break; the stop side. | [[liquidity]] | [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] 01:07; [[trade_like_ttrades_top_down_analysis]] 02:48 |
+| Internal range liquidity | IRL, internal liquidity | (2023-2024) An FVG (also OB/imbalance) inside the dealing range. | [[liquidity]] | [[internal_external_liquidity_daily_bias_ict_concepts]] 00:10; [[trading_irl_erl_with_order_blocks_ict_concepts]] 00:28 |
+| External range liquidity | ERL, external liquidity | (2023-2024) A swing high or low (BSL/SSL) at the edge of the range. | [[liquidity]] | [[internal_external_liquidity_daily_bias_ict_concepts]] 00:39; [[trading_irl_erl_with_order_blocks_ict_concepts]] 00:43 |
+| Relevant swing | relevant high/low, valid separation | The extreme of its cluster, separated from neighbours, inside three HTF candles; the only place to look for reactions. | [[liquidity]] | [[which_swing_highs_and_lows_matter_in_trading]] 01:12-03:29 |
+| Inducement | induced liquidity | (2022) Internal range liquidity (stops of early entries) run before the real move; 2026: "basically the same" as a sweep. | [[liquidity]] | [[intro_to_the_inducement_model_ict_concepts]] 02:34; [[livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks]] 11:00 |
+| Judas swing | false move | (2022) The false move off the open that grabs liquidity before distribution. | [[liquidity]] | [[ict_daily_bias]] 03:14; [[find_lower_time_frame_entries_using_bias_ict_concepts]] 01:05 |
+| Formation liquidity | formation liquidity line | Indicator line at the untaken previous candle / previous day extreme the setup should draw to. | [[liquidity]] | [[intro_to_ttrades_fractal_model_indicator_settings]] 13:04-13:27 |
+| Low hanging fruit | nearest liquidity | Nearest obvious liquidity (Asia high, NY open, London low), or liquidity just before the -2 to -2.5 projection. | [[liquidity]] | [[standard_deviation_projections_ict_concepts]] 05:04; [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] 12:23 |
+| Order pairing | "order paying ranges" | (guest, ICT) Sell stops raided below an old low paired with buy stops above the range high; defines the draw. | [[liquidity]] | [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] 04:09; [[liquidity_buyside_sellside_ict_concepts]] 01:07 |
+| Broadening formation | broadening | A range swept on both sides during consolidation before expansion away. | [[liquidity]] | [[livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c]] 1:36:40 |
+| Unestablished low | no-wick candle | An HTF candle with no wick on that side; treated as liquidity, not a trusted low. | [[liquidity]] | [[livestream_20260727_new_york_open_live_q_a_je7cd9hjube]] 07:30 |
+
+Mishearings:
+
+- "drawn liquidity" -> draw on liquidity ([[cpi_gold_trade_review_ict_market_maker_sell_model_mmxm]], [[gxtradez_phases_of_price_profiles_for_expansion]], [[how_to_actually_trade_inversion_fair_value_gaps_ifvg]], [[important_liquidity_levels_draw_on_liquidity_ict]])
+- "draw and liquidity" -> draw on liquidity (2 transcripts)
+- "cell side" -> sell side ([[targets_with_standard_deviation_projections_ict_concepts]])
+- "order paying ranges" -> order pairing ranges? (unclear) ([[gxtradez_phases_of_price_profiles_for_expansion]])

@@ -1,0 +1,25 @@
+# Daily bias, bias invalidation and the next-day model: definitions (23 rows, sorted by date)
+
+- 2022-09-20 (upload) [[intraday_bias_ict_concepts]] **Intraday bias**: directional view taken from the 4h/1h charts used as the "daily" (00:00).
+- 2022-09-20 (upload) [[intraday_bias_ict_concepts]] **Intermediate-term high**: the high formed when London runs highs into a bearish FVG; its holding keeps bias bearish (02:05-02:35).
+- 2023-04-07 (upload) [[open_high_low_close_ohlc_olhc_ict_concepts]] **OHLC**: open, high, low, close — the bearish candle sequence (00:37-01:05).
+- 2023-04-07 (upload) [[open_high_low_close_ohlc_olhc_ict_concepts]] **AMD**: accumulation (consolidation around the open), manipulation (move beyond the open against the bias), distribution (expansion to the other extreme) (04:43).
+- 2023-05-09 (upload) [[next_day_model_the_mmxm_trader_ict_concepts]] **Next day model (MMXM)**: trade the day after price reaches the anticipated HTF level; New York only; 15m execution; skip Monday (00:37, 02:01).
+- 2023-07-07 (upload) [[discount_premium_ict_concepts]] **Next day model**: after a sweep of Monday/Friday high and a close back in, expect the next day to drop to the discount FVG (06:08). Named only.
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **Draw on liquidity / daily bias**: the side of liquidity (PDH/PDL, previous week high/low, swing point) price is more likely to reach next (00:10, 00:38).
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **Next day model**: credited to MMXM Trader; after a failure to displace or respect of a PD array, anticipate the next daily candle's shape (open-low-high-close bullish, open-high-low-close bearish) and keep that bias until the draw is met (08:21-09:09, 18:01).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Previous candle's high/low**: the extremes of the last closed candle on the bias timeframe; the default intraday draws (00:36).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Next candle model / next day model** (credited to the MMXM trader): after a failure to displace at a swing point, or a respected PD array, the next candle moves back into the range toward the draw (10:56, 11:23).
+- 2023-08-29 (upload) [[top_down_analysis_daily_bias_to_entries_ict_concepts]] **Point of interest (POI)**: the hourly array (OB, breaker plus FVG) aligned with daily bias where the entry timeframe is watched (01:23, 03:49).
+- 2023-11-21 (upload) [[change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts]] **Next day model**: daily candle respects a daily PD array and closes away; next day takes the previous day's extreme (04:21).
+- 2024-08-26 (upload) [[ict_daily_profile_london_reversal_new_york_continuation]] **Daily profile**: the intraday sequence that builds the daily candle's OHLC across sessions (00:23, 01:54).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **New York reversal (daily profile)**: OHLC/OLHC daily candle whose wick is completed in the NY session after London failed to reach a relevant HTF PD array (00:44-01:37).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Fractal model (TTFM)**: HTF candle closure (sweep of the prior candle's extreme + close back inside), LTF CISD confirming the swing, then trading the next HTF candle's OHLC in that direction; applicable on any timeframe pair (00:28-02:46, 04:11).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Time until close / info table**: table showing timeframe, asset, fractal pair (e.g. daily and hourly in Automatic), time until HTF close, bias, time filters (13:31-13:55).
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Equilibrium (EQ)**: 0.5 of a candle or range, wick high to wick low (00:41); used as a bias divider in expansions (01:24).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Candle profile (OHLC / OLHC)**: bullish = open, low, high, close (opens low first); bearish = open, high, low, close (18:21-19:36).
+- 2025-07-19 (upload) [[fractal_model_fundamentals]] **Daily bias (one-sided)**: direction from daily closures relative to previous day high/low (01:20, 03:43).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **OHLC / OLHC**: open, high, low, close of the 4h candle (bearish: open, make high/wick, trade lower; bullish: open, low, high, close) (00:17, 09:00).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Opposing run**: the move from the candle's opening price to the extreme against the trader's bias; its size = the wick (03:15).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Continuation daily bias**: close above PDH (bullish) or below PDL (bearish) (01:01-01:15).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Reversal daily bias**: sweep of PDL/PDH and close back inside (01:15-01:37).

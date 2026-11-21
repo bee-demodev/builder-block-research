@@ -1,27 +1,492 @@
 [
   {
-    "text": "Jokerszn | Daily Orderflow - ICT Daily Bias. daily_bias, educational_channel. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 208.46,
-    "duration": 178.68
+    "text": "How's it going, everyone? Today, we have David with us to go over a few things. David, if you want to give a self-introduction and then give us what we're going to be talking about today. Yeah, thanks for having me, first of all. I appreciate the invite. And today, what I want to do is I want to talk about how I use daily order flow, kind of like the daily bias, how I put that together for my trading.",
+    "start": 3.41,
+    "duration": 32.49
   },
   {
-    "text": "Jokerszn | Daily Orderflow - ICT Daily Bias. daily_bias, educational_channel. Liquidity sweep or run on the highs and lows.",
-    "start": 804.06,
-    "duration": 178.68
+    "text": "If you know me from Twitter, then you know that I'm most of times I'm trading EURUSD. That's why it's like kind of like my main pair. And yeah, what I want to do is I want to show you today how I use the daily chart and kind of like the daily profiles to create my intraday bias. And yeah, let's get right into it. If we take a look at the EURUSD weekly chart, we can see that last year pretty much, that's a really good example how I use liquidity on the weekly and the daily.",
+    "start": 35.9,
+    "duration": 29.97
   },
   {
-    "text": "Jokerszn | Daily Orderflow - ICT Daily Bias. daily_bias, educational_channel. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 1399.66,
-    "duration": 178.68
+    "text": "so for example we had this weekly high right here and if we go into replay so here we can see that pretty much we had this weekly high here which is also resting inside of this weekly volume imbalance so we have um by side PD array resting inside of this PD array in the premium right so let's make this purple and then we also if we take a look to the left side we also have a weekly order block",
+    "start": 65.87,
+    "duration": 30.03
   },
   {
-    "text": "Jokerszn | Daily Orderflow - ICT Daily Bias. daily_bias, educational_channel. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 1995.26,
-    "duration": 178.68
+    "text": "Aligning with this volume imbalance. So if we take this up close candle, which is the weekly order block, then we have two PD arrays aligning pretty much at the same level, right? And also, why is this a high probability order block? First of all, we can see that this candle, or the following up candle as well, swept the buy side of the previous weekly high. And then...",
+    "start": 95.9,
+    "duration": 29.83
   },
   {
-    "text": "Jokerszn | Daily Orderflow - ICT Daily Bias. daily_bias, educational_channel. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 2590.86,
-    "duration": 178.68
+    "text": "the following up weeks we could see that we pretty much had a break in market structure to the downside so this last up close candle is a high probability weekly order block right and as mentioned we have also this weekly high resting inside of this volume imbalance and also obviously the weekly order block right so my bias at this time of the year is pretty much bullish because as mentioned we have this weekly high",
+    "start": 125.73,
+    "duration": 27.85
+  },
+  {
+    "text": "And then we also have another weekly high here as well. So we have those two buy side levels as our weekly objective. Then if we go down to the daily, you pretty much can see that we have a bullish daily order flow. So this is a very good example of what I want to see. If I have a certain bias, what I want to see is that the daily order flow is confirming the draw on liquidity. So in this case,",
+    "start": 153.58,
+    "duration": 29.76
+  },
+  {
+    "text": "The draw is to the upside, and obviously I then want to see a bullish daily order flow to get myself into alignment with my higher timeframe bias, right? So if we take a look, we can see that price is then trading into the daily equal highs, and then you can also see how price is closing above the equal highs, which is a really good sign, because usually if we have liquidity sweep and price is rejected from a certain level,",
+    "start": 183.34,
+    "duration": 28.63
+  },
+  {
+    "text": "Then price tends to fail to close above but in this case as you can see we managed to get a close above the equal highs so it's real likely that we will also trade into those weekly highs and also into the weekly volume imbalance and as you can see on the next day we then also saw the expansion heading into that level here and now once we trade into a higher time frame",
+    "start": 211.97,
+    "duration": 27.44
+  },
+  {
+    "text": "Price objective so the only liquidity pools I use for my buyers are old highs and lows and then also higher time frame fair value gaps so daily fair value gaps or weekly fair value gaps which is pretty much then the internal liquidity and the old highs and lows are the external liquidity and those are pretty much the only two liquidity pools I use for my buyers and then as mentioned I wait for the daily order flow to confirm the draw of liquidity right.",
+    "start": 239.41,
+    "duration": 29.53
+  },
+  {
+    "text": "And now that we trade into that level, at this point, my bias is neutral, because price could easily trade higher and also take out the highs here. But because, as mentioned, we've taken out those two liquidity pools and we're trading at two higher timeframe bearish PDA arrays, I pretty much want to see if price is actually reversing from here, or if it's willing to trade higher and then aim for these buy side liquidity pools right here.",
+    "start": 268.94,
+    "duration": 29.25
+  },
+  {
+    "text": "So at this point what I do is I pretty much stay on the sidelines and I won't take any trades or I don't have any daily bias. My bias is neutral and I want to see how price is trading in the following days now that you've taken out the buy side, right? I mentioned earlier that when I'm trading I use the liquidity and then I wait for the daily order flow to confirm the draw, right? And then the next step what I do is I pretty much",
+    "start": 298.51,
+    "duration": 27.73
+  },
+  {
+    "text": "i have three daily profiles i use the first one is the expansion profile my favorite profile to look for intraday trades because you can see a really one-sided price action and a really one-sided price delivery so that's the first one and then the second one is the retracement profile so that's typically a profile i use when we have a certain bullish or bearish order flow",
+    "start": 326.24,
+    "duration": 26.61
+  },
+  {
+    "text": "And I'm expecting price to retrace in the following day or following days into like a discount or premium area, depending on if it's a bullish or bearish order flow. And then the third profile is a consolidation profile. So those three profiles are the ones I'm using. And I'm pretty much always trying to anticipate what the next daily candle, what profile is the daily candle going to have, right?",
+    "start": 352.85,
+    "duration": 28.51
+  },
+  {
+    "text": "Combining that with my daily bias, so if I'm bullish and I'm expecting a bullish daily expansion profile, then I'm obviously going to look for intraday bias in this day. And when can we expect a consolidation profile? That's every time we trade into a higher timeframe level. So for example, take out a higher timeframe, both high or low, I'm expecting a consolidation profile to be next.",
+    "start": 381.36,
+    "duration": 27.94
+  },
+  {
+    "text": "And the other criteria I use for a consolidation profile is if the previous daily candles have seen an overextension in price. And if we take a look at the previous few daily candles, we can see that we pretty much have seen like one, two, three, four, five bullish or six, even six bullish daily candles, right? And the last two ones you can see compared to the average daily expansion.",
+    "start": 409.3,
+    "duration": 28.65
+  },
+  {
+    "text": "They are quite large expansions, right? So we have that criteria, and then also considering where we're trading on the higher timeframes. You can see we're trading in this weekly volume imbalance. We've taken out the buy side. So therefore, what I'm expecting now is to see a consolidation here, so we then either get a continuation higher or we get a rejection lower, and we'd aim for the sell side, which would be those lows here.",
+    "start": 437.95,
+    "duration": 29.36
+  },
+  {
+    "text": "Those lows here, and then ultimately we also have those equal lows here as well. As of now, pretty much what I would do, or what I did back then, I was waiting for price to trade and show me the intentions of price, right? And you can see the next daily profile, there's a consolidation profile. How can you identify a consolidation profile? It's actually pretty easy, so if you take a look at the daily candle,",
+    "start": 468.5,
+    "duration": 30.68
+  },
+  {
+    "text": "They'll candle opening price and closing price. You can see that pretty much we're closing and opening almost at the same price. And then again on the next day we get another consolidation profile and pretty much what I do is I just wait and see are we willing to close above this volume imbalance or are we trading lower into the range of this dealing range here once we form a swing high here, right?",
+    "start": 499.18,
+    "duration": 28.04
+  },
+  {
+    "text": "And again, you can see, we trade higher to the top of this volume imbalance, still stuck in this range here. Now, you can see on the next day, we formed a swing low, so we made a daily high, and then to the left and to the right, we formed a lower daily high, so we have formed a daily swing high fractal right here. So now, if we take a look, when did we form the last swing low, then we have this low right here, and this swing high right here. So we have created now a daily",
+    "start": 529.42,
+    "duration": 31.56
+  },
+  {
+    "text": "Dealing range, right? So we can pull the FIB from the swing low to the swing high, and now you can see I've marked out the 0.5 level of this daily dealing range, and pretty much what it shows me is the premium and discount of this range. So everything above the 0.5 level is the premium, and everything below is the discount, right? And now at this point what I want to see is, if we take a look what are the first PD arrays inside of this range, we can see that we have",
+    "start": 560.98,
+    "duration": 28.48
+  },
+  {
+    "text": "Fair value gap on the daily right here. So let's see, you can see we've tagged the fair value gap and we're trading still above the mean threshold of the fair value gap and for now there's still nothing when it comes to my bias. My bias is still neutral and also daily order flow is obviously still bullish so there's no reason to say that order flow is bearish because",
+    "start": 589.46,
+    "duration": 27.85
+  },
+  {
+    "text": "Price is still respecting all the bullish PD arrays. So in general, when you try to confirm autoflow, or try to identify if autoflow is bearish or bullish, what you want to do is you want to see how is price reacting to the PD arrays. So for example, in the bullish autoflow, what you want to see is you want to see bullish PD arrays being respected and bearish PD arrays to the left side, you want to see price to disrespect them and turn them into bullish inversion levels, right?",
+    "start": 617.31,
+    "duration": 27.92
+  },
+  {
+    "text": "So now that my bias, I've mentioned my bias is inclined to be more like bearish now because we're trading at a weekly premium level, we've taken out the weekly buy side. So now what I would like to see is now the daily order flow to turn bearish. So for this case, I would like to see that price starts to close below this daily FVG. Because then in this case, I can say, okay, we now have disrespected a bullish PD array and we've also then formed a daily",
+    "start": 645.87,
+    "duration": 29.54
+  },
+  {
+    "text": "bearish inversion PD array, right, once you close below this daily FVG. But for now, you can see, we are still respecting this FVG. So now, the next stage, you can see, we got a close below, and at this point, I pretty much anticipate price to trade at least into the discount of this daily dealing range, right, so we got a close below the daily FVG, and as mentioned,",
+    "start": 675.41,
+    "duration": 28.46
+  },
+  {
+    "text": "If we get a close below, I will use this former bullish FVG as a bearish inversion level to look for sales into this lower FVG and also this discount level, right, this 0.5 level of this range. What profile can we expect from the next daily candle? If we take a look at the previous two or the previous three daily candles, I always take a look, or I put my focus",
+    "start": 703.87,
+    "duration": 28.19
+  },
+  {
+    "text": "Especially on the last three previous daily candles, because that's, from my experience, helped me to identify the most likely upcoming daily profile. And you can see the last three daily profiles were all daily bearish candles, right? So you can see we had one daily bearish expansion candle, and then we had a small expansion candle on the previous day, and then also the daily candle that formed the swing eye was more like a bearish consolidation candle, right?",
+    "start": 732.06,
+    "duration": 30.0
+  },
+  {
+    "text": "So for the next day, what I'm most likely to expect is a consolidation candle, because we have seen an expansion before on the last three daily candles, and from my experience, it's kind of like a rule of thumb I use, if we have three consecutive daily candles closing the same direction, I try to avoid taking trades in the same direction on the fourth day. So for example,",
+    "start": 762.06,
+    "duration": 26.66
+  },
+  {
+    "text": "Here you can see we had a consolidation profile, then you can see we had one, two expansion candles, and because they were kind of like pretty big compared to the average expansion daily candle profile, you can see on the next day, and also considering that we have taken out the weekly buy side, you can see that already on the next day we have seen a consolidation profile. Also, if you look back on the previous",
+    "start": 789.3,
+    "duration": 30.56
+  },
+  {
+    "text": "Candles, the left side you can see we barely get more than three consecutive candle up or down closes, right? So for example here you can see we have one up close candle, a second one and then the third one and then you can see on the following days we see a retracement or consolidation profile, right? Also here three down close candles and then on the fourth day you can see we have a consolidation profile.",
+    "start": 819.86,
+    "duration": 29.87
+  },
+  {
+    "text": "So that's how I use kind of like this rule. If I see three consecutive daily candles close in the same direction, I always try to avoid taking trades on the fourth day in the same direction. So now again, you can see we get a consolidation profile, right? Also, if we take a look now where we're trading, you can see we have another daily fair value gap view. And price is now trading between this bullish fair value gap.",
+    "start": 849.73,
+    "duration": 29.87
+  },
+  {
+    "text": "And this bearish inversion FVG. Also, not only do we have a bearish inversion FVG here, we also have a daily bearish balanced price range here. So we have formed with this last daily candle close, we formed a daily bearish FVG here. And you can see to the left side, we have the former bullish one. So the overlap of those two FVGs creates one bearish balanced price range.",
+    "start": 879.6,
+    "duration": 30.98
+  },
+  {
+    "text": "Take this box now, you can say okay, we have now this level here. You can see the overlap of those two value gaps is now pretty much this box here, the red box here. The red box is now marking out the daily bearish balance price range, right? So now if I'm bearish, what I don't want to see now, I don't want to see another daily close back above this bearish balance price range.",
+    "start": 910.58,
+    "duration": 29.07
+  },
+  {
+    "text": "So if I'm bearish now and want to look for intraday sells into this discount of this range here, I want to use this level, the red box or the red zone, as my higher time frame POI to look for lower time frame executions during a kill zone, right? So for example, the London session or the New York session are the two kill zones, the main kill zones I use, and what I then do is pretty much I wait for price to trade into those levels during a kill zone, then I wait for",
+    "start": 939.65,
+    "duration": 30.37
+  },
+  {
+    "text": "And I quit the sweep of the opposing side, and then I wait for a lower time frame change in order flow to get into a position. How I do that, I will show you that later on, but for now I want to give you more examples of how I use the daily order flow on a daily chart to kind of get my daily bias down and set my expectations for the coming daily profile. And as you can see now, if we go closer,",
+    "start": 970.02,
+    "duration": 33.64
+  },
+  {
+    "text": "You can see we've traded above the previous day's high into this daily balance price range. And then you can see how we get the expansion down into this bullish FVG. And also, if you take a look at the daily candle close, you can see we've closed below the mean threshold of this FVG. So it's already showing to me the first indications that also this FVG here, the lower one,",
+    "start": 1003.66,
+    "duration": 28.82
+  },
+  {
+    "text": "It's also most likely going to fail and not giving any bullish reaction here. So that's also another tip I use if you try to identify the probabilities of a certain PD array to hold. What you always want to see is, for example, if it's a bullish PD array, you don't want to see price too close below the mean threshold. You ideally want to see already a bullish reaction from the upper half of this.",
+    "start": 1032.48,
+    "duration": 29.87
+  },
+  {
+    "text": "bullish value gaps. In the same case for the bearish ones, you don't want to see the price to close above the upper or the mean threshold and you want to see price to reject already from the lower half from a bearish PD array. As you can see in this daily balance price range, you can see we only trade into the lower half of this daily balance price range and then we saw the rejection to the downside, right?",
+    "start": 1062.35,
+    "duration": 25.47
+  },
+  {
+    "text": "So now again, we're still aiming for lower prices, we still have not reached the 0.5 level discount of this range, so we're still expecting prices to trade lower. And you can see on the next day, we again, we more likely have a consolidation profile, but you can see we got the move into the discount of this daily dealing range. And now again, I told you, I always try to anticipate",
+    "start": 1088.08,
+    "duration": 28.22
+  },
+  {
+    "text": "Not only the daily bias, so not only the direction of the candle, but also the daily profile. And another criteria to expect a consolidation profile for me is if you are trading at the EQ of a higher timeframe range. So in this case, we have this daily dealing range and you can see we are now trading at the EQ, so the middle of this range. And usually what you will see if price is trading at a range, you usually also see a consolidation for some days because",
+    "start": 1116.3,
+    "duration": 29.67
+  },
+  {
+    "text": "As mentioned, the EQ of a range is where discount goes into premium and premium goes into discount, so price is kind of in a neutral state. And you oftentimes will see a consolidation at the range EQ before we then get either a move higher again or we trade to the range lows, right? So you can see we get every tradesman profile into this value gap here, which is also, again, another balance price range.",
+    "start": 1145.97,
+    "duration": 33.41
+  },
+  {
+    "text": "So we can take this box and you can see this area is again the overlap of this inversion FVG and this daily bearish FVG. So I also put it into red and now as we are trading at the EQ of the range pretty much I will wait and see how we are trading here if we're getting a move lower",
+    "start": 1179.6,
+    "duration": 34.86
+  },
+  {
+    "text": "And show willingness to trade out of the range for the downside, or are we making a higher low, a higher low here, and then aiming again for the buy side, right, because now we've traded to discount, and if we take a look, we have a weekly bullish order flow, we're making higher highs, higher lows, so we might also just make another higher low here, and then again aim for the buy side here, right, and make a new higher high. And now,",
+    "start": 1214.46,
+    "duration": 31.57
+  },
+  {
+    "text": "What you can see it's a really interesting daily candle here because what happens you can see we are trading all the way above this daily balance price range and we're taking out this swing high here which is also a Monday high so also another important factor when it comes to time you always mark out the Monday range so in this case you can see we we have the Monday candle here and we're trading below the Monday lows and then we",
+    "start": 1246.54,
+    "duration": 30.55
+  },
+  {
+    "text": "Aiming for the Monday high. If you go to the H1, you can see it more clearly, Monday high here, which is also the Monday London session high, so it's not a confluence of time, and you can see if you mark out the Monday low, you can see prices trading below the Monday lows, accumulating here, and then you can see the run up into the Monday highs, which is still daily balanced, bearish balanced price range.",
+    "start": 1277.09,
+    "duration": 30.67
+  },
+  {
+    "text": "And you can see, then we see the rejection to the downside, right? So now again, back to the daily chart. Again, every daily close, I check what PD arrays have been formed, what PD arrays have been disrespected, and then reevaluate my expectations for the next day or even the end, the rest of the week, right? And what we can see now here, we...",
+    "start": 1307.76,
+    "duration": 24.4
+  },
+  {
+    "text": "We have traded above this daily balance price range, the lower one. You still got no close above. And that's why I always only used the daily candle closes to determine my bias. I never used the wicks. The wicks are only there to take liquidity from old highs and lows. And the daily candle open and close is what I used to determine the narrative of price. And you can see, if you take a look at the close, we are perfectly respecting this lower daily balance price range, right?",
+    "start": 1332.16,
+    "duration": 29.2
+  },
+  {
+    "text": "So now again, do we have any new PD arrays? And then take a look at this up close candle. Again, we have take liquidity, we have close below a recent swing low. So we have another high probability daily order block here. And again, we have PD array alignment here. We have this entire inversion that we have value gap here. And you can see how price is aligning or",
+    "start": 1362.45,
+    "duration": 34.01
+  },
+  {
+    "text": "The daily order block, the bearish one, is aligning perfectly with this daily bearish inversion FVG, right? So if I'm bearish now and I want to aim for lower prices here, what I don't want to see is I don't want to see price close now above this daily order block here, right? And then again, we take a look to the left side of this daily dealing range. What could be the next potential target? You can see we have another unmitigated daily FVG here.",
+    "start": 1396.46,
+    "duration": 29.57
+  },
+  {
+    "text": "So now, as you can see, we've left now the equilibrium of that range, and I told you, if we see price leaving this range, what I want to see now, or what I want to, my bias then, is to look for shorts aiming into this daily value gap here. So we go from level to level, from PD array to PD array, and then we want to see again, how is price reacting to that PD array, right?",
+    "start": 1426.03,
+    "duration": 27.91
+  },
+  {
+    "text": "Let's see how the next daily candle is going to close. Again, I would not trade on the following update. Why? Because we have seen quite a large expansion on the previous day. So the next day is most likely going to be either a tradesman profile against a daily order flow or a consolidation profile. I'm not saying you can't trade those profiles, but for my personal style, I prefer trading expansion profiles because simply",
+    "start": 1453.94,
+    "duration": 28.09
+  },
+  {
+    "text": "I think they give you the more high probability setups compared to a consolidation profile or a retracement profile. And as you can see, we see a retracement profile against the daily order flow, right? And also what we have now, we have equal lows here. You can see we have not quite traded into this value gap. So we have now equal lows here. We have the low of this daily low that creates the value gap and we have the low of today's daily candle, right?",
+    "start": 1482.03,
+    "duration": 30.66
+  },
+  {
+    "text": "So now again what might happen in the next days is again to see some sort of consolidation. Why? Because as mentioned we have still a weekly bullish order flow and if we take a look where we're trading now we have a bullish PTA which is kind of like the last defense for any bullishness because if we fail to hold this FVG we are most likely going to trade into",
+    "start": 1515.15,
+    "duration": 28.05
+  },
+  {
+    "text": "This swing low down here, right? So if we are still in a weekly bullish order flow, this is the last chance to kind of form a higher low, right? So I'm not expecting price to trade right through this level here. So if we tag that FVG, I'm expecting price to range now between those two PD arrays, right? So we have the bullish PD array here and we have the bearish PD arrays right above.",
+    "start": 1543.2,
+    "duration": 29.6
+  },
+  {
+    "text": "What I call this is kind of like we have a stuck order flow, so order flow is stuck between two PTAs, and as long as we are trading between those two PTAs, Price is most likely going to range. So what I want to do, or what I did back then, I want to see Price to either show me bullishness, so if we are bullish, I want to see a daily close above this order block, so we have a daily close above, and then we can use this as a breaker block.",
+    "start": 1572.8,
+    "duration": 29.6
+  },
+  {
+    "text": "As an inversion level, and then aim for higher prices again, right? This would be my bullish trigger, and the bearish one would be to see a close below the swing low, and then also a close below the value gap, and then we can use this value gap again as an inversion level, and look for cells into the cell size liquidity pool resting below this weekly swing low here. So those two scenarios would be my...",
+    "start": 1602.4,
+    "duration": 28.61
+  },
+  {
+    "text": "The respective trigger would be my plan going forward, and pretty much what I would do now is I would only look for cells above those equal highs here, and this order block, and I would maybe look for any potential longs forming below the swing low here, and also inside of this daily bullish HVG. And you can see we have pretty much had now two daily inside candles.",
+    "start": 1631.01,
+    "duration": 30.11
+  },
+  {
+    "text": "Forming inside of the range of this daily candle. And what I would not recommend to do or what I would personally never do is I would never look for trades at the EQ of this range here. So taking trades around this level here, the EQ of this range is, in my opinion, one of the lowest probability setups or places in price you could look for a setup. And as mentioned,",
+    "start": 1661.12,
+    "duration": 30.37
+  },
+  {
+    "text": "If we are trading in a range, as we have here now, I only want to trade at the extremes of the range. So in this case, we have the buy side with the daily bearish order block, and we have the sell side with the daily bullish FVG right below. And you can see, we have taken out the sell side first, and we traded right into the mean threshold of this daily FVG. So at this point, I would be more inclined to look for longs into",
+    "start": 1691.49,
+    "duration": 30.81
+  },
+  {
+    "text": "Equal highs here and also this daily bullish order block. And on the next day we take out the previous day's low and now to me it looks like after we have also seen this daily consolidation profile that we might see now a move to the range highs or at least to the range EQ. And you can see we almost got to the equal highs here and then we traded back to the range lows. So again",
+    "start": 1722.3,
+    "duration": 34.2
+  },
+  {
+    "text": "We have trapped order flow. You can see the bullish value gap is holding. We're not seeing any signs of this failing yet. At the same time, we are also seeing that this inversion travel gap is also keeping prices lower. So order flow is pretty much stuck in this range here. And now what's interesting, the next daily candle, you can see we've taken out the buy side. We've traded into this daily order block.",
+    "start": 1756.69,
+    "duration": 32.25
+  },
+  {
+    "text": "And then we saw rejection all the way down to the same, almost the same level as we opened up, daily candle. And now for me personally, I would now aim for cells into this low, at least here, and also potentially, depending on if we get a close below the value gap, also into this low here. And now what, how would I pick my higher timeframe PUI? Again, we have this.",
+    "start": 1788.94,
+    "duration": 30.85
+  },
+  {
+    "text": "Large daily candle wick here, and how I use those large wicks, to me, those large wicks are nothing but a balanced price range, because if you think about what those wicks are on the lower time frames, then they are pretty much a balanced price range, because we open up right here, we trade higher, and then we see an immediate reaction to the downside, so all of this range is pretty much a balanced price range. So we have the low of the wick.",
+    "start": 1819.79,
+    "duration": 28.05
+  },
+  {
+    "text": "All the way to the upside, to the high of the WIG. And again, I told you, if we have a bearish PD array, we want to see a reaction from ideally the lower half of this PD array, right? So if you go down to the H1, you can see now this range is the daily WIG. And now let's look for any H1 PD arrays. We could look for cells from inside of the daily WIG. And you can see we have an H1.",
+    "start": 1847.84,
+    "duration": 30.51
+  },
+  {
+    "text": "bullish value gap that failed to hold, and we have created another bearish value gap to the right side. So again, we have a daily, or in this case, an H1 balance price range, right? All of this is a balance price range inside of the daily WIC, or the lower half of the daily WIC, right? So if I'm bearish now, the next day, as mentioned, my bias would be bearish. Why? Because we have a range here.",
+    "start": 1878.35,
+    "duration": 26.75
+  },
+  {
+    "text": "We have seen a manipulation to the upside, taking out the buy side, into a higher time frame PD array, and now I'm thinking immediately of an AMD, so we have an accumulation range, we have seen a manipulation, and now what I want to see is a distribution to at least range lows, and then eventually an expansion all the way into those weekly lows right here. So now I refined, as mentioned, my daily PD array into an H1 PD array. We have this",
+    "start": 1905.1,
+    "duration": 30.64
+  },
+  {
+    "text": "H1 balance price range. And we obviously also have this H1 fair value gap right here. So this entire POI here, the H1 fair value gap and the H1 balance price range would be my intraday POI to look for lower timeframe executions into the lows here and lows here, right? So again, we wait for the next day. I told you, we're always waiting for a kill zone.",
+    "start": 1935.74,
+    "duration": 32.66
+  },
+  {
+    "text": "We have a kill zone here, the Asia kill zone, but I'm not trading Asia, so we skipped that one. And then also, if we take a look at the economic calendar, you can see that we have news coming out during the New York session, we have PPI coming out. So if we see a large expansion to the downside, it's most likely going to happen during the New York kill zone, right? So now we have figured out.",
+    "start": 1968.85,
+    "duration": 27.02
+  },
+  {
+    "text": "At what levels, so at where we want to execute, we have this H1 PD array, we have the H1 balance price range and we also know that we can expect the most amount of volatility for the day to happen or to occur around the New York session where we have the high impact news coming out. So we have London open here, we're trading above the Asian highs and now we have New York session opening and you can see we're closing below the EQ.",
+    "start": 1995.87,
+    "duration": 39.09
+  },
+  {
+    "text": "of the balance price range and we're also not getting a close above the H1. If I look up right, so you can see we are respecting both PDA arrays. If we would get a close above this level here, above the balance price range, I would not longer be interested in looking for sales and I would go back to a neutral bias and I would wait for price to show me how it's willing to trade. But as long as we are holding those two PDA arrays and we are respecting those,",
+    "start": 2034.96,
+    "duration": 29.33
+  },
+  {
+    "text": "I'm expecting to see bearish price delivery to the downside. So again, we have news coming out. So we have London highs here. So we might see another sweep of those highs. And then I want to see news pushing price to the downside. We also have equal lows here on the H1. And then obviously we have the daily lows right here. So what you could do here is if you want to play it more risky or more likely on the H1 timeframe.",
+    "start": 2064.29,
+    "duration": 32.93
+  },
+  {
+    "text": "You could say, okay, I will take a sell here and then put my stops above the EQ of the daily rig, which would be a 25 pip stop, and then you can aim for your first TP, it would be this low here, for a 2.8R trade, and if you are more aggressive, you can even aim for this trade, for those lows here, at the daily value gap lows, which would get you then a 3.5R trade.",
+    "start": 2097.22,
+    "duration": 28.44
+  },
+  {
+    "text": "And if you don't like to get into trades ahead of the news, you could also wait for a lower timeframe execution on like the M1 or the M5, depending on your trading style once the news gets released. So let's say we are using this as a swing trade entry, right? We use the H1 as our entry timeframe. We have the entry around the H1 balance price range. Our immobulation level would be close above the",
+    "start": 2125.66,
+    "duration": 29.84
+  },
+  {
+    "text": "H1 balance price range and I won't put my stop here because we might see a WIC once news come out so I will use a wider stop which is around this EQ of the daily WIC remember this range here which is the daily WIC so I put my stops here as mentioned and we have news coming out now and you can see we sweep London highs one more time and then we see price selling off and then you can see on the next day",
+    "start": 2155.5,
+    "duration": 35.08
+  },
+  {
+    "text": "We reach our final target. So this would be one example for the H1 execution. And as you can see, I've used only the daily chart and then I will find my daily PD array into an H1 POI. And then I used a combination of an intraday news event with a kill zone. And you can see then a price sold off into the levels I mentioned.",
+    "start": 2190.58,
+    "duration": 29.92
+  },
+  {
+    "text": "Now, if we go back to the daily, you can see now the last daily close. We closed below the EQ of this FVG. We quite did not manage to close below the entire FVG, but you can see we closed below the EQ and almost also below the entire FVG, right? At this point, I'm expecting price to trade into this low here, the weekly low of this daily dealing range here, right?",
+    "start": 2221.01,
+    "duration": 30.49
+  },
+  {
+    "text": "So we can see now price 21 is level here. And now again, if we take a look at the last few daily candles, you can see we had quite a lot of consecutive down close candles. And at the same time, we've also failed to take out the previous day's highs multiple times, right? You can see we have one previous day's high here, another one here. And you can see we have one, two, three, four, five.",
+    "start": 2255.41,
+    "duration": 31.02
+  },
+  {
+    "text": "Previous day's highs, which have not been getting swept with another daily candle, so you have lots of liquidity resting above those highs here, right? So for me, this would be a low probability environment to look for sales, because we could also see a quick move above those highs here. We also have like kind of like a trend line here, right? So we could see a move above those highs and then see a move into our final target, right? But at the same time,",
+    "start": 2286.43,
+    "duration": 30.4
+  },
+  {
+    "text": "Again, we have an inversion level here now, this daily FVG. At the same time, I also would not want to see a daily close back above this FVG here. So what might be a potential scenario is we might see an intraday week above some of those highs, but still closing below the EQ of this inversion FVG, and then we could see a run into these lows here, right? So I'm waiting now for the next week. You can see it's a Friday here, so",
+    "start": 2316.83,
+    "duration": 33.59
+  },
+  {
+    "text": "I will wait for the next upcoming week to then look for potential. Again, if you think of weekly profiles, you could say, okay, we have a new week. I'm expecting the next upcoming week to be a bearish week or at least to see a move into those lows here in the next week. So what I want to see is I want to see the high of the week to form at the beginning of the week. And then I want to see a move into those lows here. So the next week.",
+    "start": 2350.42,
+    "duration": 30.35
+  },
+  {
+    "text": "Let's go to the H1 this time. We have a Monday, and Mondays usually tend to be either a consolidation profile or a retracement profile against the daily order flow. That's what most Mondays usually offer when it comes to daily profiles. As you can see, this Monday we had a daily retracement profile against the daily order flow, right? We have a daily bearish order flow.",
+    "start": 2380.77,
+    "duration": 28.65
+  },
+  {
+    "text": "As you can see, we had Monday opening up here, and then you can see how we have seen every tradesman profile against daily order flow, where we have taken out the previous day's high, and now pretty much what we have here now, we have equal highs, and as you can see, this high right here is still resting below the EQ of this daily FVG, and we have Monday high here as well. I've mentioned earlier already that I always mark out the Monday range,",
+    "start": 2409.42,
+    "duration": 31.19
+  },
+  {
+    "text": "So if I'm bearish, what I want to see is I want to see price trading above Monday's high, and then I want to see a rejection back to the Monday range lows, and then also into our higher time frame target, right? So what I would do now is I would wait for Tuesday at London Killzone, and then I would like to see a lower time frame change in order flow to happen there. So again, we still have our higher time frame PUI, which is this daily inversion FVG,",
+    "start": 2440.61,
+    "duration": 32.91
+  },
+  {
+    "text": "And we have all of those buy side levels here, right? So what I want to see is I want to see a rate of those buy side levels and then I would like to see a lower time frame change in order flow. So we can see Asia is taking out the previous day's high and now we have London open here. So for London I usually use the M15 or the M5 time frame to time my executions.",
+    "start": 2473.71,
+    "duration": 37.79
+  },
+  {
+    "text": "So this time I will use the M15, and we can see we have London open here, we're taking out the Asia highs, and then also the previous week's Thursdays highs, and at this point I pretty much do the same thing I do on the daily, just on the lower timeframes, right, I have a daily bearish bias, we're trading at our higher timeframe, POI, as you can see, this dotted line right here is the EQ of the daily inversion level, we've taken out the opposing liquidity,",
+    "start": 2512.75,
+    "duration": 30.55
+  },
+  {
+    "text": "And at this point, I'm just waiting for my trigger to then get into sales. So for now, we are still bullish. You can see the M15 autoflow is still bullish. There's nothing bearish right now. And you simply want to see how price is trading here and if it's showing the willingness to see any lower timeframe changes in autoflow, right? So now again, we have formed an M15 swing high here and we have",
+    "start": 2543.3,
+    "duration": 35.16
+  },
+  {
+    "text": "Swing low right here as well so we have this dealing range here and now we pretty much do the same thing as we did on the daily just on the M15 right so we can see we have two small fair value gaps here like this zone we have one small value gap here and another one right below so for the sake of simplicity let's put it into one we have this",
+    "start": 2578.46,
+    "duration": 31.73
+  },
+  {
+    "text": "Zone of imbalance, you could say here. And you could see price disrespected the entire of both FVG, right? So we have also now, if we take a look at the next M15 close, you can see we have now also created an M15 bearish value gap. So again, we have PD area alignment, bearish value gap, overlap with two former bullish FVG.",
+    "start": 2610.19,
+    "duration": 30.43
+  },
+  {
+    "text": "so again we have formed a balanced price range here right so all of this is now a balanced price range and if i'm bearish now i would not want to see price to close back above this level now so if you are pretty aggressive with your entries and then you could say okay i will market short here put my stops above the london high so be a 13 pip stop and then you could aim",
+    "start": 2640.62,
+    "duration": 30.15
+  },
+  {
+    "text": "As a conservative TP, a first TP, use the Asia lows, which would be almost a 2R trade. I personally, I would aim all the way for at least the Monday lows, which would give me a 3.6R trade. And then you can leave some partials for the previous week's low. And then right below, we have our weekly target, right? So this would be my position. I would enter",
+    "start": 2671.02,
+    "duration": 31.49
+  },
+  {
+    "text": "My first trade here, and then first TP would be the Monday lows, and then I would keep some partials for the lower targets, right? So now again, what other PTAs do we have inside of this range? We also have this order block here, this bullish one. So if price is trading in this level here, what I want to see is I also want to see price to disrespect this PTA as well. So a close",
+    "start": 2702.51,
+    "duration": 31.11
+  },
+  {
+    "text": "below and then I will add another trade because it shows me okay we are indeed having a bearish order flow on the M15 now. Also remember we're trading above the Monday highs and for now it looks like we might see a rejection from the Monday highs so we have a range here manipulation during the kill zone here and now what I want to see is price to sell off into the sell side liquidity pools right below.",
+    "start": 2733.62,
+    "duration": 28.28
+  },
+  {
+    "text": "So you can see now we are trading right at that last PD array instead of the stealing range which is this order block and you can see for now we are respecting the EQ of this order block but once we get a close below we can use this as a breaker block and then can look for further sells from this level here and now as you can see we got the close below so at this point what I would do is I would put my stops to break even from the first trade",
+    "start": 2765.55,
+    "duration": 33.86
+  },
+  {
+    "text": "Because now there's no reason for price to trade back above the breaker, so I would put my stops to break even, so I'm pretty much in a risk-free trade, and now that I got more open risk, what I would do is I would add another trade, I would put some limits at the breaker low, so right here, and then my stops to the same level as my previous first entry, right, so right above the breaker, some pips above to give price room to breath, and then I",
+    "start": 2799.41,
+    "duration": 29.65
+  },
+  {
+    "text": "Want to see, ideally, no close above the EQ of this breaker here, because now that this order block failed to hold, we have now a bearish breaker here, and again, I told you, if we have any bearish PDRs, we don't want to see price too close above the EQ, and we want to see the lower half to act as a resistance, right? So again, entry here, stop level would be above the breaker, and then we can use the same TPs,",
+    "start": 2829.06,
+    "duration": 30.84
+  },
+  {
+    "text": "Let's use the Monday lows and you can see we'll get another 3R trade from this setup and there we would have gotten a fill and you can see we are selling off from this breaker right here and now we have hit the first TP of both trades the Monday lows which are also the Asian lows and now we can hold some partials aiming for the weekly lows right below and you can see right at the end of the New York session",
+    "start": 2859.9,
+    "duration": 49.51
+  },
+  {
+    "text": "We hit our final target, which are the daily lows. And this would be the way I would collapse my entire position and close the remaining partials. And yeah, that's another trade breakdown. And again, you can see all of my trades or the entire trade idea stems from the daily chart and how I use the daily chart combined with daily profiles to then get into sync.",
+    "start": 2909.41,
+    "duration": 29.28
+  },
+  {
+    "text": "On the lower time frames find M15 or M5 entries aligning with my daily bias. And yeah, I hoped you learned something during this video. And yeah, thanks again for having me. I really appreciate the invite. And yeah.",
+    "start": 2938.69,
+    "duration": 20.91
+  },
+  {
+    "text": "Yeah, thank you so much for coming on. For any of you watching, if you want to learn more from David, please check the link in the description below. I will put his YouTube as well as his Twitter in there if you want to go ahead and check out more of his stuff. But other than that, I hope you guys have a great rest of your day, and I'll see you guys next time.",
+    "start": 2959.73,
+    "duration": 17.57
   }
 ]

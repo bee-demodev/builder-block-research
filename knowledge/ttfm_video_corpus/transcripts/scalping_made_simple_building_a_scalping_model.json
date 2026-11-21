@@ -1,27 +1,62 @@
 [
   {
-    "text": "Scalping Made Simple - Building A Scalping Model. educational_channel. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 25.970000000000002,
-    "duration": 22.259999999999998
+    "text": "How's it going, everyone? This video is going to be over building a scalping strategy, so let's get into it. There are three things that I need to know when building a strategy, and that is criteria for entry, stop placement, and where I'm going to take my profit and or move my stop to break even. So in this model, I decided on a stop hunt and then an OTE entry. This is my criteria for entry. Where do I place my stop?",
+    "start": 9.94,
+    "duration": 28.24
   },
   {
-    "text": "Scalping Made Simple - Building A Scalping Model. educational_channel. Liquidity sweep or run on the highs and lows.",
-    "start": 100.17,
-    "duration": 22.259999999999998
+    "text": "I always place my stop at this high and then I take my first profit or move my stop to break even after we break through this low that was created for the OTE entry. So on the bullish scenario it looks something like this. The reason I chose to use an optimal trade entry or OTE for this model is because it creates a risk to reward over 1.5 which allows me to have a lower win rate. So looking at some examples of candlesticks here, what it would look like.",
+    "start": 38.18,
+    "duration": 28.91
   },
   {
-    "text": "Scalping Made Simple - Building A Scalping Model. educational_channel. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 174.37,
-    "duration": 22.259999999999998
+    "text": "So we have some sort of short term low that gets ran and aggressively below and back into the range. The OTE of this range back in, I am looking for an entry right here with my stop on the low and my first partial or move my stop to break even is this high here. So let's get into some examples in the charts.",
+    "start": 67.09,
+    "duration": 21.47
   },
   {
-    "text": "Scalping Made Simple - Building A Scalping Model. educational_channel. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 248.57,
-    "duration": 22.259999999999998
+    "text": "For this first example, I am on NQ one minute and I'm going to mark out recent highs and lows as that is what I am looking to be taken out in this strategy. So as you can see, I have marked out a high and a low. Now I wait to see if price is going to take out either side. I want to see an aggressive move out and then back into the range. So you can see here, we took this high out. Do we get an aggressive move back into the range? Not really.",
+    "start": 88.56,
+    "duration": 29.38
   },
   {
-    "text": "Scalping Made Simple - Building A Scalping Model. educational_channel. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 322.77000000000004,
-    "duration": 22.259999999999998
+    "text": "So this doesn't validate the criteria for my entry, so I disregard it, but I now have a new high to be watching. So as I let this play out, you can see I get a very aggressive move over this high and back into the range with a very large wick. Do we get some follow through? Yes, we aggressively fall back into the range. So my first criteria is met with an aggressive stop hunt. Now I am looking for an OTE entry.",
+    "start": 117.94,
+    "duration": 35.37
+  },
+  {
+    "text": "So from this high to the current low, I'm going to be looking for the 0.62 as far as it goes down. So as this continues down, I want to track it. Now I'm looking for a 0.62 entry, a stop on this high, and target or partial at this low. So as I let this play out, and there we hit my price target. That is our first example and to go over it one more time.",
+    "start": 153.31,
+    "duration": 40.99
+  },
+  {
+    "text": "The criteria is a stop hunt, so aggressive out and aggressive back into the range, and then OTE. Continuing on the NQ one minute, another thing I can look for is old highs and lows. So marking those out, I can look for reactions around here. So if we let this play out, you can see we move below this low, but we don't move back into the range. So this is invalid and I will delete it.",
+    "start": 194.3,
+    "duration": 31.25
+  },
+  {
+    "text": "Going down to our next low, here you can see we get an aggressive move down. Do we get an aggressive move back into the range? I would say that is pretty aggressive. So what I look for is an OTE entry. So wherever this high is. So if that's where our high is going to be, our entry is going to be right here. Stop on this low. First take profit or partial is there. There's the entry.",
+    "start": 226.99,
+    "duration": 38.05
+  },
+  {
+    "text": "There's the first TP or move my stop to break even. Now, where would I be targeting here? Well, either these highs up here, or when we reach into a premium of the range, which would be right there, play out. You can see how that works out. The nice thing about creating a model with defined rules is that it can be coded and turned into an indicator. So my friend TFO, I gave him this set of criteria and he",
+    "start": 266.48,
+    "duration": 30.13
+  },
+  {
+    "text": "Was kind enough to turn it into an indicator for me. Looking at this first trade, I'll go ahead and remove the drawings. You can see we have a high right here that is aggressively taken out. It then aggressively displaces back into the range and the indicator draws a fib and highlights the OTE here and shows when it creates a swing high in that OTE and then moves down. Although it did give",
+    "start": 296.61,
+    "duration": 28.61
+  },
+  {
+    "text": "Initial reaction here, as we couldn't displace below here, there's no aggressive move back in, or swing low put in. Similarly over here, you can see we took out a low, aggressively move back in, OTE with a swing low, and there we go. There's so many different ways to customize and adjust this indicator's settings, including changing the sensitivity of the stop hunts, inducement,",
+    "start": 325.22,
+    "duration": 24.67
+  },
+  {
+    "text": "Volume spikes, OTE, as well as trend and counter trend criteria. I'd like to give a big thank you to TFO for coding this up for me. And if you'd like to check it out for yourself, I will leave a link in the description below.",
+    "start": 349.89,
+    "duration": 12.37
   }
 ]

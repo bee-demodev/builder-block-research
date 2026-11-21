@@ -1,0 +1,567 @@
+[
+  {
+    "text": "All right. Cool. We are live. So double check that it loads in. All right. I think we're good to go. I'm honestly not certain. All right. I think we're good to go. We in. Yeah. All right. Can someone comment or something? We all good? I think.",
+    "start": 1.84,
+    "duration": 49.79
+  },
+  {
+    "text": "Lynch, say something. Okay, alright, we're good. People are talking. Alright, so thanks everyone for joining in. Still trying to figure out how to schedule lives and stuff, but looks like we got it figured out. How's it going? Currently with me today we have Brov. If you guys haven't checked him out before, I do have his YouTube, which he's just starting up, and then his Twitter in the description if you guys want to check him out there. Other than that, I'll...",
+    "start": 52.3,
+    "duration": 30.96
+  },
+  {
+    "text": "Hand it over to Bruv and he can do a little self-introduction and kind of the intro of how he trades. Hey guys, I am Bruv Town or just Bruv or I change my name very frequently. But I have been trading for about two years. My dad trades for a living and I was out doing how I got started trading. I was out doing sales.",
+    "start": 83.26,
+    "duration": 30.18
+  },
+  {
+    "text": "Like door-to-door sales. And I was horrendous at it. So my cousin wanted me to download Robinhood so he could get a free stock. So ever since then, I've been trading like, I think like right around when Apple had the stock split and I started trading TA and then slowly progressed to using volume profile, market profile, ICT, and then",
+    "start": 113.44,
+    "duration": 28.26
+  },
+  {
+    "text": "More recently, incorporating order flow and auction market theory into my trading. Sweet. I just had one question. They said, where do you get your order flow from? And he uses Sierra chart. I don't know exactly. Do you run AMP data feed through it? Yeah, so I use a Sierra chart, and then I just have my AMP account connected, and then that's how I get the data through here.",
+    "start": 141.7,
+    "duration": 30.92
+  },
+  {
+    "text": "And then someone said, does OTE work on futures? And yes, it does. I use it almost every day when I'm trading. So, but yeah, so getting into it, do you kind of want to give some examples, maybe how you get levels or, you know, line up ICT with order flow or anything like that? I don't know if you have anything. Yeah, for sure. So one of the examples I'll show, so this is one of my good trades as of late.",
+    "start": 172.72,
+    "duration": 29.98
+  },
+  {
+    "text": "But here on the daily chart, so I'll use ICT and liquidity a lot where we have equal lows or equal highs. Because when I started trading TA, I just started noticing so many failed breakdowns and failed breakouts. And so one of my trades semi-recently was right here where we have this liquidity.",
+    "start": 202.86,
+    "duration": 28.1
+  },
+  {
+    "text": "That I use a little bit with ICT. So right on a smaller timeframe on this chart, you would see a fair value gap right here. And then we have this liquidity and we dip below it. And then I also use to kind of narrow down my levels, I'll use the volume profile. And so when we clipped this level, I was looking for under like 37, 35, I think.",
+    "start": 230.96,
+    "duration": 30.37
+  },
+  {
+    "text": "And so I was able to get long right here and expect us to go up, but also was using the volume profile to get my level of entry. So I don't completely use like Fibonacci and OTE, but a lot of times I'll kind of eyeball it and use volume profile or market profile where I see a level in that fair value gap. And so that's kind of how I get my entries into these.",
+    "start": 261.33,
+    "duration": 29.39
+  },
+  {
+    "text": "Yeah. And then someone said, where can I learn order flow and futures? Do you have any recommendations for like videos starting out for order flow, stuff like that? So on YouTube, there's quite a bit of good Axia futures. They have quite a few good ones. And those are the ones I watched for Footprint. And I also learned Footprint from Adam Set on Twitter.",
+    "start": 290.72,
+    "duration": 30.13
+  },
+  {
+    "text": "Other order flow stuff, I think honestly the best way to learn, if you're trying to learn depth of market where you're actually looking at like the orders and the tape, the best, once you've learned footprint, you kind of understand all the concepts like absorption, speed, and all of these things. And then it just comes down honestly to like screen time because it's so, it's so complex. But once you've learned those concepts, you can kind of start seeing it happening and start incorporating.",
+    "start": 321.26,
+    "duration": 30.39
+  },
+  {
+    "text": "The DOM into your trading and reading the tape and what's going on. Oh yeah, Trading Riots has two good articles. He has good ones for auction market theory and pretty much just everything. Yeah, market profile one is good there. A little background with me. I actually did use market profile for a little bit, so I understand its concepts as well. Can you explain order blocks? I am still going to be working on a video for order blocks. It's just a lot more.",
+    "start": 351.65,
+    "duration": 30.72
+  },
+  {
+    "text": "Complex than most of my videos, so working on that. But the last downclin, yeah, that's essentially what it is. It can be, yeah. It also depends, like, if you look at market maker sell models, which side of the curve you're on, because if you're expecting higher prices, you're not going to have bearish order blocks, really. So it's like, you need a framework with it. But yeah, if you guys have any questions,",
+    "start": 382.37,
+    "duration": 28.78
+  },
+  {
+    "text": "Or anything like that, let us know. Other than that, Rove, what are you kind of expecting going into this next week? This next week, I'm really just watching mainly just the pivots that I already have. It's hard to really know because I don't know if we're going to gap too far in either direction, but obviously we're now...",
+    "start": 411.15,
+    "duration": 29.7
+  },
+  {
+    "text": "Below this balance area. And this is the main area that I was watching. So I kind of like my mix of order flow and ICT. I try to target equal lows and then I'll use these levels from balance areas to get entries. But now that we're below this 4080 and we're below it this far, I'm kind of trying to use the 4080 as just like my pivot.",
+    "start": 440.85,
+    "duration": 25.21
+  },
+  {
+    "text": "And so as long as we're staying below it, I'm going to try more so to look for bearish entries. And I'm probably, when it's like as crazy as it was last week, I kind of try to go more so off of order flow and like footprint than I do based off of like ICT and that stuff. And I'll look more towards like the intraday order flow and what's happening.",
+    "start": 466.06,
+    "duration": 28.6
+  },
+  {
+    "text": "Just since we're kind of away from this recent structure that we've had. Yeah. And like this fair, this would create like a huge fair value gap. And so it's like, where do we actually want to look? So it kind of gets more difficult to narrow down. Definitely difficult coming off of the news on Friday and stuff. So you, the white rabbit says how to use market Delta. Do you use Delta at all? I mean, so are you?",
+    "start": 494.66,
+    "duration": 29.9
+  },
+  {
+    "text": "So you can use Delta in quite a few ways. The best way is, kind of like RSI, you can use it for divergence, though you don't want to use it if the divergence is too far distant in time. If you have something that happened four hours ago and then there's a divergence, I don't really use it. But for the most part, I don't really use it.",
+    "start": 524.56,
+    "duration": 27.33
+  },
+  {
+    "text": "For, like, reversals and stuff, I look more so at speed. So, like, from what I've learned from, like, set, I mostly will look at the speed of the tape to be picking up for reversals. And Delta can kind of give you implications into who's kind of, like, trapped or other things, but I don't use it really as much. Gotcha.",
+    "start": 551.98,
+    "duration": 29.25
+  },
+  {
+    "text": "I hope I'm not annoying with questions, but are you the paid or free mentorship? I learned ICT just off the YouTube mentorship, and my usual wrist reward ratio is over 2R. That's where I try to, I go break even at 2R. Someone said, is it useful? I gotta reset the screen real quick, because it got a little laggy. Someone said, is it useful to, er...",
+    "start": 581.3,
+    "duration": 28.25
+  },
+  {
+    "text": "Is it useful to pair order flow with ICT? Could you describe more about it? I guess I would say, narrowing down that question, I guess you kind of just answered that, how you look for reversals and stuff at points of interest. So order flow, what I would say is ICT and the concepts from ICT I would more use as the overarching concepts for",
+    "start": 610.1,
+    "duration": 29.08
+  },
+  {
+    "text": "Like trades that I'm looking at. But then once you start zooming in, that's where I try to narrow it down to footprint and depth of market for entries. Because this is where you're going to get the most concise entries and locations, I would say is from here. Because if you're using OTE, it gives you a good location to look for. But sometimes it'll give you a broader area.",
+    "start": 639.18,
+    "duration": 31.8
+  },
+  {
+    "text": "And you're not seeing exactly what's happening inside each candle and what the context is. And so once it gets down to like you have an area and you're really close to it, then I'm going to start looking for, okay, is the speed picking up on the tape and on the footprint? Does it show the speed picking up? And then you can kind of look for stuff like if we're being aggressive.",
+    "start": 670.98,
+    "duration": 26.33
+  },
+  {
+    "text": "On the buy side or just doing different things that would show to you that in this area, this is a good spot to risk. Because if we're just selling down super hard and the tape shows nothing or no reason to enter, it can be a good deterrent for entering in somewhere that might not be good. Okay, so I think, how long have you been trading for? I'll answer and then, or you want to answer and then I'll go ahead and answer.",
+    "start": 697.31,
+    "duration": 29.75
+  },
+  {
+    "text": "Sure, so I've been trading for two years straight. I've only missed a few days or weeks within two years. And I've been trading for just over a year. Let me see how kill zones work. Kill zones are just areas where trades are more probable or they're more likely to pan out just because it's the time of day.",
+    "start": 727.41,
+    "duration": 29.58
+  },
+  {
+    "text": "I'm 15. I'm completely proficient in ICT. I think I'd be able to learn something like order flow and volume profile. Yeah, you could definitely, like, you can learn anything. It just takes time, right? How you trade, ES. You want to talk how you traded? Did you trade last Friday? Friday? Yeah. Yeah, I traded Friday. I didn't trade very well because I kind of had the timing off, but my main trade was really from",
+    "start": 756.99,
+    "duration": 31.92
+  },
+  {
+    "text": "Us returning back into this balance area. And so in terms of auction market theory and like balance areas, you expect, or kind of like ranges, if you guys are more familiar with ranges. So once we return into a range, like I would say this range, so you see kind of how we have this balance area, we have all this volume. And so this is kind of the range we're looking at.",
+    "start": 788.91,
+    "duration": 25.7
+  },
+  {
+    "text": "And then once we re-enter into that range, which I would say I had around like 55, 65, you're going to want to target the point of control, which would be like right there. And your next target would be down here at the bottom of this balance area. And so that was my main trade. The rest of the trades I did were not very good. I didn't do very good on Friday.",
+    "start": 814.61,
+    "duration": 26.17
+  },
+  {
+    "text": "I actually stopped trading right after the news just because it's not my type of price action I love and I knew I was going to feel FOMO so I just closed everything down. But I was green. Let's see. Question about the ICT 2022 mentorship model. I keep finding valid setups in both directions at a similar time while skipping through timeframes. Any tips? You've got to have higher timeframe narrative.",
+    "start": 840.78,
+    "duration": 30.56
+  },
+  {
+    "text": "So, like, I'd recommend looking, like, at the hour. So, for example, right, I put this high. I don't know if you guys remember the other streams, but we had this SMT divergence, right, market maker buy model, or sell model, right? So we wanted to target, I was targeting this fair value gap in here, right? But, so, like, when you're in here, you want to be looking for shorts when you're on the sell side of the curve, right?",
+    "start": 871.34,
+    "duration": 29.56
+  },
+  {
+    "text": "Buy side of the curve, sell side of the curve. It's like right now we're on the sell side, so you don't really want to be looking for longs for the most part. The reason to be looking for longs in here was because we wanted a retracement after these down days to get an optimal trade short, right? Because on a higher time frame, right, look where we're at. We ran these highs into a fair value gap, and then we have an aggressive move down. So the reason for looking long",
+    "start": 900.9,
+    "duration": 28.28
+  },
+  {
+    "text": "Later, if you guys noticed, like, on Twitter and stuff, I was looking long earlier into that week because I wanted 4200, and the reason for that being is if you just take the top of this to down here, right, we wanted to get into a premium. So I would say focus on, like, don't skip around too many time frames, focus on, like, 15-minute, stuff like that if you're day trading. Like, I personally just use the 15-minute for most of my, like, points of interest in the hour, stuff like that.",
+    "start": 929.18,
+    "duration": 30.18
+  },
+  {
+    "text": "So, but you need higher timeframe narrative or bias, right? I have not watched his 2017 index series. I haven't even started his new one yet. I have other stuff I need to learn first before I start going more deep. I would, yeah, I would definitely just start with his ICT mentorship 2022. I would just focus on that playlist.",
+    "start": 959.36,
+    "duration": 33.82
+  },
+  {
+    "text": "All right, this question's for you, Ruff. Do you believe that the red chart colors make you more emotional after trade entry? Oh, I don't know. I think, obviously, like, probably an annoying answer, but I think it depends. But I would probably say maybe, like, if you're very used to going long and you have, like, PTSD from that, but...",
+    "start": 993.18,
+    "duration": 27.11
+  },
+  {
+    "text": "I don't know. I just think it's probably just depends on the person. Yeah. I highly recommend the 2017 index series. I become unstoppable. All right. Yeah, I'll definitely look into it. I'll write it down. On days like Friday where there is a huge run, how do you get involved in those trades if possible? My bias was not bearish or at least not that bearish. Thanks. I personally just",
+    "start": 1020.29,
+    "duration": 30.7
+  },
+  {
+    "text": "Turned off my computer because I don't want to be involved after I already because I feel like I'm chasing even though you know there were entries. But sharing my screen again, I might make a little video on this but if you want to get involved in in trades on a downtrend right you want to look for bearish order blocks right so up close candles right to kind of get long and to resist price but there isn't really a great",
+    "start": 1050.99,
+    "duration": 31.84
+  },
+  {
+    "text": "Entry that I'm seeing right here, most of the time we just grind it down, right? But you expect all these candles here to resist price, right? So, I don't know, ICT talks about in one of his other videos, but basically breakers, order blocks, stuff like that to get long, or to get back into a trend. Maybe if we look at a one-minute, it might show up a little better.",
+    "start": 1083.12,
+    "duration": 34.99
+  },
+  {
+    "text": "Not really. But, yeah, I mean, you can always go in and, like, get a 15-second entry, something like that, like, aggressive move down, enter there. I just don't. Like, I turned off my computer right here. I saw us run this, and I was like, eh, you know, I could short it, but I was already green, and I was just, like, not wanting to put risk on. What do you think about Bitcoin right now? I've never looked at Bitcoin, but for most of the stuff I see on, like, Twitter and stuff, it's going down, so.",
+    "start": 1118.11,
+    "duration": 34.21
+  },
+  {
+    "text": "I wouldn't try to long it yet. He explains day templates for indices. Gotcha. Did both of you start trading and instantly start using footprint order flow? Okay. I started trading using the strat, then I went into market profile and then into ICT. And you want to answer that question? I didn't use footprint, but... Yeah, sure.",
+    "start": 1152.32,
+    "duration": 32.85
+  },
+  {
+    "text": "So I've pretty much like gone through quite a few trading strategies. I would say to some extent it does give you analysis paralysis to have too many like concepts and things because you need to narrow down the setups. And so now I really pretty much use ICT for like the like setups in terms of like candles and then I use",
+    "start": 1185.33,
+    "duration": 28.65
+  },
+  {
+    "text": "The footprint and the DOM for pretty much narrowing it down based on like the context. But I would say some days it does give me analysis paralysis where I feel like I'm kind of like conflicted where let's say the flow is bearish but then you have a bullish fair value gap and we're retracing into it and we have a break in market structure. So sometimes it does get bad but sometimes.",
+    "start": 1213.98,
+    "duration": 30.39
+  },
+  {
+    "text": "I think it is helpful. And I think that just comes with time, because I think order flow really takes a long time to master. Because unlike ICT, where you can identify things probably a lot easier, the footprint in the DOM is still something I'm working on, where it's a lot more screen time, whereas like the DOM, you're just seeing numbers, numbers just keep coming through.",
+    "start": 1244.37,
+    "duration": 26.72
+  },
+  {
+    "text": "It takes a lot of time, and I don't think I'm quite there yet with the DOM, but the footprint, I'm getting there. Gotcha. Nahweed, thanks. Yeah, I'll keep making the videos. I'm glad they helped. Kahala. I do have a Discord. It's in my link tree. And then James said, do you have days where your daily bias is uncertain? If so, do you stay sidelined?",
+    "start": 1271.09,
+    "duration": 26.94
+  },
+  {
+    "text": "For more info to develop. And if my daily bias is uncertain, then I don't go into it with a bias and I just focus on structure. So like I'm going to look for a large, you know, or like a market structure break with displacement and then just setups like that, right? I mean, you don't have to have a bias. If your bias is wrong, you should still be okay just focusing on the model.",
+    "start": 1298.03,
+    "duration": 27.87
+  },
+  {
+    "text": "Can you touch on any SMT you see with ES and NQ? Yeah, I can look into that real quick. So, maybe we'll go to the daily. I mean, what's that? A second. So, I mean, we do have this little SMT at the bottom here, right? Or, yeah. No, we don't. I have the days messed up. So, nothing really I'm seeing from, like, that time frame.",
+    "start": 1327.09,
+    "duration": 37.57
+  },
+  {
+    "text": "Or there, I mean, today's like, Friday's like not a good day for SMT, because it's like everything just died, right? So, nothing really right now. Let's see. You have a specific time, you start to look to enter trades. Yeah, after 8.30 to 11. Eastern. The 2017 ICT index series, I don't know where that is. It's probably either somewhere on the internet or on his page.",
+    "start": 1365.14,
+    "duration": 38.3
+  },
+  {
+    "text": "The daily. Do all banks use a separate order flow software? I have no idea. Do you have any idea of that, bro? No idea. Yeah. Does a stop read have to happen during a kill zone? Sometimes it happens outside a kill zone. No, I just, or like for me personally, I just focus for my entry to form during a kill zone, right? So a lot of times London will take the Lowe's break structure up.",
+    "start": 1404.14,
+    "duration": 29.97
+  },
+  {
+    "text": "And then New York comes around and that's the setup. So like actually the past, we'll just go to the 15-minute chart real quick. Like the past few days have just been the same setup, right? So if we go back to earlier this week, London takes Lowe's here, break structure up, have a fair value gap here, right? Also runs that internal liquidity. And what time is this at? 9.30, right? So after 8.30.",
+    "start": 1434.11,
+    "duration": 34.13
+  },
+  {
+    "text": "Then we go to the next day, or where is it? 2, 3, 4. So like right here, right? Sweeps the lows, right? Move structure up, right? You have a fair value gap here and internal range liquidity that is RAN as well, right? So happens a lot. And then this one on Thursday, right? If you saw, I made a little short video on it. Move up, break structure.",
+    "start": 1468.24,
+    "duration": 37.82
+  },
+  {
+    "text": "We have a fair value gap right here, right? And from there, the reason I wanted that was internal range of liquidity. That gets taken, expected to move up. So, I mean, it doesn't have to be taken during the kill zone, or at least for me it doesn't. I don't know what others' preferences are on that, but let's see here. I have seen you use the last bearish candle as your bullish order block, and sometimes more than the last candle. When do you use which?",
+    "start": 1506.06,
+    "duration": 31.43
+  },
+  {
+    "text": "That's personal preference. Kind of depends. Like, for example, if we're just looking right here, right? This is your last candle, right? So you could use this. But if you go to a 30-minute time frame, right, it's going to be a different spot. It's going to be right there, right? So it kind of depends on time frame. I usually, if you have a larger candle, like it's pretty full, I'll normally use that one.",
+    "start": 1537.49,
+    "duration": 32.93
+  },
+  {
+    "text": "I don't know. That's why I'm still holding off on that video because it's so kind of subjective still to me on what to use because you can use lots of different things, right? Or like this. There's your little breaker, like, but let's see. Can you tell me which timeframes to look for trade opportunities? I heard noon and midnight as they all go. I'm not sure. So people use noon or...",
+    "start": 1570.42,
+    "duration": 35.55
+  },
+  {
+    "text": "Not really sure what you mean by... Oh, midnight and noon is a no-go. Yeah, you can not trade lunch. You can also trade lunch. Some people do it. I would say if you focus on the kill zones, 8.30 a.m., 2.11 EST, and then like 1.30 to close, those would be the kill zones. Can this method be used in a higher time and in forex trading? Are you talking about ICT or order flow?",
+    "start": 1606.1,
+    "duration": 28.73
+  },
+  {
+    "text": "ICT can definitely be used in Forex. I'm not sure about order flow. I don't know. Have you heard of people using order flow in Forex? I don't know if you can. I don't. Yeah. I don't know. I just know people using it for like CL, like oil and different things. But I think it seems to me like what they're saying is like it's drastically different for each commodity. Yeah.",
+    "start": 1635.15,
+    "duration": 28.16
+  },
+  {
+    "text": "Which broker do you use to trade E-mini futures? Ninja. You use AMP, right? Yeah. Yeah. So, discount brokers. But, yeah. Border blocks? I don't know. I'm still working on that just because it can be different. For the most part, I use the open and then the wick, but normally just the open for the candle. So, yeah. Do you guys have any other questions?",
+    "start": 1663.82,
+    "duration": 38.18
+  },
+  {
+    "text": "Somebody's telegram leaked ICT. Oh, yeah, I mean, the mentorships have been leaked for a while. I tried trading order blocks, but they're not very reliable. I mean, like with everything, you have to have some sort of narrative to it, right? If you just choose a random, like if you were like, oh, I'm gonna short this order block up here or something like this, right? If you don't have any narrative to it, like it probably won't work, right? But if you're bullish, you know, on this buy side,",
+    "start": 1703.5,
+    "duration": 31.38
+  },
+  {
+    "text": "of the curve here and you're using these bullish order blocks it's more likely to work right for example like that right but then it runs those lows right no need for forex when you have such good price action on indices guys yeah i mean i've never traded forex but yeah um we have quite a few quite a bit of time left um if you guys have anything else uh",
+    "start": 1734.88,
+    "duration": 38.11
+  },
+  {
+    "text": "Question, am I bearish? I am currently bearish, right? We ran these equal highs into this fair value gap, which is a weekly fair value gap, as you can see, because this low to there, right? So that's your weekly fair value gap. And then we get an aggressive move down, made little equal lows here, got a retracement of this displacement range, right? Which you can use there or there into an OTE. And then we have an aggressive sell-off, right?",
+    "start": 1772.99,
+    "duration": 29.91
+  },
+  {
+    "text": "So, going into, like, next week, I'm not super biased. Monday, Tuesday? Monday, Tuesday, maybe I'd want something like this, come back up, you know, before going lower. Not super biased, but I am bearish, right? I was bullish until these were taken. Once these were taken, bearish. I was bullish right in here, and that's because I wanted a retracement.",
+    "start": 1802.9,
+    "duration": 32.06
+  },
+  {
+    "text": "For OTE, do you use body or WIC? I use WIC. Where did you learn about... Oh, yeah. So, question for you, Griff. Where did you learn all your footprint, order flow, charts, and what software do you use? So, for footprint, I use Sierra Chart. A lot of people, if you're trading more off of the depth of market, a lot of people I know like Sierra Chart. I'm a little bit better for that.",
+    "start": 1835.66,
+    "duration": 32.8
+  },
+  {
+    "text": "But I learned a lot of it from just like random books and then Axia futures like YouTube channel and some of their videos and I learned a lot too from Adam set if you know him on Twitter. Does bro have a YouTube channel? Yeah, so his YouTube channel is actually linked in the description. I'll actually copy. Let me see if I can paste it in there. There. I'll pin it.",
+    "start": 1868.66,
+    "duration": 32.68
+  },
+  {
+    "text": "If you guys want to go check him out. He just started it up, so go ahead and check that out. ICT is now sharing his 2016 mentorship. I think his concepts will always work. It's just what people are sharing. Yeah. No, I think his concepts will continue to work because it's just based off of liquidity runs, right? And people aren't going to really change where they put their stops. So we could see below.",
+    "start": 1901.34,
+    "duration": 30.64
+  },
+  {
+    "text": "3-4-9-1. I mean, I don't know. I don't think that far out. I just kind of go day by day, right? Where is price most likely to draw to? I'm not thinking... I don't swing trade or anything like that, so I don't really care where we're going in the next, like, month. Like, I just care about where we're going tomorrow. Someone said, are you going to start posting some of your stuff? Your way of trading looks interesting. Do you want to answer that?",
+    "start": 1932.11,
+    "duration": 33.35
+  },
+  {
+    "text": "Yeah, I'm gonna try to start posting a lot more on that channel. And then I kind of have an Instagram that I also have connected with that, which, cause I, my normal account, I kind of just post more random stuff, but I really like taking notes and I draw a lot of my notes on iPad. So all of, all the stuff that I learned in like footprint and all that stuff, I kind of drawn and I posted on there. And so gradually I think I'll start posting",
+    "start": 1965.78,
+    "duration": 28.65
+  },
+  {
+    "text": "YouTube videos with those drawings and then kind of some of what I've learned from that. Did you learn, did you take the Axies futures course or just the free YouTube content? I just did the free YouTube content because most of what I learned actually was just from set from Adam. That's pretty much where I got most of my footprint knowledge from. I do not expect to finish the order block video pretty soon.",
+    "start": 1994.43,
+    "duration": 33.81
+  },
+  {
+    "text": "One, I'm still figuring it out, and then two, I'd have to record it all. And I started school again this last week, so my schedule has kind of picked back up. So, let's see. But yeah, when it's out, it will be out. My next video drops Tuesday. It's the part two to the Strat and ICT, going over Strat entries. Welcome, guys, from Morocco. Thank you.",
+    "start": 2028.43,
+    "duration": 34.29
+  },
+  {
+    "text": "Thanks for coming. Will this be recorded? Yeah, this will, uh, it'll be on my page. It'll be saved. So, if you just go to my page and then go under Lives, or I have a playlist called, like, Livestream Guests, click under that, you'll be able to find it. So, yeah, no worries. You'll, you'll be able to rewatch it. Do you intend to trade full-time after school? Are you in college? I mean, I have a few plans I want to make.",
+    "start": 2062.72,
+    "duration": 30.32
+  },
+  {
+    "text": "Do some business stuff, real estate, and then trade too. And, you know, do a lot. I don't know, what are your plans for life, Brev? Yeah, that's my plans. I've been in school, but my grades have kind of got destroyed just because of how much time and focus I've put into trading. So I'm hoping that, yeah, that I'll continue to be able to trade and then...",
+    "start": 2093.04,
+    "duration": 27.71
+  },
+  {
+    "text": "Cause I don't, I don't really consider myself trading for a living though. Pretty, I pretty much do. And I have been for like a couple of years cause I haven't been working. I've just been trading, but I don't feel like I'm going to label myself like that yet until I feel like I'm as good as I'll get. Yeah. Okay. Um, question about inducement. So basically happened right here, right? So this was the setup that we're just going to go over this real quick.",
+    "start": 2120.98,
+    "duration": 30.12
+  },
+  {
+    "text": "So I do have a video on this, but it's just a way to, all it comes down to is running internal liquidity, right? So you run these lows, right? So you have a reason if we break structure up, aggressive move up, this break structure, right? And then what, where would you want to look for a retracement? Well, in a discount of this range, right? Well, when do we get into a discount of this range? Right here, what are, what else are we doing?",
+    "start": 2151.1,
+    "duration": 30.58
+  },
+  {
+    "text": "People were induced to go long or shorts got ran out of their position right here, right? So this is your inducement. So runs those stops, goes into our OTE, into this fair value gap, fills it. That's your long entry, right? First target, those highs. So, which also, if we go back, right, all kind of equal highs right in here. So you can see that.",
+    "start": 2181.68,
+    "duration": 33.66
+  },
+  {
+    "text": "Plans to get funded, yeah. I mean, I might start trading options again now that I'm in school and in class. It's just way easier to pull it on my... This is hindsight? I mean, cool. I mean, I did call a lot of these on Twitter or in the Discord, but yeah. My next strat video is coming out Tuesday. Do you have a specific timeframe for entries or do you cycle through timeframes? I normally, like...",
+    "start": 2215.76,
+    "duration": 38.66
+  },
+  {
+    "text": "If I'm going to enter into this and I don't want to enter on the 15-minute, I'll go down to like a 15-second. I don't know if they'll load it for this long ago. Oh, yeah, it did. So then we'll see. I don't know where the replay thing is. I'll just look for an aggressive move up, breaking structure on the lower timeframes, right? So we're still bullish, or bearish. You can see right there we broke structure up.",
+    "start": 2254.93,
+    "duration": 33.34
+  },
+  {
+    "text": "So then I'd look for retracement, something like running short term low, so they get long below that. I don't know. I haven't watched this price action. So you can sometimes miss stuff, but really fast, but there was your little entry, but yeah. I personally, I'll use five-minute, one-minute, 15-second most of the time. So let's see. Easy to explain hindsight.",
+    "start": 2288.27,
+    "duration": 40.02
+  },
+  {
+    "text": "Dude, if you think I'm hindsight, that's cool. You don't have to keep saying it. Thank you for your time and efforts. Your video is exceptionally brilliant. Thank you. Might not put range on the higher high. Not really. Not sure what you mean. You mean on the 15-minute here? Oh, yeah. My bad. I was just doing it initially, because that's what you would have had for this one, but you would move it up once the range got hit.",
+    "start": 2328.29,
+    "duration": 34.06
+  },
+  {
+    "text": "Yeah, it's alright. I don't really care enough to prove that I'm not hindsight. I mean, if you're in the Discord, I do call out some of these. Why don't I trade full-time? Um, I don't know. I kind of like school, to be honest. I like learning. I've tested order blocks past 10 years of hourly. Yeah, I don't really trade using order blocks if you would watch my videos for the most part.",
+    "start": 2364.94,
+    "duration": 36.66
+  },
+  {
+    "text": "I only really use order blocks to narrow down my fair value gap entries. Do you trade SPY options or buy and sell E? Right now I just trade futures, right? But I might do that in school. Okay, let's see. Next target for ES tomorrow. I mean, I'm not, I don't expect a whole lot tomorrow. I could definitely be wrong, but I'm not super biased going into tomorrow.",
+    "start": 2401.6,
+    "duration": 35.63
+  },
+  {
+    "text": "Just because we got such an aggressive move at the end of, like, Powell. So I kind of hope that we kind of retrace back up a little into this area. All right. I don't know. What are you thinking, bro? For next week? Yeah. I have no idea, honestly. I'm not trying to think about it too much because I'm just going to try to focus on intraday setups and then just have a few levels on my chart just because we're not...",
+    "start": 2437.23,
+    "duration": 32.66
+  },
+  {
+    "text": "We're no longer near the balance area that I'm watching. But if we can kind of retrace back up into the edge of that balance area, I'll look for some shorts. Otherwise, I'm just going to be trying to play intraday and with some somewhat of a short bias. Yeah. Are you in? Yeah, I am in college currently. So that's why you won't see much from me on like Tuesdays and Thursdays because from nine to four, I'm actually stacked.",
+    "start": 2469.89,
+    "duration": 30.33
+  },
+  {
+    "text": "Yo, what up, Sniper? Good to see you. How long have we been trading for? I've been trading for just over a year, and, bruv, you said two years, right? Yeah. Yeah. Yeah, there is no monkey GIFs on YouTube currently, but I am going to work on, like, an OBS overlay or something, so I can kind of get some, like, monkeys going across the screen or something. Yeah, I would expect Monday to be more consolidation, but, you know, I try not to predict or just react.",
+    "start": 2500.22,
+    "duration": 29.22
+  },
+  {
+    "text": "Is that level two? You want to kind of explain the difference between level two and order flow? Or kind of how they're same but different? So level two is just showing you the orders. So I'll kind of give you the rundown a little bit of the DOM. Obviously, you can't see numbers. But once the market opens, you'll be able to see the limits, the limit orders. The problem, though, too, is",
+    "start": 2529.44,
+    "duration": 31.33
+  },
+  {
+    "text": "The limit orders and the level two on ES is usually not that important because people can just pull these orders. And it often asks the question, if they're showing their orders, are they really legitimate? Do they want to give away their hand? And so half the time, what's really important is what's happening on the market. I think the internet's cutting out a little.",
+    "start": 2560.77,
+    "duration": 33.1
+  },
+  {
+    "text": "All right. His internet's cutting out. To the buy side or the subs, and they usually aren't as important here, and like the liquidity will just be gone. Oh. Let's see. Michael says college is a scam. Yeah, I don't, I mean, there's different reasons to go to college, right? I'm more going to make social connections and stuff like that than to actually, you know, I'm trying to like network, essentially.",
+    "start": 2593.94,
+    "duration": 30.24
+  },
+  {
+    "text": "So, let's see. I mean, you don't need to report in. I mean, you can if you want, but I don't really care if people troll me. So, I think we could completely fill in the fair value gap on the weekly on S and extend to the equilibrium of the range. Let me pull up mine. So we go to a weekly chart here. If we are in this weekly fair value gap here, this is where it would fill.",
+    "start": 2624.62,
+    "duration": 34.6
+  },
+  {
+    "text": "This current range we're in right here, right? This is our discount premium. So it would be likely, right, we ran liquidity here into this fair value gap. And when you are in a premium up here, you want to target discount arrays, right? So we would want to get into a discount. So ideally, yeah, in the next few weeks or so, reach down into here, right? That would be my idea. But it doesn't really matter.",
+    "start": 2659.79,
+    "duration": 29.57
+  },
+  {
+    "text": "Like we might, you know, chop around for a little. I don't know when or how we're gonna get there, but that would be an idea. Yeah. Let's see. Have you studied G7FX? I have no idea what that is. And special request, please. Could you drop a video using NinjaTrader to trade e-mini with best settings approach? I can show you how I make brackets and stuff like that. If enough people want it.",
+    "start": 2689.36,
+    "duration": 35.38
+  },
+  {
+    "text": "I'll post it on my community page with a poll. If enough people want it, I can show you how I make my templates. Because Sierra Charts is what he talked about. Yeah, I have no idea. College isn't for everyone, but I wouldn't call this game. I mean, college, it depends what you're trying to get out of college, right? Like, I switched my major a couple times, and I've learned, like, I've learned a lot of different stuff.",
+    "start": 2724.74,
+    "duration": 28.91
+  },
+  {
+    "text": "I don't know how to say your name exactly, but send me a DM on Twitter or something and we can talk. I'm always, I mean, I'm just choosing random people to come on here. How would anyone survive if he or she doesn't study? For college? I didn't study all of last spring. I am going to try to study this this fall, but my major, I switched it from computer engineering to business finance because it's more...",
+    "start": 2753.65,
+    "duration": 31.01
+  },
+  {
+    "text": "What I actually want to go into. Weekly S&P, I think it'll go liquidity before the lows. I mean, ideally I want it to go lower, but I don't know exactly how low it will go. Like I said, I don't try to think too far out. I just think of like where it's most likely to go in the next couple of days. I do focus on the power of three, like the weekly chart, but yeah, the best A-Them. I don't know what you mean.",
+    "start": 2784.66,
+    "duration": 31.1
+  },
+  {
+    "text": "But yeah, looks like we have about 15 minutes left. So if you guys have any other questions or any topics you kind of want us to talk about. Oh, the best, the best ham. Oh, the best ham. Gotcha. You were helping me spell it. How did you find your trading view colors? I'm using it at the minute and love the aesthetic. I literally just went through and chose one that had like a soft background on the eyes. And then, I don't know, I kind of based it off of like Alex options.",
+    "start": 2816.21,
+    "duration": 32.08
+  },
+  {
+    "text": "Except mine's a little different. Does the 15-second stress you out? Not really, because I don't look at it unless I have, like, a point of interest, for the most part. Unless I'm, like, going crazy scalping, which I stopped kind of doing as much. But only, like, I'll use it as a confirmation entry. Yeah, Swifty, go ahead. More how I focus on power of three. I can show you that.",
+    "start": 2848.29,
+    "duration": 32.46
+  },
+  {
+    "text": "So if we're focusing on power three, right, basically you want your weekly candles to, let's see, date here. So let's say Monday was the 1st of August. We'll just go to the 1st. So if we look at this, right, if we just looked at the 1st of August, we're reaching for liquidity here and liquidity here. So you expect a bullish week, right? Obviously in an uptrend. What you would want is you want the low put in.",
+    "start": 2881.17,
+    "duration": 33.33
+  },
+  {
+    "text": "If you want a bullish week, you want the low put in on a Monday, Tuesday, or Wednesday morning, right? So once you get this low on Monday, or, I mean, Tuesday here, right, you expect this low to hold, and then you want us to go higher, and with the power of three, you want your, you know, your opening price here, right, your manipulation, low put in on Tuesday, so this is your manipulation, then your range expansion where",
+    "start": 2914.5,
+    "duration": 32.75
+  },
+  {
+    "text": "You know, you get your move up, and then you close. Are you sharing your screen? No, gosh dang it. All right, here, I can redo that. I'm surprised nobody said anything. I was thinking... All right, I would, I'm gonna re-explain all that now, since I kind of just did it without sharing my screen. Um, so, power three. Why do you not use a black background if you want a soft background? I don't know, I just find I, like, see stuff better with a lighter background.",
+    "start": 2947.25,
+    "duration": 28.96
+  },
+  {
+    "text": "As for power of three, right, if we're just looking, right, using this week for an example, if you want to study this, go back and look what every Tuesday did on this move up, right, and then what the Tuesday did up here. So if you look, power of three basically says you have a, you have your open, you have your move down, let's see, you have your move down, which is your manipulation. You expect this low to be put in Monday, Tuesday, or Wednesday morning.",
+    "start": 2976.53,
+    "duration": 31.95
+  },
+  {
+    "text": "Usually, Tuesdays are a good idea, and then you have your range expansion up, distribution, and then you want to close in the highs. So if you look right here, Monday, we open, got your move down, so that's your manipulation, and then you have a move up, and you close near the highs. This week wasn't great, but if you go to, or I messed up my days, this week was, yeah, this week wasn't great. So if you look,",
+    "start": 3008.48,
+    "duration": 30.29
+  },
+  {
+    "text": "We kind of had this, but you can see open, move down, manipulation, move up, close above. These dates are a lot better, but I would say backtest that for yourself. Sorry about the screen mess up, I just forgot to change it over. You don't need to annotate charts like these squiggly lines. If you're interested, we can both do collaboration on YouTube and both share your ideas. I mean, you can reach out to me and we can figure something out.",
+    "start": 3040.3,
+    "duration": 33.73
+  },
+  {
+    "text": "You say you don't use order blocks. I'm saying like I don't normally use order blocks in a sense of like that's not my main reason for taking a trade, right? I focus more on liquidity and fair value gaps. So like equal highs, equal lows, old highs, old lows, and then fair value gaps like that. I'll use order blocks if they're presented in a way that I",
+    "start": 3075.12,
+    "duration": 31.34
+  },
+  {
+    "text": "Need it, but I would rather take a fair value gap trade that is supported by an order block, right? So, watching the arrays, what do you recommend? I have not seen that series. Yeah, this is all recorded. Where do I reach out for you? You can reach out on my Twitter if you hit the link tree in the description. I have a Twitter, you can reach out for me. Yeah, my point of interest for most of my models is",
+    "start": 3106.46,
+    "duration": 34.76
+  },
+  {
+    "text": "A liquidity run with an aggressive move back in the other direction or a fair value gap. But yeah, looks like we have about eight minutes left. So I don't know if you guys have any other questions for Bro before we kind of end this. You already have my Snapchat, Kronos.",
+    "start": 3141.22,
+    "duration": 23.53
+  },
+  {
+    "text": "I think it will go for the lows it tapped into a bearish weak leaf there, FVG plus running. But yeah, I mean, that's kind of my bias as well in a higher timeframe. What's your win rate in average RR? Do you want to answer that, bro? So my win rate's probably around, it's averaging probably around like 40%. And then RR, I usually go two and a half point stop loss, and then I go for eight points, and then I leave runners.",
+    "start": 3165.3,
+    "duration": 34.3
+  },
+  {
+    "text": "So I'm not like, I'm not going for as big of moves as I would think normal. Like if you're trading normally ICT, I think I'm more so doing what more like the order flow people would be doing where they are actually, they're kind of like more tight stops and then still like a good R, but it's just not as like far, I would say, as most of the ICT targets. Yeah. Win rate doesn't matter. Yeah, risk to reward.",
+    "start": 3199.6,
+    "duration": 30.66
+  },
+  {
+    "text": "Really, it's what matters the most. Because like, I don't know, I've done it where I had a, it was like an 86% win rate, but my RR was like 1. So, like, you can adjust it, but it, they all work together. Yeah, um, didn't you just, what do you mean criticize 40% win rate? Win rate doesn't mean anything unless you combine it with, um, your risk to reward.",
+    "start": 3230.26,
+    "duration": 32.91
+  },
+  {
+    "text": "And position sizing, right? You have to position size similar or it doesn't really matter. Are you in the Philippines? No, I am in the US. I think he was asking me because my Twitter says that. Oh, are you? No. I'm not from the Philippines. I don't know. Thank you guys for your information. Good luck to everyone.",
+    "start": 3263.17,
+    "duration": 31.95
+  },
+  {
+    "text": "Yeah. Oh, interesting to know if and how you use volume profile. So he talked about it a little in the beginning, but you want to do a quick overview on that, Brev? Yeah, so the main thing I use volume profile for is ledges, so where I would get levels. And so I don't know if it's easier to do a new chart or not, but as you can see, like, right here, I have this 41, 13, 5, 41, 14.",
+    "start": 3297.55,
+    "duration": 27.7
+  },
+  {
+    "text": "So I mostly use the volume profile to get levels from a ledge or I will use low volume nodes in a breakout. And like the low volume nodes, like if you're combining ICT and some of this other stuff, every fair value gap is really just going to be a low volume node because we moved so quickly that we weren't able to do a ton of volume. Whereas if we spend a lot of time there, we're going to do a lot of volume.",
+    "start": 3325.25,
+    "duration": 26.0
+  },
+  {
+    "text": "And so these ledges where we have a straight-out protrusion of volume is usually an area of absorption. And so it can be a good area to bounce off of, as you can see right here. And I posted right after I entered here during whatever on my other account where I draw stuff. And then also, obviously, if there's absorption, if we're breaking below this, all the people that are absorbing half the time",
+    "start": 3351.25,
+    "duration": 28.25
+  },
+  {
+    "text": "We'll just get annihilated, and they'll liquidate their positions. And so it can work either way, and so it's just a good pivot. So I just use ledges and then low-volume nodes and or fair value gaps. Yeah, that's mostly when I experimented with volume profile in the fall. Ledges were probably my favorite thing to use, and then obvious low-volume nodes. But yeah, any other questions in the last couple minutes, if not?",
+    "start": 3379.5,
+    "duration": 31.56
+  },
+  {
+    "text": "Are you interested in getting funded? Doing a funded account? I'm doing one right now. I might get a couple more to do some videos with. Swiftie, the thing I'll say is ICT works for me, that's sick, but if it doesn't work for someone else, don't use it then. It's just about finding a strategy that works with you and something that you can do over and over again.",
+    "start": 3411.38,
+    "duration": 38.28
+  },
+  {
+    "text": "Even if that's an EMA cross. I don't really care what people do to make them be successful, and that's why I'm not so... Obviously, ICT is what I use. But yeah, if you guys haven't already, go ahead and click the links in the description. Go check out Bruv's YouTube and his Twitter. Just started his YouTube, so he'll probably get stuff up sometime soon. But other than that, thanks for everyone coming out.",
+    "start": 3449.66,
+    "duration": 31.38
+  },
+  {
+    "text": "If there's something that someone that you would like to see on this, these streams, go ahead and just DM me on Twitter with their tag and I can reach out to them. Do you charge money to learn ICT from you? I mean, on like YouTube and stuff or like what? I'm not sure what you mean. Like all my stuff on YouTube is free. Wait, so that $50 I gave you was? Yeah. You're funny. Just send that back to me, man. Trolling.",
+    "start": 3481.04,
+    "duration": 34.34
+  },
+  {
+    "text": "Wait, wasn't that for that logo I made you, or? Bring on ICT. Bring on ICT himself. I don't know if he would respond to me. So, who knows? Maybe. Maybe if enough people, like, commented him on my post or something, I'm reaching out for you. Sounds good. ICT works great. I need to integrate into my trading. All right, yeah. Thanks, everyone, for stopping by.",
+    "start": 3515.82,
+    "duration": 29.06
+  },
+  {
+    "text": "If you guys need to reach out to me, go ahead and reach out to me on Twitter. I usually respond. If I don't, just double text me or something. Stop. Sack, stop trolling. Yeah, I did. Thank you so much, Tech. What's with this weird chart? You'll have to go look through the recording. It's his profile chart. But thanks, everyone, for coming out.",
+    "start": 3545.23,
+    "duration": 29.83
+  }
+]

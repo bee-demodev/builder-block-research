@@ -1,0 +1,171 @@
+# Setups and entry models: reversal, continuation, the playbooks: definitions (169 rows, sorted by date)
+
+- 2022-05-26 (upload) [[simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries]] **Level**: auto-plotted level (indicator not named) that the reversal must come off (00:07, 01:40).
+- 2022-05-26 (upload) [[simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries]] **Short-term high/low**: minor swing taken after the reversal (00:07).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Broadening formation**: expanding-range pattern of higher highs and lower lows drawn on the hourly and 1m; its boundary is used as reversal confluence (03:52-04:10, 06:40).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Single order block**: one-candle order block he uses to narrow a POI or place an entry (00:32, 12:02).
+- 2022-06-01 (upload) [[improve_your_trade_entries_within_fair_value_gaps_fvg]] **Order block (bearish, here)**: series of up-close candles to the left of the FVG; its open is the entry (00:34-01:04).
+- 2022-07-07 (upload) [[what_is_liquidity_ict_concepts]] **2022 mentorship setup**: ICT's model as he uses it: stop run, short-term swing broken with displacement, FVG entry in the discount (long) of the displacement range (03:13-03:46).
+- 2022-08-02 (upload) [[ote_optimal_trade_entry_ict_concepts]] **Breaker structure**: the structure break setup he anchors the OTE to (01:05, 01:39).
+- 2022-08-02 (upload) [[ote_optimal_trade_entry_ict_concepts]] **Smart money reversal**: reversal sequence on the S&P hourly preceding the displacement leg (01:39).
+- 2022-08-08 (upload) [[intro_to_the_inducement_model_ict_concepts]] **2022 mentorship model**: ICT's model (sweep, structure break, FVG entry); the inducement model adds the run of the internal liquidity before entry (00:06).
+- 2022-09-14 [[ict_trade_example_15_second_entry]] **15 second entry**: entry timed on a 15-second chart (TradingView "15s", NinjaTrader replay) after the setup forms on 15m/1m (00:24).
+- 2022-09-20 (upload) [[intraday_bias_ict_concepts]] **OTE**: optimal trade entry retracement zone (not defined numerically) (00:35, 01:38).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **Entry model**: a labelled, fixed diagram of the conditions for an entry (01:47).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **Model 3**: model 1 plus OTE on the displacement leg (03:15).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **Kill zone**: the session window where the model is searched (00:32).
+- 2022-10-18 (upload) [[higher_time_frame_points_of_interest_ict_concepts]] **Point of interest (POI)**: HTF level where a lower timeframe entry model is sought: highs/lows, FVG, OB, FVG fill, OTE, internal range liquidity (00:36, 00:52).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **Internal liquidity**: lows inside the displacement range swept before continuation (02:37).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **Broadening formation**: higher high, lower low expansion before continuation (04:26, 07:43).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **Box setup**: retest of the previous high followed by displacement below an intermediate-term low (05:26); not further defined.
+- 2022-12-24 (upload) [[top_down_analysis_ict_concepts]] **Mitigation block / OTE**: named as LTF entry types, not defined (06:03, 06:54).
+- 2023-03-30 (upload) [[scalping_made_simple_building_a_scalping_model]] **OTE (optimal trade entry)**: fib retracement of the leg back into the range; he uses 0.62 (02:33).
+- 2023-05-09 (upload) [[next_day_model_the_mmxm_trader_ict_concepts]] **Next day model (MMXM)**: trade the day after price reaches the anticipated HTF level; New York only; 15m execution; skip Monday (00:37, 02:01).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Box setup**: deviation below/above a range then back in ("aggressive down, aggressive up"), read as accumulation-manipulation-distribution; entry on a retest of the manipulation (07:50-08:23).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Breaker block**: formed by the raid-and-shift sequence; used with the FVG as the entry zone (02:34, 04:15).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **OTE**: optimal trade entry from a fib of the displacement leg (04:44).
+- 2023-07-25 (upload) [[market_structure_shift_vs_liquidity_grab_ict_concepts]] **Box setup**: referenced only by name; previous high used as resistance (08:58). Not defined here.
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Displacement / close outside**: candle closes beyond the previous candle's extreme; signals continuation (03:28).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Inside bar / inside candle**: candle within the previous range; "no direction", default to trend continuation (03:28, 05:44).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Swing points**: "just turning points in the market"; used as draws or to frame reversals (10:27).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Consequent encroachment**: midpoint of an FVG, an alternative entry to its start (23:50).
+- 2023-08-22 (upload) [[ict_silver_bullet_strategy_no_daily_bias_with_backtest]] **Consequent encroachment**: midpoint of the FVG, used as an entry level (02:48).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **TGIF setup**: Friday move expected to cap the weekly range after the weekly objective is hit (09:42). Named, not detailed.
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Unicorn model**: breaker block + overlapping FVG from the displacement through it (02:02-02:31).
+- 2023-10-17 (upload) [[important_liquidity_levels_draw_on_liquidity_ict]] **Previous month / week / day high and low**: previous candle extremes on those timeframes; draws or reversal frames (01:30, 02:41, 05:02).
+- 2023-10-17 (upload) [[important_liquidity_levels_draw_on_liquidity_ict]] **Inversion level**: a level displaced back through that then supports continuation (08:44).
+- 2023-10-17 (upload) [[important_liquidity_levels_draw_on_liquidity_ict]] **OTE**: optimal trade entry retracement zone of a range (11:41).
+- 2023-10-24 (upload) [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] **Consequent encroachment (CE)**: midpoint of a fair value gap or gap; a down-close candle respecting it signals continuation (01:54, 08:12).
+- 2023-10-24 (upload) [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] **Box setup**: his separate setup: deviation beyond a range/level, back inside, retest of the deviation before the move (04:58, 08:45).
+- 2023-11-07 (upload) [[standard_deviation_projections_ict_concepts]] **Smart money reversal**: reversal pattern of high, low, higher high, lower low (01:08).
+- 2023-11-07 (upload) [[standard_deviation_projections_ict_concepts]] **Market maker sell model**: named for Example 3 (07:44), not defined.
+- 2023-11-21 (upload) [[change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts]] **Box setup (AMD)**: accumulation range, highest body (bearish) / lowest body (bullish) as the box line, manipulation deviation, entry on a retest of the line, stop on the manipulation, targets from projections (12:25-12:54, 14:04).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **Intermediate-term high**: high formed in the 5m FVG used before the 1m entry (05:52).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **Market maker buy/sell model**: named, not defined (07:23, 09:03).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **Smart money reversal**: his term in the PDF for the reversal sequence: CISD, inversion, market structure shift (08:13).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **Sell side / buy side of the curve**: the decline leg vs the rally leg of a reversal (08:13).
+- 2023-12-26 (upload) [[order_blocks_simplified_ict_concepts]] **Smart money reversal**: the first OB after a sweep that flips direction (06:52).
+- 2023-12-26 (upload) [[order_blocks_simplified_ict_concepts]] **Buy side / sell side of the curve**: continuation OBs after the reversal, in the new trend (06:52).
+- 2024-01-02 (upload) [[breaker_blocks_simplified_ict_concepts]] **Unicorn model**: breaker block overlapping a same-direction FVG (03:53).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Unicorn (model / entry function)**: breaker block plus an FVG formed in the displacement through it, aligned with the breaker; named by ICT (50:35, 1:15:34).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Entry function**: the 5m trigger pattern (here, the unicorn) inside the model (1:15:34).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Model**: entry function framed by psychology and risk management (1:23:06).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **Unicorn**: entry on a breaker block overlapping an FVG (07:35, used without separate definition).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Consequent encroachment**: midpoint of an FVG, an entry point (09:51).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Expansion into expansion**: displacement answered by displacement the other way; likely continuation of the second (09:51).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Market maker buy model**: named for the weekly/4h/15m example, not defined (13:57).
+- 2024-06-07 (upload) [[the_twitter_model_the_mmxm_trader_ict_concepts]] **MMXM Trader "Twitter model"**: PDH/PDL raid (external) → 1h FVG target (internal), 15m MSS + SMT, entry on the correct side of midnight open (00:02-00:39).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **Failure swing**: swing high with a lower high next to it (or low with a higher low), the first one never swept before the reversal (00:02-00:37).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **High resistance liquidity (HRL)**: a swing that was just swept (higher high / lower low) before the reversal; remaining liquidity sits beyond it; the stop side (01:07-01:34).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **Mean threshold**: 50% of the order block; reaction / entry level (08:24, 09:23).
+- 2024-08-16 (upload) [[nickdoesfutures_unicorn_model_experiences_with_ict]] **Unicorn strategy / model**: the breaker entry model he trades; the transcript names it while showing a 1h FVG, a 5m stop hunt and a breaker, entry on the breaker retest, stop at the FVG candle or breaker (21:27-21:38). Breaker + FVG overlap is the ICT-community meaning; he never states it in one sentence (implied).
+- 2024-08-16 (upload) [[nickdoesfutures_unicorn_model_experiences_with_ict]] **Nested PD**: price trading inside a daily FVG while the setup forms (20:51-20:56). "PD" = PD array.
+- 2024-08-26 (upload) [[ict_daily_profile_london_reversal_new_york_continuation]] **London reversal / NY continuation**: London (2-5 a.m.) makes the daily wick and reverses with a CISD; New York continues in the daily direction (01:10-01:57).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Time frame alignment (Tom's model)**: HTF key level + SMT -> new dealing range -> 4h raid into discount/premium -> 1h state-of-delivery change -> 15m entry in discount/premium (01:41-03:30).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Offset re-accumulation**: relative equal lows from a short-term leg get run into the HTF key level before continuation (06:24).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Buy side / sell side of the curve**: the halves of an ICT market maker model; buy side = the rally leg after the SMR (05:21, 12:37).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Smart money reversal (SMR)**: the turn at the HTF key level with SMT; not traded by Tom (02:14, 05:51).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **Market maker buy model**: the execution framework; "original consolidation" buy stops are the draw (09:12-09:20).
+- 2024-10-19 (upload) [[mara_trade_review_h1_market_maker_buy_model_mmxm]] **Phases of price delivery**: expansion, retracement, reversal, consolidation; used to classify the move after a sweep (00:32, 03:22).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Next day / next candle model**: using the previous candle (its close relative to the candle before it) to anticipate the next candle (00:13).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Reversal (candle)**: take out previous candle high/low, close back into its range (00:40).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Continuation (candle)**: take out previous candle high/low and close outside it (01:03).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Failure to close outside the range**: synonym he uses for the close-back-inside reversal read; after an expansion it can also mark a retracement (03:27, 12:39).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Phases of price delivery**: expansion, retracement, consolidation, reversal (02:28, 05:12).
+- 2024-11-16 (upload) [[master_candlestick_wicks_the_key_to_catching_reversals]] **Wick**: the part of a candle beyond the body; a LTF reversal within the candle's period (00:22).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **C2 / C3 / C4**: higher-timeframe candle-2, candle-3 closures and candle-4 continuation; requirements are taught in his course/mentorship, not here (06:16-06:35).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Formation liquidity**: dotted line at the untaken previous candle / previous day low (bearish) or high (bullish) the setup should draw to (13:04-13:27).
+- 2024-12-29 (upload) [[reversal_sequence_ttrs_how_to_blend_pd_arrays]] **Turtle soup / purge**: sweep of a low (or high) as step 1 of a reversal (05:23).
+- 2025-01-11 (upload) [[timeframe_alignment_how_to_align_timeframes_for_expansion]] **Bias / structure / entry timeframe**: the three roles in top-down analysis (00:31).
+- 2025-01-11 (upload) [[timeframe_alignment_how_to_align_timeframes_for_expansion]] **Order block formation (entry)**: entry-timeframe price moves from bullish to bearish (close through the series) at the key level (01:55).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Propulsion block**: an order block formed on a retrace into a POI that price then closes over; used for continuation entries (05:37-05:43, 17:21-17:28).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **New phase of price delivery**: after expansion: consolidation, retracement or reversal (16:15-16:24).
+- 2025-02-08 (upload) [[trade_continuations_using_order_blocks]] **Continuation entry**: entry after a confirmed reversal, off a new opposing candle / order block that forms the next swing (00:47-01:39).
+- 2025-02-08 (upload) [[trade_continuations_using_order_blocks]] **Opposing candle / order block (continuation)**: the series of opposing-colour candles that reached into a FVG or swept a swing; once closed through, it forms a new invalidation (01:20-02:10).
+- 2025-02-08 (upload) [[trade_continuations_using_order_blocks]] **Reversal sequence**: purge (turtle soup) -> inversion -> CISD (00:30, 15:41).
+- 2025-02-08 (upload) [[trade_continuations_using_order_blocks]] **Stages of distribution**: low-risk sell (reversal) vs 1st/2nd stage distribution (continuations) (06:03).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **Unicorn (model)**: ICT pattern; breaker with an FVG, "the most powerful algorithmic reversal pattern" per ICT (03:28); formed when price closes through the breaker (05:28-05:32); learned from Ash Trades / Unicorn University (01:20).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **London C2 / London reversal**: London 7-hour candle forming a candle 2 at a POI (06:21-06:27).
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Discount / premium (ICT)**: lower/upper half as buy/sell zones; TTrades uses the opposite half for continuation (00:17-00:24).
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Page** (`using_equilibrium_in_continuations.md`): same content; adds pairing list daily EQ→1h, 4H EQ→15m, 1h EQ→5m, 15m EQ→1m, and target with standard deviation projections.
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **Continuation breaker**: a breaker formed after the reversal, from a sweep of a short-term swing in the new trend plus a new higher high / lower low (01:19-01:43).
+- 2025-03-22 (upload) [[ttrades_fractal_model_inversion_intraday_strategy]] **Inversion (1m)**: a close through an opposing FVG / level inside the T-spot, used as the entry trigger (01:44, 04:13).
+- 2025-03-22 (upload) [[ttrades_fractal_model_inversion_intraday_strategy]] **Positional entry**: entry before price returns to the T-spot, stop beyond the whole structure (16:12).
+- 2025-04-05 (upload) [[ttrades_fractal_model_trading_candle_4]] **Daily swing model / day 4**: the day after a confirmed daily swing (C1-C2-C3), expected to continue out of C3's upper (bull) / lower (bear) half (00:11-01:14).
+- 2025-04-05 (upload) [[ttrades_fractal_model_trading_candle_4]] **Middle timeframe**: the structure timeframe between daily and entry, here 30m or 1h (01:46, 03:14).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Phases of price delivery** (learned from "the MMXM trader"): expansion, consolidation, retracement, reversal; allowed transitions in rules 1-2 (02:04-02:40).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Reversal signature**: expansion into a level met by expansion away (V shape), confirmed by CISD; HTF = swing point / candle close (08:43-09:55).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Failure swing**: a swing left by a retracement without manipulation (near-equal stacked highs/lows); not a reversal point, a target (06:20, 08:15).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **AMD continuation / AMD reversal**: trading out of a consolidation by failed manipulation of its far side (continuation, 04:52) or by using the consolidation's high/low as the reversal point (09:30).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Expansion candle / supports expansion**: candle with a small wick and large body; a candle with a large opposing wick ("reversal candle") does not support expansion (03:06, 16:21-17:15).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Reversal into expansion candle**: a candle that opens into a key level, reverses and expands, keeping a small wick; a type of swing formation (19:41, 26:20).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Model (reversal point -> target)**: internal -> external, external -> internal, swing/range low -> swing/range high (his favorite) (14:19-14:41).
+- 2025-05-17 (upload) [[protected_swings_understanding_trend_and_invalidations]] **Turtle soup**: sweep of a previous high/low (here PDH) used to frame a reversal (03:50).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Reversal consolidation**: consolidation at a HTF objective/level; run, CISD, reversal (03:57).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Breakout signature**: closing over the consolidation highs; should be followed by retracement or continuation (09:25).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Propulsion block**: named as a continuation-entry location (14:01); not defined here.
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **Consolidation** (in this video): a retracement that fails to confirm and hangs around, or a sideways range whose low/high must be manipulated before continuation (7:24-7:46, 15:12-15:30).
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **Expansion met with expansion**: an expansion through a high immediately answered by an opposing expansion = reversal (16:21).
+- 2025-07-19 (upload) [[fractal_model_fundamentals]] **Candle 1/2/3/4**: candle 2 is the swing high/low; candle 1 before it; candle 3 after candle 2; candle 4 after candle 3 and a continuation if the trend is correct (00:46).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **Reversal**: expansion met with (opposing) expansion; forms the higher-timeframe wick (00:33, 10:02).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **Continuation signature**: expansion-retracement-expansion or expansion-consolidation-manipulation-expansion (00:42, 13:17).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **V-shaped reversal**: clean expansion into a level met with clean opposing expansion (01:48).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Phases of price**: expansion, retracement, consolidation, reversal (00:27). This video blends them.
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Retracement**: slow, shallow counter-move followed by a close back through the counter-move's candles; continuation signature (03:52, 00:42).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Reversal**: "expansion met with expansion" in the opposite direction (01:13); forms a higher-timeframe wick (04:36, 06:56).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Continuation signature**: retracement or consolidation after expansion (00:45, 27:20).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Phases of price**: expansion, retracement, consolidation, reversal; read candle by candle (00:02-00:37).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Expansion met with expansion**: an opposite-direction expansion right after an expansion = reversal; on the higher timeframe it shows as a wick (00:37, 06:20, 13:52).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Continuation entry**: expansion, retracement into a FVG, close below the level -> new protected swing -> entry (07:48, 12:20).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Reversal candle (candle 2)**: opens, large opposing run forms the wick, returns toward the open before close (00:34).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Reversal to expansion candle**: a candle-2 whose wick stays small so it can trend in the new direction; the ideal case (02:06, 02:34).
+- 2025-09-01 (upload) [[ttrades_top_down_chart_lessons_2]] **V-shaped reversal**: aggressive move lower met by an aggressive move higher, leaving FVGs on both sides (00:25-00:41).
+- 2025-09-01 (upload) [[ttrades_top_down_chart_lessons_2]] **Reversal day / continuation day**: Tuesday sweeps Monday's consolidation and reverses; Wednesday continues (01:28-01:45, 10:36-10:47).
+- 2025-09-01 (upload) [[ttrades_top_down_chart_lessons_2]] **T-spot**: overlap of 0.5 of the HTF wick and 0.5 of the CISD leg, where price must hold (04:56-05:22). Not named as a box; he refers to "my model and the T-spot".
+- 2025-09-06 (upload) [[trading_candle_3]] **Reversal candle (large wick)**: opens, runs one way, comes back to close near its open, back inside the previous candle's range; price "isn't trending in one direction" (00:42, 01:33).
+- 2025-09-06 (upload) [[trading_candle_3]] **Candle 2 / 3 / 4**: candle 2 the reversal candle, candle 3 the continuation (or it can be a reversal candle), candle 4 always a continuation within the model (35:12).
+- 2025-09-06 (upload) [[trading_candle_3]] **Continuation order block / propulsion block**: within the new HTF candle, price opens, sweeps a high or reaches a POI, then an opposing candle formation shows the HTF wick is formed (02:04, 11:00).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **Continuation expansion candle**: candle 3 after a reversal candle 2 with a large opposing run (02:35).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **Positional entry**: entry without a precise POI, often at the HTF open, stop where invalidated (13:35, 16:22).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **GXT**: "Garrett's 4hour profiling with my fractal model" (11:21).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Universal model**: a framework that says, when price hits a key level, it should reverse and which opposing level it targets (01:37).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Continuation PSP**: a PSP inside expansion toward an open target; one asset's retracement close is a PSP, the other runs its extreme; no swing point forms (11:51).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **V-shaped reversal signature**: expansion into the key level, SMT, expansion away (26:35, 31:53).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Reversal candle**: large wick, small body; uses most of its time and range forming the wick, then returns towards the open (01:00, 02:29).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Reversal to expansion candle**: a candle that reverses and expands in the same period (small early wick + CISD) (03:55, 05:31).
+- 2025-11-15 (upload) [[candle_2_closure_foundation]] **Candle 2 closure (C2)**: reversal closure at a HTF POI; sweep of previous candle's high/low with a close back inside its range (00:57). Page: "A Candle 2 closure is always a reversal closure."
+- 2025-11-15 (upload) [[candle_2_closure_foundation]] **Continuation closure**: close beyond the previous candle's high/low (00:36).
+- 2025-11-15 (upload) [[candle_2_closure_foundation]] **T-spot**: the zone (boxes on chart) where he looks to enter the continuation after CISD, plotted by his indicator (10:55).
+- 2025-12-03 (upload) [[candle_3_closure_ttrades_fractal_model]] **Candle 3 closure (C3)**: at a HTF key level, no C2 reversal closure; candle 3 leaves candle 2's extreme untaken and closes over/below candle 2's body (engulfing) (01:36, 11:01).
+- 2025-12-03 (upload) [[candle_3_closure_ttrades_fractal_model]] **Continuation / reversal closure**: as in the C2 video (00:33-01:04).
+- 2025-12-10 (upload) [[ttrades_top_down_chart_lessons_3]] **Positional entry**: entry near an existing invalidation without waiting for intraday session confirmation (03:56).
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **Reversal day**: open, trade into PDH (PDL), wick confirmed by LTF CISD, trade back into the range to EQ or the opposite extreme (00:37-00:52, 17:01-17:12).
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **Continuation day**: open, trade against the bias first into a POI around/before EQ, respect EQ, then through the previous day's extreme (00:52-01:02, 16:51-16:58).
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **Shallow vs large wick**: wick size at the reversal level; shallow supports expansion and trading the reversal candle, large means wait for the next candle (01:12-01:27). Wick size is taught in a separate video.
+- 2025-12-20 (upload) [[ttrades_top_down_chart_lessons_4]] **Opposing candle (series)**: the series of down-close candles that made the low; a close back over it = continuation / CISD (4:38).
+- 2025-12-20 (upload) [[ttrades_top_down_chart_lessons_4]] **Supports expansion (hourly)**: reversal candle with context and a small wick off the previous hour (3:50, 6:41).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Swing point**: the bullish or bearish turn that any reversal must form (00:28-00:40).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Continuation daily bias**: close above PDH (bullish) or below PDL (bearish) (01:01-01:15).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Reversal daily bias**: sweep of PDL/PDH and close back inside (01:15-01:37).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **Continuation order block**: after the CISD, a sweep of a short-term low/high into a POI, then a close through the series of opposing candles (02:57-03:08). Page: "price sweeps a short term high or low and then closes through a series of opposing candles."
+- 2026-01-10 (upload) [[cisd_validates_swing_points]] **Continuation order block**: LTF continuation (new CISD / protected swing) formed after the initial CISD, at a POI, used for entry (9:11-9:38).
+- 2026-01-17 (upload) [[higher_timeframe_analysis_for_trading_aligning_expansion_candles]] **Candle 3 on multiple timeframes**: daily, 4H and 1H candles all in their continuation (C3) phase at once (03:34, 07:58).
+- 2026-01-17 (upload) [[higher_timeframe_analysis_for_trading_aligning_expansion_candles]] **Reversal candle (not quite a C2 closure)**: candle with a large wick that does not close back inside; usable to "frame" off its wick (10:21-10:29).
+- 2026-01-24 (upload) [[how_to_actually_trade_inversion_fair_value_gaps_ifvg]] **V-shaped reversal**: sharp reversal without consolidation; required for his inversion model (05:46).
+- 2026-01-31 (upload) [[the_best_timeframe_for_ttrades_fractal_model_simple]] **Favorite fractal model**: 1D bias -> 4h swing point -> 15m entry (00:11-00:22).
+- 2026-01-31 (upload) [[the_best_timeframe_for_ttrades_fractal_model_simple]] **Candle 3 across timeframes**: daily candle 3 traded via a 4h candle 2/3 and a 15m continuation inside the 4h candle 3 (02:54-03:06, 06:28-07:01).
+- 2026-01-31 (upload) [[the_best_timeframe_for_ttrades_fractal_model_simple]] **Low we can trust**: a low formed out of a POI with a sweep, V-shaped reversal and CISD inside the candle (02:29-02:52).
+- 2026-01-31 (upload) [[the_best_timeframe_for_ttrades_fractal_model_simple]] **Continuation**: close through the series of candles that went into the POI after a reaction, creating a protected swing (05:08-05:33, 09:14-09:30).
+- 2026-02-07 (upload) [[ttrades_scalping_model_simple_day_trading_strategy]] **Scalping model**: hourly bias (C2/C3 closure) → 15m swing point forming the hourly wick → 1m fractal model entry; trade = body of the hourly candle (00:10-01:42; page "What You Are Actually Trading").
+- 2026-02-07 (upload) [[ttrades_scalping_model_simple_day_trading_strategy]] **Continuation signature**: retracement or consolidation after expansion (01:50, 08:55).
+- 2026-02-07 (upload) [[ttrades_scalping_model_simple_day_trading_strategy]] **A+ entry**: candle digs its wick into the POI then continues (07:09).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Continuation**: a retracement into a POI that is rejected with a CISD (closure through the series of opposing candles), protecting the swing and expected to continue the trend (00:34, 04:56).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Ideal continuation**: POI reach + V-shaped recovery + quick closure through opposing candles in 1-3 candles, without having taken the previous high yet (04:16-05:40, 09:55).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **New phase of price**: the shift (reversal/consolidation) that can start once an HTF target is reached (03:38, 28:52).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **BPR**: named as an alternative description of the daily V-shaped reversal (09:32-09:35); balanced price range (glossary, not defined here).
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **Relevant swing high/low**: a swing point where a reaction or reversal can be expected. It is the extreme of nearby swings, has valid separation from the previous swing, and falls within the 3-HTF-candle lookback (00:52-03:34).
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **Valid separation**: enough range between a swing and the previous swing for a reversal there to be trusted; discretionary (01:54, 12:21).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Failure swing**: price reverses from a point, then a later day (or days) makes a deep run back into that point without taking it out; the reversal is "unestablished" (1:07-2:21, page).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Small-wick reversal**: daily candle that opens near a relevant swing, makes a shallow run into it, closes back into range and expands (11:59-13:47). Occurs either as a reversal of the trend or as a continuation after a consolidation (13:16).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Daily continuation**: day after a valid reversal at a relevant swing, with an opposing target open and no opposing signs (13:47-14:41, page).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Aligned swing point**: a lower-timeframe swing/closure formed inside the 7h expansion candle, not at its reversal, used for continuation entries (56:32).

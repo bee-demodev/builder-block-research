@@ -1,27 +1,242 @@
 [
   {
-    "text": "Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 105.21000000000001,
-    "duration": 90.17999999999999
+    "text": "How's it going everyone? This video is going to be over intraday bias. If you haven't seen my daily bias video, I will link that in the top right corner, and I suggest watching that prior to this video. Now I've received many requests to make a free discord, so I've gone ahead and done that. I will put the link to that discord in the description below. And once again, big thank you to the MMXM trader for teaching me many of these concepts. So, let's get into it.",
+    "start": 3.06,
+    "duration": 33.29
   },
   {
-    "text": "Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Liquidity sweep or run on the highs and lows.",
-    "start": 405.81,
-    "duration": 90.17999999999999
+    "text": "The first thing we are going to take a look at is the previous candle's high and low. This can be used to frame a draw on liquidity or a reversal. For example, here, unless price is going to consolidate in this range forever, it is going to have to reach for the previous candle's high or the previous candle's low. Considering price is moving up here, it's more likely to take previous candle's high, so this can be used as a draw on liquidity. Similarly, over here with the bearish example,",
+    "start": 36.35,
+    "duration": 28.4
   },
   {
-    "text": "Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 706.41,
-    "duration": 90.17999999999999
+    "text": "Price is more likely to reach for previous candles low than it is previous candles high. Reversals can also be framed off of previous candles highs and lows. For example, here, price cannot displace out of this range or above previous candles high. And then we can anticipate price falling back into the range or to reach for the other side of the range, previous candles low. Similarly, with the bearish example here, price cannot displace.",
+    "start": 64.75,
+    "duration": 26.08
   },
   {
-    "text": "Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 1007.0099999999999,
-    "duration": 90.17999999999999
+    "text": "or close below previous candle's low, it is likely to come back into the range and a reversal can be framed. So in this example right here, we have a previous candle's high, price cannot displace out of this range, closes back in, so a reversal can be framed off of this previous candle's level, or we can anticipate price drawing lower in the next candle. On this next candle, price reaches below the previous candle's low, however, cannot displace out of this range and closes back in.",
+    "start": 90.83,
+    "duration": 29.81
   },
   {
-    "text": "Intraday Bias Simplified - ICT Concepts. daily_bias, educational_channel. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 1307.6100000000001,
-    "duration": 90.17999999999999
+    "text": "A reversal could be framed here, or on the next candle, we can anticipate price drawing higher to this previous candle's high, and then can anticipate the next candle also reaching for the previous candle's high as well. So let's take a look at a few examples of this. So for this first example, we're going to be on the four hour chart here, and we're just going to focus on the previous candle's high and low. So if you notice here,",
+    "start": 120.64,
+    "duration": 24.38
+  },
+  {
+    "text": "What did this candle do? We took out the previous candle's high. So I could anticipate this current high being taken as well. When we go forward one candle, can we displace out of this range or close outside? No. So now I can expect this previous low to be taken. Right here, we just about take the previous low. We do not, so I can still hold the bias there since we're inside. Here we take the previous low, but do we close out?",
+    "start": 145.02,
+    "duration": 31.6
+  },
+  {
+    "text": "No, so I can anticipate a reach for this previous candle's high. Here we take the previous candle's high, we can't close out, so then I can look for this previous candle's low. Here we take the previous candle's low, we frame a reversal, and then reach to the other side and close out. Here I would want to see this previous high. Right here you can see we get a lot of displacement out of this range and a closeout side.",
+    "start": 176.62,
+    "duration": 31.81
+  },
+  {
+    "text": "From here, either consolidation or this previous high. Here, we take this previous high, we can't close out. From here, I'd want to see this previous low. Right here, we take the previous low, we can't close outside, so I'd want to see this previous high. Let me zoom in here a little. Here, we have an inside bar, so no direction. From here, I'd want to see just a continuation of this trend up, so reach for this previous high.",
+    "start": 208.43,
+    "duration": 34.74
+  },
+  {
+    "text": "We get a close over our previous candle, so I'd wanna see this previous candle's high. Right here, you can see, we take that high right there, but also, we can't close over our previous candle's high. So from here, I'd wanna see previous candle's low. Here, you can see, we take previous candle's low, but we also take its high. From here, we kinda swept everything in the range, and I don't really have a lot of bias here, so then I let another candle play out. Right here.",
+    "start": 243.17,
+    "duration": 32.91
+  },
+  {
+    "text": "We took this previous candle high, but couldn't close out, so I could be looking for previous candles low. Right here, we took previous candles low, we did close out, so I could be looking for previous candles low. Right here, we took previous candles low, we closed out, I can be looking for previous candles low. Right here, inside candle, so just a continuation of the trend, let's see what happens. And there we are wrong, so.",
+    "start": 276.08,
+    "duration": 34.77
+  },
+  {
+    "text": "We took this previous candle's high, so now I can anticipate a reach for this previous high. Right here, we reach, close outside this previous high, so I could look for a previous high being taken. Right here, close outside, could look for the previous high. Right here, we take the previous high, close inside, now I'd want to be looking for this previous low. Right here, we take the previous low, we can't close out.",
+    "start": 310.85,
+    "duration": 33.2
+  },
+  {
+    "text": "Now I can be looking for this previous high. Inside bar, we'd like to see a continuation of this trend. Let's see if we reach for this previous high here or this previous candle high. Right here, we reach both of those, but we can't close outside. However, we already hit this previous candles low. So right here, I'm not super biased, but could be looking for previous candles low. And we do get that, but we take both sides of the range here.",
+    "start": 344.05,
+    "duration": 32.45
+  },
+  {
+    "text": "Don't have a lot of bias at all, so let's see what the next candle tells us. Okay, so large aggressive displacement out, so I could be looking for previous candles high. Right here, take previous candles high, close back in, can be looking for previous candles low. Here we take that, can't close out, can be looking for previous candles high. Inside candle, just want a continuation, so I reach for this high, or this high. There we go, we take that.",
+    "start": 376.5,
+    "duration": 38.35
+  },
+  {
+    "text": "Close lower, so I'd be looking for a reach of this previous candle's low. Take this, close back inside, so from here, I'd be looking for previous candle's high. And right there, close back in, so I'd want to be looking for this low. And you can see, we are wrong there. You can see that just by using the previous candle's high or low, I can frame a reversal or a drawn liquidity depending on the candle's closure.",
+    "start": 414.85,
+    "duration": 35.5
+  },
+  {
+    "text": "Now, I'm not always going to be correct, as you can see here and here. However, I do not expect to always be correct. I am just trying to find something that will give me a reliable draw on liquidity that I can confirm on the lower timeframes.",
+    "start": 450.35,
+    "duration": 13.44
+  },
+  {
+    "text": "Now I can also go through and do this on the lower timeframe such as the one hour, 30 minute, and even the 15 minute. It just becomes a little bit more noisy as you go lower. If you've watched my daily bias video coming from that video and looking at this bias right here, you can see that the daily is a little bit clearer, but we will just drop down to the hour chart really quick. We will hop back into some price action and see how it works out. We take our previous low and close over our high here.",
+    "start": 463.79,
+    "duration": 27.94
+  },
+  {
+    "text": "From here, I can expect a reach for this previous high. Reach for our previous high, close out, I want to see another reach for a previous high. Close out, reach for another previous high. Right here, we can't close outside, so I'd want to see it reach for a previous low. Right here, you can see we end up sweeping this high and then closing below this low. From here, I can reach for this previous low. Once again, close out, reach for a previous low.",
+    "start": 491.73,
+    "duration": 37.47
+  },
+  {
+    "text": "Close out. See if it will reach for a previous low. Reaches for a previous low. You can see we still did close outside. I reached for this previous low. We're stuck inside now. So now that we're range bound, this is what I mean. It gets a little bit more messy on the lower timeframes. Here I just mark out the range high and range low and then wait for price to reach one of those sides. So here we reach the range high, close outside. Would want to see it reach for this previous high.",
+    "start": 532.18,
+    "duration": 30.91
+  },
+  {
+    "text": "Here we reach for the previous high, close back in. Although we're outside the range, we want to see if it reaches for this previous low. And there we go, we reach for this previous low, and the other side of the range could reach for this previous low. And you can see how that works. Still closing outside. Can we reach for this previous low? I think we just hit it, but now we're closing back inside this candle. From here, reach for this previous high. And we close outside.",
+    "start": 563.5,
+    "duration": 36.26
+  },
+  {
+    "text": "Reach for this previous high. With that quick run through there on the hour chart, you can see it's a little bit more messy than the four hour chart, which is expected, but you can see that it still does work. However, there are times where it is going to fail. Let's get back to the PDF and look at a few other ways to get intraday bias. The next thing we are going to cover are swing points, failure to displace, and then the next day model or just the next candle model. So swing points, if you haven't seen my video on",
+    "start": 599.76,
+    "duration": 28.13
+  },
+  {
+    "text": "Buy side and sell side liquidity. I'll link that in the top right. However, swing points are just turning points in the market. We can use these to anticipate as a draw on liquidity or also frame a reversal off of them. So for example, if we have a swing point where we fail to displace or close outside the range and come back in, this can be used to frame a reversal higher. Similarly up here, if we fail to displace out of this range, we can frame a reversal back into the range.",
+    "start": 627.89,
+    "duration": 28.19
+  },
+  {
+    "text": "That brings me to the next candle model or the next day model from the MMXM trader. What is happening here is when a candle fails to displace outside a swing point, we can anticipate price moving higher back into the range on the next candle. So for example, when this candle failed to displace out this range, we get a move higher on the next candle and that continues to the next swing point in the market.",
+    "start": 656.08,
+    "duration": 27.23
+  },
+  {
+    "text": "Here, we can't displace out of this range, so I could anticipate price moving back into the range on the next candle. We fail to displace out this range, close back in, I can't anticipate the next candle moving lower. Or, when price respects a PD array, I can't anticipate the next candle moving lower to our drawn liquidity. So let's get into the charts. So let's take a look at how we can use swing points",
+    "start": 683.31,
+    "duration": 25.68
+  },
+  {
+    "text": "As well as just using our previous candles high and low and putting it all together. So for example, here, we have a swing point resting here and here. You notice this one came out of a fair value gap, we're likely to reach for this low. So let's see what happens. Right here, we reach for this low. What do we notice? Closes below the previous candle, closes below the swing point. From here, I'd want to see a continuation lower.",
+    "start": 708.99,
+    "duration": 26.8
+  },
+  {
+    "text": "Here we get a continuation lower, but what do we notice about the candle? It closes back in the range, so from here I'd want to see a move above this high or back into the range. Here we get a move above this high, it closes back in, so what can we see happening? A reach below this low. Right here, we barely touch that low, so I'd want to see it still taken. Right here, get a reach below this low and closes below. Now I'd want to see",
+    "start": 736.94,
+    "duration": 33.28
+  },
+  {
+    "text": "Another reach below this low. Right here, we reach below this low, as well as this swing point. So I'd want to see price reach lower and take this previous candles low. Here we get a move way lower. However, we close back into the range. From here, I'd want to see a reach above this high. Right here, we get an aggressive move higher, closing over this previous high. So where could we be reaching?",
+    "start": 770.22,
+    "duration": 31.57
+  },
+  {
+    "text": "This previous candle's high. However, we can also look to our left. What do we have? We have swing points. So let's see what happens. Inside candle, let's see if we get a continuation. Right here, we close over this high and over the previous candle's high. So I'd want to see us reach higher to these highs. Right here, you can see we reach these two swing points. However, we can't close outside them. So I'd want to see a reach to this low.",
+    "start": 801.79,
+    "duration": 32.32
+  },
+  {
+    "text": "Or what do we have lower? A fair value gap. So there we reach towards this fair value gap. We do respect it. So from here, this is where I'd be looking for a next day model because it respects a PD array. I'd want to see us reach for this high or a swing point. And we do sweep this low first, but then we do end up taking both of those. Now, let me clean up the chart a little before we continue. So if you notice, we respected this fair value gap.",
+    "start": 834.11,
+    "duration": 32.1
+  },
+  {
+    "text": "Close over previous candles high and the swing point high. From here, I'd want to move higher or this candles high. Right here, we get a move out of this range. Let's see if we take this previous candles high again. We do. However, here is some conflict, right? We don't close outside of here, so I'd want to say lower, but we do have a fair value gap right here. So I would probably say to reach for this low, but there is some indecision here.",
+    "start": 866.21,
+    "duration": 32.43
+  },
+  {
+    "text": "And we have an inside bar. Let's see what happens. We do reach for this low. Now we close below the swing point and our previous candle. So I'd want to see a reach for this low. Here we reach into here. And this is when I start to look left, right? Although we are closing out, we're in an uptrend and now we're being supported by an order block. We're closing outside of this. So this is where I'd be considering a next day model to reach where.",
+    "start": 899.41,
+    "duration": 32.11
+  },
+  {
+    "text": "Previous candle's high or a swing high. Right there, we get a move higher. This is closing outside this previous candle's high, so I'd wanna see it reach higher. Oh, that is where we are at right now. So this candle closed over the previous candle's high, so I'd be looking for this high to be taken, which it was. Ultimately, I have three points of interest here. This previous candle's low, because if we close inside here,",
+    "start": 931.52,
+    "duration": 34.72
+  },
+  {
+    "text": "Likely to see this low, this fair value gap, and then this swing point here. So let's run through some top-down analysis using intraday bias. So for this example, we'll use the four-hour we were already talking about for our bias here, and we will drop down to the one-minute time frame. So let's just take a look here, and we can mark out our previous four-hour high as our drawn liquidity, right? We can expect price to expand higher, however,",
+    "start": 966.24,
+    "duration": 29.7
+  },
+  {
+    "text": "Let's just stick with that as our drawn liquidity. So here we are on the 15-minute chart, and this is our new four-hour candle open. So we'll go ahead and mark that out. And from here, if we want to see price move higher, we want to see price move down first, right? So we get our open, low, high, close. And let's just use what we learned earlier about our swing points, right? So let's mark out this swing point and see what happens if price reaches into this area. So if we're using what we learned earlier,",
+    "start": 995.94,
+    "duration": 33.21
+  },
+  {
+    "text": "Price took this swing point but closed back in the range. So we can expect price to want to go to this previous high or move higher. From here, we know that our next 15 minute candle open is at six. So let's go down to the one minute. So here we are on the one minute. And if we want to see",
+    "start": 1029.15,
+    "duration": 20.08
+  },
+  {
+    "text": "Price move higher. We want to see some sort of open low high close on this timeframe as well. However, we won't really focus on that too much. We'll just watch the price action. So as we let this continue forward, here is our open. So right here, marking out a swing point, you can see we don't go below this swing point, right? We can't displace. So I want to see price move back into the range here. But what do we get? We don't get any displacement back in. We can't close over this previous candle.",
+    "start": 1049.23,
+    "duration": 35.01
+  },
+  {
+    "text": "So that makes me believe we want to make what? A new low, or reach for this previous low. Nice full body candle into this level, we get displacement out, and that displacement continues. So what is this? This is our order block, and we have a fair value gap resting right here. So if we wanted to take a low risk buy, we could look to enter right here, and we could partial on this",
+    "start": 1084.24,
+    "duration": 35.41
+  },
+  {
+    "text": "High right here. And then ideally, we'd want to be targeting our previous four hour high, right? This is our drawn liquidity. But let's see if price reacts here. And then we will look for a later entry. So right here, price comes down to this order block and fair value gap. Let's see if we get a reaction out of this, right? So good displacement out of this. And if you notice, this bearish fair value gap here is disrespected, we close over it.",
+    "start": 1119.65,
+    "duration": 37.5
+  },
+  {
+    "text": "So let's see what this next candle does. And now we are left with a fair value gap here. So this would be a entry right here. I stopped there. I could look to partial or I can look to draw towards our four hour draw on liquidity, right? So let's see what happens. Ideally, if price reaches below this fair value gap here, we want to see this order block respect price.",
+    "start": 1157.15,
+    "duration": 35.15
+  },
+  {
+    "text": "Here we get some consolidation. Start to move higher. And let's go out to a five minute chart to watch this play out. Start to get displacement up. And there we go, reach for that high, right? And so that's just a four hour open, low, high, close. But when does this four hour candle close? Right here at nine. So I can expect distribution throughout this time period before a high and then a close, right? So let's see how this plays out.",
+    "start": 1195.92,
+    "duration": 34.98
+  },
+  {
+    "text": "It reaches all the way up there before the close of that candle. So if we pull up an open low high close indicator, you can see that four hour open marked out and anything below that in a bullish candle here is at a discount. So buying at a discount of multiple time ranges is ideal. And although this is our drawn liquidity, just the previous four hour candle, you can see we get the expansion much higher before the high and then the close of that candle.",
+    "start": 1231.38,
+    "duration": 29.63
+  },
+  {
+    "text": "All of this is based off of a higher timeframe draw on liquidity. In this next example, we will be going down from an hourly chart down to a 30 second chart. I don't personally use this, but I had a few people ask questions about it, so hopefully this will answer their questions. But with the hour right here, you can see we take our previous hour low and close back inside. A really easy draw is our previous hour high. So let's drop down to a five minute.",
+    "start": 1261.01,
+    "duration": 27.02
+  },
+  {
+    "text": "Here you can see we marked out our previous hours low that gets taken, move above, another sweep, but most importantly, from right here to right here, it closes back into the range. So if we get our next candle here, this is our open of our new hour. We have price respecting a fair value gap here on the five minute chart. So ideally, I'd want to see price draw from this fair value gap to our previous",
+    "start": 1288.03,
+    "duration": 26.69
+  },
+  {
+    "text": "Hour high. So let's drop down to the 30-second chart. So here is the open of our new hour candle. We get a move lower, still respecting this fair value gap, and then displacement up. So with this displacement, we have a fair value gap. I could look to enter on the 30-second chart right here, targeting previous hours high. There we go. We get another fair value gap here. It's respected. And",
+    "start": 1314.72,
+    "duration": 30.67
+  },
+  {
+    "text": "There we go. We reach our previous hours high. Now, if I don't want to go down to the 30 second chart, how can I do that? Let's go back to the one minute and replay it and take a look. So right here, respecting the five minute fair value gap, we get this placement out right here. So I would personally be looking at this order block right here. If price was going to return to that, hover.",
+    "start": 1345.68,
+    "duration": 26.54
+  },
+  {
+    "text": "Price is displacing towards the target. Now my eye gets drawn to this fair value gap here. And if I was going to enter on this fair value gap, I would at least need my stop on this low right here, below the mean threshold of this order block. That way price could come back to this order block and I wouldn't be stopped out. However, with that, I would not be able to put my target right at this high because I need at least two R personally. So I would have to have my target there. But letting this play out on the one minute.",
+    "start": 1372.22,
+    "duration": 29.75
+  },
+  {
+    "text": "It looks something like that. So in this last example, it is actually price action we went over in the beginning of this video, but YM could not close over this previous four-hour high, and that gave us bias to this four-hour low. So let's go down to the 15-minute timeframe. So here we have the 15-minute timeframe. You can see the failure to displace over this previous high, and here is when our new four-hour candle opens. So let's see what happens.",
+    "start": 1402.99,
+    "duration": 27.78
+  },
+  {
+    "text": "4 hour candle opens and we start dropping. We are in a fair value gap right on this side and we just put in a fair value gap right here. So just using the 15 minute as an execution timeframe can either enter this fair value gap here or I can look for the consequent encroachment of it. But we'll just leave it at the start of the fair value gap. My stop on the high and my target on the previous 4 hour low. That gives 2.3R. So let's see how this works out.",
+    "start": 1430.77,
+    "duration": 30.24
+  },
+  {
+    "text": "And there we go. Using the 4-hour timeframe for bias and a 15-minute timeframe for execution, we took it from one side of the range to the other. So you may have noticed the similarities in this video to my daily bias video, and that is because these concepts are fractal. If I was to use this on the weekly chart, I would use it the same way as I did on the 5-minute chart. Now with that being said, I hope you did enjoy this video, learned something, and if you did, please consider liking and subscribing, and I'll see you guys next time.",
+    "start": 1464.02,
+    "duration": 29.56
   }
 ]

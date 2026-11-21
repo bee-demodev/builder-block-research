@@ -1,27 +1,117 @@
 [
   {
-    "text": "Internal & External Liquidity (Daily Bias) - ICT Concepts. daily_bias, educational_channel, liquidity_sweep. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 51.52000000000001,
-    "duration": 44.16
+    "text": "How's it going everyone? This video is going to be over the relationship between internal and external range liquidity. We will first hop into the PDF before hopping into TradingView for some examples. Now before we begin, I just want to give a shout out to the MMXM trader for his teachings. If you want to find his YouTube or Twitter, I will link them in the description below. First thing we are going to do is define internal and external range liquidity. Internal range liquidity is just a fair value gap. External range liquidity",
+    "start": 10.26,
+    "duration": 28.96
   },
   {
-    "text": "Internal & External Liquidity (Daily Bias) - ICT Concepts. daily_bias, educational_channel, liquidity_sweep. Liquidity sweep or run on the highs and lows.",
-    "start": 198.71999999999997,
-    "duration": 44.16
+    "text": "Is a swing high or a swing low in the form of buy side or sell side liquidity? So putting those two together, what is the relationship between them? Now the market only does two things. It either reaches for old highs or old lows or seeks to rebalance a fair value gap. So understanding this, how do they work together?",
+    "start": 39.22,
+    "duration": 18.84
   },
   {
-    "text": "Internal & External Liquidity (Daily Bias) - ICT Concepts. daily_bias, educational_channel, liquidity_sweep. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 345.92,
-    "duration": 44.16
+    "text": "Well, after taking external range liquidity, price will seek internal range liquidity. After reaching internal range liquidity, price will reach for an old high or old low, or external range liquidity. So after reaching this external liquidity here, where can we anticipate price reaching for? This fair value gap in here. Now after price reaches into this fair value gap here, where can we anticipate it to go? External range liquidity, so down here. So you can see price moves from external range liquidity to internal range liquidity.",
+    "start": 58.06,
+    "duration": 30.23
   },
   {
-    "text": "Internal & External Liquidity (Daily Bias) - ICT Concepts. daily_bias, educational_channel, liquidity_sweep. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 493.11999999999995,
-    "duration": 44.16
+    "text": "Back to external range liquidity. So let's hop into the charts and go over some examples of this. Here we are on the S&P futures weekly chart for our first example. You can see we fail to displace below this old low or a swing low right here. Now, if we are going to retrace, where can we likely see price reaching for this fair value gap here or moving from external to internal? Let's see what happens. So here we reach into internal. From here, if we're going to respect this fair value gap,",
+    "start": 88.29,
+    "duration": 31.09
   },
   {
-    "text": "Internal & External Liquidity (Daily Bias) - ICT Concepts. daily_bias, educational_channel, liquidity_sweep. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 640.3199999999999,
-    "duration": 44.16
+    "text": "Where are we likely to reach for? External liquidity. If we aren't going to respect this, then we reach for this old high. And there we go. We reach for external. Now, we don't have internal yet. We don't have a fair value gap formed. So let's see what happens on this next candle. So now we do have internal liquidity in the form of fair value gap. So now I'd like to see price draw back into this area here. And if you've seen my daily bias video, we fail to displace.",
+    "start": 119.38,
+    "duration": 41.13
+  },
+  {
+    "text": "Below the previous bar and close back in. So then I'd be looking for the next candle to reach higher. So now we reach into the internal liquidity. If we continue to respect this, and we're going to go lower, where are we likely to reach for? External liquidity. Now we reach this external liquidity. Do we have a fair value gap? No, not yet. Okay, now we do have a fair value gap. And if we zoom out a little, we just took this low over here.",
+    "start": 160.51,
+    "duration": 37.75
+  },
+  {
+    "text": "So let's see what happens, we could move from external to internal. You can see, we displace over this fair value gap, creating an inversion, so then my bias is up, and so I'd like to see up to this old high, and I'd ideally like to see a retracement down before reaching for that. You can see, we do not get a retracement. Now it's not always going to be perfect, as you notice here, as we do not get a retracement, and we just continue higher.",
+    "start": 198.77,
+    "duration": 31.13
+  },
+  {
+    "text": "But understanding the relationship between internal and external liquidity can provide a great way to find a bias or a narrative. For example, this is a weekly chart, and so understanding the relationship between internal and external liquidity on a weekly chart can give you directional bias for that whole entire week. So let's hop into some top-down examples and how to utilize this on the higher timeframes and then finding an entry.",
+    "start": 229.9,
+    "duration": 23.59
+  },
+  {
+    "text": "For our first top-down example here, we are going to be taking a look at gold on the 60-minute chart. So if you notice here, we have a fair value gap, which price is currently respecting, and if we're going to continue lower, where is price likely to reach for? This old low. We're moving from internal range liquidity to external range liquidity on the hourly chart. So with this providing our bias, we will drop down to the lower timeframes, in this case the 5-minute and the 1-minute, to look for short setups to this old low.",
+    "start": 253.49,
+    "duration": 28.48
+  },
+  {
+    "text": "So here we are on the five-minute chart. You can see we have this fair value gap that we reach into, and we're looking for short setups to this old low. We will wait for the start of my session. So here we enter the start of my session, so I will be looking for short setups. So here price displaces down, and I could be looking to enter this fair value gap here. However, if I'm looking for a confirmation entry, I will look for a high to be put in in this fair value gap, price to respect it, and then go down to a lower time frame.",
+    "start": 281.97,
+    "duration": 34.05
+  },
+  {
+    "text": "So here you can see we respect this fair value gap, so I will drop down to the one minute chart. So here we are on the one minute chart, and you can see we put in a high in the five minute fair value gap here, and then displaced lower. Looking at the last closed candle here, when price took this liquidity, my eyes are on this order block entry right here. So I would be looking for a short setup here, my stop on this high, and then I would be targeting those lows from the hourly chart. So let's see how this plays out.",
+    "start": 317.55,
+    "duration": 27.2
+  },
+  {
+    "text": "So there we go, 3.23R. And you can see how we used internal range liquidity to external range liquidity on the hourly chart for our bias. We then used the five minute chart to find an intermediate term high, and then used the one minute chart for an entry. So here we are on GBP, JPY. And if you notice, we have an old high that was just taken here. Now, if we are going to move from external range liquidity, where is our internal range liquidity? Right here, we have a fair value gap.",
+    "start": 352.69,
+    "duration": 29.23
+  },
+  {
+    "text": "Now thinking ahead a little, if we reach into internal range liquidity and continue the trend up, where is our new external range liquidity? Right here. So we'll go ahead and mark that out as well. So let's drop down to the four hour chart and see what happens. So here we are on the four hour chart. You can see this old high that we have taken out. I've marked out our new external range liquidity. And then we have internal range liquidity on the weekly timeframe here. Now, if you notice, these are old lows on the four hour.",
+    "start": 381.92,
+    "duration": 29.23
+  },
+  {
+    "text": "But that is what forms the fair value gap on the weekly. So you can see we got below this old high with displacement. We are currently retracing into a fair value gap. So I'd like to see price go lower and run these lows. So there we get displacement down. We get a retracement into a fair value gap. So I'd want to see another leg down. And there we go. Price reaches into internal range liquidity. Now, if we're going to go from internal to external, where do our eyes go?",
+    "start": 411.15,
+    "duration": 32.74
+  },
+  {
+    "text": "Up to external range liquidity up here. So going from a sell model to a buy model. So what I want to look for first is when price changes the state of delivery or shift structure, which would be over this high. So you can see we changed the state of delivery. So now my eyes are looking up here and I will eye entries in this price leg up to this old high. Now, if I was looking for a swing position, I'd want to see if price was going to retest here to get long and target.",
+    "start": 443.89,
+    "duration": 31.66
+  },
+  {
+    "text": "This old high. You can see it looks like it would leave me as price just respected a new fair value gap here and is continuing higher. So let's see if we can find an entry. So we just have a new fair value gap here. And let's go ahead and zoom in. So if you notice, we now have a fair value gap here on the four hour. So this is internal range liquidity on the four hour. So if I'm looking for external range liquidity on the four hour, I will be looking for here.",
+    "start": 475.55,
+    "duration": 33.71
+  },
+  {
+    "text": "So now that price enters internal range liquidity, I can anticipate it to move where? External range liquidity. So let's drop down to a lower timeframe to look at this move right here, and then see if it reaches for this whole time. So dropping down to the 15-minute chart, you can see we are consolidating right on that fair value gap. Here we get a sweep below, and then we change the state of delivery. So I would be looking for this order block entry right here. I stop on this low, which was swept.",
+    "start": 510.74,
+    "duration": 32.16
+  },
+  {
+    "text": "And then looking for a target on this external range liquidity on the 4-hour if I want to leap runners to this old high or the weekly external range liquidity. So let's zoom back in and see what happens. So there we get tagged in. Now we get an aggressive move higher. That target is hit. So let's see if price reaches for this old high on the weekly chart. And there we go. So zooming back out to the 4-hour chart, you can see how this was a market maker buy model.",
+    "start": 543.15,
+    "duration": 36.64
+  },
+  {
+    "text": "Within this larger timeframe market maker buy model. And both of these were framed using internal to external range liquidity. So here we are on the weekly chart just to review. We went from external range liquidity to internal range liquidity, and then from internal range liquidity to external range liquidity. From there, we use the four hour chart, and you can see how we went from a sell model to a buy model.",
+    "start": 579.79,
+    "duration": 24.43
+  },
+  {
+    "text": "Then we use the 4 hour internal to external to frame a lower time frame market maker buy model. So the last thing I want to talk about is this can be used on any time frame. So for example, here we are on NQ on the five minute chart and open just created this range here. So let's see what happens when one side gets taken. So you can see here we get an aggressive move out and then back into the range. If we're going to retrace, we will go from external to where? Internal. Let's see.",
+    "start": 604.22,
+    "duration": 30.2
+  },
+  {
+    "text": "So here we went from internal, now if we're going to continue higher, where should we go? External. Now that we took external, where can we anticipate price to move to? Internal. Let's see, it's a move to internal, hangs out here, if price is going to continue up, although it's not as clean, want to see it make a new high. You can see, here we made a new high, so we've taken external, there are no fair value gaps here, but where do we have a fair value gap?",
+    "start": 636.27,
+    "duration": 39.76
+  },
+  {
+    "text": "Right here. So that would be internal. So now that we've reached into internal, respected it, where can we reach? External. So now that we've reached external, we don't have any fair value gaps. Let's see what happens. Okay, we've just taken external once again. Let's see if we create a fair value gap. We do. So now we have internal. So price is going to go from external to internal, then where would it want to go? External again. So there we go.",
+    "start": 676.03,
+    "duration": 36.95
+  },
+  {
+    "text": "Internal to external. And I hope you can see how this works out. I hope you found this video insightful. If you did, please consider liking and subscribing. If you have any questions, feel free to leave them in the comments below, and I'll see you guys next week.",
+    "start": 712.98,
+    "duration": 13.34
   }
 ]

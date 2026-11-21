@@ -1,0 +1,450 @@
+# Stops, targets, trade management and risk: rules (448 rows, sorted by date)
+
+- 2022-01-20 (upload) simple_day_trading_strategy_intro#7 01:03 (stated) Target previous five-minute candles.
+- 2022-01-20 (upload) simple_day_trading_strategy_intro#9 01:34 (stated) Leave runners and trail the stop on previous 5m candles.
+- 2022-01-27 (upload) simple_day_trading_strategy_triple_s#7 02:58 (stated) Stop: exit on a 5m close back below the level.
+- 2022-01-27 (upload) simple_day_trading_strategy_triple_s#8 03:25 (stated) Management: target the opening price, scale out there, move stop to breakeven, then trail behind 5m bars.
+- 2022-05-20 (upload) ict_index_futures_weekly_recap_week_of_5_16_22#6 02:30 (stated) Target the near edge of an HTF (1h) FVG and take the position off at its start rather than being greedy.
+- 2022-05-20 (upload) ict_index_futures_weekly_recap_week_of_5_16_22#10 03:53 (stated) If the swing-high stop is too much risk, place the stop just above the FVG.
+- 2022-05-20 (upload) ict_index_futures_weekly_recap_week_of_5_16_22#11 04:16 (stated) Target a liquidity level (NQ 11,850).
+- 2022-05-26 (upload) simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries#5 00:33 (stated) Stop loss at the low of the candle that made the imbalance.
+- 2022-05-26 (upload) simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries#6 00:33 (stated) Target the next high or low, imbalance or level.
+- 2022-05-26 (upload) simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries#7 00:33 (stated) If the imbalance is too large, use its 0.5 Fib as entry or do not take the trade.
+- 2022-05-26 (upload) simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries#9 02:11 (stated) After the first take profit, move the stop to breakeven to be risk free.
+- 2022-05-26 (upload) simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries#10 03:18 (stated) Using the 0.5 Fib of a large imbalance cuts risk (60 cents to 40 cents in the example).
+- 2022-05-26 (upload) simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries#12 03:50 (stated) If the trade does not meet your risk requirements, skip it.
+- 2022-05-27 (upload) index_futures_weekly_recap_ict_concepts#9 03:25 (stated) When two imbalances sit above an entry, enter at the first but place the stop above the candle beyond the second, since price may trade into it.
+- 2022-05-27 (upload) index_futures_weekly_recap_ict_concepts#10 03:44 (demonstrated) Target unfilled higher-timeframe FVGs (here a 5m FVG) even when the level looks odd on the entry chart.
+- 2022-05-27 (upload) index_futures_weekly_recap_ict_concepts#20 12:23 (stated) Skip late entries whose risk-to-reward to the target is no longer attractive.
+- 2022-06-01 (upload) improve_your_trade_entries_within_fair_value_gaps_fvg#3 00:34 (stated) The midpoint entry misses some plays but lets you run a lower win percentage.
+- 2022-06-17 (upload) smart_money_divergences_smt_ict_concepts#9 02:39 (stated) Method 1: enter on the diverging index and risk the divergence lows/highs; if they are taken the divergence is invalid (that is the stop).
+- 2022-06-17 (upload) smart_money_divergences_smt_ict_concepts#10 03:09 (stated) The stop is at the lows because if price takes them it is no longer a divergence.
+- 2022-06-28 (upload) price_targets_ict_concepts#1 00:06 (stated) Targets come from two things: liquidity and imbalances.
+- 2022-06-28 (upload) price_targets_ict_concepts#6 01:46 (demonstrated) After the obvious equal-lows target, the next targets are further liquidity pools.
+- 2022-06-28 (upload) price_targets_ict_concepts#7 02:16 (demonstrated) Add to the position on retracements, risking the highs, and target the next lows and imbalances.
+- 2022-06-28 (upload) price_targets_ict_concepts#10 03:20 (stated) Using imbalances as targets means exiting a bit earlier but gives more targets than obvious liquidity alone.
+- 2022-07-07 (upload) what_is_liquidity_ict_concepts#10 03:46 (stated) Untaken relative equal highs and lows become targets for later.
+- 2022-07-24 livestream_20220724_stream_q_a_ict_concepts__ekue_pwime#12 24:20 (stated) You are technically invalidated only when the liquidity low behind the move is taken; choose between FVGs by the drawdown you accept and size down for the wider stop so account risk stays the same.
+- 2022-07-31 livestream_20220731_stream_q_a_ict_concepts_qgirecy2nz4#12 17:10 (stated) Take profit off structure (FVGs, previous lows/candles, discount imbalances), not fib extensions.
+- 2022-07-31 livestream_20220731_stream_q_a_ict_concepts_qgirecy2nz4#20 28:20 (stated) Risk on an eval: 4% per trade with 2R as the first scale-out.
+- 2022-07-31 livestream_20220731_stream_q_a_ict_concepts_qgirecy2nz4#26 35:10 (stated) If you missed the move and it did not retrace, don't chase it: there is no risk-to-reward left.
+- 2022-08-02 (upload) ote_optimal_trade_entry_ict_concepts#7 02:09 (stated) The same fib levels project where a retracement is likely to go, so they can be targets after a short.
+- 2022-08-07 livestream_20220807_stream_q_a_ict_concepts_h_xtsfk8np4#19 27:50 (stated) With 2:1 reward to risk a 50% win rate is profitable.
+- 2022-08-07 livestream_20220807_stream_q_a_ict_concepts_h_xtsfk8np4#22 41:40 (stated) Front-running before full displacement is possible with a tight stop, but the more convincing entry comes after the aggressive move, at OTE.
+- 2022-08-10 livestream_20220810_stream_q_a_with_trade_for_opportunity_ict_concepts_0bh_kkg2q6s#30 1:01:50 (stated) Stop: the short-term low/high beyond the entry or the candle that created the FVG.
+- 2022-08-10 livestream_20220810_stream_q_a_with_trade_for_opportunity_ict_concepts_0bh_kkg2q6s#32 39:00 (stated) [guest] Risk about 1% per trade, max three trades a day, at 2:1 R:R so a day is capped at -3%.
+- 2022-08-10 livestream_20220810_stream_q_a_with_trade_for_opportunity_ict_concepts_0bh_kkg2q6s#33 43:00 (stated) Size positions on micros so every loss is a fixed dollar amount (his eval: 4% of drawdown, $100) whatever the stop distance.
+- 2022-08-14 livestream_20220814_stream_q_a_with_am_trades_ict_concepts_cruftskoveo#14 21:10 (stated) Host: take the first partial at nearby liquidity and move the stop to break even, or trail the stop under each new higher low on a 1m/2m chart.
+- 2022-08-14 livestream_20220814_stream_q_a_with_am_trades_ict_concepts_cruftskoveo#15 22:20 (stated) [guest] Do not touch the stop until the first target is hit, even if structure shifts; then scale out and move to break even or slightly in profit.
+- 2022-08-14 livestream_20220814_stream_q_a_with_am_trades_ict_concepts_cruftskoveo#17 31:00 (stated) Do not enter a long at the high of the day/week without a prior run of liquidity; the risk to reward is poor.
+- 2022-08-14 livestream_20220814_stream_q_a_with_am_trades_ict_concepts_cruftskoveo#18 33:30 (stated) Risk a fixed dollar amount every trade and size contracts to the stop distance.
+- 2022-08-21 livestream_20220821_8_14_22_mmxm_live_with_niper_ict_concepts_umlwrlxd_v8#5 09:20 (stated) [guest] After the second entry, trail the first entry's stop into profit to where the second entry's stop is.
+- 2022-08-21 livestream_20220821_8_14_22_mmxm_live_with_niper_ict_concepts_umlwrlxd_v8#14 34:00 (stated) Risk the same fixed amount (around 1%) on every trade and stop when wrong.
+- 2022-08-21 livestream_20220821_8_14_22_mmxm_live_with_niper_ict_concepts_umlwrlxd_v8#16 36:20 (stated) [guest] Take the first partial at 2R, then move the stop to break-even and leave about 20% for the final target.
+- 2022-08-21 livestream_20220821_8_14_22_mmxm_live_with_niper_ict_concepts_umlwrlxd_v8#26 59:00 (stated) [guest] Cap the daily loss and aim for one trade per session.
+- 2022-08-28 livestream_20220828_ict_orderflow_q_a_with_holyangelbruv_8z2abzljunu#19 55:00 (stated) Win rate is meaningless without risk-to-reward and consistent position sizing.
+- 2022-08-28 livestream_20220828_ict_orderflow_q_a_with_holyangelbruv_8z2abzljunu#20 11:00 (stated) Usual risk-to-reward is over 2R, moving the stop to break-even at 2R (speaker not certain).
+- 2022-09-04 livestream_20220904_q_a_live_with_alex_s_options_ict_strat_v8p6lniisvc#14 09:00 (stated) [guest] The stop goes above the high left by the displacement, which should not be retaken; that is the widest risk he takes.
+- 2022-09-04 livestream_20220904_q_a_live_with_alex_s_options_ict_strat_v8p6lniisvc#15 13:50 (stated) [guest] T1 is the first lower low: take about 20% off and move the stop to breakeven; runners go to the higher-timeframe target (T2).
+- 2022-09-04 livestream_20220904_q_a_live_with_alex_s_options_ict_strat_v8p6lniisvc#16 12:20 (stated) [guest] Size positions by stop distance (e.g. 10-point risk = 2 ES, 3.5-4 point risk = 4 ES).
+- 2022-09-04 livestream_20220904_q_a_live_with_alex_s_options_ict_strat_v8p6lniisvc#17 11:00 (stated) [guest] With 1:10 targets a very low win rate is acceptable; one winner covers many losers.
+- 2022-09-04 livestream_20220904_q_a_live_with_alex_s_options_ict_strat_v8p6lniisvc#36 1:08:40 (stated) [guest] 0DTE options: choose a strike that is in the money before the target, pay less than half the intrinsic value at target, take 50% off at +100% and let the rest run.
+- 2022-09-11 livestream_20220911_fractalizing_entries_q_a_with_ben_ict_concepts_yrmkkr4coju#4 14:20 (demonstrated) [guest] Zooming into the HTF point of interest for a lower-timeframe entry gives the same target with a far smaller stop: higher R and less time in the market.
+- 2022-09-11 livestream_20220911_fractalizing_entries_q_a_with_ben_ict_concepts_yrmkkr4coju#12 26:00 (stated) [guest] A 1:1 fixed R needs >50% win rate to break even; he prefers 3R-3.5R and tests R choices on 20-50 logged trades.
+- 2022-09-11 livestream_20220911_fractalizing_entries_q_a_with_ben_ict_concepts_yrmkkr4coju#25 1:06:50 (stated) [guest] Win rate excludes break-evens (he scales in and trails); don't confuse win rate with strike rate.
+- 2022-09-14 ict_trade_example_15_second_entry#4 00:28 (demonstrated) Stop just below the swept low.
+- 2022-09-14 ict_trade_example_15_second_entry#5 00:28 (demonstrated) The planned trade is about 3R (TradingView position tool: stop 3.50 pts, target 10.75 pts, R:R 3.07).
+- 2022-09-14 ict_trade_example_15_second_entry#8 01:05 (demonstrated) Scale out with several limit targets (multiple "Target" fills of 1 contract) while keeping a protective stop on the rest.
+- 2022-09-20 (upload) intraday_bias_ict_concepts#4 01:05 (demonstrated) Short example: risk the high, target the lows identified as structure.
+- 2022-09-20 (upload) intraday_bias_ict_concepts#6 01:38 (stated) Long targets: obvious liquidity, or an FVG up in premium.
+- 2022-09-20 (upload) intraday_bias_ict_concepts#10 02:35 (stated) Target trendline / resting liquidity, especially with large FVGs below.
+- 2022-09-23 livestream_20220923_stream_q_a_giveaway_winners_announced_am_traders_0yzqr8hpyeu#8 21:10 (demonstrated) Entering on a lower timeframe gives a tighter stop and better R:R for the same target (2.5R vs 1.6R in his example).
+- 2022-09-23 livestream_20220923_stream_q_a_giveaway_winners_announced_am_traders_0yzqr8hpyeu#12 26:50 (stated) If you miss the move, stay out rather than chase.
+- 2022-09-27 (upload) find_lower_time_frame_entries_using_bias_ict_concepts#8 02:57 (demonstrated) Entry on the FVG or the order block; risk on the high; first targets internal range liquidity / OTE of the leg, larger targets the lows or equal lows.
+- 2022-09-27 (upload) find_lower_time_frame_entries_using_bias_ict_concepts#14 03:58 (stated) Partials optional (e.g. take 2R off).
+- 2022-10-11 (upload) build_an_entry_model_ict_concepts#13 04:43 (stated) Bearish BPR: short at the overlap, risk the high or the bodies of that high, target new lows.
+- 2022-10-18 (upload) higher_time_frame_points_of_interest_ict_concepts#12 03:11 (stated) After an aggressive move down and a retrace into premium, the obvious target is the lows.
+- 2022-10-26 (upload) lower_time_frame_entries_using_htf_poi_ict_concepts#12 03:55 (stated) Repeat the displacement-range / discount entry until the HTF objective (previous highs) is reached.
+- 2022-10-26 (upload) lower_time_frame_entries_using_htf_poi_ict_concepts#19 05:55 (stated) 15s scalps against the bias are riskier; he took a small OTE short, left some at break-even.
+- 2023-01-09 (upload) draw_on_liquidity_dol_ict_concepts#11 02:03 (demonstrated) After displacement up, the draw is the nearby high and the FVG above.
+- 2023-01-12 livestream_20230112_back_testing_live_session_fx_replay_8r6pxpeldiu#1 1:11:10 (stated) Keep the higher-timeframe draw on liquidity as the target and use a lower-timeframe entry to shrink risk; R grows by cutting risk, not by stretching the target.
+- 2023-01-18 draw_on_liquidity_example_1_18_23_ict_concepts#7 02:06 (stated) After the equal lows are taken, the next PD array becomes the target.
+- 2023-02-04 livestream_20230204_live_q_a_review_with_am_trades_xcvqikdea9w#14 20:20 (demonstrated) [guest] Enter a PM short only after distribution shows (support becomes resistance, order block forms); entry on a trade below the order block, stop above the high, targets at -2/-2.5 deviations.
+- 2023-02-04 livestream_20230204_live_q_a_review_with_am_trades_xcvqikdea9w#17 25:40 (stated) Once you know where price is likely heading, entries are flexible; the job is managing risk.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#1 00:07 (stated) The method is AM Trades' version of standard deviation projections.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#3 00:36 (stated) The manipulation leg is the move that took those highs; draw the fib from high to low over it and project targets.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#4 00:36 (stated) Targets: the 2-2.5 standard deviations, then the 4th.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#5 01:06 (stated) Take profit at areas of liquidity that line up with those projection levels.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#8 02:40 (stated) Draw from the high of the manipulation leg to its low and project.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#11 04:16 (stated) A projection level (2.5) that lines up with a high is confluence that the high will be reached.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#13 05:25 (stated) For a bullish leg, draw the fib from low to high.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#16 08:10 (stated) Target buy-side liquidity or the standard deviation target.
+- 2023-03-30 (upload) scalping_made_simple_building_a_scalping_model#1 00:09 (stated) A strategy needs entry criteria, stop placement, and a profit / break-even rule.
+- 2023-03-30 (upload) scalping_made_simple_building_a_scalping_model#3 00:38 (stated) Stop always at the stop-hunt extreme; first profit or break even after price breaks the low created for the OTE leg.
+- 2023-03-30 (upload) scalping_made_simple_building_a_scalping_model#10 03:46 (demonstrated) Bullish version: stop on the swept low, first TP / break even at the high of the leg; full target the highs or premium of the range.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#4 01:32 (stated) Before the trading session, mark LRL as the target; price expands through it more easily than through HRL.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#7 02:32 (stated) Among stacked lows, the LRL is the priority target, with further lows beyond as an extension.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#9 03:06 (stated) Sequence: FVG reaction, then the LRL below, then the larger draw on liquidity.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#14 05:28 (stated) When targeting a HRL low, target the failure swing above it or the CE of its wick instead.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#18 08:28 (stated) Exit at the failure swing / equal lows rather than holding for HRL; it saves time.
+- 2023-05-09 (upload) next_day_model_the_mmxm_trader_ict_concepts#13 03:30 (stated) Stacked lows and a candle with no wick are targets.
+- 2023-05-29 (upload) a_ict_entry_checklist_ict_concepts#11 03:32-04:02, 09:58 (demonstrated) Stop below the swing low (or order block low); first partial at an intermediate level, then target buy side liquidity; break-even is optional.
+- 2023-05-29 (upload) a_ict_entry_checklist_ict_concepts#16 09:58 (demonstrated) Target the initial highs of the morning, then let runners run.
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#16 06:53 (demonstrated) Equal lows from the London session are the target after the NY reversal.
+- 2023-07-07 (upload) discount_premium_ict_concepts#5 01:34 (stated) Discount/premium is used because it shows where R:R is more favorable; entering at equilibrium with stop/target at the extremes is 1R.
+- 2023-07-17 (upload) market_structure_shift_ict_concepts#13 05:18 (demonstrated) After the shift in the London-to-New York session, target London / overnight lows.
+- 2023-07-30 livestream_20230730_live_q_a_with_am_trades_weekly_profile_wgyde_h84cs#18 23:40 (stated) [guest] Trade expansion because it is the easiest to manage.
+- 2023-07-30 livestream_20230730_live_q_a_with_am_trades_weekly_profile_wgyde_h84cs#23 30:50 (stated) Win rate depends on risk to reward, not strategy; minimum 2R.
+- 2023-07-30 livestream_20230730_live_q_a_with_am_trades_weekly_profile_wgyde_h84cs#29 39:00 (stated) The entry model is the least important part; risk management matters most. Preferred entry context: displacement, then failure swings.
+- 2023-07-30 livestream_20230730_live_q_a_with_am_trades_weekly_profile_wgyde_h84cs#31 42:10 (stated) Risk a fixed dollar amount every trade: stop from the chart, position size adjusted to the fixed risk.
+- 2023-07-30 livestream_20230730_live_q_a_with_am_trades_weekly_profile_wgyde_h84cs#32 45:20 (stated) Do not cut position size after losses: with fixed 2R a system is profitable at 34% win rate, and cutting size after a loss turns the next win into breakeven instead of +1R. [guest] Only reduce when not performing mentally or deep in drawdown.
+- 2023-07-30 livestream_20230730_live_q_a_with_am_trades_weekly_profile_wgyde_h84cs#36 53:30 (stated) [guest] Once the max-expansion deviation is reached (here on Thursday), stop: he did not trade Friday because little more expansion was expected and price turned choppy.
+- 2023-08-01 (upload) ict_daily_bias_the_only_video_you_will_ever_need#26 15:22 (demonstrated) Stop goes on the high that formed the sweep; target fixed 2R or the PDL / swing-point liquidity.
+- 2023-08-08 (upload) intraday_bias_simplified_ict_concepts#22 22:52 (stated) Stop for an FVG entry goes at least below the mean threshold of the order block so a return to the order block does not stop you out.
+- 2023-08-08 (upload) intraday_bias_simplified_ict_concepts#23 22:52 (stated) He requires at least 2R personally; if the draw does not give 2R, the target must be set further.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#8 02:48 (demonstrated) Stop goes on the sweep high/low; target is the other side of the previous hour's candle.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#11 05:34 (demonstrated) Risk 1% per trade in the backtest.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#12 06:09 (stated) Move the stop to break-even once the trade reaches 3R.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#15 14:33 (demonstrated) Skip setups where the stop would need to sit above nearby equal highs and the price action has no clear displacement.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#21 21:02 (stated) When the target is only about 3R, there is no need to project a fib for the break-even point.
+- 2023-08-29 (upload) top_down_analysis_daily_bias_to_entries_ict_concepts#6 02:44 (stated) Mark previous day high and low and the nearby daily order block (expected to resist if reached).
+- 2023-08-29 (upload) top_down_analysis_daily_bias_to_entries_ict_concepts#11 04:50 (stated) Mark a minimum 2R before leaving runners.
+- 2023-09-05 (upload) my_favorite_reversal_pattern_orderblocks_ict_concepts#10 03:44 (demonstrated) After displacement out of the order block, look to the opposite buy-side / sell-side liquidity as the draw.
+- 2023-09-05 (upload) my_favorite_reversal_pattern_orderblocks_ict_concepts#18 08:01 (stated) Project the manipulation leg; expect 2-2.5 standard deviations, then the 4th.
+- 2023-09-05 (upload) my_favorite_reversal_pattern_orderblocks_ict_concepts#21 09:21 (demonstrated) Overlapping projections from successive manipulation legs mark the target area.
+- 2023-09-12 (upload) optimal_trade_entry_ote_ict_concepts#13 09:14 (demonstrated) Stop on the high of the entry swing; target liquidity built before the session (equal lows, London session lows).
+- 2023-09-12 (upload) optimal_trade_entry_ote_ict_concepts#14 10:12-10:42 (demonstrated) Project the sweep-to-displacement leg; a 2-2.5 standard deviation zone lining up with old liquidity adds target conviction.
+- 2023-09-19 (upload) breaker_block_fvg_entry_model_ict_concepts#11 03:33 (stated) Stop options: on the swing low (wider) or below the breaker and FVG (tighter, higher R).
+- 2023-09-19 (upload) breaker_block_fvg_entry_model_ict_concepts#12 04:31 (stated) Project the manipulation leg and anticipate the 2-2.5 area before a retracement or reversal as added confluence.
+- 2023-09-19 (upload) breaker_block_fvg_entry_model_ict_concepts#14 05:32 (stated) If the stop at the swing high is too large, place it just above the breaker.
+- 2023-09-19 (upload) breaker_block_fvg_entry_model_ict_concepts#15 05:32 (stated) If price reaches the target before tagging the entry, do not chase; you were left behind.
+- 2023-09-24 livestream_20230924_live_with_day_trading_rauf_preparing_for_a_new_week_qftfd09vv3e#14 26:40 (stated) [guest] Place stops beyond intermediate-term or long-term highs/lows; stops at short-term highs/lows are riskier.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#8 02:27 (stated) Minimum 1:2 R preferred; take partials or profit at nearby equal highs.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#17 06:33 (stated) Taking profit at failure swings can save sitting through drawdown, at a small cost.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#21 08:04 (stated) When trying to catch the daily range, put the stop on the high of the day rather than the local high.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#25 10:58 (stated) If the draw gives under his RR preference (1.14R), project standard deviations for targets.
+- 2023-10-17 (upload) important_liquidity_levels_draw_on_liquidity_ict#19 08:15 (demonstrated) Project the London manipulation leg and use the 2-2.5 and 4-4.5 standard deviation areas as targets.
+- 2023-10-24 (upload) the_easiest_draw_on_liquidity_dol_daily_bias_ict#8 02:54 (stated) Answering that gives the draw on liquidity and target; then frame an entry at a lower-timeframe POI toward it.
+- 2023-10-24 (upload) the_easiest_draw_on_liquidity_dol_daily_bias_ict#13 05:13 (stated) In live trading he also targets extensions beyond PDH/PDL, not only the level itself.
+- 2023-11-07 (upload) standard_deviation_projections_ict_concepts#7 04:05 (stated) If price displaces and closes through -2 to -2.5, target the -4 (max expansion).
+- 2023-11-07 (upload) standard_deviation_projections_ict_concepts#10 05:04 (stated) Liquidity resting just before the -2 to -2.5 zone is the "low hanging fruit" first target.
+- 2023-11-07 (upload) standard_deviation_projections_ict_concepts#15 10:19-10:43 (stated) You can mark the consequent encroachment of the -2 to -2.5 zone as a target.
+- 2023-11-07 (upload) standard_deviation_projections_ict_concepts#20 12:23 (stated) London low resting just above -2 SD on the LTF projection is the target (low-hanging fruit).
+- 2023-11-21 (upload) change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts#9 03:11 (stated) He prefers a minimum 2R; if the liquidity target gives less, project the manipulation leg and use the -2 standard deviation.
+- 2023-11-21 (upload) change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts#13 05:20 (stated) Project the manipulation leg (high to low) and target the -2 to -2.5 standard deviation area.
+- 2023-11-21 (upload) change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts#17 08:27 (stated) First entry: at the CISD or on its order-block retest, stop on the manipulation extreme that swept.
+- 2023-11-21 (upload) change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts#21 10:18 (stated) Use liquidity sitting in the projection zone (e.g. an old high in the -2 to -2.5) as the first target.
+- 2023-11-21 (upload) change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts#24 13:30 (stated) With a CISD-confirmed box entry, the stop can go either at the CISD swing (if a sweep occurred) or at the manipulation extreme.
+- 2023-11-21 (upload) change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts#25 14:40 (demonstrated) A target where an FVG lines up with a standard deviation level is preferred confluence.
+- 2023-11-28 (upload) internal_external_liquidity_daily_bias_ict_concepts#16 06:21 (stated) Plan ahead: after reaching IRL, mark the next ERL that the continued trend would target.
+- 2023-11-28 (upload) internal_external_liquidity_daily_bias_ict_concepts#20 09:03 (stated) Target the 4h ERL and optionally leave runners to the weekly ERL.
+- 2023-12-05 (upload) inversion_fair_value_gaps_ifvg_ict_concepts#13 06:03 (stated) On the return into the inversion, stop on the low; target the other side of the range for partials or full; want the CE respected.
+- 2023-12-26 (upload) order_blocks_simplified_ict_concepts#20 12:05 (stated) Stop goes on a swing high/low or the other end of the OB; the OB end gives more RR but can be wicked while the trade is still valid.
+- 2023-12-26 (upload) order_blocks_simplified_ict_concepts#23 14:03 (stated) Keep the stop at the swing low and move the entry closer to invalidation, not the stop closer to the entry.
+- 2024-01-02 (upload) breaker_blocks_simplified_ict_concepts#9 04:21 (stated) Stop goes either beyond the breaker block and its FVG, or at the swing low/high.
+- 2024-01-02 (upload) breaker_blocks_simplified_ict_concepts#11 05:21 (stated) Stop choice has trade-offs; the swing stop's 2R just missed and stopped out while the breaker stop hit 2R; it is the trader's choice.
+- 2024-01-02 (upload) breaker_blocks_simplified_ict_concepts#13 06:43 (demonstrated) A stop just below the breaker low gives a much nearer 2R than a stop at the swing low.
+- 2024-01-02 (upload) breaker_blocks_simplified_ict_concepts#17 08:24 (demonstrated) Targets can be 2R or the projection levels, which gave a 4R trade in the example.
+- 2024-01-02 (upload) breaker_blocks_simplified_ict_concepts#21 13:00 (stated) Losses are inevitable; a valid unicorn after a sell-side sweep can still stop out.
+- 2024-01-11 cpi_gold_trade_review_ict_market_maker_sell_model_mmxm#13 05:05 (stated) He took 2R at previous day low rather than 3R to the total draw on liquidity.
+- 2024-01-11 cpi_gold_trade_review_ict_market_maker_sell_model_mmxm#14 05:20 (stated) Keep the stop at the high where the trade is invalidated.
+- 2024-01-11 cpi_gold_trade_review_ict_market_maker_sell_model_mmxm#15 06:16 (stated) Do not move the stop to break-even; break-even is not the invalidation, and doing so here would have stopped him out before the run.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#1 08:20 (stated) Fund trading from a day job (plus extra work); the day job should cover all bills and savings so losses never touch living money.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#2 16:55 (stated) With a 1:2 R plan you only need about a one-in-three hit rate, which removes the fear that drives early stop moves.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#24 1:19:07 (stated) Place entry, stop and 2R take-profit as resting orders up front; the only outcomes are win or loss.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#25 1:19:38 (stated) No break-even stop, no trailing, no trimming; wait for validation (TP) or invalidation (stop).
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#28 1:24:12 (stated) Max one trade per day and two per week, win or lose.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#29 1:25:17 (stated) Risk less than 1% of the account per trade, aiming 1:2 RR.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#30 1:29:43 (stated) Stop for a long always goes below the breaker block.
+- 2024-01-29 (upload) smt_divergence_ict_concepts#14 09:44 (stated) In volatile/news conditions, place the stop above the high that ran another high (high-resistance liquidity) rather than just above the breaker.
+- 2024-01-29 (upload) smt_divergence_ict_concepts#19 11:50 (stated) He prefers at least 2R; if the CISD entry gives 1.65R he moves the entry to the FVG to get 2R.
+- 2024-02-18 (upload) jokerszn_daily_orderflow_ict_daily_bias#25 33:54 (stated) Invalidation: a close above the H1 BPR ends the short idea and returns him to a neutral bias.
+- 2024-02-18 (upload) jokerszn_daily_orderflow_ict_daily_bias#26 35:55 (stated) Around news, place the stop wider (at the EQ of the daily wick) instead of just beyond the H1 POI, because news can wick through.
+- 2024-02-18 (upload) jokerszn_daily_orderflow_ict_daily_bias#30 41:13, 41:52, 46:05 (stated) For London he times entries on M15 or M5 and reads them exactly like the daily (dealing range, PD arrays, closes); add a position when the next opposing PD array is closed through, and move the first trade to breakeven then.
+- 2024-04-18 (upload) niper_internal_external_liquidity_ict_daily_bias#15 10:36 (stated) Execute after candles close above swing highs off the IRL/ERL reaction; stop rests at the low that tagged the internal or external range.
+- 2024-04-18 (upload) niper_internal_external_liquidity_ict_daily_bias#20 25:28-25:59 (demonstrated) Targets: the next ERL / swing high, or 2-2.5 standard deviations of the swing, giving about 1:2-1:2.5 R.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#8 04:23 (demonstrated) Enter at the start of the FVG but put the stop so price can trade into a lower FVG (stop at that FVG candle's low).
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#9 04:49 (stated) The model targets a fixed 2R even when a larger R is available; runners are optional.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#10 05:20 (stated) Moving the stop to breakeven on runners would have been stopped out before the daily FVG; holding the original stop would have worked.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#11 06:50 (stated) Stop goes over opposing candles; if the entry timeframe is messy, check one timeframe higher and place the stop above the inversion there.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#12 07:21 (demonstrated) A tighter alternative stop is the FVG candle's high (more aggressive than the HTF-inversion stop).
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#22 14:57 (stated) A 2R target beyond the nearest high is acceptable when trading with HTF order flow.
+- 2024-06-07 (upload) the_twitter_model_the_mmxm_trader_ict_concepts#6 02:59 (stated) Choose the stop that still gives a 2R minimum to the hourly FVG target.
+- 2024-06-07 (upload) the_twitter_model_the_mmxm_trader_ict_concepts#14 08:15-08:44 (demonstrated) An up-close series into the POI that sweeps liquidity becomes a bearish order block once closed below; stop above the opposing candles.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#4 01:34 (stated) Target low resistance liquidity; keep high resistance liquidity behind the stop.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#18 08:54 (demonstrated) After sweeping lows, stacked lower highs become the target.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#21 10:24 (demonstrated) Entry at the order block, stop on the HRL, take profit at the highs (failure swings).
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#22 10:54 (stated) Do not trust a low for invalidation unless price closed over its level or it was swept (HRL).
+- 2024-08-16 (upload) nickdoesfutures_unicorn_model_experiences_with_ict#17 19:00-19:20 (stated) First/last day of month or quarter: still tradable but be more selective and risk less (manipulation, power of three).
+- 2024-08-16 (upload) nickdoesfutures_unicorn_model_experiences_with_ict#19 19:29-19:35, 22:38-22:44 (stated) Stop at the top/bottom of the FVG candle or of the breaker; rarely at the swing low because it hurts R:R.
+- 2024-08-16 (upload) nickdoesfutures_unicorn_model_experiences_with_ict#20 19:34-19:46, 22:54-23:12 (stated) Take 80% off at 2R and the rest at 3R (sometimes all at 2R; occasionally move to breakeven after 2R and hold a runner to e.g. equal highs).
+- 2024-08-16 (upload) nickdoesfutures_unicorn_model_experiences_with_ict#25 30:41-30:56 (stated) Take 0-3 trades per week; after two winners stop for the week.
+- 2024-08-26 (upload) ict_daily_profile_london_reversal_new_york_continuation#14 07:11-07:24 (stated) Enter when price closes below the opposing run's candles (order block); stop on the opposing run; target 2R.
+- 2024-09-07 (upload) ict_daily_profile_new_york_reversal#8 02:45 (stated) Entry after the close over; stop on the low or, for better risk-to-reward to distant failure swings, at the bottom of the order block.
+- 2024-09-07 (upload) ict_daily_profile_new_york_reversal#12 04:54 (stated) Targets are the failure swings (London and Asia highs); scale partials anywhere as long as above 2R, e.g. at midnight open.
+- 2024-09-07 (upload) ict_daily_profile_new_york_reversal#17 06:23 (demonstrated) Stop on the high or above the order block; target failure swings (example 2.65R).
+- 2024-09-14 (upload) the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models#12 09:31 (stated) Stop loss goes below the low that was raided (long); above the dealing range high (short).
+- 2024-09-14 (upload) the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models#13 09:39 (stated) Move to breakeven only after a new range forms (price makes a new leg that takes the prior range high), never earlier.
+- 2024-09-14 (upload) the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models#21 16:17 (stated) Hold for higher-timeframe targets even if the in-range RR looks under 2R.
+- 2024-09-14 (upload) the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models#24 25:59 (demonstrated) When price raids external range liquidity in profit, take a partial (half) and move to breakeven.
+- 2024-09-29 livestream_20240929_ttrades_sunday_session_live_q_a_u8bnmaih_ha#27 55:40 (stated) Trailing the stop to each new opposing candle can be too tight (stopped before the target) but avoids sitting through a reversal.
+- 2024-10-06 livestream_20241006_ttrades_sunday_session_live_q_a_r7yw6ou1lds#9 17:30 (stated) Avoid trading the day after a very large range day.
+- 2024-10-06 livestream_20241006_ttrades_sunday_session_live_q_a_r7yw6ou1lds#10 17:30 (stated) He takes zero to four trades a week and does not trade every day.
+- 2024-10-06 livestream_20241006_ttrades_sunday_session_live_q_a_r7yw6ou1lds#22 33:50 (stated) Enter at market on the close of the confirming candle rather than waiting for a limit retest of the order block, if R:R allows.
+- 2024-10-06 livestream_20241006_ttrades_sunday_session_live_q_a_r7yw6ou1lds#28 47:40 (stated) Manage the position only after 2R.
+- 2024-10-19 (upload) mara_trade_review_h1_market_maker_buy_model_mmxm#4 01:46 (stated) Target the failure swings (equal highs) on the HTF range.
+- 2024-11-02 (upload) trading_irl_erl_with_order_blocks_ict_concepts#7 02:11 (stated) Target about 2R, and the whole sequence must happen within a kill zone.
+- 2024-11-02 (upload) trading_irl_erl_with_order_blocks_ict_concepts#12 05:16 (stated) If the swing-low stop does not give 2R, extend the target or move the invalidation.
+- 2024-11-02 (upload) trading_irl_erl_with_order_blocks_ict_concepts#13 05:21 (stated) Tighter invalidation: price should not disrespect 0.5 of the down-close candle body (order block); stop there, like a breaker-block stop.
+- 2024-11-02 (upload) trading_irl_erl_with_order_blocks_ict_concepts#18 08:06 (stated) Once the LTF ERL (buy-side) is already taken, avoid further longs unless the HTF narrative is strong; next draw may be IRL or the other side of the range.
+- 2024-11-02 (upload) trading_irl_erl_with_order_blocks_ict_concepts#24 13:36 (stated) Manage: take 2R, or hold runners toward the ERL.
+- 2024-11-16 (upload) master_candlestick_wicks_the_key_to_catching_reversals#15 11:00 (demonstrated) Entry on the confirming close, stop on the high, target 2R.
+- 2024-11-29 (upload) intro_to_ttrades_fractal_model_indicator_settings#14 11:44-12:07 (stated) Projections (targets) are drawn from the series of bodies of the CISD; defaults are negative standard-deviation levels and custom ones can be appended comma-separated.
+- 2025-01-11 (upload) timeframe_alignment_how_to_align_timeframes_for_expansion#10 06:00 (demonstrated) Target 2R on the entry timeframe.
+- 2025-01-11 (upload) timeframe_alignment_how_to_align_timeframes_for_expansion#22 15:26 (stated) With aligned timeframes, draw runner targets from the structure / bias timeframe (hourly short-term low, daily consolidation low).
+- 2025-01-25 (upload) trade_like_ttrades_top_down_analysis#14 08:54-10:13 (demonstrated) Targets come from the structure timeframe: equal lows, previous lows (indicator), which also lined up with indicator standard deviations.
+- 2025-01-25 (upload) trade_like_ttrades_top_down_analysis#20 14:49-15:09 (stated) Stop at least beyond the candle bodies or at the low; first target 2R, runners to HTF targets.
+- 2025-02-08 (upload) trade_continuations_using_order_blocks#4 01:09 (stated) The continuation stop goes on the new swing low instead of the reversal low, improving RR.
+- 2025-02-08 (upload) trade_continuations_using_order_blocks#14 08:06 (stated) Target 2R or the nearest high/low draw.
+- 2025-02-08 (upload) trade_continuations_using_order_blocks#16 09:13 (stated) When the manipulation move is so large that the standard deviation projections do not make sense inside the range, target the PDL/PDH instead.
+- 2025-02-15 (upload) dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias#15 12:23-12:43; 14:41-14:52 (stated (guest)) Target the "low hanging fruit" (e.g. Asia high, NY open, London low); as a funded trader take 2-2.5R and stop.
+- 2025-02-15 (upload) dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias#20 20:09-20:28 (stated (guest)) Some trades are losses or long "marathon" holds with drawdown and a second entry.
+- 2025-02-22 (upload) equilibrium_for_expansions#11 05:38-05:47 (stated) Each day, focus on finding the invalidation and the PD arrays expected to support in the respected half.
+- 2025-03-08 (upload) trade_continuations_using_breaker_blocks#13 04:45-04:52 (stated) Stop either on the swing low or the other side of the breaker.
+- 2025-03-08 (upload) trade_continuations_using_breaker_blocks#20 06:24-06:27; 04:52 (stated) Targets: 2R or the HTF liquidity (lows/highs to the left, range high).
+- 2025-03-13 ap_use_market_structure_fibonacci_levels_for_sniper_entries#5 11:40 (stated) Entry 1 exits: 0.41/0.295 when the HTF is consolidating; a new high/low when the market is expanding.
+- 2025-03-22 (upload) ttrades_fractal_model_inversion_intraday_strategy#7 02:44 (stated) Failure swings are generally a good target to trade back to.
+- 2025-03-22 (upload) ttrades_fractal_model_inversion_intraday_strategy#8 02:52 (stated) When the range is already large, do not expect a large wick and further expansion; target liquidity around the daily open instead.
+- 2025-03-22 (upload) ttrades_fractal_model_inversion_intraday_strategy#13 04:30 (stated) Prefer the stop at the swing low rather than waiting for another close; target 2R or hold for HTF targets.
+- 2025-03-22 (upload) ttrades_fractal_model_inversion_intraday_strategy#14 05:11 (stated) Once the inversion closes, expect the wick to hold, giving invalidation for the whole HTF candle.
+- 2025-03-22 (upload) ttrades_fractal_model_inversion_intraday_strategy#15 05:18 (stated) Expansion candles usually close at their high or low, so a time-based exit at the HTF close (e.g. 11:00) is valid for runners.
+- 2025-03-22 (upload) ttrades_fractal_model_inversion_intraday_strategy#23 15:10 (stated) Later entry on a further CISD / order block needs a stop at least on the body and more range for 2R.
+- 2025-03-22 (upload) ttrades_fractal_model_inversion_intraday_strategy#25 16:09 (stated) A large T-spot makes a positional entry poor risk-to-reward; wait for price to come back into it.
+- 2025-03-22 (upload) ttrades_fractal_model_inversion_intraday_strategy#26 16:33 (stated) Do not trade if price runs all the way to the target highs before coming back; the target must stay open.
+- 2025-04-05 (upload) ttrades_fractal_model_trading_candle_4#10 03:01 (stated) Day-4 bullish plan: open, make the low in the upper half of the previous candle, then trade to the previous day high, the swing point to the left and beyond; invalidation is trading below that low area.
+- 2025-04-05 (upload) ttrades_fractal_model_trading_candle_4#23 10:19 (demonstrated) Stop can be on the body low instead of the wick low; target 2R.
+- 2025-04-05 (upload) ttrades_fractal_model_trading_candle_4#29 15:48 (stated) Fractal: use 0.5 of the HTF candle as the line the LTF continuation must respect; put the stop above the FVG that may be retested inside it.
+- 2025-04-18 gxtradez_phases_of_price_profiles_for_expansion#21 20:20 (stated) If the day forms a large opposing wick (reversal candle), do not expect it to expand past the open; cut targets to the daily range, i.e. current-day session highs/lows.
+- 2025-05-17 (upload) protected_swings_understanding_trend_and_invalidations#20 13:05 (stated) Do not enter with the stop on a distant protected high; wait for a new protected swing closer to price for better R:R.
+- 2025-05-17 (upload) protected_swings_understanding_trend_and_invalidations#22 14:05 (stated) The protected swing is the invalidation; enter close to it for good risk-to-reward.
+- 2025-06-28 (upload) how_to_trade_expansion_phases_of_price#16 10:12 (stated) Three days of expansion into an objective: do not expect more expansion; let another day form and expect consolidation, retracement or reversal.
+- 2025-07-12 (upload) how_to_trade_retracement_phases_of_price#18 9:34 (stated) When the entry candle has no wick, put the stop on the wick of the swing rather than on the body; target 2R toward failure swings on the left.
+- 2025-07-12 (upload) how_to_trade_retracement_phases_of_price#22 14:26 (demonstrated) Trail the stop to each new protected swing as the trend makes new ones.
+- 2025-07-19 (upload) fractal_model_fundamentals#16 09:30 (demonstrated) Stop on the protected low (e.g. the low out of a fair value gap); target 2R or the -1 standard deviation of the manipulation leg.
+- 2025-07-19 (upload) fractal_model_fundamentals#19 13:57 (stated) Best R:R comes from a lower-timeframe entry with a higher-timeframe target (e.g. hourly / previous day high instead of 5m highs: 5.63R vs 2R).
+- 2025-07-19 (upload) fractal_model_fundamentals#22 18:01 (stated) Stop can sit above the LTF high if price should not trade above 50% of the opposing candles, or allow extra room for a sweep.
+- 2025-07-19 (upload) fractal_model_fundamentals#24 19:08 (stated) Minimum target 2R; with 2R, a win rate over about 34% is breakeven or profitable.
+- 2025-07-26 (upload) how_to_trade_reversal_phases_of_price#18 11:38 (stated) After a relevant high is taken and a CISD forms, target back into the range: through the daily open, internal liquidity such as an FVG.
+- 2025-08-09 (upload) the_phases_of_price_action_a_blueprint_for_market_movement#14 11:14-11:20 (stated) After a reversal, the long idea is invalidated if a new expansion-met-with-expansion takes out the reversal low.
+- 2025-08-09 (upload) the_phases_of_price_action_a_blueprint_for_market_movement#24 19:22-19:56 (stated) Stop goes on the protected swing / reversal high; minimum target 2R, optionally extended to previous day low(s).
+- 2025-08-09 (upload) the_phases_of_price_action_a_blueprint_for_market_movement#25 24:28-24:45 (stated) When the stop on a protected swing gives poor R, he may measure risk from the candle bodies he does not expect price to exceed; 2R is the minimum requirement for a trade.
+- 2025-08-13 (upload) ttrades_top_down_chart_lessons_1#20 06:50 (stated) Targets for continuation are the higher-timeframe lows: previous day low and the prior day's low.
+- 2025-08-13 (upload) ttrades_top_down_chart_lessons_1#22 07:48 (stated) Entry on a newly formed protected swing: stop on the high, target 2R; stop can sit nearer if price should not trade above 50% of the opposing candle.
+- 2025-08-13 (upload) ttrades_top_down_chart_lessons_1#24 10:20 (stated) When the entry cannot reach 2R to the current low, it is still acceptable if the target is the higher-timeframe objectives.
+- 2025-08-16 (upload) ttrades_fractal_model_trading_candle_2#6 02:21 (stated) Small-wick C2 targets: previous candle's low and standard-deviation projections; large-wick C2 targets: the opening price and current candle's low.
+- 2025-08-16 (upload) ttrades_fractal_model_trading_candle_2#9 03:51 (stated) If the daily C2 wick is large, either target back to the daily open or trade the next day's continuation instead.
+- 2025-08-16 (upload) ttrades_fractal_model_trading_candle_2#12 04:58 (stated) Daily C2 targets include the previous day's EQ and previous-day highs/lows as liquidity.
+- 2025-08-16 (upload) ttrades_fractal_model_trading_candle_2#15 07:18 (stated) A large intraday wick over the previous day high (no shallow sweep) means you adjust targets to the daily open and session lows, not full expansion.
+- 2025-08-16 (upload) ttrades_fractal_model_trading_candle_2#26 16:24 (stated) For these late reversals, the final target is the session lows and the daily open; anything beyond is extra.
+- 2025-09-01 (upload) ttrades_top_down_chart_lessons_2#16 07:46-07:59 (stated) Keep seeking continuations until R:R makes sense; do not extend the target to force R:R, price may reverse at that level.
+- 2025-09-01 (upload) ttrades_top_down_chart_lessons_2#20 08:56-10:05 (demonstrated) Trade management: partial at 2R, partial at intraday highs, trail the rest.
+- 2025-09-01 (upload) ttrades_top_down_chart_lessons_2#22 11:36-11:44 (stated) Take profit at intraday highs because if the day does not expand, that is where a retracement is expected.
+- 2025-09-06 (upload) trading_candle_3#13 07:57 (demonstrated) Minimum reward is 1:2; if the natural target only gives 1:1, move the limit entry until it gives 1:2 (a positional entry).
+- 2025-09-06 (upload) trading_candle_3#17 13:30 (stated) After price takes a target, want a retracement, a close over, then a continuation; if price shows a reversal instead, stand aside.
+- 2025-09-06 (upload) trading_candle_3#24 24:38 (demonstrated) With strong HTF bias, an LTF reversal can be taken with a market entry if 2R to the liquidity is available; stop above the LTF swing protected by 0.5 of the CISD order block rather than the high.
+- 2025-09-20 (upload) trading_the_4_hour_power_of_three_ohlc_olhc#11 06:22 (stated) Once a protected swing forms inside the new HTF candle, any entry is valid with stop on that low, targeting the daily objective (previous day high).
+- 2025-09-20 (upload) trading_the_4_hour_power_of_three_ohlc_olhc#16 10:03 (stated) Do not hold an expansion-candle trade beyond the candle's end once the target is hit; expansion candles only have so much range and time.
+- 2025-09-20 (upload) trading_the_4_hour_power_of_three_ohlc_olhc#20 12:50 (stated) Confident entry: stop on a protected swing or at least beyond 50% of the CISD plus EQ, target 2R or seek continuation.
+- 2025-09-20 (upload) trading_the_4_hour_power_of_three_ohlc_olhc#23 15:46 (stated) With a large opposing run, target -1 standard deviation rather than deeper deviations, since the range is already used.
+- 2025-10-07 livestream_20251007_candle_2_confirmations_live_lesson_q_a_uzpgxvypvgc#7 51:20 (stated) A high that forms as a consolidation is not trustworthy; do not put the stop on it - either place it higher or wait for a continuation that creates a trustworthy high.
+- 2025-10-07 livestream_20251007_candle_2_confirmations_live_lesson_q_a_uzpgxvypvgc#28 1:00:00 (stated) 2R is a sufficient target; very high R:R examples are not realistic or sustainable.
+- 2025-10-18 (upload) wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles#4 02:00 (stated) Expansion-candle targets: expansion targets, liquidity points, or the average candle range.
+- 2025-10-18 (upload) wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles#5 02:29 (stated) When trading a large-wick reversal candle, do not target expansion; target the opening price (daily open) or liquidity/POIs near it.
+- 2025-10-18 (upload) wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles#16 12:13 (stated) When the intraday low is a protected swing, target around the daily open rather than holding for the intraday low; target the intraday low only when it consists of failure swings.
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#1 00:17 (stated) Projections are mechanical targets used as confluence to existing liquidity targets.
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#2 00:28 (stated) Fibonacci settings: 1, 0, -1, -2, -2.5, -4, -4.5 (add others if they work for you).
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#5 01:38 (stated) Normal-size manipulation leg: target -2 to -2.5; if expanding, -4 to -4.5.
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#7 02:01 (stated) Large manipulation leg (very large opposing run / CISD): target only the -1; -2 to -2.5 is too much range.
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#10 03:51 (stated) Projections can be used alone where there is no liquidity (e.g. all-time highs).
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#13 07:11 (demonstrated) A manipulation leg near half of the range to the target is "large"; then target -1, not -4.
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#17 09:43 (stated) When -2 to -2.5 sits just before a liquidity point, take profit at the liquidity point rather than holding for the final target.
+- 2025-12-10 (upload) ttrades_top_down_chart_lessons_3#2 00:41 (stated) Being closer to the previous month's low (with equal lows) makes that low the draw.
+- 2025-12-10 (upload) ttrades_top_down_chart_lessons_3#13 04:12 (demonstrated) Stop on the protected low, target the high.
+- 2025-12-10 (upload) ttrades_top_down_chart_lessons_3#14 04:31 (stated) After three expansion candles, expect a possible new phase of price; check the 30m for consolidation.
+- 2025-12-10 (upload) ttrades_top_down_chart_lessons_3#15 04:41 (stated) If price is consolidating, set TP at the consolidation high, since taking it can start a reversal.
+- 2025-12-20 (upload) ttrades_top_down_chart_lessons_4#13 4:22 (stated) If the only protected low is far away, do not enter with a wide stop; wait for a new low to form.
+- 2025-12-20 (upload) ttrades_top_down_chart_lessons_4#16 5:02 (stated) Scalp stop: tight, below the bodies of the entry swing.
+- 2025-12-20 (upload) ttrades_top_down_chart_lessons_4#17 5:26 (stated) Partial at 2R, more at the intermediate highs, hold the majority for the final high.
+- 2025-12-20 (upload) ttrades_top_down_chart_lessons_4#18 5:49 (stated) If the target limit is not filled at the touch, exit manually rather than give back most of the position for a tick or two.
+- 2025-12-20 (upload) ttrades_top_down_chart_lessons_4#19 6:08 (stated) Runners: stop at breakeven, then trail to each new protected swing (sweep + close over).
+- 2026-01-03 (upload) the_only_trading_strategy_you_need_for_2026#18 07:17-07:30 (stated) Bearish stop: on the body high or the actual high (either works); entry on close or retest.
+- 2026-01-03 (upload) the_only_trading_strategy_you_need_for_2026#19 09:06-09:27 (stated) Use a lower-timeframe invalidation with HTF targets (PDL, daily FVG) for greater R:R.
+- 2026-01-17 (upload) higher_timeframe_analysis_for_trading_aligning_expansion_candles#17 09:30 (stated) If the daily has a large opposing run, do not expect daily expansion; target the daily open or the intraday highs.
+- 2026-01-17 (upload) higher_timeframe_analysis_for_trading_aligning_expansion_candles#20 10:44 (stated) If the trading candle's profile opposes the daily (open-high-low instead of the bullish open-low-high-close), take more conservative targets.
+- 2026-01-24 (upload) how_to_actually_trade_inversion_fair_value_gaps_ifvg#8 03:18 (stated) A candle with no wick on the opposing side can serve as a draw on liquidity; wait for the next candle open.
+- 2026-01-24 (upload) how_to_actually_trade_inversion_fair_value_gaps_ifvg#22 10:52 (stated) Stop on the swing point / high, target 2R toward the low end of the range; be mindful of tight stops.
+- 2026-01-31 (upload) the_best_timeframe_for_ttrades_fractal_model_simple#15 08:47-08:59 (stated) Target the previous day's low/high and get on side before it is taken.
+- 2026-01-31 (upload) the_best_timeframe_for_ttrades_fractal_model_simple#17 09:31-09:40 (stated) Bearish continuation stop: on the high or on the bodies that made the high.
+- 2026-01-31 (upload) the_best_timeframe_for_ttrades_fractal_model_simple#24 14:13-14:32 (stated) Large R:R comes from a lower-timeframe invalidation with a higher-timeframe target (over 8R here), though his default is 2R.
+- 2026-02-07 (upload) ttrades_scalping_model_simple_day_trading_strategy#17 07:55 (stated) Note HTF targets: they justify continuation trades after short-term lows are already taken.
+- 2026-02-07 (upload) ttrades_scalping_model_simple_day_trading_strategy#25 13:18 (demonstrated) Stop on the protected swing; target 2R or the other side of the consolidation.
+- 2026-02-14 (upload) why_your_continuations_fail_order_blocks_cisd_explained#6 03:38 (stated) Reason 3: once a higher-timeframe target (e.g. previous day's high with failure swings) is hit, do not chase new continuations, because a new phase of price can form.
+- 2026-02-14 (upload) why_your_continuations_fail_order_blocks_cisd_explained#19 14:46 (stated) A strong closure that also clears all nearby highs gives poor risk-to-reward off the protected swing; give it one more candle.
+- 2026-02-14 (upload) why_your_continuations_fail_order_blocks_cisd_explained#25 27:29 (demonstrated) Example management: enter on the closure through, stop on the low, target 2R.
+- 2026-02-14 (upload) why_your_continuations_fail_order_blocks_cisd_explained#27 28:54 (stated) Do not look for continuations after an HTF objective is hit or after multiple (1-3) candles of HTF expansion.
+- 2026-02-21 (upload) ttrades_swing_trading_model_simple_strategy#10 03:42-03:52 (stated) Skip an hourly continuation whose stop would be too large.
+- 2026-03-10 livestream_20260310_new_york_open_live_q_a_wm1s7uivq08#24 54:30 (stated) Stop placement on a pre-open trade: below the protected swing, covering the FVG and its 50%, never just at the open; target 2R or more; if that R:R is poor, wait for after the open.
+- 2026-03-11 livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks#16 1:22:50 (stated) As price approaches the target, trail the stop tightly to the 1-minute bar instead of giving back the move.
+- 2026-03-11 livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks#26 1:26:40 (stated) When price is messy and the confirming asset isn't cooperating, use a wider stop, e.g. beyond 50% of the 30-second CISD.
+- 2026-03-11 livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks#30 28:20 (stated) Enter turtle-soup style only with all timeframes aligned, at the sweep, with the stop right there.
+- 2026-03-11 livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks#31 32:20 (stated) Move to breakeven only after a new protected swing forms and price trades away; too early gets retested out.
+- 2026-03-11 livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks#33 1:04:30 (stated) At 2R, a win rate above 50% is good; aim for few trades (one or two a week).
+- 2026-03-13 livestream_20260313_new_york_open_live_q_a_bmkromkeunu#36 1:07:40 (demonstrated) Stop goes over the bodies of the swing.
+- 2026-03-13 livestream_20260313_new_york_open_live_q_a_bmkromkeunu#39 1:08:30 (stated) On a Friday / low-conviction trade, take most of the position off at the first target and hold the rest at breakeven or exit; otherwise partials at 1.5R-2R and hold runners.
+- 2026-03-13 livestream_20260313_new_york_open_live_q_a_bmkromkeunu#44 1:24:10 (stated) Enter on the close through (don't wait for a retest that may not come), unless the closure candle is so large that the stop is far away; then wait for a new continuation.
+- 2026-03-13 livestream_20260313_new_york_open_live_q_a_bmkromkeunu#45 1:23:20 (stated) Max one trade a day prevents tilt days and caps a bad week at five losses (covered by 2.5 wins at 2R).
+- 2026-03-13 livestream_20260313_new_york_open_live_q_a_bmkromkeunu#46 44:50 (stated) A 50% win rate works with 1.5R or more, not at 1:1.
+- 2026-03-17 livestream_20260317_new_york_open_live_q_a_00izxpadr5a#6 22:40 (stated) Do not enter above highs that have already been taken; that is a chase.
+- 2026-03-18 livestream_20260318_new_york_open_live_q_a_yud7tpe2ams#13 22:20 (stated) Move to breakeven once price has traded far from the entry with an expansion candle (or a lower-timeframe V-shape reversal).
+- 2026-03-18 livestream_20260318_new_york_open_live_q_a_yud7tpe2ams#15 23:05 (stated) Take a partial at the previous 4H low; price can react there even if the final target isn't reached.
+- 2026-03-18 livestream_20260318_new_york_open_live_q_a_yud7tpe2ams#19 27:30 (stated) Trading the move from low in the daily range risks consolidation, so be less greedy with targets; from high in the range you can catch the expansion.
+- 2026-03-18 livestream_20260318_new_york_open_live_q_a_yud7tpe2ams#28 48:20 (stated) Trade low frequency: one trade a day max.
+- 2026-03-18 livestream_20260318_new_york_open_live_q_a_yud7tpe2ams#40 1:10:30 (stated) If your stops keep getting swept before TP, enter on a higher timeframe (15m or 5m) instead of M1/M3; low-timeframe entries need HTF opening-price knowledge.
+- 2026-03-19 livestream_20260319_new_york_open_live_q_a_qv6ux_z8vra#12 31:40 (stated) Entries right off the open: use smaller size with the stop on the small swing and expect to be stopped out.
+- 2026-03-19 livestream_20260319_new_york_open_live_q_a_qv6ux_z8vra#26 1:03:00 (stated) Risk per trade = account drawdown / number of losing trades you accept before the account is blown.
+- 2026-03-19 livestream_20260319_new_york_open_live_q_a_qv6ux_z8vra#40 1:56:20 (stated) When in a trade and price reaches the consolidation range low, move to break even.
+- 2026-03-21 (upload) which_swing_highs_and_lows_matter_in_trading#11 05:49 (stated) Targets from a relevant-swing reversal are the other side of the range or the failure swings.
+- 2026-03-25 livestream_20260325_new_york_open_live_q_a_aqny1yzvfys#9 11:40 (stated) Before entering, ask whether there is a low you trust to trade away from that also gives a sensible stop and R:R; if not, wait.
+- 2026-03-25 livestream_20260325_new_york_open_live_q_a_aqny1yzvfys#34 28:30 (stated) A target sweep (e.g. RTY sweeping the highs) is where you take profit if long; if flat, it is not a trigger.
+- 2026-03-31 livestream_20260331_new_york_open_live_q_a_0aygnc9czyc#14 31:00 (stated) Pick the entry from the invalidation (where a stop can go), not from a preset entry timeframe.
+- 2026-03-31 livestream_20260331_new_york_open_live_q_a_0aygnc9czyc#15 32:00 (demonstrated) If a market entry doesn't give the R you want (e.g. 2R to the target), use a limit order lower; for about 1R a market entry is fine.
+- 2026-03-31 livestream_20260331_new_york_open_live_q_a_0aygnc9czyc#20 43:40 (stated) When he does trade a reversal, use very small stops and wait for a CISD.
+- 2026-03-31 livestream_20260331_new_york_open_live_q_a_0aygnc9czyc#32 1:26:20 (stated) Don't wait for an order-block retest; enter at the OB with the stop beyond it.
+- 2026-03-31 livestream_20260331_new_york_open_live_q_a_0aygnc9czyc#33 1:26:20 (stated) If unsure whether a move is a retracement or a reversal, target a retracement and treat anything extra as a bonus.
+- 2026-04-01 livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c#24 48:20 (stated) If you take a reversal, price should not return to the reversal point; he would be at breakeven once it does not follow through.
+- 2026-04-01 livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c#25 35:50 (stated) Once in a trade with a defined invalidation, ignore lower-timeframe closures; only check the HTF candle the setup is based on (e.g. 4H C3 closure).
+- 2026-04-01 livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c#39 16:00 (stated) To stop blowing accounts, identify the root cause and fix it: overtrading means max one trade a day, no system means learn a model, oversizing means size correctly.
+- 2026-04-28 livestream_20260428_new_york_open_live_q_a_x4srguziqwk#9 08:20 (stated) If an asset has already made its average daily range (judged by eye from this month's daily candles), avoid trading it further in that direction.
+- 2026-04-28 livestream_20260428_new_york_open_live_q_a_x4srguziqwk#27 12:20 (stated) He takes only a couple of trades a week at most and does not trade every day.
+- 2026-04-29 livestream_20260429_new_york_open_live_q_a_n3ml_r0x30o#10 31:20 (stated) Separate the idea (anticipation) from the setup: a bias without a sensible stop location is not a trade.
+- 2026-04-29 livestream_20260429_new_york_open_live_q_a_n3ml_r0x30o#15 38:20 (stated) Don't enter after the move has already happened; it destroys risk to reward.
+- 2026-05-05 livestream_20260505_new_york_open_live_q_a_i2hhhhwdapq#26 1:09:20 (stated) After shorting the top, breakeven is fine because a valid continuation should not come back; once a candle closes below, the high is mechanically protected and the stop can sit there.
+- 2026-05-05 livestream_20260505_new_york_open_live_q_a_i2hhhhwdapq#27 1:17:00 (stated) Entries in line with the daily and 4H can be more aggressive; entries opposing the daily range should be less aggressive.
+- 2026-05-05 livestream_20260505_new_york_open_live_q_a_i2hhhhwdapq#37 52:50 (stated) Swing trades: the entry timeframe matters little; stop on the daily low still gives good R:R.
+- 2026-05-06 livestream_20260506_new_york_open_live_q_a_eipm_d8rrsq#11 22:40 (stated) Estimate the daily range from recent expansion candles only (not an ADR average). When the day reaches that size, treat the range as probably capped unless it is an anomaly day.
+- 2026-05-06 livestream_20260506_new_york_open_live_q_a_eipm_d8rrsq#25 54:30 (stated) If you keep getting stopped out before price goes to your target, move the entry up one timeframe (e.g., 5m to 15m).
+- 2026-05-06 livestream_20260506_new_york_open_live_q_a_eipm_d8rrsq#36 31:20 (stated) A 1:1 R:R fractal model works if the win rate is above 50%.
+- 2026-05-06 livestream_20260506_new_york_open_live_q_a_eipm_d8rrsq#37 1:18:00 (stated) He prefers short futures trades as a hedge because his long-term portfolio and swings are already long.
+- 2026-06-03 livestream_20260603_new_york_open_live_q_a_u4j_fzd_fjk#13 34:50 (stated) Once the objective (previous day lows) is hit, exit fully; do not give back the open profit chasing a further low.
+- 2026-06-03 livestream_20260603_new_york_open_live_q_a_u4j_fzd_fjk#20 1:00:00 (stated) Take profit vs trail stop depends on expected price behaviour: trending means trail the stop; reversal/reaction/consolidation means take profit.
+- 2026-06-04 livestream_20260604_new_york_open_live_q_a_c7nk7ypjhn4#14 15:50 (stated) Do not short the low of the day after significant lows have already been taken; favour the side where risk-to-reward makes sense.
+- 2026-06-04 livestream_20260604_new_york_open_live_q_a_c7nk7ypjhn4#15 50:10 (stated) He does not take 1:1 trades; a setup whose invalidation leaves only 1R is skipped.
+- 2026-06-04 livestream_20260604_new_york_open_live_q_a_c7nk7ypjhn4#35 23:20 (stated) Existing exposure shapes trade choice: with long swings on, he is less inclined to add longs and more inclined to take shorts that hedge.
+- 2026-06-04 livestream_20260604_new_york_open_live_q_a_c7nk7ypjhn4#36 23:50 (stated) Know your exit before entering.
+- 2026-06-05 livestream_20260605_new_york_open_live_q_a_x4xssv5cnqg#13 41:10 (stated) If the higher-timeframe entry doesn't give 2R, drop a timeframe (5m to 3m) to find one that does.
+- 2026-06-05 livestream_20260605_new_york_open_live_q_a_x4xssv5cnqg#15 45:10 (stated) After entry, price should not displace back up to your entry/breakeven; a strong reaction back into the area is a warning.
+- 2026-06-05 livestream_20260605_new_york_open_live_q_a_x4xssv5cnqg#16 49:10 (stated) Stop goes on the swing high of the reaction or above the bodies.
+- 2026-06-05 livestream_20260605_new_york_open_live_q_a_x4xssv5cnqg#29 13:00 (stated) Size the risk by position size, not by shrinking a structurally correct stop.
+- 2026-06-05 livestream_20260605_new_york_open_live_q_a_x4xssv5cnqg#30 17:00 (stated) Risk per trade should be set from how many consecutive losses you can absorb before the account is blown.
+- 2026-06-10 livestream_20260610_new_york_open_live_q_a_w7fu3rx5ims#20 49:40 (stated) He requires 2R. When price is already close to the objective, only an M1 swing with a candle 2 closure can give 2R; otherwise skip it.
+- 2026-06-10 livestream_20260610_new_york_open_live_q_a_w7fu3rx5ims#26 41:00 (stated) Enter before the break of the level; don't chase after price has already broken out.
+- 2026-06-10 livestream_20260610_new_york_open_live_q_a_w7fu3rx5ims#33 1:04:30 (stated) To reduce stop size, enter closer to your invalidation.
+- 2026-06-10 livestream_20260610_new_york_open_live_q_a_w7fu3rx5ims#34 50:35 (stated) Use breakeven only when returning to entry would itself invalidate the trade.
+- 2026-06-16 livestream_20260616_new_york_open_live_q_a_tjuolmjncmy#6 23:10 (stated) Counter-trend ideas (daily bullish, 1H bearish) get conservative targets: aim for the level and watch the reaction, not a big expansion.
+- 2026-06-16 livestream_20260616_new_york_open_live_q_a_tjuolmjncmy#29 21:40 (stated) Size positions by fixed dollar risk divided by the stop distance.
+- 2026-06-17 livestream_20260617_new_york_open_live_q_a_with_nickdoesfutures_tdiwwmrwf2k#11 26:50 (stated) Once price forms a new invalidation (lower-timeframe C2 closure and continuation), move the stop to breakeven and hold for the target.
+- 2026-06-17 livestream_20260617_new_york_open_live_q_a_with_nickdoesfutures_tdiwwmrwf2k#26 48:30 (stated) A late entry after the move has already run (e.g. an 'elite bearish breaker' after the drop) technically exists but has no risk-to-reward.
+- 2026-06-17 livestream_20260617_new_york_open_live_q_a_with_nickdoesfutures_tdiwwmrwf2k#29 10:50 (stated) When adding to a position, move the stop so total risk never exceeds the initial risk. (speaker unclear)
+- 2026-06-17 livestream_20260617_new_york_open_live_q_a_with_nickdoesfutures_tdiwwmrwf2k#32 18:50 (stated) [guest] In a strongly one-sided market the counter moves need near-perfect entries; entering mid-range is too late because price runs a low and reverses. (likely Nick)
+- 2026-06-20 (upload) a_simple_3_step_trading_model_full_breakdown#28 49:45 (stated) Pre-market entries go on the 15m so the stop sits on a swing expected to survive the New York open.
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#20 52:30 (stated) A trade needs a bias, an invalidation and structure; don't take quick level-to-level trades without them.
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#22 53:40 (stated) Don't move stops to breakeven.
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#23 46:20 (stated) Use a fixed take profit (around 2R) and leave the trade alone; cutting winners early raises the win rate you need (about 34% at 2R vs 50% at 1R).
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#25 40:00 (stated) On prop accounts, size so you could take about 10 losses in a row without hitting the drawdown, but large enough that winners reach the profit target.
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#26 57:30 (stated) Evaluation risk sits on a time-vs-money curve: aggressive ~20%+ of drawdown per trade, middle ~7-10%, conservative ~5% or less.
+- 2026-07-22 livestream_20260722_new_york_open_live_q_a_g1iidq3raky#13 20:50 (stated) Don't trade a move unless there is a low you can trust for the stop; if not, wait for new structure.
+- 2026-07-22 livestream_20260722_new_york_open_live_q_a_g1iidq3raky#34 20:50 (demonstrated) Skip a continuation entry that doesn't offer at least 2R.
+- 2026-07-22 livestream_20260722_new_york_open_live_q_a_g1iidq3raky#35 20:50 (demonstrated) Existing exposure matters: already holding swing longs, he didn't want to add another long at the open.
+- 2026-07-26 livestream_20260726_ttrades_indicator_updates_walkthrough_and_q_a_sdzke_naniy#39 53:40 (stated) A 4H/15m trader focused on NY C3 continuations will have many no-trade days; that is normal for a mechanical system.
+- 2026-07-26 livestream_20260726_ttrades_indicator_updates_walkthrough_and_q_a_sdzke_naniy#46 1:32:40 (stated) On evaluations he would risk more, trading money for time; a 1:1 R approach needs a higher win rate.
+- 2026-07-27 livestream_20260727_new_york_open_live_q_a_je7cd9hjube#7 14:00 (stated) Stop goes exactly at the protected swing with no extra buffer; if it is taken out, the trade is invalidated.
+- 2026-07-27 livestream_20260727_new_york_open_live_q_a_je7cd9hjube#10 30:00 (stated) Don't short below lows (at the bottom of a move); short up high before the lows are run.
+- 2026-07-27 livestream_20260727_new_york_open_live_q_a_je7cd9hjube#20 40:30 (stated) Whether to hold beyond 2R depends on the day's context (here a trade down to the lows offered ~10R).
+- 2026-07-27 livestream_20260727_new_york_open_live_q_a_je7cd9hjube#33 41:10 (stated) Limit vs market entries is a process choice; missing a limit fill is part of the game. He market-enters.
+- 2026-07-28 livestream_20260728_new_york_open_live_q_a_yngx9oaefui#13 46:30 (demonstrated) Exits in order: the price target, then the 9:45 time exit, then the 10:00 time exit.
+- 2026-07-28 livestream_20260728_new_york_open_live_q_a_yngx9oaefui#17 33:20 (stated) Don't enter below the lows when most of an expansion is done; if already in, trail the stop to each new protected swing.
+- 2026-07-28 livestream_20260728_new_york_open_live_q_a_yngx9oaefui#40 53:20 (stated) Prop-eval risk per trade = drawdown amount / number of consecutive losses you are willing to take (1-3 aggressive, 5-7 middle, 15-20 conservative).
+- 2026-07-29 livestream_20260729_new_york_open_live_q_a_xraklbjhw5k#19 1:14:00 (stated) Don't short (or chase) once price is already below the lows/targets with a full daily range made.
+- 2026-07-29 livestream_20260729_new_york_open_live_q_a_xraklbjhw5k#27 1:05:20 (stated) One trade a day maximum (not minimum) for traders who tilt after a loss; 1-2 trades a week is his normal frequency.
+- 2026-07-29 livestream_20260729_new_york_open_live_q_a_xraklbjhw5k#28 1:31:50 (stated) Taking profit early changes the system's math: a 2R system breaks even at ~34% win rate, cutting to 1:1 requires 50%.
+- 2026-07-29 livestream_20260729_new_york_open_live_q_a_xraklbjhw5k#29 1:27:30 (stated) Trail runners using daily swings or reactions at previous hourly swings, moving to new continuations; for tighter trailing use a lower-timeframe protected swing (e.g. 3m); start trailing when momentum slows.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#17 17:00 (stated) Getting stopped out and taking the re-entry/secondary entry is a valid part of trading toward a daily target.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#23 24:00 (stated) If you keep blowing accounts: consistent position size, one trade a day max, learn to lose.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#25 29:50 (stated) Exiting early does not 'book profit'; it raises the win rate you need to break even.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#28 33:20 (stated) Higher timeframe means fewer setups; risk per trade should rise as setup count falls (more setups, less risk each).
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#29 34:20 (stated) Daily swing setups come 6-8 times a year and get much more risk than intraday trades or scalps.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#34 42:10 (stated) To raise win rate, lose less: find what losses share, usually wrong/lacking bias or entering too early; practice bias on the daily, and move one timeframe up for early entries.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#40 55:30 (stated) Manage a swing position by watching daily closures only.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#42 1:00:40 (stated) Size risk from drawdown, not account size: dollar risk is about drawdown / 10-15 so you survive the 5-7+ loss streaks you will hit.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#43 1:04:40 (stated) Any R:R is fine if you know the break-even win rate: about 51% at 1:1, about 34% at 2R.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#45 1:05:40 (stated) He prefers 2R-4R so that winning 3-4 of 10 trades is still profitable.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#48 1:13:40 (stated) Take partials only if the remaining position still meets the model's requirement; half off at 1R on a 2R trade makes it ~1.5R and needs ~43% win rate.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#49 1:16:30 (demonstrated) Do not add to an existing long or hedge when price is low in the range near the EQ.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#3 46:20 (stated) Do not take continuation trades once the daily range has been made.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#25 58:20 (stated) Stops go where the model mechanically places them (the low); moving them wider after losses kills R:R and forces resizing.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#26 34:20 (stated) Do not add intraday risk in the same direction as an open swing; prefer intraday trades against the swing as a hedge.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#27 34:40 (stated) At all-time highs (no liquidity to target), take profit with time-based exits, a trailing stop or the average daily range.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#39 41:10 (stated) A swing trade is held for a run, not two days of movement.
+- 2026-08-19 livestream_20260819_new_york_open_live_q_a_rvrk4mltjss#30 49:20 (demonstrated) Check where the R target lands. If 2R sits below the intraday lows, you must anticipate the day expanding there for the trade to make sense.
+- 2026-08-19 livestream_20260819_new_york_open_live_q_a_rvrk4mltjss#31 46:50 (stated) Taking profit early raises the win rate you need. 2R needs about 34% to break even, 1R needs 50%.
+- 2026-08-19 livestream_20260819_new_york_open_live_q_a_rvrk4mltjss#40 1:11:40 (stated) Don't take a trade after price has already trended to and hit the target.
+- 2026-08-21 livestream_20260821_new_york_open_live_q_a_4rnc3qxxc20#13 28:00 (stated) If you keep getting stopped out before the move, move up one timeframe for entries (5m to 15m); if you have an invalidation to place a stop on, take the trade.
+- 2026-08-21 livestream_20260821_new_york_open_live_q_a_4rnc3qxxc20#20 50:40 (stated) Beginners should use a strict take profit and stop loss with no management; management adds decisions and usually costs R.
+- 2026-08-25 livestream_20260825_new_york_open_live_q_a_9h15zzvakpq#32 1:07:20 (stated) On trailing/intraday-trailing drawdown accounts, risk small per trade and use more accounts for leverage.
+- 2026-08-25 livestream_20260825_new_york_open_live_q_a_9h15zzvakpq#33 1:12:10 (stated) Prefer an R:R where about 40% wins is breakeven. Higher R:R means more losses and a lower win rate.
+- 2026-08-25 livestream_20260825_new_york_open_live_q_a_9h15zzvakpq#44 19:40 (stated) Taking the long on NQ when the target is ES's high gives poor R:R because NQ is already up there; trade the asset with room to the target.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#4 07:50 (stated) On range days take profit move by move; holding for a big target gives it all back.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#5 13:00 (stated) Without a bias, a target and an invalidation there is no trade; on chop days with no expectation of expansion he stays away.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#7 15:30 (stated) When price is one point from your TP and reversing, exit; holding risks the whole move for one point.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#13 23:20 (stated) In a short from a protected swing, move to break even (or trail) once price runs into the lows, so a reversal after sweeping a low doesn't take the trade back.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#34 1:21:20 (stated) Reversal trades have a much lower win rate than continuations, so he doesn't normally trade them (speaker possibly Nick).
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#39 58:00 (demonstrated) Fixed-R risk with 2R targets lets a 0-for-2 start come back to break even after one win.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#40 1:53:20 (demonstrated) Scale out at 2R (60% off) and hold runners to 3R.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_morning_session_es_r3bydyry#34 44:10 (stated) Position size: trading more than one or two minis on a 50K funded account is not how profitable traders operate.
+- 2026-09-01 livestream_20260901_new_york_open_live_q_a_uw55tuk_ngy#16 14:20 (demonstrated) Take a partial when the ADR is reached and a correlated index has already hit your target (divergence).
+- 2026-09-01 livestream_20260901_new_york_open_live_q_a_uw55tuk_ngy#32 1:10:10 (stated) Use ADR (range only, not gaps) to judge how much of the day's range is done.
+- 2026-09-01 livestream_20260901_new_york_open_live_q_a_uw55tuk_ngy#35 11:40 (stated) For options swings, buy about four times the expected time to the move, slightly OTM/near the money, while premiums are cheap; no short-dated options for swings.
+- 2026-09-01 livestream_20260901_new_york_open_live_q_a_uw55tuk_ngy#36 15:50 (stated) Risk more on swing trades than on intraday setups.
+- 2026-09-02 livestream_20260902_new_york_open_live_q_a_grc5fvb5tdg#23 35:40 (stated) Mechanical first target = the swing high that made the swing low you are trading away from.
+- 2026-09-02 livestream_20260902_new_york_open_live_q_a_grc5fvb5tdg#24 42:00 (stated) Break-even: fine when a return to your entry would mean the expansion has failed (entry below the EQ / deep in the reversal); not when your entry sits at a level price can validly retest.
+- 2026-09-09 livestream_20260909_new_york_open_live_q_a_k7xvj2w3cp4#31 41:40 (stated) Put on size only with a clear bias; otherwise only scalps or smaller formations.
+- 2026-09-09 livestream_20260909_new_york_open_live_q_a_k7xvj2w3cp4#32 55:30 (stated) He doesn't take setups below 2R; an average RR under 2 is not his model.
+- 2026-09-09 livestream_20260909_new_york_open_live_q_a_k7xvj2w3cp4#35 1:17:00 (stated) Use prop accounts rather than demo once you understand the model: same emotional attachment, capped risk.
+- 2026-09-10 livestream_20260910_new_york_open_live_q_a_wa9m30uhrm0#16 08:50 (stated) After the first entry, when a new continuation forms, the invalidation moves above (below) entry; the previous day high is a good first target, or be at breakeven from the first entry.
+- 2026-09-15 livestream_20260915_new_york_open_live_q_a_hlwq1drjbzo#15 27:00 (stated) Waiting for the candle closure keeps you out of dumb positions.
+- 2026-09-15 livestream_20260915_new_york_open_live_q_a_hlwq1drjbzo#16 58:20 (stated) Trade continuations, not reversals: if your bias is wrong, waiting for clean continuations keeps you out instead of repeatedly getting stopped out.
+- 2026-09-16 livestream_20260916_new_york_open_live_q_a_9yvbe_20hdg#21 48:40 (stated) Entry sequence: swing point to trade away from, CISD (he doesn't trade the reversal itself), wait for a continuation, enter, stop on the protected swing, target 2R.
+- 2026-09-16 livestream_20260916_new_york_open_live_q_a_9yvbe_20hdg#31 1:11:10 (stated) On a no-bias day you are scalping, not holding for a big expansion; after an opposing run, wait for another lower-timeframe continuation.
+- 2026-09-23 livestream_20260923_new_york_open_live_q_a_kbjaggkxdei#22 27:30 (stated) Do not enter in the direction of the target once the daily range is mostly made and price is near the target (e.g. shorting into the previous-day low); only hold runners from earlier entries.
+- 2026-09-23 livestream_20260923_new_york_open_live_q_a_kbjaggkxdei#23 31:30 (stated) Late continuations far into the move (below the lows / below the previous-day low) are places to trail your stop, not to enter.
+- 2026-09-23 livestream_20260923_new_york_open_live_q_a_kbjaggkxdei#28 31:30 (stated) On an expansion day you can generally hold to the close; otherwise take profit at the correlated draw (e.g. pound/euro shorts held until DXY reaches its daily gap).
+- 2026-10-07 livestream_20261007_new_york_open_live_q_a_mflp3acpzc0#12 19:10 (stated) A valid continuation is not enough: skip it if there is little range to the target or the stop cannot be positioned; take it only when the open/structure leaves room to the target.
+- 2026-10-07 livestream_20261007_new_york_open_live_q_a_mflp3acpzc0#36 1:00:40 (demonstrated) A wrong bias costs nothing if you never positioned on it; wait for the swing point to form before acting.
+- 2026-10-20 livestream_20261020_new_york_open_live_q_a_vzhkq3c8xbi#25 21:00 (stated) On a reversal day with a large wick, targets are the daily open, then intraday liquidity, then the previous-day low or high; don't expect an expansion.
+- 2026-10-20 livestream_20261020_new_york_open_live_q_a_vzhkq3c8xbi#26 51:00 (stated) Once a reversal trade hits its targets, the move is over for you, whatever price does next.
+- 2026-10-20 livestream_20261020_new_york_open_live_q_a_vzhkq3c8xbi#27 14:30 (stated) A short after price hits a higher-timeframe target is valid as an intraday reversal, with adjusted (smaller) targets.
+- 2026-10-20 livestream_20261020_new_york_open_live_q_a_vzhkq3c8xbi#39 34:20 (stated) A bias you can't position for intraday isn't a trade; catching a move like GU would need a higher-timeframe position with a wider stop.
+- 2026-10-28 livestream_20261028_new_york_open_live_q_a_c4ti6kdxn0s#21 32:10 (stated) If 2R does not fit within your targets, either adjust the entry or adjust the stop.
+- 2026-10-28 livestream_20261028_new_york_open_live_q_a_c4ti6kdxn0s#22 28:10 (stated) Win rate is not the sole factor: at 1:1 you need over 50% (plus fees); with a 40% win rate, 1:2 is just above breakeven and 1:3 is quite profitable.
+- 2026-10-28 livestream_20261028_new_york_open_live_q_a_c4ti6kdxn0s#23 34:00 (stated) There is no win rate for an indicator or model; results depend on the trader.
+- 2026-11-03 livestream_20261103_new_york_open_live_q_a_tqokgrazwky#20 30:00 (stated) At 2R, breakeven is about a 34% win rate; with fees, about 40% is breakeven-to-profitable. That's why he shows 2R, though he holds longer.
+- 2026-11-03 livestream_20261103_new_york_open_live_q_a_tqokgrazwky#39 1:04:00 (stated) A stop loss limits losses; it isn't a judgement on your ego. Traders who refuse stops blow up.
+- 2026-11-04 livestream_20261104_new_york_open_live_q_a_j8u9ch8gkdc#7 25:20 (stated) After the expansion candle closes, partial or exit at its close; you do not know whether it continues, retraces, reverses or consolidates.
+- 2026-11-04 livestream_20261104_new_york_open_live_q_a_j8u9ch8gkdc#10 34:10 (stated) Trade continuations because they require the market to confirm; when the idea is wrong no continuation forms, so you are wrong without taking a loss.
+- 2026-11-04 livestream_20261104_new_york_open_live_q_a_j8u9ch8gkdc#17 44:10 (stated) Size risk per trade from the drawdown and the number of consecutive losses you want to survive (7-10), never from the nominal account size.
+- 2026-11-04 livestream_20261104_new_york_open_live_q_a_j8u9ch8gkdc#18 1:03:50 (stated) A wider stop is handled by reducing position size, not by taking more risk.
+- 2026-11-04 livestream_20261104_new_york_open_live_q_a_j8u9ch8gkdc#19 1:05:20 (stated) Normally one trade a day maximum.
+- 2026-11-10 livestream_20261110_new_york_open_live_q_a_cp1nyqa_t5c#36 1:03:10 (stated) Do not trade deep retracement continuations; a retracement that goes all the way back flips the read to the other side.
+- 2026-11-11 livestream_20261111_new_york_open_live_q_a_mk9qoez3qzi#5 20:40 (stated) Take profit when the target is hit and the timeframe has already expanded (entry high in the dealing range, target the range low) - or hold to the HTF close.
+- 2026-11-11 livestream_20261111_new_york_open_live_q_a_mk9qoez3qzi#6 11:40 (stated) Targets must justify the entry timeframe: a 15m entry needs a farther target than a nearby 1H low; only a refined 1m entry makes that near target worth 3R.
+- 2026-11-11 livestream_20261111_new_york_open_live_q_a_mk9qoez3qzi#31 32:40 (stated) Risk management (not blowing up, not going on tilt) is the number-one skill; flipping direction after each stop-out is gambling.

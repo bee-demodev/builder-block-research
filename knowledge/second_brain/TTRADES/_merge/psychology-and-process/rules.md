@@ -1,0 +1,200 @@
+# Psychology, backtesting, journaling and process: rules (198 rows, sorted by date)
+
+- 2022-07-31 livestream_20220731_stream_q_a_ict_concepts_qgirecy2nz4#8 11:40 (stated) Whatever the bias, play the structure: at 8:30 find where liquidity rests and the points of interest, then look for lower-timeframe setups within them.
+- 2022-07-31 livestream_20220731_stream_q_a_ict_concepts_qgirecy2nz4#25 34:50 (stated) Take two to three good trades a day, or none.
+- 2022-08-07 livestream_20220807_stream_q_a_ict_concepts_h_xtsfk8np4#18 22:10 (stated) Find one repeatable, scalable setup and only trade that.
+- 2022-08-07 livestream_20220807_stream_q_a_ict_concepts_h_xtsfk8np4#23 17:20 (demonstrated) Weekly plan as a projected path: retrace into the weekly/daily imbalance early in the week (Mon-Wed) to put in a low, then run the highs.
+- 2022-08-10 livestream_20220810_stream_q_a_with_trade_for_opportunity_ict_concepts_0bh_kkg2q6s#1 22:30 (stated) Mark higher-timeframe (15m and 1H) points of interest and liquidity first, then drop to a lower timeframe only when price reaches one.
+- 2022-08-10 livestream_20220810_stream_q_a_with_trade_for_opportunity_ict_concepts_0bh_kkg2q6s#36 1:06:00 (stated) Backtest/demo with no money before going live (he did about 1.5 months) and do not rush.
+- 2022-08-14 livestream_20220814_stream_q_a_with_am_trades_ict_concepts_cruftskoveo#23 57:30 (stated) Practise without money (paper/demo) before trading live.
+- 2022-08-21 livestream_20220821_8_14_22_mmxm_live_with_niper_ict_concepts_umlwrlxd_v8#24 48:50 (stated) Don't be fixed in bias; follow where the displacement is.
+- 2022-08-21 livestream_20220821_8_14_22_mmxm_live_with_niper_ict_concepts_umlwrlxd_v8#25 55:00 (stated) [guest] Journal every trade including how you felt and your confluence; compare confident vs skeptical trades.
+- 2022-08-28 livestream_20220828_ict_orderflow_q_a_with_holyangelbruv_8z2abzljunu#21 19:30 (stated) Avoid joining a big run late; if you are already green and it feels like chasing, stop trading.
+- 2022-08-28 livestream_20220828_ict_orderflow_q_a_with_holyangelbruv_8z2abzljunu#31 22:10 (stated) [guest] Too many concepts cause analysis paralysis; narrow down the setups.
+- 2022-09-04 livestream_20220904_q_a_live_with_alex_s_options_ict_strat_v8p6lniisvc#6 55:00 (stated) Before the open, mark points of interest and higher-timeframe liquidity levels: 15m/hourly, Asia, the 8:30 mark, obvious levels to the left, then hourly/daily.
+- 2022-09-04 livestream_20220904_q_a_live_with_alex_s_options_ict_strat_v8p6lniisvc#37 1:14:40 (stated) [guest] If you miss a strong trend-day open, walk away rather than chase (especially with options).
+- 2022-09-04 livestream_20220904_q_a_live_with_alex_s_options_ict_strat_v8p6lniisvc#40 56:40 (stated) [guest] Sizing up depends on full confidence in the strategy, built from small stops and repeated precise entries.
+- 2022-09-11 livestream_20220911_fractalizing_entries_q_a_with_ben_ict_concepts_yrmkkr4coju#10 28:40 (stated) [guest] Use only the PD arrays you see clearly and have journaled data for; don't use every ICT tool.
+- 2022-09-11 livestream_20220911_fractalizing_entries_q_a_with_ben_ict_concepts_yrmkkr4coju#13 26:20 (stated) [guest] Journal every trade with before/after screenshots and the mechanics present (liquidity taken, MSS, FVG in premium/discount, OTE); it builds confidence to hold and to enter.
+- 2022-09-11 livestream_20220911_fractalizing_entries_q_a_with_ben_ict_concepts_yrmkkr4coju#19 52:30 (stated) [guest] Start each week on the weekly chart for the weekly draw, and look for the opposite-side PD arrays that can be raided first (PO3 / market maker buy model).
+- 2022-09-23 livestream_20220923_stream_q_a_giveaway_winners_announced_am_traders_0yzqr8hpyeu#14 28:40 (stated) If your model does not show up, do not trade, whatever others are doing.
+- 2022-09-23 livestream_20220923_stream_q_a_giveaway_winners_announced_am_traders_0yzqr8hpyeu#20 46:10 (stated) Backtest top-down: from the higher timeframes to the 1m, annotating why price reacted at every spot.
+- 2022-10-11 (upload) build_an_entry_model_ict_concepts#6 02:16 (stated) Decide what you look for, make a model and stick to it.
+- 2022-10-26 (upload) lower_time_frame_entries_using_htf_poi_ict_concepts#21 06:50 (stated) Even with the wrong bias, structure-based entries with partials and break-even limit damage and let you switch bias.
+- 2022-10-26 (upload) lower_time_frame_entries_using_htf_poi_ict_concepts#24 08:09 (stated) Use structure and follow your rules even when your bias is wrong.
+- 2023-01-09 (upload) draw_on_liquidity_dol_ict_concepts#22 07:29 (stated) Knowing the HTF draw keeps lower-timeframe noise from scaring you out of a position.
+- 2023-01-12 livestream_20230112_back_testing_live_session_fx_replay_8r6pxpeldiu#5 54:10 (stated) Don't enter blindly on a narrative: wait for structure at the POI to validate it; no structure means no trade and no loss.
+- 2023-01-12 livestream_20230112_back_testing_live_session_fx_replay_8r6pxpeldiu#14 43:20 (stated) Don't chase a breakout you missed; let it play out.
+- 2023-01-12 livestream_20230112_back_testing_live_session_fx_replay_8r6pxpeldiu#15 54:10 (stated) Sit on the higher timeframes and only watch marked POIs, to avoid lower-timeframe confusion.
+- 2023-01-12 livestream_20230112_back_testing_live_session_fx_replay_8r6pxpeldiu#18 19:00 (demonstrated) Backtesting method: chat-picked symbol and month, $10,000 account, 1% risk per trade, New York time zone, step the replay on a higher timeframe (no repaint), drop down at POIs, place the position tool with stop and target, screenshot into a journal (skipped on stream), review analytics.
+- 2023-02-04 livestream_20230204_live_q_a_review_with_am_trades_xcvqikdea9w#25 51:00 (stated) Trade toward the higher-timeframe draw (highest probability) and be careful switching bias; don't try to catch every move.
+- 2023-02-04 livestream_20230204_live_q_a_review_with_am_trades_xcvqikdea9w#29 32:50 (stated) Don't predict the next day before Asia/London print; [guest] AM doesn't look at price until London and the 9:30 open.
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#3 00:39 (stated) Traders who go long place stops at the swing low; shorts place stops at the swing high.
+- 2023-07-30 livestream_20230730_live_q_a_with_am_trades_weekly_profile_wgyde_h84cs#25 30:30 (stated) Handle losses by thinking in series of about 15 trades; confidence comes from trusting a journaled model with an edge.
+- 2023-07-30 livestream_20230730_live_q_a_with_am_trades_weekly_profile_wgyde_h84cs#33 47:50 (stated) In a trade, follow the plan and let emotions pass through rather than resisting them; journal them.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#24 28:02 (stated) A 45-day, 15-trade backtest is too small; a deeper backtest is needed to judge the model.
+- 2023-09-24 livestream_20230924_live_with_day_trading_rauf_preparing_for_a_new_week_qftfd09vv3e#3 08:20 (stated) [guest] In the last week of the month/quarter, account for the monthly candle closing (open-low-high-close) and expect less from price; wait for external range liquidity to be taken before expecting the move.
+- 2023-12-12 (upload) market_structure_shift_vs_change_in_state_of_delivery_ict#18 08:21-08:50 (stated) Which signal to use depends on what you see best; he prefers order blocks; backtest for yourself.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#3 27:57 (stated) Results come from mindset and execution more than the strategy; even simple retail methods broke even for him.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#5 34:36 (stated) Pick concepts you can clearly identify in real time; any ICT model can work with correct psychology and risk management.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#11 52:56 (stated) When the model is not present, do not trade; wait for it.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#13 1:01:59 (stated) Go live only after collecting undeniable evidence that the model works.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#14 1:08:48 (stated) Do not change the model after a 4-6 trade losing streak; let the probabilities play out.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#27 1:23:06 (stated) After a win, stop trading for the day ("play defense") rather than using profit as cushion.
+- 2024-08-16 (upload) nickdoesfutures_unicorn_model_experiences_with_ict#13 16:30-16:38 (stated) If no POI is tagged, do not drop to 5m or 15m at all (prevents impulsive trades).
+- 2024-08-16 (upload) nickdoesfutures_unicorn_model_experiences_with_ict#26 24:17-26:28 (stated) Journal every trade (chart markup, feelings before/during/after, what went well/badly) and write post-session thoughts after every session, traded or not.
+- 2024-09-29 livestream_20240929_ttrades_sunday_session_live_q_a_u8bnmaih_ha#2 05:50 (stated) Mark the weekly opening price on every asset; trades are framed relative to it (e.g. trading back to the open after a reversal closure).
+- 2024-10-06 livestream_20241006_ttrades_sunday_session_live_q_a_r7yw6ou1lds#18 26:40 (stated) No weekly outlooks: trade day by day, deciding each day only after the previous daily candle prints.
+- 2024-10-06 livestream_20241006_ttrades_sunday_session_live_q_a_r7yw6ou1lds#30 09:10 (stated) Set and forget once in a trade; watching the screen does not change the market.
+- 2024-10-26 (upload) next_day_model_fractal_way_to_get_bias_for_trading#20 04:05 (stated) Nothing works 100% of the time; a mechanical reversal read can fail once before the move.
+- 2025-03-13 ap_use_market_structure_fibonacci_levels_for_sniper_entries#28 67:32 (stated) Discipline: stay level-headed, focus on your own journey, don't rush the process.
+- 2025-07-12 (upload) how_to_trade_retracement_phases_of_price#19 10:10 (stated) Anticipating a move is not enough; without the required sweep / FVG retracement you skip it, even if it runs.
+- 2026-01-03 (upload) the_only_trading_strategy_you_need_for_2026#1 00:17-00:25 (stated) Pick one system and follow it; hopping between models destroys consistency.
+- 2026-02-21 (upload) ttrades_swing_trading_model_simple_strategy#18 08:47-08:54 (stated) A stop-out with context, bias and structure is a valid loss; accept it.
+- 2026-03-10 livestream_20260310_new_york_open_live_q_a_wm1s7uivq08#23 50:30 (stated) Pre-open entries: almost always on a 30m or higher timeframe, only when the daily C2 supports expansion into clear targets (PDH/high), an hourly CISD confirms, all timeframes are green, and there is a protected swing before the open to trade away from.
+- 2026-03-10 livestream_20260310_new_york_open_live_q_a_wm1s7uivq08#28 54:30 (stated) If the specific criteria are not met, there is no trade: being right on direction without a valid entry is fine.
+- 2026-03-10 livestream_20260310_new_york_open_live_q_a_wm1s7uivq08#29 22:40 (stated) Patience is the main skill; when nothing is there, set an alert on the trigger level and stop watching.
+- 2026-03-10 livestream_20260310_new_york_open_live_q_a_wm1s7uivq08#30 22:40 (stated) Plan as two explicit scenarios tied to the weakest asset: it reverses at the low -> long the strongest; it fails -> expect the other assets to go to the same low; favor the one matching your bias.
+- 2026-03-11 livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks#14 32:20 (stated) Anticipate one leg of price at a time (one draw), then react; don't predict several legs ahead.
+- 2026-03-11 livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks#34 42:20 (stated) Keep the chart clean: highs/lows, FVGs, opposing candles (his OB) or CISD, protected swings, SMT, HTF opens; no BOS/CHoCH.
+- 2026-03-11 livestream_20260311_cpi_new_york_open_live_q_a_egv_gabtqks#35 1:46:30 (stated) Psychology fix: stop doing dumb stuff; don't compare yourself with others or with cherry-picked 10R posts.
+- 2026-03-13 livestream_20260313_new_york_open_live_q_a_bmkromkeunu#18 30:00 (stated) Better to be late than early.
+- 2026-03-13 livestream_20260313_new_york_open_live_q_a_bmkromkeunu#29 49:10 (stated) When price is confusing, don't watch it; don't pretend to know.
+- 2026-03-17 livestream_20260317_new_york_open_live_q_a_00izxpadr5a#19 39:00 (stated) Find one A+ setup and take it; if there is none, get off the charts. Pick the cleanest framework among all assets and focus only on it.
+- 2026-03-17 livestream_20260317_new_york_open_live_q_a_00izxpadr5a#20 35:00 (stated) To stop overtrading, every trade needs a higher-timeframe bias or reason (step one of the model).
+- 2026-03-17 livestream_20260317_new_york_open_live_q_a_00izxpadr5a#28 42:20 (stated) Use back-adjusted continuous contracts with settlement-as-close off, so daily candles show the actual close and no rollover gap.
+- 2026-03-18 livestream_20260318_new_york_open_live_q_a_yud7tpe2ams#29 52:30 (stated) Order of work: bias from the daily (direction and draw) -> framework -> then choose the stronger/weaker asset; the choice changes daily.
+- 2026-03-18 livestream_20260318_new_york_open_live_q_a_yud7tpe2ams#43 1:16:00 (stated) When what you want to happen isn't happening, stay away — it's usually consolidation.
+- 2026-03-18 livestream_20260318_new_york_open_live_q_a_yud7tpe2ams#45 33:20 (stated) Each day you only need the one asset that makes sense; ignore the rest of the basket.
+- 2026-03-19 livestream_20260319_new_york_open_live_q_a_qv6ux_z8vra#15 41:20 (stated) If you missed the C2-day/C3-day move, accept it; chasing later or trying to catch the reversal at every gap blows accounts.
+- 2026-03-19 livestream_20260319_new_york_open_live_q_a_qv6ux_z8vra#18 49:10 (stated) Stress and slow execution mean the timeframe is too low; move up a timeframe.
+- 2026-03-19 livestream_20260319_new_york_open_live_q_a_qv6ux_z8vra#35 1:28:20 (stated) Know where you want price to go and don't flip-flop each time price moves against you.
+- 2026-03-25 livestream_20260325_new_york_open_live_q_a_aqny1yzvfys#31 49:20 (stated) When nothing is aligned (mechanically bearish but not bearish by bias, bullish but no supporting formation), stand aside rather than trade every frame.
+- 2026-03-25 livestream_20260325_new_york_open_live_q_a_aqny1yzvfys#32 52:10 (stated) Stop trying to capture every move in the market.
+- 2026-03-31 livestream_20260331_new_york_open_live_q_a_0aygnc9czyc#29 1:18:20 (stated) Trade only with all three: a bias, a lower-timeframe fractal model aligned with it, and a continuation.
+- 2026-03-31 livestream_20260331_new_york_open_live_q_a_0aygnc9czyc#40 1:10:20 (stated) On choppy days don't trade, and cap daily losses at one or two losing trades.
+- 2026-03-31 livestream_20260331_new_york_open_live_q_a_0aygnc9czyc#46 1:02:10 (stated) Treat paper trading exactly like real money.
+- 2026-04-01 livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c#15 22:00 (stated) When you have no bias or don't know what is going on, don't trade, and zoom out rather than sit on lower timeframes.
+- 2026-04-01 livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c#16 1:00:20 (stated) Hold one idea per session and wait for it to occur or invalidate; once invalidated, you are done for that idea.
+- 2026-04-01 livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c#36 26:00 (stated) Inside a range, big moves usually just draw people in on both sides; don't chase them.
+- 2026-04-01 livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c#37 1:28:40 (stated) Not fitting the model is reason enough to skip a breakout; you will miss moves trading mechanically, and that is expected.
+- 2026-04-01 livestream_20260401_new_york_open_live_q_a_wbwoimdxt2c#38 1:04:20 (stated) Feel the emotion, don't act on it; emotions can't be eliminated, only not acted upon.
+- 2026-04-28 livestream_20260428_new_york_open_live_q_a_x4srguziqwk#16 1:15:10 (stated) Pre-open decision: if you have an anticipation, trade the open; if not, wait for the open; if the open gives nothing, wait for 10:00.
+- 2026-04-28 livestream_20260428_new_york_open_live_q_a_x4srguziqwk#17 55:40 (stated) Checklist: for each asset ask whether you understand/can anticipate the daily candle; only if yes go to the lower timeframe for an aligned fractal model, otherwise skip it.
+- 2026-04-28 livestream_20260428_new_york_open_live_q_a_x4srguziqwk#18 47:40 (stated) For FX, check the dollar first; if the dollar is not clean, do not look at the pairs.
+- 2026-04-28 livestream_20260428_new_york_open_live_q_a_x4srguziqwk#19 1:08:10 (stated) When the plan's reversal does not happen at the open, keep the plan rather than chasing other assets or switching ideas.
+- 2026-04-28 livestream_20260428_new_york_open_live_q_a_x4srguziqwk#30 23:00 (demonstrated) Set an alert at the level you need (here YM's high) instead of watching a market that has not reached it.
+- 2026-04-29 livestream_20260429_new_york_open_live_q_a_n3ml_r0x30o#24 32:10 (stated) Have only one or two ideas per day; on this day only one direction (downside on indices).
+- 2026-04-29 livestream_20260429_new_york_open_live_q_a_n3ml_r0x30o#29 51:20 (stated) A trade idea is anticipation, not knowledge; you never know the next outcome.
+- 2026-05-05 livestream_20260505_new_york_open_live_q_a_i2hhhhwdapq#35 47:20 (stated) Discipline plan: one trade a day, 2R or -1R with no management, proper size, follow the rules/model, for a month.
+- 2026-05-05 livestream_20260505_new_york_open_live_q_a_i2hhhhwdapq#36 46:40 (stated) Journaling only helps if you review the journal to find the root causes (tilt, oversizing, revenge, not following model, blow-up days, over-managing).
+- 2026-05-05 livestream_20260505_new_york_open_live_q_a_i2hhhhwdapq#39 1:07:30 (stated) Reaction trading (hit a POI at 10:00 and react) is something he avoids; he prefers a clean daily framework.
+- 2026-05-06 livestream_20260506_new_york_open_live_q_a_eipm_d8rrsq#26 48:20 (stated) To stop revenge trading, cap yourself at one trade a day, no matter what.
+- 2026-05-06 livestream_20260506_new_york_open_live_q_a_eipm_d8rrsq#35 1:24:50 (stated) Build a model by blending concepts into a mechanical entry and removing everything else (he removed breakers, advanced market structure, premium/discount).
+- 2026-05-06 livestream_20260506_new_york_open_live_q_a_eipm_d8rrsq#38 1:29:00 (stated) He reads each day from the daily closure: most of the time wait for the daily close, then anticipate the next candle.
+- 2026-06-03 livestream_20260603_new_york_open_live_q_a_u4j_fzd_fjk#1 16:00 (stated) Do not pick tops: wait for the market to either rip through or form a swing, then trade the continuation.
+- 2026-06-03 livestream_20260603_new_york_open_live_q_a_u4j_fzd_fjk#25 58:00 (stated) To improve win rate, remove losing trades rather than trying to add winners.
+- 2026-06-04 livestream_20260604_new_york_open_live_q_a_c7nk7ypjhn4#37 13:00 (stated) Higher-timeframe entries are preferred because they are calmer and give fewer chances to make quick mistakes; scalping is useful for reps while learning but risks bad habits.
+- 2026-06-04 livestream_20260604_new_york_open_live_q_a_c7nk7ypjhn4#39 11:30 (stated) Do not force trades on a day with no framework; let the open tell you something or nothing.
+- 2026-06-05 livestream_20260605_new_york_open_live_q_a_x4xssv5cnqg#20 1:12:30 (stated) Trade a defined window; once you have traded it (or it has passed) you are done for the day, with no searching for more.
+- 2026-06-05 livestream_20260605_new_york_open_live_q_a_x4xssv5cnqg#21 33:00 (demonstrated) Keep a single bias and a single line: one target level, one reaction area (here a 5m FVG), one move.
+- 2026-06-10 livestream_20260610_new_york_open_live_q_a_w7fu3rx5ims#4 17:00 (stated) If a closure is not convincing, there is nothing to do; wait for the next candle on your timeframe.
+- 2026-06-10 livestream_20260610_new_york_open_live_q_a_w7fu3rx5ims#32 12:50 (stated) Limit to one trade per day; each trade exposes your psychological weaknesses. Higher-timeframe entries (15m) prevent revenge trading by slowing you down.
+- 2026-06-10 livestream_20260610_new_york_open_live_q_a_w7fu3rx5ims#37 56:35 (stated) Always start the analysis on the daily chart.
+- 2026-06-10 livestream_20260610_new_york_open_live_q_a_w7fu3rx5ims#42 28:00 (stated) If you keep losing with a setup type (e.g. reversals), find what your losing trades have in common and stop taking that type.
+- 2026-06-16 livestream_20260616_new_york_open_live_q_a_tjuolmjncmy#23 43:00 (stated) When the planned moves are done and there is no new draw on liquidity, do nothing.
+- 2026-06-16 livestream_20260616_new_york_open_live_q_a_tjuolmjncmy#24 58:20 (stated) The model is closure-based: make no decision until the candle closes, and don't predict closes from a live candle.
+- 2026-06-16 livestream_20260616_new_york_open_live_q_a_tjuolmjncmy#25 59:50 (stated) Traders who struggle with live fluctuation do better on the 15m because there is less noise and it is easier to wait for the close.
+- 2026-06-17 livestream_20260617_new_york_open_live_q_a_with_nickdoesfutures_tdiwwmrwf2k#28 48:30 (stated) In funded accounts trade the same way as in the eval (minus the risk); do not switch into over-conservative capital preservation. (speaker unclear)
+- 2026-06-17 livestream_20260617_new_york_open_live_q_a_with_nickdoesfutures_tdiwwmrwf2k#35 50:10 (stated) Use his checklist video as a pre-trade checklist rather than building one from scratch.
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#24 37:20 (stated) Max one trade a day if you revenge trade.
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#27 42:40 (stated) A loss is not a bad trade; a bad trade is breaking your rules. Take every trade the model prints and treat it as data collection.
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#28 45:00 (stated) If your model prints the entry, take it; don't overthink.
+- 2026-07-21 livestream_20260721_new_york_open_live_q_a_m8xcjkoubhu#29 38:10 (stated) Build bias by hindsight-testing the daily chart one candle at a time, anticipating the next day mainly from candle 2 / candle 3 closures.
+- 2026-07-22 livestream_20260722_new_york_open_live_q_a_g1iidq3raky#6 36:30 (stated) His model is daily bias, then daily profile, then entry; a bullish bias alone is not a long if the profile/price action doesn't support it (e.g. PDH swept and dying).
+- 2026-07-22 livestream_20260722_new_york_open_live_q_a_g1iidq3raky#31 03:30 (stated) Find the root cause of your struggle (tilt, oversizing, revenge trading, not following a model), then change or quit.
+- 2026-07-22 livestream_20260722_new_york_open_live_q_a_g1iidq3raky#32 10:20 (stated) Your real risk on a prop account is the fee you paid; treat funded accounts the same as evals.
+- 2026-07-26 livestream_20260726_ttrades_indicator_updates_walkthrough_and_q_a_sdzke_naniy#45 43:50 (stated) Once a bias is set, do not flip it just because the previous day high was taken.
+- 2026-07-27 livestream_20260727_new_york_open_live_q_a_je7cd9hjube#26 14:30 (stated) He lets Monday print and does the weekly read on Tuesday; he has no view on tomorrow until today closes.
+- 2026-07-27 livestream_20260727_new_york_open_live_q_a_je7cd9hjube#28 1:00:00 (stated) Avoid consolidating markets; trade something that is trending. Learning when to avoid the market helps a lot.
+- 2026-07-28 livestream_20260728_new_york_open_live_q_a_yngx9oaefui#36 1:06:20 (stated) When you are not in a position, stop watching the chart; wait for the daily close.
+- 2026-07-28 livestream_20260728_new_york_open_live_q_a_yngx9oaefui#41 10:30 (stated) Judge performance over 100+ trades, not 1-3.
+- 2026-07-28 livestream_20260728_new_york_open_live_q_a_yngx9oaefui#42 33:20 (stated) Fear of taking a trade is fear of outcome; accept that the next trade can't be predicted.
+- 2026-07-28 livestream_20260728_new_york_open_live_q_a_yngx9oaefui#43 21:30 (stated) Trading less often tends to improve results; you don't need to trade every day.
+- 2026-07-29 livestream_20260729_new_york_open_live_q_a_xraklbjhw5k#30 1:46:10 (stated) View pullbacks in a winning trade as the chance to trail the stop to the new swing, not as a threat.
+- 2026-07-29 livestream_20260729_new_york_open_live_q_a_xraklbjhw5k#31 40:20 (stated) When wrong, own it and review what you saw but didn't act on; the market is always right.
+- 2026-07-29 livestream_20260729_new_york_open_live_q_a_xraklbjhw5k#32 1:19:00 (stated) Psychology: don't tilt, don't revenge trade, don't oversize; 'when you think about doing something stupid, don't do it'; use a max daily loss.
+- 2026-07-29 livestream_20260729_new_york_open_live_q_a_xraklbjhw5k#33 1:27:30 (stated) Have a target and plan before entering; he gives no signals so traders develop that skill.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#1 03:20 (demonstrated) At a new monthly open, start by reading how the previous monthly candle closed on every instrument, indices first.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#24 26:40 (stated) Set and forget: 2R or -1R; do not trail or move the stop to soothe fear of green going red.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#26 30:10 (stated) You cannot be emotionless; feel the emotions without acting on them.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#27 31:40 (stated) Have a defined model and a checklist; if all requirements are met, place the trade; treat trading as data collection.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#30 35:10 (stated) Moving up a timeframe removes losers; a flat period is better than a losing period.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#35 44:50 (stated) When markets/assets disagree and you don't know what's happening, wait patiently rather than zooming in to force a trade.
+- 2026-08-03 livestream_20260803_new_york_open_live_q_a_nesscpmzwr0#38 49:40 (stated) Reverse engineer price before backtesting.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#5 15:20 (stated) If price does not meet your entry requirement, skip the entry but keep the bias and the target; a missed setup is not a reversal signal.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#32 04:30 (stated) Chart only the mini contracts; ignore what micros do.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#34 35:10 (stated) When waiting on a level, give it ~30 minutes to react on the working timeframe; do not drop to the 1-minute to call every move.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#36 53:20 (stated) If backtests win but live trading doesn't, the problem is execution (fear of loss, ego, tilt, oversizing), not strategy.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#37 1:01:40 (stated) Choose the discomfort of sitting in a trade without breaking rules over the discomfort of breaking rules and blowing accounts; change or quit.
+- 2026-08-04 livestream_20260804_new_york_open_live_q_a_m0wtbdue7gs#38 37:30 (stated) Once a swing is on, don't watch it; if you're not exiting at current price, P&L checks change nothing.
+- 2026-08-19 livestream_20260819_new_york_open_live_q_a_rvrk4mltjss#5 07:30 (stated) Use the VIX (or the daily chart itself) to set daily range expectations. With the VIX at the low of its range, expect a smaller daily range.
+- 2026-08-19 livestream_20260819_new_york_open_live_q_a_rvrk4mltjss#47 1:36:00 (stated) Define your model and your session window: he trades the NY morning only (sometimes Asia swings), never the PM session. Watch charts only when a setup exists.
+- 2026-08-19 livestream_20260819_new_york_open_live_q_a_rvrk4mltjss#48 56:20 (stated) Taking losses: take it, feel it, don't do dumb stuff after it. Otherwise quit.
+- 2026-08-19 livestream_20260819_new_york_open_live_q_a_rvrk4mltjss#49 43:20 (stated) Learn the model by marking up charts on a 'quiz' template with the indicator's fractals hidden, then compare with the indicator.
+- 2026-08-21 livestream_20260821_new_york_open_live_q_a_4rnc3qxxc20#29 50:40 (stated) His NY-open routine: get to the chart (~09:25), look at the daily and daily profile for about three minutes.
+- 2026-08-21 livestream_20260821_new_york_open_live_q_a_4rnc3qxxc20#32 1:19:20 (stated) Stop studying once you know the model; most failure is oversizing/tilt, not missing information.
+- 2026-08-25 livestream_20260825_new_york_open_live_q_a_9h15zzvakpq#11 13:40 (stated) Plan with if-then statements: if price fails to manipulate it goes to one target; if it reacts, take the other path.
+- 2026-08-25 livestream_20260825_new_york_open_live_q_a_9h15zzvakpq#19 23:20 (stated) When price fails to do what your model needs (a reversal with no continuation, repeatedly), don't trade, and don't flip to trading the invalidation off a small SMT.
+- 2026-08-25 livestream_20260825_new_york_open_live_q_a_9h15zzvakpq#37 1:17:30 (stated) Learn the model with a 'quiz' indicator template: mark C2 closures, CISDs and EQs by hand with the indicator off, then switch on the full template to check.
+- 2026-08-25 livestream_20260825_new_york_open_live_q_a_9h15zzvakpq#39 45:00 (stated) Without an A+ setup (no bias, no targets), get off and wait for the next day; anything else is reactionary.
+- 2026-08-25 livestream_20260825_new_york_open_live_q_a_9h15zzvakpq#40 1:22:30 (stated) Trade one model and get good at it instead of collecting many ICT concepts; core skill is reading swing points.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#17 32:10 (stated) Blowing accounts is a management problem (tilt and sizing), not a strategy problem; overcome it by simply not revenge trading or sizing up after a loss.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#23 41:40 (stated) Keep charts clean: let the indicator draw structure and mark only the line you expect price to go to.
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_afternoon_session_h1zqwwqdhka#38 1:43:20 (stated) Don't overhaul your approach after a loss; adjust slightly and keep going (Call of Duty analogy).
+- 2026-08-26 livestream_20260826_ttrades_mnq_cup_morning_session_es_r3bydyry#25 1:55:20 (stated) Always start on the daily chart and keep your targets there.
+- 2026-09-01 livestream_20260901_new_york_open_live_q_a_uw55tuk_ngy#27 55:40 (stated) Intraday rule list: have a bias, let the wick form (on the closure through), align/enter with the lower-timeframe fractal model.
+- 2026-09-01 livestream_20260901_new_york_open_live_q_a_uw55tuk_ngy#33 57:50 (stated) Once in a trade, accept the stop and don't manage it based on adverse moves that don't hit it.
+- 2026-09-01 livestream_20260901_new_york_open_live_q_a_uw55tuk_ngy#34 1:08:20 (stated) Live, wait for candle closures and don't micromanage trades, as in backtesting.
+- 2026-09-01 livestream_20260901_new_york_open_live_q_a_uw55tuk_ngy#39 23:40 (demonstrated) Routine on a done day: watch the open, manage positions, set alerts, leave.
+- 2026-09-02 livestream_20260902_new_york_open_live_q_a_grc5fvb5tdg#30 48:30 (stated) Have one idea, supported by the daily candle and daily profile, and trade it only through the fractal model; if it fails, accept being wrong.
+- 2026-09-02 livestream_20260902_new_york_open_live_q_a_grc5fvb5tdg#35 27:40 (stated) Waiting for the HTF candle open removes stress; nothing to do until 10 a.m.
+- 2026-09-02 livestream_20260902_new_york_open_live_q_a_grc5fvb5tdg#36 42:00 (stated) Execute your own trades; copying a streamer won't make you grow.
+- 2026-09-09 livestream_20260909_new_york_open_live_q_a_k7xvj2w3cp4#33 55:00 (stated) After a win streak, take one trade and get off the charts to avoid tilt.
+- 2026-09-09 livestream_20260909_new_york_open_live_q_a_k7xvj2w3cp4#34 33:00 (stated) Keep the chart simple: highs, lows, fair value gaps and the model; stop adding new concepts when overwhelmed.
+- 2026-09-10 livestream_20260910_new_york_open_live_q_a_wa9m30uhrm0#10 03:50 (stated) Always start top-down on the daily.
+- 2026-09-10 livestream_20260910_new_york_open_live_q_a_wa9m30uhrm0#18 12:00 (stated) In a range where continuations form slowly and keep failing, stand aside.
+- 2026-09-15 livestream_20260915_new_york_open_live_q_a_hlwq1drjbzo#17 17:10 (stated) Have one idea for the day with a defined sequence: run/sweep off the open, a reversal, then seek the continuation.
+- 2026-09-15 livestream_20260915_new_york_open_live_q_a_hlwq1drjbzo#31 1:06:40 (stated) Start every day on the daily chart.
+- 2026-09-15 livestream_20260915_new_york_open_live_q_a_hlwq1drjbzo#35 1:01:30 (stated) Nothing works 100% of the time; a CISD can fail even with bias aligned, accept being wrong.
+- 2026-09-15 livestream_20260915_new_york_open_live_q_a_hlwq1drjbzo#36 1:06:40 (stated) Judge win rate and profitability over large samples (100 trades, 3-6 months); loss streaks are normal at a 50% win rate.
+- 2026-09-15 livestream_20260915_new_york_open_live_q_a_hlwq1drjbzo#37 54:40 (stated) The goal of a session is to learn something, not to be right or make money every day.
+- 2026-09-16 livestream_20260916_new_york_open_live_q_a_9yvbe_20hdg#18 45:00 (stated) No model wins every time; expect losses.
+- 2026-09-16 livestream_20260916_new_york_open_live_q_a_9yvbe_20hdg#30 1:07:50 (stated) Reverse engineer in hindsight rather than bar-replay guessing: for each move ask how you could have got on side, which timeframe shows reversal + continuation, the R:R, whether highs were taken, and the draw on liquidity.
+- 2026-09-16 livestream_20260916_new_york_open_live_q_a_9yvbe_20hdg#34 16:10 (stated) He avoids shorting when the setup means trading away from a cluster of failure swings against his upside read.
+- 2026-09-23 livestream_20260923_new_york_open_live_q_a_kbjaggkxdei#30 45:10 (stated) Think less when trading: hold one clear HTF idea (e.g. NQ into the daily gap then expand to the highs) and trade only that.
+- 2026-09-23 livestream_20260923_new_york_open_live_q_a_kbjaggkxdei#32 03:50 (demonstrated) Pre-open routine: daily relative strength of NQ/ES/YM and previous-day extremes, then other markets, then 15m three-pane indices with projected paths, then wait for 9:30.
+- 2026-10-06 livestream_20261006_new_york_open_live_q_a_rtomj8urfnw#12 20:00 (stated) Keep your bias through intraday chop; don't flip it because the market isn't moving or because of what others say.
+- 2026-10-06 livestream_20261006_new_york_open_live_q_a_rtomj8urfnw#21 10:00 (stated) Trading all-time highs needs no special method; trade them the same way as any other price.
+- 2026-10-07 livestream_20261007_new_york_open_live_q_a_mflp3acpzc0#1 04:40 (stated) Follow your rules or quit; trading outside your plan (e.g. an instrument you promised not to trade) is the psychology problem.
+- 2026-10-07 livestream_20261007_new_york_open_live_q_a_mflp3acpzc0#14 25:20 (stated) An idea with nothing on the chart aligning with it is worthless; switch the idea when price does not confirm it.
+- 2026-10-07 livestream_20261007_new_york_open_live_q_a_mflp3acpzc0#20 30:00 (stated) Structure mapping always starts on the daily chart.
+- 2026-10-07 livestream_20261007_new_york_open_live_q_a_mflp3acpzc0#32 57:10 (stated) He trades expansion, not consolidation; days where the move is done before he wakes up are days to stay away.
+- 2026-10-20 livestream_20261020_new_york_open_live_q_a_vzhkq3c8xbi#36 57:20 (stated) Missing the first entry is not the end; later continuation entries are available, and waiting for them also tells you when you're wrong.
+- 2026-10-20 livestream_20261020_new_york_open_live_q_a_vzhkq3c8xbi#37 34:30 (stated) If things are confusing, don't force a trade; some days and weeks are unclear, and that's normal.
+- 2026-10-20 livestream_20261020_new_york_open_live_q_a_vzhkq3c8xbi#38 1:00:10 (stated) Learn the model's foundation before adding tools like SMT, PSP or correlation.
+- 2026-10-20 livestream_20261020_new_york_open_live_q_a_vzhkq3c8xbi#40 05:00 (demonstrated) He watches several assets on synced side-by-side charts (NQ/ES/YM panes) to compare relative strength intraday.
+- 2026-10-27 livestream_20261027_new_york_open_live_q_a_bjzpiunp8gc#32 27:20 (stated) Don't do dumb stuff: tilt, revenge trading, oversizing and not following the strategy; if you can't stop, quit trading or change.
+- 2026-10-27 livestream_20261027_new_york_open_live_q_a_bjzpiunp8gc#33 41:20 (stated) Form your own bias before consuming anyone else's; trading is you vs the market.
+- 2026-10-28 livestream_20261028_new_york_open_live_q_a_c4ti6kdxn0s#16 08:20 (stated) Check ForexFactory filtered to USD for the week; know the volatility events (FOMC, elections, NFP); crude oil inventories matter for oil even as a yellow folder.
+- 2026-10-28 livestream_20261028_new_york_open_live_q_a_c4ti6kdxn0s#33 36:00 (stated) Prep order: daily candles and bias first, then wait for 09:30 to print before acting.
+- 2026-11-03 livestream_20261103_new_york_open_live_q_a_tqokgrazwky#11 25:30 (stated) If you don't know what the market is doing, don't trade.
+- 2026-11-03 livestream_20261103_new_york_open_live_q_a_tqokgrazwky#18 28:10 (stated) Top-down process: daily bias, then an intraday reversal (a high or low of day to trade away from), then an aligned fractal-model entry.
+- 2026-11-03 livestream_20261103_new_york_open_live_q_a_tqokgrazwky#19 29:05 (stated) Failing funded accounts usually comes from tilt/revenge trading, oversizing, breaking strategy or rules, and no risk management; stop those behaviours instead of learning more.
+- 2026-11-03 livestream_20261103_new_york_open_live_q_a_tqokgrazwky#38 1:03:00 (stated) Fear comes from trying to control the outcome; you control only risk. Expose yourself with tiny risk (e.g. 10% of the allowed drawdown), set and forget, max one trade a day, until losses stop mattering.
+- 2026-11-10 livestream_20261110_new_york_open_live_q_a_cp1nyqa_t5c#12 17:30 (stated) Discipline: max one trade a day, follow your rules and model, no tilt or revenge trading; if you cannot change, quit trading.
+- 2026-11-10 livestream_20261110_new_york_open_live_q_a_cp1nyqa_t5c#16 35:00 (stated) There will be times you don't know what's going on; wait instead of forcing a trade.
+- 2026-11-11 livestream_20261111_new_york_open_live_q_a_mk9qoez3qzi#30 23:20 (stated) Trade only what meets your system's requirements; skip markets with choppy intraday structure (CL) and focus on the cleanest asset (gold today).
+- 2026-11-11 livestream_20261111_new_york_open_live_q_a_mk9qoez3qzi#32 14:40 (stated) Follow the trade plan to its target; don't close early out of fear - emotions exist, they just must not drive decisions.
+- 2026-11-11 livestream_20261111_new_york_open_live_q_a_mk9qoez3qzi#35 1:18:00 (stated) He does not scalp choppy intraday structure; prefers trading a trend.
+- 2026-11-11 livestream_20261111_new_york_open_live_q_a_mk9qoez3qzi#37 15:00 (demonstrated) He marks out targets with dotted lines, hand-draws the projected path on each index pane, and uses the position tool to show stop/target/R:R.

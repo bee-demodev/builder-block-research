@@ -1,27 +1,122 @@
 [
   {
-    "text": "Optimal Trade Entry (OTE) - ICT Concepts. educational_channel. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 53.55,
-    "duration": 45.9
+    "text": "How's it going everyone? This video is going to be over OTE, or optimal trade entry. Now, it is important to have an understanding of discount and premium prior to this video, so if you haven't seen my discount and premium video, I'll link that in the top right. The first thing we are going to do is go over a PDF, which will be linked in the description below. This will have FIB settings, along with a few examples, and then we'll hop back into the charts and find a few examples. The first thing we are going to go over are the Fibonacci settings.",
+    "start": 10.03,
+    "duration": 27.71
   },
   {
-    "text": "Optimal Trade Entry (OTE) - ICT Concepts. educational_channel. Liquidity sweep or run on the highs and lows.",
-    "start": 206.55,
-    "duration": 45.9
+    "text": "So for these settings, I am going to be using the 0, 0.5, 0.62, 0.705, 0.79, and the 1. That is what I will input into the Fibonacci retracement tool. So it will look something like this example here, where we have a 1 and a 0 here with the discount and premium or the 0.5. And then we have our OTE or optimal trade entry zone with our 0.62.",
+    "start": 37.74,
+    "duration": 27.91
   },
   {
-    "text": "Optimal Trade Entry (OTE) - ICT Concepts. educational_channel. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 359.55,
-    "duration": 45.9
+    "text": "0.79, and the midpoint, which is the 0.705. So in trading view, when I pull up the settings, it will look something like this. But now that I understand what the FIB settings are, how do I use the Fibonacci retracement? What I will do is look for a swing high to a swing low. If you don't know what a swing high or a swing low is, please check out my liquidity video where I go over that. But what I do is after I found my swing high and swing low, I drag my Fibonacci retracement from the swing high,",
+    "start": 65.65,
+    "duration": 31.61
   },
   {
-    "text": "Optimal Trade Entry (OTE) - ICT Concepts. educational_channel. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 512.55,
-    "duration": 45.9
+    "text": "To the swing low. And from there, my retracement levels will be put onto the chart. Let's actually hop on to trading view and go over an example of this. So in this first example, we will be looking at a bearish scenario where we will draw it from high to low. And then we will go into a bullish example. So if you notice, we have a swing high put in here. So let's see when we have a swing low. Okay, so here we have a swing high and a swing low.",
+    "start": 97.26,
+    "duration": 31.43
   },
   {
-    "text": "Optimal Trade Entry (OTE) - ICT Concepts. educational_channel. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 665.55,
-    "duration": 45.9
+    "text": "So using the Fibonacci tool, I can drag it from this high down to this low. On this bullish example, we have a swing low put in here, and now I am waiting for a swing high. So I can continue to drag this up as we form our range, like so, until a swing high is put in. Now we put in this swing high, and that is what it would look like to draw it out. So how do I use this?",
+    "start": 128.69,
+    "duration": 40.46
+  },
+  {
+    "text": "When price makes a swing high and swing low, and I mark out this range, I'm looking for price to retrace to an optimal trade entry. What is that? That's this zone from the 0.62 to the 0.79, including the midpoint of 0.705. From here, I'm looking for an entry or a lower timeframe entry model to go lower or to reach for sell side liquidity resting below. So let's go back to our examples and see how they worked out. So back here with our bearish example,",
+    "start": 169.15,
+    "duration": 29.28
+  },
+  {
+    "text": "We have our optimal trade entry zone. So that is from our 0.62 to 0.79. And this is ideally where I want to be looking for either a short entry or a lower timeframe entry model. But let's see what happens when price reaches back up into this area. Price reaches back up, hits the 0.705 or the midpoint of the OTE, and then reaches for sell side liquidity resting below. So let's go take a look at that bullish example. Go back here with the bullish example. What can we expect to happen?",
+    "start": 198.43,
+    "duration": 32.18
+  },
+  {
+    "text": "Well, ideally, I want to see a move out of this OTE area. And what do we have resting above here? A fair value gap. So I'd like to see price reach up into this area. And there we go. Price reaches up into this fair value gap and we get a move out of the OTE. The next thing I want to talk about is aligning these optimal trade entries with other PD arrays. So for example, here, when I draw my fib and I see that this is my area where I am ideally looking for shorts.",
+    "start": 230.61,
+    "duration": 30.13
+  },
+  {
+    "text": "I look to my left and see if there's any PD arrays that line up. And what do I notice? I have a fair value gap right here. So now I have overlapping confluences. I have a fair value gap and an optimal trade entry. So let's hop back into the charts and see if we can find any PD arrays that align with our examples. So back to taking a look at this first example, I have drawn out the OTE zone and I look to my left and see what we have. Well, it's pretty clear we have a fair value gap resting in this area.",
+    "start": 260.74,
+    "duration": 28.41
+  },
+  {
+    "text": "But my eyes get drawn to these up close candles here. So now I have multiple confluences for this point of interest here to move lower. Now back to taking a look at this bullish example, I've drawn out the 0.62 to 0.79 with these lines here. Are there any PD arrays that catch your eye? Now if you've seen my latest video, you'll notice we have a large down close candle sweeping these lows before we displace and close over this candle here.",
+    "start": 289.15,
+    "duration": 30.8
+  },
+  {
+    "text": "That validates it as an order block. But what do we notice about this order block's opening price? It's not in an OTE. This is when I would use the mean threshold of this order block, or 50% of the body. Now I have another confluence here. Now there are many ways to do this, as I'm sure many people spotted this volume imbalance here, which was also respected. For me, I focus on which PD arrays catch my eye, and that would be this large downclose candle and the mean threshold of it.",
+    "start": 319.95,
+    "duration": 29.75
+  },
+  {
+    "text": "The last thing I want to talk about is when I get this move out of an OTE and form a swing low, we now have another range. I can mark out that range and then use an OTE again. We'll hop into the charts because this does make sense when we use a lower time frame. So in this example I'm going to be looking at EURUSD on the daily chart and then dropping down to the hourly chart. So if you notice we have this displacement range right here.",
+    "start": 349.7,
+    "duration": 25.2
+  },
+  {
+    "text": "So ideally I'd want to see price reach back up into an OTE here before moving lower. And here you can see price moves back up into an OTE here. So now let's drop down to a lower timeframe to see the range that this move creates. So here we are on the hourly chart, and this is the displacement range that we marked out on the daily. And you can see we retraced back up into an OTE, actually filling this hourly fair value gap. So let's see if we get any displacement lower where we can mark out another OTE.",
+    "start": 374.96,
+    "duration": 30.11
+  },
+  {
+    "text": "So here we're starting to get this displacement down, so I'm using this high here that made the new low, and I'll continue to track it lower. Here we make a new low, so I'll extend this OTE down. Here we reach back up into an OTE and then displace lower. And we'll see how that move ends up. It takes this low and then displaces back up. So now we're going to continue this.",
+    "start": 411.82,
+    "duration": 35.72
+  },
+  {
+    "text": "I'd want to see price reach back down into this OTE. What do we have right here? A breaker. So let's see what happens when price returns to this area, if it does. So we get a nice reaction out of this breaker and OTE there. But now for a top-down example about how I would use this is here we have gold on the hourly chart and we get displacement down. I'm going to be watching this displacement range or an OTE.",
+    "start": 447.57,
+    "duration": 30.75
+  },
+  {
+    "text": "We make a new low, so I adjust my FIB, and then I look for PD arrays in this area. What do I notice here? I have a fair value gap in an OTE here. So now what I look for is I drop down a time frame. So now down on the five minute, let's see if price reaches back up into that OTE. Important thing to notice here is how price creates all these equal lows or generates liquidity. Now we reach up into this area. However, it's out of kill zone, so I am not watching this.",
+    "start": 479.6,
+    "duration": 36.1
+  },
+  {
+    "text": "We now enter my kill zone, we reach up, hit the .79, body is still respecting the hourly fair value gap, and then we get displacement lower. So now we have a five minute fair value gap here, which I could be looking to enter. Down here on the one minute chart, I see a nice full bodied one minute candle reaching up into this five minute fair value gap and then getting displacement lower. This is an order block. And so what I would look to do",
+    "start": 522.67,
+    "duration": 31.87
+  },
+  {
+    "text": "Is search for an entry here, my stop on this high, and then looking to target these lows that were generated prior to the session or London session lows. So it would look something like this. And there we go. A3R trade. In this last example, I'm going to be looking at ES.",
+    "start": 554.7,
+    "duration": 27.83
+  },
+  {
+    "text": "Here we have the daily chart, and you can see that Tuesday puts in a high a week, and we get expansion Wednesday and Thursday, and our weekly objective is this daily swing low, and we take that out. So I'm anticipating a TGIF setup to cap the weekly range. So with that idea in mind, let's drop down to the five minute. So down here on the five minute, I'm gonna go ahead and mark out our daily open, and I'm anticipating this to be a New York reversal to go higher. What do I notice right here?",
+    "start": 582.53,
+    "duration": 30.08
+  },
+  {
+    "text": "A bunch of failure swings. So ideally I want to see price forming a reversal in here and then reach for these failure swings up here and the daily open. So let's zoom into this price action here. So here we get a nice move down, a sweep, and then displacement higher. So the first thing I'm going to do is mark out this projection here from this high to this low and project it up.",
+    "start": 612.61,
+    "duration": 27.95
+  },
+  {
+    "text": "What do we notice about the 2 to 2.5 area here? It's resting just above these failure swings. So that lines up and gives me conviction that I'd like to see price reach for this area here. Dropping back down into this area, I want to see price close over these highs here. We get a nice close over here. So then what I'm going to do next is mark out from this low to the current high and mark out my OTE. So from here, I will track this high until we get a retracement.",
+    "start": 642.61,
+    "duration": 32.29
+  },
+  {
+    "text": "Put in new highs, track that, put in a new high, and then we make this swing high here. So now I can put in my risk to reward tool, and ideally I want to be entering at the .705, but if I really want to be in a position, I'll look to enter at the .62. So then I'll enter here, and my target will be these highs up here. So a 3.4R trade. Let's see what happens. So we get an entry.",
+    "start": 677.01,
+    "duration": 36.56
+  },
+  {
+    "text": "It does eventually sweep here, go into the midpoint of the OTE, and then we get our displacement up. You can see there's a fair value gap entry there as well. And then we continue higher, hit this daily open, and let's see what happens. And it takes a while, but we do end up going and sweeping those failure swings at the high. You can see how daily open did provide some resistance there.",
+    "start": 713.57,
+    "duration": 35.53
+  },
+  {
+    "text": "I hope you enjoyed this video, if you did, please hit that like and subscribe button, and I'll see you guys in the next one.",
+    "start": 749.1,
+    "duration": 6.02
   }
 ]

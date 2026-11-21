@@ -1,27 +1,87 @@
 [
   {
-    "text": "Discount & Premium - ICT Concepts. educational_channel, equilibrium. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 36.260000000000005,
-    "duration": 31.08
+    "text": "How's it going, everyone? This video is going to be over discount and premium. However, for this video, you have to have a good understanding of buy side and sell side liquidity. So if you haven't already watched my video on that, it will be linked in the top right corner. So the first thing to understand in marking out discount and premium is finding the range. And so for that, I look for a swing high to a swing low, or essentially the most prominent range in this area. And from there, I will take",
+    "start": 9.97,
+    "duration": 28.75
   },
   {
-    "text": "Discount & Premium - ICT Concepts. educational_channel, equilibrium. Liquidity sweep or run on the highs and lows.",
-    "start": 139.86,
-    "duration": 31.08
+    "text": "In this case, the gone box or a fib and mark out from the high to the low. Doing this, we can see where our equilibrium rests right here with the 0.5 fib. So this would be the equilibrium of the range. Anything above the 0.5 fib is considered at a premium, and anything below the 0.5 fib is considered at a discount. So extending this box over to the left, we can get a better visualization of where our premium",
+    "start": 38.72,
+    "duration": 27.71
   },
   {
-    "text": "Discount & Premium - ICT Concepts. educational_channel, equilibrium. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 243.46,
-    "duration": 31.08
+    "text": "And discount of the range lies. It is important to note that there is not just one range within price action. There are multiple ranges within ranges. For example, here, we have this range from this move down. However, when we put in a swing low here and move back up, we create another range from this high to this low. There are multiple different ranges within a set of price action, and it can get kind of confusing. So we will jump into some examples to explain that.",
+    "start": 66.43,
+    "duration": 28.39
   },
   {
-    "text": "Discount & Premium - ICT Concepts. educational_channel, equilibrium. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 347.05999999999995,
-    "duration": 31.08
+    "text": "However, I first want to discuss why we use discount and premium. The main reason to be using discount and premium is because it shows where risk to reward is more favorable. For example, if I was to enter a long position right at the equilibrium of the range and put my stop on the low and put my target on the high, my risk to reward would be one. However, the further into discount I get, the higher or more favorable my risk to reward becomes.",
+    "start": 94.82,
+    "duration": 28.35
   },
   {
-    "text": "Discount & Premium - ICT Concepts. educational_channel, equilibrium. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 450.65999999999997,
-    "duration": 31.08
+    "text": "The same goes for entering a short position. If I was to enter a short position at the equilibrium and put my stop on the high and my target on the low, I would have a risk to reward of one. However, as I get deeper into premium, my risk to reward becomes greater. With that being said, if I am looking for a short position, I'm looking for PD arrays in a premium to get short. If I'm looking for a long position, I am looking for PD arrays at a discount to get long.",
+    "start": 123.17,
+    "duration": 29.97
+  },
+  {
+    "text": "For this first example, we are going to look at NASDAQ on the daily chart. And the first thing we want to do is identify a range. Well, we have a swing low right here, price leg up. So I'd want to mark out this high to this low. Now, one thing with ranges is they are expanding. So if price moves higher, we're going to track that with our equilibrium range. So as this moves higher, we're going to move it higher with it.",
+    "start": 153.14,
+    "duration": 27.05
+  },
+  {
+    "text": "We will continue to do that until a high is put in. Now, if this is the high, let's see. Okay, so we put in a swing high there. Now, if we're going to be looking for long positions, what do we want to look for? We want to look for a discount PD array. Do we have one? Yes, we have a fair value gap right here. So if I'm looking for longs, I want to be looking for longs in here. Let's see what happens. You can see we reach into that discount PD array and then",
+    "start": 180.19,
+    "duration": 36.75
+  },
+  {
+    "text": "Move higher from there. For this next example, we are going to look at the dollar index or DXY and the interactions between equilibrium ranges. So if you notice here, we have a move up here. And so if we mark that out from our high to the low that made the new range, we have our equilibrium range. So with that, let's drop down to the daily. Now from here, we are looking for long positions.",
+    "start": 216.94,
+    "duration": 29.91
+  },
+  {
+    "text": "Or a draw on liquidity for short positions, what would we want to look for? We would want to look for PD arrays in a discount. So looking into our discount here, what do we have? Well, we have a fair value gap here. So letting this play out, let's see where price heads for. And there we go, we reach our discount PD array. But now we look, do we have a new range? Yes, we made a range when we went from this high down to this low.",
+    "start": 246.85,
+    "duration": 32.24
+  },
+  {
+    "text": "So marking this one out. So from here, we would want to see price reach into a premium of the previous range. So letting a day play out. Now we have a reversal model. So if you look right here, we swept this lower timeframe low. We broke structure up. And then if we mark out this displacement range or this high to this low, we are left with a range that shows premium and discount.",
+    "start": 279.09,
+    "duration": 27.98
+  },
+  {
+    "text": "So just like before, if we are looking for long positions, I want to look where? I want a PD array in a discount. Well, if I look left, what do I have? I have an order block. So letting this continue, price reaches into here, into a discount, and respects the opening price of that order block. Now we expand higher. Well, what do we have now that we made a new range? Well, we can go from our high to our low.",
+    "start": 307.07,
+    "duration": 31.25
+  },
+  {
+    "text": "Now we have another range. So if price was to come back down, I'd want to see it reach into a discount. And fast forwarding to the new day, we put in a new high, so I track my premium to that high, and where do we go? Into a discount. For this next example, we have the GBPUSD on the daily chart. If you notice, we filled this daily fair value gap, and then we make a new high, and we have an aggressive displacement range right here.",
+    "start": 338.86,
+    "duration": 29.28
+  },
+  {
+    "text": "So marking this out from high to low. If price wants to draw back into a discount, do we have a PD array in discount for it to reach for? We do. We have a small little fair value gap right here. Going to the next day, we get a sweep of Monday and Friday's high right here, a close back in. Next day model wants us to drop down, get a reach for that fair value gap.",
+    "start": 368.34,
+    "duration": 30.59
+  },
+  {
+    "text": "If I'm going to be looking for longs and a discount, I want to see some sort of raid on previous day low or some sort of setup. Right here, we raid previous day low, close back in, and what do we have above us? A fair value gap. So on the next day, I would want to see price reach back up. So for that, we will go down to the 15 minute chart and look at some price action. So if we look right here, we start our new day, have midnight marked out.",
+    "start": 398.93,
+    "duration": 30.54
+  },
+  {
+    "text": "Our Asia range high and low, and we sweep this Asia low and all these lows over here, filling this fair value gap. Then we get an aggressive move higher. And so what does that create? It creates another discount and premium range. For this one, I will also mark out an OTE. So from here, if I was looking for a setup, I'd be looking for an OTE entry and then a target of that daily fair value gap.",
+    "start": 429.47,
+    "duration": 32.31
+  },
+  {
+    "text": "And if you notice, by entering at a OTE, my risk to reward is 3.43 there, versus 1.6 at an equilibrium. So letting this play out, continuing ahead, we reach into our OTE, and it's important to notice how there are no candle closes below there, right? It's respecting it. Okay, move higher, and then there we go. We reach up into that daily fair value gap, and we end up going",
+    "start": 462.38,
+    "duration": 32.0
+  },
+  {
+    "text": "Quite a bit higher than that. But that is how I would frame a setup. I hope this video helped out with your understanding of discount and premium. And if it did, please hit that like and subscribe button and I'll see you next time.",
+    "start": 494.38,
+    "duration": 13.41
   }
 ]

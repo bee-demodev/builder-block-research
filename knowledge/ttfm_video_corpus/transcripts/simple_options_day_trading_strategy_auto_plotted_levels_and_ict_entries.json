@@ -1,27 +1,47 @@
 [
   {
-    "text": "Simple Options Day Trading Strategy - Auto Plotted Levels and ICT entries!. educational_channel. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 19.11,
-    "duration": 16.38
+    "text": "How's it going everyone? We are going to go over a day trading strategy that has defined rules, auto plotted levels, and ICT entries. So let's get into it. So the rules you're going to use for this day trading strategy. Two minute chart. You're only going to play reversals off of a level. A short term high or low must be taken after the reversal off that level, and there must be displacement.",
+    "start": 7.15,
+    "duration": 26.63
   },
   {
-    "text": "Simple Options Day Trading Strategy - Auto Plotted Levels and ICT entries!. educational_channel. Liquidity sweep or run on the highs and lows.",
-    "start": 73.71,
-    "duration": 16.38
+    "text": "After that, you're going to find an imbalance and enter when price returns to it. Your stop loss will be at the low of the candle that made that imbalance, and you're going to target the next high or low, imbalance or level. If imbalance is too large, use the 0.5 FIB or don't take the trade. So, looking at AMD's chart today, we're going to go over a trade that could have been taken. So, if you're looking here, price came down here, hit this level,",
+    "start": 33.9,
+    "duration": 31.96
   },
   {
-    "text": "Simple Options Day Trading Strategy - Auto Plotted Levels and ICT entries!. educational_channel. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 128.31,
-    "duration": 16.38
+    "text": "And reversed, right? So we're looking for short-term high or low to be taken with displacement. All right here breaks short-term high. However, there's no displacement up. Once again, takes the short-term high, no displacement. However, here, once we take the short-term high, we get displacement up. All right. So we find this imbalance here and mark it off.",
+    "start": 65.86,
+    "duration": 33.61
   },
   {
-    "text": "Simple Options Day Trading Strategy - Auto Plotted Levels and ICT entries!. educational_channel. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 182.91,
-    "duration": 16.38
+    "text": "When price returns to this level, this is going to be our entry here. And then we are going to set our stop loss at the low of the candle that made the imbalance, which is right here. So we are going to risk that. Our targets are going to be these next highs, right? One there, one there, one there, and then the auto plotted level up here. So if we look at this first initial entry, we're risking about 40 cents for",
+    "start": 100.46,
+    "duration": 31.3
   },
   {
-    "text": "Simple Options Day Trading Strategy - Auto Plotted Levels and ICT entries!. educational_channel. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 237.51000000000002,
-    "duration": 16.38
+    "text": "I think it's like 80, so almost two to one reward to risk. So once you take profit here, I prefer to move my stop to break even here, right? Then you're risk free for the rest of the trade. You're going to be targeting these next levels here. So target hits there, hits there, and then hits there. You just want to go over it one more time, right? We broke this short term high with displacement.",
+    "start": 131.76,
+    "duration": 37.17
+  },
+  {
+    "text": "Retraced into an imbalance, or in this case, a fair value gap, and then you're going to be targeting these swing highs or auto-plotted levels if they are there. Now, I did mention on the rules, if you have a fair value gap or imbalance that is too large, use the 0.5 pip. Now, why is that? Well, let's say, for example, it reversed here, right? Took out this short-term low. Let's say there was a level here, took out this short-term low.",
+    "start": 168.93,
+    "duration": 29.1
+  },
+  {
+    "text": "Got this displacement and you're looking short in here. If you just entered short right on the beginning of this, you're risking about 60 cents, right? However, if you draw a 0.5 FIB, use that as your entry, you cut down your risk. So you can see your risk is now 40 cents instead of 60 cents. So that's pretty important in terms of risk to reward and profitability. One more look at the rules, use a two minute chart,",
+    "start": 198.03,
+    "duration": 32.51
+  },
+  {
+    "text": "Only play reversals, off levels, break a short term high or low, and have displacement. Search for the imbalance, that can be fair value gaps or order blocks if you know more about that, and enter when price returns. Your stop loss will be low with a candle that made the imbalance. However, if it is too large, use the 0.5 FIB, or if it doesn't meet your risk requirements, don't trade it. And then you'll be targeting high lows, imbalances,",
+    "start": 230.54,
+    "duration": 28.92
+  },
+  {
+    "text": "or auto-plotted levels. If you have any questions, please leave them in the comments below, and please consider subscribing. Thank you.",
+    "start": 259.46,
+    "duration": 7.6
   }
 ]

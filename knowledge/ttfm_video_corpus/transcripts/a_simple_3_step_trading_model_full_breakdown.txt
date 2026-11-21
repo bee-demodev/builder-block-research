@@ -1,0 +1,1737 @@
+[6.84] How's it going everyone and welcome back
+[8.64] to another video. This week we are
+[10.40] joined by AM Trades who's going to be
+[12.48] talking about daily bias and 7-hour
+[15.08] daily profile confirmation. Once he is
+[17.44] done with that, I will join in to talk
+[19.40] about fractal model entries that align
+[21.60] with that daily bias and with that daily
+[23.68] profile. I hope you guys enjoy, so let's
+[25.72] get into the video. Getting right into
+[27.28] this, the first part of any trade is
+[29.48] framing the idea off the higher time
+[31.40] frame so that you're not caught chasing
+[33.20] price intraday small reactions back and
+[35.60] forth. We want to keep our logic rooted
+[38.16] in the higher time frame and supported
+[40.48] by this framework that we're going to be
+[41.88] following. And this is not something
+[43.56] that has to be over complicated at all.
+[45.80] We're only going to be using highs and
+[47.56] lows off the daily chart, something
+[49.24] called relevant swings, which are
+[51.24] extremes of the current range in price,
+[53.84] so that when price reacts there, we know
+[56.28] without a doubt that reaction holds a
+[58.48] weight for what should happen next. And
+[60.16] that's going to be our bias backing
+[61.96] every single trade idea that we have.
+[63.68] The first part of understanding relevant
+[65.32] swings and honestly the most important
+[67.48] is knowing what a failure swing is. That
+[69.52] is the entire premise of what we're
+[70.96] doing here and you'll see why. What
+[72.48] we're looking at in this chart would be
+[74.20] a daily time frame and this is just a
+[76.44] general example. This could form in
+[78.12] multiple different ways, but the idea
+[80.32] that we're seeing here is that price is
+[82.12] trading lower. It forms an initial low
+[85.40] and then trades away from that point
+[87.52] inside of this daily candle. That could
+[89.60] be a potential reversal because we've
+[91.52] run on a low, manipulated, closed back
+[93.80] up into the range, but then we see the
+[95.84] following day here make a deep run back
+[99.36] down into that initial point, that low,
+[103.08] and then without taking it out, it makes
+[104.76] that deep run and then starts to trade
+[107.40] back away from it. This deep run,
+[109.40] whether it was one day after or multiple
+[111.20] days after, into this initial point of
+[114.12] reversal without taking it out, is a
+[116.60] failure swing. What we see this as is an
+[119.20] unestablished point of reversal. So,
+[121.80] when the market reverses, true reversals
+[124.72] are going to turn and then we will not
+[127.16] see deeper retracements back on that
+[129.24] initial area. We will reverse, then
+[131.48] expand, shallow retracements along that
+[133.80] way. Deep runs back into that initial
+[136.32] area, creating that failure swing, is an
+[139.24] area that we will not trade away from.
+[141.52] That is the one rule with failure
+[143.04] swings. If we form failure swing lows,
+[145.60] like in this example, and we start to
+[146.88] trade higher, we will not trade that
+[149.04] move away because we view this as an
+[150.76] unestablished point of reversal. It
+[152.76] would be the same with highs. If we see
+[154.20] failure swing highs and price is trading
+[156.60] down off of it, we are not going to
+[158.56] trade the downside. We are filtering
+[160.20] that out completely. So, that's a rule
+[162.16] around failure swings, but this also
+[163.68] plays into how we're identifying
+[166.08] relevant swings on the daily chart. This
+[168.24] low, the initial one that was formed,
+[170.52] the deep run which follows, creating
+[172.32] that failure swing, is how we identify
+[175.48] which low is a relevant low. This is
+[177.48] where we note out that initial low
+[179.68] before that deep run was made back into
+[181.60] it as the extreme. That is your relevant
+[184.68] low inside of this daily chart. And the
+[187.08] only way we're going to trade this
+[188.28] higher is if the following day or days
+[191.56] returns back down into that relevant
+[193.60] low, engages it to manipulate, and then
+[196.36] expands back into the range. We know a
+[199.36] manipulation at this low, without any
+[202.12] doubt, holds weight in the market
+[203.96] because it is the current extreme of
+[206.40] this range in price. Unlike if price
+[208.68] were to come back down, only take out
+[210.84] this failure swing low, again fail to
+[213.12] take out the extreme, and then trade
+[214.68] higher, that is an unestablished
+[216.60] reversal. It didn't trade into the
+[218.28] extreme of price where the reaction has
+[221.20] weight. This is that scenario where
+[222.92] price would come back down into the
+[224.96] relevant low where we had an
+[226.08] unestablished reversal, but at the point
+[228.36] where it manipulates it, closes back up
+[230.48] into the range, because that occurred at
+[232.84] a relevant low, this reaction matters.
+[236.04] It's going to lead us to assume this is
+[237.92] the true reversal and we can trade the
+[240.12] continuation to the upside. This is the
+[242.60] final layer of understanding relevant
+[244.32] swings and just being able to identify
+[246.08] them because now you know where to look
+[248.00] for failure swings on the daily time
+[250.24] frame and we're not going to trade away
+[251.44] from them. So for example here we have a
+[253.48] deep run into this initial high which is
+[255.96] the extreme of that current range. Off
+[258.24] the low we have a deep run into this
+[260.48] initial low and the next piece here is
+[264.00] knowing separation between one potential
+[267.16] relevant swing to the next. This example
+[270.12] here is showing valid separation where
+[273.08] we've engaged this extreme low, that
+[275.72] relevant swing, and then traded higher
+[277.88] off of it. The reason why this is valid
+[280.48] is because the low of this manipulation
+[282.92] did not create another failure swing to
+[285.96] a daily low to the left of it. That is
+[288.52] making it valid separation and something
+[291.20] that we can trade to the upside. Versus
+[293.52] let's take this similar piece of price
+[295.20] action and imagine that we have these
+[297.36] same lows to the left but with less
+[299.36] separation between them. In the case
+[301.52] that this daily candle comes down to
+[303.60] engage this low that seems to be an
+[305.68] extreme, that low of the manipulation is
+[309.16] just making a failure swing to these
+[311.52] daily lows to the left because there is
+[313.08] a deep run because the separation
+[315.08] between them is not enough. And if
+[317.12] there's failure swings off the lows,
+[318.84] although it looks like a manipulation
+[320.36] here, leaving failure swings off the
+[322.16] lows is not something we could trade
+[324.00] higher leaving this to be an invalid
+[326.28] manipulation and ultimately this would
+[328.80] become your relevant low. Now let's take
+[330.92] that very simple logic of understanding
+[332.88] what a failure swing is leading us to
+[334.96] focus on the relevant highs and lows in
+[336.60] the market alongside our idea of valid
+[339.44] separation. This here is a daily chart
+[341.72] from NQ. So we're just going to walk
+[343.52] through this and how you would actually
+[344.84] apply it. Starting in this area of
+[346.44] price, we opened up a new week here.
+[348.12] This is where we'll start. This is a
+[349.32] Monday daily candle. And we look to the
+[351.64] left and we have failure swings off the
+[353.92] highs because we had a deep run into
+[356.60] this initial daily high. So, this here
+[358.80] is a relevant high, but we opened up the
+[361.20] week gapped down into this low, which is
+[364.08] an extreme of the current market because
+[366.12] it is not a failure swing to anything
+[368.36] else to the left. So, this is a relevant
+[370.68] low. Now, if we judge the reaction that
+[372.64] occurs here, this is something that
+[373.80] we'll get into. We made a small wick to
+[376.88] then develop and show a manipulation
+[379.24] intraday to expand higher into our
+[382.24] opposing target being failure swings.
+[384.68] This is where we want the market to draw
+[386.24] into. Then, on the close of that day, we
+[388.72] get an opposing reaction. The most
+[390.96] recent reaction at this relevant high
+[392.96] matters because this is an extreme of
+[395.16] the market. We ran into it and closed
+[397.76] back into the range to create this wick.
+[400.76] That means that this is a valid
+[402.24] manipulation and we could look to trade
+[404.32] away from that. The next day remains
+[405.92] very neutral and is creating this new
+[407.96] range in price. When we think about this
+[410.00] day, both sides of this daily candle
+[413.20] have valid separation to this daily high
+[416.68] and this low to this daily low. So, a
+[418.84] reaction off either side, this is acting
+[421.48] as a relevant swing. So, when this
+[423.44] following day trades up into this high
+[427.32] as a manipulation closing back down into
+[429.40] the range, we see that as valid because
+[431.92] this high is not a failure swing to this
+[434.92] high here. So, we can use this reaction
+[437.28] to assume price should trade lower.
+[439.16] Price ranges, creates a new relevant
+[441.20] high, manipulates in this previous day,
+[444.48] and then the following day, we can look
+[445.96] for price to respect that reversal and
+[448.40] expand to the downside. That's the
+[450.40] reaction that we're having and our bias
+[452.72] inside of this day here. We can view
+[454.44] this and say that we're in the
+[455.48] continuation. We have an opposing
+[458.12] relevant low as a target and price again
+[461.20] continues from that previous day, breaks
+[463.80] down into this open area. Monday opens
+[466.68] up here and remains pretty neutral. It
+[468.68] doesn't have a reaction off of this low,
+[471.48] which was previously a relevant low,
+[473.08] that's previous week low, but it didn't
+[475.24] have a clear manipulation back up into
+[477.04] the range. So, we can't trade this to
+[479.08] the upside internally on this next day.
+[481.72] I can also understand that there's a
+[483.32] small wick off this low. So, for price
+[486.08] to go into this next day, we would
+[487.84] expect it to run out this low, and that
+[490.48] is your relevant swing. Intraday, we
+[492.80] have a small opposing run
+[494.88] framing it back up into the range, and
+[496.40] we expand higher in the other direction.
+[499.16] Now, once price has this valid reversal,
+[501.28] this is a day that could be traded to
+[502.48] the upside. We could also look for the
+[504.68] following day to be another continuation
+[507.12] day where we see that fall through
+[508.28] higher. Now, inside of this day, it
+[510.12] fails to continue and instead makes a
+[512.60] deep opposing run into this daily low,
+[515.88] and because there's a lot of separation
+[517.76] from this low
+[519.08] to this previous daily low, this is a
+[521.80] relevant swing. And the reaction that
+[524.28] occurs there holds weight, and it
+[526.16] matters. And we look off the highs of
+[528.00] that same time, we're opening up this
+[530.04] next day here, failure swings at the
+[532.40] high, manipulation at the low, we are
+[534.80] going to have a bias to trade up into
+[536.84] the failure swings because this is an
+[538.68] unestablished reversal, and that becomes
+[540.92] your target. Now, this day also forms
+[543.04] that large wick. We'll get into why we
+[545.04] wouldn't be trading that day, but we see
+[547.12] off the lows it appears like there are
+[549.36] failure swings, and that's a very fair
+[550.80] assumption. This specific scenario, ES
+[553.84] has a lower low
+[555.80] to this same low where NQ is making a
+[557.56] higher low. So, these are failure swings
+[559.80] that appear like it on one pair, but on
+[562.04] the other pair is a divergence, so there
+[564.28] would be a higher low on NQ, a lower low
+[567.88] on ES, and we can view this as a bullish
+[570.76] scenario because we have a manipulation
+[573.28] on ES of this relevant low because there
+[575.84] is separation to this next daily low and
+[578.76] we return back up into the range and we
+[580.80] have this framework where we are looking
+[582.80] for a continuation away from these lows
+[586.00] into our opposing relevant high as an
+[588.24] initial target. We see a valid
+[590.28] manipulation in the previous day because
+[592.84] we have that divergence with ES. That's
+[594.92] a tip for you. Anytime you see potential
+[597.52] failure swings on one pair, your first
+[599.60] instinct is to go to that correlated
+[601.24] pair and see if you find a divergence in
+[603.52] that area because that divergence means
+[605.88] it's now something that we couldn't
+[607.28] initially trade away from thinking it's
+[608.96] failure swings, but a divergence we can
+[611.32] trade away from. So this here frames the
+[613.84] upside bias as a continuation on this
+[615.96] following day. As we hold the
+[617.36] continuation, we can again trade that
+[619.48] day in the same direction and then
+[621.20] Friday lacks a follow through in either
+[623.20] direction here. Now we go into this new
+[625.12] week and Monday gaps down from the
+[628.04] previous week close. What does it do
+[630.52] there? Do we have any engagement of a
+[632.40] relevant low? Well, this is a daily low
+[635.20] that has separation to this next daily
+[637.84] low. So this here is a relevant swing.
+[640.92] In intraday, the development was showing
+[643.64] a small wick to then trade back up into
+[646.12] the range, the development of this and
+[648.32] that is a valid manipulation to trade up
+[650.32] into the opposing
+[652.08] relevant high.
+[653.48] Now on the following days, we've already
+[655.28] had a continuation day, a valid
+[657.00] reversal.
+[658.24] We are looking at this as a
+[659.76] continuation. We failed to manipulate
+[662.08] this high, so we can expect price will
+[663.96] continue through upside bias
+[665.96] continuation and upside bias
+[667.84] continuation. You can see how a very
+[669.76] simple logic like this on the daily
+[671.48] chart is really all you need to gauge a
+[674.36] bias. We're filtering out a lot of the
+[676.52] noise by focusing on the extremes of the
+[679.04] current range by just ignoring failure
+[681.68] swings and saying if there is a failure
+[683.60] swing in the market, that is a false
+[685.36] reversal and we will not be trading away
+[687.52] from that area. We're looking for price
+[689.60] to hit the extremes of the market, these
+[691.80] ones that we've noted out here in this
+[693.36] sequence of price, and the reactions
+[695.44] that happen there, because they are
+[697.28] extremes and because of that valid
+[698.88] separation that we're talking about, the
+[700.72] reaction that happens there actually
+[703.00] matters and we're going to trade the
+[704.44] follow-through of that. With what you
+[706.80] understand now for relevant swings,
+[708.72] there's only two types of daily candles
+[710.60] that you should be trading if you want
+[712.40] to make this as simple as possible for
+[714.48] you. A small wick reversal or a daily
+[717.72] continuation. The only two that we're
+[719.96] looking for. We can anticipate the
+[721.88] potential for a small wick reversal to
+[723.56] take place when we open a daily candle
+[726.52] near a relevant swing. So, this example,
+[729.12] we have a relevant low. This day opened
+[731.92] near that point, so we only need to make
+[734.16] a shallow run to trade into that
+[736.16] relevant swing and then close back into
+[738.60] the range through the development of
+[740.36] that daily candle, which is giving us a
+[742.24] bias to understand we had a manipulation
+[744.92] at a relevant low and the rest of this
+[746.76] daily candle should trade higher away
+[749.28] from it. The reason we want to see a
+[751.12] small wick on this daily candle, not
+[753.72] some deep opposing run to reset relevant
+[756.36] swing to then reverse, is because small
+[758.88] wicks support expansion. Go to any daily
+[762.16] chart, look at the large range days.
+[764.60] They're all going to have small wicks
+[766.28] because expansion days, directional
+[769.04] daily candles, do not have time to make
+[771.68] deep opposing runs. They're going to
+[773.24] make that shallow move and then begin
+[775.12] the expansion right after it. So, we
+[776.72] want to demand that from our reaction on
+[779.40] the relevant swing if we're going to
+[780.88] trade a reversal day. Here you can see
+[782.52] that annotated relevant swing. The wick
+[785.40] is from the open to the low in this
+[787.36] example. That's a small wick and that is
+[790.28] our trigger to understand we have the
+[791.92] potential for a reversal day to be an
+[794.52] expansion daily candle. This type of
+[796.36] daily candle can really occur in two
+[798.24] different scenarios. The first is it's
+[800.32] an actual reversal of the previous
+[802.32] trend. So, in this example, we were
+[803.96] trading higher in a continuation. We
+[806.60] found a relevant high, small wick
+[809.00] reversal off of that area here. We can
+[811.88] also find it as part of a continuation
+[814.24] of the previous trend. So, we were
+[816.08] previously bullish in the continuation,
+[818.40] we paused for a brief period of time,
+[820.92] found a relevant low in that period of
+[823.04] consolidation, and then made a small
+[825.00] wick reversal to then continue from that
+[827.92] previous direction. The next type of
+[829.64] daily candle we're looking to trade is
+[831.56] the daily continuation in any fashion.
+[834.20] What you're seeing here is we had a
+[836.52] reversal day in the previous day at a
+[839.32] relevant swing. And again, this is not a
+[841.52] daily candle that we would trade because
+[843.28] we have a large opposing run from the
+[846.04] daily open to reach into that relevant
+[847.80] swing, and then close back into the
+[849.64] range. So, we're going to avoid that
+[851.28] type of reversal day, but then focus on
+[853.92] the continuation of follow because we
+[855.68] closed back up. That is a valid
+[857.52] manipulation, and the continuation day
+[860.28] is going to have that small wick, that
+[862.08] shallow opposing run, not a deep run to
+[864.20] create a failure swing, a shallow move,
+[866.96] and then trading away in the
+[867.96] continuation from that point of previous
+[870.60] reversal. Again, annotated here, this
+[872.64] would be a relevant swing, a previous
+[874.92] reaction to reverse, a valid
+[876.84] manipulation, and then the following day
+[878.96] or days as a continuation. Whenever
+[881.72] we're trading a daily continuation, we
+[884.00] need to set an invalidation point in the
+[886.40] previous daily candle. Anytime we're
+[888.72] trading a continuation day, that implies
+[891.68] that either the previous day low when
+[893.56] bullish will not be traded back to, or
+[895.72] the previous day high when bearish is
+[898.08] not going to be traded back to. We're
+[899.80] just going to expand away from those
+[901.84] areas, so we need to set an invalidation
+[904.12] point to understand where that high or
+[906.36] low of day should form while looking for
+[908.80] that small wick that we're looking to
+[910.24] see. So, a very simple and universal way
+[912.56] to do this is take a 50% fib tool and
+[915.84] anchor it in the previous daily candle
+[917.72] when expecting a continuation from the
+[920.00] opposing swing, so the previous day high
+[922.48] or low, depending if you're bullish or
+[924.20] bearish, to the closing price of that
+[927.40] daily candle. What that looks like in
+[929.20] this scenario, for example, is we would
+[931.28] have a manipulation in a previous day at
+[934.08] a relevant swing, and we're looking for
+[936.08] this day to be a continuation. We would
+[938.40] anchor our invalidation point from the
+[940.88] closing price of that previous daily
+[943.00] candle to the opposing swing, which is a
+[945.40] low because we're looking to trade away
+[947.12] from that low. 50% is the area where
+[950.20] price should not trade back to. We want
+[952.52] to see a continuation and a low of day
+[955.28] formed above that level because that is
+[958.12] going to force that small wick. Any run
+[961.32] through this is creating a large wick on
+[964.12] that continuation, potential failure
+[966.52] swing, and that is going to invalidate
+[968.84] or make this day uninteresting and
+[970.84] unlikely to continue higher. The exact
+[973.36] same thing applies when we're already in
+[975.04] the continuation. You can see this is a
+[976.88] continuation day, another continuation
+[979.32] day. If that is still in the
+[981.24] continuation and price should draw
+[982.72] higher, we would set our invalidation
+[984.80] point in the previous day from the
+[986.76] closing price of that previous daily
+[988.80] candle to the opposing swing, which is
+[990.96] again a low if we're trading to the
+[992.72] upside. And then in that range, that 50%
+[996.20] level that's set, we don't want to see
+[998.44] the day we're expecting a continuation
+[1000.68] for that low of day to form beyond that
+[1003.08] level because that's going to create a
+[1004.96] large opposing run, which is unfavorable
+[1007.72] and does not support expansion like
+[1009.76] we're looking to trade. We want
+[1011.44] directional daily candles, and this is
+[1013.48] the process to force that. Now, relevant
+[1015.44] swings are just the first part of this.
+[1017.40] It's a very simple way to understand
+[1019.72] where the opportunity exists and which
+[1022.16] direction it should play out in. That's
+[1023.80] going to be our focus and our filter on
+[1025.80] the market, but we don't just get a bias
+[1028.08] and then suddenly put on an entry. We
+[1029.96] don't skip to that step. We get a bias
+[1032.88] and an idea, and based on that, we are
+[1035.76] getting a confirmation using the
+[1037.80] development of that daily candle. This
+[1039.80] is where you stop thinking in
+[1041.04] predictions and always wanting to be
+[1042.68] right on a bias, to starting to think
+[1044.84] like a trader and have an actual process
+[1047.44] around execution. When we have this
+[1049.16] expectation for the daily candle to go
+[1051.20] in one direction from a certain area in
+[1053.24] price, we don't just skip to taking an
+[1055.64] entry. In between these two steps, we
+[1058.24] place a confirmation layer, where we're
+[1060.52] not jumping ahead, instead we're using
+[1062.92] the development of the sessions
+[1064.48] intraday, pairing it with daily profiles
+[1067.08] to say, is this bias actually going to
+[1068.84] play out? Yes or no? If we have
+[1070.84] alignment, then we know exactly what we
+[1072.84] should be focused on for the session,
+[1075.04] and it's going to help us frame our
+[1076.20] entries while confirming our bias at the
+[1078.60] exact same time. Hope you guys have been
+[1080.36] enjoying the video so far. We just
+[1082.28] wanted to let you know about a one-time
+[1084.44] live training that is coming up this
+[1086.16] Wednesday, June 24th at 6:00 p.m.
+[1088.92] Eastern Standard Time. We're going to be
+[1090.48] breaking down an entire playbook around
+[1092.76] our systems with everything from our
+[1094.56] deal setups to the exact approach we use
+[1096.92] every single day. All of this is real
+[1099.00] actionable processes we've created that
+[1101.04] you can bring into your own trading to
+[1102.80] build consistency at any stage. This
+[1105.08] will be shared for free, so make sure to
+[1106.76] sign up using the waitlist in the
+[1108.16] description below. So, let's get back
+[1109.72] into the video. Inside of this system,
+[1111.60] we are only going to be focused on the
+[1113.40] New York session. And it's very simple
+[1115.52] for why we do this. We don't want to be
+[1117.44] focused on setups at any time of the day
+[1119.44] and hoping for something to play out. We
+[1121.72] are going to dial in on a very key time
+[1124.16] of the daily candle across any market.
+[1126.32] It doesn't matter what you're trading,
+[1127.84] indices, forex, commodities, New York
+[1130.40] session is the time to be trading
+[1132.00] because we can build real narrative
+[1133.80] behind our trades. And we're going to
+[1135.36] use the previous sessions as development
+[1137.96] and context. The New York session here
+[1140.28] is very obvious of why this is
+[1141.80] important. General volatility picks up
+[1144.56] extremely high in the early hours of New
+[1147.12] York. This is 8:00 and onwards. The
+[1149.80] overnight session, especially towards
+[1151.20] the open, the Asia session is extremely
+[1153.80] slow, low volatility. London session has
+[1156.24] an initial spike from the London market
+[1157.96] open, but again, tapers off very slow.
+[1160.84] And then once we hit 8:00 and after,
+[1163.88] volatility becomes extreme and the
+[1165.88] highest of the day. It starts because
+[1167.68] often times we get 8:30 news, high
+[1170.12] impact, low impact, and then most
+[1172.04] importantly, especially for the indices
+[1173.64] market, is you have the 9:30 market
+[1176.00] open. That is a consistent driver of
+[1178.20] volatility. The New York session, and
+[1180.20] especially these earlier hours, is the
+[1182.28] period of the day that is most likely to
+[1185.20] be directional and expand, most likely
+[1187.56] to close in the direction of the daily
+[1189.56] candle, and forms the majority of range
+[1193.00] in the daily candle. And all alongside
+[1195.08] that, once you understand how we're
+[1196.40] going to be using daily profiles, we're
+[1198.44] getting the most context from the
+[1200.48] previous sessions as to know exactly
+[1203.52] what should happen here with our bias.
+[1205.96] To make daily profiling extremely
+[1207.68] simple, we're going to use a 7-hour time
+[1210.56] frame. And I know at first that may be
+[1212.16] something that you've either never heard
+[1213.64] of, or it sounds like it's trying to be
+[1215.80] different just for the sake of being
+[1217.08] different. The 7-hour time frame
+[1219.48] perfectly captures session logic in each
+[1222.84] of the three sessions. The first 7-hour
+[1224.92] candle is Asia session, the second is
+[1227.52] London, and the third is New York, which
+[1229.44] is where we're looking to trade. We have
+[1231.24] three higher time frame candles that can
+[1233.56] form three distinctive daily profiles.
+[1236.92] And like I said, this here is perfectly
+[1238.76] capturing the session logic of the day.
+[1241.88] Our only rule here, as we're going
+[1243.60] through this, is we are not going to
+[1245.60] trade the Asia or London session. This
+[1248.32] 18:00 and 1:00 candle, these are ones we
+[1251.00] are going to completely skip, mainly
+[1253.04] because they are lower volatility, less
+[1255.36] likely to create the reversal or make
+[1257.20] the expansion. Everything is focused on
+[1259.28] that New York session, but even more
+[1261.40] importantly, when we allow these two to
+[1263.12] print, we don't have to guess on the
+[1265.72] daily profile. We get a defined
+[1268.12] understanding of our alignment inside of
+[1270.28] that day, and we use all the context and
+[1272.52] development from these previous sessions
+[1274.60] to know exactly what we should be
+[1276.00] focused on inside of that New York
+[1278.28] session. The first daily profile that
+[1280.00] we're going to look for is the 18
+[1281.52] reversal, which is when Asia forms the
+[1284.12] intraday high or low, the London session
+[1287.40] expands away from that point of reversal
+[1291.04] to the extent that the 8:00 candle or
+[1293.04] that New York session is already assumed
+[1295.76] to be in that continuation if we're
+[1297.84] aligned with our bias. The second daily
+[1300.00] profile is the 1:00 reversal where
+[1302.32] London forms the higher low of day, the
+[1304.68] 18 candle fails to establish a reversal,
+[1307.20] 1:00 candle runs that range out to then
+[1309.36] reverse, and then the New York session
+[1311.20] is set for the continuation. And of
+[1313.40] course, the final daily profile is the
+[1315.36] 8:00 reversal where New York forms that
+[1318.04] intraday higher low. It's when these
+[1320.04] previous sessions failed to establish a
+[1322.72] higher low of day, and the New York
+[1324.76] session must return and engage the
+[1327.20] intraday higher low to then manipulate
+[1329.52] and reverse for that session aligned
+[1331.72] with the bias. And just to give you a
+[1333.28] visual, these would be the bearish
+[1335.20] examples of the three daily profiles
+[1338.04] that we're going to be looking for
+[1339.00] alignment on. We're going to get into
+[1340.44] some more detail behind these profiles
+[1342.24] and why they work and what specifically
+[1344.08] look for, but we first want to
+[1345.92] understand where we're actually going to
+[1347.92] identify these daily profiles. Of
+[1350.16] course, we want alignment with our
+[1351.76] expectation or that bias that we have
+[1354.24] using relevant swings and the reaction
+[1356.00] at them, but where do we look for the
+[1358.16] daily profiles? There's only two places
+[1360.44] we're looking for daily profiles to form
+[1362.52] to confirm our bias. The first is going
+[1364.92] to be that small wick reversal where
+[1366.88] we're trading that daily candle at a
+[1368.84] relevant swing. So, we have a relevant
+[1371.16] swing in the market, the daily candle
+[1373.12] opens near it, and we make that small
+[1375.44] wick reversal, align the profile, and
+[1378.16] then we already determined intraday that
+[1380.16] is a small wick manipulation, and we are
+[1382.64] trading the continuation away from that
+[1385.04] higher low of day. The second example is
+[1387.24] in respect to previous day invalidation
+[1389.64] point. This is that second type of daily
+[1391.68] candle that we're going to look to
+[1392.72] trade. The first is a small wick
+[1394.32] reversal, the second is a continuation
+[1396.72] day. This day here, we would already
+[1398.60] have an expectation for the day to
+[1400.68] continue in one direction. We look
+[1403.00] inside that previous day, which would
+[1404.48] already have an invalidation point set,
+[1406.64] and we want a low of day because we're
+[1408.48] bullish here to form above that
+[1410.88] invalidation point. We see it forms
+[1412.88] above, we get alignment of a bullish
+[1415.00] profile with our expectation for the
+[1416.92] day, the bias, and then we see New York
+[1419.56] session is confirmed to trade higher.
+[1422.28] These are the two scenarios that you're
+[1424.00] looking for, and this is where we're
+[1425.40] going to seek our alignment of the daily
+[1427.36] profile. Now, to get into a little bit
+[1429.12] more detail of each profile and what
+[1431.32] you're going to be looking for and
+[1432.40] understanding the slight variations
+[1433.88] because, of course, not every single
+[1435.76] profile is going to fall perfectly under
+[1438.04] a template. We want to understand the
+[1440.20] slight in-betweens of what's actually
+[1442.16] important, but really maintaining the
+[1444.12] core logic of each profile. This here is
+[1446.32] showing that 18 reversal profile, that
+[1448.76] first one that we talked about, and we
+[1450.40] can really use a series of if this, then
+[1453.40] that statements to mechanically
+[1455.32] understand if we're aligned with the
+[1457.00] profile. So, if the 1:00 candle expands
+[1460.24] away from the 8:00 candle reversal, then
+[1462.44] seek the 8:00 candle continuation. So,
+[1464.76] if we're looking for alignment of a
+[1466.16] bullish profile, that's under the
+[1467.96] assumption that we have an expectation
+[1470.12] for a daily candle, that current one, to
+[1472.24] expand to the upside, and we're looking
+[1473.72] to confirm that through the daily
+[1475.72] profile.
+[1476.88] This one here is showing the 18 candle
+[1479.96] formed a low of day, and the 1:00 candle
+[1483.48] expanded away from that intraday
+[1485.68] reversal to the extent that there is no
+[1489.04] reason for price to trade back down to
+[1492.20] that intraday low because we've already
+[1494.00] started that continuation. The
+[1496.76] difference would be if the 18 candle
+[1498.52] formed a low and the 1:00 candle just
+[1500.68] remained ranged, well then that's not an
+[1502.60] expansion away. We're likely going to
+[1504.76] return to that intraday low and form a
+[1506.52] New York reversal. So, the logic under
+[1508.36] this profile is we've already started
+[1510.36] the continuation of this daily candle
+[1512.52] and there is no reason for it to return
+[1515.12] back to the intraday low and we're
+[1516.72] looking for New York session to already
+[1518.92] continue in that direction. This next
+[1521.44] one here is the 1:00 candle reversal. If
+[1524.32] the 1:00 candle reverses off the 18
+[1527.04] candle range, then seek an 8:00 candle
+[1529.96] continuation. So, again, we would have a
+[1532.20] bullish expectation because it's
+[1533.68] alignment of a bullish profile here
+[1535.72] inside of that daily candle. We look
+[1537.92] back at the previous two sessions which
+[1539.68] were letting print on the chart to get
+[1541.76] all of that context. The 18 candle makes
+[1544.24] an opposing run or relatively remains
+[1546.40] ranged and that 1:00 candle runs out
+[1549.88] that previous intraday low to manipulate
+[1552.92] and then closes back up into the range.
+[1555.60] This is showing a development where
+[1557.20] we've ran out the 18 candle, reversed
+[1560.00] intraday, and that is setting the New
+[1561.92] York session to be a continuation away
+[1565.56] from that London reversal. Really, when
+[1567.32] we think of both of these profiles, the
+[1568.92] 18 reversal and the 1:00 reversal where
+[1571.28] it's setting the New York session for a
+[1573.28] continuation, the idea is very similar
+[1576.28] to the daily candle. The New York
+[1578.08] session should expand. It's that time of
+[1580.52] day that should move fast and make up
+[1582.92] the majority of that range. If we've
+[1584.80] already traded away from that intraday
+[1586.76] reversal and formed it, we don't want to
+[1588.92] see a deep run back to that intraday
+[1591.16] low. It should already be in the
+[1592.92] continuation and we're looking for that
+[1594.60] wick to form to then expand higher.
+[1596.88] Finally, we have the 8:00 reversal
+[1598.60] profile. If the 18 and 1:00 candle fail
+[1602.00] to establish a reversal, then seek the
+[1604.48] 8:00 candle reversal. This is one of
+[1606.48] those profiles where if you look in that
+[1608.40] overnight session and it's relatively
+[1610.40] ranged or sustaining an opposing run,
+[1613.24] not yet confirming an intraday reversal,
+[1615.84] then we need that New York session to
+[1618.32] run out the intraday higher low to then
+[1620.80] manipulate and reverse off of. It's very
+[1623.36] simple. Did the previous sessions
+[1625.52] establish a higher low of day and New
+[1627.32] York is in the continuation or did it
+[1629.36] fail to do so and we need that 8:00
+[1631.88] candle to manipulate the intraday
+[1634.12] reversal to then reverse and expand.
+[1636.48] There's really only two scenarios that
+[1638.40] you're looking for under these pro files
+[1640.32] and when we understand the alignment
+[1641.64] that we're looking for, that is
+[1643.20] determining what you need to demand from
+[1645.56] the New York session. One final piece to
+[1647.36] daily profiles is that in the same way
+[1649.36] we set invalidation points in previous
+[1651.92] daily candles when we're expecting a
+[1654.32] daily continuation, we can do that
+[1656.72] inside of the profile when the New York
+[1658.80] session is set for a continuation under
+[1661.68] that 18 reversal and 1:00 candle
+[1664.04] reversal daily profile. So, the logic
+[1665.88] remains exactly the same. We're going to
+[1667.44] take that previous 7-hour session candle
+[1669.68] which will be the 1:00 candle from the
+[1672.20] opposing swing to the closing price, 50%
+[1676.00] of that range is going to be our
+[1677.52] invalidation point that should be
+[1679.20] respected in the continuation. This
+[1681.04] would be our 18 reversal daily profile
+[1682.88] example where you have an 18 candle low,
+[1685.76] 1:00 candle expands away to confirm that
+[1688.08] profile because we assume we're already
+[1689.88] in the continuation and then inside of
+[1692.00] this 1:00 candle, since this is already
+[1694.20] set for the continuation, we can take
+[1696.36] from the closing price to the opposing
+[1698.56] swing which is a low,
+[1700.24] 50% of that, we should see the New York
+[1702.08] session remain above. We don't want to
+[1704.16] see deeper tracings back into previous
+[1706.64] session lows or even worse back into the
+[1708.88] intraday low. That deep run is not a
+[1711.04] good sign for the New York session. We
+[1713.08] want to see that shallow move to then
+[1715.04] frame it to the upside and allow it to
+[1717.32] expand. It's the exact same process for
+[1719.36] the 1:00 reversal profile. If we have
+[1721.76] that 18 candle either opposing run or
+[1723.92] ranged, 1:00 candle runs it out to then
+[1726.80] close back up into the range to form
+[1728.68] that reversal, that higher low of the
+[1730.80] daily candle. Then we can go from the
+[1732.80] closing price to the opposing swing. 50%
+[1736.40] of that is our invalidation point. And
+[1738.40] generally, where we don't want to see
+[1740.00] the New York session retrace to that
+[1741.76] extent because that would be a deep
+[1743.40] opposing run and a negative signature
+[1745.96] for this session to expand. The one
+[1748.04] profile that doesn't have an
+[1749.36] invalidation point is the 8:00 reversal
+[1751.88] because we don't assume this is in the
+[1753.80] continuation. We have a failure to
+[1755.96] reverse in the previous sessions, so we
+[1758.00] are looking for a manipulation at the
+[1760.60] extreme of that high or low of day to
+[1763.88] manipulate and then expand off of.
+[1766.32] Remember with daily profiles, once you
+[1768.64] align one of those profiles, you are
+[1770.92] only looking for either a continuation
+[1773.24] in the respect of your invalidation
+[1774.80] point from a previous session
+[1776.76] or a higher low of day has failed to
+[1779.16] form and you must require that the New
+[1781.44] York session manipulates the intraday
+[1783.72] higher low to reverse and expand off of.
+[1786.56] That is going to be your framework for
+[1788.40] entries because we know exactly where
+[1791.12] they are going to exist inside of the
+[1793.00] day.
+[1793.52] >> So here we are in the entry section and
+[1795.44] there will be two types of entries we
+[1797.08] are seeking. You're either going to seek
+[1798.84] entries on the 15-minute chart using the
+[1801.20] 7-hour as our higher time frame within a
+[1803.44] fractal model with a 15-minute entry or
+[1806.40] we will use a lower time frame hourly
+[1808.52] and 5-minute fractal model or lower time
+[1811.24] frame 30-minute and 3-minute fractal
+[1813.36] model.
+[1814.28] So let's go over this first example of a
+[1816.36] Asia reversal using the 15-minute
+[1819.04] aligned time frame. So with an Asia
+[1821.28] reversal, we're looking for London's
+[1823.56] equilibrium to be respected and New York
+[1826.52] to trade higher. Now, this is all based
+[1828.40] off of the daily and the 7-hour
+[1830.48] profiling that aligns together to look
+[1833.16] for this entry higher.
+[1835.28] Now, what we're going to do on the
+[1836.28] 15-minute time frame is look for that
+[1838.44] intra candle change in the state of
+[1839.80] delivery. So what are we doing? We're
+[1842.20] looking for this wick to form, right?
+[1844.28] We're wanting to find the wick formation
+[1846.84] of the 8:00 a.m. candle and then trade
+[1849.12] that higher. So, you can see price
+[1851.04] opens, we form a low into a fair value
+[1853.96] gap or a point of interest, and then we
+[1856.12] have a closure through the series of
+[1858.32] down close candles into that important
+[1860.36] level. Now, with that intra candle
+[1862.16] change in the state of delivery, we now
+[1863.84] have a protected swing for our stop
+[1865.88] loss, and we can take an entry on this
+[1868.08] closure through or the retest, and then
+[1870.76] look to be on side for this expansion.
+[1873.28] Now, why does this work? We have a daily
+[1875.44] candle with a small wick aligned with a
+[1877.84] daily profile that supports that, and
+[1880.04] then we're taking a continuation entry
+[1882.08] higher. Now, what else can we do with an
+[1884.48] Asia reversal? We can also align lower
+[1887.12] time frame fractal models with that. So,
+[1889.60] I know this might look a little bit
+[1890.84] complex, but it's really not. We're
+[1893.24] trying to let the wick of that 8:00 a.m.
+[1895.40] candle form, and usually that's going to
+[1897.44] occur via a lower time frame fractal
+[1900.00] model. So, here on the hourly or the
+[1902.24] 30-minute time frame, looking for a
+[1904.32] candle two closure or a candle three
+[1906.20] closure or a valid fractal model
+[1908.40] closure. Here we have a candle two
+[1910.04] closure, which is forming the wick of
+[1912.08] that 8:00 a.m. candle. It is possible to
+[1914.44] trade that candle three and that candle
+[1916.40] four higher. Now, how would I do that? I
+[1918.72] would use an intra candle change in the
+[1920.16] state of delivery or a continuation in
+[1922.44] that candle three or in that candle
+[1924.12] four. So, I could look to trade that
+[1926.00] reversal higher there, or once that wick
+[1929.36] low has formed and we have displaced
+[1930.92] away, I can seek a further continuation
+[1933.88] with a new swing point aligned with
+[1935.76] that. So, based off the daily candle, a
+[1938.20] small wick supporting expansion, an Asia
+[1940.68] reversal, and then we're respecting that
+[1942.72] London range. We're looking for the wick
+[1944.88] of the 8:00 a.m. candle to form and then
+[1946.72] trade away. And that is the common theme
+[1948.84] of every entry within this model is I'm
+[1951.68] trying to let the wick of the 8:00 a.m.
+[1953.40] candle form and then trade it away. Let
+[1955.88] the wick form and then trade the body.
+[1958.36] So, let's get into an example of a
+[1959.88] London reversal. I am already covered
+[1962.64] the daily chart and what a London
+[1964.72] reversal is. So, how do we look for an
+[1966.84] entry? The first thing we are going to
+[1968.72] do is making sure it's going to respect
+[1971.12] that London range, right? And so, we're
+[1973.32] going to mark out the EQ just as we did
+[1975.40] with an Asia reversal. And then, I'm
+[1977.88] going to look for points of interest in
+[1979.68] that area. Here, you can see we have a
+[1981.72] protected swing right here. So, I don't
+[1983.68] want to see price trade below there and
+[1985.36] it's also below the EQ. Here, we have a
+[1988.28] swing low right here and then price
+[1990.32] takes out that low, closes through the
+[1992.40] series of candles that hit that point of
+[1994.52] interest, which is an intra-candle
+[1996.44] change in the state of delivery or a new
+[1998.44] protected swing. So, once again with the
+[2000.56] 15-minute, we're just letting the wick
+[2002.88] form on the 8:00 a.m. candle. Once we
+[2005.20] have confirmation in a protected swing,
+[2007.24] we can then trade away from that area
+[2009.28] higher. Now, what does this look like
+[2011.20] with a lower time frame aligned fractal
+[2013.08] model? Well, with a London reversal,
+[2015.56] we're looking for that New York
+[2017.16] continuation. Once again, the same
+[2019.64] thing. We're letting the wick form on
+[2021.88] the 8:00 a.m. candle. Here, we could
+[2023.72] look to trade this reversal right here,
+[2025.76] this candle to closure and this
+[2027.12] continuation,
+[2028.64] or we can let that trade away and then
+[2030.76] find a new swing aligned with that. And
+[2033.72] this will be on the hourly or 30-minute
+[2035.44] chart. And then, you'll use the aligned
+[2037.44] time frame for an entry. Now, let's get
+[2040.20] into a New York reversal. This one is a
+[2043.20] little bit more complex as it is not
+[2045.96] forming a continuation, but is a
+[2047.88] reversal. This would be trading candle
+[2050.16] two within my model. So, we're letting
+[2052.56] the wick form on the 8:00 a.m. This is
+[2054.48] because of that consolidation.
+[2056.56] So, once we have that external range
+[2057.96] manipulation, we want to see a change in
+[2060.52] the state of delivery. Now, it is
+[2062.08] possible to trade this reversal, but I
+[2064.44] always prefer to seek a continuation.
+[2066.52] So, I'd be looking for a new 15-minute
+[2068.52] continuation formed off of that reversal
+[2070.96] and then expansion away. Now, this is
+[2073.20] ideal if this is occurring prior to 9:30
+[2076.40] because the volatility hasn't really
+[2078.00] entered the market, and those 15-minute
+[2080.00] candles will give you the closures that
+[2081.52] you want. Now, if it is closer to 9:30
+[2084.60] or after 9:30, that's when I prefer to
+[2086.92] use a lower time frame fractal model.
+[2089.32] What I can do is once 9:30 enters the
+[2091.76] market, I can look for that candle two
+[2093.80] closure at the external range
+[2095.80] manipulation, and then look to trade
+[2097.68] candle three higher. Usually when paired
+[2100.08] with volatility, this is a pretty
+[2101.68] explosive move. And once again, how am I
+[2104.12] going to do that? Looking for a
+[2105.64] continuation on the lower time frame. If
+[2108.36] I miss that initial move, as long as I
+[2110.32] still have range left in the day and
+[2112.52] expecting this candle to go higher to
+[2114.16] targets, I can look for a new swing to
+[2116.96] form with that. Here you can see we have
+[2119.00] a candle two closure. Can look to trade
+[2121.08] candle three or four.
+[2123.60] So, just in review, what am I going to
+[2126.00] do is I can either look to align a
+[2128.04] 15-minute candle with a 7-hour candle,
+[2131.04] using that as a custom fractal model
+[2133.20] time frame, or I can look to align a
+[2135.76] lower time frame swing point with that
+[2138.20] 7-hour candle. I'm looking for on the
+[2140.52] hourly or the 30-minute chart, a candle
+[2143.00] two or a candle three closure to form
+[2145.08] the wick of that 8:00 a.m. candle, and
+[2147.08] then look to trade that continuation
+[2148.60] higher on an aligned time frame once we
+[2150.96] form a protected swing or an
+[2152.88] intra-candle change in the state of
+[2154.20] delivery.
+[2155.08] >> At this point, you have an entire
+[2156.80] framework, a complete system from top to
+[2159.08] bottom. We start with relevant swings on
+[2161.08] the daily time frame to get our
+[2162.68] expectation for a daily candle. Once we
+[2164.96] have that, we're confirming that with
+[2166.52] daily profiles, and then you use the
+[2168.44] fractal model. Once we understand where
+[2170.48] that 8:00 candle should go and enter in
+[2173.20] the highest probability hours of the
+[2174.80] entire day. Now, we're ready to bring
+[2176.52] that understanding into some real trade
+[2178.36] examples. Starting here on the daily
+[2180.08] time frame, we have this currently
+[2181.80] developing daily candle, and we'll look
+[2183.84] into the profile after, but what is the
+[2186.08] expectation for this day? We look to the
+[2189.36] left to identify relevant swings and
+[2191.60] determine what the framework is here.
+[2193.52] Immediately I'm seeing this low here,
+[2195.88] which was previously engaged and we are
+[2198.12] trading off of that. This is a relevant
+[2201.32] low in the market because we have
+[2202.92] separation to the next daily lows down
+[2206.68] here. So we have this swing that we've
+[2209.40] engaged and we are trading back up off
+[2212.40] of. Now this may not immediately look
+[2214.40] like a manipulation now we're trading
+[2216.00] higher, but if we start to compare a
+[2218.28] correlated pair, this is ES here. If you
+[2220.56] go over to NQ, we can see under the same
+[2223.04] idea where ES had a lower low, we have a
+[2226.64] higher low on NQ. So we have that
+[2228.36] divergence paired with that relevant
+[2230.68] swing. That is our framework. We
+[2232.44] expanded away from that, this day could
+[2234.24] have been tradeable, but then we also
+[2235.96] look to say we're in the continuation
+[2237.52] already. We're going to use the
+[2238.80] development here to say our expectation
+[2241.48] is that we're looking for another
+[2242.84] continuation day higher and expansion,
+[2245.52] so we want to first frame our
+[2247.28] invalidation point. Back on ES, we would
+[2249.64] look at our previous daily candle. We
+[2252.36] have the closing price to the opposing
+[2255.60] swing, that is the low of day in the
+[2257.60] previous daily candle, and we have this
+[2259.68] range where we don't want the following
+[2262.36] or current daily candle that we have the
+[2264.12] expectation for to make a wick below
+[2266.96] that area. We're already seeing this
+[2268.48] development, this is hinting at
+[2269.76] something that we'll get into for the
+[2271.08] daily profile, but it is respecting our
+[2273.96] invalidation point. a shallow opposing
+[2276.00] run and we started a continuation here.
+[2278.24] Now looking down on the 7-hour, we're
+[2279.92] trying to frame the daily profile. Do we
+[2282.28] have a confirmation to that expectation
+[2284.84] we set off the daily chart for another
+[2287.12] continuation day? What does this profile
+[2289.40] look like? We have a 18 candle, which
+[2292.00] formed a low, and then allowing that
+[2294.12] 1:00 candle to print, it expanded higher
+[2297.56] to an extent that we no longer need to
+[2299.52] return back to these previous session
+[2301.60] lows. So the New York session is already
+[2303.80] in the continuation and we're getting
+[2305.92] confirmation to our bias. So, with that
+[2307.64] in place, we want to take that same idea
+[2309.72] with the invalidation point, go from
+[2311.52] that closing price to the opposing swing
+[2313.92] of that London session, and then going
+[2315.96] into New York, we should look for that
+[2317.84] 8:00 candle to form a wick in respect to
+[2321.64] this invalidation point, and then trade
+[2324.28] higher off of that.
+[2325.56] >> Now, looking for entries, we have two
+[2327.72] techniques we can look for. We can use
+[2329.68] the 7 hours the higher time frame and
+[2331.48] look for 15-minute opposing candles or
+[2333.84] protected swings, or we can use lower
+[2335.96] time frame fractal models. So, in this
+[2338.04] first example, we're going to take a
+[2339.40] look at both of those. So, what do we
+[2341.24] notice here? We have opened at 8:00 a.m.
+[2344.68] and we have traded lower. Now, this does
+[2347.40] look a little choppy, but let's look
+[2348.96] towards a correlated asset. You can see
+[2351.36] on Nasdaq here, we have went into this
+[2354.28] fair value gap here, as well as taken
+[2356.64] out this low here. Now, if we go back to
+[2359.28] ES, what do we notice? We have not hit
+[2362.20] that fair value gap and we have not
+[2363.88] taken out this low here. So, what does
+[2365.68] that mean? It means we have an SMT right
+[2368.40] here, as well as an SMT right here. Now,
+[2372.44] this doesn't mean anything until we
+[2374.20] actually have some sort of confirmation
+[2376.24] with that. It just means that I can use
+[2378.56] this low here as a protected low if we
+[2381.20] close over and we don't need to make a
+[2383.04] new low because the correlated asset
+[2385.04] already did.
+[2386.40] So, let's let this continue to play out.
+[2389.68] You can see, we remain with that low.
+[2392.32] And what do we do? We go ahead and close
+[2394.56] over the series of down close candles
+[2396.36] that made the low. Now, like I said,
+[2398.48] because of SMT, we don't have to make
+[2400.60] the new low because the correlated asset
+[2403.56] or NQ already did that. Now, with this
+[2406.00] closure over, we have a protected swing.
+[2409.44] We can now consider the fact that the
+[2411.00] 8:00 a.m. may have formed its wick low
+[2413.64] and we can look to trade the body
+[2415.40] higher. So, with that, I can look to get
+[2417.76] on side with a long position, put my
+[2420.00] stop on that protected low, and then
+[2422.16] look for 2R.
+[2424.24] So, marking out that 2R, let's see how
+[2426.24] this works out.
+[2428.88] We get a little bit of a consolidation,
+[2431.00] and then we go and hit our 2R before the
+[2433.12] end of day.
+[2434.52] So, just to review, we are looking to
+[2436.88] let that wick form in the 8:00 a.m.
+[2439.20] candle, and then trade a continuation
+[2441.60] away from it. So, here you can see we're
+[2443.48] letting that wick form, and this is a
+[2445.24] continuation of the reversal of the day.
+[2448.12] So, it's valid to take this. Let's go
+[2450.16] ahead and rewind and take a look at the
+[2451.96] other ways to enter this. We could go
+[2453.72] ahead and look to align a lower time
+[2455.68] frame fractal model with this. So, first
+[2458.08] let's take a look at the hourly and
+[2459.80] 5-minute model. What am I going to look
+[2462.00] for? An hourly candle to closure.
+[2465.16] Now, if you notice, we'll let this play
+[2466.64] ahead. Do we have a candle to closure?
+[2469.32] No. But, if we take a look at the
+[2471.00] correlated asset or NQ, we have a candle
+[2474.28] to closure into that fair value gap. So,
+[2476.68] we can use this to frame the other asset
+[2478.80] and treat this like a candle to closure
+[2481.08] as we did get that closure on NQ. So, we
+[2483.48] have our point of interest, a fair value
+[2485.04] gap, which is an SMT,
+[2487.40] and then we have that candle to closure
+[2489.80] on NQ, so we can treat it like a candle
+[2492.84] to closure but trading the stronger
+[2494.44] asset. This means we can go to the lower
+[2496.48] time frame or the 5-minute and look to
+[2498.76] trade this higher in the next candle.
+[2500.68] But, down here on the 5-minute time
+[2502.20] frame, what do we have? We have that
+[2504.00] SMT. Because of that SMT, we can
+[2506.48] consider this the reversal, and then
+[2509.00] we're looking for a continuation. Price
+[2511.16] sweeps out the low into a fair value
+[2513.24] gap, rebalances all of this area, and
+[2515.60] then closes through here. I can look to
+[2518.00] take an entry anywhere in this area as
+[2520.32] long as my stop is on the low, and then
+[2522.40] look for 2R.
+[2524.56] So, let's see how that plays out.
+[2527.80] And it works out pretty well into the
+[2529.28] highs. Now, let's take a look if we
+[2531.72] wanted to trade this on the 30-minute
+[2534.00] and 3-minute. What do we notice here?
+[2537.04] We'll go ahead and remove all the
+[2538.00] drawings. So, going ahead and rewinding
+[2540.04] this, what do we have? We have a candle
+[2542.08] two closure on the 30-minute
+[2544.52] with that SMT. So, it is valid to look
+[2547.28] for this to go higher cuz we have two
+[2549.52] SMTs here, a candle two closure, it's
+[2552.20] engulfing, we can look to trade this
+[2554.04] higher. So, we go to the 3-minute time
+[2556.16] frame, and this is where we would want
+[2557.72] to look for a continuation. Now, before
+[2560.72] we get into the next candle, have we had
+[2562.60] a continuation form? Here is the
+[2564.64] reversal. Here is the continuation.
+[2567.64] Price reaches into this fair value gap
+[2569.60] here
+[2571.20] and closes over the down close candles.
+[2573.88] In this case, it's one right here. Now,
+[2576.68] we have a new protected low going into
+[2579.04] this candle. So, we could look to take
+[2581.00] an entry on the open,
+[2583.00] put our stop on this low,
+[2584.80] and look for two R,
+[2586.40] or we can wait for a new continuation to
+[2588.88] form in the candle three.
+[2591.88] So, let's see what happens.
+[2593.72] Here we reach back into this area, we
+[2595.60] form a new continuation. So, if I was
+[2598.12] waiting for that continuation entry, I
+[2600.16] could go ahead and take an entry on this
+[2601.64] close looking for two R as well. Either
+[2604.68] would work. Let's see how it works out.
+[2607.96] And you can see this one makes us wait
+[2609.92] quite a while to go ahead and hit our
+[2611.76] TP, but both of them go ahead and get
+[2614.28] two R there. So, just to review, going
+[2617.64] back out to our 15-minute time frame,
+[2620.36] here we have that SMT, which is why we
+[2622.64] can look for the low to form in this
+[2624.24] area while respecting London's range,
+[2627.12] and we have a continuation that forms.
+[2630.32] So, it's valid to take the 15-minute
+[2632.32] entry long here. Right? That's our first
+[2635.12] technique that we talked about. The
+[2636.92] other would be using an hourly or
+[2639.40] 30-minute closure. Here, it's less
+[2642.00] straightforward on the hourly because
+[2643.84] candle two closure is on Nasdaq, but
+[2645.68] you're trading the stronger asset. Or on
+[2648.28] the 30-minute time frame, trading this
+[2650.16] candle to closure. With those candle
+[2652.36] closures, allowing that to form the wick
+[2654.36] of the 8:00 a.m. candle, we can look to
+[2656.40] trade that higher. And we're going to do
+[2658.32] that by looking for continuations on the
+[2660.00] 3-minute or the 5-minute candles. Now,
+[2662.52] like I said previously, if you do miss
+[2664.40] this move, you still have the
+[2665.88] possibility to catch an entry later on.
+[2668.64] So, if you notice here, we do have a
+[2670.16] candle to closure
+[2672.04] right here. Candle three closes strong.
+[2674.56] You could still look to trade this
+[2675.84] continuation on the 5-minute because
+[2678.12] it's still in line with that expansion.
+[2681.12] The wick has formed, we can look to
+[2682.88] trade the body. So, I can look to trade
+[2685.12] this reversal in here or the wick low.
+[2687.84] Or I can look to trade this continuation
+[2689.64] in here.
+[2690.72] So, now that you understand all the
+[2692.40] entry techniques between the 15-minute,
+[2695.04] looking for opposing candles, or using a
+[2697.24] lower time frame aligned swing point,
+[2699.76] let's get into some more examples. Here
+[2701.28] in this example again, we have a
+[2702.68] currently developing daily candle that
+[2705.04] when we're looking to potentially trade,
+[2706.92] we want to determine what is the
+[2708.28] framework off the higher time frames
+[2710.20] using relevant swings. So, we're going
+[2712.40] to look to the left, and immediately
+[2713.76] we're going to see something of
+[2714.80] interest. We see these lows that were
+[2717.36] engaged on Monday. This initial
+[2719.52] impulsive move higher is coming off of a
+[2722.64] relevant low. This day's actionable, a
+[2725.04] small wick reversal, and this day's
+[2726.80] actionable as a continuation. And then
+[2729.00] inside of this day, what are we
+[2730.72] expecting? There's no reason to assume
+[2733.08] reversal. We have another potential
+[2735.44] continuation day to the upside. One
+[2737.64] other thing to note with this is when we
+[2739.48] look to the left, we don't really have
+[2741.36] any recent relevant swings that are in
+[2743.48] close proximity to this area here. One
+[2746.68] note to keep in mind is when noting out
+[2748.96] relevant swings, we don't really want to
+[2750.96] look too far into the past because they
+[2753.40] lose their relevance in terms of what
+[2755.96] actually matters to the current day of
+[2758.04] price. So, anything that's really beyond
+[2760.56] 30 daily candles, we don't want to
+[2762.80] consider that as range or highs or lows
+[2766.36] that we want to start noting out and
+[2768.24] bringing into our analysis. We're going
+[2769.80] to focus in this case because there is
+[2771.56] none in that range, just on this
+[2773.76] intraweek price action. So, from that we
+[2775.76] have this idea that we should continue
+[2778.08] this move as we've been in the
+[2779.44] continuation from this initial point of
+[2781.36] reversal, and there's no reason to
+[2783.08] assume otherwise, so I can set my
+[2784.56] invalidation point from the closing
+[2786.44] price to the opposing swing. And then
+[2789.08] inside of this day, we should see a low
+[2790.88] of day form in respect to this
+[2793.44] invalidation point. But for now, this is
+[2795.32] just an expectation for the day. We need
+[2797.76] to get a profile alignment to actually
+[2800.12] understand if this is going to play out,
+[2802.24] and if it will, what is the specific
+[2804.08] profile so we can understand what New
+[2805.88] York session is looking to do. So, when
+[2807.60] we look down into the 7-hour to view
+[2809.32] this daily profile, we can see the 18
+[2811.40] candle failed to reverse. That 1:00
+[2813.88] candle came in and ran out that Asia
+[2816.88] session low and formed an intraday
+[2819.32] reversal because we ran it out, closed
+[2821.88] back up into the range, and that would
+[2823.68] set the New York session to expand
+[2825.68] higher without taking out this low. So,
+[2828.80] not only do we have profile alignment,
+[2830.72] which is confirming our bias saying this
+[2832.76] day is prepped to trade higher with our
+[2835.60] expectation, but we know the New York
+[2837.80] session should develop in a way where we
+[2839.84] set our invalidation point from the
+[2842.08] closing price to the opposing swing, and
+[2845.28] that 8:00 open, that wick should form in
+[2848.12] respect to that invalidation point
+[2850.20] before returning higher. So, that's our
+[2852.52] range where we're looking for entries
+[2854.72] from open low to expand.
+[2859.80] So, now looking for an entry aligned
+[2861.68] with that London reversal, what am I
+[2864.04] going to look for? Well, here you can
+[2866.04] see we have that change in the state of
+[2868.24] delivery formed in London. Ideally, that
+[2870.76] is going to hold as the low of day if
+[2873.48] New York is going to get a continuation.
+[2876.00] That means what are we left for with a
+[2877.76] point of interest? We have this low
+[2879.92] right here.
+[2881.24] So, we're not going to try to predict
+[2883.08] this low. We're going to let it form and
+[2885.48] see if we have a new protected swing
+[2887.72] form. So, we'll give it a few more
+[2889.68] candles. Zoom in here.
+[2892.04] Let's see what happens.
+[2895.40] And there you go. We get a nice V-shape
+[2897.44] recovery. It's ideal to have that occur
+[2899.88] in a few candles.
+[2901.84] We can mark out that continuation, which
+[2903.76] is also the opening price. And then we
+[2906.04] can look to take an entry on that
+[2907.64] closure through
+[2909.28] our stop on this low. Now, why are we
+[2911.36] putting our stop on this low? Cuz we're
+[2913.32] anticipating the wick of the 8:00 a.m.
+[2915.16] candle to have formed. Right? We want to
+[2917.64] only trade once we anticipate that wick
+[2919.80] low to have formed. Now that the wick
+[2921.84] low we think has formed, we can take a
+[2924.52] position on that looking for 2R for a
+[2927.24] continuation higher.
+[2929.48] And you can see there we do get that
+[2931.20] continuation higher. So, just a quick
+[2933.92] review. We have that London reversal
+[2936.80] with a change in the state of delivery.
+[2938.88] And then we're just seeking that
+[2939.84] continuation into New York. And it's
+[2942.48] ideal if that continuation is also
+[2944.68] forming the wick low of the 8:00 a.m.
+[2946.76] candle. We're going to let that wick
+[2948.48] form and then look to trade the body of
+[2950.52] that candle. You see how we're entering
+[2952.12] early into the candle around the opening
+[2954.28] price. That is what is allowing this
+[2956.48] expansion candle to form. You can see we
+[2958.84] get 2R, but if we let it go, it
+[2961.00] continues to expand much further.
+[2964.36] So, now that you've seen that 7-hour and
+[2966.28] 15-minute alignment, let's see if we can
+[2968.36] find a lower time frame fractal model
+[2970.68] either on the hourly or the 30-minute
+[2973.68] and then use the aligned time frames to
+[2975.60] see if we can find something also to get
+[2978.12] us into that move. Now, we'll start here
+[2980.12] with the hourly and then the 5-minute
+[2982.28] and then we'll also see if there's
+[2983.40] anything on the 30-minute and 3-minute.
+[2985.96] Now, one thing I like to note, if I'm
+[2987.52] taking pre-market entries, I generally
+[2989.40] prefer the 15-minute time frame. It just
+[2991.72] allows me to not get too caught up in
+[2993.40] the lower time frames and put my stop
+[2995.24] loss on something that might get ran out
+[2997.28] during the New York open.
+[2998.88] Let's see what happens here.
+[3000.32] We currently have nothing to do because
+[3001.80] we don't have a candle to closure.
+[3004.96] Here you can see, now we have a candle
+[3006.92] to closure. Does that align with the
+[3009.12] formation of this wick? Well, it is
+[3011.00] respecting the EQ here on the 7-hour, so
+[3014.24] we can look for that to potentially
+[3016.24] trade higher. If we're looking for this
+[3018.48] low to hold, which would be ideal.
+[3021.00] We have a change in the state of
+[3022.84] delivery. We'd want to see a
+[3024.32] continuation.
+[3025.88] Let's see if we get a continuation. One
+[3027.96] thing I want to talk about, I'm not
+[3029.40] going to use this single down close
+[3031.08] candle because I like to use the series.
+[3033.40] Even though this is a green one, it's
+[3034.96] not very significant. This is the whole
+[3036.72] move down. I'd be looking for this to
+[3039.16] get a closure over to form a
+[3040.84] continuation.
+[3042.36] There we get the closure over, and so we
+[3044.48] could look to take either an entry or a
+[3046.40] retest on that. Right? And it is
+[3048.68] pre-open. So, you could either put your
+[3051.12] stop here, or if you're not confident in
+[3053.76] that pre-open, what else can you do? You
+[3056.24] can just let open sort itself out and
+[3058.40] then see if we form another
+[3059.72] continuation.
+[3061.52] So, you can see we come back down here.
+[3063.52] We have a nice reversal right near this
+[3065.32] low, so we can check the correlated
+[3066.84] asset. Here you can see ES, we took out
+[3068.80] that low. So, what does that mean? It
+[3071.08] means we now have an SMT right here on
+[3074.20] this low. And so, we could look for
+[3076.00] another continuation here if we get a
+[3078.32] closure over this level.
+[3080.64] So, this would be possible as long as we
+[3082.88] have targets that exist higher. Right?
+[3085.84] Do we get the closure through? We do.
+[3088.44] So, I could take an entry here. I would
+[3089.92] just have to have my stop covering 50%
+[3092.72] of this down close candle or more. I
+[3095.12] prefer around 75%.
+[3097.32] And then you can see to get 2R on this,
+[3099.20] it is quite a distance, so it's not
+[3101.28] something I prefer, but it is still
+[3103.60] valid in terms of an entry. So, you can
+[3105.68] see there's one possible entry, two
+[3108.08] possible entries. Let's see what
+[3109.76] happens.
+[3111.36] We do go ahead and hit that 2R. So, now
+[3113.92] let's go take a look at a 30-minute and
+[3116.08] 3-minute. So, we'll go ahead and rewind
+[3118.52] to about the same point. Let's go ahead
+[3120.68] and go to the 3-minute time frame.
+[3123.52] Remove all of these drawings. Now, we're
+[3125.60] waiting for a 30-minute candle closure.
+[3128.04] So, let's see. Do we have anything?
+[3131.80] Right, we don't have a candle closure.
+[3133.64] We almost got a candle three closure,
+[3135.20] but we didn't. So, we'd have to wait.
+[3137.48] Let's see if we form anything here.
+[3140.08] Nope, there's nothing there, right?
+[3141.28] There's no candle closure within my
+[3142.80] model on the 30-minute time frame.
+[3146.28] And also not right there.
+[3148.16] So, this might be something I just miss
+[3149.76] if I'm using the 30-minute and 3-minute
+[3152.08] time frame, but I could potentially
+[3153.88] catch on the hourly and 5-minute. But,
+[3156.08] it is a very nice setup on the 15-minute
+[3158.68] time frame right here with that
+[3160.40] continuation.
+[3162.00] So, you can see not every setup is going
+[3164.36] to give you an entry on all those
+[3166.40] possible time frames. So, you kind of
+[3168.60] have to decide which one you prefer,
+[3171.16] which one you are most comfortable with,
+[3172.72] and which one you want to stick with, or
+[3174.72] if you are flexible and can use multiple
+[3176.84] different time frames.
+[3178.16] >> This example here is coming from that
+[3179.56] same price like we talked about earlier
+[3181.16] in the video when noting out relevant
+[3183.00] swings. So, you can see this from top to
+[3184.92] bottom and how it actually works. So, we
+[3186.88] have our framework off the higher time
+[3188.84] frames. We can note these out. Previous
+[3190.84] relevant swings, manipulated, and then
+[3193.40] off the highs. This is again looks like
+[3196.00] failure swings, but the first thing we
+[3197.92] should do here is I see that deep run
+[3200.00] into this high. I want to go to ES and
+[3202.52] determine is there a higher high at that
+[3204.60] same level? Yes, we have a higher high.
+[3207.44] So, that is not a failure swing on NQ.
+[3209.40] This is actually a divergence. So, that
+[3212.12] is good framework. Previous day
+[3213.96] expanded. This would be actionable here.
+[3216.52] And then we're looking to set a
+[3217.96] framework inside of this day here. We
+[3220.08] have the current development showing us
+[3221.88] some context, but the framework inside
+[3224.32] of this off the daily is setting an
+[3226.20] expectation for a continuation to the
+[3228.72] downside of this previous move. This is
+[3230.60] where we'd set our invalidation point at
+[3233.12] the closing price to the opposing swing,
+[3235.64] which is that previous day high, and
+[3238.12] we're going to say that this day should
+[3240.44] form a high below this invalidation
+[3242.84] point. That's going to force that small
+[3244.44] wick, and we're seeing the potential
+[3245.68] high of day already in, so we want to
+[3247.48] look down and determine is the profile
+[3249.84] there. On the 7-hour, we're seeing the
+[3251.72] development of this daily profile. We're
+[3253.84] already expecting this day should expand
+[3256.16] to the downside, but the profile is
+[3258.48] showing us more. It's showing that it's
+[3260.04] willing to make that move and aligning
+[3262.28] with that bias. So, what profile are we
+[3263.92] seeing? 18 candle makes an opposing run,
+[3266.76] does not form a reversal. Instead, the
+[3268.72] London session comes in, runs out that
+[3270.40] high. That would be your 1:00 candle
+[3273.20] reversal and expanding back down into
+[3275.08] the range to an extent that New York
+[3277.04] session should already be in that
+[3279.12] continuation, and we are trading away
+[3280.68] from this high. So, if New York session
+[3282.48] is in the continuation, well, then we
+[3284.32] want to set an invalidation point inside
+[3286.20] this 1:00 candle from the closing price
+[3289.36] to the opposing swing, and we expect
+[3291.40] that that 8:00 candle, the upper wick of
+[3293.48] it before expanding lower, we're going
+[3295.40] to be looking for entries below that
+[3297.44] invalidation point, and we should be
+[3299.12] expanding to the downside away from that
+[3301.20] high. So, here we are on the 15-minute
+[3303.32] time frame looking for an entry. What
+[3305.96] are we going to be looking for? A
+[3307.52] protected swing to form the high or a
+[3309.80] high we can trust with this 8:00 a.m.
+[3312.20] candle. Now, what do we notice here?
+[3314.72] Right immediately, we form a protected
+[3316.96] swing.
+[3318.08] We have a fair value gap right here. We
+[3320.56] closure through the series of up close
+[3322.28] candles into that fair value gap. So,
+[3324.28] it's very valid to take this entry. It's
+[3326.28] around the opening price. It's early
+[3327.92] into the candle. I could look to take an
+[3329.84] entry like this. Now, if this isn't
+[3332.00] something I'm comfortable with, I can
+[3333.52] always wait for a continuation. Let's
+[3335.92] see what happens.
+[3338.12] Right there.
+[3339.72] We go ahead and take the low. You can
+[3341.60] see we do form another continuation in
+[3343.92] here. We go back up, sweep out these
+[3346.08] lower time frame highs, and now we've
+[3347.40] closed through this area.
+[3349.44] So, even if I miss this initial move,
+[3351.68] like I said, if I'm going pre-market, I
+[3353.52] want to be on that higher time frame,
+[3355.32] the 15-minute time frame. Now, even if I
+[3357.24] miss this initial entry, I could still
+[3359.52] look for swing points to form in the
+[3361.28] bearish direction to align with it. So,
+[3363.76] I'd want to use either a 30-minute or an
+[3365.84] hourly. Now, with the volatility of the
+[3367.96] open, I generally would prefer the
+[3369.76] 30-minute and 3-minute here. Let's see
+[3372.04] if we form a swing point.
+[3374.28] Right? I need a swing point at a point
+[3375.80] of interest. Where is our point of
+[3377.48] interest? I'm going to go ahead and
+[3379.12] remove these drawings here. We already
+[3380.68] went over that. Here is a fair value
+[3382.88] gap. Now, price reaches into this fair
+[3384.88] value gap. Am I immediately bearish? No,
+[3387.40] I need a closure to align with that.
+[3390.04] So, do I get the closure? Here I have a
+[3392.60] candle to closure on the 30.
+[3395.16] So, this is what I was talking about in
+[3396.48] the PDF, where I have a aligned swing
+[3399.92] point, not at the reversal or what forms
+[3402.40] the high, but inside this higher time
+[3405.20] frame candle. So, I could look to, if
+[3407.36] I'm using the 30-minute, look to trade
+[3409.64] the 3-minute time frame because it is
+[3411.36] aligned with that. Let's go down to the
+[3413.24] 3-minute time frame.
+[3414.92] So, down here on the 3-minute time
+[3416.32] frame, you can see we have that 7-hour
+[3418.36] expansion candle, which we are looking
+[3420.12] to align with. And what do we have? A
+[3422.52] candle to closure on the 30-minute, and
+[3424.76] we have a change in the state of
+[3426.04] delivery. So, you can see my entry model
+[3428.76] will print there. All I'm going to be
+[3430.44] looking for here is a continuation. As I
+[3433.12] said, already went into another fair
+[3435.52] value gap here. We go ahead and mark
+[3437.28] that out.
+[3438.96] And then we are looking for that
+[3440.60] continuation or the closure through here
+[3443.24] to get on side. So, do we get that
+[3445.28] closure? Let's see.
+[3447.36] We do. So, then I could look to either
+[3449.16] take a short here or on the retest, put
+[3451.48] my stop at least over the bodies,
+[3452.96] preferably on the high. It's around the
+[3454.92] same spot, so I'll put it on the bodies
+[3457.04] and then look for 2R here. Now, what are
+[3459.04] we doing? We're aligning a lower
+[3460.92] timeframe swing point within that
+[3462.60] expansion candle within the daily candle
+[3464.96] with a small wick. All timeframes here
+[3467.36] are aligned for expansion, so you'd
+[3468.88] expect this to trend or continue lower.
+[3471.80] Let's see what happens.
+[3473.36] Little consolidation.
+[3475.40] Get a retracement before we go ahead and
+[3477.40] continue this trend lower hitting 2R.
+[3481.16] So, we see that on the 30-minute and the
+[3483.76] 3-minute timeframe,
+[3485.32] would there be something on the 5-minute
+[3487.40] timeframe here?
+[3488.76] Taking a look, we do have a candle to
+[3491.08] closure.
+[3492.28] We do have this little continuation, but
+[3494.32] what don't we have? This change in the
+[3496.04] state of delivery doesn't form until
+[3497.76] rather late. We could potentially get a
+[3500.12] continuation all the way over here, but
+[3502.60] that's a bit late into the move for me
+[3504.96] or my liking cuz this has already
+[3506.96] expanded. So, just to review, we have
+[3510.04] that first 15-minute entry that we could
+[3511.96] take prior to the open setting up for
+[3514.32] expansion
+[3515.56] or we can look for that continuation
+[3517.08] entry that forms out of this 30-minute
+[3519.48] fair value gap.
+[3521.16] So, we have that first initial entry,
+[3523.48] this continuation entry, we're all
+[3525.84] aligning for expansion with the daily
+[3527.88] candle.
+[3528.76] >> Here on this example, we have the
+[3530.12] current developing day. This is the one
+[3532.32] that we're looking to potentially put a
+[3534.00] trade on, and this really just
+[3535.76] emphasizes the point that the
+[3537.20] development of the sessions provides us
+[3539.60] so much valuable information because we
+[3541.60] didn't need to predict that we had a
+[3543.16] framework inside of this day. The
+[3545.00] sessions and the profile when we look
+[3546.88] into it is giving us a lot of
+[3548.96] information that we can use here to
+[3550.88] frame a trade. So, when we look off the
+[3552.56] daily, we first want to make sure there
+[3554.36] is a valid framework using relevant
+[3556.04] swings. We have an extreme low that was
+[3559.16] ran out, closed back into the range, but
+[3561.24] more importantly, when we look inside of
+[3563.00] here, Monday gapped lower into a
+[3566.08] relevant low. This is a daily low with
+[3568.48] valid separation to this next daily low.
+[3571.28] So, when we engage this low, what
+[3573.00] happens here matters. This low is not a
+[3575.72] failure swing to anything to the left,
+[3577.88] so this is a valid manipulation
+[3579.60] intraday.
+[3580.72] And then when we look off the highs, we
+[3582.04] have that deep run into this high here,
+[3584.52] which is an extreme of the current
+[3585.84] range. That becomes a perfect draw
+[3588.72] straight away from the manipulation into
+[3591.08] the failure swings for the rest of that
+[3593.04] daily candle. If when we look down, we
+[3595.24] have alignment of a bullish daily
+[3596.60] profile. I'm going to move over to NQ
+[3598.60] for this step because it is showing
+[3600.28] relative strength in the way it's
+[3601.84] trading higher. And if we're going to
+[3603.40] potentially take a long, I'd want to be
+[3605.04] on the stronger pair. NQ here is showing
+[3607.76] an 18 candle low
+[3609.52] manipulating that relevant swing. The
+[3611.56] 1:00 candle is staying away and
+[3613.96] continuing higher. This here is setting
+[3616.88] that 1:00 candle. And another good
+[3618.84] example where the template isn't always
+[3620.80] perfect, but we have the same logic that
+[3622.92] we're looking for. It's expanded to an
+[3624.88] extent that the New York session has no
+[3627.04] reason to drop back down into any of the
+[3629.52] session lows. We've manipulated our
+[3631.36] relevant swing. We've expanded back into
+[3633.48] the range. We've started the
+[3634.52] continuation of that daily candle, and
+[3636.92] we have a target in the other direction.
+[3639.32] So, our next step is to set our
+[3641.08] invalidation point where we'd like to
+[3642.92] see the New York session, that 8:00
+[3644.60] candle, form its wick. And that's going
+[3646.96] to be from the closing price of the 1:00
+[3649.00] candle
+[3649.96] to the opposing swing, this low here.
+[3652.60] And we're looking for the 8:00 candle to
+[3654.64] form a wick
+[3655.88] in respect to this and then expand
+[3658.04] higher up into our opposing target. So,
+[3660.24] here we are looking for another entry
+[3662.76] aligned with our daily profile and our
+[3664.92] daily candle, which is supporting upside
+[3667.48] movement. We have that nice low formed
+[3669.80] in London here that we're looking to
+[3671.32] trade away from. We're just looking to
+[3673.28] find a continuation in this New York
+[3676.12] area to trade upside. Right, since we're
+[3678.72] premarket, I'm going to sit on the
+[3680.00] 15-minute time frame and see if we can
+[3681.80] find something.
+[3683.40] So, let's see what happens. As you can
+[3685.52] see, we reach lower, we sweep out this
+[3688.56] low into a fair value gap. It's much
+[3691.80] preferred when I have both a fair value
+[3693.72] gap as well as a sweep of a low. And
+[3696.04] then what do we have? We have that
+[3697.64] closure through which forms that
+[3699.44] continuation.
+[3701.08] So now, I can anticipate that what? This
+[3703.72] wick low has formed on the 8:00 a.m.
+[3705.88] candle and I can look to trade it to the
+[3707.68] upside. Since it is pre-market, I prefer
+[3710.44] to be on side on the higher time frame,
+[3713.44] in this case the 15 minute, rather than
+[3715.32] a 5 minute or a 3 minute, because I know
+[3717.48] my stop is on an area that I expect to
+[3719.40] hold during the open. If I get too low
+[3722.16] here, I can get swept out before the
+[3724.40] move actually occurs. Look for 2R.
+[3728.08] Or I can look to those highs to the
+[3729.72] left. Let's see what happens here on
+[3731.68] this move.
+[3733.48] You can see
+[3734.48] a nice move there as we just get a nice
+[3736.96] expansion at 9:30, right? 8:30, forms a
+[3740.24] manipulation, 9:30 expansion. Now, I
+[3743.52] hope you enjoyed the video. If you did,
+[3745.60] please consider giving it a like,
+[3747.12] subscribing to both of our channels, and
+[3749.20] share it with a friend that might enjoy
+[3750.76] it as well. And I hope that you are left
+[3752.48] with something that you can apply to
+[3754.00] your own model or in your own trading.
+[3756.28] But with that, I'll see you guys next
+[3757.56] week. Have a good one.

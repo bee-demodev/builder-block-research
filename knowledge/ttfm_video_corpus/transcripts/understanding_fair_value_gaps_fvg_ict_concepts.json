@@ -1,27 +1,97 @@
 [
   {
-    "text": "Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 41.72,
-    "duration": 35.76
+    "text": "How's it going everyone? This video is going to be over fair value gaps. What is a fair value gap? What is a BISI? What is a SIBI? What is consequent encroachment? As well as inversion. We will also touch on the difference between a fair value gap, a volume imbalance, and a gap. The first thing we are going to go over is what is a fair value gap? A fair value gap is a three candlestick pattern where the first candle low does not overlap with the third candle's high or where the",
+    "start": 10.16,
+    "duration": 30.13
   },
   {
-    "text": "Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Liquidity sweep or run on the highs and lows.",
-    "start": 160.92,
-    "duration": 35.76
+    "text": "First candle high does not overlap with the third candle's low. Let's take a little bit of a deeper look into that. If we take a look at this candle's low and drag it out and this candle's high and drag it out, because this high does not overlap with this low, this is now a fair value gap. Going over to this example, this candlestick high does not overlap with this candlestick's low, so this is also a fair value gap.",
+    "start": 40.29,
+    "duration": 29.74
   },
   {
-    "text": "Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 280.12,
-    "duration": 35.76
+    "text": "So now that you understand what a fair value gap looks like, what doesn't it look like? If we were to extend this candle's low down to here, and this candle's high up to here, let's drag the high and low across and see if there is a gap. When dragging the high and low across, you can see that the overlap, the low from the first candle is lower than the high of this third candle. So there is no gap there. And this is not a fair value gap.",
+    "start": 70.03,
+    "duration": 29.15
   },
   {
-    "text": "Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 399.32,
-    "duration": 35.76
+    "text": "Similarly over here, if we were to extend this high up and this low down, you can see that there is overlap between the first candle's high and the third candle's low, meaning there is no fair value gap here. So just to clarify, a gap between the first candle's low and the third candle's high, or the first candle's high and the third candle's low, is what creates a fair value gap. Let's go over a few examples of finding fair value gaps.",
+    "start": 99.18,
+    "duration": 29.73
   },
   {
-    "text": "Understanding Fair Value Gaps (FVG) - ICT Concepts. educational_channel, fair_value_gap. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 518.52,
-    "duration": 35.76
+    "text": "So if you look right here, we have our first candle's low, extend that out, and our third candle's high, extend that out. There is a gap between this candle's low and this candle's high, and that creates a fair value gap. Now if you notice, do we have another one? Yes, because this candle's low does not overlap with this candle's high. But now we get an aggressive move in the opposite direction, and looking at this candle right here, one, two, three.",
+    "start": 128.98,
+    "duration": 28.56
+  },
+  {
+    "text": "This candle's high does not overlap with this candle's low, which creates another fair value gap. The next thing we are going to go over are SIBI's and BISI's. A SIBI is a sell-side imbalance, buy-side inefficiency. What does that mean? It means that sell-side was offered, but buy-side wasn't, so it is inefficient, or simply put, a bearish fair value gap. A BISI is a buy-side imbalance, sell-side inefficiency.",
+    "start": 157.54,
+    "duration": 30.2
+  },
+  {
+    "text": "This means that buy side was offered, but sell side wasn't. So it is inefficient or a bullish fair value gap. So if we look at this price section right here, we have a bearish fair value gap where sell side is offered, but buy side is inefficient. So this creates a SIVI. Now, if we move over here and let this play out, you can see price made a bullish fair value gap here or a BISI.",
+    "start": 187.74,
+    "duration": 29.27
+  },
+  {
+    "text": "Because it offered buy side but not sell side. And there we go. There's an example of a SIBI and a BISI, and I hope that clarifies some things for you guys. There are three things that I look for within a fair value gap. The first being the start of the fair value gap. The second being the consequent encroachment, or the 50% of the fair value gap. And lastly, where price completely fills the fair value gap. When price returns to the fair value gap, I want to see a few different things.",
+    "start": 217.01,
+    "duration": 32.56
+  },
+  {
+    "text": "One, price can either reach up into this fair value gap, close out, and continue lower. It can also reach up into the consequent encroachment of this fair value gap. From here, I would like to see a candle close outside of it, but as long as it's respecting the consequent encroachment, I'm pretty flexible with that. It can also reach up, fill the fair value gap, and with this, I prefer to see price close outside the consequent encroachment of this fair value gap.",
+    "start": 249.57,
+    "duration": 27.12
+  },
+  {
+    "text": "The one thing I look for when I'm invalidating a fair value gap is this close. When we start to close over the consequent encroachment or outside of the fair value gap, price is not respecting that. And a lot of times price will not reverse back down. Going back to our previous example, we have a SIBI right here. Let's mark out the consequent encroachment and see what happens. So you can see when we reach up into this fair value gap.",
+    "start": 276.69,
+    "duration": 27.93
+  },
+  {
+    "text": "Price does not close over the consequent encroachment. Now, for example, let's take a look at this SIVI right here, marking out the consequent encroachment. You can see that price did not respect this SIVI at all and closed right through it. This is when I will invalidate a fair value gap because price is not respecting it. Now, if we take a look at this BISI right here and mark out the consequent encroachment, let's see what happens.",
+    "start": 304.62,
+    "duration": 28.12
+  },
+  {
+    "text": "Price reaches into the fair value gap, closes out, so it's currently respecting. However, if we take a discount and premium of this range, I would like to have it reach a little bit lower to reach a discount of the range. Their price, you can see, we touch the consequent encroachment, close outside of here and get a continuation higher. The next thing we're going to look at is fair value gap inversion. And what that is, is when a fair value gap fails,",
+    "start": 332.74,
+    "duration": 30.27
+  },
+  {
+    "text": "Or price closes through it, this fair value gap can then be used as support or resistance. But then I would expect price to, if it does, return to this old SIVI, use it as support and move away. And over here, if it returns to this old BISI, use it as resistance and move away. One thing is that this doesn't need to occur back to back or these fair value gaps don't have to overlap. This can occur later on.",
+    "start": 363.01,
+    "duration": 28.67
+  },
+  {
+    "text": "After a period of consolidation. Going back to this previous example, we have a SIBI right here. Price closes through it. I can then look to see if this SIBI supports price, which it then does before getting a move higher. Here's an example of what I mean when I say that fair value gap inversion does not need to occur back to back. So as we watch this play out, our first clue is that",
+    "start": 391.68,
+    "duration": 31.28
+  },
+  {
+    "text": "This closed below the consequent encroachment. We cannot displace back out, hit this wick right here, come back in. Let's see if we can close below the fair value gap. And right here, we get a close below the fair value gap. Extending this out, let's see what happens when price returns to this. You can see price returns to this BISI, this old BISI. It then uses it as a resistance to go lower.",
+    "start": 423.06,
+    "duration": 34.84
+  },
+  {
+    "text": "For our next example, we have a SIBI right here. So let's see how price reacts to it. And you can see we filled this fair value gap and price closes out of it. So it's currently respecting it. It takes sell side liquidity, comes back up, still respecting the SIBI as it closes out of it, takes sell side liquidity again, comes back up, still respects it. We open up and right here we close over this SIBI.",
+    "start": 458.26,
+    "duration": 38.46
+  },
+  {
+    "text": "So extending this out in time, let's see what happens when price returns. You can see how the consequent encroachment was used as support. And then going even further ahead, we reach into this old SIBI again, use it as support, and get this placement back out of it. The last thing we're going to cover in this video is the difference between a fair value gap, volume imbalance, and a gap. We already discussed what defines a fair value gap.",
+    "start": 496.72,
+    "duration": 33.98
+  },
+  {
+    "text": "So let's look into a volume imbalance and gap. A volume imbalance is a gap between the closing and opening price of two candles. And the difference between a volume imbalance and a gap is a gap has a complete absence of trading between two candles, while a volume imbalance had trading or overlap between the high and the low. A quick example of a volume imbalance would be from this closing price to this opening price, we have a gap.",
+    "start": 530.7,
+    "duration": 29.83
+  },
+  {
+    "text": "However, price did trade through these areas, so it is a volume imbalance and not a gap. And so when price returns, you get a nice reaction from that area. And here is an example of a gap, where between two candles, we have a complete absence of trading. I hope you found this video helpful. If you did, please consider liking and subscribing, and I hope you have a great rest of your day. See ya.",
+    "start": 560.53,
+    "duration": 25.76
   }
 ]

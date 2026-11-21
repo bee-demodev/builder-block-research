@@ -1,0 +1,77 @@
+# Liquidity, sweeps and draw on liquidity: definitions (75 rows, sorted by date)
+
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Relative equal highs/lows**: highs/lows close together but not exactly equal (example: about "three dollars" apart on ES), treated as liquidity targets (04:16, 11:16-11:20).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **8:30 open / news embargo lifts**: his intraday reference time for marking liquidity (00:58, 05:36, 16:29).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Previous liquidity taken**: the last swing high or low that was run; its side sets the expected distribution direction (00:07).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Liquidity**: stops resting above highs / below lows, especially relative equal highs and lows (00:38, 04:14).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Distribute**: deliver price away from the taken liquidity toward premium (after sell-side) or discount (after buy-side) (01:09).
+- 2022-06-28 (upload) [[price_targets_ict_concepts]] **Liquidity (target)**: lows/highs where stops rest; equal lows/highs are the obvious pools (00:39, 01:46).
+- 2022-07-07 (upload) [[what_is_liquidity_ict_concepts]] **Liquidity**: resting stop orders at obvious highs and lows (00:06).
+- 2022-07-07 (upload) [[what_is_liquidity_ict_concepts]] **Buy-side liquidity**: stops of shorts above highs (00:35). **Sell-side liquidity**: stops of longs below lows (00:35-01:05).
+- 2022-08-08 (upload) [[intro_to_the_inducement_model_ict_concepts]] **Liquidity grab**: initial sweep of external liquidity (01:05).
+- 2022-08-08 (upload) [[intro_to_the_inducement_model_ict_concepts]] **2022 mentorship model**: ICT's model (sweep, structure break, FVG entry); the inducement model adds the run of the internal liquidity before entry (00:06).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **Model 1**: liquidity grab, structure break, retrace into FVG (03:15).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **Model 2 / 4**: models 1 / 3 with internal range liquidity taken before the move (03:44).
+- 2022-10-18 (upload) [[higher_time_frame_points_of_interest_ict_concepts]] **Internal range liquidity**: liquidity inside the current dealing range (e.g. internal highs) taken before external highs (00:52, 04:47).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **Internal liquidity**: lows inside the displacement range swept before continuation (02:37).
+- 2022-12-24 (upload) [[top_down_analysis_ict_concepts]] **2022 model**: liquidity run, break of structure, clean FVG (05:28).
+- 2023-01-09 (upload) [[draw_on_liquidity_dol_ict_concepts]] **Draw on liquidity (DOL)**: where the market is likely to reach next, external or internal liquidity on the HTF (00:35).
+- 2023-01-09 (upload) [[draw_on_liquidity_dol_ict_concepts]] **External liquidity**: old highs/lows, equal highs/lows (00:35).
+- 2023-01-09 (upload) [[draw_on_liquidity_dol_ict_concepts]] **Internal liquidity**: FVGs, order blocks, occasionally volume imbalances and gaps (01:02).
+- 2023-01-18 [[draw_on_liquidity_example_1_18_23_ict_concepts]] **Draw on liquidity**: where price is expected to reach (staged PD arrays and liquidity) (00:07, 02:06).
+- 2023-01-18 [[draw_on_liquidity_example_1_18_23_ict_concepts]] **Low-resistance liquidity**: lows taken easily in the trend (02:38).
+- 2023-03-30 (upload) [[scalping_made_simple_building_a_scalping_model]] **Stop hunt**: aggressive move beyond a recent high/low and aggressive move back into the range (01:28, 03:14).
+- 2023-04-18 (upload) [[low_resistance_liquidity_run_ict_concepts]] **Low resistance liquidity (LRL)**: high/low with a failure swing; liquidity untouched (00:37, 01:07).
+- 2023-04-18 (upload) [[low_resistance_liquidity_run_ict_concepts]] **High resistance liquidity (HRL)**: high/low already swept before reversing; remaining liquidity sits higher/lower (01:07).
+- 2023-05-09 (upload) [[next_day_model_the_mmxm_trader_ict_concepts]] **Draw on liquidity**: the daily target (FVG, sell stops, equal lows/highs) (00:37, 02:30).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Breaker block (bullish)**: up-close candles before the raid on liquidity (02:35).
+- 2023-06-28 (upload) [[liquidity_buyside_sellside_ict_concepts]] **Sell-side liquidity (SSL)**: sell stops resting below swing lows (01:07).
+- 2023-06-28 (upload) [[liquidity_buyside_sellside_ict_concepts]] **Buy-side liquidity (BSL)**: buy stops resting above swing highs (01:07).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Stop raid**: sweep of the swing before the shift; forms the breaker and high resistance liquidity (02:07).
+- 2023-07-25 (upload) [[market_structure_shift_vs_liquidity_grab_ict_concepts]] **Liquidity grab**: failure to displace over structure; price reaches over a high/low and closes back in (01:02).
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **Draw on liquidity / daily bias**: the side of liquidity (PDH/PDL, previous week high/low, swing point) price is more likely to reach next (00:10, 00:38).
+- 2023-09-05 (upload) [[my_favorite_reversal_pattern_orderblocks_ict_concepts]] **Important level**: PD array or buy-side / sell-side liquidity that price reaches (00:10).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **Failure swings**: repeated swing highs that failed; liquidity target (10:12).
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Smooth highs / equal lows / equal highs**: liquidity pools used as draw (02:31, 06:03).
+- 2023-10-03 (upload) [[ict_son_s_model_higher_time_frames]] **Draw on liquidity**: target old high/low or imbalance on the HTF (00:34).
+- 2023-10-03 (upload) [[ict_son_s_model_higher_time_frames]] **External to internal**: after external liquidity is taken, the next draw is an internal imbalance (02:57).
+- 2023-10-03 (upload) [[ict_son_s_model_higher_time_frames]] **Low resistance liquidity**: stacked higher lows (04:01).
+- 2023-10-17 (upload) [[important_liquidity_levels_draw_on_liquidity_ict]] **Buy-side / sell-side liquidity**: the previous candle's high / low (00:38).
+- 2023-10-24 (upload) [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] **Draw on liquidity (DOL)**: the liquidity (here PDH/PDL) price is expected to reach; doubles as the target (02:54).
+- 2023-11-07 (upload) [[standard_deviation_projections_ict_concepts]] **Manipulation leg**: the swing that swept liquidity before changing the state of delivery / shifting structure; in a high, low, higher high, lower low pattern it is the low to the higher high (01:08-01:37).
+- 2023-11-07 (upload) [[standard_deviation_projections_ict_concepts]] **Low hanging fruit**: liquidity resting just before the -2 to -2.5 zone (05:04).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **Internal range liquidity (IRL)**: a fair value gap (00:10).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **External range liquidity (ERL)**: swing high / swing low, i.e. buy-side or sell-side liquidity (00:39).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **External / internal liquidity**: stops beyond the range's old highs/lows vs FVGs inside the range (03:20, 05:04).
+- 2024-01-11 [[cpi_gold_trade_review_ict_market_maker_sell_model_mmxm]] **Failure swing / low-resistance liquidity**: lower high beside a prior high (01:38).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Breaker block**: in the bearish case, the lowest down-close candle before the leg up that took liquidity; consecutive same-direction closes are all included (1:16:36). Mirror for bullish (implied from the NQ example, 1:29:03).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Internal liquidity**: FVGs. **External liquidity**: swing highs or swing lows (1:12:11).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **High-resistance liquidity**: a high that ran another high; he puts stops there in volatile conditions (09:44).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **External range liquidity (ERL)**: old highs and lows; buy side above highs, sell side below lows (01:56, 04:29).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Internal range liquidity (IRL)**: fair value gaps inside the range (01:56).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Change in state of delivery**: close above the last down-close candle that took out liquidity (17:08).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Internal liquidity**: a fair value gap (00:35).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **External liquidity**: swing highs (buy-side) and swing lows (sell-side), three-bar swing definition (01:03).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Low-resistance liquidity**: aligned previous-day lows (07:50).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **Low resistance liquidity (LRL)**: failure swings; resting liquidity price can run easily; the target (00:37, 01:34).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **High resistance liquidity (HRL)**: a swing that was just swept (higher high / lower low) before the reversal; remaining liquidity sits beyond it; the stop side (01:07-01:34).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **Low-resistance liquidity / failure swings**: lined-up session highs/lows and previous-day lows that price runs through easily (03:12, 09:01).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **Internal range liquidity**: the 30m/1h FVG inside New York's retracement (08:55-09:05).
+- 2024-11-02 (upload) [[trading_irl_erl_with_order_blocks_ict_concepts]] **IRL (internal range liquidity)**: a FVG (00:28).
+- 2024-11-02 (upload) [[trading_irl_erl_with_order_blocks_ict_concepts]] **ERL (external range liquidity)**: a swing high or swing low (00:43).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Formation liquidity**: dotted line at the untaken previous candle / previous day low (bearish) or high (bullish) the setup should draw to (13:04-13:27).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **High-resistance liquidity (as a low)**: a swing low that has already been swept; its wick 0.5 becomes support (02:44-02:59).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **Low hanging fruit target**: nearest obvious liquidity (Asia high, NY open, London low) (12:23, 14:15).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Key levels he uses**: FVG / internal range liquidity, swing points, order blocks, plus "order paying ranges" [order-pairing? unclear], external-to-internal and opposing candles (11:17, 27:06).
+- 2025-05-17 (upload) [[protected_swings_understanding_trend_and_invalidations]] **Failure swing**: a swing that did not get swept/protected; liquidity to trade towards (01:00, 14:45).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Continuation consolidation**: after expansion, open draw on liquidity, no HTF level hit; run of the opposite side then continuation (02:42-03:12).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **Relevant high/low**: a level price would logically reverse from without leaving obvious liquidity (failure swings, equal highs, previous day high) behind; previous day/week highs and lows are always relevant (02:50, 10:38).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Low-resistance liquidity**: untaken session highs/lows (failure swings) that price can reach easily (11:27).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Internal to external**: key level = internal range liquidity (FVG); target = external range high/low that caused the retracement (01:37).
+- 2025-12-20 (upload) [[ttrades_top_down_chart_lessons_4]] **Middle asset**: of NQ/ES/YM, the one between the strongest and weakest; traded when the strongest has already expanded beyond its liquidity and the weakest is only just reversing (2:23-2:58).
+- 2026-02-07 (upload) [[ttrades_scalping_model_simple_day_trading_strategy]] **Hourly internal to external**: trading from an hourly FVG (internal liquidity) to external liquidity (00:45, 09:05).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Failure swings**: equal-ish swing highs/lows left as resting liquidity, e.g. previous day's highs lined up (03:23, 12:49, 25:00).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Short-term high/low taken**: the CISD closure itself sweeps a recent swing, "not just the candle next to it" (15:36); more significant when it is buyside/sellside liquidity (13:28).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **Weekly bias**: anticipated direction of the current weekly candle, from liquidity, highs/lows, FVGs and candle closures; minimal form: which previous-week extreme price reaches for (00:30-00:46, 02:28-02:38).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **V-shaped reversal**: sharp reversal off a sweep into a consolidation, creating a protected swing (07:06-07:18). Page: "a sweep of liquidity followed by a sharp rejection and a strong closure away from that level".
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **Failure swing**: a swing that is not expected to hold because older/stacked highs or lows sit beyond it or very close to it; "failure swings are those stacked highs, right? That stacked liquidity" (08:17). Covered in a separate prior video (00:17).

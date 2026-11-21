@@ -1,0 +1,32 @@
+# SMT divergence, PSP and asset strength: definitions (30 rows, sorted by date)
+
+- 2022-05-20 (upload) [[ict_index_futures_weekly_recap_week_of_5_16_22]] **Divergence**: his early name for SMT between ES and NQ (03:31).
+- 2022-06-17 (upload) [[smart_money_divergences_smt_ict_concepts]] **SMT divergence**: ES and NQ disagree at a swing (higher high vs lower high, or higher low vs lower low) (00:36, 01:06).
+- 2023-08-15 (upload) [[the_best_relative_strength_indicator_for_es_nq_ict]] **Relative strength / weakness**: one of two compared assets being more bullish / bearish than the other (00:03).
+- 2023-08-15 (upload) [[the_best_relative_strength_indicator_for_es_nq_ict]] **SMT**: divergence at a swing between correlated assets, e.g. higher low on one vs lower low on the other (03:08).
+- 2023-08-15 (upload) [[the_best_relative_strength_indicator_for_es_nq_ict]] **Change in correlation**: ES/NQ chart reversing, flipping which index leads (11:13-11:38).
+- 2023-10-03 (upload) [[ict_son_s_model_higher_time_frames]] **SMT**: ES and NQ disagree at a swing (one takes it, the other does not) (01:29, 04:01, 05:58).
+- 2023-10-17 (upload) [[important_liquidity_levels_draw_on_liquidity_ict]] **SMT**: correlated indices diverging at a swing (NQ lower high, ES higher high) (09:53).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **SMT (smart money technique / tool)**: divergence between correlated assets where one makes a new extreme (higher high / lower low) and the other does not (00:10, 01:05).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **Lower-timeframe SMT**: divergence visible only as one asset's wick taking a level the other's does not on the HTF chart (03:38-04:34).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **SMT within an FVG**: one asset trades into an FVG (above the LTF swing high forming it) while the other does not reach it (15:30-16:25).
+- 2024-06-07 (upload) [[the_twitter_model_the_mmxm_trader_ict_concepts]] **MMXM Trader "Twitter model"**: PDH/PDL raid (external) → 1h FVG target (internal), 15m MSS + SMT, entry on the correct side of midnight open (00:02-00:39).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **SMT**: one index makes a new high/low the other does not; trade the weaker (07:54).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Smart money reversal (SMR)**: the turn at the HTF key level with SMT; not traded by Tom (02:14, 05:51).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **Judas swing (void profile)**: two sessions of accumulation (Asia + London) fail to manipulate the daily range; New York runs their high/low (with SMT), then distributes the other way in a V-shape (06:07-06:44, 11:49-13:42).
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **SMT breaker**: no sweep on this asset, but SMT with the correlated asset; the up-close candles are treated as the breaker once broken (01:56, 08:39-08:54).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Strength switch**: the weaker asset of an SMT pair temporarily prints stronger price action than the stronger one so it can catch up to the level (36:58-39:23).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Fake SMT**: divergence where the stronger asset fails to reverse; the lagging asset will still take the level (36:30-36:43, 55:12).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Triad**: three correlated markets used for SMT (07:17).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **SMT fill**: SMT at an FVG; one asset fills/enters the gap, the other leaves a breakaway gap open (08:00).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Crack in correlation** ("Ken correlation", "Kraken correlation", "cracking correlation"): the divergence that makes an SMT (07:53, 14:41).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Failure swing**: the swing on the asset that did not take the level in an SMT (09:06).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Two-stage SMT**: an SMT immediately confirmed by a second SMT (10:12).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **PSP (precision swing point)**: correlated markets close a candle in opposite directions; from Trader Day (10:34).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Two-stage PSP**: SMT plus PSP confirming each other, in either order (10:59).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Strength switch PSP**: named at 22:25, deferred to his PSP video; not defined here.
+- 2025-12-20 (upload) [[ttrades_top_down_chart_lessons_4]] **Middle asset**: of NQ/ES/YM, the one between the strongest and weakest; traded when the strongest has already expanded beyond its liquidity and the weakest is only just reversing (2:23-2:58).
+- 2025-12-20 (upload) [[ttrades_top_down_chart_lessons_4]] **Previous-day low SMT**: one index takes its previous-day low while the others do not (0:35, 1:13).
+- 2026-02-28 (upload) [[relative_strength_weakness_smt_divergence_full_guide]] **Relative strength / weakness**: which of two correlated assets is leading in the expected direction (00:14; page).
+- 2026-02-28 (upload) [[relative_strength_weakness_smt_divergence_full_guide]] **SMT (divergence)**: "between correlated assets a difference in structure" at the same swing (00:41-00:46).
+- 2026-03-14 (upload) [[eurgbp_for_relative_strength_eu_vs_gu]] **Relative strength (FX)**: which of two foreign currencies is outperforming against the dollar, read from EURGBP direction and from EURUSD vs GBPUSD closures (0:17-1:47, page).
