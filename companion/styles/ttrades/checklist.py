@@ -52,6 +52,9 @@ SESSION = Spec("session_filter_ok", "Inside a kill zone (information)", "shared"
 # Class from ``stop_size_role`` (advisory by default). Measured on the trigger's own stop.
 STOP_SIZE = Spec("stop_size_ok", "Stop is wide enough for its costs (share of the daily range)", "shared", "", ADVISORY, "entry")
 
+# Class from ``htf_align_role``; only shown when that is not "off" (proposed TD-010).
+HTF_ALIGN = Spec("htf_candle_aligned", "The last closed 4H candle supports the trade", "shared", "", ADVISORY, None)
+
 CONTINUATION: tuple[Spec, ...] = (
     Spec("bias_closure_directional", "Bias candle closed with a direction", "continuation", "c1", GATE, "bias"),
     Spec("bias_poi_present", "Bias swing formed at a point of interest", "continuation", "c1", GATE, "bias"),

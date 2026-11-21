@@ -84,6 +84,26 @@ VARIANTS: dict[str, dict[str, Any]] = {
     "conservative": {"entry_mode_continuation": "conservative", "entry_mode_reversal": "conservative"},
     "latest_trigger": {"entry_either_pick": "latest"},
     "no_clean_wait": {"wait_for_clean_continuation": False},
+    # Teacher-grounded switches from the TTrades brain (proposed TD rows in
+    # knowledge/second_brain/TTRADES/decisions.md; each cites its rule there).
+    "next_continuation": {"entry_mode_continuation": "conservative"},  # CISD-19
+    "eq_soft": {"eq_respect_role": "advisory"},  # BIAS-1 / RNG-3
+    "profile_veto": {"profile_check_role": "quality"},  # BIAS-9 / PROF-1
+    "no_reversals": {"trade_reversals": False},  # ENT-6
+    "ny_window": {"kill_zones": [["08:00", "10:30"]], "session_filter_role": "quality"},  # SES-1
+    "cont_cisd_entry": {"entry_mode_continuation": "aggressive"},  # question 14: the entry CISD itself
+    "stop_gate": {"stop_size_role": "quality"},  # question 38: a stop under 4% of ADR waits
+    "swing_close_break": {"protected_swing_break_on": "close"},  # SW-1
+    "no_double_expansion_c4": {"c4_after_double_expansion": "skip"},  # C4c
+    "wick_setup": {"cont_setup_pick": "wick_extreme"},  # one CISD a day forms the wick
+    # loop turn 11: the switches kept on train (paired weekly-R t >= 1; TTRADES/loop-log.md)
+    "loop1": {"cont_setup_pick": "wick_extreme", "stop_size_role": "quality", "c4_after_double_expansion": "skip"},
+    # loop turn 12: the 4H candle has to support the trade (FM-12 / BIAS-23)
+    "htf_align": {"htf_align_role": "quality"},
+    "loop2": {"cont_setup_pick": "wick_extreme", "stop_size_role": "quality", "c4_after_double_expansion": "skip",
+              "htf_align_role": "quality"},
+    "loop1_ny": {"cont_setup_pick": "wick_extreme", "stop_size_role": "quality", "c4_after_double_expansion": "skip",
+                 "kill_zones": [["08:00", "10:30"]], "session_filter_role": "quality"},
 }
 # "off-<criterion key>" (or several keys joined by "+") runs the baseline config with those
 # quality checks made advisory for that run only: computed and shown, never blocking.
@@ -515,10 +535,19 @@ def run_job(job: dict[str, Any]) -> dict[str, Any]:
 
 def grid_jobs(symbols: Sequence[str], years: Sequence[int], stacks: Sequence[tuple[str, str, str]],
               variants: Sequence[str], out_dir: Path, bars_dir: Path | None = None,
-              bars_tf: str = "5m", **extras: Any) -> Iterator[dict[str, Any]]:
+              bars_tf: str = "5m", clip_start: str | None = None, clip_end: str | None = None,
+              **extras: Any) -> Iterator[dict[str, Any]]:
     """One job per year x variant x stack x symbol. ``extras`` (``max_days``, ``limit_windows``,
-    ``eligibility``, ``extra_horizons``) are copied into every job."""
+    ``eligibility``, ``extra_horizons``) are copied into every job. ``clip_start`` / ``clip_end``
+    (YYYY-MM-DD) cut each year's window, so a run can start or stop mid-year."""
     for year in years:
+        start, end = f"{year}-01-01", f"{year + 1}-01-01"
+        if clip_start is not None:
+            start = max(start, clip_start)
+        if clip_end is not None:
+            end = min(end, clip_end)
+        if start >= end:
+            continue
         for variant in variants:
             for parts in stacks:
                 for symbol in symbols:
@@ -530,8 +559,8 @@ def grid_jobs(symbols: Sequence[str], years: Sequence[int], stacks: Sequence[tup
                         "bars_file": str(bars_file) if bars_file is not None else None,
                         "symbol": symbol,
                         "stack": list(parts),
-                        "start": f"{year}-01-01",
-                        "end": f"{year + 1}-01-01",
+                        "start": start,
+                        "end": end,
                         "variant": variant,
                         # minute-entry stacks: London open to New York close only (runtime)
                         "hours": [1, 16] if parts[2] == "1m" else None,
@@ -562,6 +591,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     grid.add_argument("--bars-dir", help="read <dir>/<SYMBOL>_<bars-tf>.csv instead of the Databento minute set")
     grid.add_argument("--bars-tf", default="5m")
     grid.add_argument("--dry-run", action="store_true", help="print the jobs and exit")
+    grid.add_argument("--start", help="YYYY-MM-DD: clip the first year's window to start here")
+    grid.add_argument("--end", help="YYYY-MM-DD: clip the last year's window to end here (exclusive)")
     for command in (one, grid):
         command.add_argument("--max-days", type=float, default=10.0, help="outcome horizon in calendar days")
         command.add_argument("--limit-windows", nargs="*", type=int, default=[],
@@ -586,7 +617,8 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     stacks = ALL_STACKS if not args.stacks else [tuple(p.strip() for p in s.split("/")) for s in args.stacks]
     jobs = list(grid_jobs(args.symbols, args.years, stacks, args.variants, Path(args.out_dir),
-                          Path(args.bars_dir) if args.bars_dir else None, args.bars_tf, **extras))
+                          Path(args.bars_dir) if args.bars_dir else None, args.bars_tf,
+                          clip_start=args.start, clip_end=args.end, **extras))
     if args.dry_run:
         print(json.dumps(jobs, indent=1))
         return 0

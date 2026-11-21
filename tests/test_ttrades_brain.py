@@ -34,6 +34,18 @@ def test_quote_check_grades_by_place_in_the_transcript():
     assert b.check_quote('"[CISD] confirms it"', [400], SEGS) == "no_quote"  # under three words once the analyst's fix is dropped
 
 
+def test_the_evidence_ledger_rows_are_read_from_their_section_only():
+    b = load("build_index")
+    text = ("# Evidence\n\n## Ledger\n\n"
+            "| Rules | Concept | Switch | Variant | Stacks | Cap | Train | Validate | Test | Verdict | Run |\n"
+            "|---|---|---|---|---|---|---|---|---|---|---|\n"
+            "| SES-1 | sessions-and-time | kill_zones 08:00-10:30 | ny_window | 1D/4h/15m | 1/day | -0.04 | +0.59 | +0.28 | passes | tv-5y |\n"
+            "\n## Notes\n\n| a | b |\n|---|---|\n| x | y |\n")
+    rows = b.evidence_rows(text)
+    assert rows == [("SES-1", "sessions-and-time", "kill_zones 08:00-10:30", "ny_window", "1D/4h/15m", "1/day",
+                     "-0.04", "+0.59", "+0.28", "passes", "tv-5y")]
+
+
 def row(**kw):
     base = {"symbol": "NQ", "stack": "1D / 1h / 5m", "direction": "short", "path": "reversal", "stage": "c4", "trigger_kind": "cisd",
             "bias": "neutral", "session": "asia", "fill": 100.0, "plan_stop": 110.0, "risk": 10.0, "structural_targets": [80.0],

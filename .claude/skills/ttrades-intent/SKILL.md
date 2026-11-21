@@ -27,6 +27,10 @@ L="C:/Users/satvi/Repos/builder-block-research/knowledge/second_brain/TTRADES/_p
 4. **Check the evidence.** `python $L --trades path=<reversal|continuation> session=<asia|london|ny_am|...>`
    for the journaled trades and their R; `python $L --backtest <id> [SYMBOL]` for a registered run
    (`tv-2026-baseline`, `tv-2025-baseline`, `tv-2025-aggressive`, `tv-2025-no_clean_wait`).
+   `python $L --evidence <word>` for the evidence ledger: every switch already backtested, its
+   walk-forward R per week and verdict. `TTRADES/engine-gaps.md` lists where the engine still differs
+   from the teacher, with checked citations; its "improvement loop" (in `ttrades-index.md`) is how a
+   new switch gets tested and filed.
    Backtests and journals are evidence (no slippage), never a reason to override the teacher unasked.
 5. **Write the intent brief** in your reply before any code: what TTrades teaches (cited), how it
    changed over time, Vik's decisions, open conflicts, where the feature sits on the chain.
