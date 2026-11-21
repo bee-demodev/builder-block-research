@@ -1,0 +1,185 @@
+# Ranges, EQ, premium / discount, ADR, consolidation, expansion and retracement: definitions (183 rows, sorted by date)
+
+- 2022-01-27 (upload) [[simple_day_trading_strategy_triple_s]] **Levels** (on-screen slide at 03:41): previous week high/low (orange), previous day high/low (turquoise), previous day close (light grey), current day open (white) (00:29-01:02).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Broadening formation**: expanding-range pattern of higher highs and lower lows drawn on the hourly and 1m; its boundary is used as reversal confluence (03:52-04:10, 06:40).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Distribute**: deliver price away from the taken liquidity toward premium (after sell-side) or discount (after buy-side) (01:09).
+- 2022-06-13 (upload) [[reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts]] **Pullback**: retracement within a trend that breaks no structure (or breaks lower-timeframe structure only) (01:03, 01:34).
+- 2022-06-30 (upload) [[what_is_displacement_ict_concepts]] **Displacement**: an energetic break of a short-term swing, recognised by larger candle range and more distance covered past the swing than a weak break over the same number of candles (00:39-01:49).
+- 2022-06-30 (upload) [[what_is_displacement_ict_concepts]] **Displacement range**: from the swing low before the move to the displacement high; used for premium/discount (01:49).
+- 2022-07-07 (upload) [[what_is_liquidity_ict_concepts]] **2022 mentorship setup**: ICT's model as he uses it: stop run, short-term swing broken with displacement, FVG entry in the discount (long) of the displacement range (03:13-03:46).
+- 2022-08-02 (upload) [[ote_optimal_trade_entry_ict_concepts]] **OTE (optimal trade entry)**: retracement zone between the 0.62 and 0.79 fib of the displacement range that broke structure (00:34).
+- 2022-08-02 (upload) [[ote_optimal_trade_entry_ict_concepts]] **0.5 fib**: premium / discount line of the range (00:34).
+- 2022-08-08 (upload) [[intro_to_the_inducement_model_ict_concepts]] **Inducement**: a swing inside the range (often formed by a FVG entry) that lures traders in; its stops are run before the real move (00:34, 01:35, 02:34).
+- 2022-09-20 (upload) [[intraday_bias_ict_concepts]] **OTE**: optimal trade entry retracement zone (not defined numerically) (00:35, 01:38).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **Model 2 / 4**: models 1 / 3 with internal range liquidity taken before the move (03:44).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **BPR (balanced price range)**: overlap of opposing FVGs after an aggressive move met by an aggressive opposite move (04:11, 04:43).
+- 2022-10-18 (upload) [[higher_time_frame_points_of_interest_ict_concepts]] **Internal range liquidity**: liquidity inside the current dealing range (e.g. internal highs) taken before external highs (00:52, 04:47).
+- 2022-10-18 (upload) [[higher_time_frame_points_of_interest_ict_concepts]] **OTE of a range**: optimal trade entry zone of a displacement leg (02:15, 03:43).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **BPR** (balanced price range): aggressive move one way and aggressive move back, overlapping gaps; he calls it "the box" (00:00, 06:19, 08:09).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **OTE**: optimal trade entry retracement, drawn from displacement start to end (02:05).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **Displacement range**: the leg from where displacement started to where it ended; re-anchored after each new leg (02:37).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **Broadening formation**: higher high, lower low expansion before continuation (04:26, 07:43).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **Lack of displacement / failure to displace**: price trades beyond a high/low but closes straight back into the range, without big closes beyond (00:34, 02:43).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **Broadening formation / power of three**: failing one side of a range, then delivering to the other side; consolidation, manipulation, distribution (03:45-04:18).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **BPR**: balanced price range; here, an aggressive break followed by an immediate aggressive move back in, seen on a lower timeframe (05:26).
+- 2022-11-25 (upload) [[choosing_dealing_ranges_displacement_ranges_ict_concepts]] **Dealing range**: nearest swing high and low containing current price; Fib high-to-low gives premium/discount (00:05-00:33).
+- 2022-11-25 (upload) [[choosing_dealing_ranges_displacement_ranges_ict_concepts]] **Displacement range**: aggressive leg over structure; Fib anchored at the starting low, trailed to the latest high (01:37, 03:13).
+- 2022-11-25 (upload) [[choosing_dealing_ranges_displacement_ranges_ict_concepts]] **OTE**: retracement zone in discount; 0.62 cited (03:43, 04:46).
+- 2022-11-25 (upload) [[choosing_dealing_ranges_displacement_ranges_ict_concepts]] **PD array**: premium/discount array, e.g. order block (04:16).
+- 2023-01-18 [[draw_on_liquidity_example_1_18_23_ict_concepts]] **BPR (balanced price range)**: used as a PD array target, not defined (01:04).
+- 2023-02-27 (upload) [[targets_with_standard_deviation_projections_ict_concepts]] **Manipulation leg**: the move that swept the short-term high (or low) before price came back into the range and shifted structure; the anchor for projections (00:36, 02:40, 06:37).
+- 2023-03-30 (upload) [[scalping_made_simple_building_a_scalping_model]] **Stop hunt**: aggressive move beyond a recent high/low and aggressive move back into the range (01:28, 03:14).
+- 2023-03-30 (upload) [[scalping_made_simple_building_a_scalping_model]] **OTE (optimal trade entry)**: fib retracement of the leg back into the range; he uses 0.62 (02:33).
+- 2023-04-07 (upload) [[open_high_low_close_ohlc_olhc_ict_concepts]] **AMD**: accumulation (consolidation around the open), manipulation (move beyond the open against the bias), distribution (expansion to the other extreme) (04:43).
+- 2023-05-09 (upload) [[next_day_model_the_mmxm_trader_ict_concepts]] **Classic Tuesday low week**: bullish week whose low forms Tuesday, expansion from Wednesday (11:34).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Box setup**: deviation below/above a range then back in ("aggressive down, aggressive up"), read as accumulation-manipulation-distribution; entry on a retest of the manipulation (07:50-08:23).
+- 2023-07-07 (upload) [[discount_premium_ict_concepts]] **Range**: swing high to swing low, the most prominent one in the area (00:09).
+- 2023-07-07 (upload) [[discount_premium_ict_concepts]] **Equilibrium**: 0.5 of the range (00:38).
+- 2023-07-07 (upload) [[discount_premium_ict_concepts]] **Premium / discount**: above / below equilibrium (00:38).
+- 2023-07-07 (upload) [[discount_premium_ict_concepts]] **Ranges within ranges**: each new swing makes a new range nested in the larger one (01:06).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Displacement range**: the MSS leg; its premium/discount decides where to look for the PD array (05:52).
+- 2023-07-25 (upload) [[market_structure_shift_vs_liquidity_grab_ict_concepts]] **Displacement met with displacement**: displacement out of a range answered immediately by displacement back (11:49).
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **Failure to displace**: price trades beyond a level but cannot close / displace beyond it and closes back in the range (01:06, 07:53).
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **PD array**: premium/discount array (FVG, order block) that price "respects" (08:47, 11:09).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Failure to displace**: price trades through a level (previous candle extreme or swing point) but cannot close beyond it; closes back in the range (01:04, 10:27).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Inside bar / inside candle**: candle within the previous range; "no direction", default to trend continuation (03:28, 05:44).
+- 2023-08-22 (upload) [[ict_silver_bullet_strategy_no_daily_bias_with_backtest]] **Framing range**: high and low of the 9 AM hourly candle, the previous hour at 10:00 (00:38).
+- 2023-08-22 (upload) [[ict_silver_bullet_strategy_no_daily_bias_with_backtest]] **Breaker (as used)**: after a new high, the candle range whose low is closed through; entry on the return to it (05:34, 07:24).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **OTE (optimal trade entry)**: the 0.62-0.79 retracement of a swing range, midpoint 0.705 (00:37-01:05, 02:49).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **Premium / discount split**: the 0.5 level of the swing range (00:37).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **Displacement range**: the range of an aggressive move used to draw the OTE (05:49-06:14).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **TGIF setup**: Friday move expected to cap the weekly range after the weekly objective is hit (09:42). Named, not detailed.
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Mean threshold**: midpoint of the breaker's candle bodies/range (06:34).
+- 2023-10-17 (upload) [[important_liquidity_levels_draw_on_liquidity_ict]] **Three candle outcomes** (from "the strat"): consolidation (inside), one-sided / directional (one side taken), both sides taken (00:38-01:04).
+- 2023-10-17 (upload) [[important_liquidity_levels_draw_on_liquidity_ict]] **OTE**: optimal trade entry retracement zone of a range (11:41).
+- 2023-10-24 (upload) [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] **AMD**: accumulation (Asia/London consolidation), manipulation (move against the bias, e.g. on 8:30 news), distribution (move toward the draw) (08:12, 10:45).
+- 2023-10-24 (upload) [[the_easiest_draw_on_liquidity_dol_daily_bias_ict]] **Box setup**: his separate setup: deviation beyond a range/level, back inside, retest of the deviation before the move (04:58, 08:45).
+- 2023-11-07 (upload) [[standard_deviation_projections_ict_concepts]] **Max expansion**: the -4 standard deviation (04:05).
+- 2023-11-07 (upload) [[standard_deviation_projections_ict_concepts]] **Classic sell week**: weekly profile with a Tuesday high, expansion lower into Thursday (09:49).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **External / internal liquidity**: stops beyond the range's old highs/lows vs FVGs inside the range (03:20, 05:04).
+- 2024-01-11 [[cpi_gold_trade_review_ict_market_maker_sell_model_mmxm]] **Original consolidation**: the MMXM starting range; here previous day low (02:23).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Expansion profile**: one-sided daily price delivery; his preferred day to trade (05:26, 24:13).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Retracement profile**: a day that retraces into discount (bullish order flow) or premium (bearish) against the daily order flow (05:52, 24:42).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Consolidation profile**: a daily candle that opens and closes at almost the same price (08:19).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Daily dealing range**: from the last daily swing low to swing high; 0.5 = EQ, above = premium, below = discount (08:49, 09:20).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Balanced price range (BPR)**: the overlap of a former bullish FVG and a new bearish FVG (or the reverse); also how he reads a large daily wick on lower timeframes (14:39, 15:10, 30:19).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Monday range**: Monday's high and low, marked every week as a time-based reference (20:46, 40:09).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **AMD**: accumulation range, manipulation (sweep into a HTF PD array), distribution to range lows, then expansion (31:45).
+- 2024-02-28 (upload) [[understanding_market_structure_for_trading]] **PD array**: premium/discount array such as an hourly FVG (13:08).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **External range liquidity (ERL)**: old highs and lows; buy side above highs, sell side below lows (01:56, 04:29).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Market maker buy / sell model (MMBM/MMSM)**: run of HTF ERL (with SMT), LTF close above a swing high, retrace into LTF IRL/breaker, reaccumulation via mitigation blocks, then delivery to the HTF IRL draw / "original consolidation" (04:29-07:41).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Original consolidation**: the HTF IRL pool the model finally returns to; on the 5m the hourly swing high draw is called this (07:41, 09:08).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Energetic swing**: the displacement leg used to measure premium/discount (07:14, 16:08).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Expansion into expansion**: displacement answered by displacement the other way; likely continuation of the second (09:51).
+- 2024-06-07 (upload) [[the_twitter_model_the_mmxm_trader_ict_concepts]] **Midnight open**: opening price at 00:00 New York, used as premium/discount filter (shorts above, longs below) (00:39, 04:22).
+- 2024-08-26 (upload) [[ict_daily_profile_london_reversal_new_york_continuation]] **Classic expansion candle**: open, manipulation creating the wick, expansion, close (00:54-01:08).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Time frame alignment (Tom's model)**: HTF key level + SMT -> new dealing range -> 4h raid into discount/premium -> 1h state-of-delivery change -> 15m entry in discount/premium (01:41-03:30).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Order pairing**: sell stops below an old low are run and then "paired" with buy stops above the range high (or the reverse); used to define the draw (04:09, 06:24, 11:05).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Turtle soup**: a lower-timeframe range raided into a key level from a higher-timeframe range (06:57).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **Protraction / protraction profile (manipulation template)**: the session in which the daily manipulation (wick) forms; used to infer when and where expansion happens (01:25-02:15).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **Market maker buy model**: the execution framework; "original consolidation" buy stops are the draw (09:12-09:20).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **Internal range liquidity**: the 30m/1h FVG inside New York's retracement (08:55-09:05).
+- 2024-10-19 (upload) [[mara_trade_review_h1_market_maker_buy_model_mmxm]] **Phases of price delivery**: expansion, retracement, reversal, consolidation; used to classify the move after a sweep (00:32, 03:22).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Reversal (candle)**: take out previous candle high/low, close back into its range (00:40).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Failure to close outside the range**: synonym he uses for the close-back-inside reversal read; after an expansion it can also mark a retracement (03:27, 12:39).
+- 2024-10-26 (upload) [[next_day_model_fractal_way_to_get_bias_for_trading]] **Phases of price delivery**: expansion, retracement, consolidation, reversal (02:28, 05:12).
+- 2024-11-02 (upload) [[trading_irl_erl_with_order_blocks_ict_concepts]] **IRL (internal range liquidity)**: a FVG (00:28).
+- 2024-11-16 (upload) [[master_candlestick_wicks_the_key_to_catching_reversals]] **Open-low-high-close / open-high-low-close**: the expected internal sequence of a bullish / bearish expansion candle (02:55, 03:49).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Candle equilibrium (EQ)**: the midpoint of the HTF candle, drawn on both HTF and LTF (11:05-11:17).
+- 2024-12-29 (upload) [[reversal_sequence_ttrs_how_to_blend_pd_arrays]] **Propulsion block**: named at 16:07 as a new block forming in the retracement; not defined here.
+- 2025-01-11 (upload) [[timeframe_alignment_how_to_align_timeframes_for_expansion]] **Expansion condition**: all timeframes aligned in one direction (10:27).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Expansion candle**: HTF candle with small wicks and a large body (07:49-07:55).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **New phase of price delivery**: after expansion: consolidation, retracement or reversal (16:15-16:24).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **7-hour candle daily profile**: AM Trades' expansion-model profile; 7-hour candles, the 1:00-8:00 a.m. candle = London candle (05:55-06:21).
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Equilibrium (EQ)**: 0.5 of a candle or range, wick high to wick low (00:41); used as a bias divider in expansions (01:24).
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Discount / premium (ICT)**: lower/upper half as buy/sell zones; TTrades uses the opposite half for continuation (00:17-00:24).
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **T-spot**: the 0.5 range of the new candle that price taps before expanding (18:37) ("that would be the t-spot").
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Page** (`using_equilibrium_in_continuations.md`): same content; adds pairing list daily EQ→1h, 4H EQ→15m, 1h EQ→5m, 15m EQ→1m, and target with standard deviation projections.
+- 2025-03-13 [[ap_use_market_structure_fibonacci_levels_for_sniper_entries]] **Peak consolidation area**: sideways high-volume pocket that retracements are drawn to (39:42).
+- 2025-03-22 (upload) [[ttrades_fractal_model_inversion_intraday_strategy]] **Time-based exit**: closing runners at the end of the HTF expansion candle (e.g. 11:00 for the 10:00 hourly) (05:24).
+- 2025-04-05 (upload) [[ttrades_fractal_model_trading_candle_4]] **Body to body**: C3's range measured on bodies only, whose upper half should also support (08:31).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Phases of price delivery** (learned from "the MMXM trader"): expansion, consolidation, retracement, reversal; allowed transitions in rules 1-2 (02:04-02:40).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Expansion signature**: trading inside an expansion candle: small wick, opposing candles supporting price toward ERL/IRL, lows rejected, highs displaced, shallow retracements; the LTF expansion makes up the HTF body (02:58-03:40).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Consolidation signature**: LTF = range after expansion; HTF = inside bar (candle that does not take out the previous candle's high or low) (05:25-06:04).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Retracement signature**: deep, slow, choppy pullback after expansion into an objective that leaves failure swings and no manipulation; target EQ of the range or IRL. HTF = three consecutive candles or one large candle into an objective; on LTF it shows as stacked near-equal highs (06:14-08:20).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Reversal signature**: expansion into a level met by expansion away (V shape), confirmed by CISD; HTF = swing point / candle close (08:43-09:55).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Failure swing**: a swing left by a retracement without manipulation (near-equal stacked highs/lows); not a reversal point, a target (06:20, 08:15).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Manipulation**: a sweep of a high/low (or protected swing) that triggers expansion; "AMD" = accumulation (consolidation), manipulation, distribution (04:52, 06:49).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **AMD continuation / AMD reversal**: trading out of a consolidation by failed manipulation of its far side (continuation, 04:52) or by using the consolidation's high/low as the reversal point (09:30).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Expansion candle / supports expansion**: candle with a small wick and large body; a candle with a large opposing wick ("reversal candle") does not support expansion (03:06, 16:21-17:15).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Reversal into expansion candle**: a candle that opens into a key level, reverses and expands, keeping a small wick; a type of swing formation (19:41, 26:20).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Model (reversal point -> target)**: internal -> external, external -> internal, swing/range low -> swing/range high (his favorite) (14:19-14:41).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Consolidation**: price remaining internal to a marked high and low for a period of time; a move from large range to small range (00:25, 00:52).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Manipulation**: price running one side of the consolidation (power of three: accumulation, manipulation, distribution) (01:39).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Continuation consolidation**: after expansion, open draw on liquidity, no HTF level hit; run of the opposite side then continuation (02:42-03:12).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Reversal consolidation**: consolidation at a HTF objective/level; run, CISD, reversal (03:57).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Breakout signature**: closing over the consolidation highs; should be followed by retracement or continuation (09:25).
+- 2025-06-14 (upload) [[how_to_trade_consolidation_phases_of_price]] **Inducement**: a low taken into an FVG within a consolidation (10:11).
+- 2025-06-28 (upload) [[how_to_trade_expansion_phases_of_price]] **Expansion**: one-sided trending move, large ranges, shallow counter-moves (00:27, 08:00).
+- 2025-06-28 (upload) [[how_to_trade_expansion_phases_of_price]] **Large range / small range**: expansion leg vs consolidation or retracement leg; market alternates them (01:03, 08:28).
+- 2025-06-28 (upload) [[how_to_trade_expansion_phases_of_price]] **Protected swing (in expansion)**: low (bullish) formed when price reaches a PD array and then closes over the down-close candle(s); must hold for the trend to continue (01:40, 03:06).
+- 2025-06-28 (upload) [[how_to_trade_expansion_phases_of_price]] **Breakout signature**: consolidation resolved by closing over the previous high without first manipulating the low (04:19).
+- 2025-06-28 (upload) [[how_to_trade_expansion_phases_of_price]] **Expansion met with expansion**: overlapping opposing FVGs (BPR) forming a CISD; a reversal type covered in the reversal video (06:21, 09:08, 12:10).
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **Retracement**: slow, shallow, small-range move opposing the trend between expansions, usually into a PDA, generally an FVG (0:28-2:16, 4:49).
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **Expansion**: strong, fast, directional, large-range move (0:37, 4:49); covered in the prior video of the series.
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **Consolidation** (in this video): a retracement that fails to confirm and hangs around, or a sideways range whose low/high must be manipulated before continuation (7:24-7:46, 15:12-15:30).
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **Expansion met with expansion**: an expansion through a high immediately answered by an opposing expansion = reversal (16:21).
+- 2025-07-19 (upload) [[fractal_model_fundamentals]] **Candle closure / candle 2 closure**: candle runs beyond the previous candle's high/low (ideally into a POI) and closes back inside its range; in his examples it should also close in the bias direction (02:43, 11:52).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **Reversal**: expansion met with (opposing) expansion; forms the higher-timeframe wick (00:33, 10:02).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **Continuation signature**: expansion-retracement-expansion or expansion-consolidation-manipulation-expansion (00:42, 13:17).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **V-shaped reversal**: clean expansion into a level met with clean opposing expansion (01:48).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **Expansion**: visible as fair value gaps being created (11:27).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Phases of price**: expansion, retracement, consolidation, reversal (00:27). This video blends them.
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Expansion**: directional move; the starting state of every sequence (00:38). In a true expansion price should not retrace much (07:03).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Retracement**: slow, shallow counter-move followed by a close back through the counter-move's candles; continuation signature (03:52, 00:42).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Consolidation**: price stuck inside a range (e.g. inside a candle's range, 07:54); also any retracement that fails to form a protected swing (15:38) or that takes too long to close through (13:11); a daily inside bar (17:22).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Reversal**: "expansion met with expansion" in the opposite direction (01:13); forms a higher-timeframe wick (04:36, 06:56).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Manipulation**: expansion against the move out of a consolidation, which then is met with expansion (01:55, 05:16).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Breakout**: expansion out of a consolidation in the trend direction (02:06).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Continuation signature**: retracement or consolidation after expansion (00:45, 27:20).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **TT Phases Flowchart**: slide (01:32) with Expansion at top branching to Consolidation and Retracement, Retracement leading to Expansion (green = "move in line with the current trend").
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Phases of price**: expansion, retracement, consolidation, reversal; read candle by candle (00:02-00:37).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Expansion met with expansion**: an opposite-direction expansion right after an expansion = reversal; on the higher timeframe it shows as a wick (00:37, 06:20, 13:52).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **0.5 of the CISD**: midpoint of the change-in-state-of-delivery range; a daily close above it on a bearish read is a conflict (03:52).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Continuation entry**: expansion, retracement into a FVG, close below the level -> new protected swing -> entry (07:48, 12:20).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Expansion candle**: small wick both sides, large body (00:23).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Reversal to expansion candle**: a candle-2 whose wick stays small so it can trend in the new direction; the ideal case (02:06, 02:34).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Range (HTF)**: a candle whose range encompasses all later days' ranges; failure swings show as non-overlapping HTF candle extremes (08:34, 08:47).
+- 2025-09-01 (upload) [[ttrades_top_down_chart_lessons_2]] **Reversal day / continuation day**: Tuesday sweeps Monday's consolidation and reverses; Wednesday continues (01:28-01:45, 10:36-10:47).
+- 2025-09-06 (upload) [[trading_candle_3]] **Expansion candle**: opens near one extreme (small or no wick, "open low") and moves one-sided (00:34).
+- 2025-09-06 (upload) [[trading_candle_3]] **Reversal candle (large wick)**: opens, runs one way, comes back to close near its open, back inside the previous candle's range; price "isn't trending in one direction" (00:42, 01:33).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **Reversal to expansion candle**: candle 2 makes a small shallow run below candle 1's low and trades higher in the same candle (02:08).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Internal to external**: key level = internal range liquidity (FVG); target = external range high/low that caused the retracement (01:37).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **External to internal**: key level = external high / manipulated range high; target = back into the range, FVG first (01:58).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Order pairing range / manipulation range**: range high or low is the key level, the opposing side / swing is the target (02:18).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Candle 2 closure**: candle 2 closes back inside candle 1's range (02:48).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Candle 2 reversal to expansion**: same as a reversal candle but with a small wick, so it reverses and expands in the same candle; occurs when candle 1 hits the key level and closes as expansion (03:50).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **EQ of range**: 0.5 of the previous candle's range, used as a wick-size gauge (02:57, 08:32).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Continuation PSP**: a PSP inside expansion toward an open target; one asset's retracement close is a PSP, the other runs its extreme; no swing point forms (11:51).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **V-shaped reversal signature**: expansion into the key level, SMT, expansion away (26:35, 31:53).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Expansion candle**: small wicks on both sides, large body; high/low made early with little range, closes near its high/low (00:30, 01:43).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Reversal candle**: large wick, small body; uses most of its time and range forming the wick, then returns towards the open (01:00, 02:29).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Shallow (small) opposing run**: small wick made early in the candle; supports expansion (00:37).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Large opposing run**: wick that consumes about half or more of the candle's time and significant range; does not support expansion (04:00, 10:07).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Reversal to expansion candle**: a candle that reverses and expands in the same period (small early wick + CISD) (03:55, 05:31).
+- 2025-11-01 (upload) [[targets_using_projections_the_fractal_model]] **Large manipulation leg**: very large opposing run; example: almost half of the range to the target (02:01, 07:11).
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **EQ (equilibrium)**: midpoint of the previous day's (previous candle's) range (03:00-03:11).
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **Shallow vs large wick**: wick size at the reversal level; shallow supports expansion and trading the reversal candle, large means wait for the next candle (01:12-01:27). Wick size is taught in a separate video.
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **T-spot**: in this video, where he looks for the continuation POI; in the NQ/USDCAD indicator examples he says it was "just the equilibrium" (06:07-06:12, 15:51-15:56).
+- 2025-12-20 (upload) [[ttrades_top_down_chart_lessons_4]] **Supports expansion (hourly)**: reversal candle with context and a small wick off the previous hour (3:50, 6:41).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **POI**: FVG or low (bullish), FVG or high (bearish), inside the previous day's range (01:51-02:09).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **EQ**: equilibrium of the range, lining up with the level price should not trade below (10:46-10:50).
+- 2026-01-17 (upload) [[higher_timeframe_analysis_for_trading_aligning_expansion_candles]] **Supports expansion**: candle with a small wick (formed early) and large body, so it can expand in one direction (00:25-01:10).
+- 2026-01-17 (upload) [[higher_timeframe_analysis_for_trading_aligning_expansion_candles]] **Aligning expansion candles / expansion alignment**: two or three timeframes' current candles all supporting expansion in the same direction, with structure aligned (01:10-01:53).
+- 2026-01-24 (upload) [[how_to_actually_trade_inversion_fair_value_gaps_ifvg]] **V-shaped reversal**: sharp reversal without consolidation; required for his inversion model (05:46).
+- 2026-02-07 (upload) [[ttrades_scalping_model_simple_day_trading_strategy]] **Continuation signature**: retracement or consolidation after expansion (01:50, 08:55).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Continuation**: a retracement into a POI that is rejected with a CISD (closure through the series of opposing candles), protecting the swing and expected to continue the trend (00:34, 04:56).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Consolidation (vs retracement)**: price fails to close back through the opposing candles, or does so slowly/sideways; treat range highs/lows as POIs (07:18, 09:01).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **New phase of price**: the shift (reversal/consolidation) that can start once an HTF target is reached (03:38, 28:52).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **Failure swings**: untaken highs/lows left behind, used as full expansion targets (03:11-03:15, 03:27-03:32).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **BPR**: named as an alternative description of the daily V-shaped reversal (09:32-09:35); balanced price range (glossary, not defined here).
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **Valid separation**: enough range between a swing and the previous swing for a reversal there to be trusted; discretionary (01:54, 12:21).
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **EQ**: equilibrium (50%) of the candle; with the wick, the level candle 3 should respect (02:51).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Relevant swing**: daily high/low that is the current extreme of the range, identified as the original extreme a failure swing ran into, or any daily extreme with valid separation to the swings to its left (2:43-3:04, 10:30).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Small-wick reversal**: daily candle that opens near a relevant swing, makes a shallow run into it, closes back into range and expands (11:59-13:47). Occurs either as a reversal of the trend or as a continuation after a consolidation (13:16).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Aligned swing point**: a lower-timeframe swing/closure formed inside the 7h expansion candle, not at its reversal, used for continuation entries (56:32).

@@ -1,27 +1,122 @@
 [
   {
-    "text": "High Resistance vs Low Resistance Liquidity - ICT Concepts. educational_channel, liquidity_sweep. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 49.14,
-    "duration": 42.12
+    "text": "How's it going everyone? This video is going to be over the differences between low resistance liquidity and high resistance liquidity. Let's hop into the PDF before we go into the charts for some examples. So to understand the differences between high resistance and low resistance liquidity, you have to understand what a failure swing is. So what a failure swing is, is when we have a swing high, and then we make a lower high relative to that before reversing.",
+    "start": 2.93,
+    "duration": 34.59
   },
   {
-    "text": "High Resistance vs Low Resistance Liquidity - ICT Concepts. educational_channel, liquidity_sweep. Liquidity sweep or run on the highs and lows.",
-    "start": 189.54,
-    "duration": 42.12
+    "text": "So this high never got swept before the reversal. And similarly over here, we make a low with a higher low. This low was never swept prior to the reversal. So now what is low resistance liquidity? Well, low resistance liquidity is just a failure swing. So how I like to picture it is we have liquidity resting above highs and lows. So as we trade away, we then generate more highs and lows and thus more liquidity. So what is high resistance liquidity?",
+    "start": 37.52,
+    "duration": 29.79
   },
   {
-    "text": "High Resistance vs Low Resistance Liquidity - ICT Concepts. educational_channel, liquidity_sweep. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 329.94,
-    "duration": 42.12
+    "text": "Well, high resistance liquidity is the opposite of low resistance liquidity. It is where we first sweep that liquidity before the reversal. You can see here, we have a high, we make a higher high before reversing. We have a low, we make a lower low before reversing. And then what this does is wipes out the liquidity resting right here and right here. So now the liquidity is resting above this high and low.",
+    "start": 67.31,
+    "duration": 26.77
   },
   {
-    "text": "High Resistance vs Low Resistance Liquidity - ICT Concepts. educational_channel, liquidity_sweep. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 470.34,
-    "duration": 42.12
+    "text": "And that is what creates high resistance liquidity. Now, how do I actually use high resistance liquidity and low resistance liquidity together? Well, simply put, I want to be targeting low resistance liquidity and having high resistance liquidity for my stop loss or on my side of the curve. So in this diagram here, you can see we have a high with a lower high next to it. That is our low resistance liquidity. And we just swept out a low here. So if we get a market structure shift and start to trade away.",
+    "start": 94.08,
+    "duration": 28.43
   },
   {
-    "text": "High Resistance vs Low Resistance Liquidity - ICT Concepts. educational_channel, liquidity_sweep. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 610.7400000000001,
-    "duration": 42.12
+    "text": "This is high resistance liquidity. So here we get the market structure shift or the change in the state of delivery. Now here I could look for an entry on the fair value gap or the order block. Or if you notice here, we could not make a new high after making a low. And so what happens is we sweep this low. And what else do you notice? We have a high with a lower high or more low resistance liquidity. And then the move finishes here.",
+    "start": 122.51,
+    "duration": 27.3
+  },
+  {
+    "text": "Let's hop into trading view for some examples. So here we are in our first example. And if you take a look at this price action, what do you notice? Well, for me, the first thing that stands out are all these highs resting above here. You can see we have a bunch of highs lined up. And if we look to the left, this high here never took out this high. So we have a higher timeframe failure swing there. And if you look down here, we just took out these equal lows into this gap.",
+    "start": 149.81,
+    "duration": 27.12
+  },
+  {
+    "text": "So if we're going to change the state of delivery, I'd like to see price go from this low to take out these failure swings. Let's see what happens. And there we go. So you can see price swept this low over here, making high resistance liquidity. And then we trade to these failure swings. You can see we do take out this high here, but we end up leaving equal highs from this previous high and then",
+    "start": 176.93,
+    "duration": 28.83
+  },
+  {
+    "text": "We retrace to get another expansion. So here we are in the second example. And if you take a look at the last three days of price action here, what do you notice? Well, if you notice, we have all these lows or previous days lows, which have not been taken out. So you can see that that is low resistance liquidity on a lower timeframe, as they are making failure swings. We look at the high end of this, what do we see? Well, we see that this second day here",
+    "start": 205.76,
+    "duration": 29.26
+  },
+  {
+    "text": "Took out this first day's high. Let's drop down to the hourly chart to see what this looks like. So down here on the hourly chart, you can see we actually have another low resting right here. But what do you see? Well, we took out this side of the range, creating high resistance liquidity, and we have failure swings resting below. So let's see what happens. And there we go. We retrace into the range before dropping and taking out all this low resistance liquidity.",
+    "start": 235.02,
+    "duration": 29.57
+  },
+  {
+    "text": "So a lot of times what I like to do on the daily chart is just see where do we have failure swings and where do we have high resistance liquidity, and that can add to my bias. So let's take a look at NQ daily chart here to see what we have. Well, we are trading within a range, and if you see, we have a high and a low, and then we have a failure swing. So let's see what happens. So here you can see we take out this low, so that has the possibility",
+    "start": 264.59,
+    "duration": 29.86
+  },
+  {
+    "text": "of becoming high resistance liquidity. But as we play this ahead one more day, you can see now we get the sweep and the closure back inside the range. So here is our high resistance liquidity. And what do we have on the highs? Failure swings. So if I have high resistance liquidity on the lows and failure swings on the highs, I can use this to add to my bias for long setups. So there we go. We run the high. All right. Well, let's take a look at another example.",
+    "start": 294.45,
+    "duration": 30.06
+  },
+  {
+    "text": "Here we have a high, and here we have a low. So let's see. Okay, we just took out this high, and what do we have on the low? Failure swings. So ideally, this high does not get taken before running this low. So letting this play out, we get some consolidation, but that is what happens. Now what do you see? Well, now we have a high here with a lower high.",
+    "start": 324.51,
+    "duration": 31.52
+  },
+  {
+    "text": "And we just swept out this side of the range in an uptrend. So if this is going to be high resistance liquidity, where would we want to see price trade to? These previous highs. And there we go. And another little add on here, if you see how price took out this previous day's low before moving higher to these highs, this is creating high resistance liquidity on a lower timeframe. So here we are with our next example.",
+    "start": 356.03,
+    "duration": 29.47
+  },
+  {
+    "text": "Go ahead and pause the video and take a moment to mark it up. But what do you see right here? Well, the first thing that catches my eyes are these highs up here. You can see we just have a bunch of failure swings, right? So I'll just go ahead and mark that out like so. And that is acting as a draw on liquidity. Now, if we're going to be targeting this high, I want to see a sweep or high resistance liquidity. Well, what do we see right here? We sweep this low.",
+    "start": 385.5,
+    "duration": 30.28
+  },
+  {
+    "text": "Trading high resistance liquidity. And another important note, this is an important low as it is previous day low. So now I'd anticipate this low to hold and trade away to this high. So let's see what happens. And there we go. So you can see by just understanding the low resistance liquidity and high resistance liquidity, an idea was framed. Now on the daily chart, you can also see this low resistance liquidity as these previous days highs.",
+    "start": 415.78,
+    "duration": 30.94
+  },
+  {
+    "text": "Where the last three days highs were lined up like so. And how this day took previous day low before coming in and closing. And where does it close? Above 50% of this wick. But then I can anticipate the next day to trade higher to these highs and into this fair value gap. So once again, in this next example, where is the high resistance liquidity and where is the low resistance liquidity? So you can see we purge this high.",
+    "start": 446.72,
+    "duration": 28.27
+  },
+  {
+    "text": "Creating high resistance liquidity. And ideally, I'd like to see price trade down to this low resistance liquidity. Now, since ES formed an SMT here and is weaker, we're going to hop into that chart for the rest of this example. So here we are in ES. You can see this is the SMT at the high where NQ created the high resistance liquidity. And where is the low resistance liquidity? You can see we have this really obvious series of lows.",
+    "start": 474.99,
+    "duration": 29.28
+  },
+  {
+    "text": "Resting right here, right above a fair value gap with an order block. Why is this an order block? Well, it reached into an important level, then price closed above, creating an order block. You can see we have low resistance liquidity right above an order block. Let's see what happens. And there we go. We run all these low resistance lows into the order block. You can see the mean threshold of this creates a reaction. And where do we go?",
+    "start": 504.27,
+    "duration": 30.03
+  },
+  {
+    "text": "Well, if you take a look at these highs now, we have a series of lower highs all stacked up. We just swept out all these lows. Where is price likely to go? Well, to these highs. Let's see. And there we go. So here we are in our last and final example. And if you notice, we just took out our previous day low. So as we zoom in here, what do we have on the high? Well, we have a swing high with a lower swing high to the right of it.",
+    "start": 534.3,
+    "duration": 29.67
+  },
+  {
+    "text": "Failure swings. So let's see if we get a reaction off of this level. We do. And we get a closure over this series of downclosed candles here, validating it as an order block. Now, just in terms of discount and premium, it doesn't really make sense to look for an entry off this order block here. So then I will use the mean threshold. Or I can just wait for a second entry. Let's see. So the mean threshold does hold. And then we validate another order block.",
+    "start": 563.97,
+    "duration": 30.77
+  },
+  {
+    "text": "So marking out the mean threshold of that as well. Let's see. Here we create a low. I could look for that. So if you notice, we swept out this low here. What else do we have resting? Well, we have failure swings here. So this looks pretty much just like the diagram from the PDF. But what do we have here? Well, the down close candle into the important level or sweeping right here. Once I get a close up that.",
+    "start": 594.74,
+    "duration": 29.96
+  },
+  {
+    "text": "Validates it as an order block. And so there we get an order block formation. I'd look to take my entry right here, my stop on the high resistance liquidity, and then looking to take off at the highs. So let's see how this works out. And there we go. We get a run higher to the take profit. So just a little thing with order blocks here. You can see once we close over, the series of down closed candles here mean threshold is respected. Here we close over, creating this propulsion block.",
+    "start": 624.7,
+    "duration": 29.56
+  },
+  {
+    "text": "Which the mean threshold is continuously respected. But why would I not expect this low to hold or wouldn't really trust it and want my invalidation here unless I get a sweep creating high resistance liquidity? Well, price never came and closed over this level, right? So I'm not using that as a valid low for invalidation. Once we sweep it, then we form another order block off of this propulsion block and the mean threshold of that should be respected, which it is.",
+    "start": 654.26,
+    "duration": 29.56
+  },
+  {
+    "text": "And then it continues higher. Now I hope you found this video helpful. If you did, please consider liking and subscribing. And I'll see you guys next time. Have a good one.",
+    "start": 683.82,
+    "duration": 8.26
   }
 ]

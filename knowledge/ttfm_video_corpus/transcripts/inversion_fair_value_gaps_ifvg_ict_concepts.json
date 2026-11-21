@@ -1,27 +1,107 @@
 [
   {
-    "text": "Inversion Fair Value Gaps (IFVG) - ICT Concepts. educational_channel, fair_value_gap. Higher timeframe context daily bias equilibrium point of interest.",
-    "start": 43.05,
-    "duration": 36.9
+    "text": "How's it going everyone? This video is going to be over inversions. We will first hop into a PDF to go over what inversions are. We will then quickly discuss the consequent encroachment of fair value gaps and how it is used before talking about old SIBIs and BISIs and how they can be used on the buy side and sell side of the curve. So let's go ahead and get into it.",
+    "start": 10.19,
+    "duration": 18.4
   },
   {
-    "text": "Inversion Fair Value Gaps (IFVG) - ICT Concepts. educational_channel, fair_value_gap. Liquidity sweep or run on the highs and lows.",
-    "start": 166.05,
-    "duration": 36.9
+    "text": "So here we are in the PDF, and the PD array we are going to be focused on for this video is a fair value gap. Now if you don't know what a fair value gap is, I suggest you click the link in the top right corner to watch my video on that. But for a quick reminder, a fair value gap is a three candlestick pattern, which the first candle's low does not overlap with the third candle's high, or when the first candle's high does not overlap with the third candle's low. So now that you understand that, what is an inversion? An inversion is when a fair value gap",
+    "start": 28.59,
+    "duration": 29.39
   },
   {
-    "text": "Inversion Fair Value Gaps (IFVG) - ICT Concepts. educational_channel, fair_value_gap. Candle 2 or Candle 3 closure with CISD through the level.",
-    "start": 289.05,
-    "duration": 36.9
+    "text": "And in this case, a SIBI or a bearish fair value gap gets closed over or disrespected. So if we continue ahead here, you can see how the next candle closes over this SIBI, which creates an inversion. Now, if we extend this out, we can expect price to either retrace into this zone or just move higher. So you can see it retraces into this zone or the old fair value gap. It respects the consequent encroachment.",
+    "start": 57.98,
+    "duration": 24.47
   },
   {
-    "text": "Inversion Fair Value Gaps (IFVG) - ICT Concepts. educational_channel, fair_value_gap. Entry confirmation around order block, breaker, fair value gap, or protected swing.",
-    "start": 412.05,
-    "duration": 36.9
+    "text": "And then continues higher. So what is the consequent encroachment? The consequent encroachment is a 0.5 or 50% of a fair value gap. So I can mark this out by just taking a fib from this high to this low and getting 50%. Now, what I want to see with consequent encroachment is if price comes in and respects this area, then I anticipate it to move higher. Now, if we go back and price comes in and violates this area.",
+    "start": 82.45,
+    "duration": 24.77
   },
   {
-    "text": "Inversion Fair Value Gaps (IFVG) - ICT Concepts. educational_channel, fair_value_gap. Trade outcome, expansion, target delivery, or invalidation.",
-    "start": 535.05,
-    "duration": 36.9
+    "text": "Then I can anticipate price to move lower, and you can see here how it closes below the fair value gap and creates an inversion. So let's hop into the charts and find a few examples of inversion. So here we are with our first example, and we have EURUSD on the 60-minute chart, and we have an hourly sweep right here. So let's drop down to the five-minute chart. So here we are on the five-minute chart, and if we're going to be watching for an inversion, we want to see a busy or a bullish fair value gap get disrespected.",
+    "start": 107.22,
+    "duration": 28.97
+  },
+  {
+    "text": "So marking out this bullish fair value gap here, we want to see when price closes below that. So you can see we didn't close below it yet, but right here we closed below it. So now we can anticipate price to reach back into this area or continue to sell off to where? These lows down here. So there are a few ways to look for an entry here. I can look to just market sell this, or I can look for a retest of this inversion, my stop above an opposing candle.",
+    "start": 136.19,
+    "duration": 30.98
+  },
+  {
+    "text": "And then looking to target these flows. So let's see how this works out. It's tagged in. You can see now fair value gaps are supporting price lower. And there we hit the lows. So now let's drop back out to the hourly chart to see what this looks like. So you can see we just took these buy stops and then ran to the other side of the range, sweeping this sell side liquidity. Now, if you watch my previous video on external and internal liquidity, what do you notice after taking these lows?",
+    "start": 167.17,
+    "duration": 33.17
+  },
+  {
+    "text": "And closing back inside while we sweep external liquidity. And what do we have resting right here? Internal liquidity. So this gives us a framework to trade in the opposite direction. So let's drop back down to the five minute chart. So here we are on the five minute chart. And you can see after we took these lows, we consolidated and created a range. Price tried to move higher, but you can see we retched into a fair value gap here and then price closed back lower.",
+    "start": 200.34,
+    "duration": 27.95
+  },
+  {
+    "text": "Before making a new low. Now, what do you notice about this new low? We swept sell stops here and then created a fair value gap. When price trades and closes over this fair value gap, it creates an inversion. Now, if I'm looking to take an entry off this inversion with my stop on this low and targeting the midpoint of this fair value gap, that's about 1R, which does not meet my requirements for entry. So how can I adjust my entry? Well, what I can do is mark out the consequent encroachment of this SIBI here.",
+    "start": 228.29,
+    "duration": 28.8
+  },
+  {
+    "text": "And by marking that out, I can look to take an entry at the consequent encroachment of that old SIBI, or the inversion. Let's see how this plays out. So you can see we hit our entry, get displacement out, price respects a fair value gap, and continues into that hourly SIBI. So let's go ahead and look back out at the hourly chart to see what this looks like. So back out here on the hourly chart just to review what happened, we had buy stops resting above old highs.",
+    "start": 257.09,
+    "duration": 29.93
+  },
+  {
+    "text": "Price traded above those old highs, then closed back inside the range, giving us a narrative to trade lower to sell side liquidity. A five minute inversion was used as price traded lower. Here, after sweeping sell side liquidity, or the sell stops, resting below old lows,",
+    "start": 287.02,
+    "duration": 16.98
+  },
+  {
+    "text": "Price goes from external to internal liquidity and a five minute inversion was used once again. So here we are on NQ two minute chart and you can see we get an aggressive move down and then back up. So looking for this to be a retracement, I would want to see follow through to the upside. However, we do not get that. After sweeping these highs, we can't close outside the range and we just fall back in. So with consolidation, I'll be waiting for manipulation or I'm waiting for external range liquidity to be hit. So I'm waiting for this low or this high to be hit.",
+    "start": 304.0,
+    "duration": 28.21
+  },
+  {
+    "text": "So you can see price does respect this fair value gap and then trades to sell side liquidity. Price cannot displace out of the range. And you can see we get another sweep there. And then we have a SIBI resting here. Now, if we want this to be an inversion, we want to see a close over. Now we are closing over the consequent encroachment, which gives us a hint, but I want to see a close over the SIBI for it to become an inversion. So letting another candle play out.",
+    "start": 334.61,
+    "duration": 28.29
+  },
+  {
+    "text": "We do get that close over. So then looking for a return to this SIBI, I'll have my stop on this low, and then I'll be looking to target the other side of the range for partials or full take profit. So you can see price returns back into that inversion, and here now I want to see it respect that consequent encroachment. And you can see that it is. And there we go. We sweep one more time before displacing over, validating this as an order block. Price then respects that.",
+    "start": 363.5,
+    "duration": 35.32
+  },
+  {
+    "text": "And continues higher to make a new high. So we are going to continue on with this example and talk about how we can use inversions within trend. So you can see we're trending up here. So making a higher high, we'd want to see a higher low put in. And what do we have? Well, we have an order block and then order block off that order block. So a propulsion block. So let's see what happens if price retraces there. It does. And if you notice, what does it do when it retraces to this propulsion block? It creates a fair value gap or a CIVI. Now that price closes over it,",
+    "start": 398.82,
+    "duration": 30.24
+  },
+  {
+    "text": "This is an opportunity to get an entry into the trend. So let's see how this works out. You can see it's pretty choppy, but we do end up making a new high. So now we made a higher high. Are we going to make a higher low? Well, we have a fair value gap here. So if we're going to make a higher low here, what do we have? We have a CIVI. So if we trade over this, we can anticipate price to retest it or at least go higher. Here we close over that.",
+    "start": 429.06,
+    "duration": 32.17
+  },
+  {
+    "text": "Make a higher high. Now we'd want to see a higher low. You can see we test this inversion and then continue higher. And the one I just missed is we have an inversion here. If we close over, retest it and continue higher. So you can see if price is trending in one direction, those opposing PD arrays that fail are actually opportunities to get into that trend.",
+    "start": 461.71,
+    "duration": 32.0
+  },
+  {
+    "text": "Let's go ahead and go back into the PDF to learn about how to use old cities and busies. So back here in the PDF, we can use old fair value gaps to look for reaccumulation or redistribution. So for example, here we are on the sell side of the curve. Here we have the smart money reversal, change in the state of delivery, the inversion, market structure shift, all of that. Now we are on the buy side of the curve.",
+    "start": 493.71,
+    "duration": 23.06
+  },
+  {
+    "text": "What I can look for is old fair value gaps from the sell side of the curve to support price higher. So for example, we have an old fair value gap here that gets traded above and then is used as support to trade higher. So let's go look at a few examples of this. So here we are on gold daily chart. We have equal highs resting above us and let's mark out our SIBI right here. Now, if we're going to have a smart money reversal, I'd like to see a close over this SIBI and a close over these down close candles.",
+    "start": 516.77,
+    "duration": 29.17
+  },
+  {
+    "text": "And we get both of those. So now I'd like to see a short term low be put in. So we do get a short term low. So now confirming our smart money reversal, do we have any old fair value gaps on the sell side of the curve? We do. So dragging that out, when price closes over this fair value gap, it can then use it as support to move higher. Here you can see it reaches back into this old fair value gap, so I'd anticipate it to move higher.",
+    "start": 547.12,
+    "duration": 31.71
+  },
+  {
+    "text": "And there we get a sweep of that buy side liquidity. I hope this example shows you how you can use old fair value gaps drawn to the other side of the curve. So for example, an old SIBI drawn to the buy side of the curve, or an old BISI drawn to the sell side of the curve, and use that for reaccumulation or redistribution. Now, if you found this video helpful, please consider liking and subscribing, and I'll see you guys next week.",
+    "start": 580.62,
+    "duration": 24.87
   }
 ]

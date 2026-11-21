@@ -1,0 +1,99 @@
+# Swing points, protected swings and market structure: definitions (97 rows, sorted by date)
+
+- 2022-05-20 (upload) [[ict_index_futures_weekly_recap_week_of_5_16_22]] **Market structure shift (MSS)**: taking a short-term low/high against the prior move (01:31, 02:14). ICT term, not TTFM CISD.
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Market structure shift (MSS)**: breaking the most recent swing low (for shorts) or swing high (for longs) on the entry timeframe, ideally with displacement (02:44-03:10, 10:17-10:42).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Relative equal highs/lows**: highs/lows close together but not exactly equal (example: about "three dollars" apart on ES), treated as liquidity targets (04:16, 11:16-11:20).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Previous liquidity taken**: the last swing high or low that was run; its side sets the expected distribution direction (00:07).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Liquidity**: stops resting above highs / below lows, especially relative equal highs and lows (00:38, 04:14).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Market structure shift (MSS)**: a short-term high (or low) broken with displacement, leaving an imbalance (FVG) (00:38).
+- 2022-06-10 (upload) [[intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts]] **Market structure**: highs and lows — short-term, swing, relative equal (00:06).
+- 2022-06-10 (upload) [[intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts]] **Market structure shift (MSS)**: break of the last lower high (in a downtrend) with displacement (01:05-01:36).
+- 2022-06-13 (upload) [[reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts]] **Market structure shift (MSS)**: displacement through a short-term swing that leaves an imbalance (FVG) (00:34, 03:41).
+- 2022-06-17 (upload) [[smart_money_divergences_smt_ict_concepts]] **Invalidation**: the diverging index takes its own swing low/high, so there is no divergence (03:09).
+- 2022-06-28 (upload) [[price_targets_ict_concepts]] **Liquidity (target)**: lows/highs where stops rest; equal lows/highs are the obvious pools (00:39, 01:46).
+- 2022-07-07 (upload) [[what_is_liquidity_ict_concepts]] **Relative equal highs/lows**: clustered highs/lows; stops pool there; targets if untaken (01:36, 03:46-04:19).
+- 2022-09-20 (upload) [[intraday_bias_ict_concepts]] **Structure**: here, relative equal lows/highs and old lows/highs as draws (00:35, 01:05).
+- 2022-09-27 (upload) [[find_lower_time_frame_entries_using_bias_ict_concepts]] **Point of interest (POI)**: old highs/lows, equal highs/lows, imbalances, order blocks — areas to watch price (05:02-05:25).
+- 2022-11-25 (upload) [[choosing_dealing_ranges_displacement_ranges_ict_concepts]] **Dealing range**: nearest swing high and low containing current price; Fib high-to-low gives premium/discount (00:05-00:33).
+- 2023-01-09 (upload) [[draw_on_liquidity_dol_ict_concepts]] **External liquidity**: old highs/lows, equal highs/lows (00:35).
+- 2023-04-18 (upload) [[low_resistance_liquidity_run_ict_concepts]] **Low resistance liquidity (LRL)**: high/low with a failure swing; liquidity untouched (00:37, 01:07).
+- 2023-04-18 (upload) [[low_resistance_liquidity_run_ict_concepts]] **Failure swing**: later swing that fails to take the prior high/low before reversing (01:07, 03:06).
+- 2023-05-09 (upload) [[next_day_model_the_mmxm_trader_ict_concepts]] **Draw on liquidity**: the daily target (FVG, sell stops, equal lows/highs) (00:37, 02:30).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Stop raid**: a swing low/high that is put in and then raided (taken) (00:10).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Market structure shift / displacement**: previous opposite swing broken by an aggressive move (00:39).
+- 2023-06-28 (upload) [[liquidity_buyside_sellside_ict_concepts]] **Swing low / swing high**: low with higher lows each side / high with lower highs each side (00:10-00:39).
+- 2023-06-28 (upload) [[liquidity_buyside_sellside_ict_concepts]] **Sell-side liquidity (SSL)**: sell stops resting below swing lows (01:07).
+- 2023-06-28 (upload) [[liquidity_buyside_sellside_ict_concepts]] **Buy-side liquidity (BSL)**: buy stops resting above swing highs (01:07).
+- 2023-06-28 (upload) [[liquidity_buyside_sellside_ict_concepts]] **Relatively equal highs/lows**: two or more swings very close together or clustered (04:30).
+- 2023-07-07 (upload) [[discount_premium_ict_concepts]] **Range**: swing high to swing low, the most prominent one in the area (00:09).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Market structure shift (MSS)**: displacement and close through a previous low/high that changes trend (02:07, 04:15).
+- 2023-07-25 (upload) [[market_structure_shift_vs_liquidity_grab_ict_concepts]] **Market structure shift (MSS)**: sweep, then displacement closing beyond structure, flipping trend (01:02).
+- 2023-08-01 (upload) [[ict_daily_bias_the_only_video_you_will_ever_need]] **Look left**: search older swing points for a draw when nearby ones are exhausted (12:44, 13:18).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Swing points**: "just turning points in the market"; used as draws or to frame reversals (10:27).
+- 2023-09-05 (upload) [[my_favorite_reversal_pattern_orderblocks_ict_concepts]] **Market structure shift**: the close below/above the order block series (08:01).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **Failure swings**: repeated swing highs that failed; liquidity target (10:12).
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Smooth highs / equal lows / equal highs**: liquidity pools used as draw (02:31, 06:03).
+- 2023-10-03 (upload) [[ict_son_s_model_higher_time_frames]] **Failure swings**: swing points used to take profit early (06:33).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **External range liquidity (ERL)**: swing high / swing low, i.e. buy-side or sell-side liquidity (00:39).
+- 2023-12-12 (upload) [[market_structure_shift_vs_change_in_state_of_delivery_ict]] **Market structure shift (MSS)**: displacement and close beyond a swing high/low; a change in trend (00:31).
+- 2023-12-26 (upload) [[order_blocks_simplified_ict_concepts]] **Failure swings**: swing highs used as the target (05:37).
+- 2024-01-11 [[cpi_gold_trade_review_ict_market_maker_sell_model_mmxm]] **Failure swing / low-resistance liquidity**: lower high beside a prior high (01:38).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Stop hunt**: price running above a swing high (or below a swing low) before reversing; required before a breaker is valid (36:38, 1:16:05).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Swing high**: three candles where the middle has a higher high than the candles either side ("lower high, then a new high, and then a lower high") (1:16:05). **Swing low**: middle candle with higher lows on each side (1:28:21).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Internal liquidity**: FVGs. **External liquidity**: swing highs or swing lows (1:12:11).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Areas of interest**: hourly FVGs or swing points in the bias direction where the 5m entry function is searched (1:13:53).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Institutional swing points**: ICT core content month 5; two types, breaker block or failure swing (36:08).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **SMT within an FVG**: one asset trades into an FVG (above the LTF swing high forming it) while the other does not reach it (15:30-16:25).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Daily swing high fractal**: a daily high with a lower daily high on each side (08:49).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Daily dealing range**: from the last daily swing low to swing high; 0.5 = EQ, above = premium, below = discount (08:49, 09:20).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **High-probability order block**: the last up-close (bearish OB) candle that swept buy-side before a close below a recent swing low / break in structure (01:35, 02:05, 22:42).
+- 2024-02-18 (upload) [[jokerszn_daily_orderflow_ict_daily_bias]] **Bullish / bearish trigger**: the daily close that ends the stuck state, e.g. close above the bearish OB (use it as a breaker) or close below the swing low and the FVG (26:12, 26:42).
+- 2024-02-28 (upload) [[understanding_market_structure_for_trading]] **Market structure shift / break (shift in structure)**: change of trend confirmed by displacement and a close through the swing that made the last extreme (01:34-02:01, 10:55).
+- 2024-03-09 (upload) [[ict_advanced_market_structure_simplified]] **Market structure shift**: break of a short-term high (acceptable) or, preferred, of the intermediate-term high (04:41).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Original consolidation**: the HTF IRL pool the model finally returns to; on the 5m the hourly swing high draw is called this (07:41, 09:08).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Advanced market structure**: long/short/intermediate-term highs and lows; intermediate-term = a short-term swing that violates the prior short-term swing and holds (12:04, 20:31-21:00).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **External liquidity**: swing highs (buy-side) and swing lows (sell-side), three-bar swing definition (01:03).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **Failure swing**: swing high with a lower high next to it (or low with a higher low), the first one never swept before the reversal (00:02-00:37).
+- 2024-07-07 (upload) [[high_resistance_vs_low_resistance_liquidity_ict_concepts]] **Low resistance liquidity (LRL)**: failure swings; resting liquidity price can run easily; the target (00:37, 01:34).
+- 2024-08-16 (upload) [[nickdoesfutures_unicorn_model_experiences_with_ict]] **Pre-session game plan**: four written items each morning: bias, liquidity targets (e.g. Asia highs, London relative equal highs), news, low-probability-day check (18:42-19:00).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **Fake CISD**: a London CISD that formed without an HTF level being reached; it builds equal lows/highs for NY to run (03:43).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **Low-resistance liquidity / failure swings**: lined-up session highs/lows and previous-day lows that price runs through easily (03:12, 09:01).
+- 2024-09-14 (upload) [[the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models]] **Offset re-accumulation**: relative equal lows from a short-term leg get run into the HTF key level before continuation (06:24).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **PD array**: premium/discount array; here swing lows/highs, FVGs, daily imbalance, >H4 levels used as the key level (04:24-04:40, 07:10).
+- 2024-11-02 (upload) [[trading_irl_erl_with_order_blocks_ict_concepts]] **ERL (external range liquidity)**: a swing high or swing low (00:43).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **High-resistance liquidity (as a low)**: a swing low that has already been swept; its wick 0.5 becomes support (02:44-02:59).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Failure swings**: lows that failed to make new extremes, marked as draw (07:21-07:25).
+- 2025-02-22 (upload) [[equilibrium_for_expansions]] **Failure swings**: swing highs/lows left resting at the range extremes; used as targets (03:19, 06:28).
+- 2025-03-08 (upload) [[trade_continuations_using_breaker_blocks]] **Intermediate-term low** (advanced market structure): forms by sweeping a short-term low or reaching into an FVG (02:22-02:31, 04:16).
+- 2025-03-13 [[ap_use_market_structure_fibonacci_levels_for_sniper_entries]] **GB levels / "Yeet" / GB puddle**: AP's fib set 0.295, 0.41, 0.705, 0.7475, 0.79; 0 = anchor (newest extreme), 1 = valid/protected swing (06:52, 14:12).
+- 2025-03-13 [[ap_use_market_structure_fibonacci_levels_for_sniper_entries]] **Valid flip / market structure shift**: body close through the last valid low/high (08:05).
+- 2025-03-13 [[ap_use_market_structure_fibonacci_levels_for_sniper_entries]] **Failure swing**: a retest that fails to make a new high/low; makes the lows that built it weak (16:39, 33:51).
+- 2025-04-05 (upload) [[ttrades_fractal_model_trading_candle_4]] **Swing low / swing high**: low with a higher low on each side; high with a lower high on each side (02:10, 14:46).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Retracement signature**: deep, slow, choppy pullback after expansion into an objective that leaves failure swings and no manipulation; target EQ of the range or IRL. HTF = three consecutive candles or one large candle into an objective; on LTF it shows as stacked near-equal highs (06:14-08:20).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Manipulation**: a sweep of a high/low (or protected swing) that triggers expansion; "AMD" = accumulation (consolidation), manipulation, distribution (04:52, 06:49).
+- 2025-05-17 (upload) [[protected_swings_understanding_trend_and_invalidations]] **Protected swing (protected high/low)**: a swing expected to hold while the trend continues; invalidation level (00:18, 14:05).
+- 2025-05-17 (upload) [[protected_swings_understanding_trend_and_invalidations]] **Failure swing**: a swing that did not get swept/protected; liquidity to trade towards (01:00, 14:45).
+- 2025-05-17 (upload) [[protected_swings_understanding_trend_and_invalidations]] **Anticipated vs formed protected swing**: HTF narrative anticipates where the swing will form; LTF closure confirms it (08:30).
+- 2025-06-28 (upload) [[how_to_trade_expansion_phases_of_price]] **Protected swing (in expansion)**: low (bullish) formed when price reaches a PD array and then closes over the down-close candle(s); must hold for the trend to continue (01:40, 03:06).
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **Protected swing**: swing created when price closes over the series of opposing candles; trend stays valid until it is violated (1:48-1:56, 7:02, 13:19).
+- 2025-07-26 (upload) [[how_to_trade_reversal_phases_of_price]] **Relevant high/low**: a level price would logically reverse from without leaving obvious liquidity (failure swings, equal highs, previous day high) behind; previous day/week highs and lows are always relevant (02:50, 10:38).
+- 2025-08-09 (upload) [[the_phases_of_price_action_a_blueprint_for_market_movement]] **Consolidation**: price stuck inside a range (e.g. inside a candle's range, 07:54); also any retracement that fails to form a protected swing (15:38) or that takes too long to close through (13:11); a daily inside bar (17:22).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Failure swings**: equal highs / lows where price did not close beyond the level, so no protected swing formed; they attract a revisit (01:35, 04:22).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Protected swing / protected high**: a swing confirmed by a close beyond the level that forms opposing candles / a CISD; stop goes there (02:59, 05:20, 07:48).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Range (HTF)**: a candle whose range encompasses all later days' ranges; failure swings show as non-overlapping HTF candle extremes (08:34, 08:47).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Low-resistance liquidity**: untaken session highs/lows (failure swings) that price can reach easily (11:27).
+- 2025-09-06 (upload) [[trading_candle_3]] **Protected swing**: the swing whose series of opposing candles price closes through (CISD); stop goes on it (04:29, 04:38).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Failure swing**: the swing on the asset that did not take the level in an SMT (09:06).
+- 2025-11-15 (upload) [[candle_2_closure_foundation]] **POI (for framing a closure)**: swing high/low, FVG (01:39); opposing candles after a protected swing (06:22); page adds "an opposing candle" when neither is present.
+- 2025-12-03 (upload) [[candle_3_closure_ttrades_fractal_model]] **Failure swings**: equal lows/highs already reached; trading away from them is avoided (06:53).
+- 2025-12-10 (upload) [[ttrades_top_down_chart_lessons_3]] **Ideal candle 2 closure**: candle 2 that takes the prior low, reverses V-shaped from an FVG, and closes back in while forming a protected swing (02:34).
+- 2026-01-31 (upload) [[the_best_timeframe_for_ttrades_fractal_model_simple]] **Continuation**: close through the series of candles that went into the POI after a reaction, creating a protected swing (05:08-05:33, 09:14-09:30).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Failure swings**: equal-ish swing highs/lows left as resting liquidity, e.g. previous day's highs lined up (03:23, 12:49, 25:00).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **Failure swings**: untaken highs/lows left behind, used as full expansion targets (03:11-03:15, 03:27-03:32).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **V-shaped reversal**: sharp reversal off a sweep into a consolidation, creating a protected swing (07:06-07:18). Page: "a sweep of liquidity followed by a sharp rejection and a strong closure away from that level".
+- 2026-03-14 (upload) [[eurgbp_for_relative_strength_eu_vs_gu]] **Ideal candle-2 closure**: candle-2 closure out of an FVG that simultaneously creates a protected swing (5:20).
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **Relevant swing high/low**: a swing point where a reaction or reversal can be expected. It is the extreme of nearby swings, has valid separation from the previous swing, and falls within the 3-HTF-candle lookback (00:52-03:34).
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **Failure swing**: a swing that is not expected to hold because older/stacked highs or lows sit beyond it or very close to it; "failure swings are those stacked highs, right? That stacked liquidity" (08:17). Covered in a separate prior video (00:17).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Failure swing**: price reverses from a point, then a later day (or days) makes a deep run back into that point without taking it out; the reversal is "unestablished" (1:07-2:21, page).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Relevant swing**: daily high/low that is the current extreme of the range, identified as the original extreme a failure swing ran into, or any daily extreme with valid separation to the swings to its left (2:43-3:04, 10:30).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Valid separation**: enough distance between one candidate relevant swing and the next daily high/low that manipulating it does not create a new failure swing to the left (4:20-5:28). Not quantified.

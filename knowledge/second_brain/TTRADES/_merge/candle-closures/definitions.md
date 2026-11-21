@@ -1,0 +1,77 @@
+# Candle numbering: C1-C4, candle 2 closure, candle 3 expansion, wicks: definitions (75 rows, sorted by date)
+
+- 2022-06-10 (upload) [[intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts]] **Fair value gap (FVG)**: three-candle pattern where candle 1 and candle 3 wicks do not overlap — a break in price delivery (02:08-02:37).
+- 2022-12-24 (upload) [[top_down_analysis_ict_concepts]] **Block (daily)**: order block marked from wick to open (01:56).
+- 2022-12-24 (upload) [[top_down_analysis_ict_concepts]] **4h block**: body to wick of the up-close candle series (02:27).
+- 2023-04-18 (upload) [[low_resistance_liquidity_run_ict_concepts]] **CE of the wick**: 50% of the swept candle's wick, used as a target in place of a HRL low (05:28, 06:24).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **Fair value gap (FVG)**: three-candle pattern with no overlap between candle 1's and candle 3's wicks (00:10).
+- 2023-05-19 (upload) [[understanding_fair_value_gaps_fvg_ict_concepts]] **Volume imbalance**: close-to-open gap between two candles with traded overlap of the wicks (08:50).
+- 2023-08-15 (upload) [[the_best_relative_strength_indicator_for_es_nq_ict]] **Consequent encroachment (CE)**: 50% of a wick or FVG (07:26, 09:45).
+- 2023-09-19 (upload) [[breaker_block_fvg_entry_model_ict_concepts]] **Fair value gap**: 3-candle pattern; candle 1 and candle 3 wicks do not overlap, leaving an imbalance (00:37).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **Fair value gap**: three-candle pattern, candle 1 low not overlapping candle 3 high (bearish) or candle 1 high not overlapping candle 3 low (bullish) (00:28).
+- 2024-01-02 (upload) [[breaker_blocks_simplified_ict_concepts]] **Breaker block (bullish)**: in low, high, lower low, higher high, the single/series of up-close candles between the low and the high, marked including wicks (00:39, 07:09).
+- 2024-01-29 (upload) [[smt_divergence_ict_concepts]] **Lower-timeframe SMT**: divergence visible only as one asset's wick taking a level the other's does not on the HTF chart (03:38-04:34).
+- 2024-04-28 (upload) [[internal_external_liquidity_model_ict_concepts]] **Fair value gap**: three-candle pattern where candle 1 and candle 3 wicks do not overlap, showing aggressive price action (00:35).
+- 2024-08-26 (upload) [[ict_daily_profile_london_reversal_new_york_continuation]] **Classic expansion candle**: open, manipulation creating the wick, expansion, close (00:54-01:08).
+- 2024-11-16 (upload) [[master_candlestick_wicks_the_key_to_catching_reversals]] **Wick**: the part of a candle beyond the body; a LTF reversal within the candle's period (00:22).
+- 2024-11-16 (upload) [[master_candlestick_wicks_the_key_to_catching_reversals]] **Wick 0.5 / 50%**: midpoint between the body edge and the wick extreme (00:47).
+- 2024-11-16 (upload) [[master_candlestick_wicks_the_key_to_catching_reversals]] **Respected wick**: next candle forms its open-side extreme inside the wick half toward the body, then expands (01:09-01:40).
+- 2024-11-16 (upload) [[master_candlestick_wicks_the_key_to_catching_reversals]] **Disrespected wick**: LTF trades/closes through the wick 50%; price likely runs the wick extreme (01:59-02:13).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **T-spot**: shaded box in the next HTF candle where he expects the HTF wick to form ("open high, go lower, close" for a short, high forms in the box). Default colours gray and green (03:17, 11:19-11:42).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **C2 / C3 / C4**: higher-timeframe candle-2, candle-3 closures and candle-4 continuation; requirements are taught in his course/mentorship, not here (06:16-06:35).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Candle 1 sweep**: line marking the first candle's extreme that was swept by the HTF closure, drawn on HTF and LTF (10:29-10:40).
+- 2024-12-29 (upload) [[reversal_sequence_ttrs_how_to_blend_pd_arrays]] **FVG**: 3-candle non-overlap of candle 1 and candle 3 extremes (01:55).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Expansion candle**: HTF candle with small wicks and a large body (07:49-07:55).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **C2U / C2 unicorn**: guest's model; a TTFM candle 2 at a POI whose wick contains an LTF unicorn (00:50-00:59, 04:35).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **Points of interest** (as he uses them): swing highs/lows, opposing range candles, FVGs, previous day/session/week highs/lows (03:58-04:14), hourly IFVG, 50% of the previous 7-hour candle/wick (07:34-08:05), daily C2 T-spot (15:53).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **London C2 / London reversal**: London 7-hour candle forming a candle 2 at a POI (06:21-06:27).
+- 2025-02-15 (upload) [[dtr_c2u_blending_the_fractal_model_unicorn_model_no_daily_bias]] **T-spot** (heard "t-spot", "tpot", "te- spot"): TTrades term, here a POI that exists only once C2 has closed; daily C2 T-spot is open-ended until an hourly close past it (11:47, 15:51-16:29). Exact geometry not defined in this video.
+- 2025-03-13 [[ap_use_market_structure_fibonacci_levels_for_sniper_entries]] **Body close (AP)**: a true close of the body beyond the wick of the key level; a heavy wick without it means support holds (18:04).
+- 2025-03-13 [[ap_use_market_structure_fibonacci_levels_for_sniper_entries]] **Fractal (AP)**: a wick-high/wick-low pair whose body close through forms a lower-timeframe swing zone; also a 3-candle pivot of an imbalance (21:36, 40:24).
+- 2025-03-13 [[ap_use_market_structure_fibonacci_levels_for_sniper_entries]] **Devil's mark**: his name for a wickless candle (23:00).
+- 2025-03-22 (upload) [[ttrades_fractal_model_inversion_intraday_strategy]] **T-spot**: indicator-printed zone where the HTF candle's wick is expected to form; entries are sought inside it (01:14).
+- 2025-04-05 (upload) [[ttrades_fractal_model_trading_candle_4]] **Daily swing model / day 4**: the day after a confirmed daily swing (C1-C2-C3), expected to continue out of C3's upper (bull) / lower (bear) half (00:11-01:14).
+- 2025-04-05 (upload) [[ttrades_fractal_model_trading_candle_4]] **Body to body**: C3's range measured on bodies only, whose upper half should also support (08:31).
+- 2025-04-18 [[gxtradez_phases_of_price_profiles_for_expansion]] **Expansion signature**: trading inside an expansion candle: small wick, opposing candles supporting price toward ERL/IRL, lows rejected, highs displaced, shallow retracements; the LTF expansion makes up the HTF body (02:58-03:40).
+- 2025-07-12 (upload) [[how_to_trade_retracement_phases_of_price]] **T-spot / gray box**: zone his indicator marks where the higher-timeframe candle's wick should form (5:28, 6:42).
+- 2025-07-19 (upload) [[fractal_model_fundamentals]] **Candle 1/2/3/4**: candle 2 is the swing high/low; candle 1 before it; candle 3 after candle 2; candle 4 after candle 3 and a continuation if the trend is correct (00:46).
+- 2025-07-19 (upload) [[fractal_model_fundamentals]] **Candle closure / candle 2 closure**: candle runs beyond the previous candle's high/low (ideally into a POI) and closes back inside its range; in his examples it should also close in the bias direction (02:43, 11:52).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **T-spot**: the zone that should form the daily upper wick on a bearish day (03:27).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Expansion candle**: small wick both sides, large body (00:23).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Reversal candle (candle 2)**: opens, large opposing run forms the wick, returns toward the open before close (00:34).
+- 2025-09-06 (upload) [[trading_candle_3]] **Expansion candle**: opens near one extreme (small or no wick, "open low") and moves one-sided (00:34).
+- 2025-09-06 (upload) [[trading_candle_3]] **Candle 2 / 3 / 4**: candle 2 the reversal candle, candle 3 the continuation (or it can be a reversal candle), candle 4 always a continuation within the model (35:12).
+- 2025-09-06 (upload) [[trading_candle_3]] **Three drives pattern**: third candle 2 closure attempt at the same area (22:17).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **Power of three / AMD**: accumulation, manipulation (opposing run), distribution (real move), mapped onto candle 1 / candle 2 / candle 3 (00:30).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **OHLC / OLHC**: open, high, low, close of the 4h candle (bearish: open, make high/wick, trade lower; bullish: open, low, high, close) (00:17, 09:00).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **Opposing run**: the move against intended direction after the HTF candle opens; becomes the wick (01:25).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **Reversal to expansion candle**: candle 2 makes a small shallow run below candle 1's low and trades higher in the same candle (02:08).
+- 2025-09-20 (upload) [[trading_the_4_hour_power_of_three_ohlc_olhc]] **Continuation expansion candle**: candle 3 after a reversal candle 2 with a large opposing run (02:35).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Candle 2 closure**: candle 2 closes back inside candle 1's range (02:48).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Candle 2 reversal to expansion**: same as a reversal candle but with a small wick, so it reverses and expands in the same candle; occurs when candle 1 hits the key level and closes as expansion (03:50).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **Candle 3 closure**: candle 1 or 2 hits the key level without a candle 2 closure; candle 3 expands away from candle 2's extreme without taking it; "strong" = closes over candle 2's body (04:26).
+- 2025-10-05 (upload) [[a_complete_trading_framework_universal_models_smt_swing_points_gxt]] **EQ of range**: 0.5 of the previous candle's range, used as a wick-size gauge (02:57, 08:32).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Expansion candle**: small wicks on both sides, large body; high/low made early with little range, closes near its high/low (00:30, 01:43).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Shallow (small) opposing run**: small wick made early in the candle; supports expansion (00:37).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **Large opposing run**: wick that consumes about half or more of the candle's time and significant range; does not support expansion (04:00, 10:07).
+- 2025-10-18 (upload) [[wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles]] **T-spot**: area the TTFM indicator marks where candle 3's wick is expected to form after a candle 2 closure (09:21, 23:19).
+- 2025-11-01 (upload) [[targets_using_projections_the_fractal_model]] **Manipulation leg**: in candle 2 after the CISD, from the extreme (low for bullish) to the opposing swing that made it (the high that made the low); i.e. the CISD's opposing run (01:01, 01:58).
+- 2025-11-15 (upload) [[candle_2_closure_foundation]] **Candle 2 closure (C2)**: reversal closure at a HTF POI; sweep of previous candle's high/low with a close back inside its range (00:57). Page: "A Candle 2 closure is always a reversal closure."
+- 2025-11-15 (upload) [[candle_2_closure_foundation]] **Candle 3 closure**: the other TTFM closure type; mentioned only (a 4H example at 11:53 is labelled C3, "a future video").
+- 2025-12-03 (upload) [[candle_3_closure_ttrades_fractal_model]] **Candle 3 closure (C3)**: at a HTF key level, no C2 reversal closure; candle 3 leaves candle 2's extreme untaken and closes over/below candle 2's body (engulfing) (01:36, 11:01).
+- 2025-12-03 (upload) [[candle_3_closure_ttrades_fractal_model]] **Candle 2 closure (C2)**: candle 2 sweeps candle 1's high/low and closes back inside (10:45).
+- 2025-12-03 (upload) [[candle_3_closure_ttrades_fractal_model]] **Continuation / reversal closure**: as in the C2 video (00:33-01:04).
+- 2025-12-03 (upload) [[candle_3_closure_ttrades_fractal_model]] **New week opening gap**: used as a POI that price takes before a C3 closure (05:22).
+- 2025-12-10 (upload) [[ttrades_top_down_chart_lessons_3]] **Ideal candle 2 closure**: candle 2 that takes the prior low, reverses V-shaped from an FVG, and closes back in while forming a protected swing (02:34).
+- 2025-12-10 (upload) [[ttrades_top_down_chart_lessons_3]] **Daily opposing candle respected**: the next daily candle's wick forms above 0.5 of the prior (opposing) daily candle (03:04).
+- 2026-01-10 (upload) [[cisd_validates_swing_points]] **Candle-3 closure**: no candle-2 closure, but candle 3 closes beyond candle 2's opening price (2:18-2:59).
+- 2026-01-17 (upload) [[higher_timeframe_analysis_for_trading_aligning_expansion_candles]] **Supports expansion**: candle with a small wick (formed early) and large body, so it can expand in one direction (00:25-01:10).
+- 2026-01-17 (upload) [[higher_timeframe_analysis_for_trading_aligning_expansion_candles]] **Candle 3 on multiple timeframes**: daily, 4H and 1H candles all in their continuation (C3) phase at once (03:34, 07:58).
+- 2026-01-17 (upload) [[higher_timeframe_analysis_for_trading_aligning_expansion_candles]] **Reversal candle (not quite a C2 closure)**: candle with a large wick that does not close back inside; usable to "frame" off its wick (10:21-10:29).
+- 2026-01-24 (upload) [[how_to_actually_trade_inversion_fair_value_gaps_ifvg]] **FVG**: 3-candle pattern; candle 1 and candle 3 wicks do not overlap (00:22).
+- 2026-01-31 (upload) [[the_best_timeframe_for_ttrades_fractal_model_simple]] **Candle 3 across timeframes**: daily candle 3 traded via a 4h candle 2/3 and a 15m continuation inside the 4h candle 3 (02:54-03:06, 06:28-07:01).
+- 2026-02-07 (upload) [[ttrades_scalping_model_simple_day_trading_strategy]] **Scalping model**: hourly bias (C2/C3 closure) → 15m swing point forming the hourly wick → 1m fractal model entry; trade = body of the hourly candle (00:10-01:42; page "What You Are Actually Trading").
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **Daily swing point**: daily candle 2 or candle 3 in the bias direction that forms the wick of the daily candle (01:02-01:12).
+- 2026-02-28 (upload) [[relative_strength_weakness_smt_divergence_full_guide]] **Candle closures**: comparing how the same candle closes on both assets (bullish close over the body vs doji, closing through a CISD level vs not) (02:28-03:32).
+- 2026-03-21 (upload) [[which_swing_highs_and_lows_matter_in_trading]] **EQ**: equilibrium (50%) of the candle; with the wick, the level candle 3 should respect (02:51).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Intra-candle CISD (IC-CISD)**: CISD formed inside the higher-timeframe (7h) candle on the 15m or LTF, used to confirm the 8:00 wick (30:39, page).

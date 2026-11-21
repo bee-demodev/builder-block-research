@@ -1,0 +1,87 @@
+# CISD and IC-CISD (change in the state of delivery): definitions (85 rows, sorted by date)
+
+- 2022-05-20 (upload) [[ict_index_futures_weekly_recap_week_of_5_16_22]] **Market structure shift (MSS)**: taking a short-term low/high against the prior move (01:31, 02:14). ICT term, not TTFM CISD.
+- 2022-05-26 (upload) [[simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries]] **Imbalance**: FVG or order block created by the displacement (02:48, 03:50).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Market structure shift (MSS)**: breaking the most recent swing low (for shorts) or swing high (for longs) on the entry timeframe, ideally with displacement (02:44-03:10, 10:17-10:42).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Displacement**: an energetic move through structure that leaves an imbalance; a break without it is not accepted (03:07, 10:27).
+- 2022-05-27 (upload) [[index_futures_weekly_recap_ict_concepts]] **Imbalance**: FVG or order block left by displacement (03:12, 10:17).
+- 2022-06-06 (upload) [[ict_daily_bias]] **Market structure shift (MSS)**: a short-term high (or low) broken with displacement, leaving an imbalance (FVG) (00:38).
+- 2022-06-10 (upload) [[intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts]] **Market structure shift (MSS)**: break of the last lower high (in a downtrend) with displacement (01:05-01:36).
+- 2022-06-10 (upload) [[intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts]] **Displacement**: energetic move through structure, leaving a FVG; "a distance" reached quickly before retracing (01:36-02:08).
+- 2022-06-13 (upload) [[reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts]] **Market structure shift (MSS)**: displacement through a short-term swing that leaves an imbalance (FVG) (00:34, 03:41).
+- 2022-06-13 (upload) [[reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts]] **Imbalance**: fair value gap created by the displacement (00:34, 03:41).
+- 2022-06-13 (upload) [[reversal_or_pullback_using_market_structure_to_determine_trend_ict_concepts]] **Energetic move**: displacement (02:05, 03:41).
+- 2022-06-30 (upload) [[what_is_displacement_ict_concepts]] **Displacement**: an energetic break of a short-term swing, recognised by larger candle range and more distance covered past the swing than a weak break over the same number of candles (00:39-01:49).
+- 2022-06-30 (upload) [[what_is_displacement_ict_concepts]] **Displacement range**: from the swing low before the move to the displacement high; used for premium/discount (01:49).
+- 2022-08-02 (upload) [[ote_optimal_trade_entry_ict_concepts]] **OTE (optimal trade entry)**: retracement zone between the 0.62 and 0.79 fib of the displacement range that broke structure (00:34).
+- 2022-08-02 (upload) [[ote_optimal_trade_entry_ict_concepts]] **Smart money reversal**: reversal sequence on the S&P hourly preceding the displacement leg (01:39).
+- 2022-08-08 (upload) [[intro_to_the_inducement_model_ict_concepts]] **Break of structure (BOS)**: displacement through the swing after the grab (01:05, 01:35).
+- 2022-10-11 (upload) [[build_an_entry_model_ict_concepts]] **Model 3**: model 1 plus OTE on the displacement leg (03:15).
+- 2022-10-18 (upload) [[higher_time_frame_points_of_interest_ict_concepts]] **OTE of a range**: optimal trade entry zone of a displacement leg (02:15, 03:43).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **OTE**: optimal trade entry retracement, drawn from displacement start to end (02:05).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **Displacement range**: the leg from where displacement started to where it ended; re-anchored after each new leg (02:37).
+- 2022-10-26 (upload) [[lower_time_frame_entries_using_htf_poi_ict_concepts]] **Failure to displace**: no close or displacement beyond the low after a raid (05:27, 09:04).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **Displacement**: large aggressive candles closing in their high or low, through structure (00:07, 00:34).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **Lack of displacement / failure to displace**: price trades beyond a high/low but closes straight back into the range, without big closes beyond (00:34, 02:43).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **Buy side of the curve / sell side of the curve**: the current bullish or bearish leg of delivery; flipped by displacement through a higher-timeframe swing (01:35-02:09, 03:13).
+- 2022-11-04 (upload) [[structure_shift_vs_liquidity_grab_ict_concepts]] **Box setup**: retest of the previous high followed by displacement below an intermediate-term low (05:26); not further defined.
+- 2022-11-25 (upload) [[choosing_dealing_ranges_displacement_ranges_ict_concepts]] **Displacement range**: aggressive leg over structure; Fib anchored at the starting low, trailed to the latest high (01:37, 03:13).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Market structure shift / displacement**: previous opposite swing broken by an aggressive move (00:39).
+- 2023-05-29 (upload) [[a_ict_entry_checklist_ict_concepts]] **Order block (bullish)**: down-close candle before the displacement (02:35).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Displacement**: aggressive, full-bodied candle(s), usually leaving FVGs (00:10-00:39).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Market structure shift (MSS)**: displacement and close through a previous low/high that changes trend (02:07, 04:15).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **OTE**: optimal trade entry from a fib of the displacement leg (04:44).
+- 2023-07-17 (upload) [[market_structure_shift_ict_concepts]] **Displacement range**: the MSS leg; its premium/discount decides where to look for the PD array (05:52).
+- 2023-07-25 (upload) [[market_structure_shift_vs_liquidity_grab_ict_concepts]] **Displacement**: large aggressive move, single or multiple candles, closing over structure; the FVG-creating candle is the focus (00:10-00:35).
+- 2023-07-25 (upload) [[market_structure_shift_vs_liquidity_grab_ict_concepts]] **Market structure shift (MSS)**: sweep, then displacement closing beyond structure, flipping trend (01:02).
+- 2023-07-25 (upload) [[market_structure_shift_vs_liquidity_grab_ict_concepts]] **Displacement met with displacement**: displacement out of a range answered immediately by displacement back (11:49).
+- 2023-08-08 (upload) [[intraday_bias_simplified_ict_concepts]] **Displacement / close outside**: candle closes beyond the previous candle's extreme; signals continuation (03:28).
+- 2023-09-12 (upload) [[optimal_trade_entry_ote_ict_concepts]] **Displacement range**: the range of an aggressive move used to draw the OTE (05:49-06:14).
+- 2023-11-21 (upload) [[change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts]] **Change in state of delivery (CISD)**: price flips from bullish to bearish (or reverse) when a close occurs beyond the opening price of the single candle or series of opposite-direction candles that delivered price into an HTF PD array / important level (00:10-01:35).
+- 2023-11-21 (upload) [[change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts]] **CISD level with a series**: the opening price of the first candle in the series (01:06, 01:35).
+- 2023-11-21 (upload) [[change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts]] **Manipulation**: the sweep or failed displacement out of a range before the CISD; projected for targets (07:56, 11:29).
+- 2023-11-28 (upload) [[internal_external_liquidity_daily_bias_ict_concepts]] **Inversion**: displacement through an FVG, flipping bias (03:18).
+- 2023-12-05 (upload) [[inversion_fair_value_gaps_ifvg_ict_concepts]] **Smart money reversal**: his term in the PDF for the reversal sequence: CISD, inversion, market structure shift (08:13).
+- 2023-12-12 (upload) [[market_structure_shift_vs_change_in_state_of_delivery_ict]] **Market structure shift (MSS)**: displacement and close beyond a swing high/low; a change in trend (00:31).
+- 2023-12-12 (upload) [[market_structure_shift_vs_change_in_state_of_delivery_ict]] **Change in the state of delivery (CISD)**: close (with displacement) beyond the opening price of the opposite-colored candle series that ran into an important level; validates it as an order block (00:57).
+- 2023-12-12 (upload) [[market_structure_shift_vs_change_in_state_of_delivery_ict]] **Order block**: the up-close (bearish case) or down-close (bullish case) candle series validated by a CISD (00:57, 01:52).
+- 2023-12-26 (upload) [[order_blocks_simplified_ict_concepts]] **Order block**: single or series of up-close (bearish) / down-close (bullish) candles into an important level, validated by displacement and a close beyond its opening price (00:38-01:05).
+- 2024-01-19 (upload) [[ash_trades_the_journey_to_profitability_the_unicorn_model]] **Displacement**: a move that closes through the breaker block; he equates it loosely with "market structure shift" and "clear and decisive displacement" (37:49, 1:17:12).
+- 2024-02-28 (upload) [[understanding_market_structure_for_trading]] **Market structure shift / break (shift in structure)**: change of trend confirmed by displacement and a close through the swing that made the last extreme (01:34-02:01, 10:55).
+- 2024-02-28 (upload) [[understanding_market_structure_for_trading]] **Displacement**: aggressive, decisive movement that closes through a level; lack of it at an extreme signals a possible shift (01:34, 10:22).
+- 2024-03-09 (upload) [[ict_advanced_market_structure_simplified]] **Market structure shift**: break of a short-term high (acceptable) or, preferred, of the intermediate-term high (04:41).
+- 2024-04-18 (upload) [[niper_internal_external_liquidity_ict_daily_bias]] **Energetic swing**: the displacement leg used to measure premium/discount (07:14, 16:08).
+- 2024-06-07 (upload) [[the_twitter_model_the_mmxm_trader_ict_concepts]] **Change in the state of delivery**: close over the last down-close candle (bullish) (02:31).
+- 2024-08-26 (upload) [[ict_daily_profile_london_reversal_new_york_continuation]] **London reversal / NY continuation**: London (2-5 a.m.) makes the daily wick and reverses with a CISD; New York continues in the daily direction (01:10-01:57).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **Fake CISD**: a London CISD that formed without an HTF level being reached; it builds equal lows/highs for NY to run (03:43).
+- 2024-09-07 (upload) [[ict_daily_profile_new_york_reversal]] **Order block (his usage here)**: the series of opposing candles whose close-through is the CISD (06:16).
+- 2024-10-12 (upload) [[afyz_trading_the_daily_ohlc_protraction_profiles]] **CISD**: closure through the consecutive series of down-close (up-close) candles (07:52-08:00).
+- 2024-11-02 (upload) [[trading_irl_erl_with_order_blocks_ict_concepts]] **CISD (here)**: close over the opening price of the series (or single) candle that made the low (bearish mirror) (04:25, 10:41).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **CISD (change in the state of delivery)**: a close through the series of up-close candles that made the high (bearish) or down-close candles that made the low (bullish) (01:12-01:27, 02:04-02:10).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Protected high/low**: the swing extreme that the CISD confirmed; the trade's invalidation (01:29).
+- 2024-11-29 (upload) [[intro_to_ttrades_fractal_model_indicator_settings]] **Projections**: standard-deviation targets drawn from the CISD bodies; default list visible as "-1, -2, -2.5, ..." (truncated in frame 12:07) under an "ORDERBLOCK PROJECTIONS" heading (11:44-12:30).
+- 2025-01-11 (upload) [[timeframe_alignment_how_to_align_timeframes_for_expansion]] **Change in the state of delivery**: close through the series of up-close (down-close) candles into the important level (04:00).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Bias / structure / entry timeframes**: HTF gives direction, intermediate gives CISD confirmation and POIs, LTF gives the entry (02:02-02:21, 02:30-02:42).
+- 2025-01-25 (upload) [[trade_like_ttrades_top_down_analysis]] **Change in the state of delivery (CISD)**: a close through the series of down-close (bullish case) or up-close (bearish case) candles that made the extreme; may be a single candle (03:53-04:01, 07:08-07:17).
+- 2025-02-08 (upload) [[trade_continuations_using_order_blocks]] **Reversal sequence**: purge (turtle soup) -> inversion -> CISD (00:30, 15:41).
+- 2025-03-13 [[ap_use_market_structure_fibonacci_levels_for_sniper_entries]] **Valid flip / market structure shift**: body close through the last valid low/high (08:05).
+- 2025-07-19 (upload) [[fractal_model_fundamentals]] **CISD**: close over the series of down-close (or up-close) candles that made the low (high); the series can be one candle (08:19).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Protected swing / protected high**: a swing confirmed by a close beyond the level that forms opposing candles / a CISD; stop goes there (02:59, 05:20, 07:48).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **Opposing candles**: a pair of candles where the second closes through the first, forming the CISD (02:59, 05:20).
+- 2025-08-13 (upload) [[ttrades_top_down_chart_lessons_1]] **0.5 of the CISD**: midpoint of the change-in-state-of-delivery range; a daily close above it on a bearish read is a conflict (03:52).
+- 2025-08-16 (upload) [[ttrades_fractal_model_trading_candle_2]] **Early CISD feature**: his indicator's mode that prints the CISD one candle earlier (04:41).
+- 2025-09-01 (upload) [[ttrades_top_down_chart_lessons_2]] **T-spot**: overlap of 0.5 of the HTF wick and 0.5 of the CISD leg, where price must hold (04:56-05:22). Not named as a box; he refers to "my model and the T-spot".
+- 2025-09-06 (upload) [[trading_candle_3]] **Protected swing**: the swing whose series of opposing candles price closes through (CISD); stop goes on it (04:29, 04:38).
+- 2025-09-06 (upload) [[trading_candle_3]] **CISD**: close through the series of candles that made the extreme; a close through other candles does not count (23:22).
+- 2025-11-01 (upload) [[targets_using_projections_the_fractal_model]] **Manipulation leg**: in candle 2 after the CISD, from the extreme (low for bullish) to the opposing swing that made it (the high that made the low); i.e. the CISD's opposing run (01:01, 01:58).
+- 2025-11-15 (upload) [[candle_2_closure_foundation]] **CISD (here)**: close through the series of candles that made the high/low (07:44, 10:09).
+- 2025-12-13 (upload) [[easy_daily_bias_mechanical_framework]] **Reversal day**: open, trade into PDH (PDL), wick confirmed by LTF CISD, trade back into the range to EQ or the opposite extreme (00:37-00:52, 17:01-17:12).
+- 2025-12-20 (upload) [[ttrades_top_down_chart_lessons_4]] **Opposing candle (series)**: the series of down-close candles that made the low; a close back over it = continuation / CISD (4:38).
+- 2026-01-03 (upload) [[the_only_trading_strategy_you_need_for_2026]] **In-candle CISD**: CISD formed inside the current daily candle on the structure timeframe (08:41-08:48).
+- 2026-01-10 (upload) [[cisd_validates_swing_points]] **CISD (change in the state of delivery)**: order-block formation at a trend change; important level reached, then a close through the series of candles that delivered into it (0:18-0:46).
+- 2026-01-10 (upload) [[cisd_validates_swing_points]] **Valid fractal model (swing point)**: HTF candle-2 or candle-3 closure + LTF CISD inside that HTF candle (0:46-3:16, 9:52).
+- 2026-01-31 (upload) [[the_best_timeframe_for_ttrades_fractal_model_simple]] **Low we can trust**: a low formed out of a POI with a sweep, V-shaped reversal and CISD inside the candle (02:29-02:52).
+- 2026-02-14 (upload) [[why_your_continuations_fail_order_blocks_cisd_explained]] **Short-term high/low taken**: the CISD closure itself sweeps a recent swing, "not just the candle next to it" (15:36); more significant when it is buyside/sellside liquidity (13:28).
+- 2026-02-21 (upload) [[ttrades_swing_trading_model_simple_strategy]] **Intracandle CISD**: CISD seen inside the forming HTF candle on the lower timeframe (07:58-08:01).
+- 2026-02-28 (upload) [[relative_strength_weakness_smt_divergence_full_guide]] **Candle closures**: comparing how the same candle closes on both assets (bullish close over the body vs doji, closing through a CISD level vs not) (02:28-03:32).
+- 2026-06-20 (upload) [[a_simple_3_step_trading_model_full_breakdown]] **Intra-candle CISD (IC-CISD)**: CISD formed inside the higher-timeframe (7h) candle on the 15m or LTF, used to confirm the 8:00 wick (30:39, page).

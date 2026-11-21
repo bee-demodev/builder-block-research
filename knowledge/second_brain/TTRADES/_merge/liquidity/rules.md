@@ -1,0 +1,188 @@
+# Liquidity, sweeps and draw on liquidity: rules (186 rows, sorted by date)
+
+- 2022-01-20 (upload) simple_day_trading_strategy_intro#1 00:01 (stated) Plot the previous week's high and low.
+- 2022-01-20 (upload) simple_day_trading_strategy_intro#2 00:30 (stated) Plot the previous day high, low and close.
+- 2022-01-20 (upload) simple_day_trading_strategy_intro#3 00:30 (stated) At the market open, plot the opening price; these are the only levels used.
+- 2022-01-27 (upload) simple_day_trading_strategy_triple_s#1 00:29 (stated) Plot only: previous week high/low, previous day high/low, previous day close, current day open.
+- 2022-05-20 (upload) ict_index_futures_weekly_recap_week_of_5_16_22#2 01:05 (stated) While expecting a bullish retracement, require swing lows to be taken before a long; no sweep = no trade.
+- 2022-05-20 (upload) ict_index_futures_weekly_recap_week_of_5_16_22#9 03:24 (stated) Alternative: ES itself was tradable after it swept the highs and moved lower.
+- 2022-05-26 (upload) simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries#3 00:07 (stated) After the reversal off the level, a short-term high or low must be taken, with displacement.
+- 2022-05-26 (upload) simple_options_day_trading_strategy_auto_plotted_levels_and_ict_entries#8 01:05 (demonstrated) A short-term high break without displacement does not qualify.
+- 2022-05-27 (upload) index_futures_weekly_recap_ict_concepts#3 00:58 (stated) At the 8:30 open, look back and mark resting liquidity (swing highs and lows).
+- 2022-05-27 (upload) index_futures_weekly_recap_ict_concepts#4 01:18 (stated) When bullish, wait for lows to be taken out, then for an entry that targets the highs.
+- 2022-05-27 (upload) index_futures_weekly_recap_ict_concepts#11 04:16 (stated) Relative equal highs/lows are targets; near-equal levels count, perfect ties (a double top) are not what he wants.
+- 2022-05-27 (upload) index_futures_weekly_recap_ict_concepts#12 05:58 (stated) In a bearish plan at the 8:30 open, ideally see a false move up that takes liquidity before the move down.
+- 2022-06-06 (upload) ict_daily_bias#1 00:07 (stated) First check which liquidity was taken last: after sell-side is taken expect distribution higher, after buy-side expect lower.
+- 2022-06-06 (upload) ict_daily_bias#2 00:38 (stated) Mark swing highs/lows, short-term highs/lows and relative equal highs/lows; stops (liquidity) rest beyond them.
+- 2022-06-06 (upload) ict_daily_bias#9 03:14 (stated) When bearish, look for a false move up that grabs liquidity, then distribution lower.
+- 2022-06-10 (upload) intro_to_market_structure_shifts_fair_value_gaps_and_displacement_ict_concepts#3 00:33 (stated) Liquidity (stops) rests above and below highs and lows; once taken, you want price delivered in your bias direction.
+- 2022-06-17 (upload) smart_money_divergences_smt_ict_concepts#4 01:06 (stated) Ideally the divergence comes with a liquidity grab at a point of interest.
+- 2022-06-28 (upload) price_targets_ict_concepts#2 00:06 (stated) After a short from a stop run and LTF structure shift, the nearby lows are the targets because liquidity rests there.
+- 2022-06-28 (upload) price_targets_ict_concepts#5 01:46 (stated) Equal lows (or highs) should always be a target.
+- 2022-07-07 (upload) what_is_liquidity_ict_concepts#1 00:06 (stated) Liquidity is where stops sit, found at the most obvious highs and lows.
+- 2022-07-07 (upload) what_is_liquidity_ict_concepts#2 00:35 (stated) Buy-side liquidity rests above highs (shorts' stops); sell-side rests below lows (longs' stops).
+- 2022-07-07 (upload) what_is_liquidity_ict_concepts#3 01:05 (stated) After a pool is taken, look for the setup in the opposite direction.
+- 2022-07-07 (upload) what_is_liquidity_ict_concepts#4 01:36 (stated) A cluster of equal highs holds liquidity and becomes the target; once taken, look for the short.
+- 2022-07-07 (upload) what_is_liquidity_ict_concepts#6 02:41 (stated) Price does not have to run the whole range; running internal stops is enough to start looking for a setup.
+- 2022-08-08 (upload) intro_to_the_inducement_model_ict_concepts#6 01:35 (stated) Longs taken at a FVG leave stops below; those stops are the inducement liquidity.
+- 2022-08-08 (upload) intro_to_the_inducement_model_ict_concepts#8 02:04 (stated) Relative equal lows formed by the induced move are expected to be taken (in the short example, their stops are run into the FVG first).
+- 2022-08-08 (upload) intro_to_the_inducement_model_ict_concepts#9 02:34 (stated) The inducement is internal range liquidity that is run before the actual move.
+- 2022-09-14 ict_trade_example_15_second_entry#2 00:17 (demonstrated) On the 1m, the trigger is a sweep of the consolidation's range lows, followed by a sharp move back up.
+- 2022-09-20 (upload) intraday_bias_ict_concepts#5 01:05 (stated) Look for old lows to be run and then displacement up before looking for longs.
+- 2022-09-27 (upload) find_lower_time_frame_entries_using_bias_ict_concepts#2 01:05 (stated) When the context is unconvincing (aggressive up met by aggressive down at the low of the range), wait for a Judas swing before shorting.
+- 2022-10-11 (upload) build_an_entry_model_ict_concepts#7 02:46 (stated) Classic FVG setup: liquidity grab, breaker structure, fair value gap.
+- 2022-10-11 (upload) build_an_entry_model_ict_concepts#10 03:44 (stated) Models 2 and 4 add internal range liquidity being taken before the move.
+- 2022-10-18 (upload) higher_time_frame_points_of_interest_ict_concepts#5 00:52 (stated) For highs and lows, track which have been taken and which are likely to be taken.
+- 2022-10-18 (upload) higher_time_frame_points_of_interest_ict_concepts#6 01:20 (demonstrated) Lows only slightly moved over without a convincing move are a magnet; after they are taken, look for a long toward equal highs.
+- 2022-10-18 (upload) higher_time_frame_points_of_interest_ict_concepts#7 01:47 (stated) Watch the lower timeframe for entries after highs and lows are run.
+- 2022-10-18 (upload) higher_time_frame_points_of_interest_ict_concepts#17 04:47 (stated) After a low is taken and longs are considered, target internal range liquidity first, before the highs.
+- 2022-10-26 (upload) lower_time_frame_entries_using_htf_poi_ict_concepts#10 02:37 (stated) Prefer the retracement entry after internal liquidity below is swept.
+- 2022-10-26 (upload) lower_time_frame_entries_using_htf_poi_ict_concepts#17 05:27 (stated) Raid of stops without a close/displacement below and no FVGs means likely continuation higher.
+- 2022-10-26 (upload) lower_time_frame_entries_using_htf_poi_ict_concepts#23 07:43 (stated) Expect a low to be taken (small broadening formation) before continuation higher.
+- 2022-11-04 (upload) structure_shift_vs_liquidity_grab_ict_concepts#3 00:34 (stated) A sweep of a low that immediately returns into the range is a lack of displacement, not a structure break.
+- 2022-11-04 (upload) structure_shift_vs_liquidity_grab_ict_concepts#4 01:35 (stated) Failing to displace below a short-term low after taking a high means price likely goes higher to the next highs.
+- 2022-11-25 (upload) choosing_dealing_ranges_displacement_ranges_ict_concepts#3 00:33 (stated) External liquidity on a zoomed-in range becomes internal liquidity when zoomed out; do not get caught up in labels.
+- 2022-12-24 (upload) top_down_analysis_ict_concepts#6 01:29 (stated) After displacing under lows, check whether price falls back into the range or reaches lower; mark POIs for each case.
+- 2022-12-24 (upload) top_down_analysis_ict_concepts#18 06:27 (stated) At a target low: watch for displacement back into the range (higher), failure to displace back in, or continuation lower.
+- 2023-01-09 (upload) draw_on_liquidity_dol_ict_concepts#4 00:35 (stated) Determine where price is likely to reach, then use lower timeframes for entry and risk toward that HTF target.
+- 2023-01-09 (upload) draw_on_liquidity_dol_ict_concepts#5 00:35 (stated) External draws: old highs and lows, equal highs and lows; internal draws: FVGs and order blocks.
+- 2023-01-09 (upload) draw_on_liquidity_dol_ict_concepts#6 01:02 (stated) Volume imbalances and gaps are occasional internal draws.
+- 2023-01-09 (upload) draw_on_liquidity_dol_ict_concepts#9 01:31 (stated) After a low is taken, ask: displace back into the range (bullish) or keep falling?
+- 2023-01-09 (upload) draw_on_liquidity_dol_ict_concepts#14 03:12 (stated) Equal highs left behind are a target for later.
+- 2023-01-18 draw_on_liquidity_example_1_18_23_ict_concepts#6 02:06 (stated) If price slices through a BPR without a reaction, expect the next liquidity (equal lows) to be taken.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#10 04:16 (demonstrated) A short-term low that holds (no close below) at a PD array followed by aggressive displacement defines a bullish manipulation leg.
+- 2023-02-27 (upload) targets_with_standard_deviation_projections_ict_concepts#14 06:37 (stated) The manipulation leg is the move that swept the lows (bullish case).
+- 2023-03-30 (upload) scalping_made_simple_building_a_scalping_model#5 01:28 (stated) Mark recent highs and lows; those are what the strategy wants taken.
+- 2023-03-30 (upload) scalping_made_simple_building_a_scalping_model#6 01:28 (stated) A stop hunt requires an aggressive move out of the range and an aggressive move back in; otherwise disregard.
+- 2023-03-30 (upload) scalping_made_simple_building_a_scalping_model#7 01:57 (demonstrated) An invalid sweep becomes the new high to watch.
+- 2023-03-30 (upload) scalping_made_simple_building_a_scalping_model#9 03:14 (demonstrated) Moving beyond an old low without returning into the range is invalid.
+- 2023-04-07 (upload) open_high_low_close_ohlc_olhc_ict_concepts#4 01:05 (stated) Whether the candle is expected bullish or bearish depends on the draw on liquidity.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#1 00:37 (stated) Low resistance liquidity: a high not swept by the next leg before the reversal, so liquidity still rests there.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#2 01:07 (stated) High resistance liquidity: the leg sweeps the resting liquidity before reversing; no failure swing.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#6 02:01 (demonstrated) Failure-swing highs inside the premium can be taken first; then a close back into the range turns the target to sell-side liquidity.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#10 04:10 (stated) Consecutive daily candles where no previous day high is broken = a zone of LRL (failure swings on lower timeframes).
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#13 05:28 (stated) A swept low with closes back into the range is HRL, not a failure swing.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#15 06:24 (stated) HRL lows are harder to break through than LRL; avoid targeting them directly.
+- 2023-04-18 (upload) low_resistance_liquidity_run_ict_concepts#17 07:53 (demonstrated) Check the 1m for failure swings that make a lower target worth taking even without an old low.
+- 2023-05-09 (upload) next_day_model_the_mmxm_trader_ict_concepts#11 03:00 (stated) Equal highs on the daily are a future target; bullish structure means expect a bullish week.
+- 2023-05-29 (upload) a_ict_entry_checklist_ict_concepts#2 00:10 (stated) Step 1 is a stop raid: a low (high) put in and then raided/broken.
+- 2023-05-29 (upload) a_ict_entry_checklist_ict_concepts#12 07:19 (stated) A one-tick run below a low does not count as a stop raid for him.
+- 2023-05-29 (upload) a_ict_entry_checklist_ict_concepts#14 08:23 (stated) Without a lower-timeframe liquidity raid before the move, he is not interested (box setup alone is not A+).
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#4 01:07 (stated) Sell stops below swing lows = sell-side liquidity; buy stops above swing highs = buy-side liquidity.
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#5 01:07 (stated) Smart money pairs orders below lows and above highs.
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#6 02:03 (demonstrated) Once a high is taken, that buy-side is no longer a concern; the next swing high becomes the buy-side.
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#7 03:10 (stated) A swing that fails to take the previous low creates relatively equal lows, treated together as sell-side liquidity.
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#8 03:10 (stated) Focus on the really obvious highs and lows on the outside of the range.
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#9 04:30 (stated) Relatively equal highs/lows: two or more swing points very close together or clustered.
+- 2023-06-28 (upload) liquidity_buyside_sellside_ict_concepts#10 05:00 (stated) Old highs/lows: a previous high or low where a single swing point stands out.
+- 2023-07-07 (upload) discount_premium_ict_concepts#10 06:38 (stated) Before longs in discount, want a raid of the previous day low (or some setup) and a close back in.
+- 2023-07-17 (upload) market_structure_shift_ict_concepts#6 02:07 (stated) Prefer a stop raid before the shift; it creates a breaker and high resistance liquidity for the stop loss.
+- 2023-07-17 (upload) market_structure_shift_ict_concepts#9 03:33 (stated) A sweep that does not close over the high is a better sweep.
+- 2023-07-25 (upload) market_structure_shift_vs_liquidity_grab_ict_concepts#4 01:02 (stated) Liquidity grab = failure to displace over structure (reach over, close back in).
+- 2023-07-25 (upload) market_structure_shift_vs_liquidity_grab_ict_concepts#7 02:28 (stated) If price cannot close/displace out of the range at the old level, expect a return into the range or the opposite side.
+- 2023-07-25 (upload) market_structure_shift_vs_liquidity_grab_ict_concepts#15 07:41, 11:49 (demonstrated) After a target extreme is reached, the next draw is the opposite old highs/lows, found by looking left.
+- 2023-08-01 (upload) ict_daily_bias_the_only_video_you_will_ever_need#2 00:38 (stated) Unless price consolidates, expect it to take PDH, PDL, or both; ask which is more likely.
+- 2023-08-01 (upload) ict_daily_bias_the_only_video_you_will_ever_need#25 14:51 (stated) A small sweep is a caution sign that price may want to go higher again; wait for what follows.
+- 2023-08-08 (upload) intraday_bias_simplified_ict_concepts#2 00:36 (stated) Unless price consolidates forever, it must reach for the previous candle's high or low; the side price is moving toward is the likelier draw.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#2 00:38 (stated) Frame the reversal with the previous hour's high and low, i.e. the 9 AM hourly candle, marked once 10:00 hits.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#3 01:07 (stated) Wait for price to take one side of the 9 AM range, then look for an entry targeting the opposite side.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#4 01:37 (stated) The setup trigger is a stop raid above the 9 AM high or below the 9 AM low inside the window; then look for an entry model the other way.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#13 09:57 (stated) Equal highs touched without running are not counted as a sweep.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#17 15:55 (stated) Prefer a lower-timeframe sweep forming the entry model, not just the raw range sweep.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#19 20:27 (stated) If the 10 AM candle already took one side and price does not come back into the range, the opposite side is unlikely.
+- 2023-08-22 (upload) ict_silver_bullet_strategy_no_daily_bias_with_backtest#23 26:37 (stated) Very shallow sweeps without displacement or FVGs are low quality.
+- 2023-09-05 (upload) my_favorite_reversal_pattern_orderblocks_ict_concepts#2 00:10 (stated) On the lower timeframe, price puts in a swing near the level and then raids it.
+- 2023-09-05 (upload) my_favorite_reversal_pattern_orderblocks_ict_concepts#11 04:22 (demonstrated) A daily swing low is a valid important level for a 5m reversal.
+- 2023-09-19 (upload) breaker_block_fvg_entry_model_ict_concepts#9 02:55 (stated) Prefer opposite-side equal lows to be taken before the move toward the draw (smooth highs).
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#2 00:34 (stated) 1m framework: a 15m stop raid in the opposite direction of the draw, then a bullish (in-direction) candle close.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#5 01:29 (stated) If the draw is higher, a low should be swept before price reaches for the draw.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#6 01:58 (stated) Wait for price to take the 15m low and close back in before dropping to 1m.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#9 02:57 (stated) After an external draw is taken, the next draw can be internal (an FVG): external to internal.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#11 04:01 (stated) Stacked higher lows are low-resistance liquidity that price should run into toward the draw.
+- 2023-10-03 (upload) ict_son_s_model_higher_time_frames#14 05:07 (stated) 5m framework: hourly stop raid opposite the draw; he does not wait for the candle close back in.
+- 2023-10-17 (upload) important_liquidity_levels_draw_on_liquidity_ict#3 01:04 (stated) If price is not consolidating, anticipate it moving toward the previous candle's high or low, sometimes both.
+- 2023-10-17 (upload) important_liquidity_levels_draw_on_liquidity_ict#5 01:58 (stated) Previous month's high and low frame a draw on liquidity or a reversal.
+- 2023-10-17 (upload) important_liquidity_levels_draw_on_liquidity_ict#15 06:33 (stated) Session highs and lows can be used as a draw on liquidity and to frame a reversal.
+- 2023-10-24 (upload) the_easiest_draw_on_liquidity_dol_daily_bias_ict#1 00:10 (stated) Unless price stays in consolidation, it reaches for PDH, PDL, or both.
+- 2023-10-24 (upload) the_easiest_draw_on_liquidity_dol_daily_bias_ict#11 04:29 (stated) Look back three days for previous highs and lows.
+- 2023-10-24 (upload) the_easiest_draw_on_liquidity_dol_daily_bias_ict#12 04:58 (stated) Extended prior-day levels add confluence: a deviation below PDL, back into range and retest of PDL before continuing higher (box setup).
+- 2023-11-21 (upload) change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts#6 02:06 (stated) He generally prefers a lower-timeframe sweep as part of his entry models.
+- 2023-11-21 (upload) change_in_state_of_delivery_cisd_orderblock_formation_ict_concepts#14 05:20 (stated) When bearish, a run of an old high is an area to look for shorts.
+- 2023-11-28 (upload) internal_external_liquidity_daily_bias_ict_concepts#1 00:10-00:39 (stated) Internal range liquidity is an FVG; external range liquidity is a swing high or swing low (buy-side / sell-side liquidity).
+- 2023-11-28 (upload) internal_external_liquidity_daily_bias_ict_concepts#2 00:39 (stated) The market only reaches for old highs/lows or seeks to rebalance an FVG.
+- 2023-11-28 (upload) internal_external_liquidity_daily_bias_ict_concepts#3 00:58 (stated) After taking ERL, price seeks IRL; after reaching IRL, price reaches for ERL.
+- 2023-11-28 (upload) internal_external_liquidity_daily_bias_ict_concepts#4 01:28 (demonstrated) A failure to displace below an old low signals a retracement from ERL toward the FVG (IRL).
+- 2023-11-28 (upload) internal_external_liquidity_daily_bias_ict_concepts#22 10:04 (stated) The IRL/ERL relationship works on any timeframe (e.g. NQ 5m after the open range).
+- 2023-12-05 (upload) inversion_fair_value_gaps_ifvg_ict_concepts#9 03:20 (stated) After sweeping external liquidity and closing back inside, the framework flips toward internal liquidity.
+- 2023-12-26 (upload) order_blocks_simplified_ict_concepts#3 01:05 (stated) A sweep before the closure is not required for an OB, but he always waits for one.
+- 2023-12-26 (upload) order_blocks_simplified_ict_concepts#11 04:56 (stated) He prefers a clear swing low to be swept, not a small one.
+- 2024-01-02 (upload) breaker_blocks_simplified_ict_concepts#19 10:52 (stated) If previous-day lows (equal lows) are not taken and price retraces into the prior range, that is a short opportunity.
+- 2024-01-11 cpi_gold_trade_review_ict_market_maker_sell_model_mmxm#3 01:38 (stated) A lower high next to a prior high is a failure swing / low-resistance liquidity.
+- 2024-01-11 cpi_gold_trade_review_ict_market_maker_sell_model_mmxm#4 01:45 (stated) When trading lower, want high-resistance liquidity on the highs and target low-resistance liquidity.
+- 2024-01-11 cpi_gold_trade_review_ict_market_maker_sell_model_mmxm#11 04:10 (stated) Do not short into failure swings on the highs; require a sweep first.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#4 31:30 (stated) Be long below the lows and short above the highs (the smart-money idea that led him to ICT).
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#7 36:38 (stated) A breaker requires a stop hunt (run above a high or below a low) before you start looking for an entry.
+- 2024-01-19 (upload) ash_trades_the_journey_to_profitability_the_unicorn_model#16 1:12:11 (stated) Daily bias comes from internal vs external liquidity: internal = FVGs, external = swing highs/lows; price at an internal level draws to external.
+- 2024-02-18 (upload) jokerszn_daily_orderflow_ict_daily_bias#1 03:59 (stated) Only two liquidity pools set the bias/draw: old highs and lows (external) and higher-timeframe (daily/weekly) FVGs (internal).
+- 2024-02-18 (upload) jokerszn_daily_orderflow_ict_daily_bias#3 03:03 (stated) A daily close through equal highs (instead of a sweep that fails to close above) makes it likely price continues to the next higher draw.
+- 2024-02-18 (upload) jokerszn_daily_orderflow_ict_daily_bias#27 38:06 (stated) Several unswept previous-day highs above price make a sell a low-probability environment (resting buy-side may be run first).
+- 2024-02-28 (upload) understanding_market_structure_for_trading#20 11:24 (stated) At the break, check discount: if it is just a sweep in discount, no lower high forms and price makes a higher high.
+- 2024-03-09 (upload) ict_advanced_market_structure_simplified#11 05:14 (demonstrated) A sweep that is only equal lows does not count much; he waits for a real sweep before an intermediate-term low.
+- 2024-04-18 (upload) niper_internal_external_liquidity_ict_daily_bias#1 01:56 (stated) External range liquidity (ERL) = old highs and lows; internal range liquidity (IRL) = fair value gaps.
+- 2024-04-18 (upload) niper_internal_external_liquidity_ict_daily_bias#2 02:17 (stated) Price only does two things: draws to old highs/lows, and rebalances imbalances.
+- 2024-04-18 (upload) niper_internal_external_liquidity_ict_daily_bias#3 02:17 (stated) When IRL is tagged, expect price to draw to ERL next, and vice versa (ERL taken → draw to IRL).
+- 2024-04-18 (upload) niper_internal_external_liquidity_ict_daily_bias#9 05:57 (stated) Fractal: the lower-timeframe swing high that gets closed through is itself ERL, so next expect a retrace into a lower-timeframe IRL FVG.
+- 2024-04-18 (upload) niper_internal_external_liquidity_ict_daily_bias#19 23:31 (stated) On the higher-timeframe key level, wicks through are fine; candle bodies not closing beyond it confirm the level holds.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#1 00:35 (stated) Internal liquidity is a fair value gap.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#4 01:28 (stated) After a sweep of external liquidity that fails to displace through, expect price to reach back to internal liquidity.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#5 01:28 (stated) After internal liquidity is reached and the FVG is respected, expect price to go to external liquidity.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#13 07:50 (stated) Lined-up previous-day lows are low-resistance liquidity and make a target.
+- 2024-04-28 (upload) internal_external_liquidity_model_ict_concepts#18 10:54 (stated) Previous candle highs/lows (e.g. previous month's low) are important liquidity levels for HTF versions of the model.
+- 2024-06-07 (upload) the_twitter_model_the_mmxm_trader_ict_concepts#1 00:02 (stated) The model moves from external liquidity to internal liquidity on a smaller timeframe, paired with an MSS and SMT.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#2 00:37 (stated) Low resistance liquidity is a failure swing.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#3 01:07 (stated) High resistance liquidity: liquidity is swept first (higher high / lower low) before the reversal.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#6 02:29 (demonstrated) Equal / stacked highs and higher-timeframe failure swings are the first thing to spot as the draw.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#8 03:25 (stated) Previous days' lows that were never taken (failure swings on a lower timeframe) are LRL.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#10 04:54 (demonstrated) A daily sweep becomes HRL once the next day closes back inside the range.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#12 05:24 (stated) After a high is taken with failure swings on the low, ideally the high is not retaken before the low runs.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#13 06:25 (stated) To target a high cluster, first want a sweep (HRL) of a low; if it is the previous day low, expect it to hold.
+- 2024-07-07 (upload) high_resistance_vs_low_resistance_liquidity_ict_concepts#17 08:24 (demonstrated) LRL resting just above an order block is likely run into the order block; its mean threshold gives the reaction.
+- 2024-08-16 (upload) nickdoesfutures_unicorn_model_experiences_with_ict#15 17:30-17:44 (stated) After the POI tag, wait for a short-term stop run (preferably of a consolidation or Asia range high/low, market-maker-model style).
+- 2024-09-07 (upload) ict_daily_profile_new_york_reversal#9 03:12 (stated) Plenty of low-resistance liquidity (failure swings) ahead is what produces the aggressive move after the CISD.
+- 2024-09-14 (upload) the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models#6 04:09 (stated) Order pairing: the market raids sell stops below an old low and then pairs them with buy stops above the range high (and vice versa); this defines the draw.
+- 2024-09-14 (upload) the_ote_trader_i_turned_profitable_with_this_stage_of_ict_s_mmxm_models#19 15:13 (stated) Preferred 15m trigger: turtle soup (raid) of a short-term high/low inside the bigger range, entered from premium/discount of the new 15m range.
+- 2024-10-12 (upload) afyz_trading_the_daily_ohlc_protraction_profiles#13 12:15-12:36 (stated) The manipulation wick must engage a key level that qualifies it as the high/low of the day; without a meaningful HTF key level engaged, the extreme is not yet in.
+- 2024-10-19 (upload) mara_trade_review_h1_market_maker_buy_model_mmxm#8 02:53 (stated) A run of that low while still respecting 0.5 of the opposing candle is expected to form a swing low for the move higher.
+- 2024-11-02 (upload) trading_irl_erl_with_order_blocks_ict_concepts#3 00:55 (stated) Price moves internal -> external and external -> internal, alternately.
+- 2024-11-02 (upload) trading_irl_erl_with_order_blocks_ict_concepts#4 01:00 (stated) After ERL is purged, expect a move back into the range to IRL; a lower high forming at IRL then targets ERL.
+- 2024-11-02 (upload) trading_irl_erl_with_order_blocks_ict_concepts#15 06:38 (stated) Do not use a sweep of a low whose break would invalidate the HTF idea (e.g. the daily low expected to hold); use a FVG instead.
+- 2024-11-29 (upload) intro_to_ttrades_fractal_model_indicator_settings#15 13:04-13:27 (stated) Formation liquidity marks the previous candle's / previous day's low (for a bearish closure) that has not yet been taken; already-taken lows are not marked.
+- 2025-01-11 (upload) timeframe_alignment_how_to_align_timeframes_for_expansion#13 07:41 (demonstrated) Reason for a setup: e.g. three days of expansion into an old high; a reversal would occur off the previous day high.
+- 2025-01-25 (upload) trade_like_ttrades_top_down_analysis#6 02:48-02:59 (stated) A swept swing low becomes high-resistance liquidity; use 0.5 of its wick as support.
+- 2025-03-08 (upload) trade_continuations_using_breaker_blocks#17 09:17-09:30 (stated) Instead of getting caught in chop, wait for the sweep, then catch the expansion after the manipulation.
+- 2025-03-13 ap_use_market_structure_fibonacci_levels_for_sniper_entries#1 06:52 (stated) GB levels: fib retracement with 0.295, 0.41, 0.705, 0.7475, 0.79 (plus 0 = anchor low, 1 = valid/protected high).
+- 2025-03-13 ap_use_market_structure_fibonacci_levels_for_sniper_entries#7 13:09 (stated) Entry 2: as lower-timeframe structure builds near the extreme, a first close beyond 0.295 is riskier; a close beyond 0.41 (~80% by his estimate) sends the retrace to 0.7475.
+- 2025-03-13 ap_use_market_structure_fibonacci_levels_for_sniper_entries#8 16:39 (stated) When price fails to make a new high, the draw is the lows that built the failure swing.
+- 2025-03-13 ap_use_market_structure_fibonacci_levels_for_sniper_entries#14 31:48 (stated) Trading out of the range: after a body close beyond 0.295, price likes to return to 0.41 for a continuation entry.
+- 2025-03-13 ap_use_market_structure_fibonacci_levels_for_sniper_entries#15 31:32 (stated) Levels are more sensitive trading back into the range after displacement away than trading out of it.
+- 2025-03-13 ap_use_market_structure_fibonacci_levels_for_sniper_entries#24 57:52 (stated) Prominent swing areas that align with GB levels often get a double tap (first-tap low liquidated) before the rebound.
+- 2025-04-18 gxtradez_phases_of_price_profiles_for_expansion#7 06:49 (stated) Manipulation (a swept high/low or protected swing) is the trigger for expansion; when price retraces into an internal range, wait for manipulation before trading away.
+- 2025-05-17 (upload) protected_swings_understanding_trend_and_invalidations#8 03:50 (demonstrated) A turtle soup over the previous day high without the close through the opposing candles is not confirmed and can fail.
+- 2025-05-17 (upload) protected_swings_understanding_trend_and_invalidations#23 14:45 (stated) Trade towards failure swings and keep protected swings on your side of the market.
+- 2025-06-14 (upload) how_to_trade_consolidation_phases_of_price#4 01:39 (stated) Bullish: want the range low run, then trade higher (power of three: accumulation, manipulation, distribution); bearish is the mirror.
+- 2025-07-12 (upload) how_to_trade_retracement_phases_of_price#16 8:16 (stated) A shallow tap of an FVG is not enough for him; he prefers a consolidation low swept to get "a wick I trust".
+- 2025-07-26 (upload) how_to_trade_reversal_phases_of_price#8 02:50 (stated) Don't pick random highs/lows to reverse from; use relevant swings, most easily previous day and previous week highs and lows.
+- 2025-07-26 (upload) how_to_trade_reversal_phases_of_price#9 03:47 (stated) A reversal off a random high that leaves failure swing highs above is not trusted, even if the structure looks good.
+- 2025-08-16 (upload) ttrades_fractal_model_trading_candle_2#21 11:27 (stated) When the overnight (Asia/London) highs are already taken, there is no low-resistance liquidity left; favor the daily open, and risk-to-reward is poor.
+- 2025-09-01 (upload) ttrades_top_down_chart_lessons_2#8 03:06-03:16 (stated) A small reversal off the PDH that leaves failure swings is irrelevant for a bearish view.
+- 2025-09-06 (upload) trading_candle_3#14 08:57 (stated) A candle 2 that expanded is still tradable for candle 3 only if short-term liquidity remains open; if candle 2 already reached the draw, do not trade candle 3.
+- 2025-10-18 (upload) wick_size_matters_the_key_to_understanding_reversal_and_expansion_candles#17 13:45 (stated) Do not try to trade a reversal away from the draw on liquidity until those highs/lows are taken out.
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#6 01:48 (stated) Pair projection levels with liquidity targets in that area; projections are confluence.
+- 2025-11-01 (upload) targets_using_projections_the_fractal_model#11 04:33 (demonstrated) When -2 to -2.5 lines up with previous day high and liquidity to the left, that is good confluence.
+- 2025-12-03 (upload) candle_3_closure_ttrades_fractal_model#13 06:47 (stated) Don't trade away from a level after price already reached the opposing liquidity (equal lows / failure swings).
+- 2025-12-20 (upload) ttrades_top_down_chart_lessons_4#1 0:27 (stated) Target opposing equal highs / failure swings as the draw on liquidity for the scalp.
+- 2026-01-24 (upload) how_to_actually_trade_inversion_fair_value_gaps_ifvg#7 02:43 (demonstrated) An inversion without a sweep of the previous HTF candle's extreme is not a reversal setup (just consolidation).
+- 2026-02-14 (upload) why_your_continuations_fail_order_blocks_cisd_explained#5 02:16 (stated) Reason 2: be cautious when the continuation's closure also takes out range highs or a short-term target; wait for an extra continuation after the sweep.
+- 2026-02-14 (upload) why_your_continuations_fail_order_blocks_cisd_explained#17 13:36 (stated) When the closure takes significant liquidity (buyside/sellside), that is exactly where the opposite setup forms, so wait for a continuation before entering.
+- 2026-02-14 (upload) why_your_continuations_fail_order_blocks_cisd_explained#18 14:10 (stated) Sweeps of short-term highs/lows are often the manipulation that builds the higher-timeframe wick.
+- 2026-03-21 (upload) which_swing_highs_and_lows_matter_in_trading#14 08:17 (stated) Failure swings are stacked highs/lows (stacked liquidity) and are the target; the stop-loss side should have high-resistance liquidity, with no failure swings.
